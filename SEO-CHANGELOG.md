@@ -1,5 +1,54 @@
 # Accounstone SEO Changelog
 
+## 2026-09-07b (Search Console access has broken; documentation refreshed)
+
+### GSC is returning 403, and no data can be read
+
+`list_properties` still returns `sc-domain:accounstone.com`, but the permission
+level is now **`siteUnverifiedUser`**, and every analytics call returns:
+
+```
+HTTP 403 — User does not have sufficient permission for site
+'sc-domain:accounstone.com'
+```
+
+It was readable on 2026-09-03 and again on 2026-09-04, when the offshore and
+MYOB decisions were made from it. Both connected MCP servers
+(`Geneio-projectone` and `GenieSEO`) are the same Google account and both fail
+identically, so this is the account's access having changed rather than one
+connector misbehaving.
+
+Two likely causes, both outside this repo and both the owner's to fix: the DNS
+TXT record that verified the domain property was changed or removed, or the
+connected account's access was revoked in Search Console. Either way it needs
+re-verifying, or that account re-granted at least Full user.
+
+**Until it is fixed, every GSC-driven judgement in `CLAUDE.md` is frozen at its
+2026-09-04 reading** — including whether the offshore consolidation, the
+MYOB noindex and the staff-augmentation rewrite actually worked, which is
+exactly what the next read was supposed to answer.
+
+### Documentation refreshed against measurement
+
+Four numbers in `CLAUDE.md` had drifted from reality. All re-measured rather
+than estimated:
+
+| Claim | Was | Now |
+|---|---|---|
+| "Current state (verified …)" | 2026-08-27 | 2026-09-07 |
+| Drift-check baseline | 85 on disk / 84 in sitemap | **90 / 88** |
+| Inquiry band coverage | "on 81 pages" | **on 85 of 90**, counted by rendering every route |
+| Open item 2's MYOB paragraph | described as an unfixed problem | resolved, points at the noindex section |
+
+The five pages without the band are now named rather than approximated:
+`/contact` (which is the form), `/cookie-policy`, `/privacy`, `/terms` and
+`/thank-you`. The previous wording listed three.
+
+### Deploys confirmed
+
+All ten production deployments since 2026-09-03 are `READY`, including the
+engagement-triggered prompt (`4a137e0`). Nothing is stuck or rolled back.
+
 ## 2026-09-07 (engagement-triggered inquiry prompt on content pages)
 
 The ask was a form that appears after a few seconds of scrolling on the SEO

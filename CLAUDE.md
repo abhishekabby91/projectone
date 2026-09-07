@@ -27,7 +27,7 @@ background, superseded on specifics by the files above.
 
 ---
 
-## Current state (verified 2026-08-27)
+## Current state (verified 2026-09-07)
 
 - **90 routes** on disk, all returning 200; 88 in the sitemap (`/thank-you` and
   `/technology/myob` are both `noindex` and deliberately excluded — see the
@@ -97,12 +97,26 @@ Do **not** resolve these unilaterally. Each needs the owner.
    has any clicks at all. Two things follow. There are no CTR quick wins: just
    14 queries sit in positions 6-20 and they total ~54 impressions, while every
    high-impression query ranks 36-75, so this is a ranking problem rather than a
-   snippet one. And ~788 impressions — 27% of the site — are MYOB *product*
-   research reaching `/technology/myob`, which is off-ICP traffic inflating
-   impressions and dragging average position down. Ahrefs still returns
-   `Insufficient plan` and Semrush reports insufficient API units, so backlink
-   and competitor evidence remains unobtainable. (`robots.txt` also deliberately
-   blocks AhrefsBot and SemrushBot.)
+   snippet one. The MYOB half of that read is resolved — see
+   "/technology/myob is mostly traffic we cannot serve" below; it was noindexed
+   on 2026-09-04. Ahrefs still returns `Insufficient plan` and Semrush reports
+   insufficient API units, so backlink and competitor evidence remains
+   unobtainable. (`robots.txt` also deliberately blocks AhrefsBot and
+   SemrushBot.)
+
+   **Access broke between 2026-09-04 and 2026-09-07, and nothing can be read
+   until it is fixed.** `list_properties` still returns
+   `sc-domain:accounstone.com`, but with `permission_level:
+   "siteUnverifiedUser"`, and every analytics call now returns HTTP 403 "User
+   does not have sufficient permission". Both connected MCP servers
+   (`Geneio-projectone` and `GenieSEO`) are the same Google account and both
+   fail identically, so it is the account's access that changed, not one
+   connector. Likely causes, in order of probability: the DNS TXT record that
+   verified the domain property was changed or removed, or the connected
+   account's access was revoked in Search Console. **This is the owner's to
+   fix** — re-verify the property, or re-grant that account at least Full user.
+   Until then every GSC-driven decision in this file is frozen at its
+   2026-09-04 reading.
 3. **Redirect targets are settled. The generic-tier question is not
    (2026-09-03).** The owner authorised deciding the retired-URL targets, and
    country-segmented GSC decided them: six of the seven stay on United States,
@@ -202,8 +216,9 @@ lines, `/technology/myob` and `/thank-you`, and both are correct** — each is
 reports. Anything else in either direction is drift.
 
 This check found four unlisted guides on 2026-08-21, and confirmed 84 ↔ 84
-parity after the 2026-08-27 restructure. As of 2026-09-03 it is 85 routes on
-disk against 84 in the sitemap.
+parity after the 2026-08-27 restructure. **As of 2026-09-07 it is 90 routes on
+disk against 88 in the sitemap**, the two differences being the noindex pair
+above.
 
 `app/services/cfo-support/route.ts` is a `route.ts` returning 410, not a page,
 so it appears in neither count.
@@ -343,11 +358,12 @@ Declared in `app/layout.tsx` and `public/manifest.webmanifest`.
 All are rendered on a white ground. The mark is navy and blue, which disappears
 against a dark browser tab bar on transparency.
 
-## The inquiry form is on 81 pages, and in a dialog
+## The inquiry form is on 85 pages, and in a dialog
 
 `components/inquiry-form.tsx` is the one form; `components/inquiry-section.tsx`
 is the band that wraps it, and sits before the `CTABanner` on every page except
-`/contact` (which is the form), `/privacy` and `/terms`. Consultations and calls
+five, counted by rendering all 90 routes on 2026-09-07: `/contact` (which is the
+form), `/cookie-policy`, `/privacy`, `/terms` and `/thank-you`. Consultations and calls
 are free and are the owner's lead source, so the ask leads with that.
 
 **`ArticleLayout` renders the band** for the 6 blog posts, 11 guides and 2
