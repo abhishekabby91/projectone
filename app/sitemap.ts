@@ -51,7 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...serviceRegionPaths.map((path) => ({ path, priority: 0.9, changeFrequency: 'monthly' as const, lastModified: '2026-08-27' })),
     ...solutions.map((s) => ({ path: `/solutions/${s.slug}`, priority: 0.85, changeFrequency: 'monthly' as const, lastModified: LAST_AUDIT })),
     ...markets.map((m) => ({ path: `/markets/${m.slug}`, priority: 0.8, changeFrequency: 'monthly' as const, lastModified: LAST_AUDIT })),
-    ...technologies.map((t) => ({ path: `/technology/${t.slug}`, priority: 0.75, changeFrequency: 'monthly' as const, lastModified: LAST_AUDIT })),
+    // MYOB is noindex as of 2026-09-04 (see app/technology/myob/page.tsx), and a
+    // noindex URL in a sitemap is a contradiction Search Console reports. It is
+    // the second expected difference in the drift check, after /thank-you.
+    ...technologies
+      .filter((t) => t.slug !== 'myob')
+      .map((t) => ({ path: `/technology/${t.slug}`, priority: 0.75, changeFrequency: 'monthly' as const, lastModified: LAST_AUDIT })),
     ...industries.map((i) => ({ path: `/industries/${i.slug}`, priority: 0.75, changeFrequency: 'monthly' as const, lastModified: LAST_AUDIT })),
   ];
 

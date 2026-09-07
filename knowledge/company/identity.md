@@ -31,6 +31,26 @@ Bookkeeping · Accounting · Tax Preparation · Payroll · Accounts Payable · A
 
 Region-specific deep-dive pages exist for bookkeeping, tax preparation and audit support in all three markets.
 
+### US company registration (added 2026-09-04, on the owner's instruction)
+
+Recorded here because the owner confirmed it twice in session on 2026-09-04 and
+then asked for it to be written down. **Scope is narrower than the name
+suggests, and the wording matters:**
+
+- The registration itself is **arranged and coordinated**, not performed
+  in-house. Accounstone does not lodge formation documents, act as registered
+  agent, or open bank accounts.
+- What Accounstone runs directly is everything after the entity exists: the EIN
+  application, chart of accounts, opening balances, the state filing calendar,
+  and the recurring bookkeeping, payroll and return preparation.
+- **Entity selection advice remains forbidden** — `scope-boundaries.md` §2 is
+  unchanged by this. Which entity type and which state is the client's attorney
+  and CPA's call, and the pages say so explicitly.
+- The owner asked that the arrangement not be named on the site. Two words are
+  therefore excluded from that cluster's copy; see `CLAUDE.md`.
+
+Pages: `/company-registration` and `/company-registration/{delaware,wyoming,nevada}`.
+
 ## Solutions (engagement models)
 
 Offshore Accounting Support · Staff Augmentation · Dedicated Accounting Teams · Back Office Support

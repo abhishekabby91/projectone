@@ -29,8 +29,9 @@ background, superseded on specifics by the files above.
 
 ## Current state (verified 2026-08-27)
 
-- **90 routes** on disk, all returning 200; 89 in the sitemap (`/thank-you` is
-  deliberately excluded — see the drift check below).
+- **90 routes** on disk, all returning 200; 88 in the sitemap (`/thank-you` and
+  `/technology/myob` are both `noindex` and deliberately excluded — see the
+  drift check below).
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
   `/services/{service}/{region}`. The matrix lives in `lib/data.ts` (`regions`,
   `serviceRegions`, `serviceRegionPaths`) and drives the navbar, footer, `/services`
@@ -195,10 +196,10 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  → would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted → never crawled
 ```
 
-The first command must print nothing. **The second now prints exactly one line,
-`/thank-you`, and that is correct** — it is `noindex` (see below), and a noindex
-URL in a sitemap is a contradiction Search Console reports. Anything else in
-either direction is drift.
+The first command must print nothing. **The second now prints exactly two
+lines, `/technology/myob` and `/thank-you`, and both are correct** — each is
+`noindex`, and a noindex URL in a sitemap is a contradiction Search Console
+reports. Anything else in either direction is drift.
 
 This check found four unlisted guides on 2026-08-21, and confirmed 84 ↔ 84
 parity after the 2026-08-27 restructure. As of 2026-09-03 it is 85 routes on
@@ -537,9 +538,25 @@ One query in the whole set is a genuine buyer: **"myob bookkeeper offshore"**,
 30 impressions. The page is now titled and headlined for that reader.
 
 **Do not try to win the rest.** Ranking for "myob certified consultant" would
-require claiming to be one. Whether to `noindex` the page — it is ~27% of site
-impressions and drags average position down for no commercial return — is an
-open question for the owner, recorded in `SEO-CHANGELOG.md` 2026-09-04b.
+require claiming to be one.
+
+**The owner chose to `noindex` it on 2026-09-04.** Three things follow, and all
+three are easy to undo by accident:
+
+- It is **removed from `app/sitemap.ts`** by a `.filter()` on the technologies
+  array, because a noindex URL in a sitemap is a contradiction. It is the second
+  expected line in the drift check, alongside `/thank-you`.
+- It is **not** in `robots.txt` and must not be. A blocked URL cannot be
+  crawled, so the noindex would never be read — the same trap already documented
+  for `/thank-you`.
+- The page stays **live and linked** from the technology hub and footer. Noindex
+  is not deletion; a visitor who reaches it still gets an honest page.
+
+The cost was flagged before the change and is worth remembering: this also drops
+the 30 `"myob bookkeeper offshore"` impressions, the one genuine buyer query on
+the page. That intent was moved first — the bookkeeping entry on
+`/solutions/offshore-accounting-support` now names MYOB explicitly. If the
+noindex is ever reversed, check that the two pages are not then competing for it.
 
 ## The cookie consent system
 

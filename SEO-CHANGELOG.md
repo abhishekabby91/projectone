@@ -1,5 +1,54 @@
 # Accounstone SEO Changelog
 
+## 2026-09-04d (MYOB noindexed; registration recorded in identity.md)
+
+Two owner decisions actioned.
+
+### /technology/myob is now noindex
+
+857 impressions in 28 days, the most of any page on the site, and never a click,
+because the demand is MYOB product research and a hunt for a certified
+consultant or implementer — none of which Accounstone can honestly claim. The
+owner chose to take it out of the index rather than keep ~27% of site
+impressions that will not convert.
+
+**The cost was flagged before doing it, and it is real:** this also drops the 30
+`"myob bookkeeper offshore"` impressions, the one genuine buyer query on the
+page and the reader the page had just been retitled for. That intent was rehomed
+first — the offshore bookkeeping entry on `/solutions/offshore-accounting-support`
+now names MYOB explicitly, alongside QuickBooks and Xero, so the search still has
+somewhere on the site to land.
+
+Three implementation details that are easy to get wrong:
+
+- **Removed from `app/sitemap.ts`** via a filter on the technologies array. A
+  noindex URL in a sitemap is a contradiction Search Console reports. The drift
+  check now expects **two** unlisted routes — `/technology/myob` and
+  `/thank-you` — where it previously expected one.
+- **Not added to `robots.txt`, deliberately.** A blocked URL cannot be crawled,
+  so the noindex would never be read. This is the same trap already documented
+  for `/thank-you`, and it is the most common way a noindex silently fails.
+- **The page stays live and linked** from the technology hub and the footer.
+  Noindex is not deletion, and a visitor who lands there still gets an honest
+  page about what is and is not offered.
+
+Worth being straight about what this does and does not buy. It will clean up
+average position and impression reporting, which is the stated reason. It will
+not improve any other page's ranking — low CTR on one page does not harm the
+rest of a site. The decision is a reporting-hygiene one, not a ranking one, and
+it is one line to reverse.
+
+### Company registration recorded in identity.md
+
+`knowledge/company/identity.md` listed seven service lines and did not include
+the registration work the cluster was built for on 2026-09-04. That file is
+edit-on-client-evidence-only by its own rule, so it had been left alone and
+flagged. The owner confirmed the service twice in session and then asked for it
+to be written down, so it is now recorded with its provenance, its date, and —
+more importantly — its actual scope: **arranged and coordinated, not performed
+in-house**, with entity selection advice still forbidden under
+`scope-boundaries.md` §2, which this change does not touch.
+
 ## 2026-09-04c (US company registration cluster)
 
 Four new pages: `/company-registration` and one each for Delaware, Wyoming and

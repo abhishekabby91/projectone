@@ -18,9 +18,22 @@ export const metadata: Metadata = generateMetadata({
   // one genuine buyer query in the set is "myob bookkeeper offshore" (30 impr,
   // position 62), so the title now speaks to that reader rather than to someone
   // shopping for software. See SEO-CHANGELOG 2026-09-04b; whether to noindex the
-  // page outright is an open question for the owner.
+  // page outright was an open question for the owner, and on 2026-09-04 they
+  // answered it: noindex, below.
+  //
+  // The cost of that is real and was flagged before doing it — it also drops the
+  // 30 "myob bookkeeper offshore" impressions, the only genuine buyer query on
+  // the page. That intent now lives on /solutions/offshore-accounting-support,
+  // whose bookkeeping entry names MYOB explicitly.
+  //
+  // The page stays live, linked and useful to anyone who reaches it from the
+  // technology hub. It is NOT added to robots.txt: a blocked URL cannot be
+  // crawled, so the noindex would never be read — the same trap documented for
+  // /thank-you. It is removed from app/sitemap.ts instead, because a noindex URL
+  // in a sitemap is a contradiction Search Console reports.
   title: 'Offshore MYOB Bookkeeping Support',
   description: 'Offshore bookkeepers working inside your existing MYOB file — reconciliations, GST and BAS-ready records and payroll preparation. Not an implementer.',
+  noindex: true,
   path: '/technology/myob',
 });
 
