@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
+import ScrollInquiryPrompt from '@/components/scroll-inquiry-prompt';
 import Reveal from '@/components/reveal';
 import ShareButtons from '@/components/share-buttons';
 import {
@@ -108,6 +109,14 @@ export default function ArticleLayout({
           <ShareButtons url={`${baseUrl}${path}`} title={title} />
         </div>
       </article>
+
+      {/*
+        Engagement-triggered prompt: fires only after both a dwell time and a
+        scroll-depth threshold, so it can never appear on arrival from search.
+        Below `lg` it is a slim bar that does not cover the article — see the
+        note in the component about intrusive interstitials.
+      */}
+      <ScrollInquiryPrompt title={inquiryTitle} lead={inquiryLead} source={path} />
 
       <InquirySection
         compact

@@ -406,6 +406,50 @@ Every instance ids its fields with a per-instance `uid`, so two forms on one
 page cannot collide. There is exactly one `#inquiry` and one
 `#inquiry-heading` per page — check that if you ever add a second band.
 
+## The engagement-triggered prompt on content pages
+
+`components/scroll-inquiry-prompt.tsx`, rendered by `ArticleLayout`, so it is on
+the 6 blog posts, 11 guides and 2 insights and **nowhere else**. It is the
+fourth instance of the form, after the band, the dialog and the rail.
+
+It exists because a reader two-thirds of the way down a 1,500-word guide is the
+most qualified visitor the site gets, and nothing asked them for anything until
+the band at the very bottom — which only a finisher reaches.
+
+**The reason it is not a plain popup is a ranking one, and it is the whole
+design.** Google treats interstitials that obscure content shortly after arrival
+from search as a negative mobile signal. A naive "open a modal after 5 seconds"
+would fire on arrival, cover the article, and put the rankings of the very pages
+it sits on at risk. Three things prevent that, and **none of them is optional**:
+
+1. **Two conditions, both required** — `DWELL_MS` (8s) on the page *and*
+   `SCROLL_TRIGGER` (45%) of the article scrolled. Time alone would fire on an
+   idle arrival; scroll alone would fire on a fast flick. Verified: it stays
+   hidden after 11 seconds without scrolling, and hidden when scrolled to 60%
+   under the dwell time.
+2. **It never covers the article below `lg`.** On mobile it is a slim bottom bar
+   — one line and a button that opens the existing dialog — measured at under
+   20% of a 390x844 viewport. The full form only renders as a corner card at
+   `lg` and up, where there is room beside the text. **Do not make the mobile
+   version show the form inline.**
+3. **Trivially dismissible** — close button, Escape, and the dismissal is
+   remembered for 30 days in `localStorage`, so it never nags the same reader
+   twice or follows them to the next article.
+
+It also stands down while `#inquiry` is on screen (the rail's rule — two
+identical forms are never both visible) and will not fire while the cookie
+banner is up, so a first-time visitor is never asked two things at once.
+
+**It renders nothing on the server.** No `aria-label="Free consultation"`, no
+`scroll-` field ids in the HTML — so it cannot affect indexed content or the
+near-duplicate scores, which matters because it repeats the page's own
+`inquiryTitle` and `inquiryLead`.
+
+`formId="scroll"`, and it must never claim `#inquiry` or `#inquiry-heading`.
+There is a 22-assertion Playwright suite covering the trigger, the mobile
+geometry, dismissal persistence across pages, Escape, the stand-down, absence on
+service pages, and that four form instances on one page produce no duplicate ids.
+
 ## Mobile height: measure before assuming 2-up is shorter
 
 The obvious instinct - make every 1-column card grid 2-up on mobile to shorten

@@ -1,5 +1,58 @@
 # Accounstone SEO Changelog
 
+## 2026-09-07 (engagement-triggered inquiry prompt on content pages)
+
+The ask was a form that appears after a few seconds of scrolling on the SEO
+content pages, for lead generation. Built, with one constraint that shaped the
+whole thing.
+
+### Why it is not a popup
+
+Google treats interstitials that obscure content shortly after a visitor arrives
+from search as a negative mobile signal. The naive version of this feature —
+open a modal after five seconds — fires on arrival, covers the article, and puts
+the rankings of the very pages it is meant to convert at risk. That would have
+been a self-defeating build on a site where the whole point of those pages is
+search traffic.
+
+Three properties prevent it, all verified rather than assumed:
+
+- **Two conditions, both required.** Eight seconds on the page *and* 45% of the
+  article scrolled. It stays hidden after 11 seconds with no scrolling, and
+  hidden at 60% scroll under the dwell time. It cannot appear on arrival however
+  someone behaves.
+- **It never covers the article on mobile**, which is the viewport the guidance
+  is about. Below `lg` it is a slim bottom bar — one line plus a button that
+  opens the existing dialog — measured at **under 20% of a 390x844 viewport**
+  and pinned to the bottom edge. The full form only renders as a corner card at
+  `lg` and up, where it sits in the margin beside the text (measured at x > 900
+  on a 1440px viewport).
+- **Trivially dismissible** — close button, Escape, and dismissal remembered for
+  30 days, so it does not follow the reader to the next article.
+
+### Where it is, and what it does not disturb
+
+`ArticleLayout` only, so the 6 blog posts, 11 guides and 2 insights — the pages
+where someone actually reads. Absent from service, solutions and market pages,
+which already have the rail and the card triggers.
+
+It stands down while the `#inquiry` band is on screen, the same rule the rail
+follows, and it will not fire while the cookie banner is up — a first-time
+visitor is never asked two things at the same moment.
+
+**It renders nothing on the server.** No prompt markup and no `scroll-` field
+ids appear in the HTML, so although it repeats the page's own `inquiryTitle` and
+`inquiryLead`, it cannot affect indexed content or the near-duplicate scores.
+
+### Tested
+
+22 assertions: the trigger in both its negative cases and its positive one, the
+desktop and mobile geometry, dismissal persistence across a navigation, Escape,
+the band stand-down, absence on a service page, and — with four form instances
+now possible on one page — no duplicate ids, exactly one `#inquiry` and exactly
+one `#inquiry-heading`. The sitewide sweep at 320/768/1280/1440 stays clean, and
+the drift check still shows only `/technology/myob` and `/thank-you`.
+
 ## 2026-09-04d (MYOB noindexed; registration recorded in identity.md)
 
 Two owner decisions actioned.
