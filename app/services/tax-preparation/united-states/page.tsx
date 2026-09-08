@@ -12,6 +12,7 @@ import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/tax-preparation/united-states';
@@ -206,6 +207,11 @@ export default function TaxPrepUSPage() {
       <ServiceDepth serviceSlug="tax-preparation" regionSlug="united-states" />
 
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
+      <FurtherReading
+        topics={['Tax']}
+        exclude="/services/tax-preparation/united-states"
+        background="input"
+      />
       <InquirySection region="united-states" service="Tax Preparation" source="/services/tax-preparation/united-states" />
 
       <CTABanner title="Where Is Tax Season Putting Pressure on Your Team?" description="Tell us which preparation tasks are building up and whether the real bottleneck is documents, preparation or review." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

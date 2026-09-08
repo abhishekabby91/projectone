@@ -12,6 +12,7 @@ import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/audit-support/united-states';
@@ -129,6 +130,11 @@ export default function AuditSupportUSPage() {
       <ServiceDepth serviceSlug="audit-support" regionSlug="united-states" />
 
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
+      <FurtherReading
+        topics={['Audit']}
+        exclude="/services/audit-support/united-states"
+        background="input"
+      />
       <InquirySection region="united-states" service="Audit Support" source="/services/audit-support/united-states" />
 
       <CTABanner title="What Is Holding Up the Audit?" description="Tell us whether the pressure is coming from schedules, documentation, PBC follow-up or preparation capacity." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

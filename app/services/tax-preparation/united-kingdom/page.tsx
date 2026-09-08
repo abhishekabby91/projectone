@@ -12,6 +12,7 @@ import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/tax-preparation/united-kingdom';
@@ -65,6 +66,11 @@ export default function TaxPrepUKPage() {
     <ServiceDepth serviceSlug="tax-preparation" regionSlug="united-kingdom" />
 
     <FAQSection subtitle="Questions" items={faqs} columns={2} />
+    <FurtherReading
+      topics={['Tax']}
+      exclude="/services/tax-preparation/united-kingdom"
+      background="input"
+    />
     <InquirySection region="united-kingdom" service="Tax Preparation" source="/services/tax-preparation/united-kingdom" />
 
     <CTABanner title="Where Is the UK Tax Queue Getting Stuck?" description="Tell us whether the pressure is source documents, bookkeeping cleanup, preparation or review capacity." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

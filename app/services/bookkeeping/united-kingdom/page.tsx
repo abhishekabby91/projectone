@@ -12,6 +12,7 @@ import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/bookkeeping/united-kingdom';
@@ -111,6 +112,11 @@ export default function BookkeepingUKPage() {
       <ServiceDepth serviceSlug="bookkeeping" regionSlug="united-kingdom" />
 
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
+      <FurtherReading
+        topics={['Bookkeeping']}
+        exclude="/services/bookkeeping/united-kingdom"
+        background="input"
+      />
       <InquirySection region="united-kingdom" service="Bookkeeping" source="/services/bookkeeping/united-kingdom" />
 
       <CTABanner title="Where Is Your UK Bookkeeping Process Getting Stuck?" description="Tell us whether the pressure is in reconciliations, VAT records, catch-up work or month-end review." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

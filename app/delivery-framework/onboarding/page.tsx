@@ -117,7 +117,9 @@ export default function OnboardingPage() {
             <Link href="/solutions/staff-augmentation" className="text-primary font-medium hover:underline">staff augmentation</Link>{' '}
             capacity during a specific crunch. See{' '}
             <Link href="/delivery-framework/quality-assurance" className="text-primary font-medium hover:underline">how review and quality control work</Link>{' '}
-            once onboarding is complete.
+            once onboarding is complete, and{' '}
+            <Link href="/delivery-framework/communication" className="text-primary font-medium hover:underline">what the reporting rhythm looks like</Link>{' '}
+            after that.
           </p>
         </div>
       </section>

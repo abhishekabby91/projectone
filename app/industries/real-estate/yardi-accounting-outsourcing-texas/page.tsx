@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import PremiumHero from '@/components/premium-hero';
 import CTABanner from '@/components/cta-banner';
@@ -231,6 +231,27 @@ export default function YardiTexasPage() {
       </section>
 
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
+
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
+
+        <div className="max-w-5xl mx-auto">
+
+          <h2 className="text-xl font-bold text-primary mb-4">Where this sits</h2>
+
+          <div className="flex flex-wrap gap-3">
+
+            <Link href="/markets/united-states/texas" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Accounting in Texas <ArrowRight size={14} aria-hidden="true" /></Link>
+
+            <Link href="/industries/real-estate" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Real estate accounting <ArrowRight size={14} aria-hidden="true" /></Link>
+
+            <Link href="/services/bookkeeping/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Bookkeeping <ArrowRight size={14} aria-hidden="true" /></Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <InquirySection source="/industries/real-estate/yardi-accounting-outsourcing-texas" title="Talk to Us About Your Yardi Portfolio" lead="A free consultation, and a call that costs nothing. Tell us the property count and how Yardi is configured, and we will scope the recurring work around it." compact />
 

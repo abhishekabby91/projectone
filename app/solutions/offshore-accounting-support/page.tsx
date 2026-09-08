@@ -8,6 +8,8 @@ import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
 import InquiryTrigger from '@/components/inquiry-trigger';
+import FurtherReading from '@/components/further-reading';
+import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   // "offshore accounting services" and "offshore accounting" are the head terms
@@ -68,6 +70,23 @@ export default function OffshoreSolutionPage() {
         }}
         background="primary-gradient"
       />
+
+      {/* Drawn for this page — see components/solution-illustration.tsx. */}
+
+      <section className="w-full pt-8 md:pt-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto flex justify-center">
+
+          <div className="w-full max-w-[19rem] text-primary" role="img" aria-label="Offshore accounting support">
+
+            <SolutionIllustration name="offshore" />
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -212,6 +231,16 @@ export default function OffshoreSolutionPage() {
       </section>
 
       <FAQSection subtitle="Offshore Support" items={faqs} columns={2} />
+
+      <FurtherReading
+
+        topics={['Engagement models']}
+
+        exclude="/solutions/offshore-accounting-support"
+
+        background="white"
+
+      />
 
       <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="A free consultation, and a call that costs nothing. Tell us what the recurring work looks like and which systems it lives in." />
 

@@ -12,6 +12,7 @@ import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/bookkeeping/australia';
@@ -111,6 +112,11 @@ export default function BookkeepingAUPage() {
       <ServiceDepth serviceSlug="bookkeeping" regionSlug="australia" />
 
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
+      <FurtherReading
+        topics={['Bookkeeping']}
+        exclude="/services/bookkeeping/australia"
+        background="input"
+      />
       <InquirySection region="australia" service="Bookkeeping" source="/services/bookkeeping/australia" />
 
       <CTABanner title="Where Is Your Australian Bookkeeping Process Getting Stuck?" description="Tell us whether the pressure is in reconciliations, GST records, catch-up work, payroll accounting or month-end review." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

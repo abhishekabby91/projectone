@@ -8,6 +8,8 @@ import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
 import InquiryTrigger from '@/components/inquiry-trigger';
+import FurtherReading from '@/components/further-reading';
+import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Dedicated Offshore Accounting Team',
@@ -70,6 +72,23 @@ export default function DedicatedTeamsPage() {
         }}
         background="primary-gradient"
       />
+
+      {/* Drawn for this page — see components/solution-illustration.tsx. */}
+
+      <section className="w-full pt-8 md:pt-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto flex justify-center">
+
+          <div className="w-full max-w-[19rem] text-primary" role="img" aria-label="A dedicated accounting team">
+
+            <SolutionIllustration name="dedicated" />
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -218,6 +237,16 @@ export default function DedicatedTeamsPage() {
       </section>
 
       <FAQSection subtitle="Dedicated Teams" items={faqs} columns={2} />
+
+      <FurtherReading
+
+        topics={['Engagement models']}
+
+        exclude="/solutions/dedicated-accounting-teams"
+
+        background="white"
+
+      />
 
       <InquirySection source="/solutions/dedicated-accounting-teams" title="Talk to Us About a Team of Your Own" lead="A free consultation, and a call that costs nothing. Tell us what your portfolio looks like and we will scope a named team around it." />
 

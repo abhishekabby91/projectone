@@ -6,6 +6,7 @@ import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
+import SolutionIllustration from '@/components/solution-illustration';
 import {
   generateMetadata as genMeta,
   generateFAQSchema,
@@ -100,6 +101,23 @@ export default function CompanyRegistrationPage() {
           <li className="text-primary font-medium py-1.5">Register a Company in the US</li>
         </ol>
       </nav>
+
+      {/* Drawn for this page — see components/solution-illustration.tsx. */}
+
+      <section className="w-full pt-8 md:pt-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto flex justify-center">
+
+          <div className="w-full max-w-[19rem] text-primary" role="img" aria-label="US company registration">
+
+            <SolutionIllustration name="registration" />
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-3xl mx-auto space-y-5">

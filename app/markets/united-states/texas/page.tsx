@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import PremiumHero from '@/components/premium-hero';
 import CTABanner from '@/components/cta-banner';
@@ -138,6 +138,27 @@ export default function TexasPage() {
       </section>
 
       <FAQSection subtitle="Texas Questions" items={faqs} columns={2} />
+
+      {/* The Yardi page is Texas-specific and had one inbound link (2026-09-07 crawl). */}
+
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto">
+
+          <h2 className="text-xl font-bold text-primary mb-4">Related Texas work</h2>
+
+          <div className="flex flex-wrap gap-3">
+
+            <Link href="/industries/real-estate/yardi-accounting-outsourcing-texas" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Yardi accounting for Texas property firms <ArrowRight size={14} aria-hidden="true" /></Link>
+
+            <Link href="/industries/real-estate" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Real estate <ArrowRight size={14} aria-hidden="true" /></Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <InquirySection region="united-states" source="/markets/united-states/texas" title="Talk to Us About Your Texas Clients" lead="A free consultation, and a call that costs nothing. Franchise tax, no state income tax, and sales tax that still has to be tracked as it posts — tell us where the work sits." />
 

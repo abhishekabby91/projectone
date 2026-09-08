@@ -8,6 +8,8 @@ import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
 import InquiryTrigger from '@/components/inquiry-trigger';
+import FurtherReading from '@/components/further-reading';
+import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting Staff Augmentation',
@@ -46,6 +48,23 @@ export default function StaffAugmentationPage() {
         ctaSecondary={{ text: 'View Accounting Services', href: '/services' }}
         background="primary-gradient"
       />
+
+      {/* Drawn for this page — see components/solution-illustration.tsx. */}
+
+      <section className="w-full pt-8 md:pt-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto flex justify-center">
+
+          <div className="w-full max-w-[19rem] text-primary" role="img" aria-label="Accounting staff augmentation">
+
+            <SolutionIllustration name="augmentation" />
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -180,6 +199,16 @@ export default function StaffAugmentationPage() {
       <FAQSection subtitle="Staff Augmentation Questions" items={faqs} columns={2} />
 
       <section className="w-full py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><h2 className="text-xl font-bold text-primary mb-4">Related Accounstone solutions</h2><div className="flex flex-wrap gap-3"><Link href="/solutions/offshore-accounting-support" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Offshore Accounting Support <ArrowRight size={14} /></Link><Link href="/solutions/dedicated-accounting-teams" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Dedicated Accounting Teams <ArrowRight size={14} /></Link><Link href="/resources/guides/choosing-an-engagement-model" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white border border-primary text-sm font-medium">Compare All 4 Models <ArrowRight size={14} /></Link><Link href="/services/bookkeeping/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Bookkeeping <ArrowRight size={14} /></Link><Link href="/services/tax-preparation/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Tax Preparation <ArrowRight size={14} /></Link></div></div></section>
+
+      <FurtherReading
+
+        topics={['Engagement models', 'CPA firms']}
+
+        exclude="/solutions/staff-augmentation"
+
+        background="white"
+
+      />
 
       <InquirySection source="/solutions/staff-augmentation" title="Talk to Us About the Capacity You Are Missing" lead="A free consultation, and a call that costs nothing. Tell us how many hands you are short and for how long, and we will scope around your review structure." />
 

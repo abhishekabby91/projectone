@@ -11,6 +11,7 @@ import RegionalContext from '@/components/regional-context';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/accounts-receivable/united-states';
@@ -130,6 +131,16 @@ export default function AccountsReceivableUSPage() {
         </div>
         <div className="flex flex-wrap justify-center gap-3"><Link href="/markets/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">U.S. Market Overview</Link><Link href="/services/accounts-payable/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Accounts Payable</Link><Link href="/resources/guides/outsourced-accounts-receivable-guide" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">AR Guide</Link><Link href="/industries/ecommerce" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">E-Commerce</Link></div>
       </div></section>
+
+      <FurtherReading
+
+        topics={['Accounts Receivable']}
+
+        exclude="/services/accounts-receivable/united-states"
+
+        background="input"
+
+      />
 
       <InquirySection region="united-states" service="Accounts Receivable" source="/services/accounts-receivable/united-states" />
 

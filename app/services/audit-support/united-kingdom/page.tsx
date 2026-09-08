@@ -10,6 +10,7 @@ import RegionalContext from '@/components/regional-context';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
+import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/services/audit-support/united-kingdom';
@@ -88,6 +89,16 @@ export default function AuditSupportUKPage() {
         <Link href="/services/audit-support/australia" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-input border border-border text-sm text-primary font-medium hover:bg-border transition-colors">Australia</Link>
       </div>
       <div className="flex flex-wrap justify-center gap-3"><Link href="/markets/united-kingdom" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">UK Market Overview</Link><Link href="/services/accounting/united-kingdom" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">UK Accounting</Link><Link href="/services/bookkeeping/united-kingdom" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">UK Bookkeeping</Link><Link href="/compliance" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">Compliance &amp; Controls</Link></div></div></section>
+
+    <FurtherReading
+
+      topics={['Audit']}
+
+      exclude="/services/audit-support/united-kingdom"
+
+      background="input"
+
+    />
 
     <InquirySection region="united-kingdom" service="Audit Support" source="/services/audit-support/united-kingdom" />
 

@@ -6,7 +6,7 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import { generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
-import { type RegistrationState, registrationBoundaries } from '@/lib/company-registration';
+import { type RegistrationState, registrationBoundaries, registrationStates } from '@/lib/company-registration';
 
 /**
  * One rendering for every state in the registration cluster.
@@ -139,6 +139,14 @@ export default function RegistrationStatePage({ state }: { state: RegistrationSt
             <Link href="/services/bookkeeping/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Bookkeeping <ArrowRight size={14} aria-hidden="true" /></Link>
             <Link href="/services/tax-preparation/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Tax preparation <ArrowRight size={14} aria-hidden="true" /></Link>
             <Link href="/company-registration" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white border border-primary text-sm font-medium">Compare states <ArrowRight size={14} aria-hidden="true" /></Link>
+          </div>
+
+          <h2 className="text-xl font-bold text-primary mt-10 mb-4">Looking at a different state</h2>
+          <div className="flex flex-wrap gap-3">
+            {registrationStates.filter((s) => s.slug !== state.slug).map((s) => (
+              <Link key={s.slug} href={`/company-registration/${s.slug}`} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">Registering in {s.name} <ArrowRight size={14} aria-hidden="true" /></Link>
+            ))}
+            <Link href="/markets/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium">US market overview <ArrowRight size={14} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>

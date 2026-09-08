@@ -7,6 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
+import FurtherReading from '@/components/further-reading';
+import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Back-Office Support for Accountants and Firms',
@@ -65,6 +67,23 @@ export default function BackOfficeSupportPage() {
         }}
         background="primary-gradient"
       />
+
+      {/* Drawn for this page — see components/solution-illustration.tsx. */}
+
+      <section className="w-full pt-8 md:pt-12 px-6 md:px-8 bg-white">
+
+        <div className="max-w-5xl mx-auto flex justify-center">
+
+          <div className="w-full max-w-[19rem] text-primary" role="img" aria-label="Back-office support">
+
+            <SolutionIllustration name="back-office" />
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -192,6 +211,16 @@ export default function BackOfficeSupportPage() {
       </section>
 
       <FAQSection subtitle="Back Office Support" items={faqs} columns={2} />
+
+      <FurtherReading
+
+        topics={['Engagement models']}
+
+        exclude="/solutions/back-office-support"
+
+        background="white"
+
+      />
 
       <InquirySection source="/solutions/back-office-support" title="Talk to Us About Handing Over a Whole Function" lead="A free consultation, and a call that costs nothing. Tell us which recurring function you want to stop running in-house and we will scope the handover." />
 
