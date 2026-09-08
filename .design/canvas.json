@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1020, "title": "A — Drawn (leading)" },
+    { "file": "DirectionB.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 1020, "title": "B — Ledger" },
+    { "file": "DirectionC.dc.html", "x": 3120, "y": 0, "w": 1440, "h": 1020, "title": "C — Warm modern" }
+  ],
+  "annotations": [
+    { "id": "brief", "x": 0, "y": -210, "w": 460, "text": "Three directions for the Accounstone refresh.\n\nAll three keep the real tokens: navy #1e3a5f, gold #c9a876, burnt orange #b84408, paper #faf8f3, Georgia display face.\n\nAll three drop the stock-photo hero carousel — that is the single biggest thing dragging the current site down. Pick a direction and I will build it into the live site." },
+    { "id": "note-a", "x": 0, "y": 1060, "w": 440, "text": "A — DRAWN\n\nLeans all the way into the hand-drawn line illustrations, which are already the site's best and most distinctive asset. Paper ground, gold hairlines, a lot of air. Editorial and calm.\n\nTradeoff: quietest of the three. If you want the site to feel louder or more 'startup', this is not it." },
+    { "id": "note-b", "x": 1560, "y": 1060, "w": 440, "text": "B — LEDGER\n\nThe page is built like an accounting document: a ruled 44px baseline everything sits on, tabular figures, hairline rules, the boundary stated as a table. Most distinctive of the three — nobody else in this category looks like this.\n\nTradeoff: the strictest. It demands discipline on every future page, and the ruled ground needs care on mobile." },
+    { "id": "note-c", "x": 3120, "y": 1060, "w": 440, "text": "C — WARM MODERN\n\nClosest to the current site and the lowest-risk change: one deep navy panel with real depth instead of a stock photo, soft cards, gold as a proper accent.\n\nTradeoff: the most conventional. It will read as 'a good modern site' rather than as specifically yours.\n\nThe hero panel here contains an ILLUSTRATIVE activity card — real numbers would need to come from you, or it comes out." }
+  ],
+  "launch": { "view": "canvas" }
+}

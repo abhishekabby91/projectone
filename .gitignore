@@ -21,3 +21,9 @@ node_modules
 
 # Local environment overrides (.env.example is the documented template)
 .env
+
+# Design canvas working files.
+# The .dc.html artboards and canvas.json are kept — re-seeding a canvas needs
+# them. The seeded output is ~2.5MB of packaged editor code regenerated from
+# them on every change, so it stays out of the repo.
+.design/accounstone-refresh.html
