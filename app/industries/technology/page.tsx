@@ -48,7 +48,6 @@ export default function TechnologyIndustryPage() {
         name: 'Technology & SaaS',
         description:
           'Outsourced accounting built around how software and subscription businesses actually get measured — recurring revenue, deferred revenue, and burn rate, not just a standard P&L.',
-        icon: '💻',
       }}
       overview="Technology and SaaS companies get evaluated on metrics that a standard chart of accounts doesn't naturally produce: MRR, ARR, net revenue retention, and burn rate against runway. Subscription revenue also needs to be recognized under ASC 606 across the life of a contract, not booked all at once. We build accounting operations around these realities from the start, so your financials are usable for board reporting and fundraising, not just tax compliance."
       benefits={[

@@ -27,7 +27,6 @@ export default function RealEstateIndustryPage() {
       industry={{
         name: 'Real Estate',
         description: 'Property-level bookkeeping, reconciliations, AP/AR, owner reporting and multi-entity accounting support for real estate and property management workflows.',
-        icon: '🏠',
       }}
       overview="Real estate accounting is usually more structured than ordinary business bookkeeping because the records often need to be understood at both the property and entity level. Depending on the portfolio, that can mean separate bank accounts, owner statements, tenant-related activity, AP/AR, CAM reconciliations, property management software and a month-end close that rolls property detail into broader reporting. The right workflow depends on how the portfolio is organized, so the first step is understanding the existing property and entity structure."
       benefits={[

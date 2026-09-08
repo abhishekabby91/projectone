@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
-import HeroCarousel from '@/components/hero-carousel';
+import SiteHero from '@/components/site-hero';
+import TrustIcon from '@/components/trust-icon';
 import SectionGrid from '@/components/section-grid';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
@@ -37,43 +38,25 @@ const homePageFAQs = [
 const faqSchema = generateFAQSchema(homePageFAQs);
 
 export default function HomePage() {
-  const carouselSlides = [
-    {
-      id: 'budget-planning',
-      image: '/carousel-budget-planning.jpg',
-      alt: 'Budget summary, charts, and calculator on a desk',
-      title: 'Accounting Support That Fits Your Workflow',
-      subtitle: 'Experienced professionals working as an extension of your team',
-    },
-    {
-      id: 'worldwide',
-      image: '/carousel-worldwide.jpg',
-      alt: 'Globe representing worldwide accounting support',
-      title: 'Reliable Support Across Three Markets',
-      subtitle: 'US, UK, and Australia support from one delivery team',
-    },
-    {
-      id: 'tax-returns',
-      image: '/carousel-tax-returns.jpg',
-      alt: 'Organized tax return documents prepared for professional review',
-      title: 'Built for Accounting Practices',
-      subtitle: 'Bookkeeping, tax preparation, payroll, and audit support',
-    },
-  ];
 
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section data-section="hero">
-        <HeroCarousel slides={carouselSlides} autoPlayInterval={5000} pageHeading="Outsourced Accounting, Bookkeeping, Tax and Payroll for CPA Firms and Accounting Practices" />
-      </section>
+      <SiteHero
+        eyebrow="Outsourced accounting · US · UK · Australia"
+        title={<>Accounting support that fits your workflow</>}
+        lead="We take the preparation layer — bookkeeping, close, payroll and return preparation — inside your own software and to your review points, so your licensed people spend their hours on review and judgement."
+        note="A free 30-minute call, and no obligation. The person who replies is the person who would scope the work."
+        primaryCta={{ text: 'Book a 30-minute call', href: '/contact' }}
+        secondaryCta={{ text: 'See how we work', href: '/delivery-framework/onboarding' }}
+      />
 
       <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
           {trustBadges.map((badge, i) => (
-            <div key={i} className="flex items-center gap-2 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
-              <span className="text-base" aria-hidden="true">{badge.icon}</span>
+            <div key={i} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
+              <TrustIcon name={badge.icon} />
               <span className="font-medium text-sm text-foreground">{badge.name}</span>
             </div>
           ))}

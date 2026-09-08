@@ -34,7 +34,6 @@ export default function CPAFirmsPage() {
       industry={{
         name: 'CPA Firms',
         description: 'Practical support for CPA firms that need more capacity without giving up control of review, client relationships or professional judgment.',
-        icon: '📊',
       }}
       overview="The pressure on a CPA firm is rarely just a lack of people. More often, experienced staff are pulled into work that someone else could prepare, while the review queue keeps moving closer to the deadline. A file may be technically complete and still take too long to review because supporting schedules are inconsistent, questions are buried or the preparer did not follow the firm's preferred process. Accounstone supports defined parts of that work so your team can spend more of its time where professional judgment matters."
       benefits={[

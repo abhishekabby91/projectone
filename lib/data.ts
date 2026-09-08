@@ -107,11 +107,15 @@ export const testimonials = [
 ];
 
 // Trust statements that describe practices rather than unverified credentials.
+// `icon` names a lucide component, resolved in app/page.tsx. It was an emoji
+// glyph until 2026-09-09 — the last three on the site, missed by the sitewide
+// emoji removal because they lived in data rather than in markup. Emoji render
+// differently on every platform and cannot take the brand colour.
 export const trustBadges = [
-  { name: 'NDA-Backed Engagements', icon: '🔒' },
-  { name: 'Security-First Data Handling', icon: '✓' },
-  { name: 'Documented Workflows & Review', icon: '▣' },
-];
+  { name: 'NDA-Backed Engagements', icon: 'lock' },
+  { name: 'Security-First Data Handling', icon: 'shield' },
+  { name: 'Documented Workflows & Review', icon: 'checks' },
+] as const;
 
 export const companyInfo = {
   name: 'Accounstone',

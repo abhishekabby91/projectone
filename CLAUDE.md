@@ -589,6 +589,47 @@ The drawings are for the part a flag cannot carry.
 If you add to any of the three files, read the accent rule above before drawing
 anything.
 
+## The homepage hero
+
+`components/site-hero.tsx`, which replaced the stock-photo carousel on
+2026-09-09. Three reasons the carousel went, all visible in a screenshot:
+
+- the photography was generic stock — pens, a calculator, a spreadsheet — and
+  said nothing a competitor's could not;
+- the white headline sat on a mid-tone photograph, at a contrast ratio no fixed
+  type colour survives across three rotating images;
+- and it belonged to a different visual system than everything below it, which
+  is navy, gold and hand-drawn line work. It was the one part of the page that
+  looked bought rather than made.
+
+What replaced it is assembled from what the site already owns: the navy
+gradient, the gold hairline, the `ledger-lines-dark` motif already in
+`globals.css`, and the drawing language of `service-illustration.tsx`. **No new
+photography, nothing to license, nothing to art-direct later** — which is also
+why it will not drift back out of alignment with the rest of the site.
+
+Two things to preserve:
+
+- **The `h1` is the visible headline.** The carousel kept a separate `sr-only`
+  h1 because its visible titles rotated. There is one headline now, so it is
+  the h1, and there is still exactly one per page.
+- **The drawing is `aria-hidden` and spends the accent once** — on the flagged
+  exception, the thing that needs a human decision. That is the rule the whole
+  illustration system runs on; read the note atop `service-illustration.tsx`
+  before changing a stroke.
+
+`components/hero-carousel.tsx`, `components/hero.tsx` and the three
+`public/carousel-*.jpg` files were deleted with it — nothing imported them
+afterwards.
+
+**The last three emoji went at the same time.** `trustBadges` in `lib/data.ts`
+held `🔒 ✓ ▣`, and the six industry pages each passed an emoji `icon` into
+`IndustryPageTemplate` — which never rendered it. The first three are now
+lucide icons through `components/trust-icon.tsx`; the industry prop is gone
+entirely, interface included. Both had survived the sitewide emoji removal by
+living in data rather than in markup, which is where to look if another one
+turns up.
+
 ## The process flow on the homepage
 
 `components/process-flow.tsx` - four numbered phases on a connected rail,

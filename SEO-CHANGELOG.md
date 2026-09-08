@@ -1,5 +1,85 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09b (the homepage hero, and the last three emoji)
+
+The owner asked for the site to look better and delegated the choice, so this
+is a decision rather than a menu. Three directions were drafted on a design
+canvas first; what shipped is **A + C** — the drawn illustration language from
+A on the deep navy panel from C.
+
+**B was the most distinctive and was not built.** It laid the page out like an
+accounting document, on a ruled 44px baseline everything sits on. It is the
+best-looking of the three and the wrong choice for this site: a strict baseline
+across 90 routes is fragile at mobile widths and a permanent tax on every page
+written afterwards. Worth recording so nobody rediscovers it as a good idea
+without the cost attached.
+
+### The carousel was the problem
+
+`components/hero-carousel.tsx` rotated three stock photographs — pens, a
+calculator, a spreadsheet. Three things were wrong with it, and all three are
+visible in a screenshot rather than arguable:
+
+- The photography was generic. It said nothing a competitor's could not, on a
+  site whose entire content strategy is operational specificity.
+- The white headline sat on mid-tone photographs. No single fixed type colour
+  holds a reliable contrast ratio across three rotating images, so the headline
+  was legible on one and marginal on the others.
+- It belonged to a different visual system than everything below it. The rest
+  of the page is navy, gold and hand-drawn line work; the hero was the one part
+  that looked bought rather than made.
+
+`AI-WEBSITE-GUIDE.md` says not to change the hero imagery without the owner
+asking. They asked twice and then delegated the call, which is why this shipped
+rather than staying a proposal.
+
+### What replaced it
+
+`components/site-hero.tsx` — a deep navy panel built entirely from what the
+site already owns: the `--color-primary-light` to `--color-primary-dark`
+gradient, the gold hairline rule, the `ledger-lines-dark` motif already in
+`globals.css`, and a drawing in the language of `service-illustration.tsx`
+(200x150 viewBox, 1.6 stroke, gold ground rule, the accent spent exactly once —
+on the flagged exception, the only thing in the picture that needs a person).
+
+**No new photography, nothing to license, nothing to art-direct later**, which
+is also why it cannot drift back out of alignment with the rest of the site.
+
+Two structural notes. The `h1` is now the visible headline: the carousel kept a
+separate `sr-only` h1 because its titles rotated, and there is one headline
+now, so there is still exactly one h1 per page. And the drawing is
+`aria-hidden`, because it sits beside copy that already says the same thing.
+
+Deleted with it: `components/hero-carousel.tsx`, `components/hero.tsx` and
+`public/carousel-{budget-planning,tax-returns,worldwide}.jpg`. Nothing imported
+any of them afterwards.
+
+### The last three emoji, and a dead prop
+
+`trustBadges` in `lib/data.ts` still held `🔒 ✓ ▣` — the last emoji rendering
+anywhere on the site, missed by the sitewide removal because they lived in data
+rather than in markup. They are lucide icons now, through
+`components/trust-icon.tsx`, and they take the accent colour like every other
+icon here.
+
+The six industry pages each passed an emoji `icon` into `IndustryPageTemplate`,
+which **never rendered it** — dead data behind a dead interface field, left
+behind by the same cleanup. The prop is gone, interface included.
+
+Both had survived by living in data rather than in markup, which is where to
+look if another one turns up.
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- Playwright sweep, all 90 routes at 320 / 768 / 1440px — no horizontal
+  overflow, no sub-24px tap target
+- exactly one `h1` on the homepage at both 390 and 1440px, and it is the
+  visible headline
+- three fewer files in `public/`, two fewer components, and no reference left
+  to either
+
 ## 2026-09-09 (thin pages deepened; region illustrations; interaction claims corrected)
 
 Three asks: more content on pages too thin to rank or to answer a question,

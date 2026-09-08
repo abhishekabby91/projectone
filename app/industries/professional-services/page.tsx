@@ -48,7 +48,6 @@ export default function ProfessionalServicesIndustryPage() {
         name: 'Professional Services',
         description:
           'Trust/client fund accounting, time and billing (WIP) tracking, and partner distribution support for law firms, consulting firms, and other professional services businesses.',
-        icon: '⚖️',
       }}
       overview="Professional services firms — law firms in particular — carry accounting obligations that don't apply to most small businesses: client trust funds must be kept strictly segregated from operating funds, and revenue is often earned as work-in-progress well before it's invoiced. On top of that, partner-based ownership structures need draws and distributions tracked accurately. We build bookkeeping around these realities, so trust compliance, WIP visibility, and partner accounting are handled correctly, not bolted on after the fact."
       benefits={[

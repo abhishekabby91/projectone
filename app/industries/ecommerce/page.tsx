@@ -48,7 +48,6 @@ export default function EcommerceIndustryPage() {
         name: 'E-Commerce',
         description:
           'Multi-channel sales reconciliation, inventory and COGS accounting, and sales tax nexus tracking for online retailers selling across marketplaces and their own storefront.',
-        icon: '🛒',
       }}
       overview="E-commerce accounting breaks down when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile each channel individually, track true net revenue after fees and returns, and keep inventory-based COGS accurate so your margins reflect reality."
       benefits={[

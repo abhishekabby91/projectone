@@ -11,7 +11,9 @@ import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, bas
 
 interface IndustryPageProps {
   path: string;
-  industry: { name: string; description: string; icon: string };
+  // No `icon` here on purpose. It existed, held an emoji, and was never
+  // rendered — dead weight left behind by the sitewide emoji removal.
+  industry: { name: string; description: string };
   overview: string;
   benefits: string[];
   faqs: Array<{ question: string; answer: string }>;
