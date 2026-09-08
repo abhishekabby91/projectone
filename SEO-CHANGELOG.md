@@ -1,5 +1,87 @@
 # Accounstone SEO Changelog
 
+## 2026-09-08c (footer services block compacted; ROUTES.md re-verified)
+
+### The footer's three service columns are now one block
+
+The owner asked for the footer service links to be shortened or hidden. Hiding
+them is not available: the navbar renders dropdown contents only when open and
+emits **zero** links into server HTML, so the footer is the site's entire crawl
+skeleton. Dropping two of the three regions would have orphaned 14 of the 21
+primary commercial pages — the exact failure repaired on 2026-08-27.
+
+So the presentation changed and the link set did not. Three columns of seven
+(`United States Services`, `United Kingdom Services`, `Australia Services`)
+became one `Services` block of seven rows, each row a service name with
+`US · UK · AU` beside it:
+
+| viewport | footer height before | after | change |
+|---|---|---|---|
+| 320px | 3171px | 2625px | **-546px** |
+| 390px | 2307px | 2064px | -243px |
+| 768px | 1669px | 1537px | -132px |
+| 1024px | 1392px | 1197px | -195px |
+| 1440px | 1315px | 1149px | -166px |
+
+Footer link count is **69 before and 69 after**, and the 21 Service x Region
+hrefs are all still in the server HTML — checked by counting them in `curl`
+output, not by reading the JSX.
+
+Two details in the new block:
+
+- **The service name is plain text, not a link.** The generic `/services/{slug}`
+  URLs are 301s; linking one from the footer would put a redirect on all 90
+  pages.
+- **Each region link carries an `aria-label`** with the full service and region
+  name, because "US" alone is not an accessible name.
+
+`short` (`US`/`UK`/`AU`) was added to `regions` in `lib/data.ts` so the
+abbreviation has one source rather than being spelled out in the footer.
+
+The freed width let the remaining nav grid drop from six column groups to four,
+which also fixed a real clipping bug: at 1024px, six of the eight footer
+headings were being clipped by their own columns. Zero are now. The
+`US Company Registration` heading was shortened to `Company Registration` for
+the same reason. Re-checked at 320 / 390 / 768 / 1024 / 1440px: no horizontal
+overflow, no footer link under 24px tall, no clipped heading.
+
+### docs/ROUTES.md had drifted, and it is the route inventory
+
+It still claimed **"89 routes total ... 89 page files, 89 sitemap URLs, exact
+parity"**, verified 2026-08-21, and its copy of the drift check said "both
+should print nothing". Both are now wrong: it is 90 on disk against 88 in the
+sitemap, and the second command is *supposed* to print two lines. A route
+registry that reports parity when there is a deliberate two-route gap will make
+the next person think they have found a bug.
+
+Corrected, and while in there:
+
+- `/resources` and `/thank-you` were missing from the tables entirely
+- the three US state pages and the Yardi Texas page were listed only as a
+  "spokes" cell on their parent's row, so an extraction of the file did not
+  enumerate them; they now have their own rows
+- the `/company-registration` rows had four cells in a three-column table
+- `/technology/myob` and `/thank-you` now carry their `noindex` status, why they
+  are absent from the sitemap and `llms.txt`, and why they must **not** go in
+  `robots.txt`
+- the redirect count was wrong: it said one, there are eight
+- the drift-check section gained the `llms.txt` parity check and the
+  `generate-sitemap-dates.mjs` step
+- the Markets section gained the note that "offshore" belongs to
+  `/solutions/offshore-accounting-support` and not to a market page's title
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- sitemap 88 URLs; drift 90 on disk / 88 listed, the two expected noindex
+  differences
+- `llms.txt` 88 URLs, every one resolving to a route on disk
+- contextual internal-link graph unchanged: 6 routes at <=1 inbound, 1 at zero
+  (`/thank-you`), median 6
+- footer measured at five widths, before and after, with the link count held
+  constant
+
 ## 2026-09-08b (sitemap dates generated; llms.txt rewritten)
 
 Both files had drifted quietly, in the way files nobody renders tend to.

@@ -149,6 +149,7 @@ export const companyInfo = {
 export const regions = [
   {
     slug: 'united-states',
+    short: 'US',
     name: 'United States',
     adjective: 'U.S.',
     flag: '🇺🇸',
@@ -158,6 +159,7 @@ export const regions = [
   },
   {
     slug: 'united-kingdom',
+    short: 'UK',
     name: 'United Kingdom',
     adjective: 'UK',
     flag: '🇬🇧',
@@ -167,6 +169,7 @@ export const regions = [
   },
   {
     slug: 'australia',
+    short: 'AU',
     name: 'Australia',
     adjective: 'Australian',
     flag: '🇦🇺',

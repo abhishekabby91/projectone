@@ -84,6 +84,20 @@ footer is the site's actual crawl skeleton. If you add a section, add it to the
 footer or it will not be discovered by link. This is how `/technology` and `/blog`
 ended up with zero inbound links before 2026-08-27.
 
+**So when the footer is asked to be shorter, shorten the presentation, never the
+link set.** On 2026-09-08 the three regional service columns (7 links each) were
+replaced by one block of seven rows, each carrying `US · UK · AU` — the same 21
+hrefs in the server HTML, in a third of the height. The footer went from 3171px
+to 2625px at 320px wide and 1315px to 1149px at 1440px, with the link count
+identical at 69 before and after. Dropping two of the three regions would have
+looked like the same fix and would have orphaned 14 of the site's 21 primary
+commercial pages.
+
+Two details in that block worth keeping: the **service name is plain text, not a
+link**, because the generic `/services/{slug}` URLs are 301s and must never be
+linked from anywhere; and each region link carries an `aria-label` with the full
+name, because "US" on its own is not an accessible name.
+
 ## Open items — decisions, not engineering
 
 Do **not** resolve these unilaterally. Each needs the owner.

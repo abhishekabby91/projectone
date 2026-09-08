@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   // The footer is the site's real crawl skeleton. The navbar renders its
   // dropdown links only when open, so they never appear in server HTML - every
-  // crawlable internal link below the hero comes from here. Two consequences
+  // crawlable internal link below the hero comes from here. Three consequences
   // are deliberate:
   //   1. The 21 Service x Region pages are listed directly. They are the
   //      primary commercial pages and were previously reachable only through
@@ -18,16 +18,13 @@ export default function Footer() {
   //   2. Section hubs (/services, /markets, /technology, /resources, /blog)
   //      are listed explicitly. /technology and /blog had zero inbound links
   //      in rendered HTML before this and were effectively orphaned.
+  //   3. The 21 links are laid out as one service per row with three region
+  //      links on it, rather than three columns of seven. Same 21 hrefs in the
+  //      server HTML - none may be dropped - in a third of the vertical space.
+  //      Do NOT "shorten" this block by removing regions: that orphans the
+  //      primary commercial pages, which is the exact failure fixed on
+  //      2026-08-27. Shorten the presentation, never the link set.
   const footerColumns: Array<{ blocks: Array<{ title: string; links: Array<{ name: string; href: string }> }> }> = [
-    ...regions.map((region) => ({
-      blocks: [{
-        title: `${region.name} Services`,
-        links: serviceRegions.map((service) => ({
-          name: service.navLabel,
-          href: `/services/${service.slug}/${region.slug}`,
-        })),
-      }],
-    })),
     {
       blocks: [
         { title: 'Solutions', links: [
@@ -42,7 +39,7 @@ export default function Footer() {
         ]},
         // The navbar emits no links into server HTML, so a cluster that is not
         // in the footer is not discoverable by link. See CLAUDE.md.
-        { title: 'US Company Registration', links: [
+        { title: 'Company Registration', links: [
           { name: 'Register a US company', href: '/company-registration' },
           ...registrationStates.map((st) => ({ name: st.name, href: `/company-registration/${st.slug}` })),
         ]},
@@ -72,7 +69,6 @@ export default function Footer() {
         { title: 'Company', links: [
           { name: 'About', href: '/about' },
           { name: 'Contact', href: '/contact' },
-          { name: 'All Services', href: '/services' },
           { name: 'Compliance', href: '/compliance' },
           { name: 'Onboarding', href: '/delivery-framework/onboarding' },
           { name: 'Communication', href: '/delivery-framework/communication' },
@@ -134,7 +130,40 @@ export default function Footer() {
         {/* Single column below 375px: the 2-column grid needs ~155px per
             column to fit "TECHNOLOGY", which only holds from 375px up.
             Measured, not guessed — 360px clipped it, 375px does not. */}
-        <nav aria-label="Footer" className="grid grid-cols-1 min-[375px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-4 sm:gap-x-6 gap-y-8 min-[375px]:gap-y-10">
+        {/* Services: one row per service, three region links on it. This is
+            the whole 7 x 3 matrix - 21 crawlable hrefs - in seven lines
+            instead of three seven-item columns. The service name is plain
+            text, not a link: the generic /services/{slug} URLs are 301s and
+            must never be linked from anywhere. Each region link carries an
+            aria-label with the full name, because "US" alone is not an
+            accessible name. */}
+        <div className="mb-10 min-[375px]:mb-12">
+          <h3 className="mb-4 text-[11px] sm:text-xs font-bold uppercase tracking-normal sm:tracking-[0.14em] text-white">Services</h3>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-1">
+            {serviceRegions.map((service) => (
+              <li key={service.slug} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-white/10 py-1">
+                <span className="text-sm leading-5 text-white/80">{service.navLabel}</span>
+                <span className="flex items-center gap-x-2 shrink-0">
+                  {regions.map((region) => (
+                    <Link
+                      key={region.slug}
+                      href={`/services/${service.slug}/${region.slug}`}
+                      aria-label={`${service.navLabel} in the ${region.name}`}
+                      className="inline-block py-1 text-xs font-semibold tracking-wide text-white/55 hover:text-white transition-colors"
+                    >
+                      {region.short}
+                    </Link>
+                  ))}
+                </span>
+              </li>
+            ))}
+            <li className="flex items-baseline py-1 border-b border-transparent">
+              <Link href="/services" className="inline-block py-1 text-sm leading-5 text-white/65 hover:text-white transition-colors">All Services</Link>
+            </li>
+          </ul>
+        </div>
+
+        <nav aria-label="Footer" className="grid grid-cols-1 min-[375px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8 min-[375px]:gap-y-10">
           {footerColumns.map((column, ci) => (
             <div key={ci} className="min-w-0 space-y-8">
               {column.blocks.map((section) => (

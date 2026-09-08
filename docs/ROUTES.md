@@ -1,6 +1,6 @@
 # Route Registry
 
-Source of truth for every indexable route on accounstone.com. Generated from a full repository audit on 2026-08-21, restructured 2026-08-27 (see the Growth System Audit delivered that date). Update this file in the same pass as any change that adds, removes, or re-scopes a route — don't let it drift from `app/**/page.tsx` the way `app/sitemap.ts` did once before (see `AI-WEBSITE-GUIDE.md`, "Known build gotchas").
+Source of truth for every indexable route on accounstone.com. Generated from a full repository audit on 2026-08-21, restructured 2026-08-27 (see the Growth System Audit delivered that date), re-verified against `app/**/page.tsx` on 2026-09-08. Update this file in the same pass as any change that adds, removes, or re-scopes a route — don't let it drift from `app/**/page.tsx` the way `app/sitemap.ts` did once before (see `AI-WEBSITE-GUIDE.md`, "Known build gotchas").
 
 Type key: **B** commercial SEO page · **C** blog/guide/informational · **E** proof · **Hub** index/directory page · **Corp** non-cluster company page (intentionally outside the SEO cluster architecture).
 
@@ -59,8 +59,17 @@ future; at that point the change is an entry in `serviceRegions` plus the matchi
 |---|---|---|---|
 | `/markets` | Hub | — | Published |
 | `/markets/united-states` | B | `/texas`, `/california`, `/florida` | Published |
+| `/markets/united-states/texas` | B | — | Published |
+| `/markets/united-states/california` | B | — | Published |
+| `/markets/united-states/florida` | B | — | Published |
 | `/markets/united-kingdom` | B | — | Published |
 | `/markets/australia` | B | — | Published |
+
+**"Offshore" belongs to `/solutions/offshore-accounting-support`, not to a market
+page.** The UK page was titled "Offshore Accounting for UK Practices" until
+2026-09-04 and took ~140 of its 144 impressions from the offshore cluster,
+competing with the solutions page while neither earned a click. Do not put the
+word back in a market page's title, h1 or description.
 
 Canada is not a route. See `knowledge/company/identity.md` — open business decision, not an engineering gap.
 
@@ -74,6 +83,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/healthcare` | B | — | Published |
 | `/industries/ecommerce` | B | — | Published |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Published |
+| `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
 | `/industries/professional-services` | B | — | Published |
 
 ## Technology
@@ -87,7 +97,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/technology/netsuite` | B | Published |
 | `/technology/drake-tax` | B | Published |
 | `/technology/cch` | B | Published |
-| `/technology/myob` | B | Published |
+| `/technology/myob` | B | Published — **`noindex` since 2026-09-04**, and therefore absent from `app/sitemap.ts` and `public/llms.txt`. Live and linked; not in `robots.txt` (a blocked URL cannot be crawled, so the noindex would never be read). See CLAUDE.md. |
 
 ## Resources — Blog
 
@@ -123,6 +133,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 
 | URL | Type | Status |
 |---|---|---|
+| `/resources` | Hub | Published — the top-level resources index above blog, guides and insights |
 | `/resources/insights` | Hub | Published |
 | `/resources/insights/asc-606-revenue-recognition-saas` | C | Published |
 | `/resources/insights/sales-tax-nexus-ecommerce-guide` | C | Published |
@@ -144,16 +155,32 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|
 | `/` | Corp | Published |
 | `/about` | Corp | Published |
-| `/contact` | Corp | Published |
-| `/company-registration` | Hub | US Company Registration | Published (added 2026-09-04) |
-| `/company-registration/{delaware,wyoming,nevada}` | B | US Company Registration | Published (added 2026-09-04) |
+| `/contact` | Corp | Published — rebuilt 2026-09-03 as a trust page, not a form page |
+| `/company-registration` | Hub | Published (added 2026-09-04) — US company registration cluster |
+| `/company-registration/delaware` | B | Published (added 2026-09-04) |
+| `/company-registration/wyoming` | B | Published (added 2026-09-04) |
+| `/company-registration/nevada` | B | Published (added 2026-09-04) |
 | `/privacy` | Corp | Published |
 | `/cookie-policy` | Corp | Published (added 2026-09-04 with the consent system) |
 | `/terms` | Corp | Published |
+| `/thank-you` | Corp | Published — **`noindex`**, and therefore absent from `app/sitemap.ts` and `public/llms.txt`. It exists so Google Ads and Meta have a destination URL to count a conversion on; it must stay crawlable, so do not add it to `robots.txt`. |
+
+`app/services/cfo-support/route.ts` returns **410 Gone**. It is a `route.ts`, not a
+`page.tsx`, so it appears in no count on this page. CFO support is not offered; if it ever
+is, delete that route first.
 
 ---
 
-**89 routes total**, plus one 301 redirect (`/blog/outsourced-accounting-services` → the accounting-services guide). Verified 2026-08-21: 89 page files, 89 sitemap URLs, exact parity — no dead sitemap entries and no unlisted pages.
+**90 routes on disk, 88 in the sitemap** (verified 2026-09-08). The two differences are
+`/thank-you` and `/technology/myob`, both `noindex` — a noindex URL in a sitemap is a
+contradiction Search Console reports, so their absence is correct and expected. Anything
+else in either direction is drift.
+
+There are **eight** 301 redirects, all single-hop: the seven retired generic
+`/services/{slug}` URLs, plus `/blog/outsourced-accounting-services` → the
+accounting-services guide. The per-URL evidence for each service target is in the comment
+above the redirects in `next.config.mjs`. Six point at United States;
+`/services/audit-support` points at United Kingdom.
 
 Before adding a route: check this file, `SEARCH-INTENTS.md`, and `CONTENT-REGISTRY.md` for an existing owner of the intent. Before removing one: search all internal references and add a redirect — see `AI-WEBSITE-GUIDE.md`.
 
@@ -169,4 +196,24 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  -> would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted -> not crawled
 ```
 
-Both should print nothing. This is the check that catches the failure mode recorded in `AI-WEBSITE-GUIDE.md` ("Known build gotchas") — it found four unlisted guides on 2026-08-21.
+**The first must print nothing. The second prints exactly two lines** —
+`/technology/myob` and `/thank-you`, the two `noindex` routes above. Anything else in
+either direction is drift.
+
+This is the check that catches the failure mode recorded in `AI-WEBSITE-GUIDE.md`
+("Known build gotchas") — it found four unlisted guides on 2026-08-21, confirmed
+84 ↔ 84 parity after the 2026-08-27 restructure, and reads 90 ↔ 88 as of 2026-09-08.
+
+Two related checks belong in the same pass:
+
+```bash
+# public/llms.txt holds the same invariant as the sitemap: every indexable
+# route, neither noindex one.
+grep -oE 'https://www\.accounstone\.com[^ )]*' public/llms.txt \
+  | sed 's|https://www.accounstone.com||; s|/$||; s|^$|/|' | sort -u > /tmp/llms.txt
+comm -23 /tmp/llms.txt /tmp/disk.txt   # linked but no page -> must be empty
+comm -13 /tmp/llms.txt /tmp/disk.txt   # page but unlinked  -> the 2 noindex only
+
+# sitemap lastmod is generated from git, never hand-written
+node scripts/generate-sitemap-dates.mjs
+```
