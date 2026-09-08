@@ -1,5 +1,120 @@
 # Accounstone SEO Changelog
 
+## 2026-09-08 (internal linking measured and repaired; five more illustrations)
+
+Three things were asked for: update per Search Console, increase internal
+linking, and add non-AI-generated artwork. The first is still blocked; the
+other two are done and measured.
+
+### Search Console is still 403 — nothing was read
+
+Re-checked at the start of this pass. `list_properties` still returns
+`sc-domain:accounstone.com` with `permission_level: "siteUnverifiedUser"`, and
+`searchAnalytics/query` still returns HTTP 403 "User does not have sufficient
+permission". No GSC-derived change was made in this pass, and every GSC figure
+quoted anywhere in the repo remains frozen at the 2026-09-04 reading. The fix
+is the owner's: re-verify the DNS TXT record for the domain property, or
+re-grant that Google account at least Full user in Search Console.
+
+### The internal link graph was the thing that could be measured
+
+A Playwright crawl of all 90 routes, counting only **contextual** links —
+anything inside `header` or `footer` is excluded, because site-wide chrome is
+constant and tells you nothing about which pages the site actually recommends —
+produced the inbound count for every route. Self-links and duplicate hrefs from
+the same source page are counted once.
+
+The result explained something the GSC read had already hinted at.
+`/blog/tax-preparation-outsourcing` holds 435 impressions at position 27.8, the
+most of any indexable page, and had **one** contextual inbound link. Five of
+the six blog posts had one. So did `/technology` (a hub), all three
+`/company-registration/{state}` pages, `/delivery-framework/communication` and
+the Yardi Texas page.
+
+`components/further-reading.tsx` is the fix, and it is topic-driven rather than
+hand-maintained: it matches against the topics already declared per resource in
+`lib/resources.ts`, so a new guide with the right topic appears without anyone
+editing 25 files. Articles are listed first, deliberately — they are the thin
+ones and the ones that need the equity. It caps at three, which keeps it a
+reading suggestion rather than a link farm, and it is rendered on the 21
+Service x Region pages (keyed to that page's service) and the four solutions
+pages (keyed to `'Engagement models'`).
+
+Four smaller repairs:
+
+- the 7 platform pages gained an **All Platforms** chip in their existing
+  Related row, pointing at `/technology`
+- the three registration state pages gained a **Looking at a different state**
+  row linking the other two states and `/markets/united-states`
+- `/delivery-framework/onboarding` now links to `communication` in the sentence
+  that already links to `quality-assurance`, closing the three-page loop
+- `/markets/united-states/texas` and
+  `/industries/real-estate/yardi-accounting-outsourcing-texas` now link to each
+  other
+
+Measured with the same crawl before and after:
+
+| | before | after |
+|---|---|---|
+| routes with <=1 contextual inbound link | 17 | **6** |
+| routes with 0 | 1 | 1 |
+| median inbound | 5 | 6 |
+| total contextual edges | 777 | **850** |
+
+All six remaining are correct. `/thank-you` is the zero and is `noindex`;
+`/about`, `/privacy`, `/terms`, `/cookie-policy` and `/resources/case-studies`
+are reached from the navbar or footer by design. Per page, the six blog posts
+went 1-2 -> 4-5, the two insights 2 -> 5, and the guides that were thinnest
+(`questions-to-ask-before-outsourcing-bookkeeping` 4 -> 10,
+`staff-augmentation-tax-season-guide` 5 -> 10,
+`client-accounting-services-cas-guide` 3 -> 7) gained the most.
+
+### Five more illustrations, drawn to the existing system
+
+`components/solution-illustration.tsx`, covering the four engagement models and
+the registration hub, which had no artwork at all. Nothing is AI-generated or
+stock: same constraints as `components/service-illustration.tsx` — one 200x150
+viewBox, 1.6 stroke weight, navy line work through `currentColor`, the brand
+gold as a single ground rule along the base, and the burnt-orange accent spent
+**exactly once**, always on the thing that needs a human decision:
+
+- **staff augmentation** — extra hands joining an existing queue; the accent is
+  the review gate, which stays the client's
+- **offshore** — the working-day boundary, with prepared work crossing it into
+  a reviewer's tray; the accent is the point of arrival, where judgement starts
+- **dedicated teams** — a standing group attached to one portfolio; the accent
+  is the single named point of contact
+- **back office** — many recurring inputs collapsing into one lane; the accent
+  is the signature line, left blank
+- **registration** — the certificate and the ledger that opens behind it; the
+  accent is the fork, because the entity-and-state choice stays with the
+  client's own attorney and CPA (`scope-boundaries.md` §2)
+
+Inline SVG, so no extra request and nothing to lazy-load, and `aria-hidden`
+because each sits beside copy that already says the same thing.
+
+### A dev-server trap worth recording
+
+Running `pnpm next build` and then `pnpm dev` against the same `.next`
+directory makes the dev server hand back the **prerendered** HTML from the
+build. Edits compile, the file on disk is right, and the served page is stale —
+which silently invalidated one crawl in this pass before it was caught by
+diffing `curl` output against the source. This is the mirror image of the
+already-recorded "do not build against a running dev server". The rule is
+simply: `rm -rf .next` whenever switching between `build` and `dev`.
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- sitemap drift — 90 on disk, 88 listed, the two differences `/technology/myob`
+  and `/thank-you`, both `noindex`, both expected
+- near-duplicate, 6-gram Jaccard across the 49 commercial routes — worst pair
+  18.3% (`company-registration/nevada` vs `wyoming`, up 0.3pt from 18.0% and
+  still far under the 25% ceiling); zero pairs above 25%
+- Playwright sweep at 320 / 768 / 1280 / 1440px — no horizontal overflow and no
+  sub-24px tap target on any of the 90 routes
+
 ## 2026-09-07b (Search Console access has broken; documentation refreshed)
 
 ### GSC is returning 403, and no data can be read

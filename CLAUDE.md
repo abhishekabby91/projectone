@@ -27,7 +27,7 @@ background, superseded on specifics by the files above.
 
 ---
 
-## Current state (verified 2026-09-07)
+## Current state (verified 2026-09-08)
 
 - **90 routes** on disk, all returning 200; 88 in the sitemap (`/thank-you` and
   `/technology/myob` are both `noindex` and deliberately excluded — see the
@@ -66,8 +66,12 @@ background, superseded on specifics by the files above.
   SERP. If you add a page, hold the same budget — `docs/` has no separate copy
   of this rule, so it lives here.
 - Heading order is sequential on every page: no `h1 -> h3`, no `h2 -> h4`.
-- Worst near-duplicate pair across the 21 commercial pages is 16.6%; none above 25%.
-- No horizontal overflow at any width 320–1440px.
+- Worst near-duplicate pair across the 49 commercial routes is 18.3%; none above
+  25%. (The 21 Service x Region pages alone peak at 16.6%; the higher figure is
+  the `company-registration` trio, which shares a subject by construction.)
+- No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
+- **Six routes have one or fewer contextual inbound links, and all six are
+  correct** — see "Internal links are measured, not assumed" below.
 
 ### The navbar is not a crawl path
 
@@ -116,7 +120,10 @@ Do **not** resolve these unilaterally. Each needs the owner.
    account's access was revoked in Search Console. **This is the owner's to
    fix** — re-verify the property, or re-grant that account at least Full user.
    Until then every GSC-driven decision in this file is frozen at its
-   2026-09-04 reading.
+   2026-09-04 reading. **Re-checked 2026-09-08: unchanged, still 403.** Do not
+   spend a pass re-diagnosing it; check `list_properties` once, and if the
+   permission level is still `siteUnverifiedUser`, say so and work on something
+   that can be measured from inside the repo.
 3. **Redirect targets are settled. The generic-tier question is not
    (2026-09-03).** The owner authorised deciding the retired-URL targets, and
    country-segmented GSC decided them: six of the seven stay on United States,
@@ -264,6 +271,48 @@ deliberately 1-per-row — their titles run 60–90 characters and wrap badly at
 
 ---
 
+## Internal links are measured, not assumed
+
+The site's own crawl is the only reliable read on this, and it has to exclude
+the header and footer: site-wide chrome is constant and says nothing about
+which pages the site actually recommends. Counting only **contextual** links —
+inside `main`, excluding `header` and `footer`, one edge per source page —
+found on 2026-09-08 that the highest-impression page on the site,
+`/blog/tax-preparation-outsourcing` (435 impressions, position 27.8), had
+**one** inbound link. Five of the six blog posts did. That is the mechanical
+reason a page with real demand cannot climb, and it is invisible to every
+metric that looks at a page in isolation.
+
+`components/further-reading.tsx` is the repair, and it is **topic-driven so it
+does not need maintaining**: it matches the `topics` already declared per
+resource in `lib/resources.ts`, so a new guide carrying the right topic appears
+on the relevant pages without anyone editing 25 files. Three rules if you touch
+it:
+
+- **Articles come first, then guides, then insights.** Deliberate — the
+  articles are the thin ones, and they are what the ordering is for.
+- **It caps at three.** Past that it stops being a reading suggestion and
+  starts being a link farm.
+- **It is not a substitute for a contextual link in a sentence.** Those still
+  carry more; this is the floor, not the ceiling.
+
+It renders on the 21 Service x Region pages (keyed to that page's service) and
+the four solutions pages (keyed to `'Engagement models'`).
+
+After that pass and four smaller repairs — the 7 platform pages linking back to
+`/technology`, the three registration state pages cross-linking, onboarding
+linking to communication, and Texas linking to the Yardi Texas page — routes
+with one or fewer contextual inbound links went from **17 to 6**, and total
+contextual edges from 777 to 850.
+
+**The six that remain are all correct, so do not "fix" them.** `/thank-you` is
+the one at zero and is `noindex`. `/about`, `/privacy`, `/terms`,
+`/cookie-policy` and `/resources/case-studies` are reached from the navbar or
+footer by design. Re-run the crawl after adding pages; a new page arriving with
+one inbound link is the failure this section exists to catch.
+
+---
+
 ## Service illustrations
 
 `components/service-illustration.tsx` holds seven original line drawings, one
@@ -297,6 +346,18 @@ grew by roughly 120 bytes each.
 Text leads on mobile and the art sits right on desktop, which falls out of DOM
 order. An earlier version forced the art above the heading on mobile with
 `order-first`; do not reintroduce it.
+
+**There is a second set, and it follows the same rules.**
+`components/solution-illustration.tsx` (2026-09-08) covers the four engagement
+models and the registration hub, which had no artwork at all: staff
+augmentation, offshore, dedicated teams, back office, registration. Same
+200x150 viewBox, same 1.6 stroke, same gold ground rule, and the accent spent
+exactly once on the thing that needs a human decision — the review gate that
+stays the client's, the point where judgement starts, the single named contact,
+the signature line left blank, and on the registration drawing the **fork**,
+because the entity-and-state choice belongs to the client's own attorney and
+CPA (`scope-boundaries.md` §2). Nothing in either file is stock or generated.
+If you add a sixth, read the accent rule above before drawing anything.
 
 ## The process flow on the homepage
 
