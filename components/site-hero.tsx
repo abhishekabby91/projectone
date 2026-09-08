@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 /**
  * The homepage hero.
  *
- * Replaces the stock-photo carousel (2026-09-09). Three reasons it went, all
+ * Replaces the stock-photo carousel (2026-09-08). Three reasons it went, all
  * of them visible in a screenshot: the photography was generic stock — pens, a
  * calculator, a spreadsheet — and said nothing a competitor's could not; the
  * white headline sat on a mid-tone photograph at a contrast ratio no fixed

@@ -3,7 +3,7 @@ import { Lock, ShieldCheck, ListChecks } from 'lucide-react';
 /**
  * The three homepage trust chips.
  *
- * These were emoji glyphs (🔒 ✓ ▣) in `lib/data.ts` until 2026-09-09 — the last
+ * These were emoji glyphs (🔒 ✓ ▣) in `lib/data.ts` until 2026-09-08 — the last
  * three on the site, missed by the sitewide emoji removal because they lived in
  * data rather than in markup. An emoji renders as a different picture on every
  * platform, ignores the brand colour, and is announced by screen readers unless

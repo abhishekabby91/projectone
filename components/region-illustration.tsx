@@ -1,7 +1,7 @@
 /**
  * Line illustrations for the three markets.
  *
- * The third set, drawn 2026-09-09 to the same system as
+ * The third set, drawn 2026-09-08 to the same system as
  * `components/service-illustration.tsx` and `components/solution-illustration.tsx`
  * — read the note at the top of the first before adding to any of them. Same
  * 200x150 viewBox, same 1.6 stroke, navy line work through `currentColor`, the

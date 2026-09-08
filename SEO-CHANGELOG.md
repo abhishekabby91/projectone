@@ -1,6 +1,6 @@
 # Accounstone SEO Changelog
 
-## 2026-09-09b (the homepage hero, and the last three emoji)
+## 2026-09-08f (the homepage hero, and the last three emoji)
 
 The owner asked for the site to look better and delegated the choice, so this
 is a decision rather than a menu. Three directions were drafted on a design
@@ -80,7 +80,7 @@ look if another one turns up.
 - three fewer files in `public/`, two fewer components, and no reference left
   to either
 
-## 2026-09-09 (thin pages deepened; region illustrations; interaction claims corrected)
+## 2026-09-08e (thin pages deepened; region illustrations; interaction claims corrected)
 
 Three asks: more content on pages too thin to rank or to answer a question,
 more accuracy about how people actually interact with the firm, and region

@@ -69,7 +69,7 @@ background, superseded on specifics by the files above.
 - Worst near-duplicate pair across the 49 commercial routes is 18.3%; none above
   25%. (The higher figure is the `company-registration` trio, which shares a
   subject by construction. Adding depth to the platform and industry pages on
-  2026-09-09 pushed their scores **down** — `quickbooks` vs `xero` went 17.4% to
+  2026-09-08 pushed their scores **down** — `quickbooks` vs `xero` went 17.4% to
   9.3% — because per-page substance dilutes shared boilerplate.)
 - **Median route is 1118 words; 12 routes sit under 650 and 8 of those are hubs.**
   See "Thin pages: measure before writing" below for the list and why the hubs
@@ -337,7 +337,7 @@ as the capabilities, not infer them.
 
 Run this against a dev server rather than guessing which pages are short. Word
 count alone is enough to find them, and the answer is rarely the one you expect
-— on 2026-09-09 the four thinnest indexable pages on the site were the trust
+— on 2026-09-08 the four thinnest indexable pages on the site were the trust
 pages a buyer reads before handing over their books: `/compliance` 259 words,
 `/delivery-framework/communication` 274, `/delivery-framework/quality-assurance`
 282, `/data-security` 330.
@@ -373,7 +373,7 @@ The site tells readers, on
 `/resources/guides/how-to-choose-accounting-outsourcing-partner`, that
 *"'full compliance' or 'guaranteed' language"* is a red flag and that *"a
 provider that guarantees outcomes rather than describing a process is
-overpromising"*. On 2026-09-09 it was failing that test in eight places of its
+overpromising"*. On 2026-09-08 it was failing that test in eight places of its
 own — a **"24-Hour Response Time"** and a **"24-hour response commitment"** on
 two pages in two wordings, *"ensure you're always informed"* in a hero, a
 **"Compliance You Can Trust"** banner on the page that elsewhere says "here is
@@ -571,7 +571,7 @@ the signature line left blank, and on the registration drawing the **fork**,
 because the entity-and-state choice belongs to the client's own attorney and
 CPA (`scope-boundaries.md` §2). Nothing in either file is stock or generated.
 
-**And a third: `components/region-illustration.tsx`** (2026-09-09), one drawing
+**And a third: `components/region-illustration.tsx`** (2026-09-08), one drawing
 per market, on `/markets/{united-states,united-kingdom,australia}` and — for the
 US drawing — the three state pages. Each shows the recurring compliance mechanic
 that market runs on, from `knowledge/markets/{us,uk,au}.md`: US, nexus measured
@@ -592,7 +592,7 @@ anything.
 ## The homepage hero
 
 `components/site-hero.tsx`, which replaced the stock-photo carousel on
-2026-09-09. Three reasons the carousel went, all visible in a screenshot:
+2026-09-08. Three reasons the carousel went, all visible in a screenshot:
 
 - the photography was generic stock — pens, a calculator, a spreadsheet — and
   said nothing a competitor's could not;

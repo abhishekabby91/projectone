@@ -108,7 +108,7 @@ export const testimonials = [
 
 // Trust statements that describe practices rather than unverified credentials.
 // `icon` names a lucide component, resolved in app/page.tsx. It was an emoji
-// glyph until 2026-09-09 — the last three on the site, missed by the sitewide
+// glyph until 2026-09-08 — the last three on the site, missed by the sitewide
 // emoji removal because they lived in data rather than in markup. Emoji render
 // differently on every platform and cannot take the brand colour.
 export const trustBadges = [
