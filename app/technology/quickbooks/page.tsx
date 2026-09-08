@@ -7,6 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
+import PlatformDepthSection from '@/components/platform-depth';
+import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
@@ -16,14 +18,7 @@ export const metadata: Metadata = generateMetadata({
 });
 
 export default function QuickBooksPage() {
-  const faqs = [
-    { question: 'Can you set up QuickBooks Online for our business?', answer: 'Yes. Setup support can include organization settings, chart of accounts, users, permissions, opening balances and the workflow needed for recurring bookkeeping.' },
-    { question: 'Do you provide ongoing QuickBooks support?', answer: 'Yes. Ongoing support can include bookkeeping, reconciliations, AP/AR workflows, reporting, cleanup and month-end close activities.' },
-    { question: 'Can you help when the QuickBooks file has become difficult to review?', answer: 'Yes. We can review unreconciled accounts, inconsistent categorization, duplicate or missing transactions and other cleanup items before establishing a repeatable workflow.' },
-    { question: 'What if the software is fine but the books are still behind?', answer: 'That is usually a workflow problem rather than a software problem. We can look at the recurring tasks, ownership, reconciliation cadence and month-end handoffs around QuickBooks instead of assuming another feature will solve the issue.' },
-    { question: 'Can you help migrate from QuickBooks Desktop?', answer: 'Yes. Migration support can include preparation, data transfer coordination, setup checks and post-migration reconciliation. The exact approach depends on the Desktop file and destination setup.' },
-    { question: 'Do you provide QuickBooks certification or official vendor support?', answer: 'We provide accounting workflow support around QuickBooks Online. We are not QuickBooks or Intuit, and any certification claim should be verified independently before being treated as a credential.' },
-  ];
+  const faqs = platformDepth.quickbooks.faqs;
 
   const faqSchema = generateFAQSchema(faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -55,6 +50,9 @@ export default function QuickBooksPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-10"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Common starting points</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary">The software may not be the problem</h2></></Reveal><div className="grid grid-cols-1 md:grid-cols-3 gap-6"><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/quickbooks" title="Talk to Us About Cleanup" label="Ask us about cleanup"><h3 className="font-bold text-primary text-xl mb-3">Cleanup</h3><p className="text-muted leading-7">Reconciliations are behind, categories have drifted or old transactions need review. The first step is understanding what can be corrected and what needs a decision.</p></InquiryTrigger><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/quickbooks" title="Talk to Us About Capacity" label="Ask us about capacity"><h3 className="font-bold text-primary text-xl mb-3">Capacity</h3><p className="text-muted leading-7">Your team knows the process, but recurring bookkeeping keeps competing with higher-value work. Additional preparation capacity can protect the close without changing the system.</p></InquiryTrigger><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/quickbooks" title="Talk to Us About Close" label="Ask us about close"><h3 className="font-bold text-primary text-xl mb-3">Close</h3><p className="text-muted leading-7">Month-end becomes a catch-up exercise because reconciliations, schedules and unresolved questions arrive together. A clearer recurring routine can change that.</p></InquiryTrigger></div></div></section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect QuickBooks to the accounting work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/bookkeeping/united-states" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">U.S. Bookkeeping</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/resources/guides/quickbooks-vs-xero-comparison" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">QuickBooks vs Xero</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
+
+
+      <PlatformDepthSection platform={platformDepth.quickbooks} />
 
       <FAQSection subtitle="QuickBooks FAQs" items={faqs} columns={2} />
       <InquirySection source="/technology/quickbooks" title="Talk to Us About Your QuickBooks Workload" lead="A free consultation, and a call that costs nothing. Tell us what the QuickBooks file looks like now — reconciliations behind, categories drifted, close slipping — and we will scope from there." compact />

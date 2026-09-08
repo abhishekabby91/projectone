@@ -7,6 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
+import PlatformDepthSection from '@/components/platform-depth';
+import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
@@ -16,13 +18,7 @@ export const metadata: Metadata = generateMetadata({
 });
 
 export default function NetSuitePage() {
-  const faqs = [
-    { question: 'Can you help migrate us from QuickBooks or Xero to NetSuite?', answer: 'We support the accounting side of a move to NetSuite, including chart-of-accounts redesign and historical data reconciliation planning. The technical migration and implementation itself is typically handled by your NetSuite implementation partner.' },
-    { question: 'Do you support multi-subsidiary and multi-currency consolidation?', answer: 'Yes. Multi-subsidiary, multi-currency and intercompany consolidation accounting is a core part of what we support inside an existing NetSuite setup.' },
-    { question: 'Can you handle ASC 606 revenue recognition within NetSuite?', answer: 'Yes. We support the accounting and reconciliation work behind revenue recognition schedules configured for multi-period and subscription-based revenue.' },
-    { question: 'Do you implement or configure NetSuite itself?', answer: 'We support the recurring accounting work inside an existing NetSuite environment: reconciliations, close, intercompany eliminations and reporting. Initial implementation, module configuration and custom development are typically handled by a dedicated NetSuite implementation partner.' },
-    { question: 'Do you provide NetSuite certification or official vendor support?', answer: 'We provide accounting workflow support around NetSuite. We are not NetSuite or Oracle, and any certification claim should be verified independently before being treated as a credential.' },
-  ];
+  const faqs = platformDepth.netsuite.faqs;
 
   const faqSchema = generateFAQSchema(faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -54,6 +50,9 @@ export default function NetSuitePage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-10"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Common starting points</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Where multi-entity close usually gets stuck</h2></></Reveal><div className="grid grid-cols-1 md:grid-cols-3 gap-6"><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/netsuite" title="Talk to Us About Intercompany" label="Ask us about intercompany"><h3 className="font-bold text-primary text-xl mb-3">Intercompany</h3><p className="text-muted leading-7">Intercompany balances drift out of sync between entities, and eliminations become a manual chase at every close instead of a routine step.</p></InquiryTrigger><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/netsuite" title="Talk to Us About Consolidation" label="Ask us about consolidation"><h3 className="font-bold text-primary text-xl mb-3">Consolidation</h3><p className="text-muted leading-7">Currency revaluation, subsidiary-level reconciliations and consolidated reporting all need to be reviewed before group-level numbers can be trusted.</p></InquiryTrigger><InquiryTrigger className="p-7 rounded-2xl bg-input border border-border/70 transition-colors hover:border-primary/40" source="/technology/netsuite" title="Talk to Us About Capacity" label="Ask us about capacity"><h3 className="font-bold text-primary text-xl mb-3">Capacity</h3><p className="text-muted leading-7">Your team knows NetSuite, but recurring reconciliations across every entity keep competing with higher-value review work each close cycle.</p></InquiryTrigger></div></div></section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect NetSuite to the accounting work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/accounting/united-states" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">Accounting Services</Link><Link href="/solutions/dedicated-accounting-teams" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">Dedicated Accounting Teams</Link><Link href="/services/audit-support/united-states" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">Audit Support</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
+
+
+      <PlatformDepthSection platform={platformDepth.netsuite} />
 
       <FAQSection subtitle="NetSuite FAQs" items={faqs} columns={2} />
 

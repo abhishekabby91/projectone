@@ -7,6 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateBreadcrumbSchema, generateFAQSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
+import PlatformDepthSection from '@/components/platform-depth';
+import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
@@ -37,28 +39,7 @@ export const metadata: Metadata = generateMetadata({
   path: '/technology/myob',
 });
 
-const faqs = [
-  {
-    question: 'Do you support Single Touch Payroll (STP) reporting for Australian businesses?',
-    answer: "Yes, we work within MYOB's STP-compliant payroll reporting for Australian businesses, keeping reporting aligned with ATO requirements.",
-  },
-  {
-    question: 'Can you help prepare BAS (Business Activity Statements)?',
-    answer: 'We can prepare the underlying bookkeeping and GST reconciliation MYOB needs for BAS preparation, working alongside your accountant or tax agent for lodgment.',
-  },
-  {
-    question: 'Do you support both MYOB Essentials and MYOB AccountRight?',
-    answer: 'Yes, we work with both editions, adapting to whichever tier the client is currently using.',
-  },
-  {
-    question: 'Do you work with New Zealand businesses too, or only Australian?',
-    answer: 'We support both Australian and New Zealand MYOB users, adjusting for the relevant GST and reporting requirements in each country.',
-  },
-  {
-    question: 'Do you implement or configure MYOB itself?',
-    answer: 'We support the recurring accounting work inside an existing MYOB setup: bookkeeping, reconciliations, GST/BAS support and reporting. Initial setup and licensing are handled by your firm, the client, or an MYOB partner.',
-  },
-];
+const faqs = platformDepth.myob.faqs;
 
 const faqSchema = generateFAQSchema(faqs);
 
@@ -128,6 +109,9 @@ export default function MYOBPage() {
           </Reveal>
         </div>
       </section>
+
+
+      <PlatformDepthSection platform={platformDepth.myob} />
 
       <FAQSection subtitle="MYOB Questions" items={faqs} columns={2} />
 

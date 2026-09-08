@@ -7,6 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import { generateMetadata, generateBreadcrumbSchema, generateFAQSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
+import PlatformDepthSection from '@/components/platform-depth';
+import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
@@ -15,28 +17,7 @@ export const metadata: Metadata = generateMetadata({
   path: '/technology/drake-tax',
 });
 
-const faqs = [
-  {
-    question: 'Do you support multi-state tax returns in Drake Tax?',
-    answer: 'Yes, we work within Drake Tax to prepare multi-state return documentation, coordinating with your CPA or Enrolled Agent for final review and filing.',
-  },
-  {
-    question: 'Can you help during tax season capacity crunches?',
-    answer: 'Yes, this is one of the most common ways firms use our Drake Tax support — absorbing data entry and preparation workload during the January-April peak.',
-  },
-  {
-    question: 'Can you import prior-year data or migrate from another tax software?',
-    answer: 'Yes, we support data organization and migration planning when firms move to Drake Tax from another platform.',
-  },
-  {
-    question: 'Do you handle e-filing submission directly?',
-    answer: 'We prepare returns and documentation to be e-filing ready within Drake Tax; final review, sign-off, and submission is handled by your licensed CPA or Enrolled Agent.',
-  },
-  {
-    question: 'Do you provide tax planning or advisory services?',
-    answer: 'No. We support return preparation, workpapers and quarterly estimated tax calculations inside Drake Tax. Tax planning, strategy and advisory work stay with your licensed CPA or Enrolled Agent.',
-  },
-];
+const faqs = platformDepth['drake-tax'].faqs;
 
 const faqSchema = generateFAQSchema(faqs);
 
@@ -75,6 +56,9 @@ export default function DrakeTaxPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Workflows</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Work Around Drake Tax</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{workflows.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/technology/drake-tax"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect Drake Tax to the practice work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/tax-preparation/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">U.S. Tax Preparation</Link><Link href="/solutions/staff-augmentation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Staff Augmentation</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
+
+
+      <PlatformDepthSection platform={platformDepth['drake-tax']} />
 
       <FAQSection subtitle="Drake Tax Questions" items={faqs} columns={2} />
 
