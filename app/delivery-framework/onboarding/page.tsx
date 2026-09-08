@@ -62,7 +62,7 @@ export default function OnboardingPage() {
               {
                 step: '2',
                 title: 'System Access Setup',
-                desc: 'Establish secure access to QuickBooks, Xero, banking platforms, and any other systems. We follow your security protocols.',
+                desc: 'Access to your accounting platform at the level you set, under your credentials and your security policy. Never payment authority, and read-only where a bank feed is involved.',
               },
               {
                 step: '3',
@@ -72,7 +72,7 @@ export default function OnboardingPage() {
               {
                 step: '4',
                 title: 'Team Kickoff',
-                desc: 'Meet your dedicated team, establish communication protocols, set expectations, and define escalation procedures.',
+                desc: 'Meet the people who will do the work. Named contacts on both sides, the reporting rhythm, response times and the escalation path — written down rather than assumed.',
               },
               {
                 step: '5',
@@ -108,7 +108,61 @@ export default function OnboardingPage() {
 
       <FAQSection subtitle="Onboarding" items={onboardingFAQs} columns={2} />
 
-      <section className="w-full py-7 md:py-10 px-6 md:px-8 bg-input">
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <div className="space-y-3">
+            <span className="text-sm font-semibold tracking-wide uppercase text-accent">What we need from you</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
+              Onboarding Costs You Time Before It Saves You Any
+            </h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              Worth saying plainly, because a provider who implies otherwise is setting you up to be disappointed in
+              week three. The transfer of a routine requires someone who knows the routine to explain it, and that
+              person is on your side. Here is the honest shape of that.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                h: 'A few hours, front-loaded, from someone senior',
+                p: 'Not a full-time commitment, but not nothing: discovery, walking us through the close, answering the questions the records cannot answer, and reviewing the first cycles more closely than you eventually will. It concentrates in the first few weeks and falls away. If nobody on your side has that time, onboarding is the wrong thing to start this month — and we would rather say so than start badly.',
+              },
+              {
+                h: 'Access at the level you set, and not beyond',
+                p: 'Your accounting platform, under your credentials and your policy. Never payment authority. Read-only where a bank feed is involved. If your security review needs to constrain something further, constrain it — we would rather work around a restriction than hold access nobody reviewed.',
+              },
+              {
+                h: 'Whatever documentation already exists, however rough',
+                p: 'A close checklist in a spreadsheet, a half-finished procedure note, an email chain explaining why one account is treated oddly. None of it needs tidying first. Most firms apologise for the state of theirs; it is more useful than a clean document written from memory.',
+              },
+              {
+                h: 'The decisions only you can make',
+                p: 'How aggressive to be on cleanup, what materiality is, what happens to a transaction nobody can categorise, who signs off. We will put each of those to you rather than choosing, and the answers go into the engagement so they do not get re-litigated every month.',
+              },
+            ].map((item) => (
+              <div key={item.h} className="rounded-2xl border border-border bg-white p-5 sm:p-7">
+                <h3 className="text-lg font-bold text-primary">{item.h}</h3>
+                <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-2xl border-l-4 border-accent bg-white p-5 sm:p-7">
+            <h3 className="text-lg font-bold text-primary">And the way out, agreed at the start</h3>
+            <p className="mt-3 text-base leading-relaxed text-foreground">
+              The soft-launch phase exists so that both sides can tell early whether this works, and the point of a
+              trial is that it can fail. If it is not working, you should be able to stop without your books being
+              held hostage — which is a structural property rather than a promise: the work happens in your system,
+              so your records stay yours and revoking access ends our access. There is no separate database to ask us
+              to hand back. Ask any prospective provider what leaving looks like before you sign; the answer tells you
+              a lot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-7 md:py-10 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <p className="text-muted leading-relaxed">
             Onboarding concerns come up most for{' '}

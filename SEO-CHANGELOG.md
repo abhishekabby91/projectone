@@ -166,14 +166,52 @@ kind of claim a client will hold you to.
 - sitemap drift — 90 on disk, 88 listed, the two expected noindex differences
 - no `24-hour`, `24 hour` or `ensure you` claim left in `app/` or `components/`
 
-### Still thin, and deliberately left
+### The last three content pages (same day, second pass)
+
+The three real content pages left short were then done:
+
+| page | before | after |
+|---|---|---|
+| `/resources/insights/asc-606-revenue-recognition-saas` | 456 | **986** |
+| `/resources/insights/sales-tax-nexus-ecommerce-guide` | 461 | **945** |
+| `/delivery-framework/onboarding` | 431 | **853** |
+
+ASC 606 gained the five-step model, the four places subscription bookkeeping
+actually breaks (mid-term changes, implementation fees, hybrid pricing, credits
+and refunds), what a reviewable deferred revenue schedule contains, and an
+explicit statement that choosing the policy is the CPA's and the auditor's while
+implementing and reconciling it is ours.
+
+The nexus article gained the two things that actually catch e-commerce sellers
+and were both missing: **physical nexus did not go away** — inventory in a
+third-party fulfilment warehouse can create it, and a fulfilment network may move
+stock between states without asking — and **the marketplace facilitator
+confusion**, where "the marketplace collects the tax" is read as "I have no
+obligation", when whether those sales still count toward the threshold is a
+separate question that varies by state. It also gained what the books have to
+produce for the question to be answerable at all. No thresholds or rates are
+quoted anywhere; the existing not-tax-advice disclaimer stands.
+
+Onboarding gained what it costs the client — a few front-loaded hours from
+someone senior, and the honest note that a provider implying otherwise is setting
+you up to be disappointed in week three — and the exit ramp, which is a
+structural property rather than a promise: the work happens in your system, so
+revoking access ends access and there is no separate database to ask for back.
+
+**One more accuracy fix found there.** The onboarding steps listed establishing
+access to "QuickBooks, Xero, **banking platforms**". That contradicts the
+no-banking-control posture stated on `/data-security`, `/contact` and
+`scope-boundaries.md`. It now reads: access to your accounting platform at the
+level you set, under your credentials, never payment authority, read-only where
+a bank feed is involved.
+
+### Still thin, and correctly so
 
 `/resources/insights` (197), `/markets` (316), `/industries` (341),
 `/solutions` (369), `/blog` (412), `/resources` (507),
-`/resources/case-studies` (513), `/resources/guides` (595) are hub and index
-pages — their job is orientation and they are thin because they are lists. The
-two insights (456, 461) and `/delivery-framework/onboarding` (431) are real
-content pages and are the next candidates.
+`/resources/case-studies` (513) and `/resources/guides` (595) are hub and index
+pages — their job is orientation and they are short because they are lists. No
+content page on the site is now under 620 words.
 
 ## 2026-09-08d (the type scale was never being applied; footer restructured)
 
