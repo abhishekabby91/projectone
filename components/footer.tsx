@@ -160,7 +160,11 @@ export default function Footer() {
                     <Link
                       key={region.slug}
                       href={`/services/${service.slug}/${region.slug}`}
-                      aria-label={`${service.navLabel} in the ${region.name}`}
+                      // `adjective` and not `in the ${region.name}`: that produced
+                      // "Bookkeeping in the Australia". This matches how the rest of
+                      // the site already labels these — "U.S. Bookkeeping",
+                      // "Australian Bookkeeping".
+                      aria-label={`${region.adjective} ${service.navLabel}`}
                       className="inline-block py-1 text-xs font-semibold tracking-wide text-white/55 hover:text-white transition-colors"
                     >
                       {region.short}
