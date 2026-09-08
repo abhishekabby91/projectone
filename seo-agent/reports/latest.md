@@ -3,8 +3,8 @@
 ## Summary
 
 - Files/pages scanned: **90**
-- High-priority findings: **7**
-- Medium-priority findings: **11**
+- High-priority findings: **8**
+- Medium-priority findings: **9**
 - Low-priority findings: **10**
 - Duplicate title groups: **0**
 
@@ -19,15 +19,16 @@
 | app/resources/guides/page.tsx | 55/100 | 303 | 0 | 5 | 0 | 0 |
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/page.tsx | 65/100 | 512 | 0 | 6 | 0 | 0 |
-| app/compliance/page.tsx | 75/100 | 281 | 1 | 1 | 0 | 0 |
-| app/data-security/page.tsx | 75/100 | 324 | 1 | 1 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 176 | 1 | 1 | 0 | 0 |
+| app/page.tsx | 75/100 | 1262 | 0 | 10 | 0 | 0 |
 | app/terms/page.tsx | 75/100 | 240 | 1 | 0 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
+| app/compliance/page.tsx | 85/100 | 647 | 1 | 1 | 0 | 0 |
+| app/data-security/page.tsx | 85/100 | 868 | 1 | 1 | 0 | 0 |
 | app/privacy/page.tsx | 85/100 | 393 | 1 | 1 | 0 | 0 |
-| app/resources/insights/asc-606-revenue-recognition-saas/page.tsx | 85/100 | 387 | 1 | 1 | 0 | 0 |
-| app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx | 85/100 | 379 | 1 | 1 | 0 | 0 |
+| app/resources/insights/asc-606-revenue-recognition-saas/page.tsx | 85/100 | 929 | 1 | 1 | 0 | 0 |
+| app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx | 85/100 | 873 | 1 | 1 | 0 | 0 |
 | app/about/page.tsx | 90/100 | 1763 | 1 | 22 | 0 | 0 |
 | app/blog/accounts-payable-outsourcing/page.tsx | 90/100 | 1426 | 1 | 6 | 0 | 0 |
 | app/blog/accounts-receivable-management/page.tsx | 90/100 | 585 | 1 | 4 | 0 | 0 |
@@ -39,22 +40,22 @@
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1777 | 1 | 8 | 0 | 0 |
 | app/cookie-policy/page.tsx | 90/100 | 844 | 1 | 3 | 0 | 0 |
-| app/delivery-framework/communication/page.tsx | 90/100 | 357 | 1 | 4 | 0 | 0 |
-| app/delivery-framework/onboarding/page.tsx | 90/100 | 516 | 1 | 5 | 0 | 0 |
-| app/delivery-framework/quality-assurance/page.tsx | 90/100 | 356 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 870 | 1 | 4 | 0 | 0 |
-| app/industries/ecommerce/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
-| app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
-| app/industries/professional-services/page.tsx | 90/100 | 439 | 1 | 3 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 466 | 1 | 5 | 0 | 0 |
+| app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
+| app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
+| app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 868 | 1 | 4 | 0 | 0 |
+| app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
+| app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
+| app/industries/professional-services/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 470 | 1 | 5 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
-| app/industries/technology/page.tsx | 90/100 | 438 | 1 | 2 | 0 | 0 |
-| app/markets/australia/page.tsx | 90/100 | 1863 | 1 | 14 | 0 | 0 |
-| app/markets/united-kingdom/page.tsx | 90/100 | 1690 | 1 | 15 | 0 | 0 |
-| app/markets/united-states/california/page.tsx | 90/100 | 650 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/florida/page.tsx | 90/100 | 644 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/page.tsx | 90/100 | 1785 | 1 | 16 | 0 | 0 |
-| app/markets/united-states/texas/page.tsx | 90/100 | 688 | 1 | 8 | 0 | 0 |
+| app/industries/technology/page.tsx | 90/100 | 442 | 1 | 2 | 0 | 0 |
+| app/markets/australia/page.tsx | 90/100 | 1873 | 1 | 14 | 0 | 0 |
+| app/markets/united-kingdom/page.tsx | 90/100 | 1700 | 1 | 15 | 0 | 0 |
+| app/markets/united-states/california/page.tsx | 90/100 | 512 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/florida/page.tsx | 90/100 | 503 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/page.tsx | 90/100 | 1795 | 1 | 16 | 0 | 0 |
+| app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
 | app/resources/guides/client-accounting-services-cas-guide/page.tsx | 90/100 | 1096 | 1 | 3 | 0 | 0 |
 | app/resources/guides/how-to-choose-accounting-outsourcing-partner/page.tsx | 90/100 | 1406 | 1 | 5 | 0 | 0 |
@@ -90,18 +91,17 @@
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 1729 | 1 | 14 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
-| app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1802 | 1 | 10 | 0 | 0 |
+| app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1815 | 1 | 10 | 0 | 0 |
 | app/solutions/staff-augmentation/page.tsx | 90/100 | 1910 | 1 | 8 | 0 | 0 |
-| app/technology/cch/page.tsx | 90/100 | 528 | 1 | 7 | 0 | 0 |
-| app/technology/drake-tax/page.tsx | 90/100 | 533 | 1 | 7 | 0 | 0 |
-| app/technology/myob/page.tsx | 90/100 | 1065 | 1 | 7 | 0 | 0 |
-| app/technology/netsuite/page.tsx | 90/100 | 608 | 1 | 7 | 0 | 0 |
+| app/technology/cch/page.tsx | 90/100 | 365 | 1 | 7 | 0 | 0 |
+| app/technology/drake-tax/page.tsx | 90/100 | 367 | 1 | 7 | 0 | 0 |
+| app/technology/myob/page.tsx | 90/100 | 908 | 1 | 7 | 0 | 0 |
+| app/technology/netsuite/page.tsx | 90/100 | 431 | 1 | 7 | 0 | 0 |
 | app/technology/page.tsx | 90/100 | 720 | 1 | 3 | 0 | 0 |
-| app/technology/quickbooks/page.tsx | 90/100 | 653 | 1 | 7 | 0 | 0 |
-| app/technology/sage/page.tsx | 90/100 | 602 | 1 | 7 | 0 | 0 |
-| app/technology/xero/page.tsx | 90/100 | 612 | 1 | 7 | 0 | 0 |
+| app/technology/quickbooks/page.tsx | 90/100 | 446 | 1 | 7 | 0 | 0 |
+| app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
+| app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 596 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1280 | 1 | 8 | 0 | 0 |
 
 ## Priority queue
 
@@ -123,43 +123,41 @@
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 9. **LOW — internal-linking** — app/company-registration/wyoming/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-10. **MEDIUM — content-depth** — app/compliance/page.tsx
-   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-11. **LOW — internal-linking** — app/compliance/page.tsx
+10. **LOW — internal-linking** — app/compliance/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-12. **MEDIUM — content-depth** — app/data-security/page.tsx
-   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-13. **LOW — internal-linking** — app/data-security/page.tsx
+11. **LOW — internal-linking** — app/data-security/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-14. **MEDIUM — content-depth** — app/industries/page.tsx
+12. **MEDIUM — content-depth** — app/industries/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-15. **LOW — internal-linking** — app/industries/page.tsx
+13. **LOW — internal-linking** — app/industries/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-16. **MEDIUM — content-depth** — app/markets/page.tsx
+14. **MEDIUM — content-depth** — app/markets/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-17. **LOW — internal-linking** — app/privacy/page.tsx
-   - Add contextual links to closely related Accounstone pages where useful.
-18. **HIGH — metadata** — app/resources/case-studies/page.tsx
+15. **HIGH — metadata** — app/page.tsx
    - Add missing title, meta description or H1.
-19. **HIGH — metadata** — app/resources/guides/page.tsx
-   - Add missing title, meta description or H1.
-20. **MEDIUM — content-depth** — app/resources/guides/page.tsx
-   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-21. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+16. **LOW — internal-linking** — app/privacy/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-22. **HIGH — metadata** — app/resources/insights/page.tsx
+17. **HIGH — metadata** — app/resources/case-studies/page.tsx
    - Add missing title, meta description or H1.
-23. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+18. **HIGH — metadata** — app/resources/guides/page.tsx
+   - Add missing title, meta description or H1.
+19. **MEDIUM — content-depth** — app/resources/guides/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-24. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+20. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-25. **HIGH — metadata** — app/resources/page.tsx
+21. **HIGH — metadata** — app/resources/insights/page.tsx
    - Add missing title, meta description or H1.
-26. **MEDIUM — content-depth** — app/solutions/page.tsx
+22. **MEDIUM — content-depth** — app/resources/insights/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-27. **MEDIUM — content-depth** — app/terms/page.tsx
+23. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+24. **HIGH — metadata** — app/resources/page.tsx
+   - Add missing title, meta description or H1.
+25. **MEDIUM — content-depth** — app/solutions/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-28. **LOW — internal-linking** — app/terms/page.tsx
+26. **MEDIUM — content-depth** — app/terms/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+27. **LOW — internal-linking** — app/terms/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
 
 ## Human-content rules
