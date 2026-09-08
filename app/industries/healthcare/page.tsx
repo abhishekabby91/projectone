@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
+import { industryDepth } from '@/lib/industry-depth';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/healthcare';
@@ -64,6 +65,7 @@ export default function HealthcareIndustryPage() {
         { name: 'Audit Support', href: '/services/audit-support/united-states' },
       ]}
       faqs={faqs}
+      depth={industryDepth.healthcare}
     />
   );
 }

@@ -1,5 +1,180 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09 (thin pages deepened; region illustrations; interaction claims corrected)
+
+Three asks: more content on pages too thin to rank or to answer a question,
+more accuracy about how people actually interact with the firm, and region
+specific creativity on the region pages. All three, plus a set of accuracy
+problems found while doing the first two.
+
+### The measurement first
+
+A crawl of all 90 routes recording word count, heading structure and FAQ schema
+found **29 indexable pages under 650 words**, and the thinnest of them were not
+the ones anyone would guess. The four trust pages a buyer reads before handing
+over their books were the worst on the site: `/compliance` 259 words,
+`/delivery-framework/communication` 274, `/delivery-framework/quality-assurance`
+282, `/data-security` 330.
+
+| | before | after |
+|---|---|---|
+| indexable pages under 650 words | 29 | **12** |
+| median words per route | 998 | **1118** |
+| mean | 987 | 1088 |
+
+The 12 that remain are almost all hub and index pages, which are navigational by
+design, plus the two insights, `/delivery-framework/onboarding` and
+`/compliance` at 620. Those are named at the end of this entry rather than
+padded.
+
+### Region illustrations — a third drawn set
+
+`components/region-illustration.tsx`, to the same system as
+`service-illustration.tsx` and `solution-illustration.tsx`: 200x150 viewBox,
+1.6 stroke, navy through `currentColor`, gold ground rule, and the burnt-orange
+accent spent exactly once on the thing that needs a human decision.
+
+Each shows the recurring compliance mechanic that market actually runs on,
+taken from `knowledge/markets/{us,uk,au}.md`:
+
+- **US** — nexus is per-state and transaction-based rather than one national
+  threshold, so: state columns against a registration line, accent on the one
+  that has crossed it. Registering is the CPA's decision.
+- **UK** — the VAT quarter is the recurring cycle and MTD requires the digital
+  link to stay unbroken, so: four quarters joined by a visible chain, accent on
+  the submission gate held by the registered practitioner.
+- **AU** — GST is coded as transactions post rather than reconstructed at
+  lodgment, so: transactions coded as they land, collecting into the BAS block
+  inside the year, accent on the lodgment gate belonging to the registered agent.
+
+**No flags, no maps, no landmarks.** A flag identifies a country; it says
+nothing about what is different about doing the work there, and the market pages
+already carry a flag component for identification. The US drawing also renders
+on the three state pages, where the per-state nexus mechanic is directly the
+subject.
+
+### What was deepened
+
+| cluster | before | after | worst pair |
+|---|---|---|---|
+| US state pages (3) | 558-582 | **1128-1141** | 6.5% |
+| platform pages (7) | 468-610 | **987-1228** | 9.3%, down from 17.4% |
+| industry pages (5) | 580-623 | **962-1022** | 11.9%, down from 15.1% |
+| trust pages (4) | 259-330 | **620-824** | n/a |
+
+Three new content modules, each with a note at the top explaining what may and
+may not be written into it: `lib/us-states.ts`, `lib/platform-depth.ts`,
+`lib/industry-depth.ts`.
+
+**The state pages are written about the books, not about tax figures**, and that
+is a constraint rather than a stylistic choice. `knowledge/markets/us.md` records
+exactly one regulatory fact per state; rates, thresholds and deadlines change
+every year, so quoting one correctly today would be wrong within a year with
+nobody watching, and inventing one breaches the never-invent-statistics rule.
+Each page answers "what is different about my accounting here" in ledger terms
+and routes every computation, election and filing to the client's CPA.
+
+**The platform pages now say what actually goes wrong in each system** — bank
+rules that were right once, Undeposited Funds as a holding pen, Xero's
+"reconciled" meaning matched rather than agreed to the statement, Sage control
+accounts posted to directly, NetSuite intercompany that never quite agrees,
+CCH rollforward carrying last year's errors in as continuity, MYOB GST
+reconstructed at BAS time. None of them is a software fault; all of them are
+accounting failures the software accepts without complaint. Every page states
+what we do not do in that platform, because `scope-boundaries.md` §5 is easiest
+to breach by omission.
+
+Near-duplicate scores went **down** where content was added, which is worth
+recording because the instinct says otherwise: per-page substance dilutes shared
+boilerplate. `quickbooks` vs `xero` was the worst pair on the site at 17.4% and
+is now 9.3%.
+
+### The accuracy problems, which were the more serious finding
+
+`/resources/guides/how-to-choose-accounting-outsourcing-partner` tells readers
+that *"'full compliance' or 'guaranteed' language"* is a red flag and that *"a
+provider that guarantees outcomes rather than describing a process is
+overpromising"*. The site was failing its own test in eight places:
+
+1. `/delivery-framework/communication` promised a **"24-Hour Response Time"** and
+   said its channels **"ensure you're always informed"** — a service-level
+   guarantee and a banned absolute, in the hero of the page about how we
+   communicate.
+2. `/solutions/offshore-accounting-support` carried a **"24-hour response
+   commitment"**.
+3. The same communication page promised **"Monthly Business Reviews — Strategic
+   reviews"** (advisory drift) and Slack and Teams as channels.
+4. `/delivery-framework/quality-assurance` claimed **"All work reviewed by senior
+   accountants"**, "Compliance Audits", "Error Tracking", "Monthly KPI reviews",
+   an **"On-Time Delivery Commitment"** and "Continuous Training" — six
+   operational claims, none verifiable from `knowledge/`.
+5. `/compliance` claimed **"continuous monitoring of regulatory changes"** and
+   closed with a banner reading **"Compliance You Can Trust"**, on a page whose
+   own body says "here is where we honestly stand today".
+6. `/markets/united-states/texas` offered **"entity-level tax planning"** — a
+   hard-rule breach — and an FAQ claiming **"we have relevant experience"** in
+   energy and real estate.
+7. `/markets/united-states/california` claimed **"experience with
+   California-concentrated industries"** and **"a cost structure that make sense
+   against California's high in-house bookkeeper salary market"** — an unverified
+   salary-market statistic, and a grammar error that had been live.
+8. `/markets/united-states/florida` offered **"clarity on which Florida entities
+   owe corporate income tax vs. which pass-through structures don't"**, which is
+   entity-level tax determination and belongs to the client's CPA.
+
+All of it now describes structure rather than promising a number. Response times
+and working-hours overlap are stated as agreed in writing at onboarding and named
+in the engagement.
+
+**Owner decision, added to the verification list: is 24 hours the real
+commitment?** If it is, it can go back — it needs confirming once, and then
+stating the same way everywhere rather than appearing on two pages in two
+wordings. It was removed rather than kept because an unverified SLA is the one
+kind of claim a client will hold you to.
+
+### What each trust page gained
+
+- **`/data-security`** named the three questions a vendor security review asks
+  and then did not answer them. It answers them now, including "none yet" on
+  certifications and "we do not have a certified incident response programme and
+  are not going to describe one we do not run". It also states what bounds the
+  worst case, which is the strongest true thing available: no payment authority,
+  no tax-authority credentials, no copy of the accounting system, so revoking
+  access ends access.
+- **`/compliance`** gained the distinction the category depends on — a
+  preparation provider does not carry your compliance obligation, which is why
+  the sign-off line is drawn where it is. It also records that this page once
+  cited the FCA and ASIC, and why that was wrong, because it is a common pattern
+  on competitor pages.
+- **`/delivery-framework/quality-assurance`** gained "what our review does not
+  replace", which CLAUDE.md already said was that page's job and which the page
+  did not do.
+- **`/delivery-framework/communication`** gained the three places communication
+  actually breaks — the question with no owner, the handover nobody documented,
+  the status nobody can see — and the time-zone shape, which for an offshore
+  provider is the question underneath the question.
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- Playwright sweep, all 90 routes at 320 / 768 / 1440px — no horizontal overflow,
+  no sub-24px tap target
+- heading order sequential on every changed page — no `h2 -> h4`
+- near-duplicate across the 49 commercial routes — worst pair 18.3%
+  (`company-registration` trio, unchanged), **zero pairs above 25%**
+- sitemap drift — 90 on disk, 88 listed, the two expected noindex differences
+- no `24-hour`, `24 hour` or `ensure you` claim left in `app/` or `components/`
+
+### Still thin, and deliberately left
+
+`/resources/insights` (197), `/markets` (316), `/industries` (341),
+`/solutions` (369), `/blog` (412), `/resources` (507),
+`/resources/case-studies` (513), `/resources/guides` (595) are hub and index
+pages — their job is orientation and they are thin because they are lists. The
+two insights (456, 461) and `/delivery-framework/onboarding` (431) are real
+content pages and are the next candidates.
+
 ## 2026-09-08d (the type scale was never being applied; footer restructured)
 
 The owner said the footer looked big and unsystemised. The footer was part of

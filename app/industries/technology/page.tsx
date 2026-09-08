@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
+import { industryDepth } from '@/lib/industry-depth';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/technology';
@@ -63,6 +64,7 @@ export default function TechnologyIndustryPage() {
         { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
       ]}
       faqs={faqs}
+      depth={industryDepth.technology}
     />
   );
 }

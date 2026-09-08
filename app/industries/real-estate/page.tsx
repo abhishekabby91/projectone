@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
+import { industryDepth } from '@/lib/industry-depth';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/real-estate';
@@ -46,6 +47,7 @@ export default function RealEstateIndustryPage() {
         { name: 'Back Office Support', href: '/solutions/back-office-support' },
       ]}
       faqs={faqs}
+      depth={industryDepth['real-estate']}
     />
   );
 }

@@ -67,8 +67,13 @@ background, superseded on specifics by the files above.
   of this rule, so it lives here.
 - Heading order is sequential on every page: no `h1 -> h3`, no `h2 -> h4`.
 - Worst near-duplicate pair across the 49 commercial routes is 18.3%; none above
-  25%. (The 21 Service x Region pages alone peak at 16.6%; the higher figure is
-  the `company-registration` trio, which shares a subject by construction.)
+  25%. (The higher figure is the `company-registration` trio, which shares a
+  subject by construction. Adding depth to the platform and industry pages on
+  2026-09-09 pushed their scores **down** — `quickbooks` vs `xero` went 17.4% to
+  9.3% — because per-page substance dilutes shared boilerplate.)
+- **Median route is 1118 words; 12 routes sit under 650 and 8 of those are hubs.**
+  See "Thin pages: measure before writing" below for the list and why the hubs
+  stay short.
 - No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
 - **Six routes have one or fewer contextual inbound links, and all six are
   correct** — see "Internal links are measured, not assumed" below.
@@ -328,6 +333,71 @@ It also carries a **"What Accounstone does not do"** section, condensed from
 assistant summarising Accounstone should get the boundaries in the same breath
 as the capabilities, not infer them.
 
+### Thin pages: measure before writing
+
+Run this against a dev server rather than guessing which pages are short. Word
+count alone is enough to find them, and the answer is rarely the one you expect
+— on 2026-09-09 the four thinnest indexable pages on the site were the trust
+pages a buyer reads before handing over their books: `/compliance` 259 words,
+`/delivery-framework/communication` 274, `/delivery-framework/quality-assurance`
+282, `/data-security` 330.
+
+That pass took the site from **29 indexable pages under 650 words to 12**, and
+the median route from 998 to 1118. Three content modules hold the new material,
+each with a header note stating what may and may not be written into it:
+
+| module | pages | before | after |
+|---|---|---|---|
+| `lib/us-states.ts` | 3 US state pages | 558-582 | 1128-1141 |
+| `lib/platform-depth.ts` | 7 platform pages | 468-610 | 987-1228 |
+| `lib/industry-depth.ts` | 5 industry pages | 580-623 | 962-1022 |
+
+**The state pages are written about the books, not about tax figures, and that
+is a constraint rather than a style.** `knowledge/markets/us.md` records exactly
+one regulatory fact per state. Rates, thresholds and deadlines change every year,
+so a figure that is right today is wrong within a year with nobody watching, and
+inventing one breaches the never-invent-statistics rule. Each page answers "what
+is different about my accounting here" in ledger terms and routes every
+computation, election and filing to the client's CPA. Do not add a rate to these
+pages.
+
+**The 12 that remain short are mostly hubs and that is correct.**
+`/resources/insights`, `/markets`, `/industries`, `/solutions`, `/blog`,
+`/resources`, `/resources/case-studies` and `/resources/guides` are index pages;
+their job is orientation. The real candidates for a future pass are the two
+insights (456, 461 words) and `/delivery-framework/onboarding` (431).
+
+### Interaction claims are commitments, and they were not verified
+
+The site tells readers, on
+`/resources/guides/how-to-choose-accounting-outsourcing-partner`, that
+*"'full compliance' or 'guaranteed' language"* is a red flag and that *"a
+provider that guarantees outcomes rather than describing a process is
+overpromising"*. On 2026-09-09 it was failing that test in eight places of its
+own — a **"24-Hour Response Time"** and a **"24-hour response commitment"** on
+two pages in two wordings, *"ensure you're always informed"* in a hero, a
+**"Compliance You Can Trust"** banner on the page that elsewhere says "here is
+where we honestly stand today", six unverified operational claims on the quality
+page ("All work reviewed by senior accountants", "Monthly KPI reviews", an
+"On-Time Delivery Commitment"), plus **"entity-level tax planning"** on the Texas
+page, which is a hard-rule breach.
+
+All of it now describes structure: response times and working-hours overlap are
+**agreed in writing at onboarding and named in the engagement**. Write it that
+way if you touch these pages.
+
+**Open for the owner: is 24 hours the real response commitment?** If it is, it
+can go back — it needs confirming once and then stating identically everywhere,
+rather than appearing on two pages in two wordings. It was removed rather than
+kept because an unverified SLA is exactly the kind of claim a client holds you
+to.
+
+The general rule this leaves behind: **a claim about how people will be treated
+is a commitment, and it needs a source in `knowledge/` the same way a capability
+claim does.** "Dedicated account manager", "weekly updates", "24-hour response",
+"monthly business reviews" all read as harmless marketing and all of them are
+things a client will expect on day one.
+
 ### Adding a route
 
 `lib/data.ts` entries do **not** create pages. `app/sitemap.ts` and the navbar generate URLs
@@ -500,7 +570,24 @@ stays the client's, the point where judgement starts, the single named contact,
 the signature line left blank, and on the registration drawing the **fork**,
 because the entity-and-state choice belongs to the client's own attorney and
 CPA (`scope-boundaries.md` §2). Nothing in either file is stock or generated.
-If you add a sixth, read the accent rule above before drawing anything.
+
+**And a third: `components/region-illustration.tsx`** (2026-09-09), one drawing
+per market, on `/markets/{united-states,united-kingdom,australia}` and — for the
+US drawing — the three state pages. Each shows the recurring compliance mechanic
+that market runs on, from `knowledge/markets/{us,uk,au}.md`: US, nexus measured
+per state with one column over the line and the accent on it, because
+registering is the CPA's decision; UK, four VAT quarters joined by an unbroken
+digital link with the accent on the submission gate the registered practitioner
+holds; AU, GST coded as transactions land and collecting into the BAS block,
+accent on the lodgment gate belonging to the registered agent.
+
+**No flags, no maps, no landmarks, and do not add them.** A flag identifies a
+country and says nothing about what is different about doing the work there, and
+the market pages already carry `components/region-flag.tsx` for identification.
+The drawings are for the part a flag cannot carry.
+
+If you add to any of the three files, read the accent rule above before drawing
+anything.
 
 ## The process flow on the homepage
 

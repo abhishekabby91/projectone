@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
+import { industryDepth } from '@/lib/industry-depth';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/ecommerce';
@@ -64,6 +65,7 @@ export default function EcommerceIndustryPage() {
         { name: 'Offshore Accounting Support', href: '/solutions/offshore-accounting-support' },
       ]}
       faqs={faqs}
+      depth={industryDepth.ecommerce}
     />
   );
 }
