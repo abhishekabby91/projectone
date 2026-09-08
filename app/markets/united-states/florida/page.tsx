@@ -6,6 +6,9 @@ import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
+import StateDepth from '@/components/state-depth';
+import RegionIllustration from '@/components/region-illustration';
+import { stateDepth } from '@/lib/us-states';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import {
   generateMetadata as genMeta,
@@ -28,36 +31,15 @@ const overview =
   "Florida has no state personal income tax, which is a real advantage for pass-through entities like most LLCs and S-Corps — but C-Corporations still owe Florida corporate income tax, a distinction that trips up business owners who assume \"no income tax\" applies across the board. Sales tax is administered by the Florida Department of Revenue, with its own registration and filing rhythm. Florida's fast-growing business population, especially in real estate, e-commerce, and professional services, means bookkeeping needs to keep pace with rapid growth rather than just steady-state maintenance.";
 
 const benefits = [
-  'Clarity on which Florida entities owe corporate income tax vs. which pass-through structures don\'t',
-  'Sales tax tracking aligned with Florida Department of Revenue registration and filing requirements',
-  'Support built for Florida\'s high-growth industries: real estate, e-commerce, and professional services',
-  'Bookkeeping that scales with fast business growth rather than assuming steady-state volume',
-  'QuickBooks Online and Xero setup suited to Florida LLC and corporate structures',
-  'Coordination with your Florida CPA for corporate income tax filings where applicable',
+  'A monthly reconciliation rhythm, because no state personal return means one fewer external look at the numbers',
+  'Sales and use tax recorded as it posts — taxable versus exempt, with exemption documentation attached',
+  'Owner and entity kept properly separated in the ledger, which is the most common thing we clean up',
+  'Reporting that shows the working-capital shape through a season rather than only an annual total',
+  'Bookkeeping that absorbs a rising transaction volume without the routine being rebuilt',
+  'Coordination with your Florida CPA, who determines what the entity actually owes and files it',
 ];
 
-const faqs = [
-  {
-    question: 'If Florida has no income tax, why would my business owe any?',
-    answer:
-      "Florida has no state personal income tax, which benefits pass-through entities like most LLCs and S-Corps. However, C-Corporations are still subject to Florida corporate income tax — we help make sure your books reflect which category your business falls into.",
-  },
-  {
-    question: 'How does Florida sales tax registration work?',
-    answer:
-      'Sales tax in Florida is administered by the Florida Department of Revenue, with its own registration and filing requirements. We structure your bookkeeping to track this correctly as your sales activity grows.',
-  },
-  {
-    question: 'Do you support fast-growing Florida businesses?',
-    answer:
-      "Yes, Florida's business growth rate means bookkeeping often needs to scale quickly — we build reporting and processes that can flex with growth rather than needing to be rebuilt every time volume jumps.",
-  },
-  {
-    question: 'Do you have experience with Florida real estate and e-commerce businesses?',
-    answer:
-      'Yes, these are two of the most common business types we support in Florida — see our dedicated real estate and e-commerce industry pages for more detail.',
-  },
-];
+const faqs = stateDepth.florida.faqs;
 
 const faqSchema = generateFAQSchema(faqs);
 
@@ -105,7 +87,8 @@ export default function FloridaPage() {
       </nav>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <Reveal className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+        <Reveal className="space-y-6">
           <>
           <div className="space-y-2">
             <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
@@ -114,7 +97,13 @@ export default function FloridaPage() {
           <p className="text-lg text-muted leading-relaxed">{overview}</p>
           </>
         </Reveal>
+        <Reveal delay={0.16}>
+          <RegionIllustration region="united-states" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
+        </Reveal>
+        </div>
       </section>
+
+      <StateDepth state={stateDepth.florida} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">

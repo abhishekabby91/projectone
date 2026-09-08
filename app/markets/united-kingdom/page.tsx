@@ -8,6 +8,7 @@ import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import SectionHeading from '@/components/section-heading';
 import RegionFlag from '@/components/region-flag';
+import RegionIllustration from '@/components/region-illustration';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import { serviceRegions } from '@/lib/data';
@@ -150,7 +151,8 @@ export default function UKMarketPage() {
       </nav>
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+          <div>
           <SectionHeading
             eyebrow="The constraint"
             title="Most Practices Do Not Have a Talent Problem"
@@ -162,6 +164,10 @@ export default function UKMarketPage() {
               hours reviewing and advising rather than processing. We work from our delivery centre in New Delhi as an
               extension of your practice — to your templates, your close calendar and your review points.
             </p>
+          </Reveal>
+          </div>
+          <Reveal delay={0.16}>
+            <RegionIllustration region="united-kingdom" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
           </Reveal>
         </div>
       </section>

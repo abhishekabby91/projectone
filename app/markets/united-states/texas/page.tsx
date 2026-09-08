@@ -6,6 +6,9 @@ import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
+import StateDepth from '@/components/state-depth';
+import RegionIllustration from '@/components/region-illustration';
+import { stateDepth } from '@/lib/us-states';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import {
   generateMetadata as genMeta,
@@ -28,36 +31,15 @@ const overview =
   "Texas has no state personal income tax, which surprises a lot of business owners into thinking accounting is simpler here — it isn't quite that simple. Most Texas entities above the no-tax-due threshold still owe the state's franchise tax (sometimes called the \"margin tax\"), calculated differently than income tax and easy to get wrong if your books aren't structured for it. Combined with Texas's large and fast-growing small business market — especially around Houston, Dallas-Fort Worth, and Austin — bookkeeping that's built around these specifics matters more than generic support.";
 
 const benefits = [
-  'Bookkeeping structured to support Texas franchise tax (margin tax) calculations',
-  'No state income tax means different — not absent — compliance considerations, and we help you understand which apply',
-  'Support for the industries concentrated in Texas: energy, real estate, professional services, and a growing tech sector',
-  'QuickBooks Online and Xero setup aligned with Texas entity structures (LLCs, S-Corps, and franchise-taxable entities)',
-  'Multi-location support for businesses operating across Houston, Dallas, Austin, and San Antonio',
-  'Coordination with your Texas CPA for franchise tax filing and entity-level tax planning',
+  'Books structured so the franchise (margin) computation reads from them rather than being rebuilt each year',
+  'Revenue separated by type, and cost of goods sold kept distinct from operating overhead, as transactions post',
+  'Sales recorded by destination state, so multi-state activity is visible rather than reconstructed at year end',
+  'Consolidated reporting with location-level detail for businesses across Houston, Dallas-Fort Worth, Austin and San Antonio',
+  'QuickBooks Online and Xero maintained inside your existing file — we work in your setup, not a copy of it',
+  'Supporting schedules prepared in the form your Texas CPA asks for, ahead of the filing they run',
 ];
 
-const faqs = [
-  {
-    question: 'Does Texas really have no business taxes at all?',
-    answer:
-      "Texas has no state personal income tax, but most business entities above a revenue threshold owe the Texas franchise tax (margin tax), which is calculated differently than income tax. We structure your books to support that calculation, and coordinate with your CPA for the actual filing.",
-  },
-  {
-    question: 'Do you work with businesses across different Texas cities?',
-    answer:
-      'Yes, we support Texas businesses regardless of city — Houston, Dallas-Fort Worth, Austin, San Antonio, and elsewhere — since our support is delivered remotely and structured around your business, not your physical location.',
-  },
-  {
-    question: 'Can you help with multi-location Texas businesses?',
-    answer:
-      'Yes, we support consolidated bookkeeping across multiple Texas locations alongside location-level detail where that matters for your reporting.',
-  },
-  {
-    question: 'Do you support Texas real estate and energy sector businesses?',
-    answer:
-      'Yes, these are two of the industries most concentrated in Texas, and we have relevant experience — see our dedicated real estate industry support for more detail.',
-  },
-];
+const faqs = stateDepth.texas.faqs;
 
 const faqSchema = generateFAQSchema(faqs);
 
@@ -105,7 +87,8 @@ export default function TexasPage() {
       </nav>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <Reveal className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+        <Reveal className="space-y-6">
           <>
           <div className="space-y-2">
             <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
@@ -114,7 +97,13 @@ export default function TexasPage() {
           <p className="text-lg text-muted leading-relaxed">{overview}</p>
           </>
         </Reveal>
+        <Reveal delay={0.16}>
+          <RegionIllustration region="united-states" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
+        </Reveal>
+        </div>
       </section>
+
+      <StateDepth state={stateDepth.texas} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">

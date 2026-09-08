@@ -6,6 +6,9 @@ import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
+import StateDepth from '@/components/state-depth';
+import RegionIllustration from '@/components/region-illustration';
+import { stateDepth } from '@/lib/us-states';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import {
   generateMetadata as genMeta,
@@ -28,36 +31,15 @@ const overview =
   "California has one of the most layered compliance environments of any state — sales and use tax is administered separately by the CDTFA, income tax by the FTB, and payroll by the EDD, each with its own rules and deadlines. On top of that, California's economic nexus threshold for out-of-state and online sellers is a meaningful revenue level, meaning growing businesses can trigger new obligations without realizing it. California's high labor costs also make the in-house-vs-outsourced bookkeeping math more favorable to outsourcing than in most states, since local bookkeeper salaries run high relative to the rest of the country.";
 
 const benefits = [
-  'Sales tax tracking structured around CDTFA requirements and economic nexus thresholds',
-  'Bookkeeping organized to support FTB income tax filings prepared by your CPA',
-  'Payroll bookkeeping aligned with EDD reporting requirements',
-  'Support for California\'s common entity types, including LLCs subject to the state\'s annual LLC fee structure',
-  'Experience with California-concentrated industries: technology/SaaS, e-commerce, and professional services',
-  'A cost structure that make sense against California\'s high in-house bookkeeper salary market',
+  'Sales and use tax recorded as it posts — taxable versus exempt, with destination detail for district rates',
+  'Exemption documentation attached to the transaction rather than filed separately and hunted for later',
+  'One set of books that supports both the CDTFA cycle and the FTB position, and agrees with itself',
+  'Payroll bookkeeping maintained to the detail EDD reporting draws on, prepared for your CPA to file',
+  'Records kept current through dormant and loss-making periods, because the obligations do not pause',
+  'QuickBooks Online, Xero and NetSuite maintained inside your existing file, at your close calendar',
 ];
 
-const faqs = [
-  {
-    question: 'What is the CDTFA and why does it matter for my bookkeeping?',
-    answer:
-      "The California Department of Tax and Fee Administration (CDTFA) administers sales and use tax in California, separately from income tax. We structure your sales tax tracking around CDTFA requirements, including economic nexus thresholds for growing businesses.",
-  },
-  {
-    question: 'Do you coordinate with the FTB (Franchise Tax Board) for income tax?',
-    answer:
-      "We keep your books organized and ready for your CPA to prepare FTB income tax filings — we support the bookkeeping foundation, and your CPA handles the actual tax filing and professional judgment.",
-  },
-  {
-    question: 'Is outsourced bookkeeping actually worth it in California specifically?',
-    answer:
-      "California has some of the highest in-house bookkeeper and accountant salaries in the country, which shifts the cost comparison further in favor of outsourcing than in most states — though the right answer always depends on your specific volume and complexity.",
-  },
-  {
-    question: 'Do you support California LLCs and their annual fee structure?',
-    answer:
-      "Yes, we're familiar with California's LLC fee structure and keep bookkeeping organized to support the related filings your CPA prepares.",
-  },
-];
+const faqs = stateDepth.california.faqs;
 
 const faqSchema = generateFAQSchema(faqs);
 
@@ -105,7 +87,8 @@ export default function CaliforniaPage() {
       </nav>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <Reveal className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+        <Reveal className="space-y-6">
           <>
           <div className="space-y-2">
             <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
@@ -114,7 +97,13 @@ export default function CaliforniaPage() {
           <p className="text-lg text-muted leading-relaxed">{overview}</p>
           </>
         </Reveal>
+        <Reveal delay={0.16}>
+          <RegionIllustration region="united-states" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
+        </Reveal>
+        </div>
       </section>
+
+      <StateDepth state={stateDepth.california} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
