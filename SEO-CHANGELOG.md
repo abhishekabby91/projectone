@@ -1,5 +1,104 @@
 # Accounstone SEO Changelog
 
+## 2026-09-08d (the type scale was never being applied; footer restructured)
+
+The owner said the footer looked big and unsystemised. The footer was part of
+it. The larger cause was not.
+
+### Every heading on the site was ignoring its own size class
+
+`app/globals.css` ended with element defaults for `h1`-`h4` and `p`, under a
+comment reading *"Tailwind text-* utilities override these. These only apply
+when no Tailwind class is present."* That comment was wrong, and had been for as
+long as it existed.
+
+Those rules sat **outside any cascade layer**. Tailwind v4 emits utilities into
+`@layer utilities`, and unlayered CSS beats every layer regardless of
+specificity — so `h3 { font-size: 1.25rem }` beat `.text-sm`, `.text-xl` and
+`.text-[11px]` alike. Measured on the live dev server before the fix:
+
+| authored | rendered before | after |
+|---|---|---|
+| `h1.text-[1.75rem] md:…` | 30px | 44px |
+| `h2.text-3xl` | 24px | 30px |
+| `h2.text-2xl` | 24px | 30px |
+| `h2.text-xl` | 24px | 24px |
+| `h3.text-sm` | 20px | 14px |
+| `h3.text-base` | 20px | 18px |
+| `h3.text-[11px]` (footer) | 20px | 12px |
+| `p.leading-5` | 26.4px | 20px |
+| `p.leading-7` | 26.4px | 28px |
+
+Every heading collapsed to one of four sizes and every paragraph to one rhythm,
+whatever was written on it. The site had a type scale and was not using it —
+which is a fair description of "unsystemised".
+
+The fix is a single `@layer base { … }` wrapper around those rules. The comment
+was replaced with the mechanism and the measurements, because the next person to
+read it would otherwise have the same false assurance.
+
+Worth noting: the mechanism was already known in this file. A note on the `img`
+rule reads *"globals.css is cascade-priority above @layer utilities"* and works
+around it by deleting a `height: auto` declaration. Nobody carried that finding
+up to the heading block twelve lines away.
+
+Three unlayered element rules were left unlayered deliberately, and are now
+documented as such: `input, textarea, select { font-size: 16px }` (stops iOS
+Safari zooming the page on focus) and the `max-width: 100%` on `img, video` and
+`svg`.
+
+**Verification of a change this wide:** all 90 routes re-swept at 320 / 390 /
+768 / 1280 / 1440px — no horizontal overflow and no sub-24px tap target at any
+width. Before/after screenshots of the homepage, a Service x Region page and a
+blog post confirmed the hierarchy reads correctly rather than merely larger.
+
+### Footer: four columns, two blocks each
+
+Building on the services compaction earlier the same day:
+
+- **Even shape.** One column previously carried three blocks and another
+  carried one, leaving a ragged gap at the bottom of the grid. Now every column
+  has two.
+- **How We Work** is its own block. Onboarding, Communication and Quality
+  Assurance were filed under "Company", where they read as filler.
+- **Compliance and Data Security appeared twice** — once under Company and once
+  in the legal bar. They are trust pages, not policies; they stay in Company and
+  the legal bar is now Privacy, Cookie Policy and Terms only.
+- **`/solutions` and `/industries`** gained the "All …" entry that Services,
+  Markets and Technology already had. They were the only two section hubs the
+  footer did not link.
+- **The email address is now readable text.** It was a circular icon button with
+  an `sr-only` label — the only item in the footer that was not text.
+- Heading tracking widens at `lg:` rather than `sm:`. At 768px in a four-column
+  grid, "TECHNOLOGY" needed 180px in a 158px column and was genuinely clipped.
+
+| viewport | before | after |
+|---|---|---|
+| 320px | 3171px | **2575px** |
+| 390px | 2307px | 1826px |
+| 768px | 1669px | 1120px |
+| 1024px | 1392px | 989px |
+| 1440px | 1315px | 973px |
+
+**No URL was lost.** Verified by extracting the rendered `<footer>` href set
+before and after and diffing them: 63 unique internal URLs before, 65 after, the
+two additions being the `/solutions` and `/industries` hubs. That is the check
+to run if this is ever touched again — counting links in the JSX will not catch
+a `.map()` that quietly changed shape.
+
+Eight footer headings were being clipped by their own columns at 1024px before
+this pass. Zero are now, at any of five widths.
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- Playwright sweep, all 90 routes at 320 / 390 / 768 / 1280 / 1440px — no
+  horizontal overflow, no sub-24px tap target
+- footer measured at five widths before and after, with the href set diffed
+- before/after screenshots on `/`, `/services/bookkeeping/united-states` and
+  `/blog/tax-preparation-outsourcing`
+
 ## 2026-09-08c (footer services block compacted; ROUTES.md re-verified)
 
 ### The footer's three service columns are now one block

@@ -87,11 +87,30 @@ ended up with zero inbound links before 2026-08-27.
 **So when the footer is asked to be shorter, shorten the presentation, never the
 link set.** On 2026-09-08 the three regional service columns (7 links each) were
 replaced by one block of seven rows, each carrying `US · UK · AU` — the same 21
-hrefs in the server HTML, in a third of the height. The footer went from 3171px
-to 2625px at 320px wide and 1315px to 1149px at 1440px, with the link count
-identical at 69 before and after. Dropping two of the three regions would have
-looked like the same fix and would have orphaned 14 of the site's 21 primary
-commercial pages.
+hrefs in the server HTML, in a third of the height. Dropping two of the three
+regions would have looked like the same fix and would have orphaned 14 of the
+site's 21 primary commercial pages.
+
+The rest of the footer was restructured in the same pass: **four columns, two
+blocks each**, because the previous shape put three blocks in one column and one
+in another and left a ragged gap at the bottom of the grid. Delivery-framework
+pages moved out of "Company" into their own **How We Work** block; Compliance
+and Data Security moved into Company and out of the legal bar, where they had
+been listed twice; `/solutions` and `/industries` gained the "All …" entry every
+other section already had.
+
+| viewport | before | after |
+|---|---|---|
+| 320px | 3171px | **2575px** |
+| 390px | 2307px | 1826px |
+| 768px | 1669px | 1120px |
+| 1024px | 1392px | 989px |
+| 1440px | 1315px | 973px |
+
+Verified by diffing the rendered `<footer>` href set before and after: **no URL
+was lost**, and the two additions are the `/solutions` and `/industries` hubs.
+Check it that way if you touch this again — counting links in the JSX will not
+catch a `.map()` that silently changed shape.
 
 Two details in that block worth keeping: the **service name is plain text, not a
 link**, because the generic `/services/{slug}` URLs are 301s and must never be
@@ -319,6 +338,47 @@ registry row **in the same pass**.
 Then finish the pass with the two things that are not automatic: add the URL to
 `public/llms.txt`, and re-run `node scripts/generate-sitemap-dates.mjs` so the
 new route and everything else you touched carry a true `lastmod`.
+
+### The type scale was not being applied at all until 2026-09-08
+
+This is the most consequential thing found in the repo to date, and it is worth
+understanding before touching `app/globals.css`.
+
+The element defaults at the bottom of that file — `h1`-`h4` and `p` — sat
+**outside any cascade layer**. Tailwind v4 emits its utilities into
+`@layer utilities`, and in CSS, unlayered rules beat every layer regardless of
+specificity. So a bare `h3 { font-size: 1.25rem }` beat `.text-sm`, `.text-xl`
+and `.text-[11px]` alike. Measured before the fix:
+
+| authored | rendered |
+|---|---|
+| `h1.text-[1.75rem] md:…` | 30px — the element default, on every page |
+| `h2.text-3xl` | 24px |
+| `h2.text-xl` | 24px |
+| `h3.text-sm` | 20px |
+| `h3.text-[11px]` (footer) | 20px |
+| `p.leading-5` and `p.leading-7` | both 1.65 |
+
+Every heading on the site collapsed to one of four sizes and every paragraph to
+one rhythm, no matter what was written on it. The comment sitting above those
+rules asserted the opposite — "Tailwind text-* utilities override these" — and
+had been wrong for as long as it existed. A note elsewhere in the same file, on
+the `img` rule, had already recorded the real mechanism ("globals.css is
+cascade-priority above @layer utilities") and worked around it by deleting a
+declaration rather than fixing the cause.
+
+The fix is one `@layer base { … }` wrapper. **Keep it.** If you add an element
+default, put it inside that block.
+
+Three unlayered element rules are deliberate and stay unlayered, because they
+are meant to win: `input, textarea, select { font-size: 16px }` (stops iOS
+Safari zooming the page on focus), and the `max-width: 100%` on `img, video`
+and `svg`.
+
+After the fix, all 90 routes were re-swept at 320 / 390 / 768 / 1280 / 1440px:
+no horizontal overflow and no sub-24px tap target anywhere. Headings now render
+at the size they were written at — which is the whole point of having had a
+scale.
 
 ### Type system
 

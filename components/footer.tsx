@@ -24,6 +24,11 @@ export default function Footer() {
   //      Do NOT "shorten" this block by removing regions: that orphans the
   //      primary commercial pages, which is the exact failure fixed on
   //      2026-08-27. Shorten the presentation, never the link set.
+  //
+  // Four columns, two blocks each. The even shape is deliberate: an earlier
+  // version had one column carrying three blocks and another carrying one,
+  // which left a ragged 250px gap at the bottom of the grid and read as
+  // unfinished rather than dense.
   const footerColumns: Array<{ blocks: Array<{ title: string; links: Array<{ name: string; href: string }> }> }> = [
     {
       blocks: [
@@ -32,16 +37,11 @@ export default function Footer() {
           { name: 'Staff Augmentation', href: '/solutions/staff-augmentation' },
           { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
           { name: 'Back Office Support', href: '/solutions/back-office-support' },
+          { name: 'All Solutions', href: '/solutions' },
         ]},
         { title: 'Markets', links: [
           ...regions.map((r) => ({ name: r.name, href: `/markets/${r.slug}` })),
           { name: 'All Markets', href: '/markets' },
-        ]},
-        // The navbar emits no links into server HTML, so a cluster that is not
-        // in the footer is not discoverable by link. See CLAUDE.md.
-        { title: 'Company Registration', links: [
-          { name: 'Register a US company', href: '/company-registration' },
-          ...registrationStates.map((st) => ({ name: st.name, href: `/company-registration/${st.slug}` })),
         ]},
       ],
     },
@@ -51,38 +51,52 @@ export default function Footer() {
           ...technologies.map((t) => ({ name: t.name, href: `/technology/${t.slug}` })),
           { name: 'All Platforms', href: '/technology' },
         ]},
-      ],
-    },
-    {
-      blocks: [
-        { title: 'Industries', links: industries.map((i) => ({ name: i.name, href: `/industries/${i.slug}` })) },
-        { title: 'Resources', links: [
-          { name: 'Guides', href: '/resources/guides' },
-          { name: 'Insights', href: '/resources/insights' },
-          { name: 'Case Studies', href: '/resources/case-studies' },
-          { name: 'Blog', href: '/blog' },
-        ]},
-      ],
-    },
-    {
-      blocks: [
-        { title: 'Company', links: [
-          { name: 'About', href: '/about' },
-          { name: 'Contact', href: '/contact' },
-          { name: 'Compliance', href: '/compliance' },
+        // Delivery-framework pages are how an engagement runs, not company
+        // pages. They sat under "Company" and read as filler there.
+        { title: 'How We Work', links: [
           { name: 'Onboarding', href: '/delivery-framework/onboarding' },
           { name: 'Communication', href: '/delivery-framework/communication' },
           { name: 'Quality Assurance', href: '/delivery-framework/quality-assurance' },
         ]},
       ],
     },
+    {
+      blocks: [
+        { title: 'Industries', links: [
+          ...industries.map((i) => ({ name: i.name, href: `/industries/${i.slug}` })),
+          { name: 'All Industries', href: '/industries' },
+        ]},
+        // The navbar emits no links into server HTML, so a cluster that is not
+        // in the footer is not discoverable by link. See CLAUDE.md.
+        { title: 'Registration', links: [
+          { name: 'Register a US company', href: '/company-registration' },
+          ...registrationStates.map((st) => ({ name: st.name, href: `/company-registration/${st.slug}` })),
+        ]},
+      ],
+    },
+    {
+      blocks: [
+        { title: 'Resources', links: [
+          { name: 'Guides', href: '/resources/guides' },
+          { name: 'Insights', href: '/resources/insights' },
+          { name: 'Case Studies', href: '/resources/case-studies' },
+          { name: 'Blog', href: '/blog' },
+        ]},
+        { title: 'Company', links: [
+          { name: 'About', href: '/about' },
+          { name: 'Contact', href: '/contact' },
+          { name: 'Compliance', href: '/compliance' },
+          { name: 'Data Security', href: '/data-security' },
+        ]},
+      ],
+    },
   ];
+  // Policies only. Compliance and Data Security are trust pages, not policies,
+  // and they are in the Company block above — they used to appear in both.
   const legalLinks = [
     { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Cookie Policy', href: '/cookie-policy' },
     { name: 'Terms & Conditions', href: '/terms' },
-    { name: 'Data Security', href: '/data-security' },
-    { name: 'Compliance', href: '/compliance' },
   ];
   const socials = [
     { href: 'https://www.linkedin.com/company/accounstone/', label: 'LinkedIn' },
@@ -113,10 +127,8 @@ export default function Footer() {
           </div>
           <ul className="space-y-3 text-sm text-white/70 md:text-right">
             <li className="flex items-center gap-3 md:flex-row-reverse">
-              <a href={`mailto:${companyInfo.contact.email}`} aria-label="Email Accounstone" title="Email Accounstone" className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/65 hover:text-white hover:border-white/35 hover:bg-white/10 transition-all" rel="nofollow">
-                <Mail size={17} aria-hidden="true" />
-              </a>
-              <span className="sr-only">Email Accounstone</span>
+              <Mail size={16} className="shrink-0 text-white/45" aria-hidden="true" />
+              <a href={`mailto:${companyInfo.contact.email}`} className="inline-block py-1 leading-6 hover:text-white transition-colors" rel="nofollow">{companyInfo.contact.email}</a>
             </li>
             <li className="flex items-center gap-3 md:flex-row-reverse">
               <MapPin size={16} className="shrink-0 text-white/45" aria-hidden="true" />
@@ -137,8 +149,8 @@ export default function Footer() {
             must never be linked from anywhere. Each region link carries an
             aria-label with the full name, because "US" alone is not an
             accessible name. */}
-        <div className="mb-10 min-[375px]:mb-12">
-          <h3 className="mb-4 text-[11px] sm:text-xs font-bold uppercase tracking-normal sm:tracking-[0.14em] text-white">Services</h3>
+        <div className="mb-9">
+          <h3 className="mb-3 text-[11px] lg:text-xs font-bold uppercase tracking-normal lg:tracking-[0.14em] text-white">Services</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-1">
             {serviceRegions.map((service) => (
               <li key={service.slug} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-white/10 py-1">
@@ -163,9 +175,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        <nav aria-label="Footer" className="grid grid-cols-1 min-[375px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8 min-[375px]:gap-y-10">
+        <nav aria-label="Footer" className="grid grid-cols-1 min-[375px]:grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8">
           {footerColumns.map((column, ci) => (
-            <div key={ci} className="min-w-0 space-y-8">
+            <div key={ci} className="min-w-0 space-y-7">
               {column.blocks.map((section) => (
                 <div key={section.title} className="min-w-0">
                   {/* The wide uppercase tracking overflowed a 2-column mobile grid
@@ -173,7 +185,7 @@ export default function Footer() {
                       at the viewport edge). Tracking and size are tightened on
                       mobile only, leaving real margin rather than a 1px squeak;
                       the original treatment returns from sm: up. */}
-                  <h3 className="mb-4 text-[11px] sm:text-xs font-bold uppercase tracking-normal sm:tracking-[0.14em] text-white">{section.title}</h3>
+                  <h3 className="mb-3 text-[11px] lg:text-xs font-bold uppercase tracking-normal lg:tracking-[0.14em] text-white">{section.title}</h3>
                   {/* py-1 lifts each link's hit area from 20px to 28px, above the
                       24px WCAG 2.5.8 minimum. The row gap is reduced to match so
                       the footer's overall height barely changes. */}
