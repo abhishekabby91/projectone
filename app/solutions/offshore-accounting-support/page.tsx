@@ -99,9 +99,9 @@ export default function OffshoreSolutionPage() {
                 {[
                   'Experienced accounting professionals',
                   'NDA-backed engagements on every project',
-                  '24-hour response commitment',
+                  'Response times and working-hours overlap agreed in writing at onboarding',
                   'Works inside your existing accounting system and chart of accounts',
-                  'Dedicated account management',
+                  'A named point of contact who knows the engagement',
                   'Flexible scaling up or down',
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
