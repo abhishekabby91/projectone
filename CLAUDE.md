@@ -72,6 +72,9 @@ background, superseded on specifics by the files above.
 - No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
 - **Six routes have one or fewer contextual inbound links, and all six are
   correct** — see "Internal links are measured, not assumed" below.
+- All 88 sitemap URLs carry a `lastmod`, and every one is the real date of the
+  last change to that page — generated, not written. `public/llms.txt` lists the
+  same 88 and excludes the same two `noindex` routes.
 
 ### The navbar is not a crawl path
 
@@ -230,12 +233,78 @@ above.
 `app/services/cfo-support/route.ts` is a `route.ts` returning 410, not a page,
 so it appears in neither count.
 
+### Sitemap `lastmod` is generated, not written
+
+`app/sitemap.ts` no longer carries a date per entry. Every `lastModified` comes
+from `lib/sitemap-dates.ts`, which is **generated** by
+`scripts/generate-sitemap-dates.mjs` from the last commit that changed each
+route's rendered body — its own `page.tsx`, plus the shared module its body
+lives in, where there is one (the `BODY_MODULES` list in the script).
+
+```bash
+node scripts/generate-sitemap-dates.mjs   # run at the end of a content pass
+```
+
+It was hand-written before, defaulting to a `LAST_AUDIT = '2026-08-14'`
+constant, and it drifted exactly the way everything hand-maintained in this file
+drifts: on 2026-09-08 the sitemap declared 2026-08-14 for 41 URLs and had no
+`lastmod` at all on 22 more, with the newest date anywhere in the file being
+2026-08-27 — twelve days after four separate content passes had rewritten most
+of the site. A stale `lastmod` is worse than none: it tells Google the pages you
+just rewrote have not changed.
+
+Two rules that go with it:
+
+- **Never `lastModified: new Date()`.** It is the tempting one-liner and it is a
+  fabricated date on every route that has not changed, which
+  `AI-WEBSITE-GUIDE.md` bans.
+- **Never touch a page just to refresh its date.** The value is worth something
+  only while it is true.
+
+`app/sitemap.ts` also used to spell out all 21 Service x Region URLs a second
+time by hand, after the `serviceRegionPaths.map()` loop had already generated
+them. The dedupe swallowed them silently, so 21 lines were dead and anyone
+editing them saw no effect. They are gone; the loop is the only source.
+
+### `public/llms.txt` is a publishing surface, not a scratch file
+
+It is what AI assistants read and repeat, which makes it the one file where an
+old claim does the most damage. Two real defects were found in it on 2026-09-08:
+
+- it linked **all seven retired generic `/services/{slug}` URLs**, which have
+  been 301s since 2026-08-27 — the sitewide "zero internal links pointing at a
+  redirect" check does not read `public/`, so nothing caught it
+- it still carried **"QuickBooks Certified ProAdvisor (since 2022)"** and
+  **"24+ years of combined accounting experience"**, both of which are open
+  owner-verification items in `AI-WEBSITE-GUIDE.md` and had already been removed
+  from every page. They were being served to LLMs for weeks after the site
+  stopped saying them.
+
+It now holds the same invariant as the sitemap — every indexable route, and
+neither `noindex` one. Check it the same way, with `pnpm dev` running:
+
+```bash
+grep -oE 'https://www\.accounstone\.com[^ )]*' public/llms.txt \
+  | sed 's|https://www.accounstone.com||; s|/$||; s|^$|/|' | sort -u > /tmp/llms.txt
+comm -23 /tmp/llms.txt /tmp/disk.txt   # linked but no page  → must be empty
+comm -13 /tmp/llms.txt /tmp/disk.txt   # page but unlinked   → the 2 noindex only
+```
+
+It also carries a **"What Accounstone does not do"** section, condensed from
+`knowledge/company/scope-boundaries.md`. That is the point of the file: an
+assistant summarising Accounstone should get the boundaries in the same breath
+as the capabilities, not infer them.
+
 ### Adding a route
 
 `lib/data.ts` entries do **not** create pages. `app/sitemap.ts` and the navbar generate URLs
 from those arrays, so adding an entry without the matching `page.tsx` produces dead links —
 this previously caused 15 of them. Create the page, the sitemap entry, and the `docs/`
 registry row **in the same pass**.
+
+Then finish the pass with the two things that are not automatic: add the URL to
+`public/llms.txt`, and re-run `node scripts/generate-sitemap-dates.mjs` so the
+new route and everything else you touched carry a true `lastmod`.
 
 ### Type system
 

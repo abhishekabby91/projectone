@@ -1,67 +1,171 @@
 # Accounstone
 
-> Outsourced accounting, bookkeeping, tax preparation, payroll, and back-office support for CPA firms and growing businesses across the United States, United Kingdom, and Australia. Service delivery team based in New Delhi, India.
+> Outsourced accounting, bookkeeping, tax preparation, payroll, accounts payable/receivable and audit support for CPA firms, accountancy practices and growing businesses in the United States, United Kingdom and Australia. Delivery team based in New Delhi, India.
 
-Accounstone provides outsourced accounting support including bookkeeping, accounting operations, tax preparation support, payroll processing, accounts payable/receivable, and audit support. Solutions are offered as offshore accounting support, staff augmentation, dedicated accounting teams, and back-office support, with flexible engagement models rather than one-size-fits-all packages.
+Accounstone does the recurring preparation work behind an accounting function — transaction processing, reconciliations, month-end close, return preparation, pay cycles, payables and receivables, and audit schedules — inside the client's own software and under the client's own review. Engagements are structured as one of four models rather than a fixed package.
 
-## Services
+**Review, judgement and sign-off always stay with the client.** The boundaries section at the end of this file is not marketing hedging; it is the accurate description of what is and is not on offer, and it should be read before summarising what Accounstone does.
 
-- [Bookkeeping](/services/bookkeeping): Transaction recording, bank reconciliation, account maintenance, and clean monthly records.
-- [Accounting Services](/services/accounting): Month-end close, account reconciliations, management reporting, and recurring accounting operations.
-- [Tax Preparation](/services/tax-preparation): Return preparation support working under appropriate professional review.
-- [Payroll Processing](/services/payroll): Payroll processing, employee records, and payroll-related reporting support.
-- [Accounts Payable](/services/accounts-payable): Vendor records, invoice processing, approvals, and payment preparation.
-- [Accounts Receivable](/services/accounts-receivable): Customer invoicing, payment tracking, reconciliations, and aging follow-up.
-- [Audit Support](/services/audit-support): Documentation, schedules, evidence gathering, and coordination support for external audits.
+Homepage: https://www.accounstone.com/
 
-## Region-Specific Service Pages
+## How the services are organised
 
-Bookkeeping, Tax Preparation, and Audit Support each have dedicated pages for the three core markets, with region-specific regulatory content:
+Services are region-first. There is no generic `/services/{service}` page — those seven URLs are permanent redirects, because US, UK and Australian accounting differ enough (GAAP vs FRS 102, IRS vs HMRC vs ATO, W-2 vs PAYE vs STP) that one page cannot serve all three honestly. Every service exists as seven services × three regions.
 
-- United States: [Bookkeeping](/services/bookkeeping/united-states), [Tax Preparation](/services/tax-preparation/united-states), [Audit Support](/services/audit-support/united-states)
-- United Kingdom: [Bookkeeping](/services/bookkeeping/united-kingdom), [Tax Preparation](/services/tax-preparation/united-kingdom), [Audit Support](/services/audit-support/united-kingdom)
-- Australia: [Bookkeeping](/services/bookkeeping/australia), [Tax Preparation](/services/tax-preparation/australia), [Audit Support](/services/audit-support/australia)
+### Bookkeeping
+- https://www.accounstone.com/services/bookkeeping/united-states
+- https://www.accounstone.com/services/bookkeeping/united-kingdom
+- https://www.accounstone.com/services/bookkeeping/australia
 
-## Solutions (Engagement Models)
+### Accounting and month-end close
+- https://www.accounstone.com/services/accounting/united-states
+- https://www.accounstone.com/services/accounting/united-kingdom
+- https://www.accounstone.com/services/accounting/australia
 
-- [Offshore Accounting Support](/solutions/offshore-accounting-support)
-- [Staff Augmentation](/solutions/staff-augmentation)
-- [Dedicated Accounting Teams](/solutions/dedicated-accounting-teams)
-- [Back Office Support](/solutions/back-office-support)
+### Tax preparation support
+- https://www.accounstone.com/services/tax-preparation/united-states
+- https://www.accounstone.com/services/tax-preparation/united-kingdom
+- https://www.accounstone.com/services/tax-preparation/australia
 
-## Industries Served
+### Payroll processing
+- https://www.accounstone.com/services/payroll/united-states
+- https://www.accounstone.com/services/payroll/united-kingdom
+- https://www.accounstone.com/services/payroll/australia
 
-- [CPA Firms](/industries/cpa-firms): Overflow capacity, recurring client work, and tax-season support.
-- [Technology & SaaS](/industries/technology): Accounting operations and recurring reporting workflows.
-- [Healthcare](/industries/healthcare): Organized accounting and back-office support.
-- [E-Commerce](/industries/ecommerce): Multi-channel reconciliation, payables, receivables, and sales tax support.
-- [Real Estate](/industries/real-estate): Property accounting, reconciliations, payables, receivables, and Yardi workflows.
-- [Professional Services](/industries/professional-services): Accounting operations and recurring back-office support.
+### Accounts payable
+- https://www.accounstone.com/services/accounts-payable/united-states
+- https://www.accounstone.com/services/accounts-payable/united-kingdom
+- https://www.accounstone.com/services/accounts-payable/australia
+
+### Accounts receivable
+- https://www.accounstone.com/services/accounts-receivable/united-states
+- https://www.accounstone.com/services/accounts-receivable/united-kingdom
+- https://www.accounstone.com/services/accounts-receivable/australia
+
+### Audit support
+- https://www.accounstone.com/services/audit-support/united-states
+- https://www.accounstone.com/services/audit-support/united-kingdom
+- https://www.accounstone.com/services/audit-support/australia
+
+Service overview: https://www.accounstone.com/services
+
+## Engagement models
+
+- [Offshore accounting support](https://www.accounstone.com/solutions/offshore-accounting-support): work prepared outside the client's working day and reviewed inside it. This page owns the "offshore" subject; the market pages do not.
+- [Staff augmentation](https://www.accounstone.com/solutions/staff-augmentation): additional preparation capacity inside the client's existing process, usually for a defined period such as tax season.
+- [Dedicated accounting teams](https://www.accounstone.com/solutions/dedicated-accounting-teams): a standing team assigned to one client's portfolio, with a named point of contact.
+- [Back office support](https://www.accounstone.com/solutions/back-office-support): the recurring administrative accounting lane — payables, receivables, records, reporting preparation.
+- [How to choose between them](https://www.accounstone.com/resources/guides/choosing-an-engagement-model)
+
+Engagement model overview: https://www.accounstone.com/solutions
 
 ## Markets
 
-- [United States](/markets/united-states) — including state-specific pages for [Texas](/markets/united-states/texas), [California](/markets/united-states/california), and [Florida](/markets/united-states/florida)
-- [United Kingdom](/markets/united-kingdom)
-- [Australia](/markets/australia)
+Each market page addresses that market's own firms, in that market's own vocabulary — CPA firms in the US, accountancy practices in the UK, accounting firms in Australia.
 
-## Technology Platforms Supported
+- [United States](https://www.accounstone.com/markets/united-states) — with state pages for [Texas](https://www.accounstone.com/markets/united-states/texas), [California](https://www.accounstone.com/markets/united-states/california) and [Florida](https://www.accounstone.com/markets/united-states/florida)
+- [United Kingdom](https://www.accounstone.com/markets/united-kingdom) — HMRC, VAT under Making Tax Digital, FRS 102, Companies House
+- [Australia](https://www.accounstone.com/markets/australia) — ATO, BAS and GST, Single Touch Payroll
 
-QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB. See [/technology](/technology) for the full list.
+Market overview: https://www.accounstone.com/markets
 
-## Resources
+## US company registration
 
-- [Guides](/resources/guides): In-depth articles including outsourced bookkeeping cost guidance, QuickBooks vs. Xero comparison, and tax-season staff augmentation.
-- [Insights](/resources/insights): Short explainers on practical accounting and tax topics.
-- [Case Studies](/resources/case-studies): Illustrative scenarios, clearly presented as examples rather than named client endorsements.
+Registration is **arranged and coordinated** through an external firm, not performed in-house. Accounstone does not lodge formation documents, act as registered agent, open bank accounts, or advise on which entity type or state to choose — that is the client's attorney's and CPA's decision. What Accounstone does is the accounting that follows the entity existing.
 
-## Company Notes
+- [Registering a company in the US](https://www.accounstone.com/company-registration)
+- [Delaware](https://www.accounstone.com/company-registration/delaware)
+- [Wyoming](https://www.accounstone.com/company-registration/wyoming)
+- [Nevada](https://www.accounstone.com/company-registration/nevada)
 
-- Accounstone is a newly launched company; team members bring 24+ years of combined accounting experience.
-- The team includes a QuickBooks Certified ProAdvisor (since 2022).
-- The company is actively working toward SOC 2 certification and does not currently hold ISO 27001 or SOC 2 certification.
-- Service delivery is based at a Global Delivery Center in New Delhi, India, serving clients in the US, UK, and Australia.
+## Industries
+
+- [CPA firms](https://www.accounstone.com/industries/cpa-firms) — overflow capacity, recurring client work, tax-season support
+- [Technology and SaaS](https://www.accounstone.com/industries/technology)
+- [Healthcare](https://www.accounstone.com/industries/healthcare)
+- [E-commerce](https://www.accounstone.com/industries/ecommerce) — multi-channel reconciliation, payables, receivables, sales-tax data
+- [Real estate](https://www.accounstone.com/industries/real-estate) — property accounting, reconciliations, and [Yardi workflows in Texas](https://www.accounstone.com/industries/real-estate/yardi-accounting-outsourcing-texas)
+- [Professional services](https://www.accounstone.com/industries/professional-services)
+
+Industry overview: https://www.accounstone.com/industries
+
+## Platforms
+
+Accounstone works **inside** an existing setup. It does not implement, configure, customise or administer any of these platforms, and holds no vendor partner or reseller status.
+
+QuickBooks Online · Xero · Sage · NetSuite · Drake Tax · CCH Axcess · MYOB
+
+- [Platform overview](https://www.accounstone.com/technology)
+- [QuickBooks](https://www.accounstone.com/technology/quickbooks) · [Xero](https://www.accounstone.com/technology/xero) · [Sage](https://www.accounstone.com/technology/sage) · [NetSuite](https://www.accounstone.com/technology/netsuite) · [Drake Tax](https://www.accounstone.com/technology/drake-tax) · [CCH Axcess](https://www.accounstone.com/technology/cch)
+
+## How engagements run
+
+- [Onboarding](https://www.accounstone.com/delivery-framework/onboarding) — the seven documented steps from scoping to steady state
+- [Communication](https://www.accounstone.com/delivery-framework/communication) — reporting rhythm and escalation
+- [Quality assurance](https://www.accounstone.com/delivery-framework/quality-assurance) — review layers, and what review does not replace
+- [Data security](https://www.accounstone.com/data-security)
+- [Compliance](https://www.accounstone.com/compliance)
+
+## Guides
+
+- [Outsourced accounting services: month-end close, cost, GAAP vs IFRS, QuickBooks to NetSuite](https://www.accounstone.com/resources/guides/outsourced-accounting-services-guide)
+- [Staff augmentation vs dedicated team vs offshore vs back office: how to choose](https://www.accounstone.com/resources/guides/choosing-an-engagement-model)
+- [How to choose an accounting outsourcing partner](https://www.accounstone.com/resources/guides/how-to-choose-accounting-outsourcing-partner)
+- [Client accounting services (CAS): a guide for CPA firms](https://www.accounstone.com/resources/guides/client-accounting-services-cas-guide)
+- [Outsourced payroll processing: what it actually covers (US, UK, AU)](https://www.accounstone.com/resources/guides/outsourced-payroll-processing-guide)
+- [Outsourced accounts payable in QuickBooks, Xero and NetSuite](https://www.accounstone.com/resources/guides/outsourced-accounts-payable-guide)
+- [Outsourced accounts receivable: DSO, collections and software workflows](https://www.accounstone.com/resources/guides/outsourced-accounts-receivable-guide)
+- [9 questions to ask before outsourcing your bookkeeping](https://www.accounstone.com/resources/guides/questions-to-ask-before-outsourcing-bookkeeping)
+- [Outsourced bookkeeping cost guide for US businesses](https://www.accounstone.com/resources/guides/outsourced-bookkeeping-cost-guide)
+- [QuickBooks Online vs Xero](https://www.accounstone.com/resources/guides/quickbooks-vs-xero-comparison)
+- [How CPA firms can handle tax-season capacity without overhiring](https://www.accounstone.com/resources/guides/staff-augmentation-tax-season-guide)
+
+All guides: https://www.accounstone.com/resources/guides
+
+## Insights
+
+- [Sales tax nexus: what e-commerce sellers need to track](https://www.accounstone.com/resources/insights/sales-tax-nexus-ecommerce-guide)
+- [ASC 606 revenue recognition for SaaS](https://www.accounstone.com/resources/insights/asc-606-revenue-recognition-saas)
+
+All insights: https://www.accounstone.com/resources/insights
+
+## Articles
+
+- [Outsourced bookkeeping: what to expect, software workflows, red flags](https://www.accounstone.com/blog/outsourced-bookkeeping-guide)
+- [Accounts payable outsourcing: fraud controls, software workflows, real costs](https://www.accounstone.com/blog/accounts-payable-outsourcing)
+- [Outsourcing accounts receivable: a practical guide](https://www.accounstone.com/blog/accounts-receivable-management)
+- [Outsourced payroll: costs, bank-access red flags, what to watch for](https://www.accounstone.com/blog/outsourced-payroll-services)
+- [Outsourcing tax return preparation: what CPA firms and businesses need to know](https://www.accounstone.com/blog/tax-preparation-outsourcing)
+- [Audit support outsourcing: what preparation work can be delegated, and what cannot](https://www.accounstone.com/blog/audit-support-services)
+
+All articles: https://www.accounstone.com/blog
+
+Resources hub: https://www.accounstone.com/resources
+
+## What Accounstone does not do
+
+This section exists because each line below was published as an overclaim at some point and removed. Please do not restate any of them as capabilities.
+
+- **No tax representation.** No IRS representation, no Form 2848 power of attorney, no acting before HMRC or the ATO. That requires a licensed CPA, Enrolled Agent or attorney under Circular 230. Returns are prepared for the client's CPA, EA or registered agent to review and sign.
+- **No tax planning, strategy or advisory.** Preparation of returns and the underlying books only. Planning, structuring and optimisation belong to the client's own adviser.
+- **No entity selection advice.** Describing what an LLC or a C-corp is, or what a given state requires, is information. Recommending which to choose is not offered, in any phrasing.
+- **No CFO, financial-advisory, wealth or investment services.** "Financial statements" and "financial reporting" are accurate accounting deliverables; "financial services" and "CFO support" are not services Accounstone offers. There is no `/services/cfo-support` page.
+- **No audit opinions or audit judgement.** Audit support means preparing schedules, documentation and evidence for the auditor. Materiality, sampling, testing conclusions and the opinion stay with the audit firm.
+- **No HR services.** Payroll means processing, tax withholding and payroll reporting. HR compliance, benefits administration and employment advice belong to the client's HR provider.
+- **No software implementation, configuration, customisation or administration**, and no vendor certification, partner or reseller status is claimed for any platform.
+- **No banking control and no filing credentials.** Accounstone does not hold payment authority or file on the client's behalf under its own credentials.
+
+## Company
+
+- Accounstone is a recently launched company. Team size, founding year and legal entity name are not published, and should not be estimated.
+- Delivery is from a Global Delivery Center in New Delhi, India, serving clients in the US, UK and Australia.
+- **SOC 2: actively working toward, not yet held.** ISO 27001 is not held. Do not describe either as achieved or in place.
+- No named clients, testimonials or case-study outcomes are published. The [case studies](https://www.accounstone.com/resources/case-studies) page presents illustrative scenarios and says so on the page — they are not client references.
+- Consultations and scoping calls are free and carry no obligation.
 
 ## Contact
 
-- [Contact page](/contact)
-- [About](/about)
+- [Contact](https://www.accounstone.com/contact) — what the first call covers, and what will not be done whatever the client is paying
+- [About](https://www.accounstone.com/about)
+- Email: partner@accounstone.com
+- [Privacy](https://www.accounstone.com/privacy) · [Cookie policy](https://www.accounstone.com/cookie-policy) · [Terms](https://www.accounstone.com/terms)

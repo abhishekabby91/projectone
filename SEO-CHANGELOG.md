@@ -1,5 +1,94 @@
 # Accounstone SEO Changelog
 
+## 2026-09-08b (sitemap dates generated; llms.txt rewritten)
+
+Both files had drifted quietly, in the way files nobody renders tend to.
+
+### The sitemap was telling Google nothing had changed
+
+`app/sitemap.ts` carried a literal `lastModified` per entry, defaulting to a
+`LAST_AUDIT = '2026-08-14'` constant. Rendered, that came out as:
+
+| | before | after |
+|---|---|---|
+| URLs | 88 | 88 |
+| URLs carrying a `lastmod` | 66 | **88** |
+| declaring 2026-08-14 | 41 | 0 |
+| newest date anywhere in the file | 2026-08-27 | 2026-09-08 |
+
+Four content passes — 09-03, 09-04, 09-07 and 09-08 — had rewritten most of the
+site since the newest date the sitemap was willing to admit to. `lastmod` is a
+recrawl hint; a stale one is worse than an absent one, because it actively says
+the page you just rewrote has not changed.
+
+The fix is to stop writing the dates. `scripts/generate-sitemap-dates.mjs`
+derives them from git — for each route, the last commit that changed its
+rendered body, meaning its own `page.tsx` plus the shared module its body lives
+in where there is one (`components/registration-state-page.tsx`,
+`lib/service-depth.ts`, `lib/regional-context.ts`,
+`components/article-layout.tsx`, `lib/company-registration.ts`). It writes
+`lib/sitemap-dates.ts`, which `app/sitemap.ts` now reads. Run it at the end of a
+content pass.
+
+It is deliberately **not** `lastModified: new Date()`. That is the one-liner
+everyone reaches for and it is a fabricated date on every route that has not
+changed — the exact thing `AI-WEBSITE-GUIDE.md` bans. The human-side corollary
+is in `CLAUDE.md`: never touch a page just to refresh its date.
+
+While in the file, 21 dead lines came out. All 21 Service x Region URLs were
+spelled out by hand in `specializedRoutes` after `serviceRegionPaths.map()` had
+already generated them; the dedupe kept the first and dropped the second, so
+editing those lines did nothing and nothing said so. The loop is now the only
+source, and the legal pages moved up into `staticRoutes` where they belong.
+
+### llms.txt was serving claims the site had already retracted
+
+`public/llms.txt` is what AI assistants read and repeat, and it had not been
+touched since before the 2026-08-27 restructure. Two real defects:
+
+- **It linked all seven retired generic `/services/{slug}` URLs.** Those have
+  been 301s since 2026-08-27. The sitewide "zero internal links pointing at a
+  redirect" check crawls rendered pages, so it never reads `public/`, and
+  nothing else does either.
+- **It carried "QuickBooks Certified ProAdvisor (since 2022)" and "24+ years of
+  combined accounting experience".** Both are open owner-verification items in
+  `AI-WEBSITE-GUIDE.md`; both had already been removed from every page on the
+  site. They were still being fed to LLMs weeks later. Removed, and replaced
+  with what `knowledge/company/identity.md` actually verifies — plus an explicit
+  note that team size, founding year and legal entity name are not published and
+  must not be estimated.
+
+Rewritten from 67 lines to 165. It now lists **all 88 indexable routes** and
+excludes exactly the two `noindex` ones, which is the same invariant the sitemap
+holds and can be checked the same way (the `comm` pair is in `CLAUDE.md`). New
+sections cover the region-first service structure and why it exists, the four
+engagement models, the company-registration cluster with its arranged-and-
+coordinated scope stated up front, the delivery framework, and all 19 articles,
+guides and insights.
+
+The section that matters most is **"What Accounstone does not do"**, condensed
+from `knowledge/company/scope-boundaries.md`: no tax representation or power of
+attorney, no tax planning or strategy, no entity-selection advice, no CFO or
+financial-advisory work, no audit judgement, no HR services, no software
+implementation or vendor certification, no banking control or filing
+credentials. An assistant summarising Accounstone should get the boundaries in
+the same breath as the capabilities rather than inferring them — which is the
+whole reason to publish the file at all.
+
+`app/robots.ts` was reviewed and left alone: it already allows the AI crawlers
+by name, blocks AhrefsBot and SemrushBot deliberately, and declares the sitemap.
+
+### Verification
+
+- `pnpm eslint .` — silent
+- `pnpm next build` — green, 97 static pages
+- sitemap — 88 URLs, 88 with `lastmod`, dates spanning 2026-08-21 to 2026-09-08
+- sitemap drift — 90 on disk, 88 listed, the two differences `/technology/myob`
+  and `/thank-you`
+- llms.txt parity — 88 URLs, every one resolving to a route on disk, neither
+  `noindex` route linked
+- `/robots.txt`, `/sitemap.xml` and `/llms.txt` all 200
+
 ## 2026-09-08 (internal linking measured and repaired; five more illustrations)
 
 Three things were asked for: update per Search Console, increase internal
