@@ -591,44 +591,32 @@ anything.
 
 ## The homepage hero
 
-`components/site-hero.tsx`, which replaced the stock-photo carousel on
-2026-09-08. Three reasons the carousel went, all visible in a screenshot:
+`components/hero-carousel.tsx` — three rotating stock photographs, and the
+owner's choice. It was replaced with a designed navy panel on 2026-09-08 and
+**restored the same day at the owner's request**; the replacement is in git
+history at `b84b03e` if it is ever wanted back.
 
-- the photography was generic stock — pens, a calculator, a spreadsheet — and
-  said nothing a competitor's could not;
-- the white headline sat on a mid-tone photograph, at a contrast ratio no fixed
-  type colour survives across three rotating images;
-- and it belonged to a different visual system than everything below it, which
-  is navy, gold and hand-drawn line work. It was the one part of the page that
-  looked bought rather than made.
+`AI-WEBSITE-GUIDE.md` already says not to change the hero imagery or slider
+unless the owner asks. That still stands, and now has a worked example behind
+it. The three objections that motivated the swap are recorded here because they
+are real and unfixed, not because they should be acted on again unasked:
 
-What replaced it is assembled from what the site already owns: the navy
-gradient, the gold hairline, the `ledger-lines-dark` motif already in
-`globals.css`, and the drawing language of `service-illustration.tsx`. **No new
-photography, nothing to license, nothing to art-direct later** — which is also
-why it will not drift back out of alignment with the rest of the site.
+- the photography is generic stock, on a site whose whole content strategy is
+  operational specificity;
+- white type sits on mid-tone photography, so no single fixed colour holds a
+  reliable contrast ratio across all three slides;
+- and it is the one part of the page that does not belong to the navy, gold and
+  hand-drawn system used everywhere below it.
 
-Two things to preserve:
+**If a photographic hero is ever revisited, the fix is a split layout, not a
+scrim.** Full-bleed-behind-text was tried and is what produces the problem in
+the first place: the subject of any crop lands exactly where the headline is,
+so you either scrim the photo into noise or accept unreadable type. Words on
+the navy, image in its own panel beside them, has no contrast problem to solve.
 
-- **The `h1` is the visible headline.** The carousel kept a separate `sr-only`
-  h1 because its visible titles rotated. There is one headline now, so it is
-  the h1, and there is still exactly one per page.
-- **The drawing is `aria-hidden` and spends the accent once** — on the flagged
-  exception, the thing that needs a human decision. That is the rule the whole
-  illustration system runs on; read the note atop `service-illustration.tsx`
-  before changing a stroke.
-
-`components/hero-carousel.tsx`, `components/hero.tsx` and the three
-`public/carousel-*.jpg` files were deleted with it — nothing imported them
-afterwards.
-
-**The last three emoji went at the same time.** `trustBadges` in `lib/data.ts`
-held `🔒 ✓ ▣`, and the six industry pages each passed an emoji `icon` into
-`IndustryPageTemplate` — which never rendered it. The first three are now
-lucide icons through `components/trust-icon.tsx`; the industry prop is gone
-entirely, interface included. Both had survived the sitewide emoji removal by
-living in data rather than in markup, which is where to look if another one
-turns up.
+And the upgrade that would actually change the page is not a layout: it is one
+photograph of the delivery team. *Who actually does the work?* is the question
+this buyer arrives with, and no stock globe or calculator answers it.
 
 ## The process flow on the homepage
 
