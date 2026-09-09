@@ -34,7 +34,7 @@ export function generateOrganizationSchema() {
     name: companyInfo.name, description: companyInfo.description, url: baseUrl,
     logo: { '@type': 'ImageObject', url: `${baseUrl}/accounstone-logo-horizontal.png` },
     sameAs: ['https://www.linkedin.com/company/accounstone/', 'https://www.facebook.com/profile.php?id=61591501869187', 'https://www.instagram.com/accounstone', 'https://www.youtube.com/@accounstone'],
-    contactPoint: { '@type': 'ContactPoint', contactType: 'Customer Service', email: companyInfo.contact.email, telephone: companyInfo.contact.phone, areaServed: ['US', 'GB', 'AU'], availableLanguage: ['English'] },
+    contactPoint: { '@type': 'ContactPoint', contactType: 'Customer Service', email: companyInfo.contact.email, areaServed: ['US', 'GB', 'AU'], availableLanguage: ['English'] },
   };
 }
 

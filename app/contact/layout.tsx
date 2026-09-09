@@ -38,14 +38,12 @@ const contactPageSchema = {
     '@id': `${baseUrl}/#organization`,
     name: companyInfo.name,
     email: companyInfo.contact.email,
-    telephone: companyInfo.contact.phone,
     url: baseUrl,
     contactPoint: [
       {
         '@type': 'ContactPoint',
         contactType: 'Sales',
         email: companyInfo.contact.email,
-        telephone: companyInfo.contact.phone,
         areaServed: ['US', 'GB', 'AU'],
         availableLanguage: ['English'],
       },

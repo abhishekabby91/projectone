@@ -70,13 +70,6 @@ export default function ThankYouPage() {
                   className="inline-block py-1.5 font-semibold text-primary underline underline-offset-2 hover:text-accent"
                 >
                   {companyInfo.contact.email}
-                </a>{' '}
-                or call{' '}
-                <a
-                  href={`tel:${companyInfo.contact.phone.replace(/[^+0-9]/g, '')}`}
-                  className="inline-block py-1.5 font-semibold text-primary underline underline-offset-2 hover:text-accent"
-                >
-                  {companyInfo.contact.phoneDisplay}
                 </a>
                 .
               </p>

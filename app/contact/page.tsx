@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowRight, Check, Clock, Mail, MapPin, Phone, ShieldCheck, UserCheck, X } from 'lucide-react';
+import { ArrowRight, Check, Clock, Mail, MapPin, ShieldCheck, UserCheck, X } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import RegionFlag from '@/components/region-flag';
@@ -309,19 +309,6 @@ export default function ContactPage() {
                     className="inline-block py-1 break-words text-primary hover:text-primary-light transition-colors"
                   >
                     {companyInfo.contact.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <Phone className="w-6 h-6 text-accent flex-shrink-0" aria-hidden="true" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                  <a
-                    href={`tel:${companyInfo.contact.phone.replace(/[^+0-9]/g, '')}`}
-                    className="inline-block py-1 text-primary hover:text-primary-light transition-colors"
-                  >
-                    {companyInfo.contact.phoneDisplay}
                   </a>
                 </div>
               </div>

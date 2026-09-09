@@ -1,5 +1,50 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09b (the phone number comes off the site)
+
+Owner's instruction: hide the mobile number. Removed rather than hidden, which
+is a different thing — CSS-hiding it, or leaving it in `lib/data.ts` unused,
+would both still ship it to the browser.
+
+`companyInfo` is imported by client components, so every property on it lands in
+the client bundle and in page source regardless of what renders. `phone` and
+`phoneDisplay` are therefore deleted from `lib/data.ts`, not orphaned.
+
+Six render sites:
+
+| File | What went |
+|---|---|
+| `components/header-bar.tsx` | the phone icon and its `tel:` link |
+| `components/inquiry-section.tsx` | the phone line in the contact block (85 pages) |
+| `app/thank-you/page.tsx` | "or call …" in the confirmation sentence |
+| `app/contact/page.tsx` | the whole Phone row of the contact details |
+| `lib/seo.ts` | `telephone` on the sitewide `ContactPoint` |
+| `app/contact/layout.tsx` | `telephone` on the Organization **and** its Sales `ContactPoint` |
+
+**The schema is the half that is easy to miss.** Taking the number off the page
+while leaving it in JSON-LD keeps publishing it to Google, which is most of the
+point of removing it. Both schema files were done in the same pass.
+
+Two now-unused `Phone` lucide imports were dropped with them. The `phone` field
+on the enquiry form is the *visitor's* number and is untouched.
+
+Verified: `grep -r "9990597192\|99905 97192" .next/` returns **0 files** after a
+clean production build, `.next/static` included; `tel:` appears in the rendered
+HTML of none of `/`, `/contact`, `/thank-you`, `/markets/united-kingdom`,
+`/services/bookkeeping/united-states`, `/about`; eslint silent; build green;
+`/contact`'s detail list reads Email then Delivery centre with no gap, and the
+header bar sits correctly with one icon at 390 and 1280.
+
+### Two loose ends, recorded not actioned
+
+- `components/Sidebar.tsx` contains `https://wa.me/919990597192`. It is
+  **imported nowhere**, so it never reaches the build and is why the grep above
+  returns clean. It is a landmine rather than a live exposure: mounting that
+  component republishes the number. Left in place because deleting a component
+  is the owner's call.
+- `knowledge/company/identity.md` still lists the number in its contact table.
+  That file is human-edit-only by its own rule, so the owner needs to update it.
+
 ## 2026-09-09 (UK and AU cycle pages)
 
 Three pages added: `/markets/united-kingdom/vat-returns`,
