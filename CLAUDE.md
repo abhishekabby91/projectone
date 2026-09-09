@@ -149,22 +149,52 @@ Do **not** resolve these unilaterally. Each needs the owner.
    unobtainable. (`robots.txt` also deliberately blocks AhrefsBot and
    SemrushBot.)
 
-   **Access broke between 2026-09-04 and 2026-09-07, and nothing can be read
-   until it is fixed.** `list_properties` still returns
-   `sc-domain:accounstone.com`, but with `permission_level:
-   "siteUnverifiedUser"`, and every analytics call now returns HTTP 403 "User
-   does not have sufficient permission". Both connected MCP servers
-   (`Geneio-projectone` and `GenieSEO`) are the same Google account and both
-   fail identically, so it is the account's access that changed, not one
-   connector. Likely causes, in order of probability: the DNS TXT record that
+   **Access broke between 2026-09-04 and 2026-09-07. The cause was
+   misdiagnosed here until 2026-09-09, and the wrong diagnosis cost the owner
+   several days chasing DNS — so read this before touching it.**
+
+   This file previously said the likely causes were "the DNS TXT record that
    verified the domain property was changed or removed, or the connected
-   account's access was revoked in Search Console. **This is the owner's to
-   fix** — re-verify the property, or re-grant that account at least Full user.
-   Until then every GSC-driven decision in this file is frozen at its
-   2026-09-04 reading. **Re-checked 2026-09-08: unchanged, still 403.** Do not
-   spend a pass re-diagnosing it; check `list_properties` once, and if the
-   permission level is still `siteUnverifiedUser`, say so and work on something
-   that can be measured from inside the repo.
+   account's access was revoked". **Both were wrong.** The property is fine and
+   always was: the owner confirmed on 2026-09-09 that Search Console shows it
+   *successfully verified* via Domain name provider, so the TXT record is
+   intact.
+
+   **The connector is simply signed in to the wrong Google account.** Three
+   pieces of evidence, gathered 2026-09-09:
+
+   - `get_site_details` returns **HTTP 404 — "'sc-domain:accounstone.com' is
+     not a verified Search Console site in this account."** That is the
+     decisive error and it names the cause outright.
+   - `permission_level: "siteUnverifiedUser"` does **not** mean the property
+     lost verification. It means *this account* added the property to its own
+     Search Console and never verified it. The property stays listed, which is
+     why `list_properties` looks deceptively healthy.
+   - GA4 on the same OAuth token sees exactly one property — **"AU Corporate"**
+     (`549024501`), parent account "Abhishek", created 2026-08-07, INR /
+     Asia-Calcutta, and **zero sessions in 28 days**. That is not Accounstone's
+     GA4 (`G-D1L72NM0GY`), which has traffic. So the connected account is not
+     the one that runs Accounstone's analytics at all.
+
+   Both connectors (`Geneio-projectone` and `GenieSEO`) are on that same wrong
+   account and fail identically.
+
+   **The fix, and it is the owner's:** either re-connect the GSC connector
+   signed in as the Google account that owns the verified property, or — from
+   that owning account — Search Console → Settings → Users and permissions →
+   Add user → the connector's account at **Full** (Restricted still 403s the
+   API).
+
+   **The diagnostic lesson, which is the reusable part: call
+   `get_site_details` first, not an analytics call.** A 403 from
+   `get_search_analytics` is ambiguous — it reads like a revoked permission and
+   sends you to DNS. The 404 from `get_site_details` says "not verified *in
+   this account*" and points straight at the real problem. Three sessions ran
+   the ambiguous check and repeated the wrong conclusion.
+
+   Until it is fixed every GSC-driven decision in this file is frozen at its
+   2026-09-04 reading. Check `get_site_details` once per pass; if it still
+   404s, say so and work on something measurable from inside the repo.
 3. **Redirect targets are settled. The generic-tier question is not
    (2026-09-03).** The owner authorised deciding the retired-URL targets, and
    country-segmented GSC decided them: six of the seven stay on United States,

@@ -1,5 +1,47 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09e (the Search Console diagnosis was wrong)
+
+Since 2026-09-07 this changelog and `CLAUDE.md` have said Search Console access
+broke because the verifying DNS TXT record was removed or the account's access
+was revoked. **Both were wrong**, and the wrong answer was repeated across three
+sessions because each one ran the same ambiguous check.
+
+The owner confirmed on 2026-09-09 that Search Console shows the property
+*successfully verified* via Domain name provider. The TXT record is intact. The
+property was never the problem.
+
+**The connector is signed in to the wrong Google account.** Evidence:
+
+| Check | Result |
+|---|---|
+| `get_site_details` | **404 — "'sc-domain:accounstone.com' is not a verified Search Console site in this account."** |
+| `list_properties` | property listed at `siteUnverifiedUser` |
+| GA4 on the same token | one property, "AU Corporate" (549024501), account "Abhishek", created 2026-08-07, INR/Asia-Calcutta, **0 sessions in 28 days** |
+
+`siteUnverifiedUser` does not mean verification was lost. It means *this
+account* added the property to its own Search Console and never verified it —
+which is why `list_properties` kept returning it and looking healthy. And the
+GA4 side is conclusive: the connected account cannot see Accounstone's GA4
+property (`G-D1L72NM0GY`) at all, only an unrelated empty one.
+
+Both connectors (`Geneio-projectone`, `GenieSEO`) are on that same account.
+
+### The reusable lesson
+
+**Call `get_site_details` before any analytics call.** A 403 from
+`get_search_analytics` reads like a revoked permission and points at DNS. The
+404 from `get_site_details` says "not verified *in this account*" and points at
+the actual cause. The cheaper, more specific check existed the whole time and
+nobody ran it — including me, across two passes today.
+
+Second lesson, more general: **an error message that is consistent is not the
+same as a diagnosis that is confirmed.** "Still 403" was recorded three times as
+if the repetition were evidence. It only ever confirmed the symptom.
+
+Nothing in the site changed in this entry. `CLAUDE.md` open item 2 is rewritten
+with the corrected cause, the fix, and the diagnostic order.
+
 ## 2026-09-09d (the response-time promise, all five of it)
 
 The 2026-09-08 pass recorded that the unverified response-time claim had been
