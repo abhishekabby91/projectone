@@ -283,8 +283,7 @@ export default function ContactPage() {
                 </button>
 
                 <p className="text-xs text-muted text-center">
-                  We reply within one business day. Your details are used to answer your enquiry and
-                  nothing else.
+                  Your details are used to answer your enquiry and nothing else.
                 </p>
               </form>
             </div>
@@ -358,7 +357,7 @@ export default function ContactPage() {
                   'A free consultation and call, with no commitment',
                   'A written proposal built around your actual workflow',
                   'No long-term contracts required',
-                  'A reply within one business day',
+                  'A reply from the person who would scope the work',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <Check className="text-accent flex-shrink-0 w-5 h-5" aria-hidden="true" />

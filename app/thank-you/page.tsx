@@ -38,8 +38,8 @@ const NEXT_STEPS = [
     p: 'Enquiries are not routed to a sales queue. The person who replies is the person who would scope the work.',
   },
   {
-    h: 'You hear back within one business day',
-    p: 'Usually sooner. If your enquiry named a region, it goes to whoever covers that market and its business hours.',
+    h: 'It goes to whoever covers your market',
+    p: 'If your enquiry named a region, it reaches the people working that market\u2019s business hours from our delivery centre in New Delhi. We do not advertise a response time here; turnaround is agreed in writing at onboarding and named in the engagement.',
   },
   {
     h: 'The first call is a scoping call',

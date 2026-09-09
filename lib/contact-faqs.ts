@@ -10,7 +10,7 @@ export const CONTACT_FAQS = [
   {
     question: 'What actually happens after I send this?',
     answer:
-      'It reaches a person, not a queue. You get a reply within one business day, usually sooner, and the first exchange is about scope rather than price: what work you are describing, which parts of it can be prepared and which have to stay with your team. If a call helps, we book half an hour. There is no charge and no obligation at the end of it.',
+      'It reaches a person, not a queue, and the first exchange is about scope rather than price: what work you are describing, which parts of it can be prepared and which have to stay with your team. If a call helps, we book half an hour. There is no charge and no obligation at the end of it. We do not advertise a response time, because the honest answer depends on when it arrives and which market it names \u2014 what is fixed is that turnaround on the work itself is agreed in writing at onboarding rather than promised here.',
   },
   {
     question: 'Will I end up spending more time reviewing than doing it myself?',

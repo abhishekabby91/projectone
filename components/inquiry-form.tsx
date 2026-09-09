@@ -352,7 +352,7 @@ export default function InquiryForm({
         <p className={`${sz.note} text-muted text-center`}>
           {size === 'compact'
             ? 'Free consultation. No obligation.'
-            : <>The consultation and the call are always free. {r?.hours ?? 'We reply within 24 business hours.'}</>}
+            : <>The consultation and the call are always free. {r?.hours ?? 'We reply from our delivery centre in New Delhi.'}</>}
         </p>
       </form>
     </div>

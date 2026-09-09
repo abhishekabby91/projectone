@@ -1,5 +1,52 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09d (the response-time promise, all five of it)
+
+The 2026-09-08 pass recorded that the unverified response-time claim had been
+removed. It had not. Grepping the **pattern** rather than the two pages someone
+had noticed found five surviving instances, in two different numbers:
+
+| Where | What it said |
+|---|---|
+| `components/inquiry-form.tsx` | "We reply within 24 business hours." |
+| `app/thank-you/page.tsx` | "You hear back within one business day" |
+| `app/contact/page.tsx` | "We reply within one business day" |
+| `app/contact/page.tsx` | "A reply within one business day" |
+| `lib/contact-faqs.ts` | "You get a reply within one business day, usually sooner" |
+
+**The form one was the worst and was invisible to any page-by-page read.** It is
+the fallback in `{r?.hours ?? '…'}` under the submit button, so it rendered on
+every page whose inquiry form carries no `region` prop — and it promised a
+different number from the other four, which is precisely the "two pages, two
+wordings" failure the previous entry says it was fixing.
+
+All five are gone. The regional `hours` strings ("We cover UK business hours
+from our delivery centre in New Delhi") are coverage rather than commitment and
+stay; the fallback now matches their shape.
+
+Where a reader genuinely wants to know when they will hear, going silent is
+worse than answering. `/contact`'s FAQ and `/thank-you` now say why there is no
+number, in the voice `/markets/australia` already used for turnaround: the
+honest answer depends on volume and market, and what is fixed is that it is
+agreed in writing at onboarding.
+
+**Method, because this is the reusable part:** grep the claim pattern across the
+repo, never fix only the instances someone happened to spot. Verified after: 0
+hits for `within one business day|24 business hours|within 24 hours` in source,
+and 0 in the rendered text of `/`, `/contact`, `/thank-you`, a Service x Region
+page, a market page and a guide.
+
+`components/Sidebar.tsx` deleted in the same pass. It held
+`wa.me/919990597192`, was imported nowhere and so never reached the build — but
+a dead file carrying the number is a landmine for whoever mounts it next.
+`components/header-bar.tsx`'s `CALL_HREF` is now the only occurrence in the
+whole repo.
+
+Still the owner's: `knowledge/company/identity.md` lists the number against
+"header bar, ContactPoint schema", and the ContactPoint half is now wrong —
+`telephone` came out of the schema on 2026-09-09b. That file is human-edit-only
+by its own rule, so it was left alone deliberately.
+
 ## 2026-09-09c (the call icon comes back, the digits do not)
 
 Owner's revision on 2026-09-09b: "you can use the icon but dont show number

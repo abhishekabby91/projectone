@@ -386,11 +386,35 @@ All of it now describes structure: response times and working-hours overlap are
 **agreed in writing at onboarding and named in the engagement**. Write it that
 way if you touch these pages.
 
-**Open for the owner: is 24 hours the real response commitment?** If it is, it
-can go back — it needs confirming once and then stating identically everywhere,
-rather than appearing on two pages in two wordings. It was removed rather than
-kept because an unverified SLA is exactly the kind of claim a client holds you
-to.
+**The 2026-09-08 pass did not actually finish, and that is worth recording.**
+On 2026-09-09 a grep for the pattern rather than the two known pages found
+**five** surviving response-time promises, in two different numbers:
+
+| Where | What it said |
+|---|---|
+| `components/inquiry-form.tsx` | "We reply within 24 business hours." — the fallback under the submit button, so it rendered on **every page whose form has no `region` prop** |
+| `app/thank-you/page.tsx` | "You hear back within one business day" |
+| `app/contact/page.tsx` ×2 | "We reply within one business day"; "A reply within one business day" |
+| `lib/contact-faqs.ts` | "You get a reply within one business day, usually sooner" |
+
+All five are gone. The lesson is the method: **grep the claim pattern across the
+repo, do not fix the instances someone happened to notice.** The form fallback
+was the worst of them and was invisible from any page-by-page read, because it
+only fires when `region` is absent.
+
+The regional `hours` strings in `inquiry-form.tsx` — "We cover UK business hours
+from our delivery centre in New Delhi" — are **coverage, not a commitment**, and
+stay. The fallback now matches their shape rather than promising a number.
+
+Where a reader genuinely needs an answer, say why there is no number instead of
+going silent. `/contact`'s FAQ and `/thank-you` both now do this, in the voice
+`/markets/australia` already used for turnaround: the honest answer depends on
+volume and market, and what is fixed is that it is agreed in writing at
+onboarding.
+
+**Open for the owner: is there a real response commitment?** If there is, it can
+go back — confirmed once, then stated identically everywhere. It stays out
+because an unverified SLA is exactly the kind of claim a client holds you to.
 
 The general rule this leaves behind: **a claim about how people will be treated
 is a commitment, and it needs a source in `knowledge/` the same way a capability
@@ -1178,11 +1202,15 @@ schema pair is the easy one to miss: putting `telephone` back publishes the
 number to Google in a readable form, which is the thing the owner asked to stop.
 
 Email is the only published direct channel in text; everything else goes through
-the inquiry form. Two loose ends recorded rather than actioned:
-`components/Sidebar.tsx` still contains `wa.me/919990597192` but is **imported
-nowhere**, so it never reaches the build — it is a landmine only if someone
-mounts it. And `knowledge/company/identity.md` still lists the number in its
-contact table; that file is human-edit-only, so **the owner needs to update it**.
+the inquiry form. `components/Sidebar.tsx` was deleted on 2026-09-09 — it held
+`wa.me/919990597192` and was imported nowhere, so it never reached the build,
+but a dead file carrying the number is a landmine for whoever mounts it next.
+
+**One loose end remains and it is the owner's.** `knowledge/company/identity.md`
+still lists the number in its contact table, alongside "header bar, ContactPoint
+schema" — and the ContactPoint half of that is now wrong, because `telephone`
+was removed from the schema. That file's own rule is that only a human may edit
+it, so it is left alone deliberately rather than overlooked.
 
 **The submit path is unchanged and must stay that way** - see the section below,
 which is the expensive lesson. Success still redirects to `/thank-you`; failure
