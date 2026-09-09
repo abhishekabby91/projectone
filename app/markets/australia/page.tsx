@@ -364,6 +364,7 @@ export default function AustraliaMarketPage() {
           </ul>
           <Reveal delay={0.1}>
             <div className="mt-7 flex flex-wrap gap-3">
+              <Link href="/markets/australia/bas-preparation" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">BAS preparation</Link>
               <Link href="/solutions/dedicated-accounting-teams" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Dedicated team</Link>
               <Link href="/solutions/staff-augmentation" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Staff augmentation</Link>
               <Link href="/compliance" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Compliance &amp; controls</Link>

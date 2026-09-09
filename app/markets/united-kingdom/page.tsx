@@ -318,6 +318,8 @@ export default function UKMarketPage() {
           </ul>
           <Reveal delay={0.1}>
             <div className="mt-7 flex flex-wrap gap-3">
+              <Link href="/markets/united-kingdom/vat-returns" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">VAT returns</Link>
+              <Link href="/markets/united-kingdom/year-end-accounts" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Year-end accounts</Link>
               <Link href="/solutions/offshore-accounting-support" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Offshore accounting</Link>
               <Link href="/solutions/dedicated-accounting-teams" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Dedicated team</Link>
               <Link href="/solutions/staff-augmentation" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Staff augmentation</Link>

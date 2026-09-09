@@ -52,7 +52,36 @@ this specific work for me there". Measured overlap between the two is 0.0%.
 | How accounting/tax/payroll works in the UK (HMRC, VAT, MTD, PAYE, Companies House) | `/markets/united-kingdom` | Informational — regional authority |
 | How accounting/tax/payroll works in Australia (ATO, GST, BAS, PAYG, STP, super) | `/markets/australia` | Informational — regional authority |
 | Outsourced {service} in {region} | `/services/{service}/{region}` | Commercial |
+| VAT return preparation under MTD, for UK practices | `/markets/united-kingdom/vat-returns` | Commercial — cycle detail |
+| Year-end accounts preparation (FRS 102/105, Companies House) | `/markets/united-kingdom/year-end-accounts` | Commercial — cycle detail |
+| BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
 | All services, choose by region | `/services` | Commercial — navigational |
 
 **Do not** write service scope onto a Market page, and do not write country-environment
 explainers onto a Service x Region page. That collapse is what produces doorway pages.
+
+## Cycle-detail pages under a market (added 2026-09-09)
+
+The US had three sub-market pages and the UK and Australia had none, so the two
+markets the site sells into hardest carried less surface area than the domestic
+one. The three rows above close that, and they are scoped by a rule that keeps
+them off the market page's intent:
+
+**A market page covers the whole year across every cycle at one level of detail.
+A cycle page covers ONE cycle at the level of the ledger** — what is decided at
+the point of posting, and what it costs when it is decided at the deadline
+instead. If a second cycle starts appearing on a cycle page, it belongs on the
+market page.
+
+The cycle each market runs on is not a choice; both knowledge files name it.
+`knowledge/markets/uk.md`: "VAT registration and reporting is the primary
+recurring compliance cycle for most SME clients." `knowledge/markets/au.md`:
+"GST and BAS (Business Activity Statement) reporting is the primary recurring
+compliance cycle." Do not add a cycle page for something neither file calls a
+recurring cycle.
+
+**Every one of these pages routes submission to the licensed party, and that
+party differs by market** — the registered practitioner in the UK, the
+registered BAS or tax agent in Australia. `components/depth-block.tsx` takes
+`boundaryHeading` for exactly this reason; "your CPA" is US phrasing and is
+wrong in both.

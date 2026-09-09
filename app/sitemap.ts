@@ -79,6 +79,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/markets/united-states/texas', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/california', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/florida', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/markets/united-kingdom/vat-returns', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/markets/united-kingdom/year-end-accounts', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/markets/australia/bas-preparation', priority: 0.65, changeFrequency: 'monthly' },
     // Guides. Four of these shipped 2026-08-14 but were unlisted for a week —
     // internally linked yet never declared for crawling. The accounting-services
     // guide matters most: it is the 301 target for the retired
