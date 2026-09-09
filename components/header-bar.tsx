@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import SocialIcon from '@/components/social-icon';
 
 const socials = [
@@ -25,14 +25,6 @@ export default function HeaderBar() {
             className="flex h-7 w-7 items-center justify-center rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-200"
           >
             <Mail size={15} aria-hidden="true" />
-          </a>
-          <a
-            href="tel:+919990597192"
-            aria-label="Call Accounstone at +91 99905 97192"
-            title="+91 99905 97192"
-            className="flex h-7 w-7 items-center justify-center rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-200"
-          >
-            <Phone size={15} aria-hidden="true" />
           </a>
         </div>
 

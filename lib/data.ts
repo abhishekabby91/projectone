@@ -124,11 +124,14 @@ export const companyInfo = {
   website: 'https://www.accounstone.com',
   contact: {
     email: 'partner@accounstone.com',
-    // Raw E.164 for `tel:` links.
-    phone: '+919990597192',
-    // Grouped for reading. "+919990597192" is technically correct and visually
-    // unparseable, and it was rendering that way on every page that shows it.
-    phoneDisplay: '+91 99905 97192',
+    // No phone number here, deliberately (2026-09-09, owner's instruction).
+    // `phone` (E.164, for `tel:`) and `phoneDisplay` (grouped, for reading) were
+    // removed rather than left unused: `companyInfo` is imported by client
+    // components, so anything on this object ships in the browser bundle and is
+    // readable in page source even when nothing renders it. Email is the only
+    // published direct channel; everything else routes through the inquiry form.
+    // Restoring it means re-adding both fields AND the six render sites listed
+    // in SEO-CHANGELOG.md 2026-09-09b.
     address: 'Global Delivery Center - New Delhi, India',
   },
 };

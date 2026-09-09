@@ -1144,9 +1144,28 @@ and Australian firms - to a UK reader that reads as "not for you". All three
 markets now get a line, and no clock time is invented that the rest of the site
 does not already claim.
 
-`companyInfo.contact.phone` is raw E.164 for `tel:` links;
-`companyInfo.contact.phoneDisplay` is the grouped version for reading. The site
-was rendering `+919990597192` on every page that shows a number.
+**There is no phone number on the site any more (2026-09-09, owner's
+instruction).** `companyInfo.contact.phone` and `.phoneDisplay` are gone from
+`lib/data.ts` rather than left unused, because `companyInfo` is imported by
+client components — anything on that object ships in the browser bundle and is
+readable in page source whether or not a page renders it. Verified after the
+change: zero occurrences of the number anywhere in `.next`, including
+`.next/static`.
+
+Six render sites were removed: the header bar's phone icon, the inquiry band's
+contact block, `/thank-you`'s "or call", `/contact`'s Phone row, and the
+`telephone` property in **two** schema blocks — `lib/seo.ts`'s `ContactPoint`
+and `app/contact/layout.tsx`'s Organization plus its Sales `ContactPoint`.
+Removing it from the page while leaving it in structured data would have kept
+publishing it to Google, so the schema is the half not to forget if this is ever
+reversed.
+
+Email is now the only published direct channel; everything else goes through the
+inquiry form. Two loose ends recorded rather than actioned:
+`components/Sidebar.tsx` still contains `wa.me/919990597192` but is **imported
+nowhere**, so it never reaches the build — it is a landmine only if someone
+mounts it. And `knowledge/company/identity.md` still lists the number in its
+contact table; that file is human-edit-only, so **the owner needs to update it**.
 
 **The submit path is unchanged and must stay that way** - see the section below,
 which is the expensive lesson. Success still redirects to `/thank-you`; failure

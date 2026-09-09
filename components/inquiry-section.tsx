@@ -1,4 +1,4 @@
-import { Check, Mail, Phone } from 'lucide-react';
+import { Check, Mail } from 'lucide-react';
 import InquiryForm from '@/components/inquiry-form';
 import RegionFlag from '@/components/region-flag';
 import { companyInfo, regions } from '@/lib/data';
@@ -132,14 +132,6 @@ export default function InquirySection({
             >
               <Mail className="w-4 h-4 shrink-0" aria-hidden="true" />
               {companyInfo.contact.email}
-            </a>
-            <br />
-            <a
-              href={`tel:${companyInfo.contact.phone.replace(/[^+0-9]/g, '')}`}
-              className="inline-flex items-center gap-2 py-1.5 font-medium text-primary hover:text-accent transition-colors"
-            >
-              <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
-              {companyInfo.contact.phoneDisplay}
             </a>
           </div>
           )}
