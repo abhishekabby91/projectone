@@ -20,7 +20,7 @@ export const routeLastModified: Record<string, string> = {
   '/company-registration/nevada': '2026-09-08',
   '/company-registration/wyoming': '2026-09-08',
   '/compliance': '2026-09-08',
-  '/contact': '2026-09-03',
+  '/contact': '2026-09-09',
   '/cookie-policy': '2026-09-04',
   '/data-security': '2026-09-08',
   '/delivery-framework/communication': '2026-09-08',
@@ -98,5 +98,5 @@ export const routeLastModified: Record<string, string> = {
   '/technology/sage': '2026-09-08',
   '/technology/xero': '2026-09-08',
   '/terms': '2026-09-03',
-  '/thank-you': '2026-09-03',
+  '/thank-you': '2026-09-09',
 };
