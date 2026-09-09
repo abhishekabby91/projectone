@@ -179,11 +179,38 @@ Do **not** resolve these unilaterally. Each needs the owner.
    Both connectors (`Geneio-projectone` and `GenieSEO`) are on that same wrong
    account and fail identically.
 
-   **The fix, and it is the owner's:** either re-connect the GSC connector
-   signed in as the Google account that owns the verified property, or — from
-   that owning account — Search Console → Settings → Users and permissions →
-   Add user → the connector's account at **Full** (Restricted still 403s the
-   API).
+   **The connected account is identified.** Calling `reauthenticate` on
+   `GenieSEO` failed to start a new login (`OAuth client secrets file not
+   found`) but did clear a stale token cache, and the property list it returned
+   afterwards is the account's real one:
+
+   ```
+   sc-domain:theaucorp.com               siteFullUser
+   sc-domain:registercompanyinindia.com  siteFullUser
+   ```
+
+   `accounstone.com` is **not on it**. The entry `Geneio-projectone` still
+   shows at `siteUnverifiedUser` is a stale cached record of a site this
+   account once added and never verified. Same GA4 either way ("AU Corporate",
+   account "Abhishek"), so both connectors are one Google account — almost
+   certainly **partner@theaucorp.com**, given it holds `theaucorp.com` at full
+   access.
+
+   So `accounstone.com` is verified under a **different** Google account. The
+   likeliest is the one that owns the Vercel project,
+   `contactus7070@gmail.com`.
+
+   **The fix, and it is the owner's — one minute, from the account that has
+   accounstone.com verified:** Search Console → Settings → **Users and
+   permissions** → **Add user** → `partner@theaucorp.com` → permission
+   **Full** (Restricted still 403s the API). Both connectors are on that
+   account, so both start working immediately.
+
+   **Do not try to fix this with `reauthenticate`.** The server has no OAuth
+   client secrets file, so it cannot start a login flow at all — it only
+   deletes the existing token. Running it a second time, on the connector that
+   still holds the token, would leave both connectors with nothing and no way
+   to re-authenticate from inside a session.
 
    **The diagnostic lesson, which is the reusable part: call
    `get_site_details` first, not an analytics call.** A 403 from
