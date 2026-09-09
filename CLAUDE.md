@@ -1144,24 +1144,41 @@ and Australian firms - to a UK reader that reads as "not for you". All three
 markets now get a line, and no clock time is invented that the rest of the site
 does not already claim.
 
-**There is no phone number on the site any more (2026-09-09, owner's
-instruction).** `companyInfo.contact.phone` and `.phoneDisplay` are gone from
-`lib/data.ts` rather than left unused, because `companyInfo` is imported by
-client components — anything on that object ships in the browser bundle and is
-readable in page source whether or not a page renders it. Verified after the
-change: zero occurrences of the number anywhere in `.next`, including
-`.next/static`.
+**The phone number is never displayed anywhere on the site, but the header bar's
+phone icon still dials it (2026-09-09, owner's instruction: "you can use the
+icon but dont show number directly").** The rule is *displayed*, not *present* —
+and the difference matters, so it is worth being exact about what holds:
 
-Six render sites were removed: the header bar's phone icon, the inquiry band's
+- **Zero occurrences as readable text**, on any page, in any accessible name or
+  tooltip. The icon's `aria-label` and `title` are both "Call Accounstone" —
+  they say what the link does without reciting digits, so a screen-reader user
+  is not worse off.
+- **117 occurrences across 99 built files, every one of them inside a `tel:`
+  href** — verified by scanning `.next` and checking the 22 characters before
+  each match. The header bar is sitewide, so it is on every page by
+  construction. It is also in `.next/static/chunks/app/layout-*.js`, because
+  `header-bar.tsx` is a client component.
+- **So this hides the number from readers, not from scrapers.** Anything that
+  parses HTML gets it from the href. If the number ever needs to be genuinely
+  unscrapeable, the `tel:` link has to go and the icon should open the inquiry
+  dialog instead — there is no third option that keeps a working call link.
+
+`CALL_HREF` in `components/header-bar.tsx` is the **only** place the number
+lives, and it is deliberately not back on `companyInfo` in `lib/data.ts`. That
+object is imported all over the site, so a value on it invites the next person
+to render it; one constant in one client component means one place to look and
+one place to remove. There is no `phoneDisplay` anywhere any more, so there is
+nothing to print by accident.
+
+Five display sites stay removed, and **do not restore them**: the inquiry band's
 contact block, `/thank-you`'s "or call", `/contact`'s Phone row, and the
 `telephone` property in **two** schema blocks — `lib/seo.ts`'s `ContactPoint`
-and `app/contact/layout.tsx`'s Organization plus its Sales `ContactPoint`.
-Removing it from the page while leaving it in structured data would have kept
-publishing it to Google, so the schema is the half not to forget if this is ever
-reversed.
+and `app/contact/layout.tsx`'s Organization plus its Sales `ContactPoint`. The
+schema pair is the easy one to miss: putting `telephone` back publishes the
+number to Google in a readable form, which is the thing the owner asked to stop.
 
-Email is now the only published direct channel; everything else goes through the
-inquiry form. Two loose ends recorded rather than actioned:
+Email is the only published direct channel in text; everything else goes through
+the inquiry form. Two loose ends recorded rather than actioned:
 `components/Sidebar.tsx` still contains `wa.me/919990597192` but is **imported
 nowhere**, so it never reaches the build — it is a landmine only if someone
 mounts it. And `knowledge/company/identity.md` still lists the number in its

@@ -1,5 +1,49 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09c (the call icon comes back, the digits do not)
+
+Owner's revision on 2026-09-09b: "you can use the icon but dont show number
+directly." So the header bar's phone icon is restored as a working `tel:` link,
+and the number stays absent as readable text everywhere.
+
+`CALL_HREF` in `components/header-bar.tsx` is now the only place it lives.
+Deliberately not back on `companyInfo` — that object is imported sitewide, so a
+value on it invites the next person to render it. Only the E.164 form exists;
+there is no `phoneDisplay` to print by accident.
+
+The icon's `aria-label` and `title` are both "Call Accounstone" rather than the
+old "Call Accounstone at +91 …". A screen-reader user still learns what the link
+does; nobody hears the digits.
+
+**Nothing from 2026-09-09b was un-done.** The five display sites stay removed —
+the inquiry band's contact block, `/thank-you`'s "or call", `/contact`'s Phone
+row, and `telephone` in both schema blocks. Restoring the schema pair would
+republish the number to Google in readable form, which is the substance of what
+was asked for.
+
+Verified on a clean production build:
+
+| Check | Result |
+|---|---|
+| Occurrences as readable text, any page | **0** (tags stripped, then searched) |
+| Occurrences in `.next` | 117 across 99 files |
+| …of those, **not** inside a `tel:` href | **0** |
+| `telephone` in JSON-LD | absent, homepage and `/contact` |
+| Call icon tap target | 28x28 at 390 and 1280 (WCAG 2.5.8 wants >=24) |
+| eslint / build | silent / green |
+
+99 files because the header bar is sitewide — that is the price of a working
+call link, not a defect.
+
+### The honest limit, stated so nobody rediscovers it
+
+**This hides the number from readers, not from scrapers.** It is in the `href`
+on every page and in `.next/static/chunks/app/layout-*.js`, because
+`header-bar.tsx` is a client component. Any HTML parser gets it. If the goal is
+ever "no bot can harvest this", the `tel:` link has to go and the icon should
+open the inquiry dialog instead. There is no arrangement that keeps a
+one-tap call and hides the number from machines.
+
 ## 2026-09-09b (the phone number comes off the site)
 
 Owner's instruction: hide the mobile number. Removed rather than hidden, which

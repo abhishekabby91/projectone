@@ -1,8 +1,22 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import SocialIcon from '@/components/social-icon';
+
+// The number lives here and nowhere else on the site (2026-09-09, owner's
+// instruction: the icon may call, but the digits are never displayed).
+//
+// It is deliberately NOT back on `companyInfo` in `lib/data.ts`. That object is
+// imported all over the site, so a value on it invites the next person to render
+// it; keeping the one call affordance self-contained in this one client
+// component means there is exactly one place to look and one place to remove.
+//
+// Only the E.164 form exists — there is no `phoneDisplay` to print by accident.
+// Note it still appears in the rendered `href`, so this hides it from readers,
+// not from scrapers. If the number must be unscrapeable, this link has to go and
+// the icon should open the inquiry dialog instead.
+const CALL_HREF = 'tel:+919990597192';
 
 const socials = [
   { href: 'https://www.linkedin.com/company/accounstone/', label: 'LinkedIn' },
@@ -25,6 +39,14 @@ export default function HeaderBar() {
             className="flex h-7 w-7 items-center justify-center rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-200"
           >
             <Mail size={15} aria-hidden="true" />
+          </a>
+          <a
+            href={CALL_HREF}
+            aria-label="Call Accounstone"
+            title="Call Accounstone"
+            className="flex h-7 w-7 items-center justify-center rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-200"
+          >
+            <Phone size={15} aria-hidden="true" />
           </a>
         </div>
 
