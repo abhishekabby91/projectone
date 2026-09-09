@@ -64,8 +64,8 @@ Engagement model overview: https://www.accounstone.com/solutions
 Each market page addresses that market's own firms, in that market's own vocabulary — CPA firms in the US, accountancy practices in the UK, accounting firms in Australia.
 
 - [United States](https://www.accounstone.com/markets/united-states) — with state pages for [Texas](https://www.accounstone.com/markets/united-states/texas), [California](https://www.accounstone.com/markets/united-states/california) and [Florida](https://www.accounstone.com/markets/united-states/florida)
-- [United Kingdom](https://www.accounstone.com/markets/united-kingdom) — HMRC, VAT under Making Tax Digital, FRS 102, Companies House
-- [Australia](https://www.accounstone.com/markets/australia) — ATO, BAS and GST, Single Touch Payroll
+- [United Kingdom](https://www.accounstone.com/markets/united-kingdom) — HMRC, VAT under Making Tax Digital, FRS 102, Companies House, with cycle pages for [VAT return preparation](https://www.accounstone.com/markets/united-kingdom/vat-returns) and [year-end accounts](https://www.accounstone.com/markets/united-kingdom/year-end-accounts)
+- [Australia](https://www.accounstone.com/markets/australia) — ATO, BAS and GST, Single Touch Payroll, with a cycle page for [BAS preparation](https://www.accounstone.com/markets/australia/bas-preparation)
 
 Market overview: https://www.accounstone.com/markets
 

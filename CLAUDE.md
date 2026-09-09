@@ -27,9 +27,9 @@ background, superseded on specifics by the files above.
 
 ---
 
-## Current state (verified 2026-09-08)
+## Current state (verified 2026-09-09)
 
-- **90 routes** on disk, all returning 200; 88 in the sitemap (`/thank-you` and
+- **93 routes** on disk, all returning 200; 91 in the sitemap (`/thank-you` and
   `/technology/myob` are both `noindex` and deliberately excluded — see the
   drift check below).
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
@@ -77,9 +77,9 @@ background, superseded on specifics by the files above.
 - No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
 - **Six routes have one or fewer contextual inbound links, and all six are
   correct** — see "Internal links are measured, not assumed" below.
-- All 88 sitemap URLs carry a `lastmod`, and every one is the real date of the
+- All 91 sitemap URLs carry a `lastmod`, and every one is the real date of the
   last change to that page — generated, not written. `public/llms.txt` lists the
-  same 88 and excludes the same two `noindex` routes.
+  same 91 and excludes the same two `noindex` routes.
 
 ### The navbar is not a crawl path
 
@@ -264,8 +264,8 @@ lines, `/technology/myob` and `/thank-you`, and both are correct** — each is
 reports. Anything else in either direction is drift.
 
 This check found four unlisted guides on 2026-08-21, and confirmed 84 ↔ 84
-parity after the 2026-08-27 restructure. **As of 2026-09-07 it is 90 routes on
-disk against 88 in the sitemap**, the two differences being the noindex pair
+parity after the 2026-08-27 restructure. **As of 2026-09-09 it is 93 routes on
+disk against 91 in the sitemap**, the two differences being the noindex pair
 above.
 
 `app/services/cfo-support/route.ts` is a `route.ts` returning 410, not a page,
@@ -834,6 +834,48 @@ One trap worth naming: `rows` on a `<textarea>` is an HTML attribute with no
 `sm:` variant, so lowering it to shrink the mobile form silently shrinks the
 desktop one too. That happened once and was caught. The message box keeps
 `rows={4}` and takes its mobile height from `h-[92px] sm:h-auto` instead.
+
+## The UK and AU cycle pages
+
+`/markets/united-kingdom/{vat-returns,year-end-accounts}` and
+`/markets/australia/bas-preparation`, added 2026-09-09. Copy lives in
+`lib/market-depth.ts`; `components/market-depth.tsx` renders it through
+`components/depth-block.tsx`, which is now shared with the three US state pages
+(`components/state-depth.tsx` is a thin adapter over the same renderer).
+
+**They exist because the markets were asymmetric.** The US had three sub-market
+pages and the UK and Australia had none, so the two markets the site sells into
+hardest carried strictly less surface area than the domestic one. Both knowledge
+files name the cycle each market runs on, and neither had a URL:
+`knowledge/markets/uk.md` — "VAT registration and reporting is the primary
+recurring compliance cycle"; `knowledge/markets/au.md` — "GST and BAS
+reporting is the primary recurring compliance cycle."
+
+**The rule that keeps them off the market page's intent, and it is the whole
+reason they do not cannibalise it:** a market page covers the whole year across
+every cycle at one level of detail; a cycle page covers ONE cycle at the level of
+the ledger — what is decided at the point of posting, and what it costs when it
+is decided at the deadline instead. If a second cycle starts appearing on a cycle
+page, it belongs on the market page. Measured: worst pair anywhere involving one
+of the three is **5.5%**, against a 25% ceiling and against the 53% the
+registration trio hit on its first attempt.
+
+**The boundary heading is a prop, not a constant.** `DepthBlock` takes
+`boundaryHeading` because the licensed party differs per market — the client's
+CPA in the US, the registered practitioner in the UK, the registered BAS or tax
+agent in Australia. Shipping "What stays with your CPA" onto a UK or AU page is
+the fastest way to signal the copy was not written for that reader.
+
+**No rate, threshold, registration limit, deadline or turnaround time appears on
+any of the three, and none may be added.** Same constraint as `lib/us-states.ts`
+and for the same reason: they change annually, and a figure that is right today
+is wrong within a year with nobody watching.
+
+One link was repointed rather than added: `/technology/myob`'s related row
+pointed at `/services/payroll/united-states`, which is a market mismatch on an
+AU/NZ-only platform page. It now points at the BAS page, which also took that
+page from one contextual inbound link to two — a new page arriving with one is
+the failure the internal-link section exists to catch, and it caught this one.
 
 ## The US company registration cluster
 

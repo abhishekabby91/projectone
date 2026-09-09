@@ -62,8 +62,11 @@ future; at that point the change is an entry in `serviceRegions` plus the matchi
 | `/markets/united-states/texas` | B | — | Published |
 | `/markets/united-states/california` | B | — | Published |
 | `/markets/united-states/florida` | B | — | Published |
-| `/markets/united-kingdom` | B | — | Published |
-| `/markets/australia` | B | — | Published |
+| `/markets/united-kingdom` | B | `/vat-returns`, `/year-end-accounts` | Published |
+| `/markets/united-kingdom/vat-returns` | B | — | Published 2026-09-09 |
+| `/markets/united-kingdom/year-end-accounts` | B | — | Published 2026-09-09 |
+| `/markets/australia` | B | `/bas-preparation` | Published |
+| `/markets/australia/bas-preparation` | B | — | Published 2026-09-09 |
 
 **"Offshore" belongs to `/solutions/offshore-accounting-support`, not to a market
 page.** The UK page was titled "Offshore Accounting for UK Practices" until
@@ -171,7 +174,7 @@ is, delete that route first.
 
 ---
 
-**90 routes on disk, 88 in the sitemap** (verified 2026-09-08). The two differences are
+**93 routes on disk, 91 in the sitemap** (verified 2026-09-09). The two differences are
 `/thank-you` and `/technology/myob`, both `noindex` — a noindex URL in a sitemap is a
 contradiction Search Console reports, so their absence is correct and expected. Anything
 else in either direction is drift.

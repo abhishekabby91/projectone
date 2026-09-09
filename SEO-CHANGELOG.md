@@ -1,5 +1,71 @@
 # Accounstone SEO Changelog
 
+## 2026-09-09 (UK and AU cycle pages)
+
+Three pages added: `/markets/united-kingdom/vat-returns`,
+`/markets/united-kingdom/year-end-accounts`, `/markets/australia/bas-preparation`.
+93 routes on disk, 91 in the sitemap.
+
+**Search Console is still unreadable** — `list_properties` returns
+`sc-domain:accounstone.com` at `permission_level: "siteUnverifiedUser"` and every
+analytics call returns HTTP 403. Re-checked 2026-09-09 on the reconnected
+connector; unchanged. So none of this was chosen from query data. It was chosen
+from a structural gap that is visible inside the repo, and that distinction
+should stay attached to it: **these three pages are a hypothesis, not a
+measurement.** Whether they were the right three is not knowable until the
+property is re-verified.
+
+### The gap
+
+The US had three sub-market pages (`/markets/united-states/{texas,california,
+florida}`); the UK and Australia had none. The two markets the site sells into
+hardest carried strictly less surface area than the domestic one. Both knowledge
+files name the recurring cycle each market runs on, and neither cycle had a URL —
+`knowledge/markets/uk.md`, "VAT registration and reporting is the primary
+recurring compliance cycle"; `knowledge/markets/au.md`, "GST and BAS reporting is
+the primary recurring compliance cycle". `docs/SEARCH-INTENTS.md` had no owner for
+either, so nothing was cannibalised.
+
+### What keeps them off the market pages' intent
+
+A market page covers the whole year across every cycle at one level of detail; a
+cycle page covers one cycle at the level of the ledger. That rule is recorded in
+`docs/SEARCH-INTENTS.md` and in the header of `lib/market-depth.ts`, because it
+is the thing that will erode first.
+
+### Measured, not asserted
+
+| Check | Result |
+|---|---|
+| Worst near-duplicate pair involving a new page | **5.5%** (vs 25% ceiling; registration trio hit 53% on its first attempt) |
+| Word count | 1,351 - 1,411 (site median was 1,118) |
+| Titles incl. `%s \| Accounstone` | 46, 50, 53 chars — all inside 60 |
+| Descriptions | 151-158 — the AU one was 165 on the first pass and was cut |
+| `h1` per page / heading skips | 1 each / none |
+| Sitemap drift, llms.txt invariant | 93 disk, 91 sitemap, 91 llms — difference is the 2 noindex routes only |
+| Overflow + sub-24px tap targets, 320/390/768/1280/1440 | none |
+| Contextual inbound links | 2 each; routes with <=1 back to the documented 6 |
+
+The AU page shipped its first draft with **one** inbound link, which is exactly
+the failure `CLAUDE.md`'s internal-link section says the crawl exists to catch.
+Fixed by repointing `/technology/myob`'s related row from
+`/services/payroll/united-states` — a market mismatch on an AU/NZ-only platform
+page — to the BAS page.
+
+### Constraints held
+
+No rate, threshold, registration limit, deadline or turnaround time appears on
+any of the three. Every page routes submission to the licensed party, and the
+party differs per market, which is why `components/depth-block.tsx` takes
+`boundaryHeading` as a prop rather than hardcoding the US "your CPA".
+`components/state-depth.tsx` is now a thin adapter over that same renderer. The
+three US state pages were diffed before and after the refactor and differ by
+exactly eight characters each: the ledger heading was `{state.name} Specifics,
+in Terms of the Books` (two JSX text nodes, so React emitted a `<!-- -->`
+separator between them) and is now one template literal, so the separator is
+gone. Same visible text, same DOM text content, one fewer comment node. Nothing
+else on those pages moved.
+
 ## 2026-09-08f (the homepage hero, and the last three emoji)
 
 The owner asked for the site to look better and delegated the choice, so this
