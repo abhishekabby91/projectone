@@ -37,7 +37,7 @@
 | app/blog/page.tsx | 90/100 | 509 | 1 | 9 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
-| app/contact/page.tsx | 90/100 | 1760 | 1 | 8 | 0 | 0 |
+| app/contact/page.tsx | 90/100 | 1758 | 1 | 8 | 0 | 0 |
 | app/cookie-policy/page.tsx | 90/100 | 844 | 1 | 3 | 0 | 0 |
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
@@ -103,7 +103,7 @@
 | app/technology/quickbooks/page.tsx | 90/100 | 446 | 1 | 7 | 0 | 0 |
 | app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
-| app/thank-you/page.tsx | 90/100 | 575 | 1 | 6 | 0 | 0 |
+| app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
 | app/page.tsx | 100/100 | 1286 | 1 | 8 | 0 | 0 |
 
 ## Priority queue
