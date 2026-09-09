@@ -212,6 +212,28 @@ Do **not** resolve these unilaterally. Each needs the owner.
    still holds the token, would leave both connectors with nothing and no way
    to re-authenticate from inside a session.
 
+   **There is no back door, and these were tested on 2026-09-09 so nobody needs
+   to test them again.** A URL-prefix property is a separate grant that a domain
+   property does not cover, so it was worth checking; it is not there either.
+   All three forms return the same 404 "not a verified Search Console site in
+   this account", on both connectors:
+
+   ```
+   sc-domain:accounstone.com        404
+   https://www.accounstone.com/     404
+   https://accounstone.com/         404
+   ```
+
+   `add_site` would not help either: it adds an unverified entry, which is
+   exactly the useless state the account is already in.
+
+   **This step cannot be done from inside a session at all.** Granting access to
+   a Google property requires being signed in as the account that owns it, and
+   there is no Search Console API for adding users. It is the owner's, not
+   because of a missing tool but because of what it is. Direct link to the right
+   page, once signed in as the owning account:
+   `https://search.google.com/search-console/users?resource_id=sc-domain%3Aaccounstone.com`
+
    **The diagnostic lesson, which is the reusable part: call
    `get_site_details` first, not an analytics call.** A 403 from
    `get_search_analytics` is ambiguous — it reads like a revoked permission and
