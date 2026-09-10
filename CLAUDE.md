@@ -440,11 +440,37 @@ is different about my accounting here" in ledger terms and routes every
 computation, election and filing to the client's CPA. Do not add a rate to these
 pages.
 
-**The 12 that remain short are mostly hubs and that is correct.**
-`/resources/insights`, `/markets`, `/industries`, `/solutions`, `/blog`,
-`/resources`, `/resources/case-studies` and `/resources/guides` are index pages;
-their job is orientation. The real candidates for a future pass are the two
-insights (456, 461 words) and `/delivery-framework/onboarding` (431).
+**The 12 that remain short are hubs, legal pages and one noindex route — and
+there is no thin-page work left.** Re-measured 2026-09-10 against a dev server,
+93 routes, median **1,136 words**:
+
+```
+ 173  /terms                      321  /markets
+ 200  /resources/insights         341  /industries
+ 226  /thank-you    (noindex)     369  /solutions
+ 320  /privacy                    414  /blog
+ 512  /resources                  595  /resources/guides
+ 512  /resources/case-studies     621  /compliance
+```
+
+Eight are index pages whose job is orientation, two are legal, one is the
+noindex conversion target. `/compliance` at 621 is the only arguable one and it
+was already taken from 259 to 621 in the 2026-09-08 pass. **Do not pad any of
+these.** A hub that summarises is doing its job; lengthening it makes it a worse
+hub.
+
+**This file previously named "the two insights (456, 461 words) and
+`/delivery-framework/onboarding` (431)" as the next candidates. That was stale
+and the measurement disproved it** — those three now run **989, 948 and 855
+words** respectively, having been deepened in a pass whose note was never
+written back here. A session that trusted the number would have padded three
+pages that did not need it.
+
+The lesson is the one this section already opens with, and it applies to the
+numbers in this file as much as to the pages: **run the measurement, do not
+trust the recorded figure.** Re-run the word count before starting any thin-page
+work; if nothing indexable sits under 650 that is not a hub, the queue is
+genuinely empty and the effort belongs elsewhere.
 
 ### Interaction claims are commitments, and they were not verified
 
