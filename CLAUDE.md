@@ -66,11 +66,26 @@ background, superseded on specifics by the files above.
   SERP. If you add a page, hold the same budget — `docs/` has no separate copy
   of this rule, so it lives here.
 - Heading order is sequential on every page: no `h1 -> h3`, no `h2 -> h4`.
-- Worst near-duplicate pair across the 49 commercial routes is 18.3%; none above
-  25%. (The higher figure is the `company-registration` trio, which shares a
-  subject by construction. Adding depth to the platform and industry pages on
-  2026-09-08 pushed their scores **down** — `quickbooks` vs `xero` went 17.4% to
-  9.3% — because per-page substance dilutes shared boilerplate.)
+- Worst near-duplicate pair across the 49 commercial routes is **18.2%**
+  (`company-registration/nevada` vs `wyoming`, which share a subject by
+  construction); none above 25%. Adding depth to the platform and industry pages
+  on 2026-09-08 pushed their scores **down** — `quickbooks` vs `xero` went 17.4%
+  to 9.3% — because per-page substance dilutes shared boilerplate.
+- **One pair sits over the ceiling and it is a hub pair, not a commercial one:
+  `/resources` vs `/resources/guides` at 29.6%** (measured 2026-09-10, the first
+  time the sweep covered hubs — earlier runs scoped it to the 49 commercial
+  routes, so this was never a regression, just unmeasured). The cause is
+  verbatim duplication rather than shared subject: **both pages feature the same
+  "Start here" guide card**, with the identical long title and identical
+  description sentence, and 5 of the 5 guide links on `/resources` also appear
+  on `/resources/guides`. On two short pages (513 and 598 words) one repeated
+  card is a large fraction of the text.
+  **The fix, if it is taken, is to stop duplicating the featured block rather
+  than to lengthen either page** — `/resources` is the parent and should orient
+  across all four content types (11 guides, 2 explainers, 3 scenarios, 6 blog
+  articles); the featured guide belongs on `/resources/guides`. Do not pad
+  either page to dilute the score; that breaks the "hubs stay short" rule for a
+  metric's sake.
 - **Median route is 1118 words; 12 routes sit under 650 and 8 of those are hubs.**
   See "Thin pages: measure before writing" below for the list and why the hubs
   stay short.
