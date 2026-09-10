@@ -1,5 +1,34 @@
 # Accounstone SEO Changelog
 
+## 2026-09-10 (a correction: no cross-granting between the businesses)
+
+`CLAUDE.md` carried an instruction to add a `theaucorp.com` account as a **Full
+user** on `sc-domain:accounstone.com`. **The owner has ruled that out.** AU Corp
+and `registercompanyinindia.com` are separate concerns from Accounstone, and the
+"AU Corporate" GA4 property belongs to that side, not this one.
+
+That instruction was mine and it was the wrong recommendation. The diagnosis
+underneath it was sound — the Search Console connector is authenticated as an
+account that does not own `accounstone.com` — but I jumped from "here is the
+account the connector is on" to "grant it access" without asking whether those
+two businesses should share data at all. Identifying an account is not the same
+as establishing that it should be given access, and only the owner can answer
+the second part.
+
+**The correct fix is the other direction:** re-connect the Search Console
+connector signed in as an Accounstone-side account —
+**`partner@accounstone.com`** (also the Cloudflare account holder for the
+domain) or `contactus7070@gmail.com` (which owns the Vercel project); the owner
+has confirmed those two are linked. That puts the connector on the account that
+already owns the data instead of widening access to a second business.
+
+`CLAUDE.md` open item 2 now states the prohibition explicitly, so no future
+session re-proposes the cross-grant. The `theaucorp.com` references that remain
+in that section are diagnostic context and the prohibition itself — not an
+instruction.
+
+No site content changed.
+
 ## 2026-09-09e (the Search Console diagnosis was wrong)
 
 Since 2026-09-07 this changelog and `CLAUDE.md` have said Search Console access

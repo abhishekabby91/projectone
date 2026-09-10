@@ -192,19 +192,31 @@ Do **not** resolve these unilaterally. Each needs the owner.
    `accounstone.com` is **not on it**. The entry `Geneio-projectone` still
    shows at `siteUnverifiedUser` is a stale cached record of a site this
    account once added and never verified. Same GA4 either way ("AU Corporate",
-   account "Abhishek"), so both connectors are one Google account — almost
-   certainly **partner@theaucorp.com**, given it holds `theaucorp.com` at full
-   access.
+   account "Abhishek"), so both connectors are one Google account — the
+   **theaucorp.com** account, given it holds that property at full access.
 
-   So `accounstone.com` is verified under a **different** Google account. The
-   likeliest is the one that owns the Vercel project,
-   `contactus7070@gmail.com`.
+   **That account belongs to a different business and must NOT be given access
+   to Accounstone (owner's instruction, 2026-09-10).** An earlier version of
+   this section proposed adding it as a Full user on
+   `sc-domain:accounstone.com`. **Do not do that.** AU Corp
+   (`theaucorp.com`) and `registercompanyinindia.com` are separate concerns
+   from Accounstone; the "AU Corporate" GA4 property belongs to that side and
+   is not Accounstone's. Do not propose cross-granting between them, and do not
+   name a `theaucorp.com` address in any Accounstone access instruction unless
+   the owner says otherwise.
 
-   **The fix, and it is the owner's — one minute, from the account that has
-   accounstone.com verified:** Search Console → Settings → **Users and
-   permissions** → **Add user** → `partner@theaucorp.com` → permission
-   **Full** (Restricted still 403s the API). Both connectors are on that
-   account, so both start working immediately.
+   The Accounstone-side accounts are **`partner@accounstone.com`** — which is
+   also the Cloudflare account holder for the domain — and
+   **`contactus7070@gmail.com`**, which owns the Vercel project. The owner has
+   confirmed those two are linked. One of them holds the verified Search
+   Console property.
+
+   **The fix, and it is the owner's:** re-connect the Search Console connector
+   signed in as **`partner@accounstone.com`** (or `contactus7070@gmail.com`,
+   whichever holds the verified property) — claude.ai → Settings → Connectors →
+   disconnect the GSC connector and reconnect it with that account. That is the
+   clean fix: it puts the connector on the account that already owns the data,
+   rather than granting a second business's account access to it.
 
    **Do not try to fix this with `reauthenticate`.** The server has no OAuth
    client secrets file, so it cannot start a login flow at all — it only
@@ -227,12 +239,11 @@ Do **not** resolve these unilaterally. Each needs the owner.
    `add_site` would not help either: it adds an unverified entry, which is
    exactly the useless state the account is already in.
 
-   **This step cannot be done from inside a session at all.** Granting access to
-   a Google property requires being signed in as the account that owns it, and
-   there is no Search Console API for adding users. It is the owner's, not
-   because of a missing tool but because of what it is. Direct link to the right
-   page, once signed in as the owning account:
-   `https://search.google.com/search-console/users?resource_id=sc-domain%3Aaccounstone.com`
+   **This step cannot be done from inside a session at all.** Re-connecting a
+   connector requires signing in to Google, and granting access requires being
+   signed in as the account that owns the property — there is no Search Console
+   API for adding users either. It is the owner's, not because of a missing
+   tool but because of what it is.
 
    **The diagnostic lesson, which is the reusable part: call
    `get_site_details` first, not an analytics call.** A 403 from
