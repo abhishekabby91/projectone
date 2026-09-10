@@ -253,8 +253,15 @@ Do **not** resolve these unilaterally. Each needs the owner.
    the ambiguous check and repeated the wrong conclusion.
 
    Until it is fixed every GSC-driven decision in this file is frozen at its
-   2026-09-04 reading. Check `get_site_details` once per pass; if it still
-   404s, say so and work on something measurable from inside the repo.
+   2026-09-04 reading.
+
+   **Do not check it from a session any more.** The owner's 2026-09-10
+   instruction bars every AU Corporate connector from this project, and both
+   GSC connectors are on that account — so the `get_site_details` probe this
+   section used to recommend is itself off-limits. See "Do not use any AU
+   Corporate connector on this project" under Environment constraints. Work on
+   what is measurable from inside the repo, and take the owner's word for when
+   access is restored.
 3. **Redirect targets are settled. The generic-tier question is not
    (2026-09-03).** The owner authorised deciding the retired-URL targets, and
    country-segmented GSC decided them: six of the seven stay on United States,
@@ -1385,6 +1392,37 @@ in Playwright exercises the real submit path against a stubbed response and
 proves both the success and failure states without a live send.
 
 ## Environment constraints
+
+### Do not use any AU Corporate connector on this project
+
+**Owner's standing instruction, 2026-09-10: no connector tied to AU Corporate
+(`theaucorp.com`) is to be used on Accounstone, for anything, until the owner
+says otherwise.**
+
+That rules out **both Search Console / GA4 connectors** — `Geneio-projectone`
+and `GenieSEO`. Both were proven on 2026-09-09 to be authenticated as the
+`theaucorp.com` account: it holds `sc-domain:theaucorp.com` and
+`sc-domain:registercompanyinindia.com` at `siteFullUser`, and its only GA4
+property is "AU Corporate". They are not Accounstone's and must not be called.
+
+**This supersedes the "check `get_site_details` once per pass" line in open item
+2.** That check runs through those very connectors, so it is off too. Do not
+call them even to test whether access has been restored — if a pass needs to
+know, ask the owner.
+
+**The ban is on the account, not the connector name.** If the Search Console
+connector is later re-authenticated as `partner@accounstone.com` or
+`contactus7070@gmail.com`, it stops being an AU Corporate connector and becomes
+usable. Confirm with the owner that the reconnection happened before relying on
+it.
+
+Unaffected and still fine: **Vercel** (the `abby2` team, owned by
+`contactus7070@gmail.com`) and **GitHub**. For **Ahrefs**, **Semrush**,
+**HubSpot**, **Apollo** and **Supermetrics** there is no evidence either way
+about whose subscriptions they are — ask before using any of them on Accounstone
+rather than assuming.
+
+### Sandbox limits
 
 Known limits when working from a sandboxed session:
 
