@@ -12,8 +12,9 @@ import Reveal from '@/components/reveal';
 import RegionFlag from '@/components/region-flag';
 import GlobalDeliveryDiagram from '@/components/global-delivery-diagram';
 import ProcessFlow from '@/components/process-flow';
+import CountUp from '@/components/count-up';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
-import { services, solutions, testimonials, trustBadges } from '@/lib/data';
+import { services, solutions, regions, testimonials, trustBadges } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
   // Exact strings, set deliberately. The title intentionally carries no
@@ -237,9 +238,27 @@ export default function HomePage() {
             <Reveal delay={0.15} className="relative overflow-hidden bg-linear-to-br from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-white space-y-7 shadow-xl">
               <>
                 <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'repeating-linear-gradient(to bottom, white 0, white 1px, transparent 1px, transparent 28px)' }} />
-                <div className="relative space-y-2"><div className="text-3xl font-bold">Three markets</div><p className="text-white/80 text-lg">US, UK and Australia support from one delivery team.</p></div>
-                <div className="relative space-y-2"><div className="text-3xl font-bold">Seven core service lines</div><p className="text-white/80 text-lg">Bookkeeping, accounting, tax, payroll, AP, AR and audit support.</p></div>
-                <div className="relative space-y-2"><div className="text-3xl font-bold">Defined review process</div><p className="text-white/80 text-lg">Work is organized around documented workflows, ownership and quality review.</p></div>
+                {/* Numerals rather than words, and every one is `array.length`
+                    rather than a literal — so the panel cannot drift from what
+                    the site actually offers, and there is no temptation to put
+                    a client count or an accuracy figure here. See the header
+                    note on components/count-up.tsx. */}
+                {[
+                  { n: regions.length, label: 'markets', body: 'US, UK and Australia support from one delivery team.' },
+                  { n: services.length, label: 'core service lines', body: 'Bookkeeping, accounting, tax, payroll, AP, AR and audit support.' },
+                  { n: solutions.length, label: 'engagement models', body: 'Staff augmentation, offshore support, dedicated teams or back office.' },
+                ].map((row) => (
+                  <div key={row.label} className="relative space-y-2">
+                    <div className="flex items-baseline gap-3">
+                      <CountUp value={row.n} className="font-serif text-4xl md:text-5xl font-bold text-secondary" />
+                      <span className="text-2xl md:text-3xl font-bold">{row.label}</span>
+                    </div>
+                    <p className="text-white/80 text-lg">{row.body}</p>
+                  </div>
+                ))}
+                <p className="relative border-t border-white/15 pt-5 text-white/70">
+                  Work is organized around documented workflows, ownership and quality review.
+                </p>
               </>
             </Reveal>
           </div>

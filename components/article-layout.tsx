@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import ScrollInquiryPrompt from '@/components/scroll-inquiry-prompt';
+import ReadingProgress from '@/components/reading-progress';
 import Reveal from '@/components/reveal';
 import ShareButtons from '@/components/share-buttons';
 import {
@@ -116,6 +117,9 @@ export default function ArticleLayout({
         Below `lg` it is a slim bar that does not cover the article — see the
         note in the component about intrusive interstitials.
       */}
+      {/* Reads against the <article> box rather than the document, so "full"
+          means the article is finished rather than the footer is on screen. */}
+      <ReadingProgress />
       <ScrollInquiryPrompt title={inquiryTitle} lead={inquiryLead} source={path} />
 
       <InquirySection

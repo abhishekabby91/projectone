@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, KeyRound, MessageSquare, Play } from 'lucide-react';
 import Reveal from '@/components/reveal';
+import ProcessRail from '@/components/process-rail';
 
 /**
  * The four phases of starting an engagement, on a connected rail.
@@ -100,11 +101,13 @@ export default function ProcessFlow({
 
         <div className="relative">
           {/* The rail. Spans node centre to node centre across four columns, so
-              it stops at the first and last node rather than running off. */}
-          <span
-            aria-hidden="true"
-            className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-secondary lg:block"
-          />
+              it stops at the first and last node rather than running off.
+              `ProcessRail` draws it left to right once the row is in view, which
+              is what makes the four phases read as a sequence rather than four
+              cards that happen to be in a row. It renders the full-width rail
+              under `prefers-reduced-motion`, so the connection is never lost —
+              only the drawing of it is. */}
+          <ProcessRail />
 
           <ol className="relative grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-6">
             {phases.map((phase, i) => {

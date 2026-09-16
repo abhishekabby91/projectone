@@ -1,5 +1,72 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16g (motion that carries meaning: counters, a drawn rail, a progress bar)
+
+The owner asked for transitions or animation on numbers and levels, to make the
+site more engaging to read. The interesting constraint is the one that shaped
+every decision here: **this site is not allowed to have statistics.**
+`AI-WEBSITE-GUIDE.md` bans invented clients, percentages and accuracy figures,
+and an animated counter is the single most tempting place on a marketing site to
+put one.
+
+**So every number is `array.length`.** The homepage's navy panel now reads
+**3 markets / 7 core service lines / 4 engagement models**, and each is
+`regions.length`, `services.length` and `solutions.length` from `lib/data.ts`.
+The `/resources` inventory counts animate the same way, off `lib/resources.ts`.
+These cannot drift from what the site actually offers, and there is no slot for
+a figure nobody can evidence. The panel previously spelled the first two out as
+words — "Three markets", "Seven core service lines" — so the change is a numeral
+and a source, not a new claim.
+
+Three properties, each verified in a browser rather than asserted:
+
+- **The final value is in the server HTML.** The state initialises at the
+  answer, not at zero, so a crawler and a no-JavaScript reader both see the real
+  number and the animation only replays something already present. A counter
+  initialised to 0 publishes "0" to everything that does not run scripts.
+- **CLS 0.0000**, measured with a `layout-shift` PerformanceObserver while three
+  counters ran. `tabular-nums` plus a `ch`-based `minWidth` reserves the width.
+- **Reduced motion means no animation.** Sampled every 40ms under
+  `reducedMotion: 'reduce'`: the value never moves.
+
+**One accessibility approach was built and then thrown away.** The first version
+put a visually hidden copy of the value beside the animating one, which meant
+the figure appeared twice in the markup and the homepage's extracted text read
+"7 7 core service lines". `public/llms.txt` exists precisely because what
+machines read off this site matters. It is now `role="img"` with an `aria-label`
+carrying the true value — one text node, one label, and assistive tech never
+narrates an intermediate frame.
+
+### The two motion pieces that are not decoration
+
+**The process rail** now draws left to right as the four phases come into view,
+which is what makes them read as a sequence rather than four cards in a row. It
+is split into `components/process-rail.tsx` so `process-flow.tsx` stays a server
+component. Under `prefers-reduced-motion` the rail renders at full width
+immediately — the rail is what carries the meaning, so it must never be what
+motion preferences remove. Only the drawing of it goes.
+
+**A reading-progress bar** on the 19 long content pages, and this is where the
+real bug was. Measuring scroll over page height would count the enquiry band,
+the CTA banner and the footer as "article", so it tracks the `<article>` box
+instead. But `articleHeight - innerHeight` was still wrong: scrolling the last
+line to the top of the viewport is only possible when a viewport's worth of page
+sits below it, and on these pages it does not. **The bar sat at 82.65% with the
+reader at the very bottom of the page** — caught by a Playwright assertion, not
+by looking. The range is now the smaller of that and how far the page can
+actually scroll, and it reaches 100% exactly when the reader runs out of
+article.
+
+The bar renders nothing on the server and nothing until the reader scrolls, so
+it cannot touch indexed content. Scroll work is throttled to a frame; the
+listener is passive.
+
+**Verification.** 10 Playwright assertions covering all of the above. Near
+duplicate re-measured on every page a counter touched — `/resources` vs
+`/resources/guides` unchanged at 28.7%, everything else under 6%. Responsive
+sweep clean at 320 / 390 / 768 / 1280 / 1440. `pnpm eslint .` silent,
+`pnpm next build` complete.
+
 ## 2026-09-16f (one closing sequence on every page)
 
 The owner asked for the free-consultation sequence other pages have to run on

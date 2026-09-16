@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Lightbulb, ClipboardList } from 'lucide-react';
 import Reveal from '@/components/reveal';
+import CountUp from '@/components/count-up';
 import SectionHeading from '@/components/section-heading';
 import ResourceCard from '@/components/resource-card';
 import CTABanner from '@/components/cta-banner';
@@ -79,12 +80,12 @@ export default function ResourcesPage() {
             <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
               {sections.map((s) => (
                 <li key={s.title} className="flex items-baseline gap-1.5">
-                  <span className="font-serif text-2xl font-bold text-primary tabular-nums">{s.count}</span>
+                  <CountUp value={s.count} className="font-serif text-2xl font-bold text-primary" />
                   <span className="text-muted">{s.noun}</span>
                 </li>
               ))}
               <li className="flex items-baseline gap-1.5">
-                <span className="font-serif text-2xl font-bold text-primary tabular-nums">{articles.length}</span>
+                <CountUp value={articles.length} className="font-serif text-2xl font-bold text-primary" />
                 <span className="text-muted">
                   <Link href="/blog" className="inline-block py-1 underline underline-offset-4 hover:text-primary transition-colors">
                     blog articles

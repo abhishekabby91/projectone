@@ -956,6 +956,75 @@ The homepage's solutions band was also moved to `columns={2}`: four items in a
 three-column layout leaves one card alone under three however it is aligned,
 and 2x2 is both balanced and roomier for copy that runs long.
 
+## Animated numbers, and the rule that keeps them honest
+
+`components/count-up.tsx` (2026-09-16). A number that counts up the first time
+it is scrolled into view, on the homepage's navy panel and the `/resources`
+inventory.
+
+**The value is real or it does not go here.** An animated counter is the single
+most tempting place on a marketing site to invent a statistic — "500+ clients",
+"99.8% accuracy" — and `AI-WEBSITE-GUIDE.md` bans exactly that. Every value it
+renders is `array.length` from `lib/data.ts` or `lib/resources.ts`, so it is a
+fact about what the site contains and cannot drift from it. The homepage panel
+is `regions.length` / `services.length` / `solutions.length` — 3 markets, 7 core
+service lines, 4 engagement models. **If you find yourself typing a literal into
+`value`, stop and find the array instead.**
+
+Three properties make it safe rather than decorative, and all three were
+verified in a browser:
+
+- **The final value is in the server HTML.** `useState(value)` starts at the
+  answer, so a crawler, a reader with JavaScript off and the first paint all see
+  the real number; the animation only replays a value that was already there. A
+  counter initialised to `0` publishes "0" to everything that does not run
+  scripts.
+- **It cannot shift the layout.** `tabular-nums` plus a `ch`-based `minWidth`
+  reserves the final width. Measured with a `layout-shift` PerformanceObserver
+  while three counters ran: **CLS 0.0000**.
+- **`prefers-reduced-motion` means no animation, not a faster one.** Sampled
+  every 40ms under `reducedMotion: 'reduce'`: the number never leaves its final
+  value.
+
+**Accessibility: `role="img"` plus `aria-label`, not a hidden duplicate.** The
+first version put a `sr-only` copy of the value beside the animating one, which
+meant the number appeared twice in the HTML and the homepage's extracted text
+read "7 7 core service lines". `public/llms.txt` exists because what machines
+read off this site matters. One text node, one label.
+
+### Two motion pieces that carry meaning rather than decorate
+
+- **`components/process-rail.tsx`** draws the gold rail behind the four process
+  phases left to right on view. It is split out of `process-flow.tsx` so that
+  file can stay a server component. Under `prefers-reduced-motion` it renders at
+  full width immediately — **the rail is what says the four phases are one
+  sequence, so it must never be the thing motion preferences remove.** Only the
+  drawing of it goes.
+- **`components/reading-progress.tsx`**, rendered by `ArticleLayout`, so it is
+  on the 6 blog posts, 11 guides and 2 insights and nowhere else. A bar on a
+  300-word hub would be noise.
+
+**The progress bar measures the article, not the document, and the range is
+clamped to what is reachable.** Scroll over total page height would count the
+enquiry band, the CTA banner and the footer as "article". But measuring against
+`articleHeight - innerHeight` is not enough either: scrolling the last line to
+the top of the viewport is only possible when a viewport's worth of page sits
+below it, and on these pages it does not. That left the bar at **82.65%** with
+the reader at the very bottom, measured on
+`/resources/guides/outsourced-bookkeeping-cost-guide`. The range is now the
+smaller of that and how far the page can actually scroll, so full means the
+reader has run out of article. There is a Playwright assertion at 100%.
+
+It renders nothing until the reader scrolls and nothing at all on the server, so
+it cannot touch indexed content or the near-duplicate scores. Scroll work is
+throttled to a frame and the listener is passive.
+
+There is a 10-assertion Playwright suite: the counters animate and land on the
+true value, the `aria-label`s carry the true values, CLS stays at zero, reduced
+motion disables both the count and the rail, and the progress bar is absent
+before scrolling, tracks mid-article, reaches 100% at the end, and never appears
+on a non-article page.
+
 ## Icons and favicon
 
 Generated from the mark in `public/accounstone-logo-horizontal.png` (the A/S
