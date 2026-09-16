@@ -27,7 +27,7 @@ export const routeLastModified: Record<string, string> = {
   '/delivery-framework/onboarding': '2026-09-08',
   '/delivery-framework/quality-assurance': '2026-09-08',
   '/industries': '2026-09-16',
-  '/industries/cpa-firms': '2026-09-08',
+  '/industries/cpa-firms': '2026-09-16',
   '/industries/ecommerce': '2026-09-08',
   '/industries/healthcare': '2026-09-08',
   '/industries/professional-services': '2026-09-16',
