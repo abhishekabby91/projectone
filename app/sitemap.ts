@@ -82,6 +82,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/markets/united-kingdom/vat-returns', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-kingdom/year-end-accounts', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/australia/bas-preparation', priority: 0.65, changeFrequency: 'monthly' },
+    // Return-type children of /services/tax-preparation/united-states. Nested
+    // under the parent rather than given their own tree, so the two pages
+    // concentrate the US tax signal instead of competing with it.
+    { path: '/services/tax-preparation/united-states/1040-individual', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/services/tax-preparation/united-states/1065-partnership', priority: 0.65, changeFrequency: 'monthly' },
     // Guides. Four of these shipped 2026-08-14 but were unlisted for a week —
     // internally linked yet never declared for crawling. The accounting-services
     // guide matters most: it is the 301 target for the retired

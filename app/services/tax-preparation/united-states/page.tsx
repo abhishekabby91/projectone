@@ -86,6 +86,33 @@ export default function TaxPrepUSPage() {
         </div>
       </section>
 
+      {/* The two return-type children. Contextual links in `main`, not just the
+          related row, because a new page arriving with one inbound link is the
+          failure the internal-link crawl exists to catch. */}
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="text-center space-y-3 mb-10"><>
+            <span className="text-sm font-semibold tracking-wide uppercase text-accent">By return type</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Work Is Different Per Return</h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-2xl mx-auto">A 1040 is assembled from documents somebody else has to send. A 1065 starts from a trial balance and is judged by the K-1s that come out of it. Those are two different jobs, and the pages below describe each one at the level of the file.</p>
+          </></Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Reveal>
+              <Link href="/services/tax-preparation/united-states/1040-individual" className="block h-full rounded-2xl bg-input border border-border/70 p-6 md:p-8 transition-colors hover:border-primary/40">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-3">Form 1040 preparation</h3>
+                <p className="text-muted leading-7">Individual returns, open-items lists, non-covered basis reconstructed from statements, and prior-year carryforwards picked up rather than inferred.</p>
+              </Link>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <Link href="/services/tax-preparation/united-states/1065-partnership" className="block h-full rounded-2xl bg-input border border-border/70 p-6 md:p-8 transition-colors hover:border-primary/40">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-3">Form 1065 and K-1 preparation</h3>
+                <p className="text-muted leading-7">Partnership returns from an agreed trial balance, tax basis capital maintained rather than reconstructed, and K-1s reviewed before a partner sees one.</p>
+              </Link>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Scope</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Preparation Work That Can Move Out of the Reviewer's Queue</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{preparation.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/services/tax-preparation/united-states" service="Tax Preparation" region="united-states"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8"><Reveal className="rounded-2xl bg-input border border-border/70 p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-accent">Your team retains</span><h2 className="font-serif text-3xl font-bold text-primary mt-3 mb-6">Professional judgment and filing control</h2><ul className="space-y-4">{retained.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-accent shrink-0" aria-hidden="true" /><span className="leading-6">{item}</span></li>)}</ul></></Reveal><Reveal delay={0.1} className="rounded-2xl bg-primary text-white p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-white/70">Workflow</span><h2 className="font-serif text-3xl font-bold mt-3 mb-6">Build around the way your firm already reviews</h2><p className="text-white/85 leading-7">Start with your checklist, source-document process and review notes. Define what is prepared, what gets escalated and what a reviewer expects to see before a file moves forward. That makes the handoff easier to repeat across the season.</p></></Reveal></div></section>

@@ -40,6 +40,9 @@ const BODY_MODULES = [
   '@/lib/service-depth',
   '@/lib/regional-context',
   '@/components/article-layout',
+  '@/lib/us-states',
+  '@/lib/market-depth',
+  '@/lib/us-return-depth',
 ];
 
 function lastCommitDate(relPath) {

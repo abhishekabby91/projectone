@@ -55,6 +55,8 @@ this specific work for me there". Measured overlap between the two is 0.0%.
 | VAT return preparation under MTD, for UK practices | `/markets/united-kingdom/vat-returns` | Commercial — cycle detail |
 | Year-end accounts preparation (FRS 102/105, Companies House) | `/markets/united-kingdom/year-end-accounts` | Commercial — cycle detail |
 | BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
+| Outsourcing Form 1040 / individual return preparation | `/services/tax-preparation/united-states/1040-individual` | Commercial — return-type detail |
+| Outsourcing Form 1065 / partnership and K-1 preparation | `/services/tax-preparation/united-states/1065-partnership` | Commercial — return-type detail |
 | All services, choose by region | `/services` | Commercial — navigational |
 
 **Do not** write service scope onto a Market page, and do not write country-environment

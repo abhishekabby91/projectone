@@ -21,6 +21,8 @@ with its own regional children for the same commercial intent.
 | `/services/accounts-payable/{united-states,united-kingdom,australia}` | B | Accounts Payable | Published |
 | `/services/accounts-receivable/{united-states,united-kingdom,australia}` | B | Accounts Receivable | Published |
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
+| `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
+| `/services/tax-preparation/united-states/1065-partnership` | B | Form 1065 / K-1 | Published 2026-09-16 |
 
 21 commercial pages = 7 services x 3 regions. The matrix lives in `lib/data.ts`
 (`regions`, `serviceRegions`, `serviceRegionPaths`) and drives the navbar, the footer,

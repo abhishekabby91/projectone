@@ -26,6 +26,8 @@ Services are region-first. There is no generic `/services/{service}` page — th
 - https://www.accounstone.com/services/tax-preparation/united-states
 - https://www.accounstone.com/services/tax-preparation/united-kingdom
 - https://www.accounstone.com/services/tax-preparation/australia
+- https://www.accounstone.com/services/tax-preparation/united-states/1040-individual — Form 1040 preparation: open-items lists, non-covered basis, prior-year carryforwards
+- https://www.accounstone.com/services/tax-preparation/united-states/1065-partnership — Form 1065 and Schedule K-1 preparation: trial balance in, capital accounts and K-1s out
 
 ### Payroll processing
 - https://www.accounstone.com/services/payroll/united-states
