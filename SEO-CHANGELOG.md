@@ -1,5 +1,76 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16 (two US return-type pages, under the parent rather than beside it)
+
+`/services/tax-preparation/united-states/1040-individual` and
+`/services/tax-preparation/united-states/1065-partnership`.
+
+**Why children and not a new tree.** The parent is the strongest commercial
+page on the site — 2,114 words, and it already owns the IRC §7216 consent
+explanation and the Circular 230 boundary that almost nobody in this market
+writes down. A parallel `/us-tax/` hierarchy would have given Google two
+candidates for one query, which is precisely the failure already playing out
+between that page and `/blog/tax-preparation-outsourcing` (366 impressions at
+position 27.8 on the blog post against zero on the service page). Nesting
+concentrates the signal instead of splitting it a second time.
+
+**So neither child restates the parent.** §7216, Circular 230, the software
+boundary and the general "what moves and what cannot" argument stay where they
+are and are linked from both children. What is on the new pages is the part
+that genuinely differs by return type, and that difference is also what keeps
+the siblings apart:
+
+- a **1040 is document-driven**. It is assembled from forms somebody else has
+  to send, so the hard part is what has not arrived — the open-items list,
+  non-covered basis reconstructed from statements, carryforwards that are only
+  on last year's return, and returns waiting on a K-1 that should never have
+  been in the same queue as returns that could go out in February;
+- a **1065 is ledger-driven**. It starts from a trial balance, so the hard part
+  is the K-1s coming out the other end — guaranteed payments coded as
+  distributions, tax basis capital rebuilt years late, M-1 detail that
+  reconciles but cannot be followed, and a partner change that makes the year
+  more than one allocation period.
+
+Write generically about "tax preparation" and those two collapse into each
+other. Measured against a dev server: **1,342 and 1,379 words, 5.3% between
+them** on 6-gram Jaccard, 3.7% and 2.9% against the parent — against a 25%
+ceiling, and against the 53% the registration trio hit on its first attempt.
+
+**The boundary is per return type and it is the highest-risk line on either
+page.** On a 1040 the positions are the taxpayer's facts — filing status,
+residency, dependency. On a 1065 the allocations are a reading of the
+partnership agreement, which is a professional judgement about a legal
+document and emphatically not a preparer's to make. `DepthBlock` already took
+`boundaryHeading` as a prop for exactly this reason, so a 1040 says "What stays
+with your CPA or EA" and a 1065 says "What stays with your CPA".
+
+No rate, threshold, filing deadline, dollar figure or turnaround time appears
+in `lib/us-return-depth.ts` and none may be added — same constraint as
+`lib/us-states.ts` and `lib/market-depth.ts`, for the same reason.
+
+**Both pages ship with a contextual inbound link, not one.** A new page
+arriving with a single inbound link is the failure the internal-link crawl
+exists to catch, and it caught the AU BAS page a week ago. The parent now
+carries a By-return-type section inside `main` — two cards, real sentences —
+rather than two more chips in the related row, and the two children link to
+each other.
+
+Route checklist completed in the same pass: sitemap entries, `public/llms.txt`,
+`docs/ROUTES.md`, `docs/SEARCH-INTENTS.md`, and
+`node scripts/generate-sitemap-dates.mjs`. Drift check clean — **95 routes on
+disk, 93 in the sitemap**, the two differences being `/technology/myob` and
+`/thank-you` as expected. `pnpm eslint .` silent, `pnpm next build` complete.
+Titles 51 and 55 characters including the `| Accounstone` template;
+descriptions 152 and 157; one `h1` each; heading order sequential.
+
+One repair rode along: `scripts/generate-sitemap-dates.mjs` was deriving
+`lastmod` for the three US state pages and the three UK/AU cycle pages from
+their own thin `page.tsx` files, when the text on those pages lives in
+`lib/us-states.ts` and `lib/market-depth.ts`. Both are now in `BODY_MODULES`
+alongside the new `lib/us-return-depth.ts`. No date moved today — the page
+files happened to be newer — but the next content-only edit to either module
+would have gone unrecorded.
+
 ## 2026-09-10 (a correction: no cross-granting between the businesses)
 
 `CLAUDE.md` carried an instruction to add a `theaucorp.com` account as a **Full
