@@ -87,7 +87,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/technology` | B | — | Published |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/ecommerce` | B | — | Published |
-| `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Published |
+| `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Rebuilt 2026-09-16 — covers real estate, property management and HOA |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
 | `/industries/professional-services` | B | — | Published |
 

@@ -22,30 +22,44 @@ import Reveal from '@/components/reveal';
  * The copy is a fair compression of the seven documented steps on
  * /delivery-framework/onboarding, not a new claim, and every card links there
  * so the full version is one click away.
+ *
+ * The phases and the heading are props with the homepage's values as defaults,
+ * so an industry page can tell the same four-stage story in its own vocabulary
+ * without a second component and without repeating the homepage's copy
+ * verbatim on another URL. Two rules if you pass your own: keep it to four
+ * (the rail is inset to node centres across four columns) and spend the accent
+ * exactly once, on the phase where the boundary sits.
  */
 
-const PHASES = [
+export interface ProcessPhase {
+  n: string;
+  title: string;
+  body: string;
+  /** The single accent on the graphic. It marks the boundary, not the finish. */
+  accent?: boolean;
+}
+
+/** Icons are positional, so a caller supplying its own phases inherits them. */
+const ICONS = [MessageSquare, KeyRound, Play, CheckCircle2];
+
+const PHASES: ProcessPhase[] = [
   {
     n: '01',
-    icon: MessageSquare,
     title: 'Scope',
     body: 'A free half-hour call. What is falling behind, which systems it lives in, and who reviews the output.',
   },
   {
     n: '02',
-    icon: KeyRound,
     title: 'Set up',
     body: 'Access established under your security protocols, and your existing workflows documented before anything moves.',
   },
   {
     n: '03',
-    icon: Play,
     title: 'Soft launch',
     body: 'A defined slice runs alongside your current process, so both sides can judge it before the volume arrives.',
   },
   {
     n: '04',
-    icon: CheckCircle2,
     title: 'Steady state',
     body: 'Full handover of the agreed scope. Review, judgement and sign-off stay with your team, in every market.',
     /** The one accent on this graphic. It marks the boundary, not the finish. */
@@ -53,7 +67,19 @@ const PHASES = [
   },
 ];
 
-export default function ProcessFlow() {
+interface ProcessFlowProps {
+  phases?: ProcessPhase[];
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+}
+
+export default function ProcessFlow({
+  phases = PHASES,
+  eyebrow = 'How it starts',
+  title = 'Four Phases, and You Can Stop After Any of Them',
+  lead = 'Nothing transfers on the first call. The work moves in stages, each one small enough to judge before the next begins.',
+}: ProcessFlowProps = {}) {
   return (
     <section className="w-full bg-white px-6 md:px-8 py-10 md:py-16">
       <div className="mx-auto max-w-6xl">
@@ -62,16 +88,13 @@ export default function ProcessFlow() {
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-8 bg-secondary" />
               <span className="text-xs font-bold uppercase tracking-[0.14em] text-accent sm:text-sm">
-                How it starts
+                {eyebrow}
               </span>
             </div>
             <h2 className="font-serif text-2xl font-bold leading-tight text-primary text-balance md:text-3xl">
-              Four Phases, and You Can Stop After Any of Them
+              {title}
             </h2>
-            <p className="text-base leading-relaxed text-muted md:text-lg">
-              Nothing transfers on the first call. The work moves in stages, each one small enough to
-              judge before the next begins.
-            </p>
+            <p className="text-base leading-relaxed text-muted md:text-lg">{lead}</p>
           </>
         </Reveal>
 
@@ -84,7 +107,9 @@ export default function ProcessFlow() {
           />
 
           <ol className="relative grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-6">
-            {PHASES.map((phase, i) => (
+            {phases.map((phase, i) => {
+              const Icon = ICONS[i] ?? ICONS[ICONS.length - 1];
+              return (
               <Reveal key={phase.n} delay={Math.min(i * 0.08, 0.3)}>
                 <li className="flex h-full flex-col items-center text-center">
                   <span
@@ -98,7 +123,7 @@ export default function ProcessFlow() {
                   </span>
 
                   <div className="mt-4 flex h-full w-full flex-col rounded-xl border border-border bg-input p-3.5 sm:mt-5 sm:p-6">
-                    <phase.icon
+                    <Icon
                       className={`mx-auto mb-2 h-5 w-5 sm:mb-3 sm:h-6 sm:w-6 ${phase.accent ? 'text-accent' : 'text-primary'}`}
                       aria-hidden="true"
                     />
@@ -107,7 +132,8 @@ export default function ProcessFlow() {
                   </div>
                 </li>
               </Reveal>
-            ))}
+              );
+            })}
           </ol>
         </div>
 

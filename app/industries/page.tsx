@@ -6,9 +6,9 @@ import { generateMetadata as genMeta, generateBreadcrumbSchema, baseUrl } from '
 import { industries } from '@/lib/data';
 
 export const metadata: Metadata = genMeta({
-  title: 'Industries We Serve',
+  title: 'Industry Accounting & Bookkeeping Support',
   description:
-    'Outsourced accounting support for CPA firms, technology, healthcare, e-commerce, real estate and professional services businesses.',
+    'Industry-focused accounting, bookkeeping, tax and outsourcing support for CPA firms, real estate and property management, e-commerce, healthcare and technology.',
   path: '/industries',
 });
 
@@ -31,12 +31,12 @@ export default function IndustriesPage() {
             Industries
           </span>
           <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary text-balance">
-            Industries We Serve
+            Industry-Focused Accounting, Bookkeeping, Tax and Outsourcing Support
           </h1>
           <p className="text-lg text-muted leading-relaxed max-w-2xl mx-auto">
-            Accounting needs differ by industry. Our team applies sector-specific
-            knowledge across CPA firms, technology, healthcare, e-commerce, real
-            estate, and professional services businesses.
+            Every sector breaks in its own place. A property portfolio breaks on structure, an
+            online retailer on settlements, a practice on the review queue. Pick the one you work
+            in and the page describes the accounting rather than the industry.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function IndustriesPage() {
       <SectionGrid
         subtitle="Explore by Industry"
         title="Specialized Support for Your Sector"
-        description="Select your industry to see how we tailor our accounting and finance support."
+        description="Each page names the work we do, the parts that stay with your team, and what tends to go wrong in that sector's books."
         items={industries}
         baseUrl="/industries"
         columns={3}
