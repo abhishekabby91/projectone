@@ -83,7 +83,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | — | Published — site's declared Tier-1 audience |
+| `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/ecommerce` | B | — | Published |

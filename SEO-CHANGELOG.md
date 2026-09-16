@@ -1,5 +1,94 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16h (the Tier-1 audience page, finally built)
+
+`/industries/cpa-firms`, **1,009 to 2,474 words**.
+
+Two things were true about this page and both are worth recording. It was
+**absent from the industries brief** entirely, which is why it has been sitting
+in `CLAUDE.md` as an open item for three passes. And it was **the one industry
+page that never got a `lib/industry-depth.ts` entry** — the other five were
+deepened on 2026-09-08 and this one was skipped. So the site's declared primary
+buyer had the thinnest treatment of the six, on the page named after them.
+
+### The boundary problem, which is the whole job
+
+Every commercial page on this site is already written for CPA firms: the seven
+US Service x Region pages, `/markets/united-states`,
+`/solutions/staff-augmentation`, and two guides. A page called "CPA Firms" that
+describes services is not a new page — it is a summary of the ones that already
+exist, and it competes with all of them.
+
+So the split:
+
+- a **Service x Region** page describes one piece of work in one market;
+- **`/markets/united-states`** describes the US regulatory environment;
+- **`/solutions/*`** describes an engagement shape;
+- **this page describes the firm as a business** — capacity economics,
+  realization, what the review queue actually costs, which work to hand over
+  first, the ramp-up, and the professional-conduct rules a licensed firm is
+  bound by.
+
+The test written into the content module: *if a paragraph could move onto a
+service page without looking odd, it belongs on the service page.*
+
+It held. Worst pair involving this page is **3.4%** against
+`/services/tax-preparation/united-states`; 2.4% against `/markets/united-states`,
+2.3% against US bookkeeping, 2.5% against US audit support. Every one of those is
+**lower than pairs that do not involve it at all** — audit vs bookkeeping sits at
+6.2%. A page about the same audience as everything else measured further from
+everything else, because it is about a different thing.
+
+### It answers the objection instead of asserting around it
+
+`knowledge/icp/cpa-firms.md` names the primary objection and requires every page
+for this ICP to meet it directly: *"If I outsource this, will I spend more time
+reviewing it than doing it myself?"*
+
+That gets its own band, answered mechanically rather than with a quality claim —
+a file is expensive to review when the open questions are buried rather than
+listed, the layout changes between cycles, the same correction is made every
+month, and gaps are filled with plausible figures instead of flagged. Each is a
+process fault and each is fixable without anyone becoming a better accountant.
+Answering this with "our quality is high" is precisely the failure
+`AI-WEBSITE-GUIDE.md`'s content-psychology principles exist to prevent.
+
+The rest is built from the same knowledge file: six shapes the capacity gap
+takes (busy-season overflow, cleanup before a return, CAS production, audit and
+PBC support, an unfilled seat, recurring client work), the four documented
+handoff steps on the process rail, and the practice stack the ICP actually names
+— CCH Axcess and Drake Tax over QuickBooks Online and Xero.
+
+### The boundaries band is the highest-risk thing on the page
+
+Written from this ICP's own boundary list. Never imply Accounstone can sign,
+review or take final responsibility for a return or an audit file; never claim
+representation before a tax authority; no Form 2848, no EFIN, no tax position,
+no audit judgement. **White-label is fine and is what firms ask for — but it
+must never imply Accounstone becomes a party to the engagement**, and the page
+says that in as many words.
+
+No turnaround time, ramp-up duration, headcount, capacity figure or saving
+percentage appears anywhere, because the knowledge file is explicit that a
+ramp-up plan built from the actual work beats an arbitrary number of days.
+
+### Verification
+
+Title 57 chars including the template, description 156. One `h1`, headings
+sequential, one `#inquiry`, one rail. **19 contextual inbound links** — the most
+of any page on the site, which is what a Tier-1 audience page should look like.
+Responsive sweep clean at 320 / 390 / 768 / 1280 / 1440. Drift check 95 on disk
+against 93 in the sitemap. `pnpm eslint .` silent, `pnpm next build` complete,
+and the 10-assertion motion suite still passes.
+
+**One process note.** The first sweep reported 9 sub-24px tap targets on this
+page at every width, including breadcrumbs and hero buttons that have generous
+padding. It was not the page: `rm -rf .next` under a running dev server left the
+stylesheet 404ing, so every anchor measured as bare inline text at 17px. Worth
+knowing because the failure looks exactly like a real one — **if a sweep reports
+that everything on a page is 17px tall, check the stylesheet returns 200 before
+touching any markup.**
+
 ## 2026-09-16g (motion that carries meaning: counters, a drawn rail, a progress bar)
 
 The owner asked for transitions or animation on numbers and levels, to make the

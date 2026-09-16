@@ -22,7 +22,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | Outsourcing tax return preparation — what to know | `/blog/tax-preparation-outsourcing` | Informational |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
-| CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) |
+| CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
 | Real estate, property management and HOA accounting outsourcing | `/industries/real-estate` | Commercial — industry cluster |
 | SaaS and technology accounting / deferred revenue bookkeeping | `/industries/technology` | Commercial — industry cluster |
 | Law firm, consulting and agency accounting / trust bookkeeping | `/industries/professional-services` | Commercial — industry cluster |

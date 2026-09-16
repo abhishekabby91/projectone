@@ -333,11 +333,12 @@ Do **not** resolve these unilaterally. Each needs the owner.
    sub-audience is the `segments` prop on `components/industry-page-template.tsx`,
    and a block lifts off cleanly if one ever earns its own page.
 
-   **`/industries/cpa-firms` is still absent from the requested list and is
-   still the site's Tier-1 audience** (`docs/SEARCH-INTENTS.md`, and
-   `knowledge/icp/cpa-firms.md` is the only ICP file in the repo). Treat the
-   omission as an oversight; it must not be dropped or demoted by an industries
-   rebuild.
+   **`/industries/cpa-firms` was rebuilt on 2026-09-16 and is no longer
+   outstanding.** It was absent from the requested industry list, and it was
+   also the one industry page that had never been given a `lib/industry-depth.ts`
+   entry — so the site's Tier-1 audience had the thinnest treatment of the six.
+   1,009 to 2,474 words. See "The CPA firms page" below for the boundary that
+   lets it exist at all.
 
    **Still to build, and none of them collides with anything:** construction,
    manufacturing, nonprofits. Each needs its own `lib/` content module written
@@ -1343,6 +1344,51 @@ each other, more than twice the 25% ceiling. Moving the five-step block and the
 full boundaries list to the hub, and giving each state its own FAQs, `feesNote`,
 `ctaNote` and `whoFormsHere`, brought the worst pair to **18.0%**. A new state
 needs all of those written properly, not templated — re-measure before shipping.
+
+## The CPA firms page, and the boundary that lets it exist
+
+`/industries/cpa-firms`, rebuilt 2026-09-16 (1,009 to 2,474 words). Copy lives
+in `lib/cpa-firms-industry.ts`.
+
+**This page has the hardest boundary problem on the site.** Every commercial
+page here is already written for CPA firms — the 7 US Service x Region pages,
+`/markets/united-states`, `/solutions/staff-augmentation`, and two guides. A
+page called "CPA Firms" that describes services is not a new page; it is a
+summary of the ones that exist, and it competes with all of them.
+
+The split that makes it work:
+
+- a **Service x Region** page describes one piece of work in one market;
+- **`/markets/united-states`** describes the US regulatory environment;
+- **`/solutions/*`** describes an engagement shape;
+- **this page describes the firm as a business** — capacity economics,
+  realization, what the review queue costs, which work to hand over first, the
+  ramp-up, and the professional-conduct rules a licensed firm is bound by.
+
+**If a paragraph could move onto a service page without looking odd, it belongs
+on the service page.** Measured after: worst pair involving this page is
+**3.4%** (vs `/services/tax-preparation/united-states`), 2.4% against
+`/markets/united-states`, 2.3% against US bookkeeping — all lower than pairs
+that do not involve it at all (audit vs bookkeeping sits at 6.2%).
+
+**The page must answer the ICP's primary objection rather than assert around
+it.** `knowledge/icp/cpa-firms.md` names it: *"If I outsource this, will I spend
+more time reviewing it than doing it myself?"* It has its own band, answered
+mechanically — what makes a file cheap or expensive to review — because
+answering it with "our quality is high" is the exact failure the
+content-psychology principles warn about.
+
+**The boundaries band is written from this ICP's own list and is the highest
+risk on the page.** Never imply Accounstone can sign, review or take final
+responsibility for a return or an audit file; never claim representation before
+a tax authority; **white-label is fine and is what firms ask for, but it must
+never imply Accounstone becomes a party to the engagement.** No turnaround
+time, ramp-up duration, headcount or capacity figure — the knowledge file is
+explicit that a ramp-up plan built from the actual work beats an arbitrary
+number of days.
+
+It carries **19 contextual inbound links**, the most of any page on the site,
+which is what a Tier-1 audience page should look like.
 
 ## Offshore is one cluster, and it belongs to one page
 

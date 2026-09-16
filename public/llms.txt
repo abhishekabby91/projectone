@@ -82,7 +82,7 @@ Registration is **arranged and coordinated** through an external firm, not perfo
 
 ## Industries
 
-- [CPA firms](https://www.accounstone.com/industries/cpa-firms) — overflow capacity, recurring client work, tax-season support
+- [CPA firms](https://www.accounstone.com/industries/cpa-firms) — the primary buyer. Busy-season overflow, client cleanup before a return, CAS production, PBC and audit support, staff augmentation for an unfilled seat, and recurring client work. Answers the partner's first question directly: what makes a file cheap or expensive to review. Review, signature, every tax position, every audit judgement and all client contact stay with the firm; no EFIN, no Form 2848, no representation
 - [Technology and SaaS](https://www.accounstone.com/industries/technology) — deferred revenue against the contract term, deferred balance reconciled to the subscription base, settlements decomposed, cost of revenue separated. The ASC 606 policy is the client's CPA or auditor, not ours
 - [Healthcare](https://www.accounstone.com/industries/healthcare)
 - [E-commerce](https://www.accounstone.com/industries/ecommerce) — multi-channel reconciliation, payables, receivables, sales-tax data

@@ -46,6 +46,7 @@ const BODY_MODULES = [
   '@/lib/real-estate-industry',
   '@/lib/industry-depth',
   '@/lib/industry-segments',
+  '@/lib/cpa-firms-industry',
 ];
 
 function lastCommitDate(relPath) {
