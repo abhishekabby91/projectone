@@ -1,5 +1,82 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16i (a new link-preview card — and the claim that was hiding in a PNG)
+
+The owner asked for a fresh, premium Open Graph card for the homepage:
+brand-first, no tagline, only the wordmark and "Accounting / Bookkeeping / Tax".
+
+### The thing worth recording is what the old card said
+
+`public/og-image.png` was the default OG image on **all 95 pages**, so it was
+attached to every share of every page in WhatsApp, Slack, LinkedIn and iMessage.
+It read:
+
+> **Accounstone** — Outsourced Accounting & Finance Solutions
+> Bookkeeping · Tax · **CFO Support** · US, UK & Australia
+
+**CFO Support is a service Accounstone does not offer.**
+`knowledge/company/scope-boundaries.md` forbids it, `/services/cfo-support`
+returns **410 Gone**, and `CLAUDE.md` open item 4 records the exclusion. The
+"Finance Solutions" framing breaks the hard rule against financial-advisory
+claims. Both had been removed from every page on the site — and left sitting in
+a binary that nothing checks.
+
+This is the same failure mode `public/llms.txt` already has a section for: a
+publishing surface outside the page-by-page checks, still serving a claim the
+site stopped making. The general rule it leaves behind: **nothing greps
+`public/*.png` for claims, so a page-by-page read will never find one.** If a
+claim can be removed from the site and still be published, the surface it is
+published on has to be checked by hand.
+
+The card is now generated from a checked-in template,
+`scripts/og-image/card.html`, rather than being an undiffable binary. That is
+the real fix — a claim in a template shows up in a diff.
+
+### The card
+
+Navy `.hero-gradient`, the `.ledger-lines-dark` texture at the same 36px rhythm
+as `app/globals.css`, a soft gold orb, and the lockup on a white plate — the
+way the site's own sticky header presents it, and forced anyway because
+`accounstone-logo-horizontal.png` is RGB with no alpha channel and cannot sit
+directly on navy.
+
+**Gold only for the rules.** The burnt-orange accent is reserved sitewide for
+the point that needs a human decision and is never decorative; a link card has
+no such point, so orange appears only inside the mark itself. The first draft
+had a gold-to-orange gradient on the base rule and that was wrong by the site's
+own system.
+
+No tagline, no slogan, no region, no figure, no contact detail. The only text
+is the lockup's wordmark and "Accounting • Bookkeeping • Tax". Verified legible
+at **200, 300 and 400px wide** — the sizes WhatsApp, iMessage and Slack
+actually render — and everything sits in the centre so a platform crop cannot
+cut it.
+
+**48KB as JPEG at quality 88, against 342KB for the same card as PNG**, with no
+visible ringing on the logo edges. `og-image.png` is overwritten with the
+identical card rather than deleted, so anything still holding the old URL stops
+being served the CFO one.
+
+### Metadata
+
+`generateMetadata` now takes `ogTitle`, `ogDescription` and `ogImageAlt`,
+because a share card and a SERP result are read in different places — a page
+title is written to a 46-character budget so Google does not truncate it, while
+a link preview has room for the brand name. Only the homepage sets them; every
+other page falls back to its own title and description, which is correct and was
+verified on `/industries/cpa-firms`.
+
+Homepage now emits `og:title` "Accounstone | Accounting, Bookkeeping & Tax",
+the requested `og:description`, `og:type` website, `og:url`, `og:image`,
+`og:image:width` 1200, `og:image:height` 630, `og:image:alt`, and
+`twitter:card` `summary_large_image` with matching title, description and image.
+
+One note: **`og:url` and the canonical both render without the root's trailing
+slash** — Next.js normalises it. They agree with each other, which is what
+matters; forcing one would make it disagree with the other.
+
+`pnpm eslint .` silent, `pnpm next build` complete.
+
 ## 2026-09-16h (the Tier-1 audience page, finally built)
 
 `/industries/cpa-firms`, **1,009 to 2,474 words**.

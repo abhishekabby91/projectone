@@ -9,9 +9,25 @@ function absoluteUrl(path: string) {
   return `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-export function generateMetadata(config: { title: string; description: string; path: string; ogImage?: string; canonical?: string; noindex?: boolean; absoluteTitle?: boolean }): Metadata {
+/**
+ * `ogTitle`, `ogDescription` and `ogImageAlt` exist because a share card and a
+ * SERP result are read in different places by different people. A page title is
+ * written to a 46-character budget so it survives truncation in Google; a link
+ * preview in WhatsApp or Slack has room for the brand name and benefits from
+ * it. Where a page sets none of the three, the card falls back to the page's own
+ * title and description, which is right for every page but the homepage.
+ *
+ * The default image is `/og-image.jpg` — 48KB against 342KB for the same card
+ * as a PNG. `/og-image.png` holds the identical card so that any platform or
+ * link still pointing at the old URL is not served the previous one, which
+ * advertised CFO Support. See `scripts/og-image/card.html`.
+ */
+export function generateMetadata(config: { title: string; description: string; path: string; ogImage?: string; ogTitle?: string; ogDescription?: string; ogImageAlt?: string; canonical?: string; noindex?: boolean; absoluteTitle?: boolean }): Metadata {
   const canonical = absoluteUrl(config.canonical || config.path);
-  const ogImage = absoluteUrl(config.ogImage || '/og-image.png');
+  const ogImage = absoluteUrl(config.ogImage || '/og-image.jpg');
+  const ogTitle = config.ogTitle || config.title;
+  const ogDescription = config.ogDescription || config.description;
+  const ogImageAlt = config.ogImageAlt || config.title;
   const robots: Metadata['robots'] = config.noindex
     ? { index: false, follow: false }
     : { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } };
@@ -23,8 +39,8 @@ export function generateMetadata(config: { title: string; description: string; p
     description: config.description,
     robots,
     alternates: { canonical },
-    openGraph: { title: config.title, description: config.description, url: canonical, siteName, locale: 'en_US', type: 'website', images: [{ url: ogImage, width: 1200, height: 630, alt: config.title }] },
-    twitter: { card: 'summary_large_image', title: config.title, description: config.description, images: [ogImage] },
+    openGraph: { title: ogTitle, description: ogDescription, url: canonical, siteName, locale: 'en_US', type: 'website', images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }] },
+    twitter: { card: 'summary_large_image', title: ogTitle, description: ogDescription, images: [ogImage] },
   };
 }
 

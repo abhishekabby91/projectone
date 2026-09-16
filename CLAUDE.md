@@ -1026,6 +1026,63 @@ motion disables both the count and the rail, and the progress bar is absent
 before scrolling, tracks mid-article, reaches 100% at the end, and never appears
 on a non-article page.
 
+## The link-preview card, and the claim that was hiding in a PNG
+
+`public/og-image.jpg` (1200x630, ~48KB) is the Open Graph / link-preview card,
+rendered from `scripts/og-image/card.html` by
+`node scripts/og-image/render.mjs`.
+
+**Replacing it removed a live scope breach.** The card it succeeded — the
+default OG image on all 95 pages, so it rode along on every share of every
+page — read *"Outsourced Accounting & Finance Solutions"* and listed
+**"CFO Support"** among the services. CFO support is forbidden by
+`scope-boundaries.md`, `/services/cfo-support` returns **410 Gone**, and the
+financial-advisory framing breaks a hard rule. It had been removed from every
+page and left sitting in a binary.
+
+**That is the same blind spot `public/llms.txt` already records**, and it is
+worth stating as a general rule: **nothing on this site greps `public/*.png`
+for claims.** A page-by-page read will never find one. If a claim can be
+removed from the site and still be published, the surface it is published on
+needs checking by hand — the sitemap, `llms.txt`, the OG card, and any other
+binary carrying type.
+
+The card is now generated from a checked-in HTML template rather than being an
+undiffable binary, which is the actual fix: a claim in a template shows up in a
+diff.
+
+**Design rules, all inherited rather than invented:**
+
+- `.hero-gradient` and `.ledger-lines-dark` at the same 36px rhythm as
+  `app/globals.css` — the ledger reference is the site's own material.
+- The lockup sits on a white plate, the way the sticky header presents it. It
+  is also forced: `accounstone-logo-horizontal.png` is **RGB with no alpha**,
+  so it cannot sit directly on navy.
+- **Gold only for the rules.** The burnt-orange accent is reserved sitewide for
+  the point that needs a human decision and is never decorative; a link card has
+  no such point, so orange appears only inside the mark itself.
+- **No tagline, no slogan, no region, no figure, no contact detail.** The only
+  text is the lockup's wordmark and "Accounting / Bookkeeping / Tax". The owner
+  was explicit about this, and it is also what keeps the card from ageing.
+- Everything sits in the centre so a platform crop cannot cut it. Verified
+  legible at 200, 300 and 400px wide — the sizes WhatsApp, iMessage and Slack
+  actually render.
+
+**JPEG, not PNG, and both exist.** The same card is 48KB as a JPEG at quality
+88 against 342KB as a PNG, with no visible ringing on the logo edges.
+`og-image.png` is **overwritten with the identical card rather than deleted**,
+so anything still holding the old URL stops being served the CFO one.
+
+**`generateMetadata` takes `ogTitle`, `ogDescription` and `ogImageAlt`.** A
+share card and a SERP result are read in different places: a page title is
+written to a 46-character budget so Google does not truncate it, while a link
+preview has room for the brand name. Only the homepage sets them; every other
+page falls back to its own title and description, which is correct.
+
+**`og:url` and the canonical both render without the root's trailing slash.**
+Next.js normalises it. They agree with each other, which is what matters — do
+not "fix" one of them into disagreeing with the other.
+
 ## Icons and favicon
 
 Generated from the mark in `public/accounstone-logo-horizontal.png` (the A/S

@@ -73,10 +73,10 @@ export const metadata: Metadata = {
       "Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses. Expand your accounting capacity with Accounstone.",
     images: [
       {
-        url: `${baseUrl}/og-image.png`,
+        url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Accounstone — outsourced accounting, bookkeeping, tax and payroll services",
+        alt: "Accounstone — Accounting, Bookkeeping & Tax",
       },
     ],
   },
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     title: "Accounstone — Outsourced Accounting, Bookkeeping, Tax & Payroll",
     description:
       "Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses. Expand your accounting capacity with Accounstone.",
-    images: [`${baseUrl}/og-image.png`],
+    images: [`${baseUrl}/og-image.jpg`],
   },
 };
 

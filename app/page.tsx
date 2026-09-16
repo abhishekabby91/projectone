@@ -25,6 +25,14 @@ export const metadata: Metadata = generateMetadata({
     'Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and accounting practices. Expand your firm’s capacity with Accounstone.',
   path: '/',
   absoluteTitle: true,
+  // A share card and a SERP result are read in different places. The page
+  // title is written to a 46-character budget so Google does not truncate it;
+  // a link preview in WhatsApp, Slack or LinkedIn has room for the brand name
+  // and reads better with it. Owner's wording, 2026-09-16.
+  ogTitle: 'Accounstone | Accounting, Bookkeeping & Tax',
+  ogDescription:
+    'Professional accounting, bookkeeping and tax outsourcing support for growing businesses and accounting practices.',
+  ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax',
 });
 
 const homePageFAQs = [

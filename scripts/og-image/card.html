@@ -1,0 +1,85 @@
+<!--
+  Source for public/og-image.jpg and public/og-image.png — the link-preview
+  card, 1200x630 (the 1.91:1 Open Graph ratio).
+
+  Regenerate:  node scripts/og-image/render.mjs
+
+  WHY THIS EXISTS AS A CHECKED-IN TEMPLATE. The card it replaced advertised
+  "CFO Support" and "Outsourced Accounting & Finance Solutions" — a service
+  scope-boundaries.md forbids and that /services/cfo-support returns 410 for,
+  plus the financial-advisory framing the hard rules ban. It was the default
+  OG image on all 95 pages, so every share of every page carried it. Nothing
+  checks public/*.png for claims, which is the same blind spot that left the
+  retired /services/{slug} URLs in public/llms.txt for weeks. A binary you
+  cannot diff is the worst place to keep a claim; a template you can is the
+  fix.
+
+  DESIGN RULES, all inherited from the site rather than invented here:
+  - .hero-gradient (primary -> primary-dark) and .ledger-lines-dark at the
+    same 36px rhythm as app/globals.css. The ledger reference is the site's
+    own material, not a generic mesh.
+  - The lockup sits on a white plate, the way the sticky header presents it.
+    It is also necessary: the PNG is RGB with no alpha channel, so it cannot
+    sit directly on navy.
+  - GOLD ONLY for the rules. The burnt-orange accent is reserved sitewide for
+    the point that needs a human decision and is never decorative — a link
+    card has no such point, so orange appears only inside the mark itself.
+  - No tagline, no slogan, no region, no figure, no contact detail. The only
+    text is the lockup's own wordmark and "Accounting / Bookkeeping / Tax".
+  - Everything stays inside the centre so a platform crop cannot cut it, and
+    nothing depends on small text.
+-->
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1200px; height:630px; }
+  body {
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+    /* .hero-gradient from app/globals.css: primary -> primary-dark */
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f1f35 100%);
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  /* .ledger-lines-dark — the site's own texture, a ledger reference rather
+     than a generic mesh. Same 36px rhythm as globals.css. */
+  .lines { position:absolute; inset:0;
+    background-image: repeating-linear-gradient(to bottom,
+      rgba(255,255,255,0.07) 0, rgba(255,255,255,0.07) 1px,
+      transparent 1px, transparent 36px); }
+  /* the soft gold orb PremiumHero carries top-right */
+  .orb  { position:absolute; top:-170px; right:-140px; width:520px; height:520px;
+          border-radius:50%; background:rgba(201,168,118,0.20); filter:blur(95px); }
+  .orb2 { position:absolute; bottom:-240px; left:-180px; width:460px; height:460px;
+          border-radius:50%; background:rgba(45,90,140,0.40); filter:blur(105px); }
+
+  .stack { position:relative; display:flex; flex-direction:column;
+           align-items:center; gap:52px; }
+
+  /* The lockup on a white plate — the same way the site's sticky header
+     presents it, and necessary anyway: the PNG is RGB with no alpha. */
+  .plate { background:#ffffff; border-radius:16px; padding:26px 40px;
+    box-shadow: 0 26px 64px -26px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.10); }
+  .plate img { display:block; width:500px; height:auto; }
+
+  /* Gold only. The burnt-orange accent is reserved sitewide for the point that
+     needs a human decision and is never decorative — an OG card has no such
+     point, so it does not appear except inside the mark itself. */
+  .rule { width:96px; height:2px; background:#c9a876; opacity:0.85; }
+
+  .line { color:#ffffff; font-size:27px; font-weight:600;
+    letter-spacing:0.2em; text-transform:uppercase; white-space:nowrap; }
+  .dot { color:#c9a876; padding:0 15px; }
+
+  /* the gold ground rule every Accounstone illustration ends on */
+  .base { position:absolute; left:0; right:0; bottom:0; height:6px; background:#c9a876; }
+</style>
+<div class="lines"></div>
+<div class="orb"></div>
+<div class="orb2"></div>
+<div class="stack">
+  <div class="plate"><img src="../../public/accounstone-logo-horizontal.png" alt=""></div>
+  <div class="rule"></div>
+  <div class="line">Accounting<span class="dot">&bull;</span>Bookkeeping<span class="dot">&bull;</span>Tax</div>
+</div>
+<div class="base"></div>

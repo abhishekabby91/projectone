@@ -56,7 +56,7 @@ export default function ArticleLayout({
   const articleSchema = generateArticleSchema({
     title,
     description,
-    imageUrl: `${baseUrl}/og-image.png`,
+    imageUrl: `${baseUrl}/og-image.jpg`,
     publishedDate,
     author: 'Accounstone',
     slug,
