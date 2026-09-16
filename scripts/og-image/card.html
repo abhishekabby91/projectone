@@ -27,7 +27,10 @@
   - No tagline, no slogan, no region, no figure, no contact detail. The only
     text is the lockup's own wordmark and "Accounting / Bookkeeping / Tax".
   - Everything stays inside the centre so a platform crop cannot cut it, and
-    nothing depends on small text.
+    nothing depends on small text. Two safe areas, not one: the 1.91:1 frame
+    most platforms show, AND the middle 630x630 square that small mobile
+    thumbnails crop to. The plate is 580px and the strapline under 600px, so
+    both survive the square. Re-measure with a script if you change either.
 -->
 <!doctype html>
 <meta charset="utf-8">
@@ -67,9 +70,14 @@
      point, so it does not appear except inside the mark itself. */
   .rule { width:96px; height:2px; background:#c9a876; opacity:0.85; }
 
-  .line { color:#ffffff; font-size:27px; font-weight:600;
-    letter-spacing:0.2em; text-transform:uppercase; white-space:nowrap; }
-  .dot { color:#c9a876; padding:0 15px; }
+  /* Sized so the whole line survives a SQUARE crop. Small mobile thumbnails
+     (WhatsApp's compact preview) take the middle 630x630 of a 1200x630 card,
+     not the 1.91:1 frame. At 27px/0.2em this line measured 657px and lost the
+     A of ACCOUNTING and the X of TAX. Anything here must stay under ~600px —
+     measure it, do not eyeball it. */
+  .line { color:#ffffff; font-size:24px; font-weight:600;
+    letter-spacing:0.17em; text-transform:uppercase; white-space:nowrap; }
+  .dot { color:#c9a876; padding:0 12px; }
 
   /* the gold ground rule every Accounstone illustration ends on */
   .base { position:absolute; left:0; right:0; bottom:0; height:6px; background:#c9a876; }
