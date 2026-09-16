@@ -18,7 +18,7 @@
 | app/resources/insights/page.tsx | 55/100 | 265 | 0 | 6 | 0 | 0 |
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/guides/page.tsx | 65/100 | 408 | 0 | 7 | 0 | 0 |
-| app/resources/page.tsx | 65/100 | 512 | 0 | 6 | 0 | 0 |
+| app/resources/page.tsx | 65/100 | 528 | 0 | 6 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 215 | 1 | 1 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
@@ -106,7 +106,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1310 | 1 | 8 | 0 | 0 |
+| app/page.tsx | 100/100 | 1410 | 1 | 8 | 0 | 0 |
 
 ## Priority queue
 
