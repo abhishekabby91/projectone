@@ -20,12 +20,12 @@
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/page.tsx | 65/100 | 512 | 0 | 6 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 215 | 1 | 1 | 0 | 0 |
-| app/terms/page.tsx | 75/100 | 240 | 1 | 0 | 0 | 0 |
+| app/terms/page.tsx | 75/100 | 309 | 1 | 0 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
 | app/compliance/page.tsx | 85/100 | 647 | 1 | 1 | 0 | 0 |
 | app/data-security/page.tsx | 85/100 | 868 | 1 | 1 | 0 | 0 |
-| app/privacy/page.tsx | 85/100 | 393 | 1 | 1 | 0 | 0 |
+| app/privacy/page.tsx | 85/100 | 462 | 1 | 1 | 0 | 0 |
 | app/resources/insights/asc-606-revenue-recognition-saas/page.tsx | 85/100 | 929 | 1 | 1 | 0 | 0 |
 | app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx | 85/100 | 873 | 1 | 1 | 0 | 0 |
 | app/about/page.tsx | 90/100 | 1763 | 1 | 22 | 0 | 0 |
@@ -38,7 +38,7 @@
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1758 | 1 | 8 | 0 | 0 |
-| app/cookie-policy/page.tsx | 90/100 | 844 | 1 | 3 | 0 | 0 |
+| app/cookie-policy/page.tsx | 90/100 | 913 | 1 | 3 | 0 | 0 |
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
@@ -106,7 +106,7 @@
 | app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1286 | 1 | 8 | 0 | 0 |
+| app/page.tsx | 100/100 | 1310 | 1 | 8 | 0 | 0 |
 
 ## Priority queue
 
