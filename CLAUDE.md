@@ -310,6 +310,41 @@ Do **not** resolve these unilaterally. Each needs the owner.
    **410 Gone**. If the service is ever added, delete that route first.
 5. **Is Canada a real market?** Paused by the owner. See `knowledge/company/identity.md`.
 6. **Should "Financial reporting" be a named service line?** See `scope-boundaries.md`.
+7. **The remaining eight industry pages, and three collisions inside the
+   request (2026-09-16).** `/industries/real-estate` was rebuilt as a
+   homepage-grade page covering real estate, property management and HOA
+   (3,930 words, worst near-duplicate pair 2.1%). The brief asks for eight
+   more on the same component system: construction, e-commerce, professional
+   services, healthcare, SaaS & technology, manufacturing, law firms,
+   nonprofits. **Four of those already exist** — `/industries/ecommerce`,
+   `/industries/healthcare`, `/industries/professional-services` and
+   `/industries/technology` — and three questions have to be answered before
+   any of the rest is built, because each is a URL decision rather than a
+   content one:
+
+   - **`/industries/saas-technology` versus the live `/industries/technology`.**
+     Creating both puts two URLs on one intent, which is the cannibalisation
+     the same brief forbids elsewhere. Either the existing page absorbs the
+     SaaS vocabulary and keeps its URL, or it 301s to a new slug — and a URL
+     change on an indexed page is the owner's call, not a session's.
+   - **`/industries/law-firms` versus `/industries/professional-services`.**
+     Law firms are a subset of the page that exists, and its description names
+     legal explicitly. A separate page is defensible — trust and client-money
+     accounting, unbilled time and contingency matters are genuinely distinct
+     mechanics — but only if professional services is simultaneously narrowed
+     to exclude legal, in the same pass, and re-measured.
+   - **`/industries/cpa-firms` is not in the requested list at all.** It is the
+     site's declared Tier-1 audience (`docs/SEARCH-INTENTS.md`, and
+     `knowledge/icp/cpa-firms.md` is the only ICP file in the repo). It must
+     not be dropped or demoted by an industries rebuild. Treat its absence from
+     the list as an omission unless the owner says otherwise.
+
+   Construction, manufacturing and nonprofits carry no such collision and can
+   be built on the same system once Real Estate is signed off. Each needs its
+   own `lib/` content module written from the mechanics — WIP and retention,
+   standard cost and variance, restricted funds — not the Real Estate file with
+   the nouns swapped. That is exactly how the registration trio first measured
+   53% against itself.
 
 ## Hard rules
 
@@ -801,6 +836,13 @@ rule instead: navy line work, a gold rail, and the burnt-orange accent spent
 exactly once - here on phase 04, because that is where the boundary sits
 (review, judgement and sign-off stay with the client). Colour carries meaning,
 not decoration.
+
+**It takes its phases and headings as props (2026-09-16), with the homepage's
+values as defaults.** `/industries/real-estate` uses the same rail with
+property vocabulary rather than publishing the homepage's four paragraphs
+verbatim on a second URL. If you pass your own: keep it to four phases, because
+the rail is inset to node centres across four columns, and spend the accent
+exactly once, on the phase where the boundary sits.
 
 The rail is inset `left-[12.5%] right-[12.5%]`, which is node-centre to
 node-centre across four columns, so it stops at the first and last node instead

@@ -1,5 +1,107 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16b (the Real Estate industry page, rebuilt as a homepage for its industry)
+
+`/industries/real-estate`, **259 words to 3,930**, and `/industries`
+alongside it.
+
+**The brief was explicit about the frame, and it is the right one:** not "an
+SEO page for real estate" but "the Accounstone homepage, specifically built
+for real estate, property management and HOA businesses". Those produce
+different pages. The first produces a keyword page with a form on it; the
+second produces something a salesperson can send to a property management
+company cold, and that is the harder and more useful target.
+
+So the structure is the homepage's, in the homepage's own components — hero,
+trust strip, the argument, segments, services, workflow bands, why-us with the
+navy panel, the four-phase rail, technology, limits, FAQ, related work,
+enquiry, CTA. `PremiumHero`, `TrustIcon`, `Reveal`, `InquiryTrigger`,
+`FAQSection`, `InquirySection`, `CTABanner` and `ProcessFlow` are all existing
+components. Nothing new was designed, which is the point: the page has to read
+as the same website.
+
+**Property management and HOA are full bands rather than bullet lists**,
+because they are the two segments the page is actually prospected into and a
+prospect has to see their own work inside ten seconds. Six items each, written
+at the level of the ledger:
+
+- property management — property-level books with the entity view built from
+  them, rental income recorded against the lease rather than against the
+  deposit, deposits carried as a liability, invoices coded to the property
+  *before* they reach approval, owner statements that go out with their own
+  supporting detail, a close that reconciles rather than reconstructs;
+- HOA — assessments aged by homeowner rather than by bank, operating and
+  reserve funds kept distinct in the ledger, delinquency as a schedule the
+  board can minute, payables against board-approved invoices, budget-versus-
+  actual in the board's own budget lines, a pack a new treasurer can read
+  against last year's.
+
+**What the page refuses to say is the part worth recording.** This industry is
+where "we understand your business" turns into regulated advice faster than
+anywhere else on the site, so `lib/real-estate-industry.ts` opens with the
+prohibitions and the page carries a *What we will not do* section:
+
+- **no trust-accounting compliance claim.** Broker trust accounts and HOA
+  reserve accounts are regulated per state and per jurisdiction, and the rules
+  differ on commingling, interest and permitted transfers. We keep the ledger
+  and the reconciliation; whether an account is *held* correctly is the
+  managing broker's, counsel's or the CPA's.
+- **no reserve-funding or assessment-setting advice.** How much an association
+  should hold, and what the assessment should be, is a board decision informed
+  by a reserve study. We account for what the board decides.
+- **no tax planning, entity structuring, cost segregation, 1031 guidance or
+  depreciation elections** — `scope-boundaries.md` §2 and §4.
+- **no software implementation, configuration, migration or certification.**
+  The technology band says this outright rather than leaving it implied, and
+  names only Yardi (Voyager and Breeze), QuickBooks, Xero, Sage and NetSuite —
+  the platforms the site already claims. Anything else is confirmed at scoping.
+- **no invented client count, saving percentage, accuracy figure, testimonial
+  or logo.** The page has no social proof section for that reason. Naming the
+  limits *is* the trust section, which is the same move `/contact` makes and
+  the same reason it works.
+
+**Measured against a dev server:** 2.1% 6-gram Jaccard against the homepage,
+1.3% against its own Yardi Texas child, 1.1% against the other industry pages,
+0.8% against `/services/bookkeeping/united-states`, 1.9% against
+`/solutions/back-office-support`. Worst pair anywhere involving it is **2.1%**,
+against a 25% ceiling. Three contextual inbound links: the hub, the Yardi
+child and `/markets/united-states/texas`.
+
+**`ProcessFlow` is now parameterised**, and this is the mechanism that keeps a
+shared design from becoming shared text. It takes `phases`, `eyebrow`, `title`
+and `lead`, with the homepage's values as defaults, so the real estate page
+tells the same four-stage story in property vocabulary — *Share the portfolio /
+Build the right team / Run one property first / You stay in control* — instead
+of publishing the homepage's four paragraphs verbatim on a second URL. The
+homepage call site is unchanged. Two rules are recorded in the component: keep
+it to four phases (the rail is inset to node centres across four columns) and
+spend the burnt-orange accent exactly once, on the phase where the boundary
+sits — here phase 04, same as the homepage, because that is where control
+stays with the client.
+
+**The hub was rewritten to match rather than left behind.** `h1` is now
+"Industry-Focused Accounting, Bookkeeping, Tax and Outsourcing Support", the
+intro says what each page contains instead of asserting sector expertise, and
+every card carries three service lines through `FeatureCard`'s existing
+`features` prop. 341 to 452 words — still a hub, still orienting, not padded to
+hit a number.
+
+Titles 59 and 55 characters including the `| Accounstone` template;
+descriptions 159 and 160. One `h1` each, heading order sequential, exactly one
+`#inquiry` per page. Playwright sweep at 320 / 390 / 768 / 1280 / 1440: no
+horizontal overflow and no sub-24px tap target on either page, nor on the two
+return-type pages shipped earlier the same day. `pnpm eslint .` silent,
+`pnpm next build` complete, drift check clean at 95 on disk against 93 in the
+sitemap.
+
+**Three architectural conflicts in the brief were not resolved unilaterally,
+and they are listed in `CLAUDE.md` as open items for the owner:** a requested
+`/industries/saas-technology` collides with the live `/industries/technology`;
+a requested `/industries/law-firms` overlaps `/industries/professional-
+services`, which currently names legal; and `/industries/cpa-firms` — the
+site's declared Tier-1 audience — is absent from the requested list entirely.
+None of those is a coding decision.
+
 ## 2026-09-16 (two US return-type pages, under the parent rather than beside it)
 
 `/services/tax-preparation/united-states/1040-individual` and
