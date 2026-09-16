@@ -17,6 +17,8 @@ interface FeatureCardProps {
   inquiryService?: string;
   /** Set false for a card that is genuinely decorative rather than an offer. */
   inquiry?: boolean;
+  /** CSS colour for this card's corner tint. See `hueVar` in icon-badge.tsx. */
+  hue?: string;
 }
 
 export default function FeatureCard({
@@ -29,7 +31,9 @@ export default function FeatureCard({
   className = '',
   inquiryService,
   inquiry = true,
+  hue,
 }: FeatureCardProps) {
+  const hueStyle = hue ? ({ '--card-hue': hue } as React.CSSProperties) : undefined;
   // A card with somewhere to go navigates. A card without one asks for the
   // enquiry instead, in a dialog, so the reader keeps their place on the page.
   const asksForInquiry = !href && inquiry;
@@ -88,7 +92,7 @@ export default function FeatureCard({
   if (href) {
     return (
       <Link href={href} className="block h-full" aria-label={`Explore ${title}`}>
-        <div className={`${baseClasses} ${variantClasses}`}>
+        <div className={`${baseClasses} ${variantClasses}`} style={hueStyle}>
           {content}
         </div>
       </Link>
@@ -104,10 +108,10 @@ export default function FeatureCard({
         title={`Talk to Us About ${title}`}
         label={`Ask us about ${title}`}
       >
-        <div className={`${baseClasses} ${variantClasses}`}>{content}</div>
+        <div className={`${baseClasses} ${variantClasses}`} style={hueStyle}>{content}</div>
       </InquiryTrigger>
     );
   }
 
-  return <div className={`${baseClasses} ${variantClasses}`}>{content}</div>;
+  return <div className={`${baseClasses} ${variantClasses}`} style={hueStyle}>{content}</div>;
 }

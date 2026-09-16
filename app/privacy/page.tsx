@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { generateMetadata } from '@/lib/seo';
+import InquirySection from '@/components/inquiry-section';
 import { companyInfo } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
@@ -86,6 +87,14 @@ export default function PrivacyPage() {
           </p>
         </div>
       </div>
+
+      {/* The enquiry band, on the legal pages too (owner's instruction,
+          2026-09-16). It is `compact`, which drops the assurances and the
+          contact block and leaves mostly form labels — these are short pages
+          and the full band would be a large share of their text, which is how
+          near-duplicate scores climb. Each one passes its own title and lead
+          for the same reason. */}
+      <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="The consultation and the call are always free. If something about how we would handle your data or your clients’ data is not covered above, ask and we will answer it plainly." compact />
     </main>
   );
 }

@@ -83,6 +83,77 @@ interface IconBadgeProps {
   size?: 'sm' | 'md';
 }
 
+/**
+ * The supporting hue each badge carries.
+ *
+ * Assigned per key and never rotated, so the same service shows the same
+ * colour on the homepage, the services hub and its own page — colour that
+ * moves between renders is decoration; colour that stays is identification.
+ * Related things share a hue on purpose: the two ledger services are teal,
+ * the two money-movement services are olive, the engagement models are plum.
+ *
+ * Anything not listed falls back to navy, which is also what a new key gets
+ * until somebody decides where it belongs.
+ */
+const TONE_MAP: Record<string, string> = {
+  // Services — grouped by what the work actually is
+  bookkeeping: 'teal',
+  accounting: 'teal',
+  'tax-preparation': 'denim',
+  'audit-support': 'denim',
+  payroll: 'plum',
+  'accounts-payable': 'olive',
+  'accounts-receivable': 'olive',
+  // Solutions — one family, because they are four shapes of the same offer
+  'offshore-accounting-support': 'plum',
+  'staff-augmentation': 'plum',
+  'dedicated-accounting-teams': 'plum',
+  'back-office-support': 'plum',
+  // Industries — each one distinct, because the cards sit side by side
+  'cpa-firms': 'denim',
+  technology: 'teal',
+  healthcare: 'plum',
+  ecommerce: 'olive',
+  'real-estate': 'teal',
+  'professional-services': 'denim',
+};
+
+/**
+ * Solid tiles rather than tinted ones, and that was measured by eye before it
+ * was chosen: a 12% tint of any of these on a cream card is close to
+ * invisible at 56px, so a grid of seven still read as one grey block. A solid
+ * tile with a white glyph is what actually gives the grid its rhythm, and it
+ * is the one place on the page where a supporting hue runs at full strength.
+ *
+ * Every one of these clears 4.5:1 against white, so the glyph is legible well
+ * past the 3:1 that non-text graphics need.
+ */
+const TONE_CLASS: Record<string, string> = {
+  teal: 'bg-hue-teal text-white',
+  plum: 'bg-hue-plum text-white',
+  olive: 'bg-hue-olive text-white',
+  denim: 'bg-hue-denim text-white',
+  navy: 'bg-primary text-white',
+};
+
+const TONE_VAR: Record<string, string> = {
+  teal: 'var(--color-hue-teal)',
+  plum: 'var(--color-hue-plum)',
+  olive: 'var(--color-hue-olive)',
+  denim: 'var(--color-hue-denim)',
+  navy: 'var(--color-primary)',
+};
+
+/**
+ * The CSS colour a card should tint its corner with, for the same key the
+ * badge is drawn from — so the corner, the badge and (on an industry page) the
+ * illustration are all one colour. Exported rather than duplicated because a
+ * second copy of this map is a second thing to forget to update.
+ */
+export function hueVar(name: string): string {
+  return TONE_VAR[TONE_MAP[name] ?? 'navy'];
+}
+
 export default function IconBadge({ name, fallback, variant = 'default', size = 'md' }: IconBadgeProps) {
   const Flag = FLAG_MAP[name];
   if (Flag) {
@@ -108,11 +179,13 @@ export default function IconBadge({ name, fallback, variant = 'default', size = 
   const badgeStyle =
     variant === 'featured'
       ? 'bg-white/15 text-white'
-      : 'bg-primary/8 text-primary';
+      : TONE_CLASS[TONE_MAP[name] ?? 'navy'];
 
   return (
-    <div className={`inline-flex items-center justify-center rounded-xl ${dimensions} ${badgeStyle}`}>
-      <Icon size={iconSize} strokeWidth={1.75} />
+    <div
+      className={`inline-flex items-center justify-center rounded-xl shadow-sm ${dimensions} ${badgeStyle}`}
+    >
+      <Icon size={iconSize} strokeWidth={2} />
     </div>
   );
 }

@@ -1,5 +1,97 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16d (a design pass: colour, composition, and the form on every page)
+
+Owner's direction, in their words: *"the website only full of content, that why
+it need some attention things and design also with some other colour rather
+than brand colour"*, and *"need inquiry form as well in each page"*. Both were
+right, and the first one named a real defect rather than a preference.
+
+### What was actually wrong
+
+**Every card, badge and icon on the site was one navy.** A grid of seven
+services rendered as one grey block and nothing drew the eye to anything. On a
+site whose pages run 1,000-4,000 words, that is not a small problem: the reader
+has nothing to navigate by.
+
+**Two grids were leaving dead rows.** A CSS grid left-aligns a row it cannot
+fill, so seven services at three across rendered as 3 + 3 + 1 with two empty
+cells beside the last card, and four solutions as 3 + 1 with two more. On a
+1440px viewport that is a third of a screen of nothing, and it reads as a page
+that ran out rather than one that was composed.
+
+**`SectionGrid`'s headings were in the wrong typeface.** Sans at
+`text-xl md:text-2xl`, while every other section heading on the site is serif at
+`text-2xl md:text-3xl` — so the homepage's three biggest bands were set two
+steps smaller and in a different face than the headings on every page below
+them. That is the "two designs stitched together" failure the type-system note
+in `CLAUDE.md` already warns about; it had simply never been applied to the
+homepage's own component.
+
+### The supporting palette
+
+Four hues beside the brand three: teal `#1a6b62`, plum `#6d4066`, olive
+`#5c6f33`, denim `#2d5a8c`. Desaturated and warm-leaning so they sit on the
+cream ground. **Contrast measured on the rendered page rather than assumed** —
+5.56, 6.32, 7.11 and 8.15 to 1 with a white glyph, all well past the 3:1 that
+non-text graphics need and past 4.5:1 for text.
+
+Four rules keep this from becoming the stock template `CLAUDE.md` warns about
+when it records why the process flow refused four saturated hues:
+
+- navy stays structural;
+- gold stays the rule along the base of every illustration;
+- **the burnt-orange accent stays reserved for the point that needs a human
+  decision.** The card corner tint had been accent at 9% — decorative use of
+  the one colour that is supposed to mean something. It now takes the card's
+  own hue, which frees the accent entirely;
+- **a hue identifies a thing and is assigned deterministically.** One map in
+  `components/icon-badge.tsx`, exported as `hueVar()` so the card corner and
+  the industry illustration read it rather than keeping a second copy. Related
+  services share a hue: ledger work teal, money movement olive, the four
+  engagement models plum.
+
+**The badges are solid tiles rather than tints, and that was decided by
+looking.** A 12% tint of any of these is close to invisible at 56px on cream,
+and the first render still showed one grey block. A solid tile with a white
+glyph is what gives the grid its rhythm.
+
+### Composition
+
+`SectionGrid` now wraps and centres instead of using a grid, so a short last
+row looks deliberate at any item count. Seven services render 3 + 3 + 1 with
+the last card centred; four solutions moved to `columns={2}` for a balanced 2x2
+with roomier cards. One caveat is recorded in the component: the flex basis
+subtracts each card's share of the gap, so changing the gap means changing the
+basis.
+
+### The form on every page
+
+It was already on 90 of 95 routes. The three legal pages — `/privacy`,
+`/terms`, `/cookie-policy` — now carry it too, all `compact` and all with their
+own title and lead, because these are short pages and a shared full-width band
+would be a large share of their text. That is the same precaution that kept the
+2026-09-03 rollout from pushing near-duplicate scores up, and it worked again:
+**worst pair among the legal and trust pages is 10.0%** (`/privacy` vs
+`/terms`), against a 25% ceiling.
+
+`/contact` is unchanged because the page *is* a form.
+
+**`/thank-you` is the one page still without one, and that is a flag for the
+owner rather than an oversight.** It fires GA4's `generate_lead` on mount, so a
+form on it lets a visitor who has just submitted submit again, land back on
+`/thank-you`, and fire the conversion a second time. That inflates the number
+Google Ads counts, and afterwards it cannot be told apart from a real lead. The
+cost is measurement rather than code, so it is the owner's call.
+
+### Verification
+
+`pnpm eslint .` silent, `pnpm next build` complete. Playwright sweep at
+320 / 390 / 768 / 1280 / 1440 across the homepage, the four hubs, two industry
+pages, the technology hub, resources, markets and a Service x Region page: no
+horizontal overflow, no sub-24px tap target. Contrast measured on the rendered
+tiles. Near-duplicate re-measured on every page the form band touched.
+
 ## 2026-09-16c (absorb, do not split — and the imagery question, answered by drawing)
 
 **The owner's decision: no `/industries/saas-technology`, no

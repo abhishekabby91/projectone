@@ -668,6 +668,14 @@ card titles. `--font-sans` is body and UI. Both were already brand tokens; the
 serif simply went unused until 2026-08-27. Keep new headings on `font-serif` so
 the page does not read as two designs stitched together.
 
+**`components/section-grid.tsx` was the exception that proved the rule, until
+2026-09-16.** Its section headings were sans at `text-xl md:text-2xl` while
+every other section heading on the site is serif at `text-2xl md:text-3xl` — so
+the homepage's three biggest bands were set in a different typeface, two steps
+smaller, than the headings on every page below them. They are now serif at the
+site scale, and the eyebrow carries the same gold rule the rest of the site
+uses. If you add a heading anywhere, match that pair.
+
 Shared pieces worth using instead of rebuilding:
 `components/section-heading.tsx` (eyebrow + rule + serif heading + lead),
 `components/resource-card.tsx` (guide/insight/article card with topic chips),
@@ -896,6 +904,58 @@ icon and type all step down at that size and back up at `sm:`. Checked at
 320/375/390/768: no card overflows its own box and the page does not scroll
 horizontally.
 
+## The supporting palette, and why a grid stopped being grey
+
+Added 2026-09-16 on the owner's instruction: *"add some colour as well ... the
+website only full of content, that why it needs some attention things."* That
+diagnosis was right. Every card, badge and icon on the site was one navy, so a
+grid of seven services read as one block and nothing drew the eye anywhere.
+
+Four supporting hues now live in `app/globals.css` beside the brand three:
+`--color-hue-teal` `#1a6b62`, `--color-hue-plum` `#6d4066`, `--color-hue-olive`
+`#5c6f33`, `--color-hue-denim` `#2d5a8c`. All are desaturated and warm-leaning
+so they sit on the cream ground, and every one clears **5.5:1 with a white
+glyph** — measured on the rendered page, not assumed, and well past the 3:1
+non-text bar.
+
+**They are supporting hues, not new brand colours, and four rules keep this
+from becoming the stock template `CLAUDE.md` already warns about elsewhere:**
+
+- navy stays structural — headings, body, borders, panels;
+- gold stays the rule along the base of every illustration;
+- **the burnt-orange accent stays reserved for the point that needs a human
+  decision** and is never decorative. The card corner tint used to be accent at
+  9%; it now takes the card's own hue, which frees the accent from the one
+  decorative job it still had;
+- **a hue identifies a thing and is assigned deterministically, never at random
+  and never rotating.** `TONE_MAP` in `components/icon-badge.tsx` is the single
+  source, exported as `hueVar()` so the card corner and the industry
+  illustration read the same map rather than keeping a second copy. Related
+  services share a hue on purpose — the two ledger services are teal, the two
+  money-movement services olive, the four engagement models plum.
+
+**The badges are solid tiles, not tints, and that was decided by looking.** A
+12% tint of any of these on a cream card is close to invisible at 56px, and the
+grid still read as one block. A solid tile with a white glyph is what gives the
+grid its rhythm, and it is the one place a supporting hue runs at full strength.
+
+### `SectionGrid` wraps and centres; it is not a grid any more
+
+A CSS grid left-aligns a row it cannot fill. Seven services at three across
+rendered as 3 + 3 + 1 with **two dead cells beside the last card**, and four
+solutions as 3 + 1 with two more — on a 1440px viewport that is a third of a
+screen of nothing, and it reads as a page that ran out rather than one that was
+composed. The items now wrap and centre, so a short last row looks deliberate
+at any count, which a grid cannot do without hard-coding one.
+
+The basis subtracts each card's share of the gap: at three across with `gap-7`
+(1.75rem) that is two thirds of it, `1.1667rem`. **If you change the gap, change
+the basis**, or the last card in a row drops.
+
+The homepage's solutions band was also moved to `columns={2}`: four items in a
+three-column layout leaves one card alone under three however it is aligned,
+and 2x2 is both balanced and roomier for copy that runs long.
+
 ## Icons and favicon
 
 Generated from the mark in `public/accounstone-logo-horizontal.png` (the A/S
@@ -923,12 +983,28 @@ Declared in `app/layout.tsx` and `public/manifest.webmanifest`.
 All are rendered on a white ground. The mark is navy and blue, which disappears
 against a dark browser tab bar on transparency.
 
-## The inquiry form is on 85 pages, and in a dialog
+## The inquiry form is on 93 of 95 pages, and in a dialog
 
 `components/inquiry-form.tsx` is the one form; `components/inquiry-section.tsx`
-is the band that wraps it, and sits before the `CTABanner` on every page except
-five, counted by rendering all 90 routes on 2026-09-07: `/contact` (which is the
-form), `/cookie-policy`, `/privacy`, `/terms` and `/thank-you`. Consultations and calls
+is the band that wraps it, and sits before the `CTABanner` on every page but
+two. Counted by rendering all 95 routes on 2026-09-16: **93 carry `#inquiry`**,
+`/contact` does not because the page *is* a form, and `/thank-you` does not for
+the reason below.
+
+**The three legal pages gained the band on 2026-09-16** (owner's instruction,
+"need inquiry form as well in each page"). All three pass `compact`, which
+drops the assurances and the contact block and leaves mostly form labels, and
+all three pass their own `title` and `lead` — these are short pages, so a
+shared full-width band would be a large fraction of their text. Measured after:
+worst pair among the legal and trust pages is **10.0%** (`/privacy` vs
+`/terms`), against a 25% ceiling.
+
+**`/thank-you` is the deliberate exception and it is not an oversight.** The
+page fires GA4's `generate_lead` on mount, and a form on it means a visitor who
+has just submitted can submit again, land back on `/thank-you`, and fire the
+conversion a second time — which inflates the number Google Ads counts and
+cannot be told apart from a real lead afterwards. **Adding a form there is the
+owner's call, not a session's**; the cost is measurement, not code. Consultations and calls
 are free and are the owner's lead source, so the ask leads with that.
 
 **`ArticleLayout` renders the band** for the 6 blog posts, 11 guides and 2

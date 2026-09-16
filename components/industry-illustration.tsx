@@ -39,10 +39,25 @@
  */
 
 const NAVY = 'var(--color-primary)';
-const NAVY_LIGHT = 'var(--color-primary-light)';
 const GOLD = 'var(--color-secondary)';
 const ACCENT = 'var(--color-accent)';
 const CREAM = 'var(--color-input)';
+
+/**
+ * The supporting hue each drawing carries, matching the hue its industry's
+ * icon badge uses (`components/icon-badge.tsx`), so the card and the
+ * illustration on the same page agree. Navy still does the structural work in
+ * every scene; this is the second tone, where the outline sets used a lighter
+ * navy for everything.
+ */
+const TONE: Record<string, string> = {
+  'real-estate': 'var(--color-hue-teal)',
+  technology: 'var(--color-hue-teal)',
+  'professional-services': 'var(--color-hue-denim)',
+  ecommerce: 'var(--color-hue-olive)',
+  healthcare: 'var(--color-hue-plum)',
+  'cpa-firms': 'var(--color-hue-denim)',
+};
 
 function Frame({ children }: { children: React.ReactNode }) {
   return (
@@ -90,6 +105,7 @@ function Person({
 
 /** Real estate: a portfolio kept property by property, and the statement it produces. */
 function RealEstate() {
+  const TONE_C = TONE['real-estate'];
   return (
     <Frame>
       {/* the properties, filled and stepped so they read as a portfolio */}
@@ -102,11 +118,11 @@ function RealEstate() {
         <rect x={44} y={101} width={6} height={7} rx={1} fill={CREAM} opacity={0.85} />
       </g>
       <g opacity={0.55}>
-        <rect x={64} y={88} width={24} height={34} rx={3} fill={NAVY_LIGHT} />
+        <rect x={64} y={88} width={24} height={34} rx={3} fill={TONE_C} />
         <path d="M61 88 L76 76 L91 88 Z" fill={GOLD} />
       </g>
       <g opacity={0.35}>
-        <rect x={94} y={98} width={20} height={24} rx={3} fill={NAVY_LIGHT} />
+        <rect x={94} y={98} width={20} height={24} rx={3} fill={TONE_C} />
         <path d="M91 98 L104 88 L117 98 Z" fill={GOLD} />
       </g>
       <rect x={20} y={122} width={100} height={3} rx={1.5} fill={NAVY} opacity={0.18} />
@@ -122,13 +138,14 @@ function RealEstate() {
       <path d="M180 108 l4.5 4.5 l8 -9" stroke="#fff" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />
 
       <Person x={126} y={154} tone={NAVY} s={1} />
-      <Person x={214} y={154} tone={NAVY_LIGHT} s={0.85} opacity={0.7} />
+      <Person x={214} y={154} tone={TONE_C} s={0.85} opacity={0.7} />
     </Frame>
   );
 }
 
 /** Technology: a deferred balance released across the contract term. */
 function Technology() {
+  const TONE_C = TONE['technology'];
   return (
     <Frame>
       {/* the screen the work happens in */}
@@ -149,7 +166,7 @@ function Technology() {
           width={13}
           height={46 - i * 7}
           rx={3}
-          fill={i === 0 ? NAVY : NAVY_LIGHT}
+          fill={i === 0 ? NAVY : TONE_C}
           opacity={1 - i * 0.1}
         />
       ))}
@@ -171,6 +188,7 @@ function Technology() {
 
 /** Professional services: the three-way reconciliation, and who signs it. */
 function ProfessionalServices() {
+  const TONE_C = TONE['professional-services'];
   return (
     <Frame>
       {/* three balances that have to agree */}
@@ -180,7 +198,7 @@ function ProfessionalServices() {
         { cx: 120, cy: 104 },
       ].map((c, i) => (
         <g key={i}>
-          <circle cx={c.cx} cy={c.cy} r={22} fill={i === 2 ? NAVY : NAVY_LIGHT} opacity={i === 2 ? 0.95 : 0.8} />
+          <circle cx={c.cx} cy={c.cy} r={22} fill={i === 2 ? NAVY : TONE_C} opacity={i === 2 ? 0.95 : 0.8} />
           <rect x={c.cx - 11} y={c.cy - 5} width={22} height={3.2} rx={1.6} fill={CREAM} opacity={0.9} />
           <rect x={c.cx - 11} y={c.cy + 2} width={14} height={3.2} rx={1.6} fill={CREAM} opacity={0.6} />
         </g>
@@ -209,6 +227,7 @@ function ProfessionalServices() {
 
 /** E-commerce: one net settlement, decomposed back into what it was made of. */
 function Ecommerce() {
+  const TONE_C = TONE['ecommerce'];
   return (
     <Frame>
       {/* the deposit that landed */}
@@ -219,8 +238,8 @@ function Ecommerce() {
       {/* fanned back out into its components */}
       {[36, 66, 96].map((y, i) => (
         <g key={y}>
-          <path d={`M78 88 C104 88 104 ${y + 11} 128 ${y + 11}`} stroke={NAVY_LIGHT} strokeWidth={2.2} fill="none" opacity={0.55} />
-          <rect x={128} y={y} width={78} height={22} rx={6} fill={NAVY_LIGHT} opacity={0.9 - i * 0.16} />
+          <path d={`M78 88 C104 88 104 ${y + 11} 128 ${y + 11}`} stroke={TONE_C} strokeWidth={2.2} fill="none" opacity={0.55} />
+          <rect x={128} y={y} width={78} height={22} rx={6} fill={TONE_C} opacity={0.9 - i * 0.16} />
           <rect x={138} y={y + 9} width={34} height={3.6} rx={1.8} fill={CREAM} opacity={0.9} />
         </g>
       ))}
@@ -240,6 +259,7 @@ function Ecommerce() {
 
 /** Healthcare: charges paired to remittances, and the one that did not pair. */
 function Healthcare() {
+  const TONE_C = TONE['healthcare'];
   return (
     <Frame>
       {[34, 64, 94].map((y, i) => (
@@ -247,7 +267,7 @@ function Healthcare() {
           <rect x={24} y={y} width={76} height={22} rx={6} fill={NAVY} />
           <rect x={34} y={y + 9} width={40} height={3.6} rx={1.8} fill={CREAM} opacity={0.8} />
           <rect x={100} y={y + 9.5} width={40} height={3} rx={1.5} fill={GOLD} />
-          <rect x={140} y={y} width={76} height={22} rx={6} fill={NAVY_LIGHT} />
+          <rect x={140} y={y} width={76} height={22} rx={6} fill={TONE_C} />
           <rect x={150} y={y + 9} width={40} height={3.6} rx={1.8} fill={CREAM} opacity={0.8} />
         </g>
       ))}
@@ -267,21 +287,22 @@ function Healthcare() {
 
 /** CPA firms: prepared files queueing into the one gate that needs the licence. */
 function CpaFirms() {
+  const TONE_C = TONE['cpa-firms'];
   return (
     <Frame>
       {/* files prepared and stacked, ready to move */}
       {[34, 60, 86].map((y, i) => (
         <g key={y}>
-          <rect x={22 + i * 5} y={y} width={72} height={22} rx={5} fill={i === 0 ? NAVY : NAVY_LIGHT} opacity={1 - i * 0.18} />
+          <rect x={22 + i * 5} y={y} width={72} height={22} rx={5} fill={i === 0 ? NAVY : TONE_C} opacity={1 - i * 0.18} />
           <rect x={32 + i * 5} y={y + 9} width={36} height={3.6} rx={1.8} fill={CREAM} opacity={0.85} />
           <rect x={72 + i * 5} y={y + 9} width={12} height={3.6} rx={1.8} fill={GOLD} opacity={0.9} />
         </g>
       ))}
 
       {/* one queue */}
-      <path d="M104 45 C126 45 126 74 144 74" stroke={NAVY_LIGHT} strokeWidth={2.2} fill="none" opacity={0.5} />
-      <path d="M109 71 L144 74" stroke={NAVY_LIGHT} strokeWidth={2.2} fill="none" opacity={0.5} />
-      <path d="M114 97 C132 97 132 76 144 74" stroke={NAVY_LIGHT} strokeWidth={2.2} fill="none" opacity={0.5} />
+      <path d="M104 45 C126 45 126 74 144 74" stroke={TONE_C} strokeWidth={2.2} fill="none" opacity={0.5} />
+      <path d="M109 71 L144 74" stroke={TONE_C} strokeWidth={2.2} fill="none" opacity={0.5} />
+      <path d="M114 97 C132 97 132 76 144 74" stroke={TONE_C} strokeWidth={2.2} fill="none" opacity={0.5} />
 
       {/* the review gate — the only part that needs the licence */}
       <rect x={148} y={54} width={44} height={44} rx={11} fill={ACCENT} />
@@ -291,7 +312,7 @@ function CpaFirms() {
       <rect x={148} y={106} width={44} height={3.4} rx={1.7} fill={NAVY} opacity={0.3} />
 
       <Person x={170} y={156} tone={NAVY} s={1} />
-      <Person x={62} y={156} tone={NAVY_LIGHT} s={0.85} opacity={0.6} />
+      <Person x={62} y={156} tone={TONE_C} s={0.85} opacity={0.6} />
     </Frame>
   );
 }

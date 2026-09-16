@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { generateMetadata } from '@/lib/seo';
+import InquirySection from '@/components/inquiry-section';
 import { CONSENT_CATEGORIES } from '@/lib/consent';
 import CookieSettingsInlineButton from '@/components/cookie-settings-inline-button';
 
@@ -217,6 +218,14 @@ export default function CookiePolicyPage() {
           </div>
         </div>
       </div>
+
+      {/* The enquiry band, on the legal pages too (owner's instruction,
+          2026-09-16). It is `compact`, which drops the assurances and the
+          contact block and leaves mostly form labels — these are short pages
+          and the full band would be a large share of their text, which is how
+          near-duplicate scores climb. Each one passes its own title and lead
+          for the same reason. */}
+      <InquirySection source="/cookie-policy" title="Questions About Anything on This Page?" lead="The consultation and the call are always free. Ask about what we store, what we do not, or about the work itself — either is a fine reason to get in touch." compact />
     </main>
   );
 }
