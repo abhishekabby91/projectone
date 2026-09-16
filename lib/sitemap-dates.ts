@@ -6,7 +6,7 @@
  * body. See the script's header for why this is derived rather than written.
  */
 export const routeLastModified: Record<string, string> = {
-  '': '2026-09-08',
+  '': '2026-09-16',
   '/about': '2026-09-03',
   '/blog': '2026-09-03',
   '/blog/accounts-payable-outsourcing': '2026-09-07',
@@ -21,7 +21,7 @@ export const routeLastModified: Record<string, string> = {
   '/company-registration/wyoming': '2026-09-08',
   '/compliance': '2026-09-08',
   '/contact': '2026-09-09',
-  '/cookie-policy': '2026-09-04',
+  '/cookie-policy': '2026-09-16',
   '/data-security': '2026-09-08',
   '/delivery-framework/communication': '2026-09-08',
   '/delivery-framework/onboarding': '2026-09-08',
@@ -44,7 +44,7 @@ export const routeLastModified: Record<string, string> = {
   '/markets/united-states/california': '2026-09-08',
   '/markets/united-states/florida': '2026-09-08',
   '/markets/united-states/texas': '2026-09-08',
-  '/privacy': '2026-09-04',
+  '/privacy': '2026-09-16',
   '/resources': '2026-09-03',
   '/resources/case-studies': '2026-09-03',
   '/resources/guides': '2026-09-03',
@@ -99,6 +99,6 @@ export const routeLastModified: Record<string, string> = {
   '/technology/quickbooks': '2026-09-08',
   '/technology/sage': '2026-09-08',
   '/technology/xero': '2026-09-08',
-  '/terms': '2026-09-03',
+  '/terms': '2026-09-16',
   '/thank-you': '2026-09-09',
 };
