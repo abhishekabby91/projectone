@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { generateMetadata } from '@/lib/seo';
 import InquirySection from '@/components/inquiry-section';
+import CTABanner from '@/components/cta-banner';
 import { companyInfo } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
@@ -68,6 +69,19 @@ export default function TermsPage() {
           near-duplicate scores climb. Each one passes its own title and lead
           for the same reason. */}
       <InquirySection source="/terms" title="Want the Terms Applied to Your Actual Scope?" lead="The consultation and the call are always free. Tell us what you would hand over and we will be specific about what we would and would not take on." compact />
+
+      {/* Closes on the same sequence as the rest of the site: the enquiry
+          band, then the CTA banner. 87 of 95 pages already ended this way;
+          these five had the band and stopped. Copy is page-specific because
+          /resources and /resources/guides already sit at 29.6% on the
+          near-duplicate sweep, and one shared banner would push it. */}
+      <CTABanner
+        title="Terms Are Easier to Read Against Real Scope"
+        description="Tell us what you would hand over and we will set out what we would take on, what stays with your team, and what we would decline."
+        cta={{ text: 'Start a Conversation', href: '/contact' }}
+        ctaSecondary={{ text: 'What We Will Not Do', href: '/compliance' }}
+        background="primary"
+      />
     </main>
   );
 }

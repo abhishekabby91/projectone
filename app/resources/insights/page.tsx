@@ -4,6 +4,7 @@ import Reveal from '@/components/reveal';
 import SectionHeading from '@/components/section-heading';
 import ResourceCard from '@/components/resource-card';
 import InquirySection from '@/components/inquiry-section';
+import CTABanner from '@/components/cta-banner';
 import { generateMetadata as genMeta, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import { insights } from '@/lib/resources';
 
@@ -90,6 +91,19 @@ export default function InsightsPage() {
         lead="Tell us how the reporting is put together today and we will scope the schedule and reconciliation work behind it."
       />
 
+
+      {/* Closes on the same sequence as the rest of the site: the enquiry
+          band, then the CTA banner. 87 of 95 pages already ended this way;
+          these five had the band and stopped. Copy is page-specific because
+          /resources and /resources/guides already sit at 29.6% on the
+          near-duplicate sweep, and one shared banner would push it. */}
+      <CTABanner
+        title="Explainers End Where Your Ledger Begins"
+        description="These set out how the treatment works. Tell us how yours is maintained today and we will scope the schedules and reconciliations behind it."
+        cta={{ text: 'Start a Conversation', href: '/contact' }}
+        ctaSecondary={{ text: 'All Resources', href: '/resources' }}
+        background="primary"
+      />
     </main>
   );
 }

@@ -999,6 +999,35 @@ shared full-width band would be a large fraction of their text. Measured after:
 worst pair among the legal and trust pages is **10.0%** (`/privacy` vs
 `/terms`), against a 25% ceiling.
 
+### The closing sequence is band, then CTA banner
+
+Measured across all 95 rendered pages on 2026-09-16: **92 end on
+`#inquiry` band -> `CTABanner`**, which is the site's closing sequence. Five
+pages had the band and simply stopped — `/privacy`, `/terms`,
+`/cookie-policy`, `/resources/guides` and `/resources/insights` — and now
+carry the banner too.
+
+The three that are not on that exact string are all correct:
+
+- **`/`** reads `CTA -> BAND -> CTA`. The homepage carries a mid-page
+  "Need More Accounting Capacity?" band as well as the closing one, so it is a
+  superset rather than a deviation — it still ends band-then-CTA.
+- **`/contact`** has neither. The page is the form.
+- **`/thank-you`** has the CTA only, for the reason below.
+
+**Every banner's copy is page-specific and must stay that way.** `/resources`
+and `/resources/guides` already sit over the ceiling at 28.7% on the
+near-duplicate sweep, and one shared banner across both would push it further.
+Written per page it went the other way: that pair measured **29.6% before and
+28.7% after**, because distinct copy adds unique text. Re-measure if you add
+one anywhere else.
+
+Check the sequence the same way it was measured — find the ordered positions of
+`id="inquiry"` and `cta-glow dot-grid-dark` inside `<main>` on every rendered
+route, and count the resulting strings. Grepping page files does not work:
+`ArticleLayout`, `IndustryPageTemplate` and `RegistrationStatePage` all render
+the banner for their pages, so a source grep reports 33 false positives.
+
 **`/thank-you` is the deliberate exception and it is not an oversight.** The
 page fires GA4's `generate_lead` on mount, and a form on it means a visitor who
 has just submitted can submit again, land back on `/thank-you`, and fire the

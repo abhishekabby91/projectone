@@ -5,6 +5,7 @@ import Reveal from '@/components/reveal';
 import SectionHeading from '@/components/section-heading';
 import ResourceCard from '@/components/resource-card';
 import InquirySection from '@/components/inquiry-section';
+import CTABanner from '@/components/cta-banner';
 import { generateMetadata as genMeta, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import { guides } from '@/lib/resources';
 
@@ -124,6 +125,19 @@ export default function GuidesPage() {
         lead="The guides cover the general case. Tell us your systems, volume and deadlines and we will work through the version that applies to you."
       />
 
+
+      {/* Closes on the same sequence as the rest of the site: the enquiry
+          band, then the CTA banner. 87 of 95 pages already ended this way;
+          these five had the band and stopped. Copy is page-specific because
+          /resources and /resources/guides already sit at 29.6% on the
+          near-duplicate sweep, and one shared banner would push it. */}
+      <CTABanner
+        title="The Guide Is the General Case"
+        description="Your systems, volume and deadlines are not. Walk us through them and we will work through the version that applies to you."
+        cta={{ text: 'Start a Conversation', href: '/contact' }}
+        ctaSecondary={{ text: 'All Resources', href: '/resources' }}
+        background="primary"
+      />
     </main>
   );
 }

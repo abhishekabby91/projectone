@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { generateMetadata } from '@/lib/seo';
 import InquirySection from '@/components/inquiry-section';
+import CTABanner from '@/components/cta-banner';
 import { companyInfo } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
@@ -95,6 +96,19 @@ export default function PrivacyPage() {
           near-duplicate scores climb. Each one passes its own title and lead
           for the same reason. */}
       <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="The consultation and the call are always free. If something about how we would handle your data or your clients’ data is not covered above, ask and we will answer it plainly." compact />
+
+      {/* Closes on the same sequence as the rest of the site: the enquiry
+          band, then the CTA banner. 87 of 95 pages already ended this way;
+          these five had the band and stopped. Copy is page-specific because
+          /resources and /resources/guides already sit at 29.6% on the
+          near-duplicate sweep, and one shared banner would push it. */}
+      <CTABanner
+        title="Want to Know Exactly What We Would Hold?"
+        description="Tell us what you would hand over and we will be specific about what is accessed, by whom, and what never leaves your systems."
+        cta={{ text: 'Start a Conversation', href: '/contact' }}
+        ctaSecondary={{ text: 'Data Security', href: '/data-security' }}
+        background="primary"
+      />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { generateMetadata } from '@/lib/seo';
 import InquirySection from '@/components/inquiry-section';
+import CTABanner from '@/components/cta-banner';
 import { CONSENT_CATEGORIES } from '@/lib/consent';
 import CookieSettingsInlineButton from '@/components/cookie-settings-inline-button';
 
@@ -226,6 +227,19 @@ export default function CookiePolicyPage() {
           near-duplicate scores climb. Each one passes its own title and lead
           for the same reason. */}
       <InquirySection source="/cookie-policy" title="Questions About Anything on This Page?" lead="The consultation and the call are always free. Ask about what we store, what we do not, or about the work itself — either is a fine reason to get in touch." compact />
+
+      {/* Closes on the same sequence as the rest of the site: the enquiry
+          band, then the CTA banner. 87 of 95 pages already ended this way;
+          these five had the band and stopped. Copy is page-specific because
+          /resources and /resources/guides already sit at 29.6% on the
+          near-duplicate sweep, and one shared banner would push it. */}
+      <CTABanner
+        title="Questions Beyond Cookies?"
+        description="Most people who reach this page were checking we are careful with data. Ask us the same question about the accounting work."
+        cta={{ text: 'Start a Conversation', href: '/contact' }}
+        ctaSecondary={{ text: 'Privacy Policy', href: '/privacy' }}
+        background="primary"
+      />
     </main>
   );
 }

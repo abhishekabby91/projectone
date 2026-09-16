@@ -1,5 +1,48 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16f (one closing sequence on every page)
+
+The owner asked for the free-consultation sequence other pages have to run on
+every page. Measured rather than assumed, across all 95 rendered routes.
+
+**"Free consultation" was not the gap.** It already appeared inside `<main>` on
+94 of 95 pages, and the right-edge rail — made sitewide earlier the same day —
+puts the words on 93. The real inconsistency was the *closing sequence*.
+
+Counting the ordered positions of `id="inquiry"` and the CTA banner inside
+`<main>` on every route:
+
+```
+ 87  BAND>CTA          the site's closing sequence
+  5  BAND              band, then nothing
+  1  CTA>BAND>CTA      the homepage
+  1  CTA               /thank-you
+  1  NONE              /contact
+```
+
+Five pages had the enquiry band and simply stopped: `/privacy`, `/terms`,
+`/cookie-policy`, `/resources/guides` and `/resources/insights`. All five now
+carry the banner, so **92 of 95 run `BAND -> CTA`**. The remaining three are
+right as they are: `/` carries a mid-page CTA as well as the closing one, so it
+is a superset rather than a deviation; `/contact` is the form; `/thank-you` is
+the conversion target.
+
+**Each banner's copy is page-specific, and that was the whole risk.**
+`/resources` vs `/resources/guides` has sat over the 25% ceiling since
+2026-09-10 at 29.6%, so dropping one identical banner onto both was exactly the
+wrong move. Written per page it went the other way — **29.6% before, 28.7%
+after** — because distinct copy adds unique text. Worst pair among the legal and
+resource pages otherwise is 11.2%.
+
+**A method note worth keeping, because it wasted a step.** Grepping page files
+for `CTABanner` reported 33 pages without one, and that was wrong:
+`ArticleLayout`, `IndustryPageTemplate` and `RegistrationStatePage` render the
+banner on behalf of their pages, so the import never appears in the page file.
+The audit has to read rendered HTML, the same way the sitemap drift check does.
+
+`pnpm eslint .` silent, `pnpm next build` complete, responsive sweep clean on
+all five changed pages, and the 14-assertion rail suite still passes.
+
 ## 2026-09-16e (the right-edge rail, on every page but two)
 
 The owner asked me to check the right-side enquiry form that appears while
