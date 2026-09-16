@@ -1,42 +1,65 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
 import { industryDepth } from '@/lib/industry-depth';
+import { technologySegments, technologyBoundaries } from '@/lib/industry-segments';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/technology';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting for SaaS & Technology Companies',
+  title: 'SaaS & Technology Accounting Outsourcing',
   description:
-    'Outsourced accounting for SaaS and technology companies — MRR and ARR tracking, deferred revenue under ASC 606, and investor-ready reporting.',
+    'Outsourced bookkeeping for SaaS and technology companies: deferred revenue maintained against the contract term, settlements decomposed, month-end close.',
   path: PATH,
 });
 
+/**
+ * This page absorbs the SaaS intent rather than handing it a second URL.
+ * `/industries/saas-technology` was requested and deliberately not built — see
+ * the header note in `lib/industry-segments.ts`.
+ *
+ * Three claims were removed in the same pass and must not come back:
+ * "investor-ready financials", which promises an outcome nobody can guarantee;
+ * "we apply ASC 606 revenue recognition principles", which reads as taking a
+ * technical accounting position that belongs to the client's CPA or auditor;
+ * and "we integrate with QuickBooks, Xero and NetSuite", which is software
+ * implementation language and is forbidden by `scope-boundaries.md` §5.
+ */
 const faqs = [
   {
-    question: 'Do you understand SaaS-specific metrics like MRR and ARR?',
+    question: 'Can you handle deferred revenue for subscription contracts?',
     answer:
-      'Yes, we track Monthly and Annual Recurring Revenue, churn, and related SaaS metrics alongside standard financial statements, so your reporting reflects how subscription businesses are actually evaluated.',
+      'Yes — that is the core of the work. An annual contract billed up front is one cash event and twelve months of revenue, so the deferred balance is maintained and released against the contract term rather than recognised on invoice. The recognition policy itself, and the ASC 606 judgements behind it, are set by your CPA or auditor; we apply it and show the schedule.',
   },
   {
-    question: 'Can you handle deferred revenue recognition?',
+    question: 'What happens when customers upgrade or downgrade mid-term?',
     answer:
-      'Yes, we apply ASC 606 revenue recognition principles for subscription and multi-period contracts, so revenue is recognized correctly across the life of a contract rather than all at signing.',
+      'Proration is where subscription bookkeeping actually breaks. A mid-term change alters both the deferred balance and the release schedule, and where it is handled in the billing system but not in the ledger the two quietly stop agreeing. We reconcile the deferred balance back to the subscription base so a drift is caught in the month it happens.',
   },
   {
-    question: 'Do you support burn rate and runway reporting for investors?',
+    question: 'Do you track MRR and ARR alongside the financial statements?',
     answer:
-      "Yes, we prepare burn rate and runway reporting formatted for board decks and investor updates, so you're not scrambling before every board meeting.",
+      'We can maintain them and report them, kept clearly distinct from recognised revenue. They are computed differently and they will not agree — a board pack that presents one as the other invites a question nobody in the room can answer. Keeping both, and labelling both, is the discipline that matters.',
   },
   {
-    question: 'Can you work alongside our existing finance stack?',
+    question: 'Can you separate cost of revenue from operating expense?',
     answer:
-      'Yes, we integrate with QuickBooks, Xero, and NetSuite, along with common billing tools, to keep your financial data connected rather than duplicated across systems.',
+      'Yes, on a basis your team states and we then apply consistently. Hosting, third-party APIs, support headcount and payment processing behave differently from sales, marketing and R&D, and where the split is made loosely the gross margin is not comparable to anyone else’s. Fixing it during a diligence request is late.',
   },
   {
-    question: "We're pre-revenue or early stage — is this still useful for us?",
+    question: 'Can you work inside our existing finance stack?',
     answer:
-      'Yes, early-stage companies benefit from clean books and investor-ready reporting from day one, which avoids costly cleanup work later during fundraising or an audit.',
+      'That is the intention. Our team works in QuickBooks, Xero, Sage and NetSuite, and alongside common billing and payment platforms. We do not implement, configure, integrate or migrate any of them — we work inside the setup you already run, and if we cannot work in a system we will say so at scoping.',
+  },
+  {
+    question: 'We are early stage. Is this worth doing yet?',
+    answer:
+      'It is usually cheaper than the alternative, because the expensive problems here are setup problems. Deferred revenue, the cost-of-revenue split and the reconciliation between billing and the ledger cost almost nothing to establish now and become a reconstruction project once a year of history exists in the wrong shape.',
+  },
+  {
+    question: 'Do you prepare board or investor reporting?',
+    answer:
+      'We prepare the accounts and the recurring reports your board pack is built from, in the format your team already uses. We do not advise on fundraising, valuation or what to present — and we would not describe any output as investor-ready. What we can tell you is what was reconciled, on what basis, and what is still open.',
   },
 ];
 
@@ -47,20 +70,26 @@ export default function TechnologyIndustryPage() {
       industry={{
         name: 'Technology & SaaS',
         description:
-          'Outsourced accounting built around how software and subscription businesses actually get measured — recurring revenue, deferred revenue, and burn rate, not just a standard P&L.',
+          'Bookkeeping built around how subscription and software businesses actually record revenue — deferred balances that tie to the subscription base, settlements decomposed, and a close that reconciles.',
       }}
-      overview="Technology and SaaS companies get evaluated on metrics that a standard chart of accounts doesn't naturally produce: MRR, ARR, net revenue retention, and burn rate against runway. Subscription revenue also needs to be recognized under ASC 606 across the life of a contract, not booked all at once. We build accounting operations around these realities from the start, so your financials are usable for board reporting and fundraising, not just tax compliance."
+      overview="Subscription and software businesses break in a place ordinary bookkeeping never visits: the gap between what was billed and what has been earned. An annual contract billed up front is one cash event and twelve months of revenue, and a ledger that recognises it on invoice produces a spike at renewal and a collapse afterwards — neither of which describes the business. Underneath that sit the same problems in different clothes: mid-term plan changes that move the deferred balance, processor settlements that arrive net of fees and refunds, and a cost-of-revenue line that has quietly become a residual category. None of these is difficult once the structure is right, and all of them are expensive to reconstruct a year later. We maintain that structure as transactions post, in the systems you already run, and leave every judgement — the recognition policy, the tax position, what goes in front of a board — with the people whose call it is."
       benefits={[
-        'MRR, ARR, and churn tracking alongside standard financial statements',
-        'ASC 606-aligned revenue recognition for subscription and multi-period contracts',
-        'Burn rate and runway reporting formatted for board decks and investor updates',
-        'Integration with QuickBooks, Xero, NetSuite, and common billing platforms',
-        'Investor-ready financials for fundraising and due diligence',
-        'Support scales with headcount and complexity as you grow',
+        'Deferred revenue maintained and released against the contract term, not on invoice',
+        'Deferred balance reconciled to the subscription base, including mid-term changes',
+        'Payment processor settlements decomposed to gross, fees, refunds and reserves',
+        'Cost of revenue separated from sales, marketing and R&D on a basis your team states',
+        'Recognised revenue and operating metrics kept distinct and labelled',
+        'Month-end close, management reporting and AP/AR inside your existing stack',
       ]}
+      segments={technologySegments}
+      boundaries={technologyBoundaries}
       relatedLinks={[
+        { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
+        { name: 'Accounting & month-end close', href: '/services/accounting/united-states' },
+        { name: 'Accounts payable', href: '/services/accounts-payable/united-states' },
         { name: 'NetSuite', href: '/technology/netsuite' },
-        { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
+        { name: 'Dedicated accounting teams', href: '/solutions/dedicated-accounting-teams' },
+        { name: 'All industries', href: '/industries' },
       ]}
       faqs={faqs}
       depth={industryDepth.technology}

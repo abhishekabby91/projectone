@@ -1,5 +1,112 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16c (absorb, do not split — and the imagery question, answered by drawing)
+
+**The owner's decision: no `/industries/saas-technology`, no
+`/industries/law-firms`.** Both intents were absorbed into the pages that
+already own them. That is the right call and it is worth writing down why,
+because the instinct runs the other way every time: a new URL feels like new
+surface area, and on a site this size it is usually the opposite. The SaaS page
+would have competed with `/industries/technology`, which is already titled for
+SaaS and ranks for it. The law-firm page would have competed with
+`/industries/professional-services`, which names legal in its own description
+and already carried the trust, WIP and partner-draw content. Two pages on one
+intent is how `/markets/united-kingdom` and
+`/solutions/offshore-accounting-support` split the offshore cluster and neither
+earned a click.
+
+The mechanism is a `segments` prop on `components/industry-page-template.tsx` —
+a card band naming a sub-audience by name, on the page that owns the query. If
+a segment ever earns its own demand from Search Console, the block lifts off
+cleanly. That is a decision made from data, not from a wish list.
+
+| page | before | after |
+|---|---|---|
+| `/industries/technology` | 656 | **1,891** |
+| `/industries/professional-services` | 1,019 | **1,994** |
+
+Technology gains SaaS and subscription businesses, software and IT services
+companies, and marketplaces and usage-billed platforms. Professional services
+leads with **law firms** — client trust and operating ledgers kept separate,
+three-way reconciliation between bank, trust ledger and the sum of client
+balances, disbursements tracked apart from firm expense, matter-level WIP —
+then consulting firms and agencies.
+
+**Deepening cut duplication rather than raising it, again.** The worst industry
+pair was `professional-services` vs `ecommerce` at **11.6%**; it is now
+**7.9%**. Same effect the platform pages showed on 2026-09-08: per-page
+substance dilutes shared boilerplate. Worst industry pair anywhere is now
+`ecommerce` vs `healthcare` at 11.9% — the two that were *not* touched — against
+a 25% ceiling.
+
+### The pass caught three live overclaims
+
+This is the part worth remembering. Nobody was auditing these two pages; they
+were simply the pages the absorption landed on.
+
+- **Professional services said trust compliance was "handled correctly"**, and
+  that our bookkeeping was "consistent with how law firms need to handle client
+  funds". A bookkeeper does not make a firm compliant. Client money is governed
+  by a bar association or an equivalent regulator, per jurisdiction. The page
+  now says we keep the ledger and run the three-way reconciliation, that breaks
+  are reported rather than absorbed, and that satisfying the rule is the firm's
+  own responsibility. It also now says outright that we never move money
+  between a client account and an operating account.
+- **Technology promised "investor-ready financials for fundraising and due
+  diligence"** — an outcome promise of exactly the kind `AI-WEBSITE-GUIDE.md`
+  bans, on a page that cannot control the outcome.
+- **Technology said we "apply ASC 606 revenue recognition principles"** and
+  that we "integrate with QuickBooks, Xero and NetSuite". The first reads as
+  taking a technical accounting position, which is the client's CPA or
+  auditor's; the second is software-implementation language, forbidden by
+  `scope-boundaries.md` §5.
+
+All three are gone, the reasons are recorded in the page files so they cannot
+quietly return, and **both pages now carry a `boundaries` band** — the same
+device the Real Estate page uses. On any page touching regulated money, naming
+the limit is what stops "we understand your business" reading as a compliance
+claim.
+
+### Imagery: drawn, because that is the only licence that cannot be questioned
+
+The brief asked for right-to-use images per industry. Stock photo hosts are
+blocked by the sandbox egress policy, and a licence that cannot be read cannot
+be verified — so `components/industry-illustration.tsx` is a fourth set of
+original line drawings, to the same system as the service, solution and region
+sets: one 200x150 viewBox, 1.6 stroke, navy through `currentColor`, the brand
+gold as a single ground rule, and **the burnt-orange accent spent exactly once**,
+on the thing that needs a human decision.
+
+Six drawings, each showing the mechanic rather than a category motif: three
+properties rolling into one owner statement with the accent on the approval;
+a deferred balance running down across the contract term with the accent on the
+recognition-policy marker; the three-way reconciliation with the accent on the
+signature the firm has to give; one net settlement fanned back out into gross,
+fees, refunds and an unresolved reserve; charges paired to remittances with the
+unpaired one accented; prepared files queueing into the one review gate that
+needs the licence.
+
+**The technology drawing was redrawn before shipping.** The first version
+stepped *upward* and read as a growth chart — a claim the page does not make.
+It is about a liability being released on schedule, so it now steps down, with
+the equal monthly releases underneath it.
+
+Original line work is the only imagery on this site whose licence is not a
+question at all: it is ours, it needs no attribution, it cannot be revoked, and
+it costs nothing at runtime — inline SVG, no request, nothing to lazy-load. All
+six are `aria-hidden`, because each sits beside copy that already says the same
+thing.
+
+Titles 53 and 57 characters including the template; descriptions 153 and 152.
+One `h1` each, heading order sequential. Playwright sweep at 320 / 390 / 768 /
+1280 / 1440 across all six industry pages: no horizontal overflow, no sub-24px
+tap target. `pnpm eslint .` silent, `pnpm next build` complete, drift check
+clean at 95 on disk against 93 in the sitemap, `llms.txt` holding the same
+invariant.
+
+`/industries/cpa-firms` remains absent from the requested industry list and
+remains the site's Tier-1 audience. It was not touched and must not be dropped.
+
 ## 2026-09-16b (the Real Estate industry page, rebuilt as a homepage for its industry)
 
 `/industries/real-estate`, **259 words to 3,930**, and `/industries`

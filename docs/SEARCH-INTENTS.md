@@ -24,6 +24,8 @@ One primary search intent → one primary URL. Check this file before creating a
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
 | CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) |
 | Real estate, property management and HOA accounting outsourcing | `/industries/real-estate` | Commercial — industry cluster |
+| SaaS and technology accounting / deferred revenue bookkeeping | `/industries/technology` | Commercial — industry cluster |
+| Law firm, consulting and agency accounting / trust bookkeeping | `/industries/professional-services` | Commercial — industry cluster |
 | Staff augmentation during tax season | `/resources/guides/staff-augmentation-tax-season-guide` | Informational |
 | Client Accounting Services (CAS) for CPA firms | `/resources/guides/client-accounting-services-cas-guide` | Informational |
 | How to choose an accounting outsourcing partner | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | Evaluation |

@@ -310,41 +310,55 @@ Do **not** resolve these unilaterally. Each needs the owner.
    **410 Gone**. If the service is ever added, delete that route first.
 5. **Is Canada a real market?** Paused by the owner. See `knowledge/company/identity.md`.
 6. **Should "Financial reporting" be a named service line?** See `scope-boundaries.md`.
-7. **The remaining eight industry pages, and three collisions inside the
-   request (2026-09-16).** `/industries/real-estate` was rebuilt as a
+7. **The remaining industry pages. Two of the three collisions are now
+   settled (2026-09-16).** `/industries/real-estate` was rebuilt as a
    homepage-grade page covering real estate, property management and HOA
-   (3,930 words, worst near-duplicate pair 2.1%). The brief asks for eight
-   more on the same component system: construction, e-commerce, professional
-   services, healthcare, SaaS & technology, manufacturing, law firms,
-   nonprofits. **Four of those already exist** — `/industries/ecommerce`,
-   `/industries/healthcare`, `/industries/professional-services` and
-   `/industries/technology` — and three questions have to be answered before
-   any of the rest is built, because each is a URL decision rather than a
-   content one:
+   (3,930 words, worst near-duplicate pair 2.1%). The brief then asked for
+   eight more, and two of them collided with pages that were already live:
 
-   - **`/industries/saas-technology` versus the live `/industries/technology`.**
-     Creating both puts two URLs on one intent, which is the cannibalisation
-     the same brief forbids elsewhere. Either the existing page absorbs the
-     SaaS vocabulary and keeps its URL, or it 301s to a new slug — and a URL
-     change on an indexed page is the owner's call, not a session's.
-   - **`/industries/law-firms` versus `/industries/professional-services`.**
-     Law firms are a subset of the page that exists, and its description names
-     legal explicitly. A separate page is defensible — trust and client-money
-     accounting, unbilled time and contingency matters are genuinely distinct
-     mechanics — but only if professional services is simultaneously narrowed
-     to exclude legal, in the same pass, and re-measured.
-   - **`/industries/cpa-firms` is not in the requested list at all.** It is the
-     site's declared Tier-1 audience (`docs/SEARCH-INTENTS.md`, and
-     `knowledge/icp/cpa-firms.md` is the only ICP file in the repo). It must
-     not be dropped or demoted by an industries rebuild. Treat its absence from
-     the list as an omission unless the owner says otherwise.
+   - **`/industries/saas-technology` was not built. The owner's instruction is
+     absorb, do not split.** The SaaS intent now lives on
+     `/industries/technology`, which was already titled for it and ranks for
+     it; the page went 656 to 1,891 words and carries a three-card segment band
+     naming SaaS and subscription businesses, software and IT services
+     companies, and marketplaces and usage-billed platforms.
+   - **`/industries/law-firms` was not built, for the same reason.** The
+     law-firm intent lives on `/industries/professional-services`, 1,019 to
+     1,994 words, with law firms as the first and most detailed segment —
+     client trust ledgers, three-way reconciliation, disbursements, matter-level
+     WIP.
 
-   Construction, manufacturing and nonprofits carry no such collision and can
-   be built on the same system once Real Estate is signed off. Each needs its
-   own `lib/` content module written from the mechanics — WIP and retention,
-   standard cost and variance, restricted funds — not the Real Estate file with
-   the nouns swapped. That is exactly how the registration trio first measured
-   53% against itself.
+   **Do not revisit either as a URL question without Search Console evidence
+   that the sub-segment has its own demand.** The mechanism for absorbing a
+   sub-audience is the `segments` prop on `components/industry-page-template.tsx`,
+   and a block lifts off cleanly if one ever earns its own page.
+
+   **`/industries/cpa-firms` is still absent from the requested list and is
+   still the site's Tier-1 audience** (`docs/SEARCH-INTENTS.md`, and
+   `knowledge/icp/cpa-firms.md` is the only ICP file in the repo). Treat the
+   omission as an oversight; it must not be dropped or demoted by an industries
+   rebuild.
+
+   **Still to build, and none of them collides with anything:** construction,
+   manufacturing, nonprofits. Each needs its own `lib/` content module written
+   from the mechanics — WIP and retention, standard cost and variance,
+   restricted funds — not the Real Estate file with the nouns swapped. That is
+   exactly how the registration trio first measured 53% against itself.
+
+   **Absorbing the two segments caught three live overclaims, which is worth
+   knowing because a page nobody is editing is a page nobody is checking.**
+   `/industries/professional-services` said trust compliance was "handled
+   correctly" — a bookkeeper does not make a firm compliant with its bar
+   association, and that page now says so explicitly. `/industries/technology`
+   promised "investor-ready financials for fundraising and due diligence" (an
+   outcome promise `AI-WEBSITE-GUIDE.md` bans), said we "apply ASC 606 revenue
+   recognition principles" (a technical accounting position that belongs to the
+   client's CPA or auditor), and said we "integrate with QuickBooks, Xero and
+   NetSuite" (implementation language, forbidden by `scope-boundaries.md` §5).
+   All three are gone and the reasons are in the page files. **Both pages now
+   carry a `boundaries` band**, the same device the Real Estate page uses, for
+   exactly this reason: on a page touching regulated money, naming the limit is
+   what stops "we understand your business" reading as a compliance claim.
 
 ## Hard rules
 
@@ -783,7 +797,34 @@ country and says nothing about what is different about doing the work there, and
 the market pages already carry `components/region-flag.tsx` for identification.
 The drawings are for the part a flag cannot carry.
 
-If you add to any of the three files, read the accent rule above before drawing
+**And a fourth: `components/industry-illustration.tsx`** (2026-09-16), one
+drawing per industry, rendered beside the overview on every industry page.
+Real estate, three properties each keeping its own book and rolling into one
+owner statement, accent on the approval that releases it; technology, a
+deferred balance running down across the contract term with the equal monthly
+releases underneath it, accent on the recognition-policy marker because the
+ASC 606 judgement is the client's CPA or auditor; professional services, the
+three-way reconciliation between bank, trust ledger and the sum of client
+balances, accent on the review signature the firm itself has to give;
+e-commerce, one net settlement fanned back out into gross, fees, refunds and a
+reserve that will not resolve; healthcare, charges paired to remittances with
+the unpaired one carrying the accent; CPA firms, prepared files queueing into
+the one review gate that needs the licence.
+
+**The technology drawing is a descending balance, not a rising bar chart, and
+that is deliberate.** The first version stepped upward and read as a growth
+curve — a claim the page does not make. It is about a liability being released
+on schedule. If you redraw it, keep it descending.
+
+**Drawn rather than sourced, and that is the answer to "use images we have the
+right to use".** Original line work is the only imagery on this site whose
+licence is not a question: it is ours, it needs no attribution, it cannot be
+revoked, and no licence audit can land on it. It also costs nothing at runtime.
+A stock photograph of a building or a laptop would say nothing a competitor's
+could not — the same argument already recorded above against the homepage's
+photographic hero.
+
+If you add to any of the four files, read the accent rule above before drawing
 anything.
 
 ## The homepage hero

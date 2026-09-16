@@ -9,6 +9,7 @@ import FAQSection from '@/components/faq-section';
 import ProcessFlow from '@/components/process-flow';
 import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
+import IndustryIllustration from '@/components/industry-illustration';
 import { trustBadges } from '@/lib/data';
 import { industryDepth } from '@/lib/industry-depth';
 import {
@@ -102,7 +103,7 @@ export default function RealEstateIndustryPage() {
       {/* The value proposition, written as the specific thing that breaks
           rather than as "accounting is complicated". */}
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
           <Reveal className="space-y-4"><>
             <Eyebrow>Why this work is different</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
@@ -129,17 +130,20 @@ export default function RealEstateIndustryPage() {
               judgement with your team.
             </p>
           </></Reveal>
+          <Reveal delay={0.16} className="lg:pt-10">
+            <IndustryIllustration industry="real-estate" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
+          </Reveal>
+        </div>
 
-          <div className="mt-10 space-y-5">
-            {depth.breaks.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.06, 0.24)}>
-                <div className="rounded-2xl border border-border bg-input p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+        <div className="mt-10 max-w-4xl mx-auto space-y-5">
+          {depth.breaks.map((item, i) => (
+            <Reveal key={item.h} delay={Math.min(i * 0.06, 0.24)}>
+              <div className="rounded-2xl border border-border bg-input p-5 sm:p-7">
+                <h3 className="text-lg font-bold text-primary">{item.h}</h3>
+                <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

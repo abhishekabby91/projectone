@@ -45,6 +45,7 @@ const BODY_MODULES = [
   '@/lib/us-return-depth',
   '@/lib/real-estate-industry',
   '@/lib/industry-depth',
+  '@/lib/industry-segments',
 ];
 
 function lastCommitDate(relPath) {

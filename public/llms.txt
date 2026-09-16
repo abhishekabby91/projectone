@@ -83,11 +83,11 @@ Registration is **arranged and coordinated** through an external firm, not perfo
 ## Industries
 
 - [CPA firms](https://www.accounstone.com/industries/cpa-firms) — overflow capacity, recurring client work, tax-season support
-- [Technology and SaaS](https://www.accounstone.com/industries/technology)
+- [Technology and SaaS](https://www.accounstone.com/industries/technology) — deferred revenue against the contract term, deferred balance reconciled to the subscription base, settlements decomposed, cost of revenue separated. The ASC 606 policy is the client's CPA or auditor, not ours
 - [Healthcare](https://www.accounstone.com/industries/healthcare)
 - [E-commerce](https://www.accounstone.com/industries/ecommerce) — multi-channel reconciliation, payables, receivables, sales-tax data
 - [Real estate, property management and HOA](https://www.accounstone.com/industries/real-estate) — property-level bookkeeping, owner statements, tenant ledgers and deposits, HOA assessments, homeowner ledgers, reserve funds, delinquency tracking, board packs, CAM support, AP/AR and month-end close, plus [Yardi workflows in Texas](https://www.accounstone.com/industries/real-estate/yardi-accounting-outsourcing-texas)
-- [Professional services](https://www.accounstone.com/industries/professional-services)
+- [Professional services and law firms](https://www.accounstone.com/industries/professional-services) — client trust ledgers kept separate, three-way reconciliation prepared monthly, work in progress, write-offs, retainers, disbursements and partner accounts. We keep the ledger; satisfying the bar or equivalent regulator is the firm's own responsibility
 
 Industry overview: https://www.accounstone.com/industries
 
