@@ -9,7 +9,6 @@ import Reveal from '@/components/reveal';
 import ServiceDepth from '@/components/service-depth';
 import RegionalContext from '@/components/regional-context';
 import InquiryTrigger from '@/components/inquiry-trigger';
-import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
 import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
@@ -69,18 +68,6 @@ export default function AccountingAUPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
-      <InquiryRail
-
-        region="australia"
-
-        service="Accounting Services"
-
-        source={PATH}
-
-        title="Talk About Your Close"
-
-      />
 
 
       <PremiumHero

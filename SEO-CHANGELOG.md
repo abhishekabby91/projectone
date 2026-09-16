@@ -1,5 +1,65 @@
 # Accounstone SEO Changelog
 
+## 2026-09-16e (the right-edge rail, on every page but two)
+
+The owner asked me to check the right-side enquiry form that appears while
+scrolling. It was on **21 routes out of 95** — the Service x Region pages, and
+nowhere else — because each of those 21 files rendered it by hand. Every other
+page had never had it, and every new page was shipping without it.
+
+It is now mounted once from `app/layout.tsx` via
+`components/inquiry-rail-mount.tsx`. Two routes are excluded, in one place, with
+the reason next to each: `/contact`, because the page is the form; and
+`/thank-you`, because GA4 fires `generate_lead` on mount there, so a form would
+let someone who has just submitted submit again and count the conversion twice —
+and the rail's own success path redirects back to that page, which makes it a
+loop.
+
+**The interesting part is where it now sits.** On those 21 pages the rail was
+the first child of `<main>`, so its heading and labels were page content —
+identical content, on 21 pages. Putting that on 72 more pages is exactly the
+mistake the inquiry band made on 2026-09-03, when identical copy on 45 pages
+pushed `/technology/quickbooks` vs `/technology/xero` from 12.0% to 22.8%.
+
+Mounted from the layout it renders **outside `main`**, which is what it always
+was semantically: site chrome, like the header and the cookie banner. So the
+measurement was run before and after on ten pages that had never carried it:
+
+```
+ 18.2%  company-registration/nevada  vs  wyoming      (before and after)
+ 11.9%  industries/ecommerce         vs  healthcare   (before and after)
+  9.5%  technology/quickbooks        vs  xero         (before and after)
+  8.0%  industries/healthcare        vs  cpa-firms    (before and after)
+```
+
+**Every pairwise score is identical to the digit**, and word counts are
+unchanged. The 21 service pages each lost two words — the collapsed tab's label,
+which was the only thing the rail put in the HTML. The form fields never
+rendered server-side at all: the rail starts collapsed, so there are no `rail-`
+field ids anywhere in any page's source.
+
+Region and service are derived from the path rather than passed, so the form
+still arrives pre-labelled and pre-selected with nothing to keep in sync, and
+the panel title varies by section.
+
+**One implementation detail is load-bearing and is recorded in the component.**
+The rail's stand-down observer binds to `#inquiry` on mount. A client-side
+navigation replaces that element, so a single long-lived instance would keep
+watching a node that is no longer in the document and would never stand down
+again. The mount keys the rail on `pathname` so it remounts per route, and there
+is a Playwright assertion for that exact case.
+
+14 Playwright assertions in total: hidden at 1024px; collapsed tab at 1440px
+with a 40x187 tap target; expands on click and collapses again; title derived
+from the path; expanded by default at 1980px with zero overlap against the copy
+column; stands down while the band is on screen and returns after scrolling
+away; present and still standing down after a client-side navigation; absent on
+both excluded routes. Plus: exactly one rail on each of the 93 included routes
+and none on the two excluded ones, checked by rendering all 95.
+
+`pnpm eslint .` silent, `pnpm next build` complete, responsive sweep clean at
+320 / 390 / 768 / 1280 / 1440.
+
 ## 2026-09-16d (a design pass: colour, composition, and the form on every page)
 
 Owner's direction, in their words: *"the website only full of content, that why

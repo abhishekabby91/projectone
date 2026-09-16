@@ -10,7 +10,6 @@ import ServiceDepth from '@/components/service-depth';
 import RegionalContext from '@/components/regional-context';
 import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
-import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
 import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
@@ -72,18 +71,6 @@ export default function AccountsPayableAUPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
-      <InquiryRail
-
-        region="australia"
-
-        service="Accounts Payable"
-
-        source={PATH}
-
-        title="Talk About Your Payables"
-
-      />
 
 
       <PremiumHero

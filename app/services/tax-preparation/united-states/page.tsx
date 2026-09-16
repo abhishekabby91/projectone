@@ -10,7 +10,6 @@ import ServiceDepth from '@/components/service-depth';
 import RegionalContext from '@/components/regional-context';
 import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
-import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
 import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
@@ -65,12 +64,6 @@ export default function TaxPrepUSPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <InquiryRail
-        region="united-states"
-        service="Tax Preparation"
-        source={PATH}
-        title="Talk Through Your Season"
-      />
 
       <PremiumHero
         region="united-states" subtitle="For U.S. CPA firms" title="Tax Preparation Support for CPA Firms" description="Returns and workpapers prepared to your templates and your review notes. You review, you sign, you e-file." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />

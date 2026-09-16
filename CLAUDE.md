@@ -1390,12 +1390,50 @@ typed and is offered the email fallback. There are Playwright checks for both.
   import into Google Ads as conversions without extra setup; a custom name does
   not.
 
-## The inquiry rail on Service x Region pages
+## The inquiry rail is on every page but two
 
 `components/inquiry-rail.tsx` is a compact enquiry form fixed to the right edge
-of all 21 `/services/{service}/{region}` pages. It is the third instance of the
-form, after the band and the dialog, and the rules that keep the three apart are
-worth knowing before touching any of them.
+of the viewport. It is the third instance of the form, after the band and the
+dialog, and the rules that keep the three apart are worth knowing before
+touching any of them.
+
+**It is mounted once, from `app/layout.tsx`, through
+`components/inquiry-rail-mount.tsx` (2026-09-16).** Before that it was rendered
+by hand inside `<main>` on the 21 Service x Region pages and nowhere else — so
+~70 pages silently never had it, and every new page shipped without it. The
+layout mount inverts that: every route has it, and the two exceptions are listed
+in one place with the reason beside them.
+
+- **`/contact`** — the page is the form.
+- **`/thank-you`** — a conversion target. GA4 fires `generate_lead` on mount, so
+  a form here lets somebody who has just submitted submit again and count the
+  conversion twice, and the rail's own success path redirects back to this page,
+  which would make that a loop.
+
+**The mount moved it out of `<main>`, and that is the reason putting it on ~70
+more pages did not repeat the 2026-09-03 near-duplicate problem.** As the first
+child of `main` its heading and labels counted as page content, identically, on
+21 pages. Rendered from the layout it sits outside `main` as the site chrome it
+actually is. Verified by measuring ten pages that had never carried it, before
+and after: **every pairwise score was identical to the digit**, and the 21
+service pages lost two words each (the collapsed tab's label). Only the tab
+renders server-side anyway — the form fields do not exist in the HTML until a
+reader expands it, so there are no `rail-` field ids in any page's source.
+
+**Region and service are derived from the path**, not passed, so the form still
+arrives pre-labelled ("Practice name" in the UK) and pre-selected on a service
+page with nothing to keep in sync. The panel title varies by section, which is
+`titleFor()` in the mount.
+
+**The mount keys the rail on `pathname`, and that is load-bearing.** The
+stand-down observer binds to `#inquiry` on mount; a client-side navigation
+replaces that element, so without the key the observer would keep watching a
+node no longer in the document and the rail would never stand down again. There
+is a Playwright assertion for exactly that case.
+
+There is a 14-assertion Playwright suite covering the widths, the expand and
+collapse, the derived title, the stand-down, the return after scrolling away,
+both client-side-navigation cases and both exclusions.
 
 **Widths are measured, not chosen.** The content column is centred and ~1230px
 wide, so its right edge sits at `(viewport + 1230) / 2` and a 320px panel starts
@@ -1428,7 +1466,8 @@ lists.
 It also stands down whenever the `#inquiry` band is on screen, so two identical
 forms are never visible at once, and it is inset `pt-24` to clear the sticky
 header. It uses `formId="rail"` and must never claim `#inquiry` or
-`#inquiry-heading`.
+`#inquiry-heading`. With one mount for the whole site there is exactly one
+instance per page, so those ids cannot collide with themselves either.
 
 ## /contact is a trust page, not a contact page
 

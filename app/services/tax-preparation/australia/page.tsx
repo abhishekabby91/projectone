@@ -10,7 +10,6 @@ import ServiceDepth from '@/components/service-depth';
 import RegionalContext from '@/components/regional-context';
 import RegionFlag from '@/components/region-flag';
 import InquiryTrigger from '@/components/inquiry-trigger';
-import InquiryRail from '@/components/inquiry-rail';
 import ServiceIllustration from '@/components/service-illustration';
 import FurtherReading from '@/components/further-reading';
 import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
@@ -34,12 +33,6 @@ const breadcrumbSchema = generateBreadcrumbSchema([{ name: 'Home', url: baseUrl 
 export default function TaxPrepAUPage() {
   return <main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-    <InquiryRail
-      region="australia"
-      service="Tax Preparation"
-      source={PATH}
-      title="Talk Through Your Season"
-    />
 
     <PremiumHero
         region="australia" subtitle="For Australian accounting firms" title="Tax Preparation Support for Australian Firms" description="Company, trust and individual returns prepared to your templates. You review, you advise, your registered agent lodges." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />

@@ -7,6 +7,7 @@ import HeaderBar from "@/components/header-bar";
 import TouchRipple from "@/components/touch-ripple";
 import BackToTop from "@/components/back-to-top";
 import InquiryModal from "@/components/inquiry-modal";
+import InquiryRailMount from "@/components/inquiry-rail-mount";
 import Analytics from "@/components/analytics";
 import CookieConsent from "@/components/cookie-consent";
 import { generateOrganizationSchema, generateWebsiteSchema, baseUrl } from "@/lib/seo";
@@ -129,6 +130,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BackToTop />
         <InquiryModal />
+        {/* The right-edge enquiry rail, mounted once for every route. It lives
+            outside <main> on purpose — it is site chrome, not page content.
+            Exceptions and the reason for each are in the component. */}
+        <InquiryRailMount />
 
         {/*
           GA4 lives in `components/analytics.tsx` and renders no script at all
