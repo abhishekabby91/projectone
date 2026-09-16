@@ -40,7 +40,7 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 868 | 1 | 4 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1194 | 1 | 23 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
