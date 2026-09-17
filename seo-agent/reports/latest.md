@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **95**
+- Files/pages scanned: **97**
 - High-priority findings: **7**
 - Medium-priority findings: **7**
 - Low-priority findings: **8**
@@ -43,8 +43,10 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1194 | 1 | 23 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 1531 | 1 | 18 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 1789 | 1 | 23 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 1750 | 1 | 24 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2003 | 1 | 22 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 958 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
