@@ -29,7 +29,7 @@ background, superseded on specifics by the files above.
 
 ## Current state (verified 2026-09-09)
 
-- **93 routes** on disk, all returning 200; 91 in the sitemap (`/thank-you` and
+- **97 routes** on disk, all returning 200; 95 in the sitemap (`/thank-you` and
   `/technology/myob` are both `noindex` and deliberately excluded — see the
   drift check below).
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
@@ -340,6 +340,14 @@ Do **not** resolve these unilaterally. Each needs the owner.
    1,009 to 2,474 words. See "The CPA firms page" below for the boundary that
    lets it exist at all.
 
+   **Property management and HOA were split out on 2026-09-17, reversing the
+   "absorb" decision for these two specifically.** The owner's instruction was
+   that property management and HOA accounting/bookkeeping are the
+   highest-demand terms in the cluster and the structure should be whichever
+   ranks and converts best. See "The real estate cluster is three pages" below.
+   **This does not reopen SaaS or law firms** — those were absorbed because the
+   host page already ranked for the term, which was never true here.
+
    **Still to build, and none of them collides with anything:** construction,
    manufacturing, nonprofits. Each needs its own `lib/` content module written
    from the mechanics — WIP and retention, standard cost and variance,
@@ -426,8 +434,8 @@ lines, `/technology/myob` and `/thank-you`, and both are correct** — each is
 reports. Anything else in either direction is drift.
 
 This check found four unlisted guides on 2026-08-21, and confirmed 84 ↔ 84
-parity after the 2026-08-27 restructure. **As of 2026-09-09 it is 93 routes on
-disk against 91 in the sitemap**, the two differences being the noindex pair
+parity after the 2026-08-27 restructure. **As of 2026-09-17 it is 97 routes on
+disk against 95 in the sitemap**, the two differences being the noindex pair
 above.
 
 `app/services/cfo-support/route.ts` is a `route.ts` returning 410, not a page,
@@ -460,6 +468,16 @@ Two rules that go with it:
   `AI-WEBSITE-GUIDE.md` bans.
 - **Never touch a page just to refresh its date.** The value is worth something
   only while it is true.
+- **A body-module edit is not automatically a content change.** A shared module
+  can be edited without any route's rendered HTML moving — the usual case is
+  adding or removing a client component that returns `null` on the server.
+  `NON_RENDERING_COMMITS` in the script is the escape hatch: a SHA listed there
+  is skipped when dating a route, and the date falls back to the last commit
+  that did change something. It exists because moving `ScrollInquiryPrompt` out
+  of `ArticleLayout` on 2026-09-17 would otherwise have bumped **19 article
+  pages** whose server HTML is byte-identical — a fabricated "this page changed"
+  signal on the site's longest-form content. Add a SHA only after confirming the
+  rendered output really is identical; the safe default is to let the date move.
 
 `app/sitemap.ts` also used to spell out all 21 Service x Region URLs a second
 time by hand, after the `serviceRegionPaths.map()` loop had already generated
@@ -1460,6 +1478,93 @@ each other, more than twice the 25% ceiling. Moving the five-step block and the
 full boundaries list to the hub, and giving each state its own FAQs, `feesNote`,
 `ctaNote` and `whoFormsHere`, brought the worst pair to **18.0%**. A new state
 needs all of those written properly, not templated — re-measure before shipping.
+
+## The real estate cluster is three pages, split by reader
+
+`/industries/real-estate`, `/industries/property-management` and
+`/industries/hoa-accounting` (2026-09-17). Copy lives in
+`lib/real-estate-industry.ts`, `lib/property-management-industry.ts` and
+`lib/hoa-industry.ts`.
+
+**This reverses a decision recorded in this repo, and the reversal is the
+point.** `lib/real-estate-industry.ts` carried a header note arguing that
+property management and HOA "are not separate search intents yet" and that
+splitting them "produces two thin pages competing for one buyer". The owner
+overruled that on 2026-09-17: those two are the highest-demand terms in the
+cluster, and the instruction was to take whichever structure ranks and
+converts best. The old note had left itself the exit — "if the segments earn
+their own demand later, the material below is already separated into blocks
+that lift out cleanly" — and that is exactly what happened.
+
+**The problem was structural, not editorial.** The page was 3,906 good words
+covering all three, but its URL, its title and its h1 all said *real estate*,
+and HOA was one `h2` among fourteen. A page cannot rank for a term its URL,
+title and h1 do not carry.
+
+**The split is by reader, and this table is the test to apply to any new
+paragraph:**
+
+| Page | The reader | Who reads their output | Deliverable | Receivable |
+|---|---|---|---|---|
+| `/industries/real-estate` | **owns** property | a lender, partner or their CPA | financial statement | none |
+| `/industries/property-management` | **manages** property for owners | the owner | owner statement | tenant rent |
+| `/industries/hoa-accounting` | an association or its manager | a volunteer board | board pack | homeowner assessment |
+
+**If a paragraph would read just as naturally on one of the other two, it is on
+the wrong page.** Same test `lib/cpa-firms-industry.ts` uses, and the only thing
+keeping the three apart.
+
+**The two bands were removed from the real estate page, not copied.** That is
+the whole reason the three do not compete. Measured on the rendered pages:
+**PM vs HOA 2.7%**, HOA vs real estate 2.5%, PM vs real estate 5.9% — all well
+under the 25% ceiling and all lower than the 11.9% that `/industries/healthcare`
+and `/industries/ecommerce` have always shared. Word counts 4,106 / 4,115 /
+3,124. The real estate page carries a two-card router to the other two, because
+a visitor who lands there wanting one of them needs one click, not a redirect.
+
+**`hoa-accounting` breaks the `/industries/{audience-noun}` slug pattern on
+purpose.** `hoa` alone is a three-letter slug that says nothing, and the head
+term is what the page exists to rank for. The inconsistency is the right trade.
+
+**Locality is a band on each page and must never become a URL split.** There is
+no `/industries/property-management/united-states`, and there must not be — a
+region split collides head-on with the Service × Region matrix that already owns
+"{service} in {region}". Each band names what the reader is called in that
+market (US property managers, UK letting and block managers, AU agencies; US
+HOAs, UK residents' management and RTM companies, AU strata and owners
+corporations) and routes every regulatory question to the licensed local party.
+
+**No statute, regulator, threshold or deadline appears in either locality band
+and none may be added.** `knowledge/markets/` records **nothing** about property
+management or community associations in any of the three markets, so there is no
+source to trace a regulatory claim to, and `CLAUDE.md` already bans naming a
+regulator without verifying it applies to accounting services. What is safe —
+and what actually differentiates — is the reader's own word for themselves plus
+the ledger mechanic. **The HOA page says outright that there is no HOA in the
+UK** rather than pretending the term travels.
+
+**Open for the owner:** UK and AU property vocabulary on these two pages has no
+`knowledge/` source and was written from general usage. If it is going to carry
+weight, it needs a market file entry the way every other claim on this site
+does.
+
+**The lead-generation device is a symptom router, and it is worth reusing.**
+Each page opens with six cards: the symptom in the reader's own words ("owner
+statements go out late", "nobody can say what the reserve balance actually is"),
+the mechanical reading underneath it, and a click that opens the enquiry dialog
+**already carrying that symptom** in its lead. Nobody searches for outsourced
+accounting; they search after an owner statement went out late or a board
+meeting went badly. It makes the first message specific instead of "I'd like
+more information".
+
+**Boundaries are per-reader and are the highest risk on both pages.** Property
+management: never hold, release or transfer money; never decide whether a trust
+or deposit account is *held* correctly; no position on a lease, eviction or
+deposit dispute. HOA: never a signatory; **no reserve-adequacy or funding-level
+advice** (a reserve specialist and the board); no collections, lien or
+foreclosure step; no interpretation of governing documents; **no audit or review
+opinion** — that is an independent CPA and it has to be independent to be worth
+anything.
 
 ## The CPA firms page, and the boundary that lets it exist
 
