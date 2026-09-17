@@ -57,6 +57,10 @@ const TONE: Record<string, string> = {
   ecommerce: 'var(--color-hue-olive)',
   healthcare: 'var(--color-hue-plum)',
   'cpa-firms': 'var(--color-hue-denim)',
+  // Property management reuses the real-estate scene deliberately — see the
+  // note on ILLUSTRATIONS below.
+  'property-management': 'var(--color-hue-teal)',
+  'hoa-accounting': 'var(--color-hue-olive)',
 };
 
 function Frame({ children }: { children: React.ReactNode }) {
@@ -317,6 +321,81 @@ function CpaFirms() {
   );
 }
 
+/**
+ * HOA: two funds kept apart, and the board that decides between them.
+ *
+ * The mechanic this page is actually about. Operating and reserve stand as two
+ * distinct columns rather than one cash figure, the transfer between them is
+ * drawn as a recorded movement rather than as spending, and the accent is spent
+ * once — on the board's approval, because every decision here (what the
+ * assessment is, what the reserve should hold, whether a transfer happens) is
+ * the board's and never ours.
+ *
+ * Deliberately not a building. A condo drawing would make this the real estate
+ * scene again; an association is a set of funds and a set of decisions.
+ */
+function HoaAccounting() {
+  const TONE_C = TONE['hoa-accounting'];
+  return (
+    <Frame>
+      {/* the assessment roll feeding in: units, each with its own balance */}
+      <g opacity={0.9}>
+        {[0, 1, 2, 3].map((i) => (
+          <g key={i}>
+            <rect x={22} y={44 + i * 15} width={9} height={9} rx={2} fill={NAVY} opacity={0.75} />
+            <rect x={35} y={47 + i * 15} width={26} height={3} rx={1.5} fill={NAVY} opacity={0.2} />
+          </g>
+        ))}
+      </g>
+      <path d="M64 74 L82 74" stroke={NAVY} strokeOpacity={0.35} strokeWidth={2} strokeLinecap="round" />
+      <path d="M78 70 L84 74 L78 78 Z" fill={NAVY} opacity={0.35} />
+
+      {/* the two funds, side by side and never netted */}
+      <g>
+        <rect x={90} y={62} width={34} height={60} rx={4} fill={NAVY} opacity={0.9} />
+        <rect x={96} y={96} width={22} height={20} rx={2} fill={CREAM} opacity={0.9} />
+        <rect x={96} y={68} width={22} height={3} rx={1.5} fill={GOLD} />
+      </g>
+      <g>
+        <rect x={132} y={62} width={34} height={60} rx={4} fill={TONE_C} opacity={0.85} />
+        <rect x={138} y={74} width={22} height={42} rx={2} fill={CREAM} opacity={0.9} />
+        <rect x={138} y={68} width={22} height={3} rx={1.5} fill={GOLD} />
+      </g>
+      {/* the wall between them, which is the whole point */}
+      <rect x={127} y={58} width={2} height={68} rx={1} fill={NAVY} opacity={0.3} />
+      {/* the transfer, recorded as a transfer */}
+      <path d="M118 134 L138 134" stroke={NAVY} strokeOpacity={0.4} strokeWidth={2} strokeLinecap="round" strokeDasharray="4 3" />
+      <path d="M134 130 L140 134 L134 138 Z" fill={NAVY} opacity={0.4} />
+
+      {/* the board pack, and the approval that is the accent */}
+      <g>
+        <rect x={178} y={54} width={40} height={52} rx={4} fill="white" />
+        <rect x={178} y={54} width={40} height={52} rx={4} stroke={NAVY} strokeOpacity={0.25} strokeWidth={1.2} />
+        {[0, 1, 2, 3].map((i) => (
+          <rect key={i} x={184} y={62 + i * 9} width={28} height={2.5} rx={1.25} fill={NAVY} opacity={0.22} />
+        ))}
+        {/* spent once: the board's approval */}
+        <circle cx={198} cy={98} r={6} fill={ACCENT} />
+        <path d="M195 98 L197.4 100.4 L201.5 95.8" stroke="white" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      </g>
+
+      {/* the volunteer board reading it */}
+      <Person x={186} y={150} tone={NAVY} s={0.8} />
+      <Person x={206} y={150} tone={TONE_C} s={0.8} opacity={0.65} />
+      <rect x={90} y={150} width={76} height={3} rx={1.5} fill={NAVY} opacity={0.15} />
+    </Frame>
+  );
+}
+
+/**
+ * Property management deliberately reuses the real-estate scene, and that is a
+ * decision rather than an omission: that drawing is *three properties each
+ * keeping its own book, rolling into one owner statement, with the accent on
+ * the approval that releases it* — which is the property management mechanic
+ * exactly, not the owner's. If the two ever need to be told apart visually, the
+ * new drawing belongs on `/industries/real-estate` (a portfolio a lender or a
+ * partner reads), not here.
+ */
 const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   'real-estate': RealEstate,
   technology: Technology,
@@ -324,6 +403,8 @@ const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   ecommerce: Ecommerce,
   healthcare: Healthcare,
   'cpa-firms': CpaFirms,
+  'property-management': RealEstate,
+  'hoa-accounting': HoaAccounting,
 };
 
 export default function IndustryIllustration({

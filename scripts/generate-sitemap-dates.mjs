@@ -47,14 +47,44 @@ const BODY_MODULES = [
   '@/lib/industry-depth',
   '@/lib/industry-segments',
   '@/lib/cpa-firms-industry',
+  '@/lib/property-management-industry',
+  '@/lib/hoa-industry',
 ];
 
+/**
+ * Commits that touched a body module but changed nothing a crawler sees.
+ *
+ * A shared module can be edited without any route's rendered HTML moving — the
+ * usual case is adding or removing a client component that returns `null` on
+ * the server. Dating 19 article pages from a commit like that publishes
+ * "this page changed" to Google about pages whose bytes are identical, which is
+ * exactly the fabricated `lastmod` `AI-WEBSITE-GUIDE.md` bans and the reason
+ * this file is generated at all.
+ *
+ * So a commit listed here is skipped when dating a route, and the date falls
+ * back to the previous commit that did change something. Add a SHA here only
+ * when you have confirmed the rendered output is byte-identical — the safe
+ * default is to leave it out and let the date move.
+ *
+ *   9bcb2c5 — moved <ScrollInquiryPrompt> out of ArticleLayout into the layout
+ *             mount. It renders nothing on the server, so the server HTML of
+ *             all 19 article routes is unchanged.
+ */
+const NON_RENDERING_COMMITS = new Set(['9bcb2c5']);
+
 function lastCommitDate(relPath) {
-  const out = execFileSync('git', ['log', '-1', '--format=%ad', '--date=short', '--', relPath], {
-    cwd: ROOT,
-    encoding: 'utf8',
-  }).trim();
-  return out || null;
+  const log = execFileSync(
+    'git',
+    ['log', '-20', '--format=%h %ad', '--date=short', '--', relPath],
+    { cwd: ROOT, encoding: 'utf8' },
+  ).trim();
+  for (const line of log.split('\n')) {
+    const [sha, date] = line.split(' ');
+    if (!sha) continue;
+    if (NON_RENDERING_COMMITS.has(sha)) continue;
+    return date;
+  }
+  return null;
 }
 
 function walk(dir, acc = []) {

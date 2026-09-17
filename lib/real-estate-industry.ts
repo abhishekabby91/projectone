@@ -1,46 +1,60 @@
 /**
- * Content for `/industries/real-estate` — the industry page that covers real
- * estate, property management and community associations together.
+ * Content for `/industries/real-estate` — the page for people who **own**
+ * property: investors, developers, commercial operators and owning entities.
  *
- * **Why one page and not three.** Property management and HOA are the two
- * segments the sales team actually prospects into, and the temptation is to
- * give each its own URL. They are not separate search intents yet: a property
- * manager searching "property management bookkeeping outsourcing" and a
- * community manager searching "HOA bookkeeping services" both want the same
- * answer — who keeps the property-level books and produces the statement the
- * owner or the board reads. Splitting them now produces two thin pages
- * competing for one buyer, which is the failure `docs/SEARCH-INTENTS.md`
- * exists to prevent. If the segments earn their own demand later, the material
- * below is already separated into blocks that lift out cleanly.
+ * **This file used to argue against splitting, and that note is gone because
+ * the owner reversed it on 2026-09-17.** It said property management and HOA
+ * "are not separate search intents yet" and that splitting them "produces two
+ * thin pages competing for one buyer". The owner's instruction was that
+ * property management and HOA accounting/bookkeeping are the highest-demand
+ * terms in this cluster and that the structure should be whatever ranks and
+ * converts best. It also left itself the exit: "if the segments earn their own
+ * demand later, the material below is already separated into blocks that lift
+ * out cleanly." They did, and it did.
+ *
+ * `propertyManagement` and `hoa` no longer exist in this file. They moved to
+ * `lib/property-management-industry.ts` and `lib/hoa-industry.ts` and were
+ * **removed here rather than copied**, which is the only reason the three pages
+ * do not compete. The real estate page now carries a two-card router to them
+ * instead.
+ *
+ * **The split is by reader, and that is the test to apply to any new
+ * paragraph:**
+ *
+ * - **this page** — someone who owns property. Reader: a lender, a partner, an
+ *   investor or their own CPA. Deliverable: a financial statement. Receivable:
+ *   none.
+ * - `/industries/property-management` — someone managing property that belongs
+ *   to an owner. Reader: the owner. Deliverable: the owner statement.
+ *   Receivable: tenant rent.
+ * - `/industries/hoa-accounting` — an association or its manager. Reader: a
+ *   volunteer board. Deliverable: the board pack. Receivable: the homeowner
+ *   assessment.
+ *
+ * If a paragraph here would read just as naturally on either of the other two,
+ * it belongs there.
  *
  * **What may not be written into this file.**
  *
- * - **No trust-accounting compliance claim.** Broker trust accounts and HOA
- *   reserve accounts are regulated per state and per jurisdiction, and the
- *   rules differ on commingling, interest and permitted transfers. We keep the
- *   ledger and the reconciliation; whether a given account is held correctly is
- *   the client's own counsel, CPA or managing broker. `scope-boundaries.md` §1.
- * - **No reserve-study, funding-level or assessment-setting advice.** How much
- *   an association should hold in reserves, and what the assessment should be,
- *   is a board decision informed by a reserve study. We account for what the
- *   board decides. Saying otherwise is financial advisory.
+ * - **No trust-accounting compliance claim.** Broker trust accounts and
+ *   deposit accounts are regulated per state and per jurisdiction. We keep the
+ *   ledger and the reconciliation; whether an account is held correctly is the
+ *   client's own counsel, CPA or managing broker. `scope-boundaries.md` §1.
+ * - **No reserve-study, funding-level or assessment-setting advice.** That
+ *   material lives on the HOA page now and the rule travels with it.
  * - **No tax planning, no entity-structure advice, no cost-segregation, no
  *   1031 guidance, no depreciation elections.** Every one of those is the
  *   client's CPA. We prepare records and schedules; the return is signed by a
- *   licensed professional. `scope-boundaries.md` §2 and §4.
+ *   licensed professional. §2 and §4.
  * - **No software implementation, configuration, migration or "certified"
- *   claim** for Yardi, QuickBooks or anything else. We work inside the system
- *   that is already running. §5.
- * - **No rate, fee, deposit-interest rate, statutory deadline, savings
- *   percentage, turnaround time or client count.** Same rule as
- *   `lib/us-states.ts` and `lib/market-depth.ts`: annual figures go stale
- *   silently, and invented ones breach the never-invent rule outright.
+ *   claim** for Yardi, QuickBooks or anything else. §5.
+ * - **No rate, fee, statutory deadline, savings percentage, turnaround time or
+ *   client count.** Same rule as `lib/us-states.ts` and `lib/market-depth.ts`.
  *
- * The page is region-neutral by design — there is no US, UK or AU variant and
- * there should not be one. The mechanics below (owner statements, assessments,
- * reserves, CAM) are recognisable to a property operator in any of the three
- * markets, and a region-specific split would collide with the Service × Region
- * matrix that already owns "{service} in {region}".
+ * The page stays region-neutral: there is no US, UK or AU variant and there
+ * should not be one, because a region split would collide with the Service ×
+ * Region matrix that already owns "{service} in {region}". The two new pages
+ * handle locality as a band on the page for the same reason.
  */
 
 export interface REServiceCard {
@@ -56,12 +70,6 @@ export interface RESegment {
   who: string;
   body: string;
   points: string[];
-}
-
-export interface REWorkflowGroup {
-  heading: string;
-  lead: string;
-  items: { h: string; p: string }[];
 }
 
 /** The six segments the page is written for. */
@@ -195,72 +203,6 @@ export const services: REServiceCard[] = [
     href: '/services/audit-support/united-states',
   },
 ];
-
-/** Property management, at the level of the work. */
-export const propertyManagement: REWorkflowGroup = {
-  heading: 'Property Management Accounting',
-  lead:
-    'The distinguishing feature of property management accounting is that the books are not yours and the reader is not you. An owner statement goes to somebody who did not see the transactions, will compare it to last month, and will ask about the one line that moved. That changes what "done" means: the statement is finished when the questions it will generate can already be answered from the file.',
-  items: [
-    {
-      h: 'Property-level books, with the entity view built from them',
-      p: 'Every property carries its own income, its own costs and its own bank position, and the portfolio view is assembled from those rather than allocated down into them. That is a chart-of-accounts and property-tracking decision made at setup — cheap to make now, expensive to retrofit once a year of history exists in the wrong shape.',
-    },
-    {
-      h: 'Rental income recorded against the lease, not against the deposit',
-      p: 'What a tenant owes comes from their lease; what arrived in the bank is a separate fact. Where the two are treated as one, partial payments, prepaid rent and concessions all disappear into the same line and the tenant ledger stops being able to answer a dispute. Kept apart, the receivable is real and the aging means something.',
-    },
-    {
-      h: 'Security deposits carried as a liability',
-      p: 'Deposits held are the tenant’s money and often subject to rules about how they are held. Sitting in operating cash and in income, they overstate both, and the error compounds with every new lease — it is one of the first things a lender or a buyer looks at. How the account itself must be held is a question for your managing broker or counsel; keeping the ledger straight is ours.',
-    },
-    {
-      h: 'Vendor invoices coded to the property before they are approved',
-      p: 'An invoice that reaches approval without a property and a category attached gets approved on the amount alone, and the coding is guessed afterwards by someone reading a vendor name. Captured, coded and routed with the property already on it, the approver is approving a fact rather than reconstructing one — and the release of payment stays entirely with your team.',
-    },
-    {
-      h: 'Owner statements prepared with their own supporting detail',
-      p: 'An owner statement with no backing is a number to be trusted or argued with. Prepared with the transaction detail, the reconciliation and the open items attached, it is a document that answers itself. Where a figure is genuinely unresolved it is named on the statement rather than smoothed into an accrual.',
-    },
-    {
-      h: 'Month-end that reconciles rather than reconstructs',
-      p: 'Bank, deposit and escrow accounts reconciled monthly, recurring journals posted, property accounts checked and anything unresolved listed. A close done this way takes the same work every month; a close done at reporting time takes however long the worst surprise takes.',
-    },
-  ],
-};
-
-/** HOA and community associations, at the level of the work. */
-export const hoa: REWorkflowGroup = {
-  heading: 'HOA & Community Association Accounting',
-  lead:
-    'An association has a smaller ledger than a property portfolio and a much more attentive audience. Volunteer board members read the financials every month, homeowners query their own ledger directly, and the reserve balance is the figure everyone checks first. The accounting has to be legible to a non-accountant without being simplified into something that cannot be audited.',
-  items: [
-    {
-      h: 'Assessments billed and aged by homeowner, not by the bank',
-      p: 'The homeowner ledger is the association’s receivable record: what was assessed, what was paid, what remains, and in what order payments were applied. Where it is maintained from deposits rather than from the assessment schedule, a homeowner with a partial payment and a late fee cannot be answered without reconstructing their year.',
-    },
-    {
-      h: 'Operating and reserve funds kept separate in the ledger',
-      p: 'Reserves are held for a purpose the board has identified, and the whole point of the balance is that it is visible and not quietly financing operations. Netted into one cash figure, a shortfall in operating is invisible until the reserve is needed. Kept as distinct funds with transfers recorded as transfers, the position is readable at any point in the year. What the reserve level should be, and what a reserve study concludes, is the board’s call and their reserve specialist’s.',
-    },
-    {
-      h: 'Delinquency tracked as a schedule, not as a feeling',
-      p: 'An aged delinquency schedule by unit, with the status of each balance, is what turns a collections conversation into a decision the board can minute. It also makes the allowance question answerable. Every step of a collections process — when a notice goes out, when a matter goes to counsel — stays a board decision; we keep the record it is made from.',
-    },
-    {
-      h: 'Payables run against board-approved invoices',
-      p: 'Association spending is approved by people who meet monthly, so the payables cycle has to fit the board calendar rather than the other way round. Invoices captured, coded to the board’s own budget lines and presented in a form the board recognises means an approval meeting spends its time on decisions rather than on identifying what an invoice was for.',
-    },
-    {
-      h: 'Budget versus actual in the board’s lines, not the software’s',
-      p: 'A board approved a budget in particular categories, and that is the report they expect back. Where the accounting uses a different structure, every meeting starts with a translation exercise and variances get explained as mapping differences. Mapping the ledger to the approved budget once removes that permanently.',
-    },
-    {
-      h: 'A board pack that survives the meeting',
-      p: 'Balance sheet, income statement against budget, cash and reserve position, aged delinquency, and the reconciliations behind them — assembled the same way every month so a new treasurer can read the current pack against last year’s without a guide.',
-    },
-  ],
-};
 
 /** The four process phases, in this industry's language. */
 export const processPhases = [

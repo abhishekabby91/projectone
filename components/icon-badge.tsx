@@ -63,6 +63,8 @@ const ICON_MAP: Record<string, LucideIcon> = {
   healthcare: HeartPulse,
   ecommerce: ShoppingCart,
   'real-estate': Home,
+  'property-management': Building2,
+  'hoa-accounting': Landmark,
   'professional-services': Scale,
   // Technologies
   quickbooks: Plug2,
@@ -125,6 +127,8 @@ const TONE_MAP: Record<string, string> = {
   healthcare: 'plum',
   ecommerce: 'olive',
   'real-estate': 'teal',
+  'property-management': 'teal',
+  'hoa-accounting': 'olive',
   'professional-services': 'denim',
 };
 

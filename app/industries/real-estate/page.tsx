@@ -15,8 +15,6 @@ import { industryDepth } from '@/lib/industry-depth';
 import {
   segments,
   services,
-  propertyManagement,
-  hoa,
   processPhases,
   boundaries,
   faqs,
@@ -32,17 +30,23 @@ import {
 const PATH = '/industries/real-estate';
 const depth = industryDepth['real-estate'];
 
+// Retargeted 2026-09-17. This page used to carry real estate, property
+// management AND HOA, which meant it ranked for none of them well: the title
+// said "real estate" while two of the three head terms were buried as h2s.
+// Property management and HOA now have their own URLs, and this page is for the
+// reader who OWNS the property — investors, developers, commercial operators —
+// whose reader in turn is a lender, a partner or their own CPA.
 export const metadata: Metadata = genMeta({
-  title: 'Real Estate & Property Accounting Outsourcing',
+  title: 'Real Estate Accounting & Bookkeeping Services',
   description:
-    'Outsourced accounting and bookkeeping for real estate, property management and HOAs: property-level books, owner statements, AP/AR, reserves and monthly close.',
+    'Outsourced real estate accounting and bookkeeping for owners, investors and developers: property and entity books, lender reporting, AP/AR and close.',
   path: PATH,
 });
 
 const serviceSchema = generateServiceSchema({
   name: 'Accounting, Bookkeeping and Tax Support for Real Estate and Property Management',
   description:
-    'Property-level bookkeeping, owner and board reporting, AP/AR, reconciliations, month-end close and tax preparation support for real estate businesses, property management companies, community associations, commercial operators, investors and developers.',
+    'Property and entity-level bookkeeping, investor and lender reporting, AP/AR, reconciliations, month-end close and tax preparation support for property owners, real estate investors, developers and commercial operators.',
   slug: 'real-estate',
   basePath: '/industries/',
 });
@@ -71,9 +75,9 @@ export default function RealEstateIndustryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="Real estate, property management and HOA"
-        title="Accounting, Bookkeeping & Tax Outsourcing for Real Estate & Property Management"
-        description="Property-level books, owner statements, board packs, AP/AR, reconciliations and month-end close — for portfolios, associations, commercial operators, investors and developers. You keep every approval."
+        subtitle="Owners, investors, developers and commercial operators"
+        title="Real Estate Accounting, Bookkeeping & Tax Outsourcing"
+        description="Property and entity-level books, portfolio reporting, AP/AR, reconciliations and a month-end close that holds up to a lender, a partner or your own CPA. You keep every approval."
         cta={{ text: 'Talk to Our Team', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
@@ -237,64 +241,54 @@ export default function RealEstateIndustryPage() {
 
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
-      {/* Property management. One of the two segments this page is prospected
-          into, so it gets a full band rather than a card. */}
+      {/* Property management and HOA were full bands here until 2026-09-17.
+          They now have their own URLs and their own copy — none of that text
+          survives on this page, which is what keeps the three from competing.
+          What is left is a router, because a visitor who lands here looking for
+          one of them needs one click, not a redirect. */}
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <Reveal className="space-y-4"><>
-            <Eyebrow>Property management</Eyebrow>
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-4 mb-8"><>
+            <Eyebrow>Managing rather than owning?</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              {propertyManagement.heading}
+              Two Neighbouring Problems, Each With Its Own Page
             </h2>
-            <p className="text-base md:text-lg text-muted leading-relaxed">{propertyManagement.lead}</p>
-          </></Reveal>
-
-          <div className="mt-8 space-y-5">
-            {propertyManagement.items.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-input p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal delay={0.2}>
-            <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
-              Working in Yardi in Texas?{' '}
-              <Link href="/industries/real-estate/yardi-accounting-outsourcing-texas" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
-                There is a page for that workflow specifically
-              </Link>. The payables side of all of this sits in{' '}
-              <Link href="/services/accounts-payable/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
-                accounts payable
-              </Link>, and the receivables side in{' '}
-              <Link href="/services/accounts-receivable/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
-                accounts receivable
-              </Link>.
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              This page is written for the people who own the property. If the books you are keeping belong to
+              somebody else, the mechanics change enough to need their own treatment &mdash; the deliverable
+              stops being a financial statement and becomes an owner statement or a board pack, and the
+              receivable stops being nothing and becomes rent or an assessment.
             </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* HOA. The other prospected segment. */}
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
-        <div className="max-w-4xl mx-auto">
-          <Reveal className="space-y-4"><>
-            <Eyebrow>HOA and community associations</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              {hoa.heading}
-            </h2>
-            <p className="text-base md:text-lg text-muted leading-relaxed">{hoa.lead}</p>
           </></Reveal>
 
-          <div className="mt-8 space-y-5">
-            {hoa.items.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-white p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            {[
+              {
+                href: '/industries/property-management',
+                name: 'Property Management Accounting',
+                who: 'You manage property for owners',
+                body: 'Property-level books, owner statements with their supporting detail, tenant and security-deposit ledgers, CAM and recovery, and a close timed to reporting rather than to a scramble.',
+              },
+              {
+                href: '/industries/hoa-accounting',
+                name: 'HOA & Association Accounting',
+                who: 'You run or manage a community association',
+                body: 'Assessment and homeowner ledgers, operating and reserve funds kept apart, aged delinquency schedules, board-approved payables and a board pack that looks the same every month.',
+              },
+            ].map((c, i) => (
+              <Reveal key={c.href} delay={i * 0.08}>
+                <Link
+                  href={c.href}
+                  className="group flex h-full flex-col rounded-2xl border border-border bg-input p-6 sm:p-7 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
+                >
+                  <span className="text-xs font-bold uppercase tracking-wider text-accent">{c.who}</span>
+                  <h3 className="mt-2 font-serif text-xl font-bold text-primary">{c.name}</h3>
+                  <p className="mt-3 flex-1 text-base leading-relaxed text-muted">{c.body}</p>
+                  <span className="mt-5 text-sm font-semibold text-accent">
+                    Read that page{' '}
+                    <span aria-hidden="true" className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -464,14 +458,14 @@ export default function RealEstateIndustryPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
-        lead="The consultation and the call are always free. Tell us what you manage, what the owner or the board currently receives, and where the month actually goes."
+        lead="The consultation and the call are always free. Tell us what you own, how the entities are structured, and what your lender, your partners or your CPA ask for that is hard to produce today."
       />
 
       <CTABanner
         title="Ready to Simplify Your Real Estate Accounting?"
-        description="Accounting, bookkeeping and tax support built around your properties, your associations and the people who read the reports."
+        description="Accounting, bookkeeping and tax support built around your properties, your entities and the people who read the reports."
         cta={{ text: 'Talk to Our Team', href: '/contact' }}
-        ctaSecondary={{ text: 'See All Industries', href: '/industries' }}
+        ctaSecondary={{ text: 'Property Management', href: '/industries/property-management' }}
         background="primary"
       />
     </main>

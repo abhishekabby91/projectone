@@ -18,13 +18,25 @@ interface NavItem { label: string; href: string; children?: NavChild[]; groups?:
 //
 // CFO Support and HR are deliberately absent. See
 // knowledge/company/scope-boundaries.md - not offered today.
+//
+// Audit Support is hidden from this dropdown only (owner, 2026-09-17). The 3
+// pages are live, indexable, in the sitemap, in llms.txt and still linked from
+// the footer and contextually - this hides a menu row, nothing else. It is
+// also SEO-neutral by construction: dropdown contents render only when open,
+// so the navbar emits zero links into server HTML and never was a crawl path.
+// See CLAUDE.md, "The navbar is not a crawl path". Remove the slug from this
+// set to put the rows back.
+const NAV_HIDDEN_SERVICES = new Set(['audit-support']);
+
 const regionServiceGroups: NavGroup[] = regions.map((region) => ({
   label: region.name,
   region: region.slug,
-  items: serviceRegions.map((s) => ({
-    label: s.navLabel,
-    href: `/services/${s.slug}/${region.slug}`,
-  })),
+  items: serviceRegions
+    .filter((s) => !NAV_HIDDEN_SERVICES.has(s.slug))
+    .map((s) => ({
+      label: s.navLabel,
+      href: `/services/${s.slug}/${region.slug}`,
+    })),
 }));
 
 export default function Navbar() {

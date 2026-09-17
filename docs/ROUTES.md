@@ -87,7 +87,9 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/ecommerce` | B | — | Published |
-| `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Rebuilt 2026-09-16 — covers real estate, property management and HOA |
+| `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
+| `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
+| `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
 | `/industries/professional-services` | B | — | Deepened 2026-09-16 — absorbs the law-firm intent; no `/law-firms` URL |
 

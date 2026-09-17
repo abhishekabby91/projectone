@@ -23,7 +23,9 @@ One primary search intent → one primary URL. Check this file before creating a
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
 | CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
-| Real estate, property management and HOA accounting outsourcing | `/industries/real-estate` | Commercial — industry cluster |
+| Real estate accounting / bookkeeping (owners, investors, developers) | `/industries/real-estate` | Commercial — the reader OWNS the property; reader of the output is a lender, partner or their CPA |
+| Property management accounting / bookkeeping outsourcing | `/industries/property-management` | Commercial — the reader MANAGES property for owners; deliverable is the owner statement; receivable is tenant rent |
+| HOA / community association / condo association accounting | `/industries/hoa-accounting` | Commercial — the reader is an association or its manager; deliverable is the board pack; receivable is the homeowner assessment |
 | SaaS and technology accounting / deferred revenue bookkeeping | `/industries/technology` | Commercial — industry cluster |
 | Law firm, consulting and agency accounting / trust bookkeeping | `/industries/professional-services` | Commercial — industry cluster |
 | Staff augmentation during tax season | `/resources/guides/staff-augmentation-tax-season-guide` | Informational |
