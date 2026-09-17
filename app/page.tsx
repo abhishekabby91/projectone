@@ -124,7 +124,7 @@ export default function HomePage() {
 
       {/* Four engagement models, so two across rather than three: a 4-item set in
           a 3-column layout leaves one card alone under three. */}
-      <section data-section="solutions"><SectionGrid subtitle="Our Engagement Models" title="Support Built Around Your Team" description="Choose the delivery model that matches your workload, processes, review structure, and growth plans." items={solutions} baseUrl="/solutions" columns={2} variant="default" /></section>
+      <section data-section="solutions"><SectionGrid subtitle="Our Engagement Models" title="Support Built Around Your Team" description="Choose the delivery model that matches your workload, processes, review structure, and growth plans." items={solutions} baseUrl="/solutions" columns={2} variant="default" tone="brand" /></section>
       {/* Each market names its own audience in its own words, so the block
           below carries all three rather than one generic line. The UK version
           shipped first, and leaving the US and Australia out read as though
@@ -214,6 +214,7 @@ export default function HomePage() {
           baseUrl="/services"
           columns={3}
           variant="default"
+          tone="brand"
         />
         <div className="w-full px-6 md:px-8 pb-10 md:pb-14 -mt-4 text-center">
           <p className="text-muted">

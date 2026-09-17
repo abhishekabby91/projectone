@@ -2,7 +2,7 @@
 
 import FeatureCard from './feature-card';
 import Reveal from './reveal';
-import IconBadge, { hueVar } from './icon-badge';
+import IconBadge, { hueVar, BRAND_HUE } from './icon-badge';
 
 interface GridItem {
   id: string;
@@ -22,6 +22,18 @@ interface SectionGridProps {
   columns?: 2 | 3 | 4;
   variant?: 'default' | 'featured' | 'minimal';
   featuredItemIndex?: number;
+  /**
+   * `'brand'` drops the supporting palette for this band: navy badges, navy
+   * corner tint. The homepage passes it (owner, 2026-09-17); the hub pages
+   * keep the default hues, which is where they earn their place.
+   *
+   * Note it resolves the corner to navy explicitly rather than leaving `hue`
+   * off. An unset `--card-hue` falls back to the burnt-orange accent in
+   * `.accent-corner::before`, and a decorative accent is the exact thing the
+   * supporting palette was introduced to stop — see the accent rule in
+   * CLAUDE.md.
+   */
+  tone?: 'hue' | 'brand';
 }
 
 export default function SectionGrid({
@@ -33,6 +45,7 @@ export default function SectionGrid({
   columns = 3,
   variant = 'default',
   featuredItemIndex,
+  tone = 'hue',
 }: SectionGridProps) {
   // Flex rather than grid, and this is a design fix rather than a refactor.
   // A grid left-aligns a row it cannot fill, so 7 services at three across
@@ -92,13 +105,13 @@ export default function SectionGrid({
             return (
               <Reveal key={item.id} className={basisClass} delay={Math.min(index * 0.06, 0.3)}>
                 <FeatureCard
-                  icon={<IconBadge name={item.id} fallback={item.icon} variant={cardVariant === 'featured' ? 'featured' : 'default'} />}
+                  icon={<IconBadge name={item.id} fallback={item.icon} tone={tone} variant={cardVariant === 'featured' ? 'featured' : 'default'} />}
                   title={item.name}
                   description={item.description}
                   href={item.slug ? `${baseUrl}/${item.slug}` : undefined}
                   features={item.features}
                   variant={cardVariant}
-                  hue={hueVar(item.id)}
+                  hue={tone === 'brand' ? BRAND_HUE : hueVar(item.id)}
                 />
               </Reveal>
             );

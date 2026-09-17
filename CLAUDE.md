@@ -940,6 +940,44 @@ from becoming the stock template `CLAUDE.md` already warns about elsewhere:**
 grid still read as one block. A solid tile with a white glyph is what gives the
 grid its rhythm, and it is the one place a supporting hue runs at full strength.
 
+### The homepage is brand-only (owner, 2026-09-17)
+
+**The supporting palette is off the front page and must stay off it.** The
+owner asked for the non-brand colour to come off `/`; the hub and industry
+pages keep it, because a grid of otherwise identical cards is the problem it
+was added to solve and those pages are where that problem lives.
+
+It is a prop, not a deletion: `tone="brand"` on `components/section-grid.tsx`,
+passed by the homepage's two card bands (`data-section="services"` and
+`data-section="solutions"`). It forces navy badges through `IconBadge`'s own
+`tone` prop and resolves the card corner to `BRAND_HUE`.
+
+**The corner is set to navy explicitly rather than left unset, and that is the
+part to get right.** `.accent-corner::before` falls back to
+`var(--color-accent)` when no `--card-hue` is set — so simply dropping the prop
+would put the burnt-orange accent back on 11 decorative corners, which is the
+exact job the supporting palette was introduced to take away from it.
+
+Measured after, against a dev server: **0 supporting-hue references on `/`** and
+all 11 cards at `--card-hue:var(--color-primary)`; `/solutions` still 8 and
+`/industries` still 12, unchanged.
+
+**The only non-brand colour left on the homepage is national flags** — US, UK,
+Australia and India (the delivery centre), in the markets band and the global
+delivery diagram. A flag's colours are not a palette choice, and
+`components/region-flag.tsx` exists precisely so a market is identified without
+one. A full computed-style sweep of `main`, `header` and `footer` at 1440px
+found nothing else outside the brand tokens.
+
+**Run that sweep against a dev server whose stylesheet actually loads.** The
+first run of it reported twelve non-brand colours including UA link blue,
+`#efefef` button chrome and `#767676` input borders — all false, because
+`pnpm next build` had replaced `.next` under the running dev server and
+`/_next/static/css/app/layout.css` was 404ing. The tell is several unrelated
+user-agent defaults appearing at once; assert `body` background is `#faf8f3`
+and `--color-primary` resolves before believing any colour result. This is the
+same trap already recorded for the 17px tap-target sweep.
+
 ### `SectionGrid` wraps and centres; it is not a grid any more
 
 A CSS grid left-aligns a row it cannot fill. Seven services at three across

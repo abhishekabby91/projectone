@@ -81,6 +81,16 @@ interface IconBadgeProps {
   fallback?: string;
   variant?: 'default' | 'featured';
   size?: 'sm' | 'md';
+  /**
+   * `'brand'` forces navy and ignores the supporting palette entirely.
+   *
+   * It exists for the homepage, where the owner asked on 2026-09-17 for the
+   * non-brand colours to come off. Nowhere else passes it: the hues are the
+   * default because they do real work on the hub and industry pages, where a
+   * grid of otherwise identical cards is the whole problem they were added to
+   * solve.
+   */
+  tone?: 'hue' | 'brand';
 }
 
 /**
@@ -144,6 +154,9 @@ const TONE_VAR: Record<string, string> = {
   navy: 'var(--color-primary)',
 };
 
+/** Navy, as a CSS value. The brand-only corner tint on the homepage. */
+export const BRAND_HUE = TONE_VAR.navy;
+
 /**
  * The CSS colour a card should tint its corner with, for the same key the
  * badge is drawn from — so the corner, the badge and (on an industry page) the
@@ -154,7 +167,13 @@ export function hueVar(name: string): string {
   return TONE_VAR[TONE_MAP[name] ?? 'navy'];
 }
 
-export default function IconBadge({ name, fallback, variant = 'default', size = 'md' }: IconBadgeProps) {
+export default function IconBadge({
+  name,
+  fallback,
+  variant = 'default',
+  size = 'md',
+  tone = 'hue',
+}: IconBadgeProps) {
   const Flag = FLAG_MAP[name];
   if (Flag) {
     return (
@@ -179,7 +198,7 @@ export default function IconBadge({ name, fallback, variant = 'default', size = 
   const badgeStyle =
     variant === 'featured'
       ? 'bg-white/15 text-white'
-      : TONE_CLASS[TONE_MAP[name] ?? 'navy'];
+      : TONE_CLASS[tone === 'brand' ? 'navy' : TONE_MAP[name] ?? 'navy'];
 
   return (
     <div
