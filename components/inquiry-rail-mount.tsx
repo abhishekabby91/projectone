@@ -2,10 +2,31 @@
 
 import { usePathname } from 'next/navigation';
 import InquiryRail from '@/components/inquiry-rail';
+import ScrollInquiryPrompt from '@/components/scroll-inquiry-prompt';
 import { regions } from '@/lib/data';
 
 /**
- * Mounts the right-edge enquiry rail once, for the whole site.
+ * Mounts the two persistent enquiry affordances once, for the whole site: the
+ * right-edge rail at `lg` and up, and the slim bottom bar below it.
+ *
+ * **They are one system split by width, not two features.** The rail is hidden
+ * below 1280px because the content column already fills the viewport there, so
+ * until 2026-09-16 a phone had nothing persistent at all — only the band at the
+ * very bottom of the page, which only a finisher reaches. The bar covers that
+ * width, and the two never appear together.
+ *
+ * `ScrollInquiryPrompt` used to render a desktop corner card as well, and it
+ * had to go: once the rail went sitewide the card overlapped it at **1440px and
+ * 1990px**, measured, putting two forms on one screen. At `lg` and up the rail
+ * is the affordance; below it, the bar. Do not reintroduce a desktop half.
+ *
+ * **The bar's trigger rules are a ranking guard and none of them is optional.**
+ * Google treats interstitials that obscure content shortly after arrival from
+ * search as a negative mobile signal, so the bar needs 8s dwell AND 45% scroll
+ * together, never covers the content (it is a slim bar, not a sheet), is
+ * trivially dismissible with a 30-day memory, stands down for the `#inquiry`
+ * band, and will not fire while the cookie banner is up. It renders nothing on
+ * the server, so it cannot touch indexed content or near-duplicate scores.
  *
  * **Why one mount instead of a prop on every page.** The rail shipped on the 21
  * Service x Region pages and nowhere else, because each of those files rendered
@@ -93,17 +114,27 @@ export default function InquiryRailMount() {
   // region-neutral labels.
   const region = segments.find((s) => REGION_SLUGS.has(s)) as RegionSlug | undefined;
 
+  const title = titleFor(segments);
+
+  // Both are keyed on the path so they remount per route: each binds an
+  // observer to `#inquiry` on mount, and a client-side navigation replaces that
+  // element. Without the key they would keep watching a node that is no longer
+  // in the document and would never stand down again.
   return (
-    // Keyed on the path so the rail remounts per route: its stand-down observer
-    // binds to `#inquiry` on mount, and a client-side navigation replaces that
-    // element. Without the key the observer would keep watching a node that is
-    // no longer in the document.
-    <InquiryRail
-      key={pathname}
-      region={region}
-      service={service}
-      source={pathname}
-      title={titleFor(segments)}
-    />
+    <>
+      <InquiryRail
+        key={`rail-${pathname}`}
+        region={region}
+        service={service}
+        source={pathname}
+        title={title}
+      />
+      <ScrollInquiryPrompt
+        key={`bar-${pathname}`}
+        title={title}
+        lead="Tell us what is falling behind — the volume, the systems, the deadlines — and we will talk through what would actually change."
+        source={pathname}
+      />
+    </>
   );
 }

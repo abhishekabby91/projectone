@@ -1219,15 +1219,29 @@ Every instance ids its fields with a per-instance `uid`, so two forms on one
 page cannot collide. There is exactly one `#inquiry` and one
 `#inquiry-heading` per page — check that if you ever add a second band.
 
-## The engagement-triggered prompt on content pages
+## The mobile enquiry bar, and why there is no desktop half
 
-`components/scroll-inquiry-prompt.tsx`, rendered by `ArticleLayout`, so it is on
-the 6 blog posts, 11 guides and 2 insights and **nowhere else**. It is the
-fourth instance of the form, after the band, the dialog and the rail.
+`components/scroll-inquiry-prompt.tsx`. It is the fourth instance of the form,
+after the band, the dialog and the rail, and since 2026-09-16 it is **mounted
+once for the whole site** from `components/inquiry-rail-mount.tsx` — the same
+mount that carries the rail, with the same two exclusions (`/contact`,
+`/thank-you`) and the same per-route key. Before that it was rendered by
+`ArticleLayout`, so it reached only the 6 blog posts, 11 guides and 2 insights.
 
-It exists because a reader two-thirds of the way down a 1,500-word guide is the
-most qualified visitor the site gets, and nothing asked them for anything until
-the band at the very bottom — which only a finisher reaches.
+**The rail and the bar are one system split by width, not two features.** The
+rail is hidden below 1280px because the content column already fills the
+viewport there — so a phone had no persistent enquiry affordance at all, only
+the band at the very bottom of the page, which only a finisher reaches. At `lg`
+and up the rail is the affordance; below it, the bar. They are never on screen
+together.
+
+**The desktop corner card is gone and must not come back.** The component also
+rendered the full form as a card at `lg` and up. Once the rail went sitewide
+that card overlapped it — measured at **1440px** (card x1080-1416 against the
+rail at x1400) and at **1990px** (card x1630-1966 against the rail at
+x1658-1990) — which put two identical forms on one screen. That is also why
+`ArticleLayout` no longer renders the prompt: with the layout mount in place, it
+would put two bars on an article.
 
 **The reason it is not a plain popup is a ranking one, and it is the whole
 design.** Google treats interstitials that obscure content shortly after arrival
@@ -1236,32 +1250,39 @@ would fire on arrival, cover the article, and put the rankings of the very pages
 it sits on at risk. Three things prevent that, and **none of them is optional**:
 
 1. **Two conditions, both required** — `DWELL_MS` (8s) on the page *and*
-   `SCROLL_TRIGGER` (45%) of the article scrolled. Time alone would fire on an
+   `SCROLL_TRIGGER` (45%) of the page scrolled. Time alone would fire on an
    idle arrival; scroll alone would fire on a fast flick. Verified: it stays
    hidden after 11 seconds without scrolling, and hidden when scrolled to 60%
    under the dwell time.
-2. **It never covers the article below `lg`.** On mobile it is a slim bottom bar
-   — one line and a button that opens the existing dialog — measured at under
-   20% of a 390x844 viewport. The full form only renders as a corner card at
-   `lg` and up, where there is room beside the text. **Do not make the mobile
-   version show the form inline.**
+2. **It never covers the content.** A slim bar pinned to the bottom edge — one
+   line and a button that opens the existing dialog — measured at **58px on a
+   390x844 viewport**, under 7% of it. **Do not make it show the form inline.**
 3. **Trivially dismissible** — close button, Escape, and the dismissal is
    remembered for 30 days in `localStorage`, so it never nags the same reader
    twice or follows them to the next article.
 
 It also stands down while `#inquiry` is on screen (the rail's rule — two
 identical forms are never both visible) and will not fire while the cookie
-banner is up, so a first-time visitor is never asked two things at once.
+banner is up, so a first-time visitor is never asked two things at once. That
+last one is easy to trip over when testing: the banner is a client island that
+mounts a beat after `domcontentloaded`, so a test that checks for it
+immediately finds nothing, dismisses nothing, and then reports that the bar is
+broken. Wait for the banner, accept, wait for it to detach.
 
 **It renders nothing on the server.** No `aria-label="Free consultation"`, no
 `scroll-` field ids in the HTML — so it cannot affect indexed content or the
-near-duplicate scores, which matters because it repeats the page's own
-`inquiryTitle` and `inquiryLead`.
+near-duplicate scores, which matters because it repeats the page's own title
+and lead. Note that the string "Free consultation" *does* appear in server HTML
+as the inquiry band's eyebrow and the rail's vertical tab; grep for the
+attribute, not the words.
 
 `formId="scroll"`, and it must never claim `#inquiry` or `#inquiry-heading`.
-There is a 22-assertion Playwright suite covering the trigger, the mobile
-geometry, dismissal persistence across pages, Escape, the stand-down, absence on
-service pages, and that four form instances on one page produce no duplicate ids.
+There is a 19-assertion Playwright suite covering the trigger on a non-article
+page, the bar's height and bottom anchoring, both single-condition
+non-triggers, the cookie-banner hold, absence of the bar and presence of the
+rail at 1440 and 1990px, dismissal persistence across pages, Escape, the
+stand-down, both excluded routes, the empty server HTML, and exactly one bar on
+an article page.
 
 ## Mobile height: measure before assuming 2-up is shorter
 
@@ -1603,7 +1624,9 @@ touching any of them.
 by hand inside `<main>` on the 21 Service x Region pages and nowhere else — so
 ~70 pages silently never had it, and every new page shipped without it. The
 layout mount inverts that: every route has it, and the two exceptions are listed
-in one place with the reason beside them.
+in one place with the reason beside them. **The same mount also carries the
+mobile bottom bar**, because the rail is hidden below 1280px and the two are
+one affordance split by width — see "The mobile enquiry bar" above.
 
 - **`/contact`** — the page is the form.
 - **`/thank-you`** — a conversion target. GA4 fires `generate_lead` on mount, so

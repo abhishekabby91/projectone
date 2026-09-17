@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
-import ScrollInquiryPrompt from '@/components/scroll-inquiry-prompt';
 import ReadingProgress from '@/components/reading-progress';
 import Reveal from '@/components/reveal';
 import ShareButtons from '@/components/share-buttons';
@@ -120,7 +119,9 @@ export default function ArticleLayout({
       {/* Reads against the <article> box rather than the document, so "full"
           means the article is finished rather than the footer is on screen. */}
       <ReadingProgress />
-      <ScrollInquiryPrompt title={inquiryTitle} lead={inquiryLead} source={path} />
+      {/* The bottom bar is mounted once from app/layout.tsx now, so every
+          page has it rather than only these 19. Rendering it here too would
+          put two on an article. */}
 
       <InquirySection
         compact

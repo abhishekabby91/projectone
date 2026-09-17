@@ -2,44 +2,52 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
-import InquiryForm from '@/components/inquiry-form';
 import { openInquiry } from '@/components/inquiry-modal';
 
 /**
- * The engagement-triggered inquiry prompt on long-form content pages.
+ * The engagement-triggered enquiry bar, below `lg` only.
  *
- * This is the fourth instance of the form, after the band, the dialog and the
- * rail. It exists because a reader who gets two-thirds of the way down a 1,500
- * word guide is the most qualified visitor the site gets, and until now nothing
- * asked them for anything until the band at the very bottom — which they only
- * reach if they finish.
+ * It is mounted once for the whole site from `components/inquiry-rail-mount.tsx`
+ * — not per page — and it is the mobile and tablet half of one system: the
+ * right-edge rail is the persistent affordance at `lg` and up, this bar is the
+ * affordance below it, and the two are never on screen together. It exists
+ * because the rail is hidden under 1280px, so until 2026-09-16 a phone had
+ * nothing persistent at all; a reader two-thirds of the way down a 1,500-word
+ * guide is the most qualified visitor the site gets, and nothing asked them for
+ * anything until the band at the very bottom, which only a finisher reaches.
  *
- * **Why it is built the way it is, rather than as a plain popup.**
+ * **There is no desktop half, and it must not come back.** An earlier version
+ * also rendered the full form as a corner card at `lg` and up. Once the rail
+ * went sitewide that card overlapped it — measured at 1440px (card x1080-1416
+ * against the rail at x1400) and at 1990px — putting two identical forms on one
+ * screen.
  *
+ * **Why it is a bar rather than a popup, and why none of this is optional.**
  * Google treats interstitials that obscure content shortly after a visitor
  * arrives from search as a negative mobile signal. A naive "open a modal after
  * 5 seconds" would fire on arrival, cover the article, and put the ranking of
- * the very pages it sits on at risk. Three things prevent that here:
+ * the very pages it sits on at risk. Three things prevent that:
  *
  * 1. **Two conditions, both required.** `DWELL_MS` on the page *and*
- *    `SCROLL_TRIGGER` of the article scrolled. Neither alone fires it, so it
+ *    `SCROLL_TRIGGER` of the page scrolled. Neither alone fires it, so it
  *    cannot appear on arrival no matter how long someone idles or how fast they
  *    flick.
- * 2. **It never covers the article on mobile.** Below `lg` it is a slim bar
- *    pinned to the bottom edge — one line and a button that opens the existing
- *    dialog. The content behind it stays readable, which is the specific thing
- *    the interstitial guidance is about. The full form only ever renders as a
- *    corner card at `lg` and up, where there is room beside the text.
+ * 2. **It never covers the content.** A slim bar pinned to the bottom edge —
+ *    one line and a button that opens the existing dialog — measured at 58px on
+ *    a 390x844 viewport, under 7% of it. Do not make it show the form inline.
  * 3. **It is trivially dismissible** — close button, Escape, and the dismissal
- *    is remembered for `DISMISS_DAYS` so it never nags the same reader twice.
+ *    is remembered for `DISMISS_DAYS` so it never nags the same reader twice or
+ *    follows them to the next article.
  *
  * It also stands down entirely while the `#inquiry` band is on screen (the same
  * rule the rail follows — two identical forms are never visible at once) and
  * while the cookie banner is up, so a first-time visitor is never asked two
  * things at the same moment.
  *
- * Uses `formId="scroll"` so its field ids cannot collide with the band's, and it
- * must never claim `#inquiry` or `#inquiry-heading`.
+ * It renders nothing on the server, so it cannot touch indexed content or the
+ * near-duplicate scores. Its dialog uses `formId="scroll"` so its field ids
+ * cannot collide with the band's, and it must never claim `#inquiry` or
+ * `#inquiry-heading`.
  */
 
 const STORAGE_KEY = 'accounstone.inquiry-prompt';
@@ -83,7 +91,6 @@ export default function ScrollInquiryPrompt({
   const [open, setOpen] = useState(false);
   const [entered, setEntered] = useState(false);
   const [bandVisible, setBandVisible] = useState(false);
-  const panelRef = useRef<HTMLDivElement>(null);
   const firedRef = useRef(false);
 
   const dismiss = useCallback(() => {
@@ -156,72 +163,38 @@ export default function ScrollInquiryPrompt({
   if (!open || bandVisible) return null;
 
   return (
-    <>
-      {/* Mobile and tablet: a slim bar that never covers the article. */}
-      <div
-        role="complementary"
-        aria-label="Free consultation"
-        className={`fixed inset-x-0 bottom-0 z-[116] border-t border-border bg-white/95 px-4 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-sm transition-transform duration-300 ease-out motion-reduce:transition-none lg:hidden ${
-          entered ? 'translate-y-0' : 'translate-y-full'
-        }`}
-      >
-        <div className="flex items-center gap-3">
-          <p className="min-w-0 flex-1 text-xs leading-snug text-foreground">
-            <span className="font-semibold text-primary">Free consultation.</span>{' '}
-            Tell us what is falling behind.
-          </p>
-          <button
-            type="button"
-            onClick={() => {
-              remember();
-              setOpen(false);
-              openInquiry({ title, lead, source });
-            }}
-            className="shrink-0 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-white"
-          >
-            Talk to us
-          </button>
-          <button
-            type="button"
-            onClick={dismiss}
-            aria-label="Dismiss"
-            className="-mr-1 shrink-0 rounded-lg p-2 text-muted hover:text-primary"
-          >
-            <X className="h-4 w-4" aria-hidden="true" />
-          </button>
-        </div>
+    <div
+      role="complementary"
+      aria-label="Free consultation"
+      className={`fixed inset-x-0 bottom-0 z-[116] border-t border-border bg-white/95 px-4 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-sm transition-transform duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+        entered ? 'translate-y-0' : 'translate-y-full'
+      }`}
+    >
+      <div className="flex items-center gap-3">
+        <p className="min-w-0 flex-1 text-xs leading-snug text-foreground">
+          <span className="font-semibold text-primary">Free consultation.</span>{' '}
+          Tell us what is falling behind.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            remember();
+            setOpen(false);
+            openInquiry({ title, lead, source });
+          }}
+          className="shrink-0 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-white"
+        >
+          Talk to us
+        </button>
+        <button
+          type="button"
+          onClick={dismiss}
+          aria-label="Dismiss"
+          className="-mr-1 shrink-0 rounded-lg p-2 text-muted hover:text-primary"
+        >
+          <X className="h-4 w-4" aria-hidden="true" />
+        </button>
       </div>
-
-      {/* Desktop: the form itself, in the margin, article still readable. */}
-      <div
-        ref={panelRef}
-        role="complementary"
-        aria-label="Free consultation"
-        className={`fixed bottom-6 right-6 z-[116] hidden w-[21rem] transition-all duration-300 ease-out motion-reduce:transition-none lg:block ${
-          entered ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'
-        }`}
-      >
-        <div className="relative rounded-2xl border border-border bg-white p-5 shadow-2xl">
-          <button
-            type="button"
-            onClick={dismiss}
-            aria-label="Dismiss"
-            className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-lg text-muted transition-colors hover:bg-input hover:text-primary"
-          >
-            <X className="h-4 w-4" aria-hidden="true" />
-          </button>
-          <div className="space-y-1 pr-8">
-            <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent">
-              Free consultation
-            </span>
-            <h2 className="font-serif text-base font-bold leading-snug text-primary">{title}</h2>
-          </div>
-          <p className="mt-1.5 text-xs leading-relaxed text-muted">{lead}</p>
-          <div className="mt-4">
-            <InquiryForm source={source} formId="scroll" size="compact" minimal />
-          </div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
