@@ -20,18 +20,18 @@ export const metadata: Metadata = generateMetadata({
   // Exact strings, set deliberately. The title intentionally carries no
   // "| Accounstone" suffix - the brand name is Accounstone, which is a
   // separate thing from the homepage's SEO title.
-  title: 'Accounting, Bookkeeping, Tax & Payroll Outsourcing Services',
+  title: 'Accounting Outsourcing for US, UK & Australia',
   description:
-    'Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and accounting practices. Expand your firm’s capacity with Accounstone.',
+    'Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses across the US, UK, and Australia. Expand your firm’s capacity with Accounstone.',
   path: '/',
   absoluteTitle: true,
   // A share card and a SERP result are read in different places. The page
   // title is written to a 46-character budget so Google does not truncate it;
   // a link preview in WhatsApp, Slack or LinkedIn has room for the brand name
   // and reads better with it. Owner's wording, 2026-09-16.
-  ogTitle: 'Accounstone | Accounting, Bookkeeping & Tax',
+  ogTitle: 'Accounstone | Accounting Outsourcing for US, UK & Australia',
   ogDescription:
-    'Professional accounting, bookkeeping and tax outsourcing support for growing businesses and accounting practices.',
+    'Professional accounting, bookkeeping and tax outsourcing support for growing businesses and accounting practices across the US, UK, and Australia.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax',
 });
 
