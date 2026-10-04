@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **97**
+- Files/pages scanned: **100**
 - High-priority findings: **7**
 - Medium-priority findings: **7**
 - Low-priority findings: **8**
@@ -32,8 +32,11 @@
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 509 | 1 | 9 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 634 | 1 | 12 | 0 | 0 |
+| app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
+| app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
+| app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 966 | 1 | 3 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1758 | 1 | 8 | 0 | 0 |
 | app/cookie-policy/page.tsx | 90/100 | 1015 | 1 | 5 | 0 | 0 |
