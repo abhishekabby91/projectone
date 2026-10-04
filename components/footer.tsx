@@ -39,10 +39,6 @@ export default function Footer() {
           { name: 'Back Office Support', href: '/solutions/back-office-support' },
           { name: 'All Solutions', href: '/solutions' },
         ]},
-        { title: 'Markets', links: [
-          ...regions.map((r) => ({ name: r.name, href: `/markets/${r.slug}` })),
-          { name: 'All Markets', href: '/markets' },
-        ]},
       ],
     },
     {
