@@ -12,6 +12,11 @@ jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Submit changed URLs to IndexNow
         env:
           INDEXNOW_KEY: e6183ad7c7794fe1a98a2b89634c01c9
