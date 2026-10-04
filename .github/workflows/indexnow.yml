@@ -1,0 +1,90 @@
+name: IndexNow notification
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit changed URLs to IndexNow
+        env:
+          INDEXNOW_KEY: e6183ad7c7794fe1a98a2b89634c01c9
+          SITE_URL: https://www.accounstone.com
+        run: |
+          set -euo pipefail
+
+          urls=()
+          add_url() {
+            local url="$1"
+            for existing in "${urls[@]:-}"; do
+              [ "$existing" = "$url" ] && return
+            done
+            urls+=("$url")
+          }
+
+          # Always notify the site's primary entry points after a production deployment.
+          add_url "$SITE_URL/"
+          add_url "$SITE_URL/blog"
+          add_url "$SITE_URL/resources"
+          add_url "$SITE_URL/sitemap.xml"
+
+          # Notify directly mapped app/page.tsx routes changed in this push.
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+
+          if [ "$before" != "0000000000000000000000000000000000000000" ]; then
+            changed="$(git diff --name-only "$before" "$after" -- 'app/**/page.tsx' || true)"
+            while IFS= read -r file; do
+              [ -z "$file" ] && continue
+              route="${file#app}"
+              route="${route%/page.tsx}"
+              [ -z "$route" ] && route="/"
+              case "$route" in
+                *'['*|*']'*|*'('*) continue ;;
+              esac
+              add_url "$SITE_URL$route"
+            done <<< "$changed"
+          fi
+
+          # IndexNow accepts up to 10,000 URLs per request.
+          python - <<'PY'
+          import json, os, urllib.request
+
+          urls = []
+          # Re-read the shell array through a small file written below.
+          PY
+
+          printf '%s\n' "${urls[@]}" > /tmp/indexnow-urls.txt
+
+          python - <<'PY'
+          import json, os, urllib.request
+
+          key = os.environ["INDEXNOW_KEY"]
+          host = "www.accounstone.com"
+
+          with open("/tmp/indexnow-urls.txt", encoding="utf-8") as f:
+              urls = [line.strip() for line in f if line.strip()]
+
+          payload = {
+              "host": host,
+              "key": key,
+              "urlList": urls,
+          }
+
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+
+          with urllib.request.urlopen(req, timeout=30) as response:
+              print("IndexNow response:", response.status)
+              print(response.read().decode("utf-8", errors="replace"))
+          PY
