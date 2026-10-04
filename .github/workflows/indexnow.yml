@@ -22,8 +22,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          KEY="${{ secrets.INDEXNOW_KEY }}"
-          if [ -z "$KEY" ]; then echo "INDEXNOW_KEY secret is not configured; skipping."; exit 0; fi
+          KEY="e6183ad7c7794fe1a98a2b89634c01c9"
           python - <<'PY'
           import os, urllib.request, xml.etree.ElementTree as ET, json
           key=os.environ['INDEXNOW_KEY']
@@ -36,4 +35,4 @@ jobs:
           with urllib.request.urlopen(req,timeout=30) as r: print(f'IndexNow response: HTTP {r.status}')
           PY
         env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          INDEXNOW_KEY: e6183ad7c7794fe1a98a2b89634c01c9
