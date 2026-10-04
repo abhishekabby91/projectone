@@ -8,7 +8,7 @@ import InquirySection from '@/components/inquiry-section';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting & Bookkeeping Knowledge Base',
   description:
-    'Practical guides on outsourced bookkeeping, payables, payroll, tax preparation and audit support for firms in the US, UK and Australia.',
+    'Practical guides on bookkeeping, tax, real estate accounting, property management, QuickBooks, Yardi and outsourced accounting workflows for firms in the US, UK and Australia.',
   path: '/blog',
 });
 
@@ -18,6 +18,30 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  {
+    href: '/blog/yardi-accounting-workflow',
+    title: 'Yardi Accounting Workflow: What Property Managers Actually Need to Get Right',
+    description:
+      'A practical walkthrough of rent posting, AP, AR, bank reconciliations, month-end close and owner reporting in a Yardi-managed property portfolio.',
+    tag: 'Yardi Accounting',
+    readTime: '9 min read',
+  },
+  {
+    href: '/blog/real-estate-accounting-month-end-close',
+    title: 'Real Estate Accounting Month-End Close: A Practical Checklist',
+    description:
+      'The recurring checks behind a cleaner property-accounting close: cash, tenant receivables, AP, accruals, property coding and owner reporting.',
+    tag: 'Real Estate Accounting',
+    readTime: '8 min read',
+  },
+  {
+    href: '/blog/quickbooks-month-end-close-checklist',
+    title: 'QuickBooks Month-End Close Checklist: What to Review Before You Call It Closed',
+    description:
+      'A practical QuickBooks Online review sequence covering reconciliations, AR, AP, adjustments, financial statements and closed-period controls.',
+    tag: 'QuickBooks',
+    readTime: '8 min read',
+  },
   {
     href: '/blog/outsourced-bookkeeping-guide',
     title: 'Outsourced Bookkeeping: What to Expect, Software Workflows, and Red Flags to Watch For',
