@@ -52,6 +52,24 @@ export default function QuickBooksPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect QuickBooks to the accounting work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/bookkeeping/united-states" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">U.S. Bookkeeping</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/resources/guides/quickbooks-vs-xero-comparison" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">QuickBooks vs Xero</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-white text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
 
 
+      {/* Industry context: useful for readers who arrive through the platform name. */}
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-4"><>
+            <span className="text-sm font-semibold tracking-wide uppercase text-accent">Industry context</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">QuickBooks Accounting for Different Industries</h2>
+            <p className="text-lg text-muted leading-8 max-w-3xl">
+              The same software can support very different accounting routines. A property owner needs property and entity tracking; a property manager needs tenant ledgers, deposits and owner reporting; a CPA firm may be managing books as part of a larger client workflow. The accounting structure around the file matters as much as the transactions going into it.
+            </p>
+          </></Reveal>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href="/industries/real-estate" className="px-4 py-2 rounded-lg bg-input border border-border text-primary font-medium hover:border-primary/50 transition-colors">QuickBooks for real estate</Link>
+            <Link href="/industries/property-management" className="px-4 py-2 rounded-lg bg-input border border-border text-primary font-medium hover:border-primary/50 transition-colors">QuickBooks for property management</Link>
+            <Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input border border-border text-primary font-medium hover:border-primary/50 transition-colors">QuickBooks for CPA firms</Link>
+          </div>
+        </div>
+      </section>
+
       <PlatformDepthSection platform={platformDepth.quickbooks} />
 
       <FAQSection subtitle="QuickBooks FAQs" items={faqs} columns={2} />

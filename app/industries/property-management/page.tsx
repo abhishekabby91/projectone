@@ -349,6 +349,33 @@ export default function PropertyManagementPage() {
         lead="Nothing transfers on the first call and nothing moves in bulk. A single property runs first, in your system and your formats, so both sides can judge the output against something real."
       />
 
+      {/* Industry × software context without creating a thin keyword page. */}
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-4"><>
+            <Eyebrow>Software in the workflow</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+              Property Management Accounting Is More Than Posting Rent
+            </h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              The platform matters because the accounting structure lives inside it. Whether the portfolio runs in Yardi, QuickBooks, Xero or another system, the recurring work still has to connect tenant ledgers, deposits, property expenses, owner reporting and the month-end reconciliation.
+            </p>
+          </></Reveal>
+          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {[
+              { name: 'Yardi accounting', href: '/technology/yardi' },
+              { name: 'QuickBooks accounting', href: '/technology/quickbooks' },
+              { name: 'Xero accounting', href: '/technology/xero' },
+              { name: 'Real estate accounting', href: '/industries/real-estate' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="rounded-xl border border-border bg-white p-4 text-sm font-semibold text-primary hover:border-primary/50 transition-colors">
+                {item.name} <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Technology. */}
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">

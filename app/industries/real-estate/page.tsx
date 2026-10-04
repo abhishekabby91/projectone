@@ -355,6 +355,33 @@ export default function RealEstateIndustryPage() {
         lead="Nothing transfers on the first call, and nothing moves in bulk. A single property, building or association runs first so both sides can judge the output against something real."
       />
 
+      {/* Search-intent bridge: connects the industry page to the software and workflow questions owners actually research. */}
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-4"><>
+            <Eyebrow>Common accounting workflows</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+              The Accounting Work Changes With the Property
+            </h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              A small rental portfolio, a commercial building and a development project do not create the same accounting routine. The useful question is what has to be visible at month-end: property-level income and expense, entity balances, lender activity, tenant receivables, capital work or a clean trail into the tax file.
+            </p>
+          </></Reveal>
+          <div className="mt-7 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { title: 'Property and portfolio books', body: 'Keep each property and legal entity readable while still producing a portfolio-level view for management and ownership.' },
+              { title: 'Lender and investor reporting', body: 'Prepare reconciled schedules and supporting detail so a lender, partner or investor can follow the movement without rebuilding the ledger.' },
+              { title: 'Software and close', body: 'Work inside the accounting platform already in use, with reconciliations, coding, AP/AR and month-end tied back to the reporting structure.' },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl border border-border bg-input p-5 sm:p-6">
+                <h3 className="font-serif text-lg font-bold text-primary">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-muted">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Technology. Only what we actually work in, and an explicit statement
           that we do not implement or configure it. */}
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
