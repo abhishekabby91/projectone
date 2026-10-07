@@ -19,99 +19,62 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const articles = [
   {
-    href: '/blog/hoa-accounting-month-end-checklist',
-    title: 'HOA Accounting Month-End Checklist: What Should Be Reviewed?',
-    description: 'A practical monthly close checklist covering assessments, bank reconciliations, payables, reserves, delinquency and board reporting.',
+    href: '/blog/hoa-chart-of-accounts',
+    title: 'HOA Chart of Accounts: How Should It Be Set Up?',
+    description: 'A practical guide to structuring accounts for assessments, operating expenses, reserves, receivables, payables and board reporting.',
     tag: 'HOA Accounting',
     readTime: '8 min read',
   },
   {
-    href: '/blog/hoa-financial-statements-board-review',
-    title: 'HOA Financial Statements: What Should Board Members Review?',
-    description: 'A plain-English guide to the balance sheet, income statement, budget-to-actual, receivables and reserve activity.',
-    tag: 'HOA Accounting',
-    readTime: '8 min read',
-  },
-  {
-    href: '/blog/hoa-assessment-accounting',
-    title: 'HOA Assessment Accounting: How Homeowner Ledgers Should Work',
-    description: 'How assessment charges, homeowner payments, credits, unapplied cash and delinquency reporting fit together.',
+    href: '/blog/hoa-bookkeeping-vs-accounting',
+    title: 'HOA Bookkeeping vs. HOA Accounting: What’s the Difference?',
+    description: 'A clear explanation of recurring bookkeeping, reconciliation, review and financial reporting for associations.',
     tag: 'HOA Accounting',
     readTime: '7 min read',
   },
   {
-    href: '/blog/yardi-accounting-workflow',
-    title: 'Yardi Accounting Workflow: What Property Managers Actually Need to Get Right',
-    description:
-      'A practical walkthrough of rent posting, AP, AR, bank reconciliations, month-end close and owner reporting in a Yardi-managed property portfolio.',
-    tag: 'Yardi Accounting',
-    readTime: '9 min read',
+    href: '/blog/hoa-accounting-mistakes',
+    title: 'Common HOA Accounting Mistakes and How to Avoid Them',
+    description: 'Common problems involving bank reconciliations, homeowner balances, reserves, payables and monthly reporting.',
+    tag: 'HOA Accounting',
+    readTime: '7 min read',
   },
   {
-    href: '/blog/real-estate-accounting-month-end-close',
-    title: 'Real Estate Accounting Month-End Close: A Practical Checklist',
-    description:
-      'The recurring checks behind a cleaner property-accounting close: cash, tenant receivables, AP, accruals, property coding and owner reporting.',
-    tag: 'Real Estate Accounting',
+    href: '/blog/hoa-accounting-controls',
+    title: 'HOA Accounting Controls Every Board Should Have',
+    description: 'Practical controls for cash, assessments, vendor payments, reserves, system access and monthly review.',
+    tag: 'HOA Accounting',
+    readTime: '7 min read',
+  },
+  {
+    href: '/blog/hoa-reserve-accounting',
+    title: 'HOA Reserve Accounting: What Should Boards Track?',
+    description: 'A practical guide to reserve contributions, transfers, reserve-funded expenses, reconciliations and reporting.',
+    tag: 'HOA Accounting',
     readTime: '8 min read',
   },
   {
-    href: '/blog/quickbooks-month-end-close-checklist',
-    title: 'QuickBooks Month-End Close Checklist: What to Review Before You Call It Closed',
-    description:
-      'A practical QuickBooks Online review sequence covering reconciliations, AR, AP, adjustments, financial statements and closed-period controls.',
-    tag: 'QuickBooks',
+    href: '/blog/hoa-operating-vs-reserve-funds',
+    title: 'HOA Operating Funds vs. Reserve Funds: What’s the Difference?',
+    description: 'Understand how operating and reserve activity differs and how the distinction should appear in monthly reporting.',
+    tag: 'HOA Accounting',
+    readTime: '7 min read',
+  },
+  {
+    href: '/blog/hoa-bank-reconciliation',
+    title: 'HOA Bank Reconciliation: A Practical Monthly Process',
+    description: 'A step-by-step HOA reconciliation process for operating and reserve accounts, outstanding items and transfers.',
+    tag: 'HOA Accounting',
     readTime: '8 min read',
   },
   {
-    href: '/blog/outsourced-bookkeeping-guide',
-    title: 'Outsourced Bookkeeping: What to Expect, Software Workflows, and Red Flags to Watch For',
-    description:
-      "What outsourced bookkeeping looks like day to day in QuickBooks and Xero, and the warning signs it isn't working. What Reddit gets right (and wrong) about offshore bookkeeping.",
-    tag: 'Bookkeeping',
-    readTime: '12 min read',
+    href: '/blog/hoa-delinquency-accounting',
+    title: 'HOA Delinquency Accounting: How to Track Past-Due Assessments',
+    description: 'How accurate homeowner ledgers, payment application, credits and receivables reconciliation support better delinquency reporting.',
+    tag: 'HOA Accounting',
+    readTime: '8 min read',
   },
-  {
-    href: '/blog/accounts-payable-outsourcing',
-    title: 'Accounts Payable Outsourcing: Fraud Controls, Software Workflows, and Real Costs',
-    description:
-      'The fraud controls every outsourced AP setup needs, software workflows (NetSuite, QuickBooks, Xero), and what businesses in the US, UK, and Australia actually pay.',
-    tag: 'Accounts Payable',
-    readTime: '10 min read',
-  },
-  {
-    href: '/blog/accounts-receivable-management',
-    title: 'Outsourcing Accounts Receivable: A Practical Guide for Business Owners',
-    description:
-      'How AR outsourcing works, what gets collected faster (and why), invoicing software considerations, and real-world questions from small business owners and CPA firms.',
-    tag: 'Accounts Receivable',
-    readTime: '10 min read',
-  },
-  {
-    href: '/blog/outsourced-payroll-services',
-    title: 'Outsourced Payroll: Costs, Bank-Access Red Flags, and What to Watch Out For',
-    description:
-      'What outsourced payroll costs by employee count in the US, UK, and Australia, the bank-access line that should never move, and what Reddit payroll threads get wrong.',
-    tag: 'Payroll',
-    readTime: '11 min read',
-  },
-  {
-    href: '/blog/tax-preparation-outsourcing',
-    title: 'Outsourcing Tax Return Preparation: What CPA Firms and Businesses Need to Know',
-    description:
-      'How CPA firms use offshore tax preparation support, what can be prepared vs. what requires a licensed CPA or EA, Drake Tax and CCH Axcess workflow specifics, and season-capacity planning.',
-    tag: 'Tax Preparation',
-    readTime: '11 min read',
-  },
-  {
-    href: '/blog/audit-support-services',
-    title: 'Audit Support Outsourcing: What Preparation Work Can Be Delegated (and What Cannot)',
-    description:
-      'Working papers, evidence organization, schedule preparation — what audit support firms actually outsource. UK FRC, US GAAS, and Australian AUASB requirements explained.',
-    tag: 'Audit Support',
-    readTime: '10 min read',
-  },
-];
+
 
 export default function BlogPage() {
   return (
