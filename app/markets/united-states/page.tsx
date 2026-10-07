@@ -16,9 +16,9 @@ import { serviceRegions } from '@/lib/data';
 const PATH = '/markets/united-states';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Offshore Accounting Support for U.S. CPA Firms',
+  title: 'U.S. Accounting, Bookkeeping & Tax Outsourcing',
   description:
-    'Your firm’s offshore preparation team — bookkeeping, close support, workpapers and return preparation, built for your review and your signature.',
+    'Accounting, bookkeeping and tax outsourcing support for U.S. accounting firms and businesses, including reconciliations, close, AP, AR, payroll and tax preparation.',
   path: PATH,
 });
 
@@ -61,6 +61,19 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: 'Markets', url: `${baseUrl}/markets` },
   { name: 'United States', url: `${baseUrl}${PATH}` },
 ]);
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${baseUrl}${PATH}#webpage`,
+  name: 'U.S. Accounting, Bookkeeping & Tax Outsourcing',
+  description: 'Accounting, bookkeeping and tax outsourcing support for U.S. accounting firms and businesses.',
+  url: `${baseUrl}${PATH}`,
+  isPartOf: { '@id': `${baseUrl}/#website` },
+  about: { '@id': `${baseUrl}/#organization` },
+  areaServed: { '@type': 'Country', name: 'United States' },
+  inLanguage: 'en-US',
+};
 
 const packages = [
   {
@@ -178,6 +191,7 @@ export default function USMarketPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
 
       <PremiumHero
         region="united-states"
@@ -207,9 +221,7 @@ export default function USMarketPage() {
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              Accounstone takes the preparation layer off that curve, so your licensed people spend their hours on
-              review and client judgement rather than on posting and reconciling. We work from our delivery centre in
-              New Delhi as an extension of your firm — to your templates, your close calendar and your review points.
+              Accounstone takes recurring accounting work off that curve, so your team can spend more time on review, client work and higher-value accounting tasks rather than posting, reconciling and preparing routine schedules. For accounting firms, we work as an extension of the existing practice. For businesses, we fit into the accounting systems, approvals and reporting processes already in place.
             </p>
           </Reveal>
           </div>
@@ -223,16 +235,16 @@ export default function USMarketPage() {
         <div className="max-w-4xl mx-auto">
           <SectionHeading
             eyebrow="The boundary"
-            title="We Are Not a Second Firm. We Are Your Preparation Layer."
+            title="Outsourced Support That Fits Your Existing Team"
             lead="This distinction is what decides whether an arrangement like this is safe for a licensed firm to enter."
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              We do not hold your client relationships, we do not sign, and we do not file. Your firm remains the
-              client’s CPA in every sense that matters — professionally, contractually, and in the client’s mind. What
-              moves is the preparation underneath it. We have built the whole operating model around that line: no
-              client-facing contact without your instruction, no credentials that would let us act in your name, and
-              every file handed back for your review rather than taken forward on our own judgement.
+              For accounting firms, we handle defined preparation and recurring accounting workflows while the firm keeps
+              the client relationship, professional judgement, review and filing responsibility. For businesses, we can
+              support the accounting work directly within the systems and approval structure already in use. The common
+              principle is simple: the outsourced team handles the agreed workflow; your team retains the decisions and
+              controls that belong with you.
             </p>
           </Reveal>
 
