@@ -24,7 +24,6 @@ const articles = [
   { href: '/blog/hoa-vendor-expense-tracking', title: 'How to Track HOA Vendor and Maintenance Expenses', description: 'How to organize vendor and maintenance expenses for clearer HOA monthly reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
   { href: '/blog/hoa-year-end-accounting', title: 'HOA Year-End Accounting: How to Prepare the Books for the CPA', description: 'A practical year-end process covering reconciliations, receivables, payables, reserves and CPA support.', tag: 'HOA Accounting', readTime: '8 min read' },
   { href: '/blog/hoa-year-end-checklist', title: 'HOA Year-End Accounting Checklist', description: 'A practical checklist for getting HOA cash, receivables, payables, reserves and supporting records ready for review.', tag: 'HOA Accounting', readTime: '6 min read' },
-port { Metadata } from 'next';
 import Link from 'next/link';
 import { generateMetadata, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import Reveal from '@/components/reveal';
