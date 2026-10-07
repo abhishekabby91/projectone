@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **100**
+- Files/pages scanned: **103**
 - High-priority findings: **7**
 - Medium-priority findings: **7**
 - Low-priority findings: **8**
@@ -30,9 +30,12 @@
 | app/blog/accounts-payable-outsourcing/page.tsx | 90/100 | 1426 | 1 | 6 | 0 | 0 |
 | app/blog/accounts-receivable-management/page.tsx | 90/100 | 585 | 1 | 4 | 0 | 0 |
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
+| app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 772 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 667 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 679 | 1 | 2 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 634 | 1 | 12 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 736 | 1 | 15 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
