@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     // Fallback only - every page sets its own title, and the homepage sets
     // its exact SEO title via absoluteTitle. Kept distinct from the homepage
     // title so the two are not the same string in two places.
-    default: "Accounstone — Outsourced Accounting, Bookkeeping, Tax & Payroll",
+    default: "Accounstone — Accounting, Bookkeeping & Tax Outsourcing",
     template: "%s | Accounstone",
   },
   description:
-    "Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses. Expand your accounting capacity with Accounstone.",
+    "Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Accounstone works within existing systems, processes and review structures.",
   authors: [{ name: "Accounstone" }],
   robots: {
     index: true,
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
     // Fallback only - every page sets its own og:title through
     // generateMetadata, the homepage included. Kept brand-led so it is not the
     // homepage SEO title duplicated in a second file.
-    title: "Accounstone — Outsourced Accounting, Bookkeeping, Tax & Payroll",
+    title: "Accounstone — Accounting, Bookkeeping & Tax Outsourcing",
     description:
-      "Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses. Expand your accounting capacity with Accounstone.",
+      "Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Accounstone works within existing systems, processes and review structures.",
     images: [
       {
         url: `${baseUrl}/og-image.jpg`,
