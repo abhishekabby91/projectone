@@ -9,7 +9,7 @@ import {
   generateBreadcrumbSchema,
   baseUrl,
 } from '@/lib/seo';
-import { ReactNode } from 'react';
+import { ReactNode, ReactElement, isValidElement } from 'react';
 
 interface ArticleLayoutProps {
   title: string;
@@ -36,6 +36,43 @@ interface ArticleLayoutProps {
   children: ReactNode;
 }
 
+type TocItem = { id: string; label: string; level: 2 | 3 };
+
+function slugifyHeading(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function getText(node: ReactNode): string {
+  if (typeof node === 'string' || typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(getText).join('');
+  if (isValidElement(node)) return getText(node.props.children);
+  return '';
+}
+
+function addHeadingIds(nodes: ReactNode, toc: TocItem[], usedIds: Set<string>): ReactNode {
+  if (Array.isArray(nodes)) return nodes.map((node) => addHeadingIds(node, toc, usedIds));
+  if (!isValidElement(nodes)) return nodes;
+
+  const element = nodes as ReactElement<{ children?: ReactNode; id?: string }>;
+  const tag = typeof element.type === 'string' ? element.type : '';
+  if (tag === 'h2' || tag === 'h3') {
+    const label = getText(element.props.children).trim();
+    if (label) {
+      const baseId = slugifyHeading(label) || `section-${toc.length + 1}`;
+      let id = baseId;
+      let suffix = 2;
+      while (usedIds.has(id)) id = `${baseId}-${suffix++}`;
+      usedIds.add(id);
+      toc.push({ id, label, level: tag === 'h2' ? 2 : 3 });
+      return { ...element, props: { ...element.props, id } };
+    }
+  }
+  if (element.props?.children) {
+    return { ...element, props: { ...element.props, children: addHeadingIds(element.props.children, toc, usedIds) } };
+  }
+  return element;
+}
+
 export default function ArticleLayout({
   title,
   category,
@@ -51,6 +88,8 @@ export default function ArticleLayout({
   const hubHref = isBlog ? '/blog' : `/resources/${section}`;
   const path = `${hubHref}/${slug}`;
   const sectionLabel = { guides: 'Guides', insights: 'Insights', blog: 'Blog' }[section];
+  const toc: TocItem[] = [];
+  const articleContent = addHeadingIds(children, toc, new Set());
 
   const articleSchema = generateArticleSchema({
     title,
@@ -103,8 +142,24 @@ export default function ArticleLayout({
 
       <article className="w-full py-7 md:py-10 px-6 md:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
+          {toc.length > 1 && (
+            <nav aria-label="Table of contents" className="mb-9 rounded-xl border border-border bg-input p-5 md:p-6">
+              <h2 className="text-base font-bold text-primary mb-3">On this page</h2>
+              <ol className="space-y-2 text-sm">
+                {toc.map((item) => (
+                  <li key={item.id} className={item.level === 3 ? 'pl-4' : ''}>
+                    <a href={`#${item.id}`} className="text-muted hover:text-primary transition-colors leading-6">{item.label}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+          <div className="mb-8 rounded-xl border border-border bg-input p-5 md:p-6">
+            <p className="text-xs font-bold uppercase tracking-wide text-accent mb-2">Quick answer</p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">{description}</p>
+          </div>
           <Reveal className="prose-content space-y-8">
-            <>{children}</>
+            <>{articleContent}</>
           </Reveal>
           <ShareButtons url={`${baseUrl}${path}`} title={title} />
         </div>
