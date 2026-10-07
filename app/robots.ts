@@ -24,7 +24,6 @@ export default function robots(): MetadataRoute.Robots {
     'CCBot',
   ];
 
-  const protectedRules = protectedPaths.map((path) => ({ disallow: path }));
 
   return {
     rules: [
