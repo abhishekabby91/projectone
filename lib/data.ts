@@ -125,8 +125,8 @@ export const trustBadges = [
 
 export const companyInfo = {
   name: 'Accounstone',
-  tagline: 'Outsourced Accounting | Tax | Audit | Bookkeeping',
-  description: 'Accounstone provides outsourced accounting, bookkeeping, tax preparation, payroll, audit support, and back-office services to accounting firms, practices and the businesses they support across the US, UK, and Australia. The focus is practical: defined workflows, clear handoffs, documented work, quality review, and communication that keeps the client team informed.',
+  tagline: 'Accounting, Bookkeeping & Tax Outsourcing',
+  description: 'Accounstone provides accounting, bookkeeping and tax outsourcing support to accounting firms and businesses. The focus is practical: defined workflows, clear handoffs, documented work, quality review, and communication that keeps the client team informed.',
   website: 'https://www.accounstone.com',
   contact: {
     email: 'partner@accounstone.com',
