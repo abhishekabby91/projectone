@@ -50,7 +50,17 @@ export function generateOrganizationSchema() {
     name: companyInfo.name, description: companyInfo.description, url: baseUrl,
     logo: { '@type': 'ImageObject', url: `${baseUrl}/accounstone-logo-horizontal.png` },
     sameAs: ['https://www.linkedin.com/company/accounstone/', 'https://www.facebook.com/profile.php?id=61591501869187', 'https://www.instagram.com/accounstone', 'https://www.youtube.com/@accounstone'],
-    contactPoint: { '@type': 'ContactPoint', contactType: 'Customer Service', email: companyInfo.contact.email, areaServed: ['US', 'GB', 'AU'], availableLanguage: ['English'] },
+    address: { '@type': 'PostalAddress', addressLocality: 'New Delhi', addressCountry: 'IN' },
+    contactPoint: { '@type': 'ContactPoint', contactType: 'Customer Service', email: companyInfo.contact.email, availableLanguage: ['English'] },
+    knowsAbout: [
+      'Accounting Outsourcing',
+      'Bookkeeping',
+      'Tax Preparation',
+      'Accounts Payable',
+      'Accounts Receivable',
+      'Payroll Processing',
+      'Accounting Operations',
+    ],
   };
 }
 
@@ -61,8 +71,10 @@ export function generateWebsiteSchema() {
 export function generateServiceSchema(service: { name: string; description: string; slug: string; areaServed?: string[]; basePath?: string }) {
   return {
     '@context': 'https://schema.org', '@type': 'Service', name: service.name, description: service.description,
-    provider: { '@type': 'Organization', name: companyInfo.name, url: baseUrl },
-    areaServed: (service.areaServed ?? ['US', 'GB', 'AU']).map((code) => ({ '@type': 'Country', name: code })),
+    provider: { '@type': 'Organization', '@id': `${baseUrl}/#organization`, name: companyInfo.name, url: baseUrl },
+    ...(service.areaServed?.length
+      ? { areaServed: service.areaServed.map((country) => ({ '@type': 'Country', name: country })) }
+      : {}),
     url: absoluteUrl(`${service.basePath ?? '/services/'}${service.slug}`),
   };
 }
