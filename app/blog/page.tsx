@@ -19,6 +19,27 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const articles = [
   {
+    href: '/blog/hoa-accounting-month-end-checklist',
+    title: 'HOA Accounting Month-End Checklist: What Should Be Reviewed?',
+    description: 'A practical monthly close checklist covering assessments, bank reconciliations, payables, reserves, delinquency and board reporting.',
+    tag: 'HOA Accounting',
+    readTime: '8 min read',
+  },
+  {
+    href: '/blog/hoa-financial-statements-board-review',
+    title: 'HOA Financial Statements: What Should Board Members Review?',
+    description: 'A plain-English guide to the balance sheet, income statement, budget-to-actual, receivables and reserve activity.',
+    tag: 'HOA Accounting',
+    readTime: '8 min read',
+  },
+  {
+    href: '/blog/hoa-assessment-accounting',
+    title: 'HOA Assessment Accounting: How Homeowner Ledgers Should Work',
+    description: 'How assessment charges, homeowner payments, credits, unapplied cash and delinquency reporting fit together.',
+    tag: 'HOA Accounting',
+    readTime: '7 min read',
+  },
+  {
     href: '/blog/yardi-accounting-workflow',
     title: 'Yardi Accounting Workflow: What Property Managers Actually Need to Get Right',
     description:
