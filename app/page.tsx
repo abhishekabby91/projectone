@@ -196,7 +196,7 @@ export default function HomePage() {
               ['Real Estate', '/industries/real-estate'],
               ['Property Management', '/industries/property-management'],
               ['HOA & Associations', '/industries/hoa-accounting'],
-              ['Construction', '/industries/construction'],
+              ['Accounting & CPA Firms', '/industries/cpa-firms'],
             ].map(([title, href], i) => (
               <Reveal key={title} delay={Math.min(i * 0.06, 0.18)}>
                 <Link
