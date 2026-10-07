@@ -18,6 +18,32 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  { href: '/blog/hoa-reserve-reconciliation', title: 'HOA Reserve Reconciliation: What Should Be Reviewed?', description: 'A practical process for reconciling reserve cash, contributions, transfers and reserve-funded spending.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-reserve-financial-reporting', title: 'HOA Reserve Financial Reporting: What Should Boards See?', description: 'What useful HOA reserve reports should show about contributions, spending, cash and projects.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-accounts-payable', title: 'HOA Accounts Payable: How Should Vendor Bills Be Reviewed?', description: 'A practical HOA AP process for invoice coding, approvals, duplicate checks and payments.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-vendor-expense-tracking', title: 'How to Track HOA Vendor and Maintenance Expenses', description: 'How to organize vendor and maintenance expenses for clearer HOA monthly reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-year-end-accounting', title: 'HOA Year-End Accounting: How to Prepare the Books for the CPA', description: 'A practical year-end process covering reconciliations, receivables, payables, reserves and CPA support.', tag: 'HOA Accounting', readTime: '8 min read' },
+  { href: '/blog/hoa-year-end-checklist', title: 'HOA Year-End Accounting Checklist', description: 'A practical checklist for getting HOA cash, receivables, payables, reserves and supporting records ready for review.', tag: 'HOA Accounting', readTime: '6 min read' },
+port { Metadata } from 'next';
+import Link from 'next/link';
+import { generateMetadata, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
+import Reveal from '@/components/reveal';
+import CTABanner from '@/components/cta-banner';
+import InquirySection from '@/components/inquiry-section';
+
+export const metadata: Metadata = generateMetadata({
+  title: 'Accounting & Bookkeeping Knowledge Base',
+  description:
+    'Practical guides on bookkeeping, tax, real estate accounting, property management, QuickBooks, Yardi and outsourced accounting workflows for firms in the US, UK and Australia.',
+  path: '/blog',
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Blog', url: `${baseUrl}/blog` },
+]);
+
+const articles = [
   {
     href: '/blog/hoa-chart-of-accounts',
     title: 'HOA Chart of Accounts: How Should It Be Set Up?',
