@@ -119,6 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-operating-vs-reserve-funds', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-delinquency-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-reserve-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-reserve-financial-reporting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-vendor-expense-tracking', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-year-end-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-year-end-checklist', priority: 0.75, changeFrequency: 'monthly' },
   ];
 
   const seen = new Set<string>();
