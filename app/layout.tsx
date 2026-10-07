@@ -83,9 +83,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     // Fallback only, as above.
-    title: "Accounstone — Outsourced Accounting, Bookkeeping, Tax & Payroll",
+    title: "Accounstone — Accounting, Bookkeeping & Tax Outsourcing",
     description:
-      "Outsourced accounting, bookkeeping, tax, payroll, and audit support for CPA firms and businesses. Expand your accounting capacity with Accounstone.",
+      "Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Accounstone works within existing systems, processes and review structures.",
     images: [`${baseUrl}/og-image.jpg`],
   },
 };
