@@ -111,6 +111,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/outsourced-payroll-services', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/tax-preparation-outsourcing', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/audit-support-services', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-accounting-mistakes', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-accounting-controls', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-reserve-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-operating-vs-reserve-funds', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-delinquency-accounting', priority: 0.75, changeFrequency: 'monthly' },
   ];
 
   const seen = new Set<string>();
