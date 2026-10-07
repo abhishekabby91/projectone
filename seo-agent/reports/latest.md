@@ -49,7 +49,7 @@
 | app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 350 | 1 | 4 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 770 | 1 | 17 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 708 | 1 | 18 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
