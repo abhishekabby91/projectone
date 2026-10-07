@@ -59,7 +59,7 @@
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
 | app/markets/united-states/california/page.tsx | 90/100 | 512 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/florida/page.tsx | 90/100 | 503 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/page.tsx | 90/100 | 1795 | 1 | 16 | 0 | 0 |
+| app/markets/united-states/page.tsx | 90/100 | 1844 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
