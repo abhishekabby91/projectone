@@ -10,6 +10,7 @@ import {
   baseUrl,
 } from '@/lib/seo';
 import { ReactNode, ReactElement, isValidElement } from 'react';
+import type { ReactElement as TypedReactElement } from 'react';
 
 interface ArticleLayoutProps {
   title: string;
@@ -45,7 +46,7 @@ function slugifyHeading(value: string) {
 function getText(node: ReactNode): string {
   if (typeof node === 'string' || typeof node === 'number') return String(node);
   if (Array.isArray(node)) return node.map(getText).join('');
-  if (isValidElement(node)) return getText(node.props.children);
+  if (isValidElement(node)) {\n    const props = (node as TypedReactElement<{ children?: ReactNode }>).props;\n    return getText(props.children);\n}
   return '';
 }
 
