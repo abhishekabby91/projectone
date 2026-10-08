@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Australian receivables and the BAS are the same problem seen twice. On a non-cash basis, GST on an invoice falls due whether or not the customer has paid; on a cash basis, an unapplied receipt is revenue you have not yet recognised. We run the recurring sales ledger inside Xero or MYOB so both the cash position and the reported position stay right.";
+const overview = "Australian receivables and the BAS are the same problem seen twice. On a non-cash basis, GST on an invoice falls due whether or not the customer has paid; on a cash basis, an unapplied receipt is revenue you have not yet recognised. The recurring sales ledger can run inside Xero or MYOB so both the cash position and the reported position stay right.";
 
 const auElements = [
   'AUD invoicing with GST applied correctly',
@@ -49,10 +49,10 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, yes — the AR team can send reminder emails in your company name from a shared or delegated inbox, on a schedule you define. Phone collection calls typically stay with your internal team unless specifically agreed.' },
+  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, yes — reminder emails can be sent in your company name from a shared or delegated inbox, on a schedule you define. Phone collection calls typically stay with your internal team unless specifically agreed.' },
   { question: 'How does GST work on our sales invoices?', answer: "Invoices are raised with GST applied according to your registration status and the nature of the supply. Judgement calls on unusual GST treatment — exports, GST-free supplies — stay with your accountant or BAS agent." },
   { question: 'What is DSO and does this actually reduce it?', answer: 'Days Sales Outstanding measures how long it takes to collect after invoicing. Consistent aging monitoring and follow-up typically reduces DSO by 5–15 days — the cash freed up is working capital the client already earned but had tied up in receivables.' },
-  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority, and any judgment call about the customer relationship. We handle the process — invoicing, application, follow-up, reconciliation — and flag exceptions for your decision.' },
+  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority, and any judgment call about the customer relationship. The process covers invoicing, application, follow-up and reconciliation, with exceptions flagged for review.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
