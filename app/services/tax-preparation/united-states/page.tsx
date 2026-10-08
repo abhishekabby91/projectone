@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'Busy season is rarely hard because one return is hard. It is hard because forty are open at once, half are waiting on a client who has not replied, and the number of people who can sign is fixed. We prepare returns and the workpapers behind them so the constraint moves off preparation and back onto review — which is the only part that actually requires your licence.';
+const overview = 'Busy season becomes difficult when many returns are open at once, source documents are incomplete and review capacity is fixed. Return preparation and supporting workpapers can shift preparation capacity away from the review bottleneck.';
 
 const preparation = [
   'Return preparation assistance and supporting schedules',
@@ -42,14 +42,14 @@ const retained = [
 
 const faqs = [
   { question: 'Can you support tax filing workflows?', answer: 'Yes. Filing support can be included where it fits the engagement, jurisdiction and established client workflow.' },
-  { question: 'What if our review team is the bottleneck?', answer: 'That is often where additional preparation capacity can help. The goal is to move organized, complete work into review so the reviewer is dealing with tax questions and exceptions rather than basic missing information.' },
-  { question: 'Can you help when client documents are incomplete?', answer: 'We can organize the documents received, maintain missing-information lists and prepare the file for follow-up. Your firm still decides what information is required and how the client is contacted.' },
+  { question: 'What if our review team is the bottleneck?', answer: 'Additional preparation capacity can move organized, complete work into review so the reviewer can focus on tax questions and exceptions rather than basic missing information.' },
+  { question: 'Can you help when client documents are incomplete?', answer: 'Received documents can be organized, missing-information lists maintained and files prepared for follow-up. The firm retains decisions about required information and client contact.' },
   { question: 'What information should be ready before preparation starts?', answer: 'The exact list depends on the return. Prior-year information, organized source documents, bookkeeping records or trial balances and known client questions generally make the preparation handoff more efficient.' },
-  { question: 'Can you work from our existing tax-season checklist?', answer: 'Yes. Your checklist, naming conventions, review notes and escalation rules are useful because the best workflow is usually the one your reviewers already understand.' },
+  { question: 'Can you work from our existing tax-season checklist?', answer: 'Yes. Existing checklists, naming conventions, review notes and escalation rules can be used so the workflow remains familiar to reviewers.' },
   { question: 'Is outsourcing tax return preparation allowed for a U.S. CPA firm?', answer: 'Yes. Preparation and related filing workflows can be structured as part of an outsourcing engagement, with the required consents, authorizations and professional responsibilities addressed before client information is shared.' },
   { question: 'Why do firms outsource preparation rather than hire?', answer: 'Usually because the workload is seasonal and a hire is not. A firm that staffs for February carries that cost in July. The trade-off runs the other way too: an in-house preparer learns your conventions once and keeps them, where an outside team has to be taught them and held to them. Which way that balance falls depends on how much of your volume is genuinely seasonal.' },
   { question: 'How does the first season usually run?', answer: 'Narrower than firms expect. A defined slice — one return type, one partner\u2019s client list, or the returns that were late last year — gives both sides something to measure before the volume arrives. Scaling a workflow that already works is a smaller problem than fixing one in March.' },
-  { question: 'What turnaround should we plan for?', answer: 'It depends on return complexity, how complete the source documents are and how quickly review questions come back. Rather than quote a number that ignores those, we would rather agree a turnaround against a sample of your actual returns during onboarding, and tell you where it is likely to slip.' },
+  { question: 'What turnaround should we plan for?', answer: 'Turnaround depends on return complexity, source-document completeness and review response time. A practical turnaround can be agreed against a sample of actual returns during onboarding.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
@@ -151,7 +151,7 @@ export default function TaxPrepUSPage() {
               preparation still has exactly as many people who can sign. If review was already the
               bottleneck, returns arriving faster just makes the queue longer &mdash; unless they arrive in
               a state your reviewer can work with rather than rebuild. Which is why the useful question in a
-              first conversation is not how many returns we can take, but what your reviewers currently
+              first conversation is not how many returns can be taken, but what the reviewers currently
               spend their time fixing.
             </p>
           </></Reveal>
@@ -183,7 +183,7 @@ export default function TaxPrepUSPage() {
                 <p className="text-sm sm:text-base leading-relaxed text-foreground">
                   The consent wording, and the decision to use it, belongs to your firm and your own
                   counsel. It is your obligation under §7216, not something a preparation provider can hold
-                  for you, and we would rather say that plainly than imply otherwise. What we can do is work
+                  for the firm, and the practical approach is to work
                   to whatever process your firm puts in place &mdash; masked identifiers, a defined client
                   list, the folder structure your engagement letters already describe.
                 </p>
@@ -209,12 +209,12 @@ export default function TaxPrepUSPage() {
               does not, rather than a guess.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              The tax software we work in is <Link href="/technology/drake-tax" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">Drake Tax</Link>{' '}
+              Supported tax software includes <Link href="/technology/drake-tax" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">Drake Tax</Link>{' '}
               and <Link href="/technology/cch" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">CCH Axcess</Link>. If your
-              firm runs a different package, say so in the first conversation. Whether we can work in it
+              a firm runs a different package, the software can be reviewed at the start of the engagement. Whether it can be supported
               depends on the licence seats and the access your firm is able to provide, and that is much
-              better established in November than in February. We work inside a setup your firm already
-              runs; we do not implement or configure tax software.
+              better established in November than in February. The work runs inside the setup the firm already
+              runs; tax software implementation and configuration are outside the service.
             </p>
           </></Reveal>
         </div>
