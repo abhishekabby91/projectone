@@ -4,7 +4,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Month-End Checklist',
-  description: 'A practical HOA accounting month-end checklist covering assessments, bank reconciliations, payables, reserves, delinquency and board reporting.',
+  description: 'A practical HOA accounting month-end checklist covering assessments, bank reconciliations, payables, reserves, software workflows, state considerations and board reporting.',
   path: '/blog/hoa-accounting-month-end-checklist',
 });
 
@@ -46,18 +46,29 @@ export default function HoaMonthEndChecklist() {
 
       <h2>4. Keep Operating and Reserve Activity Clear</h2>
       <p>Operating cash and reserve funds serve different purposes. The financial package should make it possible for a board member to understand which activity belongs to normal operations and which relates to long-term capital or reserve spending.</p>
-      <p>If reserve transfers are being used to cover operating shortages, that should be visible rather than hidden inside a combined cash balance.</p>
+      <p>If reserve transfers are being used to cover operating shortages, that should be visible rather than hidden inside a combined cash balance. The <a href="/blog/hoa-operating-vs-reserve-funds">difference between operating and reserve funds</a> should remain clear throughout the close.</p>
 
       <h2>5. Review Recurring Expenses and Adjustments</h2>
       <p>Recurring insurance, management fees, utilities, maintenance and other regular expenses should be reviewed for missing or unusual entries. Accruals, prepaid expenses and other month-end adjustments should be supported by documentation.</p>
+      <p>For maintenance-heavy associations, the <a href="/blog/hoa-maintenance-expense-accounting">way maintenance expenses are tracked</a> can affect both monthly reporting and later budget analysis.</p>
 
       <h2>6. Check the Financial Statements</h2>
       <p>At minimum, the board package commonly includes a balance sheet and income statement, with supporting reports such as aged receivables, payables and budget-to-actual information where applicable.</p>
-      <p>Before sending the reports, compare the current month with the budget and prior periods. A large variance is not automatically an error, but it should be explainable.</p>
+      <p>Before sending the reports, compare the current month with the budget and prior periods. A large variance is not automatically an error, but it should be explainable. See our guides to the <a href="/blog/hoa-balance-sheet-explained">HOA balance sheet</a> and <a href="/blog/hoa-income-statement-explained">HOA income statement</a> for a closer look at those reports.</p>
 
       <h2>7. Prepare an Open-Items List</h2>
       <p>Not every accounting question can be resolved before the close. A better practice is to document what is missing, who needs to provide it and what effect it could have on the reports.</p>
       <p>This gives the treasurer or manager a short list to work through instead of forcing them to discover unanswered questions inside the financial statements.</p>
+
+      <h2>How Does the Software Affect an HOA Month-End Close?</h2>
+      <p>The accounting steps are broadly similar, but the review can look different depending on the system used by the association or community management company. A QuickBooks Online workflow may rely heavily on the general ledger, bank feeds and account reconciliation, while a community-management platform may connect homeowner balances, assessments, payments, payables and reporting in a different way.</p>
+      <p>For example, an association using <a href="/blog/hoa-accounting-quickbooks">QuickBooks for HOA accounting</a> should pay particular attention to the chart of accounts, fund or class structure, bank reconciliation and supporting homeowner records. With <a href="/blog/hoa-quickbooks-online">QuickBooks Online</a>, the same underlying accounting questions still need to be answered even when more activity is captured through connected bank feeds.</p>
+      <p>For associations using community-management systems, the review should follow the actual configuration rather than assuming that every installation works the same way. We cover <a href="/blog/hoa-accounting-appfolio">AppFolio HOA accounting</a>, <a href="/blog/hoa-accounting-yardi">Yardi HOA accounting</a> and <a href="/blog/hoa-accounting-eunify">eUnify HOA accounting</a> separately.</p>
+
+      <h2>Does the HOA Month-End Process Change by State?</h2>
+      <p>The basic accounting workflow is similar across U.S. HOAs, but reporting, recordkeeping and governance requirements can vary by state and by the association's governing documents. A California association may have different documentation considerations from an association in Texas, Florida or Nevada.</p>
+      <p>That does not mean the accounting checklist needs to be completely rewritten for every state. It means state-specific requirements should be considered alongside the accounting workflow when they affect financial records, reporting or association procedures.</p>
+      <p>For state-specific context, see our coverage for <a href="/markets/united-states/california">California</a>, <a href="/markets/united-states/texas">Texas</a> and <a href="/markets/united-states/florida">Florida</a>. State-specific HOA pages should be used where there is a genuine reason to discuss the local requirements rather than simply repeating the same accounting content with a different state name.</p>
 
       <h2>Simple HOA Month-End Checklist</h2>
       <table>
@@ -69,6 +80,7 @@ export default function HoaMonthEndChecklist() {
           <tr><td>Payables</td><td>Invoices, coding and outstanding balances reviewed</td></tr>
           <tr><td>Reserves</td><td>Transfers and reserve spending identified</td></tr>
           <tr><td>Expenses</td><td>Recurring and unusual items investigated</td></tr>
+          <tr><td>Software</td><td>System-specific records, integrations and reports checked</td></tr>
           <tr><td>Reports</td><td>Balance sheet, income statement and supporting schedules reviewed</td></tr>
           <tr><td>Open items</td><td>Missing information and unresolved questions documented</td></tr>
         </tbody>
@@ -79,7 +91,7 @@ export default function HoaMonthEndChecklist() {
       <p>The objective should not be to hand every financial decision to an outside team. A well-defined arrangement separates preparation and recurring accounting from approval, governance and board decisions.</p>
 
       <h2>Related HOA Accounting Resources</h2>
-      <p>For the broader workflow, see our <a href="/industries/hoa-accounting">HOA and community association accounting</a> page. If the association also operates rental properties, our <a href="/industries/property-management">property management accounting</a> coverage addresses the tenant and owner side of that work.</p>
+      <p>For the broader workflow, see our <a href="/industries/hoa-accounting">HOA and community association accounting</a> page. You can also review the <a href="/blog/hoa-accounting-workflow">HOA accounting workflow</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a>, <a href="/blog/hoa-assessment-accounting">HOA assessment accounting</a> and <a href="/blog/hoa-board-financial-package">HOA board financial package</a> guides.</p>
     </ArticleLayout>
   );
 }
