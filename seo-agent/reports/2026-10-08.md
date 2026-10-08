@@ -46,7 +46,7 @@
 | app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 711 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 772 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 1108 | 1 | 17 | 0 | 0 |
 | app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 540 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 481 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 365 | 1 | 3 | 0 | 0 |
