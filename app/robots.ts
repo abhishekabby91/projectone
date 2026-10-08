@@ -61,7 +61,8 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
+    // Keep the sitemap discoverable to all crawlers. `host` is intentionally
+    // omitted because it is not part of the standard robots.txt directives.
     sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
   };
 }
