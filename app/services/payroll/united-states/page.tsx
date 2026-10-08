@@ -21,7 +21,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'Payroll is the service where a mistake is visible to somebody outside the engagement within a day. A miscalculated withholding does not create rework; it creates your client’s employee, paid wrong, asking your client why. Running it across many clients at once multiplies the exposure without multiplying the fee. We handle the recurring calculation, withholding and record-keeping each cycle inside the payroll software you already use, with a named internal reviewer confirming the run before it reaches your firm.';
+const overview = 'Payroll errors become visible quickly. The recurring process covers payroll calculation, withholding and record-keeping inside the payroll software already in use, with an internal reviewer confirming the run before submission.';
 
 const uSElements = [
   'Federal income tax withholding (W-4 based)',
@@ -49,11 +49,11 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you file our payroll tax returns?', answer: 'Payroll processing — the calculations and record-keeping — is what we handle. Filing the actual returns (Form 941, Form 940, state unemployment returns) can be included in scope or stay with your accountant, depending on what you agree during onboarding. We do not hold filing authority by default.' },
-  { question: 'What payroll software do you work in?', answer: 'We work inside your existing system — QuickBooks Payroll, Xero Payroll, Gusto, ADP, or similar. We do not require a platform change.' },
-  { question: 'Who reviews the payroll run before it goes out?', answer: 'Your authorized internal reviewer confirms headcount, hours, and any changes before the run is submitted. We prepare the run; your team approves and submits it.' },
-  { question: 'Can you handle both W-2 employees and 1099 contractors?', answer: 'Yes, though they are processed differently. Whether someone should be classified as an employee or contractor is a legal and tax question that stays with your advisor — we process payroll according to the classification you provide.' },
-  { question: 'What happens at year-end?', answer: 'We support W-2 and 1099-NEC preparation from your payroll records — organizing the data, reconciling totals against the payroll register, and preparing the forms for your review and distribution.' },
+  { question: 'Do you file our payroll tax returns?', answer: 'Payroll processing covers calculations and record-keeping. Filing of Form 941, Form 940 and state unemployment returns can be included in the engagement or remain with the accountant, depending on the agreed scope and filing authority.' },
+  { question: 'What payroll software do you work in?', answer: 'The process can run inside QuickBooks Payroll, Xero Payroll, Gusto, ADP or a similar existing system without requiring a platform change.' },
+  { question: 'Who reviews the payroll run before it goes out?', answer: 'An authorized internal reviewer confirms headcount, hours and changes before submission. The payroll run is prepared for approval and submission.' },
+  { question: 'Can you handle both W-2 employees and 1099 contractors?', answer: 'Yes, with different processing requirements. Employee-versus-contractor classification remains a legal and tax determination; payroll is processed according to the classification provided.' },
+  { question: 'What happens at year-end?', answer: 'W-2 and 1099-NEC preparation can use the payroll records, with data organized, totals reconciled against the payroll register and forms prepared for review and distribution.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
