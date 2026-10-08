@@ -18,6 +18,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  { href: '/blog/hoa-accounting-month-end-checklist', title: 'HOA Accounting Month-End Checklist: What Should Be Reviewed?', description: 'A practical monthly close checklist covering assessments, bank reconciliations, payables, reserves, software workflows and board reporting.', tag: 'HOA Accounting', readTime: '8 min read' },
   { href: '/blog/hoa-chart-of-accounts', title: 'HOA Chart of Accounts: How Should It Be Set Up?', description: 'A practical guide to structuring accounts for assessments, operating expenses, reserves, receivables, payables and board reporting.', tag: 'HOA Accounting', readTime: '8 min read' },
   { href: '/blog/hoa-bookkeeping-vs-accounting', title: 'HOA Bookkeeping vs. HOA Accounting: What’s the Difference?', description: 'A clear explanation of recurring bookkeeping, reconciliation, review and financial reporting for associations.', tag: 'HOA Accounting', readTime: '7 min read' },
   { href: '/blog/hoa-accounting-mistakes', title: 'Common HOA Accounting Mistakes and How to Avoid Them', description: 'Common problems involving bank reconciliations, homeowner balances, reserves, payables and monthly reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
