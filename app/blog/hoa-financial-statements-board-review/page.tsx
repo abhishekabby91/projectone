@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Financial Statements: What Boards Should Review',
@@ -8,9 +9,31 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-financial-statements-board-review',
 });
 
+const faqs = [
+  {
+    "question": "What financial reports should an HOA board review each month?",
+    "answer": "A practical package commonly includes the balance sheet, income statement, budget-to-actual report, accounts receivable aging, accounts payable detail and reserve activity. The exact package depends on the association, but the reports should agree with the underlying accounting records."
+  },
+  {
+    "question": "What should an HOA board look for on the balance sheet?",
+    "answer": "Start with operating and reserve cash, then look for unusual receivables, old prepaid balances, vendor liabilities and other balances that changed materially from the prior month. The useful question is whether the change can be explained."
+  },
+  {
+    "question": "How should an HOA board review budget-to-actual results?",
+    "answer": "Look for material differences from the approved budget and ask what caused them. A variance is not automatically an error; the important part is whether the difference is understandable and supported by the underlying transactions."
+  },
+  {
+    "question": "What should be included with an HOA board financial package?",
+    "answer": "The package should contain the recurring financial reports plus the schedules needed to explain important balances, such as delinquency, payables, reserve activity and reconciliations. Consistency matters because it lets board members focus on changes rather than learning a new format each month."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaFinancialStatements() {
   return (
-    <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Financial Statements: What Should Board Members Review?"
       category="HOA Accounting"
       description="Board members do not need to be accountants to review an HOA financial package. They do need to know what each report is showing and which questions to ask."
@@ -70,8 +93,11 @@ export default function HoaFinancialStatements() {
       <p>Consistency matters. If the same reports are provided in the same order every month, board members can focus on changes instead of learning a new format each meeting.</p>
       <p>The package should also be supported by reconciliations and schedules. A clean-looking report is not a substitute for accurate underlying records.</p>
 
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
+
       <h2>Related HOA Accounting Resources</h2>
       <p>Our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page explains the recurring work behind the board package. For a month-by-month process, see the <a href="/blog/hoa-accounting-month-end-checklist">HOA accounting month-end checklist</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
