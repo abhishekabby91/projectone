@@ -24,6 +24,8 @@ const reports = [
   ['Operating and reserve reporting', 'Keeps fund activity visible instead of presenting operating and reserve cash as one unexplained balance.'],
   ['Receivable and delinquency aging', 'Shows outstanding homeowner balances in a schedule the board can review and follow up on.'],
   ['Bank reconciliation support', 'Provides the reconciliation status and supporting detail behind the reported cash balances.'],
+  ['Cash and ledger activity', 'Shows supporting cash movement or ledger detail needed to understand changes behind reported balances.'],
+  ['Year-end reporting schedules', 'Organizes recurring schedules and supporting detail for the year-end accounting or CPA engagement.']
 ];
 
 const faqs = [
