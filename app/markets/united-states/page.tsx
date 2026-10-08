@@ -26,7 +26,7 @@ const faqs = [
   {
     question: 'Will our clients know you are involved?',
     answer:
-      'The client-facing arrangement follows the firm's preference. Some firms introduce the offshore delivery team; others keep the relationship entirely within the firm. Direct client contact occurs only when specifically authorized.',
+      "The client-facing arrangement follows the firm's preference. Some firms introduce the offshore delivery team; others keep the relationship entirely within the firm. Direct client contact occurs only when specifically authorized.",
   },
   {
     question: 'Do you sign or e-file returns?',
