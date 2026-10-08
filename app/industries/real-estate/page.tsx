@@ -78,7 +78,7 @@ export default function RealEstateIndustryPage() {
         subtitle="Owners, investors, developers and commercial operators"
         title="Real Estate Accounting, Bookkeeping & Tax Outsourcing"
         description="Property and entity-level books, portfolio reporting, AP/AR, reconciliations and a month-end close that holds up to a lender, a partner or your own CPA. You keep every approval."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss Real Estate Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
       />
@@ -129,7 +129,7 @@ export default function RealEstateIndustryPage() {
               breaks a property portfolio&rsquo;s accounting. Structure is.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              We take the recurring part &mdash; processing, coding, reconciling, closing and preparing what the
+              The recurring accounting scope covers processing, coding, reconciliation, closing and preparation of the
               owner or the board reads &mdash; and leave every approval, every release of money and every
               judgement with your team.
             </p>
@@ -157,7 +157,7 @@ export default function RealEstateIndustryPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
         <div className="max-w-6xl mx-auto">
           <Reveal className="space-y-3 mb-8"><>
-            <Eyebrow>Who we work with</Eyebrow>
+            <Eyebrow>Real Estate Accounting Scope</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               Six Ways This Work Arrives
             </h2>
@@ -195,12 +195,12 @@ export default function RealEstateIndustryPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-background dot-grid">
         <div className="max-w-6xl mx-auto">
           <Reveal className="mb-10 max-w-3xl mx-auto text-center space-y-3"><>
-            <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">What we do</span>
+            <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">Accounting Scope</span>
             <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
               Accounting Support Across the Portfolio
             </h2>
             <p className="text-base md:text-lg text-muted leading-7 md:leading-8">
-              Every line below is work we actually perform. Where a service has its own page, the card links to it.
+              Each line represents a defined accounting function. Where a service has its own page, the card links to it.
             </p>
           </></Reveal>
 
@@ -225,7 +225,7 @@ export default function RealEstateIndustryPage() {
                       className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-colors hover:border-primary/40"
                       source={PATH}
                       title="Talk to Us About Real Estate Accounting"
-                      lead="Tell us how this part of the work is handled today and we will scope what support would change."
+                      lead="The current workflow determines where accounting support can be added and what the scope should cover."
                       label={`Ask us about ${svc.name.toLowerCase()} for your portfolio`}
                     >
                       <h3 className="font-serif text-lg font-bold text-primary">{svc.name}</h3>
@@ -304,7 +304,7 @@ export default function RealEstateIndustryPage() {
               An Extension of Your Accounting Team, Not a Replacement for It
             </h2>
             <p className="text-lg text-muted leading-relaxed">
-              We work inside your systems, your coding conventions and your reporting formats, and we take
+              The accounting process fits existing systems, coding conventions and reporting formats, with defined
               ownership of defined recurring work. What stays with you is everything that needs authority:
               approvals, payment release, owner and board relationships, and the decisions that need judgement.
             </p>
@@ -315,7 +315,7 @@ export default function RealEstateIndustryPage() {
                 'Flexible engagement models — dedicated team, staff augmentation or defined scope',
                 'Documented onboarding, so the workflow survives a change of people on either side',
                 'Quality review before work reaches your team, in your own formats',
-                'Work delivered remotely from our Global Delivery Center in New Delhi, India',
+                'Work delivered remotely from New Delhi, India',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-4">
                   <Check className="text-accent shrink-0 w-5 h-5" aria-hidden="true" />
@@ -328,7 +328,7 @@ export default function RealEstateIndustryPage() {
           <Reveal delay={0.15} className="relative overflow-hidden bg-linear-to-br from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-white space-y-6 shadow-xl">
             <>
               <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'repeating-linear-gradient(to bottom, white 0, white 1px, transparent 1px, transparent 28px)' }} />
-              <p className="relative text-xs font-bold uppercase tracking-[0.14em] text-white/60">What we would put right in month one</p>
+              <p className="relative text-xs font-bold uppercase tracking-[0.14em] text-white/60">What the first month should establish</p>
               <ul className="relative space-y-4">
                 {depth.firstMonth.map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -389,15 +389,15 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Technology</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              We Work Inside the System You Already Run
+              Accounting Inside the Existing System
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Our team has experience with Yardi, including Voyager and Breeze, and with QuickBooks, Xero, Sage
-              and NetSuite. Where you run something else, we would confirm at scoping whether we can work in it
+              Supported systems include Yardi, including Voyager and Breeze, along with QuickBooks, Xero, Sage
+              and NetSuite. Where another system is in use, support can be confirmed during scoping
               rather than assume &mdash; and if the answer is no, we would say so.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              What we do not do is implement, configure, migrate or administer accounting or property management
+              Accounting Scope not do is implement, configure, migrate or administer accounting or property management
               software, and we hold no vendor certification. Those are a different profession, and a provider who
               offers both is asking you to take their word on the setup and on the work done inside it.
             </p>
@@ -427,7 +427,7 @@ export default function RealEstateIndustryPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <Reveal className="space-y-4"><>
-            <Eyebrow>What we will not do</Eyebrow>
+            <Eyebrow>Scope Boundaries</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               The Limits, Named Before You Ask
             </h2>
@@ -512,7 +512,7 @@ export default function RealEstateIndustryPage() {
       <CTABanner
         title="Ready to Simplify Your Real Estate Accounting?"
         description="Accounting, bookkeeping and tax support built around your properties, your entities and the people who read the reports."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss Real Estate Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'Property Management', href: '/industries/property-management' }}
         background="primary"
       />
