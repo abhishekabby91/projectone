@@ -271,6 +271,27 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting firm resources</h2>
+          <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">Use these pages to move from the overall outsourcing model into specific workflows and U.S. tax-season capacity questions.</p>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Link href="/services/bookkeeping/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">U.S. Bookkeeping Support</h3>
+              <p className="mt-2 text-sm text-muted">Recurring bookkeeping, reconciliations and close support for U.S. firms.</p>
+            </Link>
+            <Link href="/services/tax-preparation/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">U.S. Tax Preparation Support</h3>
+              <p className="mt-2 text-sm text-muted">Preparation support across individual and business return workflows.</p>
+            </Link>
+            <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">U.S. Market</h3>
+              <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Questions partners ask" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
