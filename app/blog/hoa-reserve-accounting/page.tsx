@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Reserve Accounting: What Boards Should Track',
@@ -8,9 +9,31 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-reserve-accounting',
 });
 
+const faqs = [
+  {
+    "question": "What should HOA reserve accounting track each month?",
+    "answer": "At minimum, review reserve contributions, transfers, reserve-funded expenses, reserve cash balances and the related reconciliations. For larger projects, a supporting schedule can make spending easier for the board to follow."
+  },
+  {
+    "question": "How should operating and reserve funds be shown?",
+    "answer": "The records should make the two purposes distinguishable, whether through separate accounts, fund tracking or another structure that fits the system. The important point is that a board can see operating activity and reserve activity without reconstructing them from one combined cash figure."
+  },
+  {
+    "question": "Can accounting determine whether an HOA has enough reserves?",
+    "answer": "No. Reserve adequacy is a board decision informed by the association's reserve study and qualified advisers. Accounting's role is to make the current contributions, spending, transfers and balances clear."
+  },
+  {
+    "question": "What should the board see in a reserve report?",
+    "answer": "A useful report normally shows reserve cash, contributions, reserve-funded spending, budget-to-actual activity where applicable and the reconciliation behind the reported balances."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaReserveAccounting() {
   return (
-    <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Reserve Accounting: What Should Boards Track?"
       category="HOA Accounting"
       description="Reserve accounting should let an HOA see what has been contributed, what has been spent and how reserve activity is reflected in the financial records."
@@ -66,6 +89,7 @@ export default function HoaReserveAccounting() {
 
       <h2>Related HOA Resources</h2>
       <p>Continue with <a href="/blog/hoa-operating-vs-reserve-funds">HOA operating funds vs. reserve funds</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, and <a href="/blog/hoa-financial-statements-board-review">financial statements for board review</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
