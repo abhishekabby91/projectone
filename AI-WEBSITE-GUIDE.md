@@ -479,3 +479,595 @@ Then verify:
 - Build/type/lint checks pass.
 
 The target is not an `SEO-looking` website. The target is a useful accounting resource that understands how CPA firms and business owners actually think about workload, control, risk and review time.
+
+
+---
+
+# Living project state — content, SEO and AI handoff
+
+> Last updated: 2026-10-08
+>
+> This section is intentionally maintained as a living implementation guide. It records what the current content program is doing, what has already been implemented in the repository, and how another AI/developer should continue without resetting the strategy.
+
+## 1. Current strategic direction
+
+The website is being developed as an expandable accounting knowledge + commercial architecture, not as a website with a fixed number of pages.
+
+### No fixed page-count target
+
+Do not interpret any previous list such as 50, 100, 500 or 1,000 pages as a target or limit.
+
+A content cluster grows when there is a legitimate reason to add another useful page:
+
+- A real search query
+- A recurring client or buyer question
+- A distinct accounting workflow
+- A meaningful software/platform topic
+- A useful comparison
+- A genuine state/location-specific reason
+- A new industry issue
+- A useful commercial decision question
+- A topic where Accounstone can eventually develop real practical experience
+
+If a topic does not have enough distinct value or search intent, do not create a page simply to increase the page count.
+
+The architecture should be capable of growing indefinitely while remaining structured.
+
+### Current content development method
+
+Use this cycle for new industry/software content:
+
+Discover → Research → Learn → Create → Rank → Get experience → Update
+
+The important rule is that publishing a page does not mean claiming expertise that Accounstone does not yet have.
+
+For example, when entering a newer platform such as eUnify:
+
+1. Research the platform and its documented accounting workflows.
+2. Learn what the relevant client workflow actually requires.
+3. Publish useful, accurate information without inventing hands-on experience.
+4. Use real client work to develop practical experience.
+5. Update the page when genuine experience can support stronger observations.
+
+This allows Accounstone to build useful early content without making false capability claims.
+
+## 2. Current positioning
+
+The homepage is intentionally market-neutral/global rather than forcing U.S. keywords into the core positioning.
+
+Current core positioning:
+
+Accounting, Bookkeeping & Tax Outsourcing
+
+The homepage speaks primarily to:
+
+- Accounting firms
+- Businesses
+
+U.S. intent is built through dedicated market, service, industry, state and supporting-content clusters rather than repeating "USA" on every page.
+
+Accounstone remains clearly positioned as an India-based accounting outsourcing provider, not as a U.S.-based company.
+
+## 3. Current homepage implementation
+
+app/page.tsx has been reworked around:
+
+- Accounting, Bookkeeping & Tax Outsourcing
+- Accounting firms
+- Businesses
+- Services
+- Industry pathways
+- Why Accounstone
+- Engagement models
+- Process
+- FAQs
+- Neutral inquiry path
+
+Primary industry pathways currently include:
+
+- /industries/real-estate
+- /industries/property-management
+- /industries/hoa-accounting
+- /industries/cpa-firms
+
+Homepage metadata was also aligned with the broader positioning instead of making the homepage U.S.-specific.
+
+Important implementation commits:
+
+- 347f18f — homepage positioning/structure
+- f34d8f0 — homepage internal-link correction
+
+## 4. U.S. market implementation
+
+app/markets/united-states/page.tsx has been strengthened as the dedicated U.S. market page.
+
+It now addresses:
+
+- U.S. accounting firms
+- U.S. businesses
+- Bookkeeping
+- Accounting
+- Tax preparation
+- AP/AR
+- Payroll
+- Close/reconciliation workflows
+- Client/CPA responsibility boundaries
+
+The U.S. market page owns the stronger U.S. geographic intent. Do not move all of that wording back into the homepage merely for keyword reasons.
+
+## 5. Neutral inquiry form is a site-wide pattern
+
+components/inquiry-section.tsx is the reusable inquiry component.
+
+Generic copy is intentionally neutral:
+
+- Tell Us About the Work You Need Support With
+- Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step.
+- Explain the work, software or process involved
+- Keep your existing review and approval responsibilities
+- Discuss the scope before deciding how to proceed
+
+The inquiry component should be available on industry, guide, software and other useful content pages.
+
+Do not turn every inquiry section into aggressive sales copy.
+
+Implementation commit:
+
+- 78f5be5f650e212a4cb0b2c8d9ece28c0bea565
+
+## 6. HOA is currently the deepest industry content program
+
+The current priority sequence is:
+
+HOA → Property Management → Real Estate
+
+HOA is being developed as a genuine topic cluster rather than a single industry landing page.
+
+### HOA architecture
+
+The HOA cluster can grow across:
+
+1. HOA accounting fundamentals
+2. Assessment and homeowner accounting
+3. Bank/reconciliation workflows
+4. Operating/reserve accounting
+5. Financial reporting
+6. AP/vendor workflows
+7. Month-end/year-end workflows
+8. Software/platform workflows
+9. Commercial/decision content
+10. State/location content where there is a real local reason
+11. FAQs
+12. Internal links back to the HOA pillar and between related topics
+13. Neutral inquiry paths
+
+The earlier 50-topic HOA map is an initial topic map only, not a limit.
+
+### HOA pillar
+
+app/industries/hoa-accounting/page.tsx
+
+The pillar currently explains:
+
+- HOA/community association accounting
+- Homeowner ledgers
+- Operating and reserve funds
+- Delinquency
+- Board reporting
+- Accounting workflow
+- Service boundaries
+- FAQs
+- Related accounting guides
+- Inquiry path
+
+The pillar's supporting-guide section was expanded in commit:
+
+- 27e59076ed260c611cc992b551631cc7bb6267e3
+
+### HOA supporting content already created
+
+The repository now contains a substantial HOA content set, including topics such as:
+
+- Month-end checklist
+- Assessment accounting
+- Homeowner ledgers
+- Assessment receivables reconciliation
+- Chart of accounts
+- Bookkeeping vs accounting
+- Accounting mistakes
+- Accounting controls
+- Bank reconciliation
+- Delinquency accounting
+- Reserve accounting
+- Operating vs reserve funds
+- Reserve reconciliation
+- Reserve financial reporting
+- Reserve expenses
+- Accounts payable
+- Vendor expense tracking
+- Maintenance expense accounting
+- Vendor invoice processing
+- Vendor 1099 tracking
+- Unapplied payments
+- AR aging
+- Monthly close
+- Year-end accounting
+- Year-end checklist
+- Balance sheet
+- Income statement
+- Cash vs accrual accounting
+- Accounting workflow
+- Budget-to-actual reports
+- Board financial package
+- Accounting cleanup
+
+Not every future HOA topic needs to be created. Check search intent, overlap and usefulness first.
+
+### HOA software cluster already started
+
+Existing content includes:
+
+- HOA accounting in QuickBooks
+- QuickBooks Online for HOA accounting
+- HOA accounting with AppFolio
+- HOA accounting with Yardi
+- HOA accounting with eUnify
+- eUnify + QuickBooks for HOA accounting
+
+eUnify is a deliberate early-mover example. The pages explain relevant documented workflows while avoiding any claim that Accounstone has years of eUnify experience when that has not been established.
+
+Recent eUnify cleanup commits:
+
+- f99b269ea15cf1e83936b61606ca93389d43e429
+- 75b77b291560cc00e5c50d63a32f1b60c1222cd9
+
+### HOA commercial content already started
+
+Existing pages include:
+
+- How to outsource HOA bookkeeping and accounting
+- HOA accounting outsourcing vs. hiring in-house
+- HOA accounting cleanup
+- Other decision/workflow content
+
+Commercial pages should remain practical and should explain when outsourcing may or may not make sense.
+
+## 7. HOA internal-linking and sitemap work already completed
+
+The HOA cluster has been added to the sitemap and blog/resource index in multiple passes.
+
+Recent sitemap coverage was updated in:
+
+- e0134a171f9c62f78d4e296554fd5e5e9602d7d5
+
+Blog index coverage was also updated in several passes as new articles were created.
+
+The HOA pillar now links to a meaningful selection of supporting guides rather than leaving the industry page isolated.
+
+### Important next step
+
+The cluster is not considered permanently finished.
+
+Continue the internal-link and FAQ audit across individual HOA articles:
+
+- Each useful article should link back to the HOA pillar.
+- Add 2–5 genuinely related contextual links where useful.
+- Add query-specific FAQs where they improve the answer.
+- Avoid mechanically adding the same links to every page.
+- Check that no internal link points to a redirect or nonexistent route.
+- Keep the sitemap and content registry aligned with actual routes.
+
+## 8. Property Management is the next expandable industry cluster
+
+A property-management topic map has been developed as an initial starting structure covering:
+
+- Accounting fundamentals
+- Rent and tenant accounting
+- Bank/trust/reconciliation workflows
+- Owner statements/reporting
+- AP/vendor/expense workflows
+- Software/platform workflows
+- State/location opportunities
+- Outsourcing/commercial questions
+
+Again, this is not a 50-page target.
+
+The cluster should grow only where a distinct search intent or useful accounting workflow exists.
+
+The Property Management cluster should eventually connect naturally with:
+
+- /industries/property-management
+- Real Estate content
+- Relevant bookkeeping/AP/AR services
+- Yardi/Buildium and other verified platform content
+- Relevant U.S. state pages
+- Neutral inquiry sections
+
+## 9. Software/content cluster rules
+
+Software pages are accounting-workflow pages, not vendor pages.
+
+For every software topic:
+
+- Explain the accounting workflow.
+- Explain what should be reconciled/reviewed/tracked.
+- Explain what the software does only to the extent supported by reliable sources.
+- Do not claim Accounstone is the software vendor.
+- Do not claim implementation/configuration/custom development unless genuinely offered.
+- Do not claim hands-on experience that has not been established.
+- Link to the related industry/service pages where natural.
+
+Software can become a strong long-tail content source, but avoid mass-producing thin pages for every possible platform.
+
+## 10. AI/search crawlability implementation
+
+The repository already has a strong technical crawlability foundation.
+
+Relevant files:
+
+- app/robots.ts
+- app/sitemap.ts
+- public/llms.txt
+- public/llms-full.txt
+- lib/seo.ts
+
+The robots configuration intentionally keeps important search/AI crawlers able to access public content while excluding private/internal areas.
+
+The site also provides machine-readable company/site information through the llms.txt files.
+
+Do not create artificial "AI SEO" copy. The better approach is:
+
+- Clear headings
+- Direct answers
+- Accurate entities
+- Useful FAQs
+- Good internal linking
+- Consistent organization
+- Correct structured data
+- Crawlable server-rendered content
+- Accurate sitemap/robots behavior
+
+When adding a page, check that it is actually discoverable through internal links and/or the sitemap. Do not assume that putting a file on disk is enough.
+
+## 11. Content writing standard for all future articles
+
+The working editorial rule is:
+
+Humanize the content. Do not write generic AI content. The page must answer the search query.
+
+A good article should:
+
+1. Answer the main query early.
+2. Cover the related questions a real searcher would ask.
+3. Use specific accounting examples.
+4. Explain the workflow, not just the service.
+5. State boundaries where professional judgement or client approval remains necessary.
+6. Use natural sentence variation.
+7. Avoid filler introductions and artificial conclusions.
+8. Avoid keyword stuffing.
+9. Avoid writing to an arbitrary word count.
+10. Link to genuinely related Accounstone pages.
+11. Include a neutral inquiry path where appropriate.
+12. Be useful even if the reader never contacts Accounstone.
+
+Use the pattern:
+
+Primary query → related questions → practical accounting explanation → relevant entities/software → useful internal links → neutral next step
+
+## 12. Location/market content rules
+
+Location matters, but not every page needs a location modifier.
+
+Use geography where it changes:
+
+- Search intent
+- Regulation/compliance context
+- Accounting workflow
+- Software usage
+- Buyer need
+- Commercial relevance
+
+Do not create state pages by changing only the state name.
+
+For U.S. industry/state clusters, a page should have a genuine reason to exist before it is created.
+
+Existing U.S. market context includes:
+
+- /markets/united-states/california
+- /markets/united-states/texas
+- /markets/united-states/florida
+
+Use existing market pages as contextual parents instead of duplicating the same state explanation across multiple pages.
+
+## 13. Current SEO/content priorities
+
+The current work should generally follow this order unless new evidence changes it:
+
+1. Keep the homepage positioning clear and market-neutral.
+2. Build HOA topical depth and internal relationships.
+3. Continue Property Management content.
+4. Strengthen Real Estate content where there is a distinct query.
+5. Build useful software/accounting workflow content.
+6. Add state/location content only where justified.
+7. Improve FAQs and internal links across existing content.
+8. Keep metadata, sitemap and robots accurate.
+9. Review Search Console/query evidence when available.
+10. Update older pages when new genuine experience or better information exists.
+
+Do not abandon a useful cluster just because it has not yet produced impressions. Content should be allowed to mature, while weak or redundant pages should still be consolidated.
+
+## 14. Repository files that future AI should inspect first
+
+For content/SEO work, inspect these before making changes:
+
+| File/path | Purpose |
+|---|---|
+| CLAUDE.md | First-level AI orientation and repository rules |
+| AI-WEBSITE-GUIDE.md | This living strategy and implementation guide |
+| knowledge/ | Business facts and scope boundaries |
+| docs/SEARCH-INTENTS.md | Search-intent/URL decisions |
+| docs/ROUTES.md | Route inventory and sitemap relationships |
+| docs/CONTENT-REGISTRY.md | Content inventory/status |
+| SEO-CHANGELOG.md | Historical reasoning for changes |
+| app/sitemap.ts | Actual sitemap generation |
+| app/robots.ts | Crawl rules |
+| lib/seo.ts | Metadata/schema helpers |
+| lib/data.ts | Shared service/industry/market data |
+| components/inquiry-section.tsx | Reusable neutral inquiry pattern |
+| components/article-layout.tsx | Article rendering/schema/layout |
+
+## 15. Files/components that require extra caution
+
+### components/article-layout.tsx
+
+Do not casually modify this file.
+
+A previous attempted fix introduced a literal \\n into the TypeScript source and caused a production build failure with:
+
+Expected unicode escape
+
+The owner has explicitly chosen to have Claude handle deployment/build troubleshooting.
+
+For current content work:
+
+- Prefer editing individual article pages.
+- Do not modify article-layout.tsx unless there is a clear reason.
+- Do not deploy from this content workflow.
+- If a build problem is discovered, document it clearly rather than making unrelated framework changes.
+
+### Deployment
+
+For the current content program:
+
+Do not deploy.
+
+Content/SEO work is being committed to main; deployment/build handling is intentionally separate.
+
+Do not use Vercel deployment tools unless the owner explicitly asks for deployment or deployment debugging.
+
+## 16. Definition of done for a new content page
+
+Before committing a new page, verify:
+
+### Content
+- The primary search query is clear.
+- The opening answers it.
+- The article contains useful accounting detail.
+- The content is not just a longer version of another page.
+- Claims are supported.
+- Software/platform claims are accurate.
+- Any professional/tax/legal boundary is clear.
+- Tone is human and neutral.
+
+### SEO
+- Unique title.
+- Useful description.
+- Correct canonical.
+- Correct H1.
+- Logical H2/H3 hierarchy.
+- Appropriate schema.
+- Correct lastmod handling through the repository's existing mechanism.
+- Added to the appropriate content registry/index if required.
+- Added to sitemap when indexable.
+- Internal links from relevant pages.
+- No orphan route.
+
+### UX
+- Neutral inquiry section where appropriate.
+- Useful related links.
+- No unnecessary popups or pressure.
+- Mobile-friendly content.
+- Accessible headings, links and form labels.
+
+### Repository safety
+- No URL changed accidentally.
+- No redirect introduced unnecessarily.
+- No change to shared components unless required.
+- No deployment.
+- Changelog updated for meaningful SEO/content passes.
+
+## 17. How to diagnose mistakes
+
+When another AI finds a problem, it should first classify it rather than rewriting the site.
+
+### If a page is missing from search
+Check:
+
+1. Is the route in app/?
+2. Is it indexable?
+3. Does it have canonical metadata?
+4. Is it in app/sitemap.ts?
+5. Does another page link to it?
+6. Is the content actually satisfying a distinct query?
+7. Is the page accidentally blocked by robots?
+8. Is the page too similar to another page?
+
+### If pages are too similar
+Do not add filler.
+
+Check whether:
+
+- They target the same search intent.
+- One should be consolidated.
+- The workflow explanation can be made genuinely different.
+- The pages belong to different stages of the buyer journey.
+
+### If a page is not ranking
+Do not immediately add keywords.
+
+Check:
+
+- Search intent
+- Query specificity
+- Content usefulness
+- Internal links
+- Entity/topic coverage
+- SERP competition
+- Page uniqueness
+- Search Console evidence
+
+### If a page makes an unsupported claim
+Remove or qualify the claim. Do not invent a replacement fact.
+
+### If a page is orphaned
+Add a natural contextual link from the most relevant parent/cluster page rather than adding arbitrary sitewide links.
+
+## 18. Recent implementation history worth preserving
+
+The following commits represent major parts of the current content architecture:
+
+- 347f18f — homepage positioning/structure
+- f34d8f0 — homepage internal-link correction
+- 78f5be5f650e212a4cb0b2c8d9ece28c0bea565 — reusable neutral inquiry component
+- 27e59076ed260c611cc992b551631cc7bb6267e3 — HOA pillar supporting-guide links
+- e0134a171f9c62f78d4e296554fd5e5e9602d7d5 — expanded HOA sitemap coverage
+- f99b269ea15cf1e83936b61606ca93389d43e429 — eUnify article cleanup
+- 75b77b291560cc00e5c50d63a32f1b60c1222cd9 — eUnify + QuickBooks cleanup
+
+Earlier HOA article commits are preserved in the individual article history and should not be treated as a reason to recreate those pages.
+
+## 19. Standing rule for future AI agents
+
+The website should become broader and deeper over time, but never random or inflated.
+
+The correct question is not:
+
+"How many pages should we make?"
+
+The correct questions are:
+
+"What useful search/problem does this page solve?"
+
+"Does it deserve its own URL?"
+
+"Where does it belong in the cluster?"
+
+"What existing page should link to it?"
+
+"What evidence supports the claims?"
+
+"Can we improve it later when we gain real experience?"
+
+If the answer is yes, create the page and connect it to the architecture.
+
+If the answer is no, do not create a page just to hit a number.
