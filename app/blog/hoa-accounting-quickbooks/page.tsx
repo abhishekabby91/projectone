@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting in QuickBooks: Practical Setup and Review',
@@ -8,9 +9,29 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-accounting-quickbooks',
 });
 
+const faqs = [
+  {
+    "question": "Is QuickBooks a good fit for HOA accounting?",
+    "answer": "It can be a good fit for some associations, particularly when the chart of accounts, homeowner detail, operating and reserve activity, and monthly close are kept organized. The right setup depends on the association's size, workflow and reporting needs."
+  },
+  {
+    "question": "How should operating and reserve funds be handled in QuickBooks?",
+    "answer": "The accounting structure should make the two purposes easy to distinguish. That may use separate accounts or another reporting structure appropriate to the association. The important thing is that reserve activity does not get mixed into ordinary operating expenses."
+  },
+  {
+    "question": "Can an HOA keep homeowner ledgers outside QuickBooks?",
+    "answer": "Yes. Some associations use an association-management system for detailed homeowner activity and QuickBooks for the general ledger. When two systems are involved, the handoff and reconciliation between them need to be clearly defined."
+  },
+  {
+    "question": "What should be reviewed each month in HOA QuickBooks?",
+    "answer": "Review bank reconciliations, assessment and receivable activity, payables, operating and reserve expenses, transfers, budget-to-actual results and the reports going to the board. Old unexplained items should be investigated rather than carried forward."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaAccountingQuickBooks() {
   return (
-    <ArticleLayout
+    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting in QuickBooks: What Should Be Set Up and Reviewed?"
       category="HOA Accounting"
       description="QuickBooks can support HOA accounting when the chart of accounts, homeowner detail, fund structure and monthly reconciliation process are designed around how the association actually operates."
@@ -47,18 +68,11 @@ export default function HoaAccountingQuickBooks() {
       <h2>What Should the Board Receive?</h2>
       <p>The QuickBooks reports should be turned into a useful monthly package: financial statements, budget-to-actual results, receivables or delinquency detail, reserve information and relevant open items.</p>
 
-      <h2>Common Questions</h2>
-      <h3>Is QuickBooks Online enough for HOA accounting?</h3>
-      <p>It can be enough for some associations, while others need an association-management platform for detailed homeowner and management workflows. The right answer depends on transaction volume, reporting needs and how the association operates.</p>
-      <h3>Can QuickBooks separate operating and reserve funds?</h3>
-      <p>Yes, with an appropriate account and reporting structure. The exact setup should match the association's accounting policy and reporting requirements.</p>
-      <h3>Can an HOA use AppFolio or Yardi with QuickBooks?</h3>
-      <p>Some associations and managers use more than one system. The important issue is defining which system is the source for each type of record and reconciling the information between them.</p>
-      <h3>Can an outsourced team maintain HOA QuickBooks books?</h3>
-      <p>Yes. An outsourced accounting team can handle recurring posting, reconciliations, AP, reporting and cleanup while the association or management company retains approvals and financial decisions.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>, <a href="/blog/hoa-chart-of-accounts">HOA chart of accounts</a> and <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
