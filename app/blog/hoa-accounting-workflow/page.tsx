@@ -30,7 +30,6 @@ export default function Page() {
 <h2>7. Prepare Financial Reports</h2><p>Typical reporting may include a balance sheet, income statement, budget-to-actual report, bank reconciliations and supporting schedules.</p>
 <h2>8. Resolve Open Items</h2><p>Do not let unexplained reconciling items roll forward indefinitely. Maintain a list of open questions and assign responsibility for resolving them.</p>
 <h2>Common Questions</h2><h3>Should HOA accounting be closed every month?</h3><p>A monthly close gives the board and management a consistent reporting point and makes errors easier to identify.</p><h3>Can the workflow be performed in different software?</h3><p>Yes. The steps are accounting controls, not a requirement for one particular platform. The workflow can be adapted to systems such as QuickBooks Online, AppFolio, Yardi, eUnify or another platform.</p>
-<h2>Related HOA Accounting Resources</h2><p>See the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/blog/hoa-accounting-controls">HOA accounting controls</a>.</p>
-    </ArticleLayout>
+<h2>Related HOA Accounting Resources</h2><p>See the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a>, <a href="/blog/hoa-accounting-controls">HOA accounting controls</a> and the <a href="/services/hoa-accounting">HOA accounting service</a> page.</p></ArticleLayout>
   );
 }
