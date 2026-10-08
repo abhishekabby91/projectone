@@ -31,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 
 export default function Page() {
   return (
-    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Monthly Close Process: What Should Be Completed Before Reporting?"
       category="HOA Accounting"
       description="A monthly close is the process of completing and reviewing the accounting records for a period before the financial reports are issued."
