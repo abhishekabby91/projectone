@@ -16,27 +16,27 @@ const faqs = [
   {
     question: 'Do you reconcile insurance reimbursements against billed claims?',
     answer:
-      'Yes, we reconcile payer reimbursements and adjustments against billed claims, which is a different process than standard accounts receivable and needs its own workflow.',
+      'Payer reimbursements and adjustments can be reconciled against billed claims, which is a different process than standard accounts receivable and needs its own workflow.',
   },
   {
     question: 'Can you report on payer mix (insurance vs. self-pay revenue)?',
     answer:
-      'Yes, we can break down revenue by payer type so you can see how your patient mix is affecting collections and cash flow, not just a single revenue total.',
+      'Revenue can be reported by payer type so you can see how your patient mix is affecting collections and cash flow, not just a single revenue total.',
   },
   {
     question: 'Do you use a chart of accounts specific to medical practices?',
     answer:
-      'Yes, we set up or adapt a chart of accounts structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
+      'The chart of accounts can be structured structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
   },
   {
     question: 'Do you handle multi-provider or multi-location practices?',
     answer:
-      'Yes, we support consolidated reporting across multiple providers or office locations alongside location-level detail for practice management decisions.',
+      'Consolidated reporting can cover multiple providers or locations across multiple providers or office locations alongside location-level detail for practice management decisions.',
   },
   {
     question: 'Is patient billing data handled securely?',
     answer:
-      'We work with the financial and billing summary data needed for bookkeeping and reporting, under NDA-backed engagements with secure data handling practices. We recommend confirming your specific compliance requirements (such as HIPAA) with your practice\'s compliance officer to ensure our workflow fits your obligations.',
+      'Bookkeeping and reporting can use the financial and billing summary data required, under NDA-backed engagements with secure data handling practices. We recommend confirming your specific compliance requirements (such as HIPAA) with your practice\'s compliance officer to ensure our workflow fits your obligations.',
   },
 ];
 
