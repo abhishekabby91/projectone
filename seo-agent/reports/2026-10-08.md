@@ -84,13 +84,13 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1194 | 1 | 23 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1257 | 1 | 26 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 1674 | 1 | 30 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 1868 | 1 | 28 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 2182 | 1 | 22 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2247 | 1 | 25 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 958 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
