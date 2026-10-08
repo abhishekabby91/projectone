@@ -21,7 +21,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'Accounting operations sit between clean books and usable reporting. We handle the recurring work in between — account reconciliations, journal entries, month-end close tasks, account maintenance, and management reports structured around U.S. GAAP conventions — so your team or CPA can review a finished close package instead of assembling one.';
+const overview = 'Accounting operations sit between clean books and usable reporting. The recurring layer includes account reconciliations, journal entries, month-end close tasks, account maintenance and management reports structured around U.S. GAAP conventions, leaving a finished close package for review.';
 
 const uSElements = [
   'Reconciliations across bank, credit card, and balance sheet accounts',
@@ -49,8 +49,8 @@ const retained = [
 const faqs = [
   { question: 'Is this the same as bookkeeping?', answer: 'Bookkeeping covers day-to-day transaction recording and reconciliations. Accounting Services covers the layer above it: month-end close, journal entries, account maintenance, and management reporting that turns clean books into a usable close package.' },
   { question: 'Do you follow U.S. GAAP?', answer: 'Yes. Reconciliations, journal entries, and reporting are structured around U.S. GAAP conventions. Judgment-based accounting policy decisions stay with your CPA or controller.' },
-  { question: 'Do you work inside our existing software?', answer: 'Yes — QuickBooks Online, Xero, Sage, or NetSuite, whichever the client already uses.' },
-  { question: 'How does this connect to tax preparation?', answer: 'A clean, GAAP-consistent close makes tax return preparation faster for your CPA or EA. We do not prepare or file the return as part of this service, but the close package is built to hand off cleanly to whoever does.' },
+  { question: 'Do you work inside our existing software?', answer: 'Yes — QuickBooks Online, Xero, Sage or NetSuite, based on the system already in use.' },
+  { question: 'How does this connect to tax preparation?', answer: 'A clean, GAAP-consistent close provides organized records for tax return preparation. Tax preparation and filing follow the scope of the tax engagement; the accounting close package can be structured for a clean handoff.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
@@ -130,7 +130,7 @@ export default function AccountingUSPage() {
 
       <InquirySection region="united-states" service="Accounting Services" source="/services/accounting/united-states" />
 
-      <CTABanner title="Where Is Your Close Process Getting Stuck?" description="Tell us what's falling behind—reconciliations, journal entries, or the reporting package—and we can talk through what a practical support model looks like." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
+      <CTABanner title="Where Is the Close Process Getting Stuck?" description="Identify what is falling behind—reconciliations, journal entries or the reporting package—and the support scope can be built around the actual close process." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} background="primary" />
     </main>
   );
 }
