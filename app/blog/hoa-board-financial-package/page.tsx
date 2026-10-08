@@ -34,7 +34,11 @@ export default function HoaBoardFinancialPackage() {
       <p>An HOA board financial package should help volunteer board members understand the association's financial position without making them search through several unrelated reports.</p>
       <p>The exact package varies by association, but a practical monthly set normally combines financial statements with supporting schedules for assessments, cash, budget variances, payables and reserves.</p>
 
-      <h2>The Core Financial Statements</h2>
+      <h2>How the Board Package Brings HOA Accounting Together</h2>
+<p>The monthly board package is where several parts of HOA accounting come together. Financial statements, budget results, homeowner receivables, payables, bank reconciliations and reserve information should tell a consistent story.</p>
+<p>The purpose is not to give the board more reports. It is to give the board the right information to understand the association's financial position.</p>
+
+<h2>The Core Financial Statements</h2>
       <p>The package commonly starts with the balance sheet and income statement. These show the association's financial position and activity for the period.</p>
       <p>The statements are more useful when the accounts are reconciled and the classifications are consistent from month to month.</p>
 
