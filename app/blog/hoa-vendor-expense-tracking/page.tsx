@@ -36,7 +36,7 @@ export default function HoaVendorExpenseTracking() {
       <h2>Software Considerations</h2>
       <p>QuickBooks Online and AppFolio can organize vendor transactions, but the reporting result depends on the chart of accounts, classes, properties, projects or other fields actually configured in the system.</p>
       <h2>Related HOA Resources</h2>
-      <p>See <a href="/blog/hoa-accounts-payable">HOA accounts payable</a>, <a href="/blog/hoa-chart-of-accounts">the HOA chart of accounts guide</a>, and <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>.</p>
+      <p>For the broader accounting context, see <a href="/industries/hoa-accounting">HOA and community association accounting</a>. Related guides include <a href="/blog/hoa-accounts-payable">HOA accounts payable</a>, <a href="/blog/hoa-chart-of-accounts">the HOA chart of accounts guide</a>, and <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>.</p>
     </ArticleLayout>
   );
 }
