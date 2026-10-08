@@ -1071,3 +1071,28 @@ The correct questions are:
 If the answer is yes, create the page and connect it to the architecture.
 
 If the answer is no, do not create a page just to hit a number.
+
+
+## 20. 2026-10-08 execution split: what this AI can fix vs. Claude
+
+### Executed in this pass
+
+- CPA Firms industry page now links to U.S. bookkeeping, U.S. tax preparation and the U.S. market hierarchy.
+- Real Estate industry page now links contextually to Property Management, QuickBooks technology context and HOA Accounting.
+- Property Management was reviewed; its existing cross-industry links were retained rather than adding artificial links.
+- components/article-layout.tsx had a real source-level defect: the getText() helper contained a literal escaped newline sequence inside the TypeScript source. This was corrected in commit 19ee989b52a534c534bf98c3f7275807c380b118.
+- No deployment was performed.
+
+### Leave to Claude / deployment owner
+
+- Run the production build and TypeScript validation after the article-layout.tsx correction.
+- If the build reports another error, fix only the actual error and avoid unrelated framework/template rewrites.
+- Deploy only after build validation succeeds.
+- Verify representative article pages in the deployed environment, especially heading IDs/TOC behavior because article-layout.tsx is shared.
+- Use Google Search Console URL Inspection and sitemap/indexing reports after deployment; repository changes alone cannot confirm Google's current index state.
+- Review live Search Console queries, impressions, CTR and positions to decide which existing pages need content/title improvements.
+- Run a live crawl/backlink/authority audit if external SEO tooling is available.
+
+### Do not duplicate this work
+
+Future AI agents should first read the latest guide, SEO changelog and Git history before making another structural change. The objective is to fix real gaps, not repeatedly rewrite already-correct pages.
