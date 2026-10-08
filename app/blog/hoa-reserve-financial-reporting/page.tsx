@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Reserve Financial Reporting for Board Meetings',
@@ -8,9 +9,29 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-reserve-financial-reporting',
 });
 
+const faqs = [
+  {
+    "question": "What should an HOA reserve financial report show?",
+    "answer": "A useful report normally shows reserve cash, contributions, reserve-funded spending, budget-to-actual activity where applicable and the reconciliation supporting the reported balances. For significant projects, a simple project schedule can add useful context."
+  },
+  {
+    "question": "How should reserve cash be reconciled?",
+    "answer": "Reconcile each reserve bank account to the accounting records and investigate outstanding checks, deposits, transfers and other old reconciling items. If several accounts exist, the report should make each balance understandable."
+  },
+  {
+    "question": "Should reserve spending be compared with a budget?",
+    "answer": "Where the association has an approved reserve budget or plan, comparing expected and actual activity helps the board see timing differences and significant variances. A variance should prompt a question, not automatically be treated as an error."
+  },
+  {
+    "question": "Can accounting determine whether a reserve fund is adequate?",
+    "answer": "Accounting can report current balances and activity, but reserve adequacy is a governance and planning question. The association should rely on its reserve study and qualified advisers for that decision."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaReserveFinancialReporting() {
   return (
-    <ArticleLayout title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
+    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
       description="A useful reserve report should show contributions, spending and cash clearly enough for the board to understand reserve activity without rebuilding it from bank statements."
       publishedDate="2026-10-08" section="blog" slug="hoa-reserve-financial-reporting"
       inquiryTitle="Need Clearer HOA Reserve Reports?"
@@ -38,6 +59,7 @@ export default function HoaReserveFinancialReporting() {
       <p>QuickBooks Online and association-management platforms can support reserve reporting, but the account and tracking structure has to be configured around the association's actual reporting needs. Software should make the records easier to review, not replace the review.</p>
       <h2>Related HOA Resources</h2>
       <p>For broader context, see <a href="/industries/hoa-accounting">HOA and community association accounting</a>. You can also review <a href="/blog/hoa-reserve-reconciliation">HOA reserve reconciliation</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, and <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
