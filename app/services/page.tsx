@@ -30,9 +30,9 @@ const serviceFAQs = [
       'Yes, and most engagements do. Bookkeeping, payables, receivables, payroll and close work are usually taken on together within a single region, because they share the same ledger and the same review points.',
   },
   {
-    question: 'Do you file returns or submit to the tax authority?',
+    question: 'Can you support tax filing and submission workflows?',
     answer:
-      'No. We prepare returns, workpapers and supporting records. Submission stays with the licensed professional responsible for it — your CPA or EA in the U.S., your registered practitioner in the UK, your registered tax or BAS agent in Australia. We do not hold portal credentials.',
+      'Yes. Tax preparation and filing support can be structured around the applicable jurisdiction, the engagement scope and the established client workflow.',
   },
   {
     question: 'Do you work in more than one region for the same group?',
@@ -60,7 +60,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 const supportPillars = [
   { h: 'Defined workflows, not ad-hoc requests', p: 'Each process is documented with a preparer, a reviewer and an approval point, so the work is repeatable and you can see where any item sits.' },
   { h: 'Your systems, your chart of accounts', p: 'We work inside the accounting system you already run. We do not implement, configure or migrate third-party platforms.' },
-  { h: 'Review stays where it belongs', p: 'Preparation work moves. Judgement, approval, sign-off and anything requiring a licence stay with your team and your licensed professional.' },
+  { h: 'Review stays clear', p: 'Preparation work is handled through the agreed workflow, with review points, approvals and professional responsibilities clearly defined.' },
   { h: 'Capacity that follows the workload', p: 'Coverage can widen for a close, a tax season or an audit window and narrow again afterwards, without rebuilding the process each time.' },
 ];
 
