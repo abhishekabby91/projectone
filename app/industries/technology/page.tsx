@@ -39,7 +39,7 @@ const faqs = [
   {
     question: 'Do you track MRR and ARR alongside the financial statements?',
     answer:
-      'We can maintain them and report them, kept clearly distinct from recognised revenue. They are computed differently and they will not agree — a board pack that presents one as the other invites a question nobody in the room can answer. Keeping both, and labelling both, is the discipline that matters.',
+      'The accounting records can maintain and report them, kept clearly distinct from recognised revenue. They are computed differently and they will not agree — a board pack that presents one as the other invites a question nobody in the room can answer. Keeping both, and labelling both, is the discipline that matters.',
   },
   {
     question: 'Can you separate cost of revenue from operating expense?',
@@ -49,7 +49,7 @@ const faqs = [
   {
     question: 'Can you work inside our existing finance stack?',
     answer:
-      'That is the intention. Our team works in QuickBooks, Xero, Sage and NetSuite, and alongside common billing and payment platforms. We do not implement, configure, integrate or migrate any of them — we work inside the setup you already run, and if we cannot work in a system we will say so at scoping.',
+      'That is the intention. Supported systems include QuickBooks, Xero, Sage and NetSuite, and alongside common billing and payment platforms. We do not implement, configure, integrate or migrate any of them — we work inside the setup you already run, and if we cannot work in a system we will say so at scoping.',
   },
   {
     question: 'We are early stage. Is this worth doing yet?',
@@ -59,7 +59,7 @@ const faqs = [
   {
     question: 'Do you prepare board or investor reporting?',
     answer:
-      'We prepare the accounts and the recurring reports your board pack is built from, in the format your team already uses. We do not advise on fundraising, valuation or what to present — and we would not describe any output as investor-ready. What we can tell you is what was reconciled, on what basis, and what is still open.',
+      'Accounts and recurring reports can be prepared for the existing board-pack format, in the format your team already uses. We do not advise on fundraising, valuation or what to present — and we would not describe any output as investor-ready. What we can tell you is what was reconciled, on what basis, and what is still open.',
   },
 ];
 
@@ -72,7 +72,7 @@ export default function TechnologyIndustryPage() {
         description:
           'Bookkeeping built around how subscription and software businesses actually record revenue — deferred balances that tie to the subscription base, settlements decomposed, and a close that reconciles.',
       }}
-      overview="Subscription and software businesses break in a place ordinary bookkeeping never visits: the gap between what was billed and what has been earned. An annual contract billed up front is one cash event and twelve months of revenue, and a ledger that recognises it on invoice produces a spike at renewal and a collapse afterwards — neither of which describes the business. Underneath that sit the same problems in different clothes: mid-term plan changes that move the deferred balance, processor settlements that arrive net of fees and refunds, and a cost-of-revenue line that has quietly become a residual category. None of these is difficult once the structure is right, and all of them are expensive to reconstruct a year later. We maintain that structure as transactions post, in the systems you already run, and leave every judgement — the recognition policy, the tax position, what goes in front of a board — with the people whose call it is."
+      overview="Subscription and software businesses have accounting requirements that differ from ordinary bookkeeping: the gap between what was billed and what has been earned. An annual contract billed up front is one cash event and twelve months of revenue, and a ledger that recognises it on invoice produces a spike at renewal and a collapse afterwards — neither of which describes the business. Underneath that sit the same problems in different clothes: mid-term plan changes that move the deferred balance, processor settlements that arrive net of fees and refunds, and a cost-of-revenue line that has quietly become a residual category. None of these is difficult once the structure is right, and all of them are expensive to reconstruct a year later. We maintain that structure as transactions post, in the systems you already run, and leave every judgement — the recognition policy, the tax position, what goes in front of a board — with the people whose call it is."
       benefits={[
         'Deferred revenue maintained and released against the contract term, not on invoice',
         'Deferred balance reconciled to the subscription base, including mid-term changes',
