@@ -130,6 +130,18 @@ export default function BookkeepingUSPage() {
 
       <ServiceDepth serviceSlug="bookkeeping" regionSlug="united-states" />
 
+      <section className="w-full py-8 md:py-10 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Related industry scope</h2>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <Link href="/industries/real-estate" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Real Estate Bookkeeping</Link>
+            <Link href="/industries/property-management" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Property Management Accounting</Link>
+            <Link href="/industries/hoa-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">HOA Bookkeeping</Link>
+            <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Support</Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
       <FurtherReading
         topics={['Bookkeeping']}
