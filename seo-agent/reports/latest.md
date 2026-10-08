@@ -157,7 +157,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1040 | 1 | 4 | 0 | 0 |
+| app/page.tsx | 100/100 | 1052 | 1 | 4 | 0 | 0 |
 
 ## Priority queue
 
