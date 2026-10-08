@@ -30,15 +30,16 @@ const scope = [
   ['Owner statement support', 'Prepare recurring owner reporting from the underlying property records, with income, expenses, management fees and other agreed activity clearly presented.'],
   ['Accounts payable', 'Process vendor invoices, code expenses to the appropriate property and maintain supporting records for the payment and month-end process.'],
   ['Accounts receivable', 'Track tenant or customer receivables, apply receipts and maintain aging information for follow-up by the property management team.'],
-  ['Bank and property reconciliations', 'Reconcile operating and property-related accounts, investigate differences and keep the general ledger aligned with bank activity.'],
-  ['Security-deposit records', 'Track deposits and related ledger activity separately from operating income and expenses, according to the accounting structure and applicable requirements.'],
+  ['Bank, property and platform reconciliations', 'Reconcile operating and property-related accounts, compare property-management system activity with the accounting records where both are used, investigate differences and keep the ledger aligned with the underlying activity.'],
+  ['Owner, tenant and deposit ledgers', 'Maintain owner and tenant balances and track security-deposit activity separately from operating income and expenses, with reconciliation to the related account or ledger where applicable.'],
+  ['Trust or client-money reconciliation support', 'Reconcile the accounting records to the relevant bank and sub-ledger balances where the engagement includes client or trust accounts. The exact control, frequency and responsible party follow the applicable jurisdiction and management structure.'],
   ['Month-end close', 'Complete recurring reconciliations, adjustments and supporting schedules so property-level reports are prepared from current books rather than reconstructed later.'],
 ];
 
 const workflow = [
   ['1. Property setup', 'Confirm the property, owner, unit and account structure already used by the management operation before recurring transactions are processed.'],
   ['2. Transaction processing', 'Record rent, receipts, vendor bills, operating expenses, management fees and other agreed activity at the appropriate property or ledger level.'],
-  ['3. Reconciliation', 'Compare bank, rent and ledger activity, identify differences and keep supporting schedules tied to the accounting records.'],
+  ['3. Reconciliation', 'Compare bank, rent, property-management platform and ledger activity where applicable, identify differences and keep supporting schedules tied to the accounting records.'],
   ['4. Monthly close', 'Complete the agreed close checklist and prepare the reports and schedules needed by the property manager and owners.'],
 ];
 
@@ -126,7 +127,7 @@ export default function PropertyManagementAccountingPage() {
               A property management company is maintaining books for a portfolio while also reporting activity back to owners and tracking balances for tenants or occupants. The accounting therefore needs to stay clear at the property level while still rolling into a useful portfolio view.
             </p>
             <p className="text-lg leading-relaxed text-muted">
-              The recurring work connects transaction posting, rent and receivable records, vendor expenses, owner reporting, bank reconciliations and month-end close. The exact workflow follows the existing system, portfolio structure and reporting requirements.
+              The recurring work connects transaction posting, rent and receivable records, vendor expenses, owner reporting, bank reconciliations and month-end close. Where a property-management platform and accounting ledger are both in use, the two records also need a defined reconciliation point. The exact workflow follows the existing system, portfolio structure and reporting requirements.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
