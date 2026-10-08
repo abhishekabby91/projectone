@@ -141,7 +141,7 @@
 | app/services/payroll/australia/page.tsx | 90/100 | 802 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 785 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-states/page.tsx | 90/100 | 741 | 1 | 15 | 0 | 0 |
-| app/services/property-management-accounting/page.tsx | 90/100 | 1096 | 1 | 13 | 0 | 0 |
+| app/services/property-management-accounting/page.tsx | 90/100 | 1179 | 1 | 13 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 735 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 632 | 1 | 8 | 0 | 0 |
