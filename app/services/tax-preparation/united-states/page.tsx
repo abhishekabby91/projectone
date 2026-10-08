@@ -144,7 +144,7 @@ export default function TaxPrepUSPage() {
               where a reviewer will actually see them.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              What does not move is anything that needs a licence. Review, filing and any representation work are handled according to the engagement, applicable authorization and professional requirements. The outsourcing workflow should make the responsible person, required consents and review points clear before the return moves forward.
+              What does not move is anything that needs a licence. Review, filing and any representation work are handled according to the engagement, applicable authorization and professional requirements. Where a paid preparer is involved, the applicable PTIN, signing-preparer and e-file requirements also need to be addressed. The outsourcing workflow should make the responsible person, required consents and review points clear before the return moves forward.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               That boundary decides where your season&rsquo;s constraint ends up. A firm that outsources
@@ -210,8 +210,7 @@ export default function TaxPrepUSPage() {
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Supported tax software includes <Link href="/technology/drake-tax" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">Drake Tax</Link>{' '}
-              and <Link href="/technology/cch" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">CCH Axcess</Link>. If your
-              a firm runs a different package, the software can be reviewed at the start of the engagement. Whether it can be supported
+              and <Link href="/technology/cch" className="font-semibold text-primary underline underline-offset-2 hover:text-accent">CCH Axcess</Link>. If your firm runs a different package, the software can be reviewed at the start of the engagement. Whether it can be supported
               depends on the licence seats and the access your firm is able to provide, and that is much
               better established in November than in February. The work runs inside the setup the firm already
               runs; tax software implementation and configuration are outside the service.
