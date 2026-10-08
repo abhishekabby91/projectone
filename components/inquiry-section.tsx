@@ -47,12 +47,12 @@ const REGION_COPY: Record<RegionSlug, { title: string; lead: string; points: str
 };
 
 const GENERIC = {
-  title: 'Talk to Us About the Work You Need Covered',
-  lead: 'The consultation and the call are always free. Tell us what is falling behind and we will talk through what support would actually change.',
+  title: 'Tell Us About the Work You Need Support With',
+  lead: 'Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step.',
   points: [
-    'Start small — one client, or one cycle of the work',
-    'We prepare; your team keeps review, judgement and sign-off',
-    'No filing credentials and no banking control, in any market',
+    'Explain the work, software or process involved',
+    'Keep your existing review and approval responsibilities',
+    'Discuss the scope before deciding how to proceed',
   ],
 };
 
