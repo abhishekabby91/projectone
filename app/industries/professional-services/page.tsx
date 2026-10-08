@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Do you handle client trust and IOLTA bookkeeping for law firms?',
     answer:
-      'The ledger and reconciliation cover Client trust and operating funds are kept strictly separate in the accounts, each client balance is maintained per matter, and the three-way reconciliation — bank, trust ledger and the sum of client balances — is run on a monthly cycle with any break reported to you rather than absorbed. Regulatory compliance remains the firm's responsibility: the client-money rules belong to your bar association or equivalent regulator and differ by jurisdiction, and satisfying them is the firm’s own responsibility.',
+      "The ledger and reconciliation cover Client trust and operating funds are kept strictly separate in the accounts, each client balance is maintained per matter, and the three-way reconciliation — bank, trust ledger and the sum of client balances — is run on a monthly cycle with any break reported to you rather than absorbed. Regulatory compliance remains the firm's responsibility: the client-money rules belong to your bar association or equivalent regulator and differ by jurisdiction, and satisfying them is the firm’s own responsibility.",
   },
   {
     question: 'What exactly is a three-way reconciliation, and who does it?',
