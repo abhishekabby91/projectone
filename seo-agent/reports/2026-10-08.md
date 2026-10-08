@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **131**
+- Files/pages scanned: **133**
 - High-priority findings: **7**
 - Medium-priority findings: **9**
 - Low-priority findings: **8**
@@ -25,6 +25,7 @@
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-delinquency-accounting/page.tsx | 85/100 | 484 | 1 | 6 | 0 | 0 |
+| app/blog/hoa-income-statement-explained/page.tsx | 85/100 | 474 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-operating-vs-reserve-funds/page.tsx | 85/100 | 405 | 1 | 3 | 0 | 0 |
 | app/compliance/page.tsx | 85/100 | 647 | 1 | 1 | 0 | 0 |
 | app/data-security/page.tsx | 85/100 | 868 | 1 | 1 | 0 | 0 |
@@ -46,6 +47,7 @@
 | app/blog/hoa-accounts-payable/page.tsx | 90/100 | 373 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 667 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-assessment-receivables-reconciliation/page.tsx | 90/100 | 677 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-balance-sheet-explained/page.tsx | 90/100 | 525 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-bank-reconciliation/page.tsx | 90/100 | 451 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-board-financial-package/page.tsx | 90/100 | 632 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-bookkeeping-vs-accounting/page.tsx | 90/100 | 454 | 1 | 3 | 0 | 0 |
