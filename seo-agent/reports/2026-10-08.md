@@ -134,7 +134,7 @@
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 928 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 924 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 1018 | 1 | 12 | 0 | 0 |
-| app/services/hoa-accounting/page.tsx | 90/100 | 815 | 1 | 9 | 0 | 0 |
+| app/services/hoa-accounting/page.tsx | 90/100 | 970 | 1 | 9 | 0 | 0 |
 | app/services/hoa-bookkeeping/page.tsx | 90/100 | 656 | 1 | 10 | 0 | 0 |
 | app/services/hoa-financial-reporting/page.tsx | 90/100 | 784 | 1 | 10 | 0 | 0 |
 | app/services/page.tsx | 90/100 | 1043 | 1 | 10 | 0 | 0 |
