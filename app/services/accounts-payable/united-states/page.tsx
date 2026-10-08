@@ -21,7 +21,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'AP backlogs in the U.S. usually come down to the same thing: invoices sitting in an inbox nobody has entered, matched, or routed. We process vendor invoices inside your existing system, prepare payment runs for ACH, check, or wire, and track 1099 vendor activity through the year — while payment authorization and bank access stay with your team.';
+const overview = 'AP backlogs often begin with invoices waiting to be entered, matched or routed. The process covers vendor invoice entry inside the existing system, payment-run preparation for ACH, check or wire, and year-round 1099 vendor tracking, while payment authorization and bank access remain with the client.';
 
 const uSElements = [
   'Invoice entry and PO matching in QuickBooks Online, Xero, or NetSuite',
@@ -50,8 +50,8 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you initiate ACH or wire payments?', answer: 'No. We prepare the payment batch — vendor, amount, and due date — but an authorized person inside your organization initiates the actual ACH, check, or wire payment. We do not hold bank access.' },
-  { question: 'How do you track 1099 vendors?', answer: 'We flag vendors that meet the general threshold for 1099-NEC reporting as invoices are entered through the year, so year-end 1099 preparation starts from accurate records rather than a scramble in January. Final determination of reportable payments and filing stays with your CPA.' },
+  { question: 'Do you initiate ACH or wire payments?', answer: 'The payment batch can be prepared with vendor, amount and due date. An authorized person inside the organization initiates the actual ACH, check or wire payment, with bank access remaining under internal control.' },
+  { question: 'How do you track 1099 vendors?', answer: 'Vendor activity can be tracked through the year so year-end 1099 preparation starts from organized records. Final determination of reportable payments and filing follows the tax engagement.' },
   { question: 'Can this work with three-way matching?', answer: 'Yes. Where purchase orders exist, invoices are matched against PO line items and receiving records before being routed for approval.' },
   { question: 'What about state sales/use tax on vendor invoices?', answer: 'Where applicable, vendor invoices are coded to reflect sales or use tax treatment consistent with your existing chart of accounts. Determining nexus and filing obligations stays with your tax advisor.' },
 ];
@@ -124,7 +124,7 @@ export default function AccountsPayableUSPage() {
               <div className="overflow-hidden rounded-xl border border-border bg-input">
                 <div className="border-l-4 border-accent p-5 sm:p-6 space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-accent">Payment release is not part of it</p>
-                  <p className="text-sm sm:text-base leading-relaxed text-foreground">We prepare a payment run. We do not hold banking credentials, initiate transfers, or release payments, and we would decline an engagement structured that way. The approval and the release stay inside your own controls, with your own people, on your own bank.</p>
+                  <p className="text-sm sm:text-base leading-relaxed text-foreground">Payment runs can be prepared without holding banking credentials, initiating transfers or releasing payments. Approval and payment release remain within the organization’s own controls and bank account.</p>
                   <p className="text-sm sm:text-base leading-relaxed text-foreground">That is not a limitation to work around &mdash; it is most of the point. Separating the person who prepares a payment from the person who authorises it is the basic control that makes payables safe to delegate at all.</p>
                 </div>
               </div>
