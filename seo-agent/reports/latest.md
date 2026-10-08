@@ -21,7 +21,7 @@
 | app/resources/page.tsx | 65/100 | 528 | 0 | 6 | 0 | 0 |
 | app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 310 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
-| app/industries/page.tsx | 75/100 | 215 | 1 | 1 | 0 | 0 |
+| app/industries/page.tsx | 75/100 | 213 | 1 | 1 | 0 | 0 |
 | app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 299 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 345 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
@@ -89,13 +89,13 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1257 | 1 | 26 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1244 | 1 | 26 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2331 | 1 | 56 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 1966 | 1 | 33 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 2247 | 1 | 25 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 1933 | 1 | 33 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2219 | 1 | 25 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 958 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
@@ -105,7 +105,7 @@
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
 | app/markets/united-states/california/page.tsx | 90/100 | 512 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/florida/page.tsx | 90/100 | 503 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/page.tsx | 90/100 | 1833 | 1 | 16 | 0 | 0 |
+| app/markets/united-states/page.tsx | 90/100 | 1745 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
@@ -121,31 +121,31 @@
 | app/resources/guides/staff-augmentation-tax-season-guide/page.tsx | 90/100 | 838 | 1 | 3 | 0 | 0 |
 | app/services/accounting/australia/page.tsx | 90/100 | 856 | 1 | 12 | 0 | 0 |
 | app/services/accounting/united-kingdom/page.tsx | 90/100 | 796 | 1 | 12 | 0 | 0 |
-| app/services/accounting/united-states/page.tsx | 90/100 | 709 | 1 | 11 | 0 | 0 |
+| app/services/accounting/united-states/page.tsx | 90/100 | 692 | 1 | 11 | 0 | 0 |
 | app/services/accounts-payable/australia/page.tsx | 90/100 | 732 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/united-kingdom/page.tsx | 90/100 | 745 | 1 | 12 | 0 | 0 |
-| app/services/accounts-payable/united-states/page.tsx | 90/100 | 1012 | 1 | 11 | 0 | 0 |
+| app/services/accounts-payable/united-states/page.tsx | 90/100 | 966 | 1 | 11 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 792 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 815 | 1 | 12 | 0 | 0 |
-| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 781 | 1 | 11 | 0 | 0 |
+| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 736 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/australia/page.tsx | 90/100 | 936 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-kingdom/page.tsx | 90/100 | 941 | 1 | 11 | 0 | 0 |
-| app/services/audit-support/united-states/page.tsx | 90/100 | 1046 | 1 | 11 | 0 | 0 |
+| app/services/audit-support/united-states/page.tsx | 90/100 | 1029 | 1 | 11 | 0 | 0 |
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 928 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 924 | 1 | 12 | 0 | 0 |
-| app/services/bookkeeping/united-states/page.tsx | 90/100 | 1018 | 1 | 12 | 0 | 0 |
+| app/services/bookkeeping/united-states/page.tsx | 90/100 | 963 | 1 | 12 | 0 | 0 |
 | app/services/hoa-accounting/page.tsx | 90/100 | 970 | 1 | 9 | 0 | 0 |
 | app/services/hoa-bookkeeping/page.tsx | 90/100 | 656 | 1 | 10 | 0 | 0 |
 | app/services/hoa-financial-reporting/page.tsx | 90/100 | 784 | 1 | 10 | 0 | 0 |
-| app/services/page.tsx | 90/100 | 1043 | 1 | 10 | 0 | 0 |
+| app/services/page.tsx | 90/100 | 1041 | 1 | 10 | 0 | 0 |
 | app/services/payroll/australia/page.tsx | 90/100 | 804 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 789 | 1 | 12 | 0 | 0 |
-| app/services/payroll/united-states/page.tsx | 90/100 | 813 | 1 | 11 | 0 | 0 |
+| app/services/payroll/united-states/page.tsx | 90/100 | 725 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 737 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 734 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 638 | 1 | 8 | 0 | 0 |
 | app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 672 | 1 | 9 | 0 | 0 |
-| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1807 | 1 | 16 | 0 | 0 |
+| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1725 | 1 | 16 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
 | app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1815 | 1 | 10 | 0 | 0 |
@@ -160,7 +160,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1052 | 1 | 4 | 0 | 0 |
+| app/page.tsx | 100/100 | 1024 | 1 | 4 | 0 | 0 |
 
 ## Priority queue
 
