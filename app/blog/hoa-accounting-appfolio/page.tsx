@@ -31,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingAppFolio() {
   return (
-    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting with AppFolio: What Should Be Reviewed Each Month?"
       category="HOA Accounting"
       description="AppFolio can connect property and accounting workflows, but monthly review still depends on accurate ledgers, reconciliations, coding and clear operating-versus-reserve reporting."
