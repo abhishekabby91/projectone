@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'Audit work can slow down long before fieldwork begins. Schedules need updating, reconciliations need support, client documents need to be organized and open questions need someone to keep moving. We support that preparation work so the engaged CPA firm or auditor can spend less time hunting for evidence and more time exercising professional judgment.';
+const overview = 'Audit work can slow down before fieldwork begins when schedules, reconciliations, client documents and open requests are not organized. Preparation support keeps the evidence workflow moving so the engaged CPA firm or auditor can focus on professional judgment.';
 
 const support = [
   'Working-paper and supporting-schedule preparation',
@@ -44,8 +44,8 @@ const faqs = [
   { question: 'Do you issue the audit opinion?', answer: 'No. The audit opinion is issued by the engaged CPA firm or auditor. We support preparation, documentation and defined testing work.' },
   { question: 'What if the audit team is spending too much time chasing support?', answer: 'That is exactly the type of preparation work that can be separated from the professional review itself. Schedules, reconciliations, evidence and open-item tracking can be organized so the reviewer can see what is complete and what still needs attention.' },
   { question: 'Can you organize working papers before fieldwork?', answer: 'Yes. Getting schedules, reconciliations and supporting evidence into a consistent structure before fieldwork can reduce the amount of basic follow-up that competes with the actual audit work.' },
-  { question: 'Can you work from the auditor’s PBC list?', answer: 'Yes. We can help organize requested documentation, reconcile supporting schedules and track outstanding items according to the engagement workflow.' },
-  { question: 'Do you support internal-control documentation?', answer: 'We can support documentation and evidence gathering where it is within the agreed scope and follows the procedures established by your audit or compliance team.' },
+  { question: 'Can you work from the auditor’s PBC list?', answer: 'Yes. Requested documentation can be organized, supporting schedules reconciled and outstanding items tracked according to the engagement workflow.' },
+  { question: 'Do you support internal-control documentation?', answer: 'Documentation and evidence gathering can be supported where it falls within the agreed scope and follows the procedures established by the audit or compliance team.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
