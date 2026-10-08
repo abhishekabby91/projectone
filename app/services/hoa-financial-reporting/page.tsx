@@ -57,7 +57,7 @@ export default function HoaFinancialReportingPage() {
         subtitle="Monthly reports for HOA boards and community managers"
         title="HOA Financial Reporting Services"
         description="Board-ready financial statements that connect the monthly close to the approved budget, homeowner receivables and operating and reserve activity."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss the Reporting Scope', href: '/contact' }}
         ctaSecondary={{ text: 'HOA Accounting Services', href: '/services/hoa-accounting' }}
         background="primary-gradient"
       />
@@ -75,7 +75,7 @@ export default function HoaFinancialReportingPage() {
           <Reveal className="space-y-5">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">Reporting that can be read</span>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">The Board Should Not Need an Accountant to Read the Board Pack</h2>
-            <p className="text-lg leading-relaxed text-muted">An HOA financial report is useful when it answers the questions directors actually ask: what came in, what went out, what is owed, how actual spending compares with the budget, and how operating and reserve activity changed. We prepare recurring reports from reconciled accounting records and keep the format consistent month to month.</p>
+            <p className="text-lg leading-relaxed text-muted">An HOA financial report is useful when it answers the questions directors actually ask: what came in, what went out, what is owed, how actual spending compares with the budget, and how operating and reserve activity changed. Recurring reports are prepared from reconciled accounting records, with a consistent format from month to month.</p>
           </Reveal>
           <Reveal delay={0.12}><ServiceIllustration service="accounting" className="mx-auto w-full max-w-[300px] lg:max-w-none" /></Reveal>
         </div>
@@ -112,8 +112,8 @@ export default function HoaFinancialReportingPage() {
       </section>
 
       <FAQSection subtitle="HOA reporting questions" items={faqs} columns={2} />
-      <InquirySection source={PATH} title="Review Your Current Board Package" lead="Tell us what the board receives today and which part of the monthly report is hardest to explain." />
-      <CTABanner title="Make the Monthly Numbers Easier to Read" description="We can structure the reporting around your existing budget, accounting system and board meeting calendar." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
+      <InquirySection source={PATH} title="Review the Current Board Package" lead="Tell us what the board receives today and which part of the monthly report is hardest to explain." />
+      <CTABanner title="A Clearer Monthly Board Package" description="The reporting structure can follow the existing budget, accounting system and board meeting calendar." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
     </main>
   );
 }
