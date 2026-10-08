@@ -30,17 +30,17 @@ const homePageFAQs = [
   {
     question: 'What services does Accounstone provide?',
     answer:
-      'We provide bookkeeping, accounting operations, tax preparation, payroll, accounts payable, accounts receivable, financial reporting and related accounting support. The scope is built around the work you need to hand off and the review points you want to keep.',
+      'Bookkeeping, accounting operations, tax preparation, payroll, accounts payable, accounts receivable, financial reporting and related accounting support can be scoped around the work that needs to be handed off and the review points that remain in-house.',
   },
   {
     question: 'Who does Accounstone work with?',
     answer:
-      'We work with accounting firms, CPA firms, professional practices and businesses that need recurring accounting, bookkeeping or tax support. The engagement can be structured around a specific function, workload or ongoing process.',
+      'Recurring accounting, bookkeeping and tax support can be structured for accounting firms, CPA firms, professional practices and businesses around a specific function, workload or ongoing process.',
   },
   {
     question: 'Can you work with our existing software?',
     answer:
-      'Yes. Our team works with platforms including QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess and MYOB, along with client-specific systems and workflows. The goal is to fit into your existing process rather than force a system change.',
+      'Yes. Supported platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess and MYOB, along with client-specific systems and workflows. The objective is to fit the existing process rather than force a system change.',
   },
   {
     question: 'How quickly can you get started?',
@@ -50,12 +50,12 @@ const homePageFAQs = [
   {
     question: 'How is an engagement scoped?',
     answer:
-      'We look at transaction volume, workflow complexity, systems, deadlines, review points and the work you want to keep in-house. A written scope is prepared once those requirements are clear rather than starting with a standard package.',
+      'Transaction volume, workflow complexity, systems, deadlines, review points and the work to remain in-house determine the scope. A written scope is prepared once those requirements are clear rather than starting with a standard package.',
   },
   {
     question: 'Do you provide offshore accounting support?',
     answer:
-      'Yes. Our delivery team operates from New Delhi, India and works as an extension of client teams, following documented workflows, defined responsibilities and agreed review processes.',
+      'Delivery operates from New Delhi, India as an extension of client teams, following documented workflows, defined responsibilities and agreed review processes.',
   },
 ];
 
@@ -121,13 +121,13 @@ export default function HomePage() {
             <>
               <span className="inline-flex items-center gap-2 text-sm md:text-base font-semibold tracking-wide uppercase text-accent">
                 <span className="w-4 h-px bg-accent" aria-hidden="true" />
-                What We Do
+                Accounting and Bookkeeping Scope
               </span>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
                 Accounting Support Without Changing How You Work
               </h2>
               <p className="text-muted leading-relaxed">
-                Accounstone provides outsourced accounting, bookkeeping and tax support for accounting firms and businesses. We work within your existing systems, processes and review structure.
+                Accounstone provides outsourced accounting, bookkeeping and tax support for accounting firms and businesses. The work fits existing systems, processes and review structures.
               </p>
             </>
           </Reveal>
@@ -157,7 +157,7 @@ export default function HomePage() {
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-primary">{item.title}</h3>
                 <p className="mt-3 text-muted leading-relaxed">{item.body}</p>
                 <span className="mt-5 inline-block text-sm font-semibold text-accent">
-                  See how we can support your team <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+                  See how the support model works <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
                 </span>
               </Link>
             </Reveal>
@@ -167,7 +167,7 @@ export default function HomePage() {
 
       <section data-section="services">
         <SectionGrid
-          subtitle="Our Services"
+          subtitle="Services"
           title="Accounting Services That Keep Work Moving"
           description="Practical support across bookkeeping, accounting operations, tax preparation, payroll, payables, receivables and financial reporting."
           items={services}
@@ -192,7 +192,7 @@ export default function HomePage() {
                 Accounting Support for Different Types of Businesses
               </h2>
               <p className="max-w-3xl text-muted leading-relaxed">
-                Different businesses have different accounting workflows. Our industry pages explain how the work can be structured around the systems, transactions and reporting requirements involved.
+                Accounting workflows differ by industry. The industry pages explain how the work can be structured around the systems, transactions and reporting requirements involved.
               </p>
             </div>
           </Reveal>
@@ -231,7 +231,7 @@ export default function HomePage() {
                   A Delivery Partner, Not Just Extra Hands
                 </h2>
                 <p className="text-lg text-muted leading-relaxed">
-                  We work inside your processes, take ownership of defined accounting work and follow the review standards you establish.
+                  Defined accounting work can run inside existing processes with documented responsibilities and established review standards.
                 </p>
                 <div className="space-y-4 pt-4 pl-5 margin-rule">
                   {[
@@ -266,7 +266,7 @@ export default function HomePage() {
                 <div className="relative space-y-3">
                   <h3 className="font-serif text-3xl font-bold">Built Around Your Process</h3>
                   <p className="text-white/80 text-lg leading-relaxed">
-                    We learn the workflow, document the handoffs, define responsibilities and establish review points before recurring work begins.
+                    The workflow is mapped, handoffs documented, responsibilities defined and review points established before recurring work begins.
                   </p>
                 </div>
                 <div className="relative border-t border-white/15 pt-5">
@@ -313,13 +313,13 @@ export default function HomePage() {
         source="/"
         background="white"
         title="Talk to Us About the Work"
-        lead="Tell us what accounting work needs support, which systems you use and how your current process works. We can discuss a practical way to structure the engagement."
+        lead="Share the accounting work requiring support, the systems in use and the current process. The engagement can then be structured around the actual workflow."
       />
 
       <section data-section="contact">
         <CTABanner
           title="Need Accounting Support?"
-          description="Tell us what needs to get done. We can help you define a practical outsourcing model around the work."
+          description="Describe the work that needs to be covered. The outsourcing model can be structured around the actual requirements."
           cta={{ text: 'Start a Conversation', href: '/contact' }}
           ctaSecondary={{ text: 'Learn About Accounstone', href: '/about' }}
           background="primary"
