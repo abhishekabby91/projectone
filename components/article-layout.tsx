@@ -10,7 +10,6 @@ import {
   baseUrl,
 } from '@/lib/seo';
 import { ReactNode, ReactElement, isValidElement } from 'react';
-import type { ReactElement as TypedReactElement } from 'react';
 
 interface ArticleLayoutProps {
   title: string;
@@ -37,41 +36,102 @@ interface ArticleLayoutProps {
   children: ReactNode;
 }
 
-type TocItem = { id: string; label: string; level: 2 | 3 };
+type TocItem = {
+  id: string;
+  label: string;
+  level: 2 | 3;
+};
 
 function slugifyHeading(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 function getText(node: ReactNode): string {
-  if (typeof node === 'string' || typeof node === 'number') return String(node);
-  if (Array.isArray(node)) return node.map(getText).join('');
+  if (typeof node === 'string' || typeof node === 'number') {
+    return String(node);
+  }
+
+  if (Array.isArray(node)) {
+    return node.map(getText).join('');
+  }
+
   if (isValidElement(node)) {
-    const props = (node as TypedReactElement<{ children?: ReactNode }>).props;
+    const props = (node as ReactElement<{ children?: ReactNode }>).props;
     return getText(props.children);
   }
 
-function addHeadingIds(nodes: ReactNode, toc: TocItem[], usedIds: Set<string>): ReactNode {
-  if (Array.isArray(nodes)) return nodes.map((node) => addHeadingIds(node, toc, usedIds));
-  if (!isValidElement(nodes)) return nodes;
+  return '';
+}
 
-  const element = nodes as ReactElement<{ children?: ReactNode; id?: string }>;
+function addHeadingIds(
+  nodes: ReactNode,
+  toc: TocItem[],
+  usedIds: Set<string>
+): ReactNode {
+  if (Array.isArray(nodes)) {
+    return nodes.map((node) => addHeadingIds(node, toc, usedIds));
+  }
+
+  if (!isValidElement(nodes)) {
+    return nodes;
+  }
+
+  const element = nodes as ReactElement<{
+    children?: ReactNode;
+    id?: string;
+  }>;
+
   const tag = typeof element.type === 'string' ? element.type : '';
+
   if (tag === 'h2' || tag === 'h3') {
     const label = getText(element.props.children).trim();
+
     if (label) {
-      const baseId = slugifyHeading(label) || `section-${toc.length + 1}`;
+      const baseId =
+        slugifyHeading(label) || `section-${toc.length + 1}`;
+
       let id = baseId;
       let suffix = 2;
-      while (usedIds.has(id)) id = `${baseId}-${suffix++}`;
+
+      while (usedIds.has(id)) {
+        id = `${baseId}-${suffix++}`;
+      }
+
       usedIds.add(id);
-      toc.push({ id, label, level: tag === 'h2' ? 2 : 3 });
-      return { ...element, props: { ...element.props, id } };
+
+      toc.push({
+        id,
+        label,
+        level: tag === 'h2' ? 2 : 3,
+      });
+
+      return {
+        ...element,
+        props: {
+          ...element.props,
+          id,
+        },
+      };
     }
   }
+
   if (element.props?.children) {
-    return { ...element, props: { ...element.props, children: addHeadingIds(element.props.children, toc, usedIds) } };
+    return {
+      ...element,
+      props: {
+        ...element.props,
+        children: addHeadingIds(
+          element.props.children,
+          toc,
+          usedIds
+        ),
+      },
+    };
   }
+
   return element;
 }
 
@@ -87,11 +147,26 @@ export default function ArticleLayout({
   children,
 }: ArticleLayoutProps) {
   const isBlog = section === 'blog';
-  const hubHref = isBlog ? '/blog' : `/resources/${section}`;
+
+  const hubHref = isBlog
+    ? '/blog'
+    : `/resources/${section}`;
+
   const path = `${hubHref}/${slug}`;
-  const sectionLabel = { guides: 'Guides', insights: 'Insights', blog: 'Blog' }[section];
+
+  const sectionLabel = {
+    guides: 'Guides',
+    insights: 'Insights',
+    blog: 'Blog',
+  }[section];
+
   const toc: TocItem[] = [];
-  const articleContent = addHeadingIds(children, toc, new Set());
+
+  const articleContent = addHeadingIds(
+    children,
+    toc,
+    new Set()
+  );
 
   const articleSchema = generateArticleSchema({
     title,
@@ -104,66 +179,164 @@ export default function ArticleLayout({
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: baseUrl },
+    {
+      name: 'Home',
+      url: baseUrl,
+    },
+
     // /blog sits at the root, so it has no Resources level above it.
-    ...(isBlog ? [] : [{ name: 'Resources', url: `${baseUrl}/resources` }]),
-    { name: sectionLabel, url: `${baseUrl}${hubHref}` },
-    { name: title, url: `${baseUrl}${path}` },
+    ...(isBlog
+      ? []
+      : [
+          {
+            name: 'Resources',
+            url: `${baseUrl}/resources`,
+          },
+        ]),
+
+    {
+      name: sectionLabel,
+      url: `${baseUrl}${hubHref}`,
+    },
+
+    {
+      name: title,
+      url: `${baseUrl}${path}`,
+    },
   ]);
 
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 hero-gradient text-white">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="text-sm md:text-base font-semibold tracking-wide uppercase text-white/80">
             {category}
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-balance">{title}</h1>
-          <p className="text-lg text-white/90 leading-relaxed">{description}</p>
+
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-balance">
+            {title}
+          </h1>
+
+          <p className="text-lg text-white/90 leading-relaxed">
+            {description}
+          </p>
         </div>
       </section>
 
-      <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
+      <nav
+        aria-label="Breadcrumb"
+        className="w-full px-6 md:px-8 pt-6 bg-white"
+      >
         <ol className="max-w-3xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
-          <li><Link href="/" className="inline-block py-1.5 hover:text-primary transition-colors">Home</Link></li>
+          <li>
+            <Link
+              href="/"
+              className="inline-block py-1.5 hover:text-primary transition-colors"
+            >
+              Home
+            </Link>
+          </li>
+
           <li aria-hidden="true">/</li>
+
           {!isBlog && (
             <>
-              <li><Link href="/resources" className="inline-block py-1.5 hover:text-primary transition-colors">Resources</Link></li>
+              <li>
+                <Link
+                  href="/resources"
+                  className="inline-block py-1.5 hover:text-primary transition-colors"
+                >
+                  Resources
+                </Link>
+              </li>
+
               <li aria-hidden="true">/</li>
             </>
           )}
-          <li><Link href={hubHref} className="inline-block py-1.5 hover:text-primary transition-colors">{sectionLabel}</Link></li>
+
+          <li>
+            <Link
+              href={hubHref}
+              className="inline-block py-1.5 hover:text-primary transition-colors"
+            >
+              {sectionLabel}
+            </Link>
+          </li>
+
           <li aria-hidden="true">/</li>
-          <li aria-current="page" className="text-primary font-medium line-clamp-1">{title}</li>
+
+          <li
+            aria-current="page"
+            className="text-primary font-medium line-clamp-1"
+          >
+            {title}
+          </li>
         </ol>
       </nav>
 
       <article className="w-full py-7 md:py-10 px-6 md:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
           {toc.length > 1 && (
-            <nav aria-label="Table of contents" className="mb-9 rounded-xl border border-border bg-input p-5 md:p-6">
-              <h2 className="text-base font-bold text-primary mb-3">On this page</h2>
+            <nav
+              aria-label="Table of contents"
+              className="mb-9 rounded-xl border border-border bg-input p-5 md:p-6"
+            >
+              <h2 className="text-base font-bold text-primary mb-3">
+                On this page
+              </h2>
+
               <ol className="space-y-2 text-sm">
                 {toc.map((item) => (
-                  <li key={item.id} className={item.level === 3 ? 'pl-4' : ''}>
-                    <a href={`#${item.id}`} className="text-muted hover:text-primary transition-colors leading-6">{item.label}</a>
+                  <li
+                    key={item.id}
+                    className={
+                      item.level === 3 ? 'pl-4' : ''
+                    }
+                  >
+                    <a
+                      href={`#${item.id}`}
+                      className="text-muted hover:text-primary transition-colors leading-6"
+                    >
+                      {item.label}
+                    </a>
                   </li>
                 ))}
               </ol>
             </nav>
           )}
+
           <div className="mb-8 rounded-xl border border-border bg-input p-5 md:p-6">
-            <p className="text-xs font-bold uppercase tracking-wide text-accent mb-2">Quick answer</p>
-            <p className="text-base md:text-lg text-foreground leading-relaxed">{description}</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-accent mb-2">
+              Quick answer
+            </p>
+
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              {description}
+            </p>
           </div>
+
           <Reveal className="prose-content space-y-8">
             <>{articleContent}</>
           </Reveal>
-          <ShareButtons url={`${baseUrl}${path}`} title={title} />
+
+          <ShareButtons
+            url={`${baseUrl}${path}`}
+            title={title}
+          />
         </div>
       </article>
 
@@ -173,9 +346,11 @@ export default function ArticleLayout({
         Below `lg` it is a slim bar that does not cover the article — see the
         note in the component about intrusive interstitials.
       */}
+
       {/* Reads against the <article> box rather than the document, so "full"
           means the article is finished rather than the footer is on screen. */}
       <ReadingProgress />
+
       {/* The bottom bar is mounted once from app/layout.tsx now, so every
           page has it rather than only these 19. Rendering it here too would
           put two on an article. */}
@@ -184,7 +359,10 @@ export default function ArticleLayout({
         compact
         background="input"
         source={path}
-        title={inquiryTitle ?? 'Put This to Work on Your Own Files'}
+        title={
+          inquiryTitle ??
+          'Put This to Work on Your Own Files'
+        }
         lead={
           inquiryLead ??
           'Reading about the process is one thing; applying it to your own ledgers, deadlines and review points is another. The consultation and the call are free.'
@@ -194,7 +372,10 @@ export default function ArticleLayout({
       <CTABanner
         title="Ready to Simplify Your Accounting?"
         description="Let's talk about what your business actually needs."
-        cta={{ text: 'Schedule Consultation', href: '/contact' }}
+        cta={{
+          text: 'Schedule Consultation',
+          href: '/contact',
+        }}
         background="primary"
       />
     </main>
