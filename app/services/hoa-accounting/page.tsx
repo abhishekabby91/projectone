@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'HOA accounting connects assessments, homeowner balances, vendor bills, bank activity, operating funds, reserves and the approved budget into records the board can review each month. We handle the recurring accounting work while the association keeps approvals, payments and governance decisions.';
+const overview = 'HOA accounting connects assessments, homeowner balances, vendor bills, bank activity, operating funds, reserves and the approved budget into records the board can review each month. The recurring accounting cycle covers record maintenance, reconciliations, reporting and year-end schedules while approvals, payments and governance decisions remain with the association.';
 
 const scope = [
   'Assessment and homeowner ledger maintenance',
@@ -31,9 +31,9 @@ const scope = [
 ];
 
 const process = [
-  { title: 'Review the current books', text: 'We start with the accounting system, chart of accounts, assessment schedule, bank accounts, budget and current reporting package.' },
+  { title: 'Review the current books', text: 'The accounting system, chart of accounts, assessment schedule, bank accounts, budget and current reporting package establish the starting point.' },
   { title: 'Set the monthly structure', text: 'The recurring close is organized around the association’s own budget lines, fund structure and board meeting calendar.' },
-  { title: 'Reconcile and report', text: 'Transactions are posted, accounts reconciled, assessment balances reviewed and the monthly package assembled for review.' },
+  { title: 'Reconcile and report', text: 'Transactions are posted, accounts reconciled, assessment balances reviewed and the monthly package assembled for board review.' },
   { title: 'Keep decisions with the association', text: 'The board or authorized manager retains approval, payment release, collections decisions and other governance responsibilities.' },
 ];
 
@@ -70,7 +70,7 @@ export default function HoaAccountingServicesPage() {
         subtitle="For homeowners associations and community management companies"
         title="HOA Accounting Services"
         description="Clean assessment records, reconciled accounts, clear fund reporting and a monthly board package built around the way an association actually operates."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }}
         ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }}
         background="primary-gradient"
       />
@@ -98,7 +98,7 @@ export default function HoaAccountingServicesPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="text-center space-y-3 mb-10">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">Core scope</span>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">What We Handle Each Month</h2>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Monthly Accounting Scope</h2>
           </Reveal>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {scope.map((item, i) => (
@@ -149,7 +149,7 @@ export default function HoaAccountingServicesPage() {
 
       <FAQSection subtitle="HOA accounting questions" items={faqs} columns={2} />
       <InquirySection source={PATH} title="Talk Through Your HOA Accounting" lead="Tell us how many units or associations you manage, what system you use and where the accounting process is getting stuck." />
-      <CTABanner title="Need a Cleaner HOA Close?" description="We can start with one association and one month, then build the recurring accounting workflow around what the board already uses." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }} background="primary" />
+      <CTABanner title="Need a Cleaner HOA Close?" description="We can start with one association and one month, then build the recurring accounting workflow around what the board already uses." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }} background="primary" />
     </main>
   );
 }
