@@ -1,12 +1,33 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Month-End Checklist',
   description: 'A practical HOA accounting month-end checklist covering assessments, bank reconciliations, payables, reserves, software workflows, state considerations and board reporting.',
   path: '/blog/hoa-accounting-month-end-checklist',
 });
+
+const faqs = [
+  {
+    question: 'What should be checked first in an HOA month-end close?',
+    answer: 'Start with bank reconciliations and the underlying cash activity, then review assessments, homeowner balances, payables, reserves and the reports that will go to the board. The exact order can depend on the association and its accounting system.',
+  },
+  {
+    question: 'Does the month-end checklist change when an HOA uses QuickBooks, AppFolio, Yardi or eUnify?',
+    answer: 'The accounting questions remain similar, but the records and reports used to answer them can differ by system and configuration. The close should reconcile the underlying accounting records rather than rely only on a system-generated balance.',
+  },
+  {
+    question: 'Does HOA month-end accounting vary by state?',
+    answer: 'The core accounting process is broadly similar, but recordkeeping, reporting and governance requirements can vary by state and by the association’s governing documents. State-specific requirements should be reviewed separately when they affect the accounting workflow.',
+  },
+  {
+    question: 'What should the board receive after the month-end close?',
+    answer: 'The package commonly includes a balance sheet and income statement, with supporting schedules such as receivables aging, payables, budget-to-actual information and reserve activity where applicable. The final package should make significant variances and unresolved items understandable.',
+  },
+];
+const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaMonthEndChecklist() {
   return (
@@ -20,6 +41,7 @@ export default function HoaMonthEndChecklist() {
       inquiryTitle="Need Help With an HOA Month-End Close?"
       inquiryLead="Tell us how many units or associations you manage and what the board receives today. We can look at the accounting workflow around your existing system."
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>An HOA month-end close is not just a bank reconciliation followed by a profit-and-loss report. The accounting has to explain what happened to assessment income, what homeowners still owe, what the association owes vendors, and whether operating and reserve activity is being reported separately.</p>
       <p>A useful close gives the board a reliable starting point for the next meeting. It also makes year-end work easier because problems are found while the transactions are still recent.</p>
 
@@ -86,7 +108,9 @@ export default function HoaMonthEndChecklist() {
         </tbody>
       </table>
 
-      <h2>When Should an HOA Outsource the Monthly Accounting?</h2>
+      <FAQSection subtitle="HOA Month-End Questions" items={faqs} columns={2} />
+
+      <h2>When Should an HOA Outsource the Monthly Accounting?</h2
       <p>Outsourcing can make sense when the board or management team is spending too much time maintaining the books, when reconciliations are falling behind, or when monthly reports require substantial manual correction before meetings.</p>
       <p>The objective should not be to hand every financial decision to an outside team. A well-defined arrangement separates preparation and recurring accounting from approval, governance and board decisions.</p>
 
