@@ -16,7 +16,11 @@ export default function HoaYearEndAccounting() {
       inquiryTitle="Getting the HOA Books Ready for the CPA?"
       inquiryLead="Tell us what remains open at year-end and what the CPA typically requests. We can review the cleanup and recurring accounting workflow.">
       <p>Preparing HOA books for the CPA should not be a once-a-year reconstruction exercise. The strongest year-end process starts with monthly reconciliations and leaves the CPA with organized records, supporting schedules and clear explanations for unusual items.</p>
-      <h2>Start With Bank Reconciliations</h2>
+      <h2>How Year-End Fits Into the HOA Accounting Cycle</h2>
+<p>Year-end accounting is the final review of the same records maintained throughout the year. Bank accounts, homeowner balances, vendor balances, reserve activity and financial statements should already be supported by the monthly close.</p>
+<p>When the monthly records are kept clean, the year-end package for the CPA is usually easier to prepare and review.</p>
+
+<h2>Start With Bank Reconciliations</h2>
       <p>Complete operating and reserve reconciliations through year-end. Investigate old outstanding checks, deposits and unexplained differences before final reports are delivered.</p>
       <h2>Reconcile Homeowner Receivables</h2>
       <p>Review the assessment schedule, homeowner ledgers, unapplied cash, credits and aged balances. The receivable control account should agree with the supporting homeowner records.</p>
