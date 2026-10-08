@@ -312,7 +312,7 @@ export default function HoaAccountingPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal className="mb-10 max-w-3xl mx-auto text-center space-y-3"><>
-            <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">What we do</span>
+            <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">Accounting scope</span>
             <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
               Scope Built Around the Meeting Calendar
             </h2>
