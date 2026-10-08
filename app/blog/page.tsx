@@ -45,6 +45,8 @@ const articles = [
   { href: '/blog/hoa-accounting-yardi', title: 'HOA Accounting with Yardi: What Should Be Reviewed Each Month?', description: 'A practical monthly accounting workflow for HOA teams using Yardi or a related property-management stack.', tag: 'HOA Software', readTime: '7 min read' },
   { href: '/blog/how-to-outsource-hoa-accounting', title: 'How to Outsource HOA Bookkeeping and Accounting: What Should You Set Up First?', description: 'A practical guide to defining scope, software access, controls, monthly close and board reporting before outsourcing HOA accounting.', tag: 'HOA Outsourcing', readTime: '8 min read' },
   { href: '/blog/hoa-accounting-outsourcing-vs-in-house', title: 'HOA Accounting Outsourcing vs. Hiring In-House: What Should an Association Consider?', description: 'Compare in-house and outsourced HOA accounting by workload, controls, software, continuity and reporting.', tag: 'HOA Outsourcing', readTime: '8 min read' },
+  { href: '/blog/hoa-accounting-eunify', title: 'HOA Accounting with eUnify: What Should Be Reviewed?', description: 'A practical eUnify accounting workflow covering the general ledger, homeowner balances, AP, banking, reporting and QuickBooks integration.', tag: 'HOA Software', readTime: '8 min read' },
+  { href: '/blog/eunify-quickbooks-hoa-accounting', title: 'eUnify and QuickBooks for HOA Accounting: What Should Be Reconciled?', description: 'How to define system ownership and reconcile homeowner, payment and accounting data between eUnify and QuickBooks.', tag: 'HOA Software', readTime: '7 min read' },
 ];
 
 export default function BlogPage() {
