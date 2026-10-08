@@ -46,7 +46,7 @@
 | app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 711 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 1108 | 1 | 17 | 0 | 0 |
+| app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 1333 | 1 | 17 | 0 | 0 |
 | app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 540 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 481 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 365 | 1 | 3 | 0 | 0 |
@@ -73,7 +73,7 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1557 | 1 | 42 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1593 | 1 | 43 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
@@ -129,7 +129,7 @@
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 928 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 924 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 1018 | 1 | 12 | 0 | 0 |
-| app/services/page.tsx | 90/100 | 1072 | 1 | 10 | 0 | 0 |
+| app/services/page.tsx | 90/100 | 1073 | 1 | 10 | 0 | 0 |
 | app/services/payroll/australia/page.tsx | 90/100 | 804 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 789 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-states/page.tsx | 90/100 | 813 | 1 | 11 | 0 | 0 |
