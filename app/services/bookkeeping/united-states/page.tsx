@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'Client bookkeeping is the work that expands to fill whatever time a firm has, and it is rarely the work that carries the fee. We take the recurring layer — posting, reconciling, chasing the receipt the bank feed cannot explain, keeping state-level activity visible as it posts — so your licensed people review rather than process. Your firm keeps the client conversation, the judgement calls and the sign-off.';
+const overview = 'Client bookkeeping is recurring preparation work that can absorb significant review-team capacity. The recurring layer includes posting, reconciliation, missing-receipt follow-up and state-level transaction visibility, leaving licensed staff to review rather than process. The firm retains the client conversation, judgment calls and sign-off.';
 
 const benefits = [
   'Transaction recording, categorization and account maintenance',
@@ -50,17 +50,17 @@ const retained = [
 ];
 
 const process = [
-  { title: 'Start with the books you actually have', text: 'We look at the accounting system, chart of accounts, reconciliation status, close calendar and existing documentation. The aim is to understand where the work is getting stuck, not assume the books follow a textbook process.' },
-  { title: 'Decide what should leave your team', text: 'We separate repeatable preparation work from the approvals, judgment and decisions that stay inside your firm. This keeps delegation from becoming a loss of control.' },
+  { title: 'Start with the books you actually have', text: 'The accounting system, chart of accounts, reconciliation status, close calendar and existing documentation establish the starting point. The objective is to identify where the workflow is actually getting stuck.' },
+  { title: 'Decide what should leave your team', text: 'Repeatable preparation work is separated from approvals, judgment and decisions that remain inside the firm. This keeps delegation from becoming a loss of control.' },
   { title: 'Run the agreed routine', text: 'The delivery team works inside the authorized system, follows the documented process and flags exceptions instead of silently making assumptions.' },
   { title: 'Make review easier', text: 'Completed work is organized for review, with unresolved items and questions visible. The goal is not simply to finish transactions; it is to leave the reviewer with a cleaner next step.' },
 ];
 
 const faqs = [
-  { question: 'Do you work with QuickBooks Online?', answer: 'Yes. QuickBooks Online is one of the platforms we support, along with Xero and other systems listed on our technology pages.' },
-  { question: 'Can you clean up old bookkeeping problems?', answer: 'Yes. We start by identifying what is actually wrong: unreconciled accounts, coding inconsistencies, duplicate or missing transactions, unclear opening balances or missing support. Then the cleanup can be given a defined scope rather than becoming an open-ended project.' },
-  { question: 'Will our CPA still control the books?', answer: 'Yes. The engagement can be structured so your CPA or internal reviewer keeps approval and review control while the delivery team handles defined preparation work.' },
-  { question: 'What if our books are already behind?', answer: 'That is common enough to plan for. We can separate catch-up or cleanup work from the recurring process so the team is not trying to fix old problems and maintain the current month with the same unclear workflow.' },
+  { question: 'Do you work with QuickBooks Online?', answer: 'Yes. QuickBooks Online is among the supported platforms, along with Xero and other systems listed on the technology pages.' },
+  { question: 'Can you clean up old bookkeeping problems?', answer: 'Yes. Cleanup begins by identifying unreconciled accounts, coding inconsistencies, duplicate or missing transactions, unclear opening balances and missing support. The cleanup can then be given a defined scope rather than becoming an open-ended project.' },
+  { question: 'Will our CPA still control the books?', answer: 'Yes. The engagement can keep approval and review control with the CPA or internal reviewer while defined preparation work is handled by the delivery team.' },
+  { question: 'What if our books are already behind?', answer: 'Catch-up and cleanup can be separated from the recurring process so historical issues do not interfere with maintaining the current month.' },
   { question: 'How often can bookkeeping be performed?', answer: 'Frequency should follow transaction volume and your close calendar. Weekly or monthly processing can both work; the important part is choosing a cadence that keeps reconciliations and review from becoming a last-minute exercise.' },
   { question: 'What happens during month-end close?', answer: 'The workflow typically includes completing transactions, reconciling accounts, reviewing exceptions, preparing supporting schedules and organizing the reporting package for review. The exact checklist should follow your existing close process.' },
 ];
@@ -138,7 +138,7 @@ export default function BookkeepingUSPage() {
       />
       <InquirySection region="united-states" service="Bookkeeping" source="/services/bookkeeping/united-states" />
 
-      <CTABanner title="Where Is Your Bookkeeping Process Getting Stuck?" description="Tell us what is falling behind—reconciliations, cleanup, AP/AR, month-end or review—and we can start from the actual workflow." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
+      <CTABanner title="Where Is the Bookkeeping Process Getting Stuck?" description="Identify what is falling behind—reconciliations, cleanup, AP/AR, month-end or review—and the scope can start from the actual workflow." cta={{ text: 'Discuss the Bookkeeping Scope', href: '/contact' }} background="primary" />
     </main>
   );
 }
