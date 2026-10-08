@@ -132,7 +132,7 @@ export default function InquiryForm({
   service,
   source,
   columns = false,
-  submitLabel = 'Book Your Free Consultation',
+  submitLabel = 'Send Inquiry',
   formId,
   size = 'default',
   minimal = false,
@@ -156,6 +156,7 @@ export default function InquiryForm({
       `Company: ${get('company')}`,
       get('phone') ? `Phone: ${get('phone')}` : null,
       (get('service') || service) ? `Service Interest: ${get('service') || service}` : null,
+      get('support_type') ? `Support Type: ${get('support_type')}` : null,
       regionName ? `Region: ${regionName}` : null,
       '',
       'Message:',
@@ -201,6 +202,7 @@ export default function InquiryForm({
           name: get('name'),
           email: get('email'),
           message: get('message'),
+          ...(get('support_type') && { support_type: get('support_type') }),
           ...(get('company') && { company: get('company') }),
           ...(get('phone') && { phone: get('phone') }),
           ...((get('service') || service) && { service_interest: get('service') || service }),
@@ -314,16 +316,32 @@ export default function InquiryForm({
           </div>
 
           {!minimal && (
-          <div>
-            <label htmlFor={`service-${uid}`} className={sz.label}>What do you need support with?</label>
-            <select id={`service-${uid}`} name="service" defaultValue={service ?? ''} className={sz.field}>
-              <option value="">Select a service</option>
-              {services.map((s) => (
-                <option key={s.id} value={s.name}>{s.name}</option>
-              ))}
-              <option value="Other">Other</option>
-            </select>
-          </div>
+          <>
+            <div>
+              <label htmlFor={`service-${uid}`} className={sz.label}>What do you need support with?</label>
+              <select id={`service-${uid}`} name="service" defaultValue={service ?? ''} className={sz.field}>
+                <option value="">Select a service</option>
+                {services.map((s) => (
+                  <option key={s.id} value={s.name}>{s.name}</option>
+                ))}
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor={`support-type-${uid}`} className={sz.label}>What type of support are you considering?</label>
+              <select id={`support-type-${uid}`} name="support_type" defaultValue="" className={sz.field}>
+                <option value="">Select an option</option>
+                <option value="Project / Freelance">Project / Freelance</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Full-time / FTE">Full-time / FTE</option>
+                <option value="Seasonal">Seasonal</option>
+                <option value="Ongoing outsourcing">Ongoing outsourcing</option>
+                <option value="One-time cleanup / data entry">One-time cleanup / data entry</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+          </>
           )}
 
         </div>
@@ -333,7 +351,7 @@ export default function InquiryForm({
           <textarea
             id={`message-${uid}`}
             name="message"
-            placeholder="Volume, deadlines, and what is currently falling behind."
+            placeholder="Tell us what work you need covered, how much support you need, and when you need it."
             rows={sz.rows}
             required
             className={`${sz.field} ${sz.textarea} resize-none`}
