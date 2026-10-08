@@ -110,7 +110,7 @@ export default function HoaMonthEndChecklist() {
 
       <FAQSection subtitle="HOA Month-End Questions" items={faqs} columns={2} />
 
-      <h2>When Should an HOA Outsource the Monthly Accounting?</h2
+      <h2>When Should an HOA Outsource the Monthly Accounting?</h2>
       <p>Outsourcing can make sense when the board or management team is spending too much time maintaining the books, when reconciliations are falling behind, or when monthly reports require substantial manual correction before meetings.</p>
       <p>The objective should not be to hand every financial decision to an outside team. A well-defined arrangement separates preparation and recurring accounting from approval, governance and board decisions.</p>
 
