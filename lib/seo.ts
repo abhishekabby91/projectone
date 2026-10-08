@@ -87,7 +87,19 @@ export function generateBreadcrumbSchema(items: Array<{ name: string; url: strin
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.url) })) };
 }
 
-export function generateArticleSchema(article: { title: string; description: string; imageUrl: string; publishedDate: string; author?: string; slug: string; basePath?: string }) {
+export function generateArticleSchema(article: { title: string; description: string; imageUrl: string; publishedDate: string; updatedDate?: string; author?: string; slug: string; basePath?: string }) {
   const url = absoluteUrl(`${article.basePath ?? '/resources/'}${article.slug}`);
-  return { '@context': 'https://schema.org', '@type': 'Article', headline: article.title, description: article.description, image: absoluteUrl(article.imageUrl), datePublished: article.publishedDate, author: { '@type': article.author ? 'Person' : 'Organization', name: article.author || companyInfo.name }, publisher: { '@id': `${baseUrl}/#organization` }, mainEntityOfPage: url, url };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    image: absoluteUrl(article.imageUrl),
+    datePublished: article.publishedDate,
+    ...(article.updatedDate ? { dateModified: article.updatedDate } : {}),
+    author: { '@type': 'Organization', name: article.author || companyInfo.name, '@id': `${baseUrl}/#organization` },
+    publisher: { '@id': `${baseUrl}/#organization` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    url,
+  };
 }
