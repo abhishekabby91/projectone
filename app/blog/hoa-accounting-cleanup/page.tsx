@@ -50,8 +50,7 @@ export default function Page() {
 <h2>Do Not Make Unsupported Journal Entries</h2><p>A cleanup should improve the records, not simply make a balance disappear. Every material adjustment should have a reason, supporting information and appropriate review or approval.</p>
 <h2>A Practical Cleanup Checklist</h2><ul><li>Reconcile all bank accounts.</li><li>Investigate old outstanding items.</li><li>Review homeowner receivables and credits.</li><li>Review AP and vendor balances.</li><li>Check operating and reserve classifications.</li><li>Document material adjustments.</li><li>Establish a clean monthly close process.</li></ul>
 <h2>Common Questions</h2><h3>Can an HOA accounting provider clean up old books?</h3><p>Yes, when the provider has access to the underlying records and the association's review and approval process is clear. Cleanup should be documented rather than based on assumptions.</p><h3>Should an old balance simply be written off?</h3><p>Not without determining what created it and whether the association has authority and support for the adjustment. Material write-offs should follow the association's procedures and appropriate professional advice.</p>
-<h2>Related HOA Accounting Resources</h2><p>See <a href="/blog/hoa-accounting-controls">HOA accounting controls</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a>.</p>
-      </ArticleLayout>
+<h2>Related HOA Accounting Resources</h2><p>See <a href="/blog/hoa-accounting-controls">HOA accounting controls</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a>, <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a> and the <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> service page.</p></ArticleLayout>
     </>
   );
 }
