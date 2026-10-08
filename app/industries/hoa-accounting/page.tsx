@@ -73,7 +73,7 @@ export default function HoaAccountingPage() {
         subtitle="HOAs, condos and community management companies"
         title="HOA & Community Association Accounting Outsourcing"
         description="Assessment and homeowner ledgers, operating and reserve funds kept apart, delinquency schedules a board can act on, and a board pack that looks the same every month. Every decision stays with the board."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss HOA Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
       />
@@ -317,7 +317,7 @@ export default function HoaAccountingPage() {
               Scope Built Around the Meeting Calendar
             </h2>
             <p className="text-base md:text-lg text-muted leading-7 md:leading-8">
-              Every line below is work we actually perform. Where a service has its own page, the card links to it.
+              The scope below covers the recurring accounting work. Where a service has its own page, the card links to the detailed service description.
             </p>
           </></Reveal>
 
@@ -515,7 +515,7 @@ export default function HoaAccountingPage() {
       />
 
       <CTABanner
-        title="Ready to Give Your Board a Pack It Can Read?"
+        title="A Board Package Built for Monthly Review"
         description="Assessment ledgers, reserve fund accounting, delinquency schedules and a monthly board pack that looks the same every month — with every decision staying with the board."
         cta={{ text: 'Talk to Our Team', href: '/contact' }}
         ctaSecondary={{ text: 'Property Management', href: '/industries/property-management' }}
