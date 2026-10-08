@@ -92,7 +92,7 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1257 | 1 | 26 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2332 | 1 | 56 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2331 | 1 | 56 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 1966 | 1 | 33 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2247 | 1 | 25 | 0 | 0 |
@@ -134,9 +134,9 @@
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 928 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 924 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 1018 | 1 | 12 | 0 | 0 |
-| app/services/hoa-accounting/page.tsx | 90/100 | 807 | 1 | 9 | 0 | 0 |
-| app/services/hoa-bookkeeping/page.tsx | 90/100 | 660 | 1 | 10 | 0 | 0 |
-| app/services/hoa-financial-reporting/page.tsx | 90/100 | 787 | 1 | 10 | 0 | 0 |
+| app/services/hoa-accounting/page.tsx | 90/100 | 815 | 1 | 9 | 0 | 0 |
+| app/services/hoa-bookkeeping/page.tsx | 90/100 | 656 | 1 | 10 | 0 | 0 |
+| app/services/hoa-financial-reporting/page.tsx | 90/100 | 784 | 1 | 10 | 0 | 0 |
 | app/services/page.tsx | 90/100 | 1043 | 1 | 10 | 0 | 0 |
 | app/services/payroll/australia/page.tsx | 90/100 | 804 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 789 | 1 | 12 | 0 | 0 |
