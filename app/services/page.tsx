@@ -72,7 +72,7 @@ export default function ServicesPage() {
 
       <PremiumHero
         subtitle="What We Do"
-        title="Accounting & Finance Services"
+        title="Accounting, Bookkeeping & Tax Services"
         description="Seven service lines, delivered to the reporting rules and compliance cycles of the United States, the United Kingdom and Australia."
         cta={{ text: 'Discuss Your Requirements', href: '/contact' }}
         ctaSecondary={{ text: 'View Solutions', href: '/solutions' }}
