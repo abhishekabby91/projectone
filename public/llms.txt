@@ -80,9 +80,11 @@ Accounstone works within clients' existing software and workflows. Current platf
 - Drake Tax
 - CCH Axcess
 - MYOB
-- Yardi and AppFolio workflows where applicable
+- Yardi, AppFolio and eUnify workflows where applicable
 
 Platform overview: https://www.accounstone.com/technology
+
+HOA software guides include QuickBooks, AppFolio, Yardi and eUnify accounting workflows where applicable.
 
 ## Markets
 
