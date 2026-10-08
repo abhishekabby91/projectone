@@ -256,3 +256,57 @@ The target impression is:
 > Practical accounting support, delivered with clear ownership, documented processes, technology familiarity, quality review and dependable communication.
 
 That positioning should guide both the human experience and the search architecture.
+
+
+## 2026-10-08 audit — HOA completion and site-wide findings
+
+### HOA cluster findings
+
+- The HOA month-end checklist existed but was missing from both the blog index and sitemap. It is now linked from /blog and included in the sitemap.
+- The HOA sitemap contained duplicate entries for reserve reconciliation, reserve reporting, AP, vendor expense tracking and year-end pages. These duplicates have been removed.
+- The month-end article now connects the core workflow to QuickBooks, QuickBooks Online, AppFolio, Yardi, eUnify and relevant U.S. state context without turning the article into separate doorway pages.
+- The month-end article now has visible query-specific FAQs and matching FAQ structured data.
+- The HOA sitemap currently contains 38 HOA-related URLs with no duplicate HOA paths.
+- The initial HOA topic map remains expandable; it is not a fixed 50-page limit.
+
+### Site-wide findings
+
+#### High priority
+
+1. Entity consistency: The site should consistently describe Accounstone as an India-based accounting, bookkeeping and tax outsourcing provider. Avoid reverting to broad finance, CFO, advisory or financial-services positioning where those services are not actually offered.
+2. Service hub wording: The Services hub used Accounting & Finance Services as its H1 even though the current core positioning is accounting, bookkeeping and tax outsourcing. The H1 has been aligned to Accounting, Bookkeeping & Tax Services.
+3. Internal authority architecture: Industry, service, software, market and article pages need deliberate parent/child and horizontal links. More pages should not be added until orphaning and cluster relationships are checked.
+4. Third-party crawlability: AhrefsBot and SemrushBot were previously blocked. They are now allowed to crawl public pages so backlink and technical-authority monitoring can remain current. This does not directly improve Google rankings; it improves external diagnostics.
+5. AI reference consistency: llms.txt and llms-full.txt now mention the current HOA software coverage, including eUnify. These files are supplementary references, not ranking mechanisms.
+
+#### Medium priority
+
+- Review every market page for unique local value and current regulatory claims. State-specific tax/compliance statements should be source-checked before publication.
+- Review resource pages for overlap with service pages and identify cases where one page should be the clear canonical intent target.
+- Audit internal anchors so they describe the destination accurately rather than repeating generic phrases such as learn more or view details.
+- Review technology pages for the distinction between genuine workflow experience and software implementation/certification claims.
+- Keep visible FAQs for users and semantic understanding, but do not treat FAQ structured data as a guaranteed Google rich-result mechanism; Google removed the FAQ rich-result feature in 2026.
+
+#### Technical caution
+
+components/article-layout.tsx currently requires a careful build/deployment review because its getText() implementation contains a literal escaped newline sequence in the source. Do not rewrite this shared component casually; validate it with the build/deployment owner before making changes.
+
+### What is not the current bottleneck
+
+- The site already has robots, sitemap, canonical metadata, Organization/WebSite/Service/Article/Breadcrumb schema and public AI reference files.
+- The absence of llms.txt is not a reason for poor Google ranking. Google explicitly states that llms.txt is not required for Google Search and does not itself improve or reduce visibility.
+- Word count is not a target. Pages should be expanded when additional information satisfies the query, not to reach an arbitrary length.
+- A fixed page-count target is not part of the strategy.
+
+### Next audit sequence
+
+1. Finish HOA internal-link and content-quality pass.
+2. Audit Property Management cluster.
+3. Audit Real Estate cluster.
+4. Audit CPA/accounting-firm cluster.
+5. Audit core service pages and regional service pages.
+6. Audit technology/software pages.
+7. Audit market/state pages.
+8. Run a full orphan/duplicate/cannibalization/broken-link review.
+9. Reconcile Search Console queries with page intent and indexing status.
+10. Build a relevant authority/backlink plan after the on-site architecture is stable.
