@@ -23,7 +23,7 @@
 | app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 215 | 1 | 1 | 0 | 0 |
 | app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 299 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 332 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 345 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
@@ -66,7 +66,7 @@
 | app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 485 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 476 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 617 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 371 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 383 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-vendor-1099-tracking/page.tsx | 90/100 | 563 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 350 | 1 | 4 | 0 | 0 |
