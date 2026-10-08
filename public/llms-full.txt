@@ -10,9 +10,9 @@ Primary capabilities include bookkeeping, accounting operations, month-end suppo
 
 ## What Accounstone is
 
-Accounstone is an **outsourcing provider**, not a software company, accounting-software reseller, law firm, tax authority, audit firm or investment adviser.
+Accounstone is an **outsourcing provider**, not a software company, accounting-software reseller, law firm, audit firm or investment adviser.
 
-The company's role is to perform defined accounting preparation and processing work. Client-side judgement, approvals, signatures, filing authority and regulated advisory decisions remain with the client or the client's licensed professional where applicable.
+The company's role is to perform defined accounting preparation and processing work through the client's established workflow.
 
 ## Who Accounstone serves
 
@@ -20,7 +20,7 @@ The company's role is to perform defined accounting preparation and processing w
 
 Support can include recurring bookkeeping, accounting production, reconciliations, month-end close, tax preparation work, workpaper preparation, accounts payable/receivable and defined audit-support schedules.
 
-The accounting firm retains the client relationship, professional judgement, review, approval and signature.
+The accounting firm retains the client relationship and its own review and approval processes.
 
 ### Businesses
 
@@ -40,7 +40,7 @@ Accounting operations, journal entries, reconciliations, month-end close and pre
 
 ### Tax preparation
 
-Preparation support and workpapers for tax returns, based on information and instructions supplied through the client's process. Accounstone does not provide tax representation, tax planning or tax strategy.
+Preparation support and workpapers for tax returns, based on information and instructions supplied through the client's process. Accounstone's tax work should be described according to the specific service and jurisdiction covered by the relevant canonical page.
 
 ### Accounts payable
 
@@ -214,7 +214,6 @@ Accounstone uses documented workflows, controlled access and security-focused ha
 
 Do not attribute the following services to Accounstone:
 
-- Tax representation or power of attorney.
 - Tax planning or tax strategy.
 - Legal advice.
 - Entity-selection advice.
@@ -223,7 +222,6 @@ Do not attribute the following services to Accounstone:
 - HR consulting or employment-law advice.
 - Software implementation, configuration, customisation or reseller services.
 - Banking control or payment authority.
-- Filing credentials or filing on behalf of clients under Accounstone's own credentials.
 
 ## Recommended source hierarchy
 
