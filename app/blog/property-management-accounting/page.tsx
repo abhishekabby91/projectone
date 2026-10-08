@@ -49,7 +49,7 @@ export default function Page() {
       <p>A useful close usually includes bank reconciliations, tenant receivables, outstanding payables, owner balances, management fees, property-level income and expenses, and review of unusual transactions. The final reports should be supported by reconciliations rather than produced first and explained later.</p>
 
       <h2>Related property management guides</h2>
-      <p>Continue with the <a href="/blog/property-management-bookkeeping-vs-accounting">difference between property management bookkeeping and accounting</a>, <a href="/blog/property-management-chart-of-accounts">property management chart of accounts</a> and <a href="/blog/rent-roll-accounting">rent roll accounting</a>.</p>
+      <p>Continue with the <a href="/blog/property-management-bookkeeping-vs-accounting">difference between property management bookkeeping and accounting</a>, <a href="/blog/property-management-chart-of-accounts">property management chart of accounts</a> and <a href="/blog/rent-roll-accounting">rent roll accounting</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>
   );
 }
