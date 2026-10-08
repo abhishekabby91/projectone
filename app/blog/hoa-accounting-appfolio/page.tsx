@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting with AppFolio: What Should Be Reviewed?',
@@ -8,9 +9,29 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-accounting-appfolio',
 });
 
+const faqs = [
+  {
+    "question": "Can AppFolio be used for HOA accounting?",
+    "answer": "AppFolio can support community association accounting workflows, but the exact reports and configuration depend on how the association or management company has set up the platform. The accounting review should follow the actual configuration rather than assumptions."
+  },
+  {
+    "question": "What should be reviewed each month in AppFolio HOA accounting?",
+    "answer": "Review assessments and homeowner balances, cash and bank activity, payables, operating and reserve transactions, reconciliations and the financial reports prepared for the board. Investigate unusual or old items before reporting."
+  },
+  {
+    "question": "Does AppFolio replace the need for accounting review?",
+    "answer": "No. Software can organize transactions and reports, but reconciliations, coding review, supporting documentation and approval controls still matter."
+  },
+  {
+    "question": "Can AppFolio work alongside another accounting system?",
+    "answer": "It can, depending on the workflow. If information moves between systems, define the source of each record and reconcile the handoff so the same transaction is not lost or counted twice."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaAccountingAppFolio() {
   return (
-    <ArticleLayout
+    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting with AppFolio: What Should Be Reviewed Each Month?"
       category="HOA Accounting"
       description="AppFolio can connect property and accounting workflows, but monthly review still depends on accurate ledgers, reconciliations, coding and clear operating-versus-reserve reporting."
@@ -40,18 +61,11 @@ export default function HoaAccountingAppFolio() {
       <h2>What If QuickBooks Is Also Used?</h2>
       <p>Some organizations use more than one system. When AppFolio and QuickBooks Online are both part of the workflow, establish which system owns each record and reconcile the handoff. Duplicate posting is more dangerous than using two systems deliberately.</p>
 
-      <h2>Common Questions</h2>
-      <h3>Can AppFolio handle HOA homeowner ledgers?</h3>
-      <p>It can support homeowner and association accounting workflows, but the exact setup and features depend on the organization's configuration. The accounting team should validate the reports against the underlying transactions.</p>
-      <h3>Can an outsourced team work inside AppFolio?</h3>
-      <p>Where access and permissions allow, an outsourced team can perform defined accounting tasks inside the existing workflow. Access should follow the organization's controls and least-privilege practices.</p>
-      <h3>Should AppFolio and QuickBooks balances always match?</h3>
-      <p>If both systems are intended to represent the same accounting records, their agreed control balances should reconcile. Differences should be documented rather than ignored.</p>
-      <h3>Is AppFolio suitable for every HOA?</h3>
-      <p>Not necessarily. Software choice depends on association size, management needs, existing processes, reporting requirements and cost. The goal is a workable accounting process, not a particular software brand.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
