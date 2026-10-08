@@ -137,6 +137,43 @@ export default function HoaAccountingPage() {
 
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
+      {/* Broad topic coverage. This section establishes the core HOA accounting topics before the page moves into Accounstone's workflow. */}
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-4"><>
+            <Eyebrow>Understanding HOA accounting</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">What HOA Accounting Covers</h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">HOA accounting is the financial recordkeeping and reporting used by a homeowners association, condominium association, or similar community association. It connects homeowner assessments, vendor bills, bank activity, operating expenses, reserve activity, budgets and year-end records into a set of books the board can review each month.</p>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">It is more than recording transactions. A useful HOA accounting process keeps owner balances current, reconciles every bank account, separates operating and reserve activity in the records, tracks budget performance and gives the board enough detail to understand what changed during the month.</p>
+          </></Reveal>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            {[
+              ['Assessment and homeowner accounting','Record regular assessments, special assessments, payments, credits and outstanding balances. Owner-level records should make it possible to explain an account balance without rebuilding the month from bank deposits.'],
+              ['Accounts receivable and delinquencies','Maintain an accurate aging schedule, apply payments correctly and give the board a clear view of outstanding assessments. Collection decisions remain with the association and its authorized professionals.'],
+              ['Accounts payable and vendor expenses','Record invoices, approvals and payments for utilities, maintenance, insurance, management and other association expenses. Supporting documentation should remain tied to the transaction.'],
+              ['Bank and account reconciliations','Reconcile operating, reserve and other association bank accounts regularly so the books agree with the financial institution and unexplained differences are identified promptly.'],
+              ['Operating and reserve fund accounting','Track operating activity separately from reserve activity in the accounting records and report transfers, contributions and reserve expenditures clearly. Reserve planning itself remains a board and reserve-study decision.'],
+              ['Monthly financial reporting','A board package commonly brings together the balance sheet, income and expense reporting, budget-to-actual results, cash or disbursement activity, receivable information and bank reconciliations.'],
+              ['Budgeting and budget-to-actual review','Compare current and year-to-date income and expenses with the approved budget. Variances become more useful when the underlying transactions and account classifications are already clean.'],
+              ['Year-end and tax support','Organize the books, supporting schedules and vendor information needed for year-end review, CPA coordination and association tax work. Filing and tax treatment depend on the association and applicable requirements.']
+            ].map(([h, p], i) => (
+              <Reveal key={h} delay={Math.min(i * 0.04, 0.24)}>
+                <div className="h-full rounded-xl border border-border bg-white p-5 sm:p-6">
+                  <h3 className="font-serif text-lg font-bold text-primary">{h}</h3>
+                  <p className="mt-3 text-sm md:text-base leading-relaxed text-muted">{p}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={0.16} className="mt-8"><>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">HOA Bookkeeping vs. HOA Accounting</h2>
+            <p className="mt-4 text-base md:text-lg text-muted leading-relaxed max-w-4xl">The terms are often used interchangeably, but the scope can be different. Bookkeeping generally refers to the recurring recording, classification, reconciliation and maintenance of the books. HOA accounting can include that work plus financial reporting, budget monitoring, fund reporting, owner receivable schedules and year-end support. The right scope depends on what the board, manager or CPA already handles.</p>
+          </></Reveal>
+        </div>
+      </section>
+
+      <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
+
       {/* The lead-generation router, in the board's own words. */}
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
