@@ -16,6 +16,7 @@ export default function robots(): MetadataRoute.Robots {
     'OAI-SearchBot',
     'OAI-AdsBot',
     'GPTBot',
+    'ChatGPT-User',
     'Google-Extended',
     'PerplexityBot',
     'ClaudeBot',
