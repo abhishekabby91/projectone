@@ -466,6 +466,19 @@ export default function PropertyManagementPage() {
         </div>
       </section>
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related Accounting Services</h2>
+          <p className="mt-3 max-w-3xl text-muted leading-relaxed">For recurring property accounting, the industry scope connects with the underlying accounting and bookkeeping workflows.</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/services/accounting/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">U.S. Accounting Services</Link>
+            <Link href="/services/bookkeeping/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">U.S. Bookkeeping Services</Link>
+            <Link href="/services/accounts-payable/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Accounts Payable</Link>
+            <Link href="/services/accounts-receivable/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Accounts Receivable</Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Property management questions" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
