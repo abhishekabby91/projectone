@@ -37,15 +37,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: protectedPaths,
       })),
-      // Known SEO crawlers are not needed for site discovery and are
-      // intentionally blocked to reduce unnecessary automated traffic.
+      // Keep the major SEO crawlers available so backlink and technical
+      // monitoring tools can audit the public site. This does not improve
+      // Google rankings directly; it keeps third-party diagnostics current.
       {
         userAgent: 'AhrefsBot',
-        disallow: '/',
+        allow: '/',
+        disallow: protectedPaths,
       },
       {
         userAgent: 'SemrushBot',
-        disallow: '/',
+        allow: '/',
+        disallow: protectedPaths,
       },
       {
         userAgent: 'MJ12bot',
