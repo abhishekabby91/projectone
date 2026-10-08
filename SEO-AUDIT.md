@@ -310,3 +310,11 @@ components/article-layout.tsx currently requires a careful build/deployment revi
 8. Run a full orphan/duplicate/cannibalization/broken-link review.
 9. Reconcile Search Console queries with page intent and indexing status.
 10. Build a relevant authority/backlink plan after the on-site architecture is stable.
+
+
+### 2026-10-08 implementation pass
+
+- CPA Firms industry page: added direct contextual links to U.S. bookkeeping, U.S. tax preparation and the U.S. market page.
+- Real Estate industry page: added contextual links to Property Management, QuickBooks technology context and HOA accounting, clarifying the relationship between adjacent industries.
+- Property Management already has useful cross-industry links to Yardi/Texas, HOA and Real Estate; no forced link expansion was made.
+- No deployment was performed. Changes are on main and should be validated by the deployment/build owner.
