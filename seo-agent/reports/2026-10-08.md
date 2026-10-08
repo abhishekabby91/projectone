@@ -40,11 +40,11 @@
 | app/blog/accounts-payable-outsourcing/page.tsx | 90/100 | 1426 | 1 | 6 | 0 | 0 |
 | app/blog/accounts-receivable-management/page.tsx | 90/100 | 585 | 1 | 4 | 0 | 0 |
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
-| app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 486 | 1 | 3 | 0 | 0 |
+| app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 481 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-appfolio/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-cleanup/page.tsx | 90/100 | 366 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 718 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 711 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 772 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 540 | 1 | 3 | 0 | 0 |
@@ -73,7 +73,7 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1490 | 1 | 40 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1557 | 1 | 42 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
@@ -87,7 +87,7 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1194 | 1 | 23 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 1531 | 1 | 18 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 1674 | 1 | 30 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 1868 | 1 | 28 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2182 | 1 | 22 | 0 | 0 |
