@@ -19,7 +19,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Most UK audits do not stall on technical accounting. They stall on the gap between the audit team's request list and the state of the file — a reconciliation that has not been finished, a schedule that does not agree to the nominal ledger, a sample selection waiting on invoices nobody has pulled. We prepare that layer for UK companies, under FRS 102 conventions, so fieldwork starts against a file that already answers most of the list. The engaged statutory auditor retains every audit procedure, all professional judgement, and the opinion.";
+const overview = "Most UK audits do not stall on technical accounting. They stall on the gap between the audit team's request list and the state of the file — a reconciliation that has not been finished, a schedule that does not agree to the nominal ledger, a sample selection waiting on invoices nobody has pulled. That preparation layer can be handled for UK companies, under FRS 102 conventions, so fieldwork starts against a file that already answers most of the list. The engaged statutory auditor retains every audit procedure, all professional judgement, and the opinion.";
 
 const workstreams = [
   { h: 'Lead schedules that agree to the ledger', p: 'Balance sheet lead schedules built from the nominal ledger, cast and agreed, with movements explained rather than left for the audit team to derive.' },
@@ -38,11 +38,11 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you issue the audit opinion?', answer: 'No, and we cannot. Only the engaged registered auditor can perform audit procedures and issue an opinion. Our work sits entirely on the preparation side: schedules, reconciliations, and evidence organised before and during fieldwork.' },
+  { question: 'Do you issue the audit opinion?', answer: 'No, and we cannot. Only the engaged registered auditor can perform audit procedures and issue an opinion. The scope sits entirely on the preparation side: schedules, reconciliations, and evidence organised before and during fieldwork.' },
   { question: 'How does this differ from your year-end accounts work?', answer: 'Year-end accounts preparation produces the figures. Audit support organises the evidence that stands behind them — lead schedules, reconciliations, and the documents an auditor samples. Many UK clients use both, but they are separate pieces of work.' },
   { question: 'Our company may be below the audit threshold. Is this still relevant?', answer: 'Audit exemption in the UK depends on turnover, balance sheet total, and employee numbers, and on group and sector circumstances. Your accountant should confirm your position. Where an audit is not required, the same preparation work still supports year-end accounts and any independent examination.' },
   { question: 'Can you work to our auditor’s templates?', answer: 'Yes. Schedules follow the formats and references the engaged audit team already uses. Introducing a parallel set of workpapers usually creates more reconciliation work, not less.' },
-  { question: 'Which reporting framework do you work to?', answer: 'FRS 102 for most UK entities. Where a company reports under IFRS or FRS 101, we follow the treatment its accountant has set. We do not make the framework decision.' },
+  { question: 'Which reporting framework do you work to?', answer: 'FRS 102 for most UK entities. Where a company reports under IFRS or FRS 101, we follow the treatment its accountant has set. The framework decision remains with the responsible accountant.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
