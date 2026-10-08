@@ -26,17 +26,17 @@ const faqs = [
   {
     question: 'Will our clients know you are involved?',
     answer:
-      'Your call, and we follow it. Some firms introduce us as their offshore delivery team; others never mention us. We are not client-facing unless you ask us to be, and we do not contact your clients directly without your instruction.',
+      'The client-facing arrangement follows the firm's preference. Some firms introduce the offshore delivery team; others keep the relationship entirely within the firm. Direct client contact occurs only when specifically authorized.',
   },
   {
     question: 'Do you sign or e-file returns?',
     answer:
-      'No. We do not hold an EFIN, we do not sign returns, and we do not want either. We prepare the return and the workpapers behind it; the signature, the e-file and the responsibility stay with your firm.',
+      'Return preparation and supporting workpapers can be handled within the agreed scope. Signature, e-file submission and professional responsibility follow the engagement and applicable authorization requirements.',
   },
   {
     question: 'Do you determine sales tax nexus for our clients?',
     answer:
-      'No. We keep revenue and transaction activity tracked by state so the picture is visible rather than buried in a single revenue account. Whether a client has established nexus, and what to do about it, is a determination for your firm.',
+      'Revenue and transaction activity can be tracked by state so the information remains visible for nexus review. The determination of nexus and the resulting tax treatment follows the firm's professional and client-specific requirements.',
   },
   {
     question: 'What if a client’s books are a mess when they reach us?',
@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'Can you work in our software and our workpaper templates?',
     answer:
-      'Yes, and we would rather. Running a parallel set of workpapers creates reconciliation work instead of removing it. We work inside the QuickBooks, Xero, NetSuite or tax software file you already use, under access you grant and can revoke.',
+      'Yes. Working inside the existing QuickBooks, Xero, NetSuite or tax software file avoids unnecessary parallel workpapers. Access remains under credentials and permissions controlled by the client or firm.',
   },
   {
     question: 'How do we start without moving the whole client base?',
@@ -174,11 +174,11 @@ const trust = [
   },
   {
     h: 'Data security and confidentiality',
-    p: 'NDA-backed engagements, access restricted to the people staffed on your work, performed inside your systems under credentials you issue and can revoke. No banking control and no e-file credentials at any point. We are actively working toward SOC 2 — we do not hold it, and we will not describe it as though we do.',
+    p: 'NDA-backed engagements can restrict access to the people assigned to the work and use credentials controlled by the client or firm. Banking control and e-file credentials remain governed by the engagement. SOC 2 is not currently held and is not represented as a certification.',
   },
   {
     h: 'Turnaround',
-    p: 'Agreed per workflow rather than advertised as a headline number, because it depends on volume, platform and how complete a client’s records are. What we commit to is that the agreed turnaround is written down, and that you hear about a slip from us before you notice it yourself.',
+    p: 'Turnaround is agreed by workflow because volume, platform and source-record completeness affect the actual cycle. The agreed turnaround is documented, with exceptions identified as they arise.',
   },
   {
     h: 'A named point of contact',
@@ -221,7 +221,7 @@ export default function USMarketPage() {
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              Accounstone takes recurring accounting work off that curve, so your team can spend more time on review, client work and higher-value accounting tasks rather than posting, reconciling and preparing routine schedules. For accounting firms, we work as an extension of the existing practice. For businesses, we fit into the accounting systems, approvals and reporting processes already in place.
+              Accounstone takes recurring accounting work off that curve so internal teams can spend more time on review, client work and higher-value accounting tasks. For accounting firms, the work fits the existing practice; for businesses, it fits established accounting systems, approvals and reporting processes.
             </p>
           </Reveal>
           </div>
@@ -240,8 +240,8 @@ export default function USMarketPage() {
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              For accounting firms, we handle defined preparation and recurring accounting workflows while the firm keeps
-              the client relationship, professional judgement, review and filing responsibility. For businesses, we can
+              For accounting firms, defined preparation and recurring accounting workflows can be handled while the firm keeps
+              the client relationship, professional judgement, review and filing responsibility. For businesses, the scope can
               support the accounting work directly within the systems and approval structure already in use. The common
               principle is simple: the outsourced team handles the agreed workflow; your team retains the decisions and
               controls that belong with you.
@@ -332,7 +332,7 @@ export default function USMarketPage() {
               On multi-state work: since <em>South Dakota v. Wayfair</em> a client can owe a collection obligation in a
               state it has never set foot in, on economic activity alone. Nothing about that is manageable if the year’s
               revenue sits in one undifferentiated account. Tracking activity by state as it posts costs almost nothing
-              during the year and is close to impossible to reconstruct afterwards. We keep that detail; your firm makes
+              during the year and is close to impossible to reconstruct afterwards. That detail remains available while the firm makes
               the determination.
             </p>
           </Reveal>
@@ -341,7 +341,7 @@ export default function USMarketPage() {
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
-          <SectionHeading eyebrow="How we work" title="What You Are Actually Buying" />
+          <SectionHeading eyebrow="How we work" title="What the Engagement Covers" />
           <div className="mt-8 grid md:grid-cols-2 gap-4 md:gap-5">
             {trust.map((t, i) => (
               <Reveal key={t.h} delay={Math.min(i * 0.05, 0.25)}>
@@ -357,7 +357,7 @@ export default function USMarketPage() {
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
-          <SectionHeading eyebrow="U.S. services" title="Every Workflow We Prepare" lead="Each page covers scope, the review boundary, and how the work runs for U.S. firms." />
+          <SectionHeading eyebrow="U.S. services" title="U.S. Accounting Workflows" lead="Each page covers scope, the review boundary, and how the work runs for U.S. firms." />
           <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {serviceRegions.map((s, i) => (
               <Reveal key={s.slug} delay={Math.min(i * 0.04, 0.2)}>
@@ -394,7 +394,7 @@ export default function USMarketPage() {
 
       <CTABanner
         title="Start With One Client and One Month"
-        description="Tell us which part of your client base is costing the most review time, and we will scope a pilot around it."
+        description="Identify the part of the client base creating the most review time. A defined pilot can then be scoped around that workflow."
         cta={{ text: 'Start a Conversation', href: '/contact' }}
         background="primary"
       />
