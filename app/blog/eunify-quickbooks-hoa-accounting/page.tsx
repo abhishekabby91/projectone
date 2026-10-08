@@ -17,23 +17,23 @@ export default function EunifyQuickBooksHoaAccounting() {
       publishedDate="2026-10-08"
       section="blog"
       slug="eunify-quickbooks-hoa-accounting"
-      inquiryTitle="Using eUnify and QuickBooks Together?"
-      inquiryLead="Tell us which system your team uses for homeowner records and which one is used for accounting. We can help map the reconciliation points."
+      inquiryTitle="Tell Us About the Work You Need Support With"
+      inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >
-      <p>eUnify provides QuickBooks integration options for associations, including QuickBooks Online. Its documentation describes data moving between the systems, including association, customer and transaction information. citeturn0search0turn0search1</p>
+      <p>eUnify provides QuickBooks integration options for associations, including QuickBooks Online. Its documentation describes data moving between the systems, including association, customer and transaction information.</p>
       <p>For an accounting team, the important part is deciding what each system is responsible for and how differences are investigated.</p>
 
       <h2>First Define the System of Record</h2>
       <p>Do not assume that every record should be edited in both systems. Define where the association maintains homeowner information, assessment activity, the general ledger, vendor records, payments and board reporting.</p>
 
       <h2>Homeowner and Unit Information</h2>
-      <p>eUnify's QuickBooks integration documentation notes that customer and address information in QuickBooks can be used to populate unit and mailing information in uManage. That makes consistent customer and address setup important before integration. citeturn0search1</p>
+      <p>eUnify's QuickBooks integration documentation notes that customer and address information in QuickBooks can be used to populate unit and mailing information in uManage. That makes consistent customer and address setup important before integration.</p>
 
       <h2>Payment and Transaction Reconciliation</h2>
-      <p>When payments appear in both systems, the accounting team should check that the expected transactions have transferred and that they have been applied correctly. eUnify's support documentation identifies several situations where integration or payment-application issues can require troubleshooting. citeturn0search2</p>
+      <p>When payments appear in both systems, the accounting team should check that the expected transactions have transferred and that they have been applied correctly. eUnify's support documentation identifies several situations where integration or payment-application issues can require troubleshooting.</p>
 
       <h2>QuickBooks Online Integration</h2>
-      <p>eUnify's support documentation provides a QuickBooks Online connection process through the association's integration settings. citeturn0search0</p>
+      <p>eUnify's support documentation provides a QuickBooks Online connection process through the association's integration settings.</p>
       <p>The accounting workflow should still include a control check after synchronization. Integration reduces manual entry, but it does not remove the need for reconciliation.</p>
 
       <h2>What Should Be Reviewed Each Month?</h2>
@@ -53,7 +53,7 @@ export default function EunifyQuickBooksHoaAccounting() {
 
       <h2>Common Questions</h2>
       <h3>Does eUnify replace QuickBooks?</h3>
-      <p>It depends on the association's chosen workflow. eUnify provides accounting functionality and also documents integrations with QuickBooks, so some organizations use the systems together. citeturn0search0turn0search5</p>
+      <p>It depends on the association's chosen workflow. eUnify provides accounting functionality and also documents integrations with QuickBooks, so some organizations use the systems together.</p>
       <h3>Can eUnify and QuickBooks have different balances?</h3>
       <p>They can show differences during a timing or integration issue, but an unexplained difference should be investigated rather than accepted as normal. The control points depend on the configured workflow.</p>
       <h3>Can an outsourced accounting team support this setup?</h3>
