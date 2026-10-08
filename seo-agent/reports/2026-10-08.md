@@ -52,7 +52,7 @@
 | app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 365 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 417 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounts-payable/page.tsx | 90/100 | 373 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 667 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 882 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-assessment-receivables-reconciliation/page.tsx | 90/100 | 677 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-balance-sheet-explained/page.tsx | 90/100 | 525 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-bank-reconciliation/page.tsx | 90/100 | 451 | 1 | 3 | 0 | 0 |
@@ -60,11 +60,11 @@
 | app/blog/hoa-bookkeeping-vs-accounting/page.tsx | 90/100 | 454 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 611 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 576 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 679 | 1 | 2 | 0 | 0 |
-| app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 748 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 910 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 946 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 356 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 485 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 476 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 666 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 617 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 383 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
