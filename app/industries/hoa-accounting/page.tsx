@@ -146,6 +146,19 @@ export default function HoaAccountingPage() {
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">HOA accounting is the financial recordkeeping and reporting used by a homeowners association, condominium association, or similar community association. It connects homeowner assessments, vendor bills, bank activity, operating expenses, reserve activity, budgets and year-end records into a set of books the board can review each month.</p>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">It is more than recording transactions. A useful HOA accounting process keeps owner balances current, reconciles every bank account, separates operating and reserve activity in the records, tracks budget performance and gives the board enough detail to understand what changed during the month.</p>
           </></Reveal>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { name: 'HOA Accounting Services', href: '/services/hoa-accounting', body: 'Full recurring accounting support from assessments and reconciliations to monthly board reporting.' },
+              { name: 'HOA Bookkeeping', href: '/services/hoa-bookkeeping', body: 'Day-to-day posting, reconciliations, payables and supporting schedules for the monthly close.' },
+              { name: 'HOA Financial Reporting', href: '/services/hoa-financial-reporting', body: 'Board-ready statements, fund reporting, budget-to-actual results and receivable schedules.' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="rounded-xl border border-border bg-white p-5 hover:border-primary/50 transition-colors">
+                <h3 className="font-serif text-lg font-bold text-primary">{item.name}</h3>
+                <p className="mt-2 text-sm leading-6 text-muted">{item.body}</p>
+              </Link>
+            ))}
+          </div>
+
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
             {[
               ['Assessment and homeowner accounting','Record regular assessments, special assessments, payments, credits and outstanding balances. Owner-level records should make it possible to explain an account balance without rebuilding the month from bank deposits.'],
