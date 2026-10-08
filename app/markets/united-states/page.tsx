@@ -153,8 +153,8 @@ const prepared = [
 const retained = [
   'The client relationship, and every client-facing conversation',
   'Review, professional judgement and sign-off',
-  'Signing and e-filing every return',
-  'Representation before the IRS or any state authority',
+  'Filing and submission workflows as defined by the engagement',
+  'Tax-authority correspondence and representation support where included in scope',
   'Nexus determinations and entity structure decisions',
   'Advice of any kind, including anything approaching tax planning',
 ];
@@ -274,8 +274,7 @@ export default function USMarketPage() {
                   ))}
                 </ul>
                 <p className="mt-6 text-sm text-white/70 leading-relaxed">
-                  Representation before the IRS requires a licensed CPA, enrolled agent or attorney under Circular 230.
-                  We are none of those things, and we do not act as though we are.
+                  Tax-authority work is handled according to the applicable authorization, professional requirements and engagement scope.
                 </p>
               </div>
             </Reveal>
