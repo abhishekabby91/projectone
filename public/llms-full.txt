@@ -88,7 +88,7 @@ Accounting support for companies managing property on behalf of owners. Work can
 
 ### HOA and community associations
 
-Accounting support for associations and community-management companies. Work can include assessment billing records, aging, operating/reserve fund accounting, AP, special-assessment tracking and board reporting.
+Accounting support for associations and community-management companies. Work can include assessment billing records, aging, operating/reserve fund accounting, AP, special-assessment tracking and board reporting. Current HOA content also covers accounting workflows in QuickBooks, AppFolio, Yardi and eUnify where applicable.
 
 ### Technology and SaaS
 
@@ -110,7 +110,7 @@ Accounting support for professional practices, including recurring bookkeeping, 
 
 Accounstone works inside clients' existing systems. It does not claim software vendor partnership, reseller status, certification or implementation services unless a page specifically states otherwise.
 
-Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB, Yardi and AppFolio workflows where applicable.
+Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB, Yardi, AppFolio and eUnify workflows where applicable.
 
 ## Markets
 
