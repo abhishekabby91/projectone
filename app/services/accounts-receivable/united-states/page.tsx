@@ -21,7 +21,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Cash collected late is cash the business already earned but cannot use. We run the recurring receivables cycle inside your existing system — issuing invoices on schedule, applying receipts as they land, reading the aging for cause, and following up on a defined cadence — so overdue accounts get consistent attention rather than whatever attention is left over at month end.";
+const overview = "Cash collected late is cash the business has earned but cannot use. The recurring receivables cycle covers scheduled invoicing, receipt application, aging review and follow-up on a defined cadence so overdue accounts receive consistent attention.";
 
 const uSElements = [
   'USD invoicing from sales orders, contracts, or time sheets',
@@ -48,10 +48,10 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, yes — the AR team can send reminder emails in your company name from a shared or delegated inbox, on a schedule you define. Phone collection calls typically stay with your internal team unless specifically agreed.' },
+  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, reminder emails can be sent in the company name from a shared or delegated inbox on a defined schedule. Phone collection calls typically remain with the internal team unless specifically agreed.' },
   { question: 'How does this work with U.S. payment methods?', answer: 'Payments arriving via ACH, check, or card processor sync are matched against open invoices in QuickBooks Online or Xero. Discrepancies are flagged for your review rather than applied automatically when something does not match cleanly.' },
   { question: 'What is DSO and does this actually reduce it?', answer: 'Days Sales Outstanding measures how long it takes to collect after invoicing. Consistent aging monitoring and follow-up typically reduces DSO by 5–15 days — the cash freed up is working capital the client already earned but had tied up in receivables.' },
-  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority, and any judgment call about the customer relationship. We handle the process — invoicing, application, follow-up, reconciliation — and flag exceptions for your decision.' },
+  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority and customer-relationship judgment remain with the client. The recurring process covers invoicing, application, follow-up and reconciliation, with exceptions flagged for review.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
@@ -131,7 +131,7 @@ export default function AccountsReceivableUSPage() {
 
       <InquirySection region="united-states" service="Accounts Receivable" source="/services/accounts-receivable/united-states" />
 
-      <CTABanner title="How Long Are You Waiting to Get Paid?" description="Tell us where receivables are slipping — invoicing delay, unapplied cash, or follow-up that stops when the month gets busy — and we can talk through what a consistent cycle would change." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
+      <CTABanner title="Where Is the Receivables Cycle Slowing Down?" description="Identify where receivables are slipping—invoice delays, unapplied cash or inconsistent follow-up—and the support scope can be built around the recurring cycle." cta={{ text: 'Discuss the AR Scope', href: '/contact' }} background="primary" />
     </main>
   );
 }
