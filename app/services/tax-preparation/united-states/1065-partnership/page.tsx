@@ -29,7 +29,7 @@ export const metadata: Metadata = genMeta({
 });
 
 const overview =
-  'A partnership return is judged by its K-1s, because those are the part with an audience. The return goes to the IRS; the K-1s go to partners who read them, act on them and notice when an allocation or a capital account does not look like what they expected. So the preparation is built backwards from that output: a trial balance that has stopped moving, guaranteed payments kept distinguishable from distributions, tax basis capital maintained rather than reconstructed, and book-to-tax differences that tie to something a reviewer can follow. What we do not do is read the partnership agreement — the allocations are your firm’s determination, and we prepare to it.';
+  'A partnership return is judged by its K-1s, because those are the part with an audience. The return goes to the IRS; the K-1s go to partners who read them, act on them and notice when an allocation or a capital account does not look like what they expected. So the preparation is built backwards from that output: a trial balance that has stopped moving, guaranteed payments kept distinguishable from distributions, tax basis capital maintained rather than reconstructed, and book-to-tax differences that tie to something a reviewer can follow. The partnership agreement and allocation decisions remain with the responsible firm; preparation follows the agreed treatment.';
 
 const benefits = [
   'Preparation from an agreed trial balance, with the state the books need to be in named before the season rather than during it',
@@ -97,7 +97,7 @@ export default function Form1065Page() {
               </div>
               <p className="text-lg text-muted leading-relaxed">{overview}</p>
               <p className="text-lg text-muted leading-relaxed">
-                The engagement terms, the IRC §7216 consent requirement and the Circular 230 boundary are set out on{' '}
+                The engagement terms, IRC §7216 consent requirements and relevant Circular 230 considerations are set out on{' '}
                 <Link href="/services/tax-preparation/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">the US tax preparation page</Link>.
                 Where the close is the real constraint, that work sits under{' '}
                 <Link href="/services/accounting/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">accounting and month-end close</Link>, and the partners’ own returns under{' '}
