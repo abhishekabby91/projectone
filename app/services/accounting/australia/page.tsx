@@ -21,7 +21,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = 'In Australia the BAS cycle sets the rhythm, and everything downstream inherits whatever state the ledger is in when it comes around. If GST coding is wrong or the clearing accounts have not been agreed, that error does not stay in one period — it travels into the year-end file and has to be unpicked later at much greater cost. Our work is the disciplined middle layer that stops that happening: the reconciliations, the recurring journals, the GST control account checks, and the reporting packs, all prepared under AASB conventions and timed to your BAS periods. What arrives with your registered agent is a finished period, not a starting point.';
+const overview = 'In Australia the BAS cycle sets the rhythm, and everything downstream inherits whatever state the ledger is in when it comes around. If GST coding is wrong or the clearing accounts have not been agreed, that error does not stay in one period — it travels into the year-end file and has to be unpicked later at much greater cost. The accounting workflow provides the disciplined middle layer: the reconciliations, the recurring journals, the GST control account checks, and the reporting packs, all prepared under AASB conventions and timed to your BAS periods. What arrives with your registered agent is a finished period, not a starting point.';
 
 const auElements = [
   'GST coding reviewed and control accounts agreed each period',
@@ -50,7 +50,7 @@ const faqs = [
   { question: 'Do you lodge our BAS?', answer: 'No. We prepare BAS-ready records — GST coding reconciled, ledger current, supporting detail organised — so the lodgment itself is straightforward. Lodgment stays with your registered BAS agent, and income tax lodgment stays with your registered tax agent.' },
   { question: 'Which reporting standard do you work to?', answer: 'Reconciliations, journal entries, and reporting are structured around AASB conventions, which follow IFRS in Australia. Accounting policy decisions and judgement-based treatment stay with your registered agent or finance lead.' },
   { question: 'How does the close fit our BAS cycle?', answer: 'The close calendar can be set around your BAS periods, so the ledger is reconciled and GST-coded when the statement is prepared rather than being caught up afterwards.' },
-  { question: 'Do you work inside our existing software?', answer: 'Yes — Xero, MYOB, or QuickBooks Online, whichever the client already uses. We work inside the existing setup rather than changing it.' },
+  { question: 'Do you work inside our existing software?', answer: 'Yes — Xero, MYOB, or QuickBooks Online, whichever the client already uses. The work runs inside the existing setup rather than changing it.' },
   { question: 'Do you hold ATO portal access?', answer: 'No. Portal access and lodgment stay with your registered agent. Our work is the preparation and documentation behind what they review and lodge.' },
 ];
 
@@ -101,7 +101,7 @@ export default function AccountingAUPage() {
       </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Reveal className="rounded-2xl bg-input border border-border/70 p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-accent">Can be delegated</span><h2 className="font-serif text-3xl font-bold text-primary mt-3 mb-6">What we take on</h2><ul className="space-y-4">{delegated.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-accent shrink-0 mt-0.5" aria-hidden="true" /><span className="text-foreground leading-6">{item}</span></li>)}</ul></></Reveal>
+        <Reveal className="rounded-2xl bg-input border border-border/70 p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-accent">Can be delegated</span><h2 className="font-serif text-3xl font-bold text-primary mt-3 mb-6">Accounting Scope</h2><ul className="space-y-4">{delegated.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-accent shrink-0 mt-0.5" aria-hidden="true" /><span className="text-foreground leading-6">{item}</span></li>)}</ul></></Reveal>
         <Reveal delay={0.1} className="rounded-2xl bg-primary text-white p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-white/70">Stays with your registered agent</span><h2 className="font-serif text-3xl font-bold mt-3 mb-6">What stays yours</h2><ul className="space-y-4">{retained.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-white shrink-0 mt-0.5" aria-hidden="true" /><span className="text-white/85 leading-6">{item}</span></li>)}</ul></></Reveal>
       </div></section>
 
@@ -132,7 +132,7 @@ export default function AccountingAUPage() {
 
       <InquirySection region="australia" service="Accounting Services" source="/services/accounting/australia" />
 
-      <CTABanner title="Where Is Your Australian Close Getting Stuck?" description="Tell us what's falling behind—reconciliations, GST coding, or getting BAS-ready records together—and we can talk through what a practical support model looks like." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
+      <CTABanner title="Where Is Your Australian Close Getting Stuck?" description="Identify what is falling behind—reconciliations, GST coding or BAS-ready records—and the support scope can be built around the actual workflow." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
   );
 }
