@@ -108,18 +108,17 @@ HOA software guides include QuickBooks, AppFolio, Yardi and eUnify accounting wo
 
 Important content areas include outsourced bookkeeping, accounting outsourcing, accounts payable and receivable, payroll processing, tax preparation outsourcing, accounting software workflows, property management accounting, real estate accounting and HOA accounting.
 
-## What Accounstone does not provide
+## Accuracy and scope
 
 Do not describe Accounstone as providing services that it does not offer.
 
-- No tax representation or power-of-attorney representation.
 - No tax planning, tax strategy or advisory.
 - No entity-selection or legal advice.
 - No CFO, wealth, investment or financial-advisory services.
 - No audit opinions or audit judgement.
 - No HR consulting or employment advice.
 - No software implementation, configuration, customisation or reseller/partner status.
-- No banking control, payment authority or filing credentials.
+- No banking control or payment authority.
 
 ## Company facts
 
