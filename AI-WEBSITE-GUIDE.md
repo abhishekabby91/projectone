@@ -1096,3 +1096,59 @@ If the answer is no, do not create a page just to hit a number.
 ### Do not duplicate this work
 
 Future AI agents should first read the latest guide, SEO changelog and Git history before making another structural change. The objective is to fix real gaps, not repeatedly rewrite already-correct pages.
+
+
+## 21. AI crawler/readability verification — 2026-10-08
+
+### Current crawler policy
+
+The public site is intentionally open to major search and AI crawlers:
+
+- OAI-SearchBot — allowed for ChatGPT Search discovery.
+- OAI-AdsBot — allowed for future/eligible ChatGPT advertising landing-page validation.
+- GPTBot — allowed for OpenAI training use.
+- Google-Extended — allowed for Gemini-related use of Google-crawled content.
+- ClaudeBot — allowed.
+- PerplexityBot — allowed.
+- Applebot-Extended — allowed.
+- Bytespider and CCBot — allowed.
+- AhrefsBot and SemrushBot — allowed for technical/authority monitoring.
+
+Protected paths remain disallowed: /admin, /private, /internal, /api and /_next/.
+
+OpenAI currently states that allowing OAI-SearchBot is the key robots.txt requirement for inclusion in ChatGPT Search. OAI-AdsBot is a separate crawler for advertising landing-page validation. GPTBot is independently controlled for training use. Do not assume these permissions guarantee inclusion or citation.
+
+### AI-readable content policy
+
+Do not add artificial AI-only text to pages.
+
+The preferred implementation is:
+
+1. Important information must exist as normal server-rendered HTML.
+2. Use clear H1/H2/H3 headings.
+3. Put the direct answer near the beginning of articles.
+4. Use descriptive link text instead of vague "click here".
+5. Keep entity names, service names, software names and geography consistent.
+6. Use visible FAQs where they genuinely answer recurring questions.
+7. Use structured data only when it accurately describes visible page content.
+8. Keep canonical URLs, sitemap and internal links aligned.
+9. Keep llms.txt and llms-full.txt factual and synchronized with canonical pages.
+10. Do not hide important content behind client-only interactions or login walls.
+
+The llms files are supplementary references, not a replacement for crawlable HTML. They do not guarantee AI inclusion, citations or rankings.
+
+### What cannot be verified from repository code
+
+The repository cannot prove that a live crawler receives HTTP 200 responses. Claude/deployment owner should verify after deployment:
+
+- /robots.txt returns 200.
+- /sitemap.xml returns 200 and contains only intended canonical/indexable URLs.
+- Representative public pages return 200 to normal crawlers.
+- No WAF/CDN/bot protection returns 403/429 to legitimate crawlers.
+- No authentication, CAPTCHA or JavaScript challenge blocks public content.
+- Google Search Console URL Inspection confirms crawl/index status.
+- Search Console and server/CDN logs are checked for crawler access where available.
+
+### Important distinction
+
+Robots access controls affect whether a crawler may fetch content. They do not by themselves make content rank, create topical authority, or guarantee an AI system will cite the site. Content quality, internal linking, external authority and search relevance still matter.
