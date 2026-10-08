@@ -59,7 +59,7 @@ export default function HoaBookkeepingPage() {
         subtitle="Recurring bookkeeping for HOAs and community associations"
         title="HOA Bookkeeping Services"
         description="Keep the books current between board meetings with assessment records, reconciliations, payables, fund activity and supporting schedules handled on a repeatable monthly cycle."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss the Bookkeeping Scope', href: '/contact' }}
         ctaSecondary={{ text: 'HOA Accounting Services', href: '/services/hoa-accounting' }}
         background="primary-gradient"
       />
@@ -77,7 +77,7 @@ export default function HoaBookkeepingPage() {
           <Reveal className="space-y-5">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">The recurring layer</span>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Bookkeeping That Is Ready for the Monthly Close</h2>
-            <p className="text-lg leading-relaxed text-muted">HOA bookkeeping is not only bank-feed categorization. The books need to connect assessments and homeowner balances with vendor expenses, bank activity, operating and reserve funds, and the board’s reporting structure. We handle that recurring preparation so the monthly close starts from current records.</p>
+            <p className="text-lg leading-relaxed text-muted">HOA bookkeeping is not only bank-feed categorization. The books need to connect assessments and homeowner balances with vendor expenses, bank activity, operating and reserve funds, and the board’s reporting structure. The recurring preparation keeps the monthly close starting from current records.</p>
           </Reveal>
           <Reveal delay={0.12}><ServiceIllustration service="bookkeeping" className="mx-auto w-full max-w-[300px] lg:max-w-none" /></Reveal>
         </div>
@@ -115,8 +115,8 @@ export default function HoaBookkeepingPage() {
       </section>
 
       <FAQSection subtitle="HOA bookkeeping questions" items={faqs} columns={2} />
-      <InquirySection source={PATH} title="Talk Through Your HOA Books" lead="Tell us what is current, what is behind and what the board needs to see each month." />
-      <CTABanner title="Need the Books Ready Before the Meeting?" description="We can build a repeatable bookkeeping cycle around your assessment records, bank accounts and existing HOA system." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
+      <InquirySection source={PATH} title="Review the HOA Bookkeeping Cycle" lead="Tell us what is current, what is behind and what the board needs to see each month." />
+      <CTABanner title="Books Ready Before the Board Meeting" description="A repeatable bookkeeping cycle can be structured around existing assessment records, bank accounts and HOA systems." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
     </main>
   );
 }
