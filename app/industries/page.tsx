@@ -44,7 +44,7 @@ export default function IndustriesPage() {
       <SectionGrid
         subtitle="Explore by Industry"
         title="Specialized Support for Your Sector"
-        description="Each page names the work we do, the parts that stay with your team, and what tends to go wrong in that sector's books."
+        description="Each page explains the accounting work involved, the responsibilities that remain with the client, and common issues in that sector's books."
         items={industries}
         baseUrl="/industries"
         columns={3}
@@ -55,7 +55,7 @@ export default function IndustriesPage() {
 
       <CTABanner
         title="Don't See Your Industry?"
-        description="We work with growing businesses across many sectors. Reach out and we'll discuss your specific needs."
+        description="Accounting support can be structured for businesses across multiple sectors around their systems, transactions and reporting requirements."
         cta={{ text: 'Contact Us', href: '/contact' }}
         background="primary"
       />
