@@ -22,7 +22,11 @@ export default function HoaBankReconciliation() {
     >
       <p>HOA bank reconciliation is the monthly process of comparing the association's accounting records with its bank statements and explaining the difference between them. It should be completed for each relevant bank account, including operating and reserve accounts.</p>
 
-      <h2>What Does the Reconciliation Need to Explain?</h2>
+      <h2>Why Bank Reconciliation Matters in HOA Accounting</h2>
+<p>Bank reconciliation is a basic part of monthly HOA accounting, but it also supports the rest of the financial reports. Cash balances, assessment deposits, vendor payments and transfers all depend on the bank activity being recorded correctly.</p>
+<p>A clean reconciliation helps the board and accounting team start the next month with records they can trust.</p>
+
+<h2>What Does the Reconciliation Need to Explain?</h2>
       <p>The reconciliation should account for timing differences such as outstanding checks and deposits in transit, as well as bank fees, transfers, errors and other items that need correction.</p>
 
       <h2>Step 1: Start With the Bank Statement</h2>
