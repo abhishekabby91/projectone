@@ -89,13 +89,13 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1244 | 1 | 26 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1256 | 1 | 30 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2331 | 1 | 56 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 1933 | 1 | 33 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 2219 | 1 | 25 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 1964 | 1 | 37 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2230 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
