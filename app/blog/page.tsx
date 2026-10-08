@@ -43,6 +43,8 @@ const articles = [
   { href: '/blog/hoa-quickbooks-online', title: 'QuickBooks Online for HOA Accounting: What Should Be Tracked?', description: 'A practical guide to organizing an HOA QuickBooks Online file and deciding what detail belongs elsewhere.', tag: 'HOA Software', readTime: '7 min read' },
   { href: '/blog/hoa-accounting-appfolio', title: 'HOA Accounting with AppFolio: What Should Be Reviewed Each Month?', description: 'How to review homeowner activity, cash, AP, reserves and board reporting in an AppFolio-based workflow.', tag: 'HOA Software', readTime: '7 min read' },
   { href: '/blog/hoa-accounting-yardi', title: 'HOA Accounting with Yardi: What Should Be Reviewed Each Month?', description: 'A practical monthly accounting workflow for HOA teams using Yardi or a related property-management stack.', tag: 'HOA Software', readTime: '7 min read' },
+  { href: '/blog/how-to-outsource-hoa-accounting', title: 'How to Outsource HOA Bookkeeping and Accounting: What Should You Set Up First?', description: 'A practical guide to defining scope, software access, controls, monthly close and board reporting before outsourcing HOA accounting.', tag: 'HOA Outsourcing', readTime: '8 min read' },
+  { href: '/blog/hoa-accounting-outsourcing-vs-in-house', title: 'HOA Accounting Outsourcing vs. Hiring In-House: What Should an Association Consider?', description: 'Compare in-house and outsourced HOA accounting by workload, controls, software, continuity and reporting.', tag: 'HOA Outsourcing', readTime: '8 min read' },
 ];
 
 export default function BlogPage() {
