@@ -136,6 +136,50 @@ function addHeadingIds(
   return element;
 }
 
+type RelatedLink = { label: string; href: string };
+
+function getRelatedLinks(slug: string): RelatedLink[] {
+  const value = slug.toLowerCase();
+  if (value.includes('hoa-')) return [
+    { label: 'HOA accounting services', href: '/services/hoa-accounting' },
+    { label: 'HOA accounting industry scope', href: '/industries/hoa-accounting' },
+    { label: 'HOA bookkeeping services', href: '/services/hoa-bookkeeping' },
+  ];
+  if (value.includes('property-management') || value.includes('rent-roll')) return [
+    { label: 'Property management accounting', href: '/industries/property-management' },
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+    { label: 'U.S. bookkeeping services', href: '/services/bookkeeping/united-states' },
+  ];
+  if (value.includes('accounts-payable')) return [
+    { label: 'U.S. accounts payable services', href: '/services/accounts-payable/united-states' },
+    { label: 'Accounting services', href: '/services/accounting/united-states' },
+  ];
+  if (value.includes('accounts-receivable')) return [
+    { label: 'U.S. accounts receivable services', href: '/services/accounts-receivable/united-states' },
+    { label: 'Accounting services', href: '/services/accounting/united-states' },
+  ];
+  if (value.includes('payroll')) return [
+    { label: 'U.S. payroll services', href: '/services/payroll/united-states' },
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+  ];
+  if (value.includes('tax-preparation') || value.includes('tax-outsourcing')) return [
+    { label: 'U.S. tax preparation', href: '/services/tax-preparation/united-states' },
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+  ];
+  if (value.includes('audit-support')) return [
+    { label: 'U.S. audit support', href: '/services/audit-support/united-states' },
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+  ];
+  if (value.includes('bookkeeping')) return [
+    { label: 'U.S. bookkeeping services', href: '/services/bookkeeping/united-states' },
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+  ];
+  return [
+    { label: 'U.S. accounting services', href: '/services/accounting/united-states' },
+    { label: 'U.S. bookkeeping services', href: '/services/bookkeeping/united-states' },
+  ];
+}
+
 export default function ArticleLayout({
   title,
   category,
@@ -154,6 +198,7 @@ export default function ArticleLayout({
     : `/resources/${section}`;
 
   const path = `${hubHref}/${slug}`;
+  const relatedLinks = getRelatedLinks(slug);
 
   const sectionLabel = {
     guides: 'Guides',
@@ -337,6 +382,26 @@ export default function ArticleLayout({
             url={`${baseUrl}${path}`}
             title={title}
           />
+
+          <section
+            aria-labelledby="related-accounting-scope"
+            className="mt-10 rounded-xl border border-border bg-input p-5 md:p-6"
+          >
+            <h2 id="related-accounting-scope" className="text-lg font-bold text-primary mb-3">
+              Related accounting scope
+            </h2>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              {relatedLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </section>
         </div>
       </article>
 
