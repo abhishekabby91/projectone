@@ -4269,3 +4269,18 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - Confirmed protected paths remain blocked.
 - Documented the distinction between crawler access and actual AI citation/ranking.
 - Documented live checks that must be performed by Claude/deployment owner after deployment.
+
+
+## 2026-10-08 — Property Management content cluster
+
+Added the first five Property Management supporting guides:
+
+- Property Management Accounting
+- Property Management Bookkeeping vs. Accounting
+- Property Management Chart of Accounts
+- Rent Roll Accounting
+- Property Management Bank Reconciliation
+
+Updated the Property Management industry pillar with a guide section linking to the new articles. Updated the blog index and sitemap so the new pages are discoverable.
+
+The cluster remains expandable and should grow from real search intent and workflow gaps rather than a fixed page count. No deployment or live Search Console changes were made in this pass.
