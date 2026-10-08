@@ -26,6 +26,7 @@ const scope = [
   'Receivable aging and delinquency schedules',
   'Recurring journal entries and month-end close support',
   'Supporting schedules for monthly board reporting',
+  'Catch-up and cleanup bookkeeping when separately scoped',
 ];
 
 const faqs = [
