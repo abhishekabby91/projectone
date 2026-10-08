@@ -17,27 +17,27 @@ export default function HoaAccountingEunify() {
       publishedDate="2026-10-08"
       section="blog"
       slug="hoa-accounting-eunify"
-      inquiryTitle="Using eUnify for Your HOA Accounting?"
-      inquiryLead="Tell us how your association or management company uses eUnify today. We can learn the relevant workflow and help organize the accounting work around the system already in place."
+      inquiryTitle="Tell Us About the Work You Need Support With"
+      inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >
-      <p>eUnify is a community association management platform with accounting and financial features for HOAs and management companies. Its finance tools cover areas such as the general ledger, accounts receivable, accounts payable, budgeting, reporting and payments. citeturn0search5turn0search9</p>
+      <p>eUnify is a community association management platform with accounting and financial features for HOAs and management companies. Its finance tools cover areas such as the general ledger, accounts receivable, accounts payable, budgeting, reporting and payments.</p>
       <p>If an accounting team is new to eUnify, the right approach is not to pretend the software is already familiar. The team should first learn the association's setup, chart of accounts, owner records, bank accounts, reporting structure and monthly workflow.</p>
 
       <h2>Start With the Association General Ledger</h2>
-      <p>The general ledger is the foundation for the accounting workflow. eUnify's support documentation describes association GL setup including the fiscal year, accounting method, chart of accounts and optional department structure. citeturn0search6</p>
+      <p>The general ledger is the foundation for the accounting workflow. eUnify's support documentation describes association GL setup including the fiscal year, accounting method, chart of accounts and optional department structure.</p>
       <p>Before doing recurring work, the accounting team should understand how the association's chart is structured and which reports depend on it.</p>
 
       <h2>Review Homeowner Balances and Assessment Activity</h2>
-      <p>Assessment charges, open charges, payments, credits and account balances need to remain understandable at the homeowner or unit level. eUnify's onboarding guidance specifically identifies account balances and open charges as accounting data that needs to be established so payments can be received and applied correctly. citeturn0search8</p>
+      <p>Assessment charges, open charges, payments, credits and account balances need to remain understandable at the homeowner or unit level. eUnify's onboarding guidance specifically identifies account balances and open charges as accounting data that needs to be established so payments can be received and applied correctly.</p>
 
       <h2>Review Accounts Payable and Vendor Activity</h2>
-      <p>Vendor invoices and payments should be reviewed for coding, approvals and the correct operating or reserve classification. eUnify describes AP and vendor-payment workflows as part of its finance platform. citeturn0search5</p>
+      <p>Vendor invoices and payments should be reviewed for coding, approvals and the correct operating or reserve classification. eUnify describes AP and vendor-payment workflows as part of its finance platform.</p>
 
       <h2>Banking and Reconciliation</h2>
       <p>The software can organize financial information, but the accounting team still needs to reconcile bank activity and investigate differences. The monthly review should identify outstanding items, unusual transactions, transfers and any difference between the accounting records and bank statement.</p>
 
       <h2>What About QuickBooks Integration?</h2>
-      <p>eUnify provides integration options with QuickBooks. Its support documentation describes both QuickBooks Online integration and a QuickBooks integration workflow for associations using QuickBooks for accounting. citeturn0search0turn0search1</p>
+      <p>eUnify provides integration options with QuickBooks. Its support documentation describes both QuickBooks Online integration and a QuickBooks integration workflow for associations using QuickBooks for accounting.</p>
       <p>When two systems are involved, the accounting team should define which system is the source for each record and establish a reconciliation point. The objective is not simply to make data move between systems; it is to know that the resulting balances are complete and accurate.</p>
 
       <h2>Learning eUnify as an Accounting Team</h2>
@@ -59,9 +59,9 @@ export default function HoaAccountingEunify() {
 
       <h2>Common Questions</h2>
       <h3>Is eUnify an HOA accounting system?</h3>
-      <p>eUnify provides accounting and financial functionality as part of its community association management platform, including general ledger, receivables, payables, budgeting and reporting. citeturn0search5</p>
+      <p>eUnify provides accounting and financial functionality as part of its community association management platform, including general ledger, receivables, payables, budgeting and reporting.</p>
       <h3>Can eUnify work with QuickBooks?</h3>
-      <p>Yes. eUnify's support documentation describes QuickBooks Online integration as well as a QuickBooks integration workflow for associations. citeturn0search0turn0search1</p>
+      <p>Yes. eUnify's support documentation describes QuickBooks Online integration as well as a QuickBooks integration workflow for associations.</p>
       <h3>Can an accounting team learn eUnify if it has not used it before?</h3>
       <p>Yes. The sensible approach is to learn the client's actual configuration during onboarding, document the accounting workflow and then build the monthly close around those procedures. Software-specific knowledge should be developed through the actual client workflow rather than assumed.</p>
       <h3>What should be reconciled when eUnify and QuickBooks are both used?</h3>
