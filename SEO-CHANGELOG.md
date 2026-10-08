@@ -4260,3 +4260,12 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - Reviewed Property Management internal links and avoided forced expansion.
 - Corrected the malformed literal newline in components/article-layout.tsx that could break the TypeScript build.
 - Deployment remains intentionally separate; Claude/deployment owner should run build validation and deploy.
+
+
+## 2026-10-08 — AI crawler/readability pass
+
+- Added OAI-AdsBot to the explicit public crawler allowlist in app/robots.ts.
+- Confirmed OAI-SearchBot, GPTBot, Google-Extended, ClaudeBot, PerplexityBot, Applebot-Extended, Bytespider and CCBot remain allowed.
+- Confirmed protected paths remain blocked.
+- Documented the distinction between crawler access and actual AI citation/ranking.
+- Documented live checks that must be performed by Claude/deployment owner after deployment.
