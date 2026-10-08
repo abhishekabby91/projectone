@@ -31,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingQuickBooks() {
   return (
-    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting in QuickBooks: What Should Be Set Up and Reviewed?"
       category="HOA Accounting"
       description="QuickBooks can support HOA accounting when the chart of accounts, homeowner detail, fund structure and monthly reconciliation process are designed around how the association actually operates."
