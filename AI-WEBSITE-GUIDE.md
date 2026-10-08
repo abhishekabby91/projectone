@@ -1228,3 +1228,24 @@ The following high-value HOA pages now have humanized visible FAQs and FAQ struc
 The HOA Month-End Checklist already had the same FAQ + schema pattern before this pass.
 
 Claude/deployment owner should run the production build before deployment because the FAQ component and multiple article files were changed. After deployment, verify representative desktop and mobile pages, including FAQ expansion, TOC navigation, page layout, structured data and no horizontal overflow.
+
+
+## 23. Property Management content cluster — 2026-10-08
+
+The next industry content cluster after the current HOA work is Property Management.
+
+The first five supporting guides added are:
+
+- `/blog/property-management-accounting`
+- `/blog/property-management-bookkeeping-vs-accounting`
+- `/blog/property-management-chart-of-accounts`
+- `/blog/rent-roll-accounting`
+- `/blog/property-management-bank-reconciliation`
+
+These are intentionally workflow-led rather than keyword-combination pages. They explain property-level accounting, tenant and owner records, rent-roll relationships, chart-of-accounts structure and reconciliation.
+
+The Property Management industry pillar now links to these guides, and the guides link back to the pillar and to related guides.
+
+This cluster is expandable. Do not treat five pages as a target limit. Add further pages only when they answer a distinct useful query, such as owner statements, tenant/security-deposit accounting, trust accounting, monthly close, AP/vendor processing, maintenance expense accounting, 1099 tracking or software-specific workflows.
+
+Do not create location or software variants simply to multiply URLs. Each new page must have a real search or workflow reason to exist.
