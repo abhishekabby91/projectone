@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'eUnify and QuickBooks for HOA Accounting: What to Reconcile',
@@ -8,9 +9,29 @@ export const metadata: Metadata = genMeta({
   path: '/blog/eunify-quickbooks-hoa-accounting',
 });
 
+const faqs = [
+  {
+    "question": "How should eUnify and QuickBooks be reconciled for an HOA?",
+    "answer": "First define which system is the source for each type of record. Then compare the transferred totals and investigate timing differences, missing transactions, duplicate activity and other exceptions before relying on the general ledger."
+  },
+  {
+    "question": "What should an HOA review after an eUnify to QuickBooks transfer?",
+    "answer": "Review assessment and payment totals, receivables, cash, payables and any other balances included in the integration. A clean-looking import is not enough; the totals should be traceable to the source records."
+  },
+  {
+    "question": "Can eUnify and QuickBooks both be used for HOA accounting?",
+    "answer": "Yes, when the roles of the two systems are clearly defined. The main risk is not using two systems; it is allowing unclear ownership of records or unreconciled handoffs between them."
+  },
+  {
+    "question": "What should a team learn before supporting an eUnify and QuickBooks workflow?",
+    "answer": "Learn the client's actual configuration, integration settings, reports, posting rules and reconciliation process. Documentation of the handoff is particularly useful when more than one person works on the books."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function EunifyQuickBooksHoaAccounting() {
   return (
-    <ArticleLayout
+    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="eUnify and QuickBooks for HOA Accounting: What Should Be Reconciled?"
       category="HOA Software"
       description="When an HOA uses eUnify with QuickBooks, the key accounting issue is not simply whether the systems integrate. The team needs clear ownership of records and a repeatable reconciliation process."
@@ -51,16 +72,11 @@ export default function EunifyQuickBooksHoaAccounting() {
       <h2>What If the Team Is New to eUnify?</h2>
       <p>That is manageable if onboarding is treated as a learning process. The team should document the client's configuration, integration settings, chart of accounts, reporting expectations and common exception types before taking over recurring work.</p>
 
-      <h2>Common Questions</h2>
-      <h3>Does eUnify replace QuickBooks?</h3>
-      <p>It depends on the association's chosen workflow. eUnify provides accounting functionality and also documents integrations with QuickBooks, so some organizations use the systems together.</p>
-      <h3>Can eUnify and QuickBooks have different balances?</h3>
-      <p>They can show differences during a timing or integration issue, but an unexplained difference should be investigated rather than accepted as normal. The control points depend on the configured workflow.</p>
-      <h3>Can an outsourced accounting team support this setup?</h3>
-      <p>Yes. The team can learn the integration workflow, perform recurring reconciliation and investigate routine exceptions within the access and approval controls established by the association or management company.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-accounting-eunify">HOA accounting with eUnify</a>, <a href="/blog/hoa-quickbooks-online">QuickBooks Online for HOA accounting</a> and <a href="/blog/hoa-assessment-receivables-reconciliation">HOA assessment receivables reconciliation</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
