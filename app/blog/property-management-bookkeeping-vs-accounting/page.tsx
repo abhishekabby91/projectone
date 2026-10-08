@@ -39,7 +39,7 @@ export default function Page() {
       <p>If month-end reports require repeated manual corrections, owner statements are being reconstructed, or reconciliations are regularly carried forward, the issue may be accounting workflow rather than transaction volume alone.</p>
 
       <h2>Related guides</h2>
-      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the property management chart of accounts</a> and <a href="/blog/property-management-bank-reconciliation">property management bank reconciliation</a>.</p>
+      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the property management chart of accounts</a> and <a href="/blog/property-management-bank-reconciliation">property management bank reconciliation</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>
   );
 }
