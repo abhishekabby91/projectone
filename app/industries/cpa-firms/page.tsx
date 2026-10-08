@@ -292,6 +292,13 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
+      <div className="max-w-5xl mx-auto px-6 md:px-8 py-8 flex flex-wrap gap-3">
+        <Link href="/services/tax-preparation/united-states" className="font-medium text-primary underline underline-offset-4">U.S. Tax Preparation</Link>
+        <Link href="/services/bookkeeping/united-states" className="font-medium text-primary underline underline-offset-4">U.S. Bookkeeping Services</Link>
+        <Link href="/services/accounting/united-states" className="font-medium text-primary underline underline-offset-4">U.S. Accounting Services</Link>
+        <Link href="/services/accounts-payable/united-states" className="font-medium text-primary underline underline-offset-4">Accounts Payable</Link>
+      </div>
+
       <FAQSection subtitle="Questions partners ask" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
