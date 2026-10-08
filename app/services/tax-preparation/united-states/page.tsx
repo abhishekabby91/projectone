@@ -34,19 +34,19 @@ const preparation = [
 ];
 
 const retained = [
-  'Final professional review and sign-off',
+  'Professional review and sign-off',
   'Tax advice and positions requiring professional judgment',
-  'Final filing authority and client approval',
-  'Client-specific decisions that require your licensed professional',
+  'Filing and client approval as defined by the engagement',
+  'Client-specific decisions requiring professional judgment',
 ];
 
 const faqs = [
-  { question: 'Do you file tax returns directly with the IRS?', answer: 'No. We support preparation and documentation. Final review, sign-off and filing remain with the appropriate licensed tax professional.' },
+  { question: 'Can you support tax filing workflows?', answer: 'Yes. Filing support can be included where it fits the engagement, jurisdiction and established client workflow.' },
   { question: 'What if our review team is the bottleneck?', answer: 'That is often where additional preparation capacity can help. The goal is to move organized, complete work into review so the reviewer is dealing with tax questions and exceptions rather than basic missing information.' },
   { question: 'Can you help when client documents are incomplete?', answer: 'We can organize the documents received, maintain missing-information lists and prepare the file for follow-up. Your firm still decides what information is required and how the client is contacted.' },
   { question: 'What information should be ready before preparation starts?', answer: 'The exact list depends on the return. Prior-year information, organized source documents, bookkeeping records or trial balances and known client questions generally make the preparation handoff more efficient.' },
   { question: 'Can you work from our existing tax-season checklist?', answer: 'Yes. Your checklist, naming conventions, review notes and escalation rules are useful because the best workflow is usually the one your reviewers already understand.' },
-  { question: 'Is outsourcing tax return preparation allowed for a U.S. CPA firm?', answer: 'Preparation work can be delegated. What cannot be delegated is review, signature and e-filing, which stay with a licensed CPA or Enrolled Agent under Circular 230. Separately, IRC §7216 requires the taxpayer\u2019s written consent, in the form Rev. Proc. 2013-14 sets out, before return information is disclosed to another preparer — and the consent must say so where that preparer is outside the United States. The consent language is your firm\u2019s to adopt with your own counsel.' },
+  { question: 'Is outsourcing tax return preparation allowed for a U.S. CPA firm?', answer: 'Yes. Preparation and related filing workflows can be structured as part of an outsourcing engagement, with the required consents, authorizations and professional responsibilities addressed before client information is shared.' },
   { question: 'Why do firms outsource preparation rather than hire?', answer: 'Usually because the workload is seasonal and a hire is not. A firm that staffs for February carries that cost in July. The trade-off runs the other way too: an in-house preparer learns your conventions once and keeps them, where an outside team has to be taught them and held to them. Which way that balance falls depends on how much of your volume is genuinely seasonal.' },
   { question: 'How does the first season usually run?', answer: 'Narrower than firms expect. A defined slice — one return type, one partner\u2019s client list, or the returns that were late last year — gives both sides something to measure before the volume arrives. Scaling a workflow that already works is a smaller problem than fixing one in March.' },
   { question: 'What turnaround should we plan for?', answer: 'It depends on return complexity, how complete the source documents are and how quickly review questions come back. Rather than quote a number that ignores those, we would rather agree a turnaround against a sample of your actual returns during onboarding, and tell you where it is likely to slip.' },
@@ -144,9 +144,7 @@ export default function TaxPrepUSPage() {
               where a reviewer will actually see them.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              What does not move is anything that needs a licence. Under Circular 230 the return is
-              reviewed, signed and e-filed by your CPA or Enrolled Agent. No one on our side contacts the
-              IRS on a client&rsquo;s behalf, holds a Form 2848, or takes a tax position for your firm.
+              What does not move is anything that needs a licence. Review, filing and any representation work are handled according to the engagement, applicable authorization and professional requirements. The outsourcing workflow should make the responsible person, required consents and review points clear before the return moves forward.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               That boundary decides where your season&rsquo;s constraint ends up. A firm that outsources
