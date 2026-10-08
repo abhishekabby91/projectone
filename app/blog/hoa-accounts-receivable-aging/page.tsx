@@ -21,6 +21,10 @@ export default function Page() {
       inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >
       <p>An HOA accounts receivable aging report shows unpaid amounts grouped by how long they have remained outstanding. It can help a board distinguish normal timing differences from balances that require management attention.</p>
+<h2>How Receivables Aging Fits Into HOA Accounting</h2>
+<p>An aging report is one part of the HOA receivables process. It shows what homeowners owe and how long balances have remained unpaid, while the general ledger shows the total receivable balance in the financial statements.</p>
+<p>These records should agree or have a clear reason for any difference. Accounting can keep the records accurate without making the collection decision for the board.</p>
+
 <h2>What Does an Aging Report Show?</h2><p>Depending on the system, balances may be grouped into current, 30-day, 60-day, 90-day and older categories. The exact buckets can vary, but the purpose is the same: make the age of outstanding receivables visible.</p>
 <h2>Look Beyond the Total</h2><p>A total receivable balance is less useful without detail. Review the number of accounts involved, large individual balances, credits, unapplied payments and unusually old items.</p>
 <h2>Reconcile the Aging to the General Ledger</h2><p>The detailed homeowner aging should be compared with the corresponding receivable balance in the general ledger. A difference needs investigation before the report is relied upon for board reporting.</p>
