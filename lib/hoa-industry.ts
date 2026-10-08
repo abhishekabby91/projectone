@@ -280,14 +280,14 @@ export const locality = {
 };
 
 export const boundaries = [
-  'We never hold, release or transfer association funds, and we are never a signatory on an operating or reserve account.',
-  'We do not tell a board what its assessments should be, what its reserves should hold, or what a reserve study should conclude. Those are board decisions and a reserve specialist’s.',
-  'We do not decide whether reserve funds are held correctly or whether a transfer out of reserves is permitted. That is the governing documents, counsel and the board.',
-  'We take no step in a collections, lien or foreclosure process, and we do not advise on one. We keep the delinquency schedule the board decides from.',
-  'We do not interpret the CC&Rs, the bylaws, the declaration or any governing document.',
-  'We do not audit or review an association’s financial statements and we issue no opinion. We prepare what your independent CPA asks for.',
-  'We do not sign a tax return or take final responsibility for one, and we represent nobody before a tax authority.',
-  'We do not implement, configure or administer association management software, and we hold no vendor certification.',
+  'Association funds are never held, released or transferred through the accounting service, and the accounting provider is not a signatory on an operating or reserve account.',
+  'Assessment levels, reserve funding decisions and reserve-study conclusions remain with the board and its qualified advisers. Those are board decisions and a reserve specialist’s.',
+  'Reserve-fund custody and decisions on transfers from reserves remain with the association, its governing documents and qualified advisers. That is the governing documents, counsel and the board.',
+  'Collections, lien and foreclosure actions remain outside the accounting workflow and with the association's authorized professionals. We keep the delinquency schedule the board decides from.',
+  'Interpretation of CC&Rs, bylaws, declarations and other governing documents remains with the association's legal advisers.',
+  'Audit and review opinions remain with the independent CPA; accounting support can organize the reconciliations, schedules and records required for that engagement.',
+  'Tax filing, submission and authority workflows follow the engagement, authorization and applicable professional requirements.',
+  'Software implementation, configuration and vendor certification are separate from the accounting workflow unless specifically included in an engagement.',
 ];
 
 export const processPhases = [
@@ -323,7 +323,7 @@ export const services: HOAServiceCard[] = [
   { name: 'Reserve fund accounting', body: 'Operating and reserve kept as distinct funds, transfers recorded as transfers, and the funding position readable on any day.' },
   { name: 'Accounts payable', body: 'Invoices captured, coded to budget lines and presented for board approval. The association releases every payment.', href: '/services/accounts-payable/united-states' },
   { name: 'Audit & review support', body: 'The independent CPA’s request list produced from a close that already happened. The opinion is theirs; the file is ours.', href: '/services/audit-support/united-states' },
-  { name: 'Tax preparation support', body: 'Records and schedules organised for the CPA who signs the association’s return. We prepare; we never sign.', href: '/services/tax-preparation/united-states' },
+  { name: 'Tax preparation support', body: 'Records and schedules organised for the CPA who signs the association’s return. Tax preparation and filing responsibilities follow the specific engagement and applicable requirements.', href: '/services/tax-preparation/united-states' },
   { name: 'Budget preparation support', body: 'Prior-year actuals, variance history and the working schedules a board builds next year’s budget from. The budget itself is theirs.' },
 ];
 
