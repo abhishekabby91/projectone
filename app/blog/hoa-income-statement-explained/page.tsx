@@ -57,7 +57,6 @@ export default function HoaIncomeStatementExplained() {
       <p>First determine whether the difference is timing, a known one-time item, a coding issue or a genuine overspend. The board can then decide whether management action, a budget revision or simply continued monitoring is appropriate.</p>
 
       <h2>Related HOA Accounting Resources</h2>
-      <p>See <a href="/blog/hoa-balance-sheet-explained">HOA balance sheet explained</a>, <a href="/blog/hoa-budget-to-actual-reports">budget-to-actual reporting</a> and <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a>.</p>
-    </ArticleLayout>
+      <p>See <a href="/blog/hoa-balance-sheet-explained">HOA balance sheet explained</a>, <a href="/blog/hoa-budget-to-actual-reports">budget-to-actual reporting</a>, <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a> and <a href="/services/hoa-financial-reporting">HOA financial reporting</a>.</p></ArticleLayout>
   );
 }
