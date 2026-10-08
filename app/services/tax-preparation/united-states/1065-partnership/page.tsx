@@ -24,7 +24,7 @@ const returnType = returnDepth['1065'];
 export const metadata: Metadata = genMeta({
   title: 'Form 1065 and K-1 Preparation Outsourcing',
   description:
-    'Partnership return and K-1 preparation for US CPA firms: trial balance in, schedules and capital accounts out. Allocations and signature stay with your firm.',
+    'Partnership return and K-1 preparation for U.S. CPA firms: trial balance in, schedules and capital accounts out, with allocations handled through your established workflow.',
   path: PATH,
 });
 
