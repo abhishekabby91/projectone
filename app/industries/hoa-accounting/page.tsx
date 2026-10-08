@@ -372,6 +372,40 @@ export default function HoaAccountingPage() {
 
       <FAQSection subtitle="HOA accounting questions" items={faqs} columns={2} />
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-3 mb-7"><>
+            <Eyebrow>HOA accounting guides</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+              Go Deeper Into the Accounting Workflow
+            </h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              These guides answer specific questions that come up during HOA bookkeeping, monthly close and board reporting.
+            </p>
+          </></Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              { name: 'HOA accounting month-end checklist', href: '/blog/hoa-accounting-month-end-checklist' },
+              { name: 'HOA assessment accounting', href: '/blog/hoa-assessment-accounting' },
+              { name: 'HOA homeowner ledgers', href: '/blog/hoa-homeowner-ledgers' },
+              { name: 'HOA bank reconciliation', href: '/blog/hoa-bank-reconciliation' },
+              { name: 'HOA reserve accounting', href: '/blog/hoa-reserve-accounting' },
+              { name: 'HOA budget-to-actual reports', href: '/blog/hoa-budget-to-actual-reports' },
+              { name: 'HOA board financial package', href: '/blog/hoa-board-financial-package' },
+              { name: 'HOA accounting controls', href: '/blog/hoa-accounting-controls' },
+              { name: 'HOA accounting workflow', href: '/blog/hoa-accounting-workflow' },
+              { name: 'HOA accounting cleanup', href: '/blog/hoa-accounting-cleanup' },
+              { name: 'HOA accounting in QuickBooks', href: '/blog/hoa-accounting-quickbooks' },
+              { name: 'HOA accounting with eUnify', href: '/blog/hoa-accounting-eunify' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="rounded-lg border border-border bg-input px-4 py-3 text-sm font-medium text-primary hover:border-primary/50 transition-colors">
+                {l.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-6"><>
