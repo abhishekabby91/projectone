@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Homeowner Ledgers: How to Keep Assessment Balances Accurate',
@@ -8,9 +9,31 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-homeowner-ledgers',
 });
 
+const faqs = [
+  {
+    "question": "Should HOA homeowner ledgers be reconciled every month?",
+    "answer": "Yes. A monthly review catches unapplied payments, incorrect charges, old credits and differences between the subsidiary ledger and the general ledger before they become year-end problems."
+  },
+  {
+    "question": "What should be checked when a homeowner disputes a balance?",
+    "answer": "Start with the transaction history: the assessment schedule, payments, credits, adjustments and supporting records. Accounting can explain the numbers, while the association or its authorized professionals handle any underlying dispute or collection decision."
+  },
+  {
+    "question": "Can QuickBooks Online maintain HOA homeowner ledgers?",
+    "answer": "It can record receivable activity, but the exact homeowner-level workflow depends on the association's setup and any connected association-management system. Whatever system is used, the detailed records should remain reconcilable to the general ledger."
+  },
+  {
+    "question": "What causes HOA homeowner ledger balances to go out of balance?",
+    "answer": "Common causes include missed assessment postings, payments applied to the wrong account, old unapplied cash, unsupported adjustments and differences between the subsidiary receivable records and the general ledger."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaHomeownerLedgers() {
   return (
-    <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Homeowner Ledgers: How Should Assessment Balances Be Kept Accurate?"
       category="HOA Accounting"
       description="A homeowner ledger should make it easy to see what was charged, what was paid, what was adjusted and what remains due. The key is keeping those records consistent with the association's bank activity and general ledger."
@@ -77,8 +100,11 @@ export default function HoaHomeownerLedgers() {
       <h3>Does the process differ by state?</h3>
       <p>The accounting workflow is broadly similar, but state laws, governing documents and collection requirements can differ. Accounting records should therefore be kept separate from legal or collection decisions.</p>
 
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
+
       <h2>Related HOA Accounting Resources</h2>
       <p>See our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page, or continue with <a href="/blog/hoa-assessment-receivables-reconciliation">HOA assessment receivables reconciliation</a> and <a href="/blog/hoa-delinquency-accounting">HOA delinquency accounting</a>.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
