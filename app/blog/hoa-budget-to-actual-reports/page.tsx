@@ -34,7 +34,11 @@ export default function HoaBudgetToActualReports() {
       <p>A budget-to-actual report compares an HOA's approved budget with what has actually been recorded during the period. It gives the board a starting point for asking why income or expenses are above or below plan.</p>
       <p>A long list of numbers is not necessarily a useful report. The best monthly report makes material or unusual variances easy to spot and gives the board enough detail to ask a sensible follow-up question.</p>
 
-      <h2>What Does a Budget-to-Actual Report Show?</h2>
+      <h2>Where Budget-to-Actual Reporting Fits Into HOA Accounting</h2>
+<p>A budget-to-actual report turns the monthly accounting records into a simple comparison with the approved budget. It helps the board see where income or expenses are above or below plan.</p>
+<p>The report is most useful when the underlying books are current, reconciled and coded consistently.</p>
+
+<h2>What Does a Budget-to-Actual Report Show?</h2>
       <p>Typical columns include the approved budget, current-period actual, year-to-date budget, year-to-date actual and variance. Some associations also include a percentage variance or short explanation.</p>
 
       <h2>Look at Income and Expenses Separately</h2>
