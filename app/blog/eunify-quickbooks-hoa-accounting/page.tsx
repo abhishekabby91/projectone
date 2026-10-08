@@ -31,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 
 export default function EunifyQuickBooksHoaAccounting() {
   return (
-    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="eUnify and QuickBooks for HOA Accounting: What Should Be Reconciled?"
       category="HOA Software"
       description="When an HOA uses eUnify with QuickBooks, the key accounting issue is not simply whether the systems integrate. The team needs clear ownership of records and a repeatable reconciliation process."
