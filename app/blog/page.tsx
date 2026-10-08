@@ -47,6 +47,10 @@ const articles = [
   { href: '/blog/hoa-accounting-outsourcing-vs-in-house', title: 'HOA Accounting Outsourcing vs. Hiring In-House: What Should an Association Consider?', description: 'Compare in-house and outsourced HOA accounting by workload, controls, software, continuity and reporting.', tag: 'HOA Outsourcing', readTime: '8 min read' },
   { href: '/blog/hoa-accounting-eunify', title: 'HOA Accounting with eUnify: What Should Be Reviewed?', description: 'A practical eUnify accounting workflow covering the general ledger, homeowner balances, AP, banking, reporting and QuickBooks integration.', tag: 'HOA Software', readTime: '8 min read' },
   { href: '/blog/eunify-quickbooks-hoa-accounting', title: 'eUnify and QuickBooks for HOA Accounting: What Should Be Reconciled?', description: 'How to define system ownership and reconcile homeowner, payment and accounting data between eUnify and QuickBooks.', tag: 'HOA Software', readTime: '7 min read' },
+  { href: '/blog/hoa-cash-vs-accrual-accounting', title: 'HOA Cash vs. Accrual Accounting: Which Method Should an Association Use?', description: 'A practical explanation of cash and accrual accounting for HOA reporting.', tag: 'HOA Financial Reporting', readTime: '6 min read' },
+  { href: '/blog/hoa-accounting-workflow', title: 'HOA Accounting Workflow: What Should Happen Each Month?', description: 'The key steps from assessments and payments through reconciliation, review and monthly reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-unapplied-payments', title: 'Unapplied HOA Payments: How Should They Be Resolved?', description: 'How to investigate and clear unapplied HOA payments without distorting homeowner balances.', tag: 'HOA Accounting', readTime: '6 min read' },
+  { href: '/blog/hoa-maintenance-expense-accounting', title: 'HOA Maintenance Expense Accounting: What Should Be Tracked?', description: 'How to track vendor, maintenance, operating and reserve-related expenses consistently.', tag: 'HOA Financial Reporting', readTime: '6 min read' },
 ];
 
 export default function BlogPage() {
