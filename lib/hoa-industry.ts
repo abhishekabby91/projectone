@@ -327,7 +327,27 @@ export const services: HOAServiceCard[] = [
   { name: 'Budget preparation support', body: 'Prior-year actuals, variance history and the working schedules a board builds next year’s budget from. The budget itself is theirs.' },
 ];
 
-export const faqs = [
+export const faqs = [\n  {
+    question: 'Which accounting software can you work with for HOA bookkeeping?',
+    answer:
+      'The workflow can be built around systems such as QuickBooks Online, AppFolio and Yardi, depending on where the association keeps its homeowner, property and general-ledger records. We work from the system already in use where practical rather than asking a board to change software just to accommodate the accounting team. The important part is that assessment detail, payments, reconciliations, payables and fund reporting remain traceable.',
+  },
+  {
+    question: 'Can you work with a community management company that manages multiple HOAs?',
+    answer:
+      'Yes. Each association stays separate with its own books, budget, homeowner balances, operating activity and reserve activity. The benefit of a consistent accounting workflow is that the manager can review several associations using a familiar close and reporting structure without combining their records.',
+  },
+  {
+    question: 'Do California, Texas, Florida and Nevada HOAs need different accounting workflows?',
+    answer:
+      'The core accounting workflow is broadly similar, but the governing documents, state requirements and management practices can differ. We keep the accounting records organized and flag items that need attention; we do not replace the association’s attorney, CPA, reserve specialist or other qualified state-specific adviser.',
+  },
+  {
+    question: 'Can you take over the accounting without changing our HOA management software?',
+    answer:
+      'Often, yes. The first step is to understand where assessments, homeowner ledgers, bank activity, invoices and financial reports are currently maintained. If the existing system can support the required workflow, the accounting work can generally be organized around it rather than forcing a software migration.',
+  },
+
   {
     question: 'Do you ever touch the association’s money?',
     answer:
