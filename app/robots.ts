@@ -14,6 +14,7 @@ const protectedPaths = ['/admin', '/private', '/internal', '/api', '/_next/'];
 export default function robots(): MetadataRoute.Robots {
   const openAiAndSearchBots = [
     'OAI-SearchBot',
+    'OAI-AdsBot',
     'GPTBot',
     'Google-Extended',
     'PerplexityBot',
