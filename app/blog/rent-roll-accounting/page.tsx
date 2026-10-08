@@ -46,7 +46,7 @@ export default function Page() {
       <p>A practical monthly review starts with unusual changes: large rent variances, new vacancies, old tenant balances, unusual credits and significant adjustments. Those items are usually more useful than simply checking whether the total rent number changed.</p>
 
       <h2>Related guides</h2>
-      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the chart of accounts guide</a> and <a href="/blog/property-management-bank-reconciliation">bank reconciliation for property managers</a>.</p>
+      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the chart of accounts guide</a> and <a href="/blog/property-management-bank-reconciliation">bank reconciliation for property managers</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>
   );
 }
