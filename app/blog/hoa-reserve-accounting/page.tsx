@@ -46,7 +46,11 @@ export default function HoaReserveAccounting() {
       <p>HOA reserve accounting is the part of the books that helps a board understand money set aside for longer-term association needs. The accounting should make contributions, transfers, reserve-funded expenses and related cash balances visible.</p>
       <p>Reserve accounting is not the same thing as deciding how much an association should save or which projects it should fund. Those decisions belong to the association and its qualified advisers. Accounting's role is to record and report the activity accurately.</p>
 
-      <h2>What Should Reserve Accounting Track?</h2>
+      <h2>How Reserve Accounting Fits Into the Full HOA Books</h2>
+<p>Reserve accounting is part of the wider HOA accounting process. The books need to show reserve contributions and reserve spending clearly while keeping operating activity understandable.</p>
+<p>Accounting records can show what was received, spent and transferred. Decisions about reserve funding, projects and long-term planning remain with the association and its advisers.</p>
+
+<h2>What Should Reserve Accounting Track?</h2>
       <ul>
         <li>Reserve contributions.</li>
         <li>Transfers between operating and reserve accounts.</li>
