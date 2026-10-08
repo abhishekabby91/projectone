@@ -92,7 +92,7 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1257 | 1 | 26 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 445 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 441 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 1811 | 1 | 53 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2254 | 1 | 53 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1059 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 1966 | 1 | 33 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2247 | 1 | 25 | 0 | 0 |
