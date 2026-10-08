@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/testimonials-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
+import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials, trustBadges } from '@/lib/data';
 
@@ -115,20 +116,25 @@ export default function HomePage() {
       </section>
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
-        <Reveal className="max-w-3xl mx-auto text-center space-y-4 mb-10">
-          <>
-            <span className="inline-flex items-center gap-2 text-sm md:text-base font-semibold tracking-wide uppercase text-accent">
-              <span className="w-4 h-px bg-accent" aria-hidden="true" />
-              What We Do
-            </span>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
-              Accounting Support Without Changing How You Work
-            </h2>
-            <p className="text-muted leading-relaxed">
-              Accounstone provides outsourced accounting, bookkeeping and tax support for accounting firms and businesses. We work within your existing systems, processes and review structure.
-            </p>
-          </>
-        </Reveal>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-center">
+          <Reveal className="space-y-4">
+            <>
+              <span className="inline-flex items-center gap-2 text-sm md:text-base font-semibold tracking-wide uppercase text-accent">
+                <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                What We Do
+              </span>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
+                Accounting Support Without Changing How You Work
+              </h2>
+              <p className="text-muted leading-relaxed">
+                Accounstone provides outsourced accounting, bookkeeping and tax support for accounting firms and businesses. We work within your existing systems, processes and review structure.
+              </p>
+            </>
+          </Reveal>
+          <Reveal delay={0.12} className="mx-auto w-full max-w-[360px]">
+            <AccountingWorkflowIllustration />
+          </Reveal>
+        </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
           {[
