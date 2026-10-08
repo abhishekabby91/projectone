@@ -133,6 +133,36 @@ export default function HoaAccountingServicesPage() {
         </div>
       </section>
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Reveal className="rounded-2xl border border-border bg-input p-6 md:p-7">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent">Monthly financial package</span>
+            <h2 className="mt-2 font-serif text-2xl font-bold text-primary">Board-Ready HOA Financial Reports</h2>
+            <p className="mt-3 leading-7 text-muted">A consistent monthly package should make the association’s financial position easy to review without requiring the board to reconstruct the books.</p>
+            <ul className="mt-5 space-y-3 text-muted">
+              <li>Balance sheet with operating and reserve activity</li>
+              <li>Income statement with current-month and year-to-date budget comparison</li>
+              <li>Accounts receivable aging and homeowner balances</li>
+              <li>Accounts payable and vendor activity</li>
+              <li>Bank reconciliation and general ledger support</li>
+              <li>Reserve fund activity and supporting schedules</li>
+            </ul>
+          </Reveal>
+          <Reveal delay={0.08} className="rounded-2xl border border-border bg-input p-6 md:p-7">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent">Fund accounting</span>
+            <h2 className="mt-2 font-serif text-2xl font-bold text-primary">Operating, Reserve and Special Assessment Activity</h2>
+            <p className="mt-3 leading-7 text-muted">HOA records need to show where money belongs and how activity relates to the approved budget, reserve plan and assessment structure.</p>
+            <ul className="mt-5 space-y-3 text-muted">
+              <li>Operating and reserve balances kept clear in the accounting records</li>
+              <li>Reserve contributions, expenditures and transfers tracked by account</li>
+              <li>Special assessment billing and receipts tracked separately when applicable</li>
+              <li>Interfund activity supported by appropriate documentation and approvals</li>
+              <li>Budget lines tied to actual income and expenses</li>
+            </ul>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-7">
@@ -148,8 +178,8 @@ export default function HoaAccountingServicesPage() {
       </section>
 
       <FAQSection subtitle="HOA accounting questions" items={faqs} columns={2} />
-      <InquirySection source={PATH} title="Talk Through Your HOA Accounting" lead="Tell us how many units or associations you manage, what system you use and where the accounting process is getting stuck." />
-      <CTABanner title="Need a Cleaner HOA Close?" description="We can start with one association and one month, then build the recurring accounting workflow around what the board already uses." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }} background="primary" />
+      <InquirySection source={PATH} title="Review the HOA Accounting Scope" lead="Share the number of units or associations, current accounting system, monthly reports and the part of the accounting cycle that needs attention." />
+      <CTABanner title="A Clearer HOA Monthly Close" description="The accounting scope can start with one association or one reporting cycle and expand around the existing books, budget and board calendar." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }} background="primary" />
     </main>
   );
 }
