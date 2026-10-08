@@ -4223,3 +4223,32 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - Set up ESLint config (`next lint` prompts for first-time setup; not run yet) and fix any lint findings.
 - Manual/visual responsive QA at 375px, 768px and 1280px viewports (this pass checked code-level responsive patterns, not rendered screenshots).
 - Re-crawl production after deployment and confirm the `/contact` metadata and Article schema fix are live.
+
+
+## 2026-10-08 (living content architecture and AI handoff update)
+
+### AI-WEBSITE-GUIDE.md
+
+**Changed:** Added a living project-state section documenting the current homepage positioning, U.S. market strategy, neutral inquiry component, HOA content program, software/eUnify approach, Property Management expansion plan, AI/search crawlability foundation, editorial rules, location strategy, repository files to inspect, article-layout caution, no-deployment rule, definition of done, troubleshooting checks, and recent implementation commits.
+
+**Why:** The website is now being developed as an expandable content architecture rather than a fixed page-count project. Another AI or developer needs enough repository context to continue the work correctly without recreating completed pages, treating an initial topic list as a page limit, making unsupported claims, or changing the strategy unintentionally.
+
+**SEO purpose:** Preserve search-intent architecture, topical clusters, internal-link relationships, crawlability rules, and content-quality decisions across future AI-assisted work.
+
+**URL changed:** No.
+
+**Metadata changed:** No.
+
+**Content changed:** Documentation only.
+
+### Standing implementation decisions recorded
+
+- There is no fixed page-count target.
+- Initial topic maps are starting structures, not limits.
+- New pages require a legitimate search/problem/workflow reason.
+- HOA is currently the deepest industry cluster; Property Management is the next major expansion.
+- Software content must explain accounting workflows and must not invent hands-on expertise.
+- U.S. targeting is concentrated in dedicated market/service/industry/state/content clusters rather than forced into the homepage.
+- A neutral inquiry section is intended as a reusable pattern across relevant pages.
+- Content follows Discover → Research → Learn → Create → Rank → Get experience → Update.
+- Current content work is committed to main but deployment/build handling remains separate.
