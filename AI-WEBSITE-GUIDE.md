@@ -1152,3 +1152,79 @@ The repository cannot prove that a live crawler receives HTTP 200 responses. Cla
 ### Important distinction
 
 Robots access controls affect whether a crawler may fetch content. They do not by themselves make content rank, create topical authority, or guarantee an AI system will cite the site. Content quality, internal linking, external authority and search relevance still matter.
+
+
+## 22. FAQ, TOC and mobile content structure — 2026-10-08
+
+### FAQ implementation standard
+
+The shared FAQ component now uses native HTML `<details>` and `<summary>` disclosure rather than a client-side state-controlled accordion.
+
+Reason:
+- FAQ questions and answers remain straightforwardly represented in the page HTML.
+- It reduces unnecessary client-side dependency for important content.
+- It provides native keyboard/accessibility behavior.
+- It works naturally on mobile without requiring a custom JavaScript accordion.
+
+This does not mean an accordion was previously blocking crawlers; the change is a robustness and accessibility improvement.
+
+For important articles, the preferred FAQ structure is:
+
+1. Useful article content that answers the main query.
+2. A visible FAQ section with 3–5 genuinely useful questions where appropriate.
+3. FAQ answers written naturally, not as keyword-stuffed fragments.
+4. FAQ structured data only when it accurately matches the visible FAQ content.
+5. Internal links around the FAQ and article where they help the reader continue to a related topic.
+
+Do not add FAQs merely to increase word count or manufacture search queries. Do not repeat the article's entire content in the FAQ.
+
+### TOC standard
+
+The shared ArticleLayout already generates a crawlable HTML table of contents from article headings. It uses normal anchor links to heading IDs.
+
+Keep the TOC for substantial articles with multiple sections. It is useful for navigation and document structure, but it is not a standalone ranking factor.
+
+Do not add a TOC to very short content simply for SEO.
+
+### Humanized answer standard
+
+FAQ and article answers should:
+- answer the question directly;
+- use practical language;
+- acknowledge when the correct answer depends on the client's system or configuration;
+- distinguish accounting work from legal, tax or governance decisions where appropriate;
+- use specific examples when they clarify the workflow;
+- avoid exaggerated claims, generic AI transitions and keyword stuffing.
+
+### Mobile standard
+
+Important content components should be designed mobile-first:
+- one-column FAQ layout on small screens;
+- comfortable tap targets for FAQ questions;
+- readable text and line-height;
+- tables should be checked for horizontal overflow or converted to simpler layouts when needed;
+- headings should wrap naturally;
+- avoid dense blocks of text;
+- do not rely on hover to expose important information.
+
+### HOA FAQ implementation completed
+
+The following high-value HOA pages now have humanized visible FAQs and FAQ structured data:
+- HOA Assessment Accounting
+- HOA Homeowner Ledgers
+- HOA Reserve Accounting
+- HOA Financial Statements
+- HOA Accounting in QuickBooks
+- QuickBooks Online for HOA Accounting
+- HOA Accounting with AppFolio
+- HOA Accounting with Yardi
+- HOA Accounting with eUnify
+- eUnify + QuickBooks for HOA Accounting
+- HOA Reserve Financial Reporting
+- HOA Vendor 1099 Tracking
+- HOA Accounting Cleanup
+- HOA Monthly Close Process
+
+The HOA Month-End Checklist already had the same FAQ + schema pattern before this pass.
+
+Claude/deployment owner should run the production build before deployment because the FAQ component and multiple article files were changed. After deployment, verify representative desktop and mobile pages, including FAQ expansion, TOC navigation, page layout, structured data and no horizontal overflow.
