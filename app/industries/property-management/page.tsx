@@ -440,6 +440,32 @@ export default function PropertyManagementPage() {
         </div>
       </section>
 
+
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <div className="space-y-3 mb-7">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">Property management guides</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">Start With the Accounting Question in Front of You</h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              The industry page explains the overall workflow. These guides go one step deeper into the records property managers review every month.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              { name: 'Property management accounting', href: '/blog/property-management-accounting' },
+              { name: 'Bookkeeping vs. accounting', href: '/blog/property-management-bookkeeping-vs-accounting' },
+              { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
+              { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
+              { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
+            ].map((guide) => (
+              <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
+                {guide.name} <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Property management questions" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
