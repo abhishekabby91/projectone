@@ -31,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 
 export default function Page() {
   return (
-    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting Cleanup: What Should Be Reviewed Before a Fresh Start?"
       category="HOA Accounting"
       description="Accounting cleanup is more than fixing a few old transactions. A useful cleanup starts by identifying which balances are unsupported, unreconciled or inconsistent and then tracing them back to source records."
