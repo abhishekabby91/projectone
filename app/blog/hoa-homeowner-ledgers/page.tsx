@@ -46,7 +46,11 @@ export default function HoaHomeownerLedgers() {
       <p>An HOA homeowner ledger is the detailed record behind an owner's assessment balance. It should show charges, payments, credits, adjustments and the resulting balance for each account.</p>
       <p>For a board or management company, the useful question is not simply whether the software shows a balance. The question is whether that balance can be explained and reconciled to the association's accounting records.</p>
 
-      <h2>What Should an HOA Homeowner Ledger Show?</h2>
+      <h2>How the Homeowner Ledger Fits Into HOA Accounting</h2>
+<p>The homeowner ledger is one part of the association's accounting records. It should connect the assessment schedule and payments to the receivable balance reported in the books.</p>
+<p>That connection matters because the board should be able to see both the individual account detail and the total receivable balance without having to rebuild the numbers.</p>
+
+<h2>What Should an HOA Homeowner Ledger Show?</h2>
       <p>At a minimum, the ledger should make the transaction history understandable. Depending on the association and its system, that normally includes:</p>
       <ul>
         <li>Scheduled assessment charges.</li>
