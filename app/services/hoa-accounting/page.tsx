@@ -28,6 +28,7 @@ const scope = [
   'Delinquency and receivable aging schedules',
   'Monthly financial statements and board packages',
   'Year-end schedules and CPA support',
+  'Chart-of-accounts and budget mapping',
 ];
 
 const process = [
