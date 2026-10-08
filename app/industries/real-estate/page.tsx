@@ -450,6 +450,27 @@ export default function RealEstateIndustryPage() {
         </div>
       </section>
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting workflows</h2>
+          <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">The accounting needs of a property owner or real-estate business overlap with property management in places, but the reporting purpose and workflow are different.</p>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Link href="/industries/property-management" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Property Management Accounting</h3>
+              <p className="mt-2 text-sm text-muted">Property-level books, owner statements, tenant ledgers and portfolio close.</p>
+            </Link>
+            <Link href="/technology/quickbooks" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">QuickBooks</h3>
+              <p className="mt-2 text-sm text-muted">See the accounting technology context used across relevant workflows.</p>
+            </Link>
+            <Link href="/industries/hoa-accounting" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">HOA Accounting</h3>
+              <p className="mt-2 text-sm text-muted">Separate community-association accounting from owner and investment accounting.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Real estate questions" items={faqs} columns={2} />
 
       {/* Internal linking out to the workflows that connect to this one. */}
