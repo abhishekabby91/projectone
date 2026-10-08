@@ -2,9 +2,9 @@
 
 ## Summary
 
-- Files/pages scanned: **137**
+- Files/pages scanned: **141**
 - High-priority findings: **7**
-- Medium-priority findings: **11**
+- Medium-priority findings: **12**
 - Low-priority findings: **8**
 - Duplicate title groups: **0**
 
@@ -20,12 +20,14 @@
 | app/resources/guides/page.tsx | 65/100 | 408 | 0 | 7 | 0 | 0 |
 | app/resources/page.tsx | 65/100 | 528 | 0 | 6 | 0 | 0 |
 | app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 310 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 215 | 1 | 1 | 0 | 0 |
 | app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 299 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 332 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-accounts-receivable-aging/page.tsx | 85/100 | 363 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-delinquency-accounting/page.tsx | 85/100 | 484 | 1 | 6 | 0 | 0 |
 | app/blog/hoa-income-statement-explained/page.tsx | 85/100 | 474 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-operating-vs-reserve-funds/page.tsx | 85/100 | 405 | 1 | 3 | 0 | 0 |
@@ -40,6 +42,7 @@
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
 | app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 486 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-appfolio/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-cleanup/page.tsx | 90/100 | 366 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 718 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
@@ -59,6 +62,7 @@
 | app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 576 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 679 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 748 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 356 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 485 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 476 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 617 | 1 | 3 | 0 | 0 |
@@ -69,7 +73,7 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1350 | 1 | 36 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1490 | 1 | 40 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
@@ -158,51 +162,53 @@
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 3. **MEDIUM — content-depth** — app/blog/hoa-vendor-expense-tracking/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-4. **MEDIUM — content-depth** — app/blog/hoa-year-end-checklist/page.tsx
+4. **MEDIUM — content-depth** — app/blog/hoa-vendor-invoice-processing/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-5. **HIGH — metadata** — app/company-registration/delaware/page.tsx
-   - Add missing title, meta description or H1.
-6. **MEDIUM — content-depth** — app/company-registration/delaware/page.tsx
+5. **MEDIUM — content-depth** — app/blog/hoa-year-end-checklist/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-7. **LOW — internal-linking** — app/company-registration/delaware/page.tsx
-   - Add contextual links to closely related Accounstone pages where useful.
-8. **HIGH — metadata** — app/company-registration/nevada/page.tsx
+6. **HIGH — metadata** — app/company-registration/delaware/page.tsx
    - Add missing title, meta description or H1.
-9. **MEDIUM — content-depth** — app/company-registration/nevada/page.tsx
+7. **MEDIUM — content-depth** — app/company-registration/delaware/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-10. **LOW — internal-linking** — app/company-registration/nevada/page.tsx
+8. **LOW — internal-linking** — app/company-registration/delaware/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-11. **HIGH — metadata** — app/company-registration/wyoming/page.tsx
+9. **HIGH — metadata** — app/company-registration/nevada/page.tsx
    - Add missing title, meta description or H1.
-12. **MEDIUM — content-depth** — app/company-registration/wyoming/page.tsx
+10. **MEDIUM — content-depth** — app/company-registration/nevada/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-13. **LOW — internal-linking** — app/company-registration/wyoming/page.tsx
+11. **LOW — internal-linking** — app/company-registration/nevada/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-14. **LOW — internal-linking** — app/compliance/page.tsx
-   - Add contextual links to closely related Accounstone pages where useful.
-15. **LOW — internal-linking** — app/data-security/page.tsx
-   - Add contextual links to closely related Accounstone pages where useful.
-16. **MEDIUM — content-depth** — app/industries/page.tsx
+12. **HIGH — metadata** — app/company-registration/wyoming/page.tsx
+   - Add missing title, meta description or H1.
+13. **MEDIUM — content-depth** — app/company-registration/wyoming/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-17. **LOW — internal-linking** — app/industries/page.tsx
+14. **LOW — internal-linking** — app/company-registration/wyoming/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-18. **MEDIUM — content-depth** — app/markets/page.tsx
+15. **LOW — internal-linking** — app/compliance/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+16. **LOW — internal-linking** — app/data-security/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+17. **MEDIUM — content-depth** — app/industries/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-19. **HIGH — metadata** — app/resources/case-studies/page.tsx
-   - Add missing title, meta description or H1.
-20. **HIGH — metadata** — app/resources/guides/page.tsx
-   - Add missing title, meta description or H1.
-21. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+18. **LOW — internal-linking** — app/industries/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-22. **HIGH — metadata** — app/resources/insights/page.tsx
-   - Add missing title, meta description or H1.
-23. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+19. **MEDIUM — content-depth** — app/markets/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-24. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
-   - Add contextual links to closely related Accounstone pages where useful.
-25. **HIGH — metadata** — app/resources/page.tsx
+20. **HIGH — metadata** — app/resources/case-studies/page.tsx
    - Add missing title, meta description or H1.
-26. **MEDIUM — content-depth** — app/solutions/page.tsx
+21. **HIGH — metadata** — app/resources/guides/page.tsx
+   - Add missing title, meta description or H1.
+22. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+23. **HIGH — metadata** — app/resources/insights/page.tsx
+   - Add missing title, meta description or H1.
+24. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+25. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+26. **HIGH — metadata** — app/resources/page.tsx
+   - Add missing title, meta description or H1.
+27. **MEDIUM — content-depth** — app/solutions/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 
 ## Human-content rules
