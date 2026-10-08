@@ -471,6 +471,13 @@ export default function RealEstateIndustryPage() {
         </div>
       </section>
 
+      <div className="max-w-5xl mx-auto px-6 md:px-8 py-8 flex flex-wrap gap-3">
+        <Link href="/services/accounting/united-states" className="font-medium text-primary underline underline-offset-4">U.S. Accounting Services</Link>
+        <Link href="/services/bookkeeping/united-states" className="font-medium text-primary underline underline-offset-4">U.S. Bookkeeping Services</Link>
+        <Link href="/services/accounts-payable/united-states" className="font-medium text-primary underline underline-offset-4">Accounts Payable</Link>
+        <Link href="/services/accounts-receivable/united-states" className="font-medium text-primary underline underline-offset-4">Accounts Receivable</Link>
+      </div>
+
       <FAQSection subtitle="Real estate questions" items={faqs} columns={2} />
 
       {/* Internal linking out to the workflows that connect to this one. */}
