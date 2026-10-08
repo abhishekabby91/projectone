@@ -46,7 +46,11 @@ export default function HoaAssessmentAccounting() {
       <p>Assessment accounting is the backbone of an HOA's recurring revenue records. Each homeowner should have a ledger showing the charges that were assessed, payments received, credits or adjustments, and the balance that remains due.</p>
       <p>The difficult part is not creating the monthly charge. It is keeping the homeowner ledger, bank activity and association financial statements in agreement as payments, credits, late charges and corrections move through the system.</p>
 
-      <h2>What Is HOA Assessment Accounting?</h2>
+      <h2>Where Assessment Accounting Fits in the HOA Books</h2>
+<p>Assessment accounting connects the approved assessment schedule to homeowner balances, cash received and the association's financial statements. It is one part of the larger HOA accounting process, alongside bank reconciliation, accounts payable, reserve accounting and monthly reporting.</p>
+<p>The goal is simple: the amount assessed, the amount collected and the amount still due should be explainable from the records.</p>
+
+<h2>What Is HOA Assessment Accounting?</h2>
       <p>HOA assessment accounting records the amounts an association expects homeowners to pay and the payments that are actually received. The records support the association's accounts receivable balance and help produce delinquency reports for management and the board.</p>
 
       <h2>Start With the Approved Assessment Schedule</h2>
