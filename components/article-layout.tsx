@@ -46,9 +46,10 @@ function slugifyHeading(value: string) {
 function getText(node: ReactNode): string {
   if (typeof node === 'string' || typeof node === 'number') return String(node);
   if (Array.isArray(node)) return node.map(getText).join('');
-  if (isValidElement(node)) {\n    const props = (node as TypedReactElement<{ children?: ReactNode }>).props;\n    return getText(props.children);\n}
-  return '';
-}
+  if (isValidElement(node)) {
+    const props = (node as TypedReactElement<{ children?: ReactNode }>).props;
+    return getText(props.children);
+  }
 
 function addHeadingIds(nodes: ReactNode, toc: TocItem[], usedIds: Set<string>): ReactNode {
   if (Array.isArray(nodes)) return nodes.map((node) => addHeadingIds(node, toc, usedIds));
