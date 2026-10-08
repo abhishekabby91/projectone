@@ -16,27 +16,27 @@ const faqs = [
   {
     question: 'Can you reconcile sales across multiple channels?',
     answer:
-      'Yes, we reconcile sales, fees, and payouts across channels like Shopify, Amazon, and other marketplaces, matching what actually lands in your bank account against what each platform reports.',
+      'Sales, fees and payouts can be reconciled across channels like Shopify, Amazon, and other marketplaces, matching what actually lands in your bank account against what each platform reports.',
   },
   {
     question: 'Do you handle inventory and cost of goods sold (COGS) accounting?',
     answer:
-      'Yes, we track inventory costs and COGS so your margins reflect actual product cost, not just revenue minus operating expenses.',
+      'Inventory costs and COGS can be tracked so your margins reflect actual product cost, not just revenue minus operating expenses.',
   },
   {
     question: 'Can you help with multi-state sales tax nexus tracking?',
     answer:
-      'We help track where you may have sales tax nexus obligations across states based on your sales volume and activity, and can work alongside a sales tax filing service or your tax advisor for the actual filings.',
+      'Sales and transaction data can be organized for sales-tax nexus review across states based on your sales volume and activity, and can work alongside a sales tax filing service or your tax advisor for the actual filings.',
   },
   {
     question: 'Do you account for marketplace fees and chargebacks separately?',
     answer:
-      'Yes, we break out marketplace fees, refunds, and chargebacks as their own line items so you can see true net revenue per channel, not a blended number that hides where margin is being lost.',
+      'Marketplace fees, refunds and chargebacks can be separated as their own line items so you can see true net revenue per channel, not a blended number that hides where margin is being lost.',
   },
   {
     question: 'What platforms do you support?',
     answer:
-      'We work with QuickBooks and Xero as the accounting backbone, connected to common e-commerce and payment platforms your business already uses.',
+      'QuickBooks and Xero can serve as the accounting backbone, connected to common e-commerce and payment platforms your business already uses.',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function EcommerceIndustryPage() {
         description:
           'Multi-channel sales reconciliation, inventory and COGS accounting, and sales tax nexus tracking for online retailers selling across marketplaces and their own storefront.',
       }}
-      overview="E-commerce accounting breaks down when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile each channel individually, track true net revenue after fees and returns, and keep inventory-based COGS accurate so your margins reflect reality."
+      overview="E-commerce accounting becomes difficult when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile each channel individually, track true net revenue after fees and returns, and keep inventory-based COGS accurate so your margins reflect reality."
       benefits={[
         'Multi-channel reconciliation across Shopify, Amazon, and other marketplaces',
         'Inventory and cost of goods sold (COGS) tracking for accurate margins',
