@@ -327,7 +327,8 @@ export const services: HOAServiceCard[] = [
   { name: 'Budget preparation support', body: 'Prior-year actuals, variance history and the working schedules a board builds next year’s budget from. The budget itself is theirs.' },
 ];
 
-export const faqs = [\n  {
+export const faqs = [
+  {
     question: 'Which accounting software can you work with for HOA bookkeeping?',
     answer:
       'The workflow can be built around systems such as QuickBooks Online, AppFolio and Yardi, depending on where the association keeps its homeowner, property and general-ledger records. We work from the system already in use where practical rather than asking a board to change software just to accommodate the accounting team. The important part is that assessment detail, payments, reconciliations, payables and fund reporting remain traceable.',
