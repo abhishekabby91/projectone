@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **149**
+- Files/pages scanned: **150**
 - High-priority findings: **7**
 - Medium-priority findings: **13**
 - Low-priority findings: **8**
@@ -92,9 +92,9 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1256 | 1 | 30 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2331 | 1 | 56 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2330 | 1 | 56 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 1964 | 1 | 37 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 1967 | 1 | 38 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2230 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 924 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
@@ -141,6 +141,7 @@
 | app/services/payroll/australia/page.tsx | 90/100 | 802 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 785 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-states/page.tsx | 90/100 | 741 | 1 | 15 | 0 | 0 |
+| app/services/property-management-accounting/page.tsx | 90/100 | 1096 | 1 | 13 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 735 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 632 | 1 | 8 | 0 | 0 |
