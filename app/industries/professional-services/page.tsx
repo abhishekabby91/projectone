@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Do you handle client trust and IOLTA bookkeeping for law firms?',
     answer:
-      'We keep the ledger and run the reconciliation. Client trust and operating funds are kept strictly separate in the accounts, each client balance is maintained per matter, and the three-way reconciliation — bank, trust ledger and the sum of client balances — is run on a monthly cycle with any break reported to you rather than absorbed. What we do not do is make your firm compliant: the client-money rules belong to your bar association or equivalent regulator and differ by jurisdiction, and satisfying them is the firm’s own responsibility.',
+      'The ledger and reconciliation cover Client trust and operating funds are kept strictly separate in the accounts, each client balance is maintained per matter, and the three-way reconciliation — bank, trust ledger and the sum of client balances — is run on a monthly cycle with any break reported to you rather than absorbed. Regulatory compliance remains the firm's responsibility: the client-money rules belong to your bar association or equivalent regulator and differ by jurisdiction, and satisfying them is the firm’s own responsibility.',
   },
   {
     question: 'What exactly is a three-way reconciliation, and who does it?',
@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'Can you move money between the trust and operating accounts?',
     answer:
-      'No, and we would decline if asked. We never hold banking control anywhere on this site, and on client money the line is absolute — every transfer is initiated and authorised by your firm. We record it, reconcile it and tell you if the supporting detail does not hold up.',
+      'Banking control remains with the client and is not part of the accounting workflow, and on client money the line is absolute — every transfer is initiated and authorised by your firm. We record it, reconcile it and tell you if the supporting detail does not hold up.',
   },
   {
     question: 'Can you track work-in-progress and unbilled time?',
@@ -55,7 +55,7 @@ const faqs = [
   {
     question: 'Do you handle partner draws and distributions?',
     answer:
-      'We maintain partner capital accounts and record draws and distributions as the partners agree them, working alongside your CPA on the tax treatment. We do not advise on partner compensation, profit-sharing or capital arrangements — we keep the accounts that follow from what is decided.',
+      'Partner capital accounts can be maintained and record draws and distributions as the partners agree them, working alongside your CPA on the tax treatment. We do not advise on partner compensation, profit-sharing or capital arrangements — we keep the accounts that follow from what is decided.',
   },
   {
     question: 'Can you report profitability by matter, project or client?',
@@ -78,7 +78,7 @@ export default function ProfessionalServicesIndustryPage() {
         description:
           'Client trust ledgers and three-way reconciliation, work-in-progress, retainers and partner accounts — bookkeeping for law firms, consulting firms, agencies and other fee-billed practices.',
       }}
-      overview="Firms that bill for time carry two problems ordinary businesses do not. The first is that the largest asset on the books is often work that has been done and not yet invoiced, and it usually lives in the practice management system where the ledger cannot see it — so cost lands in one month and the revenue from it in another, and nothing is comparable. The second applies to anyone holding client money: it has to be kept strictly apart from the firm's own, reconciled against a balance per client, and be defensible at any point in the year. Neither of these is difficult work. Both of them are exacting, recurring, and precisely the kind of thing that gets postponed when the people who could do it are billable. We take that recurring load — the trust ledger and its reconciliation, WIP, write-offs, retainers, disbursements, payables and the close — and leave every judgement, every authorisation and the firm's own regulatory responsibility exactly where they already sit."
+      overview="Firms that bill for time carry two problems ordinary businesses do not. The first is that the largest asset on the books is often work that has been done and not yet invoiced, and it usually lives in the practice management system where the ledger cannot see it — so cost lands in one month and the revenue from it in another, and nothing is comparable. The second applies to anyone holding client money: it has to be kept strictly apart from the firm's own, reconciled against a balance per client, and be defensible at any point in the year. Neither of these is difficult work. Both of them are exacting, recurring, and precisely the kind of thing that gets postponed when the people who could do it are billable. The recurring accounting scope covers — the trust ledger and its reconciliation, WIP, write-offs, retainers, disbursements, payables and the close — and leave every judgement, every authorisation and the firm's own regulatory responsibility exactly where they already sit."
       benefits={[
         'Client trust and operating ledgers kept strictly separate in the accounts',
         'Three-way reconciliation prepared monthly, with breaks reported rather than absorbed',
