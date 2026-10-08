@@ -61,7 +61,6 @@ export default function HoaDelinquencyAccounting() {
       <p>HOA collection rules can vary by state. For that reason, a delinquency accounting workflow should avoid presenting a generic collection procedure as legal advice. Accounstone's <a href="/markets/united-states/california">California</a>, <a href="/markets/united-states/texas">Texas</a> and <a href="/markets/united-states/florida">Florida</a> market pages provide broader state context, while collection decisions should be handled by the association and its appropriate advisers.</p>
 
       <h2>Related HOA Resources</h2>
-      <p>See <a href="/blog/hoa-assessment-accounting">HOA assessment accounting</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a> and <a href="/blog/hoa-financial-statements-board-review">board financial statements</a>.</p>
-    </ArticleLayout>
+      <p>See <a href="/blog/hoa-assessment-accounting">HOA assessment accounting</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, <a href="/blog/hoa-financial-statements-board-review">board financial statements</a> and the <a href="/services/hoa-bookkeeping">HOA bookkeeping service</a>.</p></ArticleLayout>
   );
 }
