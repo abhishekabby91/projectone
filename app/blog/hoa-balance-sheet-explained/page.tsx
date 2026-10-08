@@ -63,7 +63,6 @@ export default function HoaBalanceSheetExplained() {
       <p>Monthly financial review is common because it gives the board a regular view of balances and changes. The balance sheet is most useful when reviewed together with the income statement, budget-to-actual report, bank reconciliations and supporting schedules.</p>
 
       <h2>Related HOA Accounting Resources</h2>
-      <p>See <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a>, <a href="/blog/hoa-budget-to-actual-reports">HOA budget-to-actual reports</a> and <a href="/blog/hoa-board-financial-package">HOA board financial packages</a>.</p>
-    </ArticleLayout>
+      <p>See <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a>, <a href="/blog/hoa-budget-to-actual-reports">HOA budget-to-actual reports</a>, <a href="/blog/hoa-board-financial-package">HOA board financial packages</a> and <a href="/services/hoa-financial-reporting">HOA financial reporting</a>.</p></ArticleLayout>
   );
 }
