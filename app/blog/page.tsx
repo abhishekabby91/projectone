@@ -51,6 +51,10 @@ const articles = [
   { href: '/blog/hoa-accounting-workflow', title: 'HOA Accounting Workflow: What Should Happen Each Month?', description: 'The key steps from assessments and payments through reconciliation, review and monthly reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
   { href: '/blog/hoa-unapplied-payments', title: 'Unapplied HOA Payments: How Should They Be Resolved?', description: 'How to investigate and clear unapplied HOA payments without distorting homeowner balances.', tag: 'HOA Accounting', readTime: '6 min read' },
   { href: '/blog/hoa-maintenance-expense-accounting', title: 'HOA Maintenance Expense Accounting: What Should Be Tracked?', description: 'How to track vendor, maintenance, operating and reserve-related expenses consistently.', tag: 'HOA Financial Reporting', readTime: '6 min read' },
+  { href: '/blog/hoa-accounting-cleanup', title: 'HOA Accounting Cleanup: What Should Be Reviewed Before a Fresh Start?', description: 'How to review unreconciled accounts, homeowner balances, AP, reserves and unsupported adjustments.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-accounts-receivable-aging', title: 'HOA Accounts Receivable Aging: What Should Board Members Review?', description: 'How to read and reconcile HOA receivables aging while keeping accounting separate from collection decisions.', tag: 'HOA Accounting', readTime: '6 min read' },
+  { href: '/blog/hoa-vendor-invoice-processing', title: 'HOA Vendor Invoice Processing: What Should Accounting Review?', description: 'A practical invoice workflow covering coding, approvals, duplicate checks and AP reconciliation.', tag: 'HOA Accounts Payable', readTime: '6 min read' },
+  { href: '/blog/hoa-monthly-close-process', title: 'HOA Monthly Close Process: What Should Be Completed Before Reporting?', description: 'A practical monthly close covering assessments, reconciliations, AP, reserves, budget review and board reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
 ];
 
 export default function BlogPage() {
