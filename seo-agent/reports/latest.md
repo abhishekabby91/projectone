@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **127**
+- Files/pages scanned: **131**
 - High-priority findings: **7**
 - Medium-priority findings: **9**
 - Low-priority findings: **8**
@@ -34,10 +34,13 @@
 | app/blog/accounts-payable-outsourcing/page.tsx | 90/100 | 1426 | 1 | 6 | 0 | 0 |
 | app/blog/accounts-receivable-management/page.tsx | 90/100 | 585 | 1 | 4 | 0 | 0 |
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
+| app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 486 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-appfolio/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 718 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 772 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 540 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 481 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 417 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounts-payable/page.tsx | 90/100 | 373 | 1 | 3 | 0 | 0 |
@@ -57,9 +60,10 @@
 | app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-vendor-1099-tracking/page.tsx | 90/100 | 563 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 350 | 1 | 4 | 0 | 0 |
+| app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1065 | 1 | 28 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1219 | 1 | 32 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
