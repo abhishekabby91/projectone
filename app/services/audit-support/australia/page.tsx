@@ -19,7 +19,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Australian audit work concentrates into a narrow window. With most entities reporting to a 30 June year end, the same weeks bring year-end close, the June quarter BAS, and the auditor's request list — usually to the same small finance team. That compression, more than technical difficulty, is what pushes Australian audits late. We prepare the underlying file against AASB conventions so that when fieldwork opens, the reconciliations are done and the evidence is already indexed. The engaged registered company auditor retains every audit procedure and the opinion.";
+const overview = "Australian audit work concentrates into a narrow window. With most entities reporting to a 30 June year end, the same weeks bring year-end close, the June quarter BAS, and the auditor's request list — usually to the same small finance team. That compression, more than technical difficulty, is what pushes Australian audits late. The underlying file can be prepared against AASB conventions so that when fieldwork opens, the reconciliations are done and the evidence is already indexed. The engaged registered company auditor retains every audit procedure and the opinion.";
 
 const phases = [
   { k: 'Before 30 June', h: 'Get ahead of the compression', p: 'Balance sheet reconciliations brought current, recurring accruals reviewed, and known problem accounts cleared while there is still time to fix them — rather than discovering them alongside the June BAS.' },
@@ -36,11 +36,11 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you issue the audit opinion?', answer: 'No, and we cannot. Only the engaged registered company auditor can perform audit procedures and issue an opinion. Our work is preparation and documentation performed for the entity, on the other side of that line.' },
+  { question: 'Do you issue the audit opinion?', answer: 'No, and we cannot. Only the engaged registered company auditor can perform audit procedures and issue an opinion. The scope covers preparation and documentation for the entity, on the other side of that line.' },
   { question: 'Why does the 30 June year end matter so much here?', answer: 'Because it stacks. Year-end close, the June quarter BAS, and the start of the audit request list land on the same team within weeks of each other. Preparing the reconciliations and schedules ahead of that window is usually what decides whether an audit runs to timetable.' },
   { question: 'Do you reconcile GST as part of the audit file?', answer: 'Yes. GST control accounts are reconciled to what was reported across the year, and differences are identified and documented. Preparing or lodging the BAS itself stays with your registered BAS agent.' },
-  { question: 'Can you support superannuation guarantee testing?', answer: 'We can prepare the payroll detail and accrual support an auditor asks for. Assessment of whether obligations have been met is the auditor’s work, and superannuation fund advice is outside what we offer in any form.' },
-  { question: 'Which reporting framework do you work to?', answer: 'AASB standards, which follow IFRS in Australia. Where a specific treatment is in question, we follow what your registered agent or finance lead has set. We do not make framework or policy decisions.' },
+  { question: 'Can you support superannuation guarantee testing?', answer: 'Payroll detail and accrual support can be prepared an auditor asks for. Assessment of whether obligations have been met is the auditor’s work, and superannuation fund advice is outside what we offer in any form.' },
+  { question: 'Which reporting framework do you work to?', answer: 'AASB standards, which follow IFRS in Australia. Where a specific treatment is in question, we follow what your registered agent or finance lead has set. Framework and policy decisions remain with the registered agent or finance lead.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
