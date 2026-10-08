@@ -29,12 +29,12 @@ export const metadata: Metadata = genMeta({
 });
 
 const overview =
-  'A 1040 practice does not run out of capacity because the returns are hard. It runs out because many files are open at once, most of them waiting on a document somebody else has to send. We prepare individual returns and the workpapers behind them, in your software and to your checklist, so what reaches the next review point is a file with its gaps named rather than a file that has to be read before anyone can tell what state it is in.';
+  'A 1040 practice does not run out of capacity because the returns are hard. It runs out because many files are open at once, most of them waiting on a document somebody else has to send. Individual returns and the supporting workpapers can be prepared in the firm’s software and to its checklist, so what reaches the next review point is a file with its gaps named rather than a file that has to be read before anyone can tell what state it is in.';
 
 const benefits = [
   'Source documents organised against your own checklist, with duplicates and wrong-year forms caught at intake',
   'A named open-items list per return — what is missing, which line it feeds and who was asked',
-  'Non-covered basis reconstructed from statements and shown as working, never asserted as a figure',
+  'Basis work reconstructed from available statements and documented as support for reviewer verification',
   'Prior-year carryforwards picked up from the prior return rather than inferred from this year’s documents',
   'Schedule C and Schedule E detail tied back to the underlying books before the schedule is built',
   'Returns waiting on a K-1 identified at intake and sequenced separately from returns that can go out',
@@ -97,7 +97,7 @@ export default function Form1040Page() {
               </div>
               <p className="text-lg text-muted leading-relaxed">{overview}</p>
               <p className="text-lg text-muted leading-relaxed">
-                The engagement terms, the IRC §7216 consent requirement and the Circular 230 boundary that governs all of this are set out on{' '}
+                The engagement terms, IRC §7216 consent requirements and relevant Circular 230 considerations are set out on{' '}
                 <Link href="/services/tax-preparation/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">the US tax preparation page</Link>.
                 Where a return depends on a partnership, the preparation of that return is covered under{' '}
                 <Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1065 and its K-1s</Link>.
