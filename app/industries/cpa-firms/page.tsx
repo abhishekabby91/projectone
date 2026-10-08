@@ -69,7 +69,7 @@ export default function CPAFirmsPage() {
         subtitle="For US CPA firms"
         title="Preparation Capacity for CPA Firms, Without Giving Up Review"
         description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgement stays with your firm."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
       />
@@ -120,7 +120,7 @@ export default function CPAFirmsPage() {
               <strong className="font-semibold text-primary">Preparation is what moves. Review is what you were always going to do.</strong>
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Which makes the useful first conversation a narrow one: not how many returns we can take,
+              The useful first conversation is a narrow one: not how many returns can be taken,
               but what your reviewers currently spend their time fixing.
             </p>
           </></Reveal>
@@ -216,8 +216,8 @@ export default function CPAFirmsPage() {
               underneath it, and Sage or NetSuite where a client runs them.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              We work inside the systems your firm and your clients already use. We do not implement,
-              configure or migrate any of them, and we hold no vendor certification.
+              The work runs inside the systems your firm and clients already use. Implementation,
+              configuration and migration are outside the scope, and no vendor certification is represented.
             </p>
           </></Reveal>
           <Reveal delay={0.12}>
@@ -242,7 +242,7 @@ export default function CPAFirmsPage() {
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <Reveal className="space-y-4"><>
-            <Eyebrow>What we will not do</Eyebrow>
+            <Eyebrow>Scope Boundaries</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               The Lines a Licensed Firm Cannot Delegate
             </h2>
@@ -329,13 +329,13 @@ export default function CPAFirmsPage() {
         region="united-states"
         source={PATH}
         title="Start With One Partner’s List"
-        lead="The consultation and the call are always free. Tell us what your reviewers spend their time fixing, and we will scope a first slice around it."
+        lead="Identify what reviewers spend the most time fixing. A defined first slice can then be scoped around that workflow."
       />
 
       <CTABanner
         title="What Do Your Reviewers Spend Their Time Fixing?"
         description="That answer is the scope. Start with one slice of it and measure what review actually costs before anything else moves."
-        cta={{ text: 'Talk to Our Team', href: '/contact' }}
+        cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'See All Industries', href: '/industries' }}
         background="primary"
       />
