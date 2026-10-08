@@ -16,6 +16,7 @@ interface ArticleLayoutProps {
   category: string;
   description: string;
   publishedDate: string;
+  updatedDate?: string;
   /**
    * Which hub the article belongs to. `blog` exists because the six posts under
    * /blog were previously forced through the /resources/{section}/ shape by
@@ -173,6 +174,7 @@ export default function ArticleLayout({
     description,
     imageUrl: `${baseUrl}/og-image.jpg`,
     publishedDate,
+    updatedDate,
     author: 'Accounstone',
     slug,
     basePath: `${hubHref}/`,
@@ -319,14 +321,12 @@ export default function ArticleLayout({
             </nav>
           )}
 
-          <div className="mb-8 rounded-xl border border-border bg-input p-5 md:p-6">
-            <p className="text-xs font-bold uppercase tracking-wide text-accent mb-2">
-              Quick answer
-            </p>
-
-            <p className="text-base md:text-lg text-foreground leading-relaxed">
-              {description}
-            </p>
+          <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted">
+            <span><strong className="text-primary">Published:</strong> {publishedDate}</span>
+            <span aria-hidden="true">•</span>
+            <span>Accounstone</span>
+            <span aria-hidden="true">•</span>
+            <span>{category}</span>
           </div>
 
           <Reveal className="prose-content space-y-8">
