@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting with eUnify: What Should Be Reviewed?',
@@ -8,9 +9,29 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-accounting-eunify',
 });
 
+const faqs = [
+  {
+    "question": "What should be reviewed in eUnify HOA accounting?",
+    "answer": "Review the association's configured general ledger, assessments and receivables, payables, bank activity, reconciliations and financial reports. The exact workflow depends on the client's eUnify configuration and connected systems."
+  },
+  {
+    "question": "Can eUnify support HOA financial reporting?",
+    "answer": "It can support reporting workflows, but the useful report set depends on the association's configuration and management process. Reports should still be reviewed against the underlying accounting records."
+  },
+  {
+    "question": "Can eUnify work with QuickBooks for HOA accounting?",
+    "answer": "eUnify can be used in workflows that integrate with QuickBooks. The important control is to define which system holds which detail and reconcile the information transferred between them."
+  },
+  {
+    "question": "What if an accounting team is new to eUnify?",
+    "answer": "The team should first learn the client's configuration, reports and handoff points rather than assume every eUnify installation works the same way. That approach reduces avoidable errors during transition."
+  }
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaAccountingEunify() {
   return (
-    <ArticleLayout
+    <>\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
       title="HOA Accounting with eUnify: What Should Be Reviewed?"
       category="HOA Software"
       description="eUnify brings community-management and financial workflows together. For an accounting team, the useful question is how homeowner activity, the general ledger, payables, banking and board reporting move through the system."
@@ -57,18 +78,11 @@ export default function HoaAccountingEunify() {
         </tbody>
       </table>
 
-      <h2>Common Questions</h2>
-      <h3>Is eUnify an HOA accounting system?</h3>
-      <p>eUnify provides accounting and financial functionality as part of its community association management platform, including general ledger, receivables, payables, budgeting and reporting.</p>
-      <h3>Can eUnify work with QuickBooks?</h3>
-      <p>Yes. eUnify's support documentation describes QuickBooks Online integration as well as a QuickBooks integration workflow for associations.</p>
-      <h3>Can an accounting team learn eUnify if it has not used it before?</h3>
-      <p>Yes. The sensible approach is to learn the client's actual configuration during onboarding, document the accounting workflow and then build the monthly close around those procedures. Software-specific knowledge should be developed through the actual client workflow rather than assumed.</p>
-      <h3>What should be reconciled when eUnify and QuickBooks are both used?</h3>
-      <p>The exact control points depend on the integration and configuration. At minimum, the team should identify the records transferred between systems and establish a repeatable way to investigate differences in balances or transaction detail.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>Continue with <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
