@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Board Financial Package: What Should Be Included?',
@@ -8,9 +9,19 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-board-financial-package',
 });
 
+const faqs = [
+  { question: "Who prepares the HOA board financial package?", answer: "It may be prepared by an internal bookkeeper, community manager, accounting firm or outsourced accounting team. The important part is that the reports are based on reconciled records and reviewed by the appropriate responsible person." },
+  { question: "How often should the board receive financial reports?", answer: "Monthly reporting is common because it gives the board timely visibility into cash, assessments, expenses and budget performance." },
+  { question: "Should an HOA board receive bank statements?", answer: "Bank statements and reconciliations are useful supporting records, although the exact board package varies. A reconciliation summary can provide a concise view while the underlying statements remain available for review." },
+  { question: "Does a California HOA need a different financial package from a Texas HOA?", answer: "The core accounting reports can be similar, but state law, governing documents and management practices can affect what the association needs to disclose or review. State-specific legal requirements should be confirmed with the association's qualified professionals." },
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaBoardFinancialPackage() {
   return (
-    <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Board Financial Package: What Should Be Included Each Month?"
       category="HOA Accounting"
       description="A useful HOA board package brings the core financial statements together with the supporting schedules needed to understand cash, assessments, expenses, reserves and open items."
@@ -60,18 +71,11 @@ export default function HoaBoardFinancialPackage() {
       <h2>What Should Not Be Hidden in the Package?</h2>
       <p>Unusual adjustments, old unreconciled items, large unapplied receipts or significant unexplained variances should not disappear simply because the headline financial statements look reasonable. A short open-items schedule can make those issues easier to discuss.</p>
 
-      <h2>Common Questions</h2>
-      <h3>Who prepares the HOA board financial package?</h3>
-      <p>It may be prepared by an internal bookkeeper, community manager, accounting firm or outsourced accounting team. The important part is that the reports are based on reconciled records and reviewed by the appropriate responsible person.</p>
-      <h3>How often should the board receive financial reports?</h3>
-      <p>Monthly reporting is common because it gives the board timely visibility into cash, assessments, expenses and budget performance.</p>
-      <h3>Should an HOA board receive bank statements?</h3>
-      <p>Bank statements and reconciliations are useful supporting records, although the exact board package varies. A reconciliation summary can provide a concise view while the underlying statements remain available for review.</p>
-      <h3>Does a California HOA need a different financial package from a Texas HOA?</h3>
-      <p>The core accounting reports can be similar, but state law, governing documents and management practices can affect what the association needs to disclose or review. State-specific legal requirements should be confirmed with the association's qualified professionals.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>Continue with <a href="/blog/hoa-budget-to-actual-reports">HOA budget-to-actual reports</a>, <a href="/blog/hoa-reserve-financial-reporting">HOA reserve financial reporting</a> or our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
