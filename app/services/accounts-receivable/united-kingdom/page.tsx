@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "In the UK, late payment costs twice: the cash is outstanding, and unless you operate cash accounting for VAT, the output tax on that invoice has already fallen due. We run the recurring sales ledger inside Xero or Sage — issuing compliant invoices, applying receipts, reviewing the aged debtor report and following an agreed credit control sequence — so the ledger is both collectable and defensible.";
+const overview = "In the UK, late payment costs twice: the cash is outstanding, and unless you operate cash accounting for VAT, the output tax on that invoice has already fallen due. The recurring sales ledger can run inside Xero or Sage — issuing compliant invoices, applying receipts, reviewing the aged debtor report and following an agreed credit control sequence — so the ledger is both collectable and defensible.";
 
 const ukElements = [
   'GBP invoicing with output VAT applied per your registered scheme',
@@ -49,10 +49,10 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, yes — the AR team can send reminder emails in your company name from a shared or delegated inbox, on a schedule you define. Phone collection calls typically stay with your internal team unless specifically agreed.' },
+  { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, yes — reminder emails can be sent in your company name from a shared or delegated inbox, on a schedule you define. Phone collection calls typically stay with your internal team unless specifically agreed.' },
   { question: 'How does VAT work on our sales invoices?', answer: "Invoices are raised with output VAT applied according to your registered scheme and the customer's VAT status. Judgement calls on unusual VAT treatment — reverse charge, exports, zero-rating — stay with your accountant." },
   { question: 'What is DSO and does this actually reduce it?', answer: 'Days Sales Outstanding measures how long it takes to collect after invoicing. Consistent aging monitoring and follow-up typically reduces DSO by 5–15 days — the cash freed up is working capital the client already earned but had tied up in receivables.' },
-  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority, and any judgment call about the customer relationship. We handle the process — invoicing, application, follow-up, reconciliation — and flag exceptions for your decision.' },
+  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority, and any judgment call about the customer relationship. The process covers invoicing, application, follow-up and reconciliation, with exceptions flagged for review.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
