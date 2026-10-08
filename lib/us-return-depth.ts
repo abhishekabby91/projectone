@@ -85,7 +85,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       {
         question: 'Who signs the return?',
         answer:
-          'Your CPA or Enrolled Agent. We prepare the return and the workpapers behind it; final review, signature and e-filing stay with the licensed professional, and nobody on our side contacts the IRS on a client’s behalf or holds a Form 2848. That boundary is not negotiable at any volume or price.',
+          'The engagement defines the review, filing and authorization workflow for the return. Required consents and professional responsibilities are established before client information is shared or the return moves forward.',
       },
       {
         question: 'Do you decide filing status, residency or who counts as a dependent?',
@@ -109,7 +109,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       },
     ],
     boundary:
-      'Final review, signature and e-filing. Any contact with the IRS, and Form 2848 in any circumstance. Filing status, residency and dependency determinations. Whether a deduction or credit is supportable on the facts. Any position that is arguable rather than evident from the documents. We prepare the return and show the working; the professional judgement and the signature are your firm’s.',
+      'Review, filing and authorization requirements. Filing status, residency and dependency determinations. Whether a deduction or credit is supportable on the facts. Any position that requires professional judgement rather than mechanical preparation. We prepare the return and show the working so the applicable review and approval process is clear.',
   },
 
   '1065': {
@@ -171,6 +171,6 @@ export const returnDepth: Record<string, ReturnDepth> = {
       },
     ],
     boundary:
-      'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Final review, signature and e-filing of the return and the K-1s. Any position on a book-to-tax difference that is arguable rather than mechanical. Whether a payment is a guaranteed payment or a distribution, where the agreement is not explicit. Any contact with the IRS, and Form 2848 in any circumstance. We prepare and we show the working; the reading of the agreement and the signature are your firm’s.',
+      'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Review, filing and authorization requirements for the return and K-1s. Any position on a book-to-tax difference that requires professional judgement rather than mechanical preparation. Whether a payment is a guaranteed payment or a distribution where the agreement is not explicit. We prepare and show the working so the applicable review and approval process is clear.',
   },
 };
