@@ -105,7 +105,7 @@
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
 | app/markets/united-states/california/page.tsx | 90/100 | 512 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/florida/page.tsx | 90/100 | 503 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/page.tsx | 90/100 | 1844 | 1 | 16 | 0 | 0 |
+| app/markets/united-states/page.tsx | 90/100 | 1833 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
@@ -134,15 +134,15 @@
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 928 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 924 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 1018 | 1 | 12 | 0 | 0 |
-| app/services/page.tsx | 90/100 | 1073 | 1 | 10 | 0 | 0 |
+| app/services/page.tsx | 90/100 | 1043 | 1 | 10 | 0 | 0 |
 | app/services/payroll/australia/page.tsx | 90/100 | 804 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 789 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-states/page.tsx | 90/100 | 813 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 737 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 734 | 1 | 11 | 0 | 0 |
-| app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 661 | 1 | 8 | 0 | 0 |
+| app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 638 | 1 | 8 | 0 | 0 |
 | app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 672 | 1 | 9 | 0 | 0 |
-| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1864 | 1 | 16 | 0 | 0 |
+| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1807 | 1 | 16 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
 | app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1815 | 1 | 10 | 0 | 0 |
