@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Single Touch Payroll removed the quiet correction. Every pay event reports to the ATO on or before pay day, so an error is visible to the ATO and to the client’s employee the same afternoon — and superannuation runs on its own quarterly schedule, unrelated to the pay cycle, where a late payment is treated differently from every other late payment. For a firm running payroll across many clients that is a lot of small deadlines with no catch-up window. We prepare the gross-to-net calculation, the STP data and the superannuation tracking inside your existing software; your firm confirms and submits.";
+const overview = "Single Touch Payroll removed the quiet correction. Every pay event reports to the ATO on or before pay day, so an error is visible to the ATO and to the client’s employee the same afternoon — and superannuation runs on its own quarterly schedule, unrelated to the pay cycle, where a late payment is treated differently from every other late payment. For a firm running payroll across many clients that is a lot of small deadlines with no catch-up window. The gross-to-net calculation, STP data and superannuation tracking can be prepared inside the existing software; the authorised party confirms and submits.";
 
 const auElements = [
   'Single Touch Payroll (STP) Phase 2 reporting data prepared each pay run',
@@ -51,10 +51,10 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you lodge STP with the ATO?', answer: 'STP data preparation is what we handle — calculating and formatting the report for each pay run. Lodging it stays with your firm, through your payroll software or a registered agent.' },
-  { question: 'Do you pay superannuation to the fund?', answer: "We track and calculate the superannuation guarantee liability each pay run. Remitting the payment to each employee's nominated fund is a banking transaction that stays with you." },
+  { question: 'Do you lodge STP with the ATO?', answer: 'STP data preparation covers the calculation and formatting required for each pay run. Lodging it stays with your firm, through your payroll software or a registered agent.' },
+  { question: 'Do you pay superannuation to the fund?', answer: "Superannuation guarantee liability can be tracked and calculated for each pay run. Remitting the payment to each employee's nominated fund is a banking transaction that stays with you." },
   { question: 'How do you handle award rates?', answer: 'Where employees are covered by a modern award, we apply the pay and penalty rates for the classification you provide. Determining the correct award classification for a role is an employment-law question for your advisor.' },
-  { question: 'What payroll software do you work in?', answer: 'We work inside your existing system — Xero Payroll, MYOB, or similar. We do not require a platform change.' },
+  { question: 'What payroll software do you work in?', answer: 'The process can run inside the existing system — Xero Payroll, MYOB, or similar. A platform change is not required.' },
   { question: 'Does superannuation apply to casual and part-time staff?', answer: 'Superannuation guarantee calculations follow the employee classification and hours as you record them, in line with current ATO thresholds.' },
 ];
 
