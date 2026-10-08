@@ -111,6 +111,18 @@ export default function PayrollUSPage() {
 
       <ServiceDepth serviceSlug="payroll" regionSlug="united-states" />
 
+      <section className="w-full py-8 md:py-10 px-6 md:px-8 bg-input">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Related industry scope</h2>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <Link href="/industries/healthcare" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Healthcare Accounting</Link>
+            <Link href="/industries/professional-services" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Professional Services Accounting</Link>
+            <Link href="/industries/technology" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Technology Accounting</Link>
+            <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Support</Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto">
