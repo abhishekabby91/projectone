@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Budget-to-Actual Reports: What Should Boards Review?',
@@ -8,9 +9,19 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-budget-to-actual-reports',
 });
 
+const faqs = [
+  { question: "How often should an HOA review budget-to-actual results?", answer: "Most associations benefit from a monthly review. The board can then identify recurring variances before they become a year-end surprise." },
+  { question: "What percentage variance is important to review?", answer: "There is no single percentage that works for every HOA. A smaller association may need to investigate a modest dollar variance, while a larger association may use higher thresholds. The board can set practical review thresholds based on its budget and risk." },
+  { question: "Should reserves appear on the budget-to-actual report?", answer: "Reserve reporting can be included, but it should be clearly separated from operating activity so the board can understand both without confusing one with the other." },
+  { question: "Can an outsourced team prepare the monthly report?", answer: "Yes. An accounting team can maintain the books, prepare the budget-to-actual report and flag unusual variances for management or board review. The board retains responsibility for its decisions." },
+];
+const faqSchema = generateFAQSchema(faqs);
+
 export default function HoaBudgetToActualReports() {
   return (
-    <ArticleLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Budget-to-Actual Reports: What Should Board Members Review?"
       category="HOA Accounting"
       description="A budget-to-actual report is useful when it helps the board see where actual income or expenses differ from the approved budget and where a variance needs explanation."
@@ -60,18 +71,11 @@ export default function HoaBudgetToActualReports() {
       <h2>Why Monthly Close Matters</h2>
       <p>Budget-to-actual reporting is only as reliable as the books behind it. Bank reconciliations, accounts payable, assessment postings, accruals where applicable and reserve transactions should be reviewed before the board relies on the report.</p>
 
-      <h2>Common Questions</h2>
-      <h3>How often should an HOA review budget-to-actual results?</h3>
-      <p>Most associations benefit from a monthly review. The board can then identify recurring variances before they become a year-end surprise.</p>
-      <h3>What percentage variance is considered important?</h3>
-      <p>There is no single percentage that works for every HOA. A small association may need to investigate a modest dollar variance, while a larger association may focus on larger thresholds. The board can set practical review thresholds based on its budget and risk.</p>
-      <h3>Should reserves appear on the budget-to-actual report?</h3>
-      <p>Reserve reporting can be included, but it should be clearly separated from operating activity so the board can understand both without confusing one with the other.</p>
-      <h3>Can an outsourced team prepare the monthly report?</h3>
-      <p>Yes. An accounting team can maintain the books, prepare the budget-to-actual report and flag unusual variances for management or board review. The board retains responsibility for its decisions.</p>
+      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
 
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-board-financial-package">HOA board financial package</a>, <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-    </ArticleLayout>
+      </ArticleLayout>
+    </>
   );
 }
