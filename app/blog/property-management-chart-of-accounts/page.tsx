@@ -46,7 +46,7 @@ export default function Page() {
       <p>Old duplicate accounts, inconsistent expense categories and accounts that are no longer used can make reporting harder. A periodic review is useful, especially after acquiring a new portfolio or changing accounting software.</p>
 
       <h2>Related guides</h2>
-      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-bookkeeping-vs-accounting">bookkeeping vs. accounting</a> and <a href="/blog/rent-roll-accounting">rent roll accounting</a>.</p>
+      <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-bookkeeping-vs-accounting">bookkeeping vs. accounting</a> and <a href="/blog/rent-roll-accounting">rent roll accounting</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>
   );
 }
