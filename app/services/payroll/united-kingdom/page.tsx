@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Payroll is the service most practices offer, least enjoy, and can least afford to get wrong. It runs on a fixed cadence with no catch-up window, and an error is visible to the client in their own net pay. We run the gross-to-net calculation, prepare RTI submission data and keep auto-enrolment assessed each period — checked before you submit. Submission stays with your practice, and so does the payment.";
+const overview = "Payroll is the service most practices offer, least enjoy, and can least afford to get wrong. It runs on a fixed cadence with no catch-up window, and an error is visible to the client in their own net pay. The gross-to-net calculation, RTI submission data and auto-enrolment assessment can be prepared each period for internal review before submission. Submission stays with your practice, and so does the payment.";
 
 const ukElements = [
   'PAYE income tax withholding calculations',
@@ -51,10 +51,10 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you submit RTI to HMRC?', answer: 'RTI data preparation is what we handle — calculating and formatting the submission for each pay run. Submitting it to HMRC through your payroll software or agent authorisation stays with your practice, since that requires credentials we neither hold nor want.' },
-  { question: 'Do you handle auto-enrolment pension contributions?', answer: "We track and calculate auto-enrolment pension contributions against the scheme and rates already in place. Selecting the pension scheme and its contribution structure is a decision for the client and their adviser." },
-  { question: 'What payroll software do you work in?', answer: 'We work inside your existing system — Xero Payroll, Sage Payroll, or similar. We do not require a platform change.' },
-  { question: 'Who reviews the payroll run before it goes out?', answer: 'Your authorised internal reviewer confirms headcount, hours, and any changes before the run is submitted. We prepare the run; your team approves and submits it.' },
+  { question: 'Do you submit RTI to HMRC?', answer: 'RTI data preparation covers the calculation and formatting required for each pay run. Submitting it to HMRC through your payroll software or agent authorisation stays with your practice, since that requires credentials we neither hold nor want.' },
+  { question: 'Do you handle auto-enrolment pension contributions?', answer: "Auto-enrolment pension contributions can be tracked and calculated against the scheme and rates already in place. Selecting the pension scheme and its contribution structure is a decision for the client and their adviser." },
+  { question: 'What payroll software do you work in?', answer: 'The process can run inside the existing system — Xero Payroll, Sage Payroll, or similar. A platform change is not required.' },
+  { question: 'Who reviews the payroll run before it goes out?', answer: 'Your authorised internal reviewer confirms headcount, hours, and any changes before the run is submitted. The run is prepared for internal approval and submission.' },
   { question: 'Do you calculate statutory payments like SSP or SMP?', answer: "Yes, we calculate SSP, SMP, and SPP according to the applicable rules and the information you provide about the employee's circumstances. Determining eligibility in an unusual case is a question for your advisor." },
 ];
 
