@@ -4252,3 +4252,11 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - A neutral inquiry section is intended as a reusable pattern across relevant pages.
 - Content follows Discover → Research → Learn → Create → Rank → Get experience → Update.
 - Current content work is committed to main but deployment/build handling remains separate.
+
+
+## 2026-10-08 — Industry linking and shared article helper correction
+
+- Added contextual internal links on the CPA Firms and Real Estate industry pages.
+- Reviewed Property Management internal links and avoided forced expansion.
+- Corrected the malformed literal newline in components/article-layout.tsx that could break the TypeScript build.
+- Deployment remains intentionally separate; Claude/deployment owner should run build validation and deploy.
