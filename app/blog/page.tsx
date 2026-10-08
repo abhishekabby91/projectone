@@ -39,6 +39,10 @@ const articles = [
   { href: '/blog/hoa-board-financial-package', title: 'HOA Board Financial Package: What Should Be Included Each Month?', description: 'A practical monthly package covering financial statements, budget variances, assessments, reserves, AP and open items.', tag: 'HOA Accounting', readTime: '8 min read' },
   { href: '/blog/hoa-reserve-expenses', title: 'HOA Reserve Expenses: How Should Reserve-Funded Costs Be Tracked?', description: 'How to connect reserve projects, vendor invoices, payments and reserve reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
   { href: '/blog/hoa-vendor-1099-tracking', title: 'HOA Vendor 1099 Tracking: What Should the Accounting Team Record?', description: 'How to keep vendor records and payment detail organized for year-end tax review.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/hoa-accounting-quickbooks', title: 'HOA Accounting in QuickBooks: What Should Be Set Up and Reviewed?', description: 'How to structure QuickBooks around assessments, homeowner balances, operating funds, reserves, AP and reconciliations.', tag: 'HOA Software', readTime: '7 min read' },
+  { href: '/blog/hoa-quickbooks-online', title: 'QuickBooks Online for HOA Accounting: What Should Be Tracked?', description: 'A practical guide to organizing an HOA QuickBooks Online file and deciding what detail belongs elsewhere.', tag: 'HOA Software', readTime: '7 min read' },
+  { href: '/blog/hoa-accounting-appfolio', title: 'HOA Accounting with AppFolio: What Should Be Reviewed Each Month?', description: 'How to review homeowner activity, cash, AP, reserves and board reporting in an AppFolio-based workflow.', tag: 'HOA Software', readTime: '7 min read' },
+  { href: '/blog/hoa-accounting-yardi', title: 'HOA Accounting with Yardi: What Should Be Reviewed Each Month?', description: 'A practical monthly accounting workflow for HOA teams using Yardi or a related property-management stack.', tag: 'HOA Software', readTime: '7 min read' },
 ];
 
 export default function BlogPage() {
