@@ -42,12 +42,12 @@ const serviceFAQs = [
   {
     question: 'How is an engagement scoped?',
     answer:
-      'By scope, transaction volume, workflow complexity, the systems involved and turnaround requirements. We put a written proposal together once we understand the work, rather than fitting it to a standard package.',
+      'Scope is determined by transaction volume, workflow complexity, systems and turnaround requirements. A written proposal follows review of the actual work rather than a standard package.',
   },
   {
     question: 'What accounting software do you support?',
     answer:
-      'QuickBooks Online, Xero, Sage, NetSuite, MYOB, Drake Tax and CCH Axcess, plus client-specific systems where access and documentation are available. We work inside your existing setup rather than implementing or configuring it.',
+      'QuickBooks Online, Xero, Sage, NetSuite, MYOB, Drake Tax and CCH Axcess are supported, along with client-specific systems where access and documentation are available. The work runs inside the existing setup rather than requiring implementation or configuration.',
   },
 ];
 
@@ -59,7 +59,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const supportPillars = [
   { h: 'Defined workflows, not ad-hoc requests', p: 'Each process is documented with a preparer, a reviewer and an approval point, so the work is repeatable and you can see where any item sits.' },
-  { h: 'Your systems, your chart of accounts', p: 'We work inside the accounting system you already run. We do not implement, configure or migrate third-party platforms.' },
+  { h: 'Your systems, your chart of accounts', p: 'The accounting work runs inside the system already in use. Third-party platform implementation, configuration and migration are outside this service.' },
   { h: 'Review stays clear', p: 'Preparation work is handled through the agreed workflow, with review points, approvals and professional responsibilities clearly defined.' },
   { h: 'Capacity that follows the workload', p: 'Coverage can widen for a close, a tax season or an audit window and narrow again afterwards, without rebuilding the process each time.' },
 ];
@@ -71,7 +71,7 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="What We Do"
+        subtitle="Accounting and Bookkeeping Services"
         title="Accounting, Bookkeeping & Tax Services"
         description="Seven service lines, delivered to the reporting rules and compliance cycles of the United States, the United Kingdom and Australia."
         cta={{ text: 'Discuss Your Requirements', href: '/contact' }}
@@ -153,7 +153,7 @@ export default function ServicesPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="max-w-3xl space-y-3 mb-8"><>
             <span className="text-sm font-semibold tracking-wide uppercase text-accent">How we work</span>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">How We Support Accounting Teams</h2>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Accounting Support Structure</h2>
           </></Reveal>
           <div className="grid md:grid-cols-2 gap-4 md:gap-5">
             {supportPillars.map((p, i) => (
@@ -185,7 +185,7 @@ export default function ServicesPage() {
           <Reveal delay={0.08}>
             <div>
               <h2 className="text-xl font-bold text-primary mb-3">Technology</h2>
-              <p className="text-sm text-muted mb-4 leading-relaxed">We work inside the platform you already run. Implementation and configuration are not services we offer.</p>
+              <p className="text-sm text-muted mb-4 leading-relaxed">The work runs inside the platform already in use. Implementation and configuration are outside the service scope.</p>
               <ul className="space-y-1.5">
                 {technologies.map((t) => (
                   <li key={t.slug}><Link href={`/technology/${t.slug}`} className="inline-block py-1.5 text-sm text-primary hover:text-accent transition-colors">{t.name}</Link></li>
@@ -212,11 +212,11 @@ export default function ServicesPage() {
 
       <FAQSection subtitle="Services" items={serviceFAQs} columns={2} />
 
-      <InquirySection source="/services" title="Talk to Us About the Workflow You Need Covered" lead="A free consultation, and a call that costs nothing. Name the service and the region, and we will scope a pilot rather than quote a package." />
+      <InquirySection source="/services" title="Discuss the Workflow You Need Covered" lead="Name the service, market and workflow to be covered. The scope can start with a defined pilot rather than a standard package." />
 
       <CTABanner
         title="Not Sure Where to Start?"
-        description="Tell us which processes are creating pressure and which market they sit in. We will map the work to the right support model."
+        description="Identify the processes creating pressure and the relevant market. The work can then be mapped to the appropriate support model."
         cta={{ text: 'Schedule a Conversation', href: '/contact' }}
         background="primary"
       />
