@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
-const overview = "Client bookkeeping is the work that expands to fill whatever time a practice has, and it is almost never the work that earns the fee. We take the recurring layer — posting, reconciling, chasing the missing invoice, keeping VAT coding right as it happens — so your qualified people are reviewing rather than processing. Your practice keeps the VAT scheme decisions, the client conversation, and the submission.";
+const overview = "Client bookkeeping is the work that expands to fill whatever time a practice has, and it is almost never the work that earns the fee. The recurring layer covers posting, reconciliation, missing-invoice follow-up and VAT coding — so your qualified people are reviewing rather than processing. Your practice keeps the VAT scheme decisions, the client conversation, and the submission.";
 
 const benefits = [
   'Transaction processing, coding and account maintenance',
@@ -50,7 +50,7 @@ const retained = [
 ];
 
 const process = [
-  { title: 'Understand the existing UK workflow', text: 'We start with the accounting system, chart of accounts, VAT setup, reconciliation status, month-end routine and the way your accountant currently reviews the work.' },
+  { title: 'Understand the existing UK workflow', text: 'The accounting system, chart of accounts, VAT setup, reconciliation status, month-end routine and existing review process establish the starting scope.' },
   { title: 'Separate preparation from judgement', text: 'Repeatable bookkeeping work can be delegated, while tax advice, unusual VAT treatment, approvals and professional judgement remain with the appropriate person.' },
   { title: 'Work from the documented routine', text: 'The delivery team follows the agreed process inside the authorised system and flags missing information or exceptions instead of making assumptions.' },
   { title: 'Leave a review-ready handoff', text: 'Completed reconciliations, schedules and exception items are organised so the reviewer can see what is finished, what needs attention and what questions remain.' },
