@@ -37,7 +37,7 @@ export default function HoaReserveFinancialReporting() {
       <h2>Software and Reserve Reporting</h2>
       <p>QuickBooks Online and association-management platforms can support reserve reporting, but the account and tracking structure has to be configured around the association's actual reporting needs. Software should make the records easier to review, not replace the review.</p>
       <h2>Related HOA Resources</h2>
-      <p>See <a href="/blog/hoa-reserve-reconciliation">HOA reserve reconciliation</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, and <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a>.</p>
+      <p>For broader context, see <a href="/industries/hoa-accounting">HOA and community association accounting</a>. You can also review <a href="/blog/hoa-reserve-reconciliation">HOA reserve reconciliation</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, and <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a>.</p>
     </ArticleLayout>
   );
 }
