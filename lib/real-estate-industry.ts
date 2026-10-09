@@ -243,7 +243,7 @@ export const faqs = [
   {
     question: 'What accounting can a real estate business actually outsource?',
     answer:
-      'The recurring, rule-bound part: transaction processing, bank and deposit reconciliation, vendor invoice coding, receivables and aging, month-end close, and the preparation of owner statements, board packs and management reports. What does not move is approval, payment release, and any judgement that needs your licence or your authority — including the tax return, which stays with your CPA.',
+      'The recurring, rule-bound part can include transaction processing, bank and deposit reconciliation, vendor invoice coding, receivables and aging, month-end close, and preparation of owner statements, board packs and management reports. Approvals and payment release remain with your team. This page focuses on accounting; tax-return preparation, where needed, is scoped separately through the relevant tax-preparation service and review process.',
   },
   {
     question: 'Can you support property management companies?',
