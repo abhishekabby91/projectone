@@ -21,7 +21,7 @@
 | app/resources/page.tsx | 65/100 | 528 | 0 | 6 | 0 | 0 |
 | app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 308 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
-| app/industries/page.tsx | 75/100 | 213 | 1 | 1 | 0 | 0 |
+| app/industries/page.tsx | 75/100 | 211 | 1 | 1 | 0 | 0 |
 | app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 297 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 345 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
@@ -105,7 +105,7 @@
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
 | app/markets/united-states/california/page.tsx | 90/100 | 515 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/florida/page.tsx | 90/100 | 501 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/page.tsx | 90/100 | 1745 | 1 | 16 | 0 | 0 |
+| app/markets/united-states/page.tsx | 90/100 | 1744 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 552 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
