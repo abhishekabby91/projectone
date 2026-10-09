@@ -123,6 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/outsourced-payroll-services', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/tax-preparation-outsourcing', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/audit-support-services', priority: 0.75, changeFrequency: 'monthly' },
+    // Month-end close content consolidated here; former monthly-close-process URL redirects.
     { path: '/blog/hoa-accounting-month-end-checklist', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/hoa-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
@@ -154,15 +155,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-accounting-cleanup', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounts-receivable-aging', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-vendor-invoice-processing', priority: 0.75, changeFrequency: 'monthly' },
-    { path: '/blog/hoa-monthly-close-process', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-balance-sheet-explained', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-income-statement-explained', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-financial-reporting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-vendor-expense-tracking', priority: 0.75, changeFrequency: 'monthly' },
+    // Year-end checklist content consolidated here; former year-end-checklist URL redirects.
     { path: '/blog/hoa-year-end-accounting', priority: 0.75, changeFrequency: 'monthly' },
-    { path: '/blog/hoa-year-end-checklist', priority: 0.75, changeFrequency: 'monthly' },
   ];
 
   const seen = new Set<string>();
