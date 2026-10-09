@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Homeowner Ledgers: How to Keep Assessment Balances Accurate',
+  title: 'HOA Homeowner Ledgers: Keep Balances Accurate',
   description: 'A practical guide to HOA homeowner ledgers, including assessments, payments, credits, unapplied cash, adjustments and reconciliation to the general ledger.',
   path: '/blog/hoa-homeowner-ledgers',
 });
