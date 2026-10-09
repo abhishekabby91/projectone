@@ -3,6 +3,58 @@ import { companyInfo } from './data';
 
 export const baseUrl = 'https://www.accounstone.com';
 const siteName = companyInfo.name;
+const US_STATES = new Set([
+  'Alabama',
+  'Alaska',
+  'Arizona',
+  'Arkansas',
+  'California',
+  'Colorado',
+  'Connecticut',
+  'Delaware',
+  'Florida',
+  'Georgia',
+  'Hawaii',
+  'Idaho',
+  'Illinois',
+  'Indiana',
+  'Iowa',
+  'Kansas',
+  'Kentucky',
+  'Louisiana',
+  'Maine',
+  'Maryland',
+  'Massachusetts',
+  'Michigan',
+  'Minnesota',
+  'Mississippi',
+  'Missouri',
+  'Montana',
+  'Nebraska',
+  'Nevada',
+  'New Hampshire',
+  'New Jersey',
+  'New Mexico',
+  'New York',
+  'North Carolina',
+  'North Dakota',
+  'Ohio',
+  'Oklahoma',
+  'Oregon',
+  'Pennsylvania',
+  'Rhode Island',
+  'South Carolina',
+  'South Dakota',
+  'Tennessee',
+  'Texas',
+  'Utah',
+  'Vermont',
+  'Virginia',
+  'Washington',
+  'West Virginia',
+  'Wisconsin',
+  'Wyoming',
+]);
 
 function absoluteUrl(path: string) {
   if (path.startsWith('http://') || path.startsWith('https://')) return path;
@@ -73,7 +125,17 @@ export function generateServiceSchema(service: { name: string; description: stri
     '@context': 'https://schema.org', '@type': 'Service', name: service.name, description: service.description,
     provider: { '@type': 'Organization', '@id': `${baseUrl}/#organization`, name: companyInfo.name, url: baseUrl },
     ...(service.areaServed?.length
-      ? { areaServed: service.areaServed.map((country) => ({ '@type': 'Country', name: country })) }
+      ? {
+          areaServed: service.areaServed.map((area) =>
+            US_STATES.has(area)
+              ? {
+                  '@type': 'AdministrativeArea',
+                  name: area,
+                  containedInPlace: { '@type': 'Country', name: 'United States' },
+                }
+              : { '@type': 'Country', name: area },
+          ),
+        }
       : {}),
     url: absoluteUrl(`${service.basePath ?? '/services/'}${service.slug}`),
   };
