@@ -66,3 +66,48 @@
 ## Method and limitations
 
 These are examples of public competitor pages surfaced by searches for related service intents. They are useful for qualitative page-structure comparisons, not proof that a page ranks first for a specific keyword. No competitor copy has been reproduced verbatim. Recheck the live pages before relying on pricing, credentials, service coverage or numerical claims.
+
+## Additional competitor and search-result review — U.S. HOA and property-management accounting
+
+**Research snapshot:** 9 October 2026. These are relevant pages surfaced in web searches, not a claim that each page holds a fixed or verified ranking position. Search results vary by location, device and time.
+
+### HOA accounting pages
+
+- [HOA Accounting Services, LLC — Full Service Independent Accounting](https://hoa-accounting.com/)
+  - Leads with independent accounting for self-managed and managed associations and names its current service states.
+  - Makes monthly/annual reporting, billing and receivables visible early.
+  - **Takeaway:** a geographic coverage statement is useful when it is accurate. Accounstone should name a state or county only where it can genuinely support clients there; it should not imply an office or local staff.
+- [QX Global Group — HOA Accounting Services](https://qxglobalgroup.com/usa/industry/qxfa/hoa-accounting-services/)
+  - Connects reserve/operating-fund separation and board reporting to specific association needs.
+  - Addresses both self-managed boards and community management companies.
+  - **Takeaway:** retain the current HOA page's distinct audiences and describe concrete outputs such as reconciliations, homeowner ledgers, AP/AR schedules and board packs.
+- [Dynamite Management — Best HOA Accounting Service Providers in 2026](https://dynamitemanagement.com/blog/best-hoa-accounting-service-providers-2026/)
+  - Organizes the comparison around scope, pricing transparency, controls, geographic coverage and credentials.
+  - **Takeaway:** these are genuine decision criteria to answer in educational content. Do not reproduce its rankings or competitors' prices, memberships, credentials or claims as if independently verified.
+- [HOA Fiscal — Best HOA Accounting Software for Self-Managed Associations](https://www.hoafiscal.com/blog/best-hoa-accounting-software/)
+  - Explains fund accounting, homeowner-ledger/general-ledger agreement and online assessment collection in a practical comparison.
+  - **Takeaway:** software content should answer real selection and reconciliation questions, not just list product names.
+
+### Property-management and real-estate accounting pages
+
+- [Analytix — Real Estate Accounting and Property Management Services](https://www.analytix.com/industry/real-estate)
+  - Connects real-estate accounting to CAM reconciliation, month-end close, owner financials and systems such as AppFolio, Yardi and MRI.
+  - **Takeaway:** make platform and workflow details concrete only where Accounstone can deliver the described work.
+- [APM Help alternatives comparison — TrustRecon](https://trustrecon.com/blog/apm-help-alternatives)
+  - Uses a software-and-task lens, including AppFolio, Buildium, Rentvine, Propertyware, trust bookkeeping, bank reconciliations, AP and 1099 workflows.
+  - The publisher discloses that it is one of the alternatives being compared.
+  - **Takeaway:** useful for discovering customer questions and task vocabulary, but its comparative judgments are not independent evidence.
+- [Real Estate Bench — Bookkeeping services](https://realestatebench.com/bookkeeping)
+  - Organizes providers around property asset classes and whether coverage is nationwide or remote.
+  - **Takeaway:** make the portfolio types served clear and explain how the remote delivery model works. Do not create a separate county page if the only change is the place name.
+- [QX Global Group — Property Management Accounting Service Providers in USA (2026)](https://qxglobalgroup.com/fa/us/blog/top-property-management-accounting-service-providers-usa)
+  - Frames the decision around trust reconciliations, owner reporting and multi-entity consolidation.
+  - **Takeaway:** these are useful subtopics for service copy and supporting guides, provided they match the actual engagement scope.
+
+### What this means for Accounstone
+
+1. Keep three distinct commercial intents: HOA/community-association accounting, property-management accounting, and real-estate owner/investor accounting. Do not merge them into one generic “property accounting” page.
+2. Use software pages to explain a real workflow in a named platform, not merely to insert a brand name.
+3. Use location pages to prove relevance through useful local context, portfolio/workflow examples, service coverage and links to the correct industry service—not by repeating the same page with a new state/county name.
+4. Do not infer ranking position from a page appearing in search results. This review is a content-pattern benchmark, not a SERP-position, traffic, backlink or conversion audit.
+
