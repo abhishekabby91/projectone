@@ -19,15 +19,15 @@ const PATH = '/industries/real-estate/yardi-accounting-outsourcing-texas';
 export const metadata: Metadata = generateMetadata({
   title: 'Yardi Accounting Outsourcing in Texas',
   description:
-    'Outsourced accounting for Texas property managers using Yardi Voyager and Breeze, including trust-account recordkeeping, owner statements and CAM reconciliations.',
+    'Accounting and bookkeeping support for Texas property managers using Yardi Voyager or Yardi Breeze, including owner statements, CAM reconciliations and month-end reporting.',
   path: PATH,
 });
 
 const overview =
-  "Property management accounting has specific demands that general bookkeeping doesn't cover well: trust-account recordkeeping and reconciliations, accurate owner statements across multi-property portfolios, CAM (Common Area Maintenance) reconciliations, and month-end close across multiple properties. Our team brings hands-on working experience with the Yardi platform — including Yardi Voyager and Yardi Breeze — to support Texas-based property management companies with consistent accounting records and repeatable workflows across the portfolio.";
+  "Property management accounting can involve property-level ledgers, owner statements, CAM (Common Area Maintenance) reconciliations and month-end close across multiple properties. For Texas-based property managers using Yardi Voyager or Yardi Breeze, the engagement can be scoped around the client's existing setup, access permissions and documented accounting workflow.";
 
 const benefits = [
-  'Working experience with Yardi Voyager and Yardi Breeze platforms',
+  'Accounting workflow support for portfolios using Yardi Voyager or Yardi Breeze',
   'Trust-account recordkeeping and reconciliation support based on your documented workflow',
   'Owner statement preparation and reconciliation across multi-property portfolios',
   'CAM (Common Area Maintenance) reconciliation support',
@@ -48,7 +48,7 @@ const process = [
     step: 2,
     title: 'Trust Accounting Alignment',
     description:
-      'We review your trust-account structure and documented procedures so the team can follow your workflow for separating and reconciling owner funds and operating funds.',
+      'We review the documented process for separating and reconciling owner funds and operating funds, then define the accounting tasks and review points for the engagement.',
   },
   {
     step: 3,
@@ -74,16 +74,16 @@ const deliverables = [
   'Monthly owner statements per property',
   'CAM reconciliation reports',
   'Bank reconciliations across property accounts',
-  'Trust account compliance reporting',
+  'Trust-account reconciliation schedules based on documented procedures',
   'Consolidated portfolio-level financial reports',
   'Month-end close package',
 ];
 
 const faqs = [
   {
-    question: 'Do you support Yardi Voyager and Yardi Breeze?',
+    question: 'Can the work be performed in Yardi Voyager or Yardi Breeze?',
     answer:
-      'Yes, our team has working experience with both Yardi Voyager and Yardi Breeze, including chart of accounts setup, transaction processing, and reporting workflows within the platform.',
+      'The scope depends on your Yardi product, access permissions and existing setup. We can review the workflow and confirm which transaction processing, reconciliation and reporting tasks are suitable before onboarding.'
   },
   {
     question: 'Can you handle CAM reconciliations and owner statements?',
@@ -98,7 +98,7 @@ const faqs = [
   {
     question: 'How do you support trust-account recordkeeping?',
     answer:
-      'We follow your documented workflow for separating owner or trust funds from operating funds and preparing the related reconciliations. Your team confirms the procedures and requirements that apply to the portfolio.',
+      'We can prepare reconciliation schedules using the procedures agreed for the engagement. Your team confirms the applicable requirements and reviews the records before relying on them for compliance purposes.',
   },
   {
     question: 'Can you support a multi-property or multi-entity portfolio?',
@@ -257,7 +257,7 @@ export default function YardiTexasPage() {
 
       <CTABanner
         title="Ready to Streamline Your Property Management Accounting?"
-        description="Let our Yardi-experienced team support your Texas property portfolio."
+        description="Discuss accounting support for your Texas property portfolio using Yardi."
         cta={{ text: 'Schedule Consultation', href: '/contact' }}
         background="primary"
       />
