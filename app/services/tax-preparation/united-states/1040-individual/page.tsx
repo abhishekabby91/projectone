@@ -49,7 +49,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'tax-preparation/united-states/1040-individual',
   basePath: '/services/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([
