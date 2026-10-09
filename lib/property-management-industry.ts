@@ -350,7 +350,7 @@ export const faqs = [
   {
     question: 'Can you work with our property management software?',
     answer:
-      'Systems may include Yardi, QuickBooks, Xero, Sage and NetSuite. The exact product, access requirements and workflow should be confirmed during scoping before work is agreed.',
+      'Systems may include Yardi, AppFolio, QuickBooks, Xero, Sage and NetSuite. The exact product, access requirements and workflow should be confirmed during scoping before work is agreed.',
   },
   {
     question: 'How are security deposit records handled?',
