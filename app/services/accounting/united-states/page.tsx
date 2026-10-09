@@ -140,6 +140,14 @@ export default function AccountingUSPage() {
 
       />
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. accounting services, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Is Included in Outsourced Accounting Services?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced accounting services can include month-end close support, journal-entry preparation, account reconciliations, balance-sheet schedules and management reporting. The scope is defined around the client’s accounting policies, existing software, close calendar and review process; entries and reports that require client judgment or approval follow the agreed sign-off workflow.</p>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Accounting Services" source="/services/accounting/united-states" />
 
       <CTABanner title="Where Is the Close Process Getting Stuck?" description="Identify what is falling behind—reconciliations, journal entries or the reporting package—and the support scope can be built around the actual close process." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} background="primary" />
