@@ -40,7 +40,7 @@ const serviceSchema = generateServiceSchema({
     'Busy-season overflow, client bookkeeping cleanup, CAS production, audit and PBC support, and staff augmentation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgement retained by the firm.',
   slug: 'cpa-firms',
   basePath: '/industries/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 const faqSchema = generateFAQSchema(faqs);
 const breadcrumbSchema = generateBreadcrumbSchema([
