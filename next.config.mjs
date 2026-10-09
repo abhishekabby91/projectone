@@ -14,6 +14,17 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // HOA guides consolidated in October 2026 after reviewing topic overlap.
+      {
+        source: "/blog/hoa-monthly-close-process",
+        destination: "/blog/hoa-accounting-month-end-checklist",
+        permanent: true,
+      },
+      {
+        source: "/blog/hoa-year-end-checklist",
+        destination: "/blog/hoa-year-end-accounting",
+        permanent: true,
+      },
       // Merged into the guide 2026-08-21 - the two pages had near-identical
       // content (see docs/CONTENT-REGISTRY.md). The guide's cost coverage
       // was extended with the blog's unique "Cost Ranges" section before
