@@ -220,7 +220,7 @@ export const faqs = [
   {
     question: 'What is safe to outsource from a CPA firm, professionally?',
     answer:
-      'Preparation. Transaction processing, cleanup, workpapers, schedules, PBC organisation and documentation can be delegated. What cannot is review, signature, e-filing, any tax position, any audit judgement and any representation before a tax authority — all of which stay with a licensed CPA or EA under Circular 230. Separately, IRC §7216 requires the taxpayer’s written consent before return information is disclosed to another preparer, and the consent must say so where that preparer is outside the United States. The consent language is your firm’s to adopt with your own counsel.',
+      'Preparation, transaction processing, cleanup, workpapers, schedules, PBC organisation and documentation can be scoped as defined workstreams. Review, signature, filing, tax positions and any authority-facing responsibilities should be assigned explicitly to the appropriately authorized person or team for the engagement. IRC §7216 consent requirements may apply before tax return information is disclosed to another preparer, including where the preparer is outside the United States; the required consent and engagement responsibilities should be confirmed for the specific case.',
   },
   {
     question: 'Which work should we hand over first?',
