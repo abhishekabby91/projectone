@@ -16,3 +16,10 @@ This log tracks work intended to make Accounstone's public information easier fo
 - Kept the description conditional and engagement-specific; it does not promise fixed outcomes, publish invented performance statistics, or claim certifications.
 - Existing FAQPage and Service JSON-LD generators were already present on the reviewed homepage/service/industry pages, so no duplicate schema was added.
 - Validation before deployment: confirm the section renders on mobile and desktop, test the horizontal table overflow, and review the live HTML after deployment. This content change does not guarantee AI citations or search ranking changes.
+## 2026-10-09 — Add direct-answer sections to priority service and industry pages
+
+- Added page-specific explanatory sections to HOA accounting, property management accounting, real estate accounting, CPA firm support, U.S. accounting services, U.S. bookkeeping and U.S. tax preparation.
+- Each section answers a distinct, relevant question and summarizes the scope in plain language without adding unsupported statistics or guarantees.
+- Kept industry intent separate: HOA associations and board reporting; property managers and tenant/owner records; real estate owners and entity-level reporting; CPA firms and preparation workflows.
+- No duplicate FAQ or Service schema was added for these content sections.
+- Validation before deployment: run the production build, inspect each page at mobile and desktop widths, check rendered headings and internal links, and validate existing JSON-LD. These changes do not guarantee rankings or AI citations.
