@@ -18,7 +18,7 @@
 | app/resources/insights/page.tsx | 55/100 | 265 | 0 | 6 | 0 | 0 |
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/guides/page.tsx | 65/100 | 408 | 0 | 7 | 0 | 0 |
-| app/resources/page.tsx | 65/100 | 528 | 0 | 6 | 0 | 0 |
+| app/resources/page.tsx | 65/100 | 506 | 0 | 6 | 0 | 0 |
 | app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 308 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 211 | 1 | 1 | 0 | 0 |
