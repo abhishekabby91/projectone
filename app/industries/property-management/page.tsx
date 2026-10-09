@@ -110,25 +110,13 @@ export default function PropertyManagementPage() {
               Property accounting has to reconcile at the property level
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              That single fact drives everything else. An owner statement goes to a person who did not see the
-              transactions, will compare it against last month, and will ask about the one line that moved. A
-              tenant deposit in your account is not your money. A recoverable cost billed without its workings is
-              an invitation to a challenge you cannot answer. None of that is true of ordinary business
-              bookkeeping, where the business reads its own numbers and already knows what happened.
+              Property managers may maintain records for several owners, properties and tenant accounts at once. Each property needs a clear view of income, expenses, balances and open items. Owner statements should agree with the underlying ledger, tenant deposits must be tracked appropriately, and recoverable expenses need supporting detail that can be reviewed when charges are questioned.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              So &ldquo;done&rdquo; means something stricter here: a statement is finished when the questions it
-              will generate can already be answered from the file. That is a structural standard rather than an
-              effort one, which is why the expensive problems in property management accounting are almost always
-              setup problems. Property tracking, deposits carried as liabilities, recoverable costs coded as
-              recoverable, the portfolio view built upward from properties rather than allocated down into them
-              &mdash; each costs nothing to do correctly as transactions post, and each becomes a reconstruction
-              project once a year of history exists in the wrong shape.
+              The monthly process should connect transaction coding, tenant and owner ledgers, bank activity and property-level reporting. When records are maintained consistently as transactions are posted, month-end becomes a review and reconciliation process instead of a search through old entries to explain balances.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              The recurring accounting scope covers processing, coding, reconciliation, closing and preparation of the
-              owner actually receives &mdash; and leave every approval, every release of money and every
-              judgement with your team.
+              The recurring scope can include transaction processing, reconciliations, month-end close and preparation of owner reporting. Payment approvals, transfers and other decisions follow the client’s established controls and the agreed engagement scope.
             </p>
           </></Reveal>
           <Reveal delay={0.16} className="lg:pt-10">
@@ -150,9 +138,7 @@ export default function PropertyManagementPage() {
               Where property accounting workflows need support
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
-              Nobody goes looking for outsourced accounting. They go looking because one thing is late, wrong or
-              unanswerable. The relevant workflow identifies where the accounting process needs attention
-              &mdash; the reading underneath each is what we would expect to find.
+              Common issues include delayed owner statements, unreconciled accounts, unclear tenant balances and month-end reports that need repeated corrections. Select the issue closest to your current workflow to describe the records and support required.
             </p>
           </></Reveal>
 
@@ -190,9 +176,7 @@ export default function PropertyManagementPage() {
               Accounting requirements vary across property portfolios
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
-              A residential manager answers to owners about a rent roll that changes monthly. A commercial
-              manager answers to tenants about a recovery calculation. The mechanics overlap and the reporting
-              does not, so the scope is shaped around which of these you are.
+              Residential rentals, commercial buildings, mixed-use sites and short-term rentals share core accounting tasks, but their ledgers, lease terms and reporting needs can differ. The work should reflect the property types managed and the information owners expect to receive.
             </p>
           </></Reveal>
 
@@ -229,9 +213,7 @@ export default function PropertyManagementPage() {
               From transaction posting to month-end reporting
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Eight decisions that separate a portfolio whose accounting scales from one that has to be
-              reconstructed every year. Almost all of them are made at the point a transaction posts, which is
-              why they are cheap now and expensive later.
+              A consistent monthly process helps keep property records usable as a portfolio grows. It typically covers transaction coding, tenant and owner ledger updates, payable and receivable tracking, reconciliations, review of unusual balances and preparation of monthly reports.
             </p>
           </></Reveal>
 
@@ -385,14 +367,10 @@ export default function PropertyManagementPage() {
               Accounting support within your current system
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Supported systems include Yardi, including Voyager and Breeze, along with QuickBooks, Xero, Sage
-              and NetSuite. Where another system is in use, support can be confirmed during scoping
-              work in it rather than assume &mdash; and if the answer is no, we would say so.
+              Systems may include Yardi Voyager or Breeze, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Accounting Scope not do is implement, configure, migrate or administer accounting or property management
-              software, and we hold no vendor certification. Those are a different profession, and a provider who
-              offers both is asking you to take their word on the setup and on the work done inside it.
+              The focus is accounting and bookkeeping work within an existing system. Software implementation, migration or specialist configuration should be scoped separately and only where the relevant capability is available.
             </p>
           </></Reveal>
           <Reveal delay={0.12}>
@@ -422,9 +400,7 @@ export default function PropertyManagementPage() {
               Payment Controls Stay With the Client
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              You are considering handing over the books for property, rent and deposits that belong to other
-              people. These boundaries apply regardless of volume or engagement size, and remain the same on day
-              one as they are in year three.
+              Property accounting can involve owner funds, tenant balances and payment workflows. Responsibilities for approvals, payment release, account access and review should be agreed before work begins and documented in the engagement process.
             </p>
           </></Reveal>
           <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
