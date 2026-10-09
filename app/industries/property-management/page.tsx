@@ -488,6 +488,19 @@ export default function PropertyManagementPage() {
         </div>
       </section>
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Property management accounting, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Accounting Work Can a Property Manager Outsource?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Property managers can outsource defined recurring tasks such as transaction coding, bank and balance-sheet reconciliations, rent and tenant ledger updates, accounts payable and receivable support, security-deposit tracking, CAM or recovery schedules and owner-statement preparation. Scope depends on the portfolio, software, owner reporting requirements and approval process.</p>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Property-level books</h3><p className="mt-2 text-sm leading-relaxed text-muted">Keep income and expenses organized by property and entity using the agreed chart of accounts.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Tenant and owner records</h3><p className="mt-2 text-sm leading-relaxed text-muted">Maintain agreed rent, receivable, deposit and owner-reporting schedules.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Month-end review</h3><p className="mt-2 text-sm leading-relaxed text-muted">Prepare reconciliations and reporting files for review within the established workflow.</p></div>
+          </div>
+        </div>
+      </section>
+
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
