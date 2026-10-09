@@ -391,7 +391,7 @@ export default function RealEstateIndustryPage() {
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Supported systems include Yardi Voyager and Breeze, along with QuickBooks, Xero, Sage
-              and NetSuite. If you use another system, we confirm fit during scoping rather than assume support.
+              and NetSuite. If you use another system, we confirm during scoping whether it fits the work and access available.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The scope is accounting work within your existing software. Implementation, configuration, migration
