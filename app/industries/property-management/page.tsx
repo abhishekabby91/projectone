@@ -251,7 +251,7 @@ export default function PropertyManagementPage() {
           <Reveal className="mb-10 max-w-3xl mx-auto text-center space-y-3"><>
             <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">Accounting Scope</span>
             <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
-              Scope Built Around Your Doors
+              Property Management Accounting Scope
             </h2>
             <p className="text-base md:text-lg text-muted leading-7 md:leading-8">
               Each line represents a defined accounting function. Where a service has its own page, the card links to it.
@@ -463,7 +463,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-3 mb-6"><>
             <Eyebrow>Related work</Eyebrow>
             <h2 className="font-serif text-xl md:text-2xl font-bold text-primary text-balance">
-              Where This Connects to the Rest of the Practice
+              Related Property Management Accounting Services and Resources
             </h2>
           </></Reveal>
           <div className="flex flex-wrap gap-3">

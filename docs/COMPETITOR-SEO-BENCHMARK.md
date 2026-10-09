@@ -104,6 +104,18 @@ These are examples of public competitor pages surfaced by searches for related s
   - Frames the decision around trust reconciliations, owner reporting and multi-entity consolidation.
   - **Takeaway:** these are useful subtopics for service copy and supporting guides, provided they match the actual engagement scope.
 
+### Offshore delivery and real-estate accounting positioning
+
+- [Swami International — Real Estate Back Office & Accounting Outsourcing](https://swamiintservices.com/)
+  - Positions its India-based delivery team around full-cycle property-management back-office work, including AP/AR, bank reconciliations, lease administration and reporting.
+  - **Takeaway:** state the India delivery model plainly and describe the recurring work that can be performed inside the client's existing workflow. Do not borrow the provider's unit counts, retention rates or savings claims.
+- [AccuBooks — Outsourced Bookkeeping for Property Management](https://accubooks.ai/)
+  - Leads with a property-management-specific offer and explains that its delivery team works within existing property-management software.
+  - **Takeaway:** make the property-management audience and core tasks obvious near the top of the page. Avoid copying its pricing, experience claims or customer proof.
+- [QX Global Group — Top Property Management Accounting Service Providers in USA (2026)](https://qxglobalgroup.com/fa/us/blog/top-property-management-accounting-service-providers-usa)
+  - Frames the buying decision around trust reconciliations, owner reporting and multi-entity consolidation.
+  - **Takeaway:** these workflow terms can guide content audits, but the article is a provider-published comparison and not independent proof of rankings or market share.
+
 ### What this means for Accounstone
 
 1. Keep three distinct commercial intents: HOA/community-association accounting, property-management accounting, and real-estate owner/investor accounting. Do not merge them into one generic “property accounting” page.

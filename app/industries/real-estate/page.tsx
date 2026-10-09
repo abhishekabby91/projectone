@@ -299,7 +299,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-6"><>
             <Eyebrow>Why Accounstone</Eyebrow>
             <h2 className="font-serif text-xl md:text-2xl font-bold text-primary text-balance">
-              An Extension of Your Accounting Team, Not a Replacement for It
+              How Outsourced Real Estate Accounting Fits Your Team
             </h2>
             <p className="text-lg text-muted leading-relaxed">
               The accounting process fits existing systems, coding conventions and reporting formats, with defined
@@ -484,7 +484,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-3 mb-6"><>
             <Eyebrow>Related work</Eyebrow>
             <h2 className="font-serif text-xl md:text-2xl font-bold text-primary text-balance">
-              Where This Connects to the Rest of the Practice
+              Related Real Estate Accounting Services and Resources
             </h2>
           </></Reveal>
           <div className="flex flex-wrap gap-3">

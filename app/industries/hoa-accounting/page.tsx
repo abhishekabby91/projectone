@@ -271,7 +271,7 @@ export default function HoaAccountingPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>The work itself</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              How Association Books Are Kept
+              HOA Accounting Workflow and Monthly Reporting
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Eight things that decide whether a board governs from its financials or argues about them. None of
@@ -314,7 +314,7 @@ export default function HoaAccountingPage() {
           <Reveal className="mb-10 max-w-3xl mx-auto text-center space-y-3"><>
             <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">Accounting scope</span>
             <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
-              Scope Built Around the Meeting Calendar
+              HOA Accounting Scope Built Around Board Meetings
             </h2>
             <p className="text-base md:text-lg text-muted leading-7 md:leading-8">
               The scope below covers the recurring accounting work. Where a service has its own page, the card links to the detailed service description.
@@ -481,7 +481,7 @@ export default function HoaAccountingPage() {
           <Reveal className="space-y-3 mb-6"><>
             <Eyebrow>Related work</Eyebrow>
             <h2 className="font-serif text-xl md:text-2xl font-bold text-primary text-balance">
-              Where This Connects to the Rest of the Practice
+              Related HOA Accounting Services and Resources
             </h2>
           </></Reveal>
           <div className="flex flex-wrap gap-3">
