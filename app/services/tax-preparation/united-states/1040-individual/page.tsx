@@ -24,7 +24,7 @@ const returnType = returnDepth['1040'];
 export const metadata: Metadata = genMeta({
   title: 'Form 1040 Tax Preparation Outsourcing',
   description:
-    'Individual return preparation for U.S. CPA firms: source documents organised, basis reconstructed and open items clearly identified.',
+    'Individual return preparation for U.S. CPA firms: source documents organized, basis reconstructed and open items clearly identified.',
   path: PATH,
 });
 
@@ -32,7 +32,7 @@ const overview =
   'A 1040 practice does not run out of capacity because the returns are hard. It runs out because many files are open at once, most of them waiting on a document somebody else has to send. Individual returns and the supporting workpapers can be prepared in the firm’s software and to its checklist, so what reaches the next review point is a file with its gaps named rather than a file that has to be read before anyone can tell what state it is in.';
 
 const benefits = [
-  'Source documents organised against your own checklist, with duplicates and wrong-year forms caught at intake',
+  'Source documents organized against your own checklist, with duplicates and wrong-year forms caught at intake',
   'A named open-items list per return — what is missing, which line it feeds and who was asked',
   'Basis work reconstructed from available statements and documented as support for reviewer verification',
   'Prior-year carryforwards picked up from the prior return rather than inferred from this year’s documents',
