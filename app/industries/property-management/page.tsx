@@ -36,7 +36,7 @@ const PATH = '/industries/property-management';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounting Outsourcing',
   description:
-    'Property management accounting and bookkeeping: rent-roll and tenant ledgers, owner statements, deposit tracking, CAM recovery, reconciliations and month-end reporting.',
+    'Property management accounting: rent-roll and tenant ledgers, owner statements, deposit tracking, CAM recovery, reconciliations and month-end reports.',
   path: PATH,
 });
 
