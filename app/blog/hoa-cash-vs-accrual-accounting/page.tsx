@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Cash vs. Accrual Accounting: Which Method Should Be Used?',
+  title: 'HOA Cash vs. Accrual Accounting: Which Is Better?',
   description: 'A practical explanation of cash and accrual accounting for HOAs, including assessments, unpaid bills, reporting and what boards should understand.',
   path: '/blog/hoa-cash-vs-accrual-accounting',
 });
