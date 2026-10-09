@@ -107,7 +107,7 @@ export default function HoaHomeownerLedgers() {
       <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
 
       <h2>Related HOA Accounting Resources</h2>
-      <p>See our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page, or continue with <a href="/blog/hoa-assessment-receivables-reconciliation">HOA assessment receivables reconciliation</a> and <a href="/blog/hoa-delinquency-accounting">HOA delinquency accounting</a>.</p>
+      <p>See our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page, or continue with <a href="/blog/hoa-assessment-receivables-reconciliation">HOA assessment receivables reconciliation</a> and <a href="/blog/hoa-accounts-receivable-aging">HOA delinquency accounting</a>.</p>
       </ArticleLayout>
     </>
   );
