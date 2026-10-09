@@ -76,7 +76,7 @@ export default function RealEstateIndustryPage() {
 
       <PremiumHero
         subtitle="Owners, investors, developers and commercial operators"
-        title="Real Estate Accounting, Bookkeeping & Tax Outsourcing"
+        title="Real Estate Accounting & Bookkeeping Outsourcing"
         description="Property and entity-level books, portfolio reporting, AP/AR, reconciliations and a month-end close that holds up to a lender, a partner or your own CPA. You keep every approval."
         cta={{ text: 'Discuss Real Estate Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
