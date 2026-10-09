@@ -12,7 +12,7 @@ import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
 import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
-import { services, solutions, testimonials, trustBadges } from '@/lib/data';
+import { services, solutions, testimonials, trustBadges, markets } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting, Bookkeeping & Tax Outsourcing',
@@ -218,6 +218,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section data-section="markets" className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <Reveal>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <span aria-hidden="true" className="h-px w-8 bg-secondary" />
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">Markets</span>
+              </div>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">Accounting Support Across Key Markets</h2>
+              <p className="max-w-3xl text-muted leading-relaxed">Explore accounting and tax support by market. Each page outlines the relevant service scope and local context, with delivery from India.</p>
+            </div>
+          </Reveal>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {markets.map((market, i) => (
+              <Reveal key={market.slug} delay={i * 0.06}>
+                <Link href={"/markets/" + market.slug} className={market.slug === "united-states" ? "group flex h-full flex-col rounded-xl border border-orange-200 bg-orange-50/60 p-6 transition-all hover:border-orange-300 hover:shadow-sm" : "group flex h-full flex-col rounded-xl border border-border bg-input p-6 transition-all hover:border-primary/40 hover:shadow-sm"}>
+                  <span className="text-sm font-semibold text-accent">{market.slug === "united-states" ? "Primary focus" : "Market"}</span>
+                  <h3 className="mt-2 font-serif text-xl font-bold text-primary">{market.name}</h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{market.description}</p>
+                  <span className="mt-5 text-sm font-semibold text-primary">View market details <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span></span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-6 rounded-xl border border-border bg-input px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <p className="text-sm text-muted">Working with QuickBooks, Xero, Sage, NetSuite or tax preparation software?</p>
+            <Link href="/technology" className="shrink-0 text-sm font-semibold text-primary hover:text-accent transition-colors">View platform support <span aria-hidden="true">&rarr;</span></Link>
+          </div>
+        </div>
+      </section>
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white relative">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
