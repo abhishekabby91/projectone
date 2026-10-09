@@ -19,12 +19,12 @@ const PATH = '/industries/real-estate/yardi-accounting-outsourcing-texas';
 export const metadata: Metadata = generateMetadata({
   title: 'Yardi Accounting Outsourcing in Texas',
   description:
-    'Outsourced accounting for Texas property managers on Yardi Voyager and Breeze — trust accounting, owner statements and CAM reconciliations.',
+    'Outsourced accounting for Texas property managers using Yardi Voyager and Breeze, including trust-account recordkeeping, owner statements and CAM reconciliations.',
   path: PATH,
 });
 
 const overview =
-  "Property management accounting has specific demands that general bookkeeping doesn't cover well: trust accounting compliance, owner statement accuracy across dozens or hundreds of units, CAM (Common Area Maintenance) reconciliations, and month-end close across multiple properties simultaneously. Our team brings hands-on working experience with the Yardi platform — including Yardi Voyager and Yardi Breeze — to support Texas-based property management companies with consistent accounting records and repeatable workflows across the portfolio.";
+  "Property management accounting has specific demands that general bookkeeping doesn't cover well: trust-account recordkeeping and reconciliations, accurate owner statements across multi-property portfolios, CAM (Common Area Maintenance) reconciliations, and month-end close across multiple properties. Our team brings hands-on working experience with the Yardi platform — including Yardi Voyager and Yardi Breeze — to support Texas-based property management companies with consistent accounting records and repeatable workflows across the portfolio.";
 
 const benefits = [
   'Working experience with Yardi Voyager and Yardi Breeze platforms',
@@ -48,7 +48,7 @@ const process = [
     step: 2,
     title: 'Trust Accounting Alignment',
     description:
-      'We confirm your trust accounting structure and compliance requirements so owner funds and operating funds are handled correctly from day one.',
+      'We review your trust-account structure and documented procedures so the team can follow your workflow for separating and reconciling owner funds and operating funds.',
   },
   {
     step: 3,
