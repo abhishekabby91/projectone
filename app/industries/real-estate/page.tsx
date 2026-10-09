@@ -304,7 +304,7 @@ export default function RealEstateIndustryPage() {
             <p className="text-lg text-muted leading-relaxed">
               The accounting process fits existing systems, coding conventions and reporting formats, with defined
               ownership of defined recurring work. What stays with you is everything that needs authority:
-              approvals, payment release, owner and board relationships, and the decisions that need judgement.
+              approvals, payment release, owner and board relationships, and the decisions that need judgment.
             </p>
             <div className="space-y-4 pt-2 pl-5 margin-rule">
               {[
