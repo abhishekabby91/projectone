@@ -103,117 +103,107 @@ export interface PMTrigger {
 
 export const triggers: PMTrigger[] = [
   {
-    symptom: 'Owner statements go out late, and the late ones generate the most questions',
-    reading:
-      'Almost always a close problem wearing a reporting costume. Where bank, deposit and escrow accounts are reconciled at reporting time rather than monthly, the statement cannot be produced until the worst surprise of the month has been found and explained. Reconciling on a fixed monthly cycle makes the statement a print job.',
-    ask: 'Owner statements are going out late',
+    symptom: 'Owner statements are delayed or need repeated corrections',
+    reading: 'Review the monthly close, bank reconciliations, open transactions and the supporting detail used to prepare each owner statement.',
+    ask: 'Owner statements are delayed or need corrections',
   },
   {
-    symptom: 'Nobody can answer a tenant ledger question without opening the bank',
-    reading:
-      'The receivable is being built from deposits rather than from the lease. Once what a tenant owes and what arrived in the bank are the same record, partial payments, prepaid rent and concessions all collapse into one line and the ledger stops being able to settle a dispute.',
-    ask: 'Our tenant ledgers cannot answer a dispute',
+    symptom: 'Tenant balances do not match receipts or the lease schedule',
+    reading: 'Compare charges, receipts, credits and outstanding balances so the tenant ledger can be reviewed without relying on bank activity alone.',
+    ask: 'Tenant ledgers need review',
   },
   {
-    symptom: 'Security deposits are sitting somewhere in operating cash',
-    reading:
-      'Deposits held are the tenant’s money. Carried as income or inside operating cash they overstate both, and the error compounds with every new lease — it is one of the first things a lender or a buyer tests. Getting the ledger straight is ours; how the account itself must be held is your managing broker or counsel.',
-    ask: 'Deposits are not separated in our books',
+    symptom: 'Security deposit balances are difficult to reconcile',
+    reading: 'Maintain a tenant-level deposit ledger and reconcile the recorded balances to the relevant account records. Requirements for holding or returning deposits depend on the applicable jurisdiction and engagement.',
+    ask: 'Security deposit records need review',
   },
   {
-    symptom: 'CAM or recoverable costs are reconciled once a year, in a panic',
-    reading:
-      'Recoverability is decided at the point of coding or it is reconstructed a year later from vendor names and memory. Coded as it posts, the annual reconciliation is a report rather than a project, and a tenant challenge is answerable from the file.',
-    ask: 'CAM reconciliation is an annual fire drill',
+    symptom: 'CAM or other recoverable costs take too long to reconcile',
+    reading: 'Keep expense coding and supporting detail organised during the year so recoverable-cost schedules can be prepared from the records.',
+    ask: 'CAM or recoverable-cost schedules need support',
   },
   {
-    symptom: 'You took on doors this year and the accounting did not scale with them',
-    reading:
-      'The usual break is that the portfolio view was built by allocating down into properties rather than up from them. That holds until an owner asks for one building pulled out, or until a property is sold. It is a chart-of-accounts decision, and it is cheap now and expensive once a year of history exists in the wrong shape.',
-    ask: 'We grew and the books did not keep up',
+    symptom: 'The accounting workload has grown with the portfolio',
+    reading: 'Review the recurring volume of transaction processing, reconciliations and reporting to identify work that can be documented and handled consistently.',
+    ask: 'The portfolio has grown',
   },
   {
-    symptom: 'Your controller is doing data entry and you cannot justify another hire',
-    reading:
-      'The recurring processing, coding, reconciling and statement preparation is the part that scales with doors. The review, the owner relationship and the approvals do not. Handing over the first and keeping the second is what capacity actually means here.',
-    ask: 'Our accounting person is doing the wrong work',
+    symptom: 'Senior staff spend too much time on routine accounting tasks',
+    reading: 'Separate recurring processing and reporting work from review, owner communication and payment approvals, then agree the responsibilities for each.',
+    ask: 'Routine accounting work is taking too much time',
   },
+]
 ];
 
 /** Who this page is written for. Managers, never owners — owners are /industries/real-estate. */
 export const segments: PMSegment[] = [
   {
     name: 'Residential Property Managers',
-    who: 'Apartments, single-family and small multifamily',
-    body:
-      'High transaction count, low value per transaction, and a rent roll that changes every month through move-ins, move-outs, renewals and concessions. The accounting risk is not complexity, it is that a thousand small postings a month leave no room to reconstruct anything later.',
+    who: 'Apartments, single-family and multifamily rentals',
+    body: 'Monthly activity can include rent charges, receipts, lease changes, move-ins and move-outs, repairs and owner reporting. Property-level records make it easier to review balances across a portfolio.',
     points: [
-      'Rent charged from the lease, receipts applied against it',
-      'Move-in and move-out recorded as deposit events, not income',
-      'Late fees and concessions posted where the ledger can show them',
-      'Turn costs coded to the unit as they happen',
+      'Rent charges and receipts recorded against tenant ledgers',
+      'Move-in and move-out activity reflected in the relevant records',
+      'Repairs and operating costs coded to the property',
+      'Owner reporting prepared from reconciled records',
     ],
   },
   {
     name: 'Commercial & Retail Managers',
-    who: 'Office, retail, industrial and mixed-use',
-    body:
-      'Fewer tenants, far more structure. Base rent, percentage rent, escalations and recoverable operating costs all sit in the lease, and a tenant who is billed from a schedule instead of from their lease will find it.',
+    who: 'Office, retail, industrial and mixed-use properties',
+    body: 'Lease terms, rent changes and recoverable operating costs can create different reporting needs for each tenant. Supporting schedules should be traceable to the underlying accounting records.',
     points: [
-      'Recoverable and non-recoverable split decided at coding',
-      'Escalations and step rents billed from the lease terms',
-      'CAM pools reconciled from the ledger, not rebuilt annually',
-      'Tenant billing supported with the detail behind it',
+      'Property and expense coding maintained consistently',
+      'Lease-related charges recorded from approved information',
+      'CAM and other recovery schedules prepared from ledger detail',
+      'Tenant charges supported by reviewable calculations',
     ],
   },
   {
-    name: 'Third-Party Fee Managers',
-    who: 'Managing on behalf of owners you do not own with',
-    body:
-      'The purest form of the problem this page is about: every book belongs to somebody else, every statement is read by somebody who did not see the transactions, and your management fee is itself a transaction inside the accounts you are keeping.',
+    name: 'Third-Party Property Managers',
+    who: 'Managers reporting to multiple property owners',
+    body: 'The accounting needs to keep each owner’s activity identifiable while still giving the management company a useful portfolio view.',
     points: [
-      'Management fee calculated and posted on its own schedule',
-      'Owner draws and contributions recorded as owner activity',
-      'One owner’s properties reportable without the others',
-      'A clean file if an owner moves to another manager',
+      'Property activity maintained separately',
+      'Management fees and owner transactions recorded clearly',
+      'Owner statements prepared in agreed formats',
+      'Records organised for review or handover when needed',
     ],
   },
   {
     name: 'Single-Family Rental Operators',
-    who: 'Scattered-site portfolios under one roof',
-    body:
-      'Geographically spread, individually small, and usually owned across several entities. The reporting question is almost always the same: show me this house, this entity and the whole book, without three different spreadsheets.',
+    who: 'Scattered-site portfolios and multiple entities',
+    body: 'When properties are spread across locations or entities, consistent coding and reporting help teams compare individual properties with the wider portfolio.',
     points: [
-      'Property-level books that roll up rather than allocate down',
-      'Entity and portfolio views built from the same ledger',
-      'Repairs and capital separated as they post',
-      'Per-property performance answerable at any point',
+      'Property-level income and expense reporting',
+      'Entity and portfolio summaries from consistent records',
+      'Repairs and capital costs classified using agreed rules',
+      'Balances available for periodic property review',
     ],
   },
   {
     name: 'Short-Term & Furnished Rental Managers',
-    who: 'Platform-booked, high-frequency, multi-channel',
-    body:
-      'Income arrives as a net settlement from a platform with the gross, the commission, the taxes collected and the refunds already blended into one deposit. Booked as one number, the revenue is wrong, the margin is invisible and the tax collected is unidentifiable.',
+    who: 'Platform-booked, multi-channel rentals',
+    body: 'Platform payouts may combine booking revenue, fees, refunds and other adjustments. The accounting process should separate these items where the source data allows.',
     points: [
-      'Payouts broken back out into gross, fees and refunds',
-      'Channel-by-channel revenue kept separable',
-      'Taxes collected tracked as amounts held, not as income',
-      'Owner splits calculated from gross, not from the payout',
+      'Platform settlements reconciled to booking reports',
+      'Fees and refunds recorded with supporting detail',
+      'Revenue tracked by channel where required',
+      'Owner reporting prepared using the agreed calculation basis',
     ],
   },
   {
     name: 'Build-to-Rent & Lease-Up Teams',
-    who: 'New properties moving into operation',
-    body:
-      'The month a property stops being a construction project and starts being an operating one is the month its accounting has to change shape. Done late, the first year of operating history carries development costs through it and nothing compares to anything.',
+    who: 'Properties moving from development into operations',
+    body: 'As units begin leasing, operating activity needs to be identifiable and reported separately from development costs according to the client’s accounting policies.',
     points: [
-      'Development and operating costs kept apart from day one',
-      'The operating chart of accounts in place before first rent',
-      'Lease-up concessions recorded where they can be measured',
-      'A first full operating month that is comparable to the next one',
+      'Operating transactions coded to the relevant property',
+      'Development and operating costs classified using agreed policies',
+      'Lease-up activity recorded consistently',
+      'Monthly reports structured for comparison over time',
     ],
   },
+]
 ];
 
 /**
@@ -225,37 +215,38 @@ export const segments: PMSegment[] = [
  */
 export const workflow: PMWorkItem[] = [
   {
-    h: 'Property-level books, with the entity view built from them',
-    p: 'Every property carries its own income, its own costs and its own bank position, and the portfolio view is assembled from those rather than allocated down into them. That is a chart-of-accounts and property-tracking decision made at setup — cheap to make now, expensive to retrofit once a year of history exists in the wrong shape. It is also the difference between answering "how did Maple Street do?" in a minute and answering it in a day.',
+    h: 'Maintain records at property level',
+    p: 'Record income and expenses against the relevant property and entity. This supports property-level reporting and a portfolio view built from consistent underlying records.',
   },
   {
-    h: 'Rental income recorded against the lease, not against the deposit',
-    p: 'What a tenant owes comes from their lease; what arrived in the bank is a separate fact. Where the two are treated as one, partial payments, prepaid rent and concessions all disappear into the same line and the tenant ledger stops being able to answer a dispute. Kept apart, the receivable is real, the aging means something, and a delinquency conversation starts from a schedule rather than from a search.',
+    h: 'Keep tenant charges separate from receipts',
+    p: 'Record rent and other charges using the approved lease information, then apply receipts and credits to the tenant ledger. This makes outstanding balances easier to review.',
   },
   {
-    h: 'Security deposits carried as a liability, never as income',
-    p: 'Deposits held are the tenant’s money and are often subject to rules about how they are held. Sitting in operating cash and in income, they overstate both, and the error compounds with every new lease — it is one of the first things a lender or a buyer looks at. We keep the deposit ledger per tenant and reconcile it to the account that holds it. How that account itself must be held, and what may be deducted at move-out, is a question for your managing broker or counsel.',
+    h: 'Track security deposits with supporting records',
+    p: 'Maintain tenant-level deposit balances and reconcile them to the relevant account records. Handling and return requirements should be confirmed under the applicable jurisdiction and engagement.',
   },
   {
-    h: 'Vendor invoices coded to the property before they are approved',
-    p: 'An invoice that reaches approval without a property and a category attached gets approved on the amount alone, and the coding is guessed afterwards by someone reading a vendor name. Captured, coded and routed with the property already on it, the approver is approving a fact rather than reconstructing one. The release of payment stays entirely with your team — we prepare the queue, you pay it.',
+    h: 'Code vendor invoices before approval',
+    p: 'Record the property, expense category and supporting details before routing invoices through the client’s approval process. Payment approval and release follow the agreed controls.',
   },
   {
-    h: 'Recoverable costs identified as they post, not at reconciliation',
-    p: 'Whether a cost is recoverable, from which tenants, under which pool and subject to which cap or exclusion is knowable at the moment it is coded and largely unknowable a year later. Decided as it posts, the annual CAM or operating-expense reconciliation becomes a report that already exists. Decided at reconciliation time, it becomes an archaeology project carried out under a deadline with a tenant waiting.',
+    h: 'Maintain detail for recoverable expenses',
+    p: 'Where costs are recoverable under the lease, retain the coding and supporting information needed to prepare the relevant CAM or operating-expense schedules.',
   },
   {
-    h: 'Owner statements prepared with their own supporting detail',
-    p: 'An owner statement with no backing is a number to be trusted or argued with. Prepared with the transaction detail, the reconciliation and the open items attached, it is a document that answers itself — which is what actually reduces the volume of owner email. Where a figure is genuinely unresolved it is named on the statement rather than smoothed into an accrual and discovered later.',
+    h: 'Prepare owner statements from reconciled records',
+    p: 'Owner statements should tie back to the property ledger and include the supporting detail agreed for the engagement. Open or unresolved items should be identified for review.',
   },
   {
-    h: 'Management fees and owner draws posted as their own events',
-    p: 'The fee you earn and the distributions an owner takes are transactions inside books that belong to the owner, and both get read closely. Calculated on a stated basis, posted on a schedule and shown separately from operating activity, they stop being the line an owner asks about every month.',
+    h: 'Record management fees and owner transactions clearly',
+    p: 'Post management fees, owner contributions and distributions as separate transactions using the agreed accounting treatment, so they can be identified in reporting.',
   },
   {
-    h: 'Month-end that reconciles rather than reconstructs',
-    p: 'Bank, deposit and escrow accounts reconciled monthly, recurring journals posted, property accounts checked and anything unresolved listed by name. A close done this way takes the same work every month. A close done at reporting time takes however long the worst surprise takes, which is why it is always the growth month that breaks.',
+    h: 'Close the month and report exceptions',
+    p: 'Complete the agreed reconciliations, review unusual balances and prepare the monthly reporting package. List items that need client clarification rather than leaving them unexplained.',
   },
+]
 ];
 
 /**
@@ -272,68 +263,70 @@ export const workflow: PMWorkItem[] = [
  */
 export const locality = {
   lead:
-    'Property management is a local business run under local rules, and the rules that matter most here — how client or tenant money must be held, who may hold it, and what a licensed agent is answerable for — are not ours to interpret in any market. What we do is the same in all three: keep the ledger so that whoever is answerable can see the position at any point, and reconcile it to the account that actually holds the money.',
+    'Property management requirements differ by jurisdiction and by the type of property or account involved. The accounting process should keep transactions, balances and supporting records clear, while jurisdiction-specific questions are confirmed with the client’s qualified local advisers.',
   markets: [
     {
       region: 'United States',
       href: '/markets/united-states',
       calls: 'Property management companies and brokerages',
       body:
-        'Trust and security-deposit handling is set at state level and your managing broker carries it. Our side is the deposit ledger per tenant, the reconciliation to the account holding it, and property-level books that let one building be pulled out of a portfolio intact. Which state rules apply, and how the account must be held, is your broker, your counsel and your CPA.',
+        'Support can include property-level books, tenant and deposit ledgers, reconciliations and owner reporting. State-specific requirements for trust accounts and security deposits should be confirmed with the client’s broker or qualified adviser.',
     },
     {
       region: 'United Kingdom',
       href: '/markets/united-kingdom',
       calls: 'Letting agents, block managers and managing agents',
       body:
-        'A UK reader is managing blocks and tenancies rather than "doors", and the money held for landlords and leaseholders is not the agent’s own. We keep those balances visible and reconciled rather than netted into the agency’s cash. Which client-money scheme applies to you, and who signs off the annual accounts a leaseholder receives, stays with your own qualified accountant and your scheme.',
+        'Accounting records can track landlord, tenant and property activity separately and support regular reporting. Client-money and other jurisdiction-specific obligations should be confirmed with the relevant qualified adviser.',
     },
     {
       region: 'Australia',
       href: '/markets/australia',
       calls: 'Real estate agencies and property management departments',
       body:
-        'An Australian agency runs rent and outgoings through accounts it holds for landlords, and the licensed agent is answerable for them. We keep the tenant and landlord ledgers and reconcile them to the account; the licence, the audit of it and the state rules that govern it stay with the agency and its own auditor.',
+        'Support can include rent and landlord ledgers, reconciliations and property-level reporting. Requirements that apply to the agency, trust accounts or licensing should be confirmed with the relevant local professional.',
     },
   ],
+}
 };
 
 /** Written from this reader's own exposure, not from a generic list. */
 export const boundaries = [
-  'We never hold, release or transfer your money, your owners’ money or a tenant’s deposit. We prepare the payment queue; your team releases it.',
-  'We do not decide whether a trust, client-money or deposit account is being held correctly. That is your managing broker, your scheme or your counsel.',
-  'We do not deduct from, or advise on deductions from, a security deposit at move-out.',
-  'We take no position on a lease, an eviction, a notice or a tenant dispute. We keep the ledger the position is argued from.',
-  'We do not sign, review or take final responsibility for a tax return. We prepare the records and schedules your CPA works from.',
-  'We give no tax planning, entity-structure, cost-segregation or 1031 advice, in any phrasing.',
-  'We do not implement, configure, migrate or administer Yardi, AppFolio, Buildium, QuickBooks or anything else, and we hold no vendor certification.',
-  'We do not set your management fee, your rents or your owner splits. We post what you have agreed.',
+  'Payment approvals and release follow the client’s documented process and assigned authorisations.',
+  'Responsibility for holding or returning tenant deposits depends on the account arrangement and applicable local requirements.',
+  'Lease interpretation, eviction matters and tenant disputes should be handled by the client’s qualified legal or property professionals.',
+  'Tax positions and tax-return sign-off should be agreed with the client and the relevant tax professional as part of the engagement.',
+  'Software implementation or specialist configuration is not assumed; support for a specific system is confirmed during scoping.',
+  'Management fees, rents, owner allocations and other commercial decisions are based on information and instructions approved by the client.',
+]
 ];
 
 /** Four phases in this reader's language. Same rail, different vocabulary. */
 export const processPhases = [
   {
     n: '01',
-    title: 'One property, one month',
-    body: 'We take a single property and a single closed month, in your system and your formats, and produce what the owner would actually receive. Nothing else moves until you have compared it against what you produce today.',
+    title: 'Review a sample property and month',
+    body: 'Review the existing records, reporting format, systems and recurring tasks to understand the scope before work begins.',
   },
   {
     n: '02',
-    title: 'Set the structure',
-    body: 'Property tracking, the chart of accounts, the deposit and escrow ledgers, the recoverable split and the owner statement format are agreed in writing. This is the phase that decides whether year two is a report or a reconstruction.',
+    title: 'Agree the records and workflow',
+    body: 'Confirm the property structure, coding rules, reconciliations, reporting format, access and review responsibilities.',
   },
   {
     n: '03',
-    title: 'Run alongside',
-    body: 'We process, code, reconcile and prepare while your team keeps doing the same, and the two outputs are compared. Discrepancies are cheap here and expensive after the handover.',
+    title: 'Process and compare',
+    body: 'Complete the agreed accounting tasks and review the output with your team so questions and adjustments are addressed early.',
   },
   {
     n: '04',
-    title: 'You keep the approvals',
-    body: 'Steady state: we deliver the close, the statements and the schedules on an agreed cycle. Payment release, owner and tenant relationships, and every judgement call stay with you. That boundary does not move.',
-    // The accent is spent here, on the phase where the boundary sits.
+    title: 'Move to the agreed monthly cycle',
+    body: 'Once the process is confirmed, deliver reconciliations, statements and reporting on the agreed schedule, with review and approvals assigned as documented.',
     accent: true,
   },
+];
+
+export const services:
 ];
 
 export const services: PMServiceCard[] = [
@@ -350,43 +343,44 @@ export const services: PMServiceCard[] = [
 
 export const faqs = [
   {
-    question: 'Do you hold or move any of our money, or our owners’ money?',
+    question: 'What property management accounting work can be supported?',
     answer:
-      'No, and this is the boundary we are least flexible about. We prepare the payment queue, the deposit ledger and the reconciliations. Every release of money — to a vendor, to an owner, from a deposit — is executed by your team with your own credentials and your own approvals. We are never a signatory and never hold banking control.',
+      'Depending on the agreed scope, work may include property-level bookkeeping, tenant and owner ledgers, accounts payable and receivable, bank and account reconciliations, month-end close, owner statements and CAM or other recoverable-cost schedules.',
   },
   {
-    question: 'Can you work in Yardi, AppFolio, Buildium or Propertyware?',
+    question: 'Can you work with our property management software?',
     answer:
-      'Our team has experience with Yardi, including Voyager and Breeze, and with QuickBooks, Xero, Sage and NetSuite. Where you run something else we would confirm at scoping whether we can genuinely work in it rather than assume, and if the answer is no we would tell you. What we do not do is implement, configure, migrate or administer any of them, and we hold no vendor certification — that is a different profession, and a provider offering both is asking you to take their word on the setup and on the work done inside it.',
+      'Systems may include Yardi, QuickBooks, Xero, Sage and NetSuite. The exact product, access requirements and workflow should be confirmed during scoping before work is agreed.',
   },
   {
-    question: 'How do you make sure security deposits are handled correctly?',
+    question: 'How are security deposit records handled?',
     answer:
-      'We keep the deposit ledger per tenant, carry it as a liability rather than as income, and reconcile it monthly to the account that holds it — so the balance you are answerable for is visible at any point rather than at move-out. What we do not do is determine whether the account itself is held correctly, whether interest is owed, or what may be deducted at move-out. Those are set by your jurisdiction and belong to your managing broker or counsel.',
+      'The accounting scope can include maintaining tenant-level deposit balances and reconciling them to the relevant account records. Requirements for holding, interest or returning deposits vary, so those responsibilities need to be confirmed for the relevant jurisdiction and engagement.',
   },
   {
-    question: 'We manage for several owners. Can you keep them properly separate?',
+    question: 'Can you keep multiple owners and properties separate?',
     answer:
-      'That separation is the setup, not a reporting step at the end. Each property carries its own books and the owner and portfolio views are assembled upward from them, so one owner’s properties can be reported, reviewed or handed over without touching anyone else’s. It also means that if an owner moves to another manager, what they take with them is a clean file rather than an extraction project.',
+      'Yes, the agreed accounting structure can track activity by property and entity, with owner statements and portfolio summaries prepared from those records. The setup depends on the client’s existing systems, chart of accounts and reporting requirements.',
   },
   {
-    question: 'Our books are behind. Do you take on cleanup, or only ongoing work?',
+    question: 'Can you help if the books are behind?',
     answer:
-      'Both, but they are scoped separately and deliberately so. A cleanup has a defined end and a defined output; recurring work has a cycle. Running them as one engagement is how a cleanup quietly becomes permanent and nobody can say whether the monthly work is on time. We would look at the current state first and tell you which of the two the real problem is.',
+      'Catch-up work can be considered as a separately scoped project. The initial review should establish the period involved, condition of the records, outstanding reconciliations and the output needed before ongoing monthly work is agreed.',
   },
   {
-    question: 'How does this compare to hiring an in-house bookkeeper?',
+    question: 'How does this work alongside an in-house team?',
     answer:
-      'The honest comparison is about what scales. Processing, coding, reconciling and statement preparation scale with the number of doors; review, owner relationships and approvals do not. An in-house hire absorbs both and becomes the single point of failure for both. This model takes the first set and leaves the second with you — and capacity moves through a lease-up or an acquisition without a hire. Where it is not the right answer is where the work is genuinely small or genuinely irregular, and we would say so at scoping.',
+      'The scope can be divided between recurring processing and reporting tasks and the internal team’s review, client communication and approvals. The division of responsibilities is agreed before work begins.',
   },
   {
-    question: 'Do you prepare our tax returns?',
+    question: 'Can you support tax preparation?',
     answer:
-      'We prepare the records, workpapers and property-level schedules a return is built from, and we work directly with your CPA. We do not sign returns, take final responsibility for them, represent anyone before a tax authority, or give tax planning, cost-segregation or 1031 advice. Those require a licensed professional and they stay with yours.',
+      'Accounting records and supporting schedules can be organised for the tax engagement. The applicable filing, review and sign-off responsibilities should be confirmed based on the jurisdiction, engagement and professionals involved.',
   },
   {
-    question: 'What does the first month actually look like?',
+    question: 'What happens before ongoing work begins?',
     answer:
-      'One property and one closed month, run in your system and your formats, producing what an owner would actually receive. You compare it against what you produce today before anything else moves. Nothing transfers on the first call and nothing moves in bulk — the point of starting this way is that both sides can judge the output against something real rather than against a proposal.',
+      'The initial review covers the properties involved, current records, systems, reporting format, access and monthly tasks. The parties then agree the scope, responsibilities and review process before recurring work starts.',
   },
+]
 ];
