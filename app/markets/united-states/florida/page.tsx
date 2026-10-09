@@ -68,7 +68,7 @@ export default function FloridaPage() {
       <PremiumHero
         subtitle="Florida Businesses"
         title="Accounting & Bookkeeping Built for Florida"
-        description="No personal income tax nuances, corporate income tax clarity, and support for Florida's fast-growing business market."
+        description="Bookkeeping and accounting support for Florida businesses, including reconciliations, month-end close, payables, receivables and reporting."
         cta={{ text: 'Get Started', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/markets/united-states' }}
         background="primary-gradient"
@@ -128,11 +128,11 @@ export default function FloridaPage() {
 
       <FAQSection subtitle="Florida Questions" items={faqs} columns={2} />
 
-      <InquirySection region="united-states" source="/markets/united-states/florida" title="Talk to Us About Your Florida Clients" lead="A free consultation, and a call that costs nothing. No personal income tax does not mean no obligations — tell us what the client base looks like." />
+      <InquirySection region="united-states" source="/markets/united-states/florida" title="Talk to Us About Your Florida Clients" lead="Tell us about your current accounting workflow, recurring reconciliations and monthly reporting needs. We can discuss a scope that fits your existing systems." />
 
       <CTABanner
-        title="Running a Business in Florida?"
-        description="Let's talk about your entity structure and growth plans."
+        title="Need Accounting Support in Florida?"
+        description="Discuss bookkeeping, reconciliations, accounts payable, accounts receivable and month-end reporting for your business."
         cta={{ text: 'Schedule Consultation', href: '/contact' }}
         background="primary"
       />
