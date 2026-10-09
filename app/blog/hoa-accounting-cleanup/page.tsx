@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting Cleanup: When Do the Books Need a Fresh Review?',
+  title: 'HOA Accounting Cleanup: When Should Books Be Reviewed?',
   description: 'A practical guide to HOA accounting cleanup, including unreconciled accounts, old balances, homeowner ledgers, AP, reserves and opening balances.',
   path: '/blog/hoa-accounting-cleanup',
 });

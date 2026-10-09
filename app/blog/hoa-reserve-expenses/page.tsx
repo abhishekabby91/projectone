@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Expenses: How Should Reserve-Funded Costs Be Tracked?',
+  title: 'HOA Reserve Expenses: How to Track Reserve Costs',
   description: 'A practical guide to tracking HOA reserve expenses, project costs, invoices, payments, transfers and reserve cash reconciliation.',
   path: '/blog/hoa-reserve-expenses',
 });

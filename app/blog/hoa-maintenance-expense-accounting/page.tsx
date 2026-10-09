@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Maintenance Expense Accounting: How Should Costs Be Tracked?',
+  title: 'HOA Maintenance Expense Tracking: A Practical Guide',
   description: 'A practical guide to tracking HOA maintenance expenses by vendor, account, property or fund, with review points for monthly financial reporting.',
   path: '/blog/hoa-maintenance-expense-accounting',
 });
