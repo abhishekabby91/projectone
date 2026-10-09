@@ -41,7 +41,7 @@ const schema = generateServiceSchema({
   description: 'Recurring bookkeeping support for homeowners associations and community management companies.',
   slug: 'hoa-bookkeeping',
   basePath: '/services/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 const faqSchema = generateFAQSchema(faqs);
 const breadcrumbSchema = generateBreadcrumbSchema([
