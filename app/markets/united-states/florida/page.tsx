@@ -48,7 +48,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'united-states/florida',
   basePath: '/markets/',
-  areaServed: ['United States'],
+  areaServed: ['Florida'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([

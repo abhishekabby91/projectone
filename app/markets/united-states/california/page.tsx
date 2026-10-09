@@ -48,7 +48,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'united-states/california',
   basePath: '/markets/',
-  areaServed: ['United States'],
+  areaServed: ['California'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([
