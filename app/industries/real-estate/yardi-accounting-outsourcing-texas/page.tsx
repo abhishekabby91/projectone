@@ -140,8 +140,8 @@ export default function YardiTexasPage() {
         subtitle="Property Management Accounting"
         title="Yardi Accounting Outsourcing for Texas Property Management Companies"
         description="Owner statements, CAM reconciliations and property-level accounting support for Texas portfolios using Yardi."
-        cta={{ text: 'Get Started', href: '/contact' }}
-        ctaSecondary={{ text: 'View Industries', href: '/industries' }}
+        cta={{ text: 'Discuss Yardi Accounting', href: '/contact' }}
+        ctaSecondary={{ text: 'Property Management Accounting', href: '/industries/property-management' }}
         background="primary-gradient"
       />
 
