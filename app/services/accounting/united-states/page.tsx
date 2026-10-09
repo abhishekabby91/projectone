@@ -148,6 +148,16 @@ export default function AccountingUSPage() {
         </div>
       </section>
 
+      <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl space-y-3">
+          <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official reference for business records</h2>
+          <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Reliable accounting starts with records that support income, expenses and account balances. The IRS outlines the business records taxpayers generally need to keep for federal tax purposes.</p>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
+            <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS guidance on business recordkeeping</a></li>
+          </ul>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Accounting Services" source="/services/accounting/united-states" />
 
       <CTABanner title="Where Is the Close Process Getting Stuck?" description="Identify what is falling behind—reconciliations, journal entries or the reporting package—and the support scope can be built around the actual close process." cta={{ text: 'Discuss the Accounting Scope', href: '/contact' }} background="primary" />
