@@ -50,6 +50,18 @@ export default function HoaYearEndAccounting() {
       <tr><td>Supporting files</td><td>Statements, invoices, ledger detail and schedules are organized.</td></tr>
       <tr><td>Open questions</td><td>Missing documents and unresolved items are listed with a responsible contact.</td></tr>
       </tbody></table>
+      <h2>Year-End Review Checklist</h2>
+      <p>Before the records are sent for CPA review or finalized for the board, use this checklist to confirm the main schedules are complete.</p>
+      <table><thead><tr><th>Area</th><th>Final check</th></tr></thead><tbody>
+      <tr><td>Bank accounts</td><td>Operating and reserve reconciliations are complete and old items have explanations.</td></tr>
+      <tr><td>Assessments</td><td>Charges, payments and credits are posted to the correct homeowner accounts.</td></tr>
+      <tr><td>Receivables</td><td>The aging report agrees with the general-ledger control balance.</td></tr>
+      <tr><td>Payables</td><td>Open invoices and material expenses are reviewed for the correct period.</td></tr>
+      <tr><td>Reserves</td><td>Contributions, transfers and project costs have supporting records.</td></tr>
+      <tr><td>Financial statements</td><td>Unusual balances and material changes have been reviewed.</td></tr>
+      <tr><td>Supporting files</td><td>Statements, invoices, ledger detail and schedules are organized.</td></tr>
+      <tr><td>Open questions</td><td>Missing documents and unresolved items are listed with a responsible contact.</td></tr>
+      </tbody></table>
       <h2>Accounting vs. CPA Responsibilities</h2>
       <p>Accounting support can organize records, reconciliations and schedules. The CPA determines the professional reporting, tax and assurance work that applies to the engagement. The accounting workflow should make that review easier, not replace it.</p>
       <h2>Software and Year-End</h2>
