@@ -91,7 +91,7 @@ const faqs = [
       'Yes, CAM reconciliation and accurate owner statement preparation across multi-property portfolios is a core part of what we support for property management clients.',
   },
   {
-    question: 'Do you understand Texas-specific requirements for property management companies?',
+    question: 'Can you help prepare records for Texas business tax filings?',
     answer:
       "Texas business tax requirements depend on the entity and its circumstances. We can organize the accounting records and coordinate with your CPA or tax adviser for filing-specific questions.",
   },
