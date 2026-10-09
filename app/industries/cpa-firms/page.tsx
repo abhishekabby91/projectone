@@ -103,7 +103,7 @@ export default function CPAFirmsPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>What is actually short</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Firms Rarely Run Out of People. They Run Out of a Week.
+              Accounting and Tax Outsourcing During Peak Season.
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               A firm that is stretched in March is usually fine in July. What is missing is not headcount
@@ -138,7 +138,7 @@ export default function CPAFirmsPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Where it goes missing</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Six Shapes of the Same Problem
+              Common Capacity Gaps in CPA Firm Workflows
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               Most firms recognise one of these immediately, and the scope is built around whichever it is
