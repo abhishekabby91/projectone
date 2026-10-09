@@ -284,7 +284,6 @@ export const locality = {
         'Support can include rent and landlord ledgers, reconciliations and property-level reporting. Requirements that apply to the agency, trust accounts or licensing should be confirmed with the relevant local professional.',
     },
   ],
-}
 };
 
 /** Written from this reader's own exposure, not from a generic list. */
