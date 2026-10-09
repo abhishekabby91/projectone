@@ -32,7 +32,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaAccountingEunify() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Accounting with eUnify: What Should Be Reviewed?"
       category="HOA Software"
       description="eUnify brings community-management and financial workflows together. For an accounting team, the useful question is how homeowner activity, the general ledger, payables, banking and board reporting move through the system."
