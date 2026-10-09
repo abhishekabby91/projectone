@@ -1,5 +1,12 @@
 # Accounstone SEO Changelog
 
+## 2026-10-09 (keep Next.js assets crawlable)
+
+Removed `/_next/` from the robots.txt disallow list. These files are public framework assets, including JavaScript and CSS used to render the site; blocking the entire path can prevent crawlers from fetching resources needed to render and evaluate pages. The wildcard rule and the named AI/search crawler rules now block only internal/admin/API paths, while public routes and framework assets remain crawlable.
+
+This is a crawlability correction, not a ranking guarantee. Validate the rendered `/robots.txt`, confirm assets return successfully, and run a production build before merging/deploying.
+
+
 ## 2026-09-16i (a new link-preview card — and the claim that was hiding in a PNG)
 
 The owner asked for a fresh, premium Open Graph card for the homepage:
