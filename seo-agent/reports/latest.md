@@ -89,7 +89,7 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1256 | 1 | 30 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1257 | 1 | 30 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2330 | 1 | 56 | 0 | 0 |
@@ -103,8 +103,8 @@
 | app/markets/united-kingdom/page.tsx | 90/100 | 1704 | 1 | 17 | 0 | 0 |
 | app/markets/united-kingdom/vat-returns/page.tsx | 90/100 | 671 | 1 | 8 | 0 | 0 |
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
-| app/markets/united-states/california/page.tsx | 90/100 | 512 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/florida/page.tsx | 90/100 | 503 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/california/page.tsx | 90/100 | 516 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/florida/page.tsx | 90/100 | 502 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/page.tsx | 90/100 | 1745 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
