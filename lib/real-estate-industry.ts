@@ -248,7 +248,7 @@ export const faqs = [
   {
     question: 'Can you support property management companies?',
     answer:
-      'Yes, and it is one of the two segments this page is written for. The work is property-level bookkeeping, tenant ledgers and deposits, vendor payables routed for your approval, bank and escrow reconciliation, month-end close, and owner statements with their supporting detail attached. The engagement is shaped around your existing owner reporting format rather than a standard one.',
+      'Yes. Property management has additional day-to-day workflows, including tenant and deposit ledgers, owner statements, CAM schedules and property-level close. Those workflows are covered in our dedicated Property Management Accounting page; this page focuses on accounting for property owners, investors, developers and their entities.',
   },
   {
     question: 'Do you provide property-level bookkeeping?',
@@ -258,7 +258,7 @@ export const faqs = [
   {
     question: 'Can you support HOA and community association bookkeeping?',
     answer:
-      'Yes. Assessment billing and homeowner ledgers, operating and reserve funds kept separate in the ledger, vendor payables against board-approved invoices, bank reconciliation, aged delinquency tracking, and a monthly board pack with budget-versus-actual in the board’s own budget lines. What the reserve level should be, and what the assessment should be, remain board decisions.',
+      'Yes. HOA accounting has distinct workflows for assessments, homeowner ledgers, operating and reserve funds, delinquency schedules and board reporting. Those are covered in our dedicated HOA & Community Association Accounting page, while this page focuses on property-owner, investor and entity-level accounting.',
   },
   {
     question: 'Can you handle AP and AR for property managers?',
