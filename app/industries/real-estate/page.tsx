@@ -111,7 +111,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Why this work is different</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              The Books Are Not Yours, and the Reader Is Not You
+              Real Estate Accounting Reports for Owners, Lenders and Partners
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Most business bookkeeping produces a report the business itself reads. Real estate accounting
@@ -157,7 +157,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Real Estate Accounting Scope</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Six Ways This Work Arrives
+              Real Estate Accounting Needs by Portfolio Type
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               The mechanics overlap and the reporting does not. A property manager answers to owners, a community
@@ -249,7 +249,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-4 mb-8"><>
             <Eyebrow>Managing rather than owning?</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Two Neighbouring Problems, Each With Its Own Page
+              Real Estate Ownership vs. Property Management Accounting
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               This page is written for the people who own the property. If the books you are keeping belong to
@@ -359,7 +359,7 @@ export default function RealEstateIndustryPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Common accounting workflows</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              The Accounting Work Changes With the Property
+              Accounting Workflows for Rental, Commercial and Development Properties
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               A small rental portfolio, a commercial building and a development project do not create the same accounting routine. The useful question is what has to be visible at month-end: property-level income and expense, entity balances, lender activity, tenant receivables, capital work or a clean trail into the tax file.
