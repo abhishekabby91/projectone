@@ -256,9 +256,9 @@ export const faqs = [
       'Yes, and we would treat it as the default rather than an option. A portfolio kept only at entity level cannot answer which property is performing, and rebuilding that history later — usually for a refinance, a partner or a sale — costs considerably more than setting it up correctly at the start.',
   },
   {
-    question: 'Can you support HOA and community association bookkeeping?',
+    question: 'How is real estate accounting different from HOA accounting?',
     answer:
-      'Yes. HOA accounting has distinct workflows for assessments, homeowner ledgers, operating and reserve funds, delinquency schedules and board reporting. Those are covered in our dedicated HOA & Community Association Accounting page, while this page focuses on property-owner, investor and entity-level accounting.',
+      'Real estate accounting usually follows property and entity ownership, investor or lender reporting, and portfolio-level close. HOA accounting centers on assessments, homeowner ledgers, operating and reserve funds, delinquency schedules and board reporting. Our dedicated HOA & Community Association Accounting page covers those association-specific workflows.',
   },
   {
     question: 'Can you handle AP and AR for property managers?',
