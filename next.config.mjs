@@ -35,6 +35,22 @@ const nextConfig = {
         destination: "/blog/hoa-accounts-receivable-aging",
         permanent: true,
       },
+      // Correct older canonical slugs to match their actual article routes.
+      {
+        source: "/blog/workflow",
+        destination: "/blog/hoa-accounting-workflow",
+        permanent: true,
+      },
+      {
+        source: "/blog/cash-vs-accrual",
+        destination: "/blog/hoa-cash-vs-accrual-accounting",
+        permanent: true,
+      },
+      {
+        source: "/blog/unapplied-payments",
+        destination: "/blog/hoa-unapplied-payments",
+        permanent: true,
+      },
       // Merged into the guide 2026-08-21 - the two pages had near-identical
       // content (see docs/CONTENT-REGISTRY.md). The guide's cost coverage
       // was extended with the blog's unique "Cost Ranges" section before
