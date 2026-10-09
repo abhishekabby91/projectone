@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Unapplied HOA Payments: How Should They Be Reviewed?',
   description: 'Learn what unapplied HOA payments are, why they occur, and how accounting teams can investigate and clear them without distorting homeowner balances.',
-  path: '/blog/unapplied-payments',
+  path: '/blog/hoa-unapplied-payments',
 });
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       description="An unapplied payment means money has been received but has not been correctly connected to the intended homeowner account or charge."
       publishedDate="2026-10-08"
       section="blog"
-      slug="unapplied-payments"
+      slug="hoa-unapplied-payments"
       inquiryTitle="Tell Us About the Work You Need Support With"
       inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >
