@@ -345,7 +345,7 @@ export default function PropertyManagementPage() {
           </></Reveal>
           <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
-              { name: 'Yardi accounting', href: '/technology/yardi' },
+              { name: 'Yardi accounting in Texas', href: '/industries/real-estate/yardi-accounting-outsourcing-texas' },
               { name: 'QuickBooks accounting', href: '/technology/quickbooks' },
               { name: 'Xero accounting', href: '/technology/xero' },
               { name: 'Real estate accounting', href: '/industries/real-estate' },
