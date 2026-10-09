@@ -4,6 +4,8 @@ Status: working editorial map, created 2026-10-09. This is a qualitative intent 
 
 ## Purpose and rules
 
+Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BENCHMARK.md`](./COMPETITOR-SEO-BENCHMARK.md). That file is a qualitative review of public pages surfaced in searches, not a verified ranking report or a source for unsubstantiated claims.
+
 - Main commercial market: United States. Keep relevant UK and Australian service/market pages; do not force US language onto them.
 - Delivery location: New Delhi, India. Describe this accurately as the delivery base, not as the target market for US services.
 - Give each indexable URL one primary search intent and a small set of close supporting terms. A page can rank for related variants; do not create a page for every wording variation.
