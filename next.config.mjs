@@ -14,6 +14,12 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Preserve old Yardi technology URLs and send visitors to the platform overview.
+      {
+        source: "/technology/yardi",
+        destination: "/technology",
+        permanent: true,
+      },
       // HOA guides consolidated in October 2026 after reviewing topic overlap.
       {
         source: "/blog/hoa-monthly-close-process",
