@@ -11,7 +11,7 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. The 
 - **Core services:** bookkeeping, accounting, tax preparation, accounts payable, accounts receivable, payroll and related accounting support.
 - **Delivery model:** work is performed by the delivery team and integrated into the client's existing systems and review process.
 - **Geography:** the company can support clients across markets; dedicated market pages explain market-specific workflows.
-- **Important boundary:** client-side judgement, approvals, signatures, filing authority and advisory decisions remain with the client or their licensed adviser where applicable.
+- **Engagement scope:** responsibilities, review points and approval steps are agreed for each engagement and follow the client's operating requirements.
 
 ## Main pages
 
