@@ -126,6 +126,22 @@ export default function FloridaPage() {
         </div>
       </section>
 
+
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-xl font-bold text-primary mb-3">Related accounting workflows</h2>
+          <p className="text-muted leading-relaxed mb-5">
+            Different businesses need different accounting routines. Explore the service pages that best match your work.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/industries/real-estate" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Real estate accounting</Link>
+            <Link href="/industries/property-management" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Property management accounting</Link>
+            <Link href="/industries/cpa-firms" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">CPA firm support</Link>
+            <Link href="/services/bookkeeping/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">U.S. bookkeeping support</Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Florida Questions" items={faqs} columns={2} />
 
       <InquirySection region="united-states" source="/markets/united-states/florida" title="Talk to Us About Your Florida Clients" lead="Tell us about your current accounting workflow, recurring reconciliations and monthly reporting needs. We can discuss a scope that fits your existing systems." />
