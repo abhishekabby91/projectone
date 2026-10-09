@@ -44,9 +44,9 @@ export const metadata: Metadata = genMeta({
 });
 
 const serviceSchema = generateServiceSchema({
-  name: 'Accounting, Bookkeeping and Tax Support for Real Estate and Property Management',
+  name: 'Real Estate Accounting and Bookkeeping Outsourcing',
   description:
-    'Property and entity-level bookkeeping, investor and lender reporting, AP/AR, reconciliations, month-end close and tax preparation support for property owners, real estate investors, developers and commercial operators.',
+    'Property- and entity-level bookkeeping, investor and lender reporting, accounts payable and receivable, reconciliations, and month-end close preparation for property owners, real estate investors, developers and commercial operators.',
   slug: 'real-estate',
   basePath: '/industries/',
 });
@@ -129,9 +129,7 @@ export default function RealEstateIndustryPage() {
               breaks a property portfolio&rsquo;s accounting. Structure is.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              The recurring accounting scope covers processing, coding, reconciliation, closing and preparation of the
-              owner or the board reads &mdash; and leave every approval, every release of money and every
-              judgement with your team.
+              The recurring accounting scope covers transaction processing, coding, reconciliations, month-end close and preparation of the reports owners, lenders or boards need to review. Your team retains approvals, payment releases and accounting judgments.
             </p>
           </></Reveal>
           <Reveal delay={0.16} className="lg:pt-10">
