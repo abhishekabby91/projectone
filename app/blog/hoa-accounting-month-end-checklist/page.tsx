@@ -105,6 +105,19 @@ export default function HoaMonthEndChecklist() {
       </ol>
       <p>Where practical, the person preparing reconciliations and reports should not be the only person approving payments or reviewing the final package. The association should set responsibilities based on its size, staffing and existing controls.</p>
 
+      <h2>Suggested Order for the Monthly Close</h2>
+      <p>A checklist is easier to use when it follows a repeatable sequence. The order may vary by software and association, but a practical workflow is:</p>
+      <ol>
+        <li>Collect bank statements and confirm that all known transactions are recorded.</li>
+        <li>Reconcile operating and reserve bank accounts, then investigate old or unexplained items.</li>
+        <li>Review assessment postings, homeowner balances, credits and unapplied payments.</li>
+        <li>Review vendor invoices, payment status, expense coding and material liabilities.</li>
+        <li>Check reserve contributions, transfers and project expenses against supporting records.</li>
+        <li>Compare actual results with the budget and prior periods; document material variances.</li>
+        <li>Prepare the financial reports and a short list of unresolved items for the manager or board reviewer.</li>
+      </ol>
+      <p>Where practical, the person preparing reconciliations and reports should not be the only person approving payments or reviewing the final package. The association should set responsibilities based on its size, staffing and existing controls.</p>
+
       <h2>Simple HOA Month-End Checklist</h2>
       <table>
         <thead><tr><th>Area</th><th>Review</th></tr></thead>
