@@ -241,6 +241,14 @@ export default function TaxPrepUSPage() {
         exclude="/services/tax-preparation/united-states"
         background="input"
       />
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. tax preparation, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced U.S. Tax Preparation Support Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced U.S. tax preparation support can include organizing client-provided tax documents, preparing return data, completing defined return-preparation steps and assembling supporting workpapers for review. The forms covered, software used, review responsibilities and filing workflow should be agreed for each engagement and handled in line with applicable requirements.</p>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Tax Preparation" source="/services/tax-preparation/united-states" />
 
       <CTABanner title="Where Is Tax Season Putting Pressure on Your Team?" description="Tell us which preparation tasks are building up and whether the real bottleneck is documents, preparation or review." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
