@@ -30,14 +30,14 @@ const PATH = '/industries/cpa-firms';
 export const metadata: Metadata = genMeta({
   title: 'Outsourced Accounting Support for CPA Firms',
   description:
-    'Preparation capacity for CPA firms: busy-season overflow, client cleanup, CAS production, PBC and workpapers. Review, signature and judgement stay with you.',
+    'Preparation capacity for CPA firms: busy-season overflow, client cleanup, CAS production, PBC and workpapers. Review, signature and judgment stay with you.',
   path: PATH,
 });
 
 const serviceSchema = generateServiceSchema({
   name: 'Outsourced Preparation Capacity for CPA Firms',
   description:
-    'Busy-season overflow, client bookkeeping cleanup, CAS production, audit and PBC support, and staff augmentation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgement retained by the firm.',
+    'Busy-season overflow, client bookkeeping cleanup, CAS production, audit and PBC support, and staff augmentation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgment retained by the firm.',
   slug: 'cpa-firms',
   basePath: '/industries/',
   areaServed: ['United States'],
@@ -68,7 +68,7 @@ export default function CPAFirmsPage() {
       <PremiumHero
         subtitle="For US CPA firms"
         title="Preparation Capacity for CPA Firms, Without Giving Up Review"
-        description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgement stays with your firm."
+        description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
@@ -198,7 +198,7 @@ export default function CPAFirmsPage() {
       <ProcessFlow
         phases={handoff}
         eyebrow="How the handoff works"
-        title="Four Steps, and Your Judgement Never Moves"
+        title="Four Steps, and Your Judgment Never Moves"
         lead="The handoff is a documented process rather than a briefing call, because the things that make a file cheap to review are exactly the things nobody writes down."
       />
 
