@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-assessment-receivables-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-budget-to-actual-reports', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-board-financial-package', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-financial-statements-board-review', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-expenses', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-vendor-1099-tracking', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-quickbooks', priority: 0.75, changeFrequency: 'monthly' },
