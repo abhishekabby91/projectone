@@ -68,7 +68,7 @@ export default function TexasPage() {
       <PremiumHero
         subtitle="Texas Businesses"
         title="Accounting & Bookkeeping Built for Texas"
-        description="Franchise tax awareness, no state income tax nuances, and support across Houston, Dallas, and Austin."
+        description="Bookkeeping and accounting support for Texas businesses, including reconciliations, month-end close, payables, receivables and reporting."
         cta={{ text: 'Get Started', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/markets/united-states' }}
         background="primary-gradient"
@@ -149,11 +149,11 @@ export default function TexasPage() {
       </section>
 
 
-      <InquirySection region="united-states" source="/markets/united-states/texas" title="Talk to Us About Your Texas Clients" lead="A free consultation, and a call that costs nothing. Franchise tax, no state income tax, and sales tax that still has to be tracked as it posts — tell us where the work sits." />
+      <InquirySection region="united-states" source="/markets/united-states/texas" title="Talk to Us About Your Texas Clients" lead="Tell us about your business, current accounting workflow and the reports your team needs each month. We can discuss a scope that fits your existing systems." />
 
       <CTABanner
-        title="Running a Business in Texas?"
-        description="Let's talk about your specific setup — city, industry, and entity structure."
+        title="Need Accounting Support in Texas?"
+        description="Discuss bookkeeping, reconciliations, accounts payable, accounts receivable and month-end reporting for your business."
         cta={{ text: 'Schedule Consultation', href: '/contact' }}
         background="primary"
       />
