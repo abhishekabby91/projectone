@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { markets, technologies, industries, regions, serviceRegions } from '@/lib/data';
+import { technologies, industries, regions, serviceRegions } from '@/lib/data';
 import RegionFlag from '@/components/region-flag';
 
 interface NavChild { label: string; href: string; }
@@ -60,7 +60,7 @@ export default function Navbar() {
       { label: 'Case Studies', href: '/resources/case-studies' },
       { label: 'Blog', href: '/blog' },
     ]},
-    { label: 'Markets', href: '/markets', children: markets.map((m) => ({ label: m.name, href: `/markets/${m.slug}` })) },
+
     { label: 'Compliance', href: '/compliance' },
     { label: 'About', href: '/about' },
   ];
