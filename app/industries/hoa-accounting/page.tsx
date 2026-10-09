@@ -518,6 +518,17 @@ export default function HoaAccountingPage() {
         </div>
       </section>
 
+      <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl space-y-3">
+          <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official and industry references</h2>
+          <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Use these references for the specific tax and reserve-planning topics they cover. They do not replace advice for an individual association.</p>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
+            <li><a href="https://www.irs.gov/forms-pubs/about-form-1120-h" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS guidance on Form 1120-H for homeowners associations</a></li>
+            <li><a href="https://www.caionline.org/advocacy/public-policies/reserve-study-and-funding/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">Community Associations Institute reserve study and funding guidance</a></li>
+          </ul>
+        </div>
+      </section>
+
       <InquirySection
         source={PATH}
         title="Send Us One Association and One Month"
