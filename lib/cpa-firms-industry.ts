@@ -194,7 +194,7 @@ export const handoff = [
 /** The trust anchor. Written from this ICP's own boundary list. */
 export const boundaries = [
   'We never sign, review or take final responsibility for a return or an audit file. Those belong to your licensed staff under Circular 230, and no volume or price changes that.',
-  'We never represent a client before the IRS or any tax authority, and nobody here holds a Form 2848.',
+  'Authority-facing responsibilities, including any representation or authorization requirements, are confirmed for each engagement and handled in accordance with applicable requirements.',
   'We take no tax position and make no audit judgement. Where the documents point more than one way, it comes to you with what we established and what we could not.',
   'White-label means we work inside your process, your formatting and your branding. It does not make us a party to your engagement, and we would never describe it that way to anyone.',
   'We give no advice to your clients and make no client-facing contact unless your firm has specifically asked and defined what that means.',
