@@ -4284,3 +4284,12 @@ Added the first five Property Management supporting guides:
 Updated the Property Management industry pillar with a guide section linking to the new articles. Updated the blog index and sitemap so the new pages are discoverable.
 
 The cluster remains expandable and should grow from real search intent and workflow gaps rather than a fixed page count. No deployment or live Search Console changes were made in this pass.
+
+## 2026-10-09 — Canonical internal links and real estate intent alignment
+
+- Updated the HOA industry pillar to link directly to the canonical accounts-receivable-aging, accounts-payable and year-end-accounting guides instead of retired URLs that redirect.
+- Aligned the Real Estate industry page's hero heading with its accounting and bookkeeping metadata/schema, keeping tax support secondary to the page's primary intent.
+- Audited all 37 active HOA article files for links to the four retired HOA article URLs and three older short-slug routes; no such links were found in those articles.
+- Rechecked key industry pages and both AI-readable reference files for generic service URLs that redirect and retired HOA article links; none were found.
+- Sitemap last-modified dates are generated from Git history. Do not edit them manually; regenerate with the repository script during a local content pass before deployment.
+- Production build/deployment remains unverified while Vercel reports the build-rate limit.
