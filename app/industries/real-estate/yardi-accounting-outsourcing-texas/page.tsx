@@ -96,9 +96,9 @@ const faqs = [
       "Texas business tax requirements depend on the entity and its circumstances. We can organize the accounting records and coordinate with your CPA or tax adviser for filing-specific questions.",
   },
   {
-    question: 'How do you handle trust accounting compliance?',
+    question: 'How do you support trust-account recordkeeping?',
     answer:
-      'We maintain clear separation between owner/trust funds and operating funds, and structure reconciliations to support the trust accounting compliance your property management business requires.',
+      'We follow your documented workflow for separating owner or trust funds from operating funds and preparing the related reconciliations. Your team confirms the procedures and requirements that apply to the portfolio.',
   },
   {
     question: 'Can you support a multi-property or multi-entity portfolio?',
