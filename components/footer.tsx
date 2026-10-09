@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, MapPin } from 'lucide-react';
-import { companyInfo, regions, serviceRegions, technologies, industries } from '@/lib/data';
+import { companyInfo, regions, serviceRegions, technologies, industries, markets } from '@/lib/data';
 import SocialIcon from '@/components/social-icon';
 import CookieSettingsButton from '@/components/cookie-settings-button';
 import { registrationStates } from '@/lib/company-registration';
@@ -38,6 +38,10 @@ export default function Footer() {
           { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
           { name: 'Back Office Support', href: '/solutions/back-office-support' },
           { name: 'All Solutions', href: '/solutions' },
+        ]},
+        { title: 'Markets', links: [
+          ...markets.map((market) => ({ name: market.name, href: `/markets/${market.slug}` })),
+          { name: 'All Markets', href: '/markets' },
         ]},
       ],
     },
