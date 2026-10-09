@@ -501,6 +501,16 @@ export default function PropertyManagementPage() {
         </div>
       </section>
 
+      <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl space-y-3">
+          <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official reference for rental property records</h2>
+          <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Rental property reporting may involve income, expenses and supporting records. The IRS provides federal tax guidance for residential rental property; property management accounting requirements can vary by portfolio and agreement.</p>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
+            <li><a href="https://www.irs.gov/forms-pubs/about-publication-527" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS Publication 527: Residential Rental Property</a></li>
+          </ul>
+        </div>
+      </section>
+
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
