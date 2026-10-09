@@ -332,6 +332,19 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">CPA firm outsourcing, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Work Can a CPA Firm Outsource?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">A CPA firm may outsource defined preparation tasks such as bookkeeping, account reconciliations, cleanup work, tax-return data preparation, supporting schedules and workpaper organization. The firm sets the workflow and review standards, while professional judgment, client advice, final review and sign-off remain with the appropriately authorized professionals as required.</p>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Preparation capacity</h3><p className="mt-2 text-sm leading-relaxed text-muted">Assign a defined recurring workload or a backlog slice with clear instructions.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Review-ready workpapers</h3><p className="mt-2 text-sm leading-relaxed text-muted">Follow the firm’s templates, naming rules, documentation standards and handoff process.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Defined review boundaries</h3><p className="mt-2 text-sm leading-relaxed text-muted">Agree who handles exceptions, client communication, professional decisions and final approval.</p></div>
+          </div>
+        </div>
+      </section>
+
       <InquirySection
         region="united-states"
         source={PATH}
