@@ -357,7 +357,7 @@ export const faqs = [
   {
     question: 'Can you tell us whether our reserves are adequately funded?',
     answer:
-      'No, and anybody who offers to on a marketing page is overreaching. Reserve adequacy is a conclusion drawn from a reserve study by a specialist, and the funding decision is the board’s. What we do is make the position legible: operating and reserve held as distinct funds, transfers recorded as transfers, and the balance readable on any day of the year rather than at the point somebody needs to spend it.',
+      'Reserve adequacy is determined through a reserve study by a qualified specialist, and the funding decision belongs to the board. Our role is to keep operating and reserve activity clearly separated, record transfers correctly, and maintain balances that can be reviewed throughout the year.',
   },
   {
     question: 'Will you handle collections on delinquent accounts?',
