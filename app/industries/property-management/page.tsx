@@ -73,7 +73,7 @@ export default function PropertyManagementPage() {
       <PremiumHero
         subtitle="Property management companies"
         title="Property Management Accounting & Bookkeeping Outsourcing"
-        description="Property-level books, owner statements, tenant and deposit ledgers, CAM recovery, AP/AR and a month-end that reconciles rather than reconstructs. Every approval and every release of money stays with your team."
+        description="Accounting support for property managers: property-level books, tenant and deposit ledgers, owner statements, accounts payable and receivable, CAM recovery schedules, reconciliations and month-end reporting."
         cta={{ text: 'Discuss Property Management Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
@@ -107,7 +107,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Why this work is different</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              You Are Keeping Books That Belong to Somebody Else
+              Property accounting has to reconcile at the property level
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               That single fact drives everything else. An owner statement goes to a person who did not see the
@@ -147,7 +147,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Start where it hurts</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Which of These Is Happening to You?
+              Where property accounting workflows need support
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               Nobody goes looking for outsourced accounting. They go looking because one thing is late, wrong or
@@ -187,7 +187,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Property Management Accounting Scope</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Six Kinds of Portfolio, One Underlying Problem
+              Accounting requirements vary across property portfolios
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               A residential manager answers to owners about a rent roll that changes monthly. A commercial
@@ -226,7 +226,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>The work itself</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              How Property Management Books Are Kept
+              From transaction posting to month-end reporting
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Eight decisions that separate a portfolio whose accounting scales from one that has to be
@@ -320,7 +320,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-4 mb-8"><>
             <Eyebrow>Where you operate</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              The Rules Are Local. The Ledger Discipline Is Not.
+              Local requirements, consistent accounting records
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">{locality.lead}</p>
           </></Reveal>
@@ -346,7 +346,7 @@ export default function PropertyManagementPage() {
         phases={processPhases}
         eyebrow="How it works"
         title="One Property First, Then the Portfolio"
-        lead="Nothing transfers on the first call and nothing moves in bulk. A single property runs first, in your system and your formats, so both sides can judge the output against something real."
+        lead="Where practical, onboarding can begin with a defined property or reporting cycle. This gives both sides a chance to review the records, formats, access requirements and expected outputs before expanding the scope."
       />
 
       {/* Industry × software context without creating a thin keyword page. */}
@@ -355,10 +355,10 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Software in the workflow</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Property Management Accounting Is More Than Posting Rent
+              Keep property records connected to the accounting ledger
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
-              The platform matters because the accounting structure lives inside it. Whether the portfolio runs in Yardi, QuickBooks, Xero or another system, the recurring work still has to connect tenant ledgers, deposits, property expenses, owner reporting and the month-end reconciliation.
+              Property management platforms and general accounting systems each hold part of the monthly picture. The process needs to connect rent and tenant activity, deposits, vendor expenses, owner reporting and reconciled ledger balances. The exact workflow depends on the systems and access available for the engagement.
             </p>
           </></Reveal>
           <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -382,7 +382,7 @@ export default function PropertyManagementPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Technology</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Accounting Inside the Existing System
+              Accounting support within your current system
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               Supported systems include Yardi, including Voyager and Breeze, along with QuickBooks, Xero, Sage
@@ -519,8 +519,8 @@ export default function PropertyManagementPage() {
       />
 
       <CTABanner
-        title="Ready to Get Owner Statements Out on Time?"
-        description="Property-level bookkeeping, owner reporting and month-end close built around your doors — with every approval and every payment release staying with your team."
+        title="Need more consistent property-level reporting?"
+        description="Discuss property-level bookkeeping, reconciliations and owner reporting based on your portfolio, existing systems and monthly reporting requirements."
         cta={{ text: 'Discuss Property Management Accounting', href: '/contact' }}
         ctaSecondary={{ text: 'HOA Accounting', href: '/industries/hoa-accounting' }}
         background="primary"
