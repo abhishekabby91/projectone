@@ -505,6 +505,19 @@ export default function HoaAccountingPage() {
         </div>
       </section>
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">HOA accounting, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced HOA Accounting Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced HOA accounting can cover assessment and homeowner ledgers, accounts payable, bank reconciliations, operating and reserve fund records, delinquency schedules and monthly financial packages for the board. The exact scope depends on the association’s governing process, accounting system and approval controls.</p>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Monthly records</h3><p className="mt-2 text-sm leading-relaxed text-muted">Keep transactions, bank activity and homeowner balances organized for review.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Board reporting</h3><p className="mt-2 text-sm leading-relaxed text-muted">Prepare recurring schedules that help the board review income, expenses and fund balances.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Approval controls</h3><p className="mt-2 text-sm leading-relaxed text-muted">Document the agreed workflow while keeping payment approvals and association decisions with authorized people.</p></div>
+          </div>
+        </div>
+      </section>
+
       <InquirySection
         source={PATH}
         title="Send Us One Association and One Month"
