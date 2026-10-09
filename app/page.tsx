@@ -15,14 +15,14 @@ import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials, trustBadges, markets } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting, Bookkeeping & Tax Outsourcing',
+  title: 'Accounting, Bookkeeping & Tax Outsourcing | Accounstone',
   description:
-    'Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Work with an experienced team that fits into your existing processes and systems.',
+    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered from India within existing workflows.',
   path: '/',
   absoluteTitle: true,
-  ogTitle: 'Accounstone | Accounting, Bookkeeping & Tax Outsourcing',
+  ogTitle: 'Accounting, Bookkeeping & Tax Outsourcing | Accounstone',
   ogDescription:
-    'Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses.',
+    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered from India within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
 });
 
