@@ -25,6 +25,16 @@ const nextConfig = {
         destination: "/blog/hoa-year-end-accounting",
         permanent: true,
       },
+      {
+        source: "/blog/hoa-vendor-invoice-processing",
+        destination: "/blog/hoa-accounts-payable",
+        permanent: true,
+      },
+      {
+        source: "/blog/hoa-delinquency-accounting",
+        destination: "/blog/hoa-accounts-receivable-aging",
+        permanent: true,
+      },
       // Merged into the guide 2026-08-21 - the two pages had near-identical
       // content (see docs/CONTENT-REGISTRY.md). The guide's cost coverage
       // was extended with the blog's unique "Cost Ranges" section before
