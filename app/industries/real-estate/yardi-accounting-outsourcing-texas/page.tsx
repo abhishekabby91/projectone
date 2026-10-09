@@ -24,15 +24,15 @@ export const metadata: Metadata = generateMetadata({
 });
 
 const overview =
-  "Property management accounting has specific demands that general bookkeeping doesn't cover well: trust accounting compliance, owner statement accuracy across dozens or hundreds of units, CAM (Common Area Maintenance) reconciliations, and month-end close across multiple properties simultaneously. Our team brings hands-on working experience with the Yardi platform — including Yardi Voyager and Yardi Breeze — to support Texas-based property management companies with accurate, compliant, and scalable accounting operations.";
+  "Property management accounting has specific demands that general bookkeeping doesn't cover well: trust accounting compliance, owner statement accuracy across dozens or hundreds of units, CAM (Common Area Maintenance) reconciliations, and month-end close across multiple properties simultaneously. Our team brings hands-on working experience with the Yardi platform — including Yardi Voyager and Yardi Breeze — to support Texas-based property management companies with consistent accounting records and repeatable workflows across the portfolio.";
 
 const benefits = [
   'Working experience with Yardi Voyager and Yardi Breeze platforms',
-  'Trust accounting support aligned with property management compliance requirements',
+  'Trust-account recordkeeping and reconciliation support based on your documented workflow',
   'Owner statement preparation and reconciliation across multi-property portfolios',
   'CAM (Common Area Maintenance) reconciliation support',
   'Multi-entity, multi-property general ledger management',
-  'Awareness of Texas-specific business tax considerations, including franchise tax reporting (Texas has no state income tax, but the franchise tax return process has its own requirements)',
+  'Accounting records organized to support your CPA or tax adviser with business reporting',
   'Bank reconciliation across multiple property accounts',
   'Scalable support during peak leasing season workload spikes',
 ];
@@ -93,7 +93,7 @@ const faqs = [
   {
     question: 'Do you understand Texas-specific requirements for property management companies?',
     answer:
-      "We're familiar with the Texas business tax environment, including that Texas has no state income tax but requires franchise tax reporting for most business entities. We work alongside your CPA or tax advisor for filing-specific guidance.",
+      "Texas business tax requirements depend on the entity and its circumstances. We can organize the accounting records and coordinate with your CPA or tax adviser for filing-specific questions.",
   },
   {
     question: 'How do you handle trust accounting compliance?',
@@ -108,7 +108,7 @@ const faqs = [
   {
     question: 'How quickly can you onboard our property management company?',
     answer:
-      "Onboarding typically takes 2-4 weeks, depending on portfolio size and the state of your existing Yardi setup. We'll assess this specifically during the initial review.",
+      "Onboarding timing depends on portfolio size, data quality, access and the condition of your existing Yardi setup. We can estimate the timeline after an initial review.",
   },
 ];
 
@@ -119,7 +119,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'yardi-accounting-outsourcing-texas',
   basePath: '/industries/real-estate/',
-  areaServed: ['US'],
+  areaServed: ['Texas'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([
@@ -139,7 +139,7 @@ export default function YardiTexasPage() {
       <PremiumHero
         subtitle="Property Management Accounting"
         title="Yardi Accounting Outsourcing for Texas Property Management Companies"
-        description="Trust accounting, owner statements, and CAM reconciliations handled by a team with hands-on Yardi platform experience."
+        description="Owner statements, CAM reconciliations and property-level accounting support for Texas portfolios using Yardi."
         cta={{ text: 'Get Started', href: '/contact' }}
         ctaSecondary={{ text: 'View Industries', href: '/industries' }}
         background="primary-gradient"
