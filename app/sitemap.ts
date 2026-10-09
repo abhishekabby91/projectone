@@ -132,7 +132,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-reserve-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-operating-vs-reserve-funds', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
-    { path: '/blog/hoa-delinquency-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-assessment-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-homeowner-ledgers', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-assessment-receivables-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
@@ -153,12 +152,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-unapplied-payments', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-maintenance-expense-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-cleanup', priority: 0.75, changeFrequency: 'monthly' },
+    // Receivables-aging guide includes delinquency-reporting coverage; old URL redirects here.
     { path: '/blog/hoa-accounts-receivable-aging', priority: 0.75, changeFrequency: 'monthly' },
-    { path: '/blog/hoa-vendor-invoice-processing', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-balance-sheet-explained', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-income-statement-explained', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-financial-reporting', priority: 0.75, changeFrequency: 'monthly' },
+    // AP guide includes invoice-processing coverage; old URL redirects here.
     { path: '/blog/hoa-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-vendor-expense-tracking', priority: 0.75, changeFrequency: 'monthly' },
     // Year-end checklist content consolidated here; former year-end-checklist URL redirects.
