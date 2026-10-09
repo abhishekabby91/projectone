@@ -103,10 +103,10 @@
 | app/markets/united-kingdom/page.tsx | 90/100 | 1704 | 1 | 17 | 0 | 0 |
 | app/markets/united-kingdom/vat-returns/page.tsx | 90/100 | 671 | 1 | 8 | 0 | 0 |
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
-| app/markets/united-states/california/page.tsx | 90/100 | 515 | 1 | 6 | 0 | 0 |
-| app/markets/united-states/florida/page.tsx | 90/100 | 501 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/california/page.tsx | 90/100 | 516 | 1 | 6 | 0 | 0 |
+| app/markets/united-states/florida/page.tsx | 90/100 | 504 | 1 | 6 | 0 | 0 |
 | app/markets/united-states/page.tsx | 90/100 | 1744 | 1 | 16 | 0 | 0 |
-| app/markets/united-states/texas/page.tsx | 90/100 | 552 | 1 | 8 | 0 | 0 |
+| app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
 | app/resources/guides/client-accounting-services-cas-guide/page.tsx | 90/100 | 1096 | 1 | 3 | 0 | 0 |
