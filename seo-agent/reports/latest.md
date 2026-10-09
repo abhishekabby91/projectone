@@ -92,10 +92,10 @@
 | app/industries/cpa-firms/page.tsx | 90/100 | 1252 | 1 | 30 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2309 | 1 | 53 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2308 | 1 | 53 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 1821 | 1 | 38 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 2224 | 1 | 29 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 1818 | 1 | 38 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2219 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 908 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
