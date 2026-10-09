@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { solutions, technologies, industries, regions, serviceRegions } from '@/lib/data';
+import { markets, technologies, industries, regions, serviceRegions } from '@/lib/data';
 import RegionFlag from '@/components/region-flag';
 
 interface NavChild { label: string; href: string; }
@@ -47,13 +47,11 @@ export default function Navbar() {
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const navRef = useRef<HTMLElement>(null);
 
-  // Markets is deliberately not a primary nav item. The market pages remain
-  // indexable and are linked from the footer and contextually from the
-  // Service x Region pages - they serve broad regional intent, not the
-  // commercial navigation path.
+  // Markets sits away from Services to keep service discovery and regional
+  // discovery distinct. Solution pages remain live and can be reached through
+  // contextual links and the footer without occupying a primary-nav slot.
   const menuItems: NavItem[] = [
     { label: 'Services', href: '/services', groups: regionServiceGroups },
-    { label: 'Solutions', href: '/solutions', children: solutions.map((s) => ({ label: s.name, href: `/solutions/${s.slug}` })) },
     { label: 'Industries', href: '/industries', children: industries.map((i) => ({ label: i.name, href: `/industries/${i.slug}` })) },
     { label: 'Technology', href: '/technology', children: technologies.map((t) => ({ label: t.name, href: `/technology/${t.slug}` })) },
     { label: 'Resources', href: '/resources', children: [
@@ -62,6 +60,7 @@ export default function Navbar() {
       { label: 'Case Studies', href: '/resources/case-studies' },
       { label: 'Blog', href: '/blog' },
     ]},
+    { label: 'Markets', href: '/markets', children: markets.map((m) => ({ label: m.name, href: `/markets/${m.slug}` })) },
     { label: 'Compliance', href: '/compliance' },
     { label: 'About', href: '/about' },
   ];
