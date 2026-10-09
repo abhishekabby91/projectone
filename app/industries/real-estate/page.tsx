@@ -390,14 +390,12 @@ export default function RealEstateIndustryPage() {
               Accounting Inside the Existing System
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Supported systems include Yardi, including Voyager and Breeze, along with QuickBooks, Xero, Sage
-              and NetSuite. Where another system is in use, support can be confirmed during scoping
-              rather than assume &mdash; and if the answer is no, we would say so.
+              Supported systems include Yardi Voyager and Breeze, along with QuickBooks, Xero, Sage
+              and NetSuite. If you use another system, we confirm fit during scoping rather than assume support.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Accounting Scope not do is implement, configure, migrate or administer accounting or property management
-              software, and we hold no vendor certification. Those are a different profession, and a provider who
-              offers both is asking you to take their word on the setup and on the work done inside it.
+              The scope is accounting work within your existing software. Implementation, configuration, migration
+              and software administration are separate tasks and are included only when specifically agreed and available.
             </p>
           </></Reveal>
           <Reveal delay={0.12}>

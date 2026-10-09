@@ -367,7 +367,7 @@ export default function PropertyManagementPage() {
               Accounting support within your current system
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Systems may include Yardi Voyager or Breeze, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
+              Systems may include Yardi Voyager or Breeze, AppFolio, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The focus is accounting and bookkeeping work within an existing system. Software implementation, migration or specialist configuration should be scoped separately and only where the relevant capability is available.
