@@ -62,6 +62,7 @@
 - Updated the CPA-firm page metadata title to **Accounting & Tax Outsourcing for CPA Firms**.
 - Updated the meta description to explicitly include outsourced accounting and tax-preparation support for US CPA firms, while retaining busy-season capacity, cleanup, CAS production and workpapers.
 - Kept the hero and page body centered on preparation capacity and review responsibility; the title change does not add unsupported service claims.
+- Reframed the real-estate page FAQ from a broad HOA-support question into a direct explanation of how real-estate accounting differs from HOA accounting, reinforcing the separate purpose of the two industry pages.
 
 ## Method and limitations
 
