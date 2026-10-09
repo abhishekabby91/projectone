@@ -35,7 +35,7 @@ export const metadata: Metadata = genMeta({
 });
 
 const serviceSchema = generateServiceSchema({
-  name: 'Outsourced Preparation Capacity for CPA Firms',
+  name: 'Accounting and Tax Outsourcing Support for CPA Firms',
   description:
     'Busy-season overflow, client bookkeeping cleanup, CAS production, audit and PBC support, and staff augmentation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgment retained by the firm.',
   slug: 'cpa-firms',
@@ -67,7 +67,7 @@ export default function CPAFirmsPage() {
 
       <PremiumHero
         subtitle="For US CPA firms"
-        title="Preparation Capacity for CPA Firms, Without Giving Up Review"
+        title="Outsourced Accounting & Tax Support for U.S. CPA Firms"
         description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
