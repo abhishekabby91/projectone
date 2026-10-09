@@ -4293,3 +4293,12 @@ The cluster remains expandable and should grow from real search intent and workf
 - Rechecked key industry pages and both AI-readable reference files for generic service URLs that redirect and retired HOA article links; none were found.
 - Sitemap last-modified dates are generated from Git history. Do not edit them manually; regenerate with the repository script during a local content pass before deployment.
 - Production build/deployment remains unverified while Vercel reports the build-rate limit.
+
+
+## 2026-10-09 (separate the Resources hub from the Guides hub)
+
+Removed the duplicated featured-guide block from `/resources`. The same featured guide remains on `/resources/guides`, where it belongs. The parent hub still links to Guides, Insights, Case Studies, blog articles, and topic destinations, so this removes repeated content without weakening the resource directory's navigation role or padding either page for a similarity score.
+
+This addresses the previously measured 29.6% overlap between `/resources` and `/resources/guides`: both pages were showing the same long featured card, and every guide link on the parent was repeated on the child. The earlier route/content notes explicitly identified the duplicated featured block as the fix. No new route or keyword target was added, so the search-intent registry does not change.
+
+Validation still required before production: run `pnpm eslint .`, `pnpm next build`, the internal-link/near-duplicate checks, and `node scripts/generate-sitemap-dates.mjs` in the full checkout. This GitHub edit does not itself verify those local checks.
