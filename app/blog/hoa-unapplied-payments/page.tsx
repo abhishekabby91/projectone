@@ -27,7 +27,7 @@ export default function Page() {
 <h2>Do Not Use Unapplied Cash to Hide a Balance</h2><p>Applying a payment to the wrong homeowner simply to clear an aging balance creates a larger problem. The supporting record should explain why the payment belongs to the account.</p>
 <h2>Monthly Review</h2><ul><li>Review the unapplied balance by payment.</li><li>Identify old items.</li><li>Match payer and account information.</li><li>Investigate unusual amounts.</li><li>Document unresolved items.</li></ul>
 <h2>Common Questions</h2><h3>Should unapplied HOA payments stay on the balance sheet?</h3><p>The accounting treatment depends on the association's system and accounting policy. The important point is that the balance should be identifiable, supported and reviewed.</p><h3>Can an accounting team clean up old unapplied payments?</h3><p>Yes, provided the team has adequate records and follows the association's approval and documentation procedures. Old items should not be cleared by guesswork.</p>
-<h2>Related HOA Accounting Resources</h2><p>See <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a>, <a href="/blog/hoa-assessment-receivables-reconciliation">assessment receivables reconciliation</a> and <a href="/blog/hoa-delinquency-accounting">HOA delinquency accounting</a>.</p>
+<h2>Related HOA Accounting Resources</h2><p>See <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a>, <a href="/blog/hoa-assessment-receivables-reconciliation">assessment receivables reconciliation</a> and <a href="/blog/hoa-accounts-receivable-aging">HOA delinquency accounting</a>.</p>
     </ArticleLayout>
   );
 }
