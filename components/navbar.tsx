@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { technologies, industries, regions, serviceRegions } from '@/lib/data';
+import { industries, regions, serviceRegions } from '@/lib/data';
 import RegionFlag from '@/components/region-flag';
 
 interface NavChild { label: string; href: string; }
