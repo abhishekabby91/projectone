@@ -123,3 +123,27 @@ These are examples of public competitor pages surfaced by searches for related s
 3. Use location pages to prove relevance through useful local context, portfolio/workflow examples, service coverage and links to the correct industry service—not by repeating the same page with a new state/county name.
 4. Do not infer ranking position from a page appearing in search results. This review is a content-pattern benchmark, not a SERP-position, traffic, backlink or conversion audit.
 
+## Live page re-check — 9 October 2026
+
+The following additional pages were reviewed during the latest content pass. They were surfaced by relevant searches; this is **not** a verified ranking-position study.
+
+- [REA — Outsourced Real Estate Accounting](https://rea.co/)
+  - The page identifies property-management software by name and lists month-end tasks such as bank/card reconciliations, AP/AR, accruals, management fees and owner distributions.
+  - It also emphasizes named account teams and working inside the client's software.
+  - **Accounstone action:** keep software claims factual and page-specific; make the handoff, review steps and monthly outputs easy to find. Do not copy REA's team size, unit counts, savings or client metrics.
+- [Analytix — Real Estate Accounting and Property Management Services](https://www.analytix.com/industry/real-estate)
+  - Connects CAM reconciliation, month-end close and owner financials to the operating needs of property managers and investors.
+  - **Accounstone action:** retain the distinct split between real-estate owner/entity accounting and day-to-day property-management accounting. Use CAM, owner statements and close terminology only where the actual scope supports it.
+- [SMRK Global — Real Estate Bookkeeping for the USA](https://smrkglobal.com/)
+  - Makes its India-based remote delivery model and service categories visible on the homepage. It also publishes numerical performance and client claims.
+  - **Accounstone action:** state the India delivery model plainly, but do not add numerical claims without internal evidence. Specific workflow descriptions are more defensible than generic claims such as “best” or “most accurate.”
+- [Dynamite Management — Best HOA Accounting Service Providers in 2026](https://dynamitemanagement.com/blog/best-hoa-accounting-service-providers-2026/)
+  - Organizes a provider comparison around service scope, pricing transparency, internal controls, geography and credentials; the publisher is itself a provider, so its rankings are not independent.
+  - **Accounstone action:** ensure HOA content explains operating-versus-reserve tracking, reconciliations, AP/AR schedules, board reporting and approval controls. Publish pricing only after the business has a stable, approved pricing model.
+
+### Implementation priorities from this review
+
+1. **No competitor copy or unsupported proof points.** Use the pages to identify the questions buyers ask, not to imitate their exact wording or metrics.
+2. **Show deliverables, not just service labels.** Explain what the client receives (for example, reconciled property records, owner-statement support, CAM schedules, aged receivables and month-end reporting) and what review happens before handoff.
+3. **Keep the industry intents separate.** HOA pages address association ledgers, assessments and operating/reserve funds; property-management pages address tenant/deposit ledgers, owner statements and property-level reporting; real-estate pages address owner/entity books, portfolio reporting and lender/investor needs.
+4. **Keep evidence current.** Search appearance is not proof of a stable ranking, and public competitor claims should not be treated as independently verified. Recheck pages before relying on prices, certifications, team size, client counts or performance claims.
