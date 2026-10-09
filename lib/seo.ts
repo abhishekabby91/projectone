@@ -80,6 +80,11 @@ export function generateMetadata(config: { title: string; description: string; p
   const ogTitle = config.ogTitle || config.title;
   const ogDescription = config.ogDescription || config.description;
   const ogImageAlt = config.ogImageAlt || config.title;
+  // Keep social metadata aligned with the page's primary market. The site is English-language,
+  // but country-specific service pages should not all announce a US social locale.
+  const locale = /(?:^|\/)united-kingdom(?:\/|$)/.test(config.path) ? 'en_GB'
+    : /(?:^|\/)australia(?:\/|$)/.test(config.path) ? 'en_AU'
+    : 'en_US';
   const robots: Metadata['robots'] = config.noindex
     ? { index: false, follow: false }
     : { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } };
@@ -91,7 +96,7 @@ export function generateMetadata(config: { title: string; description: string; p
     description: config.description,
     robots,
     alternates: { canonical },
-    openGraph: { title: ogTitle, description: ogDescription, url: canonical, siteName, locale: 'en_US', type: 'website', images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }] },
+    openGraph: { title: ogTitle, description: ogDescription, url: canonical, siteName, locale, type: 'website', images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }] },
     twitter: { card: 'summary_large_image', title: ogTitle, description: ogDescription, images: [ogImage] },
   };
 }
