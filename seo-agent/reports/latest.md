@@ -145,7 +145,7 @@
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 735 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 633 | 1 | 8 | 0 | 0 |
-| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 666 | 1 | 9 | 0 | 0 |
+| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 663 | 1 | 9 | 0 | 0 |
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 1759 | 1 | 20 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
