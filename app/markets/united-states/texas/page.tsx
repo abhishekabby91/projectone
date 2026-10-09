@@ -21,9 +21,9 @@ import {
 const PATH = '/markets/united-states/texas';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourced Accounting for Texas',
+  title: 'Accounting & Bookkeeping Services in Texas',
   description:
-    'Bookkeeping and accounting built around Texas specifics — franchise (margin) tax, no state income tax, and the Houston, Dallas and Austin markets.',
+    'Accounting and bookkeeping support for Texas businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow.',
   path: PATH,
 });
 
@@ -48,7 +48,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'united-states/texas',
   basePath: '/markets/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([

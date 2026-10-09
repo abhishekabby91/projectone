@@ -21,9 +21,9 @@ import {
 const PATH = '/markets/united-states/florida';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourced Accounting for Florida',
+  title: 'Accounting & Bookkeeping Services in Florida',
   description:
-    'Bookkeeping and accounting for Florida businesses — no state personal income tax, corporate income tax for C-Corps, and Department of Revenue sales tax.',
+    'Accounting and bookkeeping support for Florida businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow.',
   path: PATH,
 });
 
@@ -48,7 +48,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'united-states/florida',
   basePath: '/markets/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([
