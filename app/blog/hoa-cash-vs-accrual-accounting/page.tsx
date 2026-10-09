@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'HOA Cash vs. Accrual Accounting: Which Method Should Be Used?',
   description: 'A practical explanation of cash and accrual accounting for HOAs, including assessments, unpaid bills, reporting and what boards should understand.',
-  path: '/blog/cash-vs-accrual',
+  path: '/blog/hoa-cash-vs-accrual-accounting',
 });
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       description="The difference is mainly about when income and expenses are recognized. The appropriate method depends on the association's accounting framework, reporting needs and professional guidance."
       publishedDate="2026-10-08"
       section="blog"
-      slug="cash-vs-accrual"
+      slug="hoa-cash-vs-accrual-accounting"
       inquiryTitle="Tell Us About the Work You Need Support With"
       inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >

@@ -32,7 +32,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaVendor1099Tracking() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Vendor 1099 Tracking: What Should the Accounting Team Record?"
       category="HOA Accounting"
       description="Good vendor records make year-end 1099 review easier. The accounting team should maintain payment detail and supporting information without deciding tax reporting requirements on its own."

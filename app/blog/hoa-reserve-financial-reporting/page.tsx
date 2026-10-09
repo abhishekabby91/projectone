@@ -32,7 +32,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaReserveFinancialReporting() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
       description="A useful reserve report should show contributions, spending and cash clearly enough for the board to understand reserve activity without rebuilding it from bank statements."
       publishedDate="2026-10-08" section="blog" slug="hoa-reserve-financial-reporting"
       inquiryTitle="Need Clearer HOA Reserve Reports?"

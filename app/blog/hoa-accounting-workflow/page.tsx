@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Workflow: What Happens From Transaction to Monthly Close?',
   description: 'A practical HOA accounting workflow covering assessments, payments, AP, bank reconciliation, reserves, review and monthly reporting.',
-  path: '/blog/workflow',
+  path: '/blog/hoa-accounting-workflow',
 });
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       description="A good HOA accounting workflow makes it clear where transactions enter the books, how they are reviewed, and how the month is closed."
       publishedDate="2026-10-08"
       section="blog"
-      slug="workflow"
+      slug="hoa-accounting-workflow"
       inquiryTitle="Tell Us About the Work You Need Support With"
       inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >

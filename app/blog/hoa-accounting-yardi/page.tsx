@@ -32,7 +32,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaAccountingYardi() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Accounting with Yardi: What Should Be Reviewed Each Month?"
       category="HOA Accounting"
       description="For HOAs using Yardi or a related property-management workflow, the monthly accounting review should connect resident or homeowner activity, cash, payables, reserves and board reporting."
