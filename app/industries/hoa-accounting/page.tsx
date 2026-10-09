@@ -106,7 +106,7 @@ export default function HoaAccountingPage() {
           <Reveal className="space-y-4"><>
             <Eyebrow>Why this work is different</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              A Small Ledger With a Very Attentive Audience
+              Why HOA Accounting Needs Clear, Reviewable Records
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               An association has no landlord, no tenant and no rent. It has members who own their own homes, a
@@ -193,7 +193,7 @@ export default function HoaAccountingPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Start where it hurts</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Which of These Came Up at the Last Meeting?
+              Common HOA Accounting Problems Boards Need to Resolve
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               Nobody goes looking for outsourced accounting. They go looking after a board meeting went badly, or
@@ -233,7 +233,7 @@ export default function HoaAccountingPage() {
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Who we work with</Eyebrow>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              From a Twelve-Unit Board to a Managed Portfolio
+              HOA Accounting for Self-Managed Boards and Management Companies
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
               A self-managed board and a management company running forty associations have the same obligations
