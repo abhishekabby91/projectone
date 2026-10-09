@@ -17,7 +17,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/audit-support/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'Audit Support Services for CPA Firms',
+  title: 'U.S. Audit Support Services for CPA Firms',
   description: 'PBC schedules, reconciliations, rollforwards and tie-outs prepared before fieldwork. Preparation only — the opinion, planning and sampling stay yours.',
   path: PATH,
 });
