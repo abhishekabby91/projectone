@@ -18,7 +18,7 @@ const PATH = '/markets/united-states';
 export const metadata: Metadata = generateMetadata({
   title: 'U.S. Accounting, Bookkeeping & Tax Outsourcing',
   description:
-    'Accounting, bookkeeping and tax outsourcing support for U.S. accounting firms and businesses, including reconciliations, close, AP, AR, payroll and tax preparation.',
+    'Accounting, bookkeeping and tax outsourcing for U.S. firms and businesses, including reconciliations, month-end close, AP, AR, payroll and tax preparation.',
   path: PATH,
 });
 

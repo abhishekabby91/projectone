@@ -8,7 +8,7 @@ import { industries } from '@/lib/data';
 export const metadata: Metadata = genMeta({
   title: 'Industry Accounting & Bookkeeping Support',
   description:
-    'Industry-focused accounting, bookkeeping, tax and outsourcing support for CPA firms, real estate and property management, e-commerce, healthcare and technology.',
+    'Accounting, bookkeeping and tax support for CPA firms, real estate, property management, e-commerce, healthcare and technology businesses.',
   path: '/industries',
 });
 

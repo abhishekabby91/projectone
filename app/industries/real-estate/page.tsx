@@ -37,7 +37,7 @@ const depth = industryDepth['real-estate'];
 // reader who OWNS the property — investors, developers, commercial operators —
 // whose reader in turn is a lender, a partner or their own CPA.
 export const metadata: Metadata = genMeta({
-  title: 'Real Estate Accounting & Bookkeeping Services',
+  title: 'Real Estate Accounting & Bookkeeping Outsourcing',
   description:
     'Outsourced real estate accounting and bookkeeping for owners, investors and developers: property and entity books, lender reporting, AP/AR and close.',
   path: PATH,
