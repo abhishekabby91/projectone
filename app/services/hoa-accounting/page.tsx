@@ -51,7 +51,7 @@ const serviceSchema = generateServiceSchema({
   description: overview,
   slug: 'hoa-accounting',
   basePath: '/services/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 const faqSchema = generateFAQSchema(faqs);
 const breadcrumbSchema = generateBreadcrumbSchema([
