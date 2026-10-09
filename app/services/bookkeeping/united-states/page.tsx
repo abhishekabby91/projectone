@@ -148,6 +148,14 @@ export default function BookkeepingUSPage() {
         exclude="/services/bookkeeping/united-states"
         background="input"
       />
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. bookkeeping, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced Bookkeeping Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced bookkeeping commonly covers transaction categorization, bank and credit-card reconciliations, accounts payable and receivable records, cleanup of prior-period entries and preparation of month-end schedules. The exact tasks and frequency should match the client’s accounting system, source documents, chart of accounts and review requirements.</p>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Bookkeeping" source="/services/bookkeeping/united-states" />
 
       <CTABanner title="Where Is the Bookkeeping Process Getting Stuck?" description="Identify what is falling behind—reconciliations, cleanup, AP/AR, month-end or review—and the scope can start from the actual workflow." cta={{ text: 'Discuss the Bookkeeping Scope', href: '/contact' }} background="primary" />
