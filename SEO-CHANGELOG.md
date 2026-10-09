@@ -1,12 +1,5 @@
 # Accounstone SEO Changelog
 
-## 2026-10-09 — Connect the AI-readable reference files
-
-- Added a direct link from `llms.txt` to `llms-full.txt` and a reciprocal link back to the concise index, making the two files easier for crawlers and readers to discover together.
-- Kept the concise file focused on navigation and the full file focused on expanded company, service, industry and delivery context. No new claims or routes were added.
-- Production build and live response checks remain pending; do not treat this repository edit as proof of deployment.
-
-
 ## 2026-10-09 (keep Next.js assets crawlable)
 
 Removed `/_next/` from the robots.txt disallow list. These files are public framework assets, including JavaScript and CSS used to render the site; blocking the entire path can prevent crawlers from fetching resources needed to render and evaluate pages. The wildcard rule and the named AI/search crawler rules now block only internal/admin/API paths, while public routes and framework assets remain crawlable.
