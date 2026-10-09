@@ -124,13 +124,13 @@
 | app/services/accounting/united-states/page.tsx | 90/100 | 709 | 1 | 15 | 0 | 0 |
 | app/services/accounts-payable/australia/page.tsx | 90/100 | 733 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/united-kingdom/page.tsx | 90/100 | 743 | 1 | 12 | 0 | 0 |
-| app/services/accounts-payable/united-states/page.tsx | 90/100 | 982 | 1 | 15 | 0 | 0 |
+| app/services/accounts-payable/united-states/page.tsx | 90/100 | 984 | 1 | 15 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 787 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 810 | 1 | 12 | 0 | 0 |
-| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 752 | 1 | 15 | 0 | 0 |
+| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 754 | 1 | 15 | 0 | 0 |
 | app/services/audit-support/australia/page.tsx | 90/100 | 939 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-kingdom/page.tsx | 90/100 | 944 | 1 | 11 | 0 | 0 |
-| app/services/audit-support/united-states/page.tsx | 90/100 | 1046 | 1 | 15 | 0 | 0 |
+| app/services/audit-support/united-states/page.tsx | 90/100 | 1047 | 1 | 15 | 0 | 0 |
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 913 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 912 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 980 | 1 | 16 | 0 | 0 |
@@ -144,8 +144,8 @@
 | app/services/property-management-accounting/page.tsx | 90/100 | 1179 | 1 | 13 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 735 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
-| app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 632 | 1 | 8 | 0 | 0 |
-| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 665 | 1 | 9 | 0 | 0 |
+| app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 633 | 1 | 8 | 0 | 0 |
+| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 666 | 1 | 9 | 0 | 0 |
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 1759 | 1 | 20 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
