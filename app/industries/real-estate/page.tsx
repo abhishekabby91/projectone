@@ -506,6 +506,19 @@ export default function RealEstateIndustryPage() {
         </div>
       </section>
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Real estate accounting, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced Real Estate Accounting Cover?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced real estate accounting can support owners, investors and developers with property- and entity-level bookkeeping, bank reconciliations, accounts payable and receivable, expense allocations, month-end schedules and management or lender reporting. The reporting structure should reflect the ownership entities, property portfolio and requirements of the people reviewing the accounts.</p>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Property and entity books</h3><p className="mt-2 text-sm leading-relaxed text-muted">Organize transactions and balances according to the agreed property and entity structure.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Close schedules</h3><p className="mt-2 text-sm leading-relaxed text-muted">Prepare reconciliations, supporting schedules and draft reports for month-end review.</p></div>
+            <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Stakeholder reporting</h3><p className="mt-2 text-sm leading-relaxed text-muted">Build recurring reports around agreed needs of owners, partners, lenders and CPAs.</p></div>
+          </div>
+        </div>
+      </section>
+
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
