@@ -68,7 +68,7 @@ export default function CaliforniaPage() {
       <PremiumHero
         subtitle="California Businesses"
         title="Accounting & Bookkeeping Built for California"
-        description="CDTFA sales tax tracking, FTB-ready books, and a cost structure that makes sense against California's high labor market."
+        description="Bookkeeping and accounting support for California businesses, including reconciliations, month-end close, payables, receivables and reporting."
         cta={{ text: 'Get Started', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/markets/united-states' }}
         background="primary-gradient"
@@ -128,11 +128,11 @@ export default function CaliforniaPage() {
 
       <FAQSection subtitle="California Questions" items={faqs} columns={2} />
 
-      <InquirySection region="united-states" source="/markets/united-states/california" title="Talk to Us About Your California Clients" lead="A free consultation, and a call that costs nothing. CDTFA filings and FTB coordination make the record-keeping heavier; tell us where it is slipping." />
+      <InquirySection region="united-states" source="/markets/united-states/california" title="Talk to Us About Your California Clients" lead="Tell us about your current accounting workflow, recurring reconciliations and monthly reporting needs. We can discuss a scope that fits your existing systems." />
 
       <CTABanner
-        title="Running a Business in California?"
-        description="Let's talk about your specific tax and compliance situation."
+        title="Need Accounting Support in California?"
+        description="Discuss bookkeeping, reconciliations, accounts payable, accounts receivable and month-end reporting for your business."
         cta={{ text: 'Schedule Consultation', href: '/contact' }}
         background="primary"
       />
