@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Monthly Close Process: A Practical Accounting Checklist',
@@ -32,7 +31,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function Page() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="HOA Monthly Close Process: What Should Be Completed Before Reporting?"
       category="HOA Accounting"
       description="A monthly close is the process of completing and reviewing the accounting records for a period before the financial reports are issued."

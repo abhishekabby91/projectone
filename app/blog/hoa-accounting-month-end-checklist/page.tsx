@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Month-End Checklist',
-  description: 'A practical HOA accounting month-end checklist covering assessments, bank reconciliations, payables, reserves, software workflows, state considerations and board reporting.',
+  description: 'HOA month-end close checklist for bank reconciliations, assessments, receivables, payables, reserve activity, budget review and board reports.',
   path: '/blog/hoa-accounting-month-end-checklist',
 });
 
@@ -91,6 +91,32 @@ export default function HoaMonthEndChecklist() {
       <p>The basic accounting workflow is similar across U.S. HOAs, but reporting, recordkeeping and governance requirements can vary by state and by the association's governing documents. A California association may have different documentation considerations from an association in Texas, Florida or Nevada.</p>
       <p>That does not mean the accounting checklist needs to be completely rewritten for every state. It means state-specific requirements should be considered alongside the accounting workflow when they affect financial records, reporting or association procedures.</p>
       <p>For state-specific context, see our coverage for <a href="/markets/united-states/california">California</a>, <a href="/markets/united-states/texas">Texas</a> and <a href="/markets/united-states/florida">Florida</a>. State-specific HOA pages should be used where there is a genuine reason to discuss the local requirements rather than simply repeating the same accounting content with a different state name.</p>
+
+      <h2>Suggested Order for the Monthly Close</h2>
+      <p>A checklist is easier to use when it follows a repeatable sequence. The order may vary by software and association, but a practical workflow is:</p>
+      <ol>
+        <li>Collect bank statements and confirm that all known transactions are recorded.</li>
+        <li>Reconcile operating and reserve bank accounts, then investigate old or unexplained items.</li>
+        <li>Review assessment postings, homeowner balances, credits and unapplied payments.</li>
+        <li>Review vendor invoices, payment status, expense coding and material liabilities.</li>
+        <li>Check reserve contributions, transfers and project expenses against supporting records.</li>
+        <li>Compare actual results with the budget and prior periods; document material variances.</li>
+        <li>Prepare the financial reports and a short list of unresolved items for the manager or board reviewer.</li>
+      </ol>
+      <p>Where practical, the person preparing reconciliations and reports should not be the only person approving payments or reviewing the final package. The association should set responsibilities based on its size, staffing and existing controls.</p>
+
+      <h2>Suggested Order for the Monthly Close</h2>
+      <p>A checklist is easier to use when it follows a repeatable sequence. The order may vary by software and association, but a practical workflow is:</p>
+      <ol>
+        <li>Collect bank statements and confirm that all known transactions are recorded.</li>
+        <li>Reconcile operating and reserve bank accounts, then investigate old or unexplained items.</li>
+        <li>Review assessment postings, homeowner balances, credits and unapplied payments.</li>
+        <li>Review vendor invoices, payment status, expense coding and material liabilities.</li>
+        <li>Check reserve contributions, transfers and project expenses against supporting records.</li>
+        <li>Compare actual results with the budget and prior periods; document material variances.</li>
+        <li>Prepare the financial reports and a short list of unresolved items for the manager or board reviewer.</li>
+      </ol>
+      <p>Where practical, the person preparing reconciliations and reports should not be the only person approving payments or reviewing the final package. The association should set responsibilities based on its size, staffing and existing controls.</p>
 
       <h2>Simple HOA Month-End Checklist</h2>
       <table>

@@ -32,7 +32,8 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaQuickBooksOnline() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />\n      <ArticleLayout
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleLayout
       title="QuickBooks Online for HOA Accounting: What Should Be Tracked?"
       category="HOA Accounting"
       description="QuickBooks Online can support an HOA accounting workflow when the records are structured around the association's funds, homeowner activity, vendors and monthly reporting needs."

@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'HOA Maintenance Expense Accounting: How Should Costs Be Tracked?',
   description: 'A practical guide to tracking HOA maintenance expenses by vendor, account, property or fund, with review points for monthly financial reporting.',
-  path: '/blog/maintenance-expense',
+  path: '/blog/hoa-maintenance-expense-accounting',
 });
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       description="Maintenance spending can be one of the largest parts of an HOA budget. Consistent coding and supporting records make the monthly financial report much easier to review."
       publishedDate="2026-10-08"
       section="blog"
-      slug="maintenance-expense"
+      slug="hoa-maintenance-expense-accounting"
       inquiryTitle="Tell Us About the Work You Need Support With"
       inquiryLead="Share a little about your current workflow, the work you need help with, or the system you use. We can review the requirements and discuss the next step."
     >
