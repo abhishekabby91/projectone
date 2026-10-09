@@ -47,21 +47,18 @@ export default function Navbar() {
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const navRef = useRef<HTMLElement>(null);
 
-  // Markets sits away from Services to keep service discovery and regional
-  // discovery distinct. Solution pages remain live and can be reached through
-  // contextual links and the footer without occupying a primary-nav slot.
+  // Keep the primary navigation focused on the main visitor journeys.
+  // Technology, Compliance, Markets and Solutions remain accessible through
+  // the footer, homepage sections and contextual links within relevant pages.
   const menuItems: NavItem[] = [
     { label: 'Services', href: '/services', groups: regionServiceGroups },
     { label: 'Industries', href: '/industries', children: industries.map((i) => ({ label: i.name, href: `/industries/${i.slug}` })) },
-    { label: 'Technology', href: '/technology', children: technologies.map((t) => ({ label: t.name, href: `/technology/${t.slug}` })) },
     { label: 'Resources', href: '/resources', children: [
       { label: 'Guides', href: '/resources/guides' },
       { label: 'Insights', href: '/resources/insights' },
       { label: 'Case Studies', href: '/resources/case-studies' },
       { label: 'Blog', href: '/blog' },
     ]},
-
-    { label: 'Compliance', href: '/compliance' },
     { label: 'About', href: '/about' },
   ];
 
