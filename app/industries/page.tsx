@@ -51,7 +51,7 @@ export default function IndustriesPage() {
         variant="default"
       />
 
-      <InquirySection source="/industries" title="Talk to Us About Your Sector" lead="A free consultation, and a call that costs nothing. Different sectors break in different places; tell us which one you work in and what keeps recurring." />
+      <InquirySection source="/industries" title="Tell Us About Your Accounting Workflow" lead="Share your industry and the recurring work you need help with. We can discuss whether our accounting support fits your systems and processes." />
 
       <CTABanner
         title="Don't See Your Industry?"
