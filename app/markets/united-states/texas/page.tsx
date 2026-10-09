@@ -70,7 +70,7 @@ export default function TexasPage() {
         title="Accounting & Bookkeeping Built for Texas"
         description="Bookkeeping and accounting support for Texas businesses, including reconciliations, month-end close, payables, receivables and reporting."
         cta={{ text: 'Get Started', href: '/contact' }}
-        ctaSecondary={{ text: 'View U.S. Services', href: '/markets/united-states' }}
+        ctaSecondary={{ text: 'View U.S. Services', href: '/services/accounting/united-states' }}
         background="primary-gradient"
       />
 
