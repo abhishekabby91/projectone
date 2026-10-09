@@ -40,6 +40,9 @@ export default function HoaAccountsPayable() {
       <tr><td>Pay</td><td>Payment is recorded and matched to the invoice</td></tr>
       <tr><td>Review</td><td>Outstanding balances and unusual items are investigated</td></tr>
       </tbody></table>
+      <h2>Month-End AP Reconciliation</h2>
+      <p>At month-end, compare the vendor detail with the accounts payable balance in the general ledger. Review old invoices, credits, partial payments and bills that may have been recorded twice. Keep a note of material items that remain unresolved so the board or manager can follow up.</p>
+      <p>For each invoice, the record should make it possible to trace the original document to the coding, approval, payment and final ledger entry. This is especially useful when invoices are received through more than one channel or prepared by different people.</p>
       <h2>Software Workflow</h2>
       <p>QuickBooks Online, AppFolio and other systems can help route or record bills, but the exact workflow depends on the association's configuration. Automation should not remove approval controls or invoice review.</p>
       <h2>Related HOA Resources</h2>
