@@ -8,3 +8,11 @@ This log tracks work intended to make Accounstone's public information easier fo
 - Kept `llms.txt` focused on core positioning and navigation, while `llms-full.txt` provides expanded service, industry, technology, market and scope context.
 - No new service claims, certifications, clients or routes were added.
 - Validation before deployment: check both public URLs return the latest text, review all claims against canonical site pages, and confirm no outdated service claims remain.
+
+## 2026-10-09 — Add a direct-answer comparison to the homepage
+
+- Added a question-led section explaining how in-house accounting and outsourced support can be divided.
+- Added a semantic HTML comparison table for bookkeeping, reconciliations and month-end, tax preparation, payments and approvals, and reporting.
+- Kept the description conditional and engagement-specific; it does not promise fixed outcomes, publish invented performance statistics, or claim certifications.
+- Existing FAQPage and Service JSON-LD generators were already present on the reviewed homepage/service/industry pages, so no duplicate schema was added.
+- Validation before deployment: confirm the section renders on mobile and desktop, test the horizontal table overflow, and review the live HTML after deployment. This content change does not guarantee AI citations or search ranking changes.
