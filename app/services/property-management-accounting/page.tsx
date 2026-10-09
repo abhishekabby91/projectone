@@ -215,10 +215,9 @@ export default function PropertyManagementAccountingPage() {
             </p>
           </Reveal>
           <div className="flex flex-wrap gap-3">
-            <Link href="/technology/yardi" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Yardi</Link>
+            <Link href="/technology" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Yardi &amp; property platforms</Link>
             <Link href="/technology/quickbooks" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">QuickBooks</Link>
             <Link href="/technology/xero" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Xero</Link>
-            <Link href="/technology" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Technology overview</Link>
           </div>
         </div>
       </section>
