@@ -89,10 +89,10 @@
 | app/delivery-framework/communication/page.tsx | 90/100 | 817 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1256 | 1 | 30 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1252 | 1 | 30 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2311 | 1 | 53 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2309 | 1 | 53 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 1820 | 1 | 38 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2224 | 1 | 29 | 0 | 0 |
