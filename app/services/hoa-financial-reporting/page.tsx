@@ -40,7 +40,7 @@ const schema = generateServiceSchema({
   description: 'Monthly financial reporting and board reporting support for homeowners associations and community management companies.',
   slug: 'hoa-financial-reporting',
   basePath: '/services/',
-  areaServed: ['US'],
+  areaServed: ['United States'],
 });
 const faqSchema = generateFAQSchema(faqs);
 const breadcrumbSchema = generateBreadcrumbSchema([
