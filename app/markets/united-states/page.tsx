@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Do you determine sales tax nexus for our clients?',
     answer:
-      'Revenue and transaction activity can be tracked by state so the information remains visible for nexus review. The determination of nexus and the resulting tax treatment follows the firm's professional and client-specific requirements.',
+      "Revenue and transaction activity can be tracked by state so the information remains visible for nexus review. The determination of nexus and the resulting tax treatment follows the firm's professional and client-specific requirements.",
   },
   {
     question: 'What if a client’s books are a mess when they reach us?',
