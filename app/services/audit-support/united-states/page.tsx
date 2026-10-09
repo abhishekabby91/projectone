@@ -49,7 +49,7 @@ const faqs = [
 ];
 
 const faqSchema = generateFAQSchema(faqs);
-const serviceSchema = generateServiceSchema({ name: 'Audit Support Services for U.S. Businesses', description: overview, slug: 'audit-support/united-states', basePath: '/services/', areaServed: ['US'] });
+const serviceSchema = generateServiceSchema({ name: 'Audit Support Services for U.S. CPA Firms', description: overview, slug: 'audit-support/united-states', basePath: '/services/', areaServed: ['US'] });
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: 'Home', url: baseUrl }, { name: 'Services', url: `${baseUrl}/services` }, { name: 'Audit Support — United States', url: `${baseUrl}${PATH}` },
 ]);
@@ -62,7 +62,7 @@ export default function AuditSupportUSPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        region="united-states" subtitle="Audit Support for U.S. Businesses" title="U.S. Audit Support Services" description="Documentation, schedules and preparation support that helps your audit team spend less time chasing open items." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="united-states" subtitle="For U.S. CPA firms" title="Audit Support for U.S. CPA Firms" description="Documentation, schedules and preparation support that helps your audit team spend less time chasing open items." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white"><ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted"><li><Link href="/" className="inline-block py-1.5 hover:text-primary">Home</Link></li><li aria-hidden="true">/</li><li><Link href="/services" className="inline-block py-1.5 hover:text-primary">Services</Link></li><li aria-hidden="true">/</li><li>Audit Support</li><li aria-hidden="true">/</li><li aria-current="page" className="text-primary font-medium">United States</li></ol></nav>
 

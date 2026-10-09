@@ -57,7 +57,7 @@ const faqs = [
 ];
 
 const faqSchema = generateFAQSchema(faqs);
-const serviceSchema = generateServiceSchema({ name: 'Payroll Processing for U.S. Businesses', description: overview, slug: 'payroll/united-states', basePath: '/services/', areaServed: ['US'] });
+const serviceSchema = generateServiceSchema({ name: 'Payroll Support for U.S. CPA Firms', description: overview, slug: 'payroll/united-states', basePath: '/services/', areaServed: ['US'] });
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: 'Home', url: baseUrl },
   { name: 'Services', url: `${baseUrl}/services` },
