@@ -19,7 +19,7 @@ const PATH = '/industries/real-estate/yardi-accounting-outsourcing-texas';
 export const metadata: Metadata = generateMetadata({
   title: 'Yardi Accounting Outsourcing in Texas',
   description:
-    'Accounting and bookkeeping support for Texas property managers using Yardi Voyager or Yardi Breeze, including owner statements, CAM reconciliations and month-end reporting.',
+    'Yardi accounting and bookkeeping for Texas property managers, including owner statements, CAM reconciliations and month-end reporting.',
   path: PATH,
 });
 
