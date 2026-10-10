@@ -136,7 +136,7 @@ export default function HomePage() {
           </Reveal>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-3 sm:gap-5">
           {[
             {
               title: 'For Accounting Firms',
@@ -152,11 +152,11 @@ export default function HomePage() {
             <Reveal key={item.title} delay={i * 0.08}>
               <Link
                 href={item.href}
-                className="group block h-full rounded-xl border border-border bg-input p-6 md:p-8 transition-all duration-200 hover:border-primary/40 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.14)]"
+                className="group block h-full rounded-xl border border-border bg-input p-3.5 sm:p-6 md:p-8 transition-all duration-200 hover:border-primary/40 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.14)]"
               >
-                <h3 className="font-serif text-xl md:text-2xl font-bold text-primary">{item.title}</h3>
-                <p className="mt-3 text-muted leading-relaxed">{item.body}</p>
-                <span className="mt-5 inline-block text-sm font-semibold text-accent">
+                <h3 className="font-serif text-base sm:text-xl md:text-2xl font-bold leading-tight text-primary">{item.title}</h3>
+                <p className="mt-2 sm:mt-3 text-xs sm:text-sm md:text-base text-muted leading-5 sm:leading-relaxed line-clamp-4 sm:line-clamp-none">{item.body}</p>
+                <span className="mt-3 sm:mt-5 inline-block text-xs sm:text-sm font-semibold text-accent">
                   See how the support model works <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
                 </span>
               </Link>

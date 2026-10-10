@@ -24,6 +24,11 @@ export default function robots(): MetadataRoute.Robots {
     'Applebot-Extended',
     'Bytespider',
     'CCBot',
+    'Meta-ExternalAgent',
+    'Amazonbot',
+    'cohere-ai',
+    'YouBot',
+    'DuckAssistBot',
   ];
 
 

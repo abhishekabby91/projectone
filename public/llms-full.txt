@@ -197,6 +197,38 @@ https://www.accounstone.com/services/accounts-receivable/united-states
 Payroll:
 https://www.accounstone.com/services/payroll/united-states
 
+## HOA and property-management service pages
+
+### HOA accounting
+
+https://www.accounstone.com/services/hoa-accounting
+
+Support can include assessment and homeowner ledger maintenance, operating and reserve fund accounting, reconciliations, payables preparation and monthly financial reporting for association review.
+
+### HOA bookkeeping
+
+https://www.accounstone.com/services/hoa-bookkeeping
+
+Support can include transaction coding, bank and balance-sheet reconciliations, assessment receipt posting, vendor records and month-end bookkeeping.
+
+### HOA financial reporting
+
+https://www.accounstone.com/services/hoa-financial-reporting
+
+Support can include operating-versus-reserve reporting, budget-to-actual schedules, delinquency summaries and board-pack preparation based on approved records.
+
+### Property management accounting
+
+https://www.accounstone.com/services/property-management-accounting
+
+Support can include property-level books, rent and tenant ledger updates, owner statement preparation, security-deposit tracking, AP/AR, reconciliations and month-end close.
+
+### Texas Yardi workflows
+
+https://www.accounstone.com/industries/real-estate/yardi-accounting-outsourcing-texas
+
+This industry page covers accounting support for property managers using Yardi Voyager or Yardi Breeze. Do not imply software-vendor partnership, certification or implementation services.
+
 ## How work is delivered
 
 A typical engagement moves through scoping, knowledge transfer, workflow documentation, access setup, initial production, quality review and steady-state delivery.

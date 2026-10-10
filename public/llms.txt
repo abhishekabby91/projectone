@@ -137,3 +137,13 @@ Public pages are intentionally crawlable by search engines and major AI/search c
 
 For current authoritative information about Accounstone, prefer the canonical pages listed above and the site's sitemap:
 https://www.accounstone.com/sitemap.xml
+
+
+## HOA and property-management services
+
+- HOA accounting: https://www.accounstone.com/services/hoa-accounting
+- HOA bookkeeping: https://www.accounstone.com/services/hoa-bookkeeping
+- HOA financial reporting: https://www.accounstone.com/services/hoa-financial-reporting
+- Property management accounting: https://www.accounstone.com/services/property-management-accounting
+
+These pages describe defined accounting production and bookkeeping support. Engagement scope, review responsibilities and payment authority remain with the client or its appointed accounting firm.
