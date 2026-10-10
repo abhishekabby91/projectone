@@ -241,6 +241,25 @@ export default function TaxPrepUSPage() {
         exclude="/services/tax-preparation/united-states"
         background="input"
       />
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. tax preparation, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced U.S. Tax Preparation Support Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced U.S. tax preparation support can include organizing client-provided tax documents, preparing return data, completing defined return-preparation steps and assembling supporting workpapers for review. The forms covered, software used, review responsibilities and filing workflow should be agreed for each engagement and handled in line with applicable requirements.</p>
+        </div>
+      </section>
+
+      <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl space-y-3">
+          <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official U.S. tax preparation references</h2>
+          <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Tax forms and filing requirements depend on the taxpayer and entity type. Use IRS instructions for the applicable return rather than relying on a general service description.</p>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
+            <li><a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS information about Form 1040, U.S. Individual Income Tax Return</a></li>
+            <li><a href="https://www.irs.gov/forms-pubs/about-form-1065" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS information about Form 1065, U.S. Return of Partnership Income</a></li>
+          </ul>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Tax Preparation" source="/services/tax-preparation/united-states" />
 
       <CTABanner title="Where Is Tax Season Putting Pressure on Your Team?" description="Tell us which preparation tasks are building up and whether the real bottleneck is documents, preparation or review." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />

@@ -1,5 +1,7 @@
 # Accounstone
 
+Full reference with expanded company, service, industry and delivery context: https://www.accounstone.com/llms-full.txt
+
 > Accounting, bookkeeping and tax outsourcing for accounting firms and businesses.
 
 Accounstone is an accounting outsourcing company based in New Delhi, India. The company provides outsourced accounting, bookkeeping, tax preparation and related accounting support through defined workflows, client systems and review processes.

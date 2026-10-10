@@ -323,6 +323,61 @@ export default function HomePage() {
         />
       </section>
 
+      <section data-section="work-model" className="w-full bg-white px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-6xl space-y-5">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">How responsibilities are divided</p>
+          <h2 className="max-w-3xl font-serif text-2xl font-bold leading-tight text-primary text-balance md:text-3xl">
+            What Is the Difference Between In-House and Outsourced Accounting?
+          </h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">
+            Outsourcing does not have to replace an in-house accounting team. Accounstone can prepare defined bookkeeping, reconciliation, reporting and tax-preparation work inside the client’s existing systems, while the client or its CPA retains the agreed review, judgment, approval and filing responsibilities. The exact split depends on the engagement and applicable requirements.
+          </p>
+
+          <div className="overflow-x-auto rounded-2xl border border-border">
+            <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+              <caption className="sr-only">Comparison of in-house accounting responsibilities and outsourced accounting support</caption>
+              <thead className="bg-input text-primary">
+                <tr>
+                  <th scope="col" className="border-b border-border px-4 py-3 font-semibold">Work area</th>
+                  <th scope="col" className="border-b border-border px-4 py-3 font-semibold">In-house team or CPA</th>
+                  <th scope="col" className="border-b border-border px-4 py-3 font-semibold">Outsourced support from Accounstone</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border text-muted">
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-semibold text-primary">Bookkeeping</th>
+                  <td className="px-4 py-3">Sets coding rules, resolves exceptions and reviews the records.</td>
+                  <td className="px-4 py-3">Records and categorizes transactions within the agreed workflow and accounting system.</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-semibold text-primary">Reconciliations and month-end</th>
+                  <td className="px-4 py-3">Reviews exceptions and approves adjustments that require judgment.</td>
+                  <td className="px-4 py-3">Prepares reconciliations, supporting schedules and draft month-end reports.</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-semibold text-primary">Tax preparation</th>
+                  <td className="px-4 py-3">Retains professional review, tax positions and sign-off where applicable.</td>
+                  <td className="px-4 py-3">Prepares defined return data and workpapers based on supplied records and instructions.</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-semibold text-primary">Payments and approvals</th>
+                  <td className="px-4 py-3">Keeps payment authority and final approval.</td>
+                  <td className="px-4 py-3">Can organize invoices, coding and payment-preparation records within agreed controls.</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-semibold text-primary">Reporting</th>
+                  <td className="px-4 py-3">Defines reporting needs and uses the results to make decisions.</td>
+                  <td className="px-4 py-3">Prepares recurring schedules and reports in the agreed format for review.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm leading-relaxed text-muted">
+            This is a general example, not a fixed division of work. Responsibilities, review points and client approvals are agreed before an engagement begins.
+          </p>
+        </div>
+      </section>
+
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
       <ProcessFlow />

@@ -1,5 +1,7 @@
 # Accounstone — Full AI-readable site reference
 
+Concise AI-readable index: https://www.accounstone.com/llms.txt
+
 ## Company summary
 
 Accounstone is an accounting outsourcing company based in New Delhi, India. Its core positioning is **Accounting, Bookkeeping & Tax Outsourcing** for **accounting firms and businesses**.

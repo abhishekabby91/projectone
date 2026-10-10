@@ -132,7 +132,6 @@ export const triggers: PMTrigger[] = [
     reading: 'Separate recurring processing and reporting work from review, owner communication and payment approvals, then agree the responsibilities for each.',
     ask: 'Routine accounting work is taking too much time',
   },
-]
 ];
 
 /** Who this page is written for. Managers, never owners — owners are /industries/real-estate. */
@@ -203,7 +202,6 @@ export const segments: PMSegment[] = [
       'Monthly reports structured for comparison over time',
     ],
   },
-]
 ];
 
 /**
@@ -246,7 +244,6 @@ export const workflow: PMWorkItem[] = [
     h: 'Close the month and report exceptions',
     p: 'Complete the agreed reconciliations, review unusual balances and prepare the monthly reporting package. List items that need client clarification rather than leaving them unexplained.',
   },
-]
 ];
 
 /**
@@ -287,7 +284,6 @@ export const locality = {
         'Support can include rent and landlord ledgers, reconciliations and property-level reporting. Requirements that apply to the agency, trust accounts or licensing should be confirmed with the relevant local professional.',
     },
   ],
-}
 };
 
 /** Written from this reader's own exposure, not from a generic list. */
@@ -298,7 +294,6 @@ export const boundaries = [
   'Tax positions and tax-return sign-off should be agreed with the client and the relevant tax professional as part of the engagement.',
   'Software implementation or specialist configuration is not assumed; support for a specific system is confirmed during scoping.',
   'Management fees, rents, owner allocations and other commercial decisions are based on information and instructions approved by the client.',
-]
 ];
 
 /** Four phases in this reader's language. Same rail, different vocabulary. */
@@ -324,9 +319,6 @@ export const processPhases = [
     body: 'Once the process is confirmed, deliver reconciliations, statements and reporting on the agreed schedule, with review and approvals assigned as documented.',
     accent: true,
   },
-];
-
-export const services:
 ];
 
 export const services: PMServiceCard[] = [
@@ -382,5 +374,4 @@ export const faqs = [
     answer:
       'The initial review covers the properties involved, current records, systems, reporting format, access and monthly tasks. The parties then agree the scope, responsibilities and review process before recurring work starts.',
   },
-]
 ];

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Cleanup: When Should Books Be Reviewed?',

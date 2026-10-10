@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { baseUrl } from '@/lib/seo';
 
-const protectedPaths = ['/admin', '/private', '/internal', '/api', '/_next/'];
+const protectedPaths = ['/admin', '/private', '/internal', '/api'];
 
 /**
  * Accounstone is intentionally open to search and AI discovery.
@@ -9,7 +9,7 @@ const protectedPaths = ['/admin', '/private', '/internal', '/api', '/_next/'];
  * The named AI groups repeat the protected paths because a specific
  * user-agent group does not inherit the rules from the wildcard group.
  * Keeping the restrictions explicit prevents AI crawlers from reaching
- * internal/API routes while leaving public content crawlable.
+ * internal/API routes while leaving public pages and Next.js assets crawlable.
  */
 export default function robots(): MetadataRoute.Robots {
   const openAiAndSearchBots = [

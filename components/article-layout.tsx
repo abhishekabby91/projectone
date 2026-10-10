@@ -185,6 +185,7 @@ export default function ArticleLayout({
   category,
   description,
   publishedDate,
+  updatedDate,
   section,
   slug,
   inquiryTitle,

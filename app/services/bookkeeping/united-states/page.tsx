@@ -148,6 +148,24 @@ export default function BookkeepingUSPage() {
         exclude="/services/bookkeeping/united-states"
         background="input"
       />
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. bookkeeping, explained</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced Bookkeeping Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced bookkeeping commonly covers transaction categorization, bank and credit-card reconciliations, accounts payable and receivable records, cleanup of prior-period entries and preparation of month-end schedules. The exact tasks and frequency should match the client’s accounting system, source documents, chart of accounts and review requirements.</p>
+        </div>
+      </section>
+
+      <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl space-y-3">
+          <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official reference for business records</h2>
+          <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Bookkeeping records should make it possible to trace recorded income and expenses to supporting documents. The IRS explains general recordkeeping responsibilities for businesses and self-employed taxpayers.</p>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
+            <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS guidance on business recordkeeping</a></li>
+          </ul>
+        </div>
+      </section>
+
       <InquirySection region="united-states" service="Bookkeeping" source="/services/bookkeeping/united-states" />
 
       <CTABanner title="Where Is the Bookkeeping Process Getting Stuck?" description="Identify what is falling behind—reconciliations, cleanup, AP/AR, month-end or review—and the scope can start from the actual workflow." cta={{ text: 'Discuss the Bookkeeping Scope', href: '/contact' }} background="primary" />
