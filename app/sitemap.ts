@@ -117,6 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/property-management-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/rent-roll-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-month-end-close-checklist', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/outsourced-bookkeeping-guide', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/accounts-payable-outsourcing', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/accounts-receivable-management', priority: 0.75, changeFrequency: 'monthly' },
