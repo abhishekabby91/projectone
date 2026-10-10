@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowLeft, ArrowRight, CheckCircle2, ClipboardList, CreditCard, Landmark, ReceiptText, Users, ChartNoAxesCombined } from 'lucide-react';
+import { CheckCircle2, ClipboardList, CreditCard, Landmark, ReceiptText, Users, ChartNoAxesCombined, ShieldCheck, TrendingUp, Clock3, HeartHandshake } from 'lucide-react';
 
 const steps = [
   { number: '01', title: 'Assessments', detail: 'Maintain homeowner dues, charges and individual ledgers.', Icon: ClipboardList, tone: 'bg-blue-50 text-primary' },
@@ -9,12 +9,19 @@ const steps = [
   { number: '06', title: 'Board reporting', detail: 'Present a consistent monthly pack for board review and decisions.', Icon: Users, tone: 'bg-teal-50 text-teal-700' },
 ];
 
+const outcomes = [
+  { label: 'Accurate records', Icon: ShieldCheck },
+  { label: 'Clearer decisions', Icon: TrendingUp },
+  { label: 'Less manual work', Icon: Clock3 },
+  { label: 'Stronger oversight', Icon: HeartHandshake },
+];
+
 export default function HoaAccountingCycle() {
   return (
     <section aria-labelledby="hoa-cycle-heading" className="w-full bg-white px-6 py-10 md:px-8 md:py-14">
       <div className="mx-auto max-w-6xl">
-        <div className="mx-auto mb-8 max-w-3xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">The monthly workflow</p>
+        <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">A clear monthly workflow</p>
           <h2 id="hoa-cycle-heading" className="mt-2 font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">
             The HOA Accounting Cycle
           </h2>
@@ -23,38 +30,41 @@ export default function HoaAccountingCycle() {
           </p>
         </div>
 
-        <ol className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {steps.map(({ number, title, detail, Icon, tone }, index) => (
-            <li key={number} className="relative h-full rounded-2xl border border-border bg-input/60 p-5 sm:p-6">
+        <ol className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+          {steps.map(({ number, title, detail, Icon, tone }) => (
+            <li key={number} className="group relative h-full rounded-2xl border border-border bg-input/50 p-5 transition-colors duration-200 hover:border-secondary/60 hover:bg-white sm:p-6">
               <div className="flex items-start gap-4">
                 <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${tone}`}>
                   <Icon aria-hidden="true" className="h-6 w-6" strokeWidth={1.8} />
                 </div>
-                <div className="min-w-0">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs font-bold tracking-wider text-muted">{number}</span>
-                    <h3 className="text-base font-bold leading-snug text-primary">{title}</h3>
-                  </div>
+                <div className="min-w-0 flex-1">
+                  <div className="mb-1 text-xs font-bold tracking-[0.12em] text-muted">STEP {number}</div>
+                  <h3 className="text-base font-bold leading-snug text-primary">{title}</h3>
                   <p className="mt-2 text-sm leading-6 text-muted">{detail}</p>
                 </div>
               </div>
-              {index < steps.length - 1 && (
-                <div aria-hidden="true" className="absolute -bottom-[13px] left-1/2 z-10 hidden -translate-x-1/2 text-secondary lg:block">
-                  {index === 2 ? <ArrowDownRight className="h-5 w-5" /> : <ArrowRight className="h-5 w-5" />}
-                </div>
-              )}
             </li>
           ))}
         </ol>
 
-        <div className="mt-5 flex flex-col items-start gap-3 rounded-xl border border-secondary/30 bg-secondary/10 p-4 sm:flex-row sm:items-center sm:gap-4 sm:px-5">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
-            <CheckCircle2 aria-hidden="true" className="h-5 w-5" />
+        <div className="mt-5 rounded-2xl border border-secondary/30 bg-secondary/10 p-4 sm:p-5">
+          <div className="flex items-start gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+              <CheckCircle2 aria-hidden="true" className="h-5 w-5" />
+            </div>
+            <p className="pt-1 text-sm leading-6 text-primary">
+              <span className="font-semibold">A repeatable cycle, with board oversight at every stage.</span>{' '}
+              Accounting records, reconciliations and reports support the process; assessment decisions, reserve priorities and payment approvals remain with the association and its authorized reviewers.
+            </p>
           </div>
-          <p className="text-sm leading-6 text-primary">
-            <span className="font-semibold">Board oversight stays in place.</span> Accounting records, reconciliations and reporting support the process; assessment decisions, reserve priorities and payment approvals remain with the association and its authorized reviewers.
-          </p>
-          <ArrowLeft aria-hidden="true" className="hidden h-5 w-5 shrink-0 text-secondary lg:block" />
+          <ul className="mt-5 grid grid-cols-2 gap-3 border-t border-secondary/20 pt-4 sm:grid-cols-4">
+            {outcomes.map(({ label, Icon }) => (
+              <li key={label} className="flex items-center gap-2 text-sm font-medium text-primary">
+                <Icon aria-hidden="true" className="h-4 w-4 shrink-0 text-secondary" strokeWidth={1.8} />
+                <span>{label}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
