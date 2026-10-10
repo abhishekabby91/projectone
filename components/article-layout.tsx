@@ -367,10 +367,16 @@ export default function ArticleLayout({
             </nav>
           )}
 
-          <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted">
-            <span><strong className="text-primary">Published:</strong> {publishedDate}</span>
+          <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted" aria-label="Article information">
+            <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{publishedDate}</time></span>
+            {updatedDate && updatedDate !== publishedDate ? (
+              <>
+                <span aria-hidden="true">•</span>
+                <span><strong className="text-primary">Last updated:</strong> <time dateTime={updatedDate}>{updatedDate}</time></span>
+              </>
+            ) : null}
             <span aria-hidden="true">•</span>
-            <span>Accounstone</span>
+            <span>By Accounstone</span>
             <span aria-hidden="true">•</span>
             <span>{category}</span>
           </div>
