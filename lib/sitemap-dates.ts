@@ -14,6 +14,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/audit-support-services': '2026-09-16',
   '/blog/outsourced-bookkeeping-guide': '2026-09-16',
   '/blog/outsourced-payroll-services': '2026-09-16',
+  '/blog/property-management-month-end-close-checklist': '2026-10-10',
   '/blog/tax-preparation-outsourcing': '2026-09-16',
   '/blog/yardi-accounting-workflow': '2026-10-04',
   '/blog/real-estate-accounting-month-end-close': '2026-10-04',

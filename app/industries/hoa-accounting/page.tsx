@@ -10,6 +10,7 @@ import ProcessFlow from '@/components/process-flow';
 import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
 import IndustryIllustration from '@/components/industry-illustration';
+import HoaAccountingCycle from '@/components/hoa-accounting-cycle';
 import { trustBadges } from '@/lib/data';
 import {
   triggers,
@@ -78,12 +79,12 @@ export default function HoaAccountingPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
+      <section className="w-full py-3 px-4 sm:px-6 bg-white border-b border-border ledger-lines">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-2">
           {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
+            <div key={badge.name} className="flex items-center gap-2 px-3 py-1.5 bg-input rounded-full border border-border">
               <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
+              <span className="font-medium text-xs sm:text-sm text-foreground">{badge.name}</span>
             </div>
           ))}
         </div>
@@ -134,6 +135,8 @@ export default function HoaAccountingPage() {
           </Reveal>
         </div>
       </section>
+
+      <HoaAccountingCycle />
 
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
@@ -202,7 +205,7 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
             {triggers.map((t, i) => (
               <Reveal key={t.symptom} delay={Math.min(i * 0.05, 0.25)}>
                 <li className="h-full">
@@ -280,13 +283,13 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <div className="mt-8 space-y-5">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
             {workflow.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-white p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
+              <Reveal key={item.h} delay={Math.min(i * 0.035, 0.18)} className="h-full">
+                <article className="h-full rounded-xl border border-border bg-white p-4 sm:p-5">
+                  <h3 className="text-base font-bold leading-snug text-primary sm:text-lg">{item.h}</h3>
+                  <p className="mt-2 text-sm leading-6 text-muted">{item.p}</p>
+                </article>
               </Reveal>
             ))}
           </div>
@@ -358,6 +361,39 @@ export default function HoaAccountingPage() {
 
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
+      {/* Supporting resources: connect the industry page to the existing HOA topic cluster. */}
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-3 mb-6"><>
+            <Eyebrow>Practical HOA resources</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+              HOA Accounting Guides for Boards and Community Managers
+            </h2>
+            <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
+              Use these guides to understand the records behind a monthly close, the checks that support reliable
+              balances, and the information that helps a board review its financial position.
+            </p>
+          </></Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            {[
+              { href: '/blog/hoa-accounting-month-end-checklist', title: 'Monthly close checklist', body: 'Review bank accounts, assessments, receivables, payables and board reporting.' },
+              { href: '/blog/hoa-bank-reconciliation', title: 'HOA bank reconciliation', body: 'Understand what to check beyond a matching ending balance and how to track open items.' },
+              { href: '/blog/hoa-operating-vs-reserve-funds', title: 'Operating vs. reserve funds', body: 'See why fund activity should remain clear in the books and monthly reports.' },
+              { href: '/blog/hoa-budget-to-actual-reports', title: 'Budget-to-actual reports', body: 'Identify variances by mapping results to the board-approved budget.' },
+              { href: '/blog/hoa-board-financial-package', title: 'Board financial package', body: 'Review schedules that help directors understand monthly results.' },
+              { href: '/blog/hoa-accounting-eunify', title: 'HOA accounting and eUnify', body: 'Consider the accounting records and reconciliation workflow behind HOA software.' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="group flex h-full flex-col rounded-xl border border-border bg-input p-4 sm:p-5 transition-colors hover:border-primary/50">
+                <h3 className="font-serif text-base sm:text-lg font-bold leading-snug text-primary">{item.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-6 text-muted">{item.body}</p>
+                <span className="mt-3 text-sm font-semibold text-accent">Read the guide <span aria-hidden="true">&rarr;</span></span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
       {/* Locality. */}
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">

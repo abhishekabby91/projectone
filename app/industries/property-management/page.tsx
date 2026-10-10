@@ -79,12 +79,12 @@ export default function PropertyManagementPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
+      <section className="w-full py-3 px-4 sm:px-6 bg-white border-b border-border ledger-lines">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-2">
           {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
+            <div key={badge.name} className="flex items-center gap-2 px-3 py-1.5 bg-input rounded-full border border-border">
               <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
+              <span className="font-medium text-xs sm:text-sm text-foreground">{badge.name}</span>
             </div>
           ))}
         </div>
@@ -217,16 +217,23 @@ export default function PropertyManagementPage() {
             </p>
           </></Reveal>
 
-          <div className="mt-8 space-y-5">
+          <ol className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {workflow.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-white p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
+              <Reveal key={item.h} delay={Math.min(i * 0.04, 0.2)}>
+                <li className="h-full rounded-2xl border border-border bg-white p-5 transition-colors duration-200 hover:border-secondary/60 sm:p-6">
+                  <div className="flex items-start gap-3">
+                    <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-input text-xs font-bold tracking-wide text-primary">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-lg font-bold leading-snug text-primary">{item.h}</h3>
+                      <p className="mt-3 text-sm leading-6 text-muted md:text-base">{item.p}</p>
+                    </div>
+                  </div>
+                </li>
               </Reveal>
             ))}
-          </div>
+          </ol>
 
           <Reveal delay={0.2}>
             <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
@@ -433,6 +440,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
+              { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>

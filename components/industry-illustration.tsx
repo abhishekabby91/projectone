@@ -57,8 +57,7 @@ const TONE: Record<string, string> = {
   ecommerce: 'var(--color-hue-olive)',
   healthcare: 'var(--color-hue-plum)',
   'cpa-firms': 'var(--color-hue-denim)',
-  // Property management reuses the real-estate scene deliberately — see the
-  // note on ILLUSTRATIONS below.
+  // Property management has a distinct rent-to-owner-statement scene.
   'property-management': 'var(--color-hue-teal)',
   'hoa-accounting': 'var(--color-hue-olive)',
 };
@@ -387,15 +386,39 @@ function HoaAccounting() {
   );
 }
 
-/**
- * Property management deliberately reuses the real-estate scene, and that is a
- * decision rather than an omission: that drawing is *three properties each
- * keeping its own book, rolling into one owner statement, with the accent on
- * the approval that releases it* — which is the property management mechanic
- * exactly, not the owner's. If the two ever need to be told apart visually, the
- * new drawing belongs on `/industries/real-estate` (a portfolio a lender or a
- * partner reads), not here.
- */
+
+/** Property management: rent and owner activity kept property-by-property before review. */
+function PropertyManagement() {
+  const TONE_C = TONE['property-management'];
+  return (
+    <Frame>
+      {/* separate units/buildings, each with its own activity */}
+      {[0, 1, 2].map((i) => (
+        <g key={i} transform={`translate(${22 + i * 34} 0)`}>
+          <rect x={0} y={62 - i * 5} width={27} height={58 + i * 5} rx={3} fill={i === 1 ? NAVY : TONE_C} opacity={i === 1 ? 0.95 : 0.72} />
+          <path d={`M-3 ${62 - i * 5} L13.5 ${49 - i * 5} L30 ${62 - i * 5} Z`} fill={GOLD} />
+          <rect x={6} y={72 - i * 5} width={5} height={7} rx={1} fill={CREAM} />
+          <rect x={16} y={72 - i * 5} width={5} height={7} rx={1} fill={CREAM} />
+          <rect x={6} y={86 - i * 5} width={5} height={7} rx={1} fill={CREAM} />
+          <rect x={16} y={86 - i * 5} width={5} height={7} rx={1} fill={CREAM} />
+        </g>
+      ))}
+      <path d="M112 92 H132" stroke={TONE_C} strokeWidth={2.5} strokeLinecap="round" />
+      <path d="M126 86 L134 92 L126 98" stroke={TONE_C} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+      {/* owner statement built from rent, repairs and payable records */}
+      <rect x={140} y={45} width={62} height={78} rx={6} fill="#fff" stroke={NAVY} strokeOpacity={0.28} strokeWidth={1.4} />
+      <rect x={150} y={56} width={42} height={5} rx={2.5} fill={NAVY} opacity={0.75} />
+      {[70, 81, 92].map((y) => <rect key={y} x={150} y={y} width={42} height={3.5} rx={1.75} fill={NAVY} opacity={0.24} />)}
+      <rect x={150} y={103} width={25} height={3.5} rx={1.75} fill={GOLD} />
+      {/* exception/review gate stays with the property manager or owner */}
+      <circle cx={196} cy={115} r={13} fill={ACCENT} />
+      <path d="M190 115 l4.5 4.5 l8 -9" stroke="#fff" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />
+      <Person x={120} y={153} tone={NAVY} s={0.9} />
+      <Person x={216} y={153} tone={TONE_C} s={0.85} opacity={0.7} />
+    </Frame>
+  );
+}
+
 const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   'real-estate': RealEstate,
   technology: Technology,
@@ -403,7 +426,7 @@ const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   ecommerce: Ecommerce,
   healthcare: Healthcare,
   'cpa-firms': CpaFirms,
-  'property-management': RealEstate,
+  'property-management': PropertyManagement,
   'hoa-accounting': HoaAccounting,
 };
 
