@@ -10,6 +10,7 @@ import ProcessFlow from '@/components/process-flow';
 import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
 import IndustryIllustration from '@/components/industry-illustration';
+import HoaAccountingCycle from '@/components/hoa-accounting-cycle';
 import { trustBadges } from '@/lib/data';
 import {
   triggers,
@@ -134,6 +135,8 @@ export default function HoaAccountingPage() {
           </Reveal>
         </div>
       </section>
+
+      <HoaAccountingCycle />
 
       <div className="max-w-5xl mx-auto ledger-divider" aria-hidden="true" />
 
