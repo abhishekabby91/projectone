@@ -64,7 +64,7 @@ export default function HoaBankReconciliation() {
       <p>QuickBooks Online and other accounting platforms can automate transaction matching, but matched does not always mean correct. The person reviewing the reconciliation still needs to investigate unusual items and confirm that transfers, assessments and reserve transactions make sense.</p>
 
       <h2>Related HOA Resources</h2>
-      <p>Use this process alongside the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a> and <a href="/blog/hoa-accounting-controls">HOA accounting controls</a>. For the broader service, see <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
+      <p>Use this process alongside the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a> and <a href="/blog/hoa-accounting-controls">HOA accounting controls</a>. For the broader service, see <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>, or review the <a href="/services/hoa-financial-reporting">HOA financial reporting service</a> to understand how reconciled balances feed into the board package.</p>
     </ArticleLayout>
   );
 }
