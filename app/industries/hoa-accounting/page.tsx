@@ -205,7 +205,7 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
             {triggers.map((t, i) => (
               <Reveal key={t.symptom} delay={Math.min(i * 0.05, 0.25)}>
                 <li className="h-full">
