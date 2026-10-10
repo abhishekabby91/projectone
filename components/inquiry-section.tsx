@@ -92,10 +92,10 @@ export default function InquirySection({
     <section
       id="inquiry"
       aria-labelledby="inquiry-heading"
-      className={`w-full py-8 md:py-14 px-6 md:px-8 ${background === 'white' ? 'bg-white' : 'bg-input'}`}
+      className={`w-full py-7 sm:py-8 md:py-14 px-4 sm:px-6 md:px-8 ${background === 'white' ? 'bg-white' : 'bg-input'}`}
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-6 lg:gap-12 items-start">
-        <div className="space-y-4 sm:space-y-5">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-5 sm:gap-6 lg:gap-12 items-start">
+        <div className="space-y-3 sm:space-y-5">
           <div className="flex items-center gap-3">
             <span aria-hidden="true" className="h-px w-8 bg-secondary" />
             <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">
@@ -105,7 +105,7 @@ export default function InquirySection({
 
           <h2
             id="inquiry-heading"
-            className="flex flex-wrap items-center gap-3 font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight"
+            className="flex flex-wrap items-center gap-2 sm:gap-3 font-serif text-2xl sm:text-2xl md:text-3xl font-bold text-primary text-balance leading-tight"
           >
             {region && <RegionFlag region={region} className="w-8 h-[22px]" decorative />}
             {title ?? copy.title}
@@ -137,7 +137,7 @@ export default function InquirySection({
           )}
         </div>
 
-        <div className="rounded-2xl border border-border bg-white p-5 sm:p-8 shadow-[0_2px_24px_-8px_rgba(30,58,95,0.16)]">
+        <div className="rounded-xl sm:rounded-2xl border border-border bg-white p-4 sm:p-6 md:p-8 shadow-[0_2px_24px_-8px_rgba(30,58,95,0.16)]">
           <InquiryForm
             region={region}
             service={service}
