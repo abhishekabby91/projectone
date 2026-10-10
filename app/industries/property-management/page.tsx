@@ -440,6 +440,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
+              { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>
