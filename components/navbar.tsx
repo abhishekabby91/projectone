@@ -48,11 +48,12 @@ export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
 
   // Keep the primary navigation focused on the main visitor journeys.
-  // Technology, Compliance, Markets and Solutions remain accessible through
-  // the footer, homepage sections and contextual links within relevant pages.
+  // Compliance is restored as a top-level item; Technology, Markets and
+  // Solutions remain accessible through the footer, homepage and contextual links.
   const menuItems: NavItem[] = [
     { label: 'Services', href: '/services', groups: regionServiceGroups },
     { label: 'Industries', href: '/industries', children: industries.map((i) => ({ label: i.name, href: `/industries/${i.slug}` })) },
+    { label: 'Compliance', href: '/compliance' },
     { label: 'Resources', href: '/resources', children: [
       { label: 'Guides', href: '/resources/guides' },
       { label: 'Insights', href: '/resources/insights' },
