@@ -1,11 +1,11 @@
-import { CheckCircle2, ClipboardList, CreditCard, Landmark, ReceiptText, Users, ChartNoAxesCombined, ShieldCheck, TrendingUp, Clock3, HeartHandshake } from 'lucide-react';
+import { CheckCircle2, ClipboardList, CreditCard, Landmark, ReceiptText, Users, ChartBar, ShieldCheck, TrendingUp, Clock3, Handshake } from 'lucide-react';
 
 const steps = [
   { number: '01', title: 'Assessments', detail: 'Maintain homeowner dues, charges and individual ledgers.', Icon: ClipboardList, tone: 'bg-blue-50 text-primary' },
   { number: '02', title: 'Payments', detail: 'Post receipts and match them to homeowner accounts.', Icon: CreditCard, tone: 'bg-orange-50 text-accent' },
   { number: '03', title: 'AP & expenses', detail: 'Code vendor bills and track the approval status.', Icon: ReceiptText, tone: 'bg-emerald-50 text-emerald-700' },
   { number: '04', title: 'Bank reconciliation', detail: 'Match bank activity and resolve differences.', Icon: Landmark, tone: 'bg-blue-50 text-primary' },
-  { number: '05', title: 'Financial statements', detail: 'Prepare balances, income and expense reports, and fund views.', Icon: ChartNoAxesCombined, tone: 'bg-violet-50 text-violet-700' },
+  { number: '05', title: 'Financial statements', detail: 'Prepare balances, income and expense reports, and fund views.', Icon: ChartBar, tone: 'bg-violet-50 text-violet-700' },
   { number: '06', title: 'Board reporting', detail: 'Present a consistent monthly pack for board review and decisions.', Icon: Users, tone: 'bg-teal-50 text-teal-700' },
 ];
 
@@ -13,7 +13,7 @@ const outcomes = [
   { label: 'Accurate records', Icon: ShieldCheck },
   { label: 'Clearer decisions', Icon: TrendingUp },
   { label: 'Less manual work', Icon: Clock3 },
-  { label: 'Stronger oversight', Icon: HeartHandshake },
+  { label: 'Stronger oversight', Icon: Handshake },
 ];
 
 export default function HoaAccountingCycle() {
@@ -32,7 +32,7 @@ export default function HoaAccountingCycle() {
 
         <ol className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
           {steps.map(({ number, title, detail, Icon, tone }) => (
-            <li key={number} className="group relative h-full rounded-2xl border border-border bg-input/50 p-5 transition-colors duration-200 hover:border-secondary/60 hover:bg-white sm:p-6">
+            <li key={number} className="group relative h-full rounded-2xl border border-border bg-input/50 p-4 transition-colors duration-200 hover:border-secondary/60 hover:bg-white sm:p-5">
               <div className="flex items-start gap-4">
                 <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${tone}`}>
                   <Icon aria-hidden="true" className="h-6 w-6" strokeWidth={1.8} />
