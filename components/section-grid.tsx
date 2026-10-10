@@ -67,7 +67,7 @@ export default function SectionGrid({
   return (
     <section className="w-full py-7 md:py-10 px-6 md:px-8 bg-background dot-grid">
       <div className="max-w-7xl mx-auto">
-        <Reveal className="mb-12 md:mb-14 max-w-3xl mx-auto text-center space-y-4">
+        <Reveal className="mb-7 md:mb-14 max-w-3xl mx-auto text-center space-y-3 md:space-y-4">
           <>
             {/* The eyebrow carries the gold rule every other section heading
                 on this site uses, and the heading is serif at the same scale.
