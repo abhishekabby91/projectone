@@ -283,13 +283,13 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <div className="mt-8 space-y-5">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
             {workflow.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-white p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
+              <Reveal key={item.h} delay={Math.min(i * 0.035, 0.18)} className="h-full">
+                <article className="h-full rounded-xl border border-border bg-white p-4 sm:p-5">
+                  <h3 className="text-base font-bold leading-snug text-primary sm:text-lg">{item.h}</h3>
+                  <p className="mt-2 text-sm leading-6 text-muted">{item.p}</p>
+                </article>
               </Reveal>
             ))}
           </div>
