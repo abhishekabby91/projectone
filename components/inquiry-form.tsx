@@ -71,15 +71,15 @@ const SIZES = {
   default: {
     field: `${FIELD_BASE} px-3.5 py-2.5 sm:px-4 sm:py-3`,
     label: 'block text-sm font-semibold text-foreground mb-1 sm:mb-2',
-    gap: 'space-y-3.5 sm:space-y-5',
-    grid: 'grid grid-cols-2 gap-3 sm:gap-5',
+    gap: 'space-y-2.5 sm:space-y-5',
+    grid: 'grid grid-cols-2 gap-2.5 sm:gap-5',
     submit: 'w-full px-6 py-3.5 sm:py-4 rounded-lg font-semibold',
     note: 'text-xs',
     rows: 4,
     // `rows` is an HTML attribute and has no `sm:` variant, so lowering it to
     // shorten the mobile form would have shortened the desktop one too. The
     // height comes off with a class instead; desktop keeps all four rows.
-    textarea: 'h-[92px] sm:h-auto',
+    textarea: 'h-[76px] sm:h-auto',
   },
   compact: {
     // Labels 13px, submit 15px. The first pass used 12px labels and an 11px
@@ -318,7 +318,7 @@ export default function InquiryForm({
           {!minimal && (
           <>
             <div className="col-span-2 sm:col-span-1">
-              <label htmlFor={`service-${uid}` className={sz.label}>What do you need support with?</label>
+              <label htmlFor={`service-${uid}`} className={sz.label}>What do you need support with?</label>
               <select id={`service-${uid}`} name="service" defaultValue={service ?? ''} className={sz.field}>
                 <option value="">Select a service</option>
                 {services.map((s) => (
@@ -329,7 +329,7 @@ export default function InquiryForm({
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <label htmlFor={`support-type-${uid}` className={sz.label}>What type of support are you considering?</label>
+              <label htmlFor={`support-type-${uid}`} className={sz.label}>What type of support are you considering?</label>
               <select id={`support-type-${uid}`} name="support_type" defaultValue="" className={sz.field}>
                 <option value="">Select an option</option>
                 <option value="Project / Freelance">Project / Freelance</option>
