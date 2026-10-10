@@ -64,10 +64,8 @@ const SIZES = {
   // pages - because it used desktop padding and rhythm at every width. Every
   // value below steps up at `sm:`, so the desktop form is unchanged.
   //
-  // The fields deliberately stay ONE column on mobile. Two-column form fields
-  // on a 390px screen is a known usability regression: smaller targets, more
-  // mis-taps, more errors on the one interaction the page exists for. Height
-  // comes out of padding and rhythm instead, which costs nothing.
+  // Pair short fields on mobile to reduce scrolling, while service and message
+  // fields keep the width they need.
   default: {
     field: `${FIELD_BASE} px-3.5 py-2.5 sm:px-4 sm:py-3`,
     label: 'block text-sm font-semibold text-foreground mb-1 sm:mb-2',
@@ -156,7 +154,6 @@ export default function InquiryForm({
       `Company: ${get('company')}`,
       get('phone') ? `Phone: ${get('phone')}` : null,
       (get('service') || service) ? `Service Interest: ${get('service') || service}` : null,
-      get('support_type') ? `Support Type: ${get('support_type')}` : null,
       regionName ? `Region: ${regionName}` : null,
       '',
       'Message:',
@@ -202,7 +199,6 @@ export default function InquiryForm({
           name: get('name'),
           email: get('email'),
           message: get('message'),
-          ...(get('support_type') && { support_type: get('support_type') }),
           ...(get('company') && { company: get('company') }),
           ...(get('phone') && { phone: get('phone') }),
           ...((get('service') || service) && { service_interest: get('service') || service }),
@@ -328,19 +324,6 @@ export default function InquiryForm({
               </select>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
-              <label htmlFor={`support-type-${uid}`} className={sz.label}>What type of support are you considering?</label>
-              <select id={`support-type-${uid}`} name="support_type" defaultValue="" className={sz.field}>
-                <option value="">Select an option</option>
-                <option value="Project / Freelance">Project / Freelance</option>
-                <option value="Part-time">Part-time</option>
-                <option value="Full-time / FTE">Full-time / FTE</option>
-                <option value="Seasonal">Seasonal</option>
-                <option value="Ongoing outsourcing">Ongoing outsourcing</option>
-                <option value="One-time cleanup / data entry">One-time cleanup / data entry</option>
-                <option value="Not sure yet">Not sure yet</option>
-              </select>
-            </div>
           </>
           )}
 
