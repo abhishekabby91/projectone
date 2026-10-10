@@ -217,16 +217,23 @@ export default function PropertyManagementPage() {
             </p>
           </></Reveal>
 
-          <div className="mt-8 space-y-5">
+          <ol className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {workflow.map((item, i) => (
-              <Reveal key={item.h} delay={Math.min(i * 0.05, 0.25)}>
-                <div className="rounded-2xl border border-border bg-white p-5 sm:p-7">
-                  <h3 className="text-lg font-bold text-primary">{item.h}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{item.p}</p>
-                </div>
+              <Reveal key={item.h} delay={Math.min(i * 0.04, 0.2)}>
+                <li className="h-full rounded-2xl border border-border bg-white p-5 transition-colors duration-200 hover:border-secondary/60 sm:p-6">
+                  <div className="flex items-start gap-3">
+                    <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-input text-xs font-bold tracking-wide text-primary">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-lg font-bold leading-snug text-primary">{item.h}</h3>
+                      <p className="mt-3 text-sm leading-6 text-muted md:text-base">{item.p}</p>
+                    </div>
+                  </div>
+                </li>
               </Reveal>
             ))}
-          </div>
+          </ol>
 
           <Reveal delay={0.2}>
             <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
