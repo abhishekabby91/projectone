@@ -79,12 +79,12 @@ export default function PropertyManagementPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
+      <section className="w-full py-3 px-4 sm:px-6 bg-white border-b border-border ledger-lines">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-2">
           {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
+            <div key={badge.name} className="flex items-center gap-2 px-3 py-1.5 bg-input rounded-full border border-border">
               <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
+              <span className="font-medium text-xs sm:text-sm text-foreground">{badge.name}</span>
             </div>
           ))}
         </div>
