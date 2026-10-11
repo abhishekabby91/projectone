@@ -1,8 +1,8 @@
-# Accounstone SEO Agent Report — 2026-10-10
+# Accounstone SEO Agent Report — 2026-10-11
 
 ## Summary
 
-- Files/pages scanned: **151**
+- Files/pages scanned: **152**
 - High-priority findings: **7**
 - Medium-priority findings: **12**
 - Low-priority findings: **8**
@@ -74,10 +74,10 @@
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
 | app/blog/page.tsx | 90/100 | 1762 | 1 | 48 | 0 | 0 |
-| app/blog/property-management-accounting/page.tsx | 90/100 | 526 | 1 | 5 | 0 | 0 |
-| app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 361 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-accounting/page.tsx | 90/100 | 2697 | 1 | 12 | 0 | 0 |
+| app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 569 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 428 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 600 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-month-end-close-checklist/page.tsx | 90/100 | 1273 | 1 | 8 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
@@ -95,7 +95,8 @@
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2655 | 1 | 59 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 1982 | 1 | 39 | 0 | 0 |
+| app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1038 | 1 | 12 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2075 | 1 | 41 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2339 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 902 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
