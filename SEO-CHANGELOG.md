@@ -4326,3 +4326,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added quality boundaries for scenario-based answers, entity-level accounting, vendor 1099/AP workflows, state trust-account requirements, unsupported pricing, and service/certification claims.
 - Recorded current competitor/product coverage signals and official Google Search Central guidance. The supplied prompts are candidate research inputs, not verified query-volume data or proof of AI platform frequency.
 - No website page, metadata, sitemap or production deployment changed in this documentation-only step. No merge to `main`.
+
+## 2026-10-12 — Add a property-accounting catch-up answer to the existing guide
+
+- Expanded `/blog/property-management-accounting` with a practical sequence for assessing and recovering a property-management bookkeeping backlog.
+- The section answers the supplied conversational scenario about a portfolio with months of overdue books without treating unit count alone as enough to recommend hiring or outsourcing.
+- Covers scoping missing periods and records, establishing reliable balances, prioritizing reconciliations, documenting exceptions, review before reporting, and preventing the backlog from returning.
+- Links to the existing property-management service hub; no duplicate catch-up URL was created before competitor and intent research.
+- Updated the content registry. Build/preview validation is still required; no merge to `main` or production deployment was performed.
