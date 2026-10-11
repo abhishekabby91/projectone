@@ -374,11 +374,20 @@ export default function PropertyManagementPage() {
               Accounting support within your current system
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Systems may include Yardi Voyager or Breeze, AppFolio, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
+              Systems may include Yardi Voyager or Breeze, AppFolio, Buildium, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The focus is accounting and bookkeeping work within an existing system. Software implementation, migration or specialist configuration should be scoped separately and only where the relevant capability is available.
             </p>
+            <div className="mt-6 rounded-xl border border-border bg-white p-5">
+              <h3 className="text-lg font-bold text-primary">RentCafe website development support</h3>
+              <p className="mt-2 text-muted leading-relaxed">
+                For property managers using Yardi’s RentCafe marketing platform, Accounstone can also discuss website development support within the existing RentCafe workflow. This is a separate scope from accounting support; the specific site build, page updates and available access are confirmed before work begins.
+              </p>
+              <p className="mt-2 text-sm text-muted">
+                RentCafe is a Yardi platform. Support is scoped to the work agreed with the property manager and does not imply Yardi certification or partnership.
+              </p>
+            </div>
           </></Reveal>
           <Reveal delay={0.12}>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -441,6 +450,8 @@ export default function PropertyManagementPage() {
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
+              { name: 'Buildium workflows: owner statements and distributions', href: '/blog/property-management-accounting' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>

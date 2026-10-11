@@ -4,6 +4,9 @@ Tracks blog/guide/insight content specifically (not every route — see `ROUTES.
 
 | Title | URL | Cluster | Primary intent | Status | Last updated |
 |---|---|---|---|---|---|
+| Property Management Accounting: A Practical Complete Guide | `/blog/property-management-accounting` | Property Management | Core accounting workflow, software, close, catch-up triage, owner distributions, vendor 1099 preparation and in-house-vs-external comparison | Expanded guide + catch-up workflow | 2026-10-12 |
+| Property Management Chart of Accounts: Structure for Multi-Property Portfolios | `/blog/property-management-chart-of-accounts` | Property Management | Account structure, property/entity dimensions, intercompany balances and reporting consistency | Expanded for multi-entity portfolios | 2026-10-12 |
+| Property Management Bank Reconciliation: Workflow and Trust-Account Controls | `/blog/property-management-bank-reconciliation` | Property Management | Bank reconciliation, exception review and applicable trust-account recordkeeping | Expanded with sourced three-way reconciliation guidance | 2026-10-12 |
 | Outsourced Bookkeeping: What to Expect, Software Workflows, and Red Flags to Watch For | `/blog/outsourced-bookkeeping-guide` | Bookkeeping | Day-to-day workflow, red flags | Re-scoped | 2026-08-21 |
 | How Much Does Outsourced Bookkeeping Cost? A Practical Guide | `/resources/guides/outsourced-bookkeeping-cost-guide` | Bookkeeping | Cost/pricing (has `CostEstimator` widget) | Stable | 2026-07-25 |
 | 9 Questions to Ask Before Outsourcing Your Bookkeeping | `/resources/guides/questions-to-ask-before-outsourcing-bookkeeping` | Bookkeeping | Evaluation checklist | Stable | — |

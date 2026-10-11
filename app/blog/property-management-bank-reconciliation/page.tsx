@@ -37,6 +37,17 @@ export default function Page() {
       <h2>Property-level detail matters</h2>
       <p>In a portfolio environment, a matched bank balance does not automatically prove that every property is correct. A receipt may have reached the bank but been applied to the wrong tenant or property. Review the supporting detail when a transaction is unusual or material.</p>
 
+      <h2>When a trust-account workflow needs a three-way reconciliation</h2>
+      <p>Where the applicable rules and account arrangement require trust-account reconciliation, a bank-to-book match may not be enough. The review may also need to compare the trust bank balance and control record with the total of the individual beneficiary, owner, tenant or transaction records maintained for the account. The records being compared must use the same reconciliation date, and differences should be investigated and corrected rather than hidden by an unexplained adjustment.</p>
+      <p>For California real estate licensees subject to the Department of Real Estate's trust-fund rules, the DRE describes a control record, separate beneficiary or transaction records, and a trust-account reconciliation that compares the total of separate records with the control-record balance. See the <a href="https://www.dre.ca.gov/Newsroom/DRE_Updates/2026_10_06_Trust_Fund_Records.html" target="_blank" rel="noreferrer">California DRE trust-fund recordkeeping guidance</a> and its <a href="https://www.dre.ca.gov/Forms/Audits.html" target="_blank" rel="noreferrer">official audit forms</a>. Applicability depends on the license, activity and governing rules; this guide is not legal advice.</p>
+      <ol>
+        <li>Complete and review the bank reconciliation for the relevant account and date.</li>
+        <li>Confirm the control record includes the required receipts, disbursements and running balance.</li>
+        <li>Reconcile each required beneficiary or transaction record and total the balances.</li>
+        <li>Compare the detailed total to the control record and investigate any difference.</li>
+        <li>Document the preparer, reviewer, date, exceptions and correction trail according to the applicable requirements.</li>
+      </ol>
+
       <h2>Do not let old items become normal</h2>
       <p>An outstanding item that remains month after month deserves a reason. Keep a short open-items list with the date, amount, property, likely cause and person responsible for resolution. This is more useful than repeatedly carrying the same unexplained difference forward.</p>
 

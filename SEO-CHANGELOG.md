@@ -1,5 +1,14 @@
 # Accounstone SEO Changelog
 
+## 2026-10-12 (expand property management accounting guide)
+
+Expanded `/blog/property-management-accounting` into a practical end-to-end guide rather than creating a second URL for an intent already owned by the article. Competitor research included Buildium's recent property-management accounting basics and real-estate accounting guides, plus specialist property-accounting guides. The content opportunity is to explain the linked workflow from property and tenant ledgers through reconciliations, owner statements, software handoffs and month-end close.
+
+Added links to the existing property-management accounting cluster, the Yardi Texas page and the AppFolio California page. Added a cautious RentCafe section as a separate marketing/website workflow, with a link to Yardi's official website overview; no Yardi certification or partnership is claimed. The article distinguishes accounting preparation from client approvals, payment release and legal/tax advice.
+
+This is a content-depth and internal-link improvement, not a ranking guarantee. Validate the preview build, rendered page, sitemap dates and internal links before considering production publication.
+
+
 ## 2026-10-09 (keep Next.js assets crawlable)
 
 Removed `/_next/` from the robots.txt disallow list. These files are public framework assets, including JavaScript and CSS used to render the site; blocking the entire path can prevent crawlers from fetching resources needed to render and evaluate pages. The wildcard rule and the named AI/search crawler rules now block only internal/admin/API paths, while public routes and framework assets remain crawlable.
@@ -4309,3 +4318,42 @@ Removed the duplicated featured-guide block from `/resources`. The same featured
 This addresses the previously measured 29.6% overlap between `/resources` and `/resources/guides`: both pages were showing the same long featured card, and every guide link on the parent was repeated on the child. The earlier route/content notes explicitly identified the duplicated featured block as the fix. No new route or keyword target was added, so the search-intent registry does not change.
 
 Validation still required before production: run `pnpm eslint .`, `pnpm next build`, the internal-link/near-duplicate checks, and `node scripts/generate-sitemap-dates.mjs` in the full checkout. This GitHub edit does not itself verify those local checks.
+
+## 2026-10-12 — Property management SEO + direct AI prompt map
+
+- Added `docs/PROPERTY-MANAGEMENT-AI-QUERY-MAP.md` to map the owner's traditional commercial/software/workflow/cost queries and six direct conversational AI prompts to existing Accounstone pages or research candidates.
+- Preserved the existing intent architecture: improve a matching URL before creating another, keep the established Yardi Texas page intact, and research competitor SERPs before deciding on new Buildium, catch-up bookkeeping, pricing, CAM or state-specific content.
+- Added quality boundaries for scenario-based answers, entity-level accounting, vendor 1099/AP workflows, state trust-account requirements, unsupported pricing, and service/certification claims.
+- Recorded current competitor/product coverage signals and official Google Search Central guidance. The supplied prompts are candidate research inputs, not verified query-volume data or proof of AI platform frequency.
+- No website page, metadata, sitemap or production deployment changed in this documentation-only step. No merge to `main`.
+
+## 2026-10-12 — Add a property-accounting catch-up answer to the existing guide
+
+- Expanded `/blog/property-management-accounting` with a practical sequence for assessing and recovering a property-management bookkeeping backlog.
+- The section answers the supplied conversational scenario about a portfolio with months of overdue books without treating unit count alone as enough to recommend hiring or outsourcing.
+- Covers scoping missing periods and records, establishing reliable balances, prioritizing reconciliations, documenting exceptions, review before reporting, and preventing the backlog from returning.
+- Links to the existing property-management service hub; no duplicate catch-up URL was created before competitor and intent research.
+- Updated the content registry. Build/preview validation is still required; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Expand existing property-management guides for direct AI scenarios
+
+- Added multi-entity / separate-LLC chart-of-accounts guidance to `/blog/property-management-chart-of-accounts`, emphasizing entity boundaries, consistent account definitions, intercompany balances and CPA review.
+- Added a sourced trust-account reconciliation section to `/blog/property-management-bank-reconciliation`. For California, it links to official DRE guidance on control records, beneficiary-level records and reconciliation; applicability is qualified and no compliance or audit outcome is promised.
+- Expanded `/blog/property-management-accounting` with a Buildium-relevant owner-distribution / management-fee workflow and a vendor payables / year-end Form 1099 preparation checklist, linked to current IRS instructions.
+- Kept these answers within existing URLs to reduce cannibalization. New platform, pricing, state and service pages remain research candidates until intent and service capability are confirmed.
+- Updated the content registry. Preview/build validation is pending; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Add property-specific staffing and cost comparison
+
+- Added a practical in-house versus external accounting-support comparison to `/blog/property-management-accounting`, using the owner's 150-door AI scenario as context without treating unit count as sufficient to estimate workload.
+- Compares capacity, full cost categories, controls, review, scope and backlog cleanup; avoids inventing per-door prices or promising savings.
+- Links to the existing general bookkeeping cost guide and engagement-model comparison instead of creating a competing property-specific pricing URL before sufficient research.
+- Research reviewed current competitor pricing content and Buildium's accounting feature coverage. Public pricing is treated as a market signal, not as a quote for Accounstone.
+- Updated content registry. Vercel build/preview verification remains pending; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Buildium intent mapping and internal links
+
+- Added Buildium to the property-management hub's supported-system examples and linked the existing accounting guide from the related resources list.
+- Updated the search-intent registry so Buildium owner-statement, distribution, fee and reconciliation workflows have an explicit existing URL owner.
+- Decision: do not create a dedicated Buildium URL yet. Buildium's own product and educational pages dominate software-feature queries; the current site should first establish relevant service intent through the commercial hub and its practical guide, avoiding a thin page that repeats the general workflow.
+- Existing Yardi Texas page remains unchanged. No merge to `main` or production deployment.
