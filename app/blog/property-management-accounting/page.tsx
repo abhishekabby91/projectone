@@ -116,7 +116,7 @@ export default function Page() {
       <p>Portfolio size alone—for example, managing 150 units—does not determine whether an in-house hire or external support is the better fit. Compare the actual transaction workload, required turnaround, internal supervision, continuity, access controls, review responsibilities and total cost. A provider should define the deliverables and client approvals clearly; catch-up work should not promise that every historical balance is correct before evidence is reviewed.</p>
       <p>If the backlog needs external capacity, start by describing the periods and accounts affected on the <Link href="/industries/property-management">property management accounting support page</Link>. The scope can then be assessed against the records available and the client's reporting deadlines.</p>
 
-      <h2>14. Vendor payables and year-end Form 1099 preparation</h2>
+      <h2>13. Vendor payables and year-end Form 1099 preparation</h2>
       <p>A repeatable vendor workflow starts before year-end. Collect the appropriate tax form and vendor details through the client's approved onboarding process, maintain the legal payee name and taxpayer information securely, code invoices to the correct entity and property, and retain approval and payment records. Review duplicate vendors, missing tax information, changes in payee details and payments that may need special treatment.</p>
       <p>Before year-end reporting, reconcile vendor activity to the accounting records and payment data, investigate exceptions, and have the responsible client or tax professional determine the correct information-return treatment. The reporting form and requirements can depend on the payment type, payee classification, payment method, amount and current rules. For example, IRS instructions distinguish certain rent paid to a property manager from rent the manager pays over to the owner; do not assume every vendor or rent payment belongs on the same form.</p>
       <p>Use current <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS instructions for Forms 1099-MISC and 1099-NEC</a> when designing the checklist, and confirm the applicable tax-year requirements before filing. A bookkeeping SOP can organize source data and exceptions, but it should not replace tax review or guarantee that every payment is reportable in a particular way.</p>
@@ -128,7 +128,7 @@ export default function Page() {
         <li>Route classification and filing decisions to the designated client or tax reviewer and retain evidence of review.</li>
       </ol>
 
-      <h2>15. How to assess accounting support</h2>
+      <h2>14. How to assess accounting support</h2>
       <p>When evaluating an internal process or outside provider, ask for a clear list of recurring outputs and responsibilities. Useful questions include:</p>
       <ul>
         <li>Which reconciliations and subsidiary ledgers will be maintained, and how are differences escalated?</li>
