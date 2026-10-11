@@ -65,6 +65,8 @@ export default function Page() {
       <p>An owner statement should follow the agreed reporting format and explain the activity relevant to that owner. Depending on the management agreement and reporting design, it may show collected income, expenses, management fees, reserve movements, owner contributions, distributions and an ending balance. The statement should be supported by ledger detail rather than assembled independently from spreadsheets or unreviewed transaction lists.</p>
       <p>Before statements are issued, confirm that the reporting period is complete, material reconciliations have been reviewed, unresolved items are documented and any required client approvals have occurred. If an adjustment is made after a statement has been issued, follow the documented correction process so the original and revised records remain explainable.</p>
 
+      <p>For workflows in platforms such as Buildium, document how management fees, owner balances and distributions are calculated and approved under the management agreement. Reconcile the underlying property activity first, distinguish the management company's earned fee from funds held or payable for an owner, and retain the transaction trail behind the statement and any distribution. The exact account mapping and entry depend on the entity structure, platform configuration and client policy; do not apply a generic journal entry without checking those details.</p>
+
       <h2>8. A repeatable month-end close</h2>
       <ol>
         <li><strong>Set the cutoff:</strong> confirm the period and gather transactions, invoices, receipts and approved adjustments.</li>
