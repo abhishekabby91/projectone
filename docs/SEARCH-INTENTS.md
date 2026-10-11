@@ -28,6 +28,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | Property management accounting: complete practical guide | `/blog/property-management-accounting` | Informational — accounting workflow, ledger controls, owner reporting, software and month-end; supports but does not replace the commercial industry hub |
 | Buildium accounting workflow support (owner statements, distributions, fees and reconciliations) | `/blog/property-management-accounting` plus `/industries/property-management` | Software-specific supporting intent — served within the existing guide and commercial hub; do not create a separate Buildium URL unless research establishes distinct service intent and useful original depth |
 | HOA / community association / condo association accounting | `/industries/hoa-accounting` | Commercial — the reader is an association or its manager; deliverable is the board pack; receivable is the homeowner assessment |
+| HOA accounting transition checklist (changing provider or manager) | `/blog/hoa-accounting-transition-checklist` | Informational — cutover, opening balances, owner ledger tie-out and first board package; supports the HOA commercial hub |
 | SaaS and technology accounting / deferred revenue bookkeeping | `/industries/technology` | Commercial — industry cluster |
 | Law firm, consulting and agency accounting / trust bookkeeping | `/industries/professional-services` | Commercial — industry cluster |
 | Staff augmentation during tax season | `/resources/guides/staff-augmentation-tax-season-guide` | Informational |
