@@ -104,7 +104,19 @@ export default function Page() {
       </ul>
       <p>A practical improvement is to maintain an exception log with the issue, property or account affected, responsible person, target resolution date and evidence of resolution. This makes the close easier to review and reduces the need to rediscover the same issue next month.</p>
 
-      <h2>12. How to assess accounting support</h2>
+      <h2>12. If the books are behind: a catch-up sequence</h2>
+      <p>When a property-management portfolio is several weeks or months behind, the first step is to establish what is incomplete and which balances can be trusted—not to start posting transactions as quickly as possible. The right recovery plan depends on transaction volume, number of properties and entities, bank accounts, software setup, reporting deadlines and the availability of source documents.</p>
+      <ol>
+        <li><strong>Scope the backlog:</strong> list the missing periods, properties, entities, bank and credit-card accounts, unposted invoices, tenant-ledger exceptions and owner reports that are outstanding.</li>
+        <li><strong>Establish a reliable starting point:</strong> collect bank statements, prior reconciliations, trial balances, open-item reports, tenant and owner ledgers, and relevant supporting schedules. Identify balances that cannot yet be relied on.</li>
+        <li><strong>Reconcile and work by priority:</strong> agree on the order for bank accounts, subsidiary ledgers, payables, deposits and owner balances. Track exceptions rather than forcing unexplained differences to zero.</li>
+        <li><strong>Review before reporting:</strong> document proposed adjustments, obtain the client's required approvals, review material variances and confirm which periods are ready for owner statements or other reporting.</li>
+        <li><strong>Protect the next close:</strong> agree who owns recurring transaction posting, reconciliations, exception resolution and review so the backlog does not immediately return.</li>
+      </ol>
+      <p>Portfolio size alone—for example, managing 150 units—does not determine whether an in-house hire or external support is the better fit. Compare the actual transaction workload, required turnaround, internal supervision, continuity, access controls, review responsibilities and total cost. A provider should define the deliverables and client approvals clearly; catch-up work should not promise that every historical balance is correct before evidence is reviewed.</p>
+      <p>If the backlog needs external capacity, start by describing the periods and accounts affected on the <Link href="/industries/property-management">property management accounting support page</Link>. The scope can then be assessed against the records available and the client's reporting deadlines.</p>
+
+      <h2>13. How to assess accounting support</h2>
       <p>When evaluating an internal process or outside provider, ask for a clear list of recurring outputs and responsibilities. Useful questions include:</p>
       <ul>
         <li>Which reconciliations and subsidiary ledgers will be maintained, and how are differences escalated?</li>
