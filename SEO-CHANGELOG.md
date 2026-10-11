@@ -4357,3 +4357,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Updated the search-intent registry so Buildium owner-statement, distribution, fee and reconciliation workflows have an explicit existing URL owner.
 - Decision: do not create a dedicated Buildium URL yet. Buildium's own product and educational pages dominate software-feature queries; the current site should first establish relevant service intent through the commercial hub and its practical guide, avoiding a thin page that repeats the general workflow.
 - Existing Yardi Texas page remains unchanged. No merge to `main` or production deployment.
+
+
+## 2026-10-12 — HOA accounting transition checklist
+
+- Added `/blog/hoa-accounting-transition-checklist` for boards and community managers changing accounting providers, management companies or systems.
+- Covers cutover ownership, source-record collection, opening-balance reconciliation, owner-ledger tie-out, operating/reserve classification, exception tracking and review of the first board package.
+- Added the route to `app/sitemap.ts`, linked it from the HOA industry hub, and registered the intent in `docs/CONTENT-REGISTRY.md` and `docs/SEARCH-INTENTS.md`.
+- The article includes FAQ structured data and links to existing HOA resources. Review build and preview before merging; no production deployment performed.
