@@ -4334,3 +4334,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Covers scoping missing periods and records, establishing reliable balances, prioritizing reconciliations, documenting exceptions, review before reporting, and preventing the backlog from returning.
 - Links to the existing property-management service hub; no duplicate catch-up URL was created before competitor and intent research.
 - Updated the content registry. Build/preview validation is still required; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Expand existing property-management guides for direct AI scenarios
+
+- Added multi-entity / separate-LLC chart-of-accounts guidance to `/blog/property-management-chart-of-accounts`, emphasizing entity boundaries, consistent account definitions, intercompany balances and CPA review.
+- Added a sourced trust-account reconciliation section to `/blog/property-management-bank-reconciliation`. For California, it links to official DRE guidance on control records, beneficiary-level records and reconciliation; applicability is qualified and no compliance or audit outcome is promised.
+- Expanded `/blog/property-management-accounting` with a Buildium-relevant owner-distribution / management-fee workflow and a vendor payables / year-end Form 1099 preparation checklist, linked to current IRS instructions.
+- Kept these answers within existing URLs to reduce cannibalization. New platform, pricing, state and service pages remain research candidates until intent and service capability are confirmed.
+- Updated the content registry. Preview/build validation is pending; no merge to `main` or production deployment was performed.
