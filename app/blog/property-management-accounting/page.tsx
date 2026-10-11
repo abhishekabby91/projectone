@@ -130,6 +130,22 @@ export default function Page() {
         <li>Route classification and filing decisions to the designated client or tax reviewer and retain evidence of review.</li>
       </ol>
 
+      <h2>Compare in-house and outsourced support for your portfolio</h2>
+      <p>For a portfolio of around 150 units, unit count alone is not enough to estimate the accounting workload or decide which staffing model fits. Compare the number of legal entities, bank and trust accounts, monthly transactions, owner statements, vendor payments, reporting deadlines, backlog and the amount of review the client needs to retain.</p>
+      <div className="my-6 overflow-x-auto rounded-xl border border-border">
+        <table className="w-full border-collapse text-sm">
+          <thead><tr className="bg-input text-left"><th className="p-3">Factor</th><th className="p-3">In-house hire</th><th className="p-3">External accounting support</th></tr></thead>
+          <tbody>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Capacity</td><td className="p-3">A dedicated employee's capacity, skills and coverage</td><td className="p-3">Agreed scope, available capacity and provider continuity</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Total cost</td><td className="p-3">Pay, payroll costs, benefits, recruiting, training, management and leave coverage</td><td className="p-3">Provider fee, onboarding, client review time, software and separately scoped cleanup</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Control and review</td><td className="p-3">Direct day-to-day management; still needs segregation and review controls</td><td className="p-3">Documented access, deliverables, approvals, reviewer responsibilities and escalation</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Best question</td><td className="p-3">Can one hire reliably cover the recurring workload and absences?</td><td className="p-3">Can the provider complete the defined work to the required standard and handoff?</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Do not compare a salary with an external quote until the deliverables match. Ask whether transaction posting, bank and trust-account reconciliations, tenant and owner ledger review, AP, owner statements, month-end close and backlog cleanup are included or priced separately. Published provider prices can be useful as market signals, but they are not a reliable quote for a particular portfolio unless the scope and assumptions match.</p>
+      <p>For a broader framework, see the <Link href="/resources/guides/outsourced-bookkeeping-cost-guide">outsourced bookkeeping cost guide</Link> and <Link href="/resources/guides/choosing-an-engagement-model">engagement-model comparison</Link>. Accounstone should scope any proposed work against the software, records, access permissions and review responsibilities actually available.</p>
+
       <h2>14. How to assess accounting support</h2>
       <p>When evaluating an internal process or outside provider, ask for a clear list of recurring outputs and responsibilities. Useful questions include:</p>
       <ul>
