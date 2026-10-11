@@ -127,6 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/audit-support-services', priority: 0.75, changeFrequency: 'monthly' },
     // Month-end close content consolidated here; former monthly-close-process URL redirects.
     { path: '/blog/hoa-accounting-month-end-checklist', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-accounting-transition-checklist', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/hoa-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-mistakes', priority: 0.75, changeFrequency: 'monthly' },
