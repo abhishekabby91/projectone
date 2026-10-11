@@ -4,6 +4,7 @@ Tracks blog/guide/insight content specifically (not every route — see `ROUTES.
 
 | Title | URL | Cluster | Primary intent | Status | Last updated |
 |---|---|---|---|---|---|
+| Property Management Accounting: A Practical Complete Guide | `/blog/property-management-accounting` | Property Management | Core accounting workflow: property records, ledgers, reconciliations, owner reporting, software and close | Expanded into full guide | 2026-10-12 |
 | Outsourced Bookkeeping: What to Expect, Software Workflows, and Red Flags to Watch For | `/blog/outsourced-bookkeeping-guide` | Bookkeeping | Day-to-day workflow, red flags | Re-scoped | 2026-08-21 |
 | How Much Does Outsourced Bookkeeping Cost? A Practical Guide | `/resources/guides/outsourced-bookkeeping-cost-guide` | Bookkeeping | Cost/pricing (has `CostEstimator` widget) | Stable | 2026-07-25 |
 | 9 Questions to Ask Before Outsourcing Your Bookkeeping | `/resources/guides/questions-to-ask-before-outsourcing-bookkeeping` | Bookkeeping | Evaluation checklist | Stable | — |
