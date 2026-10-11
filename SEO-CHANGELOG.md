@@ -1,5 +1,14 @@
 # Accounstone SEO Changelog
 
+## 2026-10-12 (expand property management accounting guide)
+
+Expanded `/blog/property-management-accounting` into a practical end-to-end guide rather than creating a second URL for an intent already owned by the article. Competitor research included Buildium's recent property-management accounting basics and real-estate accounting guides, plus specialist property-accounting guides. The content opportunity is to explain the linked workflow from property and tenant ledgers through reconciliations, owner statements, software handoffs and month-end close.
+
+Added links to the existing property-management accounting cluster, the Yardi Texas page and the AppFolio California page. Added a cautious RentCafe section as a separate marketing/website workflow, with a link to Yardi's official website overview; no Yardi certification or partnership is claimed. The article distinguishes accounting preparation from client approvals, payment release and legal/tax advice.
+
+This is a content-depth and internal-link improvement, not a ranking guarantee. Validate the preview build, rendered page, sitemap dates and internal links before considering production publication.
+
+
 ## 2026-10-09 (keep Next.js assets crawlable)
 
 Removed `/_next/` from the robots.txt disallow list. These files are public framework assets, including JavaScript and CSS used to render the site; blocking the entire path can prevent crawlers from fetching resources needed to render and evaluate pages. The wildcard rule and the named AI/search crawler rules now block only internal/admin/API paths, while public routes and framework assets remain crawlable.
