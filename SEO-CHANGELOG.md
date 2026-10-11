@@ -4350,3 +4350,10 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Links to the existing general bookkeeping cost guide and engagement-model comparison instead of creating a competing property-specific pricing URL before sufficient research.
 - Research reviewed current competitor pricing content and Buildium's accounting feature coverage. Public pricing is treated as a market signal, not as a quote for Accounstone.
 - Updated content registry. Vercel build/preview verification remains pending; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Buildium intent mapping and internal links
+
+- Added Buildium to the property-management hub's supported-system examples and linked the existing accounting guide from the related resources list.
+- Updated the search-intent registry so Buildium owner-statement, distribution, fee and reconciliation workflows have an explicit existing URL owner.
+- Decision: do not create a dedicated Buildium URL yet. Buildium's own product and educational pages dominate software-feature queries; the current site should first establish relevant service intent through the commercial hub and its practical guide, avoiding a thin page that repeats the general workflow.
+- Existing Yardi Texas page remains unchanged. No merge to `main` or production deployment.
