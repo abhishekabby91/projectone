@@ -379,6 +379,15 @@ export default function PropertyManagementPage() {
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The focus is accounting and bookkeeping work within an existing system. Software implementation, migration or specialist configuration should be scoped separately and only where the relevant capability is available.
             </p>
+            <div className="mt-6 rounded-xl border border-border bg-white p-5">
+              <h3 className="text-lg font-bold text-primary">RentCafe website development support</h3>
+              <p className="mt-2 text-muted leading-relaxed">
+                For property managers using Yardi’s RentCafe marketing platform, Accounstone can also discuss website development support within the existing RentCafe workflow. This is a separate scope from accounting support; the specific site build, page updates and available access are confirmed before work begins.
+              </p>
+              <p className="mt-2 text-sm text-muted">
+                RentCafe is a Yardi platform. Support is scoped to the work agreed with the property manager and does not imply Yardi certification or partnership.
+              </p>
+            </div>
           </></Reveal>
           <Reveal delay={0.12}>
             <div className="mt-6 flex flex-wrap gap-3">
