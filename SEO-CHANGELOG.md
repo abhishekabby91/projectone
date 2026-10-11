@@ -4342,3 +4342,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Expanded `/blog/property-management-accounting` with a Buildium-relevant owner-distribution / management-fee workflow and a vendor payables / year-end Form 1099 preparation checklist, linked to current IRS instructions.
 - Kept these answers within existing URLs to reduce cannibalization. New platform, pricing, state and service pages remain research candidates until intent and service capability are confirmed.
 - Updated the content registry. Preview/build validation is pending; no merge to `main` or production deployment was performed.
+
+## 2026-10-12 — Add property-specific staffing and cost comparison
+
+- Added a practical in-house versus external accounting-support comparison to `/blog/property-management-accounting`, using the owner's 150-door AI scenario as context without treating unit count as sufficient to estimate workload.
+- Compares capacity, full cost categories, controls, review, scope and backlog cleanup; avoids inventing per-door prices or promising savings.
+- Links to the existing general bookkeeping cost guide and engagement-model comparison instead of creating a competing property-specific pricing URL before sufficient research.
+- Research reviewed current competitor pricing content and Buildium's accounting feature coverage. Public pricing is treated as a market signal, not as a quote for Accounstone.
+- Updated content registry. Vercel build/preview verification remains pending; no merge to `main` or production deployment was performed.
