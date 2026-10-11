@@ -36,6 +36,11 @@ export default function Page() {
       <h2>Do not create an account for every property automatically</h2>
       <p>Many systems can track a property through classes, locations, dimensions or property records. Creating separate general-ledger accounts for every property can make the chart difficult to maintain. The better structure depends on the platform and the reports the business needs.</p>
 
+      <h2>Multi-entity portfolios and separate LLCs</h2>
+      <p>When a portfolio includes several ownership LLCs, design the reporting around the legal entity boundaries as well as the property-level view. A common approach is to maintain consistent account definitions across entities while tracking each entity and property through the system's available dimensions or ledgers. This supports comparable reporting without assuming that every property needs a separate general-ledger account.</p>
+      <p>Intercompany balances, shared costs, management fees, owner contributions, debt and distributions need documented treatment that matches the ownership structure and accounting policy. Do not net balances across entities simply to make a portfolio report look cleaner. Confirm whether a transaction belongs to the property-owning entity, the management company or another related entity, and retain support for allocations and intercompany entries.</p>
+      <p>Before adopting a template, confirm how the software handles entity-level cash, consolidated reporting, due-to/due-from balances and period close. There is no single chart of accounts that fits every multifamily holding company; the chart should follow the reporting requirements and be reviewed with the client's CPA or accounting lead.</p>
+
       <h2>Keep tenant and deposit detail where it belongs</h2>
       <p>Tenant ledgers often need more detail than the general ledger. The accounting structure should let the general ledger reconcile to the detailed tenant records without trying to force every tenant transaction into a separate general-ledger account.</p>
 
