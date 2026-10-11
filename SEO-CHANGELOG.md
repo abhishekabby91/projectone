@@ -4318,3 +4318,11 @@ Removed the duplicated featured-guide block from `/resources`. The same featured
 This addresses the previously measured 29.6% overlap between `/resources` and `/resources/guides`: both pages were showing the same long featured card, and every guide link on the parent was repeated on the child. The earlier route/content notes explicitly identified the duplicated featured block as the fix. No new route or keyword target was added, so the search-intent registry does not change.
 
 Validation still required before production: run `pnpm eslint .`, `pnpm next build`, the internal-link/near-duplicate checks, and `node scripts/generate-sitemap-dates.mjs` in the full checkout. This GitHub edit does not itself verify those local checks.
+
+## 2026-10-12 — Property management SEO + direct AI prompt map
+
+- Added `docs/PROPERTY-MANAGEMENT-AI-QUERY-MAP.md` to map the owner's traditional commercial/software/workflow/cost queries and six direct conversational AI prompts to existing Accounstone pages or research candidates.
+- Preserved the existing intent architecture: improve a matching URL before creating another, keep the established Yardi Texas page intact, and research competitor SERPs before deciding on new Buildium, catch-up bookkeeping, pricing, CAM or state-specific content.
+- Added quality boundaries for scenario-based answers, entity-level accounting, vendor 1099/AP workflows, state trust-account requirements, unsupported pricing, and service/certification claims.
+- Recorded current competitor/product coverage signals and official Google Search Central guidance. The supplied prompts are candidate research inputs, not verified query-volume data or proof of AI platform frequency.
+- No website page, metadata, sitemap or production deployment changed in this documentation-only step. No merge to `main`.
