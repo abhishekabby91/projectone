@@ -374,7 +374,7 @@ export default function PropertyManagementPage() {
               Accounting support within your current system
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Systems may include Yardi Voyager or Breeze, AppFolio, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
+              Systems may include Yardi Voyager or Breeze, AppFolio, Buildium, QuickBooks, Xero, Sage and NetSuite. Support for a specific product or workflow is confirmed during scoping, based on the accounting tasks involved and the access available.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The focus is accounting and bookkeeping work within an existing system. Software implementation, migration or specialist configuration should be scoped separately and only where the relevant capability is available.
@@ -451,6 +451,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
+              { name: 'Buildium workflows: owner statements and distributions', href: '/blog/property-management-accounting' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>
