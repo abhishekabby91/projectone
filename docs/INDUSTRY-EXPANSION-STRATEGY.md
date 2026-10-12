@@ -170,3 +170,22 @@ Every new industry page must:
 **Preview checks:** on the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, the property-management pillar, existing AppFolio California page, property-management accounting service page, CAM guide, owner-statement guide, security-deposit guide and Yardi workflow article all returned HTTP 200 and each rendered one H1. This deployment predates the latest branch documentation commits, and these checks do not establish latest-branch or production status.
 
 **Decision:** do not create city pages in a batch. Research San Francisco first, then San Diego. Any candidate needs its own audience/query brief, unique local accounting workflow and useful content that does not imply Accounstone has local offices, staff, legal expertise or compliance certification. Potentially relevant workflows include property-level books, owner-by-owner statement reconciliation, client-authorized trust/operating ledger records, tenant deposits, vendor/payment records, and software-specific handoffs. State-specific legal interpretations and regulated decisions must remain with the client and qualified professionals. Avoid duplicating the California AppFolio page, the broader service page, or the CAM and security-deposit guides.
+
+
+### Property-management location audit — 2026-10-12
+
+**Existing commercial page reviewed:** `/industries/property-management`. It already distinguishes property managers from property owners, covers property-level books, tenant and owner ledgers, deposits, CAM/recoveries, month-end, approval boundaries, and links to the existing workflow guides and California AppFolio page. The guide section includes the Yardi workflow article, whose route exists in the repository and returned HTTP 200 on the available preview. The current page also has a direct-answer section and an IRS Publication 527 reference.
+
+**Competitor comparison:** recent REA pages are explicitly city/region targeted:
+- San Francisco property-management accounting: https://rea.co/outsourced-accounting-property-management-companies-san-francisco/ — trust-account reconciliation, owner statements/disbursements, vendor 1099 data and software workflow.
+- San Diego property-management accounting: https://rea.co/outsourced-accounting-property-management-companies-san-diego/ — trust-ledger and owner-disbursement workflows, CAM and software coverage.
+- Orange County property-management accounting: https://rea.co/outsourced-accounting-property-management-companies-orange-county/ — similar workflow framed around Orange County and local communities.
+- REA also separates San Francisco real-estate-owner accounting and commercial-property accounting from third-party property-management accounting: https://rea.co/outsourced-real-estate-accounting-san-francisco/ and https://rea.co/commercial-real-estate-accounting-san-francisco/.
+
+These pages show a competitor strategy of separating buyer type and local intent. They do not independently establish query volume, ranking position, or a need for Accounstone to create matching pages. Do not copy claims about local expertise, statutory compliance, tax advice, savings, staffing or credentials.
+
+**Preview validation:** the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599` returned HTTP 200 for `/industries/property-management`, `/industries/property-management/appfolio-accounting-california`, `/blog/property-management-cam-reconciliation`, `/blog/yardi-accounting-workflow`, and `/services/property-management-accounting`. This is a limited route check against an older preview; it is not a full internal-link crawl and does not validate the latest branch head or production.
+
+**Decision:** do not create a San Francisco, San Diego, or Orange County page yet. First audit the existing AppFolio California page for distinct software-plus-location intent, unique workflow detail, canonical/metadata/schema and overlap with the main property-management pillar. Then compare whether any city/region page would add distinct buyer intent beyond the pillar and existing software page. Use GSC only if explicitly authorized; without query data, keep location pages as research candidates and do not present competitor page existence as demand proof.
+
+SEO review remains separate from AEO review: SEO covers intent ownership, metadata, crawl paths and cannibalization; AEO covers direct answers, workflow clarity, FAQs and schema.
