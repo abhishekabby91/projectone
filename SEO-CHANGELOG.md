@@ -1,3 +1,8 @@
+## 2026-10-12 — Standardize batch page production and final reconciliation
+
+- Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
+- The workflow explicitly avoids orphan pages during drafting, avoids speculative links to routes not yet created, and requires reporting the exact commit and preview state. No GSC work, merge to `main` or production deployment.
+
 ## 2026-10-12 — Improve AppFolio California accounting page clarity
 
 - Audited the existing `/industries/property-management/appfolio-accounting-california` page before proposing any city-level or additional software/location URLs.
