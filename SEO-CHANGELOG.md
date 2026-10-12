@@ -1,3 +1,11 @@
+## 2026-10-12 — Strengthen property-management month-end close
+
+- Improved `/blog/property-management-month-end-close-checklist` with an example exception-review table for unmatched receipts, deposit-liability differences, owner-statement variances and late vendor invoices.
+- Added direct contextual links to the existing owner-statement and security-deposit workflow guides. This reinforces the cluster without adding a new URL.
+- Added the existing checklist to `docs/CONTENT-REGISTRY.md` and `docs/SEARCH-INTENTS.md`, explicitly defining its operational close intent and relationship to the broader accounting and specialist workflow pages.
+- Research reviewed current Buildium accounting/financial-statement guidance and recent month-end checklist coverage from property-accounting publishers. The content's differentiator is the exception evidence and reviewer decision trail, not generic checklist length or unsupported timing promises.
+- Branch build should be checked against the final commit before merge. No production deployment or GSC validation is claimed.
+
 ## 2026-10-12 — Strengthen owner-statement review workflow
 
 - Expanded the existing `/blog/property-management-owner-statements` page with an illustrative statement-to-ledger review bridge covering receipts, expenses, management fees, reserves/liabilities, owner distributions and exception ownership.
