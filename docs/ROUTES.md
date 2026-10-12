@@ -89,6 +89,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/ecommerce` | B | — | Published |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
+| `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
 | `/industries/hoa-accounting/california` | B | California HOA accounting | Added 2026-10-12 — state-specific remote accounting scope, association records and board-reporting context; not a local-office claim |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
