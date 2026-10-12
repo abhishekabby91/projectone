@@ -1,3 +1,7 @@
+## 2026-10-12 (property management owner statement workflow)
+
+Added `/blog/property-management-owner-statements` as a focused operational guide on preparing owner statements from reconciled records. It covers property coding, fee calculations, reserves and liabilities, owner balances, exception tracking, review approval, and task boundaries when accounting preparation is supported externally. Linked it to the existing month-end, reconciliation and complete-guide resources rather than creating a separate software-specific page. Added the canonical route to the sitemap and registered its distinct intent. Existing Yardi Texas page remains unchanged. Validate the branch build and generated sitemap dates before merge; no indexing or ranking result is assumed.
+
 # Accounstone SEO Changelog
 
 ## 2026-10-12 (expand property management accounting guide)
