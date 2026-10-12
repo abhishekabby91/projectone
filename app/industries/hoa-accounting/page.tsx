@@ -501,6 +501,7 @@ export default function HoaAccountingPage() {
               { name: 'Yardi', href: '/blog/hoa-accounting-yardi' },
               { name: 'eUnify', href: '/blog/hoa-accounting-eunify' },
               { name: 'eUnify + QuickBooks', href: '/blog/eunify-quickbooks-hoa-accounting' },
+              { name: 'Accounting support for self-managed HOAs', href: '/industries/hoa-accounting/self-managed-hoa-accounting' },
               { name: 'How to outsource HOA accounting', href: '/blog/how-to-outsource-hoa-accounting' },
               { name: 'Outsourcing vs. in-house', href: '/blog/hoa-accounting-outsourcing-vs-in-house' },
             ].map((l) => (
