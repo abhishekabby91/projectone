@@ -225,3 +225,31 @@ Use a batch workflow for related pages so content work can progress efficiently 
 5. Summarize passed checks, failures, items not testable, commit SHA and preview deployment state. Never claim production deployment, indexing or ranking success based only on a branch preview.
 
 This workflow deliberately defers **cluster-wide link reconciliation** until the batch is complete, but it does not defer basic links, metadata or route registration needed for each page to be valid. Work remains on the approved working branch; the user merges to `main` and authorizes deployment.
+
+
+## Batch page production and pre-deployment reconciliation
+
+Use a batch workflow to reduce repeated edits to the same hubs and registries, while keeping each new page crawlable and technically sound from the moment it is created.
+
+### During page creation — minimum required on each page
+
+- Confirm one primary intent and check `docs/SEARCH-INTENTS.md` for an existing owner before creating the route.
+- Add unique title, meta description, canonical, one clear H1, suitable structured data and accurate scope boundaries.
+- Add at least one relevant contextual link to the correct commercial hub or parent page, plus essential breadcrumb/navigation links where the site's components support them. Do not leave a new page completely orphaned while waiting for the batch pass.
+- Register the route and intent in the required project registries, discovery files and sitemap mechanism as specified by the project workflow.
+- Verify the new page's content and source links; do not add speculative claims or filler solely to increase page count.
+
+### After a focused batch — dedicated reconciliation pass
+
+1. **Intent and cannibalization:** map each new URL to one intent; compare titles, H1s, descriptions and content against existing pages; consolidate or revise overlapping pages instead of multiplying similar URLs.
+2. **Internal-link graph:** add contextual links from relevant hubs and existing guides to new pages; add useful links from new pages back to their parent hub and closely related guides; vary anchors naturally and avoid sitewide or repetitive exact-match links.
+3. **Destination integrity:** check internal destinations for 404s, redirects, duplicate targets, incorrect anchors and links to pages that are not in the intended release.
+4. **Registry and discovery parity:** verify route/content/search-intent registries, industry hub cards, `llms.txt`, sitemap inclusion and canonical URLs are consistent. Do not hand-edit generated sitemap-date files; use the documented generator/workflow.
+5. **Technical validation:** run the available build/lint/type checks, inspect the preview's rendered title/description/canonical/robots/schema, confirm one H1 where appropriate, check mobile layout, and test the affected routes and sitemap for status and duplicate URLs.
+6. **Release boundary:** report exactly which commit/preview was tested and what remains unverified. Keep work on the approved feature branch until the user reviews and manually merges; do not merge, deploy production or access GSC without explicit authorization.
+
+### Batch sizing and priority
+
+Group pages by one coherent target—for example, HOA first, property management separately—and use a small enough batch that content, links and routes can be reviewed together. There is no fixed number of pages per batch. Finish a smaller batch when it is useful and defensible; do not delay a necessary broken-link or metadata fix just to wait for the final pass. The final linking pass supplements, rather than replaces, minimum links and technical setup during creation.
+
+Keep SEO and AEO checks distinct throughout: SEO covers intent ownership, metadata, crawlability, internal links, canonicals and sitemap parity; AEO covers direct answers, grounded FAQs, definitions, evidence and scope clarity. Neither schema nor `llms.txt` guarantees rankings.
