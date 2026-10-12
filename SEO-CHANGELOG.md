@@ -1,3 +1,9 @@
+## 2026-10-12 — Adopt batch page creation and final linking reconciliation
+
+- Documented the agreed production workflow: create and validate focused page batches, keep minimum crawlability and contextual links on every new page, then perform a dedicated internal-linking, intent/cannibalization, registry, sitemap and technical reconciliation before release.
+- Clarified that the batch size is evidence- and review-driven, not a fixed quota; urgent broken-link or metadata issues should be fixed immediately rather than deferred.
+- Kept SEO checks separate from AEO checks and preserved the existing release boundary: work on `accounstone-reconcile-seo-oct12`, no merge to `main`, no production deployment and no GSC access without explicit authorization.
+
 ## 2026-10-12 — Standardize batch page production and final reconciliation
 
 - Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
