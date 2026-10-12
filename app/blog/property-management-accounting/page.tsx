@@ -123,16 +123,39 @@ export default function Page() {
       <p>If the backlog needs external capacity, start by describing the periods and accounts affected on the <Link href="/industries/property-management">property management accounting support page</Link>. The scope can then be assessed against the records available and the client's reporting deadlines.</p>
 
       <h2>13. Vendor payables and year-end Form 1099 preparation</h2>
-      <p>A repeatable vendor workflow starts before year-end. Collect the appropriate tax form and vendor details through the client's approved onboarding process, maintain the legal payee name and taxpayer information securely, code invoices to the correct entity and property, and retain approval and payment records. Review duplicate vendors, missing tax information, changes in payee details and payments that may need special treatment.</p>
-      <p>Before year-end reporting, reconcile vendor activity to the accounting records and payment data, investigate exceptions, and have the responsible client or tax professional determine the correct information-return treatment. The reporting form and requirements can depend on the payment type, payee classification, payment method, amount and current rules. For example, IRS instructions distinguish certain rent paid to a property manager from rent the manager pays over to the owner; do not assume every vendor or rent payment belongs on the same form.</p>
-      <p>Use current <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS instructions for Forms 1099-MISC and 1099-NEC</a> when designing the checklist, and confirm the applicable tax-year requirements before filing. A bookkeeping SOP can organize source data and exceptions, but it should not replace tax review or guarantee that every payment is reportable in a particular way.</p>
+      <p>Year-end vendor reporting is easier to review when vendor records are maintained throughout the year, not reconstructed from a list of checks in January. The accounting workflow should connect the vendor master, invoice coding, payment detail and supporting tax-document status while keeping classification and filing decisions with the client or its designated tax professional.</p>
+
+      <h3>1. Maintain a controlled vendor record</h3>
+      <ul>
+        <li>Keep the legal payee name, remittance details, vendor type and relevant tax-document status consistent across the approved vendor record and supporting documents.</li>
+        <li>Record when a W-9 or other requested documentation was received, whether required fields appear complete, and whether follow-up is still outstanding. Do not treat a form on file as proof that the payment is reportable—or not reportable.</li>
+        <li>Use an approved, access-controlled channel for collecting and storing taxpayer information. Limit access to people who need it, and avoid copying taxpayer identification numbers into general-purpose spreadsheets, email threads or exception logs.</li>
+        <li>Route changes to payee name, tax details or payment instructions through the client's verification process; a change request alone should not override existing vendor controls.</li>
+      </ul>
+      <p>The <a href="https://www.irs.gov/forms-pubs/about-form-w-9" target="_blank" rel="noreferrer">IRS Form W-9 information page</a> is a starting point for the current form. Follow the client's approved process for requesting, validating and retaining vendor tax documentation.</p>
+
+      <h3>2. Reconcile the payment population before classifying it</h3>
       <ol>
-        <li>Maintain vendor onboarding and tax-document status using approved access controls.</li>
-        <li>Code each invoice and payment to the right payee, property and legal entity.</li>
-        <li>Check approvals, duplicates, credits, voids and payment-method details.</li>
-        <li>Reconcile vendor and payment records, then produce a list of missing information and unusual items.</li>
-        <li>Route classification and filing decisions to the designated client or tax reviewer and retain evidence of review.</li>
+        <li>Export vendor activity for the relevant tax year from the accounting and payment systems, noting the reporting entity, date range and report parameters.</li>
+        <li>Reconcile the export to the general ledger and available payment records. Identify voids, reversals, credits, duplicate entries, stale checks and payments recorded in a different period.</li>
+        <li>Separate records by legal entity and payee before combining totals. A portfolio-wide vendor total may conceal payments made by different reporting entities.</li>
+        <li>Compare invoice coding with the underlying service or expense description, but send uncertain payment types and payee classifications to the designated tax reviewer rather than resolving them by assumption.</li>
+        <li>Produce an exception list for missing documentation, inconsistent names, unmatched payment totals, unusual payment methods and other unresolved items. Assign an owner and record how each item was resolved.</li>
       </ol>
+
+      <h3>3. Review reporting questions rather than relying on a blanket threshold</h3>
+      <p>Do not assume that every vendor payment is reportable, that every payment below a commonly quoted threshold can be ignored, or that all payments to a single payee use the same information-return form. Treatment can depend on the payment's nature, recipient, method, payer entity, tax year and current instructions. Payment platforms and card transactions may have separate reporting considerations, so the accounting record should preserve the payment method instead of combining everything into one undifferentiated total.</p>
+      <p>Property management can add another layer: rent received from a tenant, rent a management company pays to an owner, and fees paid to a service provider are not interchangeable categories. Keep the underlying transaction description and agreement available for review. For example, current <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS Instructions for Forms 1099-MISC and 1099-NEC</a> discuss reporting rules and specific exceptions; the responsible tax professional should confirm how those instructions apply to the facts and tax year.</p>
+
+      <h3>4. Prepare a reviewer-ready year-end handoff</h3>
+      <ul>
+        <li>Provide reconciled payment totals by payee and reporting entity, with the source report and period clearly identified.</li>
+        <li>Include vendor tax-document status and a separate list of missing or inconsistent information—without exposing taxpayer identification numbers in ordinary review notes.</li>
+        <li>Explain material differences between the vendor ledger, payment-system totals and proposed reporting population; retain the supporting reconciliation and exception resolutions.</li>
+        <li>Flag items requiring a tax decision, including uncertain classifications, unusual payment methods, payee changes and potential exceptions. Record who made the decision and what evidence they relied on.</li>
+        <li>Confirm the designated preparer, reviewer, filing responsibility and deadline against current official instructions and the client's process. Keep evidence of approval and any later correction.</li>
+      </ul>
+      <p>Bookkeeping support can organize source data, reconcile payment records, track missing documents and prepare exception schedules. It should not independently determine a payee's tax classification, provide legal conclusions, substitute for the responsible tax review or guarantee that every payment has been classified correctly. Confirm current-year requirements before preparing or filing an information return.</p>
 
       <h2>Compare in-house and outsourced support for your portfolio</h2>
       <p>For a portfolio of around 150 units, unit count alone is not enough to estimate the accounting workload or decide which staffing model fits. Compare the number of legal entities, bank and trust accounts, monthly transactions, owner statements, vendor payments, reporting deadlines, backlog and the amount of review the client needs to retain.</p>
