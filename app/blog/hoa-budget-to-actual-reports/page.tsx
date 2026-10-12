@@ -78,7 +78,7 @@ export default function HoaBudgetToActualReports() {
       <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
 
       <h2>Related HOA Accounting Resources</h2>
-      <p>See <a href="/blog/hoa-board-financial-package">HOA board financial package</a>, <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
+      <p>For the planning stage, see the <Link href="/blog/hoa-annual-budget-preparation">HOA annual budget preparation workflow</Link>. For the reporting stage, see the <a href="/blog/hoa-board-financial-package">HOA board financial package</a>, <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
       </ArticleLayout>
     </>
   );
