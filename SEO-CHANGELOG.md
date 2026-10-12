@@ -1,3 +1,9 @@
+## 2026-10-12 — Require per-page competitor and SERP research
+
+- Made competitor/search-results research a mandatory gate for every new industry, location and software-specific page, even when several pages are created in one batch.
+- The brief requires exact queries/date, observed organic results, competitor URL/content comparison, current Accounstone intent owner, useful differentiation and a go/no-go decision. Ranking positions are recorded only when actually observed; competitor page existence is not treated as search-demand or ranking proof.
+- Added a post-draft competitor comparison step before batch-wide internal-link and technical reconciliation. No GSC access, merge to `main` or production deployment.
+
 ## 2026-10-12 — Adopt batch page creation and final linking reconciliation
 
 - Documented the agreed production workflow: create and validate focused page batches, keep minimum crawlability and contextual links on every new page, then perform a dedicated internal-linking, intent/cannibalization, registry, sitemap and technical reconciliation before release.
