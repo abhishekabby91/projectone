@@ -91,7 +91,7 @@ export default function HoaReserveAccounting() {
       <p>QuickBooks Online and association-management platforms can track reserve activity, but the setup needs to match the association's reporting requirements. Before changing software or account structure, document how operating and reserve activity is currently reported and reconciled.</p>
 
       <h2>Related HOA Resources</h2>
-      <p>Continue with <a href="/blog/hoa-operating-vs-reserve-funds">HOA operating funds vs. reserve funds</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, and <a href="/blog/hoa-financial-statements-board-review">financial statements for board review</a>.</p>
+      <p>For the annual planning cycle, see the <Link href="/blog/hoa-annual-budget-preparation">HOA annual budget preparation workflow</Link>. Continue with <a href="/blog/hoa-operating-vs-reserve-funds">HOA operating funds vs. reserve funds</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, and <a href="/blog/hoa-financial-statements-board-review">financial statements for board review</a>.</p>
       </ArticleLayout>
     </>
   );
