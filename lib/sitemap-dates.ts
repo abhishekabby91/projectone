@@ -61,6 +61,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/property-management-bookkeeping-vs-accounting': '2026-10-10',
   '/blog/property-management-chart-of-accounts': '2026-10-12',
   '/blog/property-management-month-end-close-checklist': '2026-10-10',
+  '/blog/property-management-owner-statements': '2026-10-12',
   '/blog/quickbooks-month-end-close-checklist': '2026-10-10',
   '/blog/real-estate-accounting-month-end-close': '2026-10-10',
   '/blog/rent-roll-accounting': '2026-10-10',
