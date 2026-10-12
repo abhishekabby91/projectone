@@ -1,6 +1,14 @@
 ## 2026-10-12 — Audit AppFolio California page before city-page expansion
 
 - Audited the existing `/industries/property-management/appfolio-accounting-california` page against the main property-management pillar and competitor content. Kept the existing URL: it already has software-specific workflow, California trust-record context, appropriate scope boundaries and relevant links.
+- Ensured the existing commercial page is registered in `docs/ROUTES.md` and `docs/SEARCH-INTENTS.md`; it was already present in `app/sitemap.ts`.
+- Reviewed current competitor pages from REA for San Francisco, San Diego and Orange County, plus AppFolio's official accounting/reporting page. These show competitor content patterns but do not prove search demand or justify copying city-plus-software pages.
+- On the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, verified HTTP 200, canonical and one H1 for the AppFolio California page, property-management pillar, Texas Yardi page, bank reconciliation guide, month-end guide, accounting service page and Yardi workflow guide. This older preview does not validate the latest branch head or production.
+- Decision: do not add a city-level property-management URL until distinct query intent and non-duplicative content are demonstrated. No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Audit AppFolio California page before city-page expansion
+
+- Audited the existing `/industries/property-management/appfolio-accounting-california` page against the main property-management pillar and competitor content. Kept the existing URL: it already has software-specific workflow, California trust-record context, appropriate scope boundaries and relevant links.
 - Fixed a documentation gap by registering this existing commercial page in `docs/ROUTES.md` and `docs/SEARCH-INTENTS.md`; the route was already present in `app/sitemap.ts`.
 - Reviewed current competitor pages from REA for San Francisco, San Diego and Orange County, plus AppFolio's official accounting/reporting page. These show competitor content patterns but do not prove search demand or justify copying city-plus-software pages.
 - On the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, verified HTTP 200, canonical and one H1 for the AppFolio California page, property-management pillar, Texas Yardi page, bank reconciliation guide, month-end guide, accounting service page and Yardi workflow guide. This older preview does not validate the latest branch head or production.
