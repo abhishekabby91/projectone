@@ -64,6 +64,7 @@ const articles = [
   { href: '/blog/hoa-accounts-receivable-aging', title: 'HOA Accounts Receivable Aging: What Should Board Members Review?', description: 'How to read and reconcile HOA receivables aging while keeping accounting separate from collection decisions.', tag: 'HOA Accounting', readTime: '6 min read' },
   { href: '/blog/hoa-vendor-invoice-processing', title: 'HOA Vendor Invoice Processing: What Should Accounting Review?', description: 'A practical invoice workflow covering coding, approvals, duplicate checks and AP reconciliation.', tag: 'HOA Accounts Payable', readTime: '6 min read' },
   { href: '/blog/hoa-monthly-close-process', title: 'HOA Monthly Close Process: What Should Be Completed Before Reporting?', description: 'A practical monthly close covering assessments, reconciliations, AP, reserves, budget review and board reporting.', tag: 'HOA Accounting', readTime: '7 min read' },
+  { href: '/blog/us-cpa-firm-outsourcing-readiness-checklist', title: 'U.S. CPA Firm Outsourcing Readiness Checklist', description: 'A practical pre-engagement checklist for taxpayer data, access controls, review-ready workpapers, workflow ownership and pilot testing.', tag: 'U.S. CPA Firm Outsourcing', readTime: '9 min read' },
 ];
 
 export default function BlogPage() {
