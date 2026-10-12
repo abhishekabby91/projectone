@@ -8,7 +8,7 @@
 export const routeLastModified: Record<string, string> = {
   '': '2026-10-10',
   '/about': '2026-09-03',
-  '/blog': '2026-10-12',
+  '/blog': '2026-10-13',
   '/blog/accounts-payable-outsourcing': '2026-10-10',
   '/blog/accounts-receivable-management': '2026-10-10',
   '/blog/audit-support-services': '2026-10-10',
@@ -67,7 +67,8 @@ export const routeLastModified: Record<string, string> = {
   '/blog/quickbooks-month-end-close-checklist': '2026-10-10',
   '/blog/real-estate-accounting-month-end-close': '2026-10-10',
   '/blog/rent-roll-accounting': '2026-10-10',
-  '/blog/tax-preparation-outsourcing': '2026-10-10',
+  '/blog/tax-preparation-outsourcing': '2026-10-13',
+  '/blog/us-cpa-firm-outsourcing-readiness-checklist': '2026-10-13',
   '/blog/yardi-accounting-workflow': '2026-10-10',
   '/company-registration': '2026-09-08',
   '/company-registration/delaware': '2026-09-08',
