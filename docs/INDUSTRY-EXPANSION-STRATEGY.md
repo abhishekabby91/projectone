@@ -140,3 +140,20 @@ Every new industry page must:
 - Distinguish a page that appears in a search result from a confirmed ranking position.
 - After the user authorizes GSC work, use impressions, clicks, query-to-page mapping and indexing status to revise priorities. Until then, do not claim performance or indexing outcomes.
 - Review newly published pages after enough data accrues; consolidate or improve pages with overlapping intent rather than continually adding URLs.
+
+
+### California HOA page audit — 2026-10-12
+
+**Existing URL reviewed:** `/industries/hoa-accounting/california`.
+
+**Finding:** keep the current page as the single California HOA commercial page. The page already has a distinct state-level purpose, a California-specific financial-record context section, links to Civil Code references, HOA-specific accounting workstreams, five FAQs, Service/FAQ/Breadcrumb schema, canonical metadata, internal links to the HOA hub and supporting workflow guides, and clear boundaries around remote delivery, approvals, legal interpretation and CPA sign-off. Its current content does not justify a second generic California HOA page.
+
+**Competitor comparison:** APS Management's published HOA accounting page specifically discusses San Diego and Southern California, assessment records, bill payment, monthly financial reporting and reserve tracking. This makes San Diego County a credible *research candidate*, but a competitor service-area page alone does not prove search demand or justify duplicating the California page. Source: https://www.apsmanagement.com/hoa-accounting-services/
+
+**Technical preview check:** on the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, the California page returned HTTP 200 and rendered a title, description, canonical URL and index/follow directives. The following linked routes also returned HTTP 200: `/industries/hoa-accounting`, `/blog/hoa-accounting-month-end-checklist`, `/blog/hoa-bank-reconciliation`, `/blog/hoa-year-end-accounting`, `/markets/united-states/california` and `/contact`. This preview predates the latest strategy-document commits, so it validates the existing page and its links on that deployment—not the latest branch head or a production deployment.
+
+**Decision / next action:**
+1. Do not make a cosmetic rewrite to the California page; no concrete page-level defect was found in this pass.
+2. Keep San Diego County HOA accounting in research-only status. Before approval, establish distinct query intent, review the live search results and current page coverage, and define useful county-level content that can be delivered truthfully as remote accounting support.
+3. After the California page audit, continue the separate property-management location review, beginning with the existing pillar and software-specific pages. Keep SEO checks (intent ownership, metadata, crawl paths and cannibalization) separate from AEO checks (direct answers, FAQs and schema).
+4. No GSC access, merge to `main`, or production deployment was performed.
