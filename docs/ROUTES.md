@@ -187,10 +187,7 @@ is, delete that route first.
 
 ---
 
-**93 routes on disk, 91 in the sitemap** (verified 2026-09-09). The two differences are
-`/thank-you` and `/technology/myob`, both `noindex` — a noindex URL in a sitemap is a
-contradiction Search Console reports, so their absence is correct and expected. Anything
-else in either direction is drift.
+**160 routes on disk in the generated route-date map as of 2026-10-13; 158 sitemap URLs expected.** The two intended differences are `/thank-you` and `/technology/myob`, both `noindex` — a noindex URL in a sitemap is a contradiction Search Console reports, so their absence is correct and expected. The current source and generated date map include the new HOA annual-budget guide. The 158 sitemap count is the expected count from the route policy, not a live sitemap parity validation; compare the built `/sitemap.xml` against the full route inventory before marking parity verified.
 
 There are **eight** 301 redirects, all single-hop: the seven retired generic
 `/services/{slug}` URLs, plus `/blog/outsourced-accounting-services` → the
