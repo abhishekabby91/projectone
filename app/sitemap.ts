@@ -149,6 +149,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-homeowner-ledgers', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-assessment-receivables-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-budget-to-actual-reports', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-annual-budget-preparation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/hoa-board-financial-package', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-financial-statements-board-review', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-expenses', priority: 0.75, changeFrequency: 'monthly' },
