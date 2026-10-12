@@ -4380,3 +4380,12 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added the intent owner in `docs/SEARCH-INTENTS.md`; the existing checklist is already linked from the HOA hub and included in the sitemap on the working branch.
 - Competitor review found strong coverage of monthly board reporting and generic accounting, but the transition workflow is a more differentiated operational angle. GSC validation is blocked until the connected account has sufficient Search Console permission, so this is not represented as proven query demand.
 - No production changes or deployment from this step.
+
+
+## 2026-10-12 — Add property-management security-deposit accounting workflow
+
+- Added `/blog/property-management-security-deposit-accounting` with tenant-level liability records, bank/control-account reconciliation, move-out review, exception handling and recurring close controls.
+- Linked the new guide from the property-management industry hub and the existing accounting guide.
+- Added the canonical route to `app/sitemap.ts`, and registered the distinct informational intent and content entry.
+- Used official Texas statutory and TREC references plus California DRE legal excerpts to ground jurisdiction notes; the guide distinguishes accounting controls from legal advice and avoids generalizing state rules.
+- `app/robots.ts` already allows public search and AI crawling and declares `/sitemap.xml`; no robots change was needed. Deployment/build validation remains pending.
