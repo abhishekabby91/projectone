@@ -2,7 +2,7 @@
 
 - Competitor research found CAM reconciliation is covered both by property-accounting outsourcing providers and specialist commercial real-estate resources. Analytix presents CAM as part of outsourced property accounting, while REA has a dedicated CAM reconciliation service; this supports a distinct operational topic, not a claim of search volume or ranking opportunity.
 - Added `/blog/property-management-cam-reconciliation` with a source-ledger tie-out, expense-pool controls, lease-specific allocation considerations, an illustrative estimate-to-actual true-up, review checks and explicit limits around lease interpretation and billing authority.
-- Linked the guide from the property-management commercial pillar and the broad property-management accounting guide; registered its separate intent, route, sitemap entry and llms.txt discovery URL.
+- Linked the guide from the property-management commercial pillar and the broad property-management accounting guide; registered its separate intent, route, sitemap entry and llms.txt discovery URL. Added the article to the `/blog` index so it is discoverable from the resource hub as well.
 - The guide is informational and operational. It does not claim Accounstone interprets leases, determines legal recoverability, approves tenant charges or has client outcomes. No search volume or ranking outcome is claimed.
 - Validate the preview build, canonical, robots, sitemap uniqueness and rendered internal links before considering the branch ready. No GSC work, main merge or production deployment.
 
