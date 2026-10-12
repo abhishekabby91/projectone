@@ -40,6 +40,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | HOA accounting transition checklist when changing providers or management companies | `/blog/hoa-accounting-transition-checklist` | Informational / evaluation — handover records, opening balances, owner-ledger tie-out and first board package; distinct from historical cleanup and routine month-end close |
 | HOA year-end accounting checklist / prepare HOA books for CPA review | `/blog/hoa-year-end-accounting` | Informational / seasonal — reconcile year-end balances and organize schedules for CPA review; distinct from routine monthly close and the retired checklist URL that redirects here |
 | SaaS and technology accounting / deferred revenue bookkeeping | `/industries/technology` | Commercial — industry cluster |
+| Construction accounting and bookkeeping support for contractors | `/industries/construction` | Commercial — project-cost coding, subcontractor/vendor records, retainage, billing records and project-level close support; WIP/accounting-policy decisions remain with client management and qualified advisers |
 | Law firm, consulting and agency accounting / trust bookkeeping | `/industries/professional-services` | Commercial — industry cluster |
 | Staff augmentation during tax season | `/resources/guides/staff-augmentation-tax-season-guide` | Informational |
 | Client Accounting Services (CAS) for CPA firms | `/resources/guides/client-accounting-services-cas-guide` | Informational |
