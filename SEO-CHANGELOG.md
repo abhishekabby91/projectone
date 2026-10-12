@@ -1,3 +1,10 @@
+## 2026-10-12 — Strengthen property-management vendor tax-record workflow
+
+- Expanded the existing `/blog/property-management-accounting` vendor-payables and year-end Form 1099 section instead of creating a new URL, because the complete guide already owns the broad property-management accounting intent and includes year-end vendor reporting.
+- Added practical steps for controlled W-9/vendor-record handling, taxpayer-data access, payment-population reconciliation, legal-entity separation, exception logs, payment-method distinctions and reviewer-ready tax-preparer handoff.
+- Linked to current IRS Form W-9 information and IRS Instructions for Forms 1099-MISC and 1099-NEC. The copy explicitly leaves tax classification and filing decisions to the designated client/tax professional and does not promise compliance.
+- No search-volume or ranking claim is made. Reassess a standalone vendor 1099 page only if distinct search intent and original depth are demonstrated. No GSC work, main merge or production deployment.
+
 ## 2026-10-12 — Add focused commercial-property CAM reconciliation guide
 
 - Competitor research found CAM reconciliation is covered both by property-accounting outsourcing providers and specialist commercial real-estate resources. Analytix presents CAM as part of outsourced property accounting, while REA has a dedicated CAM reconciliation service; this supports a distinct operational topic, not a claim of search volume or ranking opportunity.
