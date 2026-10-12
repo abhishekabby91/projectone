@@ -164,8 +164,8 @@ export const industryDepth: Record<string, IndustryDepth> = {
       'Capitalisation policy applied consistently, with the fixed asset register kept current',
       'Bank, mortgage and escrow accounts reconciled monthly',
     ],
-  },,
- 
+  },
+
   construction: {
     breaks: [
       {
