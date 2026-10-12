@@ -377,6 +377,7 @@ export default function HoaAccountingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {[
               { href: '/blog/hoa-accounting-month-end-checklist', title: 'Monthly close checklist', body: 'Review bank accounts, assessments, receivables, payables and board reporting.' },
+              { href: '/blog/hoa-accounting-transition-checklist', title: 'Accounting transition checklist', body: 'Plan the handover of opening balances, homeowner ledgers, reserve records and the first board package.' },
               { href: '/blog/hoa-bank-reconciliation', title: 'HOA bank reconciliation', body: 'Understand what to check beyond a matching ending balance and how to track open items.' },
               { href: '/blog/hoa-operating-vs-reserve-funds', title: 'Operating vs. reserve funds', body: 'See why fund activity should remain clear in the books and monthly reports.' },
               { href: '/blog/hoa-budget-to-actual-reports', title: 'Budget-to-actual reports', body: 'Identify variances by mapping results to the board-approved budget.' },
@@ -471,6 +472,7 @@ export default function HoaAccountingPage() {
           </></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
+              { name: 'Accounting transition checklist', href: '/blog/hoa-accounting-transition-checklist' },
               { name: 'Month-end checklist', href: '/blog/hoa-accounting-month-end-checklist' },
               { name: 'Assessment accounting', href: '/blog/hoa-assessment-accounting' },
               { name: 'Homeowner ledgers', href: '/blog/hoa-homeowner-ledgers' },
