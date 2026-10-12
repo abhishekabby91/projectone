@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **159**
+- Files/pages scanned: **160**
 - High-priority findings: **7**
 - Medium-priority findings: **12**
 - Low-priority findings: **8**
@@ -52,20 +52,21 @@
 | app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 366 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 466 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounts-payable/page.tsx | 90/100 | 525 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-annual-budget-preparation/page.tsx | 90/100 | 1446 | 1 | 8 | 0 | 0 |
 | app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 948 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-assessment-receivables-reconciliation/page.tsx | 90/100 | 717 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-balance-sheet-explained/page.tsx | 90/100 | 527 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-bank-reconciliation/page.tsx | 90/100 | 530 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-board-financial-package/page.tsx | 90/100 | 735 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-bookkeeping-vs-accounting/page.tsx | 90/100 | 454 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 703 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 723 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 576 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-delinquency-accounting/page.tsx | 90/100 | 487 | 1 | 7 | 0 | 0 |
 | app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 910 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 1005 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 550 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 541 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 722 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 734 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 656 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 573 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
