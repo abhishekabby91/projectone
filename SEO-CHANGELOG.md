@@ -1,3 +1,12 @@
+## 2026-10-12 — Strengthen property-management pillar-to-workflow links
+
+- Reviewed `/industries/property-management` against its existing support articles and found that the commercial pillar did not directly link to the specialist property-management month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow pages.
+- Added those contextual links to the existing related-resources section. This helps readers move from the broad outsourcing service page to a specific workflow without creating duplicate location or software pages.
+- Competitor review found established local HOA accounting coverage around San Diego County and Southern California, including APS Management's service page and a separate HOA accounting provider citing San Diego clients. Orange County also has local accounting and management competitors. These are evidence of active local service-page competition, not proof of search volume or a ranking opportunity for Accounstone.
+- Recommended next local-page candidate for further validation: San Diego County HOA accounting. Before creating it, compare the existing California state page and competitor pages, gather more evidence of search intent, and define content unique to the county. Do not imply an Accounstone local office or on-site staff.
+- The California HOA preview build is READY and the new route is indexable with the correct canonical. The generated sitemap currently has 150 unique URLs; the new URL is missing `lastmod` until `scripts/generate-sitemap-dates.mjs` is run. The repository workflow refreshes generated dates on `main` pushes, so re-check after the user's manual merge. Do not edit `lib/sitemap-dates.ts` by hand.
+- No GSC work, merge to `main`, or production deployment.
+
 ## 2026-10-12 — Start the U.S. local SEO pilot with California HOA accounting
 
 - Added `/industries/hoa-accounting/california` as the first state-specific commercial page, with a distinct California HOA accounting intent rather than a city-name template.
