@@ -16,9 +16,9 @@ import {
 const PATH = '/industries/hoa-accounting/california';
 
 export const metadata: Metadata = genMeta({
-  title: 'California HOA Accounting & Bookkeeping Outsourcing',
+  title: 'California HOA Accounting & Bookkeeping',
   description:
-    'Remote HOA accounting support for California associations and community managers: assessment ledgers, operating and reserve reconciliations, board reports and year-end schedules.',
+    'Remote California HOA accounting support for assessment ledgers, reserve reconciliations, board reports and year-end schedules.'
   path: PATH,
 });
 
