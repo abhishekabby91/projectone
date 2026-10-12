@@ -1,3 +1,11 @@
+## 2026-10-12 — Improve AppFolio California accounting page clarity
+
+- Audited the existing `/industries/property-management/appfolio-accounting-california` page before proposing any city-level or additional software/location URLs.
+- Clarified the California trust-record workflow: adjusted bank balance, trust-fund control record and separate beneficiary/transaction/property records; documented evidence and investigation of differences; no unexplained suspense/clearing balances as a standing fix.
+- Explicitly stated that Accounstone's support is remote from India and is not an on-site California service or local-office claim. The responsible broker retains control of funds, signatory authority and regulatory responsibilities.
+- Used California DRE's October 6, 2026 trust-fund recordkeeping guidance and official Trust Funds booklet as references. No claim of independent compliance certification was added.
+- Change is committed on the working branch; preview/build validation is pending. No GSC access, merge to `main`, or production deployment.
+
 ## 2026-10-12 — Audit property-management location opportunities
 
 - Reviewed the existing property-management pillar and its linked-guide architecture before proposing any new location URLs. The pillar already separates property managers from property owners and covers property-level accounting, tenant/owner ledgers, deposits, CAM, reconciliations, month-end and client approval boundaries.
