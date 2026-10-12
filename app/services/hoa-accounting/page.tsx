@@ -164,6 +164,35 @@ export default function HoaAccountingServicesPage() {
         </div>
       </section>
 
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-3 mb-8">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent">Books behind or inherited records</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">A Controlled HOA Accounting Cleanup</h2>
+            <p className="max-w-3xl leading-7 text-muted">When prior months are incomplete or the records do not tie out, the first goal is to establish a supportable starting point—not to rush straight into a new monthly report. The cleanup scope depends on the available bank statements, homeowner records, vendor documents and prior reconciliations.</p>
+          </Reveal>
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li className="rounded-xl border border-border bg-input p-5">
+              <h3 className="font-bold text-primary">1. Confirm the cutoff and source records</h3>
+              <p className="mt-2 leading-6 text-muted">List the missing months, bank and reserve accounts, accounting exports, assessment schedules, unpaid bills and prior financial packages. Record what is missing before adjusting balances.</p>
+            </li>
+            <li className="rounded-xl border border-border bg-input p-5">
+              <h3 className="font-bold text-primary">2. Reconcile cash and fund activity</h3>
+              <p className="mt-2 leading-6 text-muted">Work from statements and transaction support, identify old reconciling items, and trace transfers or reserve activity rather than forcing the ledger to a target balance.</p>
+            </li>
+            <li className="rounded-xl border border-border bg-input p-5">
+              <h3 className="font-bold text-primary">3. Tie homeowner and vendor balances</h3>
+              <p className="mt-2 leading-6 text-muted">Compare assessment and payment records with the homeowner ledger; review unapplied receipts, credits, open invoices and duplicate or unsupported entries.</p>
+            </li>
+            <li className="rounded-xl border border-border bg-input p-5">
+              <h3 className="font-bold text-primary">4. Document exceptions before closing</h3>
+              <p className="mt-2 leading-6 text-muted">Keep an exception list for missing documents, unresolved balances and items requiring board, manager, CPA or legal direction. Do not hide uncertainty inside a journal entry.</p>
+            </li>
+          </ol>
+          <p className="mt-6 leading-7 text-muted">After the opening position is supportable, establish a repeatable monthly close and board-reporting schedule so the backlog does not return. See the <Link href="/blog/hoa-accounting-month-end-checklist" className="font-semibold text-primary underline underline-offset-4">HOA month-end checklist</Link>, <Link href="/blog/hoa-bank-reconciliation" className="font-semibold text-primary underline underline-offset-4">HOA bank reconciliation guide</Link> and <Link href="/blog/hoa-accounting-mistakes" className="font-semibold text-primary underline underline-offset-4">common HOA accounting mistakes</Link> for related controls.</p>
+        </div>
+      </section>
+
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-7">
