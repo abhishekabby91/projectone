@@ -381,6 +381,7 @@ export default function HoaAccountingPage() {
               { href: '/blog/hoa-bank-reconciliation', title: 'HOA bank reconciliation', body: 'Understand what to check beyond a matching ending balance and how to track open items.' },
               { href: '/blog/hoa-operating-vs-reserve-funds', title: 'Operating vs. reserve funds', body: 'See why fund activity should remain clear in the books and monthly reports.' },
               { href: '/blog/hoa-budget-to-actual-reports', title: 'Budget-to-actual reports', body: 'Identify variances by mapping results to the board-approved budget.' },
+              { href: '/blog/hoa-annual-budget-preparation', title: 'Annual budget preparation', body: 'Build the next budget from reconciled actuals, contract renewals, planned work and reserve information.' },
               { href: '/blog/hoa-board-financial-package', title: 'Board financial package', body: 'Review schedules that help directors understand monthly results.' },
               { href: '/blog/hoa-accounting-eunify', title: 'HOA accounting and eUnify', body: 'Consider the accounting records and reconciliation workflow behind HOA software.' },
             ].map((item) => (
@@ -489,6 +490,7 @@ export default function HoaAccountingPage() {
               { name: 'Bank reconciliation', href: '/blog/hoa-bank-reconciliation' },
               { name: 'Accounts receivable aging', href: '/blog/hoa-accounts-receivable-aging' },
               { name: 'Budget-to-actual reports', href: '/blog/hoa-budget-to-actual-reports' },
+              { name: 'Annual budget preparation', href: '/blog/hoa-annual-budget-preparation' },
               { name: 'Board financial package', href: '/blog/hoa-board-financial-package' },
               { name: 'Balance sheet explained', href: '/blog/hoa-balance-sheet-explained' },
               { name: 'Income statement explained', href: '/blog/hoa-income-statement-explained' },
