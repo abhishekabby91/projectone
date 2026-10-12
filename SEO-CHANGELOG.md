@@ -1,3 +1,12 @@
+## 2026-10-12 — Reconcile sitemap, robots and production state
+
+- Verified commit `319ad98ebb2ce238e0a0627ab351ce4d3e1fd62f` removes the repeated “Suggested Order for the Monthly Close” section from `/blog/hoa-accounting-month-end-checklist`; its Vercel production deployment is `READY`.
+- Verified `4ef883736ab74f7eaedc49e99a41f59d38f751cf` refreshed generated sitemap dates through the existing generated-file workflow; its Vercel production deployment is also `READY`. Do not edit `lib/sitemap-dates.ts` by hand.
+- Source-level sitemap reconstruction yields 146 unique URLs, with no duplicate paths and neither known noindex route (`/thank-you`, `/technology/myob`) included. The deployed XML could not be independently retrieved in this validation pass, so live sitemap-to-route parity remains an explicit check rather than a claimed pass.
+- Reviewed `app/robots.ts`: public routes are allowed, internal/API paths are disallowed, and `/sitemap.xml` is declared. No robots edit was justified.
+- Reviewed the property-management search-intent and content registries and current competitor results, including Buildium's recent financial-statement workflow and owner-reporting guidance. Those results already cover generic owner reporting; do not create another overlapping article. The next useful improvement is a focused review of the existing owner-statement and month-end pages for specific reconciliation evidence and reviewer controls.
+- No GSC used. No content URL added in this reconciliation pass; no rankings or compliance outcomes are claimed.
+
 ## 2026-10-12 (property management owner statement workflow)
 
 Added `/blog/property-management-owner-statements` as a focused operational guide on preparing owner statements from reconciled records. It covers property coding, fee calculations, reserves and liabilities, owner balances, exception tracking, review approval, and task boundaries when accounting preparation is supported externally. Linked it to the existing month-end, reconciliation and complete-guide resources rather than creating a separate software-specific page. Added the canonical route to the sitemap and registered its distinct intent. Existing Yardi Texas page remains unchanged. Validate the branch build and generated sitemap dates before merge; no indexing or ranking result is assumed.
