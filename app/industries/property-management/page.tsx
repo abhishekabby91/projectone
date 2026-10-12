@@ -454,7 +454,7 @@ export default function PropertyManagementPage() {
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
-              { name: 'Buildium workflows: owner statements and distributions', href: '/blog/property-management-accounting' },
+              { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>
