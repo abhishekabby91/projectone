@@ -1,3 +1,11 @@
+## 2026-10-12 — Repair sitemap route parity
+
+- Compared the recursive GitHub tree at the working branch HEAD with the sitemap policy and found three existing, canonical/indexable articles missing from `app/sitemap.ts`: `/blog/quickbooks-month-end-close-checklist`, `/blog/real-estate-accounting-month-end-close`, and `/blog/yardi-accounting-workflow`.
+- Added all three existing URLs to the sitemap and registered their separate software/industry-specific intents in `docs/SEARCH-INTENTS.md`, `docs/CONTENT-REGISTRY.md` and `docs/ROUTES.md`. No new page was created and the Texas Yardi commercial page was not changed.
+- Clarified the documented drift check: four legacy page files are permanent redirect sources, and `/technology/myob` plus `/thank-you` are the two live noindex routes. All six should be absent from the sitemap.
+- The live production sitemap was still at 146 unique URLs during this audit. The branch source is expected to generate 149 unique URLs after the fix, with no duplicate entries. Verify the preview's generated sitemap and latest Vercel build before merge; production remains unchanged.
+- `lib/sitemap-dates.ts` already contains dates for all three routes, so it was not hand-edited. No GSC access or indexing outcome is claimed.
+
 ## 2026-10-12 — Strengthen property-management month-end close
 
 - Improved `/blog/property-management-month-end-close-checklist` with an example exception-review table for unmatched receipts, deposit-liability differences, owner-statement variances and late vendor invoices.
