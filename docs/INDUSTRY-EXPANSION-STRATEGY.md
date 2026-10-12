@@ -70,7 +70,47 @@ Preserve the audience split between real-estate owners, third-party property man
 - **Healthcare:** improve the existing page with clear scope boundaries. Do not imply HIPAA compliance or PHI handling unless controls and contractual posture are verified.
 - **Home services, nonprofits, manufacturing/distribution, hospitality and senior living:** research service fit and accounting workflows before approving URLs. Competitor pages alone do not establish that Accounstone should launch a page.
 
-### Local pages
+### Location opportunity research — 2026-10-12
+
+This is a qualitative competitor-page review, not a search-volume or ranking study. Search results and published competitor pages show what topics competitors choose to cover; they do not prove demand, ranking positions or that Accounstone should copy the same URL pattern. Search Console analysis remains pending authorization.
+
+### HOA accounting: California first
+
+The existing `/industries/hoa-accounting/california` page already gives Accounstone a state-level commercial URL. It describes remote support from India, California-relevant financial-record context, association-specific workstreams, and appropriate boundaries around legal interpretation and CPA sign-off. Do not create a second generic California HOA page.
+
+Relevant competitor evidence:
+- [HOA Accounting Services](https://hoa-accounting.com/) publishes a dedicated HOA accounting service page and states it serves California, Washington, Texas, Nevada and Hawaii. Its page emphasizes monthly/annual reporting, billing and receivables, and board/manager workflows.
+- [HOA Accounting Services in the CACM industry partner directory](https://cacm.org/resources/industry-partner-directory/?c=hoa-accounting-services-llc) lists California regions including San Diego, Orange County, Los Angeles, Inland Empire, Sacramento Valley and the Bay Area. This supports broad regional coverage as a competitor's positioning, not a demand estimate.
+- [Levy, Erlanger & Company](https://hoa-accountants.com/) positions its community-association accounting services for Northern and Southern California, with financial statements, tax, budgeting and reserve-funding topics.
+- [California HOA Solutions](https://cahoasolutions.com/services/our-accounting-and-financial-management-services-include/) describes association accounting and financial management, including reporting, owner-payment/delinquency records and internal controls.
+- [HOA Accounting Services' customer examples](https://hoa-accounting.com/) include a San Diego association, but testimonials are not keyword or search-demand evidence.
+
+**Decision:** retain the state page and improve it only where the current audit finds a concrete content, internal-link or conversion gap. Keep San Diego County as a research candidate, not an approved page. The reviewed evidence establishes that providers serve the region, but not that a separate county URL has distinct search intent or enough original accounting content to justify indexing.
+
+### Property management: city-level pages are a stronger competitor pattern, but not an automatic template
+
+Relevant competitor evidence:
+- [REA — outsourced accounting for San Francisco property managers](https://rea.co/outsourced-accounting-property-management-companies-san-francisco/) discusses California trust-account reconciliation, owner statements/disbursements, 1099 data and software workflow.
+- [REA — outsourced real estate accounting in San Francisco](https://rea.co/outsourced-real-estate-accounting-san-francisco/) adds local portfolio context, multi-entity books, rent-control-related records and named software workflows.
+- [REA — commercial real estate accounting in San Francisco](https://rea.co/commercial-real-estate-accounting-san-francisco/) separates commercial lease mechanics such as CAM, NNN and modified-gross escalations from general property accounting.
+- [REA — San Francisco software-specific pages](https://rea.co/california/quickbooks-bookkeeping-services-in-san-francisco/) show an even narrower city-plus-platform pattern. This demonstrates a competitor publishing strategy, not evidence that Accounstone should create a page for every software/city combination.
+- The competitor's own related content also points to San Diego commercial-property and property-management accounting topics; these should be assessed as distinct commercial real-estate, property-manager and HOA audiences rather than merged.
+
+**Decision:** consider San Francisco property-management accounting and San Diego property-management accounting only after the existing property-management and software pages are audited. A candidate page must add genuine local accounting context and stay within Accounstone's remote bookkeeping/accounting scope. Do not copy competitor claims about local expertise, tax advice, trust-account compliance, savings, staff size or credentials. Do not create a city × software page matrix.
+
+### Initial opportunity queue
+
+| Priority | Candidate | Evidence and next check | Decision |
+|---|---|---|---|
+| 1 | Existing California HOA page | Compare current page and internal links against California HOA accounting competitors; check the exact route, metadata, FAQs, source links and crawl paths | Improve existing URL only where needed |
+| 2 | San Francisco property-management accounting | Multiple competitor pages target city-specific property-manager and real-estate accounting intent with distinct workflows; check whether Accounstone can write useful, accurate content without implying local presence | Research candidate; not yet approved |
+| 3 | San Diego property-management accounting | Competitor content covers San Diego property management/commercial real estate; determine whether a distinct accounting intent and original scope exist beyond statewide coverage | Research candidate; not yet approved |
+| 4 | San Diego County HOA accounting | Competitor service-area listings and a customer example mention San Diego, but no evidence yet justifies a separate county page | Hold; do not create yet |
+| 5 | Other California counties/cities | No candidate should be selected from geography alone | Wait for query/page evidence and a distinct content brief |
+
+Before any location page is approved, record: (1) intended buyer and primary query, (2) current Accounstone URL that might already own that intent, (3) competitor page evidence, (4) genuinely local accounting workflow/context, (5) internal links and canonical plan, and (6) how the page avoids suggesting an office or on-site service. Where Search Console data is available and the user authorizes access, use actual query impressions/clicks and landing-page mapping to strengthen or reject the hypothesis.
+
+## Local pages
 
 Use a state → county/metro → city research sequence only where local search intent and the actual service scope are distinct. For HOA/property management, assess competitor geography, local buyer language, regional workflow differences and whether the existing state or industry page already satisfies the intent. Do not infer demand from competitor page existence alone and never imply a local office, staff or on-site service.
 
