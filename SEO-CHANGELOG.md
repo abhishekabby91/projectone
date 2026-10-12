@@ -4568,3 +4568,10 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Confirmed the existing California AppFolio page and Yardi workflow article both have route files. These must be considered before approving city-specific URLs to avoid overlap.
 
 - Kept San Francisco and San Diego as research candidates only; competitor pages do not establish search volume, ranking positions, or Accounstone's likely performance. No new location page was created. No GSC work.
+
+
+## 2026-10-13 — Strengthen CAM reconciliation service-path linking
+
+- Added a contextual link from `/blog/property-management-cam-reconciliation` to `/services/property-management-accounting`, alongside its existing link to the property-management industry hub.
+- This gives readers a direct path from the commercial-property accounting workflow to the relevant service page without creating a duplicate CAM service URL.
+- Sitemap and robots policy already include the route and allow public crawling; no sitemap or robots change was required for this internal-link-only edit. Production build validation is pending the next Vercel deployment.
