@@ -75,7 +75,7 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1836 | 1 | 50 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1873 | 1 | 51 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 3173 | 1 | 15 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 569 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
@@ -101,7 +101,7 @@
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1087 | 1 | 11 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2723 | 1 | 62 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2752 | 1 | 64 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1119 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 2096 | 1 | 44 | 0 | 0 |
