@@ -13,8 +13,9 @@ import { routeLastModified } from '@/lib/sitemap-dates';
  *   was a literal on every entry defaulting to a `LAST_AUDIT` constant, and six
  *   content passes later most of the site was still declaring 2026-08-14 — the
  *   opposite of the truth, on exactly the pages that had just been rewritten.
- *   Re-run the script at the end of a content pass; do not hand-edit dates, and
- *   do not touch a page just to refresh one.
+ *   The main-branch GitHub Actions workflow regenerates this map after page,
+ *   shared-renderer, sitemap, or date-generator changes. Do not hand-edit dates,
+ *   and do not touch a page just to refresh one.
  * - Priority is retained only for framework compatibility; it is not
  *   used as a ranking strategy.
  * - Two live routes are deliberately absent, and the drift check in CLAUDE.md
@@ -127,6 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/audit-support-services', priority: 0.75, changeFrequency: 'monthly' },
     // Month-end close content consolidated here; former monthly-close-process URL redirects.
     { path: '/blog/hoa-accounting-month-end-checklist', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-accounting-transition-checklist', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-mistakes', priority: 0.75, changeFrequency: 'monthly' },
