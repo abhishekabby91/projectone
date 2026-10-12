@@ -1,3 +1,11 @@
+## 2026-10-12 — Add focused commercial-property CAM reconciliation guide
+
+- Competitor research found CAM reconciliation is covered both by property-accounting outsourcing providers and specialist commercial real-estate resources. Analytix presents CAM as part of outsourced property accounting, while REA has a dedicated CAM reconciliation service; this supports a distinct operational topic, not a claim of search volume or ranking opportunity.
+- Added `/blog/property-management-cam-reconciliation` with a source-ledger tie-out, expense-pool controls, lease-specific allocation considerations, an illustrative estimate-to-actual true-up, review checks and explicit limits around lease interpretation and billing authority.
+- Linked the guide from the property-management commercial pillar and the broad property-management accounting guide; registered its separate intent, route, sitemap entry and llms.txt discovery URL.
+- The guide is informational and operational. It does not claim Accounstone interprets leases, determines legal recoverability, approves tenant charges or has client outcomes. No search volume or ranking outcome is claimed.
+- Validate the preview build, canonical, robots, sitemap uniqueness and rendered internal links before considering the branch ready. No GSC work, main merge or production deployment.
+
 ## 2026-10-12 — Strengthen property-management pillar-to-workflow links
 
 - Reviewed `/industries/property-management` against its existing support articles and found that the commercial pillar did not directly link to the specialist property-management month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow pages.
