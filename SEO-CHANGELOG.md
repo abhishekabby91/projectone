@@ -1,3 +1,10 @@
+## 2026-10-12 — Strengthen owner-statement review workflow
+
+- Expanded the existing `/blog/property-management-owner-statements` page with an illustrative statement-to-ledger review bridge covering receipts, expenses, management fees, reserves/liabilities, owner distributions and exception ownership.
+- This improves operational specificity without creating another URL that competes with the current owner-statement intent. Competitor research reviewed Buildium's recent financial-statement and owner-reporting guidance; the added value here is a reviewable control map rather than generic software-feature claims.
+- The example is explicitly a control map, not a claim about any specific platform's reports. Existing scope boundaries around payment authorization, legal rules and trust-account requirements remain intact.
+- Sitemap dates must be refreshed through `scripts/generate-sitemap-dates.mjs` / the main-branch automation after merge; `lib/sitemap-dates.ts` was not edited manually. Preview/build validation for this branch is pending.
+
 ## 2026-10-12 — Reconcile sitemap, robots and production state
 
 - Verified commit `319ad98ebb2ce238e0a0627ab351ce4d3e1fd62f` removes the repeated “Suggested Order for the Monthly Close” section from `/blog/hoa-accounting-month-end-checklist`; its Vercel production deployment is `READY`.
