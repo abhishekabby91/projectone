@@ -189,3 +189,16 @@ These pages show a competitor strategy of separating buyer type and local intent
 **Decision:** do not create a San Francisco, San Diego, or Orange County page yet. First audit the existing AppFolio California page for distinct software-plus-location intent, unique workflow detail, canonical/metadata/schema and overlap with the main property-management pillar. Then compare whether any city/region page would add distinct buyer intent beyond the pillar and existing software page. Use GSC only if explicitly authorized; without query data, keep location pages as research candidates and do not present competitor page existence as demand proof.
 
 SEO review remains separate from AEO review: SEO covers intent ownership, metadata, crawl paths and cannibalization; AEO covers direct answers, workflow clarity, FAQs and schema.
+
+
+### AppFolio California page — audit and scoped improvement — 2026-10-12
+
+Reviewed `/industries/property-management/appfolio-accounting-california` as the existing software-plus-location URL before considering new property-management location pages. The page has a unique AppFolio monthly workflow, California trust-record context, FAQs, Service/FAQ/Breadcrumb schema, a canonical path, and links back to the property-management pillar and workflow guides. It therefore already owns the narrow AppFolio + California commercial intent; do not create a duplicate AppFolio California page or a city × software matrix.
+
+One substantive copy improvement was made: the California context now explains the record tie-out sequence in plain terms—adjusted bank balance, trust-fund control record, and separate beneficiary/transaction/property records—and says to retain evidence and investigate differences rather than leave unexplained amounts in suspense/clearing ledgers. It also explicitly states that Accounstone delivers remote support from India and does not represent an on-site California service or local office. This is grounded in the California Department of Real Estate's October 6, 2026 guidance and its Trust Funds booklet:
+- https://www.dre.ca.gov/Newsroom/DRE_Updates/2026_10_06_Trust_Fund_Records.html
+- https://www.dre.ca.gov/files/pdf/re13.pdf
+
+The copy keeps the responsible broker's obligations, control of funds, signatory authority and regulatory decisions with the appropriate authorized people. This is bookkeeping/accounting workflow context, not a claim that Accounstone independently ensures legal compliance.
+
+**Validation status:** code change is committed on the working branch, but no new preview has yet been confirmed for this commit. Validate build, rendered metadata, links and mobile layout after a preview deployment is available. Do not merge to `main` or deploy production as part of this pass.
