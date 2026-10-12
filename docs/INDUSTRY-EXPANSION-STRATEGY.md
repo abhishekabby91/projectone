@@ -268,3 +268,22 @@ No new commercial, software-specific, city, county or state page should be draft
 7. **Post-draft comparison:** compare the completed draft against the same competitor set for missing buyer questions, originality, overclaims, cannibalization and internal-link opportunities. Then include it in the batch-wide reconciliation and preview tests.
 
 Use this brief for each page, even when multiple pages are developed in one batch. Batch production changes the timing of the cluster-wide final QA; it does not remove the research gate for any individual page. Search Console may strengthen prioritization only when access is explicitly authorized; competitor-page presence by itself is not proof of search demand or ranking.
+
+
+### Property-management page audit — AppFolio California and city-page gate (2026-10-12)
+
+**Existing URL reviewed:** `/industries/property-management/appfolio-accounting-california`.
+
+**Finding:** retain this URL as the current software-plus-state commercial page. It already has a specific AppFolio intent, transaction/coding and reconciliation workflow, tenant/owner/deposit records, reporting handoff, California trust-record context, links to the property-management hub and relevant guides, and clear boundaries that support is remote from India. It does not claim a California office, on-site service or independent regulatory certification. Its title, canonical and H1 are distinct from the main property-management pillar.
+
+**Registry correction:** the existing page was present in the sitemap and rendered correctly but was missing from `docs/ROUTES.md` and `docs/SEARCH-INTENTS.md`. Added it to both so the established URL has explicit ownership and is less likely to be duplicated by a future city page. No new route was created.
+
+**Competitor comparison (search review on 2026-10-12):**
+- [REA — San Francisco property-management accounting](https://rea.co/outsourced-accounting-property-management-companies-san-francisco/) emphasizes California trust-account reconciliation, owner statements/disbursements, 1099 records and software workflows.
+- [REA — San Diego property-management accounting](https://rea.co/outsourced-accounting-property-management-companies-san-diego/) covers trust records, three-way reconciliation, owner reporting and property-management software.
+- [REA — AppFolio bookkeeping for Orange County](https://rea.co/california/appfolio-bookkeeping-services-in-orange-county/) shows a competitor's city/region-plus-software pattern. Its existence demonstrates a publishing strategy, not independent evidence of search demand or a reason to copy its URL matrix.
+- [AppFolio's accounting and reporting product page](https://www.appfolio.com/property-manager/accounting-reporting/) describes owner statements, income statements, cash flow, balance sheets, bank activity, CAM reporting and delinquency records. This supports using precise product/workflow terminology, not making unsupported claims about Accounstone's technical integration or proficiency.
+
+**Preview check:** on the available READY deployment for commit `03e615c7193db602288c6836ca4a54aba1548599`, the AppFolio California page, property-management pillar, Texas Yardi commercial page, property-management bank reconciliation guide, month-end close guide, property-management accounting service page and Yardi workflow guide each returned HTTP 200 and rendered a canonical and one H1. The preview is older than the latest documentation commits; this is not a latest-branch or production validation.
+
+**Decision:** do not create a San Francisco, San Diego or Orange County property-management page yet. The competitor pattern is strong enough for continued research, but the existing AppFolio California page already overlaps part of the software-plus-location intent. A city page needs a separately evidenced primary query and materially different accounting context; otherwise it risks competing with the existing software/state page and main pillar. Next review the query/intent map for any unserved city-level need and assess whether the existing page needs better contextual links before approving any additional URL.
