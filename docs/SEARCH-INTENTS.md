@@ -4,6 +4,7 @@ One primary search intent → one primary URL. Check this file before creating a
 
 | Search intent | Primary URL | Intent class |
 |---|---|---|
+| California HOA accounting and bookkeeping outsourcing | `/industries/hoa-accounting/california` | Commercial / state-specific — remote accounting scope for California associations, including assessment ledgers, operating/reserve reconciliations, board reporting and CPA handover; legal interpretation stays with qualified California professionals |
 | Outsourced bookkeeping services | `/services/bookkeeping/{region}` | Commercial |
 | Outsourced bookkeeping cost | `/resources/guides/outsourced-bookkeeping-cost-guide` | Commercial investigation |
 | What outsourced bookkeeping looks like day to day / red flags | `/blog/outsourced-bookkeeping-guide` | Informational |
