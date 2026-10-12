@@ -1,3 +1,9 @@
+## 2026-10-12 — Extend property-management location research
+
+- Reviewed fresh competitor pages for San Francisco and San Diego property-management accounting, including specialist accounting providers and a local property manager. The pages cover distinct workflow topics such as trust-ledger reconciliation, owner statements/disbursements, CAM, AP/AR, rent records and software workflow.
+- Confirmed the existing California AppFolio page and Yardi workflow article both have route files. These must be considered before approving city-specific URLs to avoid overlap.
+- Kept San Francisco and San Diego as research candidates only; competitor pages do not establish search volume, ranking positions, or Accounstone's likely performance. No new location page was created. No GSC work.
+
 ## 2026-10-12 — Audit AppFolio California page before city-page expansion
 
 - Audited the existing `/industries/property-management/appfolio-accounting-california` page against the main property-management pillar and competitor content. Kept the existing URL: it already has software-specific workflow, California trust-record context, appropriate scope boundaries and relevant links.
