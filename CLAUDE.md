@@ -18,6 +18,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
 | `docs/SEARCH-INTENTS.md` | One search intent → one URL. Check before creating a page. |
 | `docs/ROUTES.md` | Route inventory + the sitemap drift check (below). |
+| `docs/US-LOCAL-SEO-ROADMAP.md` | U.S. state → county/metro → city SEO expansion rules and evidence requirements. |
 | `docs/CONTENT-REGISTRY.md` | Blog/guide inventory and status. Check before writing content. |
 | `SEO-CHANGELOG.md` | Dated record of every change and why. Append to it — do not rewrite history. |
 | `knowledge/` | Per-service, per-market, per-ICP facts. The source of truth for claims. |
@@ -29,8 +30,8 @@ background, superseded on specifics by the files above.
 
 ## Current state (verified 2026-09-09)
 
-- The sitemap drift check is documented below. The current tree has 155
-  `app/**/page.tsx` routes; 149 canonical indexable routes belong in the sitemap.
+- The sitemap drift check is documented below. The current tree has 156
+  `app/**/page.tsx` routes; 150 canonical indexable routes belong in the sitemap.
   Four legacy source routes redirect permanently and two live routes are `noindex`,
   so those six page files are deliberately absent. Re-run the drift check after
   any route or redirect change.
@@ -444,7 +445,7 @@ that existed on disk but were missing from the sitemap: the QuickBooks month-end
 close checklist, real-estate accounting month-end close, and Yardi accounting
 workflow. They have now been added to `app/sitemap.ts` and the route/content/
 search-intent registries on the working branch. After that correction, the
-expected comparison is 155 page files against 149 sitemap URLs, with only the
+expected comparison is 156 page files against 150 sitemap URLs, with only the
 six intentional exclusions above. Verify against the generated preview sitemap
 after the branch build completes; production is unchanged until the owner merges.
 
