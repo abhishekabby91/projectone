@@ -1,3 +1,10 @@
+## 2026-10-12 — Audit property-management location opportunities
+
+- Reviewed the existing property-management industry page and route architecture before proposing new locations. The current cluster already covers property-level accounting, owner statements, tenant/security-deposit records, CAM, month-end, and Yardi/AppFolio workflows; a separate property-management accounting service page also exists.
+- Compared current competitor city pages for San Francisco and San Diego. They show active city-specific content around owner statements, trust-account records/reconciliations, 1099 data and software workflows, but do not establish search volume, independent ranking or expected Accounstone performance.
+- Validated the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`: the property-management pillar, AppFolio California page, service page and four supporting guides returned HTTP 200 with one H1 each. The preview predates the latest branch documentation commits and is not a production validation.
+- Prioritize a San Francisco content brief first, then San Diego, without creating either URL until distinct intent, non-duplicative content and truthful remote-service boundaries are demonstrated. No GSC work, main merge or production deployment.
+  
 ## 2026-10-12 — Audit existing California HOA accounting page
 
 - Reviewed `/industries/hoa-accounting/california` for intent ownership, state-specific content, metadata/schema, scope boundaries and internal links. Kept the current URL and avoided a cosmetic rewrite because the page already has a distinct California purpose and useful accounting workflow detail.
