@@ -79,6 +79,7 @@ export default function Page() {
         <li><strong>Close the period:</strong> maintain a close log, assign unresolved items and retain review evidence according to the client's process.</li>
       </ol>
       <p>For a reusable task-by-task version, follow the <Link href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</Link>.</p>
+      <p>For the owner-facing reporting handoff, see the <Link href="/blog/property-management-owner-statements">property management owner statement reconciliation and review workflow</Link>.</p>
 
       <h2>9. Choose software around the workflow—not the feature list</h2>
       <p>Property-management platforms and general accounting systems serve different roles. A property platform may hold leasing, tenant and property-level activity, while an accounting system may support the management company's general ledger and reporting. The correct source of truth varies by setup, so document which system owns each balance and how transactions or summaries move between systems.</p>
