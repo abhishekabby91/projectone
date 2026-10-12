@@ -1,3 +1,11 @@
+## 2026-10-12 — Add construction and contractor accounting industry page
+
+- Competitor research reviewed BPM's construction outsourcing page (job-cost analysis, WIP schedules, AP/AR, payroll and month-end), Vance & Cole's construction accounting page (job costing, WIP, progress billing and retainage), and adjacent e-commerce/property accounting specialists. These results establish active competitor content around industry-specific workflows; they do not establish exact rankings, search volume or likely performance for Accounstone.
+- Added `/industries/construction` as a distinct commercial page for contractors, with job-cost coding, subcontractor/vendor records, retainage and progress-billing tracking, reconciliations and project-level reporting. WIP and revenue-recognition support is bounded to schedules built from client-approved methods for management/CPA review; no legal, tax, bonding or surety certification is claimed.
+- Added an original construction workflow illustration, industry hub entry, search-intent/route registrations and `llms.txt` discovery link. The sitemap derives industry URLs from `lib/data.ts`, so no hand-written duplicate sitemap entry was added.
+- Added `docs/INDUSTRY-EXPANSION-STRATEGY.md` to separate competitor observations from ranking evidence and prioritize future construction, e-commerce, healthcare, home-services, nonprofit and manufacturing research. SEO and AEO checks remain distinct.
+- No GSC work, merge to `main`, or production deployment. Validate preview build, metadata, internal links and sitemap parity before considering the page complete.
+
 ## 2026-10-12 — Strengthen property-management vendor tax-record workflow
 
 - Expanded the existing `/blog/property-management-accounting` vendor-payables and year-end Form 1099 section instead of creating a new URL, because the complete guide already owns the broad property-management accounting intent and includes year-end vendor reporting.
