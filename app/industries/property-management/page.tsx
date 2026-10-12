@@ -450,6 +450,7 @@ export default function PropertyManagementPage() {
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
