@@ -164,5 +164,33 @@ export const industryDepth: Record<string, IndustryDepth> = {
       'Capitalisation policy applied consistently, with the fixed asset register kept current',
       'Bank, mortgage and escrow accounts reconciled monthly',
     ],
-  },
+  },,
+ 
+  construction: {
+    breaks: [
+      {
+        h: 'Project costs that do not tie back to the ledger',
+        p: 'A job-cost report can look complete while the general ledger contains uncoded bills, inconsistent cost codes or costs assigned to the wrong project. When the project report and trial balance use different structures, management cannot trace the variance without rebuilding the month. Consistent coding and a documented exception list make the difference visible while source records are still available.',
+      },
+      {
+        h: 'Retainage hidden inside ordinary receivables',
+        p: 'Progress billings may include amounts withheld until a later milestone or contract condition. If retainage is blended into ordinary receivables, collection timing and outstanding balances become harder to review. Separate tracking should follow the contractor’s approved contract and accounting treatment; the ledger should not make a legal determination about when the amount is enforceable or collectible.',
+      },
+      {
+        h: 'Project costs and billing records close in different periods',
+        p: 'Vendor bills, payroll allocations, approved applications for payment and cash receipts often arrive on different dates. A close that records only the cash movement can miss accrued costs or leave project reports inconsistent with the accounting records. The monthly workflow should reconcile source reports, posting periods and known exceptions under the client’s approved accounting policy.',
+      },
+      {
+        h: 'Shared costs are allocated inconsistently',
+        p: 'Equipment, insurance, payroll and other shared costs can be distributed across jobs using different methods from month to month. That makes project comparisons unreliable and creates unexplained margin changes. The allocation basis belongs to management and its accounting adviser; once approved, it should be documented and applied consistently.',
+      },
+    ],
+    firstMonth: [
+      'Project and cost-code structure agreed with the client before routine coding begins',
+      'Vendor and subcontractor bills tied to the relevant project records and approvals',
+      'Retainage and progress-billing records separated and reconciled under the client’s approved treatment',
+      'Shared-cost allocation method documented and applied consistently',
+      'Ledger, bank and project reports reconciled with exceptions assigned for review',
+    ],
+  }
 };
