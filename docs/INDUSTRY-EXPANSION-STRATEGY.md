@@ -253,3 +253,18 @@ Use a batch workflow to reduce repeated edits to the same hubs and registries, w
 Group pages by one coherent target—for example, HOA first, property management separately—and use a small enough batch that content, links and routes can be reviewed together. There is no fixed number of pages per batch. Finish a smaller batch when it is useful and defensible; do not delay a necessary broken-link or metadata fix just to wait for the final pass. The final linking pass supplements, rather than replaces, minimum links and technical setup during creation.
 
 Keep SEO and AEO checks distinct throughout: SEO covers intent ownership, metadata, crawlability, internal links, canonicals and sitemap parity; AEO covers direct answers, grounded FAQs, definitions, evidence and scope clarity. Neither schema nor `llms.txt` guarantees rankings.
+
+
+## Mandatory competitor and search-results research for every new page
+
+No new commercial, software-specific, city, county or state page should be drafted solely because a keyword sounds plausible or a competitor has a similar URL. Before drafting each proposed page, create a short research brief containing:
+
+1. **Search intent and buyer:** the likely query family, who searches it, and whether intent is commercial, informational or software/workflow-specific.
+2. **Live search-results review:** record the date, exact query variants and the organic results actually observed. Capture ranking positions only if the results were explicitly inspected and numbered; otherwise label the evidence as competitor-page discovery, not a verified ranking. Do not invent search volume, traffic, difficulty or ranking forecasts.
+3. **Competitor-page comparison:** inspect several relevant pages where available. Record the competitor URL, page type, topic coverage, useful workflow details, differentiators, content gaps, and any claims that are publisher assertions rather than independently verified facts.
+4. **Accounstone URL ownership:** check `docs/SEARCH-INTENTS.md`, current routes, hubs and existing guides for an existing page that should own the query. Reject or consolidate overlapping proposals.
+5. **Useful differentiation:** define the original accounting workflow, scope, records, handoffs, software nuance or defensible regional context that the proposed page can add. Never copy competitor wording, claims, credentials, service-area claims or local-presence implications.
+6. **Go/no-go decision:** write the rationale before drafting. If the SERP is unclear, intent overlaps, evidence is weak or Accounstone cannot truthfully serve the proposed scope, keep the idea in the research queue instead of publishing it.
+7. **Post-draft comparison:** compare the completed draft against the same competitor set for missing buyer questions, originality, overclaims, cannibalization and internal-link opportunities. Then include it in the batch-wide reconciliation and preview tests.
+
+Use this brief for each page, even when multiple pages are developed in one batch. Batch production changes the timing of the cluster-wide final QA; it does not remove the research gate for any individual page. Search Console may strengthen prioritization only when access is explicitly authorized; competitor-page presence by itself is not proof of search demand or ranking.
