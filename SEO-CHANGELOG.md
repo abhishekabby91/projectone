@@ -1,3 +1,9 @@
+## 2026-10-12 — Remove duplicate HOA year-end checklist section
+
+- Existing-page review found the same `Year-End Review Checklist` heading, explanatory paragraph and final-check table repeated twice on `/blog/hoa-year-end-accounting`.
+- Removed the second copy, retaining the first complete checklist. This reduces duplicated page content and leaves the separate year-end accounting steps intact.
+- Registered the page's seasonal year-end/CPA-preparation intent and documented the correction in `docs/CONTENT-REGISTRY.md`. No new URL was created; no GSC actions were taken.
+
 ## 2026-10-12 — Repair sitemap route parity
 
 - Compared the recursive GitHub tree at the working branch HEAD with the sitemap policy and found three existing, canonical/indexable articles missing from `app/sitemap.ts`: `/blog/quickbooks-month-end-close-checklist`, `/blog/real-estate-accounting-month-end-close`, and `/blog/yardi-accounting-workflow`.
