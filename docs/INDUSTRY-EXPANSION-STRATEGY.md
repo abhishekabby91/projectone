@@ -307,6 +307,7 @@ Use this brief for each page, even when multiple pages are developed in one batc
 
 **Decision:** do not create a San Francisco, San Diego or Orange County property-management page yet. The competitor pattern is strong enough for continued research, but the existing AppFolio California page already overlaps part of the software-plus-location intent. A city page needs a separately evidenced primary query and materially different accounting context; otherwise it risks competing with the existing software/state page and main pillar. Next review the query/intent map for any unserved city-level need and assess whether the existing page needs better contextual links before approving any additional URL.
 
+
 ### Property-management location audit — research update, 2026-10-12
 
 **Existing architecture checked on the working branch:** the property-management pillar is `/industries/property-management`. It already links to a California AppFolio-specific commercial page at `/industries/property-management/appfolio-accounting-california` and the Yardi workflow guide at `/blog/yardi-accounting-workflow`; both route files exist in the repository. This is important when assessing a city page: a new location page must not merely repeat the software page or the broad service hub.
@@ -322,3 +323,17 @@ Use this brief for each page, even when multiple pages are developed in one batc
 **Decision:** do not create either city page yet. First review the existing California AppFolio page and the property-management pillar for intent overlap and link paths; then write a page brief only if a city-specific commercial intent can be served with genuinely useful, accurate remote-accounting content. Avoid unsupported claims about California trust-account compliance, local presence, rent-control advice, legal/tax interpretation or software certification. For city pages, the relevant licensed local adviser remains responsible for jurisdiction-specific interpretation; Accounstone's scope should stay within agreed bookkeeping, records and schedules.
 
 **Next practical step:** audit the existing AppFolio California page and the property-management hub's internal-link/metadata structure, then make a yes/no decision on each location-page candidate. Do not add a new city URL merely to match competitor URL patterns.
+
+
+## U.S.-specific outsourcing content cluster — 2026-10-13
+
+Added `/blog/us-cpa-firm-outsourcing-readiness-checklist` as an operational checklist for U.S. CPA firms. Its scope is pre-engagement readiness: workflow definition, taxpayer-data disclosure review, IRC §7216 and Form 1040-series consent references, written information security plan/service-provider questions, least-privilege access, review-ready workpapers, pilot testing and quality measures. It links to the existing tax-preparation outsourcing article and CPA-firm service page rather than competing with them.
+
+The article cites official IRS resources, including Publication 4557, the IRS's August 2026 WISP reminder, the tax-professional information page and Revenue Procedure 2013-14. It explicitly avoids giving legal/tax advice or claiming that Accounstone holds security certifications. The blog index, sitemap, route/content/search-intent registries and AI discovery files were updated on the working branch.
+
+**Next validation:** wait for a preview of the latest branch head; inspect the new route's status, metadata, canonical, H1, source links and internal links; then check sitemap uniqueness and build status. Do not treat a successful page fetch as proof of a successful full build. No GSC work, merge to `main`, or production deployment has been performed.
+
+
+### Location wording rule — avoid repetitive delivery-centre references
+
+Do not repeat “delivery centre in New Delhi” or equivalent location claims across every industry, city or state page. State Accounstone's operating location only where it materially helps the reader understand the service model, legal/business identity or remote-delivery arrangement. For regional pages, prioritize the customer's local accounting workflows and relevant state/county context, and clearly distinguish remote service coverage from a physical local office. Never imply local staff, office, on-site service or local credentials without verification. Avoid repetitive location boilerplate that adds no distinct user value.
