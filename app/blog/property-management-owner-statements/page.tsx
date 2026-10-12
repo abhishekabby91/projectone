@@ -63,6 +63,23 @@ export default function PropertyManagementOwnerStatements() {
       <p>Before finalizing, trace the ending balance to the statement's supporting records. Check whether invoices are pending approval, whether a transfer is recorded in the right period, and whether an unresolved item could change the amount payable. Do not imply a payment has been released just because a statement shows a distribution due.</p>
       <p>Payment authorization and release should remain with the client or its authorized personnel under the agreed controls. The accounting preparation file should make the calculation and reviewer decision easy to follow.</p>
 
+      <h2>Example: a statement-to-ledger review bridge</h2>
+      <p>The review file should let another person trace a statement total to the source records without reconstructing the process from memory. The table below is an illustrative control map; the exact reports and account names depend on the property system and the management agreement.</p>
+      <table>
+        <thead>
+          <tr><th>Statement area</th><th>Source to tie out</th><th>Review question</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Rental receipts and other income</td><td>Tenant ledger, receipt activity and bank reconciliation</td><td>Are receipts posted to the right property and reporting period, including unapplied or reversed items?</td></tr>
+          <tr><td>Operating expenses</td><td>General ledger, invoice support and accounts payable listing</td><td>Are expenses supported, correctly coded and recorded in the intended period?</td></tr>
+          <tr><td>Management fees</td><td>Approved fee rule or management agreement and fee posting</td><td>Can the base, period and calculation be reproduced and reviewed?</td></tr>
+          <tr><td>Reserves and other liabilities</td><td>Relevant control accounts, supporting schedules and bank records</td><td>Are restricted or owed amounts kept distinct from ordinary operating results?</td></tr>
+          <tr><td>Owner balance or distribution due</td><td>Prior approved statement, current-period movements and authorized payment record</td><td>Does the ending figure reconcile, and is a due amount clearly distinguished from a payment actually released?</td></tr>
+          <tr><td>Open exceptions</td><td>Exception log with owner, amount, evidence needed and reviewer decision</td><td>Is every material unresolved difference assigned and disclosed under the agreed process?</td></tr>
+        </tbody>
+      </table>
+      <p>If a total does not tie, record the difference and investigate its cause before posting a correcting entry. Timing differences, missing transactions and incorrect coding need different resolutions; a journal entry should not be used merely to make the report agree.</p>
+
       <h2>6. Use a simple review checklist</h2>
       <ol>
         <li>Property, owner/entity and reporting period are correct.</li>

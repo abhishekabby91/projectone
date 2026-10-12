@@ -18,10 +18,11 @@ import { routeLastModified } from '@/lib/sitemap-dates';
  *   and do not touch a page just to refresh one.
  * - Priority is retained only for framework compatibility; it is not
  *   used as a ranking strategy.
- * - Two live routes are deliberately absent, and the drift check in CLAUDE.md
- *   expects exactly those two: `/thank-you` and `/technology/myob`. Both are
- *   `noindex`, and a noindex URL in a sitemap is a contradiction Search Console
- *   reports.
+ * - The two live, non-redirected routes deliberately absent are `/thank-you`
+ *   and `/technology/myob`; both are `noindex`. Retired source routes that have
+ *   permanent redirects are also omitted: a sitemap should list the destination,
+ *   not a URL that redirects. Keep the drift check in CLAUDE.md aligned with both
+ *   exclusions so a genuinely missing indexable route is not mistaken for policy.
  */
 
 type Entry = { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] };
@@ -78,6 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const specializedRoutes: Entry[] = [
     { path: '/industries/real-estate/yardi-accounting-outsourcing-texas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/industries/property-management/appfolio-accounting-california', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/industries/hoa-accounting/california', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/markets/united-states/texas', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/california', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/florida', priority: 0.65, changeFrequency: 'monthly' },
@@ -115,11 +117,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/resources/insights/asc-606-revenue-recognition-saas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/blog', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/blog/property-management-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-cam-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/rent-roll-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-month-end-close-checklist', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/quickbooks-month-end-close-checklist', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/real-estate-accounting-month-end-close', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/yardi-accounting-workflow', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-owner-statements', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-security-deposit-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/outsourced-bookkeeping-guide', priority: 0.75, changeFrequency: 'monthly' },

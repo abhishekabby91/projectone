@@ -450,10 +450,11 @@ export default function PropertyManagementPage() {
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
-              { name: 'Buildium workflows: owner statements and distributions', href: '/blog/property-management-accounting' },
+              { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
                 {guide.name} <span aria-hidden="true">→</span>

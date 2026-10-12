@@ -18,6 +18,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
 | `docs/SEARCH-INTENTS.md` | One search intent → one URL. Check before creating a page. |
 | `docs/ROUTES.md` | Route inventory + the sitemap drift check (below). |
+| `docs/US-LOCAL-SEO-ROADMAP.md` | U.S. state → county/metro → city SEO expansion rules and evidence requirements. |
 | `docs/CONTENT-REGISTRY.md` | Blog/guide inventory and status. Check before writing content. |
 | `SEO-CHANGELOG.md` | Dated record of every change and why. Append to it — do not rewrite history. |
 | `knowledge/` | Per-service, per-market, per-ICP facts. The source of truth for claims. |
@@ -29,9 +30,11 @@ background, superseded on specifics by the files above.
 
 ## Current state (verified 2026-09-09)
 
-- **97 routes** on disk, all returning 200; 95 in the sitemap (`/thank-you` and
-  `/technology/myob` are both `noindex` and deliberately excluded — see the
-  drift check below).
+- The sitemap drift check is documented below. The current tree has 156
+  `app/**/page.tsx` routes; 150 canonical indexable routes belong in the sitemap.
+  Four legacy source routes redirect permanently and two live routes are `noindex`,
+  so those six page files are deliberately absent. Re-run the drift check after
+  any route or redirect change.
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
   `/services/{service}/{region}`. The matrix lives in `lib/data.ts` (`regions`,
   `serviceRegions`, `serviceRegionPaths`) and drives the navbar, footer, `/services`
@@ -428,15 +431,23 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  → would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted → never crawled
 ```
 
-The first command must print nothing. **The second now prints exactly two
-lines, `/technology/myob` and `/thank-you`, and both are correct** — each is
-`noindex`, and a noindex URL in a sitemap is a contradiction Search Console
-reports. Anything else in either direction is drift.
+The first command must print nothing. The second should print the four
+legacy page files that are permanent redirect sources plus the two live
+`noindex` routes: `/blog/hoa-delinquency-accounting`,
+`/blog/hoa-monthly-close-process`, `/blog/hoa-vendor-invoice-processing`,
+`/blog/hoa-year-end-checklist`, `/technology/myob` and `/thank-you`.
+Redirect sources should be excluded because their destinations, not the old
+URLs, belong in the sitemap. The two noindex URLs should also be excluded.
+Anything else in either direction is drift.
 
-This check found four unlisted guides on 2026-08-21, and confirmed 84 ↔ 84
-parity after the 2026-08-27 restructure. **As of 2026-09-17 it is 97 routes on
-disk against 95 in the sitemap**, the two differences being the noindex pair
-above.
+The October 12, 2026 audit found three additional canonical, indexable guides
+that existed on disk but were missing from the sitemap: the QuickBooks month-end
+close checklist, real-estate accounting month-end close, and Yardi accounting
+workflow. They have now been added to `app/sitemap.ts` and the route/content/
+search-intent registries on the working branch. After that correction, the
+expected comparison is 156 page files against 150 sitemap URLs, with only the
+six intentional exclusions above. Verify against the generated preview sitemap
+after the branch build completes; production is unchanged until the owner merges.
 
 `app/services/cfo-support/route.ts` is a `route.ts` returning 410, not a page,
 so it appears in neither count.

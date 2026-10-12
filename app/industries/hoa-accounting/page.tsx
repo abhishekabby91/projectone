@@ -420,6 +420,15 @@ export default function HoaAccountingPage() {
               </Reveal>
             ))}
           </div>
+          <div className="mt-6 rounded-xl border border-border bg-white p-5 md:p-6">
+            <h3 className="font-serif text-lg font-bold text-primary">California HOA accounting context</h3>
+            <p className="mt-2 text-sm md:text-base leading-relaxed text-muted">
+              California associations have state-specific financial-record and reserve-reporting considerations. Our remote accounting scope can be shaped around your existing board reports, reconciliations and CPA handover process.
+            </p>
+            <Link href="/industries/hoa-accounting/california" className="mt-3 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
+              California HOA accounting and bookkeeping support
+            </Link>
+          </div>
         </div>
       </section>
 

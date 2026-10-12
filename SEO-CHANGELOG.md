@@ -1,3 +1,153 @@
+## 2026-10-12 — Audit AppFolio California page before city-page expansion
+
+- Audited the existing `/industries/property-management/appfolio-accounting-california` page against the main property-management pillar and competitor content. Kept the existing URL: it already has software-specific workflow, California trust-record context, appropriate scope boundaries and relevant links.
+- Ensured the existing commercial page is registered in `docs/ROUTES.md` and `docs/SEARCH-INTENTS.md`; it was already present in `app/sitemap.ts`.
+- Reviewed current competitor pages from REA for San Francisco, San Diego and Orange County, plus AppFolio's official accounting/reporting page. These show competitor content patterns but do not prove search demand or justify copying city-plus-software pages.
+- On the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, verified HTTP 200, canonical and one H1 for the AppFolio California page, property-management pillar, Texas Yardi page, bank reconciliation guide, month-end guide, accounting service page and Yardi workflow guide. This older preview does not validate the latest branch head or production.
+- Decision: do not add a city-level property-management URL until distinct query intent and non-duplicative content are demonstrated. No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Audit AppFolio California page before city-page expansion
+
+- Audited the existing `/industries/property-management/appfolio-accounting-california` page against the main property-management pillar and competitor content. Kept the existing URL: it already has software-specific workflow, California trust-record context, appropriate scope boundaries and relevant links.
+- Fixed a documentation gap by registering this existing commercial page in `docs/ROUTES.md` and `docs/SEARCH-INTENTS.md`; the route was already present in `app/sitemap.ts`.
+- Reviewed current competitor pages from REA for San Francisco, San Diego and Orange County, plus AppFolio's official accounting/reporting page. These show competitor content patterns but do not prove search demand or justify copying city-plus-software pages.
+- On the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`, verified HTTP 200, canonical and one H1 for the AppFolio California page, property-management pillar, Texas Yardi page, bank reconciliation guide, month-end guide, accounting service page and Yardi workflow guide. This older preview does not validate the latest branch head or production.
+- Decision: do not add a city-level property-management URL until distinct query intent and non-duplicative content are demonstrated. No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Require per-page competitor and SERP research
+
+- Made competitor/search-results research a mandatory gate for every new industry, location and software-specific page, even when several pages are created in one batch.
+- The brief requires exact queries/date, observed organic results, competitor URL/content comparison, current Accounstone intent owner, useful differentiation and a go/no-go decision. Ranking positions are recorded only when actually observed; competitor page existence is not treated as search-demand or ranking proof.
+- Added a post-draft competitor comparison step before batch-wide internal-link and technical reconciliation. No GSC access, merge to `main` or production deployment.
+
+## 2026-10-12 — Adopt batch page creation and final linking reconciliation
+
+- Documented the agreed production workflow: create and validate focused page batches, keep minimum crawlability and contextual links on every new page, then perform a dedicated internal-linking, intent/cannibalization, registry, sitemap and technical reconciliation before release.
+- Clarified that the batch size is evidence- and review-driven, not a fixed quota; urgent broken-link or metadata issues should be fixed immediately rather than deferred.
+- Kept SEO checks separate from AEO checks and preserved the existing release boundary: work on `accounstone-reconcile-seo-oct12`, no merge to `main`, no production deployment and no GSC access without explicit authorization.
+
+## 2026-10-12 — Standardize batch page production and final reconciliation
+
+- Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
+- The workflow explicitly avoids orphan pages during drafting, avoids speculative links to routes not yet created, and requires reporting the exact commit and preview state. No GSC work, merge to `main` or production deployment.
+
+## 2026-10-12 — Improve AppFolio California accounting page clarity
+
+- Audited the existing `/industries/property-management/appfolio-accounting-california` page before proposing any city-level or additional software/location URLs.
+- Clarified the California trust-record workflow: adjusted bank balance, trust-fund control record and separate beneficiary/transaction/property records; documented evidence and investigation of differences; no unexplained suspense/clearing balances as a standing fix.
+- Explicitly stated that Accounstone's support is remote from India and is not an on-site California service or local-office claim. The responsible broker retains control of funds, signatory authority and regulatory responsibilities.
+- Used California DRE's October 6, 2026 trust-fund recordkeeping guidance and official Trust Funds booklet as references. No claim of independent compliance certification was added.
+- Change is committed on the working branch; preview/build validation is pending. No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Audit property-management location opportunities
+
+- Reviewed the existing property-management pillar and its linked-guide architecture before proposing any new location URLs. The pillar already separates property managers from property owners and covers property-level accounting, tenant/owner ledgers, deposits, CAM, reconciliations, month-end and client approval boundaries.
+- Compared competitor city/region pages for San Francisco, San Diego and Orange County. These support further research into distinct local buyer intent but do not prove search demand or justify templated location pages.
+- On the available older READY preview, confirmed HTTP 200 for the property-management pillar, California AppFolio page, CAM reconciliation guide, Yardi workflow guide and property-management accounting service page. This was a limited route check, not a full link crawl or latest-branch/production validation.
+- Next: audit the existing AppFolio California page for software-plus-location intent, content uniqueness, metadata/schema and overlap with the main pillar before deciding whether any city/region page is warranted.
+- No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Audit property-management location opportunities
+
+- Reviewed the existing property-management industry page and route architecture before proposing new locations. The current cluster already covers property-level accounting, owner statements, tenant/security-deposit records, CAM, month-end, and Yardi/AppFolio workflows; a separate property-management accounting service page also exists.
+- Compared current competitor city pages for San Francisco and San Diego. They show active city-specific content around owner statements, trust-account records/reconciliations, 1099 data and software workflows, but do not establish search volume, independent ranking or expected Accounstone performance.
+- Validated the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`: the property-management pillar, AppFolio California page, service page and four supporting guides returned HTTP 200 with one H1 each. The preview predates the latest branch documentation commits and is not a production validation.
+- Prioritize a San Francisco content brief first, then San Diego, without creating either URL until distinct intent, non-duplicative content and truthful remote-service boundaries are demonstrated. No GSC work, main merge or production deployment.
+  
+## 2026-10-12 — Audit existing California HOA accounting page
+
+- Reviewed `/industries/hoa-accounting/california` for intent ownership, state-specific content, metadata/schema, scope boundaries and internal links. Kept the current URL and avoided a cosmetic rewrite because the page already has a distinct California purpose and useful accounting workflow detail.
+- Checked the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`: the California HOA route and six key internal destinations returned HTTP 200; the rendered page showed a title, meta description, canonical and index/follow directives. This preview predates the latest documentation commits and does not validate the latest branch head or production.
+- Competitor review of APS Management's San Diego/Southern California HOA accounting page supports further research into San Diego County, but not automatic page creation. Keep the county page unapproved until distinct query intent and original useful content are established.
+- No GSC access, merge to `main`, or production deployment.
+  
+## 2026-10-12 — Prioritize HOA and property-management cluster quality
+
+- Updated the industry expansion strategy after reviewing HOA and property-management competitor pages, including HOA Accounting Services, HOA Finance Partners, Dynamite Management, REA and Outsourced Bookkeeping. These pages help benchmark topic coverage; competitor-authored rankings, credentials and claims are not treated as independent evidence or Accounstone facts.
+- Reordered the roadmap so existing HOA and property-management commercial pages and their supporting articles are the immediate priority. Other industry expansion is deferred until internal links, intent ownership, local-page justification and software-specific workflows are reviewed.
+- Improved the property-management pillar's guide navigation by replacing a second card that pointed to the same broad accounting guide with a direct link to the existing Yardi accounting workflow article. No new URL was created.
+- Preview validation before this documentation update confirmed the HOA and property-management pillars return HTTP 200 with one H1 each; the sitemap contained 152 unique URLs with no duplicates and included construction, HOA and property-management routes once each. Key HOA and property-management workflow articles checked in the preview returned HTTP 200.
+- No GSC work, merge to main or production deployment.
+
+## 2026-10-12 — Add construction and contractor accounting industry page
+
+- Competitor research reviewed BPM's construction outsourcing page (job-cost analysis, WIP schedules, AP/AR, payroll and month-end), Vance & Cole's construction accounting page (job costing, WIP, progress billing and retainage), and adjacent e-commerce/property accounting specialists. These results establish active competitor content around industry-specific workflows; they do not establish exact rankings, search volume or likely performance for Accounstone.
+- Added `/industries/construction` as a distinct commercial page for contractors, with job-cost coding, subcontractor/vendor records, retainage and progress-billing tracking, reconciliations and project-level reporting. WIP and revenue-recognition support is bounded to schedules built from client-approved methods for management/CPA review; no legal, tax, bonding or surety certification is claimed.
+- Added an original construction workflow illustration, industry hub entry, search-intent/route registrations and `llms.txt` discovery link. The sitemap derives industry URLs from `lib/data.ts`, so no hand-written duplicate sitemap entry was added.
+- Added `docs/INDUSTRY-EXPANSION-STRATEGY.md` to separate competitor observations from ranking evidence and prioritize future construction, e-commerce, healthcare, home-services, nonprofit and manufacturing research. SEO and AEO checks remain distinct.
+- No GSC work, merge to `main`, or production deployment. Validate preview build, metadata, internal links and sitemap parity before considering the page complete.
+
+## 2026-10-12 — Strengthen property-management vendor tax-record workflow
+
+- Expanded the existing `/blog/property-management-accounting` vendor-payables and year-end Form 1099 section instead of creating a new URL, because the complete guide already owns the broad property-management accounting intent and includes year-end vendor reporting.
+- Added practical steps for controlled W-9/vendor-record handling, taxpayer-data access, payment-population reconciliation, legal-entity separation, exception logs, payment-method distinctions and reviewer-ready tax-preparer handoff.
+- Linked to current IRS Form W-9 information and IRS Instructions for Forms 1099-MISC and 1099-NEC. The copy explicitly leaves tax classification and filing decisions to the designated client/tax professional and does not promise compliance.
+- No search-volume or ranking claim is made. Reassess a standalone vendor 1099 page only if distinct search intent and original depth are demonstrated. No GSC work, main merge or production deployment.
+
+## 2026-10-12 — Add focused commercial-property CAM reconciliation guide
+
+- Competitor research found CAM reconciliation is covered both by property-accounting outsourcing providers and specialist commercial real-estate resources. Analytix presents CAM as part of outsourced property accounting, while REA has a dedicated CAM reconciliation service; this supports a distinct operational topic, not a claim of search volume or ranking opportunity.
+- Added `/blog/property-management-cam-reconciliation` with a source-ledger tie-out, expense-pool controls, lease-specific allocation considerations, an illustrative estimate-to-actual true-up, review checks and explicit limits around lease interpretation and billing authority.
+- Linked the guide from the property-management commercial pillar and the broad property-management accounting guide; registered its separate intent, route, sitemap entry and llms.txt discovery URL. Added the article to the `/blog` index so it is discoverable from the resource hub as well.
+- The guide is informational and operational. It does not claim Accounstone interprets leases, determines legal recoverability, approves tenant charges or has client outcomes. No search volume or ranking outcome is claimed.
+- Validate the preview build, canonical, robots, sitemap uniqueness and rendered internal links before considering the branch ready. No GSC work, main merge or production deployment.
+
+## 2026-10-12 — Strengthen property-management pillar-to-workflow links
+
+- Reviewed `/industries/property-management` against its existing support articles and found that the commercial pillar did not directly link to the specialist property-management month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow pages.
+- Added those contextual links to the existing related-resources section. This helps readers move from the broad outsourcing service page to a specific workflow without creating duplicate location or software pages.
+- Competitor review found established local HOA accounting coverage around San Diego County and Southern California, including APS Management's service page and a separate HOA accounting provider citing San Diego clients. Orange County also has local accounting and management competitors. These are evidence of active local service-page competition, not proof of search volume or a ranking opportunity for Accounstone.
+- Recommended next local-page candidate for further validation: San Diego County HOA accounting. Before creating it, compare the existing California state page and competitor pages, gather more evidence of search intent, and define content unique to the county. Do not imply an Accounstone local office or on-site staff.
+- The California HOA preview build is READY and the new route is indexable with the correct canonical. The generated sitemap currently has 150 unique URLs; the new URL is missing `lastmod` until `scripts/generate-sitemap-dates.mjs` is run. The repository workflow refreshes generated dates on `main` pushes, so re-check after the user's manual merge. Do not edit `lib/sitemap-dates.ts` by hand.
+- No GSC work, merge to `main`, or production deployment.
+
+## 2026-10-12 — Start the U.S. local SEO pilot with California HOA accounting
+
+- Added `/industries/hoa-accounting/california` as the first state-specific commercial page, with a distinct California HOA accounting intent rather than a city-name template.
+- Differentiation: assessment ledgers, operating/reserve reconciliations, board-reporting workflows, year-end/CPA handover, and qualified references to California Civil Code sections 5200, 5300 and 5500. Legal interpretation and professional compliance determinations remain with the association's California advisers.
+- Linked the page from the HOA industry pillar and California market page; added the route to the sitemap and search-intent/route registries.
+- Competitor research reviewed HOA Accounting Services' state coverage, APS Management's San Diego/Southern California service pages, and state-specific association accounting references. These inform the page structure only; no local office, client, ranking or service-history claim is made for Accounstone.
+- Added `docs/US-LOCAL-SEO-ROADMAP.md` to govern state → metro/county → city expansion. County pages are research candidates, not a bulk-page quota; each must earn a distinct intent and useful local detail.
+- No GSC work, merge to `main`, or production deployment. Regenerate `lib/sitemap-dates.ts` with the repository script after the content pass; do not edit the generated file manually.
+
+## 2026-10-12 — Remove duplicate HOA year-end checklist section
+
+- Existing-page review found the same `Year-End Review Checklist` heading, explanatory paragraph and final-check table repeated twice on `/blog/hoa-year-end-accounting`.
+- Removed the second copy, retaining the first complete checklist. This reduces duplicated page content and leaves the separate year-end accounting steps intact.
+- Registered the page's seasonal year-end/CPA-preparation intent and documented the correction in `docs/CONTENT-REGISTRY.md`. No new URL was created; no GSC actions were taken.
+
+## 2026-10-12 — Repair sitemap route parity
+
+- Compared the recursive GitHub tree at the working branch HEAD with the sitemap policy and found three existing, canonical/indexable articles missing from `app/sitemap.ts`: `/blog/quickbooks-month-end-close-checklist`, `/blog/real-estate-accounting-month-end-close`, and `/blog/yardi-accounting-workflow`.
+- Added all three existing URLs to the sitemap and registered their separate software/industry-specific intents in `docs/SEARCH-INTENTS.md`, `docs/CONTENT-REGISTRY.md` and `docs/ROUTES.md`. No new page was created and the Texas Yardi commercial page was not changed.
+- Clarified the documented drift check: four legacy page files are permanent redirect sources, and `/technology/myob` plus `/thank-you` are the two live noindex routes. All six should be absent from the sitemap.
+- The live production sitemap was still at 146 unique URLs during this audit. The branch source is expected to generate 149 unique URLs after the fix, with no duplicate entries. Verify the preview's generated sitemap and latest Vercel build before merge; production remains unchanged.
+- `lib/sitemap-dates.ts` already contains dates for all three routes, so it was not hand-edited. No GSC access or indexing outcome is claimed.
+
+## 2026-10-12 — Strengthen property-management month-end close
+
+- Improved `/blog/property-management-month-end-close-checklist` with an example exception-review table for unmatched receipts, deposit-liability differences, owner-statement variances and late vendor invoices.
+- Added direct contextual links to the existing owner-statement and security-deposit workflow guides. This reinforces the cluster without adding a new URL.
+- Added the existing checklist to `docs/CONTENT-REGISTRY.md` and `docs/SEARCH-INTENTS.md`, explicitly defining its operational close intent and relationship to the broader accounting and specialist workflow pages.
+- Research reviewed current Buildium accounting/financial-statement guidance and recent month-end checklist coverage from property-accounting publishers. The content's differentiator is the exception evidence and reviewer decision trail, not generic checklist length or unsupported timing promises.
+- Branch build should be checked against the final commit before merge. No production deployment or GSC validation is claimed.
+
+## 2026-10-12 — Strengthen owner-statement review workflow
+
+- Expanded the existing `/blog/property-management-owner-statements` page with an illustrative statement-to-ledger review bridge covering receipts, expenses, management fees, reserves/liabilities, owner distributions and exception ownership.
+- This improves operational specificity without creating another URL that competes with the current owner-statement intent. Competitor research reviewed Buildium's recent financial-statement and owner-reporting guidance; the added value here is a reviewable control map rather than generic software-feature claims.
+- The example is explicitly a control map, not a claim about any specific platform's reports. Existing scope boundaries around payment authorization, legal rules and trust-account requirements remain intact.
+- Sitemap dates must be refreshed through `scripts/generate-sitemap-dates.mjs` / the main-branch automation after merge; `lib/sitemap-dates.ts` was not edited manually. Preview/build validation for this branch is pending.
+
+## 2026-10-12 — Reconcile sitemap, robots and production state
+
+- Verified commit `319ad98ebb2ce238e0a0627ab351ce4d3e1fd62f` removes the repeated “Suggested Order for the Monthly Close” section from `/blog/hoa-accounting-month-end-checklist`; its Vercel production deployment is `READY`.
+- Verified `4ef883736ab74f7eaedc49e99a41f59d38f751cf` refreshed generated sitemap dates through the existing generated-file workflow; its Vercel production deployment is also `READY`. Do not edit `lib/sitemap-dates.ts` by hand.
+- Fetched the deployed `https://www.accounstone.com/sitemap.xml` successfully (HTTP 200): 146 URL entries, 146 unique URLs, no duplicates, no missing `<lastmod>` values, and neither known noindex route (`/thank-you`, `/technology/myob`) included. Full sitemap-to-filesystem parity is still a separate check; this XML check alone does not prove every route resolves.
+- Reviewed `app/robots.ts`: public routes are allowed, internal/API paths are disallowed, and `/sitemap.xml` is declared. No robots edit was justified.
+- Reviewed the property-management search-intent and content registries and current competitor results, including Buildium's recent financial-statement workflow and owner-reporting guidance. Those results already cover generic owner reporting; do not create another overlapping article. The next useful improvement is a focused review of the existing owner-statement and month-end pages for specific reconciliation evidence and reviewer controls.
+- No GSC used. No content URL added in this reconciliation pass; no rankings or compliance outcomes are claimed.
+
 ## 2026-10-12 (property management owner statement workflow)
 
 Added `/blog/property-management-owner-statements` as a focused operational guide on preparing owner statements from reconciled records. It covers property coding, fee calculations, reserves and liabilities, owner balances, exception tracking, review approval, and task boundaries when accounting preparation is supported externally. Linked it to the existing month-end, reconciliation and complete-guide resources rather than creating a separate software-specific page. Added the canonical route to the sitemap and registered its distinct intent. Existing Yardi Texas page remains unchanged. Validate the branch build and generated sitemap dates before merge; no indexing or ranking result is assumed.
@@ -4389,3 +4539,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added the canonical route to `app/sitemap.ts`, and registered the distinct informational intent and content entry.
 - Used official Texas statutory and TREC references plus California DRE legal excerpts to ground jurisdiction notes; the guide distinguishes accounting controls from legal advice and avoids generalizing state rules.
 - `app/robots.ts` already allows public search and AI crawling and declares `/sitemap.xml`; no robots change was needed. Deployment/build validation remains pending.
+
+## 2026-10-12 — Research California HOA and property-management location opportunities
+
+- Reviewed California HOA competitors and their published service areas, plus REA's San Francisco property-management and software-specific pages.
+- Documented the distinction between evidence that competitors publish local pages and evidence of actual query demand; no ranking positions, search volume, traffic or Accounstone performance claims are inferred.
+- Decision: retain and audit the existing California HOA URL; San Diego County HOA remains a research candidate only. San Francisco and San Diego property-management pages are also candidates, not approved page builds, pending a distinct intent/content brief and overlap review.
+- Added a location opportunity queue and page-approval checklist to `docs/INDUSTRY-EXPANSION-STRATEGY.md`. No new location URL was created.
+- Changes are on `accounstone-reconcile-seo-oct12`; no merge to `main`, production deployment or GSC change was performed.

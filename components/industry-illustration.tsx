@@ -60,6 +60,7 @@ const TONE: Record<string, string> = {
   // Property management has a distinct rent-to-owner-statement scene.
   'property-management': 'var(--color-hue-teal)',
   'hoa-accounting': 'var(--color-hue-olive)',
+  construction: 'var(--color-hue-denim)',
 };
 
 function Frame({ children }: { children: React.ReactNode }) {
@@ -419,6 +420,37 @@ function PropertyManagement() {
   );
 }
 
+/** Construction: job records reconciled to a reviewable project-cost summary. */
+function Construction() {
+  const TONE_C = TONE.construction;
+  return (
+    <Frame>
+      <g>
+        <rect x={22} y={76} width={34} height={45} rx={3} fill={NAVY} opacity={0.9} />
+        <path d="M18 76 L39 58 L60 76 Z" fill={GOLD} />
+        <rect x={30} y={88} width={7} height={9} rx={1} fill={CREAM} />
+        <rect x={42} y={88} width={7} height={9} rx={1} fill={CREAM} />
+        <rect x={30} y={103} width={19} height={4} rx={1.5} fill={CREAM} opacity={0.75} />
+      </g>
+      <path d="M64 97 H91" stroke={TONE_C} strokeWidth={2.5} strokeLinecap="round" />
+      <path d="M85 91 L93 97 L85 103" stroke={TONE_C} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+      <rect x={101} y={44} width={81} height={81} rx={6} fill="#fff" stroke={NAVY} strokeOpacity={0.28} strokeWidth={1.4} />
+      <rect x={112} y={55} width={58} height={5} rx={2.5} fill={NAVY} opacity={0.75} />
+      {[68, 80, 92].map((y, i) => (
+        <g key={y}>
+          <rect x={112} y={y} width={22 + i * 5} height={4} rx={2} fill={NAVY} opacity={0.25} />
+          <rect x={151} y={y} width={19} height={4} rx={2} fill={TONE_C} opacity={0.55} />
+        </g>
+      ))}
+      <rect x={112} y={105} width={40} height={4} rx={2} fill={GOLD} />
+      <circle cx={182} cy={119} r={13} fill={ACCENT} />
+      <path d="M176 119 l4.5 4.5 l8 -9" stroke="#fff" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />
+      <Person x={83} y={153} tone={NAVY} s={0.85} />
+      <Person x={208} y={153} tone={TONE_C} s={0.9} opacity={0.8} />
+    </Frame>
+  );
+}
+
 const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   'real-estate': RealEstate,
   technology: Technology,
@@ -428,6 +460,7 @@ const ILLUSTRATIONS: Record<string, () => React.JSX.Element> = {
   'cpa-firms': CpaFirms,
   'property-management': PropertyManagement,
   'hoa-accounting': HoaAccounting,
+  construction: Construction,
 };
 
 export default function IndustryIllustration({

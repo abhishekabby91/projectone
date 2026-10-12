@@ -89,8 +89,11 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/ecommerce` | B | — | Published |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
+| `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
+| `/industries/hoa-accounting/california` | B | California HOA accounting | Added 2026-10-12 — state-specific remote accounting scope, association records and board-reporting context; not a local-office claim |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
+| `/industries/construction` | B | — | Added 2026-10-12 — contractor-focused project-cost records, retainage and month-end reporting support with explicit accounting-policy boundaries |
 | `/industries/professional-services` | B | — | Deepened 2026-09-16 — absorbs the law-firm intent; no `/law-firms` URL |
 
 ## Technology
@@ -118,6 +121,10 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/outsourced-accounting-services` | — | Accounting Services | **Removed 2026-08-21** — 301 redirect to `/resources/guides/outsourced-accounting-services-guide` in `next.config.mjs`, see CONTENT-REGISTRY |
 | `/blog/tax-preparation-outsourcing` | C | Tax Preparation | Published — no conflict |
 | `/blog/audit-support-services` | C | Audit Support | Published — no conflict |
+| `/blog/quickbooks-month-end-close-checklist` | C | Technology / QuickBooks | Published — software-specific month-end close workflow |
+| `/blog/real-estate-accounting-month-end-close` | C | Real Estate | Published — property-specific month-end close workflow |
+| `/blog/yardi-accounting-workflow` | C | Property Management / Yardi | Published — software workflow guide |
+| `/blog/property-management-cam-reconciliation` | C | Property Management / Commercial Real Estate | Added 2026-10-12 — expense pools, lease-specific allocations, tenant true-ups and review controls |
 
 ## Resources — Guides
 

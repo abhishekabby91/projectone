@@ -73,6 +73,22 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       <p>Prepare the agreed reports from the reconciled ledger. Depending on the engagement, these may include an income statement, balance sheet, cash summary, rent roll, aged receivables, open payables and owner statement. Compare material changes with the prior period or budget when that information is available, and investigate unexpected balances before circulation.</p>
       <p>The IRS explains that good rental records help owners monitor activity, prepare financial statements, identify receipts and expenses, and support tax reporting. See the official <a href="https://www.irs.gov/businesses/small-businesses-self-employed/tips-on-rental-real-estate-income-deductions-and-recordkeeping" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">IRS guidance on rental real estate records</a>. Tax treatment should be confirmed with the owner's tax professional.</p>
 
+      <h2>Example: how to track an unresolved close item</h2>
+      <p>A reconciliation difference should remain visible until someone explains it and the reviewer accepts the resolution. For example, if a bank deposit does not match the tenant receipts recorded for the period, record the amount, the source reports checked, the person responsible for investigating it and the next action. Do not plug the difference with an unsupported adjustment just to finish the close.</p>
+      <table>
+        <thead>
+          <tr><th>Exception</th><th>Evidence to compare</th><th>Close decision</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Deposit does not match receipts</td><td>Bank activity, payment batch, tenant ledgers and unapplied-cash report</td><td>Identify timing, allocation or missing-entry cause; document any approved correction</td></tr>
+          <tr><td>Deposit liability does not tie</td><td>Tenant-level deposit schedule, liability general-ledger balance and relevant bank records</td><td>Trace the difference by tenant and transaction; escalate legal handling questions separately</td></tr>
+          <tr><td>Owner statement differs from ledger</td><td>Owner ledger, property income and expense activity, fees, holds and prior approved balance</td><td>Reconcile the bridge before release or record a clear exception under the agreed review process</td></tr>
+          <tr><td>Late vendor invoice arrives</td><td>Invoice date, service period, approval, cutoff and current-period posting</td><td>Assess the appropriate period and accounting treatment with the responsible reviewer; preserve support</td></tr>
+        </tbody>
+      </table>
+      <p>Keep the exception log linked to the reconciliation or report it affects. A useful entry records the amount, period, preparer, reviewer, evidence, owner of the next action, due date and final resolution. This gives the next close a traceable starting point instead of a recurring unexplained balance.</p>
+      <p>For the owner-reporting step, see the <Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">owner statement reconciliation and review workflow</Link>. For tenant deposits, see the <Link href="/blog/property-management-security-deposit-accounting" className="text-primary underline underline-offset-4">security deposit accounting guide</Link>.</p>
+
       <h2>8. Keep a short, reviewable close record</h2>
       <p>A completed close should leave evidence of what was reviewed and what remains open. A simple log can include:</p>
       <ul>

@@ -135,6 +135,7 @@ export default function CaliforniaPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/industries/hoa-accounting" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">HOA accounting</Link>
+            <Link href="/industries/hoa-accounting/california" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">California HOA accounting</Link>
             <Link href="/industries/property-management" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Property management accounting</Link>
             <Link href="/industries/real-estate" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">Real estate accounting</Link>
             <Link href="/services/bookkeeping/united-states" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">U.S. bookkeeping support</Link>
