@@ -1,3 +1,12 @@
+## 2026-10-12 — Start the U.S. local SEO pilot with California HOA accounting
+
+- Added `/industries/hoa-accounting/california` as the first state-specific commercial page, with a distinct California HOA accounting intent rather than a city-name template.
+- Differentiation: assessment ledgers, operating/reserve reconciliations, board-reporting workflows, year-end/CPA handover, and qualified references to California Civil Code sections 5200, 5300 and 5500. Legal interpretation and professional compliance determinations remain with the association's California advisers.
+- Linked the page from the HOA industry pillar and California market page; added the route to the sitemap and search-intent/route registries.
+- Competitor research reviewed HOA Accounting Services' state coverage, APS Management's San Diego/Southern California service pages, and state-specific association accounting references. These inform the page structure only; no local office, client, ranking or service-history claim is made for Accounstone.
+- Added `docs/US-LOCAL-SEO-ROADMAP.md` to govern state → metro/county → city expansion. County pages are research candidates, not a bulk-page quota; each must earn a distinct intent and useful local detail.
+- No GSC work, merge to `main`, or production deployment. Regenerate `lib/sitemap-dates.ts` with the repository script after the content pass; do not edit the generated file manually.
+
 ## 2026-10-12 — Remove duplicate HOA year-end checklist section
 
 - Existing-page review found the same `Year-End Review Checklist` heading, explanatory paragraph and final-check table repeated twice on `/blog/hoa-year-end-accounting`.
