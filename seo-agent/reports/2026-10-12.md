@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **158**
+- Files/pages scanned: **159**
 - High-priority findings: **7**
 - Medium-priority findings: **12**
 - Low-priority findings: **8**
@@ -74,11 +74,11 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1800 | 1 | 49 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1836 | 1 | 50 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 3173 | 1 | 15 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 569 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1345 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1352 | 1 | 6 | 0 | 0 |
 | app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 600 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-month-end-close-checklist/page.tsx | 90/100 | 1531 | 1 | 10 | 0 | 0 |
 | app/blog/property-management-owner-statements/page.tsx | 90/100 | 1502 | 1 | 3 | 0 | 0 |
@@ -86,7 +86,8 @@
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 416 | 1 | 4 | 0 | 0 |
-| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1589 | 1 | 8 | 0 | 0 |
+| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1618 | 1 | 9 | 0 | 0 |
+| app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1362 | 1 | 7 | 0 | 0 |
 | app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 966 | 1 | 3 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1758 | 1 | 8 | 0 | 0 |
