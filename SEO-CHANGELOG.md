@@ -8,6 +8,17 @@ Added links to the existing property-management accounting cluster, the Yardi Te
 
 This is a content-depth and internal-link improvement, not a ranking guarantee. Validate the preview build, rendered page, sitemap dates and internal links before considering production publication.
 
+## 2026-10-12 (add HOA accounting transition checklist)
+
+Added `/blog/hoa-accounting-transition-checklist` for the distinct handover intent: changing an accounting provider or management company. The checklist covers the cutover date, source-record collection, opening-balance reconciliation, owner-ledger tie-out, operating/reserve classification, exception ownership and review of the first board package. It links to the existing HOA month-end, bank reconciliation, chart-of-accounts and cleanup resources rather than duplicating them.
+
+Added the canonical route to the sitemap, registered its intent and content ownership, and linked it from the HOA industry hub. Competitor review shows transition guidance is generally folded into broad service pages; the new page is differentiated by a sequenced handover process and specific evidence to retain. GenieSEO's GSC connection is authenticated, but the current Search Console property reports insufficient permission for analytics access; query and indexing data remain pending until access is corrected.
+
+The branch preview must pass before merge. No ranking, indexing or traffic outcome is assumed.
+
+## 2026-10-12 (HOA accounting cleanup workflow)
+
+Added a practical cleanup workflow to `/services/hoa-accounting` for delayed or inherited books: confirm the cutoff and source records, reconcile cash and fund activity, tie homeowner and vendor balances, document unresolved exceptions, and return to a repeatable monthly close. Links point to existing HOA resources rather than creating an overlapping URL. The search-intent registry now maps this commercial sub-intent to the existing service page. GSC performance data remains unavailable because the connected account currently lacks sufficient Search Console permission.
 
 ## 2026-10-09 (keep Next.js assets crawlable)
 
@@ -4357,3 +4368,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Updated the search-intent registry so Buildium owner-statement, distribution, fee and reconciliation workflows have an explicit existing URL owner.
 - Decision: do not create a dedicated Buildium URL yet. Buildium's own product and educational pages dominate software-feature queries; the current site should first establish relevant service intent through the commercial hub and its practical guide, avoiding a thin page that repeats the general workflow.
 - Existing Yardi Texas page remains unchanged. No merge to `main` or production deployment.
+
+
+## 2026-10-12 — Register HOA accounting transition intent
+
+- Confirmed the transition checklist is a distinct informational/evaluation intent: a board or manager preparing to change accounting providers needs a cutover plan and record handover, not another general HOA accounting overview.
+- Added the intent owner in `docs/SEARCH-INTENTS.md`; the existing checklist is already linked from the HOA hub and included in the sitemap on the working branch.
+- Competitor review found strong coverage of monthly board reporting and generic accounting, but the transition workflow is a more differentiated operational angle. GSC validation is blocked until the connected account has sufficient Search Console permission, so this is not represented as proven query demand.
+- No production changes or deployment from this step.
