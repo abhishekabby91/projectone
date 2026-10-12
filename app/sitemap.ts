@@ -94,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/services/hoa-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/services/hoa-bookkeeping', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/services/hoa-financial-reporting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/industries/hoa-accounting/self-managed-hoa-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/services/property-management-accounting', priority: 0.8, changeFrequency: 'monthly' },
     // Guides. Four of these shipped 2026-08-14 but were unlisted for a week —
     // internally linked yet never declared for crawling. The accounting-services
