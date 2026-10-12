@@ -133,6 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/accounts-receivable-management', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/outsourced-payroll-services', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/tax-preparation-outsourcing', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/us-cpa-firm-outsourcing-readiness-checklist', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/audit-support-services', priority: 0.75, changeFrequency: 'monthly' },
     // Month-end close content consolidated here; former monthly-close-process URL redirects.
     { path: '/blog/hoa-accounting-month-end-checklist', priority: 0.8, changeFrequency: 'monthly' },
