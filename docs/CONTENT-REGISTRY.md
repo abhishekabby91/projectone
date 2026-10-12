@@ -3,6 +3,8 @@
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
 
 | Title | URL | Cluster | Primary intent | Status | Last updated |
+
+| Property Management Month-End Close Checklist: From Transactions to Owner Reports | `/blog/property-management-month-end-close-checklist` | Property Management | Transaction cutoff, reconciliations, tenant and owner ledgers, liability checks, reports and documented close review | Improved with exception-tracking workflow and links to owner-statement and security-deposit guides | 2026-10-12 |
 |---|---|---|---|---|---|
 
 | HOA Accounting Transition Checklist: Changing Providers or Management Companies | `/blog/hoa-accounting-transition-checklist` | HOA Accounting | Provider handover, opening balances, owner ledgers, reserve records and first board package | New practical checklist | 2026-10-12 |
