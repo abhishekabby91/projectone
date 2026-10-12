@@ -1,8 +1,19 @@
+## 2026-10-13 — Reduce repetitive delivery-location wording
+
+- Added a content rule against repeating “delivery centre in New Delhi” across every industry or regional page. Mention operating location only where it clarifies the service model or business identity; regional pages should prioritize the buyer's local workflow and must not imply a local office or on-site presence.
+
+## 2026-10-13 — Add U.S. CPA firm outsourcing readiness checklist
+
+- Added `/blog/us-cpa-firm-outsourcing-readiness-checklist` as a U.S.-specific operational guide for defining scope, checking taxpayer-data disclosure obligations, reviewing IRC §7216/consent references, planning WISP and vendor controls, structuring workpaper handoffs, assigning review authority and evaluating a pilot.
+- Used official IRS references: Publication 4557, the August 2026 WISP reminder, the IRS tax-professional resource page and Revenue Procedure 2013-14. The article flags that legal/tax requirements are fact-specific and should be reviewed by qualified professionals; it makes no unsupported certification or performance claims.
+- Cross-linked the existing tax-preparation outsourcing article, added the new article to the blog index, sitemap, route/content/search-intent registries and `llms.txt` discovery references.
+- Preview/build validation is pending for the latest branch head. No GSC work, merge to `main`, or production deployment.
+
 ## 2026-10-12 — Extend property-management location research
 
 - Reviewed fresh competitor pages for San Francisco and San Diego property-management accounting, including specialist accounting providers and a local property manager. The pages cover distinct workflow topics such as trust-ledger reconciliation, owner statements/disbursements, CAM, AP/AR, rent records and software workflow.
-- Confirmed the existing California AppFolio page and Yardi workflow article both have route files. These must be considered before approving city-specific URLs to avoid overlap.
-- Kept San Francisco and San Diego as research candidates only; competitor pages do not establish search volume, ranking positions, or Accounstone's likely performance. No new location page was created. No GSC work.
+- Confirmed the existing California AppFolio page and Yardi workflow article both have route files on the working branch. These must be considered before approving city-specific URLs to avoid overlap.
+- Kept San Francisco and San Diego as research candidates only; competitor pages do not establish search volume, ranking positions, or Accounstone's likely performance. No new location page was created. No GSC work, merge to `main`, or production deployment.
 
 ## 2026-10-12 — Audit AppFolio California page before city-page expansion
 
@@ -4553,3 +4564,7 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Decision: retain and audit the existing California HOA URL; San Diego County HOA remains a research candidate only. San Francisco and San Diego property-management pages are also candidates, not approved page builds, pending a distinct intent/content brief and overlap review.
 - Added a location opportunity queue and page-approval checklist to `docs/INDUSTRY-EXPANSION-STRATEGY.md`. No new location URL was created.
 - Changes are on `accounstone-reconcile-seo-oct12`; no merge to `main`, production deployment or GSC change was performed.
+
+- Confirmed the existing California AppFolio page and Yardi workflow article both have route files. These must be considered before approving city-specific URLs to avoid overlap.
+
+- Kept San Francisco and San Diego as research candidates only; competitor pages do not establish search volume, ranking positions, or Accounstone's likely performance. No new location page was created. No GSC work.
