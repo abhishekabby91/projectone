@@ -202,3 +202,26 @@ One substantive copy improvement was made: the California context now explains t
 The copy keeps the responsible broker's obligations, control of funds, signatory authority and regulatory decisions with the appropriate authorized people. This is bookkeeping/accounting workflow context, not a claim that Accounstone independently ensures legal compliance.
 
 **Validation status:** code change is committed on the working branch, but no new preview has yet been confirmed for this commit. Validate build, rendered metadata, links and mobile layout after a preview deployment is available. Do not merge to `main` or deploy production as part of this pass.
+
+
+## Batch page-production and pre-deployment reconciliation workflow
+
+Use a batch workflow for related pages so content work can progress efficiently without losing SEO integrity. This is the standard approach for future HOA and property-management expansion on the working branch.
+
+### While creating each page
+
+- Confirm the page owns a distinct search intent and does not compete with an existing URL.
+- Add the essential contextual links to its correct commercial hub and the most relevant existing guide(s); do not leave the page orphaned until the final pass.
+- Add or update the required route, search-intent, content/industry registry and discovery references in the same page batch. Use the project's established sitemap generation process rather than hand-editing generated sitemap-date files.
+- Keep page-specific metadata, canonical, H1, appropriate schema, accurate service boundaries and mobile-friendly structure in place from the start.
+- Record unresolved cross-links or dependencies in the batch checklist rather than adding speculative links to pages that do not yet exist.
+
+### At the end of the batch, before merge/deployment
+
+1. Reconcile links across the whole cluster: hub-to-page, page-to-hub, relevant article-to-article, descriptive anchor text, duplicate destinations, broken routes and orphan-page checks.
+2. Recheck intent ownership and cannibalization across all new and existing URLs; consolidate rather than publish near-duplicates.
+3. Validate metadata, canonical URLs, H1s, schema, route/content registries, `llms.txt`, sitemap inclusion and uniqueness, and generated last-modified dates through the approved project workflow.
+4. Run the available build/lint/type checks and inspect the preview for the exact latest branch commit. Test all changed routes and their important internal destinations; check desktop/mobile rendering where preview tools allow.
+5. Summarize passed checks, failures, items not testable, commit SHA and preview deployment state. Never claim production deployment, indexing or ranking success based only on a branch preview.
+
+This workflow deliberately defers **cluster-wide link reconciliation** until the batch is complete, but it does not defer basic links, metadata or route registration needed for each page to be valid. Work remains on the approved working branch; the user merges to `main` and authorizes deployment.
