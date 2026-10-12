@@ -4476,3 +4476,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added the canonical route to `app/sitemap.ts`, and registered the distinct informational intent and content entry.
 - Used official Texas statutory and TREC references plus California DRE legal excerpts to ground jurisdiction notes; the guide distinguishes accounting controls from legal advice and avoids generalizing state rules.
 - `app/robots.ts` already allows public search and AI crawling and declares `/sitemap.xml`; no robots change was needed. Deployment/build validation remains pending.
+
+## 2026-10-12 — Research California HOA and property-management location opportunities
+
+- Reviewed California HOA competitors and their published service areas, plus REA's San Francisco property-management and software-specific pages.
+- Documented the distinction between evidence that competitors publish local pages and evidence of actual query demand; no ranking positions, search volume, traffic or Accounstone performance claims are inferred.
+- Decision: retain and audit the existing California HOA URL; San Diego County HOA remains a research candidate only. San Francisco and San Diego property-management pages are also candidates, not approved page builds, pending a distinct intent/content brief and overlap review.
+- Added a location opportunity queue and page-approval checklist to `docs/INDUSTRY-EXPANSION-STRATEGY.md`. No new location URL was created.
+- Changes are on `accounstone-reconcile-seo-oct12`; no merge to `main`, production deployment or GSC change was performed.
