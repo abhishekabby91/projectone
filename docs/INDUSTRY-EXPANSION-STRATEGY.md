@@ -13,6 +13,12 @@ The October 12 search review surfaced dedicated industry/service pages for const
 - REA real estate accounting: https://rea.co/ and https://rea.co/accounting/ — property-level close, AP/AR, reconciliations, owner distributions and software-specific workflows.
 - Analytix real estate/property management: https://www.analytix.com/industry/real-estate — CAM reconciliation, month-end close, owner financials and named property platforms.
 - QX Global Group real estate accounting: https://qxglobalgroup.com/usa/industry/real-estate-accounting-services — separates property segments such as multifamily, student housing, senior living, HOAs and commercial property.
+- HOA Accounting Services: https://hoa-accounting.com/ — association-specific monthly and annual reporting, billing and receivables, board/manager workflows, and a stated California, Washington, Texas, Nevada and Hawaii service footprint.
+- HOA Finance Partners: https://www.hoafinancepartners.com/ — positions around remote HOA financial management, monthly statements, reconciliations, dues collection, reserve tracking and tax/1099 support. Treat all competitor service claims as their own, not Accounstone facts.
+- Dynamite Management's HOA provider comparison: https://dynamitemanagement.com/blog/best-hoa-accounting-service-providers-2026/ — useful for buyer evaluation criteria such as AP/AR, board reporting, approval controls, reserve tracking and the distinction between bookkeeping and broader financial management. It is a competitor-authored comparison, so its rankings and opinions are not independent evidence.
+- REA property management accounting: https://rea.co/property-management/ — owner statements, catch-up bookkeeping, AP/AR, reconciliations, owner draws and management fees.
+- REA Yardi bookkeeping: https://rea.co/yardi/ — software-specific content separates Voyager/Breeze workflows and describes property-level reconciliations, reporting and cleanup.
+- Outsourced Bookkeeping property management accounting: https://www.outsourcedbookeeping.com/property-management-accounting-services/ — tenant ledgers, owner statements, trust reconciliation, CAM and month-end close, organized around existing software.
 - BPM construction outsourcing: https://www.bpm.com/services/accounting/outsourced-accounting/construction/ — job-cost analysis, WIP schedules, AP/AR, payroll processing and month-end close.
 - Vance & Cole construction accounting: https://vancecole.com/industries/construction-accounting — job costing, WIP schedules, progress billing and retainage.
 - Acgile e-commerce accounting: https://www.acgile.com/services/ecommerce-accounting — marketplace settlements, SKU-level COGS, channel reporting and payment/platform reconciliation.
@@ -36,26 +42,37 @@ Preserve the audience split between real-estate owners, third-party property man
 
 ## Priority roadmap
 
-### Tier 1 — Build and validate
-1. **Construction & contractors — `/industries/construction` (first new page).**
-   - Commercial intent: outsourced construction accounting/bookkeeping support.
-   - Distinct mechanics: job/project-level cost coding, subcontractor/vendor bills, retainage tracking, progress-billing records, payroll-cost allocation, bank reconciliation and period-end project reporting.
-   - WIP schedules and revenue recognition must be described as records/schedule support using the client's approved accounting policy and CPA/management review—not independent accounting-policy, tax, bonding or surety advice.
-   - Mention Buildertrend or JobTread only as client-side project systems whose reports/exports may feed the workflow; do not claim native integrations unless verified.
-2. **Strengthen existing e-commerce page before adding subpages.**
-   - Compare its settlement, returns/refunds, gateway fees, inventory/COGS and channel-level reporting coverage with the competitor pages above.
-   - Do not add separate Amazon, Shopify or Walmart service pages until evidence shows distinct commercial intent and enough original workflow depth.
-3. **Strengthen existing healthcare page with clear boundaries.**
-   - Payer/claims data can be sensitive. Do not imply HIPAA compliance or PHI handling unless the engagement's controls and contractual posture are verified. Focus on finance records, payer/patient receivables, adjustments and reporting.
+### Tier 1 — Improve the existing HOA and property-management clusters first
 
-### Tier 2 — Research before approving URLs
-- **Home services and specialty trades:** research ServiceTitan/Housecall Pro workflows, technician/job costing, invoice-to-payment reconciliation, merchant fees and payroll allocation. Keep separate from construction only if the buyer and accounting workflows differ enough to warrant a distinct service page.
-- **Nonprofit accounting:** investigate fund accounting, restricted/unrestricted activity, grant schedules, donor restrictions and Form 990 support. Create only after confirming delivery capability and defining the boundary between bookkeeping schedules and tax filing/advice.
-- **Manufacturing/distribution:** investigate inventory costing, landed costs, COGS, purchase/receipt matching and multi-warehouse records. Do not launch until relevant experience and scope are confirmed.
-- **Hospitality/senior living:** competitor pages exist in the real-estate accounting category, but this is not enough to justify a new Accounstone page without evidence of service fit.
+1. **HOA accounting — /industries/hoa-accounting and its existing support guides.**
+   - Preserve the distinct audience: association boards, treasurers, community managers and accounting teams. The page should own the commercial HOA/community-association accounting intent; supporting articles should answer narrower workflow questions.
+   - Audit the large guide-link section for destination status, duplicate destinations, link labels and priority. Keep the most useful links prominent and make sure every linked route resolves.
+   - Compare the page against HOA-specific competitor content for assessment posting, owner-ledger reconciliation, operating-versus-reserve activity, delinquency aging, AP approvals, board packages, transition handover and year-end CPA handoff.
+   - Review the existing California HOA page before adding any county/city pages. San Diego County remains a research candidate only; do not publish a thin location variant or imply a California office, local staff or on-site service.
+   - Review software-specific HOA pages (including eUnify, AppFolio, Yardi and QuickBooks) for unique operational detail, working links, accurate product wording and overlap. Do not claim a native integration or unverified platform expertise.
+
+2. **Property management accounting — /industries/property-management and its existing support guides.**
+   - Preserve the distinction from /industries/real-estate: the buyer manages properties for owners; core outputs include property-level books, tenant/owner ledgers, owner statements and reconciliations.
+   - Compare against REA, Outsourced Bookkeeping and other specialist pages for trust/operating account reconciliation, owner statements/distributions, tenant ledgers, security deposits, CAM, vendor 1099 recordkeeping, month-end close and software-specific workflows.
+   - Validate the existing links to the CAM guide, month-end checklist, owner-statement workflow, security-deposit article and AppFolio California page. Keep the CAM guide distinct from the broader property-management accounting guide.
+   - Review the existing AppFolio California and Texas Yardi pages for unique intent and scope. Preserve the Texas Yardi commercial page unchanged unless a separate, explicit review is requested; do not expand location pages by template alone.
+
+3. **Shared cluster work — before creating more URLs.**
+   - Validate every internal link on the two commercial pages and the most important support articles; record any 404, redirect, duplicate anchor or duplicate destination.
+   - Check that each support article links back to its correct commercial hub and to the most relevant adjacent guide, rather than cross-linking every article to every other article.
+   - Review title, description, canonical, H1, Service/FAQ/Breadcrumb schema and mobile rendering on the commercial pages and any changed routes.
+   - Keep SEO work (intent ownership, metadata, crawlability, internal links, sitemap and cannibalization) separate from AEO work (direct answers, grounded FAQs, scope clarity and structured data).
+
+### Tier 2 — Other industry work after the HOA/property-management pass
+
+- **Construction & contractors — /industries/construction (draft already added to this branch).** Keep it in the branch, but treat validation and further expansion as secondary until the HOA/property-management review is complete. Its distinct mechanics are job/project-level cost coding, subcontractor/vendor bills, retainage, progress-billing records, payroll-cost allocation and project-level reporting. WIP schedules remain support prepared from client records under a client-approved method for management/CPA review—not independent accounting-policy, tax, bonding or surety advice.
+- **E-commerce:** improve the existing page before adding subpages. Compare settlement reconciliation, returns/refunds, gateway fees, inventory/COGS and channel reporting. Do not add separate Amazon, Shopify or Walmart service pages until research supports distinct commercial intent and useful original depth.
+- **Healthcare:** improve the existing page with clear scope boundaries. Do not imply HIPAA compliance or PHI handling unless controls and contractual posture are verified.
+- **Home services, nonprofits, manufacturing/distribution, hospitality and senior living:** research service fit and accounting workflows before approving URLs. Competitor pages alone do not establish that Accounstone should launch a page.
 
 ### Local pages
-Continue the existing state → county/metro → city research process for HOA and property management. San Diego County HOA accounting remains a research candidate, not an automatic next page. Compare the California state page, competitor geography and local accounting context before approval. Never imply a local office, staff or on-site service.
+
+Use a state → county/metro → city research sequence only where local search intent and the actual service scope are distinct. For HOA/property management, assess competitor geography, local buyer language, regional workflow differences and whether the existing state or industry page already satisfies the intent. Do not infer demand from competitor page existence alone and never imply a local office, staff or on-site service.
 
 ## Page-quality requirements
 
