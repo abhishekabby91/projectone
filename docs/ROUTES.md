@@ -118,6 +118,9 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/outsourced-accounting-services` | — | Accounting Services | **Removed 2026-08-21** — 301 redirect to `/resources/guides/outsourced-accounting-services-guide` in `next.config.mjs`, see CONTENT-REGISTRY |
 | `/blog/tax-preparation-outsourcing` | C | Tax Preparation | Published — no conflict |
 | `/blog/audit-support-services` | C | Audit Support | Published — no conflict |
+| `/blog/quickbooks-month-end-close-checklist` | C | Technology / QuickBooks | Published — software-specific month-end close workflow |
+| `/blog/real-estate-accounting-month-end-close` | C | Real Estate | Published — property-specific month-end close workflow |
+| `/blog/yardi-accounting-workflow` | C | Property Management / Yardi | Published — software workflow guide |
 
 ## Resources — Guides
 
