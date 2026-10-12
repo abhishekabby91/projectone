@@ -1,3 +1,11 @@
+## 2026-10-12 — Prioritize HOA and property-management cluster quality
+
+- Updated the industry expansion strategy after reviewing HOA and property-management competitor pages, including HOA Accounting Services, HOA Finance Partners, Dynamite Management, REA and Outsourced Bookkeeping. These pages help benchmark topic coverage; competitor-authored rankings, credentials and claims are not treated as independent evidence or Accounstone facts.
+- Reordered the roadmap so existing HOA and property-management commercial pages and their supporting articles are the immediate priority. Other industry expansion is deferred until internal links, intent ownership, local-page justification and software-specific workflows are reviewed.
+- Improved the property-management pillar's guide navigation by replacing a second card that pointed to the same broad accounting guide with a direct link to the existing Yardi accounting workflow article. No new URL was created.
+- Preview validation before this documentation update confirmed the HOA and property-management pillars return HTTP 200 with one H1 each; the sitemap contained 152 unique URLs with no duplicates and included construction, HOA and property-management routes once each. Key HOA and property-management workflow articles checked in the preview returned HTTP 200.
+- No GSC work, merge to main or production deployment.
+
 ## 2026-10-12 — Add construction and contractor accounting industry page
 
 - Competitor research reviewed BPM's construction outsourcing page (job-cost analysis, WIP schedules, AP/AR, payroll and month-end), Vance & Cole's construction accounting page (job costing, WIP, progress billing and retainage), and adjacent e-commerce/property accounting specialists. These results establish active competitor content around industry-specific workflows; they do not establish exact rankings, search volume or likely performance for Accounstone.
