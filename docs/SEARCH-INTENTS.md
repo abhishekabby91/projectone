@@ -21,6 +21,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | Accounts receivable — DSO, collections, software workflows | `/resources/guides/outsourced-accounts-receivable-guide` | Informational (operational, differentiated — no conflict) |
 | Tax preparation outsourcing | `/services/tax-preparation/{region}` | Commercial |
 | Outsourcing tax return preparation — what to know | `/blog/tax-preparation-outsourcing` | Informational |
+| U.S. CPA firm outsourcing readiness checklist — taxpayer-data safeguards, access, review workflow and pilot | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | Informational / operational checklist — distinct from general tax outsourcing overview and vendor-selection guide |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
 | CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |

@@ -28,6 +28,10 @@ export default function TaxPrepOutsourcingBlog() {
         The practical use case for CPA firms is clear: the January-to-April volume spike doesn&rsquo;t justify hiring full-time staff who will be idle the other eight months. Offshore preparation support absorbs the surge while the licensed team focuses on review, client communication, and judgment-level decisions.
       </p>
 
+      <p>
+        Before sending client files to an external preparer, use our <Link href="/blog/us-cpa-firm-outsourcing-readiness-checklist" className="text-primary font-medium hover:underline">U.S. CPA firm outsourcing readiness checklist</Link> to review scope, taxpayer-data handling, access permissions, workpaper standards and pilot controls.
+      </p>
+
       <h2>What Tax Preparation Outsourcing Includes</h2>
       <ul>
         <li>Return preparation and data entry from client source documents</li>

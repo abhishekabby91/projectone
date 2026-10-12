@@ -120,6 +120,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/outsourced-payroll-services` | C | Payroll | Re-scoped 2026-08-21 |
 | `/blog/outsourced-accounting-services` | — | Accounting Services | **Removed 2026-08-21** — 301 redirect to `/resources/guides/outsourced-accounting-services-guide` in `next.config.mjs`, see CONTENT-REGISTRY |
 | `/blog/tax-preparation-outsourcing` | C | Tax Preparation | Published — no conflict |
+| `/blog/us-cpa-firm-outsourcing-readiness-checklist` | C | U.S. CPA Firm Outsourcing | New operational checklist — taxpayer-data safeguards, access, workpaper handoff and pilot controls |
 | `/blog/audit-support-services` | C | Audit Support | Published — no conflict |
 | `/blog/quickbooks-month-end-close-checklist` | C | Technology / QuickBooks | Published — software-specific month-end close workflow |
 | `/blog/real-estate-accounting-month-end-close` | C | Real Estate | Published — property-specific month-end close workflow |
