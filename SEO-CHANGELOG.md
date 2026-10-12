@@ -1,5 +1,13 @@
 ## 2026-10-12 — Audit property-management location opportunities
 
+- Reviewed the existing property-management pillar and its linked-guide architecture before proposing any new location URLs. The pillar already separates property managers from property owners and covers property-level accounting, tenant/owner ledgers, deposits, CAM, reconciliations, month-end and client approval boundaries.
+- Compared competitor city/region pages for San Francisco, San Diego and Orange County. These support further research into distinct local buyer intent but do not prove search demand or justify templated location pages.
+- On the available older READY preview, confirmed HTTP 200 for the property-management pillar, California AppFolio page, CAM reconciliation guide, Yardi workflow guide and property-management accounting service page. This was a limited route check, not a full link crawl or latest-branch/production validation.
+- Next: audit the existing AppFolio California page for software-plus-location intent, content uniqueness, metadata/schema and overlap with the main pillar before deciding whether any city/region page is warranted.
+- No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-12 — Audit property-management location opportunities
+
 - Reviewed the existing property-management industry page and route architecture before proposing new locations. The current cluster already covers property-level accounting, owner statements, tenant/security-deposit records, CAM, month-end, and Yardi/AppFolio workflows; a separate property-management accounting service page also exists.
 - Compared current competitor city pages for San Francisco and San Diego. They show active city-specific content around owner statements, trust-account records/reconciliations, 1099 data and software workflows, but do not establish search volume, independent ranking or expected Accounstone performance.
 - Validated the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`: the property-management pillar, AppFolio California page, service page and four supporting guides returned HTTP 200 with one H1 each. The preview predates the latest branch documentation commits and is not a production validation.
