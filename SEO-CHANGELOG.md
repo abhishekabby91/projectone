@@ -4575,3 +4575,12 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added a contextual link from `/blog/property-management-cam-reconciliation` to `/services/property-management-accounting`, alongside its existing link to the property-management industry hub.
 - This gives readers a direct path from the commercial-property accounting workflow to the relevant service page without creating a duplicate CAM service URL.
 - Sitemap and robots policy already include the route and allow public crawling; no sitemap or robots change was required for this internal-link-only edit. Production build validation is pending the next Vercel deployment.
+
+
+## 2026-10-13 — Add HOA annual budget preparation workflow
+
+- Added `/blog/hoa-annual-budget-preparation` with a source-led process for setting the budget calendar, reconciling historical actuals, reviewing variances and contract renewals, separating operating and reserve assumptions, preparing a board-review draft, and carrying the approved budget into monthly reporting.
+- Differentiated annual budget planning from `/blog/hoa-budget-to-actual-reports`, which covers monthly variance reporting; registered a distinct search-intent owner to reduce overlap.
+- Added the route to the sitemap, blog index, route inventory and content registry, and linked the guide from the existing budget-to-actual and reserve-accounting articles.
+- The guide does not prescribe assessment levels or make jurisdiction-wide legal claims; it directs boards to governing documents and qualified advisers for adoption, notice and reserve decisions.
+- Vercel build validation is pending; no GSC work was performed.
