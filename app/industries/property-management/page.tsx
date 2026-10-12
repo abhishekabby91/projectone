@@ -450,6 +450,7 @@ export default function PropertyManagementPage() {
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium workflows: owner statements and distributions', href: '/blog/property-management-accounting' },
             ].map((guide) => (
