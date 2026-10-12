@@ -72,6 +72,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - Technology and SaaS: https://www.accounstone.com/industries/technology
 - E-commerce: https://www.accounstone.com/industries/ecommerce
 - Healthcare: https://www.accounstone.com/industries/healthcare
+- Construction and contractors: https://www.accounstone.com/industries/construction
 - Professional services: https://www.accounstone.com/industries/professional-services
 
 ## Platforms
