@@ -27,10 +27,12 @@ Expand Accounstone's U.S. organic search coverage from the existing industry and
 ### HOA
 - California state service page (first pilot).
 - Research demand and competitive coverage for Southern California / San Diego County, Orange County, Los Angeles County, Bay Area, Sacramento region and Riverside/San Bernardino/Inland Empire.
+- Initial competitor evidence (not search-volume proof): APS Management has a dedicated HOA accounting page naming San Diego County communities and broader Southern California coverage; HOA Accounting Services references a San Diego client; Orange County has dedicated HOA accounting and CPA service pages. This makes San Diego County a candidate for deeper validation, but does not by itself justify publishing a county page.
 - Select no more than the strongest initial county/metro opportunities after checking search results, association-management market context, local competitor pages and whether each page can be materially different.
 
 ### Property management
 - Research state and metro demand separately from HOA intent.
+- The existing property-management commercial pillar now links directly to month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow resources. Use this cluster before creating a property-management location page so the state/county page has strong, relevant supporting links.
 - Test California, Texas and Florida first because the existing site already has market context for those states; do not assume that their generic market pages satisfy property-management-specific intent.
 - Research county/metro clusters only after confirming a distinct property-management accounting need, relevant software/workflow detail and a useful local angle.
 
