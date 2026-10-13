@@ -56,3 +56,8 @@ The Growth System Audit (2026-08-21, §06) flagged that payroll, AP, and AR had 
 ## Resolved gap: engagement-model comparison
 
 Closed 2026-08-21: added `/resources/guides/choosing-an-engagement-model`, comparing the four `/solutions/*` pages (offshore accounting support, staff augmentation, dedicated accounting teams, back-office support) side by side — unit of engagement, best fit, typical duration — plus a decision framework and an honest note that the models blur in practice rather than presenting them as four rigid tiers. Cross-linked from all four solutions pages, the solutions index, and the "how to choose a partner" guide (which covers evaluating a provider generally, not choosing between models — kept distinct rather than merged).
+
+
+## 2026-10-13 — San Diego County HOA accounting
+
+Added `/industries/hoa-accounting/san-diego-county` as a county-specific commercial page beneath the existing California HOA page. It covers assessment and homeowner ledgers, operating/reserve reconciliations, board reporting, vendor approvals, and year-end CPA handover. The copy identifies San Diego County communities as service-area context while clearly stating that Accounstone provides remote support from India, not a local office or on-site management. Linked from the HOA hub and California HOA page; sitemap entry added. Competitor review informs topic coverage only and does not establish search volume or ranking opportunity.
