@@ -451,6 +451,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
               { name: 'Budget vs. actual reporting workflow', href: '/blog/property-management-budget-vs-actual' },
+              { name: 'Cash flow forecasting workflow', href: '/blog/property-management-cash-flow-forecasting' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
