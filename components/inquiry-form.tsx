@@ -14,8 +14,7 @@ import { companyInfo, services, regions } from '@/lib/data';
  *
  * `region` makes the form specific rather than generic: it labels the fields in
  * that market's language, carries the region into the inquiry email so it can be
- * routed, and tells the visitor which hours we cover. A US firm and a UK
- * practice do not fill in the same form.
+ * routed, and uses the right field labels and placeholders for each market.
  */
 
 type RegionSlug = (typeof regions)[number]['slug'];
@@ -25,7 +24,7 @@ interface RegionForm {
   phonePlaceholder: string;
   companyLabel: string;
   companyPlaceholder: string;
-  hours: string;
+  note: string;
 }
 
 const REGION_FORM: Record<RegionSlug, RegionForm> = {
@@ -34,21 +33,21 @@ const REGION_FORM: Record<RegionSlug, RegionForm> = {
     phonePlaceholder: '+1 (555) 123-4567',
     companyLabel: 'Firm name',
     companyPlaceholder: 'Your CPA firm',
-    hours: 'We cover US business hours from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
   'united-kingdom': {
     emailPlaceholder: 'you@yourpractice.co.uk',
     phonePlaceholder: '+44 20 1234 5678',
     companyLabel: 'Practice name',
     companyPlaceholder: 'Your accountancy practice',
-    hours: 'We cover UK business hours from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
   australia: {
     emailPlaceholder: 'you@yourfirm.com.au',
     phonePlaceholder: '+61 2 1234 5678',
     companyLabel: 'Firm name',
     companyPlaceholder: 'Your accounting firm',
-    hours: 'We reply from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
 };
 
@@ -355,7 +354,7 @@ export default function InquiryForm({
         <p className={`${sz.note} text-muted text-center`}>
           {size === 'compact'
             ? 'Free consultation. No obligation.'
-            : <>The consultation and the call are always free. {r?.hours ?? 'We reply from our delivery centre in New Delhi.'}</>}
+            : <>The consultation and the call are always free. {r?.note ?? 'We will agree the workflow, handoffs and deadlines during onboarding.'}</>}
         </p>
       </form>
     </div>
