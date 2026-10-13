@@ -337,3 +337,14 @@ The article cites official IRS resources, including Publication 4557, the IRS's 
 ### Location wording rule — avoid repetitive delivery-centre references
 
 Do not repeat “delivery centre in New Delhi” or equivalent location claims across every industry, city or state page. State Accounstone's operating location only where it materially helps the reader understand the service model, legal/business identity or remote-delivery arrangement. For regional pages, prioritize the customer's local accounting workflows and relevant state/county context, and clearly distinguish remote service coverage from a physical local office. Never imply local staff, office, on-site service or local credentials without verification. Avoid repetitive location boilerplate that adds no distinct user value.
+
+
+### Competitor-researched topic addition — HOA special assessment accounting (2026-10-13)
+
+Fresh search-result research surfaced dedicated accounting/workflow pages from [REA](https://rea.co/hoa-special-assessment-accounting-billing/) and [PropertyLedger](https://propertyledger.us/hoa-special-assessment/). Their published coverage distinguishes special assessments from recurring dues and discusses owner billing, collection records and tracing funds to project costs. [The HOA Guide's reserve-entry guide](https://www.thehoaguide.com/hoa-insurance-reserves/hoa-reserve-fund-accounting/) also discusses how a special assessment related to a reserve-funded repair should remain identifiable in the accounting records.
+
+**Evidence limits:** these results establish a live competitor content pattern and a useful workflow gap to assess; they do not verify exact organic positions, search volume, traffic or Accounstone ranking potential. No ranking number or demand estimate is asserted.
+
+**Decision:** add `/blog/hoa-special-assessment-accounting` as a distinct operational guide. Its owner intent is approved one-time or installment assessment accounting from the approved owner schedule through billing, collections, receivables tie-out, project-cost support and board reporting. It links to—not replaces—the existing routine assessment accounting, homeowner-ledger, receivables-reconciliation and reserve workflow guides. The page explicitly leaves legal authorization, notices, collection actions and jurisdiction-specific treatment with the association and its qualified advisers.
+
+The page has been registered in the blog index, HOA hub, sitemap, route/content/search-intent registries and AI-readable discovery files. Preview validation is pending; keep the page on the working branch until the latest deployment is READY and route/metadata/sitemap checks pass. No GSC access, merge to `main`, or production deployment.
