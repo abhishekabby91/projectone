@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Month-End Close Checklist',
-  description: 'A practical property management month-end close checklist for bank reconciliations, tenant ledgers, payables, deposits, owner statements and review controls.',
+  description: 'Property management month-end close checklist for bank reconciliations, tenant ledgers, payables, deposits, owner statements and review controls.',
   path: '/blog/property-management-month-end-close-checklist',
 });
 
