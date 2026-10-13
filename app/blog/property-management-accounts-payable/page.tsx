@@ -88,6 +88,7 @@ export default function PropertyManagementAccountsPayable() {
       <p>After approval, record the bill according to the agreed posting policy and update payment status when payment is scheduled or released. When bank activity arrives, match the payment to the correct bill and investigate partial payments, voids, returned payments, credits and timing differences.</p>
       <p>At month-end, review aged payables and bills that are approved but unpaid, paid but not cleared, missing support, duplicated or assigned to a suspense account. A clean accounts payable list should explain what is owed, to whom, for which property and what action remains.</p>
       <p>For the broader close sequence, use the <Link href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</Link> and the <Link href="/blog/property-management-bank-reconciliation">bank reconciliation workflow</Link>.</p>
+      <p>For card purchases that need receipts, property coding and statement matching, see the <Link href="/blog/property-management-credit-card-reconciliation">property management credit card reconciliation checklist</Link>.</p>
 
       <h2>6. Keep owner-funded costs distinct from management-company costs</h2>
       <p>Property expenses paid on an owner's behalf and the management company's own operating costs are different records. Apply the agreed chart of accounts and property/entity coding so vendor costs, management fees and amounts payable to owners remain understandable in reports.</p>
