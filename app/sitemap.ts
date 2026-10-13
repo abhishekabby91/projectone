@@ -120,6 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/property-management-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-1099-preparation', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-budget-vs-actual', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-trust-accounting-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-cam-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
