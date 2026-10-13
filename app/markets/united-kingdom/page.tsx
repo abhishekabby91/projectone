@@ -160,9 +160,7 @@ export default function UKMarketPage() {
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              Accounstone exists to take the preparation layer off that curve, so your qualified people spend their
-              hours reviewing and advising rather than processing. We work from our delivery centre in New Delhi as an
-              extension of your practice — to your templates, your close calendar and your review points.
+              Accounstone takes the preparation layer off that curve, so your qualified people spend their hours reviewing and advising rather than processing. Our remote delivery model fits your templates, close calendar and review points.
             </p>
           </Reveal>
           </div>

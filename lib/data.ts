@@ -139,7 +139,7 @@ export const companyInfo = {
     // published direct channel; everything else routes through the inquiry form.
     // Restoring it means re-adding both fields AND the six render sites listed
     // in SEO-CHANGELOG.md 2026-09-09b.
-    address: 'Global Delivery Center - New Delhi, India',
+    address: 'India-based remote delivery',
   },
 };
 

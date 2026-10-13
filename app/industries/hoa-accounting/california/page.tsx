@@ -178,6 +178,7 @@ export default function CaliforniaHoaAccountingPage() {
             <Link href="/blog/hoa-accounting-month-end-checklist" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA month-end checklist</Link>
             <Link href="/blog/hoa-bank-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA bank reconciliation</Link>
             <Link href="/blog/hoa-year-end-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA year-end accounting</Link>
+            <Link href="/industries/hoa-accounting/san-diego-county" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">San Diego County HOA accounting</Link>
             <Link href="/markets/united-states/california" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">California accounting market</Link>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Month-End Close Checklist',
-  description: 'A practical property management month-end close checklist for bank reconciliations, tenant ledgers, payables, deposits, owner statements and review controls.',
+  description: 'Property management month-end close checklist for bank reconciliations, tenant ledgers, payables, deposits, owner statements and review controls.',
   path: '/blog/property-management-month-end-close-checklist',
 });
 
@@ -55,7 +55,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
 
       <h2>3. Review tenant ledgers and rent-roll exceptions</h2>
       <p>Compare charges, receipts, credits and open balances with source records and approved lease information. Look for unapplied payments, duplicated charges, unexplained credits, balances that do not agree with the rent roll and move-in or move-out activity that has not been reflected correctly.</p>
-      <p>A rent roll is a useful operational cross-check, but it is not a replacement for the general ledger or bank reconciliation. Investigate differences and document the reason for any remaining timing item. Related reading: <Link href="/blog/rent-roll-accounting" className="text-primary underline underline-offset-4">rent roll accounting</Link>.</p>
+      <p>A rent roll is a useful operational cross-check, but it is not a replacement for the general ledger or bank reconciliation. Investigate differences and document the reason for any remaining timing item. Review transaction-level charges, receipts and balances with the <Link href="/blog/property-management-tenant-ledger-reconciliation" className="text-primary underline underline-offset-4">tenant ledger reconciliation checklist</Link>. Related reading: <Link href="/blog/rent-roll-accounting" className="text-primary underline underline-offset-4">rent roll accounting</Link>.</p>
 
       <h2>4. Check deposits and other liabilities</h2>
       <p>Compare the deposit ledger and other relevant liability schedules with the corresponding accounting balances. Investigate tenant-level differences, refunds in progress, transfers and transactions posted to the wrong account. Keep the accounting trail clear enough for a reviewer to trace a balance back to its supporting record.</p>
@@ -88,6 +88,8 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       </table>
       <p>Keep the exception log linked to the reconciliation or report it affects. A useful entry records the amount, period, preparer, reviewer, evidence, owner of the next action, due date and final resolution. This gives the next close a traceable starting point instead of a recurring unexplained balance.</p>
       <p>For the owner-reporting step, see the <Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">owner statement reconciliation and review workflow</Link>. For tenant deposits, see the <Link href="/blog/property-management-security-deposit-accounting" className="text-primary underline underline-offset-4">security deposit accounting guide</Link>.</p>
+      <p>For planned-versus-recorded performance, see the <Link href="/blog/property-management-budget-vs-actual">budget vs. actual reporting workflow</Link>.</p>
+      <p>After reconciliations, assemble the <Link href="/blog/property-management-financial-statements">property management financial statement package</Link> and review the calculation and approvals in the <Link href="/blog/property-management-owner-distributions">owner distribution workflow</Link>.</p>
 
       <h2>8. Keep a short, reviewable close record</h2>
       <p>A completed close should leave evidence of what was reviewed and what remains open. A simple log can include:</p>

@@ -14,8 +14,7 @@ import { companyInfo, services, regions } from '@/lib/data';
  *
  * `region` makes the form specific rather than generic: it labels the fields in
  * that market's language, carries the region into the inquiry email so it can be
- * routed, and tells the visitor which hours we cover. A US firm and a UK
- * practice do not fill in the same form.
+ * routed, and uses the right field labels and placeholders for each market.
  */
 
 type RegionSlug = (typeof regions)[number]['slug'];
@@ -25,7 +24,7 @@ interface RegionForm {
   phonePlaceholder: string;
   companyLabel: string;
   companyPlaceholder: string;
-  hours: string;
+  note: string;
 }
 
 const REGION_FORM: Record<RegionSlug, RegionForm> = {
@@ -34,21 +33,21 @@ const REGION_FORM: Record<RegionSlug, RegionForm> = {
     phonePlaceholder: '+1 (555) 123-4567',
     companyLabel: 'Firm name',
     companyPlaceholder: 'Your CPA firm',
-    hours: 'We cover US business hours from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
   'united-kingdom': {
     emailPlaceholder: 'you@yourpractice.co.uk',
     phonePlaceholder: '+44 20 1234 5678',
     companyLabel: 'Practice name',
     companyPlaceholder: 'Your accountancy practice',
-    hours: 'We cover UK business hours from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
   australia: {
     emailPlaceholder: 'you@yourfirm.com.au',
     phonePlaceholder: '+61 2 1234 5678',
     companyLabel: 'Firm name',
     companyPlaceholder: 'Your accounting firm',
-    hours: 'We cover Australian business hours from our delivery centre in New Delhi.',
+    note: 'We will agree the workflow, handoffs and deadlines during onboarding.',
   },
 };
 
@@ -72,7 +71,7 @@ const SIZES = {
     field: `${FIELD_BASE} px-3.5 py-2.5 sm:px-4 sm:py-3`,
     label: 'block text-sm font-semibold text-foreground mb-1 sm:mb-2',
     gap: 'space-y-2.5 sm:space-y-5',
-    grid: 'grid grid-cols-2 gap-2.5 sm:gap-5',
+    grid: 'grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-5',
     submit: 'w-full px-6 py-3.5 sm:py-4 rounded-lg font-semibold',
     note: 'text-xs',
     rows: 4,
@@ -156,7 +155,6 @@ export default function InquiryForm({
       `Company: ${get('company')}`,
       get('phone') ? `Phone: ${get('phone')}` : null,
       (get('service') || service) ? `Service Interest: ${get('service') || service}` : null,
-      get('support_type') ? `Support Type: ${get('support_type')}` : null,
       regionName ? `Region: ${regionName}` : null,
       '',
       'Message:',
@@ -202,7 +200,6 @@ export default function InquiryForm({
           name: get('name'),
           email: get('email'),
           message: get('message'),
-          ...(get('support_type') && { support_type: get('support_type') }),
           ...(get('company') && { company: get('company') }),
           ...(get('phone') && { phone: get('phone') }),
           ...((get('service') || service) && { service_interest: get('service') || service }),
@@ -317,7 +314,7 @@ export default function InquiryForm({
 
           {!minimal && (
           <>
-            <div className="col-span-2 sm:col-span-1">
+            <div>
               <label htmlFor={`service-${uid}`} className={sz.label}>What do you need support with?</label>
               <select id={`service-${uid}`} name="service" defaultValue={service ?? ''} className={sz.field}>
                 <option value="">Select a service</option>
@@ -328,19 +325,6 @@ export default function InquiryForm({
               </select>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
-              <label htmlFor={`support-type-${uid}`} className={sz.label}>What type of support are you considering?</label>
-              <select id={`support-type-${uid}`} name="support_type" defaultValue="" className={sz.field}>
-                <option value="">Select an option</option>
-                <option value="Project / Freelance">Project / Freelance</option>
-                <option value="Part-time">Part-time</option>
-                <option value="Full-time / FTE">Full-time / FTE</option>
-                <option value="Seasonal">Seasonal</option>
-                <option value="Ongoing outsourcing">Ongoing outsourcing</option>
-                <option value="One-time cleanup / data entry">One-time cleanup / data entry</option>
-                <option value="Not sure yet">Not sure yet</option>
-              </select>
-            </div>
           </>
           )}
 
@@ -370,7 +354,7 @@ export default function InquiryForm({
         <p className={`${sz.note} text-muted text-center`}>
           {size === 'compact'
             ? 'Free consultation. No obligation.'
-            : <>The consultation and the call are always free. {r?.hours ?? 'We reply from our delivery centre in New Delhi.'}</>}
+            : <>The consultation and the call are always free. {r?.note ?? 'We will agree the workflow, handoffs and deadlines during onboarding.'}</>}
         </p>
       </form>
     </div>

@@ -1,3 +1,10 @@
+## 2026-10-14 — Add eUnify HOA accounting support\n\n- Competitor and platform research: eUnify's official site describes an HOA/community-association platform with finance, payments and full HOA accounting workflows; its public materials make the platform's accounting role clear, while Accounstone's proposed page addresses the separate need for remote accounting workflow execution and review.\n- Added `/industries/hoa-accounting/eunify-accounting-support` for teams already using eUnify, covering assessment-ledger review, reconciliation preparation, payable documentation, month-end handoffs and board-reporting support.\n- Added FAQ, Service and Breadcrumb schema, a canonical metadata path, related links to existing eUnify guides, an HOA-hub link, sitemap inclusion and a registered commercial software-specific intent.\n- The page explicitly avoids claiming eUnify partnership/certification, product implementation, vendor technical support, a US office or on-site community management.\n- Research references: https://eunify.net/ ; https://www.capterra.com/p/137049/eUnify/ . These sources establish product context, not search volume or ranking forecasts.\n\n## 2026-10-13 — AppFolio HOA accounting support
+
+- Reviewed AppFolio's official community-association financials page for the platform's emphasis on board transparency, banking integrations, approvals, payables and association/corporate accounting.
+- Added `/industries/hoa-accounting/appfolio-accounting-support` for associations and community managers already using AppFolio, with remote accounting scope, workflow boundaries, FAQs and related resources.
+- Linked the page from the HOA accounting hub, registered its commercial software-specific intent, and added it to the sitemap. The page does not claim AppFolio partnership/certification, implementation services, a US office or on-site community management.
+- Preview build and rendered-route validation are required before the branch is considered ready for review; no merge to `main`, GSC submission or production deployment.
+
 ## 2026-10-13 — Add property management accounts payable workflow
 
 - Added `/blog/property-management-accounts-payable` for property-specific vendor invoice intake, duplicate checks, property/entity coding, approval evidence, payment status and month-end reconciliation.
@@ -4609,3 +4616,26 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added the route to the sitemap, blog index, route inventory and content registry, and linked the guide from the existing budget-to-actual and reserve-accounting articles.
 - The guide does not prescribe assessment levels or make jurisdiction-wide legal claims; it directs boards to governing documents and qualified advisers for adoption, notice and reserve decisions.
 - Vercel build validation is pending; no GSC work was performed.
+
+
+## 2026-10-13 — Add San Diego County HOA accounting page
+
+- Researched current San Diego-area competitor coverage, including APS Management's HOA accounting service pages, Property Management Consultants' accounting/bookkeeping page, and HOA Accounting Services' California coverage. These pages show competitor emphasis on assessment processing, AP, monthly financial statements, reserve tracking and board reporting; they do not prove search volume or expected Accounstone rankings.
+- Added `/industries/hoa-accounting/san-diego-county` with distinct county-level intent and original workflow copy for assessment ledgers, operating/reserve reconciliations, board reporting, vendor invoice support and CPA handover.
+- Explicitly states Accounstone delivers remote accounting support from India and does not claim a San Diego office or on-site community management. Legal and tax responsibilities remain with the association's authorized professionals.
+- Linked the new page from the HOA hub and California HOA page, registered its search intent, and added it to the sitemap. No merge to `main`, GSC submission or production deployment was performed.
+- Reviewed the existing property-management 1099 preparation article and used its existing URL rather than keeping a competing duplicate page.
+
+## 2026-10-13 — DoorLoop accounting support
+
+- Reviewed DoorLoop's official accounting and bookkeeping feature pages for bank synchronization, reconciliation, QuickBooks integration, chart of accounts and owner reporting.
+- Added the DoorLoop accounting support page for property managers already using the platform. The page covers accounting preparation and review, not software implementation or a claimed software partnership.
+- Added the page to the sitemap, linked it from the property-management hub, and registered its distinct search intent. No merge to main, GSC submission or production deployment was performed.
+
+
+## 2026-10-14 — HOA software workflows and registry reconciliation
+
+- Reconciled the content registry with the software-specific pages already present on the working branch.
+- Documented the HOA AppFolio and HOA Buildium pages and the property-management DoorLoop page as separate software/workflow intents.
+- Kept software-specific service pages distinct from the existing general HOA/property-management hubs, how-to articles, and the San Diego County geographic page.
+- Confirmed the latest successful preview build included the San Diego County, HOA AppFolio, HOA Buildium, property-management AppFolio California, property-management Buildium, and DoorLoop routes. The build is a preview only; no merge to `main`, GSC submission, or production deployment was performed.

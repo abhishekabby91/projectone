@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounting: Complete Guide',
-  description: 'A practical property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software workflows and month-end close.',
+  description: 'Property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software and month-end close.',
   path: '/blog/property-management-accounting',
 });
 
@@ -51,6 +51,8 @@ export default function Page() {
       <p>Bank reconciliation is a control, not just a monthly formality. Compare the bank statement with the book balance, identify deposits in transit and outstanding payments, and investigate unexplained differences rather than carrying them forward indefinitely. The person reviewing a reconciliation should be able to see the statement period, preparer, outstanding items, supporting evidence and reviewer sign-off.</p>
       <p>Where owner or tenant funds are involved, the bank reconciliation may be only one part of the control. The relevant owner, tenant or deposit detail may also need to agree to the corresponding control account. The exact reconciliation design depends on the account arrangement and applicable rules; do not assume that a balanced bank account alone proves all subsidiary balances are correct.</p>
       <p>Use the <Link href="/blog/property-management-bank-reconciliation">property management bank reconciliation guide</Link> for a step-by-step workflow.</p>
+      <p>For receipts that are recorded but not yet matched to a bank deposit, see the <Link href="/blog/property-management-undeposited-funds">undeposited funds reconciliation workflow</Link>. For card purchases, statement matching and property-level expense coding, use the <Link href="/blog/property-management-credit-card-reconciliation">credit card reconciliation checklist</Link>.</p>
+      <p>Where the account holds owner or tenant funds, see the focused <Link href="/blog/property-management-trust-accounting-reconciliation">property management trust-account reconciliation workflow</Link> for the additional control-account and supporting-ledger checks that may apply.</p>
 
       <h2>5. Keep tenant ledgers and the rent roll aligned</h2>
       <p>The rent roll is a useful operational view, but it should not be treated as a substitute for reviewing the accounting records. Compare scheduled rent and other charges with posted activity, payments received, credits, concessions, unapplied cash and aged balances. Check changes such as move-ins, move-outs, renewals, rent changes and transfers against approved source information.</p>
@@ -81,7 +83,13 @@ export default function Page() {
         <li><strong>Close the period:</strong> maintain a close log, assign unresolved items and retain review evidence according to the client's process.</li>
       </ol>
       <p>For a reusable task-by-task version, follow the <Link href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</Link>.</p>
+      <p>To review planned versus recorded results after close, use the <Link href="/blog/property-management-budget-vs-actual">property management budget vs. actual reporting workflow</Link>.</p>
+      <p>For forward-looking receipts, payment timing and low-cash scenarios, see the <Link href="/blog/property-management-cash-flow-forecasting">property management cash flow forecasting workflow</Link>.</p>
+      <p>For transaction-level review of tenant charges, receipts, credits and open balances, see the <Link href="/blog/property-management-tenant-ledger-reconciliation">tenant ledger reconciliation checklist</Link>.</p>
+      <p>For the portfolio-level review of unpaid balances, use the <Link href="/blog/property-management-receivables-aging">receivables aging reconciliation guide</Link> to tie aging detail to the general ledger and track exceptions.</p>
       <p>For the owner-facing reporting handoff, see the <Link href="/blog/property-management-owner-statements">property management owner statement reconciliation and review workflow</Link>.</p>
+      <p>For the full owner-reporting pack, including property income statements, balance sheets, cash summaries and supporting schedules, see the <Link href="/blog/property-management-financial-statements">property management financial statements guide</Link>.</p>
+      <p>For the controlled calculation and release of owner payments, see the <Link href="/blog/property-management-owner-distributions">owner distribution accounting workflow</Link>.</p>
       <p>For vendor bills, property coding, approval evidence and payment reconciliation, use the <Link href="/blog/property-management-accounts-payable">property management accounts payable workflow</Link>.</p>
       <p>For tenant deposit liabilities and move-out controls, see the <Link href="/blog/property-management-security-deposit-accounting">property management security deposit accounting workflow</Link>.</p>
 

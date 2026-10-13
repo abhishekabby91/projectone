@@ -6,7 +6,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounts Payable Workflow',
   description:
-    'A practical property management accounts payable workflow for invoice coding, property allocation, approvals, duplicate checks, payment controls and month-end reconciliation.',
+    'Property management AP workflow for invoice coding, property allocation, approvals, duplicate checks and month-end controls.',
   path: '/blog/property-management-accounts-payable',
 });
 
@@ -88,13 +88,14 @@ export default function PropertyManagementAccountsPayable() {
       <p>After approval, record the bill according to the agreed posting policy and update payment status when payment is scheduled or released. When bank activity arrives, match the payment to the correct bill and investigate partial payments, voids, returned payments, credits and timing differences.</p>
       <p>At month-end, review aged payables and bills that are approved but unpaid, paid but not cleared, missing support, duplicated or assigned to a suspense account. A clean accounts payable list should explain what is owed, to whom, for which property and what action remains.</p>
       <p>For the broader close sequence, use the <Link href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</Link> and the <Link href="/blog/property-management-bank-reconciliation">bank reconciliation workflow</Link>.</p>
+      <p>For card purchases that need receipts, property coding and statement matching, see the <Link href="/blog/property-management-credit-card-reconciliation">property management credit card reconciliation checklist</Link>.</p>
 
       <h2>6. Keep owner-funded costs distinct from management-company costs</h2>
       <p>Property expenses paid on an owner's behalf and the management company's own operating costs are different records. Apply the agreed chart of accounts and property/entity coding so vendor costs, management fees and amounts payable to owners remain understandable in reports.</p>
       <p>Before owner statements are prepared, confirm that relevant bills, credits, payments and open obligations have been recorded for the correct period. See the <Link href="/blog/property-management-owner-statements">owner statement reconciliation and review workflow</Link> for the next step in that process.</p>
 
       <h2>7. Make vendor records useful at year-end</h2>
-      <p>Consistent vendor names, tax-document status, payment coding and year-to-date totals reduce avoidable cleanup at year-end. Keep vendor documentation secure and accessible to authorized reviewers. Whether a payment is reportable, which form applies and what exceptions are available are tax determinations; route those decisions to the responsible tax professional and consult the applicable <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS Form 1099-MISC and 1099-NEC instructions</a>.</p>
+      <p>Consistent vendor names, tax-document status, payment coding and year-to-date totals reduce avoidable cleanup at year-end. Keep vendor documentation secure and accessible to authorized reviewers. For a structured year-end review, use the <Link href="/blog/property-management-1099-preparation">property management vendor reporting checklist</Link>. Whether a payment is reportable, which form applies and what exceptions are available are tax determinations; route those decisions to the responsible tax professional and consult the applicable <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS Form 1099-MISC and 1099-NEC instructions</a>.</p>
 
       <h2>Common accounts payable problems to watch</h2>
       <table>
@@ -110,6 +111,7 @@ export default function PropertyManagementAccountsPayable() {
 
       <h2>How this fits into the wider property accounting process</h2>
       <p>Accounts payable works best as part of a connected close, not as a standalone data-entry queue. Start with the <Link href="/blog/property-management-accounting">property management accounting guide</Link>, review the <Link href="/blog/property-management-chart-of-accounts">chart of accounts for multi-property portfolios</Link>, and use the <Link href="/industries/property-management">property management accounting services page</Link> for the broader service context.</p>
+      <p>For year-end vendor data, tax-document status and payment-total review, see the <Link href="/blog/property-management-1099-preparation" className="text-primary underline underline-offset-4">property management vendor 1099 tracking guide</Link>. It covers accounting preparation and the handoff to the responsible tax filer.</p>
     </ArticleLayout>
   );
 }

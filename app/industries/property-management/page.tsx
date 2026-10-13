@@ -246,7 +246,7 @@ export default function PropertyManagementPage() {
               </Link>, and if you own rather than manage, start at{' '}
               <Link href="/industries/real-estate" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
                 real estate accounting
-              </Link>.
+              </Link>. Property management accounting focuses on operating records for properties under management—rent and tenant ledgers, vendor costs, property-level reconciliations and owner statements. HOA accounting instead centers on association assessments, board oversight and operating-versus-reserve fund reporting. Shared close and reconciliation steps should be explained once where possible, then linked to the right industry context.
             </p>
           </Reveal>
         </div>
@@ -350,8 +350,11 @@ export default function PropertyManagementPage() {
               Property management platforms and general accounting systems each hold part of the monthly picture. The process needs to connect rent and tenant activity, deposits, vendor expenses, owner reporting and reconciled ledger balances. The exact workflow depends on the systems and access available for the engagement.
             </p>
           </></Reveal>
-          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
+              { name: 'AppFolio accounting in California', href: '/industries/property-management/appfolio-accounting-california' },
+              { name: 'Buildium accounting support', href: '/industries/property-management/buildium-accounting-support' },
+              { name: 'DoorLoop accounting support', href: '/industries/property-management/doorloop-accounting-support' },
               { name: 'Yardi accounting in Texas', href: '/industries/real-estate/yardi-accounting-outsourcing-texas' },
               { name: 'QuickBooks accounting', href: '/technology/quickbooks' },
               { name: 'Xero accounting', href: '/technology/xero' },
@@ -392,6 +395,7 @@ export default function PropertyManagementPage() {
           <Reveal delay={0.12}>
             <div className="mt-6 flex flex-wrap gap-3">
               {[
+                { name: 'DoorLoop accounting support', href: '/industries/property-management/doorloop-accounting-support' },
                 { name: 'QuickBooks', href: '/technology/quickbooks' },
                 { name: 'Xero', href: '/technology/xero' },
                 { name: 'Sage', href: '/technology/sage' },
@@ -449,12 +453,24 @@ export default function PropertyManagementPage() {
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
+              { name: 'Credit card reconciliation checklist', href: '/blog/property-management-credit-card-reconciliation' },
+              { name: 'Undeposited funds reconciliation', href: '/blog/property-management-undeposited-funds' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'Budget vs. actual reporting workflow', href: '/blog/property-management-budget-vs-actual' },
+              { name: 'Cash flow forecasting workflow', href: '/blog/property-management-cash-flow-forecasting' },
+              { name: 'Tenant ledger reconciliation checklist', href: '/blog/property-management-tenant-ledger-reconciliation' },
+              { name: 'Receivables aging reconciliation', href: '/blog/property-management-receivables-aging' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
+              { name: 'Property financial statements and reporting package', href: '/blog/property-management-financial-statements' },
+              { name: 'Portfolio performance reporting and KPIs', href: '/blog/property-management-portfolio-performance-reporting' },
+              { name: 'Owner distribution accounting workflow', href: '/blog/property-management-owner-distributions' },
+              { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
               { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
+              { name: 'Year-end vendor reporting checklist', href: '/blog/property-management-1099-preparation' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
+              { name: 'Buildium accounting and bookkeeping support', href: '/industries/property-management/buildium-accounting-support' },
               { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
             ].map((guide) => (
               <Link key={guide.href} href={guide.href} className="rounded-xl border border-border bg-white p-5 text-primary font-semibold hover:border-primary/50 transition-colors">
