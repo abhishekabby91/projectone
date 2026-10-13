@@ -1,3 +1,10 @@
+## 2026-10-13 — AppFolio HOA accounting support
+
+- Reviewed AppFolio's official community-association financials page for the platform's emphasis on board transparency, banking integrations, approvals, payables and association/corporate accounting.
+- Added `/industries/hoa-accounting/appfolio-accounting-support` for associations and community managers already using AppFolio, with remote accounting scope, workflow boundaries, FAQs and related resources.
+- Linked the page from the HOA accounting hub, registered its commercial software-specific intent, and added it to the sitemap. The page does not claim AppFolio partnership/certification, implementation services, a US office or on-site community management.
+- Preview build and rendered-route validation are required before the branch is considered ready for review; no merge to `main`, GSC submission or production deployment.
+
 ## 2026-10-13 — Add property management accounts payable workflow
 
 - Added `/blog/property-management-accounts-payable` for property-specific vendor invoice intake, duplicate checks, property/entity coding, approval evidence, payment status and month-end reconciliation.
