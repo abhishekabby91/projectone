@@ -454,6 +454,7 @@ export default function PropertyManagementPage() {
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
               { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
+              { name: 'Year-end vendor reporting checklist', href: '/blog/property-management-1099-preparation' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium accounting and bookkeeping support', href: '/industries/property-management/buildium-accounting-support' },
