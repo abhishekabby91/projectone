@@ -1,3 +1,11 @@
+## 2026-10-13 — Add property management accounts payable workflow
+
+- Added `/blog/property-management-accounts-payable-workflow` for property-level vendor invoice validation, entity/property coding, work-order support, approval boundaries, duplicate review, payment evidence and AP-to-GL close reconciliation.
+- Linked the page from the property-management industry hub and related accounting/reconciliation guides; added it to `app/sitemap.ts`, the content registry and search-intent registry.
+- Strengthened the existing `/blog/hoa-accounts-payable` URL rather than creating a duplicate HOA AP page after the route audit found an existing page with the same intent.
+- Verified `app/robots.ts` already exposes `/sitemap.xml`, permits public search/AI crawling and disallows protected paths. No robots change was needed.
+- Generated sitemap dates are maintained by the repository workflow; no generated date map was hand-edited. No GSC work, merge to `main`, or production deployment in this batch.
+
 ## 2026-10-13 — Strengthen existing HOA accounts payable guide
 
 - Expanded `/blog/hoa-accounts-payable` rather than creating a second URL, after the route audit found an existing page serving the same intent.
