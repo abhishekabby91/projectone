@@ -55,7 +55,7 @@ const homePageFAQs = [
   {
     question: 'Do you provide offshore accounting support?',
     answer:
-      'Delivery operates from New Delhi, India as an extension of client teams, following documented workflows, defined responsibilities and agreed review processes.',
+      'Remote delivery follows documented workflows, defined responsibilities and agreed review processes, working as an extension of client teams.',
   },
 ];
 
