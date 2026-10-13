@@ -445,6 +445,7 @@ export default function PropertyManagementPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { name: 'Property management accounting', href: '/blog/property-management-accounting' },
+              { name: 'Budget vs. actual reporting', href: '/blog/property-management-budget-vs-actual' },
               { name: 'Accounts payable workflow', href: '/blog/property-management-accounts-payable' },
               { name: 'Bookkeeping vs. accounting', href: '/blog/property-management-bookkeeping-vs-accounting' },
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
