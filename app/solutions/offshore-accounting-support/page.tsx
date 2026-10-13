@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: 'How are communication and response expectations set?',
-    answer: 'During onboarding, we agree the reporting cadence, escalation contacts, handoffs and review points for the engagement. These expectations are documented around your workflows and close calendar, rather than relying on a general promise about regional hours.',
+    answer: 'During onboarding, we agree the reporting cadence, escalation contacts, handoffs and review points for the engagement. These expectations are documented around your workflows and close calendar before recurring work begins.',
   },
   {
     question: 'What is the typical cost savings?',

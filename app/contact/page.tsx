@@ -322,7 +322,7 @@ export default function ContactPage() {
               <div className="rounded-xl border border-border bg-white p-6 space-y-3">
                 <h3 className="font-semibold text-foreground">Working with your calendar</h3>
                 <p className="text-sm text-muted leading-relaxed">
-                  We agree handoffs, reporting cadence, review points and escalation contacts during onboarding. The arrangement is documented around your close calendar and deadlines, rather than relying on a general promise about regional hours.
+                  We agree handoffs, reporting cadence, review points and escalation contacts during onboarding. The arrangement is documented around your close calendar and deadlines so responsibilities and handoffs are clear.
                 </p>
               </div>
 
