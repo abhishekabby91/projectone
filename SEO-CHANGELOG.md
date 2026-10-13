@@ -1,3 +1,11 @@
+## 2026-10-13 — Strengthen existing HOA accounts payable guide
+
+- Expanded `/blog/hoa-accounts-payable` rather than creating a second URL, after the route audit found an existing page serving the same intent.
+- Added association/vendor validation, coding discipline, approval-authority boundaries, duplicate and payment-change checks, payment evidence, month-end AP reconciliation and a portfolio checklist.
+- Added FAQ schema and contextual links to the existing HOA hub, chart of accounts, month-end close, bank reconciliation and reserve accounting resources.
+- Confirmed the existing canonical route is already present in `app/sitemap.ts`; no new sitemap entry was needed. `app/robots.ts` already exposes the sitemap and allows public search/AI crawlers while disallowing protected paths. Generated sitemap dates should be refreshed by the repository workflow, not edited manually.
+- No GSC work, merge to `main`, or production deployment in this batch.
+
 ## 2026-10-13 — Standardize batch page production and final reconciliation
 
 - Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
