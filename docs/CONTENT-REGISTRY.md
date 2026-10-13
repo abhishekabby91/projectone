@@ -61,3 +61,14 @@ Closed 2026-08-21: added `/resources/guides/choosing-an-engagement-model`, compa
 ## 2026-10-13 — San Diego County HOA accounting
 
 Added `/industries/hoa-accounting/san-diego-county` as a county-specific commercial page beneath the existing California HOA page. It covers assessment and homeowner ledgers, operating/reserve reconciliations, board reporting, vendor approvals, and year-end CPA handover. The copy identifies San Diego County communities as service-area context while clearly stating that Accounstone provides remote support from India, not a local office or on-site management. Linked from the HOA hub and California HOA page; sitemap entry added. Competitor review informs topic coverage only and does not establish search volume or ranking opportunity.
+
+
+## 2026-10-14 — HOA and property-management software workflow pages
+
+Added three software-specific service pages to address distinct commercial intent without suggesting software implementation, vendor certification, or a formal partnership:
+
+- `/industries/hoa-accounting/appfolio-accounting-support` — accounting workflow support for HOA/community-association teams already using AppFolio; linked from the HOA hub and included in the sitemap.
+- `/industries/hoa-accounting/buildium-accounting-support` — accounting workflow support for HOA/community-association teams already using Buildium; linked from the HOA hub and included in the sitemap.
+- `/industries/property-management/doorloop-accounting-support` — accounting workflow support for property managers already using DoorLoop; linked from the property-management hub and included in the sitemap.
+
+These pages are not software setup or migration services. They focus on transaction preparation, reconciliations, reporting, owner/board review and documented handoffs inside the client's existing process. The separate San Diego County HOA page remains the geographic-intent page; software pages should not target county-level queries.
