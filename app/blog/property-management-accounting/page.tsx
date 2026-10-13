@@ -86,6 +86,7 @@ export default function Page() {
       <p>To review planned versus recorded results after close, use the <Link href="/blog/property-management-budget-vs-actual">property management budget vs. actual reporting workflow</Link>.</p>
       <p>For forward-looking receipts, payment timing and low-cash scenarios, see the <Link href="/blog/property-management-cash-flow-forecasting">property management cash flow forecasting workflow</Link>.</p>
       <p>For transaction-level review of tenant charges, receipts, credits and open balances, see the <Link href="/blog/property-management-tenant-ledger-reconciliation">tenant ledger reconciliation checklist</Link>.</p>
+      <p>For the portfolio-level review of unpaid balances, use the <Link href="/blog/property-management-receivables-aging">receivables aging reconciliation guide</Link> to tie aging detail to the general ledger and track exceptions.</p>
       <p>For the owner-facing reporting handoff, see the <Link href="/blog/property-management-owner-statements">property management owner statement reconciliation and review workflow</Link>.</p>
       <p>For the full owner-reporting pack, including property income statements, balance sheets, cash summaries and supporting schedules, see the <Link href="/blog/property-management-financial-statements">property management financial statements guide</Link>.</p>
       <p>For the controlled calculation and release of owner payments, see the <Link href="/blog/property-management-owner-distributions">owner distribution accounting workflow</Link>.</p>
