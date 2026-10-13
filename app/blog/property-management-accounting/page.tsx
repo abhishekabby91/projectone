@@ -58,6 +58,7 @@ export default function Page() {
       <p>Related resources: <Link href="/blog/rent-roll-accounting">rent roll accounting</Link> and <Link href="/blog/property-management-bookkeeping-vs-accounting">property management bookkeeping vs. accounting</Link>.</p>
 
       <h2>6. Review payables and property expenses</h2>
+      <p>For the detailed invoice-to-payment sequence, see the <Link href="/blog/property-management-accounts-payable">property management accounts payable workflow</Link>, including property coding, owner approvals, duplicate checks and month-end reconciliation.</p>
       <p>Each invoice should be assigned to the correct property and expense category, checked for duplicates and routed through the client's documented approval process. Review missing invoices, old open items, credits, recurring charges and costs that may need different treatment under the client's accounting policy. Property coding matters because a portfolio total can appear reasonable while costs are assigned to the wrong owner or building.</p>
       <p>Accounting support can organize invoices, prepare coding and exception reports, and reconcile balances. Payment approval, release of funds and commercial decisions remain with the client and its authorized personnel.</p>
 
