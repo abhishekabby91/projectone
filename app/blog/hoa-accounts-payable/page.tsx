@@ -43,6 +43,13 @@ export default function HoaAccountsPayable() {
       <h2>Month-End AP Reconciliation</h2>
       <p>At month-end, compare the vendor detail with the accounts payable balance in the general ledger. Review old invoices, credits, partial payments and bills that may have been recorded twice. Keep a note of material items that remain unresolved so the board or manager can follow up.</p>
       <p>For each invoice, the record should make it possible to trace the original document to the coding, approval, payment and final ledger entry. This is especially useful when invoices are received through more than one channel or prepared by different people.</p>
+      <h2>Prevent Payment Errors Before They Leave the Account</h2>
+      <p>Build a short exception check into the approval and payment process. Review invoices that have a similar vendor, number, date or amount; bills that exceed the expected range; missing contract or work-order details; and credits or disputed charges that have not been resolved. Record who investigated each exception and what decision was made.</p>
+      <p>A request to change a vendor's bank details deserves separate verification. Confirm the request through a trusted contact method already on file rather than relying only on the phone number or link included in the change request. Keep a record of who verified the change and who authorized it under the association's procedure.</p>
+      <p>Where practical, separate invoice entry, approval, payment release and bank reconciliation. When a small association cannot separate every task, use a compensating review—for example, an independent review of the invoice, approval record and cleared bank transaction. The control should be documented and actually performed.</p>
+      <h2>Track Exceptions Through Month-End</h2>
+      <p>Use an exception list for missing approvals, disputed invoices, duplicate candidates, old credits, unrecorded bills, payments that have not cleared and differences between the AP detail and the general ledger. Assign an owner and target date to each item. Close an exception only when the supporting record explains the resolution; do not force the balance to zero with an unsupported journal entry.</p>
+      <p>Before the board package is issued, summarize material open items, overdue invoices and decisions needed from the board or manager. This makes the payables review useful for cash planning and oversight, rather than just a list of bills.</p>
       <h2>Software Workflow</h2>
       <p>QuickBooks Online, AppFolio and other systems can help route or record bills, but the exact workflow depends on the association's configuration. Automation should not remove approval controls or invoice review.</p>
       <h2>Related HOA Resources</h2>
