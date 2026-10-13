@@ -392,6 +392,7 @@ export default function PropertyManagementPage() {
           <Reveal delay={0.12}>
             <div className="mt-6 flex flex-wrap gap-3">
               {[
+                { name: 'DoorLoop accounting support', href: '/industries/property-management/doorloop-accounting-support' },
                 { name: 'QuickBooks', href: '/technology/quickbooks' },
                 { name: 'Xero', href: '/technology/xero' },
                 { name: 'Sage', href: '/technology/sage' },
