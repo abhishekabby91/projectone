@@ -178,6 +178,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-vendor-expense-tracking', priority: 0.75, changeFrequency: 'monthly' },
     // Year-end checklist content consolidated here; former year-end-checklist URL redirects.
+    { path: '/blog/hoa-form-1120-h-tax-records', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/hoa-year-end-accounting', priority: 0.75, changeFrequency: 'monthly' },
   ];
 
