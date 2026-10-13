@@ -6,7 +6,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Cash Flow Forecasting',
   description:
-    'Prepare a practical property management cash flow forecast by tracking expected rent, vendor payments, deposits, owner distributions, reserves and timing risks.',
+    'Forecast property management cash flow by tracking expected rent, vendor payments, deposits, owner distributions, reserves and timing risks.',
   path: '/blog/property-management-cash-flow-forecasting',
 });
 
