@@ -37,7 +37,7 @@ export default function Page() {
       </ul>
 
       <h2>Watch for timing differences</h2>
-      <p>A rent roll and accounting report may differ because of timing, adjustments, concessions, move-ins, move-outs or other transactions. A difference is not automatically an error. The important part is being able to explain it and determine whether it requires correction.</p>
+      <p>A rent roll and accounting report may differ because of timing, adjustments, concessions, move-ins, move-outs or other transactions. A difference is not automatically an error. The important part is being able to explain it and determine whether it requires correction. For transaction-level charges, receipts and balances, use the <a href="/blog/property-management-tenant-ledger-reconciliation">tenant ledger reconciliation checklist</a>; a rent roll summarizes lease and occupancy details rather than replacing the tenant ledger.</p>
 
       <h2>How software affects the workflow</h2>
       <p>Property-management platforms can produce rent-roll and tenant reports directly, while accounting systems may hold the general ledger separately. If two systems are involved, define which report is authoritative for each piece of information and reconcile the handoff rather than comparing totals manually without context.</p>
