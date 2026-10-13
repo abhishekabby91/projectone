@@ -147,6 +147,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/yardi-accounting-workflow', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-owner-statements', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-financial-statements', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-portfolio-performance-reporting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-owner-distributions', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-security-deposit-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/outsourced-bookkeeping-guide', priority: 0.75, changeFrequency: 'monthly' },
