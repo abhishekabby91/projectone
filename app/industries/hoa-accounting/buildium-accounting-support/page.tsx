@@ -120,11 +120,14 @@ export default function BuildiumAccountingSupportPage() {
         <div className="mx-auto max-w-5xl">
           <h2 className="font-serif text-2xl font-bold text-primary md:text-3xl">Related HOA accounting resources</h2>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting</Link>
+            <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounting overview</Link>
+            <Link href="/industries/hoa-accounting/california" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">California HOA accounting</Link>
+            <Link href="/industries/hoa-accounting/san-diego-county" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">San Diego County HOA accounting</Link>
+            <Link href="/industries/property-management/buildium-accounting-support" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Buildium rental property accounting</Link>
             <Link href="/blog/hoa-bank-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA bank reconciliation</Link>
             <Link href="/blog/hoa-financial-statements-board-review" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA financial statements</Link>
             <Link href="/blog/hoa-accounts-payable" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounts payable</Link>
-            <Link href="/services/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting services</Link>
+            <Link href="/services/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounting services</Link>
           </div>
         </div>
       </section>
