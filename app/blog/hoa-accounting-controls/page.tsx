@@ -68,7 +68,7 @@ export default function HoaAccountingControls() {
       <p>Software permissions can support segregation of duties, but configuration should match the association's actual workflow. A system can restrict access to certain actions; it cannot replace board oversight or independent review.</p>
 
       <h2>Related HOA Resources</h2>
-      <p>See our <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, <a href="/blog/hoa-chart-of-accounts">chart of accounts guide</a> and <a href="/industries/hoa-accounting">HOA accounting outsourcing</a> page.</p>
+      <p>See our <a href="/blog/hoa-vendor-invoice-approval-workflow">vendor invoice approval workflow</a>, <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, <a href="/blog/hoa-chart-of-accounts">chart of accounts guide</a> and <a href="/industries/hoa-accounting">HOA accounting outsourcing</a> page.</p>
     </ArticleLayout>
   );
 }
