@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { companyInfo, regions, serviceRegions, technologies, industries, markets } from '@/lib/data';
 import SocialIcon from '@/components/social-icon';
 import CookieSettingsButton from '@/components/cookie-settings-button';
@@ -129,10 +129,6 @@ export default function Footer() {
             <li className="flex items-center gap-3 md:flex-row-reverse">
               <Mail size={16} className="shrink-0 text-white/45" aria-hidden="true" />
               <a href={`mailto:${companyInfo.contact.email}`} className="inline-block py-1 leading-6 hover:text-white transition-colors" rel="nofollow">{companyInfo.contact.email}</a>
-            </li>
-            <li className="flex items-center gap-3 md:flex-row-reverse">
-              <MapPin size={16} className="shrink-0 text-white/45" aria-hidden="true" />
-              <span className="leading-6">{companyInfo.contact.address}</span>
             </li>
           </ul>
         </div>
