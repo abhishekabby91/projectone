@@ -246,7 +246,7 @@ export default function PropertyManagementPage() {
               </Link>, and if you own rather than manage, start at{' '}
               <Link href="/industries/real-estate" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
                 real estate accounting
-              </Link>.
+              </Link>. Property management accounting focuses on operating records for properties under management—rent and tenant ledgers, vendor costs, property-level reconciliations and owner statements. HOA accounting instead centers on association assessments, board oversight and operating-versus-reserve fund reporting. Shared close and reconciliation steps should be explained once where possible, then linked to the right industry context.
             </p>
           </Reveal>
         </div>
