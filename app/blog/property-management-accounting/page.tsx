@@ -82,6 +82,7 @@ export default function Page() {
         <li><strong>Close the period:</strong> maintain a close log, assign unresolved items and retain review evidence according to the client's process.</li>
       </ol>
       <p>For a reusable task-by-task version, follow the <Link href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</Link>.</p>
+      <p>To review planned versus recorded results after close, use the <Link href="/blog/property-management-budget-vs-actual">property management budget vs. actual reporting workflow</Link>.</p>
       <p>For the owner-facing reporting handoff, see the <Link href="/blog/property-management-owner-statements">property management owner statement reconciliation and review workflow</Link>.</p>
       <p>For vendor bills, property coding, approval evidence and payment reconciliation, use the <Link href="/blog/property-management-accounts-payable">property management accounts payable workflow</Link>.</p>
       <p>For tenant deposit liabilities and move-out controls, see the <Link href="/blog/property-management-security-deposit-accounting">property management security deposit accounting workflow</Link>.</p>
