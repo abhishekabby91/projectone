@@ -1,3 +1,8 @@
+## 2026-10-13 — Add property management budget vs. actual guide
+- Reviewed competitor coverage for property-level AP, budget variance reporting and owner reporting. Added a distinct reporting workflow rather than another general property accounting page.
+- Added `/blog/property-management-budget-vs-actual` covering budget version and period matching, property-level variance review, timing versus completeness issues, evidence-backed explanations, capital-project tracking and a monthly exception log.
+- Linked the guide from the property-management hub and blog index; added sitemap, route/content/search-intent registry and `public/llms.txt` references. Preview/build validation remains required before release.
+
 ## 2026-10-13 — Add property management accounts payable workflow guide
 - Competitor research reviewed current AP workflow coverage from property-management accounting providers and software-adjacent guides. Differentiation is the property/entity/owner reporting chain, not generic invoice automation claims.
 - Added `/blog/property-management-accounts-payable` covering invoice intake, property and entity coding, shared-cost allocation, owner approvals, duplicate and vendor-bank-change checks, payment evidence, AP reconciliation and exception tracking.
