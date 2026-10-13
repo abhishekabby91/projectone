@@ -94,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/hoa-accounting/san-diego-county', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/buildium-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/appfolio-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/industries/hoa-accounting/eunify-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/markets/united-states/texas', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/california', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/markets/united-states/florida', priority: 0.65, changeFrequency: 'monthly' },
