@@ -29,8 +29,8 @@ const faqs = [
     answer: 'Every engagement is NDA-backed, with system access limited to the team members actually working on your account. We are actively working toward formal certification (SOC 2) and will share our exact current status if you ask.',
   },
   {
-    question: 'What time zone coverage do you provide?',
-    answer: 'Our service delivery team operates from our Global Delivery Center in New Delhi, India, and structures working hours to align with US, UK, and Australian business hours depending on the client.',
+    question: 'How are communication and response expectations set?',
+    answer: 'During onboarding, we agree the reporting cadence, escalation contacts, handoffs and review points for the engagement. These expectations are documented around your workflows and close calendar, rather than relying on a general promise about regional hours.',
   },
   {
     question: 'What is the typical cost savings?',
@@ -99,7 +99,7 @@ export default function OffshoreSolutionPage() {
                 {[
                   'Experienced accounting professionals',
                   'NDA-backed engagements on every project',
-                  'Response times and working-hours overlap agreed in writing at onboarding',
+                  'Response and escalation expectations agreed in writing at onboarding',
                   'Works inside your existing accounting system and chart of accounts',
                   'A named point of contact who knows the engagement',
                   'Flexible scaling up or down',
@@ -170,7 +170,7 @@ export default function OffshoreSolutionPage() {
           <Reveal className="space-y-4"><>
             <h3 className="font-bold text-primary text-lg">1. Where does the data actually go, and who can see it?</h3>
             <p className="text-base md:text-lg text-muted leading-relaxed">Ask any offshore provider for four specifics rather than a security page. Which named individuals hold access, and how you revoke it on a day&rsquo;s notice. Whether client data is worked on inside your systems or copied into theirs. What the sub-processor list looks like &mdash; who else touches it. And what happens to files when the engagement ends.</p>
-            <p className="text-base md:text-lg text-muted leading-relaxed">Our answers: access is per-person and granted inside your platforms, so you can see and remove it yourself; engagements are NDA-backed; and delivery runs from our own centre in New Delhi rather than a chain of subcontractors. On certification, the honest position is that we are <strong>working toward SOC 2 and do not yet hold it</strong>. If a provider tells you they are certified, ask for the report and the scope &mdash; a Type I on a narrow scope is not what most firms assume they are being told.</p>
+            <p className="text-base md:text-lg text-muted leading-relaxed">Our answers: access is per-person and granted inside your platforms, so you can see and remove it yourself; engagements are NDA-backed; and the work is handled by Accounstone staff using documented access controls rather than passed through a chain of subcontractors. On certification, the honest position is that we are <strong>working toward SOC 2 and do not yet hold it</strong>. If a provider tells you they are certified, ask for the report and the scope &mdash; a Type I on a narrow scope is not what most firms assume they are being told.</p>
             <p className="text-base md:text-lg text-muted leading-relaxed">For UK practices specifically: sending client personal data outside the UK is a transfer under UK GDPR, and it is your practice that remains the controller. Your data-processing agreement should name the transfer mechanism. That is a real question to put to us in writing, not a formality.</p>
 
             <h3 className="font-bold text-primary text-lg pt-4">2. What holds the quality up when nobody is in the room?</h3>

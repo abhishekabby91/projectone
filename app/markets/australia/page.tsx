@@ -207,9 +207,7 @@ export default function AustraliaMarketPage() {
           />
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
-              Accounstone takes that recurring layer so your qualified people spend their hours on review and on the
-              advisory conversations clients actually pay for. We work from our delivery centre in New Delhi as an
-              extension of your firm — to your templates, your lodgment calendar and your review points.
+              Accounstone takes that recurring layer so your qualified people spend their hours on review and the advisory conversations clients actually pay for. Our remote delivery model fits your templates, lodgment calendar and review points.
             </p>
           </Reveal>
           </div>
