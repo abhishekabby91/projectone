@@ -4609,3 +4609,12 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Added the route to the sitemap, blog index, route inventory and content registry, and linked the guide from the existing budget-to-actual and reserve-accounting articles.
 - The guide does not prescribe assessment levels or make jurisdiction-wide legal claims; it directs boards to governing documents and qualified advisers for adoption, notice and reserve decisions.
 - Vercel build validation is pending; no GSC work was performed.
+
+
+## 2026-10-13 — Add San Diego County HOA accounting page
+
+- Researched current San Diego-area competitor coverage, including APS Management's HOA accounting service pages, Property Management Consultants' accounting/bookkeeping page, and HOA Accounting Services' California coverage. These pages show competitor emphasis on assessment processing, AP, monthly financial statements, reserve tracking and board reporting; they do not prove search volume or expected Accounstone rankings.
+- Added `/industries/hoa-accounting/san-diego-county` with distinct county-level intent and original workflow copy for assessment ledgers, operating/reserve reconciliations, board reporting, vendor invoice support and CPA handover.
+- Explicitly states Accounstone delivers remote accounting support from India and does not claim a San Diego office or on-site community management. Legal and tax responsibilities remain with the association's authorized professionals.
+- Linked the new page from the HOA hub and California HOA page, registered its search intent, and added it to the sitemap. No merge to `main`, GSC submission or production deployment was performed.
+- Reviewed the existing property-management 1099 preparation article and used its existing URL rather than keeping a competing duplicate page.
