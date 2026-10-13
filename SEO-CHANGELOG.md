@@ -1,3 +1,22 @@
+## 2026-10-13 — Standardize batch page production and final reconciliation
+
+- Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
+- The workflow avoids orphan pages during drafting, avoids speculative links to routes not yet created, and requires reporting the exact commit and preview state. No GSC work, merge to `main` or production deployment.
+
+## 2026-10-12 — Audit existing California HOA accounting page
+
+- Reviewed `/industries/hoa-accounting/california` for intent ownership, state-specific content, metadata/schema, scope boundaries and internal links. Kept the current URL and avoided a cosmetic rewrite because the page already has a distinct California purpose and useful accounting workflow detail.
+- Checked the available READY preview for commit `03e615c7193db602288c6836ca4a54aba1548599`: the California HOA route and six key internal destinations returned HTTP 200; the rendered page showed a title, meta description, canonical and index/follow directives. This preview predates the latest documentation commits and does not validate the latest branch head or production.
+- Competitor review of APS Management's San Diego/Southern California HOA accounting page supports further research into San Diego County, but not automatic page creation. Keep the county page unapproved until distinct query intent and original useful content are established.
+- No GSC access, merge to `main`, or production deployment.
+
+## 2026-10-13 — Add HOA special assessment accounting guide
+
+- Competitor research found distinct workflow coverage for HOA special assessments at REA and PropertyLedger: assessment-specific billing, collections, keeping activity distinct from routine operating dues, and tracing collections to project costs. This establishes a content pattern worth covering, not verified search volume or a ranking guarantee.
+- Added `/blog/hoa-special-assessment-accounting` as a workflow guide from approved owner schedule through homeowner-level billing, receipts, receivables reconciliation, project-cost tracking and board reporting. It explicitly leaves legal authorization, collection decisions and jurisdiction-specific requirements with the association and its qualified advisers.
+- Added the route to the blog index, HOA hub guide links, sitemap, route/content/search-intent registries and AI-readable discovery files. Cross-links point to the existing assessment, receivables and reserve guides; no duplicate reserve or routine assessment page was created.
+- Preview/build validation is pending for the latest branch head. No GSC access, merge to `main`, or production deployment.
+
 ## 2026-10-13 — Reduce repetitive delivery-location wording
 
 - Added a content rule against repeating “delivery centre in New Delhi” across every industry or regional page. Mention operating location only where it clarifies the service model or business identity; regional pages should prioritize the buyer's local workflow and must not imply a local office or on-site presence.
