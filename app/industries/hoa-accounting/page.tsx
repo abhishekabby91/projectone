@@ -296,10 +296,10 @@ export default function HoaAccountingPage() {
 
           <Reveal delay={0.2}>
             <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
-              If you also manage rental property for owners, the owner-statement and tenant side is on the{' '}
+              HOA accounting is organized around the association: homeowner assessments, delinquency tracking, operating and reserve funds, board-approved budgets and board financial packages. If you also manage rental property for individual owners, the tenant-ledger, rent collection and owner-statement workflow belongs on the{' '}
               <Link href="/industries/property-management" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
                 property management accounting page
-              </Link>. The annual audit file is{' '}
+              </Link>. Some bookkeeping controls overlap, but the reporting audience and underlying records are different. The annual audit file is{' '}
               <Link href="/services/audit-support/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
                 audit support
               </Link>, and the payables cycle is{' '}
