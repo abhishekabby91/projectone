@@ -141,6 +141,7 @@ export default function PropertyManagementBudgetVsActual() {
       ))}
 
       <h2>Related property management accounting resources</h2>
+      <p>For a cross-property view of KPIs, trends and exceptions, see the <Link href="/blog/property-management-portfolio-performance-reporting" className="text-primary underline underline-offset-4">property management portfolio performance reporting guide</Link>.</p>
       <ul>
         <li><Link href="/blog/property-management-accounting" className="text-primary underline underline-offset-4">Property management accounting overview</Link></li>
         <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">Month-end close checklist</Link></li>
