@@ -117,6 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/resources/insights/asc-606-revenue-recognition-saas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/blog', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/blog/property-management-accounting', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-accounts-payable', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-cam-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-chart-of-accounts', priority: 0.75, changeFrequency: 'monthly' },

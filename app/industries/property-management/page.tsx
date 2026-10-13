@@ -452,6 +452,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
+              { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
