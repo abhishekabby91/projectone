@@ -94,7 +94,7 @@ export default function PropertyManagementAccountsPayable() {
       <p>Before owner statements are prepared, confirm that relevant bills, credits, payments and open obligations have been recorded for the correct period. See the <Link href="/blog/property-management-owner-statements">owner statement reconciliation and review workflow</Link> for the next step in that process.</p>
 
       <h2>7. Make vendor records useful at year-end</h2>
-      <p>Consistent vendor names, tax-document status, payment coding and year-to-date totals reduce avoidable cleanup at year-end. Keep vendor documentation secure and accessible to authorized reviewers. Whether a payment is reportable, which form applies and what exceptions are available are tax determinations; route those decisions to the responsible tax professional and consult the applicable <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS Form 1099-MISC and 1099-NEC instructions</a>.</p>
+      <p>Consistent vendor names, tax-document status, payment coding and year-to-date totals reduce avoidable cleanup at year-end. Keep vendor documentation secure and accessible to authorized reviewers. For a structured year-end review, use the <Link href="/blog/property-management-1099-preparation">property management vendor reporting checklist</Link>. Whether a payment is reportable, which form applies and what exceptions are available are tax determinations; route those decisions to the responsible tax professional and consult the applicable <a href="https://www.irs.gov/instructions/i1099mec" target="_blank" rel="noreferrer">IRS Form 1099-MISC and 1099-NEC instructions</a>.</p>
 
       <h2>Common accounts payable problems to watch</h2>
       <table>
