@@ -79,6 +79,7 @@ export default function PropertyManagementFinancialStatements() {
       <h2>5. Explain variances instead of sending unexplained totals</h2>
       <p>Use a consistent comparison when it helps the reader: current period versus prior period, actual versus budget, or current year versus prior year. Record the cause of material differences, whether it is a timing issue, occupancy change, repair, rate change, billing correction or coding adjustment. A variance threshold can help focus review, but it should not replace judgment for unusual or sensitive items.</p>
       <p>For a more detailed comparison process, use the <Link href="/blog/property-management-budget-vs-actual" className="text-primary underline underline-offset-4">budget-versus-actual reporting guide</Link>. For forward-looking receipts, payments and liquidity scenarios, see the <Link href="/blog/property-management-cash-flow-forecasting" className="text-primary underline underline-offset-4">cash flow forecasting workflow</Link>.</p>
+      <p>For comparisons across multiple properties, see the <Link href="/blog/property-management-portfolio-performance-reporting" className="text-primary underline underline-offset-4">portfolio performance reporting guide</Link>, which focuses on consistent KPI definitions, normalized metrics and documented exception review.</p>
 
       <h2>6. Use a review checklist before reports go out</h2>
       <ul>
