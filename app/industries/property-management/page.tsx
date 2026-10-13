@@ -449,6 +449,8 @@ export default function PropertyManagementPage() {
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
+              { name: 'Credit card reconciliation checklist', href: '/blog/property-management-credit-card-reconciliation' },
+              { name: 'Undeposited funds reconciliation', href: '/blog/property-management-undeposited-funds' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
               { name: 'Budget vs. actual reporting workflow', href: '/blog/property-management-budget-vs-actual' },
               { name: 'Cash flow forecasting workflow', href: '/blog/property-management-cash-flow-forecasting' },
