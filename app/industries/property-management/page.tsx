@@ -450,6 +450,7 @@ export default function PropertyManagementPage() {
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
               { name: 'Property management bank reconciliation', href: '/blog/property-management-bank-reconciliation' },
               { name: 'Property management month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'Budget vs. actual reporting workflow', href: '/blog/property-management-budget-vs-actual' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
