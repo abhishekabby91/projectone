@@ -1,3 +1,9 @@
+## 2026-10-13 — Strengthen existing HOA accounts payable guide
+- Reviewed competitor coverage for HOA vendor invoice intake, approval evidence, duplicate prevention, fund coding, payment controls and month-end AP review.
+- Expanded the existing `/blog/hoa-accounts-payable` page with vendor bank-change verification, practical segregation-of-duties guidance, exception ownership and month-end AP follow-through. Did not create a separate AP URL because the existing page already owns this intent.
+- Confirmed the existing route is already included in `app/sitemap.ts` and linked from the HOA hub; `app/robots.ts` already exposes public routes and declares the sitemap. No sitemap or robots change was necessary for this content-only update.
+- Kept generated `lib/sitemap-dates.ts` under its script/workflow rather than hand-editing dates. Preview/build validation still required before release.
+
 ## 2026-10-13 — Standardize batch page production and final reconciliation
 
 - Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
