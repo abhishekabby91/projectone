@@ -6,7 +6,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Trust Accounting Guide',
   description:
-    'A practical property management trust-account reconciliation workflow covering bank-to-ledger checks, owner and tenant balances, exception tracking and review controls.',
+    'Property management trust-account reconciliation: bank-to-ledger checks, owner and tenant balances, exceptions and review controls.',
   path: '/blog/property-management-trust-accounting-reconciliation',
 });
 
