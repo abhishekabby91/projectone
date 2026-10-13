@@ -89,6 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/technology/xero', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/industries/property-management/appfolio-accounting-california', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/property-management/buildium-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/industries/property-management/doorloop-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/california', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/san-diego-county', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/buildium-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
