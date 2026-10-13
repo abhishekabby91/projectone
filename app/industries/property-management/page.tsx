@@ -350,8 +350,11 @@ export default function PropertyManagementPage() {
               Property management platforms and general accounting systems each hold part of the monthly picture. The process needs to connect rent and tenant activity, deposits, vendor expenses, owner reporting and reconciled ledger balances. The exact workflow depends on the systems and access available for the engagement.
             </p>
           </></Reveal>
-          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
+              { name: 'AppFolio accounting in California', href: '/industries/property-management/appfolio-accounting-california' },
+              { name: 'Buildium accounting support', href: '/industries/property-management/buildium-accounting-support' },
+              { name: 'DoorLoop accounting support', href: '/industries/property-management/doorloop-accounting-support' },
               { name: 'Yardi accounting in Texas', href: '/industries/real-estate/yardi-accounting-outsourcing-texas' },
               { name: 'QuickBooks accounting', href: '/technology/quickbooks' },
               { name: 'Xero accounting', href: '/technology/xero' },
