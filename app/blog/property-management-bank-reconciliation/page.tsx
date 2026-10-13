@@ -35,7 +35,7 @@ export default function Page() {
       <p>Use the bank statement as the external record and match the activity recorded in the accounting system. A reconciliation should identify timing differences such as outstanding checks or deposits in transit while separating those from transactions that were never recorded or were recorded incorrectly.</p>
 
       <h2>Property-level detail matters</h2>
-      <p>In a portfolio environment, a matched bank balance does not automatically prove that every property is correct. A receipt may have reached the bank but been applied to the wrong tenant or property. Review the supporting detail when a transaction is unusual or material.</p>
+      <p>In a portfolio environment, a matched bank balance does not automatically prove that every property is correct. A receipt may have reached the bank but been applied to the wrong tenant or property. Review the supporting detail when a transaction is unusual or material. The <a href="/blog/property-management-tenant-ledger-reconciliation">tenant ledger reconciliation checklist</a> covers how to check tenant-level charges, receipts, credits and open balances separately from the bank match.</p>
 
       <h2>When a trust-account workflow needs a three-way reconciliation</h2>
       <p>Where the applicable rules and account arrangement require trust-account reconciliation, a bank-to-book match may not be enough. The review may also need to compare the trust bank balance and control record with the total of the individual beneficiary, owner, tenant or transaction records maintained for the account. The records being compared must use the same reconciliation date, and differences should be investigated and corrected rather than hidden by an unexplained adjustment.</p>
