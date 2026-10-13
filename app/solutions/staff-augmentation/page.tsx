@@ -171,27 +171,19 @@ export default function StaffAugmentationPage() {
           <Reveal className="space-y-4"><>
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-8 bg-secondary" />
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">The working day</span>
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">How the work fits</span>
             </div>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              Where the Overlap Sits, and Why It Changes What to Delegate
+              Documented Work, Clear Ownership, Reviewable Output
             </h2>
           </></Reveal>
           <Reveal className="space-y-4"><>
-            <p className="text-base md:text-lg text-muted leading-relaxed">Delivery runs from our centre in New Delhi. India Standard Time is UTC+5:30, and that single fact shapes what this kind of capacity is good at.</p>
-            <div className="space-y-4">
-              {[
-                ['United States', 'IST runs roughly nine and a half hours ahead of US Eastern. Work prepared during the Indian day is waiting when your reviewers start theirs. That suits preparation with a clear brief — reconciliations, workpapers, coding, schedules — and suits ambiguous work badly, because a question asked at 4pm Eastern waits until the following morning.'],
-                ['United Kingdom', 'Around four and a half hours ahead. A UK morning and an Indian afternoon overlap directly, so a question asked and answered the same day is normal rather than exceptional.'],
-                ['Australia', 'Around four and a half hours behind the eastern states. The overlap falls in your afternoon, which is where most review conversations happen anyway.'],
-              ].map(([place, text]) => (
-                <div key={place} className="rounded-xl border border-border bg-input p-5">
-                  <div className="font-bold text-primary mb-1">{place}</div>
-                  <p className="text-sm sm:text-base text-muted leading-relaxed">{text}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-base md:text-lg text-muted leading-relaxed">We cover each market&rsquo;s business hours from that delivery centre rather than running one shift and calling it coverage. The implication for scoping is the same in all three: the more precisely the recurring work is defined, the less the time difference costs you &mdash; and the more the capacity is worth.</p>
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              Staff augmentation works best when responsibilities, expected outputs, reviewers, escalation paths and access permissions are agreed before work starts.
+            </p>
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              We separate repeatable preparation tasks from judgement calls, keep client-side approvals and sign-off in place, and record exceptions for review. The arrangement is scoped around workload, software, documentation and the standards your firm already uses.
+            </p>
           </></Reveal>
         </div>
       </section>
