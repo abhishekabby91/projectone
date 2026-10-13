@@ -1,8 +1,8 @@
-# Accounstone SEO Agent Report — 2026-10-12
+# Accounstone SEO Agent Report — 2026-10-13
 
 ## Summary
 
-- Files/pages scanned: **160**
+- Files/pages scanned: **161**
 - High-priority findings: **7**
 - Medium-priority findings: **12**
 - Low-priority findings: **8**
@@ -66,16 +66,17 @@
 | app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 1005 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 550 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 541 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 734 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 738 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 656 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 573 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-special-assessment-accounting/page.tsx | 90/100 | 1212 | 1 | 6 | 0 | 0 |
 | app/blog/hoa-vendor-1099-tracking/page.tsx | 90/100 | 603 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 533 | 1 | 4 | 0 | 0 |
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 1873 | 1 | 51 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 1909 | 1 | 52 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 3173 | 1 | 15 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 569 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
@@ -101,7 +102,7 @@
 | app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1087 | 1 | 11 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2752 | 1 | 64 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2782 | 1 | 66 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1119 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 2096 | 1 | 44 | 0 | 0 |
