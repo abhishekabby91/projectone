@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounting: Complete Guide',
-  description: 'A practical property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software workflows and month-end close.',
+  description: 'Property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software and month-end close.',
   path: '/blog/property-management-accounting',
 });
 
