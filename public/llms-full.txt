@@ -175,6 +175,9 @@ https://www.accounstone.com/industries/property-management
 HOA and community associations:
 https://www.accounstone.com/industries/hoa-accounting
 
+HOA special assessment accounting workflow:
+https://www.accounstone.com/blog/hoa-special-assessment-accounting
+
 Construction-related content should only be referenced if a dedicated canonical construction page exists.
 
 ## Important service pages
