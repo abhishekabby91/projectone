@@ -54,6 +54,7 @@ export default function PropertyManagementFinancialStatements() {
       <p>Explains cash receipts and payments over the period. It can help distinguish accounting performance from timing effects such as late rent, a large repair payment, a delayed owner contribution or an uncleared transaction. Make clear whether the report is a formal statement of cash flows or a management cash summary.</p>
       <h3>Owner statement</h3>
       <p>Summarizes activity attributable to a particular owner and usually shows the calculation of funds payable, retained or carried forward. Fees, reserves, approved costs and prior balances should follow the agreement and be supported by the books. See the separate <Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">owner statement reconciliation guide</Link>.</p>
+      <p>For the related payment-control step, see the <Link href="/blog/property-management-owner-distributions" className="text-primary underline underline-offset-4">owner distribution accounting workflow</Link>, which covers available-cash checks, authorized deductions, approvals and payment evidence.</p>
       <h3>Rent roll and tenant ledger detail</h3>
       <p>The rent roll provides a view of units, lease terms and rent-related data; tenant ledgers show posted charges, receipts, credits and balances. They are related but not interchangeable. Reconcile relevant totals and investigate differences before using either report to explain receivables.</p>
       <h3>General ledger and supporting schedules</h3>
