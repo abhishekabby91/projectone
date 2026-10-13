@@ -4596,6 +4596,14 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Sitemap and robots policy already include the route and allow public crawling; no sitemap or robots change was required for this internal-link-only edit. Production build validation is pending the next Vercel deployment.
 
 
+## 2026-10-13 — Add HOA Form 1120-H year-end records guide
+
+- Added `/blog/hoa-form-1120-h-tax-records` as a practical records and reconciliation handoff guide for HOA year-end tax preparation.
+- Based the return-specific explanations on current IRS Form 1120-H instructions; distinguishes bookkeeping preparation from eligibility, election, return selection and tax-treatment decisions reserved for the association’s tax professional.
+- Added the canonical route to `app/sitemap.ts`, linked it from the blog index and HOA year-end guide, and registered the search intent, content entry and route inventory.
+- `app/robots.ts` already allows public search/AI crawlers and declares `/sitemap.xml`; no robots policy change was needed.
+- Build/deployment validation pending; no GSC work and no production deployment from this branch.
+
 ## 2026-10-13 — Add HOA annual budget preparation workflow
 
 - Added `/blog/hoa-annual-budget-preparation` with a source-led process for setting the budget calendar, reconciling historical actuals, reviewing variances and contract renewals, separating operating and reserve assumptions, preparing a board-review draft, and carrying the approved budget into monthly reporting.
