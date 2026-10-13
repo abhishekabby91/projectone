@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const specializedRoutes: Entry[] = [
     { path: '/industries/real-estate/yardi-accounting-outsourcing-texas', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/industries/property-management', priority: 0.85, changeFrequency: 'monthly' },
     { path: '/industries/property-management/appfolio-accounting-california', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/property-management/buildium-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/california', priority: 0.75, changeFrequency: 'monthly' },
