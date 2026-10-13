@@ -101,11 +101,11 @@ export default function AppFolioHoaAccountingSupportPage() {
       />
 
       <PremiumHero
-        eyebrow="HOA accounting · AppFolio workflows"
+        subtitle="HOA accounting · AppFolio workflows"
         title="AppFolio HOA Accounting Support"
         description="Remote accounting support for HOA and community management teams using AppFolio—covering reconciliation preparation, assessment records, payable tracking, reserve schedules and a clearer monthly board-reporting handoff."
-        primaryCta={{ label: 'Discuss your accounting workflow', href: '/contact' }}
-        secondaryCta={{ label: 'Explore HOA accounting support', href: '/industries/hoa-accounting' }}
+        cta={{ text: 'Discuss your accounting workflow', href: '/contact' }}
+        ctaSecondary={{ text: 'Explore HOA accounting support', href: '/industries/hoa-accounting' }}
       />
 
       <section className="py-14 sm:py-18">
@@ -164,7 +164,7 @@ export default function AppFolioHoaAccountingSupportPage() {
         </div>
       </section>
 
-      <FAQSection faqs={faqs} title="AppFolio HOA accounting support: common questions" />
+      <FAQSection items={faqs} title="AppFolio HOA accounting support: common questions" />
 
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
@@ -179,8 +179,7 @@ export default function AppFolioHoaAccountingSupportPage() {
       <CTABanner
         title="Need a steadier month-end process?"
         description="Tell us how your HOA uses AppFolio today, which reports are required, and where reconciliations or reporting handoffs need support."
-        buttonText="Discuss your workflow"
-        buttonHref="/contact"
+        cta={{ text: 'Discuss your workflow', href: '/contact' }}
       />
     </>
   );
