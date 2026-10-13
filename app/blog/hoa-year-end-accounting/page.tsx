@@ -30,6 +30,7 @@ export default function HoaYearEndAccounting() {
       <p>Provide reconciled reserve cash, contributions, transfers and reserve-funded project activity. Significant projects should have enough supporting detail to explain the payments.</p>
       <h2>Review Financial Statements</h2>
       <p>Compare the year-end balance sheet and income statement with the prior period and budget where applicable. Investigate unusual balances before treating the package as complete.</p>
+      <p>For a tax-focused handoff, see the <a href="/blog/hoa-form-1120-h-tax-records">HOA Form 1120-H year-end records checklist</a>. It covers supporting schedules to organize before the tax preparer determines which return applies.</p>
       <h2>Prepare a CPA Support Package</h2>
       <table><thead><tr><th>Area</th><th>Useful support</th></tr></thead><tbody>
       <tr><td>Cash</td><td>Bank statements and reconciliations</td></tr>
