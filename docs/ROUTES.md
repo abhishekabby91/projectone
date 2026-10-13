@@ -128,6 +128,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/property-management-cam-reconciliation` | C | Property Management / Commercial Real Estate | Added 2026-10-12 — expense pools, lease-specific allocations, tenant true-ups and review controls |
 | `/blog/hoa-annual-budget-preparation` | C | HOA Accounting | Added 2026-10-13 — annual budget planning from reconciled actuals, contract renewals, reserve information and board review; distinct from budget-to-actual reporting |
 | `/blog/hoa-special-assessment-accounting` | C | HOA Accounting | Added 2026-10-13 — approved one-time/installment assessment tracking from owner billing through receipts, receivables reconciliation, project-cost support and board reporting |
+| `/blog/hoa-form-1120-h-tax-records` | C | HOA Accounting | Added 2026-10-13 — reconciled year-end records and tax-preparer handoff; does not make tax-election decisions |
 
 ## Resources — Guides
 
