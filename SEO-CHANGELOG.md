@@ -1,3 +1,9 @@
+## 2026-10-13 — Add property management accounts payable workflow guide
+- Competitor research reviewed current AP workflow coverage from property-management accounting providers and software-adjacent guides. Differentiation is the property/entity/owner reporting chain, not generic invoice automation claims.
+- Added `/blog/property-management-accounts-payable` covering invoice intake, property and entity coding, shared-cost allocation, owner approvals, duplicate and vendor-bank-change checks, payment evidence, AP reconciliation and exception tracking.
+- Added contextual links from the property-management industry hub, the complete accounting guide, the blog index, sitemap, route/content/search-intent registries and `public/llms.txt`.
+- Preserved the existing Yardi Texas page and did not add a new software or location URL. Preview/build validation is still required before merge/deployment.
+
 ## 2026-10-13 — Strengthen existing HOA accounts payable guide
 - Reviewed competitor coverage for HOA vendor invoice intake, approval evidence, duplicate prevention, fund coding, payment controls and month-end AP review.
 - Expanded the existing `/blog/hoa-accounts-payable` page with vendor bank-change verification, practical segregation-of-duties guidance, exception ownership and month-end AP follow-through. Did not create a separate AP URL because the existing page already owns this intent.
