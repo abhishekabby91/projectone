@@ -4618,3 +4618,9 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Explicitly states Accounstone delivers remote accounting support from India and does not claim a San Diego office or on-site community management. Legal and tax responsibilities remain with the association's authorized professionals.
 - Linked the new page from the HOA hub and California HOA page, registered its search intent, and added it to the sitemap. No merge to `main`, GSC submission or production deployment was performed.
 - Reviewed the existing property-management 1099 preparation article and used its existing URL rather than keeping a competing duplicate page.
+
+## 2026-10-13 — DoorLoop accounting support
+
+- Reviewed DoorLoop's official accounting and bookkeeping feature pages for bank synchronization, reconciliation, QuickBooks integration, chart of accounts and owner reporting.
+- Added the DoorLoop accounting support page for property managers already using the platform. The page covers accounting preparation and review, not software implementation or a claimed software partnership.
+- Added the page to the sitemap, linked it from the property-management hub, and registered its distinct search intent. No merge to main, GSC submission or production deployment was performed.
