@@ -127,6 +127,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/yardi-accounting-workflow` | C | Property Management / Yardi | Published — software workflow guide |
 | `/blog/property-management-cam-reconciliation` | C | Property Management / Commercial Real Estate | Added 2026-10-12 — expense pools, lease-specific allocations, tenant true-ups and review controls |
 | `/blog/property-management-accounts-payable` | C | Property Management | Added 2026-10-13 — property/entity coding, approval trail, payment checks and AP reconciliation |
+| `/blog/property-management-budget-vs-actual` | C | Property Management | Added 2026-10-13 — budget comparison, variance explanations, source records and owner reporting |
 | `/blog/hoa-annual-budget-preparation` | C | HOA Accounting | Added 2026-10-13 — annual budget planning from reconciled actuals, contract renewals, reserve information and board review; distinct from budget-to-actual reporting |
 | `/blog/hoa-special-assessment-accounting` | C | HOA Accounting | Added 2026-10-13 — approved one-time/installment assessment tracking from owner billing through receipts, receivables reconciliation, project-cost support and board reporting |
 | `/blog/hoa-accounts-payable` | C | HOA Accounting | Updated 2026-10-13 — invoice-to-payment workflow, approval evidence, duplicate and vendor bank-change checks, AP reconciliation and exception tracking |
