@@ -455,6 +455,8 @@ export default function PropertyManagementPage() {
               { name: 'Tenant ledger reconciliation checklist', href: '/blog/property-management-tenant-ledger-reconciliation' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
+              { name: 'Property financial statements and reporting package', href: '/blog/property-management-financial-statements' },
+              { name: 'Owner distribution accounting workflow', href: '/blog/property-management-owner-distributions' },
               { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
               { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
               { name: 'Year-end vendor reporting checklist', href: '/blog/property-management-1099-preparation' },
