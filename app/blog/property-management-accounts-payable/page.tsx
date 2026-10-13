@@ -111,7 +111,7 @@ export default function PropertyManagementAccountsPayable() {
 
       <h2>How this fits into the wider property accounting process</h2>
       <p>Accounts payable works best as part of a connected close, not as a standalone data-entry queue. Start with the <Link href="/blog/property-management-accounting">property management accounting guide</Link>, review the <Link href="/blog/property-management-chart-of-accounts">chart of accounts for multi-property portfolios</Link>, and use the <Link href="/industries/property-management">property management accounting services page</Link> for the broader service context.</p>
-      <p>For year-end vendor data, tax-document status and payment-total review, see the <Link href="/blog/property-management-vendor-1099-tracking" className="text-primary underline underline-offset-4">property management vendor 1099 tracking guide</Link>. It covers accounting preparation and the handoff to the responsible tax filer.</p>
+      <p>For year-end vendor data, tax-document status and payment-total review, see the <Link href="/blog/property-management-1099-preparation" className="text-primary underline underline-offset-4">property management vendor 1099 tracking guide</Link>. It covers accounting preparation and the handoff to the responsible tax filer.</p>
     </ArticleLayout>
   );
 }
