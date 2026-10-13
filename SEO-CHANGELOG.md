@@ -1,3 +1,9 @@
+## 2026-10-13 — Add property management accounts payable workflow
+
+- Added `/blog/property-management-accounts-payable` for property-specific vendor invoice intake, duplicate checks, property/entity coding, approval evidence, payment status and month-end reconciliation.
+- Linked the guide from the property-management hub and the main accounting guide; registered the intent separately from general accounts payable outsourcing.
+- Included an IRS instructions reference for year-end tax-review handoff without making filing determinations. Sitemap route added; generated last-modified map and preview build still require validation. No GSC work, merge to `main`, or production deployment.
+
 ## 2026-10-13 — Standardize batch page production and final reconciliation
 
 - Documented a batch workflow for related industry/location pages: establish unique intent and essential links during creation, then perform cluster-wide internal-link reconciliation, metadata/schema/registry/sitemap checks and preview validation before merge/deployment.
