@@ -89,6 +89,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       <p>Keep the exception log linked to the reconciliation or report it affects. A useful entry records the amount, period, preparer, reviewer, evidence, owner of the next action, due date and final resolution. This gives the next close a traceable starting point instead of a recurring unexplained balance.</p>
       <p>For the owner-reporting step, see the <Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">owner statement reconciliation and review workflow</Link>. For tenant deposits, see the <Link href="/blog/property-management-security-deposit-accounting" className="text-primary underline underline-offset-4">security deposit accounting guide</Link>.</p>
       <p>For planned-versus-recorded performance, see the <Link href="/blog/property-management-budget-vs-actual">budget vs. actual reporting workflow</Link>.</p>
+      <p>After reconciliations, assemble the <Link href="/blog/property-management-financial-statements">property management financial statement package</Link> and review the calculation and approvals in the <Link href="/blog/property-management-owner-distributions">owner distribution workflow</Link>.</p>
 
       <h2>8. Keep a short, reviewable close record</h2>
       <p>A completed close should leave evidence of what was reviewed and what remains open. A simple log can include:</p>
