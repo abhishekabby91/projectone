@@ -430,6 +430,9 @@ export default function HoaAccountingPage() {
             <Link href="/industries/hoa-accounting/california" className="mt-3 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
               California HOA accounting and bookkeeping support
             </Link>
+            <Link href="/industries/hoa-accounting/san-diego-county" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
+              San Diego County HOA accounting support
+            </Link>
           </div>
         </div>
       </section>
