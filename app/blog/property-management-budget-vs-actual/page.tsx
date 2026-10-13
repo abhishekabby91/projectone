@@ -6,7 +6,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Budget vs. Actual Reporting',
   description:
-    'Build a useful property management budget vs. actual report with consistent account mapping, variance thresholds, explanations, forecasts and review controls.',
+    'Build property management budget-vs-actual reports with consistent account mapping, variance explanations, forecasts and review controls.',
   path: '/blog/property-management-budget-vs-actual',
 });
 
