@@ -455,6 +455,7 @@ export default function PropertyManagementPage() {
               { name: 'Budget vs. actual reporting workflow', href: '/blog/property-management-budget-vs-actual' },
               { name: 'Cash flow forecasting workflow', href: '/blog/property-management-cash-flow-forecasting' },
               { name: 'Tenant ledger reconciliation checklist', href: '/blog/property-management-tenant-ledger-reconciliation' },
+              { name: 'Receivables aging reconciliation', href: '/blog/property-management-receivables-aging' },
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Property financial statements and reporting package', href: '/blog/property-management-financial-statements' },
