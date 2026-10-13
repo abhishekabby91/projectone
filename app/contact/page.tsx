@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { ArrowRight, Check, Clock, Mail, MapPin, ShieldCheck, UserCheck, X } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
-import RegionFlag from '@/components/region-flag';
 import { companyInfo, services } from '@/lib/data';
 import { CONTACT_FAQS } from '@/lib/contact-faqs';
 
@@ -329,20 +328,15 @@ export default function ContactPage() {
               <div className="rounded-xl border border-border bg-white p-6 space-y-4">
                 <h3 className="font-semibold text-foreground">When we are covering your day</h3>
                 <p className="text-sm text-muted leading-relaxed">
-                  The delivery team works Monday to Friday from New Delhi, on your market&rsquo;s business
-                  day rather than ours.
+                  The delivery team works Monday to Friday from New Delhi, aligned with your market&rsquo;s business day.
                 </p>
                 <ul className="space-y-2.5">
                   {[
-                    { region: 'united-states' as const, label: 'United States', hours: '9:00 AM – 6:00 PM ET' },
-                    { region: 'united-kingdom' as const, label: 'United Kingdom', hours: 'UK business hours' },
-                    { region: 'australia' as const, label: 'Australia', hours: 'Australian business hours' },
+                    { label: 'United States', hours: '9:00 AM – 6:00 PM ET' },
+                    { label: 'United Kingdom', hours: 'UK business hours' },
                   ].map((row) => (
                     <li key={row.label} className="flex items-center justify-between gap-3 text-sm">
-                      <span className="flex items-center gap-2 text-foreground">
-                        <RegionFlag region={row.region} className="w-6 h-4" decorative />
-                        {row.label}
-                      </span>
+                      <span className="text-foreground">{row.label}</span>
                       <span className="text-muted text-right">{row.hours}</span>
                     </li>
                   ))}
