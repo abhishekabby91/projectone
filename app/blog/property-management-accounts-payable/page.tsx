@@ -6,7 +6,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounts Payable Workflow',
   description:
-    'Property management accounts payable workflow for invoice coding, property allocation, approvals, duplicate checks, payment controls and month-end reconciliation.',
+    'Property management AP workflow for invoice coding, property allocation, approvals, duplicate checks and month-end controls.',
   path: '/blog/property-management-accounts-payable',
 });
 
