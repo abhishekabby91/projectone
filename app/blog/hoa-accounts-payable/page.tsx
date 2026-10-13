@@ -12,7 +12,7 @@ export default function HoaAccountsPayable() {
   return (
     <ArticleLayout title="HOA Accounts Payable: How Should Vendor Bills Be Reviewed?" category="HOA Accounting"
       description="HOA accounts payable should make vendor invoices easy to trace from receipt through coding, approval, payment and the monthly financial reports."
-      publishedDate="2026-10-08" section="blog" slug="hoa-accounts-payable"
+      publishedDate="2026-10-08" updatedDate="2026-10-13" section="blog" slug="hoa-accounts-payable"
       inquiryTitle="Need Help With HOA Accounts Payable?"
       inquiryLead="Tell us how invoices are received, approved and paid today. We can review the AP workflow and recurring accounting tasks.">
       <p>HOA accounts payable covers the process of recording and paying bills for association expenses. A good process should answer four basic questions: what was purchased, which association account or project it relates to, who approved it and whether it has been paid.</p>
