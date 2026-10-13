@@ -4631,3 +4631,11 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Reviewed DoorLoop's official accounting and bookkeeping feature pages for bank synchronization, reconciliation, QuickBooks integration, chart of accounts and owner reporting.
 - Added the DoorLoop accounting support page for property managers already using the platform. The page covers accounting preparation and review, not software implementation or a claimed software partnership.
 - Added the page to the sitemap, linked it from the property-management hub, and registered its distinct search intent. No merge to main, GSC submission or production deployment was performed.
+
+
+## 2026-10-14 — HOA software workflows and registry reconciliation
+
+- Reconciled the content registry with the software-specific pages already present on the working branch.
+- Documented the HOA AppFolio and HOA Buildium pages and the property-management DoorLoop page as separate software/workflow intents.
+- Kept software-specific service pages distinct from the existing general HOA/property-management hubs, how-to articles, and the San Diego County geographic page.
+- Confirmed the latest successful preview build included the San Diego County, HOA AppFolio, HOA Buildium, property-management AppFolio California, property-management Buildium, and DoorLoop routes. The build is a preview only; no merge to `main`, GSC submission, or production deployment was performed.
