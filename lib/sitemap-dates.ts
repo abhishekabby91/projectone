@@ -48,6 +48,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/hoa-reserve-expenses': '2026-10-10',
   '/blog/hoa-reserve-financial-reporting': '2026-10-10',
   '/blog/hoa-reserve-reconciliation': '2026-10-10',
+  '/blog/hoa-special-assessment-accounting': '2026-10-13',
   '/blog/hoa-unapplied-payments': '2026-10-10',
   '/blog/hoa-vendor-1099-tracking': '2026-10-10',
   '/blog/hoa-vendor-expense-tracking': '2026-10-10',
