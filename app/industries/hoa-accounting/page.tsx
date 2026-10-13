@@ -439,6 +439,9 @@ export default function HoaAccountingPage() {
             <Link href="/industries/hoa-accounting/appfolio-accounting-support" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
               AppFolio HOA accounting support
             </Link>
+            <Link href="/industries/hoa-accounting/eunify-accounting-support" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
+              eUnify HOA accounting support
+            </Link>
           </div>
         </div>
       </section>
