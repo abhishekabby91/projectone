@@ -383,6 +383,7 @@ export default function HoaAccountingPage() {
               { href: '/blog/hoa-budget-to-actual-reports', title: 'Budget-to-actual reports', body: 'Identify variances by mapping results to the board-approved budget.' },
               { href: '/blog/hoa-annual-budget-preparation', title: 'Annual budget preparation', body: 'Build the next budget from reconciled actuals, contract renewals, planned work and reserve information.' },
               { href: '/blog/hoa-special-assessment-accounting', title: 'Special assessment accounting', body: 'Track approved one-time assessments from homeowner billing and receipts through project costs and board reporting.' },
+              { href: '/blog/hoa-vendor-invoice-approval-workflow', title: 'Vendor invoice workflow', body: 'Track association coding, invoice checks, approval evidence, payment status and month-end reconciliation.' },
               { href: '/blog/hoa-board-financial-package', title: 'Board financial package', body: 'Review schedules that help directors understand monthly results.' },
               { href: '/blog/hoa-accounting-eunify', title: 'HOA accounting and eUnify', body: 'Consider the accounting records and reconciliation workflow behind HOA software.' },
             ].map((item) => (
