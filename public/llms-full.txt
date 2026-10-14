@@ -117,6 +117,14 @@ Shopify accounting support can include payout-to-bank reconciliation, separate f
 
 Shopify accounting and payout reconciliation: https://www.accounstone.com/industries/ecommerce/shopify-accounting
 
+### Nonprofit organizations
+
+Accounting and bookkeeping support for nonprofit organizations, based on the organization's approved fund structure, documented restrictions, grant coding and reporting requirements.
+
+Nonprofit accounting and bookkeeping: https://www.accounstone.com/industries/nonprofit-accounting
+
+Scope can include fund- and program-level coding, grant schedules against client-supplied budgets, reconciliations, management-approved functional expense coding, board reporting preparation and year-end records for the organization's tax preparer or independent auditor. The organization and its qualified advisers retain responsibility for interpreting donor restrictions, determining allowable grant costs, approving allocation methods and legal/tax compliance.
+
 ### Healthcare
 
 Accounting and bookkeeping support for healthcare-related businesses within defined client workflows.
