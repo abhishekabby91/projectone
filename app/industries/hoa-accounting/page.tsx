@@ -436,6 +436,9 @@ export default function HoaAccountingPage() {
             <Link href="/industries/hoa-accounting/orange-county" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
               Orange County HOA accounting support
             </Link>
+            <Link href="/industries/hoa-accounting/los-angeles-county" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
+              Los Angeles County HOA accounting support
+            </Link>
             <Link href="/industries/hoa-accounting/buildium-accounting-support" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
               Buildium HOA accounting support
             </Link>
