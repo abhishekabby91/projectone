@@ -781,6 +781,35 @@ Create a new page when there is a genuine reason, such as:
 
 Do not create a page merely because a competitor has one, a keyword tool suggests a variation, or a cluster has reached an arbitrary page count.
 
+### Page-count and Google-ranking safeguard — added 2026-10-14
+
+Adding many pages does **not automatically hurt Google rankings**. A larger site can serve more distinct searches when each page genuinely helps a particular audience. The risk is publishing pages mainly to capture keyword variations rather than to provide distinct value.
+
+Before approving any new indexable page, complete this gate:
+
+1. **Check existing coverage first.** Read `docs/ROUTES.md`, `docs/SEARCH-INTENTS.md`, and `docs/CONTENT-REGISTRY.md`. Search the repository for the same topic, query intent, audience and workflow. Identify the existing primary page that owns the intent.
+2. **State the unique intent in one sentence.** Record who the page serves, what they need, and how the answer differs from existing pages. A different keyword phrase alone is not a distinct intent.
+3. **Compare overlap.** Check the proposed title, H1, core sections, FAQs and likely queries against the closest existing pages. If two pages would answer substantially the same question for the same buyer, improve or consolidate the existing page instead of adding another URL.
+4. **Require real, page-specific value.** Include relevant workflows, decisions, examples, controls, software context, jurisdictional differences or buyer questions that materially change the answer. Do not create a location page just by swapping place names, or a software page that repeats the same generic claims.
+5. **Verify capability and evidence.** Keep all statements within Accounstone's actual service scope and proven experience. Competitor pages can reveal topics to investigate, but do not prove search volume, ranking potential, or that Accounstone offers the same service.
+6. **Choose the right page type.** Separate commercial service intent from informational guides, comparisons and software workflows when the visitor's goal is genuinely different. Do not split one useful answer into multiple thin pages merely to target more terms.
+7. **Link the cluster naturally.** Link to the relevant pillar and closely related supporting content where it helps readers navigate. Do not add links solely to inflate link counts.
+8. **Check technical eligibility.** Confirm a working route, unique title/description, correct canonical, appropriate schema matching visible content, crawlability, useful internal links and correct sitemap/AI-readable index entries. Exclude noindex pages from the sitemap.
+9. **Record the decision.** Update the route registry, search-intent registry, content registry and SEO changelog in the same implementation pass. Explain why a new URL is justified, or why an existing page was improved instead.
+10. **Validate before release.** Run build/type checks and route, metadata, schema, internal-link, sitemap and mobile/accessibility checks. Never treat sitemap inclusion as proof of indexing or ranking.
+
+#### Reject or consolidate a page when
+
+- Its main difference is only a keyword synonym, city/state name, industry label or software name.
+- It repeats another page's answer with only superficial wording changes.
+- It exists mainly to funnel search visitors to a separate destination without providing useful standalone value.
+- It has little practical content, unsupported claims, or no clear audience and next step.
+- There is no credible evidence that the jurisdiction, platform, workflow or buyer decision changes the answer.
+
+There is **no universal safe page limit** and no target number to hit. A batch of 25 pages is acceptable only if every page independently passes this gate; it is not a quota. Prefer strengthening an existing page when that best serves the reader. Expand the cluster when a distinct need is supported by research or observed customer/search behavior.
+
+After release, use Search Console and real user/search behavior to assess impressions, clicks, query overlap and indexing when the owner authorizes that review. Do not promise ranking gains or remove a useful page solely because it has not earned immediate impressions. Diagnose quality, discoverability, intent overlap and technical issues first.
+
 ### Learn → create → observe → update
 
 Use this loop for ongoing industry growth:
