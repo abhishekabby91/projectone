@@ -68,6 +68,8 @@ One primary search intent → one primary URL. Check this file before creating a
 | Amazon seller accounting and settlement reconciliation — fees, refunds, reserves, inventory/COGS and month-end handoff | `/industries/ecommerce/amazon-seller-accounting` | Commercial — platform/workflow-specific; distinct from broad multi-channel e-commerce accounting at `/industries/ecommerce` |
 | Shopify accounting and payout reconciliation — Shopify Payments, gateway fees, refunds, gift cards and close | `/industries/ecommerce/shopify-accounting` | Commercial — platform/workflow-specific; distinct from Amazon settlement reports and broad multi-channel e-commerce accounting |
 
+| Nonprofit accounting and bookkeeping — fund/grant tracking, restricted and unrestricted balances, approved functional expense coding, reconciliations and board reporting | `/industries/nonprofit-accounting` | Commercial — nonprofit-specific accounting workflow distinct from generic small-business bookkeeping; does not promise grant compliance, audit opinions or tax/legal advice |
+
 ## Rule for adding a row
 
 1. Search this table for the intent first.
