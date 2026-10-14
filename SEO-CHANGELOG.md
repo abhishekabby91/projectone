@@ -1,3 +1,11 @@
+## 2026-10-14 — Add a page-quality gate for industry and SEO expansion
+
+- Updated `AI-WEBSITE-GUIDE.md` with a required pre-publication gate to prevent thin, repetitive, doorway-style and competing pages as Accounstone's industry clusters grow.
+- Clarifies that page count alone does not determine Google rankings; each URL must serve a distinct search intent and provide page-specific practical value.
+- Requires overlap checks against `docs/ROUTES.md`, `docs/SEARCH-INTENTS.md` and `docs/CONTENT-REGISTRY.md`; unique intent; factual/service-scope review; natural cluster links; canonical, metadata, schema and sitemap checks; registry updates; and build/release validation.
+- States there is no universal safe page limit. A 25-page batch is acceptable only when every page independently passes the gate; page count is not a quota.
+- No page routes, sitemap entries, production deployment or Search Console submissions were changed by this guide-only update.
+
 ## 2026-10-14 — Add property-management platform-to-general-ledger reconciliation page
 
 - Added `/industries/property-management/general-ledger-reconciliation` as a commercial page for recurring platform-to-GL reconciliation, exception investigation, documentation and monthly reviewer handoff; distinct from historical cleanup/catch-up.
