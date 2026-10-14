@@ -109,6 +109,10 @@ Accounting support involving subscription-related transactions, reconciliations,
 
 Accounting support involving multi-channel reconciliation, payables, receivables and sales-tax data preparation.
 
+Amazon seller accounting support can include settlement-to-bank reconciliation, separate classification of supported fees/refunds/adjustments, agreed inventory and COGS schedules, exception documentation and month-end close handoff. The client retains accounting-policy decisions and banking control; tax advice, nexus determinations and tax filing remain with the client's qualified tax adviser or service provider.
+
+Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
+
 ### Healthcare
 
 Accounting and bookkeeping support for healthcare-related businesses within defined client workflows.
@@ -195,6 +199,7 @@ Additional HOA and property-management pages:
 - Property management AppFolio accounting support in California: https://www.accounstone.com/industries/property-management/appfolio-accounting-california
 - Property management accounting support for Buildium: https://www.accounstone.com/industries/property-management/buildium-accounting-support
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
+- Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
 
 HOA special assessment accounting workflow:
 https://www.accounstone.com/blog/hoa-special-assessment-accounting
