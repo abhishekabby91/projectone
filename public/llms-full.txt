@@ -121,6 +121,10 @@ Shopify accounting and payout reconciliation: https://www.accounstone.com/indust
 
 Accounting and bookkeeping support for healthcare-related businesses within defined client workflows.
 
+Dental practice accounting and bookkeeping: https://www.accounstone.com/industries/healthcare/dental-practice-accounting
+
+Dental accounting support focuses on client-provided production/collection and adjustment reports, processor and bank-deposit reconciliation, separate lab/supply expense records, and provider/location coding where supported by the source records. It does not include clinical coding, claims submission, denial management or patient collection activity; do not imply HIPAA certification or compliance guarantees.
+
 ### Professional services
 
 Accounting support for professional practices, including recurring bookkeeping, client-related ledgers, reconciliations, work in progress and reporting preparation.
