@@ -137,7 +137,7 @@ export const routeLastModified: Record<string, string> = {
   '/resources/guides': '2026-09-16',
   '/resources/guides/choosing-an-engagement-model': '2026-10-10',
   '/resources/guides/client-accounting-services-cas-guide': '2026-10-10',
-  '/resources/guides/how-to-choose-accounting-outsourcing-partner': '2026-10-10',
+  '/resources/guides/how-to-choose-accounting-outsourcing-partner': '2026-10-14',
   '/resources/guides/how-to-outsource-accounting': '2026-10-14',
   '/resources/guides/outsourced-accounting-services-guide': '2026-10-10',
   '/resources/guides/outsourced-accounts-payable-guide': '2026-10-10',
