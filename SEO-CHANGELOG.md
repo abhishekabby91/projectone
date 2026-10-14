@@ -1,3 +1,11 @@
+## 2026-10-14 — Add buyer-led property management accounting cleanup page
+
+- Competitor content review highlighted operational needs beyond geography: overdue books, reconciliation backlogs, property-management-system to general-ledger differences, owner statements, vendor/AP processing, trust/deposit records and recurring month-end close.
+- Added `/industries/property-management/accounting-cleanup` as a commercial service page for cleanup/catch-up support, with backlog symptoms, six work areas, a four-step recovery workflow, FAQs, Service/FAQ/Breadcrumb schema, canonical metadata and inquiry form preselected for Property Management Accounting.
+- Linked the page from the property-management hub and included it in the sitemap and AI-readable indexes. Added the route and search intent to the registries.
+- Copy makes client approval, banking control, payment authority and accounting-treatment review explicit. It does not promise legal compliance, audit outcomes or on-site property management.
+- Vercel build-rate-limit failure remains a release blocker. Validate build, route output, metadata, schema, links, mobile/desktop layout and regenerate sitemap dates with `node scripts/generate-sitemap-dates.mjs` before merge. No GSC submission.
+
 ## 2026-10-14 — Add California and Texas property-management accounting pages
 
 - Competitor research found distinct California and Texas property-management accounting pages from WPM Accounting, plus San Francisco and Houston property-accounting pages from REA. These examples support reviewing state/metro commercial intent but do not establish search volume or ranking forecasts.
