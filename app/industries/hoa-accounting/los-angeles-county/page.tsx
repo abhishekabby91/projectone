@@ -4,7 +4,7 @@ import PremiumHero from '@/components/premium-hero';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import CTABanner from '@/components/cta-banner';
-import { generateMetadata as genMeta } from '@/lib/seo';
+import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 
 const PATH = '/industries/hoa-accounting/los-angeles-county';
 export const metadata: Metadata = genMeta({
@@ -18,6 +18,20 @@ const faqs = [
   { question: 'Can you support several associations under one manager?', answer: 'Yes. Work can follow the manager’s existing software, close calendar and reporting templates while keeping each association’s books and balances separately identifiable.' },
   { question: 'Can you provide California legal advice or make reserve decisions?', answer: 'No. The board and its qualified California advisers retain responsibility for legal interpretation, statutory decisions, reserve adequacy and required sign-off.' },
 ];
+const serviceSchema = generateServiceSchema({
+  name: 'Los Angeles County HOA Accounting and Bookkeeping Support',
+  description: 'Remote accounting support for Los Angeles County homeowners associations and community management companies, including homeowner ledgers, reconciliations, board reporting and year-end schedules.',
+  slug: 'hoa-accounting/los-angeles-county',
+  basePath: '/industries/',
+  areaServed: ['Los Angeles County, California'],
+});
+const faqSchema = generateFAQSchema(faqs);
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Industries', url: `${baseUrl}/industries` },
+  { name: 'HOA Accounting', url: `${baseUrl}/industries/hoa-accounting` },
+  { name: 'Los Angeles County HOA Accounting', url: `${baseUrl}${PATH}` },
+]);
 const workflows = [
   ['Homeowner ledgers', 'Trace assessments, receipts, credits, unapplied payments and aging to source records.'],
   ['Operating and reserve accounts', 'Reconcile bank activity to the ledger and keep fund activity distinct.'],
@@ -28,6 +42,9 @@ const workflows = [
 ];
 export default function LosAngelesCountyHoaAccountingPage() {
   return <main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <PremiumHero subtitle="Los Angeles County homeowners associations and community managers" title="Los Angeles County HOA Accounting Support" description="Remote support for homeowner ledgers, reconciliations, monthly board reports and year-end schedules—built around your existing software and approval process." cta={{ text: 'Discuss HOA Accounting', href: '/contact' }} ctaSecondary={{ text: 'Explore HOA Accounting', href: '/industries/hoa-accounting' }} background="primary-gradient" />
     <section className="bg-white px-6 py-10 md:px-8 md:py-14"><div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
       <div className="space-y-4"><p className="text-xs font-bold uppercase tracking-widest text-accent">Local workflow context</p><h2 className="font-serif text-2xl font-bold text-primary md:text-3xl">Clear records for every community</h2>
