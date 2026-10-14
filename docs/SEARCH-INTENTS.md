@@ -63,6 +63,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | QuickBooks vs. Xero | `/resources/guides/quickbooks-vs-xero-comparison` | Comparison |
 | ASC 606 revenue recognition for SaaS | `/resources/insights/asc-606-revenue-recognition-saas` | Informational (specialist) |
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
+| Dental practice accounting and bookkeeping — production/collection reports, adjustments, processor/bank deposits, lab/supply costs and provider/location records | `/industries/healthcare/dental-practice-accounting` | Commercial — dental-specific accounting workflow distinct from the broader medical-practice page; excludes claims submission, clinical coding and patient collections |
 
 | Amazon seller accounting and settlement reconciliation — fees, refunds, reserves, inventory/COGS and month-end handoff | `/industries/ecommerce/amazon-seller-accounting` | Commercial — platform/workflow-specific; distinct from broad multi-channel e-commerce accounting at `/industries/ecommerce` |
 | Shopify accounting and payout reconciliation — Shopify Payments, gateway fees, refunds, gift cards and close | `/industries/ecommerce/shopify-accounting` | Commercial — platform/workflow-specific; distinct from Amazon settlement reports and broad multi-channel e-commerce accounting |
