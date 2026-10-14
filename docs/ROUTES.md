@@ -86,7 +86,8 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
-| `/industries/ecommerce` | B | — | Published |
+| `/industries/ecommerce` | B | `/amazon-seller-accounting` | Published |
+| `/industries/ecommerce/amazon-seller-accounting` | B | E-Commerce / Amazon seller accounting | Added 2026-10-14 — settlement-to-bank reconciliation, fees/refunds, inventory/COGS and close handoff; distinct from the broader multi-channel e-commerce pillar |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
 | `/industries/property-management/california` | B | Property Management / California | Added 2026-10-14 — state-specific remote accounting scope, owner reporting and reconciliations; distinct from AppFolio-specific California page |
