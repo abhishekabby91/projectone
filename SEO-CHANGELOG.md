@@ -1,3 +1,12 @@
+## 2026-10-14 — Add Shopify accounting page after competitor and buyer-question research
+
+- Competitor research found dedicated Shopify accounting pages from Ottit, Accountaire and other e-commerce providers, with a distinct operational focus on Shopify Payments payout-to-bank reconciliation, gateway fees, refunds, chargebacks, gift-card records, inventory/COGS and monthly close. A public buyer discussion also described the recurring problem of manually reconciling bundled Shopify payouts with fees, refunds and chargebacks.
+- Added `/industries/ecommerce/shopify-accounting` as a platform-specific commercial page. It covers Shopify Payments and other gateway reconciliation, exception documentation, inventory/COGS schedules and CPA handoff without claiming software partnership or implementation services.
+- Kept the broad multi-channel page at `/industries/ecommerce` and the Amazon settlement page at `/industries/ecommerce/amazon-seller-accounting`; linked all three as a small e-commerce cluster rather than creating city/state variants.
+- Updated route and search-intent registries, sitemap, `llms.txt`, `llms-full.txt` and the e-commerce pillar links.
+- Tax advice, nexus determinations, tax filing, accounting-policy decisions, software implementation and banking control remain outside the page's claimed scope.
+- Build/type checks, rendered-route checks, mobile/desktop review and generated sitemap-date refresh remain required. Vercel deployment validation remains blocked by the account's deployment-rate limit. No merge to `main`, production deployment or Search Console submission.
+
 ## 2026-10-14 — Add Amazon seller accounting page after competitor and intent review
 
 - Competitor research across Acgile, Ledger Labs, Graphite Financial and Om Accounting repeatedly surfaced a distinct operational problem: Amazon settlement deposits are net of fees, refunds, reserves and other adjustments, while inventory/COGS and multi-channel reporting require separate schedules.
