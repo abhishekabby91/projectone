@@ -1,8 +1,8 @@
 ## 2026-10-14 — Isolate 404 social metadata
 
-- Preview validation confirmed the custom 404 returned HTTP 404, emitted `noindex, follow`, and no longer emitted a canonical URL.
-- The 404 still inherited homepage Open Graph URL/title/description and Twitter title/description/image from the root layout. Added 404-specific Open Graph and Twitter metadata and intentionally omitted canonical/share URL and image fields so a missing route is not represented as the homepage in social previews.
-- The updated source must be checked in a fresh preview for build success and emitted metadata. No merge to `main`, production deployment, or Search Console submission.
+- Added 404-specific Open Graph and Twitter card metadata using the Accounstone brand; no `twitter:site`, `twitter:creator`, Twitter image, `og:url`, or canonical URL is emitted for a missing route.
+- Verified the latest branch-head Vercel preview is READY. Runtime check returned HTTP 404 and confirmed the title `Page Not Found | Accounstone`, `og:site_name=Accounstone`, the 404-specific Twitter title, `noindex, follow`, and no canonical, `og:url`, profile handle, or Twitter image.
+- Preview checks for the prior code commit also confirmed the sitemap, robots file, AI-readable indexes, and seven targeted HOA/property-management pages were reachable and had expected canonical/indexing metadata. These checks are preview validation, not a claim about post-deployment production behavior.
 
 ## 2026-10-14 — Missing-route SEO metadata
 
