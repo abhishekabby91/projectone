@@ -135,6 +135,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/property-management-cam-reconciliation` | C | Property Management / Commercial Real Estate | Added 2026-10-12 — expense pools, lease-specific allocations, tenant true-ups and review controls |
 | `/blog/hoa-annual-budget-preparation` | C | HOA Accounting | Added 2026-10-13 — annual budget planning from reconciled actuals, contract renewals, reserve information and board review; distinct from budget-to-actual reporting |
 | `/blog/hoa-special-assessment-accounting` | C | HOA Accounting | Added 2026-10-13 — approved one-time/installment assessment tracking from owner billing through receipts, receivables reconciliation, project-cost support and board reporting |
+| `/blog/upwork-vs-accounstone` | C | Outsourcing Decisions | Added 2026-10-14 — balanced comparison of marketplace freelancer hiring and direct accounting outsourcing, with fit criteria and total-cost questions |
 
 ## Resources — Guides
 
@@ -152,6 +153,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | C | CPA Firms | Published |
 | `/resources/guides/client-accounting-services-cas-guide` | C | CPA Firms | Published |
 | `/resources/guides/choosing-an-engagement-model` | C | Solutions | Published 2026-08-21 — fills the comparison gap flagged in the audit |
+| `/resources/guides/how-to-outsource-accounting` | C | Outsourcing Decisions | Added 2026-10-14 — step-by-step scoping, provider evaluation, secure access, onboarding and 30-day transition plan |
 
 ## Resources — Insights & Case Studies
 
