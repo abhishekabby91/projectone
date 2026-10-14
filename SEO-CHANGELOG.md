@@ -1,3 +1,10 @@
+## 2026-10-14 — Add Texas HOA accounting as the next target-state page
+
+- Continued the agreed industry-target-first sequence: HOA/community associations and property management remain ahead of unrelated industries.
+- Competitor research reviewed Texas-specific HOA accounting pages and official Texas Property Code sources. The page differentiates Texas property owners’ associations and condominium communities through records organization, owner-record accessibility workflows, assessment ledgers, separate community books, reconciliations and board reporting. Statutes are linked as general references only; no legal interpretation or compliance guarantee is offered.
+- Added `/industries/hoa-accounting/texas`, linked it from the HOA parent hub, and updated the sitemap, route registry, search-intent registry and AI-readable indexes.
+- Sitemap date must be refreshed with `node scripts/generate-sitemap-dates.mjs`; do not hand-edit `lib/sitemap-dates.ts`. Build/preview validation is still unconfirmed because Vercel deployment validation is blocked by the rate limit. No merge, production deployment or GSC submission was performed.
+
 ## 2026-10-14 — Add nonprofit accounting as a distinct industry
 
 - Competitor research reviewed nonprofit accounting pages from IMAAR Associates, Fincera, Vance & Cole and related providers. Repeated sector-specific workflows include restricted/unrestricted fund tracking, grant-level coding and budget comparisons, functional expense allocations, reconciliations and board reporting. This supports a distinct nonprofit buyer intent but does not prove search volume or ranking opportunity.
