@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **185**
+- Files/pages scanned: **194**
 - High-priority findings: **7**
 - Medium-priority findings: **13**
 - Low-priority findings: **8**
@@ -78,9 +78,9 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 2038 | 1 | 56 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 2078 | 1 | 57 | 0 | 0 |
 | app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1410 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-accounting/page.tsx | 90/100 | 3387 | 1 | 27 | 0 | 0 |
+| app/blog/property-management-accounting/page.tsx | 90/100 | 3717 | 1 | 31 | 0 | 0 |
 | app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1202 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 640 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
@@ -102,6 +102,7 @@
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 479 | 1 | 6 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1618 | 1 | 9 | 0 | 0 |
+| app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 947 | 1 | 4 | 0 | 0 |
 | app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1362 | 1 | 7 | 0 | 0 |
 | app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 966 | 1 | 3 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
@@ -110,17 +111,23 @@
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
 | app/industries/construction/page.tsx | 90/100 | 685 | 1 | 5 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1399 | 1 | 30 | 0 | 0 |
-| app/industries/ecommerce/page.tsx | 90/100 | 443 | 1 | 3 | 0 | 0 |
-| app/industries/healthcare/page.tsx | 90/100 | 437 | 1 | 3 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1418 | 1 | 31 | 0 | 0 |
+| app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1218 | 1 | 10 | 0 | 0 |
+| app/industries/ecommerce/page.tsx | 90/100 | 456 | 1 | 5 | 0 | 0 |
+| app/industries/ecommerce/shopify-accounting/page.tsx | 90/100 | 1229 | 1 | 10 | 0 | 0 |
+| app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 581 | 1 | 3 | 0 | 0 |
+| app/industries/healthcare/page.tsx | 90/100 | 446 | 1 | 4 | 0 | 0 |
 | app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 839 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1124 | 1 | 15 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1092 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 858 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 821 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1064 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2821 | 1 | 72 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2831 | 1 | 74 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1036 | 1 | 11 | 0 | 0 |
+| app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1126 | 1 | 11 | 0 | 0 |
+| app/industries/hoa-accounting/yardi-accounting-support/page.tsx | 90/100 | 884 | 1 | 9 | 0 | 0 |
+| app/industries/nonprofit-accounting/page.tsx | 90/100 | 581 | 1 | 4 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/accounting-cleanup/page.tsx | 90/100 | 1133 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1119 | 1 | 12 | 0 | 0 |
@@ -128,7 +135,8 @@
 | app/industries/property-management/california/page.tsx | 90/100 | 816 | 1 | 10 | 0 | 0 |
 | app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1045 | 1 | 13 | 0 | 0 |
 | app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1135 | 1 | 12 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2286 | 1 | 65 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2294 | 1 | 66 | 0 | 0 |
+| app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 829 | 1 | 11 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2339 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 902 | 1 | 9 | 0 | 0 |
@@ -145,7 +153,8 @@
 | app/privacy/page.tsx | 90/100 | 571 | 1 | 3 | 0 | 0 |
 | app/resources/guides/choosing-an-engagement-model/page.tsx | 90/100 | 1090 | 1 | 10 | 0 | 0 |
 | app/resources/guides/client-accounting-services-cas-guide/page.tsx | 90/100 | 1096 | 1 | 3 | 0 | 0 |
-| app/resources/guides/how-to-choose-accounting-outsourcing-partner/page.tsx | 90/100 | 1406 | 1 | 5 | 0 | 0 |
+| app/resources/guides/how-to-choose-accounting-outsourcing-partner/page.tsx | 90/100 | 1460 | 1 | 7 | 0 | 0 |
+| app/resources/guides/how-to-outsource-accounting/page.tsx | 90/100 | 1412 | 1 | 6 | 0 | 0 |
 | app/resources/guides/outsourced-accounting-services-guide/page.tsx | 90/100 | 1789 | 1 | 12 | 0 | 0 |
 | app/resources/guides/outsourced-accounts-payable-guide/page.tsx | 90/100 | 1057 | 1 | 5 | 0 | 0 |
 | app/resources/guides/outsourced-accounts-receivable-guide/page.tsx | 90/100 | 1655 | 1 | 8 | 0 | 0 |
