@@ -1,3 +1,11 @@
+## 2026-10-14 — Add property-management platform-to-general-ledger reconciliation page
+
+- Added `/industries/property-management/general-ledger-reconciliation` as a commercial page for recurring platform-to-GL reconciliation, exception investigation, documentation and monthly reviewer handoff; distinct from historical cleanup/catch-up.
+- Followed the existing Accounstone service-page structure: hero and inquiry CTA, breadcrumb, problem overview, work-area cards, four-step workflow, related links, responsibility boundaries, FAQs and Service/FAQ/Breadcrumb schema.
+- Linked the page from the property-management hub and added sitemap, route/search-intent/content-registry and AI-readable index entries.
+- Explicitly keeps banking control, payment release and accounting-treatment decisions with the client; no software integration or vendor partnership is assumed.
+- Vercel build-rate-limit failure remains a release blocker. Validate build, route output, metadata, schema, links, mobile/desktop layout and regenerate sitemap dates with `node scripts/generate-sitemap-dates.mjs` before merge. No GSC submission.
+
 ## 2026-10-14 — Add buyer-led property management accounting cleanup page
 
 - Competitor content review highlighted operational needs beyond geography: overdue books, reconciliation backlogs, property-management-system to general-ledger differences, owner statements, vendor/AP processing, trust/deposit records and recurring month-end close.
