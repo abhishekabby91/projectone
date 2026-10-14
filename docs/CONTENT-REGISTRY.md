@@ -1,3 +1,7 @@
+## 2026-10-14 — Yardi HOA accounting support page
+
+Added `/industries/hoa-accounting/yardi-accounting-support` as a software-specific commercial spoke under the HOA industry. Official Yardi product materials document HOA/condo association workflows in Voyager and Breeze, including accounting, ledgers, charges, reporting and owner access. The page focuses on accounting preparation for clients already using their licensed system; it explicitly excludes implementation, configuration, vendor technical support, certification and partnership claims. The parent HOA hub links to this page; route/search-intent, sitemap and AI-readable indexes include the URL.
+
 ## 2026-10-14 — Dental practice accounting page
 
 Added `/industries/healthcare/dental-practice-accounting` as a dental-specific commercial page beneath the existing healthcare hub. Competitor research identified a distinct accounting workflow around production-versus-collection records, insurance adjustments, merchant/bank deposit reconciliation, lab/supply expense coding and provider/location reporting. The page links to the healthcare parent and relevant bookkeeping/AR services; the parent healthcare page links back to the dental page. Scope is limited to bookkeeping using client-provided financial reports; it does not claim claims processing, clinical coding, patient collections, HIPAA certification or unverified compliance status. Competitor pages establish topic coverage only, not search volume or ranking potential.
