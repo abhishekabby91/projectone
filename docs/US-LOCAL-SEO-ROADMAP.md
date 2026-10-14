@@ -78,3 +78,12 @@ For each proposed page, record:
 5. Sitemap and route/content/search-intent registries updated.
 6. Generated sitemap dates refreshed through `scripts/generate-sitemap-dates.mjs`; never hand-edit `lib/sitemap-dates.ts`.
 7. Preview build and rendered metadata/internal links validated before merge.
+
+## US-first linking and inquiry conversion rules
+
+- Keep the active growth phase focused on US industries and their relevant US state, county, metro, and software/workflow pages. Non-US regional pages are not required links on US pages and should not be inserted just to create more internal links.
+- Link pages when the destination helps the same visitor continue their task: industry pillars to relevant US regions and workflows; state/county pages to their parent industry, genuinely relevant neighboring US pages, and useful supporting guides; software/workflow guides to the service pages they support. Avoid forced cross-region links and generic link blocks that do not match intent.
+- Keep the existing inquiry form structure and submission flow unless a separate, approved change is needed. Reuse the shared inquiry component on relevant industry and regional pages, preselect the service and record the page source when supported, and make nearby CTA cards/links lead to the relevant service section or inquiry form rather than adding competing forms.
+- Mobile form acceptance checks: compact section padding and vertical rhythm; readable labels and 16px input text; single-column fields on narrow screens; short textarea on mobile while preserving desktop height; full-width, easy-to-tap submit control; no horizontal overflow; and no oversized assurance/copy block pushing the form too far down the page. Keep wider-screen alignment responsive rather than forcing two columns on a phone.
+- Before merging page batches, review the rendered page at a narrow mobile viewport and a desktop viewport, including the path from a card/CTA to the inquiry form. A build alone does not prove the form is visually aligned.
+
