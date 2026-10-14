@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/resources/guides/how-to-outsource-accounting';
 
 export const metadata: Metadata = genMeta({
-  title: 'How to Outsource Accounting: Step-by-Step Guide',
+  title: 'Accounting Outsourcing Step-by-Step Guide',
   description:
     'A practical accounting outsourcing guide covering scope, provider selection, software access, onboarding, quality review, costs and a 30-day transition plan.',
   path: PATH,
