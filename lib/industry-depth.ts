@@ -26,6 +26,33 @@ export interface IndustryDepth {
 }
 
 export const industryDepth: Record<string, IndustryDepth> = {
+  dental: {
+    breaks: [
+      {
+        h: 'Production, adjustments and collections are not the same total',
+        p: 'A production report, an adjusted production total, a collection report and the cash received can all describe different stages of dental revenue. Posting one report as if it were the bank receipt can leave the ledger inconsistent with the actual deposits. The accounting workflow should define which client-approved report supports each entry and how adjustments are recorded.',
+      },
+      {
+        h: 'One deposit may combine several payment streams',
+        p: 'Insurance remittances, patient payments, merchant settlements and processor fees may be grouped or delayed before they reach the bank. A useful reconciliation compares source reports and settlement details to the deposit, then records or flags fees and timing differences instead of forcing the totals to match.',
+      },
+      {
+        h: 'Lab costs and supplies disappear into a broad expense bucket',
+        p: 'Dental lab invoices, clinical supplies, equipment and ordinary overhead do not all describe the same cost. If the client-approved chart of accounts groups them too broadly, monthly reports cannot show where spending was recorded. The bookkeeping role is to apply the agreed categories consistently and flag unclear items for approval.',
+      },
+      {
+        h: 'Multi-provider and multi-location records do not roll up consistently',
+        p: 'Different provider names, location codes or source-report periods can make a group total difficult to tie to the general ledger. The reporting structure should use a consistent mapping supplied or approved by management, preserve the supporting detail and document any source data that cannot be matched.',
+      },
+    ],
+    firstMonth: [
+      'Agree which production, collection, adjustment, remittance and deposit reports are source records for bookkeeping',
+      'Map bank and merchant settlements to recorded receipts, with fees and timing differences documented',
+      'Confirm client-approved expense categories for lab fees, supplies, equipment and overhead',
+      'Agree provider/location coding and reporting dimensions where source data supports them',
+      'Prepare a reconciled opening position and exception list for practice or CPA review',
+    ],
+  },
   ecommerce: {
     breaks: [
       {
