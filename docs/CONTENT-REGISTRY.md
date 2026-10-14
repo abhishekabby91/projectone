@@ -1,3 +1,7 @@
+## Industry audience, query and link-map rule — 2026-10-14
+
+Every new or refreshed industry URL must have a distinct client/buyer, a researched query/workflow intent, a page-specific value statement, and a documented contextual link path from its relevant industry hub. Supporting pages must link back to the hub and to relevant sibling services/resources when useful. Keep HOA associations, third-party property managers, real-estate owners/investors, e-commerce sellers, CPA firms, healthcare practices, technology/SaaS companies and contractors distinct when their workflows and search intent differ. Do not create a page for every keyword variant; record overlap decisions in `docs/SEARCH-INTENTS.md`. Refer to `AI-WEBSITE-GUIDE.md` for the required industry-to-client/query/link contract and pre-release checklist.
+
 # Content Registry
 
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
