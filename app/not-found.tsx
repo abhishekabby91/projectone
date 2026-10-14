@@ -2,11 +2,26 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SearchX } from 'lucide-react';
 
+const notFoundTitle = 'Page Not Found | Accounstone';
+const notFoundDescription =
+  'The page you requested could not be found. Browse Accounstone services or contact us for help.';
+
 export const metadata: Metadata = {
   title: 'Page Not Found',
-  description: 'The page you requested could not be found. Browse Accounstone services or contact us for help.',
+  description: notFoundDescription,
   robots: { index: false, follow: true },
   alternates: { canonical: null },
+  openGraph: {
+    title: notFoundTitle,
+    description: notFoundDescription,
+    siteName: 'Accounstone',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: notFoundTitle,
+    description: notFoundDescription,
+  },
 };
 
 export default function NotFound() {
