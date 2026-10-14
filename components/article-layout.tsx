@@ -43,6 +43,19 @@ type TocItem = {
   level: 2 | 3;
 };
 
+function formatPublishedDate(value: string, locale: string) {
+  // Keep the machine-readable date (and Article schema) as YYYY-MM-DD, but
+  // display the date in the audience's regional convention.
+  const parsed = new Date(`${value}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return value;
+  return new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
+}
+
 function slugifyHeading(value: string) {
   return value
     .toLowerCase()
@@ -199,6 +212,17 @@ export default function ArticleLayout({
     : `/resources/${section}`;
 
   const path = `${hubHref}/${slug}`;
+  const dateLocale = /(?:^|\\/)(?:united-kingdom|uk)(?:\\/|$)/i.test(path)
+    ? 'en-GB'
+    : /(?:^|\\/)australia(?:\\/|$)/i.test(path)
+      ? 'en-AU'
+      : /(?:^|\\/)india(?:\\/|$)/i.test(path)
+        ? 'en-IN'
+        : 'en-US';
+  const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
+  const displayUpdatedDate = updatedDate
+    ? formatPublishedDate(updatedDate, dateLocale)
+    : undefined;
   const relatedLinks = getRelatedLinks(slug);
 
   const sectionLabel = {
@@ -368,11 +392,11 @@ export default function ArticleLayout({
           )}
 
           <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted" aria-label="Article information">
-            <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{publishedDate}</time></span>
+            <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{displayPublishedDate}</time></span>
             {updatedDate && updatedDate !== publishedDate ? (
               <>
                 <span aria-hidden="true">•</span>
-                <span><strong className="text-primary">Last updated:</strong> <time dateTime={updatedDate}>{updatedDate}</time></span>
+                <span><strong className="text-primary">Last updated:</strong> <time dateTime={updatedDate}>{displayUpdatedDate}</time></span>
               </>
             ) : null}
             <span aria-hidden="true">•</span>
