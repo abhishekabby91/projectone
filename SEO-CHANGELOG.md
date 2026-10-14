@@ -1,3 +1,10 @@
+## 2026-10-14 — Missing-route SEO metadata
+
+- Preview testing found that an unknown URL returned HTTP 404 but inherited the root layout's homepage canonical and indexable robots metadata.
+- Updated `app/not-found.tsx` with a specific Page Not Found title/description, `noindex, follow` directives, and an explicit null canonical to prevent the root layout's homepage canonical from being inherited.
+- The change is isolated to the custom 404 page. Verify the emitted metadata and production build in the new preview before approving merge.
+- No merge to `main`, production deployment, or Search Console submission was performed.
+
 ## 2026-10-14 — Preview runtime validation and build cleanup
 
 - Removed two unused imports from `app/delivery-framework/communication/page.tsx`; no page behavior was changed.
