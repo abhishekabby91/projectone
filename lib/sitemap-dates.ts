@@ -105,6 +105,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/buildium-accounting-support': '2026-10-13',
   '/industries/hoa-accounting/california': '2026-10-13',
   '/industries/hoa-accounting/eunify-accounting-support': '2026-10-14',
+  '/industries/hoa-accounting/orange-county': '2026-10-14',
   '/industries/hoa-accounting/san-diego-county': '2026-10-13',
   '/industries/professional-services': '2026-10-12',
   '/industries/property-management': '2026-10-14',
