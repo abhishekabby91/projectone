@@ -1,3 +1,12 @@
+## 2026-10-14 — Add Amazon seller accounting page after competitor and intent review
+
+- Competitor research across Acgile, Ledger Labs, Graphite Financial and Om Accounting repeatedly surfaced a distinct operational problem: Amazon settlement deposits are net of fees, refunds, reserves and other adjustments, while inventory/COGS and multi-channel reporting require separate schedules.
+- Added `/industries/ecommerce/amazon-seller-accounting` as a platform/workflow-specific commercial page covering settlement-to-bank reconciliation, fee/refund classification, inventory and COGS schedules, exception documentation and month-end handoff.
+- Differentiated it from `/industries/ecommerce`, which remains the primary page for broad multi-channel e-commerce accounting. Added contextual links and updated route/search-intent registries, sitemap, `llms.txt` and `llms-full.txt`.
+- Added an outsourcing-readiness checklist link to the existing CPA-firms page after competitor review showed buyers need explicit answers about access, reviewer ownership, handoffs and pilot scoping. Did not create a separate white-label CPA page because the existing CPA-firms page already owns the core commercial intent.
+- Tax advice, nexus determinations, tax filing, software implementation, accounting-policy decisions and banking control remain outside the new page's claimed scope.
+- Build/type checks, rendered-route checks, mobile/desktop review and generated sitemap-date refresh remain required. Vercel free-plan deployment-rate limit is still a known validation blocker. No merge to `main`, production deployment or Search Console submission.
+
 ## 2026-10-14 — Add a page-quality gate for industry and SEO expansion
 
 - Updated `AI-WEBSITE-GUIDE.md` with a required pre-publication gate to prevent thin, repetitive, doorway-style and competing pages as Accounstone's industry clusters grow.
