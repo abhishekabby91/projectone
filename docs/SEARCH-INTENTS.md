@@ -64,6 +64,8 @@ One primary search intent → one primary URL. Check this file before creating a
 | ASC 606 revenue recognition for SaaS | `/resources/insights/asc-606-revenue-recognition-saas` | Informational (specialist) |
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
 
+| Amazon seller accounting and settlement reconciliation — fees, refunds, reserves, inventory/COGS and month-end handoff | `/industries/ecommerce/amazon-seller-accounting` | Commercial — platform/workflow-specific; distinct from broad multi-channel e-commerce accounting at `/industries/ecommerce` |
+
 ## Rule for adding a row
 
 1. Search this table for the intent first.
