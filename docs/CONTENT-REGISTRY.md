@@ -1,3 +1,7 @@
+## 2026-10-14 — Texas HOA accounting page
+
+Added `/industries/hoa-accounting/texas` as a state-specific commercial page under the HOA industry. Competitor research and official Texas Property Code references informed a distinct focus on property owners’ associations and condominium communities, organized financial records, assessment ledgers, reconciliations and board reporting. Statutory links are general references only; the page does not offer legal interpretation, compliance guarantees or on-site community management. The HOA hub links to the page, and the route is included in sitemap/search-intent records and AI-readable indexes.
+
 ## 2026-10-14 — Yardi HOA accounting support page
 
 Added `/industries/hoa-accounting/yardi-accounting-support` as a software-specific commercial spoke under the HOA industry. Official Yardi product materials document HOA/condo association workflows in Voyager and Breeze, including accounting, ledgers, charges, reporting and owner access. The page focuses on accounting preparation for clients already using their licensed system; it explicitly excludes implementation, configuration, vendor technical support, certification and partnership claims. The parent HOA hub links to this page; route/search-intent, sitemap and AI-readable indexes include the URL.
