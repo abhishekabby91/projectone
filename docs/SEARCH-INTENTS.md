@@ -65,6 +65,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
 
 | Amazon seller accounting and settlement reconciliation — fees, refunds, reserves, inventory/COGS and month-end handoff | `/industries/ecommerce/amazon-seller-accounting` | Commercial — platform/workflow-specific; distinct from broad multi-channel e-commerce accounting at `/industries/ecommerce` |
+| Shopify accounting and payout reconciliation — Shopify Payments, gateway fees, refunds, gift cards and close | `/industries/ecommerce/shopify-accounting` | Commercial — platform/workflow-specific; distinct from Amazon settlement reports and broad multi-channel e-commerce accounting |
 
 ## Rule for adding a row
 
