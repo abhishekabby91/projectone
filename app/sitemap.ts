@@ -80,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/real-estate/yardi-accounting-outsourcing-texas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/amazon-seller-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/shopify-accounting', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/industries/healthcare/dental-practice-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/property-management', priority: 0.85, changeFrequency: 'monthly' },
     { path: '/industries/property-management/california', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/property-management/texas', priority: 0.75, changeFrequency: 'monthly' },
