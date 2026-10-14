@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/property-management', priority: 0.85, changeFrequency: 'monthly' },
     { path: '/industries/property-management/california', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/property-management/texas', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/industries/property-management/accounting-cleanup', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/real-estate', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/services/accounting/united-states', priority: 0.7, changeFrequency: 'monthly' },
