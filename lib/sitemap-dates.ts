@@ -112,6 +112,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/los-angeles-county': '2026-10-14',
   '/industries/hoa-accounting/orange-county': '2026-10-14',
   '/industries/hoa-accounting/san-diego-county': '2026-10-13',
+  '/industries/hoa-accounting/texas': '2026-10-14',
   '/industries/nonprofit-accounting': '2026-10-14',
   '/industries/professional-services': '2026-10-14',
   '/industries/property-management': '2026-10-14',
