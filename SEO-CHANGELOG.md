@@ -1,3 +1,13 @@
+## 2026-10-14 — Preview runtime validation and build cleanup
+
+- Removed two unused imports from `app/delivery-framework/communication/page.tsx`; no page behavior was changed.
+- The preview build for commit `aab4c474f7563047b5af02a84647ade1075e3744` completed successfully. Vercel reported successful compilation and generated all 186 static pages.
+- Runtime HTTP checks on the preview returned 200 for `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/llms-full.txt`, the homepage, and all seven listed HOA/property-management pages.
+- All seven pages returned self-referencing canonical URLs and index/follow robots metadata. The seven routes appeared in the rendered sitemap and both AI-readable indexes. The rendered robots file includes the sitemap URL, permits public crawling, and excludes only the configured private/admin/API paths for the named groups.
+- Each of the seven pages links to its relevant industry hub and the contact/inquiry path; cross-links between related software pages were also found.
+- No Vercel runtime error clusters were reported in the selected 24-hour window. No matching error/fatal runtime log entries were returned for the preview in the latest 30-minute window.
+- This was a preview-only validation. No merge to `main`, production deployment, or Search Console submission was performed.
+
 ## 2026-10-14 — Add eUnify HOA accounting support\n\n- Competitor and platform research: eUnify's official site describes an HOA/community-association platform with finance, payments and full HOA accounting workflows; its public materials make the platform's accounting role clear, while Accounstone's proposed page addresses the separate need for remote accounting workflow execution and review.\n- Added `/industries/hoa-accounting/eunify-accounting-support` for teams already using eUnify, covering assessment-ledger review, reconciliation preparation, payable documentation, month-end handoffs and board-reporting support.\n- Added FAQ, Service and Breadcrumb schema, a canonical metadata path, related links to existing eUnify guides, an HOA-hub link, sitemap inclusion and a registered commercial software-specific intent.\n- The page explicitly avoids claiming eUnify partnership/certification, product implementation, vendor technical support, a US office or on-site community management.\n- Research references: https://eunify.net/ ; https://www.capterra.com/p/137049/eUnify/ . These sources establish product context, not search volume or ranking forecasts.\n\n## 2026-10-13 — AppFolio HOA accounting support
 
 - Reviewed AppFolio's official community-association financials page for the platform's emphasis on board transparency, banking integrations, approvals, payables and association/corporate accounting.
