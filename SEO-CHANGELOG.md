@@ -1,3 +1,11 @@
+## 2026-10-14 — Require distinct client, query and link paths for every industry page
+
+- Added an industry-specific audience/query/link contract to `AI-WEBSITE-GUIDE.md`: every page must identify its buyer, researched query intent, distinct workflow, overlap check, contextual internal-link path and audience-appropriate next step.
+- Added an industry-to-client/query/link planning matrix covering HOA, property management, real estate, e-commerce, CPA firms, healthcare, technology/SaaS and construction. It is a planning standard, not a mandate to create every possible subpage.
+- Added a pre-release checklist requiring parent-hub links, return links, correct breadcrumbs, useful sibling/service/resource links, and technical link/metadata/canonical/sitemap checks.
+- Recorded the rule in `docs/CONTENT-REGISTRY.md`. This change updates project guidance only; no production pages were deployed or merged.
+- Future page work remains on `accounstone-outsourcing-prospect-guides`; build/preview validation is still blocked by the Vercel deployment-rate limit, so do not claim a successful preview/build.
+
 ## 2026-10-14 — Add Shopify accounting page after competitor and buyer-question research
 
 - Competitor research found dedicated Shopify accounting pages from Ottit, Accountaire and other e-commerce providers, with a distinct operational focus on Shopify Payments payout-to-bank reconciliation, gateway fees, refunds, chargebacks, gift-card records, inventory/COGS and monthly close. A public buyer discussion also described the recurring problem of manually reconciling bundled Shopify payouts with fees, refunds and chargebacks.
