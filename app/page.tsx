@@ -15,7 +15,7 @@ import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials, trustBadges, markets } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting, Bookkeeping & Tax Outsourcing | Accounstone',
+  title: 'Accounting, Bookkeeping & Tax | Accounstone',
   description:
     'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered from India within existing workflows.',
   path: '/',
