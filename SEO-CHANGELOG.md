@@ -1,3 +1,10 @@
+## 2026-10-14 — Add nonprofit accounting as a distinct industry
+
+- Competitor research reviewed nonprofit accounting pages from IMAAR Associates, Fincera, Vance & Cole and related providers. Repeated sector-specific workflows include restricted/unrestricted fund tracking, grant-level coding and budget comparisons, functional expense allocations, reconciliations and board reporting. This supports a distinct nonprofit buyer intent but does not prove search volume or ranking opportunity.
+- Added `/industries/nonprofit-accounting` to the industry data registry so the page appears in the industries index and data-driven sitemap. Added dedicated nonprofit workflow depth and FAQs that use client-approved coding instructions.
+- Linked the page to relevant bookkeeping, AP, AR and tax-preparation service pages; registered it in the route/search-intent registries and AI-readable indexes.
+- Scope explicitly excludes independent interpretation of donor restrictions, grant-compliance determinations, audit opinions and tax/legal advice. Build/preview validation remains unconfirmed while Vercel deployment validation is blocked by the rate limit. No merge or production deployment was performed.
+
 ## 2026-10-14 — Add dental practice accounting as a distinct healthcare sub-intent
 
 - Competitor research across dental accounting providers and dental-group accounting pages showed workflow-specific coverage around production versus collections, insurance adjustments, processor/bank deposit tie-outs, lab and supply costs, and provider/location reporting. This supports investigating a distinct dental buyer intent; it does not establish search volume or ranking outcomes.
