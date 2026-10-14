@@ -54,6 +54,28 @@ For each proposed page, record:
 - A review date for legal/regulatory references.
 - Whether the URL should be indexed; no thin or doorway pages.
 
+## Buyer-led property-management content strategy (2026-10-14)
+
+Do not treat state/county pages as the entire growth plan. The site should answer operational problems that property-management owners, controllers and portfolio managers need help with, regardless of location. Competitor and industry content reviewed:
+- [AppFolio: common property-management accounting challenges](https://www.appfolio.com/blog/top-property-management-accounting-challenges) discusses accounting/reporting process pressure.
+- [CDH: property-management accounting pain points](https://www.cdhcpa.com/blog/pain-points-in-property-management-accounting/) highlights system fragmentation, trust-account controls and ledger-to-report differences.
+- [Steph's Books: property-management accounting guide](https://stephsbooks.com/blog/property-management-accounting-guide) emphasizes PM-specific experience, reconciliations, software familiarity and owner reporting.
+- [Parikh Financial: property-management accounting and trust reconciliation](https://www.parikh.financial/property-management-accounting/) covers the gap between property-management platforms and the company's general ledger.
+- [Outsourced Bookkeeping: property-management accounting services](https://www.outsourcedbookeeping.com/property-management-accounting-services/) addresses AP, tenant ledgers, owner reports, month-end close and CAM reconciliations.
+These pages are content examples, not proof of keyword volume or guaranteed rankings. Validate actual queries and performance when analytics are later authorized.
+
+Buyer problems to prioritize in page copy and useful resources:
+1. **Books are behind / cleanup and catch-up:** scope the backlog by period, property, account and missing records; reconcile in priority order; document exceptions; prepare proposed corrections for client review; transition to recurring close.
+2. **Numbers do not tie:** property-management system to general ledger, rent roll to tenant ledger, owner statements to income/expense ledgers, deposit liabilities to available records, and bank activity to cash balances.
+3. **Month-end takes too long:** cutoff checklist, recurring account reconciliations, open-item ownership, reporting deadlines and review-ready packages.
+4. **AP and vendor volume is growing:** invoice intake, duplicate checks, property/entity coding, supporting documents, approval queues and payment-status reporting—without claiming payment authority.
+5. **Owners need useful reporting:** owner statements, distribution schedules, property-level P&L, portfolio summaries, budget-to-actual views and clear exception notes.
+6. **More properties but no extra accounting capacity:** repeatable processes, system access controls, reviewer ownership and a defined pilot before expanding scope.
+7. **Software is already in place:** support the existing AppFolio, Buildium, Yardi, DoorLoop or other agreed workflow; do not imply that software changes alone fix reconciliation or close issues.
+8. **Commercial portfolios:** CAM / recoverable-expense reconciliation, lease-data handoff and tenant true-ups where scope and supporting lease interpretation are client-approved; accounting preparation only, not legal interpretation.
+
+First commercial problem-led addition: `/industries/property-management/accounting-cleanup`. It targets a service need, not a geography, and is distinct from `/blog/property-management-accounting`, which remains the informational overview. Build further commercial pages only when the intent is unserved (for example, a clearly scoped property-platform-to-general-ledger reconciliation service); improve existing guides when the intent is already covered. Keep the core pillar useful to business owners, not just a directory of location/software links.
+
 ## Content boundaries
 
 - Never invent local offices, local employees, clients, reviews, credentials, service history, or market-share claims.
