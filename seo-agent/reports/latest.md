@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **179**
+- Files/pages scanned: **180**
 - High-priority findings: **7**
 - Medium-priority findings: **13**
 - Low-priority findings: **8**
@@ -117,7 +117,8 @@
 | app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1124 | 1 | 15 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1092 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 858 | 1 | 9 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2841 | 1 | 70 | 0 | 0 |
+| app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1064 | 1 | 12 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2847 | 1 | 71 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1036 | 1 | 11 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
 | app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1119 | 1 | 12 | 0 | 0 |
