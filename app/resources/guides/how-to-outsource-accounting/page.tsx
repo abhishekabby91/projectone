@@ -117,7 +117,7 @@ export default function HowToOutsourceAccountingGuide() {
 
       <h2>Where Accounstone may fit</h2>
       <p>Accounstone provides outsourced accounting and bookkeeping support for businesses and accounting firms. Depending on the agreed scope, this can include recurring bookkeeping, reconciliations, accounts payable and receivable, month-end support, reporting preparation and defined tax-preparation support. The client's team or appointed professional retains approvals and decisions that require its authority or judgment.</p>
-      <p>If you are comparing providers, use the checklist above with Accounstone and any other option you are considering. Start with the relevant <Link href="/services" className="text-primary font-medium hover:underline">service overview</Link>, explore our <Link href="/delivery-framework/onboarding" className="text-primary font-medium hover:underline">onboarding process</Link>, or <Link href="/contact" className="text-primary font-medium hover:underline">discuss a defined accounting workflow</Link>.</p>
+      <p>If you are comparing providers, use the checklist above with Accounstone and any other option you are considering. Review the scope of our <Link href="/services/accounting/united-states" className="text-primary font-medium hover:underline">accounting services</Link> and <Link href="/services/bookkeeping/united-states" className="text-primary font-medium hover:underline">bookkeeping services</Link>, explore our <Link href="/delivery-framework/onboarding" className="text-primary font-medium hover:underline">onboarding process</Link>, or <Link href="/contact" className="text-primary font-medium hover:underline">discuss a defined accounting workflow</Link>.</p>
     </ArticleLayout>
   );
 }
