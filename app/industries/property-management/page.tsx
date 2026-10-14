@@ -471,6 +471,7 @@ export default function PropertyManagementPage() {
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'California property management accounting', href: '/industries/property-management/california' },
               { name: 'Texas property management accounting', href: '/industries/property-management/texas' },
+              { name: 'Property management accounting cleanup and catch-up', href: '/industries/property-management/accounting-cleanup' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium accounting and bookkeeping support', href: '/industries/property-management/buildium-accounting-support' },
               { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
