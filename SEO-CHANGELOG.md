@@ -2,6 +2,7 @@
 
 - Added `/industries/property-management/general-ledger-reconciliation` as a commercial page for recurring platform-to-GL reconciliation, exception investigation, documentation and monthly reviewer handoff; distinct from historical cleanup/catch-up.
 - Added contextual links from the property-management accounting overview, bank reconciliation guide, tenant ledger reconciliation guide and month-end close checklist to connect informational content with this relevant service page.
+- Updated the sitemap-date workflow to run on content-bearing feature branches as well as `main`, so generated route dates can be refreshed and checked before a batch is merged.
 - Followed the existing Accounstone service-page structure: hero and inquiry CTA, breadcrumb, problem overview, work-area cards, four-step workflow, related links, responsibility boundaries, FAQs and Service/FAQ/Breadcrumb schema.
 - Linked the page from the property-management hub and added sitemap, route/search-intent/content-registry and AI-readable index entries.
 - Explicitly keeps banking control, payment release and accounting-treatment decisions with the client; no software integration or vendor partnership is assumed.
