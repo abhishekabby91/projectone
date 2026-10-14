@@ -113,11 +113,10 @@ export default function PropertyManagementAccountingCleanupPage() {
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Continue with the workflow you need</h2>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/industries/property-management" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Property management accounting</Link>
-            <Link href="/blog/property-management-accounting" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Property accounting overview</Link>
-            <Link href="/blog/property-management-bank-reconciliation" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Bank reconciliation workflow</Link>
-            <Link href="/blog/property-management-tenant-ledger-reconciliation" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Tenant ledger reconciliation</Link>
-            <Link href="/blog/property-management-owner-statements" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Owner statement review</Link>
-            <Link href="/blog/property-management-month-end-close-checklist" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Month-end close checklist</Link>
+            <Link href="/blog/real-estate-accounting-month-end-close" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Property accounting month-end close</Link>
+            <Link href="/blog/yardi-accounting-workflow" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Yardi accounting workflow</Link>
+            <Link href="/blog/property-management-cam-reconciliation" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">CAM reconciliation workflow</Link>
+            <Link href="/blog/quickbooks-month-end-close-checklist" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">QuickBooks month-end close checklist</Link>
             <Link href="/industries/property-management/california" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">California accounting support</Link>
             <Link href="/industries/property-management/texas" className="rounded-lg border border-border bg-white px-4 py-3 font-medium text-primary">Texas accounting support</Link>
           </div>
