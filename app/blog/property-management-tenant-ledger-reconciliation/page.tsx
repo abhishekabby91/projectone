@@ -141,6 +141,7 @@ export default function PropertyManagementTenantLedgerReconciliation() {
         <li><Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4">Accounts payable review workflow</Link></li>
         <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">Month-end close checklist</Link></li>
         <li><Link href="/industries/property-management" className="text-primary underline underline-offset-4">Property management accounting support</Link></li>
+        <li><Link href="/industries/property-management/general-ledger-reconciliation" className="text-primary underline underline-offset-4">Platform-to-general-ledger reconciliation support</Link></li>
       </ul>
     </ArticleLayout>
   );

@@ -26,12 +26,18 @@ Expand Accounstone's U.S. organic search coverage from the existing industry and
 
 ### HOA
 - California state service page (first pilot).
-- Research demand and competitive coverage for Southern California / San Diego County, Orange County, Los Angeles County, Bay Area, Sacramento region and Riverside/San Bernardino/Inland Empire.
+- Research demand and competitive coverage for Southern California / San Diego County, Orange County, Los Angeles County, Bay Area, Sacramento region and Riverside/San Bernardino/Inland Empire. Los Angeles County has direct local commercial competitors (HOA Accounting Los Angeles and PMI LA Pacific) and a CAI Greater Los Angeles chapter with 1,100+ members; the membership count is not an HOA count and these signals do not establish search volume. Census housing tables describe housing structure, not association totals. Research reviewed 2026-10-14.
 - Competitor and market evidence (not search-volume proof): APS Management publishes HOA accounting/financial-service pages for San Diego County and Southern California; HOA Accounting Services references a San Diego client. CAI-OC says its 34-city region includes more than 5,000 community associations, its directory lists association-management firms and accounting providers, and local results include HOA accounting/financial-reporting pages. These signals support distinct local intent but do not guarantee rankings.
 - Select no more than the strongest initial county/metro opportunities after checking search results, association-management market context, local competitor pages and whether each page can be materially different.
 
 ### Property management
-- Research state and metro demand separately from HOA intent.
+- State-page research reviewed 2026-10-14: WPM Accounting publishes distinct California and Texas property-management accounting pages covering bookkeeping, trust records, reconciliations and reporting. REA has a San Francisco property-management accounting page and Houston platform-specific pages, including AppFolio; Royale's Florida accounting page focuses on community associations, so it should not be treated as proof of rental-property-management intent. These are live competitor/content examples, not search-volume or ranking evidence.
+- Added two first-pass state pages on the active feature branch: `/industries/property-management/california` and `/industries/property-management/texas`. California's page routes readers to the existing AppFolio California page and trust-reconciliation workflow; Texas routes to the existing Yardi Texas page and general workflow guides. Both state pages explicitly describe remote accounting scope and preserve client approval, banking and property-operation responsibilities.
+- Next metro research candidates: San Francisco and Houston, because competitor results include distinct property-management accounting pages. Before creating either, verify the local angle and whether it adds enough beyond the state page and existing software pages; do not create city pages just to multiply URLs.
+- The existing property-management commercial pillar now links directly to month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow resources. Use this cluster before creating a property-management location page so the state/county page has strong, relevant supporting links.
+- Test California, Texas and Florida first because the existing site already has market context for those states; do not assume that their generic market pages satisfy property-management-specific intent.
+- Research county/metro clusters only after confirming a distinct property-management accounting need, relevant software/workflow detail and a useful local angle.
+
 - The existing property-management commercial pillar now links directly to month-end close, owner statements, security-deposit accounting, bank reconciliation and Yardi workflow resources. Use this cluster before creating a property-management location page so the state/county page has strong, relevant supporting links.
 - Test California, Texas and Florida first because the existing site already has market context for those states; do not assume that their generic market pages satisfy property-management-specific intent.
 - Research county/metro clusters only after confirming a distinct property-management accounting need, relevant software/workflow detail and a useful local angle.
@@ -48,6 +54,28 @@ For each proposed page, record:
 - A review date for legal/regulatory references.
 - Whether the URL should be indexed; no thin or doorway pages.
 
+## Buyer-led property-management content strategy (2026-10-14)
+
+Do not treat state/county pages as the entire growth plan. The site should answer operational problems that property-management owners, controllers and portfolio managers need help with, regardless of location. Competitor and industry content reviewed:
+- [AppFolio: common property-management accounting challenges](https://www.appfolio.com/blog/top-property-management-accounting-challenges) discusses accounting/reporting process pressure.
+- [CDH: property-management accounting pain points](https://www.cdhcpa.com/blog/pain-points-in-property-management-accounting/) highlights system fragmentation, trust-account controls and ledger-to-report differences.
+- [Steph's Books: property-management accounting guide](https://stephsbooks.com/blog/property-management-accounting-guide) emphasizes PM-specific experience, reconciliations, software familiarity and owner reporting.
+- [Parikh Financial: property-management accounting and trust reconciliation](https://www.parikh.financial/property-management-accounting/) covers the gap between property-management platforms and the company's general ledger.
+- [Outsourced Bookkeeping: property-management accounting services](https://www.outsourcedbookeeping.com/property-management-accounting-services/) addresses AP, tenant ledgers, owner reports, month-end close and CAM reconciliations.
+These pages are content examples, not proof of keyword volume or guaranteed rankings. Validate actual queries and performance when analytics are later authorized.
+
+Buyer problems to prioritize in page copy and useful resources:
+1. **Books are behind / cleanup and catch-up:** scope the backlog by period, property, account and missing records; reconcile in priority order; document exceptions; prepare proposed corrections for client review; transition to recurring close.
+2. **Numbers do not tie:** property-management system to general ledger, rent roll to tenant ledger, owner statements to income/expense ledgers, deposit liabilities to available records, and bank activity to cash balances.
+3. **Month-end takes too long:** cutoff checklist, recurring account reconciliations, open-item ownership, reporting deadlines and review-ready packages.
+4. **AP and vendor volume is growing:** invoice intake, duplicate checks, property/entity coding, supporting documents, approval queues and payment-status reporting—without claiming payment authority.
+5. **Owners need useful reporting:** owner statements, distribution schedules, property-level P&L, portfolio summaries, budget-to-actual views and clear exception notes.
+6. **More properties but no extra accounting capacity:** repeatable processes, system access controls, reviewer ownership and a defined pilot before expanding scope.
+7. **Software is already in place:** support the existing AppFolio, Buildium, Yardi, DoorLoop or other agreed workflow; do not imply that software changes alone fix reconciliation or close issues.
+8. **Commercial portfolios:** CAM / recoverable-expense reconciliation, lease-data handoff and tenant true-ups where scope and supporting lease interpretation are client-approved; accounting preparation only, not legal interpretation.
+
+First commercial problem-led addition: `/industries/property-management/accounting-cleanup`, for historical backlog and catch-up work. Second: `/industries/property-management/general-ledger-reconciliation`, for recurring property-platform-to-general-ledger tie-outs, exception investigation and reviewer handoff. These service intents are distinct from `/blog/property-management-accounting` and `/blog/property-management-bank-reconciliation`, which remain informational guides. Competitor reviews surfaced platform-to-GL mismatch as a distinct operational pain point, but do not establish search volume or ranking potential. Build further commercial pages only when the intent is unserved; improve existing guides when the intent is already covered. Keep the core pillar useful to business owners, not just a directory of location/software links.
+
 ## Content boundaries
 
 - Never invent local offices, local employees, clients, reviews, credentials, service history, or market-share claims.
@@ -58,6 +86,17 @@ For each proposed page, record:
 - Keep SEO and AEO workstreams separately documented.
 - No GSC work until explicitly requested. No merge to main or production deployment unless explicitly authorized.
 
+## Content length and scanability standard
+
+- Target roughly 700–1,100 useful words for a county-level commercial page when research supports that depth. This is a working editorial range, not a ranking rule; shorter pages are acceptable when the intent is narrow, and no word count should be padded.
+- Put the answer and service scope near the top. Use one clear H1, descriptive H2s, and H3s only where they help users scan.
+- Prefer 2–4 sentence paragraphs, generally 25–55 words. Split paragraphs when they contain two separate ideas; avoid walls of text and repeated keyword variations.
+- Use bullets for deliverables, checks, boundaries and steps. Use 4–6 short workflow cards where the items are genuinely distinct; keep card descriptions to one or two sentences.
+- Use a short numbered process for sequences, a compact FAQ for real buyer questions, and descriptive internal-link labels. Do not create a long keyword-only link list.
+- Each paragraph should earn its place: answer a buyer question, explain a concrete workflow, ground a local statement in a source, or clarify responsibility. Delete generic filler and unsupported local claims.
+- Keep key content in server-rendered HTML, with semantic headings, ordinary links, descriptive link text, and visible FAQ answers. Schema should match visible content rather than introduce hidden claims.
+- Make the page useful when skimmed on mobile: short lead, lists/cards in small chunks, adequate spacing, and no repeated introductory copy.
+
 ## Definition of done for every location page
 
 1. Unique search intent and differentiated content.
@@ -67,3 +106,12 @@ For each proposed page, record:
 5. Sitemap and route/content/search-intent registries updated.
 6. Generated sitemap dates refreshed through `scripts/generate-sitemap-dates.mjs`; never hand-edit `lib/sitemap-dates.ts`.
 7. Preview build and rendered metadata/internal links validated before merge.
+
+## US-first linking and inquiry conversion rules
+
+- Keep the active growth phase focused on US industries and their relevant US state, county, metro, and software/workflow pages. Non-US regional pages are not required links on US pages and should not be inserted just to create more internal links.
+- Link pages when the destination helps the same visitor continue their task: industry pillars to relevant US regions and workflows; state/county pages to their parent industry, genuinely relevant neighboring US pages, and useful supporting guides; software/workflow guides to the service pages they support. Avoid forced cross-region links and generic link blocks that do not match intent.
+- Keep the existing inquiry form structure and submission flow unless a separate, approved change is needed. Reuse the shared inquiry component on relevant industry and regional pages, preselect the service and record the page source when supported, and make nearby CTA cards/links lead to the relevant service section or inquiry form rather than adding competing forms.
+- Mobile form acceptance checks: compact section padding and vertical rhythm; readable labels and 16px input text; single-column fields on narrow screens; short textarea on mobile while preserving desktop height; full-width, easy-to-tap submit control; no horizontal overflow; and no oversized assurance/copy block pushing the form too far down the page. Keep wider-screen alignment responsive rather than forcing two columns on a phone.
+- Before merging page batches, review the rendered page at a narrow mobile viewport and a desktop viewport, including the path from a card/CTA to the inquiry form. A build alone does not prove the form is visually aligned.
+

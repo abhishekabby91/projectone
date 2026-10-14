@@ -56,7 +56,7 @@ export default function Page() {
 
       <h2>Related guides</h2>
       <p>Use the <a href="/blog/property-management-month-end-close-checklist">property management month-end close checklist</a> to place reconciliations into the wider close process. See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/rent-roll-accounting">rent roll accounting</a> and <a href="/blog/property-management-bookkeeping-vs-accounting">bookkeeping vs. accounting</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
-      <p>For receipts recorded before they appear in a bank deposit, use the <a href="/blog/property-management-undeposited-funds">undeposited funds reconciliation guide</a>. For card liability, receipts and property expense coding, see the <a href="/blog/property-management-credit-card-reconciliation">credit card reconciliation checklist</a>.</p>
+      <p>For receipts recorded before they appear in a bank deposit, use the <a href="/blog/property-management-undeposited-funds">undeposited funds reconciliation guide</a>. For card liability, receipts and property expense coding, see the <a href="/blog/property-management-credit-card-reconciliation">credit card reconciliation checklist</a>. If you also need to compare reports from your property-management platform with the general ledger, see our <a href="/industries/property-management/general-ledger-reconciliation">platform-to-general-ledger reconciliation support</a>.</p>
     </ArticleLayout>
   );
 }

@@ -7,10 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import FAQSection from '@/components/faq-section';
 import ProcessFlow from '@/components/process-flow';
-import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
 import IndustryIllustration from '@/components/industry-illustration';
-import { trustBadges } from '@/lib/data';
 import {
   triggers,
   segments,
@@ -78,17 +76,6 @@ export default function PropertyManagementPage() {
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
       />
-
-      <section className="w-full py-3 px-4 sm:px-6 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-2">
-          {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2 px-3 py-1.5 bg-input rounded-full border border-border">
-              <TrustIcon name={badge.icon} />
-              <span className="font-medium text-xs sm:text-sm text-foreground">{badge.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
@@ -469,6 +456,10 @@ export default function PropertyManagementPage() {
               { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
               { name: 'Year-end vendor reporting checklist', href: '/blog/property-management-1099-preparation' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
+              { name: 'California property management accounting', href: '/industries/property-management/california' },
+              { name: 'Texas property management accounting', href: '/industries/property-management/texas' },
+              { name: 'Property management accounting cleanup and catch-up', href: '/industries/property-management/accounting-cleanup' },
+              { name: 'Property management platform-to-GL reconciliation', href: '/industries/property-management/general-ledger-reconciliation' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium accounting and bookkeeping support', href: '/industries/property-management/buildium-accounting-support' },
               { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },

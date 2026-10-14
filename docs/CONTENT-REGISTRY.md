@@ -5,6 +5,8 @@ Tracks blog/guide/insight content specifically (not every route — see `ROUTES.
 | Title | URL | Cluster | Primary intent | Status | Last updated |
 
 | Property Management Accounting & Bookkeeping Outsourcing | `/industries/property-management` | Property Management | Commercial service page for managers of third-party property portfolios; property-level books, tenant and owner ledgers, AP/AR, reconciliations and month-end reporting | Strengthened contextual links to month-end close, owner-statement, security-deposit, bank-reconciliation and Yardi workflow resources | 2026-10-12 |
+| Property Management Accounting Cleanup and Catch-Up Support | `/industries/property-management/accounting-cleanup` | Property Management | Commercial support intent for overdue books, reconciliation backlog, tenant/property ledger mismatches and a controlled transition to recurring close; distinct from the informational complete guide | New buyer-focused service page | 2026-10-14 |
+| Property Management Platform-to-General-Ledger Reconciliation | `/industries/property-management/general-ledger-reconciliation` | Property Management | Commercial service intent for recurring platform-to-GL tie-outs, difference investigation, documented exceptions and monthly reviewer handoff; distinct from historical cleanup and existing informational workflows | New buyer-focused service page | 2026-10-14 |
 | Property Management Month-End Close Checklist: From Transactions to Owner Reports | `/blog/property-management-month-end-close-checklist` | Property Management | Transaction cutoff, reconciliations, tenant and owner ledgers, liability checks, reports and documented close review | Improved with exception-tracking workflow and links to owner-statement and security-deposit guides | 2026-10-12 |
 | QuickBooks Month-End Close Checklist | `/blog/quickbooks-month-end-close-checklist` | Technology / QuickBooks | QuickBooks-specific bank reconciliations, AR/AP, adjustments, review and reporting sequence | Existing indexable guide added to sitemap and route inventory | 2026-10-12 |
 | Real Estate Accounting Month-End Close | `/blog/real-estate-accounting-month-end-close` | Real Estate | Real-estate close sequence covering rent, AP/AR, accruals, reconciliations and owner reporting | Existing indexable guide added to sitemap and route inventory | 2026-10-12 |
@@ -72,3 +74,16 @@ Added three software-specific service pages to address distinct commercial inten
 - `/industries/property-management/doorloop-accounting-support` — accounting workflow support for property managers already using DoorLoop; linked from the property-management hub and included in the sitemap.
 
 These pages are not software setup or migration services. They focus on transaction preparation, reconciliations, reporting, owner/board review and documented handoffs inside the client's existing process. The separate San Diego County HOA page remains the geographic-intent page; software pages should not target county-level queries.
+
+## 2026-10-14 — HOA and property-management accounting pages
+
+Added five commercial pages with distinct intent and links from their relevant industry hubs:
+
+- `/industries/hoa-accounting/los-angeles-county` — Los Angeles County HOA bookkeeping, reconciliations, board reporting and year-end handoff; geographic context only, not a local-office claim.
+- `/industries/property-management/california` — California property-level books, tenant and deposit ledgers, owner statements and month-end support.
+- `/industries/property-management/texas` — Texas property-management bookkeeping, tenant/rent ledgers, vendor payables and monthly close; remains distinct from the existing Texas Yardi-specific page.
+- `/industries/property-management/accounting-cleanup` — non-geographic catch-up work for overdue books, unreconciled balances and ledger discrepancies.
+- `/industries/property-management/general-ledger-reconciliation` — recurring reconciliation of property-management platform reports to the general ledger, with exceptions documented for client review.
+
+The four property-management pages are linked from the property-management hub; the Los Angeles County page is linked from the HOA hub. Sitemap and AI-readable discovery references are maintained separately and must be validated from the final release checkout. These pages describe remote accounting preparation/bookkeeping support; client approval and payment authority remain with the client. Competitor research informs coverage but does not establish search volume or guarantee rankings.
+
