@@ -53,6 +53,33 @@ export const industryDepth: Record<string, IndustryDepth> = {
       'Prepare a reconciled opening position and exception list for practice or CPA review',
     ],
   },
+  nonprofit: {
+    breaks: [
+      {
+        h: 'The bank balance does not show what is available to spend',
+        p: 'A donation or grant receipt can increase cash without making the full amount available for any purpose. If the ledger records only the deposit and loses the documented restriction or fund designation, management cannot reliably see which balances are committed to a program or must be reported separately. The accounting record should preserve the fund coding supplied or approved by the organization.',
+      },
+      {
+        h: 'Grant reports and the general ledger drift apart',
+        p: 'A funder report may use a specific budget, period and cost category structure, while routine bookkeeping uses the chart of accounts. Without a consistent mapping and tie-out, totals can diverge and staff may have to rebuild schedules at reporting time. The organization approves grant terms and eligible-cost decisions; bookkeeping maintains the traceable records and flags mismatches.',
+      },
+      {
+        h: 'Functional expenses use an undocumented allocation',
+        p: 'Some expenses serve more than one program or organizational function. When allocations change without an approved method or supporting records, the functional expense report can become difficult to reproduce. The accounting workflow should apply management-approved allocation instructions consistently and keep the supporting basis available for review.',
+      },
+      {
+        h: 'Board reports arrive without fund and budget context',
+        p: 'A single total of income and spending can hide a shortfall in one program or an unspent grant balance. Reports are more useful when they preserve the organization’s agreed fund and program dimensions and compare actual activity with the supplied budget, without turning bookkeeping output into unsupported compliance or management advice.',
+      },
+    ],
+    firstMonth: [
+      'Confirm the chart of accounts and approved fund, grant and program coding structure',
+      'Record the documentation that identifies restrictions and the person authorized to resolve unclear classifications',
+      'Tie bank and balance-sheet accounts to statements and document opening fund balances',
+      'Map grant reporting categories to ledger accounts using client-approved instructions',
+      'Confirm the board-report format, reporting calendar and year-end tax-preparer handoff',
+    ],
+  },
   ecommerce: {
     breaks: [
       {
