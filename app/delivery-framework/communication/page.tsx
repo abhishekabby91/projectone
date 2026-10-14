@@ -1,9 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { User, BarChart3, Zap, MessageSquare, TrendingUp, ClipboardList } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import CTABanner from '@/components/cta-banner';
-import InquiryTrigger from '@/components/inquiry-trigger';
 import InquirySection from '@/components/inquiry-section';
 import SectionHeading from '@/components/section-heading';
 import { generateMetadata, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
