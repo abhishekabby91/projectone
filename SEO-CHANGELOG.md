@@ -1,3 +1,65 @@
+## 2026-10-14 — Add Yardi HOA accounting support within the HOA-first plan
+
+- Continued the target-wise order: HOA/community associations first, then property management. No additional unrelated industry pages were added in this pass.
+- Competitor/product research reviewed Yardi’s official HOA/condo pages for Voyager and Breeze, plus industry comparisons. Added `/industries/hoa-accounting/yardi-accounting-support` for the distinct workflow intent of accounting preparation and reconciliation support for associations already using Yardi.
+- Linked the page from the HOA hub and updated sitemap, route/search-intent registries and AI-readable indexes. The page does not claim Yardi partnership, certification, implementation, configuration or technical support.
+- Build/preview validation remains unconfirmed because Vercel deployment validation is blocked by the deployment-rate limit. Do not merge or deploy production until build/type/lint, route, link, metadata, schema and mobile/desktop checks pass.
+
+## 2026-10-14 — Add Texas HOA accounting as the next target-state page
+
+- Continued the agreed industry-target-first sequence: HOA/community associations and property management remain ahead of unrelated industries.
+- Competitor research reviewed Texas-specific HOA accounting pages and official Texas Property Code sources. The page differentiates Texas property owners’ associations and condominium communities through records organization, owner-record accessibility workflows, assessment ledgers, separate community books, reconciliations and board reporting. Statutes are linked as general references only; no legal interpretation or compliance guarantee is offered.
+- Added `/industries/hoa-accounting/texas`, linked it from the HOA parent hub, and updated the sitemap, route registry, search-intent registry and AI-readable indexes.
+- Sitemap date must be refreshed with `node scripts/generate-sitemap-dates.mjs`; do not hand-edit `lib/sitemap-dates.ts`. Build/preview validation is still unconfirmed because Vercel deployment validation is blocked by the rate limit. No merge, production deployment or GSC submission was performed.
+
+## 2026-10-14 — Add nonprofit accounting as a distinct industry
+
+- Competitor research reviewed nonprofit accounting pages from IMAAR Associates, Fincera, Vance & Cole and related providers. Repeated sector-specific workflows include restricted/unrestricted fund tracking, grant-level coding and budget comparisons, functional expense allocations, reconciliations and board reporting. This supports a distinct nonprofit buyer intent but does not prove search volume or ranking opportunity.
+- Added `/industries/nonprofit-accounting` to the industry data registry so the page appears in the industries index and data-driven sitemap. Added dedicated nonprofit workflow depth and FAQs that use client-approved coding instructions.
+- Linked the page to relevant bookkeeping, AP, AR and tax-preparation service pages; registered it in the route/search-intent registries and AI-readable indexes.
+- Scope explicitly excludes independent interpretation of donor restrictions, grant-compliance determinations, audit opinions and tax/legal advice. Build/preview validation remains unconfirmed while Vercel deployment validation is blocked by the rate limit. No merge or production deployment was performed.
+
+## 2026-10-14 — Add dental practice accounting as a distinct healthcare sub-intent
+
+- Competitor research across dental accounting providers and dental-group accounting pages showed workflow-specific coverage around production versus collections, insurance adjustments, processor/bank deposit tie-outs, lab and supply costs, and provider/location reporting. This supports investigating a distinct dental buyer intent; it does not establish search volume or ranking outcomes.
+- Added `/industries/healthcare/dental-practice-accounting` using the existing industry page template and dedicated dental workflow depth. Scope is limited to bookkeeping from client-provided financial reports and approved mappings; claims submission, clinical coding, denial management, patient collections and unverified HIPAA/compliance claims are explicitly excluded.
+- Linked the new page from the healthcare hub and linked back to the hub from the new page. Registered the URL in the sitemap, route registry, search-intent registry and AI-readable indexes.
+- Sitemap last-modified dates are generated only by `node scripts/generate-sitemap-dates.mjs`; do not hand-edit `lib/sitemap-dates.ts`. Build/rendered-page validation remains unconfirmed while Vercel deployment validation is blocked by the rate limit. No merge or production deployment was performed.
+
+## 2026-10-14 — Require distinct client, query and link paths for every industry page
+
+- Added an industry-specific audience/query/link contract to `AI-WEBSITE-GUIDE.md`: every page must identify its buyer, researched query intent, distinct workflow, overlap check, contextual internal-link path and audience-appropriate next step.
+- Added an industry-to-client/query/link planning matrix covering HOA, property management, real estate, e-commerce, CPA firms, healthcare, technology/SaaS and construction. It is a planning standard, not a mandate to create every possible subpage.
+- Added a pre-release checklist requiring parent-hub links, return links, correct breadcrumbs, useful sibling/service/resource links, and technical link/metadata/canonical/sitemap checks.
+- Recorded the rule in `docs/CONTENT-REGISTRY.md`. This change updates project guidance only; no production pages were deployed or merged.
+- Future page work remains on `accounstone-outsourcing-prospect-guides`; build/preview validation is still blocked by the Vercel deployment-rate limit, so do not claim a successful preview/build.
+
+## 2026-10-14 — Add Shopify accounting page after competitor and buyer-question research
+
+- Competitor research found dedicated Shopify accounting pages from Ottit, Accountaire and other e-commerce providers, with a distinct operational focus on Shopify Payments payout-to-bank reconciliation, gateway fees, refunds, chargebacks, gift-card records, inventory/COGS and monthly close. A public buyer discussion also described the recurring problem of manually reconciling bundled Shopify payouts with fees, refunds and chargebacks.
+- Added `/industries/ecommerce/shopify-accounting` as a platform-specific commercial page. It covers Shopify Payments and other gateway reconciliation, exception documentation, inventory/COGS schedules and CPA handoff without claiming software partnership or implementation services.
+- Kept the broad multi-channel page at `/industries/ecommerce` and the Amazon settlement page at `/industries/ecommerce/amazon-seller-accounting`; linked all three as a small e-commerce cluster rather than creating city/state variants.
+- Updated route and search-intent registries, sitemap, `llms.txt`, `llms-full.txt` and the e-commerce pillar links.
+- Tax advice, nexus determinations, tax filing, accounting-policy decisions, software implementation and banking control remain outside the page's claimed scope.
+- Build/type checks, rendered-route checks, mobile/desktop review and generated sitemap-date refresh remain required. Vercel deployment validation remains blocked by the account's deployment-rate limit. No merge to `main`, production deployment or Search Console submission.
+
+## 2026-10-14 — Add Amazon seller accounting page after competitor and intent review
+
+- Competitor research across Acgile, Ledger Labs, Graphite Financial and Om Accounting repeatedly surfaced a distinct operational problem: Amazon settlement deposits are net of fees, refunds, reserves and other adjustments, while inventory/COGS and multi-channel reporting require separate schedules.
+- Added `/industries/ecommerce/amazon-seller-accounting` as a platform/workflow-specific commercial page covering settlement-to-bank reconciliation, fee/refund classification, inventory and COGS schedules, exception documentation and month-end handoff.
+- Differentiated it from `/industries/ecommerce`, which remains the primary page for broad multi-channel e-commerce accounting. Added contextual links and updated route/search-intent registries, sitemap, `llms.txt` and `llms-full.txt`.
+- Added an outsourcing-readiness checklist link to the existing CPA-firms page after competitor review showed buyers need explicit answers about access, reviewer ownership, handoffs and pilot scoping. Did not create a separate white-label CPA page because the existing CPA-firms page already owns the core commercial intent.
+- Tax advice, nexus determinations, tax filing, software implementation, accounting-policy decisions and banking control remain outside the new page's claimed scope.
+- Build/type checks, rendered-route checks, mobile/desktop review and generated sitemap-date refresh remain required. Vercel free-plan deployment-rate limit is still a known validation blocker. No merge to `main`, production deployment or Search Console submission.
+
+## 2026-10-14 — Add a page-quality gate for industry and SEO expansion
+
+- Updated `AI-WEBSITE-GUIDE.md` with a required pre-publication gate to prevent thin, repetitive, doorway-style and competing pages as Accounstone's industry clusters grow.
+- Clarifies that page count alone does not determine Google rankings; each URL must serve a distinct search intent and provide page-specific practical value.
+- Requires overlap checks against `docs/ROUTES.md`, `docs/SEARCH-INTENTS.md` and `docs/CONTENT-REGISTRY.md`; unique intent; factual/service-scope review; natural cluster links; canonical, metadata, schema and sitemap checks; registry updates; and build/release validation.
+- States there is no universal safe page limit. A 25-page batch is acceptable only when every page independently passes the gate; page count is not a quota.
+- No page routes, sitemap entries, production deployment or Search Console submissions were changed by this guide-only update.
+
 ## 2026-10-14 — Add property-management platform-to-general-ledger reconciliation page
 
 - Added `/industries/property-management/general-ledger-reconciliation` as a commercial page for recurring platform-to-GL reconciliation, exception investigation, documentation and monthly reviewer handoff; distinct from historical cleanup/catch-up.

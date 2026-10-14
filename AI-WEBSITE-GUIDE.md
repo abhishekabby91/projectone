@@ -346,6 +346,49 @@ Do not create thin state pages by replacing a location name in a template.
 
 Keep existing Texas, California and Florida URLs only if they provide meaningful local value. If they do not, recommend consolidation rather than creating more location pages.
 
+## Industry-specific audience, query and internal-link contract
+
+Every industry hub and supporting page must be designed around the **specific client type, the real accounting problem they search for, and the next useful page they should visit**. The industry name alone is not a sufficient brief.
+
+Before writing or refreshing an industry page, document these fields in the content/search-intent registry:
+
+1. **Client and buyer:** who the page is for (for example, HOA board/community association manager, third-party property manager, property owner/investor, e-commerce operator, CPA firm partner, healthcare practice or technology/SaaS finance lead). Avoid broad “businesses” language when the workflow is sector-specific.
+2. **Search intent and query family:** the main commercial or informational intent, primary query theme and closely related variants. Do not claim search volume unless a trustworthy tool/source verifies it. Keep one clear primary intent per URL.
+3. **Sector-specific workflow:** transactions, ledgers, reports, controls, software and recurring pain points that genuinely differ for that client type. Explain deliverables and what remains the client's/CPA's responsibility.
+4. **Differentiation check:** compare the page with every adjacent industry, service, software and location page. If the same buyer would get substantially the same answer, improve the existing page or clearly document why the new intent is different.
+5. **Internal-link path:** link from the relevant industry hub to each useful supporting commercial page; link from each supporting page back to its parent hub; connect related pages only when the relationship helps a buyer; link to relevant service pages, software workflows and guides where appropriate. Use descriptive anchor text and avoid repetitive exact-match anchor stuffing.
+6. **Navigation and discovery:** confirm the relevant hub links the page visibly, breadcrumb hierarchy is correct, and sitemap/AI-readable indexes and registries include the URL where appropriate. Do not rely on sitemap inclusion as a substitute for contextual links.
+7. **Client journey:** make the next step appropriate to that audience—e.g. scope the reconciliation workflow, discuss recurring close support, review a CPA-firm production handoff or contact Accounstone. Do not route every audience through generic copy that ignores its needs.
+
+### Industry-to-client/query/link planning examples
+
+| Industry or cluster | Primary client | Query/workflow themes to research | Linking pattern |
+|---|---|---|---|
+| HOA / community associations | HOA board, community association manager, management company | Assessment and homeowner ledgers, operating/reserve reconciliations, board financial packages, AP, year-end CPA handoff, HOA software workflows | HOA hub ↔ relevant state/county/software pages and HOA-specific guides; link to bookkeeping/AP only where useful |
+| Property management | Third-party property manager managing owners' properties | Rent and tenant ledgers, owner statements, trust/security-deposit records, management fees, property-level reporting, cleanup, platform-to-GL reconciliation | Property-management hub ↔ cleanup/reconciliation/state/software pages and property-management guides; do not merge with owner/investor real-estate intent |
+| Real estate | Property owner, investor, developer or real-estate operating entity | Property/entity accounting, acquisitions/dispositions, investor reporting, development/project costs when supported | Real-estate hub ↔ relevant bookkeeping, AP/AR, software and real-estate guides; keep third-party property management on its own hub |
+| E-commerce | Online retailer, marketplace seller or direct-to-consumer store operator | Multi-channel close, Amazon settlements, Shopify payouts, processor fees/refunds, inventory/COGS and channel profitability | E-commerce hub ↔ Amazon and Shopify workflow pages and e-commerce guides; keep each platform page specific and link between them only when useful |
+| CPA firms | CPA firm partner, owner, CAS/practice manager | White-label bookkeeping production, overflow/capacity, cleanup, workpaper handoffs, review controls, busy-season planning | CPA-firm hub ↔ relevant service pages and outsourcing-readiness/process guides; don't create a duplicate white-label URL without a distinct intent |
+| Healthcare | Medical practice owner or practice administrator | Practice-specific reimbursement/receipt reconciliation, payer-vs-patient records and recurring close workflows supported by the firm's actual capabilities | Healthcare hub ↔ relevant services and healthcare-specific guides; dental accounting may be a distinct spoke when production/collection reports, lab/supply costs and provider/location reporting create a genuinely different buyer workflow |
+| Dental practice accounting (healthcare spoke) | Dental office owner, practice manager or multi-location dental group | Production versus collections, adjustment records, merchant/bank deposit tie-outs, lab/supply expense coding and provider/location records | Dental page ↔ healthcare parent hub and relevant bookkeeping/AR services; explicitly exclude claims submission, clinical coding and patient collection activity unless separately verified as an offered service |
+| Nonprofit organizations | Nonprofit executive director, finance manager, treasurer or board finance committee | Restricted/unrestricted funds, grant coding, approved functional expense allocation, reconciliations and board/funder reporting | Nonprofit industry page ↔ bookkeeping, AP/AR and tax-preparation support where relevant; organization and qualified advisers retain grant, donor-restriction and compliance decisions |
+| Technology / SaaS | SaaS founder, controller or finance lead | Subscription billing, processor reconciliation, deferred revenue support, MRR/ARR reporting inputs, close and software-related accounting workflows | Technology hub ↔ revenue-recognition, close, bookkeeping and relevant software guides; don't create a separate SaaS hub if it duplicates the current technology intent |
+| Construction | Contractor, construction business owner or project finance manager | Job costing, retainage, project costs, subcontractor/vendor AP and close | Construction hub ↔ relevant AP/bookkeeping/project-cost resources; don't claim specialist services that are not confirmed |
+
+This table is a planning standard, not a mandate to create every listed subpage. Research first, validate Accounstone's actual service scope, and create only pages with distinct intent and useful standalone value.
+
+### Internal-link release check
+
+For every new industry URL, verify all applicable points before release:
+
+- [ ] The intended audience and primary query are stated in the registry.
+- [ ] The page is linked from its relevant parent industry hub.
+- [ ] The page links back to the parent hub and has a correct breadcrumb.
+- [ ] At least one relevant sibling/service/resource link is included where genuinely useful.
+- [ ] No adjacent industry hub is being used as a catch-all for a different client's intent.
+- [ ] Links, anchors, routes, sitemap, canonical and metadata are checked together.
+- [ ] No unrelated links were added merely to increase internal-link counts.
+
 ## Internal linking
 
 Use contextual links between clusters:
@@ -780,6 +823,35 @@ Create a new page when there is a genuine reason, such as:
 - New genuine Accounstone experience that makes an existing topic substantially better
 
 Do not create a page merely because a competitor has one, a keyword tool suggests a variation, or a cluster has reached an arbitrary page count.
+
+### Page-count and Google-ranking safeguard — added 2026-10-14
+
+Adding many pages does **not automatically hurt Google rankings**. A larger site can serve more distinct searches when each page genuinely helps a particular audience. The risk is publishing pages mainly to capture keyword variations rather than to provide distinct value.
+
+Before approving any new indexable page, complete this gate:
+
+1. **Check existing coverage first.** Read `docs/ROUTES.md`, `docs/SEARCH-INTENTS.md`, and `docs/CONTENT-REGISTRY.md`. Search the repository for the same topic, query intent, audience and workflow. Identify the existing primary page that owns the intent.
+2. **State the unique intent in one sentence.** Record who the page serves, what they need, and how the answer differs from existing pages. A different keyword phrase alone is not a distinct intent.
+3. **Compare overlap.** Check the proposed title, H1, core sections, FAQs and likely queries against the closest existing pages. If two pages would answer substantially the same question for the same buyer, improve or consolidate the existing page instead of adding another URL.
+4. **Require real, page-specific value.** Include relevant workflows, decisions, examples, controls, software context, jurisdictional differences or buyer questions that materially change the answer. Do not create a location page just by swapping place names, or a software page that repeats the same generic claims.
+5. **Verify capability and evidence.** Keep all statements within Accounstone's actual service scope and proven experience. Competitor pages can reveal topics to investigate, but do not prove search volume, ranking potential, or that Accounstone offers the same service.
+6. **Choose the right page type.** Separate commercial service intent from informational guides, comparisons and software workflows when the visitor's goal is genuinely different. Do not split one useful answer into multiple thin pages merely to target more terms.
+7. **Link the cluster naturally.** Link to the relevant pillar and closely related supporting content where it helps readers navigate. Do not add links solely to inflate link counts.
+8. **Check technical eligibility.** Confirm a working route, unique title/description, correct canonical, appropriate schema matching visible content, crawlability, useful internal links and correct sitemap/AI-readable index entries. Exclude noindex pages from the sitemap.
+9. **Record the decision.** Update the route registry, search-intent registry, content registry and SEO changelog in the same implementation pass. Explain why a new URL is justified, or why an existing page was improved instead.
+10. **Validate before release.** Run build/type checks and route, metadata, schema, internal-link, sitemap and mobile/accessibility checks. Never treat sitemap inclusion as proof of indexing or ranking.
+
+#### Reject or consolidate a page when
+
+- Its main difference is only a keyword synonym, city/state name, industry label or software name.
+- It repeats another page's answer with only superficial wording changes.
+- It exists mainly to funnel search visitors to a separate destination without providing useful standalone value.
+- It has little practical content, unsupported claims, or no clear audience and next step.
+- There is no credible evidence that the jurisdiction, platform, workflow or buyer decision changes the answer.
+
+There is **no universal safe page limit** and no target number to hit. A batch of 25 pages is acceptable only if every page independently passes this gate; it is not a quota. Prefer strengthening an existing page when that best serves the reader. Expand the cluster when a distinct need is supported by research or observed customer/search behavior.
+
+After release, use Search Console and real user/search behavior to assess impressions, clicks, query overlap and indexing when the owner authorizes that review. Do not promise ranking gains or remove a useful page solely because it has not earned immediate impressions. Diagnose quality, discoverability, intent overlap and technical issues first.
 
 ### Learn → create → observe → update
 

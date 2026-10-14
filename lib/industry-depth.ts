@@ -26,6 +26,60 @@ export interface IndustryDepth {
 }
 
 export const industryDepth: Record<string, IndustryDepth> = {
+  dental: {
+    breaks: [
+      {
+        h: 'Production, adjustments and collections are not the same total',
+        p: 'A production report, an adjusted production total, a collection report and the cash received can all describe different stages of dental revenue. Posting one report as if it were the bank receipt can leave the ledger inconsistent with the actual deposits. The accounting workflow should define which client-approved report supports each entry and how adjustments are recorded.',
+      },
+      {
+        h: 'One deposit may combine several payment streams',
+        p: 'Insurance remittances, patient payments, merchant settlements and processor fees may be grouped or delayed before they reach the bank. A useful reconciliation compares source reports and settlement details to the deposit, then records or flags fees and timing differences instead of forcing the totals to match.',
+      },
+      {
+        h: 'Lab costs and supplies disappear into a broad expense bucket',
+        p: 'Dental lab invoices, clinical supplies, equipment and ordinary overhead do not all describe the same cost. If the client-approved chart of accounts groups them too broadly, monthly reports cannot show where spending was recorded. The bookkeeping role is to apply the agreed categories consistently and flag unclear items for approval.',
+      },
+      {
+        h: 'Multi-provider and multi-location records do not roll up consistently',
+        p: 'Different provider names, location codes or source-report periods can make a group total difficult to tie to the general ledger. The reporting structure should use a consistent mapping supplied or approved by management, preserve the supporting detail and document any source data that cannot be matched.',
+      },
+    ],
+    firstMonth: [
+      'Agree which production, collection, adjustment, remittance and deposit reports are source records for bookkeeping',
+      'Map bank and merchant settlements to recorded receipts, with fees and timing differences documented',
+      'Confirm client-approved expense categories for lab fees, supplies, equipment and overhead',
+      'Agree provider/location coding and reporting dimensions where source data supports them',
+      'Prepare a reconciled opening position and exception list for practice or CPA review',
+    ],
+  },
+  nonprofit: {
+    breaks: [
+      {
+        h: 'The bank balance does not show what is available to spend',
+        p: 'A donation or grant receipt can increase cash without making the full amount available for any purpose. If the ledger records only the deposit and loses the documented restriction or fund designation, management cannot reliably see which balances are committed to a program or must be reported separately. The accounting record should preserve the fund coding supplied or approved by the organization.',
+      },
+      {
+        h: 'Grant reports and the general ledger drift apart',
+        p: 'A funder report may use a specific budget, period and cost category structure, while routine bookkeeping uses the chart of accounts. Without a consistent mapping and tie-out, totals can diverge and staff may have to rebuild schedules at reporting time. The organization approves grant terms and eligible-cost decisions; bookkeeping maintains the traceable records and flags mismatches.',
+      },
+      {
+        h: 'Functional expenses use an undocumented allocation',
+        p: 'Some expenses serve more than one program or organizational function. When allocations change without an approved method or supporting records, the functional expense report can become difficult to reproduce. The accounting workflow should apply management-approved allocation instructions consistently and keep the supporting basis available for review.',
+      },
+      {
+        h: 'Board reports arrive without fund and budget context',
+        p: 'A single total of income and spending can hide a shortfall in one program or an unspent grant balance. Reports are more useful when they preserve the organization’s agreed fund and program dimensions and compare actual activity with the supplied budget, without turning bookkeeping output into unsupported compliance or management advice.',
+      },
+    ],
+    firstMonth: [
+      'Confirm the chart of accounts and approved fund, grant and program coding structure',
+      'Record the documentation that identifies restrictions and the person authorized to resolve unclear classifications',
+      'Tie bank and balance-sheet accounts to statements and document opening fund balances',
+      'Map grant reporting categories to ledger accounts using client-approved instructions',
+      'Confirm the board-report format, reporting calendar and year-end tax-preparer handoff',
+    ],
+  },
   ecommerce: {
     breaks: [
       {

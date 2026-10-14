@@ -1,8 +1,27 @@
+## 2026-10-14 — Texas HOA accounting page
+
+Added `/industries/hoa-accounting/texas` as a state-specific commercial page under the HOA industry. Competitor research and official Texas Property Code references informed a distinct focus on property owners’ associations and condominium communities, organized financial records, assessment ledgers, reconciliations and board reporting. Statutory links are general references only; the page does not offer legal interpretation, compliance guarantees or on-site community management. The HOA hub links to the page, and the route is included in sitemap/search-intent records and AI-readable indexes.
+
+## 2026-10-14 — Yardi HOA accounting support page
+
+Added `/industries/hoa-accounting/yardi-accounting-support` as a software-specific commercial spoke under the HOA industry. Official Yardi product materials document HOA/condo association workflows in Voyager and Breeze, including accounting, ledgers, charges, reporting and owner access. The page focuses on accounting preparation for clients already using their licensed system; it explicitly excludes implementation, configuration, vendor technical support, certification and partnership claims. The parent HOA hub links to this page; route/search-intent, sitemap and AI-readable indexes include the URL.
+
+## 2026-10-14 — Dental practice accounting page
+
+Added `/industries/healthcare/dental-practice-accounting` as a dental-specific commercial page beneath the existing healthcare hub. Competitor research identified a distinct accounting workflow around production-versus-collection records, insurance adjustments, merchant/bank deposit reconciliation, lab/supply expense coding and provider/location reporting. The page links to the healthcare parent and relevant bookkeeping/AR services; the parent healthcare page links back to the dental page. Scope is limited to bookkeeping using client-provided financial reports; it does not claim claims processing, clinical coding, patient collections, HIPAA certification or unverified compliance status. Competitor pages establish topic coverage only, not search volume or ranking potential.
+
+## Industry audience, query and link-map rule — 2026-10-14
+
+Every new or refreshed industry URL must have a distinct client/buyer, a researched query/workflow intent, a page-specific value statement, and a documented contextual link path from its relevant industry hub. Supporting pages must link back to the hub and to relevant sibling services/resources when useful. Keep HOA associations, third-party property managers, real-estate owners/investors, e-commerce sellers, CPA firms, healthcare practices, technology/SaaS companies and contractors distinct when their workflows and search intent differ. Do not create a page for every keyword variant; record overlap decisions in `docs/SEARCH-INTENTS.md`. Refer to `AI-WEBSITE-GUIDE.md` for the required industry-to-client/query/link contract and pre-release checklist.
+
 # Content Registry
 
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
 
 | Title | URL | Cluster | Primary intent | Status | Last updated |
+
+| How to Outsource Accounting: A Step-by-Step Guide | `/resources/guides/how-to-outsource-accounting` | Outsourcing decisions | Buyer-intent process guide for businesses and CPA firms: scope, provider selection, secure access, review workflow, onboarding, 30-day transition and total-cost comparison | New step-by-step guide; distinct from service overview and provider-selection framework | 2026-10-14 |
+| Upwork vs. Accounstone: Freelancer Marketplace or Outsourcing Partner? | `/blog/upwork-vs-accounstone` | Outsourcing decisions | Comparison-stage search intent for buyers choosing between a freelance marketplace and a direct accounting outsourcing provider; balanced fit criteria and total-cost checklist | New comparison page with contextual links to the full guide and service/contact routes | 2026-10-14 |
 
 | Property Management Accounting & Bookkeeping Outsourcing | `/industries/property-management` | Property Management | Commercial service page for managers of third-party property portfolios; property-level books, tenant and owner ledgers, AP/AR, reconciliations and month-end reporting | Strengthened contextual links to month-end close, owner-statement, security-deposit, bank-reconciliation and Yardi workflow resources | 2026-10-12 |
 | Property Management Accounting Cleanup and Catch-Up Support | `/industries/property-management/accounting-cleanup` | Property Management | Commercial support intent for overdue books, reconciliation backlog, tenant/property ledger mismatches and a controlled transition to recurring close; distinct from the informational complete guide | New buyer-focused service page | 2026-10-14 |

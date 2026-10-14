@@ -59,6 +59,7 @@ export default function HealthcareIndustryPage() {
         'NDA-backed engagements with secure financial data handling',
       ]}
       relatedLinks={[
+        { name: 'Dental practice accounting and bookkeeping', href: '/industries/healthcare/dental-practice-accounting' },
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
         { name: 'Accounts Receivable', href: '/services/accounts-receivable/united-states' },
         { name: 'Audit Support', href: '/services/audit-support/united-states' },

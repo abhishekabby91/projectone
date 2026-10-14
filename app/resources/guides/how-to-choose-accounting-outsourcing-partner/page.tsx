@@ -148,6 +148,18 @@ export default function HowToChoosePartnerGuide() {
         </Link>{' '}
         for the next step.
       </p>
+      <p>
+        If you want the operational sequence from initial scoping through launch, continue with the{' '}
+        <Link href="/resources/guides/how-to-outsource-accounting" className="text-primary font-medium hover:underline">
+          step-by-step guide to outsourcing accounting
+        </Link>
+        . If you are choosing between hiring one freelancer and a provider, use the balanced{' '}
+        <Link href="/blog/upwork-vs-accounstone" className="text-primary font-medium hover:underline">
+          Upwork vs. Accounstone comparison
+        </Link>{' '}
+        alongside the same checklist for every option.
+      </p>
+
     </ArticleLayout>
   );
 }

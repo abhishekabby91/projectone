@@ -59,6 +59,8 @@ export default function EcommerceIndustryPage() {
         'QuickBooks and Xero integration with common e-commerce platforms',
       ]}
       relatedLinks={[
+        { name: 'Amazon Seller Accounting', href: '/industries/ecommerce/amazon-seller-accounting' },
+        { name: 'Shopify Accounting', href: '/industries/ecommerce/shopify-accounting' },
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
         { name: 'Accounts Payable', href: '/services/accounts-payable/united-states' },
         { name: 'Offshore Accounting Support', href: '/solutions/offshore-accounting-support' },

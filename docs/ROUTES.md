@@ -86,7 +86,11 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
-| `/industries/ecommerce` | B | — | Published |
+| `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |
+| `/industries/healthcare/dental-practice-accounting` | B | Healthcare / Dental practice accounting | Added 2026-10-14 — distinct dental-office and dental-group bookkeeping workflow for production/collection reports, deposit tie-outs, lab/supply expense coding and provider/location reporting; excludes billing/claims management and unsupported HIPAA claims |
+| `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Published |
+| `/industries/ecommerce/amazon-seller-accounting` | B | E-Commerce / Amazon seller accounting | Added 2026-10-14 — settlement-to-bank reconciliation, fees/refunds, inventory/COGS and close handoff; distinct from the broader multi-channel e-commerce pillar |
+| `/industries/ecommerce/shopify-accounting` | B | E-Commerce / Shopify accounting | Added 2026-10-14 — Shopify Payments payout-to-bank reconciliation, gateway differences, refunds, gift-card records and close handoff; distinct from Amazon settlement workflows and broad multi-channel coverage |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
 | `/industries/property-management/california` | B | Property Management / California | Added 2026-10-14 — state-specific remote accounting scope, owner reporting and reconciliations; distinct from AppFolio-specific California page |
@@ -99,6 +103,8 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/hoa-accounting/san-diego-county` | B | California HOA accounting / San Diego County | Published 2026-10-13 — county-specific assessment ledgers, reconciliations, board reporting and CPA handover |
 | `/industries/hoa-accounting/orange-county` | B | California HOA accounting / Orange County | Added 2026-10-14 — local association context, California monthly financial-review references and remote accounting scope |
 | `/industries/hoa-accounting/los-angeles-county` | B | California HOA accounting / Los Angeles County | Added 2026-10-14 — county-specific remote bookkeeping, reconciliations and board reporting; no local-office or on-site management claim |
+| `/industries/hoa-accounting/texas` | B | Texas HOA accounting |
+| `/industries/hoa-accounting/yardi-accounting-support` | B | HOA accounting / Yardi Voyager and Breeze | Added 2026-10-14 — software-specific accounting workflow for associations using existing Yardi products; not implementation, configuration, technical support, certification or vendor partnership | Added 2026-10-14 — state-specific remote accounting page for Texas POAs and condo associations, with official Chapter 209/82 references, record organization, reconciliations and board reporting; legal applicability stays with Texas professionals |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
 | `/industries/construction` | B | — | Added 2026-10-12 — contractor-focused project-cost records, retainage and month-end reporting support with explicit accounting-policy boundaries |
 | `/industries/professional-services` | B | — | Deepened 2026-09-16 — absorbs the law-firm intent; no `/law-firms` URL |
@@ -135,6 +141,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/property-management-cam-reconciliation` | C | Property Management / Commercial Real Estate | Added 2026-10-12 — expense pools, lease-specific allocations, tenant true-ups and review controls |
 | `/blog/hoa-annual-budget-preparation` | C | HOA Accounting | Added 2026-10-13 — annual budget planning from reconciled actuals, contract renewals, reserve information and board review; distinct from budget-to-actual reporting |
 | `/blog/hoa-special-assessment-accounting` | C | HOA Accounting | Added 2026-10-13 — approved one-time/installment assessment tracking from owner billing through receipts, receivables reconciliation, project-cost support and board reporting |
+| `/blog/upwork-vs-accounstone` | C | Outsourcing Decisions | Added 2026-10-14 — balanced comparison of marketplace freelancer hiring and direct accounting outsourcing, with fit criteria and total-cost questions |
 
 ## Resources — Guides
 
@@ -152,6 +159,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | C | CPA Firms | Published |
 | `/resources/guides/client-accounting-services-cas-guide` | C | CPA Firms | Published |
 | `/resources/guides/choosing-an-engagement-model` | C | Solutions | Published 2026-08-21 — fills the comparison gap flagged in the audit |
+| `/resources/guides/how-to-outsource-accounting` | C | Outsourcing Decisions | Added 2026-10-14 — step-by-step scoping, provider evaluation, secure access, onboarding and 30-day transition plan |
 
 ## Resources — Insights & Case Studies
 
