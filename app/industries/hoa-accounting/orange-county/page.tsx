@@ -56,7 +56,7 @@ const serviceSchema = generateServiceSchema({
     'Remote accounting support for Orange County homeowners associations and community association management companies, including assessment ledgers, operating and reserve reconciliations, board reporting and year-end schedules.',
   slug: 'hoa-accounting/orange-county',
   basePath: '/industries/',
-  areaServed: ['Orange County, California'],
+  areaServed: ['California'],
 });
 const faqSchema = generateFAQSchema(faqs);
 const breadcrumbSchema = generateBreadcrumbSchema([
