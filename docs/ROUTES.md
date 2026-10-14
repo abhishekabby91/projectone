@@ -86,6 +86,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
+| `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |
 | `/industries/healthcare/dental-practice-accounting` | B | Healthcare / Dental practice accounting | Added 2026-10-14 — distinct dental-office and dental-group bookkeeping workflow for production/collection reports, deposit tie-outs, lab/supply expense coding and provider/location reporting; excludes billing/claims management and unsupported HIPAA claims |
 | `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Published |
 | `/industries/ecommerce/amazon-seller-accounting` | B | E-Commerce / Amazon seller accounting | Added 2026-10-14 — settlement-to-bank reconciliation, fees/refunds, inventory/COGS and close handoff; distinct from the broader multi-channel e-commerce pillar |
