@@ -4668,3 +4668,13 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Shortened the homepage title to `Accounting, Bookkeeping & Tax | Accounstone` to keep it within the repository's 46-character page-title budget while retaining the three core service terms and brand.
 - Added the existing HOA software, San Diego County HOA, and property-management software pages to `public/llms.txt` and `public/llms-full.txt` so AI-readable references include the newer published pages.
 - Kept all changes on `accounstone-seo-improvements`; no merge to `main`, production deployment, or Search Console submission was performed.
+
+
+## 2026-10-14 — Add Los Angeles County HOA accounting page
+
+- Reviewed local competitor service pages for HOA bookkeeping, reconciliations, board reporting and tax-preparation support. Competitor presence informs page structure but does not prove search volume or likely ranking.
+- Added `/industries/hoa-accounting/los-angeles-county` as a concise, scannable county-specific page, with approximately 800 words, one H1, workflow cards, a numbered handoff sequence, concise FAQs and service/FAQ/breadcrumb schema.
+- Linked the page from the HOA hub, registered its route and distinct search intent, added it to the sitemap and both AI-readable indexes, and removed the duplicate Orange County sitemap/full-index entries.
+- Content standards remain people-first: answer the reader's question directly, use short paragraphs and descriptive headings, and add detail only when it helps a board or manager decide what accounting support they need. No fixed word count is treated as a Google ranking rule.
+- The page states that delivery is remote from India and does not claim a Los Angeles office, on-site management, legal advice or reserve-planning authority. No GSC submission was made.
+- Sitemap dates must be regenerated with `node scripts/generate-sitemap-dates.mjs` during the release checkout; do not hand-edit `lib/sitemap-dates.ts`. Build and link checks remain required before merge/deploy.
