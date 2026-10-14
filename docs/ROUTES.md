@@ -91,6 +91,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
 | `/industries/property-management/california` | B | Property Management / California | Added 2026-10-14 — state-specific remote accounting scope, owner reporting and reconciliations; distinct from AppFolio-specific California page |
 | `/industries/property-management/texas` | B | Property Management / Texas | Added 2026-10-14 — state-specific remote accounting scope, multi-property ledgers and close workflow; distinct from Yardi-specific Texas page |
+| `/industries/property-management/accounting-cleanup` | B | Property Management / Cleanup | Added 2026-10-14 — commercial support page for overdue books, reconciliation backlog, ledger differences and transition to recurring close; distinct from the informational accounting guide |
 | `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
 | `/industries/hoa-accounting/california` | B | California HOA accounting | Added 2026-10-12 — state-specific remote accounting scope, association records and board-reporting context; not a local-office claim |
