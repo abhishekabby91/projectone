@@ -101,6 +101,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/cpa-firms': '2026-10-14',
   '/industries/ecommerce': '2026-10-14',
   '/industries/ecommerce/amazon-seller-accounting': '2026-10-14',
+  '/industries/ecommerce/shopify-accounting': '2026-10-14',
   '/industries/healthcare': '2026-10-12',
   '/industries/hoa-accounting': '2026-10-14',
   '/industries/hoa-accounting/appfolio-accounting-support': '2026-10-13',
