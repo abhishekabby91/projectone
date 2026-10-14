@@ -275,7 +275,7 @@ export default function CPAFirmsPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting firm resources</h2>
           <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">Use these pages to move from the overall outsourcing model into specific workflows and U.S. tax-season capacity questions.</p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/services/bookkeeping/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">U.S. Bookkeeping Support</h3>
               <p className="mt-2 text-sm text-muted">Recurring bookkeeping, reconciliations and close support for U.S. firms.</p>
@@ -287,6 +287,10 @@ export default function CPAFirmsPage() {
             <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">U.S. Market</h3>
               <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>
+            </Link>
+            <Link href="/blog/us-cpa-firm-outsourcing-readiness-checklist" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Outsourcing Readiness Checklist</h3>
+              <p className="mt-2 text-sm text-muted">Review access controls, workpaper handoffs, review ownership and a small pilot before expanding the scope.</p>
             </Link>
           </div>
         </div>
