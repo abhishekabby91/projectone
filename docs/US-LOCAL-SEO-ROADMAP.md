@@ -26,7 +26,7 @@ Expand Accounstone's U.S. organic search coverage from the existing industry and
 
 ### HOA
 - California state service page (first pilot).
-- Research demand and competitive coverage for Southern California / San Diego County, Orange County, Los Angeles County, Bay Area, Sacramento region and Riverside/San Bernardino/Inland Empire.
+- Research demand and competitive coverage for Southern California / San Diego County, Orange County, Los Angeles County, Bay Area, Sacramento region and Riverside/San Bernardino/Inland Empire. Los Angeles County has direct local commercial competitors (HOA Accounting Los Angeles and PMI LA Pacific) and a CAI Greater Los Angeles chapter with 1,100+ members; the membership count is not an HOA count and these signals do not establish search volume. Census housing tables describe housing structure, not association totals. Research reviewed 2026-10-14.
 - Competitor and market evidence (not search-volume proof): APS Management publishes HOA accounting/financial-service pages for San Diego County and Southern California; HOA Accounting Services references a San Diego client. CAI-OC says its 34-city region includes more than 5,000 community associations, its directory lists association-management firms and accounting providers, and local results include HOA accounting/financial-reporting pages. These signals support distinct local intent but do not guarantee rankings.
 - Select no more than the strongest initial county/metro opportunities after checking search results, association-management market context, local competitor pages and whether each page can be materially different.
 
@@ -57,6 +57,17 @@ For each proposed page, record:
 - No fixed target such as 50, 100 or 500 pages. Scale only when each new page earns its place.
 - Keep SEO and AEO workstreams separately documented.
 - No GSC work until explicitly requested. No merge to main or production deployment unless explicitly authorized.
+
+## Content length and scanability standard
+
+- Target roughly 700–1,100 useful words for a county-level commercial page when research supports that depth. This is a working editorial range, not a ranking rule; shorter pages are acceptable when the intent is narrow, and no word count should be padded.
+- Put the answer and service scope near the top. Use one clear H1, descriptive H2s, and H3s only where they help users scan.
+- Prefer 2–4 sentence paragraphs, generally 25–55 words. Split paragraphs when they contain two separate ideas; avoid walls of text and repeated keyword variations.
+- Use bullets for deliverables, checks, boundaries and steps. Use 4–6 short workflow cards where the items are genuinely distinct; keep card descriptions to one or two sentences.
+- Use a short numbered process for sequences, a compact FAQ for real buyer questions, and descriptive internal-link labels. Do not create a long keyword-only link list.
+- Each paragraph should earn its place: answer a buyer question, explain a concrete workflow, ground a local statement in a source, or clarify responsibility. Delete generic filler and unsupported local claims.
+- Keep key content in server-rendered HTML, with semantic headings, ordinary links, descriptive link text, and visible FAQ answers. Schema should match visible content rather than introduce hidden claims.
+- Make the page useful when skimmed on mobile: short lead, lists/cards in small chunks, adequate spacing, and no repeated introductory copy.
 
 ## Definition of done for every location page
 
