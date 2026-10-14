@@ -4639,3 +4639,9 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Documented the HOA AppFolio and HOA Buildium pages and the property-management DoorLoop page as separate software/workflow intents.
 - Kept software-specific service pages distinct from the existing general HOA/property-management hubs, how-to articles, and the San Diego County geographic page.
 - Confirmed the latest successful preview build included the San Diego County, HOA AppFolio, HOA Buildium, property-management AppFolio California, property-management Buildium, and DoorLoop routes. The build is a preview only; no merge to `main`, GSC submission, or production deployment was performed.
+
+## 2026-10-14 — Homepage metadata and AI-readable industry index
+
+- Shortened the homepage title to `Accounting, Bookkeeping & Tax | Accounstone` to keep it within the repository's 46-character page-title budget while retaining the three core service terms and brand.
+- Added the existing HOA software, San Diego County HOA, and property-management software pages to `public/llms.txt` and `public/llms-full.txt` so AI-readable references include the newer published pages.
+- Kept all changes on `accounstone-seo-improvements`; no merge to `main`, production deployment, or Search Console submission was performed.
