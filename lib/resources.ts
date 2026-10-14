@@ -47,6 +47,13 @@ export const guides: ResourceItem[] = [
     featured: true,
   },
   {
+    title: 'How to Outsource Accounting: A Step-by-Step Guide',
+    href: '/resources/guides/how-to-outsource-accounting',
+    description: 'A practical process for scoping tasks, choosing a provider, setting secure access, defining review checkpoints and transitioning into a steady monthly workflow.',
+    topics: ['Accounting', 'Engagement models'],
+    isNew: true,
+  },
+  {
     title: 'Staff Augmentation vs. Dedicated Team vs. Offshore Support vs. Back Office: How to Choose',
     href: '/resources/guides/choosing-an-engagement-model',
     description: 'What actually separates the four engagement models, a comparison table, and a decision framework for matching the model to your situation.',
