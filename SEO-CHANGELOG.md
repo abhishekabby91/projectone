@@ -1,3 +1,10 @@
+## 2026-10-14 — Add dental practice accounting as a distinct healthcare sub-intent
+
+- Competitor research across dental accounting providers and dental-group accounting pages showed workflow-specific coverage around production versus collections, insurance adjustments, processor/bank deposit tie-outs, lab and supply costs, and provider/location reporting. This supports investigating a distinct dental buyer intent; it does not establish search volume or ranking outcomes.
+- Added `/industries/healthcare/dental-practice-accounting` using the existing industry page template and dedicated dental workflow depth. Scope is limited to bookkeeping from client-provided financial reports and approved mappings; claims submission, clinical coding, denial management, patient collections and unverified HIPAA/compliance claims are explicitly excluded.
+- Linked the new page from the healthcare hub and linked back to the hub from the new page. Registered the URL in the sitemap, route registry, search-intent registry and AI-readable indexes.
+- Sitemap last-modified dates are generated only by `node scripts/generate-sitemap-dates.mjs`; do not hand-edit `lib/sitemap-dates.ts`. Build/rendered-page validation remains unconfirmed while Vercel deployment validation is blocked by the rate limit. No merge or production deployment was performed.
+
 ## 2026-10-14 — Require distinct client, query and link paths for every industry page
 
 - Added an industry-specific audience/query/link contract to `AI-WEBSITE-GUIDE.md`: every page must identify its buyer, researched query intent, distinct workflow, overlap check, contextual internal-link path and audience-appropriate next step.
