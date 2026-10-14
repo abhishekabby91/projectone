@@ -139,7 +139,7 @@ export default function OrangeCountyHoaAccountingPage() {
               Accounstone can support the recurring accounting work behind that reporting: ledger maintenance, reconciliations, invoice documentation, budget comparisons and year-end schedules. We work to the records and approval workflow agreed with the client; the association and its authorized manager retain decisions and sign-off.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              <a href="https://www.caioc.org/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">CAI Orange County chapter</a>
+              <a href="https://shopcaioc.org/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">CAI Orange County chapter</a>
               <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=5500." target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">California Civil Code §5500</a>
             </div>
           </Reveal>
