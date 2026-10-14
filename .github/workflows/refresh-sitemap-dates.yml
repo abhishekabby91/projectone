@@ -3,13 +3,15 @@ name: Refresh sitemap last-modified dates
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    # Refresh route dates on feature branches as well as main, so a batch can be validated before merge.
     paths:
       - 'app/**/page.tsx'
       - 'app/sitemap.ts'
       - 'components/**'
       - 'lib/**'
       - 'scripts/generate-sitemap-dates.mjs'
+      - 'SEO-CHANGELOG.md'
+      - 'docs/**'
 
 permissions:
   contents: write
