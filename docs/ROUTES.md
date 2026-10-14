@@ -92,6 +92,8 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
 | `/industries/hoa-accounting/california` | B | California HOA accounting | Added 2026-10-12 — state-specific remote accounting scope, association records and board-reporting context; not a local-office claim |
+| `/industries/hoa-accounting/san-diego-county` | B | California HOA accounting / San Diego County | Published 2026-10-13 — county-specific assessment ledgers, reconciliations, board reporting and CPA handover |
+| `/industries/hoa-accounting/orange-county` | B | California HOA accounting / Orange County | Added 2026-10-14 — local association context, California monthly financial-review references and remote accounting scope |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | B | — | Published |
 | `/industries/construction` | B | — | Added 2026-10-12 — contractor-focused project-cost records, retainage and month-end reporting support with explicit accounting-policy boundaries |
 | `/industries/professional-services` | B | — | Deepened 2026-09-16 — absorbs the law-firm intent; no `/law-firms` URL |
