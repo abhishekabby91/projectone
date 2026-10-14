@@ -1,3 +1,9 @@
+## 2026-10-14 — Isolate 404 social metadata
+
+- Preview validation confirmed the custom 404 returned HTTP 404, emitted `noindex, follow`, and no longer emitted a canonical URL.
+- The 404 still inherited homepage Open Graph URL/title/description and Twitter title/description/image from the root layout. Added 404-specific Open Graph and Twitter metadata and intentionally omitted canonical/share URL and image fields so a missing route is not represented as the homepage in social previews.
+- The updated source must be checked in a fresh preview for build success and emitted metadata. No merge to `main`, production deployment, or Search Console submission.
+
 ## 2026-10-14 — Missing-route SEO metadata
 
 - Preview testing found that an unknown URL returned HTTP 404 but inherited the root layout's homepage canonical and indexable robots metadata.
