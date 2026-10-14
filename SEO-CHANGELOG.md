@@ -1,3 +1,10 @@
+## 2026-10-14 — Add Yardi HOA accounting support within the HOA-first plan
+
+- Continued the target-wise order: HOA/community associations first, then property management. No additional unrelated industry pages were added in this pass.
+- Competitor/product research reviewed Yardi’s official HOA/condo pages for Voyager and Breeze, plus industry comparisons. Added `/industries/hoa-accounting/yardi-accounting-support` for the distinct workflow intent of accounting preparation and reconciliation support for associations already using Yardi.
+- Linked the page from the HOA hub and updated sitemap, route/search-intent registries and AI-readable indexes. The page does not claim Yardi partnership, certification, implementation, configuration or technical support.
+- Build/preview validation remains unconfirmed because Vercel deployment validation is blocked by the deployment-rate limit. Do not merge or deploy production until build/type/lint, route, link, metadata, schema and mobile/desktop checks pass.
+
 ## 2026-10-14 — Add Texas HOA accounting as the next target-state page
 
 - Continued the agreed industry-target-first sequence: HOA/community associations and property management remain ahead of unrelated industries.
