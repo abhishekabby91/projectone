@@ -1,3 +1,26 @@
+## 2026-10-14 — Isolate 404 social metadata
+
+- Added 404-specific Open Graph and Twitter card metadata using the Accounstone brand; no `twitter:site`, `twitter:creator`, Twitter image, `og:url`, or canonical URL is emitted for a missing route.
+- Verified the latest branch-head Vercel preview is READY. Runtime check returned HTTP 404 and confirmed the title `Page Not Found | Accounstone`, `og:site_name=Accounstone`, the 404-specific Twitter title, `noindex, follow`, and no canonical, `og:url`, profile handle, or Twitter image.
+- Preview checks for the prior code commit also confirmed the sitemap, robots file, AI-readable indexes, and seven targeted HOA/property-management pages were reachable and had expected canonical/indexing metadata. These checks are preview validation, not a claim about post-deployment production behavior.
+
+## 2026-10-14 — Missing-route SEO metadata
+
+- Preview testing found that an unknown URL returned HTTP 404 but inherited the root layout's homepage canonical and indexable robots metadata.
+- Updated `app/not-found.tsx` with a specific Page Not Found title/description, `noindex, follow` directives, and an explicit null canonical to prevent the root layout's homepage canonical from being inherited.
+- The change is isolated to the custom 404 page. Verify the emitted metadata and production build in the new preview before approving merge.
+- No merge to `main`, production deployment, or Search Console submission was performed.
+
+## 2026-10-14 — Preview runtime validation and build cleanup
+
+- Removed two unused imports from `app/delivery-framework/communication/page.tsx`; no page behavior was changed.
+- The preview build for commit `aab4c474f7563047b5af02a84647ade1075e3744` completed successfully. Vercel reported successful compilation and generated all 186 static pages.
+- Runtime HTTP checks on the preview returned 200 for `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/llms-full.txt`, the homepage, and all seven listed HOA/property-management pages.
+- All seven pages returned self-referencing canonical URLs and index/follow robots metadata. The seven routes appeared in the rendered sitemap and both AI-readable indexes. The rendered robots file includes the sitemap URL, permits public crawling, and excludes only the configured private/admin/API paths for the named groups.
+- Each of the seven pages links to its relevant industry hub and the contact/inquiry path; cross-links between related software pages were also found.
+- No Vercel runtime error clusters were reported in the selected 24-hour window. No matching error/fatal runtime log entries were returned for the preview in the latest 30-minute window.
+- This was a preview-only validation. No merge to `main`, production deployment, or Search Console submission was performed.
+
 ## 2026-10-14 — Add eUnify HOA accounting support\n\n- Competitor and platform research: eUnify's official site describes an HOA/community-association platform with finance, payments and full HOA accounting workflows; its public materials make the platform's accounting role clear, while Accounstone's proposed page addresses the separate need for remote accounting workflow execution and review.\n- Added `/industries/hoa-accounting/eunify-accounting-support` for teams already using eUnify, covering assessment-ledger review, reconciliation preparation, payable documentation, month-end handoffs and board-reporting support.\n- Added FAQ, Service and Breadcrumb schema, a canonical metadata path, related links to existing eUnify guides, an HOA-hub link, sitemap inclusion and a registered commercial software-specific intent.\n- The page explicitly avoids claiming eUnify partnership/certification, product implementation, vendor technical support, a US office or on-site community management.\n- Research references: https://eunify.net/ ; https://www.capterra.com/p/137049/eUnify/ . These sources establish product context, not search volume or ranking forecasts.\n\n## 2026-10-13 — AppFolio HOA accounting support
 
 - Reviewed AppFolio's official community-association financials page for the platform's emphasis on board transparency, banking integrations, approvals, payables and association/corporate accounting.
@@ -4639,3 +4662,9 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Documented the HOA AppFolio and HOA Buildium pages and the property-management DoorLoop page as separate software/workflow intents.
 - Kept software-specific service pages distinct from the existing general HOA/property-management hubs, how-to articles, and the San Diego County geographic page.
 - Confirmed the latest successful preview build included the San Diego County, HOA AppFolio, HOA Buildium, property-management AppFolio California, property-management Buildium, and DoorLoop routes. The build is a preview only; no merge to `main`, GSC submission, or production deployment was performed.
+
+## 2026-10-14 — Homepage metadata and AI-readable industry index
+
+- Shortened the homepage title to `Accounting, Bookkeeping & Tax | Accounstone` to keep it within the repository's 46-character page-title budget while retaining the three core service terms and brand.
+- Added the existing HOA software, San Diego County HOA, and property-management software pages to `public/llms.txt` and `public/llms-full.txt` so AI-readable references include the newer published pages.
+- Kept all changes on `accounstone-seo-improvements`; no merge to `main`, production deployment, or Search Console submission was performed.
