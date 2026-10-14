@@ -18,6 +18,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  { href: '/blog/upwork-vs-accounstone', title: 'Upwork vs. Accounstone: Freelancer Marketplace or Outsourcing Partner?', description: 'A fair comparison of sourcing one freelancer through a marketplace versus engaging a direct accounting outsourcing provider for recurring work.', tag: 'Outsourcing Decisions', readTime: '8 min read' },
   { href: '/blog/property-management-accounting', title: 'Property Management Accounting: What Should Be Tracked?', description: 'A practical guide to property-level income, expenses, owner reporting, tenant balances, deposits and monthly close.', tag: 'Property Management', readTime: '8 min read' },
   { href: '/blog/property-management-cam-reconciliation', title: 'CAM Reconciliation: A Practical Guide for Property Managers', description: 'How to tie expense pools to the ledger, apply approved tenant allocation rules and review estimate-to-actual true-ups.', tag: 'Commercial Property Management', readTime: '7 min read' },
   { href: '/blog/property-management-bookkeeping-vs-accounting', title: 'Property Management Bookkeeping vs. Accounting: What’s the Difference?', description: 'How transaction processing, reconciliation, review and owner reporting fit together.', tag: 'Property Management', readTime: '7 min read' },
