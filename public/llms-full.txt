@@ -113,6 +113,10 @@ Amazon seller accounting support can include settlement-to-bank reconciliation, 
 
 Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
 
+Shopify accounting support can include payout-to-bank reconciliation, separate fee/refund classification, payment-gateway tie-outs, agreed inventory/COGS schedules and month-end close handoff. Tax advice, nexus conclusions, tax filing and software implementation remain with the client’s qualified adviser or provider.
+
+Shopify accounting and payout reconciliation: https://www.accounstone.com/industries/ecommerce/shopify-accounting
+
 ### Healthcare
 
 Accounting and bookkeeping support for healthcare-related businesses within defined client workflows.
@@ -200,6 +204,7 @@ Additional HOA and property-management pages:
 - Property management accounting support for Buildium: https://www.accounstone.com/industries/property-management/buildium-accounting-support
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
 - Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
+- Shopify accounting and payout reconciliation: https://www.accounstone.com/industries/ecommerce/shopify-accounting
 
 HOA special assessment accounting workflow:
 https://www.accounstone.com/blog/hoa-special-assessment-accounting
