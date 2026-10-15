@@ -1,3 +1,9 @@
+## 2026-10-15 — Property management utility billback and RUBS reconciliation guide
+
+- Added `/blog/property-management-utility-billback-reconciliation` after competitor review found distinct operational coverage around master-meter invoices, ratio utility allocation, vacancy treatment and tenant-level charge reconciliation.
+- The guide connects the source invoice to the allocation base, formula inputs, resident-ledger postings and accounting presentation. It explicitly leaves lease eligibility and jurisdiction-specific billing rules to the client and qualified advisers.
+- Added links from the blog index and property-management hub; registered the route, search intent, content entry, sitemap and AI-readable references. Generated sitemap dates and build validation remain pending; no merge to `main` or production deployment.
+
 ## 2026-10-15 — Property management accruals and prepaid expenses guide
 
 - Added `/blog/property-management-accrued-expenses` after competitor research found specific property-management coverage for accrued costs, prepaid balances and month-end expense timing.
