@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting in QuickBooks: Practical Setup and Review',
+  title: 'HOA Accounting in QuickBooks',
   description: 'How HOA accounting can be organized in QuickBooks, including assessments, homeowner receivables, operating and reserve funds, AP and reconciliations.',
   path: '/blog/hoa-accounting-quickbooks',
 });

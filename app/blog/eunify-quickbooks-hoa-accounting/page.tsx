@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'eUnify and QuickBooks for HOA Accounting: What to Reconcile',
+  title: 'eUnify + QuickBooks for HOA Accounting',
   description: 'How to think about the eUnify and QuickBooks workflow for HOA accounting, including system ownership, homeowner data, transactions and reconciliations.',
   path: '/blog/eunify-quickbooks-hoa-accounting',
 });

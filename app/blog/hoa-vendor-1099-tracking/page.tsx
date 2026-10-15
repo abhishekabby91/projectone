@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Vendor 1099 Tracking: What Should Be Recorded?',
+  title: 'HOA Vendor 1099 Tracking',
   description: 'A practical guide to HOA vendor 1099 tracking, including vendor records, payments, W-9 information and year-end review.',
   path: '/blog/hoa-vendor-1099-tracking',
 });

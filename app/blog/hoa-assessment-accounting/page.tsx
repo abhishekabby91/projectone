@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Assessment Accounting and Homeowner Ledgers',
+  title: 'HOA Assessment Accounting',
   description: 'How HOA assessment accounting works, from scheduled charges and homeowner payments to credits, unapplied cash and delinquency reporting.',
   path: '/blog/hoa-assessment-accounting',
 });

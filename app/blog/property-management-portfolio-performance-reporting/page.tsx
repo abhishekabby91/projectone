@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Portfolio Performance Reporting',
+  title: 'Property Portfolio Performance Reports',
   description: 'Build consistent property management portfolio reports with comparable KPIs, normalized metrics, exception reviews and reliable property-level financial data.',
   path: '/blog/property-management-portfolio-performance-reporting',
 });
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'Can different property types be compared directly?', answer: 'Not always. Residential, commercial, mixed-use and other portfolios may have different lease structures, expense responsibilities and operational drivers. Segment comparable properties and explain differences before drawing conclusions.' },
   { question: 'How often should portfolio performance be reviewed?', answer: 'Monthly review is a common starting point when property-level books and close schedules support it. High-volatility issues may need more frequent monitoring, while benchmarking and strategic reviews may be performed quarterly.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementPortfolioPerformanceReporting() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Portfolio Performance Reporting: KPIs and Review"
       category="Property Management Accounting"
       description="A practical framework for comparing property results, validating metrics and turning portfolio-level exceptions into a documented review plan."
@@ -30,7 +30,6 @@ export default function PropertyManagementPortfolioPerformanceReporting() {
       inquiryTitle="Need Consistent Portfolio Reporting?"
       inquiryLead="Tell us how many properties you report on, which systems hold the accounting data, and what makes monthly portfolio comparisons difficult."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>Property management portfolio performance reporting brings together comparable financial and operational measures across properties. It helps a manager see which properties need attention, whether a trend is improving and where to investigate—provided the underlying records are complete and the metrics are calculated consistently.</p>
       <p>This is not a replacement for property-level financial statements, owner statements, budget-versus-actual analysis or cash forecasts. The portfolio view connects those records through common definitions, comparable periods and a documented exception review.</p>

@@ -17,7 +17,7 @@ const PATH = '/industries/property-management/management-company-accounting';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Company Accounting Support',
   description:
-    'Support management-company books, fee revenue, payroll entries, overhead, intercompany balances, reconciliations and month-end reporting separately from property ledgers.',
+    'Support management-company books, fee revenue, payroll entries, overhead, intercompany balances and month-end reporting, kept apart from property ledgers.',
   path: PATH,
 });
 

@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Income Statement Explained: What Should Boards Review?',
+  title: 'HOA Income Statement Explained',
   description: 'A practical explanation of HOA income statements, assessment income, expenses, budget variances and what board members should review each month.',
   path: '/blog/hoa-income-statement-explained',
 });

@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting Controls Every Board Should Have',
+  title: 'HOA Accounting Controls',
   description: 'Practical HOA accounting controls for bank reconciliations, assessments, vendor payments, reserves, access and monthly financial reporting.',
   path: '/blog/hoa-accounting-controls',
 });

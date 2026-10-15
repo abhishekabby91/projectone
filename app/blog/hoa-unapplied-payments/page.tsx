@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Unapplied HOA Payments: How Should They Be Reviewed?',
+  title: 'Unapplied HOA Payments',
   description: 'Learn what unapplied HOA payments are, why they occur, and how accounting teams can investigate and clear them without distorting homeowner balances.',
   path: '/blog/hoa-unapplied-payments',
 });

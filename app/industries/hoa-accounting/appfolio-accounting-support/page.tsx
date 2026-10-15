@@ -18,7 +18,7 @@ const PATH = '/industries/hoa-accounting/appfolio-accounting-support';
 export const metadata: Metadata = genMeta({
   title: 'AppFolio HOA Accounting Support',
   description:
-    'Remote accounting support for HOAs and community managers using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
+    'Remote accounting support for HOAs using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
   path: PATH,
 });
 
@@ -86,7 +86,7 @@ const workflows = [
 
 export default function AppFolioHoaAccountingSupportPage() {
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -181,6 +181,6 @@ export default function AppFolioHoaAccountingSupportPage() {
         description="Tell us how your HOA uses AppFolio today, which reports are required, and where reconciliations or reporting handoffs need support."
         cta={{ text: 'Discuss your workflow', href: '/contact' }}
       />
-    </>
+    </main>
   );
 }

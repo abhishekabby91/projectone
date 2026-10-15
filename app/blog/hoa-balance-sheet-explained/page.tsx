@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Balance Sheet Explained: What Should Boards Review?',
+  title: 'HOA Balance Sheet Explained',
   description: 'Understand an HOA balance sheet, including cash, receivables, liabilities, operating funds, reserves and common items boards should review.',
   path: '/blog/hoa-balance-sheet-explained',
 });

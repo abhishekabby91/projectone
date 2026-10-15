@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Board Financial Package: What Should Be Included?',
+  title: 'HOA Board Financial Package',
   description: 'What an HOA board financial package should include, from the balance sheet and income statement to budget-to-actual, delinquency and reserve reports.',
   path: '/blog/hoa-board-financial-package',
 });

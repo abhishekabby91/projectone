@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Yardi Accounting Workflow for Property Managers',
+  title: 'Yardi Accounting Workflow',
   description: 'A practical look at Yardi accounting workflows, month-end close, rent posting, reconciliations, owner reporting and the checks that keep property books clean.',
   path: '/blog/yardi-accounting-workflow',
 });

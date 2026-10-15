@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Month-End Close Checklist',
@@ -15,11 +15,11 @@ const faqs = [
   { question: 'When should owner statements be prepared?', answer: 'Prepare owner statements after relevant transactions and reconciliations have been reviewed, and after exceptions affecting the statement are resolved or clearly disclosed under the agreed process.' },
   { question: 'Does this checklist replace trust-accounting or tax advice?', answer: 'No. Trust, escrow and security-deposit rules vary by jurisdiction, and tax treatment depends on the facts. Use this as an accounting workflow guide and confirm legal, regulatory and tax questions with the appropriate licensed professional.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementMonthEndCloseChecklist() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Month-End Close Checklist: From Transactions to Owner Reports"
       category="Property Management Accounting"
       description="A repeatable close turns property-level transactions into reconciled records, reviewed exceptions and owner-ready reporting."
@@ -29,7 +29,6 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       inquiryTitle="Need Support With Property Month-End Close?"
       inquiryLead="Tell us which property systems you use, how many separate property or owner ledgers are involved, and which close tasks are taking the most time."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>A property management month-end close should do more than produce a profit-and-loss report. It should connect the period's transactions to bank activity, tenant balances, owner and property records, vendor obligations, deposit liabilities and the reports sent to owners.</p>
       <p>The exact sequence varies by portfolio and software. The goal is consistent: identify the period being closed, reconcile the records, resolve material exceptions, document review and issue reports only when their underlying figures are ready.</p>
 

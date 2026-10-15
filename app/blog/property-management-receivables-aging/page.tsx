@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Receivables Aging Reconciliation',
+  title: 'Property Receivables Aging Review',
   description: 'Reconcile property management receivables aging to tenant ledgers and the general ledger, investigate credits and exceptions, and improve month-end reporting.',
   path: '/blog/property-management-receivables-aging',
 });
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'Should former tenants be included in aging review?', answer: 'Include balances within the reporting scope even when the tenant has moved out, where the system and policy retain those receivables. Review former-tenant balances separately when useful so they are not silently omitted by active-tenant filters.' },
   { question: 'Does an accounting team decide how to collect overdue rent?', answer: 'Accounting should maintain accurate records, identify exceptions and provide reliable aging information. Notices, payment plans, legal escalation and other collection decisions should follow the management agreement, applicable requirements and authorized decision-makers.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementReceivablesAging() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Receivables Aging: Reconciliation and Review"
       category="Property Management Accounting"
       description="A practical accounting workflow for validating overdue balances, reconciling control accounts and documenting receivables exceptions."
@@ -30,7 +30,6 @@ export default function PropertyManagementReceivablesAging() {
       inquiryTitle="Need Help With Receivables Reconciliation?"
       inquiryLead="Tell us how tenant balances are reviewed today, which property management or accounting system you use, and where aging differences remain unresolved."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>A property management receivables aging report shows charges that remain unpaid and how long they have been outstanding. It can support collection visibility, but it is also an accounting control: the detail should be complete, correctly dated, linked to the right tenant or property, and reconcilable to the receivables balance in the general ledger.</p>
       <p>This guide focuses on the accounting review of aging reports—not tenant communication scripts or legal collection advice. Collection policies, lease terms, payment plans and escalation decisions should be handled by authorized personnel under applicable agreements and requirements.</p>

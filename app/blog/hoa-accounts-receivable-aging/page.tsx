@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounts Receivable Aging: What Should Boards Review?',
+  title: 'HOA Accounts Receivable Aging',
   description: 'Understand HOA accounts receivable aging, overdue assessments, homeowner balances and the accounting checks that make an aging report useful.',
   path: '/blog/hoa-accounts-receivable-aging',
 });

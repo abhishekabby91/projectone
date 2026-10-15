@@ -18,7 +18,7 @@ const PATH = '/industries/hoa-accounting/yardi-accounting-support';
 export const metadata: Metadata = genMeta({
   title: 'Yardi HOA Accounting Support',
   description:
-    'Remote accounting support for HOAs and community managers using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, payable tracking, reserve schedules and board reporting.',
+    'Remote accounting support for HOAs using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, reserve schedules and board reporting.',
   path: PATH,
 });
 
@@ -86,7 +86,7 @@ const workflows = [
 
 export default function YardiHoaAccountingSupportPage() {
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -181,6 +181,6 @@ export default function YardiHoaAccountingSupportPage() {
         description="Tell us how your HOA uses Yardi today, which reports are required, and where reconciliations or reporting handoffs need support."
         cta={{ text: 'Discuss your workflow', href: '/contact' }}
       />
-    </>
+    </main>
   );
 }

@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'CAM Reconciliation: A Practical Accounting Guide',
+  title: 'CAM Reconciliation Guide',
   description: 'A practical CAM reconciliation workflow for commercial property managers: expense pools, lease rules, tenant allocations, true-ups and review controls.',
   path: '/blog/property-management-cam-reconciliation',
 });

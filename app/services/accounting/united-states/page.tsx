@@ -16,7 +16,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounting/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourced Accounting Services for U.S. Businesses',
+  title: 'U.S. Outsourced Accounting Services',
   description: 'U.S. accounting operations — GAAP reconciliations, month-end close, journal entries and management reporting your CPA can review rather than rebuild.',
   path: PATH,
 });
@@ -153,7 +153,7 @@ export default function AccountingUSPage() {
           <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official reference for business records</h2>
           <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">Reliable accounting starts with records that support income, expenses and account balances. The IRS outlines the business records taxpayers generally need to keep for federal tax purposes.</p>
           <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
-            <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS guidance on business recordkeeping</a></li>
+            <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" target="_blank" rel="noopener noreferrer" className="inline-block py-1.5 font-medium text-primary underline underline-offset-4 hover:text-accent">IRS guidance on business recordkeeping</a></li>
           </ul>
         </div>
       </section>

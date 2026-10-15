@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/california';
 
 export const metadata: Metadata = genMeta({
   title: 'California Property Management Accounting',
-  description: 'Outsourced accounting support for California property managers: property-level books, tenant ledgers, deposit schedules, reconciliations, owner statements and month-end reporting.',
+  description: 'Outsourced accounting for California property managers: property-level books, tenant ledgers, deposit schedules, owner statements and month-end close.',
   path: PATH,
 });
 

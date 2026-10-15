@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounts Payable Workflow',
@@ -32,11 +32,11 @@ const faqs = [
       'Consistent vendor onboarding, tax-document status tracking, payment coding and year-to-date review can make year-end preparation more orderly. The responsible tax reviewer should determine reporting treatment and filing requirements.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementAccountsPayable() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Accounts Payable: Invoice Coding and Approval Workflow"
       category="Property Management Accounting"
       description="A reliable accounts payable process connects each invoice to the right vendor, property, approval, payment and month-end record."
@@ -46,7 +46,6 @@ export default function PropertyManagementAccountsPayable() {
       inquiryTitle="Need a Clearer Property Invoice Workflow?"
       inquiryLead="Tell us how invoices are received, coded, approved and reconciled today, including which property-management or accounting system you use."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Property management accounts payable is more than entering vendor bills. An invoice may belong to a particular property, owner, work order, project, period or management-company expense. If that context is missing, the payment can be correct while the property report is wrong.</p>
       <p>This workflow is designed for the accounting records and handoffs around vendor bills. The property manager or authorized client retains contractual decisions, spending approval and payment authority according to its own controls.</p>
 

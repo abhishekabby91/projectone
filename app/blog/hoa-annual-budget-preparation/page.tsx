@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Annual Budget Preparation: A Practical Workflow',
+  title: 'HOA Annual Budget Preparation',
   description: 'A practical HOA annual budget preparation workflow using reconciled actuals, vendor contracts, insurance renewals, reserve plans and board review.',
   path: '/blog/hoa-annual-budget-preparation',
 });

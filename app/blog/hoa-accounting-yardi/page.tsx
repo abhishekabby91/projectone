@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting with Yardi: A Practical Monthly Workflow',
+  title: 'HOA Accounting with Yardi',
   description: 'A practical HOA accounting workflow for Yardi users, covering homeowner activity, reconciliations, AP, reserves and board reporting.',
   path: '/blog/hoa-accounting-yardi',
 });

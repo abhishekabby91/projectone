@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Chart of Accounts: How Should It Be Set Up?',
+  title: 'Property Management Chart of Accounts',
   description: 'A practical property management chart of accounts guide covering property income, expenses, owner activity, tenant balances, deposits and management fees.',
   path: '/blog/property-management-chart-of-accounts',
 });

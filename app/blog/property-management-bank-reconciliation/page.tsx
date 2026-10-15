@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Bank Reconciliation: A Practical Guide',
+  title: 'Property Bank Reconciliation Guide',
   description: 'A practical property management bank reconciliation process covering tenant receipts, vendor payments, owner distributions, deposits and outstanding items.',
   path: '/blog/property-management-bank-reconciliation',
 });

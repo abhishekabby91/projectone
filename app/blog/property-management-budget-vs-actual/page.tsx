@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Budget vs. Actual Reporting',
+  title: 'Property Budget vs. Actual Reporting',
   description:
     'Build property management budget-vs-actual reports with consistent account mapping, variance explanations, forecasts and review controls.',
   path: '/blog/property-management-budget-vs-actual',
@@ -32,11 +32,11 @@ const faqs = [
       'No. Variance analysis is only as reliable as the underlying records. Complete relevant posting and reconciliations, review the reporting period, and document unresolved exceptions before relying on the comparison.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementBudgetVsActual() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Budget vs. Actual Reporting: A Practical Review Workflow"
       category="Property Management Accounting"
       description="Turn budget differences into clear, evidence-based explanations and practical actions for property-level and portfolio reporting."
@@ -46,7 +46,6 @@ export default function PropertyManagementBudgetVsActual() {
       inquiryTitle="Need Help With Property Budget Reporting?"
       inquiryLead="Tell us how budgets are maintained, which property or accounting system you use, and how actual results and variance explanations are reviewed today."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>A property management budget vs. actual report compares the plan with the financial activity recorded for a property, owner group or portfolio. The useful part is not simply highlighting a difference; it is identifying why the difference occurred, whether the underlying records are complete, and whether a decision or forecast update is needed.</p>
       <p>Use this workflow after the relevant period's transactions have been posted and reviewed. It complements the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">property management month-end close checklist</Link>; it does not replace reconciliations or approval controls.</p>
 

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Accounting: What Boards Should Track',
+  title: 'HOA Reserve Accounting',
   description: 'A practical guide to HOA reserve accounting, including contributions, transfers, reserve expenses, reconciliations and board reporting.',
   path: '/blog/hoa-reserve-accounting',
 });
@@ -27,13 +27,11 @@ const faqs = [
     "answer": "A useful report normally shows reserve cash, contributions, reserve-funded spending, budget-to-actual activity where applicable and the reconciliation behind the reported balances."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaReserveAccounting() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Reserve Accounting: What Should Boards Track?"
       category="HOA Accounting"
       description="Reserve accounting should let an HOA see what has been contributed, what has been spent and how reserve activity is reflected in the financial records."
@@ -94,6 +92,5 @@ export default function HoaReserveAccounting() {
       <h2>Related HOA Resources</h2>
       <p>For the annual planning cycle, see the <Link href="/blog/hoa-annual-budget-preparation">HOA annual budget preparation workflow</Link>. Continue with <a href="/blog/hoa-operating-vs-reserve-funds">HOA operating funds vs. reserve funds</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a>, and <a href="/blog/hoa-financial-statements-board-review">financial statements for board review</a>.</p>
       </ArticleLayout>
-    </>
   );
 }

@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Financial Reporting for Board Meetings',
+  title: 'HOA Reserve Financial Reporting',
   description: 'What HOA reserve financial reports should show, including contributions, spending, cash balances, budget-to-actual and project activity.',
   path: '/blog/hoa-reserve-financial-reporting',
 });
@@ -26,13 +26,10 @@ const faqs = [
     "answer": "Accounting can report current balances and activity, but reserve adequacy is a governance and planning question. The association should rely on its reserve study and qualified advisers for that decision."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaReserveFinancialReporting() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
+    <ArticleLayout faqs={faqs} title="HOA Reserve Financial Reporting: What Should Boards See?" category="HOA Accounting"
       description="A useful reserve report should show contributions, spending and cash clearly enough for the board to understand reserve activity without rebuilding it from bank statements."
       publishedDate="2026-10-08" section="blog" slug="hoa-reserve-financial-reporting"
       inquiryTitle="Need Clearer HOA Reserve Reports?"
@@ -61,6 +58,5 @@ export default function HoaReserveFinancialReporting() {
       <h2>Related HOA Resources</h2>
       <p>For broader context, see <a href="/industries/hoa-accounting">HOA and community association accounting</a>. You can also review <a href="/blog/hoa-reserve-reconciliation">HOA reserve reconciliation</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, and <a href="/blog/hoa-financial-statements-board-review">HOA financial statements for board review</a>.</p>
       </ArticleLayout>
-    </>
   );
 }

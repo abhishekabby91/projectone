@@ -37,7 +37,7 @@ const depth = industryDepth['real-estate'];
 // reader who OWNS the property — investors, developers, commercial operators —
 // whose reader in turn is a lender, a partner or their own CPA.
 export const metadata: Metadata = genMeta({
-  title: 'Real Estate Accounting & Bookkeeping Outsourcing',
+  title: 'Real Estate Accounting Outsourcing',
   description:
     'Outsourced real estate accounting and bookkeeping for owners, investors and developers: property and entity books, lender reporting, AP/AR and close.',
   path: PATH,
@@ -524,7 +524,7 @@ export default function RealEstateIndustryPage() {
           <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official reference for rental property records</h2>
           <p className="max-w-4xl text-sm leading-relaxed text-muted md:text-base">For U.S. rental real estate, the IRS explains how rental income, expenses and supporting records are treated for federal tax purposes. The accounting workflow still depends on the ownership structure and engagement scope.</p>
           <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed md:text-base">
-            <li><a href="https://www.irs.gov/forms-pubs/about-publication-527" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline underline-offset-4 hover:text-accent">IRS Publication 527: Residential Rental Property</a></li>
+            <li><a href="https://www.irs.gov/forms-pubs/about-publication-527" target="_blank" rel="noopener noreferrer" className="inline-block py-1.5 font-medium text-primary underline underline-offset-4 hover:text-accent">IRS Publication 527: Residential Rental Property</a></li>
           </ul>
         </div>
       </section>
