@@ -92,6 +92,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/blog/property-management-bookkeeping-cleanup` | C | Property Management | Added 2026-10-15 — cleanup/catch-up checklist for overdue property books, reconciliations, exception logs and return to monthly close |
 | `/blog/property-management-accrued-expenses` | C | Property Management | Added 2026-10-15 — period-end accrual and prepaid schedule workflow, allocation checks, reversal/clearing controls and ledger reconciliation |
 | `/blog/property-management-utility-billback-reconciliation` | C | Property Management | Added 2026-10-15 — master utility bill to allocation formula, tenant charges, vacancy/credit and ledger tie-out workflow; no legal eligibility determinations |
+| `/blog/property-management-management-fee-reconciliation` | C | Property Management | Added 2026-10-15 — reconcile management-fee calculation, owner ledger, approved transfer, company revenue and operating-bank receipt without duplicate revenue |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
 | `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
