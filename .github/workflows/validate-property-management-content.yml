@@ -36,7 +36,7 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-workspace
 
       - name: Regenerate sitemap dates from Git history
         run: node scripts/generate-sitemap-dates.mjs
