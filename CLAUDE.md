@@ -15,6 +15,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | File | What it governs |
 |---|---|
 | `AI-WEBSITE-GUIDE.md` | Tone, content rules, architecture, banned phrases, **"Known build gotchas"**. The single most important file. |
+| `docs/PAGE-FORMAT.md` | **The shape contract for every new page** — word floors by page type, metadata budgets, band order, FAQ rules, and the finish checklist. Enforced by `node scripts/verify-pages.mjs`. Read before writing a page; run the checker before merging. |
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
 | `docs/SEARCH-INTENTS.md` | One search intent → one URL. Check before creating a page. |
 | `docs/ROUTES.md` | Route inventory + the sitemap drift check (below). |
@@ -640,6 +641,13 @@ claim does.** "Dedicated account manager", "weekly updates", "24-hour response",
 things a client will expect on day one.
 
 ### Adding a route
+
+**`docs/PAGE-FORMAT.md` is the full contract, and `node scripts/verify-pages.mjs`
+enforces it.** Run the checker against a production build before merging any new
+page — it catches the shape defects that a page-by-page read never does. The
+October 2026 audit found 54 truncating titles, 108 pages missing from
+`llms.txt`, 20 pages emitting FAQ schema no reader could see and 3 with no
+`<main>`, every one of them a rule already written down and checked by nobody.
 
 `lib/data.ts` entries do **not** create pages. `app/sitemap.ts` and the navbar generate URLs
 from those arrays, so adding an entry without the matching `page.tsx` produces dead links —

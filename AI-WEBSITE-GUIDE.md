@@ -6,6 +6,24 @@ Accounstone is an accounting operations and support company serving CPA firms an
 
 The site is **not** a generic low-cost outsourcing catalogue and should not be written like one.
 
+### Before you build a page
+
+This file governs **what a page says** — tone, claims, positioning, banned
+phrases. The page's **shape** is governed by `docs/PAGE-FORMAT.md`: word floors
+by page type, the 46-character title budget, the 110–160 description budget,
+band order, heading rules, FAQ markup and the finish checklist.
+
+Both apply to every new page, including pages added by another AI assistant.
+Shape is machine-checked:
+
+```bash
+pnpm next build && pnpm next start -p 3100 &
+node scripts/verify-pages.mjs /your/new/route
+```
+
+Run it against a **production** build, never `next dev`. It must pass before a
+page is merged.
+
 ## Core positioning
 
 Accounstone communicates:
