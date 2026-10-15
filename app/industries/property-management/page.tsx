@@ -463,6 +463,7 @@ export default function PropertyManagementPage() {
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Lender reporting package checklist', href: '/blog/property-management-lender-reporting' },
+              { name: 'Bookkeeping cleanup and catch-up checklist', href: '/blog/property-management-bookkeeping-cleanup' },
               { name: 'Property financial statements and reporting package', href: '/blog/property-management-financial-statements' },
               { name: 'Portfolio performance reporting and KPIs', href: '/blog/property-management-portfolio-performance-reporting' },
               { name: 'Owner distribution accounting workflow', href: '/blog/property-management-owner-distributions' },
