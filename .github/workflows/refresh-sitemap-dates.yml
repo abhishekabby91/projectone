@@ -3,13 +3,14 @@ name: Refresh sitemap last-modified dates
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, accounstone-seo-improvements]
     paths:
       - 'app/**/page.tsx'
       - 'app/sitemap.ts'
       - 'components/**'
       - 'lib/**'
       - 'scripts/generate-sitemap-dates.mjs'
+      - '.github/workflows/refresh-sitemap-dates.yml'
 
 permissions:
   contents: write
