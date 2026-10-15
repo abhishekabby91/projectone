@@ -461,6 +461,7 @@ export default function PropertyManagementPage() {
               { name: 'Property management accounting cleanup and catch-up', href: '/industries/property-management/accounting-cleanup' },
               { name: 'Property management platform-to-GL reconciliation', href: '/industries/property-management/general-ledger-reconciliation' },
               { name: 'Tenant accounting operations support', href: '/industries/property-management/tenant-accounting-operations' },
+              { name: 'Management-company accounting support', href: '/industries/property-management/management-company-accounting' },
               { name: 'AppFolio accounting support in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium accounting and bookkeeping support', href: '/industries/property-management/buildium-accounting-support' },
               { name: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
