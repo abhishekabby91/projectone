@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
+import FAQSection from '@/components/faq-section';
 import ReadingProgress from '@/components/reading-progress';
 import Reveal from '@/components/reveal';
 import ShareButtons from '@/components/share-buttons';
+import { routeLastModified } from '@/lib/sitemap-dates';
 import {
   generateArticleSchema,
+  generateFAQSchema,
   generateBreadcrumbSchema,
   baseUrl,
 } from '@/lib/seo';
@@ -17,6 +20,17 @@ interface ArticleLayoutProps {
   description: string;
   publishedDate: string;
   updatedDate?: string;
+  /**
+   * Explicit Q&A for this article.
+   *
+   * 20 blog pages were building FAQPage schema from a local `faqs` array and
+   * emitting it in their own <script> tag while never rendering the questions
+   * anywhere a reader could see them. Google requires FAQPage content to be
+   * visible on the page, so that markup was both a structured-data violation
+   * and a waste of good copy on pages that were otherwise thin. Passing the
+   * array here renders it AND emits the schema from one place.
+   */
+  faqs?: { question: string; answer: string }[];
   /**
    * Which hub the article belongs to. `blog` exists because the six posts under
    * /blog were previously forced through the /resources/{section}/ shape by
@@ -43,6 +57,19 @@ type TocItem = {
   level: 2 | 3;
 };
 
+function formatPublishedDate(value: string, locale: string) {
+  // Keep the machine-readable date (and Article schema) as YYYY-MM-DD, but
+  // display the date in the audience's regional convention.
+  const parsed = new Date(`${value}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return value;
+  return new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
+}
+
 function slugifyHeading(value: string) {
   return value
     .toLowerCase()
@@ -65,6 +92,107 @@ function getText(node: ReactNode): string {
   }
 
   return '';
+}
+
+/**
+ * Derive FAQPage schema from the question-form headings the article already
+ * shows the reader.
+ *
+ * 62 article pages carried 238 headings ending in "?" with an answer directly
+ * underneath and no FAQPage markup on any of them -- the Q&A was already
+ * written and published, just invisible to the answer engines. This emits it.
+ *
+ * **Every answer here is text the reader can see.** Google requires FAQPage
+ * content to be visible on the page, and the stricter reason is that marked-up
+ * text is what an AI assistant quotes back as Accounstone's own words. So the
+ * answer is read straight out of the rendered siblings between one question
+ * heading and the next, never summarised and never written fresh.
+ *
+ * Three guards keep it honest rather than greedy:
+ *  - at least MIN_FAQS pairs, because one question is not an FAQ;
+ *  - an answer must carry real prose (MIN_ANSWER chars), so a heading followed
+ *    by a table or an image is skipped rather than marked up with a fragment;
+ *  - the answer is cut at a sentence boundary, never mid-claim, because a
+ *    truncated accounting statement can change its meaning.
+ */
+const MIN_FAQS = 2;
+const MIN_ANSWER = 60;
+const MAX_ANSWER = 700;
+
+function flattenNodes(node: ReactNode, acc: ReactNode[] = []): ReactNode[] {
+  if (Array.isArray(node)) {
+    node.forEach((child) => flattenNodes(child, acc));
+    return acc;
+  }
+  if (node === null || node === undefined || node === false) return acc;
+  acc.push(node);
+  return acc;
+}
+
+function trimToSentence(value: string) {
+  if (value.length <= MAX_ANSWER) return value;
+  const cut = value.slice(0, MAX_ANSWER);
+  const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('? '), cut.lastIndexOf('! '));
+  return (stop > MIN_ANSWER ? cut.slice(0, stop + 1) : cut.trimEnd()).trim();
+}
+
+function extractFaqs(children: ReactNode): { question: string; answer: string }[] {
+  const nodes = flattenNodes(children);
+  const faqs: { question: string; answer: string }[] = [];
+
+  for (let i = 0; i < nodes.length; i += 1) {
+    const node = nodes[i];
+    if (!isValidElement(node)) continue;
+    const tag = typeof node.type === 'string' ? node.type : '';
+    if (tag !== 'h2' && tag !== 'h3') continue;
+
+    const question = getText((node as ReactElement<{ children?: ReactNode }>).props.children).trim();
+    if (!question.endsWith('?')) continue;
+
+    // Prose only, until the next heading of any level.
+    //
+    // Tables and figures are deliberately skipped rather than flattened. A
+    // <table> run through getText concatenates every cell with no separator --
+    // the first version of this produced the answer "SectionTypical HOA
+    // examplesAssetsBank accounts, receivables..." from a perfectly good table,
+    // which is exactly the string an assistant would then quote back as
+    // Accounstone's own words. A length check does not catch it, because a
+    // table has plenty of characters. So only <p> and list items are read, and
+    // list items are joined with a separator so they do not run together
+    // either. A question whose answer is entirely a table is skipped: no
+    // markup is better than unreadable markup.
+    const parts: string[] = [];
+    for (let j = i + 1; j < nodes.length; j += 1) {
+      const sib = nodes[j];
+      if (!isValidElement(sib)) continue;
+      const sibTag = typeof sib.type === 'string' ? sib.type : '';
+      if (/^h[1-6]$/.test(sibTag)) break;
+
+      const sibProps = (sib as ReactElement<{ children?: ReactNode }>).props;
+
+      if (sibTag === 'p') {
+        const text = getText(sibProps.children).trim();
+        if (text) parts.push(text);
+        continue;
+      }
+
+      if (sibTag === 'ul' || sibTag === 'ol') {
+        const items = flattenNodes(sibProps.children)
+          .map((li) =>
+            isValidElement(li)
+              ? getText((li as ReactElement<{ children?: ReactNode }>).props.children).trim()
+              : ''
+          )
+          .filter(Boolean);
+        if (items.length) parts.push(`${items.join('; ')}.`);
+      }
+    }
+
+    const answer = trimToSentence(parts.join(' ').replace(/\s+/g, ' ').trim());
+    if (answer.length >= MIN_ANSWER) faqs.push({ question, answer });
+  }
+
+  return faqs.length >= MIN_FAQS ? faqs : [];
 }
 
 function addHeadingIds(
@@ -186,6 +314,7 @@ export default function ArticleLayout({
   description,
   publishedDate,
   updatedDate,
+  faqs,
   section,
   slug,
   inquiryTitle,
@@ -199,6 +328,32 @@ export default function ArticleLayout({
     : `/resources/${section}`;
 
   const path = `${hubHref}/${slug}`;
+  const pathSegments = path.toLowerCase().split('/').filter(Boolean);
+  const pathTokens = pathSegments.flatMap((segment) => segment.split('-'));
+  const isUnitedKingdomPath = pathSegments.some((segment) => segment.includes('united-kingdom'));
+  const dateLocale = isUnitedKingdomPath || pathTokens.includes('uk')
+    ? 'en-GB'
+    : pathTokens.includes('australia')
+      ? 'en-AU'
+      : pathTokens.includes('india')
+        ? 'en-IN'
+        : 'en-US';
+  // `dateModified` is a freshness signal that both Google and the AI answer
+  // engines weight when choosing what to cite, and only two articles were
+  // passing `updatedDate` explicitly. The fallback is the generated per-route
+  // date from `lib/sitemap-dates.ts` -- the last commit that changed this
+  // page's rendered body -- so it is a true date rather than a fabricated one.
+  // It is deliberately NOT `new Date()`; see CLAUDE.md, "Sitemap lastmod is
+  // generated, not written". A route with no generated entry gets no
+  // dateModified at all rather than a guess.
+  const generatedModified = routeLastModified[path] ?? routeLastModified[path.replace(/\/$/, '')];
+  const effectiveUpdatedDate =
+    updatedDate ?? (generatedModified && generatedModified > publishedDate ? generatedModified : undefined);
+
+  const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
+  const displayUpdatedDate = effectiveUpdatedDate
+    ? formatPublishedDate(effectiveUpdatedDate, dateLocale)
+    : undefined;
   const relatedLinks = getRelatedLinks(slug);
 
   const sectionLabel = {
@@ -220,11 +375,23 @@ export default function ArticleLayout({
     description,
     imageUrl: `${baseUrl}/og-image.jpg`,
     publishedDate,
-    updatedDate,
+    updatedDate: effectiveUpdatedDate,
     author: 'Accounstone',
     slug,
     basePath: `${hubHref}/`,
   });
+
+  // Explicit FAQs win; the derived ones fill in for articles that never had a
+  // `faqs` array. Both end up rendered, so the schema always mirrors visible
+  // text. See extractFaqs for why the derived set is prose-only.
+  const derivedFaqs = extractFaqs(children);
+  const explicitFaqs = faqs ?? [];
+  const seenQuestions = new Set(explicitFaqs.map((f) => f.question.trim().toLowerCase()));
+  const schemaFaqs = [
+    ...explicitFaqs,
+    ...derivedFaqs.filter((f) => !seenQuestions.has(f.question.trim().toLowerCase())),
+  ];
+  const faqSchema = schemaFaqs.length ? generateFAQSchema(schemaFaqs) : null;
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     {
@@ -268,6 +435,15 @@ export default function ArticleLayout({
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
+
+      {faqSchema ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      ) : null}
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 hero-gradient text-white">
         <div className="max-w-3xl mx-auto space-y-4">
@@ -357,7 +533,9 @@ export default function ArticleLayout({
                   >
                     <a
                       href={`#${item.id}`}
-                      className="text-muted hover:text-primary transition-colors leading-6"
+                      // Link list, not an inline link in a sentence -- WCAG 2.5.8 exempts the
+                      // latter and not this. See CLAUDE.md, "Tap targets: measure, do not eyeball".
+                      className="inline-block py-1.5 text-muted hover:text-primary transition-colors leading-6"
                     >
                       {item.label}
                     </a>
@@ -368,11 +546,11 @@ export default function ArticleLayout({
           )}
 
           <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted" aria-label="Article information">
-            <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{publishedDate}</time></span>
-            {updatedDate && updatedDate !== publishedDate ? (
+            <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{displayPublishedDate}</time></span>
+            {effectiveUpdatedDate && effectiveUpdatedDate !== publishedDate ? (
               <>
                 <span aria-hidden="true">•</span>
-                <span><strong className="text-primary">Last updated:</strong> <time dateTime={updatedDate}>{updatedDate}</time></span>
+                <span><strong className="text-primary">Last updated:</strong> <time dateTime={effectiveUpdatedDate}>{displayUpdatedDate}</time></span>
               </>
             ) : null}
             <span aria-hidden="true">•</span>
@@ -426,6 +604,10 @@ export default function ArticleLayout({
       {/* The bottom bar is mounted once from app/layout.tsx now, so every
           page has it rather than only these 19. Rendering it here too would
           put two on an article. */}
+
+      {explicitFaqs.length ? (
+        <FAQSection subtitle={`${category} questions`} items={explicitFaqs} columns={1} />
+      ) : null}
 
       <InquirySection
         compact
