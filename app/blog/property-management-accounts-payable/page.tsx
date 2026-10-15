@@ -47,7 +47,7 @@ export default function PropertyManagementAccountsPayable() {
       inquiryLead="Tell us how invoices are received, coded, approved and reconciled today, including which property-management or accounting system you use."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <p>Property management accounts payable is more than entering vendor bills. An invoice may belong to a particular property, owner, work order, project, period or management-company expense. If that context is missing, the payment can be correct while the property report is wrong.</p>
+      <p>Property management accounts payable is more than entering vendor bills. An invoice may belong to a particular property, owner, work order, project, period or management-company expense. If that context is missing, the payment can be correct while the property report is wrong. When service was received before the invoice arrived, check the <Link href="/blog/property-management-accrued-expenses" className="text-primary underline underline-offset-4">month-end accrual workflow</Link> to avoid missing the cost or recording it twice.</p>
       <p>This workflow is designed for the accounting records and handoffs around vendor bills. The property manager or authorized client retains contractual decisions, spending approval and payment authority according to its own controls.</p>
 
       <h2>1. Capture the invoice with its source detail</h2>
@@ -58,7 +58,7 @@ export default function PropertyManagementAccountsPayable() {
         <li>Identify the property, unit or portfolio and the responsible owner/entity.</li>
         <li>Flag missing documents, disputed charges and unclear responsibility before posting.</li>
       </ul>
-      <p>Use a consistent intake queue for emailed invoices, portal downloads and paper records. A simple status such as received, needs information, ready for approval, approved, scheduled, paid or disputed helps prevent invoices from disappearing between inboxes.</p>
+      <p>Use a consistent intake queue for emailed invoices, portal downloads and paper records. A simple status such as received, needs information, ready for approval, approved, scheduled, paid or disputed helps prevent invoices from disappearing between inboxes. For master-meter utilities, the AP record is only one side of the process; the <Link href="/blog/property-management-utility-billback-reconciliation" className="text-primary underline underline-offset-4">billback reconciliation guide</Link> covers resident-charge allocation and the ledger tie-out.</p>
 
       <h2>2. Validate the vendor and check for duplicates</h2>
       <p>Before creating a bill, compare the vendor, invoice number, date and amount with existing records. Similar invoices can be legitimate recurring charges, but duplicate uploads, revised invoices and credit notes need to be distinguished.</p>
