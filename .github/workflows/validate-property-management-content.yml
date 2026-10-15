@@ -62,3 +62,5 @@ jobs:
           node scripts/verify-pages.mjs /blog/property-management-accrued-expenses
           node scripts/verify-pages.mjs /blog/property-management-utility-billback-reconciliation
           node scripts/verify-pages.mjs /blog/property-management-management-fee-reconciliation
+          node scripts/verify-pages.mjs /blog/property-management-capital-expenditure-accounting
+          node scripts/verify-pages.mjs /blog/property-management-budget-vs-actual
