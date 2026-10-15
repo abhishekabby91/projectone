@@ -50,6 +50,18 @@ export default function HoaOperatingVsReserve() {
       <h2>How This Appears in the Monthly Package</h2>
       <p>A useful package can show operating results, reserve activity and cash balances in a way that allows the board to review them separately while still understanding the association's overall financial position.</p>
 
+      <h2>Interfund Balances: When One Fund Pays the Other&apos;s Bill</h2>
+      <p>Operating cash sometimes pays a reserve invoice because that is where the money was on the day the payment was due. That is not a reserve expense in operating, and it is not an operating expense either — it leaves a balance owed between the two funds. Recording it on both sides, as a receivable in one and a payable in the other, keeps each fund&apos;s reported position true and keeps the amount visible until it is settled. Netting it into whichever fund was convenient is how a reserve balance quietly stops reconciling.</p>
+      <h2>Interfund Balances Need a Settlement Date, Not Just a Record</h2>
+      <p>An interfund balance that is recorded and never cleared is a reserve shortfall that does not look like one on the statements. The monthly review should show how long each balance has been outstanding, so a board can see the amount and decide what to do about it. Whether the transfer that settles it is permitted, and on what terms, is a governance question under the association&apos;s documents and applicable law — accounting records the authorized movement rather than initiating it.</p>
+      <h2>How the Two Funds Should Read Side by Side</h2>
+      <p>A board reviewing the package should be able to answer two separate questions without arithmetic: are ordinary operations tracking to plan, and what has been contributed to and spent from reserves this period. That usually means operating results and reserve activity presented as their own columns or sections, with cash shown per fund, and any interfund balance disclosed rather than folded into a total.</p>
+
+      <h2>Common Questions</h2>
+      <h3>Is a transfer from operating to reserves income to the reserve fund?</h3>
+      <p>No. A transfer moves money the association already has between its own funds; it is not new income and recording it as such overstates the period. The entry should leave a visible trail on both sides, so the reserve balance can be explained by the contributions and transfers behind it rather than by the bank statement alone.</p>
+      <h3>Who decides whether reserve money can be spent on a particular item?</h3>
+      <p>The board, within the association&apos;s governing documents and applicable law, usually with its counsel or accountant where the answer is not obvious. An accounting process records what was authorized and keeps the spending traceable to that authorization. It should not be the step at which the question is decided, and a record that cannot show who authorized a reserve payment is the real problem to fix.</p>
       <h2>Related Resources</h2>
       <p>See <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, the <a href="/blog/hoa-financial-statements-board-review">board financial statements guide</a> and the <a href="/industries/hoa-accounting">HOA accounting</a> overview.</p>
     </ArticleLayout>

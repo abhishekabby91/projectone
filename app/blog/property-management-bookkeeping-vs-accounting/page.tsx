@@ -38,6 +38,14 @@ export default function Page() {
       <h2>When a property manager may need more than bookkeeping</h2>
       <p>If month-end reports require repeated manual corrections, owner statements are being reconstructed, or reconciliations are regularly carried forward, the issue may be accounting workflow rather than transaction volume alone.</p>
 
+      <h2>What neither one covers</h2>
+      <p>Both the recording work and the review work stop at the same line, and it is worth naming because the subject is other people&apos;s money. Neither holds, releases or transfers funds; neither decides whether a deposit or trust account is being <em>held</em> correctly, which is a question for the manager&apos;s own counsel and for whoever regulates the licence; and neither takes a position on a lease, an eviction or a deposit dispute. What accounting can do is keep the records those decisions are taken from reconciled and explainable — which is usually what is actually missing when a dispute becomes hard to resolve.</p>
+
+      <h2>Common Questions</h2>
+      <h3>Can a property manager outsource bookkeeping without outsourcing the accounting review?</h3>
+      <p>Yes, and plenty do — but the review has to sit somewhere explicitly. The failure mode is assuming that whoever posts the transactions is also reconciling them. If the arrangement covers posting only, then bank reconciliation, owner balance review and the monthly reporting remain the manager&apos;s, and saying so at the outset is cheaper than discovering it three months in.</p>
+      <h3>Does more software reduce the accounting work?</h3>
+      <p>It changes where the work sits rather than removing it. A platform can post recurring charges, apply receipts and produce an owner statement, and still leave an unreconciled bank account and an owner balance nobody has checked. The reconciliation and review steps are what make the output dependable, and no configuration performs them.</p>
       <h2>Related guides</h2>
       <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the property management chart of accounts</a> and <a href="/blog/property-management-bank-reconciliation">property management bank reconciliation</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>

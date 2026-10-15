@@ -46,6 +46,13 @@ export default function Page() {
       <h2>Monthly review</h2>
       <p>A practical monthly review starts with unusual changes: large rent variances, new vacancies, old tenant balances, unusual credits and significant adjustments. Those items are usually more useful than simply checking whether the total rent number changed.</p>
 
+      <h2>Common Questions</h2>
+      <h3>Should the rent roll total match rental income in the general ledger?</h3>
+      <p>Not line for line, and expecting it to is the most common source of wasted time here. A rent roll shows scheduled rent against leases; the general ledger shows what was charged and recognized, after concessions, mid-month move-ins, prorations, credits and adjustments. The useful test is whether the difference between the two can be itemized. A reconciliation that ends in a short list of named differences is complete; one that ends in a single unexplained figure is not.</p>
+      <h3>Which report should an owner statement be built from?</h3>
+      <p>From the reconciled accounting records, with the rent roll used to explain occupancy and lease detail alongside them. Building the statement from the rent roll means it reports what was expected rather than what happened, and the first vacancy or partial month puts it at odds with the bank. Where two systems are involved, deciding which one owns each figure before the statement is produced avoids reconciling the statement after it has already gone out.</p>
+      <h3>How often should a rent roll be reconciled to the ledger?</h3>
+      <p>Monthly, as part of the close rather than as a separate exercise. The detail needed to explain a difference — which unit, which lease change, which adjustment and who authorized it — is readily available in the month it arises and progressively harder to recover afterwards, which is why a quarterly or annual review of the same reports takes considerably longer for a worse result.</p>
       <h2>Related guides</h2>
       <p>See <a href="/blog/property-management-accounting">property management accounting</a>, <a href="/blog/property-management-chart-of-accounts">the chart of accounts guide</a> and <a href="/blog/property-management-bank-reconciliation">bank reconciliation for property managers</a>. The broader <a href="/industries/property-management">property management accounting and bookkeeping page</a> explains how these pieces fit into the full portfolio workflow.</p>
     </ArticleLayout>

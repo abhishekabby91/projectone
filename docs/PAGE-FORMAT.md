@@ -172,6 +172,34 @@ date on every page that has not changed.
 
 ---
 
+## 5a. hreflang — only where a page genuinely has a twin
+
+Two clusters on this site are the same offer written for a different market in
+the same language, which is exactly what hreflang is for:
+
+| Cluster | Alternates |
+|---|---|
+| the 21 `/services/{service}/{region}` pages | `en-US`, `en-GB`, `en-AU`, `x-default` |
+| the 3 `/markets/{region}` pages | `en-US`, `en-GB`, `en-AU`, `x-default` |
+
+**You do not write these.** `lib/seo.ts` derives them from the page's own path,
+so a new page inside either cluster gets them by existing and a page outside
+both gets none. The checker enforces both directions.
+
+`x-default` is the United States page — except `audit-support`, whose
+`x-default` is United Kingdom, matching where its retired generic URL resolves
+on country-segmented Search Console evidence.
+
+**Nothing else gets hreflang, and this is the part to hold.** A market
+sub-page has no counterpart: `/markets/united-kingdom/vat-returns` answers a
+question `/markets/australia/bas-preparation` does not ask, and declaring them
+alternates tells Google two unrelated pages are substitutes. The US state
+pages and the registration cluster exist once for the same reason. If you build
+a genuinely new regional trio, add it to `hreflangAlternates()` in `lib/seo.ts`
+and to `HREFLANG_ROUTES` in the checker — not to the page.
+
+---
+
 ## 6. Links
 
 - **Never link `/services/{slug}`.** Those 7 URLs are 308 redirects. Link the

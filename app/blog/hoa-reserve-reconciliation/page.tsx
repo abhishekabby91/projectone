@@ -36,6 +36,17 @@ export default function HoaReserveReconciliation() {
       </tbody></table>
       <h2>Why Monthly Review Helps</h2>
       <p>Monthly reconciliation makes reserve reporting easier at board meetings and reduces the amount of cleanup needed at year-end. It also makes unusual transactions easier to investigate while the details are still available.</p>
+      <h2>Interest and Investment Activity Belong to the Fund That Earned It</h2>
+      <p>Interest credited inside a reserve account is reserve activity. It should be recorded in the reserve fund rather than swept into operating income, and it should appear in the reconciliation as its own line so the ending balance can be explained without reference to the bank statement. Whether interest may be moved out of reserves at all is governed by the association's documents and by the board's decisions, not by the convenience of the posting.</p>
+      <h2>When Reserve Cash Sits in More Than One Instrument</h2>
+      <p>Reserve funds are often held across several accounts or certificates rather than one balance. Each needs reconciling against its own statement and its own period, and a maturity or rollover should be recorded as a movement between instruments rather than as a receipt. A rollover posted as income overstates the period and leaves a reserve balance that cannot be traced to the sum of the instruments it is actually held in.</p>
+      <h2>Carry the Reconciliation Into the Board Package</h2>
+      <p>A reconciliation that lives only in a working file does not help the people reading the reports. The reserve position shown in the monthly package should tie to the reconciled figure, and the package should carry the open items alongside it — an outstanding payment, an unexplained difference, a transfer awaiting authorization — so the board is reviewing the same statement the accounting work produced.</p>
+      <h2>Common Questions</h2>
+      <h3>Does a reserve reconciliation say whether the association has saved enough?</h3>
+      <p>No, and it is important that it does not. Whether a reserve balance is adequate for the association's future obligations is a question for a reserve specialist and for the board acting on that study. A reconciliation establishes something narrower and still necessary: that the reported reserve balance is supported, that contributions and transfers are recorded on both sides, and that reserve-funded payments can be traced to authorized work.</p>
+      <h3>What should happen to an old outstanding item that keeps rolling forward?</h3>
+      <p>It should be investigated and resolved, with the reason recorded, rather than carried because it appeared on the previous reconciliation. An item that survives several reconciliations unexplained has stopped being a reconciling difference and become an unreviewed balance, and it is usually the first thing a year-end reviewer asks about.</p>
       <h2>Related HOA Resources</h2>
       <p>See <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, <a href="/blog/hoa-operating-vs-reserve-funds">operating vs. reserve funds</a>, the <a href="/blog/hoa-accounting-month-end-checklist">month-end checklist</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
     </ArticleLayout>

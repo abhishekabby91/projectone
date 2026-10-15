@@ -1630,6 +1630,43 @@ number of days.
 It carries **19 contextual inbound links**, the most of any page on the site,
 which is what a Tier-1 audience page should look like.
 
+## hreflang is on 24 pages and must not spread
+
+Added 2026-10-15. `lib/seo.ts` derives `alternates.languages` from the page's
+own path, so the 21 Service x Region pages and the 3 `/markets/{region}` pages
+each declare `en-US`, `en-GB`, `en-AU` and an `x-default`, and every other
+route declares none.
+
+**Those two clusters are the only places on this site where two URLs are the
+same offer written for a different market.** That is the test. A market
+sub-page fails it: `/markets/united-kingdom/vat-returns` has no Australian
+counterpart, because the AU page covers BAS and the UK page covers VAT — they
+are different subjects, not translations of one. The three US state pages and
+the registration cluster fail it too; each exists once. Declaring alternates
+across any of them tells Google two pages that answer different questions are
+substitutes for each other, which is worse than declaring nothing.
+
+`x-default` is the United States page everywhere **except
+`/services/audit-support/*`, where it is United Kingdom** — the same split the
+redirects already use, on the same evidence (40 of that URL's 46
+country-resolved impressions are British). Keeping the two consistent means a
+visitor from an unlisted country and a visitor following the retired URL land
+on the same page.
+
+Three things to know if you touch it:
+
+- **It is derived, not written.** A new page inside either cluster gets
+  hreflang by existing. Do not hand-write a `<link rel="alternate">` on a page;
+  `node scripts/verify-pages.mjs` fails a page that carries one it should not.
+- **Every page in a set lists all three plus itself.** A one-way reference is
+  ignored by Google, which is why the helper always emits the whole set rather
+  than "the other two".
+- **A noindex page is never an alternate**, so the helper returns nothing for
+  one. `/technology/myob` is the case that matters today.
+
+If a genuinely new regional trio is ever built, it goes in
+`hreflangAlternates()` in `lib/seo.ts` and in `HREFLANG_ROUTES` in the checker.
+
 ## Offshore is one cluster, and it belongs to one page
 
 `/solutions/offshore-accounting-support` owns every "offshore …" query.

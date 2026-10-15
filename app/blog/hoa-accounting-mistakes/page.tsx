@@ -58,6 +58,15 @@ export default function HoaAccountingMistakes() {
       <h2>Does the Software Prevent These Problems?</h2>
       <p>Software can reduce manual work, but it cannot decide whether an assessment was posted to the right homeowner or whether a reserve expense was properly classified. Whether the association uses QuickBooks Online, AppFolio or another platform, the review process still matters.</p>
 
+      <h2>8. Letting Interfund Balances Settle In</h2>
+      <p>When operating cash pays a reserve invoice, or the other way round, the amount is owed between the two funds. Recorded on one side only, or netted into whichever fund was convenient, it leaves a reserve balance that reads correctly and is not. The entry belongs on both sides, and the balance belongs on the monthly review with its age attached, so the board sees it while it is still a decision rather than a discovery.</p>
+      <h2>9. Treating a Software Report as a Reconciliation</h2>
+      <p>Most systems will produce a reconciliation report whether or not anything was reconciled. A matched ending balance proves that the figures were made to agree, not that the differences were understood: an old outstanding check, a deposit in transit that never cleared and a manual adjustment entered to close the gap can all sit behind a report that looks finished. The reconciliation is the review of those items, and the report is only where it is recorded.</p>
+      <h2>Common Questions</h2>
+      <h3>Which of these is worth fixing first?</h3>
+      <p>The bank reconciliations, in almost every case. Nearly everything else on this list either shows up in a reconciliation or is impossible to investigate without one, so an association working through the list in order of effort usually finds the other items easier once the cash position is reliable and current.</p>
+      <h3>Does fixing the monthly process fix the prior years?</h3>
+      <p>No, and the two should be run as separate pieces of work. A clean recurring cycle laid on top of unreconciled earlier periods produces months that balance against an opening position nobody has verified. Establishing and documenting that starting point first — including what could not be resolved and why — is what makes the monthly process worth running.</p>
       <h2>Related HOA Resources</h2>
       <p>See the <a href="/blog/hoa-chart-of-accounts">HOA chart of accounts guide</a>, <a href="/blog/hoa-accounting-mistakes">this checklist</a>, and the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a>. For recurring support, see <a href="/industries/hoa-accounting">HOA accounting and bookkeeping outsourcing</a>.</p>
     </ArticleLayout>

@@ -65,6 +65,10 @@ export default function HoaAccountingAppFolio() {
 
       <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
 
+      <h2>Agree the Ledgers to the Control Accounts</h2>
+      <p>Whatever the platform, the monthly proof is the same: homeowner balances summed should equal the receivable control account, and open vendor bills summed should equal payables. A difference normally traces to a journal posted straight to the control account, a homeowner adjustment made without its matching entry, or a cut-off applied inconsistently between the detail and the ledger. Finding it in the month it arises takes minutes; finding it at year end takes an engagement.</p>
+      <h2>Check What the Reports Contain Before Relying on Them</h2>
+      <p>Report names are not a specification. The same title can cover different periods, different entities or a portfolio rather than the single association, depending on how the platform has been set up. Confirming the scope and cut-off of each report before it becomes a monthly control is cheaper than explaining a figure afterwards — and the configuration itself stays with the association or its managing agent, since a review works within the setup rather than changing it.</p>
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
       </ArticleLayout>

@@ -56,6 +56,19 @@ const REDIRECT_SOURCES = new Set([
   '/services/audit-support',
 ]);
 
+/**
+ * The only routes that carry hreflang. See the comment in lib/seo.ts: these are
+ * the same offer written for a different market in the same language. A market
+ * SUB-page is not one of them -- /markets/united-kingdom/vat-returns has no
+ * Australian counterpart.
+ */
+const HREFLANG_ROUTES = new Set([
+  ...['bookkeeping', 'accounting', 'tax-preparation', 'payroll', 'accounts-payable',
+    'accounts-receivable', 'audit-support'].flatMap((s) =>
+    ['united-states', 'united-kingdom', 'australia'].map((r) => `/services/${s}/${r}`)),
+  '/markets/united-states', '/markets/united-kingdom', '/markets/australia',
+]);
+
 function kindOf(p) {
   const s = p.replace(/^\/|\/$/g, '').split('/');
   if (p === '/') return 'homepage';
@@ -185,6 +198,23 @@ async function check(route) {
     }
   }
   if (types.has('Article') && !/"dateModified"/.test(html)) add('Article carries dateModified');
+
+  // --- hreflang -----------------------------------------------------------
+  // Only two clusters on this site have genuine regional variants: the 21
+  // Service x Region pages and the 3 market pages. Each must declare all three
+  // alternates plus an x-default, and nothing else may declare any -- a page
+  // that exists once has no alternate, and inventing one points Google at a
+  // page that answers a different question. lib/seo.ts derives these from the
+  // path, so a failure here means either a new regional cluster that the
+  // helper does not know about, or hreflang hand-written onto a page.
+  const alts = [...html.matchAll(/<link rel="alternate" hrefLang="([^"]+)"/gi)].map((m) => m[1]);
+  const wantsHreflang = HREFLANG_ROUTES.has(route);
+  if (wantsHreflang) {
+    const missing = ['en-US', 'en-GB', 'en-AU', 'x-default'].filter((l) => !alts.includes(l));
+    if (missing.length) add('regional variants declare hreflang', `missing ${missing.join(', ')}`);
+  } else if (alts.length) {
+    add('no hreflang on a page that exists once', alts.join(', '));
+  }
 
   return { fails, info: { kind, words, faq: faqAnswers.length } };
 }

@@ -62,6 +62,66 @@ function absoluteUrl(path: string) {
 }
 
 /**
+ * hreflang, and the two clusters that genuinely have regional variants.
+ *
+ * The 21 Service x Region pages and the 3 market pages are the same offer
+ * written for a different market in the same language, which is exactly what
+ * hreflang is for: it tells Google the three are alternates of one another
+ * rather than three pages competing for one query. Every page in a set lists
+ * all three plus itself -- a one-way reference is ignored.
+ *
+ * NOTHING ELSE ON THE SITE GETS THESE, and that is the rule to keep. A market
+ * sub-page has no counterpart: /markets/united-kingdom/vat-returns answers a
+ * question /markets/australia/bas-preparation does not ask, and declaring them
+ * alternates would point Google at a page that answers something else. Same for
+ * the US state pages and the registration cluster -- they exist once.
+ *
+ * x-default is the United States page, because that is where an unmatched
+ * visitor is sent everywhere else on the site -- except audit-support, whose
+ * retired generic URL resolves to United Kingdom on country-segmented Search
+ * Console evidence (40 of its 46 country-resolved impressions are British).
+ * Keeping the two consistent means a visitor from an unlisted country and a
+ * visitor following the old URL land on the same page. See the comment above
+ * the redirects in next.config.mjs.
+ */
+const REGION_HREFLANG: Record<string, string> = {
+  'united-states': 'en-US',
+  'united-kingdom': 'en-GB',
+  'australia': 'en-AU',
+};
+
+/** Services whose x-default is the UK page rather than the US one. */
+const UK_DEFAULT_SERVICES = new Set(['audit-support']);
+
+function hreflangAlternates(path: string): Record<string, string> | undefined {
+  const clean = path.replace(/\/$/, '');
+
+  const service = clean.match(/^\/services\/([^/]+)\/(?:united-states|united-kingdom|australia)$/);
+  if (service) {
+    const slug = service[1];
+    const languages: Record<string, string> = {};
+    for (const [region, lang] of Object.entries(REGION_HREFLANG)) {
+      languages[lang] = absoluteUrl(`/services/${slug}/${region}`);
+    }
+    languages['x-default'] = absoluteUrl(
+      `/services/${slug}/${UK_DEFAULT_SERVICES.has(slug) ? 'united-kingdom' : 'united-states'}`,
+    );
+    return languages;
+  }
+
+  if (/^\/markets\/(?:united-states|united-kingdom|australia)$/.test(clean)) {
+    const languages: Record<string, string> = {};
+    for (const [region, lang] of Object.entries(REGION_HREFLANG)) {
+      languages[lang] = absoluteUrl(`/markets/${region}`);
+    }
+    languages['x-default'] = absoluteUrl('/markets/united-states');
+    return languages;
+  }
+
+  return undefined;
+}
+
+/**
  * `ogTitle`, `ogDescription` and `ogImageAlt` exist because a share card and a
  * SERP result are read in different places by different people. A page title is
  * written to a 46-character budget so it survives truncation in Google; a link
@@ -85,6 +145,8 @@ export function generateMetadata(config: { title: string; description: string; p
   const locale = /(?:^|\/)united-kingdom(?:\/|$)/.test(config.path) ? 'en_GB'
     : /(?:^|\/)australia(?:\/|$)/.test(config.path) ? 'en_AU'
     : 'en_US';
+  // A noindex page is not an alternate of anything, so it never declares hreflang.
+  const languages = config.noindex ? undefined : hreflangAlternates(config.path);
   const robots: Metadata['robots'] = config.noindex
     ? { index: false, follow: false }
     : { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } };
@@ -95,7 +157,7 @@ export function generateMetadata(config: { title: string; description: string; p
     title: config.absoluteTitle ? { absolute: config.title } : config.title,
     description: config.description,
     robots,
-    alternates: { canonical },
+    alternates: { canonical, ...(languages ? { languages } : {}) },
     openGraph: { title: ogTitle, description: ogDescription, url: canonical, siteName, locale, type: 'website', images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }] },
     twitter: { card: 'summary_large_image', title: ogTitle, description: ogDescription, images: [ogImage] },
   };
