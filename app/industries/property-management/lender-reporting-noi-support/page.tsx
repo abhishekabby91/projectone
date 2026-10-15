@@ -110,7 +110,7 @@ export default function PropertyManagementLenderReportingPage() {
           <p className="mt-6 text-sm leading-relaxed text-muted">For related recurring accounting work, see <Link href="/industries/property-management/general-ledger-reconciliation" className="font-medium text-primary underline underline-offset-4">platform-to-general-ledger reconciliation</Link>, <Link href="/industries/property-management/accounting-cleanup" className="font-medium text-primary underline underline-offset-4">accounting cleanup and catch-up support</Link>, and the <Link href="/blog/property-management-financial-statements" className="font-medium text-primary underline underline-offset-4">property management financial statements guide</Link>.</p>
         </div>
       </section>
-      <FAQSection faqs={faqs} />
+      <FAQSection items={faqs} />
       <InquirySection
         compact
         background="input"
