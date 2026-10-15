@@ -1,3 +1,7 @@
+## 2026-10-15 — Management-company accounting support
+- Added `/industries/property-management/management-company-accounting` as a distinct commercial workflow for the management company’s own books: fee revenue, company overhead, payroll-related entries, intercompany balances, accruals, reconciliations and close handoff. Kept property/owner books separate and preserved client control over payments, accounting-policy decisions, tax positions and assurance.
+- Linked the page from the property-management service-card list and resource links; registered it in the sitemap source, route/search-intent/content registries and AI-readable indexes. Generated sitemap dates were refreshed with `node scripts/generate-sitemap-dates.mjs`.
+
 ## 2026-10-15 — Add property management lender reporting and NOI support
 
 - Competitor research reviewed property-accounting service pages that emphasize property-level NOI, lender packages, debt-service coverage schedules, reserve activity, reconciliations and variance explanations. Sources included [Analytix real estate accounting](https://www.analytix.com/industry/real-estate), [REA property management](https://rea.co/property-management/) and [UnifiedBooks property management accounting](https://www.unifiedbooks.com/services/property-management-accounting-services). These pages establish competitor topic coverage, not Accounstone credentials, search volume or ranking outcomes.
