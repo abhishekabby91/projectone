@@ -212,11 +212,12 @@ export default function ArticleLayout({
     : `/resources/${section}`;
 
   const path = `${hubHref}/${slug}`;
-  const dateLocale = path.includes('united-kingdom') || path.includes('/uk/')
+  const pathSegments = path.toLowerCase().split('/');
+  const dateLocale = pathSegments.some((segment) => segment === 'united-kingdom' || segment === 'uk')
     ? 'en-GB'
-    : path.includes('australia')
+    : pathSegments.includes('australia')
       ? 'en-AU'
-      : path.includes('india')
+      : pathSegments.includes('india')
         ? 'en-IN'
         : 'en-US';
   const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
