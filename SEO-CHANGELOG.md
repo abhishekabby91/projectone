@@ -1,3 +1,9 @@
+## 2026-10-15 — Property management management-fee reconciliation guide
+
+- Added `/blog/property-management-management-fee-reconciliation` after competitor review found a distinct workflow for reconciling management-fee calculations across property/owner records and the management company’s books.
+- Covers fee-basis verification, owner-ledger tie-out, batch transfers, company-side revenue, bank receipts, cutoff differences and separation of preparation from payment approval.
+- Added the route to the blog index, property-management hub, sitemap, content/route/search-intent registries and AI-readable references. Generated sitemap dates and build validation remain pending; no merge to `main` or production deployment.
+
 ## 2026-10-15 — Property management utility billback and RUBS reconciliation guide
 
 - Added `/blog/property-management-utility-billback-reconciliation` after competitor review found distinct operational coverage around master-meter invoices, ratio utility allocation, vacancy treatment and tenant-level charge reconciliation.
