@@ -20,6 +20,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 const articles = [
   { href: '/blog/property-management-bookkeeping-cleanup', title: 'Property Management Bookkeeping Cleanup: A Practical Catch-Up Checklist', description: 'Assess overdue property books, establish a reliable starting point, reconcile ledgers and document a controlled return to monthly close.', tag: 'Property Management', readTime: '8 min read' },
   { href: '/blog/property-management-accrued-expenses', title: 'Property Management Accruals and Prepaid Expenses: A Month-End Checklist', description: 'Review unbilled costs, prepaid schedules, property allocations, reversals and ledger tie-outs during month-end close.', tag: 'Property Management', readTime: '8 min read' },
+  { href: '/blog/property-management-utility-billback-reconciliation', title: 'Property Management Utility Billback and RUBS Reconciliation', description: 'Trace master utility bills through allocation calculations, tenant charges, vacancy treatment and ledger reconciliation.', tag: 'Property Management', readTime: '9 min read' },
 
   { href: '/blog/property-management-lender-reporting', title: 'Property Management Lender Reporting: A Practical Checklist', description: 'Prepare lender-requested property reports from reconciled rent rolls, operating statements, supporting schedules and documented review.', tag: 'Property Management', readTime: '7 min read' },
 
