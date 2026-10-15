@@ -1,7 +1,7 @@
 # Property Management SEO + AI Query Map
 
 **Status:** Working strategy for the property-management cluster  
-**Updated:** 2026-10-12  
+**Updated:** 2026-10-15  
 **Branch:** `accounstone-seo-improvements`  
 **Purpose:** Use traditional search queries and realistic conversational AI prompts together without creating thin pages or making unsupported service claims.
 
@@ -26,6 +26,7 @@ The phrases and prompts supplied by the business owner are **candidate intents**
 | Yardi workflows in Texas | `/industries/real-estate/yardi-accounting-outsourcing-texas` | Property management hub and guide | Preserve this established page; change only for a demonstrated issue |
 | Buildium, Rent Manager, Propertyware | No new URL assigned yet | Existing service hub and general guide where relevant | Research competitors and query evidence first; only create a page if intent and real delivery capability justify it |
 | Catch-up / cleanup bookkeeping | `/blog/property-management-bookkeeping-cleanup` | `/industries/property-management`, month-end close and bank reconciliation guides | Competitor research confirms a distinct diagnostic/catch-up workflow; page covers last reliable period, reconciliations, tenant/owner/liability records, exception logs and transition to recurring close |
+| Accrued expenses and prepaid costs | `/blog/property-management-accrued-expenses` | `/blog/property-management-accounts-payable`, `/blog/property-management-month-end-close-checklist`, property-management hub | Competitor review found a distinct period-end timing workflow; page covers unbilled costs, prepaid schedules, property/entity allocation, invoice clearing and ledger tie-outs without universal journal-entry claims |
 | CAM reconciliation | Existing property-management and real-estate content to assess | Accounting guide | Confirm current content coverage and service scope before creating a new URL |
 | Owner statements and distributions | Existing property-management content to assess | Month-end close and accounting guide | Add useful depth where missing; do not promise release dates or legal/accounting outcomes without evidence |
 | Pricing and in-house vs outsourced comparison | Existing general outsourcing cost guide and engagement-model comparison to assess | Property management hub | Property-specific cost content only if it can give honest, evidence-based factors without invented per-door pricing |
