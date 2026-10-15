@@ -89,6 +89,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/ecommerce` | B | — | Published |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/blog/property-management-lender-reporting` | C | Property Management | Added 2026-10-15 — lender-specific reporting package checklist, reconciliation and review controls |
+| `/blog/property-management-bookkeeping-cleanup` | C | Property Management | Added 2026-10-15 — cleanup/catch-up checklist for overdue property books, reconciliations, exception logs and return to monthly close |
 | `/industries/property-management` | B | — | Added 2026-09-17 — 4,106 words. For companies managing property that belongs to owners |
 | `/industries/property-management/appfolio-accounting-california` | B | Property Management / AppFolio / California | Existing software-and-state commercial page; remote scope and California trust-record boundaries documented |
 | `/industries/hoa-accounting` | B | — | Added 2026-09-17 — 4,115 words. HOAs, condo associations and community management companies |
