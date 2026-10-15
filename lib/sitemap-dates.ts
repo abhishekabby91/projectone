@@ -125,6 +125,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/property-management/general-ledger-reconciliation': '2026-10-14',
   '/industries/property-management/lender-reporting-noi-support': '2026-10-15',
   '/industries/property-management/management-company-accounting': '2026-10-15',
+  '/industries/property-management/month-end-close-support': '2026-10-15',
   '/industries/property-management/tenant-accounting-operations': '2026-10-15',
   '/industries/property-management/texas': '2026-10-14',
   '/industries/real-estate': '2026-10-15',
