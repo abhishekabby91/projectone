@@ -156,6 +156,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/property-management-accrued-expenses', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-utility-billback-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-management-fee-reconciliation', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-capital-expenditure-accounting', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-budget-vs-actual-reporting', priority: 0.8, changeFrequency: 'monthly' }
     { path: '/blog/property-management-financial-statements', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-portfolio-performance-reporting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-owner-distributions', priority: 0.8, changeFrequency: 'monthly' },
