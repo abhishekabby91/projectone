@@ -491,6 +491,26 @@ Two rules that go with it:
   signal on the site's longest-form content. Add a SHA only after confirming the
   rendered output really is identical; the safe default is to let the date move.
 
+**The git history this script reads was re-created on 2026-10-10, so a blind
+run now falsifies dates (found 2026-10-15).** `dc823de` is the repository's
+**root** commit and added 353 files with zero deletions. Nothing here has
+history before that date, so the script dates every page that has not been
+edited since the re-import at **2026-10-10** — the date the file was copied in,
+not the date anything changed.
+
+Run on 2026-10-15 it would have moved **57 routes** from truthful September
+dates to that import date: `/about`, `/privacy`, `/compliance`, the whole
+registration cluster, the market sub-pages. That is the fabricated `lastmod`
+this file already bans, arriving through the tool instead of around it, and it
+tells Google 57 pages you have not touched were rewritten.
+
+**So run it, then diff `lib/sitemap-dates.ts`, and keep only the routes you
+actually changed.** A route whose date lands on `2026-10-10` is the re-import
+showing through. The dates already committed for those routes are the better
+record — leave them. This heals on its own: once a page is genuinely edited
+after the re-import its real date is back in history, and 127 routes were
+already in that position on 2026-10-15.
+
 `app/sitemap.ts` also used to spell out all 21 Service x Region URLs a second
 time by hand, after the `serviceRegionPaths.map()` loop had already generated
 them. The dedupe swallowed them silently, so 21 lines were dead and anyone

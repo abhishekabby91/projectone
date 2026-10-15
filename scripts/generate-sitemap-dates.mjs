@@ -26,6 +26,32 @@
  *   node scripts/generate-sitemap-dates.mjs
  *
  * Re-run it as the last step of a content pass, before committing.
+ *
+ * ---------------------------------------------------------------------------
+ * READ THIS BEFORE RUNNING IT WHOLESALE (2026-10-15)
+ * ---------------------------------------------------------------------------
+ * This script's whole premise is that git history records when a page changed.
+ * That premise broke in this repository: `dc823de` (2026-10-10) is the ROOT
+ * commit and added 353 files with zero deletions -- the history was re-created,
+ * so no file here has any history before that date.
+ *
+ * The consequence is specific and easy to miss. Running this script now dates
+ * every route that has not been edited since the re-import at 2026-10-10,
+ * because that is the earliest commit containing the file. On 2026-10-15 that
+ * meant 57 routes -- /about, /privacy, /compliance, the registration cluster,
+ * the market sub-pages -- would have moved from truthful September dates to the
+ * import date. None of those pages changed on 2026-10-10; they were copied.
+ * Publishing that to Google is the fabricated `lastmod` this file exists to
+ * prevent, just arriving through the tool rather than around it.
+ *
+ * So: run it, then DIFF `lib/sitemap-dates.ts` before committing, and keep only
+ * the routes you actually changed. A route whose date moves to 2026-10-10 is
+ * the import showing through, not a content change. The dates already committed
+ * for those routes are the more truthful record and should be left alone.
+ *
+ * This resolves itself naturally -- once a page is genuinely edited after the
+ * re-import, its real date is in history again and the script is right about
+ * it. 127 routes were already in that position on 2026-10-15.
  */
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
