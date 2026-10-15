@@ -135,6 +135,13 @@ Before adding or materially rewriting a page:
 
 ## Current research signals
 
+### Competitor review notes — 2026-10-15
+
+- **Accrued expenses and prepaid costs:** WPM Accounting discusses costs incurred before invoice receipt and the month-end accrual workflow; Buildium's property accounting guide covers cash versus accrual methods and common balance-sheet categories; AccountingTools explains prepaid expense recognition and schedule treatment. These support an operational page about timing adjustments, not a claim of search volume. Sources: https://www.wpmaccounting.com/post/property-management-accrued-expenses-how-to-record-and-manage-unpaid-expenses ; https://www.buildium.com/blog/real-estate-accounting-guide-for-property-managers/ ; https://www.accountingtools.com/articles/prepaid-expenses-accounting
+- **Utility billback / RUBS:** competitor pages focus on connecting master utility bills to documented allocation methods, vacancy handling, resident charges and accounting presentation. The page avoids legal conclusions because eligibility and disclosure rules depend on the property and jurisdiction. Sources: https://rea.co/rubs-utility-billback-accounting/ ; https://cleancre.com/insights/rubs-accounting-guide/ ; https://www.nutiliti.com/occupied-billing-management
+- **Management-fee reconciliation:** competitor coverage identifies a distinct bridge between fee calculations, owner/property records, bank transfers and the management company's own books. The page distinguishes calculation and reconciliation from payment authorization and avoids prescribing one universal journal entry. Sources: https://daxsync.com/resources/management-fee-transfer-bridge/ ; https://cpafirmsouthflorida.com/property-management-fees-reconciling-owner-statements-to-bank-activity/ ; https://meridianledgergroup.com/resources/owner-reporting-for-property-managers/
+
+
 A current SERP review surfaced specialist AppFolio bookkeeping providers that lead with specific deliverables such as monthly close, reconciliations, owner statements, reporting and working within the client's existing platform. AppFolio's own accounting product pages also describe owner statements, bank reconciliation and CAM reporting. These are useful competitor/product coverage signals, not proof of keyword volume or Accounstone rankings.
 
 Official Google Search Central guidance says foundational SEO remains relevant to AI search features: useful and original content, crawlability, internal links, accessible text, good page experience and structured data that matches visible content. There is no special schema or AI file that guarantees inclusion. Avoid scaled, low-value pages created only to target prompts.
