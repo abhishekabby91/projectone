@@ -466,6 +466,7 @@ export default function PropertyManagementPage() {
               { name: 'Bookkeeping cleanup and catch-up checklist', href: '/blog/property-management-bookkeeping-cleanup' },
               { name: 'Accruals and prepaid expenses month-end checklist', href: '/blog/property-management-accrued-expenses' },
               { name: 'Utility billback and RUBS reconciliation workflow', href: '/blog/property-management-utility-billback-reconciliation' },
+              { name: 'Management-fee reconciliation across owner and company books', href: '/blog/property-management-management-fee-reconciliation' },
               { name: 'Property financial statements and reporting package', href: '/blog/property-management-financial-statements' },
               { name: 'Portfolio performance reporting and KPIs', href: '/blog/property-management-portfolio-performance-reporting' },
               { name: 'Owner distribution accounting workflow', href: '/blog/property-management-owner-distributions' },
