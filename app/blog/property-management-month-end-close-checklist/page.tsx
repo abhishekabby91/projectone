@@ -31,7 +31,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>A property management month-end close should do more than produce a profit-and-loss report. It should connect the period's transactions to bank activity, tenant balances, owner and property records, vendor obligations, deposit liabilities and the reports sent to owners.</p>
-      <p>The exact sequence varies by portfolio and software. The goal is consistent: identify the period being closed, reconcile the records, resolve material exceptions, document review and issue reports only when their underlying figures are ready.</p>
+      <p>The exact sequence varies by portfolio and software. The goal is consistent: identify the period being closed, reconcile the records, resolve material exceptions, document review and issue reports only when their underlying figures are ready. Include a documented review of <Link href="/blog/property-management-accrued-expenses" className="text-primary underline underline-offset-4">accruals and prepaid expense schedules</Link> so late invoices and advance payments are reflected consistently.</p>
 
       <h2>At a glance: the monthly close sequence</h2>
       <ol>
