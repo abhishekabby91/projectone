@@ -463,6 +463,7 @@ export default function PropertyManagementPage() {
               { name: 'CAM reconciliation workflow', href: '/blog/property-management-cam-reconciliation' },
               { name: 'Owner statement reconciliation workflow', href: '/blog/property-management-owner-statements' },
               { name: 'Lender reporting package checklist', href: '/blog/property-management-lender-reporting' },
+              { name: 'Replacement reserve and project draw reconciliation', href: '/blog/property-management-replacement-reserve-accounting' },
               { name: 'Bookkeeping cleanup and catch-up checklist', href: '/blog/property-management-bookkeeping-cleanup' },
               { name: 'Accruals and prepaid expenses month-end checklist', href: '/blog/property-management-accrued-expenses' },
               { name: 'Utility billback and RUBS reconciliation workflow', href: '/blog/property-management-utility-billback-reconciliation' },
