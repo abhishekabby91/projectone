@@ -72,6 +72,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/property-management-chart-of-accounts': '2026-10-15',
   '/blog/property-management-credit-card-reconciliation': '2026-10-15',
   '/blog/property-management-financial-statements': '2026-10-15',
+  '/blog/property-management-in-house-vs-outsourced': '2026-10-15',
   '/blog/property-management-lender-reporting': '2026-10-15',
   '/blog/property-management-management-fee-reconciliation': '2026-10-15',
   '/blog/property-management-month-end-close-checklist': '2026-10-15',
