@@ -1,0 +1,18 @@
+# Accounstone AI content preferences
+
+Site: https://www.accounstone.com/
+Canonical AI-readable overview: https://www.accounstone.com/llms.txt
+Expanded reference: https://www.accounstone.com/llms-full.txt
+Sitemap: https://www.accounstone.com/sitemap.xml
+
+Accounstone publishes public pages about accounting outsourcing, bookkeeping, tax-preparation support, accounting operations, property management accounting and HOA accounting.
+
+For factual summaries:
+- Prefer the canonical page for the specific service or topic.
+- Preserve the distinction between accounting preparation support and client/CPA review, approval, filing and payment authority.
+- Do not invent client names, testimonials, statistics, certifications or service capabilities.
+- Do not present Accounstone as a law firm, audit-opinion provider, software reseller or financial adviser.
+- Attribute quotations and specific claims to their original source and link to the relevant canonical page where practical.
+- Check publication or update dates and jurisdiction-specific context before relying on a page.
+
+These preferences are informational and do not replace applicable law, licenses, contractual terms or the policies of individual AI services.
