@@ -79,6 +79,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/property-management-owner-statements': '2026-10-15',
   '/blog/property-management-portfolio-performance-reporting': '2026-10-15',
   '/blog/property-management-receivables-aging': '2026-10-15',
+  '/blog/property-management-replacement-reserve-accounting': '2026-10-15',
   '/blog/property-management-security-deposit-accounting': '2026-10-15',
   '/blog/property-management-tenant-ledger-reconciliation': '2026-10-15',
   '/blog/property-management-trust-accounting-reconciliation': '2026-10-15',
