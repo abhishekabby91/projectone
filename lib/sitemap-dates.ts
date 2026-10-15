@@ -126,6 +126,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/property-management/lender-reporting-noi-support': '2026-10-15',
   '/industries/property-management/tenant-accounting-operations': '2026-10-15',
   '/industries/property-management/texas': '2026-10-14',
+  '/industries/property-management/trust-account-reconciliation': '2026-10-15',
   '/industries/real-estate': '2026-10-15',
   '/industries/real-estate/yardi-accounting-outsourcing-texas': '2026-10-09',
   '/industries/technology': '2026-10-15',
