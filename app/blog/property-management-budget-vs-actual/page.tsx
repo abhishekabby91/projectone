@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Budget vs. Actual Reporting',
+  title: 'Property Management Budget vs. Actual',
   description:
     'Build property management budget-vs-actual reports with consistent account mapping, variance explanations, forecasts and review controls.',
   path: '/blog/property-management-budget-vs-actual',
