@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Accruals and Prepaid Expenses Checklist',
+  title: 'Property Management Accruals & Prepaids',
   description:
     'Review property management accruals and prepaid expenses at month-end, with support schedules, examples, reversals and property-level allocation checks.',
   path: '/blog/property-management-accrued-expenses',
@@ -32,11 +32,10 @@ const faqs = [
       'Use a documented accrual schedule with the property or entity, vendor, period, estimate, source evidence, journal entry reference, reversal or clearing status, and actual invoice amount. Match the invoice to the schedule before posting it through accounts payable.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
-
 export default function PropertyManagementAccruedExpenses() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Accruals and Prepaid Expenses: A Month-End Checklist"
       category="Property Management Accounting"
       description="A practical way to review costs that belong to the current period, payments that cover future periods, and the schedules that support each adjustment."
@@ -46,7 +45,6 @@ export default function PropertyManagementAccruedExpenses() {
       inquiryTitle="Need Help With Property-Level Month-End Adjustments?"
       inquiryLead="Tell us how you track invoices, prepaid schedules, accruals and property allocations today, including the accounting or property-management system you use."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Property management reports can be distorted when the invoice date or payment date is treated as the only signal for when a cost belongs in the books. An expense may relate to a service already received even if the invoice arrives next month. A payment may cover several future months rather than only the month it was paid.</p>
       <p>This checklist helps accounting teams identify those timing differences during close, document the basis for adjustments and keep property-level reporting separate from management-company costs. The right treatment depends on the entity’s accounting method, reporting framework, contract terms and accounting policy; confirm material or unusual items with the responsible accountant or CPA.</p>
 
@@ -76,7 +74,7 @@ export default function PropertyManagementAccruedExpenses() {
         <li>Separate owner/property costs from management-company payroll, office costs and internal software where applicable.</li>
         <li>For multi-entity portfolios, confirm the correct legal entity and intercompany treatment.</li>
       </ul>
-      <p>For account structure and property-level tracking, see the <Link href="/blog/property-management-chart-of-accounts" className="text-primary underline underline-offset-4">property management chart of accounts guide</Link>.</p>
+      <p>For account structure and property-level tracking, see the <Link href="/blog/property-management-chart-of-accounts" className="text-primary underline underline-offset-4 inline-block py-1.5">property management chart of accounts guide</Link>.</p>
 
       <h2>3. Maintain a prepaid expense schedule</h2>
       <p>Review larger or recurring payments that cover more than one reporting period. Depending on the contract and accounting policy, examples may include insurance, licenses, software subscriptions, service agreements or other advance payments. A refundable deposit is not automatically a prepaid expense; classify it according to its nature and the underlying agreement.</p>
@@ -104,7 +102,7 @@ export default function PropertyManagementAccruedExpenses() {
         <li>Carry forward only items that remain valid, with an explanation and owner.</li>
         <li>Review aged prepaid balances and stale accruals rather than rolling them forward without support.</li>
       </ul>
-      <p>Use the <Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4">accounts payable workflow</Link> to coordinate invoice intake and duplicate checks, and the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">month-end close checklist</Link> to place the review in the broader close sequence.</p>
+      <p>Use the <Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4 inline-block py-1.5">accounts payable workflow</Link> to coordinate invoice intake and duplicate checks, and the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4 inline-block py-1.5">month-end close checklist</Link> to place the review in the broader close sequence.</p>
 
       <h2>6. Reconcile the schedules before reports are issued</h2>
       <p>At close, compare the accrual and prepaid schedules to their general-ledger accounts. Check opening balances, additions, expenses recognized, reversals, invoices cleared and ending balances. Keep the schedule and source documents available for the person reviewing property-level statements.</p>
@@ -129,8 +127,8 @@ export default function PropertyManagementAccruedExpenses() {
 
       <h2>Further reading</h2>
       <ul>
-        <li><a href="https://www.buildium.com/blog/real-estate-accounting-guide-for-property-managers/" target="_blank" rel="noreferrer">Buildium: Real estate accounting guide for property managers</a></li>
-        <li><a href="https://www.accountingtools.com/articles/prepaid-expenses-accounting" target="_blank" rel="noreferrer">AccountingTools: Prepaid expenses accounting</a></li>
+        <li><a href="https://www.buildium.com/blog/real-estate-accounting-guide-for-property-managers/" target="_blank" rel="noreferrer" className="inline-block py-1.5">Buildium: Real estate accounting guide for property managers</a></li>
+        <li><a href="https://www.accountingtools.com/articles/prepaid-expenses-accounting" target="_blank" rel="noreferrer" className="inline-block py-1.5">AccountingTools: Prepaid expenses accounting</a></li>
       </ul>
     </ArticleLayout>
   );
