@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Security Deposit Accounting',
+  title: 'Security Deposit Accounting',
   description: 'A practical workflow for tracking rental security deposits by tenant, lease and property, reconciling balances and reviewing move-out activity.',
   path: '/blog/property-management-security-deposit-accounting',
 });

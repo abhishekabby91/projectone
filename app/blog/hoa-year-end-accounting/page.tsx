@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Year-End Accounting: Preparing Books for the CPA',
+  title: 'HOA Year-End Accounting',
   description: 'Prepare HOA books for year-end with a checklist for bank reconciliations, homeowner balances, payables, reserves, statements and CPA schedules.',
   path: '/blog/hoa-year-end-accounting',
 });

@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Rent Roll Accounting: What Property Managers Need to Know',
+  title: 'Rent Roll Accounting Explained',
   description: 'How property managers can use rent roll data with the general ledger to review rental income, vacancies, tenant balances and property reporting.',
   path: '/blog/rent-roll-accounting',
 });

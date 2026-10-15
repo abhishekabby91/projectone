@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting Workflow: From Transaction to Close',
+  title: 'HOA Accounting Workflow',
   description: 'A practical HOA accounting workflow covering assessments, payments, AP, bank reconciliation, reserves, review and monthly reporting.',
   path: '/blog/hoa-accounting-workflow',
 });

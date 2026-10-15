@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Owner Statement Reconciliation',
+  title: 'Owner Statement Reconciliation',
   description: 'Prepare property management owner statements from reconciled ledgers, checked fees, reserve movements and documented exceptions.',
   path: '/blog/property-management-owner-statements',
 });

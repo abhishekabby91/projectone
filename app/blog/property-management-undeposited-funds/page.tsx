@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Undeposited Funds Reconciliation',
+  title: 'Property Undeposited Funds Review',
   description: 'Investigate property management undeposited funds by tracing tenant receipts, deposits in transit, bank activity, clearing entries and ledger balances.',
   path: '/blog/property-management-undeposited-funds',
 });

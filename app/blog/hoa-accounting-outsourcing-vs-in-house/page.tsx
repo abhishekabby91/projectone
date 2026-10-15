@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting Outsourcing vs In-House Bookkeeping',
+  title: 'HOA Accounting: Outsource vs In-House',
   description: 'Compare outsourced and in-house HOA bookkeeping and accounting by workflow, controls, software, continuity, reporting and management responsibility.',
   path: '/blog/hoa-accounting-outsourcing-vs-in-house',
 });

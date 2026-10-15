@@ -15,7 +15,7 @@ import {
 const PATH = '/industries/ecommerce/amazon-seller-accounting';
 
 export const metadata: Metadata = genMeta({
-  title: 'Amazon Seller Accounting & Settlement Reconciliation',
+  title: 'Amazon Seller Accounting Support',
   description:
     'Accounting support for Amazon sellers: reconcile settlement reports, fees, refunds, reserves, inventory and COGS to your books and bank activity.',
   path: PATH,

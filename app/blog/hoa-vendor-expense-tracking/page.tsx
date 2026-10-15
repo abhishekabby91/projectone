@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'How to Track HOA Vendor and Maintenance Expenses',
+  title: 'HOA Vendor Expense Tracking',
   description: 'How HOAs can organize vendor and maintenance expenses by account, project and operating or reserve purpose for cleaner monthly reporting.',
   path: '/blog/hoa-vendor-expense-tracking',
 });

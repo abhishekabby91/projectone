@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/trust-account-reconciliation';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Trust Account Reconciliation',
+  title: 'Trust Account Reconciliation Support',
   description: 'Prepare trust-account reconciliation schedules, compare bank and ledger balances, investigate exceptions and document review handoffs for property managers.',
   path: PATH,
 });

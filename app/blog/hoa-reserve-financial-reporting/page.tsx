@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Financial Reporting for Board Meetings',
+  title: 'HOA Reserve Financial Reporting',
   description: 'What HOA reserve financial reports should show, including contributions, spending, cash balances, budget-to-actual and project activity.',
   path: '/blog/hoa-reserve-financial-reporting',
 });

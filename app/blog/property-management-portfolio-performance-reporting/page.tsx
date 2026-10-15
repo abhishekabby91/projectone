@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Portfolio Performance Reporting',
+  title: 'Property Portfolio Performance Reports',
   description: 'Build consistent property management portfolio reports with comparable KPIs, normalized metrics, exception reviews and reliable property-level financial data.',
   path: '/blog/property-management-portfolio-performance-reporting',
 });

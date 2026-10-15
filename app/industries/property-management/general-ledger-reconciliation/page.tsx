@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/general-ledger-reconciliation';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management General Ledger Reconciliation',
+  title: 'Property GL Reconciliation Support',
   description: 'Reconcile property-management platform reports to the general ledger, investigate posting differences and prepare a repeatable monthly review.',
   path: PATH,
 });

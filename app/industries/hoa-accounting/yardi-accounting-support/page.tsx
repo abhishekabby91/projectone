@@ -86,7 +86,7 @@ const workflows = [
 
 export default function YardiHoaAccountingSupportPage() {
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -181,6 +181,6 @@ export default function YardiHoaAccountingSupportPage() {
         description="Tell us how your HOA uses Yardi today, which reports are required, and where reconciliations or reporting handoffs need support."
         cta={{ text: 'Discuss your workflow', href: '/contact' }}
       />
-    </>
+    </main>
   );
 }

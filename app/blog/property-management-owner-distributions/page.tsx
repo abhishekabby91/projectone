@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Owner Distribution Workflow',
+  title: 'Owner Distribution Workflow',
   description: 'A controlled owner distribution workflow covering reconciled cash, available funds, fees, reserves, approvals, payment records and exceptions.',
   path: '/blog/property-management-owner-distributions',
 });

@@ -16,7 +16,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounting/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourced Accounting Services for U.S. Businesses',
+  title: 'U.S. Outsourced Accounting Services',
   description: 'U.S. accounting operations — GAAP reconciliations, month-end close, journal entries and management reporting your CPA can review rather than rebuild.',
   path: PATH,
 });

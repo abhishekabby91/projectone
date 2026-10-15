@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Common HOA Accounting Mistakes and How to Avoid Them',
+  title: 'Common HOA Accounting Mistakes',
   description: 'Common HOA accounting mistakes involving assessments, reconciliations, reserves, payables, homeowner ledgers and monthly reporting.',
   path: '/blog/hoa-accounting-mistakes',
 });

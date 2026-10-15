@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Bank Reconciliation: A Practical Monthly Process',
+  title: 'HOA Bank Reconciliation Process',
   description: 'A practical HOA bank reconciliation process covering operating and reserve accounts, outstanding checks, deposits, transfers and unreconciled items.',
   path: '/blog/hoa-bank-reconciliation',
 });

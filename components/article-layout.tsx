@@ -4,6 +4,7 @@ import InquirySection from '@/components/inquiry-section';
 import ReadingProgress from '@/components/reading-progress';
 import Reveal from '@/components/reveal';
 import ShareButtons from '@/components/share-buttons';
+import { routeLastModified } from '@/lib/sitemap-dates';
 import {
   generateArticleSchema,
   generateBreadcrumbSchema,
@@ -222,9 +223,21 @@ export default function ArticleLayout({
       : pathTokens.includes('india')
         ? 'en-IN'
         : 'en-US';
+  // `dateModified` is a freshness signal that both Google and the AI answer
+  // engines weight when choosing what to cite, and only two articles were
+  // passing `updatedDate` explicitly. The fallback is the generated per-route
+  // date from `lib/sitemap-dates.ts` -- the last commit that changed this
+  // page's rendered body -- so it is a true date rather than a fabricated one.
+  // It is deliberately NOT `new Date()`; see CLAUDE.md, "Sitemap lastmod is
+  // generated, not written". A route with no generated entry gets no
+  // dateModified at all rather than a guess.
+  const generatedModified = routeLastModified[path] ?? routeLastModified[path.replace(/\/$/, '')];
+  const effectiveUpdatedDate =
+    updatedDate ?? (generatedModified && generatedModified > publishedDate ? generatedModified : undefined);
+
   const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
-  const displayUpdatedDate = updatedDate
-    ? formatPublishedDate(updatedDate, dateLocale)
+  const displayUpdatedDate = effectiveUpdatedDate
+    ? formatPublishedDate(effectiveUpdatedDate, dateLocale)
     : undefined;
   const relatedLinks = getRelatedLinks(slug);
 
@@ -247,7 +260,7 @@ export default function ArticleLayout({
     description,
     imageUrl: `${baseUrl}/og-image.jpg`,
     publishedDate,
-    updatedDate,
+    updatedDate: effectiveUpdatedDate,
     author: 'Accounstone',
     slug,
     basePath: `${hubHref}/`,
@@ -396,10 +409,10 @@ export default function ArticleLayout({
 
           <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted" aria-label="Article information">
             <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{displayPublishedDate}</time></span>
-            {updatedDate && updatedDate !== publishedDate ? (
+            {effectiveUpdatedDate && effectiveUpdatedDate !== publishedDate ? (
               <>
                 <span aria-hidden="true">•</span>
-                <span><strong className="text-primary">Last updated:</strong> <time dateTime={updatedDate}>{displayUpdatedDate}</time></span>
+                <span><strong className="text-primary">Last updated:</strong> <time dateTime={effectiveUpdatedDate}>{displayUpdatedDate}</time></span>
               </>
             ) : null}
             <span aria-hidden="true">•</span>

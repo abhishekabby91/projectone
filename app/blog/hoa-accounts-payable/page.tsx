@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounts Payable: How Vendor Bills Should Be Reviewed',
+  title: 'HOA Accounts Payable Process',
   description: 'A practical HOA accounts payable process covering invoice coding, approvals, duplicate checks, operating and reserve expenses and vendor records.',
   path: '/blog/hoa-accounts-payable',
 });

@@ -21,7 +21,7 @@ import {
 const PATH = '/markets/united-states/california';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting & Bookkeeping Services in California',
+  title: 'Accounting Services in California',
   description:
     'Accounting and bookkeeping support for California businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow.',
   path: PATH,

@@ -86,7 +86,7 @@ const workflows = [
 
 export default function EUnifyHoaAccountingSupportPage() {
   return (
-    <>
+    <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -172,6 +172,6 @@ export default function EUnifyHoaAccountingSupportPage() {
         description="Tell us how your association uses eUnify, which records and reports need review, and where reconciliations or reporting handoffs need support."
         cta={{ text: 'Discuss your workflow', href: '/contact' }}
       />
-    </>
+    </main>
   );
 }

@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Receivables Aging Reconciliation',
+  title: 'Property Receivables Aging Review',
   description: 'Reconcile property management receivables aging to tenant ledgers and the general ledger, investigate credits and exceptions, and improve month-end reporting.',
   path: '/blog/property-management-receivables-aging',
 });

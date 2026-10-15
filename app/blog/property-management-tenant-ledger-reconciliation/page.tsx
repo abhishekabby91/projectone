@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Tenant Ledger Reconciliation',
+  title: 'Tenant Ledger Reconciliation',
   description:
     'Reconcile tenant ledgers by checking charges, receipts, credits, deposits, open balances and lease-level records before property management reports are issued.',
   path: '/blog/property-management-tenant-ledger-reconciliation',

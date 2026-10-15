@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Chart of Accounts: How Should It Be Set Up?',
+  title: 'HOA Chart of Accounts',
   description: 'A practical guide to building an HOA chart of accounts for assessments, operating expenses, reserves, receivables, payables and board reporting.',
   path: '/blog/hoa-chart-of-accounts',
 });

@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Financial Statements: What Boards Should Review',
+  title: 'HOA Financial Statements for Boards',
   description: 'A practical guide to HOA financial statements, including the balance sheet, income statement, budget-to-actual, reserves and delinquency reports.',
   path: '/blog/hoa-financial-statements-board-review',
 });

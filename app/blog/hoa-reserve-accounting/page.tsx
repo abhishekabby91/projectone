@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Accounting: What Boards Should Track',
+  title: 'HOA Reserve Accounting',
   description: 'A practical guide to HOA reserve accounting, including contributions, transfers, reserve expenses, reconciliations and board reporting.',
   path: '/blog/hoa-reserve-accounting',
 });

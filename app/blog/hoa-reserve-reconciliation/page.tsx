@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Reserve Reconciliation: What Should Be Reviewed?',
+  title: 'HOA Reserve Reconciliation',
   description: 'A practical HOA reserve reconciliation process covering bank balances, contributions, transfers, reserve expenses and supporting schedules.',
   path: '/blog/hoa-reserve-reconciliation',
 });

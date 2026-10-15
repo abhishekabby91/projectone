@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Budget-to-Actual Reports: What Should Boards Review?',
+  title: 'HOA Budget-to-Actual Reports',
   description: 'A practical guide to HOA budget-to-actual reports, meaningful variances, operating expenses, assessment income and reserve activity.',
   path: '/blog/hoa-budget-to-actual-reports',
 });

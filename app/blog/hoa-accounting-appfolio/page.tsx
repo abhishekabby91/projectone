@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 import FAQSection from '@/components/faq-section';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting with AppFolio: What Should Be Reviewed?',
+  title: 'HOA Accounting with AppFolio',
   description: 'How to review HOA accounting in AppFolio, including homeowner ledgers, assessments, bank reconciliations, payables, reserves and reporting.',
   path: '/blog/hoa-accounting-appfolio',
 });
