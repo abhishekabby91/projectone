@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Replacement Reserve Accounting',
+  title: 'Property Management Reserve Accounting',
   description:
     'Track property replacement reserves with approved project records, funding and draw schedules, invoice support, ledger reconciliations and owner reporting.',
   path: '/blog/property-management-replacement-reserve-accounting',
