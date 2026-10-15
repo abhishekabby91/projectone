@@ -1,8 +1,8 @@
-## 2026-10-15 — Property management capital expenditure and budget-to-actual guides
+## 2026-10-15 — Property management capital expenditure guide and budget-reporting refresh
 
 - Added `/blog/property-management-capital-expenditure-accounting` after competitor review confirmed a distinct operational need to connect project evidence, property coding, capitalization review, asset schedules and ledger reconciliation. The page avoids making unsupported tax or depreciation determinations.
-- Added `/blog/property-management-budget-vs-actual-reporting` for reconciled budget comparisons, material variance explanations and follow-up tracking. The page distinguishes reporting workflow from unsupported operational conclusions and avoids invented variance thresholds.
-- Added both routes to the property-management hub, blog index, sitemap, content/route/search-intent registries and AI-readable references. Generated sitemap dates and production-build validation are handled by the feature-branch GitHub Actions workflow; no merge to `main` or production deployment.
+- Refreshed the existing `/blog/property-management-budget-vs-actual` destination rather than creating a second URL for the same intent. The established page remains the single primary destination for reconciled budget comparisons, variance explanations and follow-up tracking.
+- Added the capital-expenditure guide and ensured the existing budget-reporting guide is linked through the property-management hub, blog index, registries and AI-readable references. Generated sitemap dates and production-build validation are handled by the feature-branch GitHub Actions workflow; no merge to `main` or production deployment.
 
 ## 2026-10-15 — Property management management-fee reconciliation guide
 
