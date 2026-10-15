@@ -27,3 +27,18 @@ node_modules
 # them. The seeded output is ~2.5MB of packaged editor code regenerated from
 # them on every change, so it stays out of the repo.
 .design/accounstone-refresh.html
+
+# local audit scratch
+.audit.*
+.aq.*
+.devices.mjs
+.taps.mjs
+.safe*.mjs
+.crawl.py
+.status.json
+.retitle.py
+.redesc.py
+.migrate.py
+.faqcheck.py
+.llms.py
+.union.py
