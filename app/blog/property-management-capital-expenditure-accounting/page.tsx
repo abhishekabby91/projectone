@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Capital Expenditures',
   description:
-    'Track property management capital expenditures with invoice review, repair-versus-improvement checks, asset schedules, property coding and reconciliation controls.',
+    'Track property capital expenditures with invoice review, repair-versus-improvement checks, asset schedules, property coding and reconciliation controls.',
   path: '/blog/property-management-capital-expenditure-accounting',
 });
 
