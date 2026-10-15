@@ -18,6 +18,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  { href: '/blog/property-management-in-house-vs-outsourced', title: 'In-House vs. Outsourced Property Management: Which Model Fits?', description: 'Compare direct management, a third-party property manager and a hybrid model that keeps local decisions close while assigning defined back-office work to specialists.', tag: 'Property Management', readTime: '9 min read' },
   { href: '/blog/property-management-bookkeeping-cleanup', title: 'Property Management Bookkeeping Cleanup: A Practical Catch-Up Checklist', description: 'Assess overdue property books, establish a reliable starting point, reconcile ledgers and document a controlled return to monthly close.', tag: 'Property Management', readTime: '8 min read' },
   { href: '/blog/property-management-accrued-expenses', title: 'Property Management Accruals and Prepaid Expenses: A Month-End Checklist', description: 'Review unbilled costs, prepaid schedules, property allocations, reversals and ledger tie-outs during month-end close.', tag: 'Property Management', readTime: '8 min read' },
   { href: '/blog/property-management-utility-billback-reconciliation', title: 'Property Management Utility Billback and RUBS Reconciliation', description: 'Trace master utility bills through allocation calculations, tenant charges, vacancy treatment and ledger reconciliation.', tag: 'Property Management', readTime: '9 min read' },
