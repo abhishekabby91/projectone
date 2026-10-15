@@ -153,6 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/property-management-owner-statements', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-lender-reporting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-bookkeeping-cleanup', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/blog/property-management-accrued-expenses', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-financial-statements', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/blog/property-management-portfolio-performance-reporting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/property-management-owner-distributions', priority: 0.8, changeFrequency: 'monthly' },
