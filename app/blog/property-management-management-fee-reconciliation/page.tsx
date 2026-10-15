@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Fee Reconciliation: Owner Ledger to Company Books',
+  title: 'Property Management Fee Reconciliation',
   description:
     'Reconcile property management fees from agreement-based calculations and owner ledgers through bank transfers, company revenue and operating-bank receipts.',
   path: '/blog/property-management-management-fee-reconciliation',
@@ -32,11 +32,10 @@ const faqs = [
       'Preparation, calculation and reconciliation should be distinguished from authorization and release of funds. The client should define access, approval limits, reviewer responsibilities and payment authority in the engagement procedures.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
-
 export default function PropertyManagementFeeReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Fee Reconciliation: From Owner Ledger to Company Books"
       category="Property Management Accounting"
       description="A traceable workflow for checking management-fee calculations, owner-ledger entries, bank transfers and company revenue without double counting."
@@ -46,7 +45,6 @@ export default function PropertyManagementFeeReconciliation() {
       inquiryTitle="Need a Clearer Fee Reconciliation Process?"
       inquiryLead="Tell us how management fees are calculated, transferred and recorded across your property platform and company accounting system."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Property managers may maintain property and owner records in a property-management platform while the management company keeps its own operating books in an accounting system. The fee is the bridge between those records. A statement can show a fee charged to an owner while the company’s bank receipt is still pending, or a bank transfer can appear without the corresponding ledger entries.</p>
       <p>The purpose of this workflow is to trace each fee and explain differences—not to prescribe one universal journal entry. The agreement, entity structure, accounting policy, software configuration and applicable rules determine the exact treatment. The client or authorized manager retains approval and payment authority.</p>
 
@@ -118,10 +116,10 @@ export default function PropertyManagementFeeReconciliation() {
 
       <h2>Related property accounting guides</h2>
       <ul>
-        <li><Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">Owner statement reconciliation</Link></li>
-        <li><Link href="/blog/property-management-owner-distributions" className="text-primary underline underline-offset-4">Owner distribution accounting workflow</Link></li>
-        <li><Link href="/blog/property-management-trust-accounting-reconciliation" className="text-primary underline underline-offset-4">Trust account reconciliation</Link></li>
-        <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">Month-end close checklist</Link></li>
+        <li><Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4 inline-block py-1.5">Owner statement reconciliation</Link></li>
+        <li><Link href="/blog/property-management-owner-distributions" className="text-primary underline underline-offset-4 inline-block py-1.5">Owner distribution accounting workflow</Link></li>
+        <li><Link href="/blog/property-management-trust-accounting-reconciliation" className="text-primary underline underline-offset-4 inline-block py-1.5">Trust account reconciliation</Link></li>
+        <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4 inline-block py-1.5">Month-end close checklist</Link></li>
       </ul>
     </ArticleLayout>
   );
