@@ -89,6 +89,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/ecommerce` | B | — | Published |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/blog/property-management-lender-reporting` | C | Property Management | Added 2026-10-15 — lender-specific reporting package checklist, reconciliation and review controls |
+| `/blog/property-management-replacement-reserve-accounting` | C | Property Management | Added 2026-10-15 — replacement reserve funding, project draw evidence, ledger reconciliation and reporting controls |
 | `/blog/property-management-bookkeeping-cleanup` | C | Property Management | Added 2026-10-15 — cleanup/catch-up checklist for overdue property books, reconciliations, exception logs and return to monthly close |
 | `/blog/property-management-accrued-expenses` | C | Property Management | Added 2026-10-15 — period-end accrual and prepaid schedule workflow, allocation checks, reversal/clearing controls and ledger reconciliation |
 | `/blog/property-management-utility-billback-reconciliation` | C | Property Management | Added 2026-10-15 — master utility bill to allocation formula, tenant charges, vacancy/credit and ledger tie-out workflow; no legal eligibility determinations |
