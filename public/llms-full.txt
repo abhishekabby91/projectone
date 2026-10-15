@@ -92,6 +92,7 @@ Lender reporting checklist: https://www.accounstone.com/blog/property-management
 Bookkeeping cleanup and catch-up checklist: https://www.accounstone.com/blog/property-management-bookkeeping-cleanup — diagnose overdue books, establish a supported starting point, reconcile property and tenant/owner records, document unresolved exceptions and establish a recurring close.
 Accruals and prepaid expenses checklist: https://www.accounstone.com/blog/property-management-accrued-expenses — review period-end unbilled costs, prepaid schedules, property/entity allocation, invoice clearing and general-ledger tie-outs.
 Utility billback and RUBS reconciliation: https://www.accounstone.com/blog/property-management-utility-billback-reconciliation — reconcile the source utility bill, approved allocation base, formula inputs, tenant postings, vacancy and credits without making jurisdiction-specific legal determinations.
+Management-fee reconciliation: https://www.accounstone.com/blog/property-management-management-fee-reconciliation — trace agreement-based fee calculations through owner/property ledgers, approved transfers, company revenue and operating-bank receipts without double counting.
 
 Accounting support for companies managing property on behalf of owners. Work can include property-level books, owner-statement preparation, rent-related accounting, security-deposit accounting, recoverable expenses and month-end close.
 
