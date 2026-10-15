@@ -4,7 +4,7 @@
 
 - Files/pages scanned: **198**
 - High-priority findings: **7**
-- Medium-priority findings: **13**
+- Medium-priority findings: **14**
 - Low-priority findings: **8**
 - Duplicate title groups: **0**
 
@@ -19,20 +19,20 @@
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/guides/page.tsx | 65/100 | 408 | 0 | 7 | 0 | 0 |
 | app/resources/page.tsx | 65/100 | 506 | 0 | 6 | 0 | 0 |
-| app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 308 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-maintenance-expense-accounting/page.tsx | 75/100 | 305 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-unapplied-payments/page.tsx | 75/100 | 347 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-vendor-invoice-processing/page.tsx | 75/100 | 304 | 1 | 3 | 0 | 0 |
 | app/industries/page.tsx | 75/100 | 211 | 1 | 1 | 0 | 0 |
-| app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 297 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 345 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 80/100 | 294 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-vendor-expense-tracking/page.tsx | 80/100 | 341 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
 | app/delivery-framework/communication/page.tsx | 80/100 | 258 | 1 | 5 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
 | app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounts-receivable-aging/page.tsx | 85/100 | 433 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-income-statement-explained/page.tsx | 85/100 | 476 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-accounts-receivable-aging/page.tsx | 85/100 | 429 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-income-statement-explained/page.tsx | 85/100 | 472 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-operating-vs-reserve-funds/page.tsx | 85/100 | 405 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-unapplied-payments/page.tsx | 85/100 | 352 | 1 | 3 | 0 | 0 |
-| app/blog/property-management-budget-vs-actual/page.tsx | 85/100 | 1461 | 1 | 9 | 0 | 0 |
+| app/blog/property-management-budget-vs-actual/page.tsx | 85/100 | 1513 | 1 | 9 | 0 | 0 |
 | app/compliance/page.tsx | 85/100 | 647 | 1 | 1 | 0 | 0 |
 | app/data-security/page.tsx | 85/100 | 868 | 1 | 1 | 0 | 0 |
 | app/resources/insights/asc-606-revenue-recognition-saas/page.tsx | 85/100 | 929 | 1 | 1 | 0 | 0 |
@@ -41,70 +41,70 @@
 | app/blog/accounts-payable-outsourcing/page.tsx | 90/100 | 1426 | 1 | 6 | 0 | 0 |
 | app/blog/accounts-receivable-management/page.tsx | 90/100 | 585 | 1 | 4 | 0 | 0 |
 | app/blog/audit-support-services/page.tsx | 90/100 | 708 | 1 | 6 | 0 | 0 |
-| app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 589 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-appfolio/page.tsx | 90/100 | 498 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-cleanup/page.tsx | 90/100 | 566 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounting-controls/page.tsx | 90/100 | 436 | 1 | 3 | 0 | 0 |
+| app/blog/eunify-quickbooks-hoa-accounting/page.tsx | 90/100 | 586 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-appfolio/page.tsx | 90/100 | 494 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-cleanup/page.tsx | 90/100 | 636 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-accounting-controls/page.tsx | 90/100 | 432 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-eunify/page.tsx | 90/100 | 742 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 452 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-accounting-mistakes/page.tsx | 90/100 | 447 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounting-month-end-checklist/page.tsx | 90/100 | 1478 | 1 | 17 | 0 | 0 |
-| app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 540 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 561 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounting-transition-checklist/page.tsx | 90/100 | 1470 | 1 | 7 | 0 | 0 |
-| app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 366 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 466 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-accounts-payable/page.tsx | 90/100 | 525 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-annual-budget-preparation/page.tsx | 90/100 | 1446 | 1 | 8 | 0 | 0 |
-| app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 948 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-accounting-outsourcing-vs-in-house/page.tsx | 90/100 | 539 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 557 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-transition-checklist/page.tsx | 90/100 | 1522 | 1 | 7 | 0 | 0 |
+| app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 362 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 462 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounts-payable/page.tsx | 90/100 | 520 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-annual-budget-preparation/page.tsx | 90/100 | 1443 | 1 | 8 | 0 | 0 |
+| app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 945 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-assessment-receivables-reconciliation/page.tsx | 90/100 | 717 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-balance-sheet-explained/page.tsx | 90/100 | 527 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-bank-reconciliation/page.tsx | 90/100 | 530 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-board-financial-package/page.tsx | 90/100 | 735 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-balance-sheet-explained/page.tsx | 90/100 | 523 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-bank-reconciliation/page.tsx | 90/100 | 527 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-board-financial-package/page.tsx | 90/100 | 731 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-bookkeeping-vs-accounting/page.tsx | 90/100 | 454 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 723 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 576 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 719 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 570 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-delinquency-accounting/page.tsx | 90/100 | 487 | 1 | 7 | 0 | 0 |
-| app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 910 | 1 | 2 | 0 | 0 |
+| app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 908 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 1005 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 550 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 541 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 738 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 656 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 573 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 356 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-monthly-close-process/page.tsx | 90/100 | 615 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-quickbooks-online/page.tsx | 90/100 | 538 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-reserve-accounting/page.tsx | 90/100 | 786 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-reserve-expenses/page.tsx | 90/100 | 651 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-reserve-financial-reporting/page.tsx | 90/100 | 625 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-reserve-reconciliation/page.tsx | 90/100 | 352 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-special-assessment-accounting/page.tsx | 90/100 | 1212 | 1 | 6 | 0 | 0 |
-| app/blog/hoa-vendor-1099-tracking/page.tsx | 90/100 | 603 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 533 | 1 | 4 | 0 | 0 |
-| app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-vendor-1099-tracking/page.tsx | 90/100 | 599 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-year-end-accounting/page.tsx | 90/100 | 528 | 1 | 4 | 0 | 0 |
+| app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 575 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 2078 | 1 | 57 | 0 | 0 |
-| app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1410 | 1 | 4 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 2076 | 1 | 57 | 0 | 0 |
+| app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 3737 | 1 | 33 | 0 | 0 |
-| app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1202 | 1 | 9 | 0 | 0 |
-| app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 640 | 1 | 9 | 0 | 0 |
+| app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1253 | 1 | 9 | 0 | 0 |
+| app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 637 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1352 | 1 | 6 | 0 | 0 |
-| app/blog/property-management-cash-flow-forecasting/page.tsx | 90/100 | 1490 | 1 | 10 | 0 | 0 |
-| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 600 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-credit-card-reconciliation/page.tsx | 90/100 | 1261 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-financial-statements/page.tsx | 90/100 | 1475 | 1 | 7 | 0 | 0 |
-| app/blog/property-management-month-end-close-checklist/page.tsx | 90/100 | 1574 | 1 | 15 | 0 | 0 |
-| app/blog/property-management-owner-distributions/page.tsx | 90/100 | 1454 | 1 | 5 | 0 | 0 |
-| app/blog/property-management-owner-statements/page.tsx | 90/100 | 1528 | 1 | 6 | 0 | 0 |
-| app/blog/property-management-portfolio-performance-reporting/page.tsx | 90/100 | 1341 | 1 | 5 | 0 | 0 |
-| app/blog/property-management-receivables-aging/page.tsx | 90/100 | 1263 | 1 | 5 | 0 | 0 |
-| app/blog/property-management-security-deposit-accounting/page.tsx | 90/100 | 1418 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-tenant-ledger-reconciliation/page.tsx | 90/100 | 1425 | 1 | 11 | 0 | 0 |
-| app/blog/property-management-trust-accounting-reconciliation/page.tsx | 90/100 | 1485 | 1 | 8 | 0 | 0 |
-| app/blog/property-management-undeposited-funds/page.tsx | 90/100 | 1361 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1349 | 1 | 6 | 0 | 0 |
+| app/blog/property-management-cash-flow-forecasting/page.tsx | 90/100 | 1538 | 1 | 10 | 0 | 0 |
+| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 594 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-credit-card-reconciliation/page.tsx | 90/100 | 1308 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-financial-statements/page.tsx | 90/100 | 1522 | 1 | 7 | 0 | 0 |
+| app/blog/property-management-month-end-close-checklist/page.tsx | 90/100 | 1628 | 1 | 15 | 0 | 0 |
+| app/blog/property-management-owner-distributions/page.tsx | 90/100 | 1506 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-owner-statements/page.tsx | 90/100 | 1580 | 1 | 6 | 0 | 0 |
+| app/blog/property-management-portfolio-performance-reporting/page.tsx | 90/100 | 1390 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-receivables-aging/page.tsx | 90/100 | 1310 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-security-deposit-accounting/page.tsx | 90/100 | 1472 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-tenant-ledger-reconciliation/page.tsx | 90/100 | 1463 | 1 | 11 | 0 | 0 |
+| app/blog/property-management-trust-accounting-reconciliation/page.tsx | 90/100 | 1535 | 1 | 8 | 0 | 0 |
+| app/blog/property-management-undeposited-funds/page.tsx | 90/100 | 1411 | 1 | 4 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
-| app/blog/rent-roll-accounting/page.tsx | 90/100 | 479 | 1 | 6 | 0 | 0 |
+| app/blog/rent-roll-accounting/page.tsx | 90/100 | 474 | 1 | 6 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 1618 | 1 | 9 | 0 | 0 |
 | app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 947 | 1 | 4 | 0 | 0 |
-| app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1362 | 1 | 7 | 0 | 0 |
-| app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 966 | 1 | 3 | 0 | 0 |
+| app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1360 | 1 | 7 | 0 | 0 |
+| app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 963 | 1 | 3 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1635 | 1 | 8 | 0 | 0 |
 | app/cookie-policy/page.tsx | 90/100 | 1015 | 1 | 5 | 0 | 0 |
@@ -112,37 +112,37 @@
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
 | app/industries/construction/page.tsx | 90/100 | 685 | 1 | 5 | 0 | 0 |
 | app/industries/cpa-firms/page.tsx | 90/100 | 1418 | 1 | 31 | 0 | 0 |
-| app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1218 | 1 | 10 | 0 | 0 |
+| app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 456 | 1 | 5 | 0 | 0 |
 | app/industries/ecommerce/shopify-accounting/page.tsx | 90/100 | 1229 | 1 | 10 | 0 | 0 |
-| app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 581 | 1 | 3 | 0 | 0 |
+| app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 446 | 1 | 4 | 0 | 0 |
-| app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 839 | 1 | 9 | 0 | 0 |
-| app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1124 | 1 | 15 | 0 | 0 |
+| app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 835 | 1 | 9 | 0 | 0 |
+| app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1119 | 1 | 15 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1092 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 858 | 1 | 9 | 0 | 0 |
+| app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 853 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 821 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1064 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2831 | 1 | 74 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1036 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1126 | 1 | 11 | 0 | 0 |
-| app/industries/hoa-accounting/yardi-accounting-support/page.tsx | 90/100 | 884 | 1 | 9 | 0 | 0 |
+| app/industries/hoa-accounting/yardi-accounting-support/page.tsx | 90/100 | 878 | 1 | 9 | 0 | 0 |
 | app/industries/nonprofit-accounting/page.tsx | 90/100 | 581 | 1 | 4 | 0 | 0 |
 | app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/accounting-cleanup/page.tsx | 90/100 | 1133 | 1 | 11 | 0 | 0 |
-| app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1119 | 1 | 12 | 0 | 0 |
+| app/industries/property-management/accounting-cleanup/page.tsx | 90/100 | 1134 | 1 | 11 | 0 | 0 |
+| app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1117 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/buildium-accounting-support/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
-| app/industries/property-management/california/page.tsx | 90/100 | 816 | 1 | 10 | 0 | 0 |
-| app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1045 | 1 | 13 | 0 | 0 |
-| app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1135 | 1 | 12 | 0 | 0 |
+| app/industries/property-management/california/page.tsx | 90/100 | 814 | 1 | 10 | 0 | 0 |
+| app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1041 | 1 | 13 | 0 | 0 |
+| app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1134 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
-| app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 986 | 1 | 9 | 0 | 0 |
+| app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 2310 | 1 | 68 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
-| app/industries/property-management/texas/page.tsx | 90/100 | 829 | 1 | 11 | 0 | 0 |
-| app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1256 | 1 | 10 | 0 | 0 |
-| app/industries/real-estate/page.tsx | 90/100 | 2339 | 1 | 29 | 0 | 0 |
+| app/industries/property-management/texas/page.tsx | 90/100 | 827 | 1 | 11 | 0 | 0 |
+| app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
+| app/industries/real-estate/page.tsx | 90/100 | 2337 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 902 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
 | app/markets/australia/bas-preparation/page.tsx | 90/100 | 673 | 1 | 8 | 0 | 0 |
@@ -150,7 +150,7 @@
 | app/markets/united-kingdom/page.tsx | 90/100 | 1688 | 1 | 17 | 0 | 0 |
 | app/markets/united-kingdom/vat-returns/page.tsx | 90/100 | 671 | 1 | 8 | 0 | 0 |
 | app/markets/united-kingdom/year-end-accounts/page.tsx | 90/100 | 678 | 1 | 8 | 0 | 0 |
-| app/markets/united-states/california/page.tsx | 90/100 | 552 | 1 | 11 | 0 | 0 |
+| app/markets/united-states/california/page.tsx | 90/100 | 550 | 1 | 11 | 0 | 0 |
 | app/markets/united-states/florida/page.tsx | 90/100 | 538 | 1 | 10 | 0 | 0 |
 | app/markets/united-states/page.tsx | 90/100 | 1744 | 1 | 16 | 0 | 0 |
 | app/markets/united-states/texas/page.tsx | 90/100 | 553 | 1 | 8 | 0 | 0 |
@@ -169,13 +169,13 @@
 | app/resources/guides/staff-augmentation-tax-season-guide/page.tsx | 90/100 | 838 | 1 | 3 | 0 | 0 |
 | app/services/accounting/australia/page.tsx | 90/100 | 849 | 1 | 12 | 0 | 0 |
 | app/services/accounting/united-kingdom/page.tsx | 90/100 | 796 | 1 | 12 | 0 | 0 |
-| app/services/accounting/united-states/page.tsx | 90/100 | 809 | 1 | 15 | 0 | 0 |
+| app/services/accounting/united-states/page.tsx | 90/100 | 807 | 1 | 15 | 0 | 0 |
 | app/services/accounts-payable/australia/page.tsx | 90/100 | 733 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/united-kingdom/page.tsx | 90/100 | 743 | 1 | 12 | 0 | 0 |
-| app/services/accounts-payable/united-states/page.tsx | 90/100 | 984 | 1 | 15 | 0 | 0 |
+| app/services/accounts-payable/united-states/page.tsx | 90/100 | 982 | 1 | 15 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 787 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 810 | 1 | 12 | 0 | 0 |
-| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 754 | 1 | 15 | 0 | 0 |
+| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 752 | 1 | 15 | 0 | 0 |
 | app/services/audit-support/australia/page.tsx | 90/100 | 939 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-kingdom/page.tsx | 90/100 | 944 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-states/page.tsx | 90/100 | 1049 | 1 | 15 | 0 | 0 |
@@ -209,7 +209,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1330 | 1 | 5 | 0 | 0 |
+| app/page.tsx | 100/100 | 1401 | 1 | 5 | 0 | 0 |
 
 ## Priority queue
 
@@ -217,57 +217,59 @@
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 2. **MEDIUM — content-depth** — app/blog/hoa-maintenance-expense-accounting/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-3. **MEDIUM — content-depth** — app/blog/hoa-vendor-expense-tracking/page.tsx
+3. **MEDIUM — content-depth** — app/blog/hoa-unapplied-payments/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-4. **MEDIUM — content-depth** — app/blog/hoa-vendor-invoice-processing/page.tsx
+4. **MEDIUM — content-depth** — app/blog/hoa-vendor-expense-tracking/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-5. **MEDIUM — content-depth** — app/blog/hoa-year-end-checklist/page.tsx
+5. **MEDIUM — content-depth** — app/blog/hoa-vendor-invoice-processing/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-6. **HIGH — metadata** — app/company-registration/delaware/page.tsx
+6. **MEDIUM — content-depth** — app/blog/hoa-year-end-checklist/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+7. **HIGH — metadata** — app/company-registration/delaware/page.tsx
    - Add missing title, meta description or H1.
-7. **MEDIUM — content-depth** — app/company-registration/delaware/page.tsx
+8. **MEDIUM — content-depth** — app/company-registration/delaware/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-8. **LOW — internal-linking** — app/company-registration/delaware/page.tsx
+9. **LOW — internal-linking** — app/company-registration/delaware/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-9. **HIGH — metadata** — app/company-registration/nevada/page.tsx
+10. **HIGH — metadata** — app/company-registration/nevada/page.tsx
    - Add missing title, meta description or H1.
-10. **MEDIUM — content-depth** — app/company-registration/nevada/page.tsx
+11. **MEDIUM — content-depth** — app/company-registration/nevada/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-11. **LOW — internal-linking** — app/company-registration/nevada/page.tsx
+12. **LOW — internal-linking** — app/company-registration/nevada/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-12. **HIGH — metadata** — app/company-registration/wyoming/page.tsx
+13. **HIGH — metadata** — app/company-registration/wyoming/page.tsx
    - Add missing title, meta description or H1.
-13. **MEDIUM — content-depth** — app/company-registration/wyoming/page.tsx
+14. **MEDIUM — content-depth** — app/company-registration/wyoming/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-14. **LOW — internal-linking** — app/company-registration/wyoming/page.tsx
+15. **LOW — internal-linking** — app/company-registration/wyoming/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-15. **LOW — internal-linking** — app/compliance/page.tsx
+16. **LOW — internal-linking** — app/compliance/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-16. **LOW — internal-linking** — app/data-security/page.tsx
+17. **LOW — internal-linking** — app/data-security/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-17. **MEDIUM — content-depth** — app/delivery-framework/communication/page.tsx
+18. **MEDIUM — content-depth** — app/delivery-framework/communication/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-18. **MEDIUM — content-depth** — app/industries/page.tsx
+19. **MEDIUM — content-depth** — app/industries/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-19. **LOW — internal-linking** — app/industries/page.tsx
+20. **LOW — internal-linking** — app/industries/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-20. **MEDIUM — content-depth** — app/markets/page.tsx
+21. **MEDIUM — content-depth** — app/markets/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-21. **HIGH — metadata** — app/resources/case-studies/page.tsx
+22. **HIGH — metadata** — app/resources/case-studies/page.tsx
    - Add missing title, meta description or H1.
-22. **HIGH — metadata** — app/resources/guides/page.tsx
+23. **HIGH — metadata** — app/resources/guides/page.tsx
    - Add missing title, meta description or H1.
-23. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+24. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-24. **HIGH — metadata** — app/resources/insights/page.tsx
+25. **HIGH — metadata** — app/resources/insights/page.tsx
    - Add missing title, meta description or H1.
-25. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+26. **MEDIUM — content-depth** — app/resources/insights/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-26. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+27. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-27. **HIGH — metadata** — app/resources/page.tsx
+28. **HIGH — metadata** — app/resources/page.tsx
    - Add missing title, meta description or H1.
-28. **MEDIUM — content-depth** — app/solutions/page.tsx
+29. **MEDIUM — content-depth** — app/solutions/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 
 ## Human-content rules
