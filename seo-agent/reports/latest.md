@@ -1,8 +1,8 @@
-# Accounstone SEO Agent Report — 2026-10-14
+# Accounstone SEO Agent Report — 2026-10-15
 
 ## Summary
 
-- Files/pages scanned: **194**
+- Files/pages scanned: **195**
 - High-priority findings: **7**
 - Medium-priority findings: **13**
 - Low-priority findings: **8**
@@ -135,6 +135,7 @@
 | app/industries/property-management/california/page.tsx | 90/100 | 816 | 1 | 10 | 0 | 0 |
 | app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1045 | 1 | 13 | 0 | 0 |
 | app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1135 | 1 | 12 | 0 | 0 |
+| app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 2294 | 1 | 66 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 829 | 1 | 11 | 0 | 0 |
