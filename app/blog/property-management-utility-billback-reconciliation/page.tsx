@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Utility Billback and RUBS Reconciliation',
+  title: 'Property Management Utility Billback',
   description:
     'Reconcile master utility bills to tenant chargebacks, allocation reports and resident ledgers with checks for vacancy, credits and billing-period differences.',
   path: '/blog/property-management-utility-billback-reconciliation',
@@ -32,11 +32,10 @@ const faqs = [
       'Apply the property’s documented billing policy and applicable lease and legal requirements. Do not silently redistribute a vacant unit’s share to occupied residents; identify the vacancy period, the allocation rule and who is responsible for the cost.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
-
 export default function PropertyManagementUtilityBillbackReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Utility Billback and RUBS Reconciliation: A Practical Workflow"
       category="Property Management Accounting"
       description="Trace shared utility costs from the provider invoice through the allocation calculation, tenant charges and accounting ledger."
@@ -46,7 +45,6 @@ export default function PropertyManagementUtilityBillbackReconciliation() {
       inquiryTitle="Need Help Reconciling Utility Charges?"
       inquiryLead="Tell us how utility invoices, allocation reports, vacancy data and tenant charges flow into your property accounting system today."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Utility billback has two connected but different jobs: recording the provider’s utility cost and calculating any resident charges permitted by the property’s agreements and billing rules. A bill can be posted correctly to accounts payable while the tenant allocation is still wrong—or the allocation report can look complete while the charges posted to resident ledgers do not agree.</p>
       <p>This workflow focuses on accounting reconciliation and source documentation. It does not determine whether a lease permits a charge or whether a specific allocation method is lawful. Those questions depend on the property, lease terms and jurisdiction and should be confirmed by the client and qualified advisers before charges are issued.</p>
 
@@ -93,7 +91,7 @@ export default function PropertyManagementUtilityBillbackReconciliation() {
         <li>Check credits, rebills and corrections from prior periods.</li>
         <li>Confirm that approved charges were posted to the intended ledger and account.</li>
       </ul>
-      <p>For a related resident-account review, see the <Link href="/blog/property-management-tenant-ledger-reconciliation" className="text-primary underline underline-offset-4">tenant ledger reconciliation checklist</Link>.</p>
+      <p>For a related resident-account review, see the <Link href="/blog/property-management-tenant-ledger-reconciliation" className="text-primary underline underline-offset-4 inline-block py-1.5">tenant ledger reconciliation checklist</Link>.</p>
 
       <h2>5. Keep accounting presentation consistent</h2>
       <p>Record the utility expense and resident recovery in a way that follows the entity’s accounting policy and supports clear property reporting. Whether a recovery is presented as revenue, a reimbursement or an offset depends on the facts and the responsible accountant’s policy; do not assume one presentation fits every arrangement. Keep source costs, resident charges, separate administration fees and credits identifiable so reports do not blend unlike items.</p>
@@ -121,10 +119,10 @@ export default function PropertyManagementUtilityBillbackReconciliation() {
 
       <h2>Related property accounting guides</h2>
       <ul>
-        <li><Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4">Property management accounts payable workflow</Link></li>
-        <li><Link href="/blog/property-management-receivables-aging" className="text-primary underline underline-offset-4">Property management receivables aging reconciliation</Link></li>
-        <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">Property management month-end close checklist</Link></li>
-        <li><a href="https://www.buildium.com/blog/real-estate-accounting-guide-for-property-managers/" target="_blank" rel="noreferrer">Buildium: Real estate accounting guide for property managers</a></li>
+        <li><Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4 inline-block py-1.5">Property management accounts payable workflow</Link></li>
+        <li><Link href="/blog/property-management-receivables-aging" className="text-primary underline underline-offset-4 inline-block py-1.5">Property management receivables aging reconciliation</Link></li>
+        <li><Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4 inline-block py-1.5">Property management month-end close checklist</Link></li>
+        <li><a href="https://www.buildium.com/blog/real-estate-accounting-guide-for-property-managers/" target="_blank" rel="noreferrer" className="inline-block py-1.5">Buildium: Real estate accounting guide for property managers</a></li>
       </ul>
     </ArticleLayout>
   );
