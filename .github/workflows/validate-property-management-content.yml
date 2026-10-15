@@ -42,11 +42,11 @@ jobs:
         run: node scripts/generate-sitemap-dates.mjs
 
       - name: Build production site
-        run: pnpm build
+        run: ./node_modules/.bin/next build
 
       - name: Start production server
         run: |
-          pnpm exec next start -p 3100 > /tmp/accounstone-next.log 2>&1 &
+          ./node_modules/.bin/next start -p 3100 > /tmp/accounstone-next.log 2>&1 &
           echo $! > /tmp/accounstone-next.pid
           for attempt in $(seq 1 30); do
             if curl --fail --silent http://localhost:3100/blog/property-management-accrued-expenses >/dev/null; then
