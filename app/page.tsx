@@ -170,7 +170,7 @@ export default function HomePage() {
           subtitle="Services"
           title="What Accounting Services Can We Support?"
           description="Practical support across bookkeeping, accounting operations, tax preparation, payroll, payables, receivables and financial reporting."
-          items={services}
+          items={services.map((service) => ({ ...service, slug: `${service.slug}/united-states` }))}
           baseUrl="/services"
           columns={3}
           variant="default"
