@@ -154,6 +154,11 @@ Official Google Search Central guidance says foundational SEO remains relevant t
 - Example specialist competitor page (for ongoing competitive review, not endorsement): https://www.pmbookkeeper.com/
 - Example specialist article on AppFolio month-end: https://daxable.com/blog/appfolio-bookkeeping-services-property-managers/
 
+## Competitor research notes — 2026-10-15 (continued)
+
+- **Capital expenditure accounting:** WPM Accounting’s property-management capital expenditure guide and fixed-asset guide cover project documentation, capitalization review and asset schedules; UC Davis Finance provides a useful institutional explanation of building improvements versus routine repairs. Use these as topic evidence, not as a substitute for the client’s accounting policy or tax advice. Sources: https://www.wpmaccounting.com/post/property-management-capital-expenditures-how-to-record-and-track-property-improvements ; https://www.wpmaccounting.com/post/how-property-managers-should-track-fixed-assets-for-accurate-financial-reporting ; https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting/cap-asset/bldg-improvements
+- **Budget-to-actual reporting:** KEILTY’s monthly property-reporting article discusses budget-to-actual statements, rent-roll/arrears context and explanatory reporting; Property Management Excellence defines budget-versus-actual as comparing planned income and expenses for the same period; Buildium’s calculation guide provides related property metrics. The new page focuses on accounting-ready reporting rather than investment advice. Sources: https://www.keilty.com/post/what-should-be-in-monthly-property-management-report-apartment-building ; https://propertymanagementexcellence.com/glossary/budget-versus-actual ; https://www.buildium.com/blog/property-management-calculations/
+
 ## Definition of done for the AI-query work
 
 - Each prompt is mapped to an existing page, a research candidate, or a deliberate defer decision.
