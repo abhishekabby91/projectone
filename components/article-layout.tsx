@@ -348,7 +348,7 @@ export default function ArticleLayout({
   // dateModified at all rather than a guess.
   const generatedModified = routeLastModified[path] ?? routeLastModified[path.replace(/\/$/, '')];
   const effectiveUpdatedDate =
-    updatedDate ?? (generatedModified && generatedModified > publishedDate ? generatedModified : undefined);
+    updatedDate ?? (generatedModified && generatedModified >= publishedDate ? generatedModified : undefined);
 
   const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
   const displayUpdatedDate = effectiveUpdatedDate
