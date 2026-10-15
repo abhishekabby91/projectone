@@ -1,3 +1,10 @@
+## 2026-10-15 — Property management lender reporting guide
+
+- Added `/blog/property-management-lender-reporting` after competitor research found lender reporting treated as a distinct property-accounting workflow alongside owner statements and portfolio reporting.
+- The checklist covers reporting-period definitions, rent-roll and ledger tie-outs, bank/cash and AP/AR checks, capital-spend support, exception evidence and authorized review.
+- Explicitly separates accounting preparation from loan-document interpretation, covenant conclusions and final borrower representations.
+- Linked the guide from the property-management hub and registered the route, search intent, content entry, sitemap and AI-readable indexes. Build, route and rendered metadata validation are still required; no merge to `main`, production deployment or Search Console work was performed.
+
 ## 2026-10-14 — Isolate 404 social metadata
 
 - Added 404-specific Open Graph and Twitter card metadata using the Accounstone brand; no `twitter:site`, `twitter:creator`, Twitter image, `og:url`, or canonical URL is emitted for a missing route.
