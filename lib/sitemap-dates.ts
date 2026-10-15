@@ -6,7 +6,7 @@
  * body. See the script's header for why this is derived rather than written.
  */
 export const routeLastModified: Record<string, string> = {
-  '': '2026-10-14',
+  '': '2026-10-15',
   '/about': '2026-09-03',
   '/blog': '2026-10-15',
   '/blog/accounts-payable-outsourcing': '2026-10-15',
