@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Files/pages scanned: **195**
+- Files/pages scanned: **198**
 - High-priority findings: **7**
 - Medium-priority findings: **13**
 - Low-priority findings: **8**
@@ -80,7 +80,7 @@
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
 | app/blog/page.tsx | 90/100 | 2078 | 1 | 57 | 0 | 0 |
 | app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1410 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-accounting/page.tsx | 90/100 | 3717 | 1 | 31 | 0 | 0 |
+| app/blog/property-management-accounting/page.tsx | 90/100 | 3737 | 1 | 33 | 0 | 0 |
 | app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1202 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 640 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
@@ -96,7 +96,7 @@
 | app/blog/property-management-receivables-aging/page.tsx | 90/100 | 1263 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-security-deposit-accounting/page.tsx | 90/100 | 1418 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-tenant-ledger-reconciliation/page.tsx | 90/100 | 1425 | 1 | 11 | 0 | 0 |
-| app/blog/property-management-trust-accounting-reconciliation/page.tsx | 90/100 | 1464 | 1 | 7 | 0 | 0 |
+| app/blog/property-management-trust-accounting-reconciliation/page.tsx | 90/100 | 1485 | 1 | 8 | 0 | 0 |
 | app/blog/property-management-undeposited-funds/page.tsx | 90/100 | 1361 | 1 | 4 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
@@ -136,9 +136,12 @@
 | app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1045 | 1 | 13 | 0 | 0 |
 | app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1135 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2294 | 1 | 66 | 0 | 0 |
+| app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
+| app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 986 | 1 | 9 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2310 | 1 | 68 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 829 | 1 | 11 | 0 | 0 |
+| app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1256 | 1 | 10 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2339 | 1 | 29 | 0 | 0 |
 | app/industries/real-estate/yardi-accounting-outsourcing-texas/page.tsx | 90/100 | 902 | 1 | 9 | 0 | 0 |
 | app/industries/technology/page.tsx | 90/100 | 956 | 1 | 6 | 0 | 0 |
