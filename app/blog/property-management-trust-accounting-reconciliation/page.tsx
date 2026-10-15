@@ -48,7 +48,7 @@ export default function PropertyManagementTrustAccountingReconciliation() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Property-management trust accounting needs more than a bank balance that agrees with the general ledger. Where a manager holds or handles money for property owners or tenants, the supporting records must also show whose funds are represented, which property they relate to, and how each receipt or payment was recorded.</p>
-      <p>This guide focuses on the accounting workflow and evidence trail. Trust, escrow, tenant-deposit and licensing requirements differ by jurisdiction and account arrangement, so confirm the rules that apply to the specific portfolio rather than treating one process as universal legal advice.</p>
+      <p>This guide focuses on the accounting workflow and evidence trail. Trust, escrow, tenant-deposit and licensing requirements differ by jurisdiction and account arrangement, so confirm the rules that apply to the specific portfolio rather than treating one process as universal legal advice. For a defined engagement covering bank-to-book matching, applicable ledger tie-outs and exception workpapers, see our <Link href="/industries/property-management/trust-account-reconciliation">property management trust-account reconciliation support</Link> page.</p>
 
       <h2>What the reconciliation is intended to prove</h2>
       <p>A reliable reconciliation makes the movement of funds traceable from the bank statement to the accounting records and the relevant owner, tenant or property detail. Depending on the setup, the control may include:</p>
