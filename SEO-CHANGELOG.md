@@ -1,3 +1,10 @@
+## 2026-10-15 — Add property management lender reporting and NOI support
+
+- Competitor research reviewed property-accounting service pages that emphasize property-level NOI, lender packages, debt-service coverage schedules, reserve activity, reconciliations and variance explanations. Sources included [Analytix real estate accounting](https://www.analytix.com/industry/real-estate), [REA property management](https://rea.co/property-management/) and [UnifiedBooks property management accounting](https://www.unifiedbooks.com/services/property-management-accounting-services). These pages establish competitor topic coverage, not Accounstone credentials, search volume or ranking outcomes.
+- Added `/industries/property-management/lender-reporting-noi-support` for the distinct commercial workflow of preparing traceable property-level reporting schedules for client/lender review. It does not interpret loan covenants, certify financial statements, advise on lending or authorize payments.
+- Linked the page from the property-management service-card data and added sitemap, route, search-intent, content-registry and AI-readable index entries. Sitemap dates must be regenerated with `node scripts/generate-sitemap-dates.mjs`; do not edit `lib/sitemap-dates.ts` by hand.
+- This work remains on a separate branch for build, route, metadata/schema, link and preview validation. No merge, production deployment or Search Console submission is made by this change.
+
 ## 2026-10-15 — Add tenant accounting operations support for property managers
 
 - Used the supplied operational scope as background for service positioning rather than reproducing résumé-style duties or implying unsupported credentials.
