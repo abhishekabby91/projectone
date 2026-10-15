@@ -32,7 +32,7 @@ export default function PropertyManagementOwnerDistributions() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <p>Owner distributions are a financial-control step, not simply a transfer of whatever cash appears in a bank account. Before a payment is prepared, the records should show which funds belong to the owner, which costs and fees are authorized, what reserves must remain, and whether the cash is available for release under the management agreement and the organization’s procedures.</p>
+      <p>Owner distributions are a financial-control step, not simply a transfer of whatever cash appears in a bank account. Before a payment is prepared, the records should show which funds belong to the owner, which costs and fees are authorized, what reserves must remain, and whether the cash is available for release under the management agreement and the organization’s procedures. Reconcile any management fee that is withheld or transferred using the <Link href="/blog/property-management-management-fee-reconciliation" className="text-primary underline underline-offset-4">management-fee reconciliation workflow</Link> before treating the net amount as ready for distribution.</p>
 
       <p>Actual requirements depend on the management agreement, ownership and entity structure, account arrangement and applicable jurisdiction. This guide covers accounting workflow and documentation; it does not decide legal obligations, trust-account rules or whether a particular payment is permitted.</p>
 
