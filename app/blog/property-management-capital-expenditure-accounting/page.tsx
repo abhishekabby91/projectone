@@ -117,6 +117,8 @@ export default function Page() {
       <h2>Related property accounting workflows</h2>
       <p>Capital expenditure records are stronger when they connect to the wider close process. See the <Link href="/blog/property-management-accounts-payable" className="text-primary underline underline-offset-4">accounts payable workflow</Link> for invoice intake and coding, the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">month-end close checklist</Link> for reporting controls, and the <Link href="/blog/property-management-owner-statements" className="text-primary underline underline-offset-4">owner statement workflow</Link> for property-level reporting review.</p>
 
+      <p>When a project is funded through a replacement reserve, connect its invoice and payment records to the reserve schedule and draw documentation. See the <Link href="/blog/property-management-replacement-reserve-accounting" className="text-primary underline underline-offset-4">replacement reserve accounting workflow</Link> for funding, transfers, project draws and reserve-balance reconciliation.</p>
+
       <h2>Further reading</h2>
       <ul>
         <li><a href="https://www.wpmaccounting.com/post/property-management-capital-expenditures-how-to-record-and-track-property-improvements" target="_blank" rel="noreferrer" className="inline-block py-1.5">WPM Accounting: Property management capital expenditures</a></li>
