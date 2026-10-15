@@ -212,12 +212,14 @@ export default function ArticleLayout({
     : `/resources/${section}`;
 
   const path = `${hubHref}/${slug}`;
-  const pathSegments = path.toLowerCase().split('/');
-  const dateLocale = pathSegments.some((segment) => segment === 'united-kingdom' || segment === 'uk')
+  const pathSegments = path.toLowerCase().split('/').filter(Boolean);
+  const pathTokens = pathSegments.flatMap((segment) => segment.split('-'));
+  const isUnitedKingdomPath = pathSegments.some((segment) => segment.includes('united-kingdom'));
+  const dateLocale = isUnitedKingdomPath || pathTokens.includes('uk')
     ? 'en-GB'
-    : pathSegments.includes('australia')
+    : pathTokens.includes('australia')
       ? 'en-AU'
-      : pathSegments.includes('india')
+      : pathTokens.includes('india')
         ? 'en-IN'
         : 'en-US';
   const displayPublishedDate = formatPublishedDate(publishedDate, dateLocale);
