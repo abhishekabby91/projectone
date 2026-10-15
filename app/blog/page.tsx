@@ -18,6 +18,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const articles = [
+  { href: '/blog/property-management-lender-reporting', title: 'Property Management Lender Reporting: A Practical Checklist', description: 'Prepare lender-requested property reports from reconciled rent rolls, operating statements, supporting schedules and documented review.', tag: 'Property Management', readTime: '7 min read' },
+
   { href: '/blog/property-management-accounting', title: 'Property Management Accounting: What Should Be Tracked?', description: 'A practical guide to property-level income, expenses, owner reporting, tenant balances, deposits and monthly close.', tag: 'Property Management', readTime: '8 min read' },
   { href: '/blog/property-management-cam-reconciliation', title: 'CAM Reconciliation: A Practical Guide for Property Managers', description: 'How to tie expense pools to the ledger, apply approved tenant allocation rules and review estimate-to-actual true-ups.', tag: 'Commercial Property Management', readTime: '7 min read' },
   { href: '/blog/property-management-bookkeeping-vs-accounting', title: 'Property Management Bookkeeping vs. Accounting: What’s the Difference?', description: 'How transaction processing, reconciliation, review and owner reporting fit together.', tag: 'Property Management', readTime: '7 min read' },
