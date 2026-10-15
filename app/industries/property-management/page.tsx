@@ -450,6 +450,9 @@ export default function PropertyManagementPage() {
             {[
               { name: 'Property management accounting', href: '/blog/property-management-accounting' },
               { name: 'In-house vs. outsourced property management', href: '/blog/property-management-in-house-vs-outsourced' },
+              { name: 'Accounting for small property management companies', href: '/blog/property-management-accounting-for-small-companies' },
+              { name: 'Remote back-office support for property managers', href: '/blog/property-management-remote-back-office-support' },
+              { name: 'Property owner vs. property management company', href: '/blog/property-owner-vs-property-management-company' },
               { name: 'Bookkeeping vs. accounting', href: '/blog/property-management-bookkeeping-vs-accounting' },
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },
