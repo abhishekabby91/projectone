@@ -533,7 +533,9 @@ export default function ArticleLayout({
                   >
                     <a
                       href={`#${item.id}`}
-                      className="text-muted hover:text-primary transition-colors leading-6"
+                      // Link list, not an inline link in a sentence -- WCAG 2.5.8 exempts the
+                      // latter and not this. See CLAUDE.md, "Tap targets: measure, do not eyeball".
+                      className="inline-block py-1.5 text-muted hover:text-primary transition-colors leading-6"
                     >
                       {item.label}
                     </a>

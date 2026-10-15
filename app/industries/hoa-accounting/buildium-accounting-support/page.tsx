@@ -10,7 +10,7 @@ const PATH = '/industries/hoa-accounting/buildium-accounting-support';
 
 export const metadata: Metadata = genMeta({
   title: 'Buildium HOA Accounting & Bookkeeping Support',
-  description: 'Accounting support for property managers using Buildium: transaction coding, reconciliations, homeowner assessment ledgers and association fund balances, payables and month-end reporting.',
+  description: 'Accounting support for HOAs using Buildium: transaction coding, reconciliations, homeowner assessment ledgers, payables and month-end reporting.',
   path: PATH,
 });
 

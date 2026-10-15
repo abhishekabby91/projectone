@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Transition Checklist',
-  description: 'A practical checklist for changing HOA accounting providers or management companies: opening balances, owner ledgers, bank reconciliations, reserves and board reporting.',
+  description: 'A practical checklist for changing HOA accounting providers: opening balances, owner ledgers, bank reconciliations, reserves and board reporting.',
   path: '/blog/hoa-accounting-transition-checklist',
 });
 

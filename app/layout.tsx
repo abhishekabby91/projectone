@@ -21,10 +21,27 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: dark)", color: "#0f1f35" },
   ],
   colorScheme: "light",
+  // Lets the page run edge to edge on notch/home-bar phones. Without it iOS
+  // letterboxes the viewport and every env(safe-area-inset-*) resolves to 0 --
+  // which is the state this file was in: globals.css already carried
+  // safe-area padding for the header, the top bar and the footer, and none of
+  // it did anything. Every element fixed to an edge must now add its own inset
+  // (the enquiry bar, the cookie banner and the back-to-top button all do).
+  viewportFit: "cover",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  // iOS Safari turns number-like strings into blue tel: links on its own, which
+  // on this site could surface the phone number the owner asked never to be
+  // displayed as readable text. This disables that automatic detection only --
+  // the explicit tel: link behind the header's phone icon still dials.
+  formatDetection: { telephone: false, address: false, email: false },
+  appleWebApp: {
+    capable: true,
+    title: "Accounstone",
+    statusBarStyle: "black-translucent",
+  },
   title: {
     // Fallback only - every page sets its own title, and the homepage sets
     // its exact SEO title via absoluteTitle. Kept distinct from the homepage

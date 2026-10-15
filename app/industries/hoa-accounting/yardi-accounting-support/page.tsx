@@ -18,7 +18,7 @@ const PATH = '/industries/hoa-accounting/yardi-accounting-support';
 export const metadata: Metadata = genMeta({
   title: 'Yardi HOA Accounting Support',
   description:
-    'Remote accounting support for HOAs and community managers using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, payable tracking, reserve schedules and board reporting.',
+    'Remote accounting support for HOAs using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, reserve schedules and board reporting.',
   path: PATH,
 });
 

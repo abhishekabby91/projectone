@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 export const metadata: Metadata = genMeta({
   title: 'U.S. CPA Firm Outsourcing Readiness Checklist',
   description:
-    'A practical U.S. CPA firm checklist for outsourcing tax and accounting work: scope, taxpayer-data safeguards, access, review controls, workpapers and pilot testing.',
+    'A U.S. CPA firm checklist for outsourcing tax and accounting work: scope, taxpayer-data safeguards, access, review controls and pilot testing.',
   path: '/blog/us-cpa-firm-outsourcing-readiness-checklist',
 });
 

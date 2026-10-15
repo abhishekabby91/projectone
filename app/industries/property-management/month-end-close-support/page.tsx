@@ -17,7 +17,7 @@ const PATH = '/industries/property-management/month-end-close-support';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Month-End Close Support',
   description:
-    'Property-level month-end close support for reconciliations, tenant and owner ledgers, AP/AR review, accruals, deposit liabilities, exceptions and owner reporting.',
+    'Property-level month-end close support: reconciliations, tenant and owner ledgers, AP/AR review, accruals, deposit liabilities and owner reporting.',
   path: PATH,
 });
 

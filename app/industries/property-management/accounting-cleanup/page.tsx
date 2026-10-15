@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/accounting-cleanup';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounting Cleanup',
-  description: 'Catch up overdue property management books, reconcile property and tenant ledgers, investigate owner-statement differences and establish a repeatable monthly close.',
+  description: 'Catch up overdue property management books, reconcile property and tenant ledgers, and establish a repeatable monthly close you can rely on.',
   path: PATH,
 });
 

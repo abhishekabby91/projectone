@@ -166,7 +166,8 @@ export default function ScrollInquiryPrompt({
     <div
       role="complementary"
       aria-label="Free consultation"
-      className={`fixed inset-x-0 bottom-0 z-[116] border-t border-border bg-white/95 px-4 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-sm transition-transform duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+      style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}
+      className={`fixed inset-x-0 bottom-0 z-[116] border-t border-border bg-white/95 px-4 pt-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-sm transition-transform duration-300 ease-out motion-reduce:transition-none lg:hidden ${
         entered ? 'translate-y-0' : 'translate-y-full'
       }`}
     >

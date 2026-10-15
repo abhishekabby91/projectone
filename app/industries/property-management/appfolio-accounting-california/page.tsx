@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/appfolio-accounting-california';
 
 export const metadata: Metadata = genMeta({
   title: 'AppFolio Accounting Services in California',
-  description: 'AppFolio accounting and bookkeeping support for California property managers: reconciliations, tenant ledgers, payables, owner statements and month-end reporting.',
+  description: 'AppFolio accounting support for California property managers: reconciliations, tenant ledgers, payables, owner statements and month-end reporting.',
   path: PATH,
 });
 

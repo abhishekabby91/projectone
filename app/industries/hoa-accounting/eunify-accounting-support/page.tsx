@@ -18,7 +18,7 @@ const PATH = '/industries/hoa-accounting/eunify-accounting-support';
 export const metadata: Metadata = genMeta({
   title: 'eUnify HOA Accounting Support',
   description:
-    'Remote accounting workflow support for HOAs and community managers using eUnify, including assessment records, reconciliations, payables, month-end review and board reporting.',
+    'Remote accounting workflow support for HOAs using eUnify: assessment records, reconciliations, payables, month-end review and board reporting.',
   path: PATH,
 });
 

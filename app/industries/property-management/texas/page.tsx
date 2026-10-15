@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/texas';
 
 export const metadata: Metadata = genMeta({
   title: 'Texas Property Management Accounting Support',
-  description: 'Remote accounting support for Texas property managers: property-level books, rent and tenant ledgers, vendor payables, reconciliations, owner statements and monthly close.',
+  description: 'Remote accounting for Texas property managers: property-level books, rent and tenant ledgers, vendor payables, owner statements and monthly close.',
   path: PATH,
 });
 

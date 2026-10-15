@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/doorloop-accounting-support';
 
 export const metadata: Metadata = genMeta({
   title: 'DoorLoop Accounting Support',
-  description: 'Accounting workflow support for property managers using DoorLoop: transaction review, bank reconciliations, owner ledger checks, payables and month-end reporting.',
+  description: 'Accounting workflow support for property managers using DoorLoop: transaction review, bank reconciliations, owner ledger checks and month-end close.',
   path: PATH,
 });
 

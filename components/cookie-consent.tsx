@@ -194,7 +194,8 @@ export default function CookieConsent() {
         <div
           role="region"
           aria-label="Cookie choices"
-          className={`fixed inset-x-3 bottom-3 z-[115] sm:inset-x-auto sm:bottom-5 sm:left-5 sm:max-w-[22rem] ${PANEL_TRANSITION} ${
+          style={{ bottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}
+          className={`fixed inset-x-3 z-[115] sm:inset-x-auto sm:left-5 sm:max-w-[22rem] ${PANEL_TRANSITION} ${
             entered ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
           }`}
         >

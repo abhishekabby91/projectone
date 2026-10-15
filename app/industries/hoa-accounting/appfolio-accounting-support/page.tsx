@@ -18,7 +18,7 @@ const PATH = '/industries/hoa-accounting/appfolio-accounting-support';
 export const metadata: Metadata = genMeta({
   title: 'AppFolio HOA Accounting Support',
   description:
-    'Remote accounting support for HOAs and community managers using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
+    'Remote accounting support for HOAs using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
   path: PATH,
 });
 
