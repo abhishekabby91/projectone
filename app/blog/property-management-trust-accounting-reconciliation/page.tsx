@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Trust Accounting Guide',
@@ -32,11 +32,11 @@ const faqs = [
       'A provider can prepare defined schedules and reconciliations when access, documentation, review and escalation responsibilities are agreed. The client should clearly assign independent review and retain authority for approvals and fund movement according to its controls.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementTrustAccountingReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Trust Accounting: A Reconciliation Workflow"
       category="Property Management Accounting"
       description="A control-focused guide to reconciling bank activity, accounting control accounts and the owner, tenant or property ledgers that support them."
@@ -46,7 +46,6 @@ export default function PropertyManagementTrustAccountingReconciliation() {
       inquiryTitle="Review Your Property Trust-Accounting Workflow"
       inquiryLead="Tell us which property-management system you use, which ledgers are reconciled today, and how differences are reviewed and resolved."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Property-management trust accounting needs more than a bank balance that agrees with the general ledger. Where a manager holds or handles money for property owners or tenants, the supporting records must also show whose funds are represented, which property they relate to, and how each receipt or payment was recorded.</p>
       <p>This guide focuses on the accounting workflow and evidence trail. Trust, escrow, tenant-deposit and licensing requirements differ by jurisdiction and account arrangement, so confirm the rules that apply to the specific portfolio rather than treating one process as universal legal advice. For a defined engagement covering bank-to-book matching, applicable ledger tie-outs and exception workpapers, see our <Link href="/industries/property-management/trust-account-reconciliation">property management trust-account reconciliation support</Link> page.</p>
 

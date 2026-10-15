@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Financial Statements Guide',
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'Can accounting software guarantee that owner reports are correct?', answer: 'No. Software can produce reports from recorded data, but coding, cutoff, account mapping, allocations and source reconciliations still need review. The report should be traceable to the underlying records.' },
   { question: 'What is the difference between an owner statement and an income statement?', answer: 'An income statement summarizes income and expenses for a period under the selected accounting basis. An owner statement usually presents property activity and the amount payable, retained or carried forward for a specific owner, based on the management agreement and the records available.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementFinancialStatements() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Financial Statements: What to Prepare and Review"
       category="Property Management Accounting"
       description="A practical reporting framework for property-level results, balances, cash movement and owner reporting."
@@ -30,7 +30,6 @@ export default function PropertyManagementFinancialStatements() {
       inquiryTitle="Need Support With Property-Level Reporting?"
       inquiryLead="Tell us which reports you prepare, which property-management or accounting system you use, and where reconciliation or reporting capacity is needed."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>Property management financial statements should answer two related questions: how did each property perform during the period, and what balances or funds remain at the reporting date? A report pack is only useful when its totals can be traced to reconciled ledgers and its figures are presented consistently from month to month.</p>
 

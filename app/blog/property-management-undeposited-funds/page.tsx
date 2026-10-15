@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Undeposited Funds Review',
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'How do undeposited funds affect tenant ledgers?', answer: 'If a receipt is recorded against a tenant but not properly deposited or cleared, the tenant ledger may show a payment while cash records do not reflect the expected bank movement. Reconcile receipt detail, deposit batches and bank activity so the same receipt is not counted twice or left unmatched.' },
   { question: 'Can I clear an old undeposited funds balance with a journal entry?', answer: 'Do not clear it with an unsupported plug. Trace the original receipts and deposits, identify the cause, document the correction and obtain the required review. If evidence is unavailable, escalate the unresolved balance under the accounting policy.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementUndepositedFunds() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Undeposited Funds: How to Reconcile the Balance"
       category="Property Management Accounting"
       description="A step-by-step workflow for matching recorded receipts to deposit batches, bank activity and tenant records."
@@ -30,7 +30,6 @@ export default function PropertyManagementUndepositedFunds() {
       inquiryTitle="Need Help Clearing Old Receipt and Deposit Balances?"
       inquiryLead="Tell us which property management or accounting system you use, how receipts are deposited, and what remains unmatched at month-end."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>An undeposited funds balance can be a normal timing item, but it can also signal that receipts and bank deposits have become disconnected. In property management, that gap matters because a receipt may affect a tenant ledger, a property’s cash records, an owner statement and a bank reconciliation. Each view needs to tell a consistent story.</p>
       <p>Software uses different names and workflows for receipt clearing accounts. Confirm what the account represents in your system before adjusting it. This guide covers a reconciliation approach, not a universal journal-entry rule or jurisdiction-specific trust-account requirement.</p>

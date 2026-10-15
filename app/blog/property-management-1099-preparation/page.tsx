@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management 1099 Preparation Checklist',
@@ -27,11 +27,11 @@ const faqs = [
     answer: 'An outsourced accounting provider can help organize vendor master data, reconcile payment totals, flag missing forms and prepare review schedules within the agreed scope. Final reporting decisions, filing authorization and tax advice should remain with the designated responsible person or qualified tax professional.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagement1099PreparationPage() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management 1099 Preparation: A Year-End Checklist"
       category="Property Management Accounting"
       description="A practical vendor-data and payment-reconciliation workflow to help property managers prepare organized year-end reporting records."
@@ -41,7 +41,6 @@ export default function PropertyManagement1099PreparationPage() {
       inquiryTitle="Organize Your Property Management Year-End Records"
       inquiryLead="Tell us about your property portfolio, accounting platform, vendor records and the year-end schedules you need prepared."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Year-end vendor reporting is easier when vendor information and payment records are maintained throughout the year. Property managers may process payments for repairs, maintenance, landscaping, cleaning, professional services and other property costs across multiple owners and entities. Before preparing any year-end tax reporting schedule, those records need to be complete, reconciled and reviewed.</p>
       <p>This guide covers the accounting preparation workflow, not a determination of who must receive a tax form. Federal reporting rules can depend on the payment, recipient, entity classification, payment method, thresholds and exceptions. Confirm current IRS instructions and the facts with the responsible tax professional before deciding what must be filed.</p>
 

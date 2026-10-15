@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Tenant Ledger Reconciliation',
@@ -32,11 +32,11 @@ const faqs = [
       'Do not net a refundable security deposit against rent receivable by default. Track the deposit and its related liability separately and follow the lease, applicable law and the organization’s accounting policy for any permitted application or refund.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementTenantLedgerReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Tenant Ledger Reconciliation: A Practical Checklist"
       category="Property Management Accounting"
       description="Review tenant charges, receipts, credits and balances with a repeatable exception-led workflow."
@@ -46,7 +46,6 @@ export default function PropertyManagementTenantLedgerReconciliation() {
       inquiryTitle="Need Help Reviewing Tenant Ledger Records?"
       inquiryLead="Share your property software, ledger volume and month-end process to discuss a structured review workflow."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>A tenant ledger is the transaction history for a tenant account: charges, payments, credits, adjustments and the balance that remains. Reconciliation checks whether that history is complete, correctly applied and supported by the lease and source records. It helps property managers resolve discrepancies before they flow into receivables aging, owner reports or tenant communications.</p>
       <p>This is a tenant-account control, not a substitute for bank or trust reconciliation. A bank account can reconcile while a payment is assigned to the wrong tenant, and a tenant ledger can appear reasonable while a cash deposit is missing from the bank records. Use the checks together as part of a consistent close process, supported by the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">property management month-end close checklist</Link>.</p>
 

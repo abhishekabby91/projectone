@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Transition Checklist',
@@ -31,7 +31,6 @@ const faqs = [
     answer: 'It can, but combining a provider change with a software migration increases the number of variables. Where possible, stabilize the accounting records first or use a documented conversion plan with reconciled opening balances, mapped accounts, retained source records and a parallel review of key reports.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 const stages = [
   {
@@ -79,6 +78,7 @@ const stages = [
 export default function HoaAccountingTransitionChecklist() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="HOA Accounting Transition Checklist: Changing Providers or Management Companies"
       category="HOA Accounting"
       description="A step-by-step handover plan for association books, owner ledgers, bank reconciliations, reserve funds and the first board reporting package."
@@ -88,7 +88,6 @@ export default function HoaAccountingTransitionChecklist() {
       inquiryTitle="Planning an HOA Accounting Handover?"
       inquiryLead="Tell us whether the change involves an accounting provider, a management company or an accounting system, and which records are not tying out yet."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Changing an HOA accounting provider or community management company is not complete when the login details have been transferred. The association still needs a defensible opening position: bank balances that reconcile, homeowner balances that tie to the general ledger, clear operating and reserve activity, and an agreed list of unresolved items.</p>
       <p>This checklist is for boards, treasurers and community managers planning a handover. It focuses on the accounting records and review steps, not on legal advice or a particular software migration. Governing documents, state requirements and the association’s CPA may add steps for a specific community.</p>
 

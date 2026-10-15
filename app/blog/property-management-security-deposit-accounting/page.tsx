@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Security Deposit Accounting',
@@ -31,11 +31,11 @@ const faqs = [
     answer: 'Yes. Legal requirements can differ by state and by residential or commercial tenancy. This guide covers accounting controls, not legal advice; verify the current rules that apply to the property and lease.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementSecurityDepositAccounting() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Security Deposit Accounting: A Practical Control Workflow"
       category="Property Management Accounting"
       description="Keep tenant deposit records traceable to the lease, property ledger, liability account and relevant bank records—with a documented review at move-out."
@@ -45,7 +45,6 @@ export default function PropertyManagementSecurityDepositAccounting() {
       inquiryTitle="Need Help Reconciling Tenant Deposit Records?"
       inquiryLead="Tell us which property system you use, how tenant deposits are tracked, and where the reconciliation or move-out process needs support."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>Security deposit accounting is a recordkeeping workflow as well as a tenant-service process. The books should show what was received, which tenant and property it relates to, how the balance is held or controlled, and what happened when the lease ended. A bank balance alone does not explain each tenant's entitlement or the reason for a deduction.</p>
 

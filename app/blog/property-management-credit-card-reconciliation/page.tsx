@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Credit Card Reconciliation',
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'How often should property management credit cards be reconciled?', answer: 'A monthly reconciliation aligned with the statement cycle is a common baseline. Higher transaction volume, multiple properties or tighter close deadlines may require more frequent review.' },
   { question: 'Is a card statement enough to support an expense?', answer: 'A statement confirms that a transaction was charged, but it may not show the business purpose, item detail, approval or property allocation. Retain the receipt or other appropriate evidence and the coding rationale under the organization’s policy.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementCreditCardReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Credit Card Reconciliation: A Practical Checklist"
       category="Property Management Accounting"
       description="A review workflow for card statements, receipts, expense coding, property allocation and month-end close."
@@ -30,7 +30,6 @@ export default function PropertyManagementCreditCardReconciliation() {
       inquiryTitle="Need Help With Property Expense Reconciliation?"
       inquiryLead="Tell us how card transactions are collected, coded and reviewed, which systems you use, and where the reconciliation backlog occurs."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>Property management credit card reconciliation must establish more than whether the card statement total has been entered. Each transaction should have a clear business purpose, supporting evidence, appropriate approval, and the correct property, owner or management-company coding. Without those details, the card balance may reconcile while property reports remain inaccurate.</p>
       <p>This guide describes an accounting review workflow. Cardholder agreements, expense policies, tax treatment and applicable legal requirements vary; follow the organization’s controls and obtain qualified advice when needed.</p>

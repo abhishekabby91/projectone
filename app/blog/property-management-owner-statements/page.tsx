@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Owner Statement Reconciliation',
@@ -15,11 +15,11 @@ const faqs = [
   { question: 'How should management fees be checked?', answer: 'Compare the calculation with the applicable management agreement and approved fee rules, confirm the period and base used, and check the posting to the correct property and management-company records. Contract interpretation and disputed fees should be referred to the responsible manager or adviser.' },
   { question: 'Can owner statement preparation be supported by an external accounting provider?', answer: 'Defined preparation tasks can be assigned externally when access, coding rules, approval authority, exception escalation and reviewer responsibilities are documented. The client or authorized manager should retain approvals and payment-release authority unless a different arrangement is explicitly approved and controlled.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementOwnerStatements() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Owner Statements: A Reconciliation and Review Workflow"
       category="Property Management Accounting"
       description="Prepare owner reporting from reconciled records, traceable fee calculations and clearly reviewed exceptions—not just a report exported at month-end."
@@ -29,7 +29,6 @@ export default function PropertyManagementOwnerStatements() {
       inquiryTitle="Need a More Reliable Owner-Statement Process?"
       inquiryLead="Tell us which property system you use, how statements are reviewed today, and where reconciliation or month-end handoffs slow the process."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>An owner statement is the handoff between property-level accounting records and the information an owner uses to understand a property's activity. A polished PDF is not enough if its cash, fees, expenses or reserve movements cannot be traced back to the ledger.</p>
       <p>The exact format depends on the management agreement, ownership structure, software and reporting expectations. The workflow below focuses on preparation and review controls; it is not a substitute for legal, tax or jurisdiction-specific trust-accounting advice.</p>
 

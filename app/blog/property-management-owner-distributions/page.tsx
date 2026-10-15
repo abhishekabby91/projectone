@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Owner Distribution Workflow',
@@ -16,11 +16,11 @@ const faqs = [
   { question: 'Can property management software automate owner payments?', answer: 'Some systems support distribution calculations, batch payments or owner portals, but setup, available-funds rules, reserve settings, bank clearance and approvals still require review. Automation does not replace reconciliation or authorization.' },
   { question: 'What records should be retained for an owner distribution?', answer: 'Retain the calculation, supporting ledger and bank reconciliation, applicable fee and reserve rules, approval evidence, payment confirmation, owner statement and any exception resolution. Follow the organization’s record-retention and security policies.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementOwnerDistributions() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Owner Distributions: A Controlled Workflow"
       category="Property Management Accounting"
       description="How to check available funds, apply authorized deductions and reserves, approve payments and retain a clear audit trail."
@@ -30,7 +30,6 @@ export default function PropertyManagementOwnerDistributions() {
       inquiryTitle="Need Help With Owner Distribution Reconciliations?"
       inquiryLead="Tell us how owner payouts are calculated today, which software and bank records are involved, and where review or reconciliation work is backing up."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <p>Owner distributions are a financial-control step, not simply a transfer of whatever cash appears in a bank account. Before a payment is prepared, the records should show which funds belong to the owner, which costs and fees are authorized, what reserves must remain, and whether the cash is available for release under the management agreement and the organization’s procedures.</p>
 

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Cash Flow Forecasting',
@@ -32,11 +32,11 @@ const faqs = [
       'Profit is measured under the applicable accounting basis and includes recognized income and expenses; cash flow tracks receipts and payments. Timing differences, receivables, payables, debt payments and capital spending can cause them to differ.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementCashFlowForecasting() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Cash Flow Forecasting: A Practical Workflow"
       category="Property Management Accounting"
       description="Build a traceable short-term cash view using expected collections, approved payments, owner distributions and upcoming property obligations."
@@ -46,7 +46,6 @@ export default function PropertyManagementCashFlowForecasting() {
       inquiryTitle="Need Help Preparing Property Cash Flow Reports?"
       inquiryLead="Share your property portfolio, accounting software and reporting cadence to discuss the records and review steps involved."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>A property management cash flow forecast estimates when money is expected to arrive and when payments are likely to be due. It helps a manager spot timing pressure early, plan approved payments and communicate upcoming funding needs using documented assumptions.</p>
       <p>A forecast is not the same as a profit-and-loss statement or a bank balance. It is a forward-looking estimate built from current records, expected receipts, known obligations and assumptions that should be updated when circumstances change. For the month-end foundation, start with the <Link href="/blog/property-management-month-end-close-checklist" className="text-primary underline underline-offset-4">property management month-end close checklist</Link>.</p>
 
