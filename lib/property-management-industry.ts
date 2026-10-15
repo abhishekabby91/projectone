@@ -327,6 +327,7 @@ export const services: PMServiceCard[] = [
   { name: 'Accounts payable', body: 'Invoice capture, property and category coding, approval routing and a prepared payment queue. Release stays yours.', href: '/services/accounts-payable/united-states' },
   { name: 'Accounts receivable', body: 'Rent charged from the lease, receipts applied, aging maintained and a delinquency schedule the team can act on.', href: '/services/accounts-receivable/united-states' },
   { name: 'Owner statement preparation', body: 'Statements assembled with transaction detail, reconciliation and open items attached, in the format your owners already recognise.' },
+  { name: 'Lender reporting and NOI schedules', body: 'Property-level income and expense schedules reconciled to source records, with reserve activity and variances organized for client and lender review.', href: '/industries/property-management/lender-reporting-noi-support' },
   { name: 'CAM & recovery support', body: 'Recoverable costs coded as they post and reconciliation schedules prepared from the ledger, with the workings a tenant can be shown.' },
   { name: 'Tenant & deposit ledgers', body: 'Deposits held tracked per tenant as a liability and reconciled to the account holding them, so a move-out starts from a fact.' },
   { name: 'Tax preparation support', body: 'Workpapers, schedules and property-level detail organised for the CPA who signs. We prepare; we never sign.', href: '/services/tax-preparation/united-states' },
