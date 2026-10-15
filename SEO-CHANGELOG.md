@@ -1,3 +1,10 @@
+## 2026-10-15 — Property management bookkeeping cleanup guide
+
+- Added `/blog/property-management-bookkeeping-cleanup` after competitor review found distinct cleanup/catch-up service pages focused on backlog diagnosis, historical reconciliation, ledger exceptions and transition to recurring bookkeeping.
+- The guide establishes a last reliable period, covers bank/tenant/owner/liability records, documents open exceptions, and avoids guaranteeing audit or regulatory outcomes.
+- Added links from the property-management hub and blog index; registered the route, search intent, content entry, sitemap and AI-readable references; updated the Property Management SEO + AI Query Map with the decision.
+- Build, rendered route, metadata, schema and mobile validation remain pending; no merge to `main`, production deployment or Search Console work was performed.
+
 ## 2026-10-15 — Property management lender reporting guide
 
 - Added `/blog/property-management-lender-reporting` after competitor research found lender reporting treated as a distinct property-accounting workflow alongside owner statements and portfolio reporting.
