@@ -13,7 +13,7 @@ import { routeLastModified } from '@/lib/sitemap-dates';
  *   was a literal on every entry defaulting to a `LAST_AUDIT` constant, and six
  *   content passes later most of the site was still declaring 2026-08-14 — the
  *   opposite of the truth, on exactly the pages that had just been rewritten.
- *   The main-branch GitHub Actions workflow regenerates this map after page,
+ *   The GitHub Actions workflow regenerates this map on `main` and the SEO feature branch after page,
  *   shared-renderer, sitemap, or date-generator changes. Do not hand-edit dates,
  *   and do not touch a page just to refresh one.
  * - Priority is retained only for framework compatibility; it is not
