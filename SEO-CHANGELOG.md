@@ -1,3 +1,9 @@
+## 2026-10-15 — Property management accruals and prepaid expenses guide
+
+- Added `/blog/property-management-accrued-expenses` after competitor research found specific property-management coverage for accrued costs, prepaid balances and month-end expense timing.
+- Covers cutoff review, evidence for estimates, property-versus-management-company allocation, prepaid schedules, reversal/clearing controls and ledger reconciliation. Accounting entries are explicitly illustrative and subject to the client’s policy and professional review.
+- Added the route to the blog index, property-management hub, sitemap, content/route/search-intent registries and AI-readable references. Generated sitemap dates and build validation remain to be confirmed; no merge to `main` or production deployment.
+
 ## 2026-10-15 — Property management bookkeeping cleanup guide
 
 - Added `/blog/property-management-bookkeeping-cleanup` after competitor review found distinct cleanup/catch-up service pages focused on backlog diagnosis, historical reconciliation, ledger exceptions and transition to recurring bookkeeping.
