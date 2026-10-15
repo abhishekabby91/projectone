@@ -76,6 +76,9 @@ jobs:
         run: |
           node scripts/verify-pages.mjs /blog/property-management-accrued-expenses
           node scripts/verify-pages.mjs /blog/property-management-in-house-vs-outsourced
+          node scripts/verify-pages.mjs /blog/property-management-accounting-for-small-companies
+          node scripts/verify-pages.mjs /blog/property-management-remote-back-office-support
+          node scripts/verify-pages.mjs /blog/property-owner-vs-property-management-company
           node scripts/verify-pages.mjs /blog/property-management-utility-billback-reconciliation
           node scripts/verify-pages.mjs /blog/property-management-management-fee-reconciliation
           node scripts/verify-pages.mjs /blog/property-management-capital-expenditure-accounting
