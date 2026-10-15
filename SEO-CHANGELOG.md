@@ -106,7 +106,6 @@
 - Added `/industries/property-management/accounting-cleanup` as a commercial service page for cleanup/catch-up support, with backlog symptoms, six work areas, a four-step recovery workflow, FAQs, Service/FAQ/Breadcrumb schema, canonical metadata and inquiry form preselected for Property Management Accounting.
 - Linked the page from the property-management hub and included it in the sitemap and AI-readable indexes. Added the route and search intent to the registries.
 - Copy makes client approval, banking control, payment authority and accounting-treatment review explicit. It does not promise legal compliance, audit outcomes or on-site property management.
-- Vercel build-rate-limit failure remains a release blocker. Validate build, route output, metadata, schema, links, mobile/desktop layout and regenerate sitemap dates with `node scripts/generate-sitemap-dates.mjs` before merge. No GSC submission.
 
 ## 2026-10-14 — Add California and Texas property-management accounting pages
 
