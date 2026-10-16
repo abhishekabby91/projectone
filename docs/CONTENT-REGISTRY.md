@@ -117,6 +117,4 @@ The four property-management pages are linked from the property-management hub; 
 
 | Page | Canonical route | Intent | Scope |
 |---|---|---|---|
-| Property Management Accounts Payable Workflow | `/blog/property-management-accounts-payable-workflow` | Informational / operational | Property-level invoice coding, work-order evidence, approval trail, payment tracking and month-end reconciliation; client retains approval and payment authority |
-| HOA Vendor Invoice Approval Workflow | `/blog/hoa-vendor-invoice-approval-workflow` | Informational / operational | Association invoice coding, duplicate checks, operating/reserve classification, approval evidence and reconciliation |
 | Accounting Support for Self-Managed HOAs | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial service | Accounting-only support for self-managed associations; board retains vendor selection, approvals, banking control and legal decisions |
