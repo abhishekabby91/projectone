@@ -257,6 +257,4 @@ node scripts/generate-sitemap-dates.mjs
 
 | Route | Type | Topic | Notes |
 |---|---|---|---|
-| `/blog/property-management-accounts-payable-workflow` | C | Property management AP | New operational guide; validate content distinction against existing `/blog/property-management-accounts-payable` before final release |
-| `/blog/hoa-vendor-invoice-approval-workflow` | C | HOA AP | New invoice-approval workflow guide |
 | `/industries/hoa-accounting/self-managed-hoa-accounting` | B | Self-managed HOA accounting | Commercial accounting-only support page; board retains approvals and control |
