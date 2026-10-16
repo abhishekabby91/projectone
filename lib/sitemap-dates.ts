@@ -7,7 +7,7 @@
  */
 export const routeLastModified: Record<string, string> = {
   '': '2026-10-16',
-  '/about': '2026-09-03',
+  '/about': '2026-10-16',
   '/blog': '2026-10-15',
   '/blog/accounts-payable-outsourcing': '2026-10-15',
   '/blog/accounts-receivable-management': '2026-10-15',
@@ -184,9 +184,9 @@ export const routeLastModified: Record<string, string> = {
   '/solutions': '2026-09-03',
   '/solutions/back-office-support': '2026-09-08',
   '/solutions/dedicated-accounting-teams': '2026-09-08',
-  '/solutions/offshore-accounting-support': '2026-10-14',
+  '/solutions/offshore-accounting-support': '2026-10-16',
   '/solutions/staff-augmentation': '2026-10-14',
-  '/technology': '2026-08-28',
+  '/technology': '2026-10-16',
   '/technology/cch': '2026-09-08',
   '/technology/drake-tax': '2026-09-08',
   '/technology/myob': '2026-09-09',
