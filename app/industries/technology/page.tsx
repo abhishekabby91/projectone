@@ -54,7 +54,7 @@ const faqs = [
   {
     question: 'We are early stage. Is this worth doing yet?',
     answer:
-      'It is usually cheaper than the alternative, because the expensive problems here are setup problems. Deferred revenue, the cost-of-revenue split and the reconciliation between billing and the ledger cost almost nothing to establish now and become a reconstruction project once a year of history exists in the wrong shape.',
+      'Early-stage businesses can still benefit from keeping the billing records, deferred balances, cost-of-revenue categories and ledger reconciliations organized from the start. The scope can begin with the records and recurring close tasks the business already maintains, while accounting policies and recognition judgments remain with its CPA or auditor.',
   },
   {
     question: 'Do you prepare board or investor reporting?',
