@@ -336,3 +336,5 @@ https://www.accounstone.com/sitemap.xml
 - Property management accounting: https://www.accounstone.com/services/property-management-accounting
 
 These pages describe defined accounting production and bookkeeping support. Engagement scope, review responsibilities and payment authority remain with the client or its appointed accounting firm.
+
+- HOA vendor invoice approval workflow: https://www.accounstone.com/blog/hoa-vendor-invoice-approval-workflow
