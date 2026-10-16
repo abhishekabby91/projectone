@@ -132,7 +132,7 @@ export default function HeroCarousel({
                     {slide.title}
                   </motion.h2>
                   <p className="max-w-xl text-sm sm:text-base leading-relaxed text-white/90">
-                    {slide.subtitle}
+                    Bookkeeping, accounting operations and tax-preparation support, shaped around your existing systems and agreed review process.
                   </p>
                   <div className="flex flex-wrap items-center gap-3 pt-1">
                     <Link
