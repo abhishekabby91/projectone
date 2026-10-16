@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'What platforms do you support?',
     answer:
-      'QuickBooks and Xero can serve as the accounting backbone, connected to common e-commerce and payment platforms your business already uses.',
+      'QuickBooks or Xero can serve as the existing accounting record. Sales, fees, refunds and payouts are reconciled from available storefront and payment-processor reports; platform configuration or integration is not part of the service.',
   },
 ];
 
@@ -49,14 +49,14 @@ export default function EcommerceIndustryPage() {
         description:
           'Multi-channel sales reconciliation, inventory and COGS accounting, and sales tax nexus tracking for online retailers selling across marketplaces and their own storefront.',
       }}
-      overview="E-commerce accounting becomes difficult when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile each channel individually, track true net revenue after fees and returns, and keep inventory-based COGS accurate so your margins reflect reality."
+      overview="E-commerce accounting becomes difficult when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile available channel reports against the accounting records, separate fees and returns, and maintain inventory and cost-of-goods-sold records using the client’s approved method. Sales can also be organized by destination state for review by the client’s tax adviser."
       benefits={[
         'Multi-channel reconciliation across Shopify, Amazon, and other marketplaces',
         'Inventory and cost of goods sold (COGS) tracking for accurate margins',
-        'Multi-state sales tax nexus tracking',
+        'Sales organized by destination state to support review with the client’s tax adviser',
         'Marketplace fees, refunds, and chargebacks broken out as separate line items',
         'True net revenue reporting per sales channel',
-        'QuickBooks and Xero integration with common e-commerce platforms',
+        'Reconciliation of storefront and payment-processor reports to existing QuickBooks or Xero records',
       ]}
       relatedLinks={[
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
