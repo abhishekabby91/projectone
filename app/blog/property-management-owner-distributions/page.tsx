@@ -25,6 +25,7 @@ export default function PropertyManagementOwnerDistributions() {
       category="Property Management Accounting"
       description="How to check available funds, apply authorized deductions and reserves, approve payments and retain a clear audit trail."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-owner-distributions"
       inquiryTitle="Need Help With Owner Distribution Reconciliations?"
