@@ -30,7 +30,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       inquiryLead="Tell us which property systems you use, how many separate property or owner ledgers are involved, and which close tasks are taking the most time."
     >
       <p>A property management month-end close should do more than produce a profit-and-loss report. It should connect the period's transactions to bank activity, tenant balances, owner and property records, vendor obligations, deposit liabilities and the reports sent to owners.</p>
-      <p>The exact sequence varies by portfolio and software. The goal is consistent: identify the period being closed, reconcile the records, resolve material exceptions, document review and issue reports only when their underlying figures are ready.</p>
+      <p>The exact sequence varies by portfolio and software. The goal is consistent: identify the period being closed, reconcile the records, resolve material exceptions, document review and issue reports only when their underlying figures are ready. Include a documented review of <Link href="/blog/property-management-accrued-expenses" className="text-primary underline underline-offset-4">accruals and prepaid expense schedules</Link> so late invoices and advance payments are reflected consistently.</p>
 
       <h2>At a glance: the monthly close sequence</h2>
       <ol>
@@ -130,6 +130,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
         <li><Link href="/blog/property-management-bookkeeping-vs-accounting" className="text-primary underline underline-offset-4">Property management bookkeeping vs. accounting</Link></li>
         <li><Link href="/blog/property-management-chart-of-accounts" className="text-primary underline underline-offset-4">Property management chart of accounts</Link></li>
         <li><Link href="/blog/property-management-bank-reconciliation" className="text-primary underline underline-offset-4">Property management bank reconciliation</Link></li>
+        <li><Link href="/blog/property-management-capital-expenditure-accounting" className="text-primary underline underline-offset-4">Capital expenditure and fixed-asset schedule workflow</Link></li>
         <li><Link href="/services/property-management-accounting" className="text-primary underline underline-offset-4">Property management accounting services</Link></li>
         <li><Link href="/industries/property-management/general-ledger-reconciliation" className="text-primary underline underline-offset-4">Platform-to-general-ledger reconciliation support</Link></li>
       </ul>
