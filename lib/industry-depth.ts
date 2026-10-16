@@ -30,11 +30,11 @@ export const industryDepth: Record<string, IndustryDepth> = {
     breaks: [
       {
         h: 'The payout is not the revenue',
-        p: 'Marketplaces and payment processors settle net: gross sales less fees, refunds, chargebacks, reserves and sometimes advertising, in one deposit that lands days after the sales it covers. Booking that deposit as revenue is the single most common e-commerce bookkeeping error, and it understates both revenue and expense at once, so the P&L looks plausible and the margin is wrong. Each settlement has to be decomposed to its components against the platform report, every period.',
+        p: 'Marketplaces and payment processors settle net: gross sales less fees, refunds, chargebacks, reserves and sometimes advertising, in one deposit that lands days after the sales it covers. Booking that deposit as revenue is a common e-commerce bookkeeping error. It can understate both revenue and expense at once, leaving the P&L plausible-looking while the margin is wrong. Each settlement has to be decomposed to its components against the platform report, every period.',
       },
       {
         h: 'Inventory that only exists at year end',
-        p: 'Where cost of goods sold is calculated once a year from a physical count, monthly margin is fiction — every month carries a full-price inventory purchase as if it were cost, and the true position appears in a single year-end adjustment. Maintaining COGS as sales post is what makes a monthly gross margin mean anything, and it is the number most e-commerce decisions actually rest on.',
+        p: 'Where cost of goods sold is calculated once a year from a physical count, monthly margin can be misleading — every month may carry a full-price inventory purchase as if it were cost, and the true position appears only in a year-end adjustment. Maintaining COGS as sales post is what makes a monthly gross margin mean anything, and it is the number most e-commerce decisions actually rest on.',
       },
       {
         h: 'Nexus accumulating in states nobody is watching',
