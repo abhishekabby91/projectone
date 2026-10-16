@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'Can you report on payer mix (insurance vs. self-pay revenue)?',
     answer:
-      'Revenue can be reported by payer type so you can see how your patient mix is affecting collections and cash flow, not just a single revenue total.',
+      'Revenue can be grouped by payer type so the practice can review insurance and self-pay activity separately rather than relying on a single combined revenue total.',
   },
   {
     question: 'Do you use a chart of accounts specific to medical practices?',
@@ -55,7 +55,7 @@ export default function HealthcareIndustryPage() {
         'Payer mix reporting (insurance vs. self-pay revenue breakdown)',
         'Chart of accounts structured for clinical revenue, ancillary services, and overhead',
         'Consolidated reporting across multiple providers or locations',
-        'Support for practice management and profitability analysis',
+        'Provider-level and location-level reporting prepared for practice management review',
         'A recurring close checklist and reporting package for practice review',
       ]}
       relatedLinks={[
