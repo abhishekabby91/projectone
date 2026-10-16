@@ -200,6 +200,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/hoa-bookkeeping-vs-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-mistakes', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-accounting-controls', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/blog/hoa-vendor-invoice-processing', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-reserve-accounting', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-operating-vs-reserve-funds', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/blog/hoa-bank-reconciliation', priority: 0.75, changeFrequency: 'monthly' },
