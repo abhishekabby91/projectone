@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import HeroCarousel from '@/components/hero-carousel';
-import TrustIcon from '@/components/trust-icon';
 import SectionGrid from '@/components/section-grid';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
@@ -12,7 +11,7 @@ import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
 import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
-import { services, solutions, testimonials, trustBadges } from '@/lib/data';
+import { services, solutions, testimonials } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting, Bookkeeping & Tax | Accounstone',
@@ -103,20 +102,6 @@ export default function HomePage() {
           secondaryHref="/services"
           secondaryLabel="Explore Services"
         />
-      </section>
-
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
-          {trustBadges.map((badge, i) => (
-            <div
-              key={i}
-              className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border"
-            >
-              <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
-            </div>
-          ))}
-        </div>
       </section>
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
