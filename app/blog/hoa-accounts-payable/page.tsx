@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounts Payable: Invoice Controls and Approval Workflow',
+  title: 'HOA Accounts Payable Workflow',
   description: 'A practical HOA accounts payable workflow for invoice coding, association-level validation, approvals, payment records and month-end reconciliation.',
   path: '/blog/hoa-accounts-payable',
 });
@@ -38,7 +38,7 @@ export default function HoaAccountsPayable() {
         category="HOA Accounting"
         description="A reliable HOA accounts payable process should leave a clear record of which association owes the bill, what the charge relates to, who approved it and how the payment was recorded."
         publishedDate="2026-10-08"
-        updatedDate="2026-10-13"
+        updatedDate="2026-10-16"
         section="blog"
         slug="hoa-accounts-payable"
         inquiryTitle="Need a More Consistent HOA Payables Workflow?"
@@ -100,6 +100,14 @@ export default function HoaAccountsPayable() {
           <li>Retain approval evidence and supporting documents for material or unusual items.</li>
           <li>Record unresolved exceptions with an owner and next action.</li>
         </ul>
+
+        <h2>Common questions</h2>
+        {faqs.map((faq) => (
+          <section key={faq.question} className="mb-5">
+            <h3 className="font-semibold text-primary">{faq.question}</h3>
+            <p className="mt-2 leading-relaxed">{faq.answer}</p>
+          </section>
+        ))}
 
         <h2>Related HOA accounting resources</h2>
         <p>See the broader <Link href="/industries/hoa-accounting">HOA accounting support overview</Link>, the <Link href="/blog/hoa-accounting-controls">HOA accounting controls guide</Link> and <Link href="/blog/hoa-accounting-mistakes">common HOA accounting mistakes</Link>. These resources cover related controls without replacing the association’s own approval rules or professional advice.</p>
