@@ -36,11 +36,7 @@ const techFAQs = [
     answer:
       'We work inside the accounting platform and its standard connections to common business tools. Building custom integrations or APIs is outside our scope — that typically sits with your software vendor or an implementation partner.',
   },
-  {
-    question: 'How do you handle data security?',
-    answer:
-      'Every engagement is NDA-backed with access limited to the team members working on your account. We are actively working toward formal certification (SOC 2) and will share our current status directly if you ask.',
-  },
+,
   {
     question: 'Do you provide financial forecasting or business intelligence dashboards?',
     answer:
@@ -59,8 +55,7 @@ const workflowPoints = [
   'Recurring reconciliations and account maintenance on your close schedule',
   'Reporting built from your platform\'s standard reports and exports',
   'Documented handoffs so your reviewer can see what changed and why',
-  'NDA-backed access limited to the team working on your account',
-  'No proprietary platform — your data and history stay in your own software',
+  'Work follows the agreed chart of accounts, reporting needs and close calendar',
 ];
 
 export default function TechnologyPage() {
