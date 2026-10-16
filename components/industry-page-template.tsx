@@ -66,7 +66,7 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <PremiumHero subtitle="Industry Workflow" title={`Accounting Support for ${industry.name}`} description={industry.description} cta={{ text: 'Talk Through Your Workflow', href: '/contact' }} ctaSecondary={{ text: 'View Industries', href: '/industries' }} background="primary-gradient" />
+      <PremiumHero subtitle="Industry Accounting Workflows" title={`Outsourced Accounting & Bookkeeping for ${industry.name}`} description={industry.description} cta={{ text: 'Talk Through Your Workflow', href: '/contact' }} ctaSecondary={{ text: 'View Industries', href: '/industries' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white"><ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted"><li><Link href="/" className="inline-block py-1.5 hover:text-primary transition-colors">Home</Link></li><li aria-hidden="true">/</li><li><Link href="/industries" className="inline-block py-1.5 hover:text-primary transition-colors">Industries</Link></li><li aria-hidden="true">/</li><li aria-current="page" className="text-primary font-medium">{industry.name}</li></ol></nav>
 
@@ -204,13 +204,13 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
               <>
                 <div className="flex items-center gap-3">
                   <span aria-hidden="true" className="h-px w-8 bg-secondary" />
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">What we will not do</span>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">Scope and responsibilities</span>
                 </div>
                 <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-                  The Limits, Named Before You Ask
+                  How Responsibilities Are Allocated
                 </h2>
                 <p className="text-base md:text-lg text-muted leading-relaxed">
-                  These are the same on day one as they are in year three, at any volume and any price.
+                  The engagement scope identifies the work to be prepared, the review points, and the decisions that remain with the client or its appointed professional.
                 </p>
               </>
             </Reveal>
@@ -232,7 +232,7 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
       <InquirySection
         source={`/industries/${slug}`}
         title={`Talk to Us About ${industry.name} Accounting`}
-        lead={`A free consultation, and a call that costs nothing. Tell us how ${industry.name.toLowerCase()} work is handled today and where the recurring load is landing on the wrong people.`}
+        lead={`Tell us how ${industry.name.toLowerCase()} accounting work is handled today, which systems are involved, and where additional capacity may be useful.`}
         compact
       />
 
