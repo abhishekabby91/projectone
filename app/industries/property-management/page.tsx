@@ -436,6 +436,17 @@ export default function PropertyManagementPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { name: 'Property management accounting', href: '/blog/property-management-accounting' },
+              { name: 'Accounting for small property management companies', href: '/blog/property-management-accounting-for-small-companies' },
+              { name: 'Accrued expenses and prepaids', href: '/blog/property-management-accrued-expenses' },
+              { name: 'Bookkeeping cleanup and catch-up', href: '/blog/property-management-bookkeeping-cleanup' },
+              { name: 'Capital expenditure accounting', href: '/blog/property-management-capital-expenditure-accounting' },
+              { name: 'In-house vs. outsourced accounting', href: '/blog/property-management-in-house-vs-outsourced' },
+              { name: 'Lender reporting checklist', href: '/blog/property-management-lender-reporting' },
+              { name: 'Management-fee reconciliation', href: '/blog/property-management-management-fee-reconciliation' },
+              { name: 'Remote back-office support', href: '/blog/property-management-remote-back-office-support' },
+              { name: 'Replacement reserve accounting', href: '/blog/property-management-replacement-reserve-accounting' },
+              { name: 'Utility billback and RUBS reconciliation', href: '/blog/property-management-utility-billback-reconciliation' },
+              { name: 'Property owner vs. management company', href: '/blog/property-owner-vs-property-management-company' },
               { name: 'Bookkeeping vs. accounting', href: '/blog/property-management-bookkeeping-vs-accounting' },
               { name: 'Property management chart of accounts', href: '/blog/property-management-chart-of-accounts' },
               { name: 'Rent roll accounting', href: '/blog/rent-roll-accounting' },

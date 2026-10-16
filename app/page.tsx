@@ -109,10 +109,10 @@ export default function HomePage() {
                 Accounting and Bookkeeping Scope
               </span>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
-                Accounting Support Without Changing How You Work
+                What Accounting Support Can You Outsource?
               </h2>
               <p className="text-muted leading-relaxed">
-                Accounstone provides outsourced accounting, bookkeeping and tax support for accounting firms and businesses. The work fits existing systems, processes and review structures.
+                Accounstone provides outsourced accounting, bookkeeping and tax-preparation support for accounting firms, CPA practices and businesses that need help with recurring accounting work. Services can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close support, payroll processing and preparation of tax workpapers. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
               </p>
             </>
           </Reveal>

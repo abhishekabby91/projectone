@@ -111,3 +111,10 @@ Added five commercial pages with distinct intent and links from their relevant i
 
 The four property-management pages are linked from the property-management hub; the Los Angeles County page is linked from the HOA hub. Sitemap and AI-readable discovery references are maintained separately and must be validated from the final release checkout. These pages describe remote accounting preparation/bookkeeping support; client approval and payment authority remain with the client. Competitor research informs coverage but does not establish search volume or guarantee rankings.
 
+
+
+## Reconciled additions — 2026-10-16
+
+| Page | Canonical route | Intent | Scope |
+|---|---|---|---|
+| Accounting Support for Self-Managed HOAs | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial service | Accounting-only support for self-managed associations; board retains vendor selection, approvals, banking control and legal decisions |

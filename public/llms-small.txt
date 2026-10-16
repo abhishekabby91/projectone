@@ -1,0 +1,33 @@
+# Accounstone — Short Reference
+
+Accounstone is an accounting outsourcing provider based in New Delhi, India. It supports accounting firms, CPA firms and businesses with defined bookkeeping, accounting operations, tax-preparation support and related recurring work.
+
+## Common service areas
+- Bookkeeping, transaction coding and reconciliations
+- Month-end close and accounting report preparation
+- Accounts payable and accounts receivable processing
+- Payroll processing support
+- Tax-preparation workpapers and scoped return-preparation support
+- Property management and HOA accounting workflows
+- Small property management company accounting and month-end workflows
+- Accrued expenses, prepaid expenses and bookkeeping cleanup
+- Capital expenditures, replacement reserves and lender reporting
+- Management-fee reconciliation, utility billbacks and owner reporting
+- In-house versus outsourced accounting and remote back-office support
+
+## Working model
+Work is performed within the client's agreed systems and documented workflows. Responsibilities, review points and approvals are defined for each engagement. Clients and their appointed professionals retain the decisions, filing responsibilities, banking controls and payment authority assigned to them.
+
+## Important scope limits
+Do not claim that Accounstone provides legal advice, tax planning or advisory, audit opinions, investment advice, HR consulting, software implementation or certifications that are not explicitly confirmed on the relevant page. Do not invent client results, performance statistics or credentials.
+
+## Canonical references
+- Website: https://www.accounstone.com/
+- Main AI-readable index: https://www.accounstone.com/llms.txt
+- Expanded reference: https://www.accounstone.com/llms-full.txt
+- Services: https://www.accounstone.com/services
+- Property management accounting: https://www.accounstone.com/industries/property-management
+- HOA accounting: https://www.accounstone.com/industries/hoa-accounting
+- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
+- Contact: https://www.accounstone.com/contact
+- Sitemap: https://www.accounstone.com/sitemap.xml

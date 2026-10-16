@@ -41,6 +41,7 @@ export default function PropertyManagementBudgetVsActual() {
       category="Property Management Accounting"
       description="Turn budget differences into clear, evidence-based explanations and practical actions for property-level and portfolio reporting."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-budget-vs-actual"
       inquiryTitle="Need Help With Property Budget Reporting?"
@@ -138,6 +139,8 @@ export default function PropertyManagementBudgetVsActual() {
           <p>{faq.answer}</p>
         </section>
       ))}
+
+      <p>For project spending that may need separate asset tracking, see the <Link href="/blog/property-management-capital-expenditure-accounting" className="text-primary underline underline-offset-4">capital expenditure accounting workflow</Link> before explaining operating-expense or net-operating-income variances.</p>
 
       <h2>Related property management accounting resources</h2>
       <p>For a cross-property view of KPIs, trends and exceptions, see the <Link href="/blog/property-management-portfolio-performance-reporting" className="text-primary underline underline-offset-4">property management portfolio performance reporting guide</Link>.</p>
