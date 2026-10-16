@@ -384,9 +384,3 @@ The existence of this file does not guarantee inclusion, ranking, citation or re
 
 For current page content, the canonical HTML pages and sitemap remain authoritative.
 
-
-Additional reconciled workflow guides:
-- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
-
-- Property management accounts payable workflow: https://www.accounstone.com/blog/property-management-accounts-payable
-- HOA vendor invoice processing and approval workflow: https://www.accounstone.com/blog/hoa-vendor-invoice-processing
