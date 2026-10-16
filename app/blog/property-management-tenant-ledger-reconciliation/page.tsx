@@ -41,6 +41,7 @@ export default function PropertyManagementTenantLedgerReconciliation() {
       category="Property Management Accounting"
       description="Review tenant charges, receipts, credits and balances with a repeatable exception-led workflow."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-tenant-ledger-reconciliation"
       inquiryTitle="Need Help Reviewing Tenant Ledger Records?"
