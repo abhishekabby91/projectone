@@ -8,7 +8,7 @@ const PATH = '/industries/construction';
 export const metadata: Metadata = genMeta({
   title: 'Construction Accounting & Bookkeeping Support',
   description:
-    'Outsourced construction bookkeeping for contractors: job-cost coding, subcontractor bills, retainage records, reconciliations and project-level reporting.',
+    'Construction bookkeeping for contractors: approved job-cost coding, subcontractor bills, retainage records, reconciliations and project-level reporting.',
   path: PATH,
 });
 
@@ -52,7 +52,7 @@ export default function ConstructionIndustryPage() {
       industry={{
         name: 'Construction & Contractors',
         description:
-          'Accounting and bookkeeping support for contractors built around job-cost records, subcontractor and vendor bills, retainage, progress-billing data, reconciliations and project-level reporting.',
+          'Accounting and bookkeeping support for contractors covering approved job-cost records, subcontractor and vendor bills, retainage, progress-billing data, reconciliations and project-level reporting.',
       }}
       overview="Construction books have to explain both the company-wide position and what is happening on each job. A vendor invoice may need a project, cost code and approval before it can be reported correctly; progress-billing records and retainage may not match cash received in the same period; and payroll or equipment costs can be hard to compare across jobs if coding changes month to month. The recurring accounting work is to maintain consistent records, reconcile supporting reports to the ledger, flag exceptions and produce a reviewable month-end view. Project budgets, cost-code rules and accounting policies are supplied or approved by the contractor and its advisers."
       benefits={[
@@ -61,7 +61,7 @@ export default function ConstructionIndustryPage() {
         'Retainage and progress-billing balances tracked from client-approved records',
         'Payroll and other shared costs allocated using the client’s approved basis',
         'Project-level cost summaries and period-end reporting support',
-        'Exception lists that identify missing approvals, unmatched bills and ledger-to-project differences',
+        'Exception lists for missing approvals, unmatched bills and differences between the ledger and project records',
       ]}
       relatedLinks={[
         { name: 'Bookkeeping Services — United States', href: '/services/bookkeeping/united-states' },
