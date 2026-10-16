@@ -165,10 +165,23 @@ The checker verifies every marked-up answer is present as visible text.
 | `Service` | commercial service and industry pages |
 
 **`Article` must carry `dateModified`.** Freshness is weighted by Google *and*
-by the AI answer engines when choosing what to cite. `ArticleLayout` falls back
-to the generated per-route date in `lib/sitemap-dates.ts` — the last commit that
-changed that page's rendered body. **Never `new Date()`**; that is a fabricated
-date on every page that has not changed.
+by the AI answer engines when choosing what to cite. `ArticleLayout` resolves it
+in three steps: an explicit `updatedDate` prop, else the generated per-route date
+in `lib/sitemap-dates.ts` (the last commit that changed the page's rendered body)
+when that is newer than publication, else `publishedDate`. **Never `new Date()`**;
+that is a fabricated date on every page that has not changed.
+
+**That last fallback was added 2026-10-16 and it matters for every new page.**
+Before it, a brand-new article emitted no `dateModified` at all, because it has
+no git history yet — so it failed this rule until its route was committed and
+`generate-sitemap-dates.mjs` had run. A rule that every new page fails is a rule
+people learn to ignore, or work around by hand-writing a date. The fallback is
+not a guess: an article published today and not since changed genuinely has
+`dateModified == datePublished`, which is what Schema.org expects. **The visible
+"Last updated" line is deliberately stricter** and stays hidden when the two are
+equal — a page must not tell a reader it was updated on the day it was written.
+Found by building a page straight from the template in `docs/NEW-PAGE-BRIEF.md`
+and running this checker against it.
 
 ---
 

@@ -344,8 +344,23 @@ export default function ArticleLayout({
   // date from `lib/sitemap-dates.ts` -- the last commit that changed this
   // page's rendered body -- so it is a true date rather than a fabricated one.
   // It is deliberately NOT `new Date()`; see CLAUDE.md, "Sitemap lastmod is
-  // generated, not written". A route with no generated entry gets no
-  // dateModified at all rather than a guess.
+  // generated, not written".
+  //
+  // `effectiveUpdatedDate` drives the VISIBLE "Last updated" line, so it stays
+  // undefined when nothing has changed since publication -- a page should not
+  // tell a reader it was updated on the day it was written. The SCHEMA is a
+  // different question: `dateModified` there falls back to `publishedDate`
+  // (see the generateArticleSchema call below), because an article published
+  // today and not since modified genuinely has dateModified == datePublished,
+  // and that is what Schema.org and Google expect. That is a real authored
+  // date, not a guess.
+  //
+  // Without that fallback, EVERY newly added article failed the checker's
+  // "Article carries dateModified" rule until its route was committed and
+  // `node scripts/generate-sitemap-dates.mjs` had run -- a guaranteed
+  // false failure on every new page, which is how people learn to ignore a
+  // checker or to hand-write a date. Found 2026-10-16 by building a page
+  // straight from the template in docs/NEW-PAGE-BRIEF.md.
   const generatedModified = routeLastModified[path] ?? routeLastModified[path.replace(/\/$/, '')];
   const effectiveUpdatedDate =
     updatedDate ?? (generatedModified && generatedModified > publishedDate ? generatedModified : undefined);
@@ -375,7 +390,9 @@ export default function ArticleLayout({
     description,
     imageUrl: `${baseUrl}/og-image.jpg`,
     publishedDate,
-    updatedDate: effectiveUpdatedDate,
+    // Falls back to publishedDate so a brand-new article still carries
+    // dateModified; the visible "Last updated" line uses the stricter value.
+    updatedDate: effectiveUpdatedDate ?? publishedDate,
     author: 'Accounstone',
     slug,
     basePath: `${hubHref}/`,
