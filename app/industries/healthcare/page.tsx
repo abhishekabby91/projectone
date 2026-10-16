@@ -61,7 +61,7 @@ export default function HealthcareIndustryPage() {
       relatedLinks={[
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
         { name: 'Accounts Receivable', href: '/services/accounts-receivable/united-states' },
-        { name: 'Audit Support', href: '/services/audit-support/united-states' },
+        { name: 'Audit Support', href: '/services/audit-support/united-kingdom' },
       ]}
       faqs={faqs}
       depth={industryDepth.healthcare}
