@@ -6,9 +6,9 @@
  * body. See the script's header for why this is derived rather than written.
  */
 export const routeLastModified: Record<string, string> = {
-  '': '2026-10-15',
+  '': '2026-10-16',
   '/about': '2026-09-03',
-  '/blog': '2026-10-15',
+  '/blog': '2026-10-16',
   '/blog/accounts-payable-outsourcing': '2026-10-15',
   '/blog/accounts-receivable-management': '2026-10-15',
   '/blog/audit-support-services': '2026-10-15',
@@ -127,7 +127,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/yardi-accounting-support': '2026-10-15',
   '/industries/nonprofit-accounting': '2026-10-15',
   '/industries/professional-services': '2026-10-15',
-  '/industries/property-management': '2026-10-15',
+  '/industries/property-management': '2026-10-16',
   '/industries/property-management/accounting-cleanup': '2026-10-15',
   '/industries/property-management/appfolio-accounting-california': '2026-10-15',
   '/industries/property-management/buildium-accounting-support': '2026-10-13',
