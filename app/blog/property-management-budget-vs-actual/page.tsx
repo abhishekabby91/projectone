@@ -41,6 +41,7 @@ export default function PropertyManagementBudgetVsActual() {
       category="Property Management Accounting"
       description="Turn budget differences into clear, evidence-based explanations and practical actions for property-level and portfolio reporting."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-budget-vs-actual"
       inquiryTitle="Need Help With Property Budget Reporting?"
