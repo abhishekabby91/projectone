@@ -9,6 +9,11 @@ Accounstone is an accounting outsourcing provider based in New Delhi, India. It 
 - Payroll processing support
 - Tax-preparation workpapers and scoped return-preparation support
 - Property management and HOA accounting workflows
+- Small property management company accounting and month-end workflows
+- Accrued expenses, prepaid expenses and bookkeeping cleanup
+- Capital expenditures, replacement reserves and lender reporting
+- Management-fee reconciliation, utility billbacks and owner reporting
+- In-house versus outsourced accounting and remote back-office support
 
 ## Working model
 Work is performed within the client's agreed systems and documented workflows. Responsibilities, review points and approvals are defined for each engagement. Clients and their appointed professionals retain the decisions, filing responsibilities, banking controls and payment authority assigned to them.
