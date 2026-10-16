@@ -26,17 +26,17 @@ const faqs = [
   {
     question: 'Do you use a chart of accounts specific to medical practices?',
     answer:
-      'The chart of accounts can be structured structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
+      'The chart of accounts can be structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
   },
   {
     question: 'Do you handle multi-provider or multi-location practices?',
     answer:
-      'Consolidated reporting can cover multiple providers or locations across multiple providers or office locations alongside location-level detail for practice management decisions.',
+      'Consolidated reporting can cover multiple providers or office locations alongside location-level detail for practice management decisions.',
   },
   {
-    question: 'Is patient billing data handled securely?',
+    question: 'What records are useful for an initial accounting review?',
     answer:
-      'Bookkeeping and reporting can use the financial and billing summary data required, under NDA-backed engagements with secure data handling practices. We recommend confirming your specific compliance requirements (such as HIPAA) with your practice\'s compliance officer to ensure our workflow fits your obligations.',
+      'A useful starting set may include payer remittance summaries, billing and collection reports, bank activity, accounts payable records, payroll summaries and the current chart of accounts. The exact list depends on the practice management and accounting systems in use and the work being scoped.',
   },
 ];
 
@@ -56,7 +56,7 @@ export default function HealthcareIndustryPage() {
         'Chart of accounts structured for clinical revenue, ancillary services, and overhead',
         'Consolidated reporting across multiple providers or locations',
         'Support for practice management and profitability analysis',
-        'NDA-backed engagements with secure financial data handling',
+        'A recurring close checklist and reporting package for practice review',
       ]}
       relatedLinks={[
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
