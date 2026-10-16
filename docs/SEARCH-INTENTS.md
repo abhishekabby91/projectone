@@ -139,6 +139,4 @@ wrong in both.
 
 | Search intent | Canonical route | Intent boundary |
 |---|---|---|
-| Property management accounts payable workflow | `/blog/property-management-accounts-payable-workflow` | Operational AP workflow with property coding and work-order support; distinct URL retained only if the page provides additional process detail beyond the existing AP guide |
-| HOA vendor invoice approval workflow | `/blog/hoa-vendor-invoice-approval-workflow` | Association invoice review and approval evidence; does not authorize payment or replace board policy |
 | Self-managed HOA accounting support | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial accounting support for associations without a management company; not community management or legal advice |
