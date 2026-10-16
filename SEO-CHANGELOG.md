@@ -4800,6 +4800,6 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 
 ## 2026-10-16 — Reconcile remaining HOA and property-management branch work
 
-- Added the self-managed HOA accounting support page, HOA vendor invoice approval workflow guide and property-management accounts payable workflow guide from outstanding feature branches.
-- Linked the routes from relevant industry and blog indexes and registered them in the sitemap and AI-readable indexes.
-- Added route, content and search-intent inventory entries. Duplicate-intent review and production build validation remain required before merge.
+- Added the self-managed HOA accounting support page from an outstanding feature branch.
+- Consolidated the separate HOA vendor invoice approval and property-management AP workflow drafts into their existing canonical guides rather than publishing competing URLs. Added work-order/project-cost evidence and exception-queue steps to the existing property-management AP guide, and expanded the HOA invoice-processing guide with a fuller approval-to-reconciliation workflow.
+- Linked the distinct self-managed HOA page from the HOA hub and registered it in the sitemap and AI-readable indexes. Production build and route validation remain required before merge.
