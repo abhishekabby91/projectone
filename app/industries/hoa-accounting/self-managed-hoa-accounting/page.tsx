@@ -8,7 +8,7 @@ const PATH = '/industries/hoa-accounting/self-managed-hoa-accounting';
 
 export const metadata: Metadata = genMeta({
   title: 'Accounting Support for Self-Managed HOAs',
-  description: 'Accounting-only support for self-managed HOAs: homeowner ledgers, bank reconciliations, payables, reserve tracking and monthly board reports without handing over board decisions.',
+  description: 'Accounting support for self-managed HOAs, including homeowner ledgers, reconciliations, payables, reserves and monthly board reports. The board keeps control.',
   path: PATH,
 });
 
