@@ -16,12 +16,20 @@ interface HeroCarouselProps {
   slides: CarouselSlide[];
   autoPlayInterval?: number;
   pageHeading: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
 }
 
 export default function HeroCarousel({
   slides,
   autoPlayInterval = 5000,
   pageHeading,
+  ctaHref = '/contact',
+  ctaLabel = 'Discuss Your Accounting Needs',
+  secondaryHref = '/services',
+  secondaryLabel = 'Explore Services',
 }: HeroCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -119,10 +127,27 @@ export default function HeroCarousel({
                     initial={isActive && !shouldReduceMotion ? { opacity: 0, y: 16 } : false}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                    className="font-serif text-xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance"
+                    className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-balance"
                   >
                     {slide.title}
                   </motion.h2>
+                  <p className="max-w-xl text-sm sm:text-base leading-relaxed text-white/90">
+                    {slide.subtitle}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1">
+                    <Link
+                      href={ctaHref}
+                      className="inline-flex min-h-11 items-center justify-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-white/90 focus-visible:outline-white"
+                    >
+                      {ctaLabel}
+                    </Link>
+                    <Link
+                      href={secondaryHref}
+                      className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/70 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
+                    >
+                      {secondaryLabel}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
