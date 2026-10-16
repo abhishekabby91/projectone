@@ -10,6 +10,7 @@ import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
 import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
+import IndustryIllustration from '@/components/industry-illustration';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials } from '@/lib/data';
 
@@ -186,20 +187,24 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-5">
             {[
-              ['Real Estate', '/industries/real-estate'],
-              ['Property Management', '/industries/property-management'],
-              ['HOA & Associations', '/industries/hoa-accounting'],
-              ['Accounting & CPA Firms', '/industries/cpa-firms'],
-            ].map(([title, href], i) => (
-              <Reveal key={title} delay={Math.min(i * 0.06, 0.18)}>
+              { title: 'Real Estate', href: '/industries/real-estate', art: 'real-estate', description: 'Property and entity books, reconciliations and reporting.' },
+              { title: 'Property Management', href: '/industries/property-management', art: 'property-management', description: 'Property-level activity, owner statements and month-end close.' },
+              { title: 'HOA & Associations', href: '/industries/hoa-accounting', art: 'hoa-accounting', description: 'Assessment ledgers, operating and reserve funds, board packs.' },
+              { title: 'Accounting & CPA Firms', href: '/industries/cpa-firms', art: 'cpa-firms', description: 'Defined preparation work, workpapers and review handoffs.' },
+            ].map((item, i) => (
+              <Reveal key={item.title} delay={Math.min(i * 0.06, 0.18)}>
                 <Link
-                  href={href}
-                  className="group flex h-full items-center justify-between rounded-xl border border-border bg-white p-5 transition-all hover:border-primary/40 hover:shadow-sm"
+                  href={item.href}
+                  className="group flex h-full flex-col rounded-xl border border-border bg-white p-3 transition-all hover:border-primary/40 hover:shadow-sm sm:p-4"
                 >
-                  <span className="font-semibold text-primary">{title}</span>
-                  <span className="text-accent transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                  <IndustryIllustration industry={item.art} className="mb-3 w-full" />
+                  <span className="flex items-center justify-between gap-2 font-semibold leading-tight text-primary">
+                    {item.title}
+                    <span className="shrink-0 text-accent transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                  </span>
+                  <span className="mt-2 text-xs leading-relaxed text-muted sm:text-sm">{item.description}</span>
                 </Link>
               </Reveal>
             ))}
