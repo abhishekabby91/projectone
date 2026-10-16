@@ -511,7 +511,7 @@ export default function HoaAccountingPage() {
               { name: 'Balance sheet explained', href: '/blog/hoa-balance-sheet-explained' },
               { name: 'Income statement explained', href: '/blog/hoa-income-statement-explained' },
               { name: 'Accounting controls', href: '/blog/hoa-accounting-controls' },
-              { name: 'Vendor invoice approval workflow', href: '/blog/hoa-vendor-invoice-approval-workflow' },
+              { name: 'Vendor invoice processing', href: '/blog/hoa-vendor-invoice-processing' },
               { name: 'Accounting workflow', href: '/blog/hoa-accounting-workflow' },
               { name: 'Cash vs. accrual accounting', href: '/blog/hoa-cash-vs-accrual-accounting' },
               { name: 'Reserve accounting', href: '/blog/hoa-reserve-accounting' },
