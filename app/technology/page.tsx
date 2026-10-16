@@ -36,7 +36,6 @@ const techFAQs = [
     answer:
       'We work inside the accounting platform and its standard connections to common business tools. Building custom integrations or APIs is outside our scope — that typically sits with your software vendor or an implementation partner.',
   },
-,
   {
     question: 'Do you provide financial forecasting or business intelligence dashboards?',
     answer:
