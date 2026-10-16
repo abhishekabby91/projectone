@@ -86,7 +86,6 @@ export default function Footer() {
           { name: 'About', href: '/about' },
           { name: 'Contact', href: '/contact' },
           { name: 'Compliance', href: '/compliance' },
-          { name: 'Data Security', href: '/data-security' },
         ]},
       ],
     },
