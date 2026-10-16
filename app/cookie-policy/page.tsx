@@ -210,9 +210,7 @@ export default function CookiePolicyPage() {
             <Link href="/privacy" className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/data-security" className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">
-              Data Security
-            </Link>
+    </Link>
             <Link href="/terms" className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-input transition-colors">
               Terms &amp; Conditions
             </Link>
