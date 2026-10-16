@@ -313,37 +313,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Data security */}
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
-        <div className="max-w-3xl mx-auto">
-          <SectionHeading eyebrow="Security" title="Data Security and Working Environments" />
-          <Reveal delay={0.08}>
-            <div className="mt-5 space-y-4">
-              <p className="text-base md:text-lg text-muted leading-relaxed">
-                Accounting work can involve sensitive financial and business information. For this reason, data
-                security and controlled access are important considerations in the way we design our delivery processes.
-              </p>
-              <p className="text-base md:text-lg text-muted leading-relaxed">
-                Depending on client requirements and the working environment, Accounstone may use cloud-based virtual
-                desktop solutions, including Microsoft Azure-based desktop environments, where appropriate. Access
-                arrangements, permissions and working practices may be structured according to the requirements of the
-                engagement and the systems being used.
-              </p>
-              <p className="text-base md:text-lg text-muted leading-relaxed">
-                We recognize that every client may have different confidentiality, access and security requirements,
-                and these can be discussed as part of the engagement process.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.14}>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/data-security" className="inline-flex min-h-[44px] items-center rounded-lg border border-border bg-white px-5 py-3 font-semibold text-primary transition-colors hover:border-primary/50">Data security</Link>
-              <Link href="/compliance" className="inline-flex min-h-[44px] items-center rounded-lg border border-border bg-white px-5 py-3 font-semibold text-primary transition-colors hover:border-primary/50">Compliance &amp; controls</Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Across borders */}
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
