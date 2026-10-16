@@ -88,6 +88,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/property-management-trust-accounting-reconciliation': '2026-10-15',
   '/blog/property-management-undeposited-funds': '2026-10-15',
   '/blog/property-management-utility-billback-reconciliation': '2026-10-16',
+  '/blog/property-owner-vs-property-management-company': '2026-10-16',
   '/blog/quickbooks-month-end-close-checklist': '2026-10-15',
   '/blog/real-estate-accounting-month-end-close': '2026-10-15',
   '/blog/rent-roll-accounting': '2026-10-15',
