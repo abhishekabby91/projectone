@@ -24,7 +24,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/hoa-accounting-transition-checklist': '2026-10-15',
   '/blog/hoa-accounting-workflow': '2026-10-15',
   '/blog/hoa-accounting-yardi': '2026-10-15',
-  '/blog/hoa-accounts-payable': '2026-10-15',
+  '/blog/hoa-accounts-payable': '2026-10-16',
   '/blog/hoa-accounts-receivable-aging': '2026-10-15',
   '/blog/hoa-annual-budget-preparation': '2026-10-15',
   '/blog/hoa-assessment-accounting': '2026-10-15',
