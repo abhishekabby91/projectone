@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Bookkeeping Cleanup Checklist',
-  description: 'A practical property management bookkeeping cleanup checklist for overdue reconciliations, tenant and owner ledgers, deposits, and a controlled return to monthly close.',
+  title: 'Property Management Bookkeeping Cleanup',
+  description: 'A property management bookkeeping cleanup checklist: overdue reconciliations, tenant and owner ledgers, deposits, and a controlled return to monthly close.',
   path: '/blog/property-management-bookkeeping-cleanup',
 });
 
@@ -16,7 +16,6 @@ const faqs = [
   { question: 'Does a bookkeeping cleanup guarantee an audit or regulatory outcome?', answer: 'No. Cleanup can improve the completeness and traceability of accounting records, but it cannot guarantee an audit result or establish legal compliance. Applicable requirements depend on the jurisdiction, account structure and facts; involve the responsible licensed professional where needed.' },
   { question: 'Should catch-up bookkeeping and monthly bookkeeping be scoped together?', answer: 'They are related but different scopes. Estimate the historical work after diagnosing the backlog, then define the recurring close calendar, review responsibilities and exception process that will keep records current after the catch-up period.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementBookkeepingCleanup() {
   return (
@@ -27,10 +26,10 @@ export default function PropertyManagementBookkeepingCleanup() {
       publishedDate="2026-10-15"
       section="blog"
       slug="property-management-bookkeeping-cleanup"
+      faqs={faqs}
       inquiryTitle="Need Help Assessing a Property Accounting Backlog?"
       inquiryLead="Tell us how far behind the records are, which property accounting system you use, and which reconciliations or owner reports cannot yet be relied on."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>When property management books are months behind, entering the missing transactions is only part of the work. The bigger risk is rebuilding from an unreliable balance: tenant ledgers may disagree with the general ledger, deposits may be coded as income, owner balances may not reflect the underlying cash, and old reconciling items can roll forward without explanation.</p>
       <p>A controlled cleanup starts with diagnosis, establishes the last period supported by reliable records, and moves forward account by account. The aim is not to make reports look tidy; it is to create a documented trail from source records to balances that can be reviewed.</p>
 

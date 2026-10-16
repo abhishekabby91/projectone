@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Property Management Lender Reporting Checklist',
@@ -15,7 +15,6 @@ const faqs = [
   { question: 'Can an external accounting provider prepare a lender reporting package?', answer: 'A provider can support agreed tasks such as compiling reconciled reports, checking schedules against the ledger, organizing evidence and tracking open questions. The borrower, property manager and authorized reviewer remain responsible for confirming the package is complete and approved for release.' },
   { question: 'Does this checklist determine loan covenant compliance?', answer: 'No. Accounting support can organize figures and calculate metrics using approved definitions, but the loan agreement controls covenant definitions and testing. Have the responsible finance lead, lender or qualified adviser confirm interpretations and any compliance conclusion.' },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function PropertyManagementLenderReporting() {
   return (
@@ -26,10 +25,10 @@ export default function PropertyManagementLenderReporting() {
       publishedDate="2026-10-15"
       section="blog"
       slug="property-management-lender-reporting"
+      faqs={faqs}
       inquiryTitle="Need Help Preparing Property Reporting Packages?"
       inquiryLead="Tell us which reports are requested, which property accounting system you use, and how the figures are reviewed before submission."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>Lender reporting brings several property-level records together for a specific review date. A rent roll, operating statement and bank balance may each be accurate on their own but still fail to tell a consistent story if they use different cutoff dates, property groupings or accounting assumptions.</p>
       <p>A reliable process starts with the lender’s written request, identifies the source for each requested figure, reconciles the underlying records and documents who reviewed the final package. The exact requirements depend on the loan agreement, property type and lender; this checklist is an accounting workflow, not a substitute for the lender’s instructions.</p>
 
