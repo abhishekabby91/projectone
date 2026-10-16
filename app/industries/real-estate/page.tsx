@@ -7,10 +7,8 @@ import InquirySection from '@/components/inquiry-section';
 import InquiryTrigger from '@/components/inquiry-trigger';
 import FAQSection from '@/components/faq-section';
 import ProcessFlow from '@/components/process-flow';
-import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
 import IndustryIllustration from '@/components/industry-illustration';
-import { trustBadges } from '@/lib/data';
 import { industryDepth } from '@/lib/industry-depth';
 import {
   segments,
@@ -82,17 +80,6 @@ export default function RealEstateIndustryPage() {
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
         background="primary-gradient"
       />
-
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
-          {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
-              <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
