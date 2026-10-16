@@ -241,6 +241,7 @@ Additional HOA and property-management pages:
 - HOA accounting support for AppFolio users: https://www.accounstone.com/industries/hoa-accounting/appfolio-accounting-support
 - HOA accounting support for Buildium users: https://www.accounstone.com/industries/hoa-accounting/buildium-accounting-support
 - HOA accounting support for eUnify users: https://www.accounstone.com/industries/hoa-accounting/eunify-accounting-support
+- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
 - San Diego County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/san-diego-county
 - Orange County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/orange-county
 - Los Angeles County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/los-angeles-county
@@ -382,3 +383,4 @@ Public pages are intentionally crawlable by search engines and major AI/search c
 The existence of this file does not guarantee inclusion, ranking, citation or recommendation by any AI system. It is provided as a structured reference for systems that choose to use it.
 
 For current page content, the canonical HTML pages and sitemap remain authoritative.
+

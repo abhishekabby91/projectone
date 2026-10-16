@@ -133,3 +133,10 @@ party differs by market** — the registered practitioner in the UK, the
 registered BAS or tax agent in Australia. `components/depth-block.tsx` takes
 `boundaryHeading` for exactly this reason; "your CPA" is US phrasing and is
 wrong in both.
+
+
+## Reconciled additions — 2026-10-16
+
+| Search intent | Canonical route | Intent boundary |
+|---|---|---|
+| Self-managed HOA accounting support | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial accounting support for associations without a management company; not community management or legal advice |

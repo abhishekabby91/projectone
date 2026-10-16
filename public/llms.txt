@@ -86,6 +86,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - HOA accounting support for AppFolio users: https://www.accounstone.com/industries/hoa-accounting/appfolio-accounting-support
 - HOA accounting support for Buildium users: https://www.accounstone.com/industries/hoa-accounting/buildium-accounting-support
 - HOA accounting support for eUnify users: https://www.accounstone.com/industries/hoa-accounting/eunify-accounting-support
+- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
 - San Diego County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/san-diego-county
 - Orange County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/orange-county
 - Los Angeles County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/los-angeles-county
@@ -334,3 +335,6 @@ https://www.accounstone.com/sitemap.xml
 - Property management accounting: https://www.accounstone.com/services/property-management-accounting
 
 These pages describe defined accounting production and bookkeeping support. Engagement scope, review responsibilities and payment authority remain with the client or its appointed accounting firm.
+
+
+- HOA vendor invoice processing and approval workflow: https://www.accounstone.com/blog/hoa-vendor-invoice-processing

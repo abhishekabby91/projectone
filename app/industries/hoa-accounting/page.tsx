@@ -441,6 +441,9 @@ export default function HoaAccountingPage() {
             <Link href="/industries/hoa-accounting/yardi-accounting-support" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
               Yardi HOA accounting support
             </Link>
+            <Link href="/industries/hoa-accounting/self-managed-hoa-accounting" className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">
+              Accounting support for self-managed HOAs
+            </Link>
           </div>
         </div>
       </section>
@@ -508,6 +511,7 @@ export default function HoaAccountingPage() {
               { name: 'Balance sheet explained', href: '/blog/hoa-balance-sheet-explained' },
               { name: 'Income statement explained', href: '/blog/hoa-income-statement-explained' },
               { name: 'Accounting controls', href: '/blog/hoa-accounting-controls' },
+              { name: 'Vendor invoice processing', href: '/blog/hoa-vendor-invoice-processing' },
               { name: 'Accounting workflow', href: '/blog/hoa-accounting-workflow' },
               { name: 'Cash vs. accrual accounting', href: '/blog/hoa-cash-vs-accrual-accounting' },
               { name: 'Reserve accounting', href: '/blog/hoa-reserve-accounting' },

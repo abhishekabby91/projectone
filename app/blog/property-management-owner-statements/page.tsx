@@ -24,12 +24,13 @@ export default function PropertyManagementOwnerStatements() {
       category="Property Management Accounting"
       description="Prepare owner reporting from reconciled records, traceable fee calculations and clearly reviewed exceptions—not just a report exported at month-end."
       publishedDate="2026-10-12"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-owner-statements"
       inquiryTitle="Need a More Reliable Owner-Statement Process?"
       inquiryLead="Tell us which property system you use, how statements are reviewed today, and where reconciliation or month-end handoffs slow the process."
     >
-      <p>An owner statement is the handoff between property-level accounting records and the information an owner uses to understand a property's activity. A polished PDF is not enough if its cash, fees, expenses or reserve movements cannot be traced back to the ledger.</p>
+      <p>An owner statement is the handoff between property-level accounting records and the information an owner uses to understand a property&apos;s activity. A polished PDF is not enough if its cash, fees, expenses or reserve movements cannot be traced back to the ledger. The management fee should also be traced through the <Link href="/blog/property-management-management-fee-reconciliation" className="text-primary underline underline-offset-4">owner-ledger-to-company reconciliation</Link> so the fee charge, transfer and company receipt are not confused.</p>
       <p>The exact format depends on the management agreement, ownership structure, software and reporting expectations. The workflow below focuses on preparation and review controls; it is not a substitute for legal, tax or jurisdiction-specific trust-accounting advice.</p>
 
       <h2>What to confirm before preparing the statement</h2>

@@ -251,3 +251,10 @@ comm -13 /tmp/llms.txt /tmp/disk.txt   # page but unlinked  -> the 2 noindex onl
 # sitemap lastmod is generated from git, never hand-written
 node scripts/generate-sitemap-dates.mjs
 ```
+
+
+## Reconciled additions — 2026-10-16
+
+| Route | Type | Topic | Notes |
+|---|---|---|---|
+| `/industries/hoa-accounting/self-managed-hoa-accounting` | B | Self-managed HOA accounting | Commercial accounting-only support page; board retains approvals and control |

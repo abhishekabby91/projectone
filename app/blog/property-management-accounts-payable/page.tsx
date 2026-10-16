@@ -41,6 +41,7 @@ export default function PropertyManagementAccountsPayable() {
       category="Property Management Accounting"
       description="A reliable accounts payable process connects each invoice to the right vendor, property, approval, payment and month-end record."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-accounts-payable"
       inquiryTitle="Need a Clearer Property Invoice Workflow?"
@@ -111,6 +112,23 @@ export default function PropertyManagementAccountsPayable() {
       <h2>How this fits into the wider property accounting process</h2>
       <p>Accounts payable works best as part of a connected close, not as a standalone data-entry queue. Start with the <Link href="/blog/property-management-accounting">property management accounting guide</Link>, review the <Link href="/blog/property-management-chart-of-accounts">chart of accounts for multi-property portfolios</Link>, and use the <Link href="/industries/property-management">property management accounting services page</Link> for the broader service context.</p>
       <p>For year-end vendor data, tax-document status and payment-total review, see the <Link href="/blog/property-management-1099-preparation" className="text-primary underline underline-offset-4">property management vendor 1099 tracking guide</Link>. It covers accounting preparation and the handoff to the responsible tax filer.</p>
-    </ArticleLayout>
+    
+
+      <h2>Work-order and project-cost evidence</h2>
+      <p>For maintenance and capital projects, match the invoice to the related work order, contract, purchase approval or completion record when available. Keep the supporting property, unit or common-area reference with the invoice so reviewers can trace the charge without treating accounting preparation as authorization to approve the work.</p>
+      <p>Where an invoice relates to a larger project, flag it for review under the client's capitalization policy instead of deciding the accounting treatment independently. Keep routine repairs, project costs and reserve-funded activity distinguishable in the workpapers.</p>
+
+      <h2>Maintain a practical exception queue</h2>
+      <p>Track missing approvals, duplicate candidates, unclear property allocation, vendor credits, disputed work, unmatched purchase orders and invoices awaiting supporting documents. Each item should have an owner, status, date last reviewed and the evidence needed to resolve it. Escalate exceptions to the client rather than silently changing the coding or releasing payment.</p>
+
+      <h2>Monthly property-management AP checklist</h2>
+      <ul>
+        <li>Reconcile the AP detail to the general-ledger control balance.</li>
+        <li>Review aged and unapproved invoices and document the reason for each hold.</li>
+        <li>Match vendor credits and payments to the correct invoice and property.</li>
+        <li>Confirm work-order and project evidence is attached where required.</li>
+        <li>Prepare an exception list for client review and retain payment authority with authorized personnel.</li>
+      </ul>
+</ArticleLayout>
   );
 }
