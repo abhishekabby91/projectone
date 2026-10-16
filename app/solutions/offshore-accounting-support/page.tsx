@@ -24,7 +24,6 @@ const faqs = [
     question: 'What is offshore accounting support?',
     answer: 'Offshore accounting support involves delegating accounting tasks to qualified professionals in other countries. We handle bookkeeping, accounting, payroll, AP/AR, and other financial operations with responsibilities and review points agreed during onboarding.',
   },
-,
   {
     question: 'How are communication and response expectations set?',
     answer: 'During onboarding, we agree the reporting cadence, escalation contacts, handoffs and review points for the engagement. These expectations are documented around your workflows and close calendar before recurring work begins.',
@@ -177,7 +176,7 @@ export default function OffshoreSolutionPage() {
 
             <h3 className="font-bold text-primary text-lg pt-4">3. What does offshore audit support actually cover?</h3>
             <p className="text-base md:text-lg text-muted leading-relaxed">This is the query we see most often after &ldquo;offshore accounting support&rdquo; itself, and it is the one where the boundary needs stating plainly. Preparation can be delegated: PBC schedules, evidence organisation, reconciliations, rollforwards, tying out workpapers, formatting the file for the auditor&rsquo;s review. Judgment cannot: audit planning, risk assessment, sampling decisions, evaluating management representations, conclusions on balances, and signing the report.</p>
-            <p className="text-base md:text-lg text-muted leading-relaxed">That distinction holds under US GAAS and PCAOB standards, UK FRC and the ISAs, and the AUASB standards in Australia alike. It is not a limitation we have chosen &mdash; it is the shape of the work. See <Link href="/services/audit-support/united-states" className="text-primary font-medium hover:underline">audit support</Link> for how the preparation side is structured.</p>
+            <p className="text-base md:text-lg text-muted leading-relaxed">That distinction holds under US GAAS and PCAOB standards, UK FRC and the ISAs, and the AUASB standards in Australia alike. It is not a limitation we have chosen &mdash; it is the shape of the work. See <Link href="/services/audit-support/united-kingdom" className="text-primary font-medium hover:underline">audit support</Link> for how the preparation side is structured.</p>
 
             <div className="overflow-hidden rounded-xl border border-border bg-input">
               <div className="border-l-4 border-accent p-5 sm:p-6 space-y-3">
