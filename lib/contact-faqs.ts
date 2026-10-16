@@ -38,9 +38,9 @@ export const CONTACT_FAQS = [
       'No. Most engagements start with one client, one month of close work or a single backlog, which is small enough to judge honestly. Scaling something that already works is a much smaller decision than unwinding something that does not.',
   },
   {
-    question: 'How is our client data handled?',
+    question: 'What should we cover before starting an engagement?',
     answer:
-      'Engagements are NDA-backed, and system access is limited to the people working on the relevant account, through the access your firm grants rather than credentials of our own. On certification: we are working toward SOC 2 and do not hold it yet. Anyone telling you otherwise about their own status is worth verifying directly rather than taking on trust.',
+      'A scoping conversation can cover the tasks to be handled, the accounting systems and records involved, expected outputs, review points, deadlines, and the people responsible for approvals or professional decisions.',
   },
   {
     question: 'Can you work inside the systems we already use?',
