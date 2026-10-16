@@ -21,8 +21,23 @@ In this order. They are the authoritative sources; this file is only the index.
 | `docs/ROUTES.md` | Route inventory + the sitemap drift check (below). |
 | `docs/US-LOCAL-SEO-ROADMAP.md` | U.S. state → county/metro → city SEO expansion rules and evidence requirements. |
 | `docs/CONTENT-REGISTRY.md` | Blog/guide inventory and status. Check before writing content. |
-| `SEO-CHANGELOG.md` | Dated record of every change and why. Append to it — do not rewrite history. |
+| `SEO-CHANGELOG.md` | Dated record of every change and why. **Newest first — PREPEND at the top, never append at the bottom.** Do not rewrite history: add an entry, never edit or delete an old one. |
 | `knowledge/` | Per-service, per-market, per-ICP facts. The source of truth for claims. |
+
+**`SEO-CHANGELOG.md` runs newest-first and drifted into two blocks once
+(fixed 2026-10-16).** It had ~4,500 lines running newest-first followed by ~22
+entries (2026-10-08 to 2026-10-16) running oldest-first at the very end,
+because some passes prepended and others appended. An entry in that tail was
+effectively unpublished — anyone reading from the top hit 2026-10-15 and
+stopped, which is how a 2026-10-16 entry ended up invisible. The file is now
+strictly descending and carries an HTML comment at the top saying so.
+
+Two things to know: **a dateless `## ` heading is a sub-section of the dated
+entry above it** (there are four near the 2026-08-14 entries), so anything that
+splits this file on `## ` must key on `## <ISO date>` or it will strand them;
+and the reorder only moved whole entries — verify any future reordering the way
+that one was, by asserting the sorted set of entry blocks is unchanged and that
+line count moves only by what you added.
 
 `SEO-AUDIT.md` and `ACCounstone-SEO-AGENT.md` are earlier strategy documents — useful
 background, superseded on specifics by the files above.
