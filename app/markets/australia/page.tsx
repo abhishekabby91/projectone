@@ -160,8 +160,8 @@ const trust = [
     p: 'No tax invoice means no supported credit, whatever the entry looks like. So the item goes on an open-items list naming what is absent and who was asked for it. The alternative is a plausible GST code and a control-account variance that surfaces three quarters later, when nobody remembers the transaction.',
   },
   {
-    h: 'What we can and cannot reach',
-    p: 'Access is granted by you, limited to the people staffed on your client base, and revocable the day you want it revoked. There is no scenario in which we hold ATO credentials or the ability to move money — not as a policy we could relax, but because the work does not require it. On SOC 2: we are working toward it and do not hold it, and we will not imply otherwise.',
+    h: 'Engagement scope and responsibilities',
+    p: 'The engagement scope sets out the accounting tasks, records and systems involved, the review points, and the responsibilities for approvals and lodgment. These details are agreed around the practice’s workflow and reporting calendar.',
   },
   {
     h: 'Dates you can plan a quarter around',
