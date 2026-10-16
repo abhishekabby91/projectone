@@ -94,6 +94,7 @@ For businesses with overdue books or unresolved ledger differences, property-man
 
 Property management accounting cleanup and catch-up: https://www.accounstone.com/industries/property-management
 - Property management accounting for small companies: https://www.accounstone.com/blog/property-management-accounting-for-small-companies
+- Property management accounts payable workflow: https://www.accounstone.com/blog/property-management-accounts-payable-workflow
 - Property management accrued expenses and prepaids: https://www.accounstone.com/blog/property-management-accrued-expenses
 - Property management bookkeeping cleanup: https://www.accounstone.com/blog/property-management-bookkeeping-cleanup
 - Property management capital expenditure accounting: https://www.accounstone.com/blog/property-management-capital-expenditure-accounting
@@ -241,6 +242,7 @@ Additional HOA and property-management pages:
 - HOA accounting support for AppFolio users: https://www.accounstone.com/industries/hoa-accounting/appfolio-accounting-support
 - HOA accounting support for Buildium users: https://www.accounstone.com/industries/hoa-accounting/buildium-accounting-support
 - HOA accounting support for eUnify users: https://www.accounstone.com/industries/hoa-accounting/eunify-accounting-support
+- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
 - San Diego County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/san-diego-county
 - Orange County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/orange-county
 - Los Angeles County HOA accounting support: https://www.accounstone.com/industries/hoa-accounting/los-angeles-county
