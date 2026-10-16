@@ -93,10 +93,51 @@ const BODY_MODULES = [
  * default is to leave it out and let the date move.
  *
  *   9bcb2c5 — moved <ScrollInquiryPrompt> out of ArticleLayout into the layout
+ *   7da2859 — made the Article schema's dateModified fall back to
+ *     publishedDate. article-layout.tsx is a BODY_MODULE, so a scheduled
+ *     regeneration attributed it to all 82 ArticleLayout routes and moved them
+ *     to 2026-10-16. Measured before listing it, as the rule below requires:
+ *     every one of those 82 ALREADY carried a dateModified, because its
+ *     generated date was newer than its publishedDate, so `?? publishedDate`
+ *     never fires on them and the value is unchanged. The fallback only ever
+ *     affects a page with no git history, i.e. a brand-new one. 82 routes
+ *     byte-identical, 0 changed.
  *             mount. It renders nothing on the server, so the server HTML of
  *             all 19 article routes is unchanged.
  */
-const NON_RENDERING_COMMITS = new Set(['9bcb2c5']);
+const NON_RENDERING_COMMITS = new Set(['9bcb2c5', '7da2859']);
+
+/**
+ * Commits that put a file here without changing it — the 2026-10-10 history
+ * re-import. `dc823de` is this repository's ROOT commit and added 353 files
+ * with zero deletions, so for any page not edited since, it is the newest (and
+ * only) commit touching it. Dating a page from it publishes "changed on
+ * 2026-10-10" for a page that was merely copied in.
+ *
+ * These are NOT in NON_RENDERING_COMMITS, because skipping them outright
+ * leaves a route with no date at all and it is dropped from the file entirely
+ * (see `if (found.length)` below) — 57 routes would silently lose their
+ * `lastmod`. Instead, a route whose date resolves to an import commit KEEPS
+ * the date already committed in this file, which is the curated, more truthful
+ * value. That also makes this script idempotent: re-running it can no longer
+ * walk a date backwards to the import date.
+ *
+ * Found 2026-10-16 after a scheduled run committed exactly that regression on
+ * 57 routes, including /about, /privacy, /compliance and the whole
+ * registration cluster.
+ */
+const IMPORT_COMMITS = new Set(['dc823de']);
+
+/** Dates already committed in this file, so a regeneration cannot regress one. */
+function previousDates() {
+  const file = path.join(ROOT, 'lib/sitemap-dates.ts');
+  if (!fs.existsSync(file)) return {};
+  const prev = {};
+  for (const m of fs.readFileSync(file, 'utf8').matchAll(/^  '([^']*)': '(\d{4}-\d{2}-\d{2})',/gm)) {
+    prev[m[1] || '/'] = m[2];
+  }
+  return prev;
+}
 
 function lastCommitDate(relPath) {
   const log = execFileSync(
@@ -108,7 +149,7 @@ function lastCommitDate(relPath) {
     const [sha, date] = line.split(' ');
     if (!sha) continue;
     if (NON_RENDERING_COMMITS.has(sha)) continue;
-    return date;
+    return { sha, date };
   }
   return null;
 }
@@ -122,6 +163,7 @@ function walk(dir, acc = []) {
   return acc;
 }
 
+const prev = previousDates();
 const dates = {};
 for (const file of walk(path.join(ROOT, 'app')).sort()) {
   const rel = path.relative(ROOT, file);
@@ -129,7 +171,14 @@ for (const file of walk(path.join(ROOT, 'app')).sort()) {
   const source = fs.readFileSync(file, 'utf8');
   const deps = [rel, ...BODY_MODULES.filter((m) => source.includes(m)).map((m) => resolveModule(m))];
   const found = deps.map(lastCommitDate).filter(Boolean);
-  if (found.length) dates[route.replace(/\/$/, '') || '/'] = found.sort().pop();
+  if (!found.length) continue;
+  const key = route.replace(/\/$/, '') || '/';
+  const newest = found.sort((a, b) => (a.date < b.date ? -1 : 1)).pop();
+  // An import commit is not a content change. Keep whatever this file already
+  // says for the route, which a human curated; only use the import date when
+  // there is nothing to fall back to.
+  dates[key] =
+    IMPORT_COMMITS.has(newest.sha) && prev[key] ? prev[key] : newest.date;
 }
 
 function resolveModule(token) {
