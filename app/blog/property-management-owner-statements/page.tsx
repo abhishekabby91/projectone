@@ -24,6 +24,7 @@ export default function PropertyManagementOwnerStatements() {
       category="Property Management Accounting"
       description="Prepare owner reporting from reconciled records, traceable fee calculations and clearly reviewed exceptions—not just a report exported at month-end."
       publishedDate="2026-10-12"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-owner-statements"
       inquiryTitle="Need a More Reliable Owner-Statement Process?"
