@@ -173,8 +173,8 @@ const trust = [
     p: 'The item goes on an open-items list with what is missing and who was asked for it. It does not get a plausible account code and disappear into the ledger — that is the failure that surfaces in October and costs a partner a weekend.',
   },
   {
-    h: 'Data security and confidentiality',
-    p: 'NDA-backed engagements can restrict access to the people assigned to the work and use credentials controlled by the client or firm. Banking control and e-file credentials remain governed by the engagement. SOC 2 is not currently held and is not represented as a certification.',
+    h: 'Engagement scope and responsibilities',
+    p: 'The engagement scope sets out the accounting tasks, systems and records involved, the review points, and the responsibilities for approvals and filing. These details are agreed around the workflow and the firm’s existing process.',
   },
   {
     h: 'Turnaround',
