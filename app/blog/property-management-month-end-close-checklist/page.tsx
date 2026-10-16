@@ -24,6 +24,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
       category="Property Management Accounting"
       description="A repeatable close turns property-level transactions into reconciled records, reviewed exceptions and owner-ready reporting."
       publishedDate="2026-10-10"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-month-end-close-checklist"
       inquiryTitle="Need Support With Property Month-End Close?"
