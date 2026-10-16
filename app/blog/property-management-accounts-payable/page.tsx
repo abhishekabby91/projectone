@@ -41,6 +41,7 @@ export default function PropertyManagementAccountsPayable() {
       category="Property Management Accounting"
       description="A reliable accounts payable process connects each invoice to the right vendor, property, approval, payment and month-end record."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
       slug="property-management-accounts-payable"
       inquiryTitle="Need a Clearer Property Invoice Workflow?"
