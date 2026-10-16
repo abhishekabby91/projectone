@@ -1,0 +1,103 @@
+name: Validate property-management content
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/blog/**'
+      - 'app/page.tsx'
+      - 'app/industries/property-management/page.tsx'
+      - 'app/sitemap.ts'
+      - 'public/ai.txt'
+      - 'public/llms-small.txt'
+      - 'public/.well-known/ai.txt'
+      - 'public/llms.txt'
+      - 'public/llms-full.txt'
+      - 'components/article-layout.tsx'
+      - 'lib/sitemap-dates.ts'
+      - 'scripts/generate-sitemap-dates.mjs'
+      - 'scripts/verify-pages.mjs'
+      - '.github/workflows/validate-property-management-content.yml'
+  push:
+    branches: [accounstone-seo-improvements, accounstone-property-management-release]
+    paths:
+      - 'app/blog/**'
+      - 'app/page.tsx'
+      - 'app/sitemap.ts'
+      - 'public/ai.txt'
+      - 'public/llms-small.txt'
+      - 'public/.well-known/ai.txt'
+      - 'public/llms.txt'
+      - 'components/article-layout.tsx'
+      - 'lib/sitemap-dates.ts'
+      - 'scripts/generate-sitemap-dates.mjs'
+      - 'scripts/verify-pages.mjs'
+      - '.github/workflows/validate-property-management-content.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node and pnpm
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --ignore-workspace
+
+      - name: Regenerate sitemap dates from Git history
+        run: node scripts/generate-sitemap-dates.mjs
+
+      - name: Build production site
+        run: ./node_modules/.bin/next build
+
+      - name: Start production server
+        run: |
+          ./node_modules/.bin/next start -p 3100 > /tmp/accounstone-next.log 2>&1 &
+          echo $! > /tmp/accounstone-next.pid
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://localhost:3100/blog/property-management-accrued-expenses >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/accounstone-next.log
+          exit 1
+
+      - name: Verify homepage
+        run: node scripts/verify-pages.mjs /
+
+      - name: Verify AI discovery files are served
+        run: |
+          for path in /ai.txt /llms-small.txt /.well-known/ai.txt /llms.txt; do
+            echo "Checking $path"
+            curl --fail --silent --show-error "http://localhost:3100$path" >/dev/null
+          done
+
+      - name: Verify new property-management pages
+        run: |
+          node scripts/verify-pages.mjs /blog/property-management-accrued-expenses
+          node scripts/verify-pages.mjs /blog/property-management-in-house-vs-outsourced
+          node scripts/verify-pages.mjs /blog/property-management-accounting-for-small-companies
+          node scripts/verify-pages.mjs /blog/property-management-remote-back-office-support
+          node scripts/verify-pages.mjs /blog/property-owner-vs-property-management-company
+          node scripts/verify-pages.mjs /blog/property-management-utility-billback-reconciliation
+          node scripts/verify-pages.mjs /blog/property-management-management-fee-reconciliation
+          node scripts/verify-pages.mjs /blog/property-management-capital-expenditure-accounting
+          node scripts/verify-pages.mjs /blog/property-management-replacement-reserve-accounting
+          node scripts/verify-pages.mjs /blog/property-management-budget-vs-actual
