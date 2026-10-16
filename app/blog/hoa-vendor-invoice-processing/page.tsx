@@ -3,7 +3,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Vendor Invoice Processing and Approval Workflow',
+  title: 'HOA Vendor Invoice Workflow',
   description: 'HOA vendor invoice processing for association coding, duplicate checks, operating and reserve costs, approval evidence and month-end reconciliation.',
   path: '/blog/hoa-vendor-invoice-processing',
 });
@@ -31,12 +31,13 @@ const faqSchema = generateFAQSchema(faqs);
 export default function HoaVendorInvoiceApprovalWorkflow() {
   return (
     <ArticleLayout
-      title="HOA Vendor Invoice Processing and Approval Workflow: From Receipt to Reconciliation"
+      title="HOA Vendor Invoice Processing and Approval Workflow"
       category="HOA Accounting"
       description="A repeatable invoice workflow helps an association track which community a bill belongs to, how it was coded, who approved it and whether the payment cleared."
       publishedDate="2026-10-13"
+      updatedDate="2026-10-16"
       section="blog"
-      slug="hoa-vendor-invoice-approval-workflow"
+      slug="hoa-vendor-invoice-processing"
       inquiryTitle="Need a More Consistent HOA Payables Workflow?"
       inquiryLead="Tell us how vendor invoices arrive, how approvals are recorded and where the process slows down. We can review the accounting steps around your existing system."
     >
@@ -100,6 +101,14 @@ export default function HoaVendorInvoiceApprovalWorkflow() {
 
       <h2>How Software Fits Into the Process</h2>
       <p>QuickBooks Online, AppFolio, Yardi, eUnify and other platforms may support different invoice, approval and reporting steps depending on the product and configuration. The control objective stays the same: retain the source invoice, preserve the approval trail, code the cost to the correct association and account, and reconcile the payment. Verify the actual workflow in the client’s configured system rather than assuming every platform supports the same feature.</p>
+
+      <h2>Common questions</h2>
+      {faqs.map((faq) => (
+        <section key={faq.question} className="mb-5">
+          <h3 className="font-semibold text-primary">{faq.question}</h3>
+          <p className="mt-2 leading-relaxed">{faq.answer}</p>
+        </section>
+      ))}
 
       <h2>Practical Checklist</h2>
       <ul>
