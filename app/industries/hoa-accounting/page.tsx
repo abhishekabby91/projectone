@@ -213,7 +213,7 @@ export default function HoaAccountingPage() {
                     className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
                     source={PATH}
                     title="HOA & Community Association Accounting"
-                    lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
+                    lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives, so we can understand the workflow and the support needed.`}
                     label={`Talk to us about: ${t.symptom}`}
                   >
                     <h3 className="font-serif text-lg font-bold text-primary leading-snug">{t.symptom}</h3>
@@ -345,7 +345,7 @@ export default function HoaAccountingPage() {
                       className="flex h-full flex-col rounded-xl border border-border bg-input p-5 sm:p-6 transition-colors hover:border-primary/40"
                       source={PATH}
                       title="HOA & Community Association Accounting"
-                      lead="Tell us how this part of the work is handled today and we will scope what support would change. The consultation and the call are free."
+                      lead="Tell us how this part of the work is handled today and where you would like the process to be easier to review."
                       label={`Ask us about ${svc.name.toLowerCase()} for your association`}
                     >
                       <h3 className="font-serif text-lg font-bold text-primary">{svc.name}</h3>
@@ -595,7 +595,7 @@ export default function HoaAccountingPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Association and One Month"
-        lead="The consultation and the call are always free. Tell us how many units or associations are involved, what the board receives today, and what came up at the last meeting."
+        lead="Tell us how many units or associations are involved, what the board receives today, and what came up at the last meeting."
       />
 
       <CTABanner
