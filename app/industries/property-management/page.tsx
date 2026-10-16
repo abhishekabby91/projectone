@@ -465,6 +465,7 @@ export default function PropertyManagementPage() {
               { name: 'Owner distribution accounting workflow', href: '/blog/property-management-owner-distributions' },
               { name: 'Trust-account reconciliation workflow', href: '/blog/property-management-trust-accounting-reconciliation' },
               { name: 'Accounts payable invoice and approval workflow', href: '/blog/property-management-accounts-payable' },
+              { name: 'Property management AP workflow', href: '/blog/property-management-accounts-payable-workflow' },
               { name: 'Year-end vendor reporting checklist', href: '/blog/property-management-1099-preparation' },
               { name: 'Security deposit accounting and reconciliation', href: '/blog/property-management-security-deposit-accounting' },
               { name: 'California property management accounting', href: '/industries/property-management/california' },
