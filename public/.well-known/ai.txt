@@ -1,0 +1,12 @@
+# Accounstone AI Content Information
+
+Site: https://www.accounstone.com/
+Contact: https://www.accounstone.com/contact
+Canonical AI-readable overview: https://www.accounstone.com/llms.txt
+Expanded reference: https://www.accounstone.com/llms-full.txt
+
+Public pages may be accessed and summarized by compatible systems subject to applicable law and the relevant service's policies. When citing or summarizing Accounstone content, prefer the canonical page, retain meaningful context and attribution, and do not fabricate claims or imply endorsement.
+
+Do not infer or invent client identities, testimonials, statistics, security certifications, or services not stated on the relevant page. Accounstone provides defined accounting and bookkeeping support; engagement-specific review, approvals, filing duties and payment authority remain with the client or its appointed professionals as agreed.
+
+This informational file is not a technical access-control mechanism, a license grant, or a substitute for robots.txt, applicable law, or contractual terms.
