@@ -4796,3 +4796,10 @@ Validation still required before production: run `pnpm eslint .`, `pnpm next bui
 - Content standards remain people-first: answer the reader's question directly, use short paragraphs and descriptive headings, and add detail only when it helps a board or manager decide what accounting support they need. No fixed word count is treated as a Google ranking rule.
 - The page states that delivery is remote from India and does not claim a Los Angeles office, on-site management, legal advice or reserve-planning authority. No GSC submission was made.
 - Sitemap dates must be regenerated with `node scripts/generate-sitemap-dates.mjs` during the release checkout; do not hand-edit `lib/sitemap-dates.ts`. Build and link checks remain required before merge/deploy.
+
+
+## 2026-10-16 — Reconcile remaining HOA and property-management branch work
+
+- Added the self-managed HOA accounting support page, HOA vendor invoice approval workflow guide and property-management accounts payable workflow guide from outstanding feature branches.
+- Linked the routes from relevant industry and blog indexes and registered them in the sitemap and AI-readable indexes.
+- Added route, content and search-intent inventory entries. Duplicate-intent review and production build validation remain required before merge.
