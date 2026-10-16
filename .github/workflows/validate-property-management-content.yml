@@ -1,8 +1,25 @@
 name: Validate property-management content
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/blog/**'
+      - 'app/page.tsx'
+      - 'app/industries/property-management/page.tsx'
+      - 'app/sitemap.ts'
+      - 'public/ai.txt'
+      - 'public/llms-small.txt'
+      - 'public/.well-known/ai.txt'
+      - 'public/llms.txt'
+      - 'public/llms-full.txt'
+      - 'components/article-layout.tsx'
+      - 'lib/sitemap-dates.ts'
+      - 'scripts/generate-sitemap-dates.mjs'
+      - 'scripts/verify-pages.mjs'
+      - '.github/workflows/validate-property-management-content.yml'
   push:
-    branches: [accounstone-seo-improvements]
+    branches: [accounstone-seo-improvements, accounstone-property-management-release]
     paths:
       - 'app/blog/**'
       - 'app/page.tsx'
