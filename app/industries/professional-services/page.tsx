@@ -7,7 +7,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/professional-services';
 
 export const metadata: Metadata = genMeta({
-  title: 'Law Firm & Professional Services Accounting',
+  title: 'Professional Services Accounting Outsourcing',
   description:
     'Outsourced bookkeeping for law firms, consulting firms and agencies: client trust ledgers, three-way reconciliation, WIP, retainers and month-end close.',
   path: PATH,
