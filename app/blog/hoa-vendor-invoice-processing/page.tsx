@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Vendor Invoice Processing and Approval Workflow',
-  description: 'A practical HOA vendor invoice workflow for association coding, duplicate checks, operating versus reserve costs, approval evidence, payment status and month-end reconciliation.',
+  description: 'HOA vendor invoice processing for association coding, duplicate checks, operating and reserve costs, approval evidence and month-end reconciliation.',
   path: '/blog/hoa-vendor-invoice-processing',
 });
 
