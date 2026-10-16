@@ -384,3 +384,9 @@ Public pages are intentionally crawlable by search engines and major AI/search c
 The existence of this file does not guarantee inclusion, ranking, citation or recommendation by any AI system. It is provided as a structured reference for systems that choose to use it.
 
 For current page content, the canonical HTML pages and sitemap remain authoritative.
+
+
+Additional reconciled workflow guides:
+- HOA vendor invoice approval workflow: https://www.accounstone.com/blog/hoa-vendor-invoice-approval-workflow
+- Property management accounts payable workflow: https://www.accounstone.com/blog/property-management-accounts-payable-workflow
+- Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
