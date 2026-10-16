@@ -110,7 +110,7 @@ export default function PropertyManagementPage() {
               Property accounting has to reconcile at the property level
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Property managers may maintain records for several owners, properties and tenant accounts at once. Each property needs a clear view of income, expenses, balances and open items. Owner statements should agree with the underlying ledger, tenant deposits must be tracked appropriately, and recoverable expenses need supporting detail that can be reviewed when charges are questioned.
+              Property management accounting support helps managers keep each property’s books, tenant and owner ledgers, deposit records, vendor costs and monthly reporting connected. Accounstone can handle defined recurring work inside your existing property-management or accounting software, including transaction posting, accounts payable and receivable processing, bank reconciliations, close schedules and preparation of owner statements. The scope reflects your portfolio, reporting cycle and current handoffs. Your team retains payment approvals, lease and charge decisions, banking authority and final review under the agreed controls.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
               The monthly process should connect transaction coding, tenant and owner ledgers, bank activity and property-level reporting. When records are maintained consistently as transactions are posted, month-end becomes a review and reconciliation process instead of a search through old entries to explain balances.
@@ -150,7 +150,7 @@ export default function PropertyManagementPage() {
                     className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
                     source={PATH}
                     title="Property Management Accounting"
-                    lead={`You picked: “${t.symptom}.” Tell us what you manage, what your owners currently receive, and where the month actually goes — the consultation and the call are free.`}
+                    lead={`You picked: “${t.symptom}.” Tell us what you manage, what your owners currently receive, and where the month-end process slows down, so we can understand the support needed.`}
                     label={`Talk to us about: ${t.symptom}`}
                   >
                     <h3 className="font-serif text-lg font-bold text-primary leading-snug">{t.symptom}</h3>
@@ -564,7 +564,7 @@ export default function PropertyManagementPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
-        lead="The consultation and the call are always free. Tell us how many doors you manage, what your owners currently receive, and which part of the month you would take back first."
+        lead="Tell us how many doors you manage, what your owners currently receive, and which part of the month you would most like to improve."
       />
 
       <CTABanner
