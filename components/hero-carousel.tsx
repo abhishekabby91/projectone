@@ -71,7 +71,7 @@ export default function HeroCarousel({
 
   return (
     <div
-      className="relative w-full h-72 md:h-[420px] overflow-hidden bg-background"
+      className="relative w-full h-[410px] sm:h-[430px] md:h-[460px] overflow-hidden bg-background"
       role="region"
       aria-roledescription="carousel"
       aria-label={pageHeading}
@@ -137,12 +137,14 @@ export default function HeroCarousel({
                   <div className="flex flex-wrap items-center gap-3 pt-1">
                     <Link
                       href={ctaHref}
+                      tabIndex={isActive ? 0 : -1}
                       className="inline-flex min-h-11 items-center justify-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-white/90 focus-visible:outline-white"
                     >
                       {ctaLabel}
                     </Link>
                     <Link
                       href={secondaryHref}
+                      tabIndex={isActive ? 0 : -1}
                       className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/70 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
                     >
                       {secondaryLabel}
