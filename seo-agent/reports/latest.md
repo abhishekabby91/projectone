@@ -1,8 +1,8 @@
-# Accounstone SEO Agent Report — 2026-10-15
+# Accounstone SEO Agent Report — 2026-10-16
 
 ## Summary
 
-- Files/pages scanned: **198**
+- Files/pages scanned: **209**
 - High-priority findings: **7**
 - Medium-priority findings: **14**
 - Low-priority findings: **8**
@@ -78,26 +78,37 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 575 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 703 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 2076 | 1 | 57 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 2411 | 1 | 68 | 0 | 0 |
 | app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 3737 | 1 | 33 | 0 | 0 |
+| app/blog/property-management-accounting-for-small-companies/page.tsx | 90/100 | 956 | 1 | 3 | 0 | 0 |
 | app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1253 | 1 | 9 | 0 | 0 |
+| app/blog/property-management-accrued-expenses/page.tsx | 90/100 | 1444 | 1 | 3 | 0 | 0 |
 | app/blog/property-management-bank-reconciliation/page.tsx | 90/100 | 637 | 1 | 9 | 0 | 0 |
+| app/blog/property-management-bookkeeping-cleanup/page.tsx | 90/100 | 1137 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-bookkeeping-vs-accounting/page.tsx | 90/100 | 410 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1349 | 1 | 6 | 0 | 0 |
+| app/blog/property-management-capital-expenditure-accounting/page.tsx | 90/100 | 1340 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-cash-flow-forecasting/page.tsx | 90/100 | 1538 | 1 | 10 | 0 | 0 |
 | app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 594 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-credit-card-reconciliation/page.tsx | 90/100 | 1308 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-financial-statements/page.tsx | 90/100 | 1522 | 1 | 7 | 0 | 0 |
+| app/blog/property-management-in-house-vs-outsourced/page.tsx | 90/100 | 1342 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-lender-reporting/page.tsx | 90/100 | 909 | 1 | 3 | 0 | 0 |
+| app/blog/property-management-management-fee-reconciliation/page.tsx | 90/100 | 1242 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-month-end-close-checklist/page.tsx | 90/100 | 1628 | 1 | 15 | 0 | 0 |
 | app/blog/property-management-owner-distributions/page.tsx | 90/100 | 1506 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-owner-statements/page.tsx | 90/100 | 1580 | 1 | 6 | 0 | 0 |
 | app/blog/property-management-portfolio-performance-reporting/page.tsx | 90/100 | 1390 | 1 | 5 | 0 | 0 |
 | app/blog/property-management-receivables-aging/page.tsx | 90/100 | 1310 | 1 | 5 | 0 | 0 |
+| app/blog/property-management-remote-back-office-support/page.tsx | 90/100 | 962 | 1 | 3 | 0 | 0 |
+| app/blog/property-management-replacement-reserve-accounting/page.tsx | 90/100 | 1472 | 1 | 3 | 0 | 0 |
 | app/blog/property-management-security-deposit-accounting/page.tsx | 90/100 | 1472 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-tenant-ledger-reconciliation/page.tsx | 90/100 | 1463 | 1 | 11 | 0 | 0 |
 | app/blog/property-management-trust-accounting-reconciliation/page.tsx | 90/100 | 1535 | 1 | 8 | 0 | 0 |
 | app/blog/property-management-undeposited-funds/page.tsx | 90/100 | 1411 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-utility-billback-reconciliation/page.tsx | 90/100 | 1294 | 1 | 4 | 0 | 0 |
+| app/blog/property-owner-vs-property-management-company/page.tsx | 90/100 | 1015 | 1 | 3 | 0 | 0 |
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 474 | 1 | 6 | 0 | 0 |
@@ -138,7 +149,7 @@
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2310 | 1 | 68 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2396 | 1 | 79 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 827 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
@@ -209,7 +220,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1401 | 1 | 5 | 0 | 0 |
+| app/page.tsx | 100/100 | 1485 | 1 | 5 | 0 | 0 |
 
 ## Priority queue
 
