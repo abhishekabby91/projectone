@@ -93,7 +93,7 @@ const BODY_MODULES = [
  * default is to leave it out and let the date move.
  *
  *   9bcb2c5 — moved <ScrollInquiryPrompt> out of ArticleLayout into the layout
- *   7da2859 — made the Article schema's dateModified fall back to
+ *   a2dfd16 — made the Article schema's dateModified fall back to
  *     publishedDate. article-layout.tsx is a BODY_MODULE, so a scheduled
  *     regeneration attributed it to all 82 ArticleLayout routes and moved them
  *     to 2026-10-16. Measured before listing it, as the rule below requires:
@@ -105,7 +105,7 @@ const BODY_MODULES = [
  *             mount. It renders nothing on the server, so the server HTML of
  *             all 19 article routes is unchanged.
  */
-const NON_RENDERING_COMMITS = new Set(['9bcb2c5', '7da2859']);
+const NON_RENDERING_COMMITS = new Set(['9bcb2c5', 'a2dfd16']);
 
 /**
  * Commits that put a file here without changing it — the 2026-10-10 history

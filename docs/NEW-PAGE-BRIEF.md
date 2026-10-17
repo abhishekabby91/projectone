@@ -316,7 +316,29 @@ fixed.
 
 ---
 
-## 13. Review on arrival
+## 13. Shared components and design are not yours to decide
+
+This brief covers **a new page**. It does not authorise changing a shared
+component, a colour, or anything that renders on pages other than the one you
+were asked for.
+
+The repository carries design rules an outside assistant cannot see — which
+palette is allowed on which page, what the accent colour is reserved for, which
+illustration set a page may use, how a hue is assigned. They live in
+`CLAUDE.md`, they are specific and they are the owner's. A change that looks
+purely cosmetic can contradict one: in October 2026 a homepage refresh put the
+industry illustrations on the front page, which was a standing-instruction
+violation at the time (the owner later chose to allow it, but that was a
+decision, not a detail).
+
+So: **propose, do not decide.** If a page genuinely needs a shared component
+changed, say which component, what change, and why the page cannot work without
+it — then let whoever is inside the repo check it against `CLAUDE.md`. Writing
+the page you were asked for is in scope; reshaping the design system is not.
+
+---
+
+## 14. Review on arrival
 
 Whoever merges the page runs, against a production build:
 

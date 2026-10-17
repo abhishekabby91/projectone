@@ -1055,9 +1055,41 @@ from becoming the stock template `CLAUDE.md` already warns about elsewhere:**
 grid still read as one block. A solid tile with a white glyph is what gives the
 grid its rhythm, and it is the one place a supporting hue runs at full strength.
 
-### The homepage is brand-only (owner, 2026-09-17)
+### The homepage is brand-only — SUPERSEDED (owner, 2026-10-17)
 
-**The supporting palette is off the front page and must stay off it.** The
+**This rule no longer applies. Do not revert the homepage to navy-only
+illustrations.** The owner lifted it on 2026-10-17, after the visual refresh in
+PR #93 put `IndustryIllustration` on the four homepage industry cards. Measured
+on the rendered page: **56 supporting-hue references on `/`**, against the 0
+this section used to require. That is now intended, not a regression.
+
+It is recorded rather than deleted because a measurement of "0 hues on `/`"
+appears in three places in this file, and a future session finding 56 would
+otherwise read it as a live violation and "fix" a change the owner asked for.
+**If you are here because a colour sweep flagged the homepage: it is fine.**
+
+**Two things this does NOT lift, and they are separate rules:**
+
+- **The burnt-orange accent is still reserved for the point that needs a human
+  decision**, and is still never decorative. Lifting the supporting-hue
+  restriction says nothing about the accent, which is the rule that actually
+  carries meaning. `.accent-corner::before` still falls back to
+  `var(--color-accent)` when no `--card-hue` is set, so a card band that drops
+  its hue prop puts the accent back on a decorative corner — still wrong.
+- **A hue still identifies a thing and is assigned deterministically**, from
+  `TONE_MAP` in `components/icon-badge.tsx` via `hueVar()`. Never random, never
+  rotating. The homepage cards inherit the same per-industry mapping the
+  industry pages use, which is why the four read as the same four industries in
+  both places.
+
+The reasoning that produced the original rule is kept below, because it is still
+the right argument for any *new* use of colour — it was overruled for this one
+case, not shown to be wrong.
+
+---
+
+**The original 2026-09-17 rule, for reference:** the supporting palette was off
+the front page. The
 owner asked for the non-brand colour to come off `/`; the hub and industry
 pages keep it, because a grid of otherwise identical cards is the problem it
 was added to solve and those pages are where that problem lives.
