@@ -9,9 +9,43 @@ export const metadata: Metadata = genMeta({
   path: '/blog/accounts-payable-outsourcing',
 });
 
+const faqs = [
+  {
+    question: 'What access does an outsourced accounts payable team need?',
+    answer:
+      'A named user in your accounting platform with permission to enter bills and run AP reports, access to the payables inbox, the vendor list, and your approval matrix so routing reaches the right person at the right threshold. It does not require online banking credentials, payment release rights, the ability to add a vendor or edit vendor bank details, or authority to approve a bill. Where the platform supports role-based permissions, those limits can be enforced in the software rather than agreed by email.',
+  },
+  {
+    question: 'Who approves and pays invoices when accounts payable is outsourced?',
+    answer:
+      'Your own authorised people do both. The outsourced team prepares the batch and leaves it ready in the platform; releasing payment happens from your bank, by someone in your organisation. Approval is routed to your named approver on your threshold rules. Two of the seven steps in a payables cycle need authority inside your organisation, and those are the two.',
+  },
+  {
+    question: 'How should a dedicated payables inbox be set up?',
+    answer:
+      'Set up a dedicated address, such as ap@, that both your team and the payables team can reach, and have vendors send invoices there. Mixing invoices into general inboxes is what causes bills to sit unrecorded, because nobody owns the inbox they arrived in.',
+  },
+  {
+    question: 'How are disputed invoices handled by an outsourced AP team?',
+    answer:
+      'They are flagged and escalated, not resolved. Whether to withhold payment, renegotiate or accept a charge is a commercial judgment about a supplier relationship, so it stays with you. What the payables team can do is make sure the dispute is visible, dated and attached to the invoice rather than discovered at reconciliation.',
+  },
+  {
+    question: 'Does outsourced accounts payable require three-way matching?',
+    answer:
+      'Only where you raise purchase orders and receive goods. A three-way match compares the purchase order, the receiving document and the vendor invoice, and it is the right control for businesses that buy physical goods. Where spend is subscriptions, subcontractors, rent and professional fees there is no receiving event to match against, and the useful question becomes what the second independent piece of evidence is: a contract, an approved quote, a signed timesheet or a delivery note.',
+  },
+  {
+    question: 'Can an outsourced AP team handle multiple entities?',
+    answer:
+      'Invoice entry and coding can be run per entity, including intercompany coding, in platforms that support multi-entity payables. Consolidation eliminations are a reporting judgment and sit with your controller or your CPA rather than with the payables team.',
+  },
+];
+
 export default function APOutsourcingBlog() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Accounts Payable Outsourcing: Fraud Controls, Software Workflows, and Real Costs"
       category="Accounts Payable"
       description="Fraud controls, software workflows, and real per-invoice cost ranges for the US, UK, and Australia — the operational detail behind an outsourced AP setup."
@@ -86,11 +120,6 @@ export default function APOutsourcingBlog() {
         <li><strong>Time your approver spends per invoice.</strong> The point of delegating preparation is that review gets shorter. If approving takes as long as it used to, the preparation is not arriving in a reviewable state.</li>
       </ul>
       <p>Agree those four at the start rather than after a bad month. They also give you the language for a corrective conversation that is about the process rather than about the people.</p>
-
-      <h2>Real Questions</h2>
-      <p><strong>&ldquo;What happens with the vendor inbox?&rdquo;</strong> Set up a dedicated ap@ address both your team and the AP team can access. Don&rsquo;t mix invoices into general inboxes.</p>
-      <p><strong>&ldquo;How do they handle disputed invoices?&rdquo;</strong> Flag and escalate — not resolve. Dispute resolution is a commercial judgment that stays with you.</p>
-      <p><strong>&ldquo;Can they handle multi-entity AP?&rdquo;</strong> Yes — invoice entry per entity, intercompany coding. Consolidation eliminations sit with your controller or CPA.</p>
 
       <div className="mt-8 p-6 bg-input rounded-xl border border-border/70">
         <p className="font-semibold text-primary mb-3">Relevant services</p>

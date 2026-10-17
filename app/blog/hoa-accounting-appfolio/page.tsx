@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting with AppFolio',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "It can, depending on the workflow. If information moves between systems, define the source of each record and reconcile the handoff so the same transaction is not lost or counted twice."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingAppFolio() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Accounting with AppFolio: What Should Be Reviewed Each Month?"
       category="HOA Accounting"
       description="AppFolio can connect property and accounting workflows, but monthly review still depends on accurate ledgers, reconciliations, coding and clear operating-versus-reserve reporting."
@@ -63,15 +60,12 @@ export default function HoaAccountingAppFolio() {
       <h2>What If QuickBooks Is Also Used?</h2>
       <p>Some organizations use more than one system. When AppFolio and QuickBooks Online are both part of the workflow, establish which system owns each record and reconcile the handoff. Duplicate posting is more dangerous than using two systems deliberately.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Agree the Ledgers to the Control Accounts</h2>
       <p>Whatever the platform, the monthly proof is the same: homeowner balances summed should equal the receivable control account, and open vendor bills summed should equal payables. A difference normally traces to a journal posted straight to the control account, a homeowner adjustment made without its matching entry, or a cut-off applied inconsistently between the detail and the ledger. Finding it in the month it arises takes minutes; finding it at year end takes an engagement.</p>
       <h2>Check What the Reports Contain Before Relying on Them</h2>
       <p>Report names are not a specification. The same title can cover different periods, different entities or a portfolio rather than the single association, depending on how the platform has been set up. Confirming the scope and cut-off of each report before it becomes a monthly control is cheaper than explaining a figure afterwards — and the configuration itself stays with the association or its managing agent, since a review works within the setup rather than changing it.</p>
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

@@ -9,9 +9,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/accounts-receivable-management',
 });
 
+const faqs = [
+  {
+    question: 'What does an outsourced accounts receivable team actually do?',
+    answer:
+      'Raising and sending customer invoices on schedule, applying payments as they arrive, tracking outstanding balances and aging, following up on overdue accounts against a defined schedule, reconciling customer accounts and resolving misapplied payments, and preparing aging summaries for review. It is the recurring process work rather than the decisions attached to it.',
+  },
+  {
+    question: 'Which receivables decisions stay with the business?',
+    answer:
+      'Credit limits and credit holds, write-off authority, referrals to a collections agency, customer contract terms that affect invoicing, and any dispute that turns on the customer relationship rather than on a factual error. The receivables team runs the process; the judgment calls about a customer stay with you.',
+  },
+  {
+    question: 'What does a workable overdue follow-up schedule look like?',
+    answer:
+      'A common three-stage pattern is an automated reminder at seven days past due, a direct follow-up from the receivables team at twenty-one days, and escalation to your internal team or account manager at forty-five days. The escalation is not a failure of the process — it is the correct handoff at the point where relationship context matters more than a reminder.',
+  },
+  {
+    question: 'Can accounts receivable be outsourced if invoicing is unreliable?',
+    answer:
+      'Not usefully, and it is worth fixing first. Follow-up only works when the invoices going out are accurate and on time; chasing a wrong invoice produces a dispute rather than a payment. Where invoicing is the weak point, that is the part to bring under a defined process before the collections schedule is worth running.',
+  },
+  {
+    question: 'Can an outsourced AR team charge statutory interest on late UK invoices?',
+    answer:
+      'No. In the UK, the Late Payment of Commercial Debts legislation gives a business the right to charge statutory interest on overdue business-to-business payments, but whether to exercise that right against a particular customer is a commercial decision for you. The receivables team can identify which invoices qualify and prepare the calculation; applying it is yours.',
+  },
+];
+
 export default function ARManagementBlog() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Outsourcing Accounts Receivable: A Practical Guide for Business Owners"
       category="Accounts Receivable"
       description="DSO, follow-up schedules, software workflows, and the judgment calls that always stay with you."

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Assessment Receivables Reconciliation',
@@ -15,13 +14,11 @@ const faqs = [
   { question: "What if the homeowner report and general ledger differ by a small amount?", answer: "Even a small difference should have an explanation. A documented timing item may be acceptable; an unexplained difference should not simply be written off to make the reconciliation balance." },
   { question: "Can an outsourced accounting team perform this reconciliation?", answer: "Yes. An outsourced team can prepare the reconciliation, investigate routine differences and maintain supporting schedules while the association or management team retains approval and decision-making responsibility." },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAssessmentReceivablesReconciliation() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Assessment Receivables Reconciliation: What Should Be Checked?"
       category="HOA Accounting"
       description="A practical reconciliation process for comparing homeowner assessment detail with the association's accounts receivable control balance."
@@ -76,11 +73,8 @@ export default function HoaAssessmentReceivablesReconciliation() {
       <h2>What About State-Specific HOA Requirements?</h2>
       <p>The reconciliation method is generally the same for an HOA in California, Texas, Florida, Nevada or another U.S. state. What changes is the legal, governance and collection environment around the accounting records. Those state-specific requirements should be handled by the association's authorized professionals rather than assumed from an accounting report.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>For the wider workflow, see <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>, <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a> and <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

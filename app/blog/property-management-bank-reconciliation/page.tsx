@@ -8,9 +8,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/property-management-bank-reconciliation',
 });
 
+const faqs = [
+  {
+    question: 'What should a property management bank reconciliation cover?',
+    answer:
+      'Tenant and owner receipts, vendor payments and outstanding cheques, owner distributions, security-deposit or trust-related activity where it applies, transfers between accounts, bank fees and direct charges, and any old or unexplained reconciling items. The aim is an explained balance rather than a matched one.',
+  },
+  {
+    question: 'Does a matched bank balance mean every property is correct?',
+    answer:
+      'No. In a portfolio, a receipt can reach the bank and still be applied to the wrong tenant or the wrong property, and the bank match will not show it. Property-level and tenant-level detail has to be checked separately from the bank reconciliation, particularly where a transaction is unusual or material.',
+  },
+  {
+    question: 'What is a three-way trust reconciliation in property management?',
+    answer:
+      'Where the applicable rules and account arrangement require it, the review compares the trust bank balance, the control record and the total of the individual beneficiary, owner, tenant or transaction records — all at the same reconciliation date. Differences are investigated and corrected rather than absorbed into an unexplained adjustment. Whether those requirements apply to a particular arrangement depends on the licence, the activity and the governing rules, and is a question for the licensed party or the firm\'s own adviser rather than for a bookkeeper.',
+  },
+  {
+    question: 'How should recurring unexplained reconciling items be handled?',
+    answer:
+      'Keep a short open-items list carrying the date, amount, property, likely cause and the person responsible for resolving it. An item that survives month after month needs a reason attached to it; carrying the same difference forward repeatedly turns a correctable error into a permanent feature of the records.',
+  },
+  {
+    question: 'What happens after the reconciliation is complete?',
+    answer:
+      'It feeds the rest of the monthly close. Review the effect on tenant receivables, vendor payables, owner statements and cash reporting, and where the accounting system feeds another reporting platform, confirm that handoff rather than assuming it carried through.',
+  },
+];
+
 export default function Page() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Bank Reconciliation: A Practical Guide"
       category="Property Management"
       description="Bank reconciliation is where property-level transaction records meet the actual bank activity. The goal is not just a matched balance but an explained balance."

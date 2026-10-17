@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Assessment Accounting',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "The core accounting process is broadly similar, but governing documents, state requirements and collection practices can differ. Accounting should keep the records clear while state-specific legal or collection decisions remain with the association and its qualified advisers."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAssessmentAccounting() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Assessment Accounting: How Homeowner Ledgers Should Work"
       category="HOA Accounting"
       description="HOA assessment accounting starts with the approved assessment schedule and ends with homeowner ledgers that can be reconciled to the association's financial records."
@@ -105,11 +102,8 @@ export default function HoaAssessmentAccounting() {
       <h2>When Should Assessment Accounting Be Reviewed?</h2>
       <p>Assessment postings and payment applications should be reviewed throughout the month rather than left entirely for the close. Monthly reconciliation then becomes a confirmation process instead of a large cleanup exercise.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>See our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page for the wider association workflow, or read the <a href="/blog/hoa-accounting-month-end-checklist">HOA month-end checklist</a> for the monthly close process.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

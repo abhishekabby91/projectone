@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Reserve Expenses',
@@ -15,13 +14,11 @@ const faqs = [
   { question: "How should reserve project costs be reviewed?", answer: "A useful review connects the project, supporting invoice, approval, payment and reserve report. Larger projects may also need additional schedules maintained by management." },
   { question: "Does reserve accounting differ between California and Florida HOAs?", answer: "The accounting concepts are similar, but state requirements and association documents can affect reserve planning, disclosures and governance. The accounting team should not assume that a process used in one state automatically satisfies another state's requirements." },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaReserveExpenses() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Reserve Expenses: How Should Reserve-Funded Costs Be Tracked?"
       category="HOA Accounting"
       description="Reserve-funded expenses need a clear connection between the approved project, vendor bill, payment, accounting entry and reserve reporting."
@@ -66,11 +63,8 @@ export default function HoaReserveExpenses() {
       <h2>Software Can Help With Project-Level Detail</h2>
       <p>QuickBooks Online can be structured with classes, locations, projects or other tracking methods depending on the setup. AppFolio and Yardi may provide additional property or project-level reporting. The right setup depends on how the association and manager operate; the accounting requirement is still a clear audit trail.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a>, <a href="/blog/hoa-reserve-reconciliation">HOA reserve reconciliation</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

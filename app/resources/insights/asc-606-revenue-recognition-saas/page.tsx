@@ -12,9 +12,38 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'Why can\'t a SaaS business record an annual subscription payment as revenue when it arrives?',
+    answer:
+      'Because under ASC 606 revenue is recognised as the service is delivered, not when cash is received. A customer paying twelve thousand dollars upfront for an annual subscription produces roughly a twelfth of that in revenue each month across the year, with the rest sitting on the balance sheet until it is earned.',
+  },
+  {
+    question: 'What is deferred revenue?',
+    answer:
+      'The portion of a payment that has not yet been earned, carried on the balance sheet as a liability, sometimes called unearned revenue. It represents an obligation: the money has been received but months of service are still owed. As each month passes, a slice moves from deferred revenue into recognised revenue.',
+  },
+  {
+    question: 'Where does SaaS revenue recognition usually break in practice?',
+    answer:
+      'Rarely in the principle, and usually in four maintenance points. Mid-term upgrades, downgrades and seat changes alter both the deferred balance and the remaining schedule, and drift when they are handled in the billing system but not the ledger. Implementation and setup fees change timing depending on how they are treated. Usage-based and hybrid pricing put two patterns in one contract. Credits, refunds and cancellations reverse into periods that may already be reported.',
+  },
+  {
+    question: 'What belongs in a reviewable deferred revenue schedule?',
+    answer:
+      'At minimum: opening balance, additions from new and renewed contracts, releases to revenue for the period, adjustments from mid-term changes, and closing balance — with the closing balance agreeing to the general ledger and to the active subscription base, and each movement traceable to a contract rather than to a balancing figure. The test is whether someone who was not there can tie the balance back to the contracts.',
+  },
+  {
+    question: 'Who decides how a particular SaaS contract is treated under ASC 606?',
+    answer:
+      'Your CPA and your auditor. What counts as a distinct performance obligation, how the transaction price is allocated and how a specific contract is treated are accounting policy judgments and are not a bookkeeper\'s to make. What can be prepared and maintained is the schedule that implements the policy, the reconciliation proving it still ties, and the supporting detail a reviewer can follow.',
+  },
+];
+
 export default function ASC606Insight() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="ASC 606 Revenue Recognition for SaaS: A Quick Explainer"
       category="Insight"
       description="Why subscription businesses can't just book cash received as revenue, and what deferred revenue actually means for your financials."

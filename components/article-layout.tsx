@@ -146,7 +146,16 @@ function extractFaqs(children: ReactNode): { question: string; answer: string }[
     const tag = typeof node.type === 'string' ? node.type : '';
     if (tag !== 'h2' && tag !== 'h3') continue;
 
-    const question = getText((node as ReactElement<{ children?: ReactNode }>).props.children).trim();
+    // Strip wrapping quotation marks before testing for a question mark. Five
+    // headings on /blog/outsourced-bookkeeping-guide are set as quoted asks --
+    // "Can an offshore bookkeeper really understand my business?" -- so the
+    // string ends in a closing curly quote and the `?` test missed every one.
+    // The whole Q&A section of that page was invisible to answer engines for
+    // the sake of a typographic character.
+    const question = getText((node as ReactElement<{ children?: ReactNode }>).props.children)
+      .trim()
+      .replace(/^[\u201c\u201d\u2018\u2019"']+|[\u201c\u201d\u2018\u2019"']+$/g, '')
+      .trim();
     if (!question.endsWith('?')) continue;
 
     // Prose only, until the next heading of any level.

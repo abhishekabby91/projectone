@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Vendor 1099 Tracking',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "Yes. The accounting team can maintain vendor records, organize payment data and prepare a year-end schedule for professional review. Final tax reporting decisions should remain with the responsible tax professional."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaVendor1099Tracking() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Vendor 1099 Tracking: What Should the Accounting Team Record?"
       category="HOA Accounting"
       description="Good vendor records make year-end 1099 review easier. The accounting team should maintain payment detail and supporting information without deciding tax reporting requirements on its own."
@@ -82,11 +79,8 @@ export default function HoaVendor1099Tracking() {
       <h2>Do State Rules Change the Accounting Workflow?</h2>
       <p>The federal tax reporting analysis and any state reporting requirements should be confirmed for the association's circumstances. An HOA in California, Texas, Florida or Nevada may have different state considerations, but the accounting team's job is still to maintain complete and accurate payment records for the appropriate professional review.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/blog/hoa-accounts-payable">HOA accounts payable</a>, <a href="/blog/hoa-vendor-expense-tracking">HOA vendor expense tracking</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

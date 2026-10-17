@@ -184,6 +184,31 @@ Passing `faqs` solves both. Rules:
   its meaning.
 - Write answers that are true if read alone, because they will be.
 
+**Every article on this site now carries FAQs — 101 of 101 — so a new one
+without them is the exception, and the checker fails it.** Four more rules,
+added 2026-10-17 when the format was finalised:
+
+- **One `FAQPage` block per URL.** Never a `<script>` of your own beside the
+  layout. Passing `faqs` is the whole mechanism; the layout also derives Q&A
+  from question-form headings, so a second hand-written block means the page
+  declares its FAQ twice with two different question sets.
+- **One place renders them.** No inline `<FAQSection>` in the body, no
+  `faqs.map()` into `<h3>`/`<p>`. A hand-rolled map also pushes the questions
+  into the article's table of contents, which is for sections.
+- **The answer names its own subject.** It is quoted with nothing around it, so
+  "An HOA bank reconciliation should explain…" works and "It should explain…"
+  does not.
+- **No figure that ages, and route judgment inside the answer.** No rate,
+  threshold, turnaround, headcount or price. Where a question touches a
+  licensed judgment — a tax position, an audit opinion, a trust-account
+  requirement, a revenue-recognition policy — name whose call it is *in the
+  answer*, not in a disclaimer further down the page the quoting reader will
+  never see.
+
+If the page already has a Q&A section in its body, **move** it into `faqs`
+rather than copying it. Two copies of the same text on one page is duplication,
+and the near-duplicate ceiling is 25%.
+
 ---
 
 ## 8. The finish — five snippets

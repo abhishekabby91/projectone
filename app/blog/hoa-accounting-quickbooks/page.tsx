@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting in QuickBooks',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "Review bank reconciliations, assessment and receivable activity, payables, operating and reserve expenses, transfers, budget-to-actual results and the reports going to the board. Old unexplained items should be investigated rather than carried forward."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingQuickBooks() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Accounting in QuickBooks: What Should Be Set Up and Reviewed?"
       category="HOA Accounting"
       description="QuickBooks can support HOA accounting when the chart of accounts, homeowner detail, fund structure and monthly reconciliation process are designed around how the association actually operates."
@@ -70,11 +67,8 @@ export default function HoaAccountingQuickBooks() {
       <h2>What Should the Board Receive?</h2>
       <p>The QuickBooks reports should be turned into a useful monthly package: financial statements, budget-to-actual results, receivables or delinquency detail, reserve information and relevant open items.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>See <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>, <a href="/blog/hoa-chart-of-accounts">HOA chart of accounts</a> and <a href="/blog/hoa-bank-reconciliation">HOA bank reconciliation</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

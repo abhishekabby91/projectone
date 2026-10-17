@@ -10,9 +10,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/us-cpa-firm-outsourcing-readiness-checklist',
 });
 
+const faqs = [
+  {
+    question: 'What should a CPA firm define before sending the first file to an outsourced team?',
+    answer:
+      'One named workflow, not an open-ended request for help with accounting. Define the work included — accounts, entities, return types, periods and recurring tasks; the work excluded, such as client advice, tax positions, final review, sign-off and filing decisions; the inputs, meaning source documents, trial balances, prior-period files and firm templates; the expected output, including workpapers, reconciliations, schedules, an exception list and completion notes; and who answers questions when records conflict or a deadline is at risk.',
+  },
+  {
+    question: 'What has to be checked before US taxpayer data goes to an external preparer?',
+    answer:
+      'Which consents, notices, contract terms and safeguards the engagement requires, determined by the firm\'s responsible professional or counsel before any disclosure. Internal Revenue Code §7216 and its regulations can govern disclosures of tax return information to other preparers, and a general confidentiality agreement should not be assumed to replace a required taxpayer consent. The IRS also asks tax professionals to maintain a written information security plan and to take service-provider handling into account, so the proposed workflow should be checked against the firm\'s own plan and vendor oversight process.',
+  },
+  {
+    question: 'What access controls should be agreed before onboarding an outsourced team?',
+    answer:
+      'Named individual accounts rather than shared credentials, with access limited to the assigned work; multi-factor authentication where available and a documented process for granting, changing and removing access; approved file-transfer and document-storage channels with rules on local downloads, printing and retention; clear ownership of tax software, accounting software, e-file credentials, bank permissions and payment authority; and confidentiality terms, incident escalation contacts and prompt revocation when work ends.',
+  },
+  {
+    question: 'What makes an outsourced workpaper handoff reviewable?',
+    answer:
+      'The firm\'s own file names, folder structure, templates and conventions; a list of missing documents and open questions with a named owner and status; reconciliation differences, proposed adjustments and supporting evidence recorded rather than balances silently forced to agree; assumptions and unresolved technical questions marked for the firm\'s reviewer; and a completion note naming what was done, what exceptions were found and what needs review. A complete handoff is not an approved result — the firm still decides who evaluates judgments and authorises deliverables.',
+  },
+  {
+    question: 'How should a CPA firm measure whether outsourcing is working?',
+    answer:
+      'Not by turnaround alone. Track first-pass acceptance, repeat corrections, unresolved queries, completeness of supporting evidence and the amount of reviewer rework, and establish the baseline during a pilot on a representative batch rather than accepting an improvement figure promised in advance.',
+  },
+];
+
 export default function USCPAFirmOutsourcingReadinessChecklist() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="U.S. CPA Firm Outsourcing Readiness Checklist: Tax Data, Access and Review Controls"
       category="U.S. CPA Firm Outsourcing"
       description="A pre-engagement checklist for U.S. accounting firms planning to outsource tax preparation or recurring accounting work without losing control of client files, review standards or filing authority."

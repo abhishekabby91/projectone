@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting with eUnify: Key Reviews',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "The team should first learn the client's configuration, reports and handoff points rather than assume every eUnify installation works the same way. That approach reduces avoidable errors during transition."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingEunify() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Accounting with eUnify: What Should Be Reviewed?"
       category="HOA Software"
       description="eUnify brings community-management and financial workflows together. For an accounting team, the useful question is how homeowner activity, the general ledger, payables, banking and board reporting move through the system."
@@ -80,11 +77,8 @@ export default function HoaAccountingEunify() {
         </tbody>
       </table>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>Continue with <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-homeowner-ledgers">HOA homeowner ledgers</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

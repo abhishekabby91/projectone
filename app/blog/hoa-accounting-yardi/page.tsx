@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting with Yardi',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "No. A management platform can streamline the workflow, but bank, receivable and other control reconciliations are still necessary to confirm that the reported balances are reliable."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaAccountingYardi() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Accounting with Yardi: What Should Be Reviewed Each Month?"
       category="HOA Accounting"
       description="For HOAs using Yardi or a related property-management workflow, the monthly accounting review should connect resident or homeowner activity, cash, payables, reserves and board reporting."
@@ -60,15 +57,12 @@ export default function HoaAccountingYardi() {
       <h2>Yardi Does Not Replace Accounting Review</h2>
       <p>A software system can automate posting and reporting, but it cannot decide whether an unexpected balance makes sense. Someone still needs to investigate unusual transactions, old reconciling items and inconsistencies between reports.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Tie the Subledgers to the General Ledger Every Month</h2>
       <p>The check that matters most in any platform of this kind is also the one most easily skipped, because every individual report looks correct on its own. The homeowner balances added together should equal the receivable control account; the open payables added together should equal the payables account. Where the two disagree, the cause is usually a journal posted directly to the control account, an adjustment made on a homeowner record without a corresponding entry, or a period closed on one side and not the other — all of which are straightforward to find in the month they happen and considerably less so afterwards.</p>
       <h2>Confirm What the Configuration Actually Produces</h2>
       <p>Reports of the same name can carry different content depending on which product, modules and fields an association or its managing agent has in use. Before a report becomes a monthly control, confirm what it includes, which period it covers and whether it reflects the association alone or a wider portfolio. Note that reviewing an existing configuration is not the same as building one: platform setup and configuration are the association&apos;s or its agent&apos;s, and the work here starts from whatever is already in place.</p>
       <h2>Related HOA Accounting Resources</h2>
       <p>Continue with <a href="/blog/hoa-accounting-appfolio">HOA accounting with AppFolio</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

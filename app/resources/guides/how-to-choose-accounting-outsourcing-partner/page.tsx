@@ -13,9 +13,43 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'What should you ask an accounting outsourcing provider before asking the price?',
+    answer:
+      'What exactly is included. Bookkeeping or accounting support can mean reconciliations only in one proposal and payables, receivables, month-end close and reporting in another, and a number attached to an undefined scope cannot be compared with any other number. Get the scope in writing first, then compare price against equivalent scope.',
+  },
+  {
+    question: 'How can you tell whether outsourcing will reduce your workload or just move it?',
+    answer:
+      'Ask the provider to walk through an actual monthly cycle: when the work is done, when it is reviewed internally, how exceptions and unclear items are flagged, and what reaches you at the end. A specific answer names a review checklist, a handoff date and the person who checks the file before you see it. "We handle everything end to end" is not an answer, and a provider who cannot describe the cycle in specific terms has told you something useful.',
+  },
+  {
+    question: 'Should an outsourcing provider require you to change accounting software?',
+    answer:
+      'No. A provider that needs you to migrate is adding a software project to what should be a capacity decision. Ask whether they work directly inside the platform you already use, how access and permissions are granted, and how that access is documented and later revoked.',
+  },
+  {
+    question: 'What work must stay with a licensed professional?',
+    answer:
+      'Judgment and sign-off. Tax return preparation can be delegated, but final review, signature and any communication with a tax authority stay with your CPA or Enrolled Agent, or the equivalent registered practitioner outside the US. Audit schedules and evidence can be prepared, but the audit opinion cannot be delegated. A provider claiming to take on judgment or representation work that legally requires a licence it does not hold is showing you a red flag, not a feature.',
+  },
+  {
+    question: 'How should a provider\'s security claims be checked?',
+    answer:
+      'Ask concrete questions before certification questions: is the engagement covered by a non-disclosure agreement, is access limited to the people actually working on your account, and how is access removed when someone leaves the team or the engagement ends. Where a certification is referenced, ask whether it is currently held or in progress — those are different claims and the distinction matters.',
+  },
+  {
+    question: 'What should you agree about ending the engagement, before it starts?',
+    answer:
+      'That your records and systems stay in your control throughout rather than living inside the provider\'s own tools, what documentation is maintained as the relationship runs, and what a transition would look like if you brought the work back in-house or moved to another provider. It is the easiest question to skip in a sales conversation and the most expensive one to discover late.',
+  },
+];
+
 export default function HowToChoosePartnerGuide() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="How to Choose an Accounting Outsourcing Partner"
       category="Guide"
       description="Before comparing quotes, it helps to have a framework for what actually separates a dependable provider from a risky one. This guide covers the decision criteria, the warning signs, and what a proper onboarding should look like."

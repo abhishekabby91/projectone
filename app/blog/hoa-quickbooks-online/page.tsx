@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'QuickBooks Online for HOA Accounting',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "Define which system is the detailed source for homeowner transactions and how totals flow into QuickBooks Online. The key control is a repeatable reconciliation between the detailed records and the general ledger."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaQuickBooksOnline() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="QuickBooks Online for HOA Accounting: What Should Be Tracked?"
       category="HOA Accounting"
       description="QuickBooks Online can support an HOA accounting workflow when the records are structured around the association's funds, homeowner activity, vendors and monthly reporting needs."
@@ -69,11 +66,8 @@ export default function HoaQuickBooksOnline() {
         </tbody>
       </table>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} columns={2} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>Read <a href="/blog/hoa-accounting-quickbooks">HOA accounting in QuickBooks</a>, <a href="/blog/hoa-accounting-controls">HOA accounting controls</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Budget-to-Actual Reports',
@@ -16,13 +15,11 @@ const faqs = [
   { question: "Should reserves appear on the budget-to-actual report?", answer: "Reserve reporting can be included, but it should be clearly separated from operating activity so the board can understand both without confusing one with the other." },
   { question: "Can an outsourced team prepare the monthly report?", answer: "Yes. An accounting team can maintain the books, prepare the budget-to-actual report and flag unusual variances for management or board review. The board retains responsibility for its decisions." },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaBudgetToActualReports() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Budget-to-Actual Reports: What Should Board Members Review?"
       category="HOA Accounting"
       description="A budget-to-actual report is useful when it helps the board see where actual income or expenses differ from the approved budget and where a variance needs explanation."
@@ -76,11 +73,8 @@ export default function HoaBudgetToActualReports() {
       <h2>Why Monthly Close Matters</h2>
       <p>Budget-to-actual reporting is only as reliable as the books behind it. Bank reconciliations, accounts payable, assessment postings, accruals where applicable and reserve transactions should be reviewed before the board relies on the report.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>For the planning stage, see the <Link href="/blog/hoa-annual-budget-preparation">HOA annual budget preparation workflow</Link>. For the reporting stage, see the <a href="/blog/hoa-board-financial-package">HOA board financial package</a>, <a href="/blog/hoa-financial-statements-board-review">HOA financial statements</a> and our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

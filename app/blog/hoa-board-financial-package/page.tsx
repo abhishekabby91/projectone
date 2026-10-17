@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Board Financial Package',
@@ -15,13 +14,11 @@ const faqs = [
   { question: "Should an HOA board receive bank statements?", answer: "Bank statements and reconciliations are useful supporting records, although the exact board package varies. A reconciliation summary can provide a concise view while the underlying statements remain available for review." },
   { question: "Does a California HOA need a different financial package from a Texas HOA?", answer: "The core accounting reports can be similar, but state law, governing documents and management practices can affect what the association needs to disclose or review. State-specific legal requirements should be confirmed with the association's qualified professionals." },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaBoardFinancialPackage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Board Financial Package: What Should Be Included Each Month?"
       category="HOA Accounting"
       description="A useful HOA board package brings the core financial statements together with the supporting schedules needed to understand cash, assessments, expenses, reserves and open items."
@@ -75,11 +72,8 @@ export default function HoaBoardFinancialPackage() {
       <h2>What Should Not Be Hidden in the Package?</h2>
       <p>Unusual adjustments, old unreconciled items, large unapplied receipts or significant unexplained variances should not disappear simply because the headline financial statements look reasonable. A short open-items schedule can make those issues easier to discuss.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>Continue with <a href="/blog/hoa-budget-to-actual-reports">HOA budget-to-actual reports</a>, <a href="/blog/hoa-reserve-financial-reporting">HOA reserve financial reporting</a> or our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

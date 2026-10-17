@@ -31,6 +31,13 @@ const DESC_MIN = 110;
 const DESC_MAX = 160;
 
 /**
+ * Two is the floor, not the target. One question is not an FAQ, and the same
+ * number is already hard-coded as MIN_FAQS in components/article-layout.tsx
+ * for the headings it derives Q&A from -- keep the two in step.
+ */
+const MIN_ARTICLE_FAQS = 2;
+
+/**
  * Minimum body words by page type, from the measured medians of the pages that
  * already work. These are FLOORS, not targets -- a page under its floor is
  * usually missing a section, not missing padding. Hubs are deliberately short
@@ -169,18 +176,43 @@ async function check(route) {
   const blocks = [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
   const types = new Set();
   const faqAnswers = [];
+  const faqQuestions = [];
+  let faqBlocks = 0;
   for (const b of blocks) {
     let o;
     try { o = JSON.parse(b.replace(/&quot;/g, '"').replace(/&amp;/g, '&')); } catch { continue; }
     for (const x of Array.isArray(o) ? o : [o]) {
       if (!x || typeof x !== 'object') continue;
       if (x['@type']) types.add(String(x['@type']));
-      if (x['@type'] === 'FAQPage') for (const q of x.mainEntity || []) faqAnswers.push(q?.acceptedAnswer?.text || '');
+      if (x['@type'] === 'FAQPage') {
+        faqBlocks += 1;
+        for (const q of x.mainEntity || []) {
+          faqQuestions.push(q?.name || '');
+          faqAnswers.push(q?.acceptedAnswer?.text || '');
+        }
+      }
     }
   }
   if (!types.has('Organization')) add('emits Organization schema');
   const NO_CRUMB = ['/', '/privacy', '/terms', '/cookie-policy'];
   if (!types.has('BreadcrumbList') && !NO_CRUMB.includes(route)) add('emits BreadcrumbList schema');
+
+  // One FAQPage block per URL. Two means the page declares its own FAQ twice:
+  // ten blog posts built schema from a local array AND let ArticleLayout emit
+  // its own (which it derives from question-form headings when no `faqs` prop
+  // is passed), so each published two competing "the FAQ of this page" objects
+  // with different question sets. An assistant reading the page gets both.
+  if (faqBlocks > 1) add('one FAQPage block per URL', `${faqBlocks} blocks`);
+
+  // Articles carry an FAQ. This is a format rule, not an SEO wish: a question
+  // with a self-contained answer is the unit an AI assistant can lift and
+  // attribute, and it is the only part of a long article that survives being
+  // read out of context. ArticleLayout will derive one from question-form
+  // headings, so a page fails here only when it has neither.
+  const isArticle = kind === 'blog post' || kind === 'guide/insight';
+  if (isArticle && faqQuestions.length < MIN_ARTICLE_FAQS) {
+    add(`articles carry at least ${MIN_ARTICLE_FAQS} FAQ entries`, `${faqQuestions.length} found`);
+  }
 
   // FAQ answers must be visible text, or the markup is a violation
   // Compare words, not an exact slice. A list answer is joined with '; ' in
@@ -194,6 +226,15 @@ async function check(route) {
     const missing = probe.filter((w) => !visibleWords.has(w));
     if (missing.length > probe.length * 0.25) {
       add('FAQ answers are visible on the page', `"${a.slice(0, 55)}…" (${missing.length}/${probe.length} words absent)`);
+      break;
+    }
+  }
+  for (const q of faqQuestions) {
+    const probe = q.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length > 3);
+    if (!probe.length) continue;
+    const missing = probe.filter((w) => !visibleWords.has(w));
+    if (missing.length > probe.length * 0.25) {
+      add('FAQ questions are visible on the page', `"${q.slice(0, 55)}…" (${missing.length}/${probe.length} words absent)`);
       break;
     }
   }
@@ -216,7 +257,7 @@ async function check(route) {
     add('no hreflang on a page that exists once', alts.join(', '));
   }
 
-  return { fails, info: { kind, words, faq: faqAnswers.length } };
+  return { fails, info: { kind, words, faq: faqQuestions.length } };
 }
 
 const argv = process.argv.slice(2);

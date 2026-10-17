@@ -1797,6 +1797,56 @@ number of days.
 It carries **19 contextual inbound links**, the most of any page on the site,
 which is what a Tier-1 audience page should look like.
 
+## The blog FAQ format, and what makes an answer quotable
+
+Finalised 2026-10-17 on the owner's instruction: *"finalize the format of blogs
+with faqs readable to google ai crawler and other ai."*
+
+**All 101 article routes carry `FAQPage`, from 78, and the schema set is
+identical on every one** — `Organization + WebSite + Article + BreadcrumbList +
+FAQPage`. Three rules in `scripts/verify-pages.mjs` hold it there: **one
+`FAQPage` block per URL**, **at least two Q&A pairs per article**, and **both
+questions and answers checked for visibility** rather than answers alone.
+
+**Access was never the problem, and it is worth not re-investigating.**
+`app/robots.ts` already names sixteen AI and answer-engine crawlers explicitly,
+each with its own allow group — a named user-agent group does not inherit the
+wildcard's rules, which is why they are spelled out. What was missing was
+anything marked up for them to find on a third of the articles.
+
+**Two mechanisms produce FAQ schema and they were both firing.** A page can
+pass `faqs` to `ArticleLayout`, and the layout *also* derives Q&A from
+question-form headings (`extractFaqs`). Nineteen blog pages additionally built
+their own array, called `generateFAQSchema` and rendered their own `<script>`,
+so ten of them published **two `FAQPage` objects with different question
+sets**. `faqs` goes to the layout; never write a second `<script>`.
+
+**The format had drifted into four shapes** on those nineteen pages: an own
+`<script>`; an inline `<FAQSection columns={2}>` halfway down the body; a
+hand-written `faqs.map()` into `<h3>`/`<p>` — which also pushed four FAQ
+entries into the article's table of contents, where sections belong; and schema
+with no visible block at all. One shape now.
+
+**One typographic character was hiding five good Q&As.** `extractFaqs` tested
+`question.endsWith('?')`, and five headings on
+`/resources/guides/outsourced-bookkeeping-guide` are quoted asks — *"Can an
+offshore bookkeeper really understand my business?"* — so the string ends in a
+closing curly quote. The test now strips wrapping quotes first, which recovered
+four pages with no content change. **If a page that visibly asks questions has
+no FAQ schema, check the last character before writing anything.**
+
+**The three content rules are in `docs/PAGE-FORMAT.md` §4 and are about
+quotability, not SEO.** An answer is lifted with nothing around it, so it names
+its own subject; **no rate, threshold, turnaround, headcount or price**, because
+a body paragraph carrying a figure keeps its qualifications and a quoted answer
+does not; and judgment is routed to the licensed party **inside the answer**,
+never in a disclaimer further down the page a quoting reader never sees.
+
+**Where a page already had a Q&A section, it was moved into `faqs`, not
+copied.** Two copies of the same text on one page is duplication. Measured
+across the 22 pages given FAQs: worst pair **7.6%**, zero pairs at or over the
+25% ceiling.
+
 ## hreflang is on 24 pages and must not spread
 
 Added 2026-10-15. `lib/seo.ts` derives `alternates.languages` from the page's

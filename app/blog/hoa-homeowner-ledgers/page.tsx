@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
-import FAQSection from '@/components/faq-section';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Homeowner Ledgers: Keep Balances Accurate',
@@ -27,13 +26,11 @@ const faqs = [
     "answer": "Common causes include missed assessment postings, payments applied to the wrong account, old unapplied cash, unsupported adjustments and differences between the subsidiary receivable records and the general ledger."
   }
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaHomeownerLedgers() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <ArticleLayout
+    <ArticleLayout
+      faqs={faqs}
       title="HOA Homeowner Ledgers: How Should Assessment Balances Be Kept Accurate?"
       category="HOA Accounting"
       description="A homeowner ledger should make it easy to see what was charged, what was paid, what was adjusted and what remains due. The key is keeping those records consistent with the association's bank activity and general ledger."
@@ -104,11 +101,8 @@ export default function HoaHomeownerLedgers() {
       <h3>Does the process differ by state?</h3>
       <p>The accounting workflow is broadly similar, but state laws, governing documents and collection requirements can differ. Accounting records should therefore be kept separate from legal or collection decisions.</p>
 
-      <FAQSection subtitle="Common HOA accounting questions" items={faqs} />
-
       <h2>Related HOA Accounting Resources</h2>
       <p>See our <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> page, or continue with <a href="/blog/hoa-assessment-receivables-reconciliation">HOA assessment receivables reconciliation</a> and <a href="/blog/hoa-accounts-receivable-aging">HOA delinquency accounting</a>.</p>
-      </ArticleLayout>
-    </>
+    </ArticleLayout>
   );
 }

@@ -8,9 +8,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/property-management-chart-of-accounts',
 });
 
+const faqs = [
+  {
+    question: 'How should a property management chart of accounts be structured?',
+    answer:
+      'Around the reports that owners, managers and the accounting team actually need each month. If the owner statement needs property-level income and expense categories, the chart should produce that presentation rather than leaving someone to rebuild it in a spreadsheet. The specific structure depends on the portfolio and the software, but it should answer what happened, where it happened and who the activity belongs to.',
+  },
+  {
+    question: 'Should every property get its own general-ledger accounts?',
+    answer:
+      'Usually not. Most systems can track a property through classes, locations, dimensions or property records, and creating separate accounts per property makes the chart hard to maintain. Which approach is better depends on the platform and the reports the business needs.',
+  },
+  {
+    question: 'How should a chart of accounts handle multiple ownership LLCs?',
+    answer:
+      'Design the reporting around the legal entity boundaries as well as the property view, usually by keeping consistent account definitions across entities and separating entities and properties through the system\'s own dimensions or ledgers. Intercompany balances, shared costs, management fees, owner contributions, debt and distributions each need documented treatment matching the ownership structure, and balances should not be netted across entities to make a portfolio report look tidier.',
+  },
+  {
+    question: 'Where should tenant and security-deposit detail live?',
+    answer:
+      'In the tenant records, which normally carry more detail than the general ledger needs. The accounting structure should let the general ledger reconcile to those detailed records rather than forcing every tenant transaction into its own general-ledger account.',
+  },
+  {
+    question: 'How should management fees be recorded?',
+    answer:
+      'So the calculation and the posting can be traced. Where the management company earns fees from the properties it manages, the amount recorded in the management company\'s books should agree with the underlying property or owner reporting, and the basis of the calculation should be evident from the records rather than reconstructed.',
+  },
+];
+
 export default function Page() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Chart of Accounts: How Should It Be Set Up?"
       category="Property Management"
       description="A useful chart of accounts should make property-level reporting easier without creating hundreds of accounts that nobody maintains consistently."

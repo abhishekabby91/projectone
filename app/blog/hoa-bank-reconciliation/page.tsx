@@ -8,9 +8,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-bank-reconciliation',
 });
 
+const faqs = [
+  {
+    question: 'What should an HOA bank reconciliation explain?',
+    answer:
+      'The difference between the association\'s accounting records and the bank statement, not just a matching ending balance. That means accounting for timing differences such as outstanding cheques and deposits in transit, along with bank fees, transfers between accounts, errors and anything else that needs correcting before the month is closed.',
+  },
+  {
+    question: 'Should operating and reserve accounts be reconciled separately?',
+    answer:
+      'Yes. Each account is reconciled on its own, and transfers between them should appear on both sides of the accounting records. A transfer posted in one account and not the other creates an apparent difference that is really a posting gap. The board should also be able to trace the reconciled cash balances through to the financial package it receives.',
+  },
+  {
+    question: 'What should be done with old outstanding cheques on an HOA reconciliation?',
+    answer:
+      'They should be investigated rather than rolled forward indefinitely. The question is whether the item is still valid, needs correcting, or needs to be handled under the association\'s own established process for stale items. A clean ending balance carrying several unexplained old items is not a clean reconciliation.',
+  },
+  {
+    question: 'Does automatic bank matching in QuickBooks replace the review?',
+    answer:
+      'No. QuickBooks Online and similar platforms can automate transaction matching, but matched does not always mean correct. Someone still has to look at the reconciling items and their age, and confirm that transfers, assessment deposits and reserve transactions make sense for the period.',
+  },
+  {
+    question: 'Why are HOA assessment deposits harder to reconcile?',
+    answer:
+      'A single bank deposit often carries assessment payments from many homeowner accounts, so a cleared deposit may not tie to one ledger entry. Combined or unidentified deposits need to be researched back to the homeowner records rather than cleared on the total alone, which is one of the most common sources of unexplained differences.',
+  },
+];
+
 export default function HoaBankReconciliation() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="HOA Bank Reconciliation: A Practical Monthly Process"
       category="HOA Accounting"
       description="An HOA bank reconciliation should explain the difference between the bank statement and accounting records, not simply produce a matching ending balance."

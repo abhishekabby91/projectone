@@ -12,9 +12,38 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'What is economic nexus for e-commerce sellers?',
+    answer:
+      'Since the 2018 South Dakota v. Wayfair decision, states can require out-of-state sellers to collect sales tax based on economic activity alone, with no physical presence needed. Each state sets its own measure, commonly a level of sales or number of transactions within the state in a year. Because those measures are state-specific and change over time, a business selling well across several states can accumulate obligations without anyone flagging it.',
+  },
+  {
+    question: 'Does economic nexus replace physical presence?',
+    answer:
+      'No — it was added to the rules rather than replacing them. Physical presence still creates an obligation, and for e-commerce sellers the most common form of it is inventory rather than an office or an employee. Stock held in a third-party fulfilment warehouse can constitute physical presence in that state, and a fulfilment network may move inventory between states without asking, so knowing which states have held your stock is part of knowing your footprint.',
+  },
+  {
+    question: 'If a marketplace collects sales tax, does the seller still have an obligation?',
+    answer:
+      'Possibly, and conflating the two questions is the most common misreading in this area. Whether the marketplace collects and remits the tax is one question; whether those sales still count toward the measure that creates your own registration obligation is a separate one, and the answer varies by state. A seller who reads "the marketplace handles it" as "I have no obligation anywhere" can be required to register in several states without knowing, particularly when they also sell through their own storefront.',
+  },
+  {
+    question: 'What does a nexus question require the books to produce?',
+    answer:
+      'More than total revenue. Sales recorded by destination state as they post rather than at year end; marketplace sales separable from direct sales, per state; transaction counts as well as dollar amounts, because some measures use both; exemption and resale documentation attached to the transaction it belongs to; and a record of where inventory has been held if you use a fulfilment network.',
+  },
+  {
+    question: 'Who determines a seller\'s actual sales tax obligations?',
+    answer:
+      'A qualified tax adviser or a sales tax filing service, who handle registration and filing once nexus is triggered. Bookkeeping makes the question answerable by tracking sales by state and keeping marketplace and direct activity distinguishable; it does not determine where you are required to register. Rules vary by state and change over time, so a specific position needs confirming with a qualified adviser rather than inferred from a general explanation.',
+  },
+];
+
 export default function SalesTaxNexusInsight() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Sales Tax Nexus: What E-Commerce Sellers Need to Track"
       category="Insight"
       description="Why growing your e-commerce business into new states can quietly create new sales tax obligations you didn't have last year."

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import ArticleLayout from '@/components/article-layout';
-import { generateMetadata as genMeta, generateFAQSchema } from '@/lib/seo';
+import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Vendor Invoice Workflow',
@@ -26,11 +26,11 @@ const faqs = [
     answer: 'Review open and overdue payables during the regular close, and sooner when due dates, service continuity or an approval exception requires attention. The review should distinguish invoices awaiting approval from invoices approved but not yet paid.',
   },
 ];
-const faqSchema = generateFAQSchema(faqs);
 
 export default function HoaVendorInvoiceApprovalWorkflow() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="HOA Vendor Invoice Processing and Approval Workflow"
       category="HOA Accounting"
       description="A repeatable invoice workflow helps an association track which community a bill belongs to, how it was coded, who approved it and whether the payment cleared."
@@ -41,7 +41,6 @@ export default function HoaVendorInvoiceApprovalWorkflow() {
       inquiryTitle="Need a More Consistent HOA Payables Workflow?"
       inquiryLead="Tell us how vendor invoices arrive, how approvals are recorded and where the process slows down. We can review the accounting steps around your existing system."
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p>HOA accounts payable is more than entering a bill and printing a check. The record should connect the invoice to the correct association, vendor, service, general-ledger account, approval and final payment. That connection becomes especially important when a community management company handles many associations or when a single invoice covers several locations or work items.</p>
       <p>This workflow is designed for accounting and bookkeeping operations. The association, board or authorized manager retains payment approval and other decisions assigned to them by policy or contract.</p>
 
@@ -101,14 +100,6 @@ export default function HoaVendorInvoiceApprovalWorkflow() {
 
       <h2>How Software Fits Into the Process</h2>
       <p>QuickBooks Online, AppFolio, Yardi, eUnify and other platforms may support different invoice, approval and reporting steps depending on the product and configuration. The control objective stays the same: retain the source invoice, preserve the approval trail, code the cost to the correct association and account, and reconcile the payment. Verify the actual workflow in the client’s configured system rather than assuming every platform supports the same feature.</p>
-
-      <h2>Common questions</h2>
-      {faqs.map((faq) => (
-        <section key={faq.question} className="mb-5">
-          <h3 className="font-semibold text-primary">{faq.question}</h3>
-          <p className="mt-2 leading-relaxed">{faq.answer}</p>
-        </section>
-      ))}
 
       <h2>Practical Checklist</h2>
       <ul>

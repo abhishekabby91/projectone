@@ -8,9 +8,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/hoa-chart-of-accounts',
 });
 
+const faqs = [
+  {
+    question: 'What should an HOA chart of accounts include?',
+    answer:
+      'Accounts for assets, liabilities, equity or fund balances, assessment income, operating expenses and reserve-related activity. Subsidiary detail such as homeowner ledgers and vendor records usually sits in the accounting or association-management system rather than becoming separate general-ledger accounts. The right structure depends on the association\'s governing documents, reporting needs and accounting system — there is no single chart that fits every community.',
+  },
+  {
+    question: 'Should an HOA create a separate expense account for each vendor?',
+    answer:
+      'Generally not. Vendor names belong in the vendor record or payables system; the chart should describe the type of expense. Creating an account for every landscaper, plumber or insurer makes the chart harder to maintain, and vendor-level detail is still available through the underlying transactions and vendor reports.',
+  },
+  {
+    question: 'How should reserve activity be shown in an HOA chart of accounts?',
+    answer:
+      'So that a board member can tell operating costs from reserve-funded work without reconstructing the transactions from bank statements, and so that reserve contributions, transfers and project spending are identifiable. The exact accounting treatment should follow the association\'s own accounting policy and reporting requirements.',
+  },
+  {
+    question: 'When is a new general-ledger account worth adding?',
+    answer:
+      'When it answers a question the existing records cannot. Before adding one, check whether the answer is already available through a vendor, property, homeowner or project field — if it is, another account usually adds maintenance rather than clarity.',
+  },
+  {
+    question: 'When is a good time to clean up an HOA chart of accounts?',
+    answer:
+      'A software migration is a natural point, because obsolete accounts can be removed and naming and coding rules agreed before data moves. Outside a migration, a periodic review for duplicate and unused accounts, and a check that the structure supports the reports the board actually receives, covers most of the drift.',
+  },
+];
+
 export default function HoaChartOfAccounts() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="HOA Chart of Accounts: How Should It Be Set Up?"
       category="HOA Accounting"
       description="An HOA chart of accounts should make it easy to separate assessments, operating costs, reserve activity, receivables and payables without making monthly reporting unnecessarily complicated."

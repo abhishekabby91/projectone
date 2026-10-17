@@ -150,7 +150,49 @@ keep the derived set honest, and **none is optional**:
 - answers cut at a sentence boundary, never mid-claim — a truncated accounting
   statement can change its meaning.
 
-The checker verifies every marked-up answer is present as visible text.
+The checker verifies every marked-up answer **and question** is present as
+visible text, in both directions.
+
+### The three rules that closed this out on 2026-10-17
+
+Every one of the 101 article routes now carries FAQPage, from 78 before, and
+the schema set is identical on all of them. Three rules make it stay that way,
+and `node scripts/verify-pages.mjs` enforces all three:
+
+1. **Exactly one FAQPage block per URL.** Ten blog posts shipped two — a local
+   `faqs` array serialised into the page's own `<script>` *plus* the block
+   `ArticleLayout` derives from question-form headings. Two FAQPage objects
+   with different question sets on one URL is not a richer page; it is a page
+   that declares its own FAQ twice and leaves an assistant to pick.
+2. **An article carries at least two Q&A pairs.** The floor matches `MIN_FAQS`
+   in `components/article-layout.tsx`; keep the two in step. A page fails only
+   when it has neither explicit FAQs nor two question-form headings.
+3. **One place renders them.** `faqs` goes to `ArticleLayout`. Nineteen pages
+   had rolled their own — a `<script>` beside the layout, an inline
+   `<FAQSection columns={2}>` halfway down the body, or a hand-written
+   `faqs.map()` into `<h3>`/`<p>`. Four shapes of the same thing, and the one
+   that mapped into headings also pushed four FAQ entries into the article's
+   table of contents.
+
+**Writing the answers: the unit is what an assistant can lift.** An answer is
+quoted on its own, with no heading above it and no paragraph before it, so it
+has to name its own subject — "An HOA bank reconciliation should explain…",
+not "It should explain…". That is also why the schema is worth having at all:
+marked-up text is what gets repeated back as Accounstone's own words.
+
+Three content rules follow from that, and they are the same ones that govern
+body copy:
+
+- **No figure that ages.** No rate, threshold, turnaround, headcount or price
+  in an FAQ answer. A body paragraph carrying a number is at least surrounded
+  by its qualifications; an answer quoted alone is not.
+- **Route judgment to the licensed party, inside the answer.** Not in a
+  disclaimer elsewhere on the page — the reader of a lifted answer never sees
+  the rest of the page. The ASC 606 and sales-tax-nexus FAQs each name whose
+  call it is in the answer body for exactly this reason.
+- **Do not duplicate the page's own Q&A section.** Where a page already had
+  one, it was moved into `faqs`, not copied. Measured after: worst pair among
+  the 22 pages given FAQs is **7.6%** against the 25% ceiling.
 
 ---
 

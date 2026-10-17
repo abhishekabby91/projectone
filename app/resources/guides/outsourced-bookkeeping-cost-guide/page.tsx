@@ -13,9 +13,43 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'Why do two businesses with similar transaction counts get very different bookkeeping quotes?',
+    answer:
+      'Because the question is usually about scope before it is about price. A business buying monthly reconciliations is buying a different workflow from one that also needs transaction review, payables and receivables, month-end close and management reporting. The difference often has little to do with transaction count and much more to do with how clean the books are, how many accounts need review, how many entities are involved and what has to be ready at month-end.',
+  },
+  {
+    question: 'What pricing models are used for outsourced bookkeeping?',
+    answer:
+      'Three are common. A monthly fixed scope is a recurring fee based on agreed accounts, workload, cadence and deliverables. Hourly or project work is often used for cleanup, catch-up bookkeeping, migration support or a defined one-time piece. Hybrid arrangements combine recurring bookkeeping with separately scoped cleanup or extra work when the workload changes.',
+  },
+  {
+    question: 'What actually changes the cost of outsourced bookkeeping?',
+    answer:
+      'Transaction volume; the number of bank, credit-card and operating accounts and entities; whether cleanup is needed for old unreconciled balances; workflow complexity such as inventory, e-commerce, property accounting or multi-entity operations; how well the accounting system and its feeds are maintained; and close and reporting requirements, since books that must be ready by a defined day each month need a more controlled workflow than basic transaction entry.',
+  },
+  {
+    question: 'Why should cleanup be quoted separately from monthly bookkeeping?',
+    answer:
+      'Because they are different work. If the books are current and reconciled, recurring bookkeeping is relatively predictable. If several months are behind, the first assignment involves finding missing transactions, correcting classifications and resolving old reconciliation differences. Pricing that treats catch-up as ordinary monthly work sets unrealistic expectations on both sides.',
+  },
+  {
+    question: 'How should outsourced bookkeeping be compared with hiring in-house?',
+    answer:
+      'Not by setting a monthly fee against a salary. An internal hire also carries recruiting, onboarding, management time, leave coverage and the risk of one person carrying a recurring process without backup. That does not make outsourcing automatically cheaper — the better question is what work has to be completed, how often, who reviews it and how much internal capacity the process consumes.',
+  },
+  {
+    question: 'What should a CPA firm ask about before accepting a low monthly fee?',
+    answer:
+      'Review time. A low fee is not a saving if the firm\'s own people still have to clean up the file before it can be reviewed. The useful comparison is the total cost of getting a file to reviewable, not the price of getting it back.',
+  },
+];
+
 export default function OutsourcedBookkeepingCostGuide() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="How Much Does Outsourced Bookkeeping Cost? A Practical Guide"
       category="Guide"
       description="The monthly price is only useful when you know what work sits behind it. Here is how to compare bookkeeping scope, cleanup, review time and ongoing capacity without reducing the decision to a single number."

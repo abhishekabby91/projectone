@@ -12,9 +12,43 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'How do you decide which accounting work to outsource first?',
+    answer:
+      'Start from tasks and deliverables rather than a general request for an accountant. Review the last two or three accounting cycles and list what recurs, what is late, what needs specialist knowledge and what keeps returning to the same internal person. Bookkeeping, month-end close preparation, payables and receivables, tax preparation support and industry-specific workflows are the usual candidates.',
+  },
+  {
+    question: 'What should be measured before asking providers to quote?',
+    answer:
+      'A baseline: the number of entities and bank accounts, approximate monthly transaction volume, the software in use, any accounting periods that are behind, reporting deadlines, how long the close currently takes, and any recurring reconciliation differences. Also note whether source documents arrive on time and who resolves questions. Recurring monthly work and historical cleanup are different projects, and quoting them as one creates surprise costs on both sides.',
+  },
+  {
+    question: 'Which engagement model suits which situation?',
+    answer:
+      'A freelancer or marketplace often fits a well-defined, limited task you want to manage directly. An outsourcing firm is worth evaluating for recurring workflows needing defined responsibilities, continuity, documented handoffs and an agreed review process. Staff augmentation suits a team that already manages its own process and needs capacity inside it. A dedicated team fits a larger, steady workload needing assigned capacity and a defined management structure.',
+  },
+  {
+    question: 'What access should an outsourced accounting team be given?',
+    answer:
+      'Individual accounts with least-privilege permissions, multi-factor authentication where available and an approved file-sharing method — not shared passwords and not administrator rights by default. Agree which records may be downloaded, where working files belong and how access will be reviewed and removed. A non-disclosure agreement supports the arrangement but does not substitute for access controls.',
+  },
+  {
+    question: 'What deliverables make outsourced accounting checkable?',
+    answer:
+      'A workpaper or checklist showing what was completed; reconciliation detail carrying source balances, book balances and unresolved differences; an exception list naming missing documents, unusual items and decisions needed from you; review-ready reports with period, entity and accounting basis identified; and named preparer and reviewer responsibilities with a record of approval. "Handle the books" is not a deliverable.',
+  },
+  {
+    question: 'Which decisions should never move to an outsourced team?',
+    answer:
+      'Anything requiring owner approval, bank or payment authority, management judgment, or a licensed professional\'s sign-off. Write down what the provider prepares, what your reviewer checks and who gives final approval, so the boundary is a document rather than an assumption.',
+  },
+];
+
 export default function HowToOutsourceAccountingGuide() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="How to Outsource Accounting: A Step-by-Step Guide for Businesses and CPA Firms"
       category="Guide"
       description="A practical process for deciding what to outsource, choosing the right engagement model, protecting access to financial data and moving work into a repeatable review cycle."

@@ -9,9 +9,43 @@ export const metadata: Metadata = genMeta({
   path: '/blog/tax-preparation-outsourcing',
 });
 
+const faqs = [
+  {
+    question: 'What can be outsourced in tax return preparation, and what cannot?',
+    answer:
+      'Return preparation and data entry from client source documents, workpaper organisation and supporting schedules, multi-state preparation support, quarterly estimated calculations, prior-year organisation and software migration support, and getting a return to e-filing-ready. Not tax planning, tax strategy, advisory work, representation before the IRS, or signing and filing. Review, signature and submission are done by a licensed CPA, Enrolled Agent or attorney, which is a regulatory boundary under Circular 230 rather than a preference.',
+  },
+  {
+    question: 'Can an outsourced preparer represent a client before the IRS?',
+    answer:
+      'No. Representation, including holding power of attorney on Form 2848, requires being a licensed CPA, Enrolled Agent or attorney under Circular 230. An outsourced preparation team that is not credentialed cannot represent a taxpayer, handle an audit or correspond with the IRS on the client\'s behalf. Preparation up to e-filing-ready is delegable; representation is not.',
+  },
+  {
+    question: 'What is the §7216 consent that catches US firms out?',
+    answer:
+      'Before a return preparer discloses tax return information to another preparer, Internal Revenue Code §7216 and its regulations can require the taxpayer\'s written consent in a form meeting Revenue Procedure 2013-14. Two details catch firms out: a consent generally has to state that the information may go to a preparer located outside the United States where that is the case, and there are specific conditions attached to disclosing a Social Security number to a preparer outside the US. The obligation sits with your firm, the consent language is yours to adopt with your own counsel, and a provider telling you the step is unnecessary has told you something useful.',
+  },
+  {
+    question: 'Who holds the tax software and e-filing credentials?',
+    answer:
+      'Your firm does. In Drake Tax and CCH Axcess alike, an outsourced team works inside your firm\'s existing access and your firm\'s access controls, preparing returns and queueing them for review. Submission authority and e-file credentials stay with the firm. The same applies abroad: offshore teams should not hold HMRC portal credentials in the UK or ATO portal access in Australia, where a registered practitioner or registered tax agent reviews and lodges.',
+  },
+  {
+    question: 'Why can a per-return price be misleading?',
+    answer:
+      'Because the number only means something alongside a definition of what counts as one return, what happens when a file needs bookkeeping cleanup before preparation can start, and how many review rounds are included. What moves the cost is rarely the form type — it is the state of the source documents, how much of the books has to be fixed first, and how many times a file comes back. A low per-return price on a file that needs cleanup first is not a low price.',
+  },
+  {
+    question: 'Why are entity returns harder to outsource than individual returns?',
+    answer:
+      'Not because the form is harder, but because the work depends on the quality of the underlying bookkeeping. Partnership returns carry the K-1 detail behind them and corporate returns bring the book-to-tax reconciliation with them, so preparation stalls at the same point every time when the trial balance is not clean. Where that is the case, the honest first step is a cleanup engagement rather than a preparation one.',
+  },
+];
+
 export default function TaxPrepOutsourcingBlog() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Outsourcing Tax Return Preparation: What CPA Firms and Businesses Need to Know"
       category="Tax Preparation"
       description="Preparation vs. review, software workflows in Drake Tax and CCH Axcess, IRS representation boundaries, and tax-season capacity planning for CPA firms."

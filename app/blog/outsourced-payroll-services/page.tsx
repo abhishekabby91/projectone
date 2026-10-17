@@ -9,9 +9,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/outsourced-payroll-services',
 });
 
+const faqs = [
+  {
+    question: 'Does an outsourced payroll team need access to your bank account?',
+    answer:
+      'No, and this is the line that should not move. The payroll team prepares the pay run and the payment file; an authorised person inside your business reviews the pre-run summary and initiates or approves the payment itself. Bank account access, direct-deposit authorisation and payment execution stay with you. A provider asking for banking credentials or payment execution authority is asking for something the work does not require.',
+  },
+  {
+    question: 'What is not included in outsourced payroll processing?',
+    answer:
+      'HR strategy, benefits administration, employment law advice and the contractor-versus-employee classification decision. Those stay with your management team or your employment lawyer. The recurring work that can be handed over is calculating gross pay, applying withholdings and deductions, generating payslips, submitting the run and reconciling the payroll ledger entries against the register.',
+  },
+  {
+    question: 'What happens if payroll runs late?',
+    answer:
+      'Agree a timesheet cut-off and an escalation path before the first run rather than after a missed one. Late timesheets produce late payroll, and the consequence lands on employees. Writing down the cut-off, who chases it and what happens when it slips turns a recurring argument into a process.',
+  },
+  {
+    question: 'Can an outsourced payroll team handle equity compensation?',
+    answer:
+      'Not the tax treatment. Restricted stock vesting, option exercises and how they are taxed are determined through your equity platform and your tax adviser. Once that determination exists, the payroll team can process the resulting withholding correctly in the pay run.',
+  },
+  {
+    question: 'How are contractor payments handled?',
+    answer:
+      'Classification comes first and is not a payroll decision: whether someone is a contractor or an employee is a call for your employment lawyer. Once classified, contractor payments can be processed alongside payroll but through the right route for the jurisdiction — 1099 reporting in the US, ABN invoices in Australia, IR35 determinations in the UK.',
+  },
+];
+
 export default function PayrollOutsourcingBlog() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Outsourced Payroll: Costs, Bank-Access Red Flags, and What to Watch Out For"
       category="Payroll"
       description="Per-employee cost ranges for the US, UK, and Australia, the bank-access line that should never move, and the watch-outs that come up in real onboarding calls."
@@ -47,11 +76,6 @@ export default function PayrollOutsourcingBlog() {
       <p><strong>US:</strong> Offshore outsourced payroll: $4–$10/employee/month. Local US bookkeeper/bureau: $15–$30/employee/month. National SaaS platforms (Gusto, Rippling): $6–$12/employee/month software cost plus your time.</p>
       <p><strong>UK:</strong> Offshore: £8–£15/employee/month. UK payroll bureau: £20–£40/employee/month.</p>
       <p><strong>Australia:</strong> Offshore: A$10–A$20/employee/month. Local bureau/bookkeeper: A$25–A$50/employee/month.</p>
-
-      <h2>The Questions That Actually Come Up</h2>
-      <p><strong>&ldquo;What if payroll runs late?&rdquo;</strong> Establish a timesheet cutoff and an SLA before you start. Timesheets late → payroll late → employee complaints. The cutoff and escalation process should be documented, not assumed.</p>
-      <p><strong>&ldquo;Can they handle equity compensation?&rdquo;</strong> No — RSU vesting, option exercises, and their tax treatment require your equity platform and a tax advisor. Once the tax treatment is determined, the payroll team can process the withholding correctly.</p>
-      <p><strong>&ldquo;What about contractors?&rdquo;</strong> Contractor vs. employee classification is your employment attorney&rsquo;s call. Once classified, contractor payments (1099, ABN invoices, IR35 determinations) can be processed differently from payroll but both can be in scope.</p>
 
       <div className="mt-8 p-6 bg-input rounded-xl border border-border/70">
         <p className="font-semibold text-primary mb-3">Relevant services</p>

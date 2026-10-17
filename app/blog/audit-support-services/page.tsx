@@ -9,9 +9,38 @@ export const metadata: Metadata = genMeta({
   path: '/blog/audit-support-services',
 });
 
+const faqs = [
+  {
+    question: 'What audit work can be outsourced, and what cannot?',
+    answer:
+      'Preparation can be delegated; judgment cannot. Organising evidence, preparing lead schedules and account analyses, tying out workpapers, reconciling subledgers to the general ledger and populating the prepared-by-client request list are preparation tasks. Audit planning, risk assessment, sampling decisions, evaluation of management representations, conclusions on account balances, disclosure review and signing the report belong to the licensed auditor and cannot be delegated to anyone, offshore or otherwise.',
+  },
+  {
+    question: 'Does outsourced audit preparation affect the auditor\'s independence?',
+    answer:
+      'Preparation is management\'s responsibility, and handing it to an outsourced team does not change what the auditor is required to test. Management-prepared schedules are audited rather than accepted at face value. UK statutory audits carry additional independence requirements that prevent the auditor from preparing the financial statements, which is a separate question from who prepares the supporting schedules for management.',
+  },
+  {
+    question: 'What can be prepared before audit fieldwork begins?',
+    answer:
+      'Working from the draft financial statements and the prior-year file: balance sheet account reconciliations, the fixed asset rollforward and depreciation schedules, debt and equity schedules, year-over-year profit and loss flux analyses, payroll reconciliation to the general ledger, and closing out prior-year open items. When auditors arrive to an organised file, their time goes on evaluating rather than waiting.',
+  },
+  {
+    question: 'Which audit request areas does preparation usually cover?',
+    answer:
+      'Cash, with reconciliations for every account and listings of outstanding cheques and deposits in transit; receivables, with the aging schedule, rollforward and confirmation list; payables, with the aging, rollforward, vendor statement reconciliations and the search for unrecorded liabilities; fixed assets, with the rollforward and support for significant additions; payroll, reconciled to the general ledger; and revenue, with the rollforward and deferred revenue reconciliation.',
+  },
+  {
+    question: 'Can audit support prepare files for an Australian SMSF audit?',
+    answer:
+      'Working papers and evidence can be prepared for review by the registered SMSF auditor, which is a common arrangement for Australian accounting firms. The audit itself, and the opinion, remain the registered auditor\'s. Australian auditing standards are issued by the AUASB and are based on the international standards.',
+  },
+];
+
 export default function AuditSupportBlog() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Audit Support Outsourcing: What Preparation Work Can Be Delegated (and What Cannot)"
       category="Audit Support"
       description="What the audit support team prepares vs. what the auditor or CPA judges — and how the boundary is drawn in UK, US, and Australian audit contexts."

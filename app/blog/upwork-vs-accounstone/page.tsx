@@ -12,9 +12,38 @@ export const metadata: Metadata = genMeta({
   path: PATH,
 });
 
+const faqs = [
+  {
+    question: 'What is the difference between hiring on Upwork and using an accounting outsourcing provider?',
+    answer:
+      'They are different ways to source work rather than competing versions of the same product. A marketplace helps you find and engage an individual freelancer, whom you then select, instruct and manage directly. An outsourcing provider agrees a scope and delivers defined accounting work through an agreed workflow, with contacts, handoffs and review points settled during onboarding. Neither is automatically better; the useful comparison is which model fits the work in front of you.',
+  },
+  {
+    question: 'When is a freelancer the better choice for bookkeeping?',
+    answer:
+      'When the work is a short project, a one-off cleanup or a limited number of hours; when you want to interview and manage an individual yourself; when you already have an internal reviewer and documented instructions; or when you want to test a narrow scope before deciding whether a broader operating model is needed. Marketplace hiring does not imply low quality — it does mean the verification, deliverable definition, data access and cover arrangements are yours to put in place.',
+  },
+  {
+    question: 'When is a direct outsourcing provider worth considering?',
+    answer:
+      'When the work repeats every month against a consistent close calendar, when several connected tasks need coordinating — bookkeeping, reconciliations, payables and receivables, reporting preparation — when you want documented handoffs, exception handling and review points, or when a CPA or accounting firm needs production support while keeping the client relationship and final professional review. These are still things to confirm in writing with any provider rather than assume.',
+  },
+  {
+    question: 'How should the total cost of the two routes be compared?',
+    answer:
+      'The advertised rate is one part of it. Include the time spent writing instructions, answering questions, reviewing work, correcting errors, managing access and transferring knowledge if the arrangement changes. Ask each candidate to quote against the same assumptions — entities, transaction volume, bank accounts, software, reporting deadlines and exact deliverables — and keep historical cleanup scoped separately from recurring monthly bookkeeping so the proposals are comparable.',
+  },
+  {
+    question: 'What should you ask either a freelancer or a provider before engaging?',
+    answer:
+      'What exactly is included and excluded; who prepares the work and who reviews it before it reaches you; how missing documents, unclear transactions and reconciliation differences get flagged; what permissions are required and how access and files are protected; what happens during planned leave, unexpected unavailability or a change in scope; how pricing responds to extra entities, volume spikes, cleanup or urgent work; and what handover files you receive if the engagement ends.',
+  },
+];
+
 export default function UpworkVsAccounstonePage() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Upwork vs. Accounstone: Hire a Freelancer or an Accounting Outsourcing Partner?"
       category="Comparison Guide"
       description="A practical, fair comparison for businesses and accounting firms deciding how to source remote bookkeeping and accounting support."

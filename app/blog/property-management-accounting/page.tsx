@@ -9,9 +9,43 @@ export const metadata: Metadata = genMeta({
   path: '/blog/property-management-accounting',
 });
 
+const faqs = [
+  {
+    question: 'What makes property management accounting different from ordinary business accounting?',
+    answer:
+      'A business ledger tracks the business\'s own income, expenses, assets and liabilities. A property manager also maintains detailed records for activity carried out on behalf of owners and tenants, so a single transaction can land in several views at once — the property ledger, a tenant account, an owner statement, a bank reconciliation and the management company\'s own books. Those views have to agree without being treated as interchangeable: rent collected for an owner is not revenue earned by the management company, and the management fee is recorded separately according to the agreement.',
+  },
+  {
+    question: 'What is the practical test of good property management records?',
+    answer:
+      'Traceability. A reviewer should be able to start from a number on an owner statement or property report and follow it back to the relevant ledger, transaction and supporting record without rebuilding it. Where that trail breaks is usually where the month-end problem is.',
+  },
+  {
+    question: 'What should an owner statement be built from?',
+    answer:
+      'Reconciled ledger detail, not a spreadsheet assembled alongside the books. Depending on the management agreement it may show collected income, expenses, management fees, reserve movements, owner contributions, distributions and an ending balance. Before statements go out, confirm the period is complete, material reconciliations have been reviewed, unresolved items are documented and any required client approvals have happened. If an adjustment follows an issued statement, use the documented correction process so both versions stay explainable.',
+  },
+  {
+    question: 'How should a property management catch-up be sequenced when the books are behind?',
+    answer:
+      'Establish what is incomplete and which balances can be relied on before posting anything. Scope the backlog by period, property, entity and account; collect bank statements, prior reconciliations, trial balances, open-item reports and tenant and owner ledgers to fix a reliable starting point; reconcile in an agreed order, tracking exceptions instead of forcing differences to zero; document proposed adjustments and obtain the client\'s approvals before reporting; and agree who owns recurring posting, reconciliation and review so the backlog does not rebuild.',
+  },
+  {
+    question: 'Does portfolio size decide between an in-house hire and outsourced support?',
+    answer:
+      'No. A unit count on its own settles very little. What decides it is the actual transaction workload, the turnaround required, how much internal supervision is available, continuity, access controls, who holds review responsibility, and total cost. Catch-up work in particular should not come with a promise that every historical balance is correct before the evidence has been reviewed.',
+  },
+  {
+    question: 'Does this cover trust-account and deposit compliance?',
+    answer:
+      'No. Trust-account, escrow, tenant-deposit, record-retention and reporting requirements vary by location and engagement, and whether a particular arrangement meets them is a question for the appropriate licensed professional, alongside the client\'s own written procedures. What accounting support covers is recording, reconciling and reporting the activity so those records can be reviewed.',
+  },
+];
+
 export default function Page() {
   return (
     <ArticleLayout
+      faqs={faqs}
       title="Property Management Accounting: A Practical Complete Guide"
       category="Property Management"
       description="A working guide to keeping property, tenant, owner and management-company records connected—from transaction coding through reconciliations and owner reporting."
