@@ -530,37 +530,76 @@ export default function ArticleLayout({
       </nav>
 
       <article className="w-full py-7 md:py-10 px-6 md:px-8 bg-white">
-        <div className="max-w-3xl mx-auto">
+        {/*
+          The contents list used to be a full-width card above the article, which
+          pushed the first paragraph below the fold on mobile -- the reader had to
+          scroll past a navigation aid to reach what they came for.
+
+          It is now a sticky column on the LEFT at `xl:` and up, and a collapsed
+          <details> on everything smaller. Left rather than right on purpose: the
+          right edge of the viewport is already claimed by the inquiry rail from
+          1280px up (see CLAUDE.md, "The inquiry rail is on every page but two"),
+          and a right-hand column would run into its tab.
+
+          The reading measure is preserved. The grid is `max-w-5xl` with a 200px
+          first column and a 2.5rem gap, which leaves the prose column at ~784px
+          -- the same as the `max-w-3xl` it had before. `xl:` rather than `lg:`
+          because at 1024px the two columns together would squeeze the measure.
+        */}
+        <div className="mx-auto max-w-3xl xl:grid xl:max-w-5xl xl:grid-cols-[200px_1fr] xl:gap-10">
           {toc.length > 1 && (
             <nav
               aria-label="Table of contents"
-              className="mb-9 rounded-xl border border-border bg-input p-5 md:p-6"
+              className="mb-6 xl:sticky xl:top-28 xl:mb-0 xl:self-start"
             >
-              <h2 className="text-base font-bold text-primary mb-3">
-                On this page
-              </h2>
-
-              <ol className="space-y-2 text-sm">
-                {toc.map((item) => (
-                  <li
-                    key={item.id}
-                    className={
-                      item.level === 3 ? 'pl-4' : ''
-                    }
-                  >
-                    <a
-                      href={`#${item.id}`}
-                      // Link list, not an inline link in a sentence -- WCAG 2.5.8 exempts the
-                      // latter and not this. See CLAUDE.md, "Tap targets: measure, do not eyeball".
-                      className="inline-block py-1.5 text-muted hover:text-primary transition-colors leading-6"
+              {/*
+                `<details>` is closed by default below `xl:` so the article starts
+                at the top of the screen, and forced open at `xl:` where it is the
+                sidebar. `open` on the element itself would make it expanded on
+                mobile too, so the desktop state comes from CSS instead -- see
+                `.toc-details` in globals.css.
+              */}
+              <details className="toc-details rounded-xl border border-border bg-input p-4 xl:border-0 xl:bg-transparent xl:p-0">
+                <summary className="cursor-pointer list-none text-base font-bold text-primary xl:cursor-default xl:mb-3">
+                  <span className="inline-flex w-full items-center justify-between gap-2 py-1">
+                    On this page
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 20 20"
+                      className="toc-chevron h-4 w-4 shrink-0 text-muted transition-transform xl:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
                     >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ol>
+                      <path d="M6 8l4 4 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </summary>
+
+                <ol className="mt-2 space-y-1 text-sm xl:mt-0 xl:space-y-0.5">
+                  {toc.map((item) => (
+                    <li
+                      key={item.id}
+                      className={
+                        item.level === 3 ? 'pl-4' : ''
+                      }
+                    >
+                      <a
+                        href={`#${item.id}`}
+                        // Link list, not an inline link in a sentence -- WCAG 2.5.8 exempts the
+                        // latter and not this. See CLAUDE.md, "Tap targets: measure, do not eyeball".
+                        className="inline-block py-1.5 text-muted hover:text-primary transition-colors leading-6 xl:text-[13px] xl:leading-5"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </details>
             </nav>
           )}
+
+          <div className="min-w-0">
 
           <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-5 text-sm text-muted" aria-label="Article information">
             <span><strong className="text-primary">Published:</strong> <time dateTime={publishedDate}>{displayPublishedDate}</time></span>
@@ -604,6 +643,7 @@ export default function ArticleLayout({
               ))}
             </div>
           </section>
+          </div>
         </div>
       </article>
 

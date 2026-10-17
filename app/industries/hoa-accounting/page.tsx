@@ -73,7 +73,7 @@ export default function HoaAccountingPage() {
         title="HOA & Community Association Accounting Outsourcing"
         description="Assessment and homeowner ledgers, operating and reserve funds kept apart, delinquency schedules a board can act on, and a board pack that looks the same every month. Every decision stays with the board."
         cta={{ text: 'Discuss HOA Accounting', href: '/contact' }}
-        ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
+        ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
         background="primary-gradient"
       />
 

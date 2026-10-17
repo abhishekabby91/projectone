@@ -38,7 +38,15 @@ import {
  *   an obstruction, and a visitor is free to read the cookie policy before
  *   answering. The preferences dialog does both, because it is modal.
  * - Accept and Reject are the same size, weight and prominence tier. Only
- *   colour separates them. Making Reject harder to find would be a dark
+ *   colour separates them. ACCEPT SITS LAST (rightmost) as of 2026-10-17, at
+ *   the owner's request, because the affirmative action on the right is the
+ *   normal convention and the easier reach. That is an ORDER change and
+ *   nothing else: both buttons keep identical padding, type size, font weight
+ *   and button role, so neither is harder to find than the other and the rule
+ *   below still holds. Do not take this as licence to shrink, grey out, or
+ *   bury Reject -- consent has to stay equally easy to decline, and that is a
+ *   legal position as well as a design one.
+ * - Making Reject harder to find would be a dark
  *   pattern and is the one thing this component must never do.
  */
 
@@ -216,13 +224,6 @@ export default function CookieConsent() {
             <div className="mt-3 grid grid-cols-3 gap-2">
               <button
                 type="button"
-                onClick={() => save(ALLOW_ALL, 'accept-all')}
-                className="rounded-lg bg-primary px-2 py-2 text-xs font-semibold text-white shadow-sm transition-colors hover:bg-primary-light motion-reduce:transition-none"
-              >
-                Accept
-              </button>
-              <button
-                type="button"
                 onClick={() => save(DENY_ALL, 'reject-non-essential')}
                 aria-label="Reject non-essential cookies"
                 className="rounded-lg border border-border bg-white px-2 py-2 text-xs font-semibold text-primary transition-colors hover:border-primary/50 hover:bg-input motion-reduce:transition-none"
@@ -238,6 +239,13 @@ export default function CookieConsent() {
                 className="rounded-lg border border-border bg-white px-2 py-2 text-xs font-semibold text-primary transition-colors hover:border-primary/50 hover:bg-input motion-reduce:transition-none"
               >
                 Customise
+              </button>
+              <button
+                type="button"
+                onClick={() => save(ALLOW_ALL, 'accept-all')}
+                className="rounded-lg bg-primary px-2 py-2 text-xs font-semibold text-white shadow-sm transition-colors hover:bg-primary-light motion-reduce:transition-none"
+              >
+                Accept
               </button>
             </div>
           </div>

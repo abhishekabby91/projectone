@@ -79,7 +79,7 @@ export default function RealEstateIndustryPage() {
         title="Real Estate Accounting & Bookkeeping Outsourcing"
         description="Property and entity-level books, portfolio reporting, AP/AR, reconciliations and a month-end close that holds up to a lender, a partner or your own CPA. You keep every approval."
         cta={{ text: 'Discuss Real Estate Accounting', href: '/contact' }}
-        ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
+        ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
         background="primary-gradient"
       />
 

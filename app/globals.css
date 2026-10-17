@@ -443,6 +443,49 @@ a {
   }
 }
 
+/*
+ * The article contents list: collapsed on small screens, always open as the
+ * sticky sidebar from `xl:` up.
+ *
+ * `open` as an attribute would make it expanded on mobile too, which is the
+ * thing being fixed -- a reader should land on the first paragraph, not on a
+ * navigation aid. So the desktop state is forced here instead, and the
+ * disclosure marker is removed because at that width it is not a disclosure.
+ */
+.toc-details > summary {
+  list-style: none;
+}
+.toc-details > summary::-webkit-details-marker {
+  display: none;
+}
+.toc-details[open] .toc-chevron {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 80rem) {
+  /*
+   * Forcing a closed <details> open from CSS needs BOTH of these, and the
+   * second is the one that actually does it in current Chromium.
+   *
+   * A closed <details> puts its non-summary children in a `::details-content`
+   * slot carrying `content-visibility: hidden`. Overriding `display` on the
+   * child cannot defeat that -- measured: the list reported a 676px box via
+   * getBoundingClientRect while the <details> itself was still only 44px tall,
+   * so the sidebar rendered as a heading with no links under it. The `display`
+   * rule is kept for older engines that hide the child directly.
+   */
+  .toc-details::details-content {
+    content-visibility: visible !important;
+    block-size: auto !important;
+  }
+  .toc-details > ol {
+    display: block !important;
+  }
+  .toc-details > summary {
+    pointer-events: none;
+  }
+}
+
 /* Hide the Vercel/v0 development badge if present */
 [id*="v0-built-with-button"],
 [id*="v0-built-with"],

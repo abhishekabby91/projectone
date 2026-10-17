@@ -12,6 +12,9 @@ interface PremiumHeroProps {
   description?: string;
   cta?: { text: string; href: string; variant?: 'primary' | 'secondary' };
   ctaSecondary?: { text: string; href: string };
+  // An absolute href is treated as external: it opens in a new tab so the
+  // reader keeps their place on the page they were reading. Booking happens on
+  // cal.com, which is a third party.
   background?: 'primary-gradient' | 'accent-gradient' | 'default';
   image?: ReactNode;
   children?: ReactNode;
@@ -142,6 +145,9 @@ export default function PremiumHero({
                 {ctaSecondary && (
                   <Link
                     href={ctaSecondary.href}
+                    {...(/^https?:\/\//.test(ctaSecondary.href)
+                      ? { target: '_blank', rel: 'noopener noreferrer' }
+                      : {})}
                     className={`inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 w-full sm:w-auto text-sm sm:text-base ${
                       background === 'default'
                         ? 'border-2 border-primary text-primary hover:bg-primary/5'
