@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-204 indexable routes. Excludes the 4 permanent
+205 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -144,6 +144,7 @@ candidate for overlap.
 | `/industries/property-management/tenant-accounting-operations` | Tenant Accounting Operations Support |
 | `/industries/property-management/texas` | Texas Property Management Accounting Support |
 | `/industries/property-management/trust-account-reconciliation` | Trust Account Reconciliation Support |
+| `/industries/property-management/yardi-accounting-support` | Yardi Accounting Support for Property Managers |
 | `/industries/real-estate` | Real Estate Accounting Outsourcing |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | Yardi Accounting Outsourcing in Texas |
 | `/industries/technology` | SaaS & Technology Accounting Outsourcing |
