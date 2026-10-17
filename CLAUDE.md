@@ -1462,6 +1462,17 @@ and loses above ~120.** In between, measure. The method is in
 `SEO-CHANGELOG.md` 2026-09-03f - force `gridTemplateColumns: '1fr'` in the page
 and diff the bounding box.
 
+**That heuristic only holds for text-only cards, which is how it was derived
+(found 2026-10-17).** The homepage industry cards were moved to `grid-cols-2`
+on mobile carrying 107 characters each - inside the "measure" band, and close
+enough to 120 to look like a regression. Measured at 390px: **583px at 2-up
+against 1,266px at one column, so 2-up is 683px SHORTER.** The reason is that
+each card now leads with an `IndustryIllustration`, and a fixed-aspect image
+halves its width at 2-up while text only re-wraps. So when a card carries
+art, 2-up wins by a wide margin regardless of character count, and the
+character heuristic simply does not apply. Measure; do not reason from the
+60/120 numbers on a card with a picture in it.
+
 Two things that must NOT go 2-up on mobile, whatever the height cost:
 
 - **The inquiry form's own fields.** Two-column form fields on a 390px screen
