@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 import Link from 'next/link';
 import { Check, ShieldOff } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
@@ -73,7 +74,7 @@ export default function PropertyManagementPage() {
         title="Property Management Accounting & Bookkeeping Outsourcing"
         description="Accounting support for property managers: property-level books, tenant and deposit ledgers, owner statements, accounts payable and receivable, CAM recovery schedules, reconciliations and month-end reporting."
         cta={{ text: 'Discuss Property Management Accounting', href: '/contact' }}
-        ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
+        ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
       />
 

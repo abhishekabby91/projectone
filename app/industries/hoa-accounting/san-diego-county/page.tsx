@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'Does Accounstone provide on-site HOA management in San Diego?',
-    answer: 'No. Accounstone provides remote accounting and bookkeeping support from India. This is not an on-site community management service and does not imply a San Diego office or local staff presence.',
+    answer: 'No. Accounstone provides remote accounting and bookkeeping support, not on-site community management. The engagement is limited to the agreed accounting workflow and does not include local property or community management.',
   },
   {
     question: 'Can you support self-managed HOAs as well as community management companies?',
@@ -124,7 +124,7 @@ export default function SanDiegoCountyHoaAccountingPage() {
                 Associations in San Diego County may be self-managed or work with a community management company. In either case, board decisions depend on records that connect homeowner assessments, vendor invoices, bank activity, reserve transactions and monthly financial reports. A consistent close helps the reviewer understand what changed, what remains open and which records support the reported balances.
               </p>
               <p className="text-base md:text-lg text-muted leading-relaxed">
-                The workflow can be scoped for communities and management portfolios in San Diego, Chula Vista, Carlsbad, Encinitas, Escondido, La Mesa, Oceanside, Poway, San Marcos and nearby county communities. These are service-area references only; Accounstone provides remote accounting support from India, not local on-site community management.
+                The workflow can be scoped for communities and management portfolios in San Diego, Chula Vista, Carlsbad, Encinitas, Escondido, La Mesa, Oceanside, Poway, San Marcos and nearby county communities. These are service-area references only. The service covers remote accounting workflows, not local on-site community management.
               </p>
             </>
           </Reveal>

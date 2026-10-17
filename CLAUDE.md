@@ -2177,49 +2177,11 @@ and Australian firms - to a UK reader that reads as "not for you". All three
 markets now get a line, and no clock time is invented that the rest of the site
 does not already claim.
 
-**The phone number is never displayed anywhere on the site, but the header bar's
-phone icon still dials it (2026-09-09, owner's instruction: "you can use the
-icon but dont show number directly").** The rule is *displayed*, not *present* —
-and the difference matters, so it is worth being exact about what holds:
+**Contact is WhatsApp, not a phone-dial action.** The header icon opens the existing WhatsApp chat destination in a new tab. The number must not appear as visible text, in tooltips, in page copy, or in structured-data telephone fields. Do not restore a `tel:` link or a visible phone row.
 
-- **Zero occurrences as readable text**, on any page, in any accessible name or
-  tooltip. The icon's `aria-label` and `title` are both "Call Accounstone" —
-  they say what the link does without reciting digits, so a screen-reader user
-  is not worse off.
-- **117 occurrences across 99 built files, every one of them inside a `tel:`
-  href** — verified by scanning `.next` and checking the 22 characters before
-  each match. The header bar is sitewide, so it is on every page by
-  construction. It is also in `.next/static/chunks/app/layout-*.js`, because
-  `header-bar.tsx` is a client component.
-- **So this hides the number from readers, not from scrapers.** Anything that
-  parses HTML gets it from the href. If the number ever needs to be genuinely
-  unscrapeable, the `tel:` link has to go and the icon should open the inquiry
-  dialog instead — there is no third option that keeps a working call link.
+`WHATSAPP_HREF` in `lib/contact-links.ts` is the single source of truth for the WhatsApp destination. The header and WhatsApp CTAs import that constant; do not hard-code the destination in individual pages. The number is still present in the rendered link URL, so do not claim it is hidden from scrapers. Use the label **Chat on WhatsApp** for direct-message CTAs, keep the number out of visible text, and preserve the inquiry form as the primary alternative contact path.
 
-`CALL_HREF` in `components/header-bar.tsx` is the **only** place the number
-lives, and it is deliberately not back on `companyInfo` in `lib/data.ts`. That
-object is imported all over the site, so a value on it invites the next person
-to render it; one constant in one client component means one place to look and
-one place to remove. There is no `phoneDisplay` anywhere any more, so there is
-nothing to print by accident.
-
-Five display sites stay removed, and **do not restore them**: the inquiry band's
-contact block, `/thank-you`'s "or call", `/contact`'s Phone row, and the
-`telephone` property in **two** schema blocks — `lib/seo.ts`'s `ContactPoint`
-and `app/contact/layout.tsx`'s Organization plus its Sales `ContactPoint`. The
-schema pair is the easy one to miss: putting `telephone` back publishes the
-number to Google in a readable form, which is the thing the owner asked to stop.
-
-Email is the only published direct channel in text; everything else goes through
-the inquiry form. `components/Sidebar.tsx` was deleted on 2026-09-09 — it held
-`wa.me/919990597192` and was imported nowhere, so it never reached the build,
-but a dead file carrying the number is a landmine for whoever mounts it next.
-
-**One loose end remains and it is the owner's.** `knowledge/company/identity.md`
-still lists the number in its contact table, alongside "header bar, ContactPoint
-schema" — and the ContactPoint half of that is now wrong, because `telephone`
-was removed from the schema. That file's own rule is that only a human may edit
-it, so it is left alone deliberately rather than overlooked.
+Do not restore the removed phone-number display locations: the inquiry band's contact block, `/thank-you`'s "or call", `/contact`'s Phone row, or the `telephone` property in `lib/seo.ts` and `app/contact/layout.tsx` schema blocks. The site should not publish a telephone field in structured data.
 
 **The submit path is unchanged and must stay that way** - see the section below,
 which is the expensive lesson. Success still redirects to `/thank-you`; failure

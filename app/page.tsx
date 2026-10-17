@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import HeroBanner from '@/components/hero-banner';
@@ -17,12 +18,12 @@ import { services, solutions, testimonials, markets } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting, Bookkeeping & Tax | Accounstone',
   description:
-    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered from India within existing workflows.',
+    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered within existing workflows.',
   path: '/',
   absoluteTitle: true,
   ogTitle: 'Accounting, Bookkeeping & Tax Outsourcing | Accounstone',
   ogDescription:
-    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered from India within existing workflows.',
+    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
 });
 
@@ -77,7 +78,7 @@ export default function HomePage() {
           title="Accounting Support That Fits Your Workflow"
           subtitle="Experienced professionals working within your existing processes and systems"
           cta={{ text: 'Get a Free Consultation', href: '/contact' }}
-          ctaSecondary={{ text: 'Book a 30-Minute Call', href: 'https://cal.com/abby-xne7d4/30min' }}
+          ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         />
       </section>
 
@@ -147,7 +148,7 @@ export default function HomePage() {
             slug: `${s.slug}/${s.slug === 'audit-support' ? 'united-kingdom' : 'united-states'}`,
           }))}
           baseUrl="/services"
-          columns={3}
+          columns={4}
           variant="default"
           tone="brand"
         />
@@ -228,7 +229,7 @@ export default function HomePage() {
                 <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">Markets</span>
               </div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">Accounting Support Across Key Markets</h2>
-              <p className="max-w-3xl text-muted leading-relaxed">Explore accounting and tax support by market. Each page outlines the relevant service scope and local context, with delivery from India.</p>
+              <p className="max-w-3xl text-muted leading-relaxed">Explore accounting and tax support by market. Each page outlines the relevant service scope and local context.</p>
             </div>
           </Reveal>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">

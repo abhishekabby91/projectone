@@ -31,7 +31,7 @@ const faqs = [
   {
     question: 'Does Accounstone have an Orange County office or provide on-site HOA management?',
     answer:
-      'No. Accounstone provides remote accounting and bookkeeping support from India. This page does not represent a local office, local employees or an on-site community-management service.',
+      'Accounstone provides remote accounting and bookkeeping support, not on-site community management. The service does not include local property-management duties.',
   },
   {
     question: 'Can you support an HOA managed by an association management company?',
@@ -180,7 +180,7 @@ export default function OrangeCountyHoaAccountingPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Remote support, with approvals kept where they belong</h2>
           <p className="mt-4 text-base md:text-lg leading-relaxed text-muted">
-            Accounstone provides remote accounting and bookkeeping support from India, not on-site community management in Orange County. Board approvals, bank access, collection actions, reserve planning, legal interpretation and CPA sign-off remain with the people authorized for those responsibilities. California-specific legal or tax questions should be confirmed with the association’s qualified adviser.
+            Accounstone provides remote accounting and bookkeeping support, not on-site community management in Orange County. Board approvals, bank access, collection actions, reserve planning, legal interpretation and CPA sign-off remain with the people authorized for those responsibilities. California-specific legal or tax questions should be confirmed with the association’s qualified adviser.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA accounting overview</Link>
