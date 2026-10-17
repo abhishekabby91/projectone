@@ -1001,6 +1001,29 @@ so the enquiry rail's fixed tab at the right edge fell inside the sampled
 region and its white icon was returned as the "lightest background pixel",
 failing a line that was in fact fine.
 
+**It carries a CTA pair (2026-10-17, owner's request):** *Get a Free
+Consultation* to `/contact` and *Book a 30-Minute Call* to the cal.com link,
+styled to match `PremiumHero`'s pair so the homepage does not read as a
+different design from every other hero. The absolute href picks up
+`target="_blank" rel="noopener noreferrer"` from the same test the industry
+pages use. **Those cal.com clicks leave the site, so they never reach
+`/thank-you` and never fire GA4's `generate_lead`** — the form path still
+does. If bookings need counting, that is an outbound event, not a link change.
+
+**The height is a FLOOR now, and the copy is in normal flow — do not put it
+back to `absolute inset-0` with a fixed `h-72`.** `next/image` with `fill` is
+absolutely positioned and contributes no height, so with the copy also
+absolute nothing sized the box to its content and the two buttons were clipped
+at 320 and 390px. `min-h-72 md:min-h-[420px]` with the text column in flow
+costs **46px of mobile height (288 → 334)** and nothing on desktop.
+
+**A measurement artifact nearly shipped as a defect here, and it is the same
+trap twice.** The button-contrast check first reported **1.88–2.03:1, FAIL at
+every width**; the rule meant to hide the label had silently not applied, so it
+was sampling the label's own anti-aliased pixels instead of the scrim behind
+it. Hide the whole anchor and **assert the screenshot actually changed** before
+believing any pixel you sample.
+
 **What has not changed:** `AI-WEBSITE-GUIDE.md` still says not to change the
 hero imagery unless the owner asks, and two of the three objections recorded
 when a designed navy panel was tried on 2026-09-08 (and restored the same day
@@ -1021,6 +1044,16 @@ headline is. That is true of a photograph composed around its subject; it is
 not true of this one, whose subject is already off to one side. If the hero
 photograph is ever swapped, check the new one's left half before trusting the
 scrim — and if it is not empty, put the words on the navy in their own panel.
+
+**The hero photograph is the only preloaded image on `/`, and keeping it that
+way needs care.** The navbar logo was moved from `priority` to
+`loading="eager"` on 2026-10-17 to stop it competing as an LCP candidate, and
+**that did not work** — the built page still emitted
+`<link rel="preload" as="image">` for the logo. Tested both ways on a clean
+build: with `loading="eager"` the preload is there, with the attribute removed
+it is gone. The attribute is removed. If you add `priority` or `loading` to any
+sitewide image, grep the built `index.html` for `rel="preload"` and confirm the
+hero is still the only one.
 
 And the upgrade that would actually change the page is not a layout: it is one
 photograph of the delivery team. *Who actually does the work?* is the question

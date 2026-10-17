@@ -76,6 +76,8 @@ export default function HomePage() {
           pageHeading="Accounting, Bookkeeping & Tax Outsourcing"
           title="Accounting Support That Fits Your Workflow"
           subtitle="Experienced professionals working within your existing processes and systems"
+          cta={{ text: 'Get a Free Consultation', href: '/contact' }}
+          ctaSecondary={{ text: 'Book a 30-Minute Call', href: 'https://cal.com/abby-xne7d4/30min' }}
         />
       </section>
 
