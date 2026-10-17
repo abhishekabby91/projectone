@@ -1,3 +1,11 @@
+## 2026-10-17 — Property management accounting guide strengthened for decision-makers
+
+- Refreshed the existing `/blog/property-management-accounting` guide; no duplicate guide URL or new industry page was created.
+- Added clear audience targeting for property management owners, controllers/accounting managers, operations leaders and real estate investors; clarified the distinction between property-level, ownership-entity and management-company records.
+- Reinforced Accounstone's trust-first positioning: defined accounting scope, reliable workflows, clear responsibilities and client-retained approvals. Avoided unverified savings percentages or price-led promises.
+- Added contextual links from the guide to the existing real estate and property management commercial pages. Updated the content registry; existing search intent, route and AI-readable URL remain unchanged.
+- Changes are on `accounstone-seo-improvements` only. No merge or production deployment. Build, route, link and generated-sitemap validation remain to be completed before approval.
+
 ## 2026-10-15 — Property management capital expenditure guide and budget-reporting refresh
 
 - Added `/blog/property-management-capital-expenditure-accounting` after competitor review confirmed a distinct operational need to connect project evidence, property coding, capitalization review, asset schedules and ledger reconciliation. The page avoids making unsupported tax or depreciation determinations.
