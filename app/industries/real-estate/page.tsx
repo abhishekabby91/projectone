@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 import Link from 'next/link';
 import { Check, ShieldOff } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
@@ -79,7 +80,7 @@ export default function RealEstateIndustryPage() {
         title="Real Estate Accounting & Bookkeeping Outsourcing"
         description="Property and entity-level books, portfolio reporting, AP/AR, reconciliations and a month-end close that holds up to a lender, a partner or your own CPA. You keep every approval."
         cta={{ text: 'Discuss Real Estate Accounting', href: '/contact' }}
-        ctaSecondary={{ text: 'Chat on WhatsApp', href: 'https://wa.me/919990597192' }}
+        ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
       />
 
