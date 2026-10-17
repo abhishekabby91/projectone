@@ -355,21 +355,6 @@ a {
   font-weight: 600;
 }
 
-@keyframes ledger-fill {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.animate-ledger-fill {
-  animation-name: ledger-fill;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
 .figure {
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;

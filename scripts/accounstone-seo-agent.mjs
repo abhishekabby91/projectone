@@ -76,7 +76,7 @@ for (const file of files) {
   // Most pages render their H1 from a shared layout component rather than a
   // literal <h1> tag. Without this, every templated page is falsely flagged
   // as "missing H1". These components each render exactly one <h1>.
-  const H1_COMPONENTS = /<(PremiumHero|ArticleLayout|ServicePageTemplate|IndustryPageTemplate|HeroCarousel|Hero)\b/;
+  const H1_COMPONENTS = /<(PremiumHero|ArticleLayout|ServicePageTemplate|IndustryPageTemplate|HeroBanner|Hero)\b/;
   const h1FromComponent = h1s.length === 0 && H1_COMPONENTS.test(raw);
   if (h1FromComponent) {
     const t = firstMatch(raw, /title\s*=\s*["'`]([^"'`]+)["'`]/) || firstMatch(raw, /title\s*:\s*["'`]([^"'`]+)["'`]/);

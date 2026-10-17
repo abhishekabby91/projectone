@@ -953,28 +953,74 @@ anything.
 
 ## The homepage hero
 
-`components/hero-carousel.tsx` — three rotating stock photographs, and the
-owner's choice. It was replaced with a designed navy panel on 2026-09-08 and
-**restored the same day at the owner's request**; the replacement is in git
-history at `b84b03e` if it is ever wanted back.
+`components/hero-banner.tsx` — **one** photograph, static, with the page `h1`
+(visually hidden) and a serif headline over it. It replaced
+`components/hero-carousel.tsx` on 2026-10-17 at the owner's instruction:
+*"we can compress the first image in the carousel and delete other 2."*
 
-`AI-WEBSITE-GUIDE.md` already says not to change the hero imagery or slider
-unless the owner asks. That still stands, and now has a worked example behind
-it. The three objections that motivated the swap are recorded here because they
-are real and unfixed, not because they should be acted on again unasked:
+The two deleted slides were `carousel-worldwide.jpg` (969 KB, 6000x4000) and
+`carousel-tax-returns.jpg` (1.8 MB, 4422x2859); the kept one is now
+`public/hero-accounting-support.jpg`, resampled from 5184x2920 / 442 KB to
+2560x1442 / 130 KB. **2.7 MB of image left the deploy and the above-the-fold
+element lost its JavaScript** — the carousel was a client component carrying
+framer-motion, timers and six controls; the replacement is a server component.
+framer-motion still ships, because seven other components use it, but it is off
+the critical path.
+
+**This also fixed a contrast defect this file had already recorded as
+unfixable, and the reason it became fixable is worth keeping.** The old note
+said no single fixed colour holds a reliable ratio *across all three slides* —
+true, and the giveaway that the problem was the plural. With one image there is
+one crop to tune against, and this particular photograph is composed as a
+split already: its **left half is empty desk surface** and every subject
+(calculator, charts, pens) sits in the right third. So a strong scrim on the
+left costs nothing of the picture.
+
+Measured on the rendered page at seven widths, against the **lightest pixel
+beneath each actual line of text** (not the block box — see the trap below):
+
+| | 320 | 390 | 768 | 1024 | 1280 | 1440 | 1920 |
+|---|---|---|---|---|---|---|---|
+| headline | 6.23 | 7.07 | 6.25 | 8.11 | 7.76 | 8.00 | 8.52 |
+| subtitle | 5.00 | 5.07 | 5.28 | 6.21 | 6.04 | 6.30 | 6.78 |
+
+Slide 1 of the carousel, with the `from-primary/60 to-transparent` scrim it
+used to carry, measured about **2:1** — white type on a near-white photograph.
+
+The scrim is `from-primary/95 via-primary/85 to-primary/70`, opening to
+`xl:via-primary/80 xl:to-primary/25`. **The responsive half is load-bearing, not
+polish.** `max-w-2xl` is wider than the viewport below `xl`, so the text column
+spans the full width and its last lines land wherever the gradient has faded
+out; a single horizontal gradient tuned on a 1440px screen measured **2.0-2.4:1
+at 390 and 768**. Above `xl` the text ends near 52-58% of the width and the
+right side can open up, which is what keeps the calculator visible.
+
+**Re-measure with `Range.getClientRects()`, never the block box.** The first
+run sampled each paragraph's bounding box, which runs the full column width —
+so the enquiry rail's fixed tab at the right edge fell inside the sampled
+region and its white icon was returned as the "lightest background pixel",
+failing a line that was in fact fine.
+
+**What has not changed:** `AI-WEBSITE-GUIDE.md` still says not to change the
+hero imagery unless the owner asks, and two of the three objections recorded
+when a designed navy panel was tried on 2026-09-08 (and restored the same day
+at the owner's request — it is in git history at `b84b03e`) still stand:
 
 - the photography is generic stock, on a site whose whole content strategy is
   operational specificity;
-- white type sits on mid-tone photography, so no single fixed colour holds a
-  reliable contrast ratio across all three slides;
-- and it is the one part of the page that does not belong to the navy, gold and
+- it is the one part of the page that does not belong to the navy, gold and
   hand-drawn system used everywhere below it.
 
-**If a photographic hero is ever revisited, the fix is a split layout, not a
-scrim.** Full-bleed-behind-text was tried and is what produces the problem in
-the first place: the subject of any crop lands exactly where the headline is,
-so you either scrim the photo into noise or accept unreadable type. Words on
-the navy, image in its own panel beside them, has no contrast problem to solve.
+The third objection — the contrast one — is now resolved by measurement rather
+than by argument.
+
+**The split-layout advice this section used to give is superseded for this
+image and still correct for any other.** It said full-bleed-behind-text is what
+produces the problem, because the subject of any crop lands exactly where the
+headline is. That is true of a photograph composed around its subject; it is
+not true of this one, whose subject is already off to one side. If the hero
+photograph is ever swapped, check the new one's left half before trusting the
+scrim — and if it is not empty, put the words on the navy in their own panel.
 
 And the upgrade that would actually change the page is not a layout: it is one
 photograph of the delivery team. *Who actually does the work?* is the question

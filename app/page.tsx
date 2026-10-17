@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
-import HeroCarousel from '@/components/hero-carousel';
+import HeroBanner from '@/components/hero-banner';
 import SectionGrid from '@/components/section-grid';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
@@ -62,30 +62,6 @@ const homePageFAQs = [
 const faqSchema = generateFAQSchema(homePageFAQs);
 
 export default function HomePage() {
-  const carouselSlides = [
-    {
-      id: 'accounting-support',
-      image: '/carousel-budget-planning.jpg',
-      alt: 'Accounting reports, charts and calculator on a desk',
-      title: 'Accounting Support That Fits Your Workflow',
-      subtitle: 'Experienced professionals working within your existing processes and systems',
-    },
-    {
-      id: 'outsourcing',
-      image: '/carousel-worldwide.jpg',
-      alt: 'Globe representing international accounting support',
-      title: 'Outsourcing Built Around the Work',
-      subtitle: 'Bookkeeping, accounting and tax support structured around your requirements',
-    },
-    {
-      id: 'tax-support',
-      image: '/carousel-tax-returns.jpg',
-      alt: 'Organized tax return documents prepared for professional review',
-      title: 'Practical Support for Accounting Work',
-      subtitle: 'From recurring bookkeeping to tax preparation and accounting operations',
-    },
-  ];
-
   return (
     <main>
       <script
@@ -94,10 +70,12 @@ export default function HomePage() {
       />
 
       <section data-section="hero">
-        <HeroCarousel
-          slides={carouselSlides}
-          autoPlayInterval={5000}
+        <HeroBanner
+          image="/hero-accounting-support.jpg"
+          alt="Accounting reports, charts and calculator on a desk"
           pageHeading="Accounting, Bookkeeping & Tax Outsourcing"
+          title="Accounting Support That Fits Your Workflow"
+          subtitle="Experienced professionals working within your existing processes and systems"
         />
       </section>
 
