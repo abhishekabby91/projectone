@@ -10,6 +10,7 @@ import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
 import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
+import IndustryIllustration from '@/components/industry-illustration';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials, markets } from '@/lib/data';
 
@@ -191,20 +192,46 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             {[
-              ['Real Estate', '/industries/real-estate'],
-              ['Property Management', '/industries/property-management'],
-              ['HOA & Associations', '/industries/hoa-accounting'],
-              ['Accounting & CPA Firms', '/industries/cpa-firms'],
-            ].map(([title, href], i) => (
-              <Reveal key={title} delay={Math.min(i * 0.06, 0.18)}>
+              {
+                title: 'Real Estate',
+                href: '/industries/real-estate',
+                industry: 'real-estate',
+                description: 'Transaction records, reconciliations and property-related reporting support.',
+              },
+              {
+                title: 'Property Management',
+                href: '/industries/property-management',
+                industry: 'property-management',
+                description: 'Property-level books, tenant and owner ledgers, and monthly reporting.',
+              },
+              {
+                title: 'HOA & Associations',
+                href: '/industries/hoa-accounting',
+                industry: 'hoa-accounting',
+                description: 'Assessment ledgers, operating and reserve records, and board reporting.',
+              },
+              {
+                title: 'Accounting & CPA Firms',
+                href: '/industries/cpa-firms',
+                industry: 'cpa-firms',
+                description: 'Recurring preparation work that fits your review and client workflows.',
+              },
+            ].map((item, i) => (
+              <Reveal key={item.title} delay={Math.min(i * 0.06, 0.18)}>
                 <Link
-                  href={href}
-                  className="group flex h-full items-center justify-between rounded-xl border border-border bg-white p-5 transition-all hover:border-primary/40 hover:shadow-sm"
+                  href={item.href}
+                  className="group flex h-full flex-col rounded-xl border border-border bg-white p-3 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_4px_18px_-8px_rgba(30,58,95,0.22)] sm:p-5"
                 >
-                  <span className="font-semibold text-primary">{title}</span>
-                  <span className="text-accent transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                  <div className="mb-3 rounded-lg bg-input p-1.5 sm:p-2">
+                    <IndustryIllustration industry={item.industry} className="mx-auto w-full max-w-[220px]" />
+                  </div>
+                  <h3 className="font-serif text-sm font-bold leading-tight text-primary sm:text-lg">{item.title}</h3>
+                  <p className="mt-2 flex-1 text-xs leading-relaxed text-muted sm:text-sm">{item.description}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-accent sm:mt-4 sm:text-sm">
+                    Explore industry <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+                  </span>
                 </Link>
               </Reveal>
             ))}
