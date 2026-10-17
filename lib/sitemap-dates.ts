@@ -59,7 +59,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/outsourced-bookkeeping-guide': '2026-10-15',
   '/blog/outsourced-payroll-services': '2026-10-15',
   '/blog/property-management-1099-preparation': '2026-10-15',
-  '/blog/property-management-accounting': '2026-10-15',
+  '/blog/property-management-accounting': '2026-10-17',
   '/blog/property-management-accounting-for-small-companies': '2026-10-15',
   '/blog/property-management-accounts-payable': '2026-10-15',
   '/blog/property-management-accrued-expenses': '2026-10-15',
