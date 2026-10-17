@@ -1,6 +1,6 @@
 # Company Identity
 
-Single source of truth for factual business information. Every value here is mirrored in `lib/data.ts` (`companyInfo`) and rendered on the site.
+Single source of truth for verified factual business information. The table identifies where each value is used; some values are internal-only or appear only in a link destination and must not be rendered as visible text.
 
 **Rule: never change a value in this file without evidence from the client.** Agents may read and cite; only a human may edit.
 
