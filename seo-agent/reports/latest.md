@@ -130,7 +130,7 @@
 | app/industries/healthcare/page.tsx | 90/100 | 446 | 1 | 4 | 0 | 0 |
 | app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 835 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1119 | 1 | 15 | 0 | 0 |
-| app/industries/hoa-accounting/california/page.tsx | 90/100 | 1092 | 1 | 12 | 0 | 0 |
+| app/industries/hoa-accounting/california/page.tsx | 90/100 | 1149 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 853 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 821 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1064 | 1 | 12 | 0 | 0 |
