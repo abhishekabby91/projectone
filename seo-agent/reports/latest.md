@@ -1,4 +1,4 @@
-# Accounstone SEO Agent Report — 2026-10-16
+# Accounstone SEO Agent Report — 2026-10-17
 
 ## Summary
 
@@ -134,7 +134,7 @@
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 853 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 821 | 1 | 3 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1064 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2844 | 1 | 76 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2883 | 1 | 76 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1036 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1126 | 1 | 11 | 0 | 0 |
@@ -150,7 +150,7 @@
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2396 | 1 | 79 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2432 | 1 | 79 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 827 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
@@ -221,7 +221,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1485 | 1 | 5 | 0 | 0 |
+| app/page.tsx | 100/100 | 1562 | 1 | 9 | 0 | 0 |
 
 ## Priority queue
 
