@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 import Link from 'next/link';
 import { Check, ShieldOff } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
@@ -70,7 +71,7 @@ export default function CPAFirmsPage() {
         title="Preparation Capacity for CPA Firms, Without Giving Up Review"
         description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
-        ctaSecondary={{ text: 'Chat on WhatsApp', href: 'https://wa.me/919990597192' }}
+        ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
       />
 
