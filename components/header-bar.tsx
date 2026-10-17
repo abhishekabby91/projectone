@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Mail, MessageCircle } from 'lucide-react';
 import SocialIcon from '@/components/social-icon';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 
 // The WhatsApp number lives here and nowhere else on the site. Keep the digits
 // out of visible copy; the link opens a WhatsApp chat with the existing number.
@@ -14,8 +15,6 @@ import SocialIcon from '@/components/social-icon';
 //
 // The number remains in the WhatsApp destination URL, but is never printed as
 // visible text. This is a contact link, not a phone dial action.
-import { WHATSAPP_HREF } from '@/lib/contact-links';
-
 const socials = [
   { href: 'https://www.linkedin.com/company/accounstone/', label: 'LinkedIn' },
   { href: 'https://www.facebook.com/profile.php?id=61591501869187', label: 'Facebook' },
