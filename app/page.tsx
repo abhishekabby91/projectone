@@ -141,7 +141,7 @@ export default function HomePage() {
                 className="group block h-full rounded-xl border border-border bg-input p-3.5 sm:p-6 md:p-8 transition-all duration-200 hover:border-primary/40 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.14)]"
               >
                 <h3 className="font-serif text-base sm:text-xl md:text-2xl font-bold leading-tight text-primary">{item.title}</h3>
-                <p className="mt-2 sm:mt-3 text-xs sm:text-sm md:text-base text-muted leading-5 sm:leading-relaxed line-clamp-4 sm:line-clamp-none">{item.body}</p>
+                <p className="mt-2 sm:mt-3 text-sm md:text-base text-muted leading-5 sm:leading-relaxed line-clamp-4 sm:line-clamp-none">{item.body}</p>
                 <span className="mt-3 sm:mt-5 inline-block text-xs sm:text-sm font-semibold text-accent">
                   See how the support model works <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
                 </span>
@@ -228,7 +228,7 @@ export default function HomePage() {
                     <IndustryIllustration industry={item.industry} className="mx-auto w-full max-w-[220px]" />
                   </div>
                   <h3 className="font-serif text-sm font-bold leading-tight text-primary sm:text-lg">{item.title}</h3>
-                  <p className="mt-2 flex-1 text-xs leading-relaxed text-muted sm:text-sm">{item.description}</p>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.description}</p>
                   <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-accent sm:mt-4 sm:text-sm">
                     Explore industry <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
                   </span>

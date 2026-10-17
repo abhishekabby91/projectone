@@ -73,7 +73,13 @@ const SIZES = {
     gap: 'space-y-2.5 sm:space-y-5',
     grid: 'grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-5',
     submit: 'w-full px-6 py-3.5 sm:py-4 rounded-lg font-semibold',
-    note: 'text-xs',
+    // 14px, not 12px. In the full-width band this note is a sentence, not a
+    // micro-label, and it was the last piece of real prose still rendering at
+    // 12px on mobile anywhere on the site (measured at 390px across the
+    // homepage, an industry page, an article and a Service x Region page).
+    // `compact` below stays at 12px on purpose: its note is four words and the
+    // rail has to fit one screen.
+    note: 'text-sm',
     rows: 4,
     // `rows` is an HTML attribute and has no `sm:` variant, so lowering it to
     // shorten the mobile form would have shortened the desktop one too. The

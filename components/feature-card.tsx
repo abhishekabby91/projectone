@@ -53,7 +53,7 @@ export default function FeatureCard({
         <h3 className={`text-sm sm:text-lg md:text-xl font-bold leading-tight sm:leading-normal mb-1 sm:mb-1.5 md:mb-2 min-h-[2.25rem] sm:min-h-0 ${variant === 'featured' ? 'text-white' : 'text-primary'}`}>
           {title}
         </h3>
-        <p className={`text-xs sm:text-sm leading-4 sm:leading-6 line-clamp-2 sm:line-clamp-3 md:line-clamp-none min-h-[2rem] sm:min-h-0 ${variant === 'featured' ? 'text-white/85' : 'text-muted'}`}>
+        <p className={`text-sm sm:text-sm leading-5 sm:leading-6 line-clamp-3 md:line-clamp-none min-h-[2rem] sm:min-h-0 ${variant === 'featured' ? 'text-white/85' : 'text-muted'}`}>
           {description}
         </p>
       </div>

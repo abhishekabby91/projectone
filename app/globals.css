@@ -422,6 +422,27 @@ a {
   text-wrap: pretty;
 }
 
+/*
+ * Running text gets `text-wrap: pretty` by default.
+ *
+ * This is the alternative to justifying the text, which was considered and
+ * rejected: WCAG 2.1 SC 1.4.8 requires that blocks of text are NOT fully
+ * justified, browsers do not hyphenate by default so `justify` opens rivers of
+ * word-spacing, and the damage is worst in exactly the narrow columns this site
+ * has on mobile. `pretty` fixes the thing justification is usually reached for
+ * -- orphans and stranded short last lines -- without any of that.
+ *
+ * It sits in @layer base so a Tailwind `text-balance`/`text-nowrap` utility on
+ * an individual element still wins; see the cascade-layer note on the element
+ * defaults below, which is the bug this file already exists to document.
+ */
+@layer base {
+  p,
+  li {
+    text-wrap: pretty;
+  }
+}
+
 /* Hide the Vercel/v0 development badge if present */
 [id*="v0-built-with-button"],
 [id*="v0-built-with"],

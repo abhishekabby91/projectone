@@ -131,7 +131,7 @@ export default function ProcessFlow({
                       aria-hidden="true"
                     />
                     <h3 className="mb-1.5 font-bold text-primary text-sm leading-snug sm:mb-2 sm:text-lg">{phase.title}</h3>
-                    <p className="text-xs leading-5 text-muted sm:text-sm sm:leading-relaxed">{phase.body}</p>
+                    <p className="text-sm leading-5 text-muted sm:leading-relaxed">{phase.body}</p>
                   </div>
                 </li>
               </Reveal>
