@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import HeroBanner from '@/components/hero-banner';
@@ -77,7 +78,7 @@ export default function HomePage() {
           title="Accounting Support That Fits Your Workflow"
           subtitle="Experienced professionals working within your existing processes and systems"
           cta={{ text: 'Get a Free Consultation', href: '/contact' }}
-          ctaSecondary={{ text: 'Chat on WhatsApp', href: 'https://wa.me/919990597192' }}
+          ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         />
       </section>
 
