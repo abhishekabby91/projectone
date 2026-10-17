@@ -287,8 +287,49 @@ Do **not** resolve these unilaterally. Each needs the owner.
    this account*" and points straight at the real problem. Three sessions ran
    the ambiguous check and repeated the wrong conclusion.
 
-   Until it is fixed every GSC-driven decision in this file is frozen at its
-   2026-09-04 reading.
+   **RESOLVED 2026-10-17. The owner reconnected the GenieSEO connector and
+   `sc-domain:accounstone.com` now returns `permission_level: "siteOwner"` —
+   no 404, no `siteUnverifiedUser`. GSC decisions are UNFROZEN.** The
+   diagnostic lesson below still stands and was what confirmed the fix in one
+   call: probe with `get_site_details`, not an analytics call.
+
+   **New 28-day baseline (2026-09-19 to 2026-10-17), replacing the 2026-09-04
+   reading:** 29 clicks, 5,447 impressions, 0.53% CTR, average position 55.8.
+   Against the old baseline (51 clicks, 2,893 impressions, 1.76%, 54.6):
+   **impressions nearly doubled while clicks fell by 43%.** Position is flat,
+   so this is not a decline in ranking — it is a much larger body of indexed
+   pages sitting at positions where nobody clicks.
+
+   **The actionable read is a striking-distance list, and it is the opposite of
+   where the impressions are.** Click-sorted page data:
+
+   | Page | Clicks | Impr | CTR | Position |
+   |---|---|---|---|---|
+   | `/` | 17 | 94 | 18.1% | 6.3 |
+   | `/industries/real-estate/yardi-accounting-outsourcing-texas` | 3 | 12 | 25.0% | 26.8 |
+   | `/blog/hoa-assessment-accounting` | 1 | 5 | 20.0% | 16.2 |
+   | `/blog/yardi-accounting-workflow` | 1 | 4 | 25.0% | 16.5 |
+   | `/services/accounts-receivable/united-states` | 1 | 203 | 0.5% | 68.4 |
+   | `/solutions/offshore-accounting-support` | 1 | 156 | 0.6% | 64.2 |
+   | `/industries/property-management` | 1 | 95 | 1.1% | 54.2 |
+
+   Every page ranking inside the top ~27 converts at **18-25%**. Every page
+   with real impression volume sits at **54-68** and converts at ~0.5%. So the
+   2026-09-04 conclusion holds — this is a ranking problem, not a snippet one —
+   but the priority inverts: **the pages worth working are the few at positions
+   12-27 with proven CTR, not the ones with the most impressions.** Moving a
+   position-16 page to 8 is achievable and the CTR is already proven; moving a
+   position-68 page onto page one is not this quarter's work.
+
+   The homepage is 17 of 29 clicks on the brand query `accounstone` (16 clicks,
+   position 1.1, 34% CTR). **Non-brand clicks are 13 in 28 days**, which is the
+   number to grow and the honest denominator for any future claim of progress.
+
+   One caveat on method: `get_search_analytics` with `dimensions=query` returned
+   rows in **alphabetical** order rather than by clicks or impressions, so a
+   single call does not give a top-query list. Sort client-side or use
+   `get_advanced_search_analytics` before drawing query-level conclusions — an
+   alphabetical first page of 20 looks like a top-20 list and is not.
 
    **Do not check it from a session any more.** The owner's 2026-09-10
    instruction bars every AU Corporate connector from this project, and both
@@ -2082,11 +2123,17 @@ property is "AU Corporate". They are not Accounstone's and must not be called.
 call them even to test whether access has been restored — if a pass needs to
 know, ask the owner.
 
-**The ban is on the account, not the connector name.** If the Search Console
-connector is later re-authenticated as `partner@accounstone.com` or
-`contactus7070@gmail.com`, it stops being an AU Corporate connector and becomes
-usable. Confirm with the owner that the reconnection happened before relying on
-it.
+**The ban is on the account, not the connector name — and for `GenieSEO` it no
+longer applies (2026-10-17).** The owner reconnected it, and
+`get_site_details` on `sc-domain:accounstone.com` returns
+`permission_level: "siteOwner"`. That is an Accounstone-owned property at owner
+level, so this connector is no longer an AU Corporate connector and is usable
+on this project.
+
+**`Geneio-projectone` has NOT been re-verified and stays banned.** Do not call
+it. If it is ever needed, probe it with `get_site_details` first and confirm the
+same `siteOwner` result before trusting anything it returns — a healthy-looking
+`list_properties` is exactly what misled three earlier sessions.
 
 Unaffected and still fine: **Vercel** (the `abby2` team, owned by
 `contactus7070@gmail.com`) and **GitHub**. For **Ahrefs**, **Semrush**,
