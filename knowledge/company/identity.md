@@ -14,7 +14,7 @@ Single source of truth for factual business information. Every value here is mir
 | Tagline | Outsourced Accounting \| Tax \| Audit \| Bookkeeping | Footer, page titles, PWA manifest |
 | Website | https://www.accounstone.com | canonical, `baseUrl` |
 | Email | partner@accounstone.com | header bar, footer, ContactPoint schema |
-| Phone | +91 99905 97192 | header bar, ContactPoint schema |
+| WhatsApp | +91 99905 97192 | header bar and WhatsApp CTAs (destination only; never visible text) |
 | Delivery centre | Global Delivery Center - New Delhi, India | footer |
 | Markets served | United States, United Kingdom, Australia | market pages, `areaServed: ['US','GB','AU']` |
 
