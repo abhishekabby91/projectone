@@ -4,19 +4,19 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Accounting: Complete Guide',
-  description: 'Property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software and month-end close.',
+  title: 'Property Management Accounting: Complete Guide for 2026',
+  description: 'A practical property management accounting guide to property-level books, owner and tenant records, reconciliations, month-end close, software and accountable outsourcing workflows.',
   path: '/blog/property-management-accounting',
 });
 
 export default function Page() {
   return (
     <ArticleLayout
-      title="Property Management Accounting: A Practical Complete Guide"
+      title="Property Management Accounting: A Practical Guide for 2026"
       category="Property Management"
-      description="A working guide to keeping property, tenant, owner and management-company records connected—from transaction coding through reconciliations and owner reporting."
+      description="A practical guide to property, tenant, owner and management-company records, reliable reporting, clear responsibilities and accounting support."
       publishedDate="2026-10-08"
-      updatedDate="2026-10-12"
+      updatedDate="2026-10-17"
       section="blog"
       slug="property-management-accounting"
       inquiryTitle="Tell Us About Your Property Accounting Workflow"
@@ -25,6 +25,27 @@ export default function Page() {
       <p>Property management accounting is the process of recording, checking and reporting financial activity across properties managed for owners. It needs to show more than whether the management company made a profit. Records may also need to explain rent and other tenant charges, vendor costs, owner balances, deposits, reserves, management fees and the amount available for an owner distribution.</p>
 
       <p>The practical test is traceability: can a reviewer start with a number on an owner statement or property report and follow it back to the relevant ledger, transaction and supporting record? This guide explains the core records and routines that help property management teams answer that question. The right process depends on the portfolio, agreements, account structure, software and local requirements.</p>
+
+      <p>For owners and managers evaluating accounting support, the goal is not simply to find the lowest fee or promise a fixed percentage of savings. It is to establish a dependable process, define who is responsible for each task, protect appropriate approvals and make financial records easier to review. Accounstone can discuss defined bookkeeping and accounting workflows based on the client's existing systems, available records and required reporting.</p>
+
+      <p>This guide focuses on companies managing residential properties for owners. If you own rental properties or invest through one or more entities and need accounting support for the ownership side of the portfolio, see our <Link href="/industries/real-estate">real estate accounting and bookkeeping page</Link>. If your company manages properties on behalf of owners, the <Link href="/industries/property-management">property management accounting page</Link> explains the related service scope.</p>
+
+      <h2>Who this guide is for</h2>
+      <ul>
+        <li><strong>Property management company owners:</strong> understand the accounting workload behind tenant records, vendor costs, owner reporting and monthly close.</li>
+        <li><strong>Controllers and accounting managers:</strong> establish repeatable reconciliations, review procedures, exception tracking and reporting handoffs.</li>
+        <li><strong>Real estate investors and family-owned investment businesses:</strong> distinguish the records of property-owning entities from those of a separate management company.</li>
+        <li><strong>Operations leaders:</strong> identify which recurring accounting tasks can be assigned to a provider while keeping property, tenant, vendor and payment decisions with authorized personnel.</li>
+      </ul>
+
+      <h2>How property ownership and management records fit together</h2>
+      <p>A portfolio may involve several connected but distinct sets of records. The investor or family business may own an interest in one or more entities; those entities may own individual properties; and a separate management company may collect rent, coordinate vendor activity and prepare owner reporting under a management agreement. The exact arrangement varies, and not every property needs a separate LLC.</p>
+      <ul>
+        <li><strong>Property level:</strong> income, operating costs, repairs, tenant balances and property-specific reporting.</li>
+        <li><strong>Ownership-entity level:</strong> the assets, liabilities, financing, contributions, distributions and other transactions belonging to the legal owner.</li>
+        <li><strong>Management-company level:</strong> management fees earned, company operating costs, payroll and other liabilities belonging to the management business.</li>
+      </ul>
+      <p>These records may be connected by agreements and transactions, but they should not be treated as interchangeable. For example, rent collected for an owner is not automatically revenue of the management company. Document the source of each balance and reconcile related records according to the agreed accounting policy. Legal entity design, tax treatment and requirements for holding tenant or owner funds should be confirmed with qualified professionals.</p>
 
       <h2>1. What makes property management accounting different?</h2>
       <p>A typical business ledger focuses on the business's own income, expenses, assets and liabilities. A property manager may also maintain detailed records for activity carried out on behalf of owners and tenants. One transaction can affect several views at once: the property ledger, a tenant account, an owner statement, a trust or operating bank reconciliation, and the management company's own books.</p>
