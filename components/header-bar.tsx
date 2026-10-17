@@ -14,7 +14,7 @@ import SocialIcon from '@/components/social-icon';
 //
 // The number remains in the WhatsApp destination URL, but is never printed as
 // visible text. This is a contact link, not a phone dial action.
-const WHATSAPP_HREF = 'https://wa.me/919990597192';
+import { WHATSAPP_HREF } from '@/lib/contact-links';
 
 const socials = [
   { href: 'https://www.linkedin.com/company/accounstone/', label: 'LinkedIn' },
