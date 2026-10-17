@@ -147,7 +147,7 @@ export default function HomePage() {
             slug: `${s.slug}/${s.slug === 'audit-support' ? 'united-kingdom' : 'united-states'}`,
           }))}
           baseUrl="/services"
-          columns={3}
+          columns={4}
           variant="default"
           tone="brand"
         />
