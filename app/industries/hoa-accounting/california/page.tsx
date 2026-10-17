@@ -31,7 +31,7 @@ const faqs = [
   {
     question: 'Does Accounstone provide an on-site California office or community manager?',
     answer:
-      'This is remote accounting and bookkeeping support delivered from India. It is not an on-site community management service, and the page does not represent a California office or local staff presence.',
+      'Accounstone provides accounting and bookkeeping support remotely. The service covers agreed accounting workflows and does not replace on-site community management, the association board, or its licensed advisers.',
   },
   {
     question: 'Can you help prepare records used in California HOA financial reviews?',
@@ -169,9 +169,12 @@ export default function CaliforniaHoaAccountingPage() {
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Remote support, not a local office claim</h2>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">A Clear Month-End Review Trail</h2>
           <p className="mt-4 text-base md:text-lg leading-relaxed text-muted">
-            Accounstone provides remote accounting and bookkeeping support from India. The workflow can support California associations and management companies without suggesting that Accounstone operates a physical office, employs on-site community managers, or replaces a licensed California professional. Board approvals, bank authority, collection decisions, legal interpretation and CPA sign-off remain with the people authorized for those responsibilities.
+            Useful HOA reports do more than show a closing balance. They help a board or community manager trace material activity to the ledger, identify unreconciled items, compare actual spending with the approved budget, and see operating and reserve activity separately. A consistent close package can include bank reconciliations, accounts receivable aging, payable status, budget-to-actual schedules, reserve transactions and a short list of items that still need client review.
+          </p>
+          <p className="mt-4 text-base md:text-lg leading-relaxed text-muted">
+            The workflow should also make approval boundaries visible. Invoices and supporting documents can be organised for review, while payment release, bank access, assessment decisions and collection actions remain with the authorised association or management-company personnel. This separation supports traceability without implying that accounting support takes over board authority.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA accounting overview</Link>
@@ -179,7 +182,7 @@ export default function CaliforniaHoaAccountingPage() {
             <Link href="/blog/hoa-bank-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA bank reconciliation</Link>
             <Link href="/blog/hoa-year-end-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA year-end accounting</Link>
             <Link href="/industries/hoa-accounting/san-diego-county" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">San Diego County HOA accounting</Link>
-            <Link href="/markets/united-states/california" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">California accounting market</Link>
+            <Link href="/industries/hoa-accounting/yardi-accounting-support" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">Yardi HOA accounting support</Link>
           </div>
         </div>
       </section>
