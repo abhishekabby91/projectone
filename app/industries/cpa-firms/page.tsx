@@ -70,7 +70,7 @@ export default function CPAFirmsPage() {
         title="Preparation Capacity for CPA Firms, Without Giving Up Review"
         description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
-        ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
+        ctaSecondary={{ text: 'Chat on WhatsApp', href: 'https://wa.me/919990597192' }}
         background="primary-gradient"
       />
 
