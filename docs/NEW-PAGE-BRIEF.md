@@ -26,6 +26,13 @@ An answer that is only page copy is not usable. Produce all six:
    plainly rather than leaving it to be discovered. An unsourced claim is the
    single most expensive thing you can hand over.
 
+And **before** those six: name the closest **2–3 existing routes** from the route
+inventory (§11) and say in one line why the new page does not duplicate them —
+or that it does, and should be folded into one of them instead. A page proposed
+without that comparison cannot be reviewed for cannibalisation, which is the
+most expensive mistake available here and the hardest to undo once a URL is
+indexed.
+
 ---
 
 ## 2. The one rule behind all the others
@@ -272,6 +279,13 @@ US-facing. "Authorised" and "recognised" signal copy written for elsewhere.
 
 ## 11. Before the URL exists at all
 
+**`docs/ROUTE-INVENTORY.md` must be pasted in alongside this brief.** It lists
+all 204 indexable routes with their titles. Without it this whole section is
+unexecutable: you cannot tell whether a topic duplicates an existing intent, and
+"prefer improving an existing page" becomes a rule you can agree with and never
+apply. **If it was not provided, ask for it before writing anything** rather
+than guessing at what exists.
+
 - **One search intent → one URL.** Two pages splitting one intent means neither
   earns a click. This has happened here twice and cost real rankings.
 - **Prefer deepening an existing page over adding a new one.**
@@ -316,3 +330,15 @@ single `h1` inside `<main>`, heading skips, the word floor, the closing
 sequence, links to redirects, `Organization` and `BreadcrumbList` schema,
 whether every marked-up FAQ answer is visible, `dateModified`, hreflang in both
 directions, and sitemap and `llms.txt` parity. It must pass before merge.
+
+---
+
+## 14. Keeping the route inventory current (for whoever is inside the repo)
+
+```bash
+node scripts/route-inventory.mjs
+```
+
+Re-run it whenever routes are added or removed, then re-paste the file for the
+next page. Its route count must match what `scripts/verify-pages.mjs` reports as
+checked — if the two disagree, regenerate the inventory rather than trusting it.

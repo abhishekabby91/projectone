@@ -15,6 +15,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | File | What it governs |
 |---|---|
 | `AI-WEBSITE-GUIDE.md` | Tone, content rules, architecture, banned phrases, **"Known build gotchas"**. The single most important file. |
+| `docs/ROUTE-INVENTORY.md` | **Generated list of all 204 indexable routes and titles. Paste it alongside the brief below** — without it an external AI cannot judge overlap or "improve the existing page instead". Regenerate with `node scripts/route-inventory.mjs`. |
 | `docs/NEW-PAGE-BRIEF.md` | **Self-contained brief to paste into ChatGPT or any AI working outside this repo.** Same contract as `PAGE-FORMAT.md`, restated for someone who cannot read our files or run the checker: the page template, the six things to hand back, and the claim rules inlined. |
 | `docs/PAGE-FORMAT.md` | **The shape contract for every new page** — word floors by page type, metadata budgets, band order, FAQ rules, and the finish checklist. Enforced by `node scripts/verify-pages.mjs`. Read before writing a page; run the checker before merging. |
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
