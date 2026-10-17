@@ -8,7 +8,7 @@
 export const routeLastModified: Record<string, string> = {
   '': '2026-10-17',
   '/about': '2026-09-03',
-  '/blog': '2026-10-16',
+  '/blog': '2026-10-17',
   '/blog/accounts-payable-outsourcing': '2026-10-17',
   '/blog/accounts-receivable-management': '2026-10-17',
   '/blog/audit-support-services': '2026-10-17',
