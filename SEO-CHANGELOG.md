@@ -4924,4 +4924,10 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - Manual/visual responsive QA at 375px, 768px and 1280px viewports (this pass checked code-level responsive patterns, not rendered screenshots).
 - Re-crawl production after deployment and confirm the `/contact` metadata and Article schema fix are live.
 
+## 2026-10-17 — Yardi accounting support for property managers
 
+- Added `/industries/property-management/yardi-accounting-support` as a commercial software-specific page for third-party property-management companies already using Yardi. The route is separate from the HOA-specific Yardi page, the Texas-focused real-estate/Yardi page and the informational `/blog/yardi-accounting-workflow` article.
+- GSC evidence reviewed for 2026-07-18–2026-10-16: “outsourced accounting for Yardi Voyager” had 11 impressions at average position 15.4; related searches included “Yardi bookkeeping services” (7 impressions) and “Yardi accounting support for property managers” (3). These are observed impressions, not search-volume estimates or a ranking guarantee.
+- Competitor coverage reviewed: [REA’s Yardi bookkeeping page](https://rea.co/yardi/) and [WPM Accounting’s property-management accounting service](https://www.wpmaccounting.com/yardi-property-management-accounting-services). Product context checked against [Yardi’s official product overview](https://www.yardi.com/Products/).
+- Scope is limited to agreed accounting preparation in the client-authorized existing setup: transaction review, reconciliation preparation, AP/AR schedules, property/entity ledger checks and month-end reporting handoff. No Yardi certification, partnership, implementation, configuration, vendor technical support, legal/tax conclusions or payment authority is claimed.
+- Added contextual links from the property-management hub and property-management accounting service page; registered the URL in the sitemap, route/content/search-intent documents and AI-readable references. The page is on `safe-technical-seo-oct17` for preview validation only; not merged or deployed to production.

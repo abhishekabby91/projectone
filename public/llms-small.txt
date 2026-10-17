@@ -27,6 +27,7 @@ Do not claim that Accounstone provides legal advice, tax planning or advisory, a
 - Expanded reference: https://www.accounstone.com/llms-full.txt
 - Services: https://www.accounstone.com/services
 - Property management accounting: https://www.accounstone.com/industries/property-management
+- Yardi accounting support for property managers: https://www.accounstone.com/industries/property-management/yardi-accounting-support
 - HOA accounting: https://www.accounstone.com/industries/hoa-accounting
 - Accounting support for self-managed HOAs: https://www.accounstone.com/industries/hoa-accounting/self-managed-hoa-accounting
 - Contact: https://www.accounstone.com/contact

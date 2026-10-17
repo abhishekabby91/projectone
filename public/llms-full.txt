@@ -116,6 +116,10 @@ Property management lender reporting and NOI support: https://www.accounstone.co
 Property management company accounting support: https://www.accounstone.com/industries/property-management/management-company-accounting
 Property management month-end close support: https://www.accounstone.com/industries/property-management/month-end-close-support
 
+Yardi accounting support for property managers can cover agreed transaction review, bank-reconciliation preparation, AP/AR schedules, property and entity ledger checks, and monthly reporting handoff inside the client’s existing, authorized Yardi Voyager or Breeze setup. Product modules, report availability and workflow are confirmed at scoping; Accounstone does not claim Yardi certification, software implementation, configuration or payment authority.
+
+Yardi accounting support for property managers: https://www.accounstone.com/industries/property-management/yardi-accounting-support
+
 Trust-account reconciliation support can include bank-to-book matching, comparison of relevant control accounts with tenant or owner ledger detail where applicable, deposit and disbursement schedules, exception aging and review-ready workpapers. The client retains bank access, withdrawal and payment authority; the client and qualified local advisers determine the legal, regulatory and tax requirements that apply.
 
 Property management trust-account reconciliation support: https://www.accounstone.com/industries/property-management/trust-account-reconciliation

@@ -354,6 +354,7 @@ export default function PropertyManagementPage() {
             {[
               { name: 'AppFolio accounting in California', href: '/industries/property-management/appfolio-accounting-california' },
               { name: 'Buildium accounting support', href: '/industries/property-management/buildium-accounting-support' },
+              { name: 'Yardi accounting support for property managers', href: '/industries/property-management/yardi-accounting-support' },
               { name: 'DoorLoop accounting support', href: '/industries/property-management/doorloop-accounting-support' },
               { name: 'Yardi accounting in Texas', href: '/industries/real-estate/yardi-accounting-outsourcing-texas' },
               { name: 'QuickBooks accounting', href: '/technology/quickbooks' },

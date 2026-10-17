@@ -103,6 +103,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - Property management AppFolio accounting support in California: https://www.accounstone.com/industries/property-management/appfolio-accounting-california
 - Property management accounting support for Buildium: https://www.accounstone.com/industries/property-management/buildium-accounting-support
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
+- Yardi accounting support for property managers: https://www.accounstone.com/industries/property-management/yardi-accounting-support
 - Technology and SaaS: https://www.accounstone.com/industries/technology
 - E-commerce: https://www.accounstone.com/industries/ecommerce
 - Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
@@ -337,4 +338,3 @@ https://www.accounstone.com/sitemap.xml
 These pages describe defined accounting production and bookkeeping support. Engagement scope, review responsibilities and payment authority remain with the client or its appointed accounting firm.
 
 
-- HOA vendor invoice processing and approval workflow: https://www.accounstone.com/blog/hoa-vendor-invoice-processing

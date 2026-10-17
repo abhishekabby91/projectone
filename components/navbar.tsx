@@ -112,7 +112,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-sm border-b-2 border-border supports-[backdrop-filter]:bg-background/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center px-3 sm:px-5 lg:px-2 xl:px-5 shrink-0" aria-label="Accounstone home">
-          <Image src="/accounstone-logo-horizontal.png" alt="Accounstone" width={280} height={60} className="w-auto" style={{ height: '48px' }} priority />
+          <Image src="/accounstone-logo-horizontal.png" alt="Accounstone" width={280} height={60} className="w-auto" style={{ height: '48px' }} loading="eager" />
         </Link>
 
         {/* Desktop nav starts at lg:, not md:. At md: (768px, iPad portrait)

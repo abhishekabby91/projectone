@@ -216,6 +216,7 @@ export default function PropertyManagementAccountingPage() {
           </Reveal>
           <div className="flex flex-wrap gap-3">
             <Link href="/technology" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Yardi &amp; property platforms</Link>
+            <Link href="/industries/property-management/yardi-accounting-support" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Yardi accounting support for property managers</Link>
             <Link href="/technology/quickbooks" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">QuickBooks</Link>
             <Link href="/technology/xero" className="rounded-lg border border-border bg-input px-4 py-2 font-medium text-primary">Xero</Link>
           </div>

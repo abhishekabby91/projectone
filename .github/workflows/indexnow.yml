@@ -8,35 +8,145 @@ on:
       - "app/**"
       - "components/**"
       - "lib/**"
-      - "public/**"
       - "next.config.mjs"
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Vercel production deployment
-        run: sleep 180
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Submit production sitemap URLs to IndexNow
+      - name: Select changed canonical page URLs
+        id: plan
         shell: bash
         env:
-          INDEXNOW_KEY: e6183ad7c7794fe1a98a2b89634c01c9
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+
+          before = os.environ["BEFORE_SHA"]
+          after = os.environ["AFTER_SHA"]
+          output_path = os.environ["GITHUB_OUTPUT"]
+
+          def output(**values):
+              with open(output_path, "a") as stream:
+                  for name, value in values.items():
+                      print(f"{name}={value}", file=stream)
+
+          # A root/branch-creation push has no reliable preceding commit.
+          if not before or set(before) == {"0"}:
+              print("No comparable previous commit; skipping IndexNow.")
+              output(skip="true")
+              raise SystemExit(0)
+
+          diff = subprocess.check_output(
+              ["git", "diff", "--name-status", before, after],
+              text=True,
+          )
+          entries = []
+          for line in diff.splitlines():
+              parts = line.split("\t")
+              if not parts:
+                  continue
+              status = parts[0]
+              for path in parts[1:]:
+                  entries.append((status, path))
+
+          # This generated file only changes sitemap lastmod metadata.
+          entries = [(status, path) for status, path in entries
+                     if path != "lib/sitemap-dates.ts"]
+          if not entries:
+              print("Only generated sitemap dates changed; skipping IndexNow.")
+              output(skip="true")
+              raise SystemExit(0)
+
+          # Shared renderers/content modules and redirect configuration affect
+          # multiple URLs; page-specific commits notify only their own routes.
+          full_site = any(
+              path.startswith("components/")
+              or (path.startswith("lib/") and path != "lib/sitemap-dates.ts")
+              or path == "next.config.mjs"
+              or path == "app/layout.tsx"
+              for _, path in entries
+          )
+          if full_site:
+              output(skip="false", mode="all", urls="[]")
+              print("Shared rendering/configuration changed; will submit the current production sitemap.")
+              raise SystemExit(0)
+
+          retired_redirects = {
+              "/blog/hoa-delinquency-accounting",
+              "/blog/hoa-monthly-close-process",
+              "/blog/hoa-vendor-invoice-processing",
+              "/blog/hoa-year-end-checklist",
+          }
+          noindex_routes = {"/thank-you", "/technology/myob"}
+          urls = set()
+          for status, path in entries:
+              if not (path.startswith("app/") and path.endswith("/page.tsx")):
+                  continue
+              relative = path[len("app/"):-len("/page.tsx")]
+              route = "/" + relative if relative else "/"
+              if route in retired_redirects or route in noindex_routes:
+                  continue
+              urls.add("https://www.accounstone.com" + ("" if route == "/" else route))
+
+          ordered = sorted(urls)
+          if not ordered:
+              print("No indexable page body changed; skipping IndexNow.")
+              output(skip="true")
+          else:
+              output(skip="false", mode="changed",
+                     urls=json.dumps(ordered, separators=(",", ":")))
+              print(f"Selected {len(ordered)} changed page URL(s), not the whole site.")
+          PY
+
+      - name: Wait for Vercel production deployment
+        if: steps.plan.outputs.skip != 'true'
+        run: sleep 180
+
+      - name: Submit changed production URLs to IndexNow
+        if: steps.plan.outputs.skip != 'true'
+        shell: bash
+        env:
           SITE_URL: https://www.accounstone.com
+          SUBMISSION_MODE: ${{ steps.plan.outputs.mode }}
+          CHANGED_URLS: ${{ steps.plan.outputs.urls }}
         run: |
           set -euo pipefail
 
           python - <<'PY'
           import json
           import os
+          import re
           import urllib.request
           import urllib.error
           import xml.etree.ElementTree as ET
+          from pathlib import Path
 
           site_url = os.environ["SITE_URL"].rstrip("/")
-          key = os.environ["INDEXNOW_KEY"]
-
+          mode = os.environ["SUBMISSION_MODE"]
           sitemap_url = f"{site_url}/sitemap.xml"
+
+          # The IndexNow key is public by design. Read it from its public key
+          # file so it is not duplicated as a literal in workflow configuration.
+          key = None
+          for candidate in Path("public").glob("*.txt"):
+              value = candidate.read_text(encoding="utf-8").strip()
+              if re.fullmatch(r"[0-9a-fA-F]{8,128}", value):
+                  key = value
+                  break
+          if not key:
+              raise SystemExit("Could not find the public IndexNow key file.")
+
           key_location = f"{site_url}/{key}.txt"
 
           def get(url):
@@ -47,32 +157,35 @@ jobs:
               with urllib.request.urlopen(request, timeout=60) as response:
                   return response.read()
 
-          sitemap_data = get(sitemap_url)
           key_data = get(key_location).decode("utf-8").strip()
-
           if key_data != key:
-              raise SystemExit(
-                  f"IndexNow key file mismatch: expected {key}, got {key_data!r}"
-              )
+              raise SystemExit("IndexNow key file did not match the configured key.")
 
-          root = ET.fromstring(sitemap_data)
-          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-          urls = [
-              node.text.strip()
-              for node in root.findall(".//sm:loc", namespace)
-              if node.text and node.text.strip()
-          ]
+          if mode == "all":
+              root = ET.fromstring(get(sitemap_url))
+              namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+              urls = sorted({
+                  node.text.strip()
+                  for node in root.findall(".//sm:loc", namespace)
+                  if node.text and node.text.strip()
+                  and (node.text.strip() == site_url or node.text.strip().startswith(site_url + "/"))
+              })
+          elif mode == "changed":
+              urls = sorted(set(json.loads(os.environ["CHANGED_URLS"])))
+          else:
+              raise SystemExit(f"Unexpected IndexNow mode: {mode!r}")
 
           if not urls:
-              raise SystemExit("No URLs found in production sitemap.")
+              raise SystemExit("No canonical URLs selected for IndexNow.")
+          if len(urls) > 10000:
+              raise SystemExit(f"Selected {len(urls)} URLs; batch before submitting.")
 
           payload = {
               "host": "www.accounstone.com",
               "key": key,
               "keyLocation": key_location,
-              "urlList": urls[:10000],
+              "urlList": urls,
           }
-
           request = urllib.request.Request(
               "https://api.indexnow.org/indexnow",
               data=json.dumps(payload).encode("utf-8"),
@@ -82,15 +195,12 @@ jobs:
               },
               method="POST",
           )
-
           try:
               with urllib.request.urlopen(request, timeout=60) as response:
                   print(f"IndexNow response: HTTP {response.status}")
           except urllib.error.HTTPError as error:
               body = error.read().decode("utf-8", errors="replace")
-              raise SystemExit(
-                  f"IndexNow request failed: HTTP {error.code} {body}"
-              )
+              raise SystemExit(f"IndexNow request failed: HTTP {error.code} {body}")
 
-          print(f"Submitted {len(urls)} sitemap URLs to IndexNow.")
+          print(f"Submitted {len(urls)} URL(s) using mode={mode}.")
           PY
