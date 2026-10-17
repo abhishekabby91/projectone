@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'Does Accounstone have an office or on-site staff in the United States?',
     answer:
-      'No. Accounstone provides remote accounting support from India. This page does not represent an on-site community management service or a local US office.',
+      'No. Accounstone provides remote accounting support, not on-site community management or a local-office service.',
   },
 ];
 
@@ -168,7 +168,7 @@ export default function AppFolioHoaAccountingSupportPage() {
 
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.14em] text-accent">Remote accounting support from India</p>
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-accent">Remote accounting support for HOA workflows</p>
           <p className="mt-3 leading-relaxed text-muted">
             Accounstone supports accounting and bookkeeping workflows remotely. We do not represent ourselves as AppFolio, an AppFolio-certified provider, a local US office, or an on-site community management company.
           </p>
