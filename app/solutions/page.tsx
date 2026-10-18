@@ -8,9 +8,9 @@ import { generateMetadata, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 import { solutions } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Engagement Models & Solutions',
+  title: 'Accounting Outsourcing Models',
   description:
-    'Four ways to add accounting capacity — staff augmentation, a dedicated team, offshore support and back office — and how each one is structured.',
+    'Compare accounting outsourcing models, from defined back-office workflows to staff augmentation and dedicated teams, based on your workload.',
   path: '/solutions',
 });
 
@@ -25,11 +25,11 @@ export default function SolutionsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="Flexible Engagement"
-        title="Engagement Models for Every Stage of a Firm"
-        description="Choose the engagement model that fits your needs. From back-office support to dedicated teams, we deliver exceptional results."
+        subtitle="Accounting Outsourcing"
+        title="Accounting Outsourcing Engagement Models"
+        description="Choose how to outsource recurring accounting work, from a defined function or back-office workflow to staff augmentation or a dedicated team, with responsibilities and review points agreed in advance."
         cta={{
-          text: 'Schedule Consultation',
+          text: 'Discuss Your Outsourcing Needs',
           href: '/contact',
         }}
         ctaSecondary={{
@@ -60,13 +60,13 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      <InquirySection source="/solutions" title="Talk to Us About How You Want to Engage" lead="A free consultation, and a call that costs nothing. Tell us whether you need people, a function taken off you, or a team of your own, and we will say which fits." />
+      <InquirySection source="/solutions" title="Discuss Your Accounting Outsourcing Needs" lead="Tell us which accounting function or recurring workload you want to outsource. We can discuss your systems, scope, review process and the engagement model that fits." />
 
       <CTABanner
-        title="Ready to Find the Right Solution?"
-        description="Tell us where the capacity is short and we will suggest the engagement model that fits."
+        title="Ready to Discuss Your Accounting Work?"
+        description="Share the accounting work you want to outsource and how your existing workflow operates. We can discuss a practical scope and delivery model."
         cta={{
-          text: 'Get Started Today',
+          text: 'Discuss Your Needs',
           href: '/contact',
         }}
         background="primary"

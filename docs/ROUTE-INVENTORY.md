@@ -13,7 +13,7 @@ candidate for overlap.
 
 | Route | Page title |
 |---|---|
-| `/` | Accounting, Bookkeeping & Tax \| Accounstone |
+| `/` | Accounting, Tax & Bookkeeping Outsourcing \| Accounstone |
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
 | `/blog/accounts-payable-outsourcing` | AP Outsourcing: Controls, Software, Cost |
@@ -205,7 +205,7 @@ candidate for overlap.
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
 | `/services/tax-preparation/united-states/1040-individual` | Form 1040 Tax Preparation Outsourcing |
 | `/services/tax-preparation/united-states/1065-partnership` | Form 1065 and K-1 Preparation Outsourcing |
-| `/solutions` | Engagement Models & Solutions |
+| `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Services for Firms |

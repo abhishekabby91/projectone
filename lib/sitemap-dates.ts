@@ -6,7 +6,7 @@
  * body. See the script's header for why this is derived rather than written.
  */
 export const routeLastModified: Record<string, string> = {
-  '': '2026-10-17',
+  '': '2026-10-18',
   '/about': '2026-09-03',
   '/blog': '2026-10-17',
   '/blog/accounts-payable-outsourcing': '2026-10-17',
@@ -128,7 +128,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/yardi-accounting-support': '2026-10-17',
   '/industries/nonprofit-accounting': '2026-10-15',
   '/industries/professional-services': '2026-10-15',
-  '/industries/property-management': '2026-10-17',
+  '/industries/property-management': '2026-10-18',
   '/industries/property-management/accounting-cleanup': '2026-10-15',
   '/industries/property-management/appfolio-accounting-california': '2026-10-17',
   '/industries/property-management/buildium-accounting-support': '2026-10-13',
@@ -202,7 +202,7 @@ export const routeLastModified: Record<string, string> = {
   '/services/tax-preparation/united-states': '2026-10-15',
   '/services/tax-preparation/united-states/1040-individual': '2026-10-09',
   '/services/tax-preparation/united-states/1065-partnership': '2026-10-18',
-  '/solutions': '2026-09-03',
+  '/solutions': '2026-10-18',
   '/solutions/back-office-support': '2026-09-08',
   '/solutions/dedicated-accounting-teams': '2026-09-08',
   '/solutions/offshore-accounting-support': '2026-10-14',
