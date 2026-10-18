@@ -12,6 +12,16 @@ Create five separate, indexable state-qualified commercial pages for US CPA and 
 
 These are **market-test pages, not a claim that these are the five highest-search-intent states**. No comparable state-level Google Keyword Planner export was available during this pass. The state selection is based on a combination of broad prospect-pool rationale, public competitor precedent and a manageable initial cohort.
 
+## Closest existing routes and cannibalisation check
+
+The route inventory and intent registry were reviewed before creating the pages:
+
+- `/industries/cpa-firms` owns broad CPA-firm outsourcing and preparation-capacity intent. The new pages target state-qualified CPA-firm searches and return links to this hub.
+- `/markets/united-states/california`, `/markets/united-states/texas` and `/markets/united-states/florida` target direct businesses seeking accounting services in those states, not CPA firms buying an outsourcing partner.
+- `/services/bookkeeping/united-states`, `/services/accounting/united-states` and `/services/tax-preparation/united-states` own national service-specific intent; state pages link to them rather than duplicating their service detail.
+
+The state pages now use distinct portfolio and workflow sections rather than repeating a long shared body template. **A measured 6-gram similarity comparison against every existing route has not yet been run**; it remains a release check. If any page exceeds the repository's under-25% overlap rule, rewrite it further or consolidate it before publication.
+
 ## Evidence: what is verified and what is not
 
 ### Verified public evidence
@@ -50,7 +60,7 @@ The competitor pages reviewed sell similar broad service categories: accounting/
 | New York | Accounting outsourcing for New York CPA firms | Defined preparation, multi-entity records, supporting schedules and review handoff | ~900–1,000 | 650 words |
 | Illinois | Accounting outsourcing for Illinois CPA firms | Commercial portfolio examples including manufacturing/distribution; clear boundary around specialized inventory judgments | ~900–1,000 | 650 words |
 
-The rendered pages use a shared layout but substantially different state-specific workflow content. Approximate body length is **1,100–1,300 words per page including visible FAQs and workflow examples**; this is an estimate, not a measured verifier result. Shared prose was deliberately reduced after reviewing the repository's under-25% six-gram overlap rule. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding.
+The rendered pages use a shared layout but substantially different state-specific workflow content. Approximate body length is **1,100–1,300 words per page including visible FAQs and workflow examples**; this is an estimate, not a measured verifier result. Shared prose was deliberately reduced to lower overlap risk, but the six-gram similarity check remains outstanding. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding.
 
 ## Keyword clusters to validate in Google Keyword Planner
 
