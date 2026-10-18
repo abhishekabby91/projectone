@@ -115,6 +115,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/cpa-firms/illinois': '2026-10-18',
   '/industries/cpa-firms/new-york': '2026-10-18',
   '/industries/cpa-firms/texas': '2026-10-18',
+  '/industries/cpa-firms/white-label-accounting': '2026-10-18',
   '/industries/ecommerce': '2026-10-18',
   '/industries/ecommerce/amazon-seller-accounting': '2026-10-15',
   '/industries/ecommerce/shopify-accounting': '2026-10-15',
