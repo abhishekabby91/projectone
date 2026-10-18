@@ -120,8 +120,8 @@ export const testimonials = [
 // emoji removal because they lived in data rather than in markup. Emoji render
 // differently on every platform and cannot take the brand colour.
 export const trustBadges = [
-  { name: 'NDA-Backed Engagements', icon: 'lock' },
-  { name: 'Security-First Data Handling', icon: 'shield' },
+  { name: 'Agreed engagement terms', icon: 'lock' },
+  { name: 'Defined access responsibilities', icon: 'shield' },
   { name: 'Documented Workflows & Review', icon: 'checks' },
 ] as const;
 
