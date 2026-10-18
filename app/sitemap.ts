@@ -82,6 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/cpa-firms/florida', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/cpa-firms/new-york', priority: 0.75, changeFrequency: 'monthly' },
     { path: '/industries/cpa-firms/illinois', priority: 0.75, changeFrequency: 'monthly' },
+    { path: '/industries/cpa-firms/white-label-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/real-estate/yardi-accounting-outsourcing-texas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/amazon-seller-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/shopify-accounting', priority: 0.8, changeFrequency: 'monthly' },
