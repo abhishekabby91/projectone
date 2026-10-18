@@ -173,7 +173,7 @@ export default function TechnologyPage() {
 
       <FAQSection subtitle="Technology" items={techFAQs} columns={2} />
 
-      <InquirySection source="/technology" title="Talk to Us About the Platform You Work In" lead="Name the platform and the accounting work you need covered. We can clarify which tasks fit our scope and which remain with your software vendor or implementation partner." compact />
+      <InquirySection source="/technology" title="Talk to Us About the Platform You Work In" lead="A free consultation, and a call that costs nothing. Name the platform and the work, and we will tell you plainly whether we are a fit for it." compact />
 
       <CTABanner
         title="Which System Are You Working In?"
