@@ -4977,3 +4977,33 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 - Set up ESLint config (`next lint` prompts for first-time setup; not run yet) and fix any lint findings.
 - Manual/visual responsive QA at 375px, 768px and 1280px viewports (this pass checked code-level responsive patterns, not rendered screenshots).
 - Re-crawl production after deployment and confirm the `/contact` metadata and Article schema fix are live.
+
+## 2026-10-18 — GSC-led refresh of existing ranking-opportunity pages
+
+**Data window:** Google Search Console web-search data, 2026-07-20 through 2026-10-15 (final data where available). Metrics are small-sample signals and should be rechecked after indexing and a reasonable observation period.
+
+### `/blog/hoa-chart-of-accounts`
+
+**GSC signal:** The page received impressions for “HOA chart of accounts” (13 impressions, average position 20.3), “how to set up chart of accounts for HOA” (14 impressions, position 17.1) and “chart of accounts for condo association” (9 impressions, position 12.0).
+
+**Changed:** Expanded title and meta description to better match the example/setup intent; added a clearly labeled illustrative chart-of-accounts table with account groups, example ranges and review purposes. Clarified that numbering is not a mandated standard and that transfers between operating and reserve cash accounts are not expenses merely because cash moves.
+
+**Purpose:** Give the existing page a more directly useful answer to the exact queries already generating impressions.
+
+### `/blog/property-management-chart-of-accounts`
+
+**GSC signal:** “Property management chart of accounts” received 19 impressions at average position 16.2 in the data window.
+
+**Changed:** Refined title/description and added an illustrative table covering assets, liabilities, owner balances, property income/expenses and separate management-company books. Reinforced entity-level separation and support for due-to/due-from balances and shared-cost allocations.
+
+**Purpose:** Improve query fit and practical usefulness without creating another URL or presenting the sample account ranges as universal.
+
+### `/industries/ecommerce`
+
+**GSC signal:** “Ecommerce accounting” received 37 impressions at average position 5.5 and “accounting for ecommerce” received 21 impressions at position 5.5; these queries had no recorded clicks in the retrieved page-query sample.
+
+**Changed:** Updated the title and meta description to lead with “Ecommerce Accounting Services” and describe payout reconciliation, marketplace fees, refunds, inventory/COGS and supported accounting systems.
+
+**Purpose:** Test a more query-aligned snippet for an existing page that already appears near the top for relevant terms. This is a CTR hypothesis, not a guarantee.
+
+**Guardrails:** No URLs changed and no new public pages were created. Query counts are modest, average position varies by query/device/location, and success must be measured against post-change GSC data rather than inferred from these edits.
