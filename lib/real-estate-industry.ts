@@ -209,7 +209,7 @@ export const processPhases = [
   {
     n: '01',
     title: 'Share the portfolio',
-    body: 'A free call. How many properties or associations, which system they live in, who signs off, and what the owner or board currently receives.',
+    body: 'Tell us how many properties or associations are involved, which system they use, who signs off, and what the owner or board currently receives.',
   },
   {
     n: '02',
@@ -288,6 +288,6 @@ export const faqs = [
   {
     question: 'How does the outsourcing engagement actually start?',
     answer:
-      'With a free consultation, then a narrow first slice — one building, one association or one owner’s portfolio — running alongside what you do today. Both sides see real output on real properties before the volume moves, and a workflow that already works is a much smaller problem to scale than one being fixed mid-year.',
+      'We can discuss a narrow first slice — one building, one association or one owner’s portfolio — alongside the current workflow. Both sides can review output before expanding the scope, and established processes are easier to scale than ones being fixed mid-year.',
   },
 ];
