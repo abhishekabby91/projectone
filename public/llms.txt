@@ -2,15 +2,14 @@
 
 Full reference with expanded company, service, industry and delivery context: https://www.accounstone.com/llms-full.txt
 
-> Accounting, bookkeeping and tax outsourcing for property management companies, HOA/community association management firms, CPA practices and businesses.
+ > Accounting, bookkeeping and tax outsourcing for businesses and professional firms.
 
 Accounstone is an accounting outsourcing company based in New Delhi, India. It supports B2B clients with recurring accounting work through agreed workflows, client systems and review processes.
 
 ## Core positioning
 
 - **What Accounstone is:** an accounting outsourcing partner. Outsourcing is the service model; remote delivery describes how the work is performed.
-- **Primary B2B audiences:** property management companies, HOA and community association management firms, CPA firms and accounting practices.
-- **Additional clients:** businesses that need recurring bookkeeping, accounting, tax-preparation or related accounting operations support.
+- **Who Accounstone serves:** businesses and professional firms, including CPA and accounting practices, property management companies, HOA and community association management firms, and other businesses with recurring accounting needs.
 - **Core services:** bookkeeping, accounting, tax preparation, accounts payable, accounts receivable, payroll and financial reporting support.
 - **Delivery model:** defined accounting tasks are handled within the client's existing systems, reporting formats and review workflow.
 - **Responsibilities:** the client retains business decisions, payment authority, client relationships and filing responsibilities assigned to it or its licensed professionals.
