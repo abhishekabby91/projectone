@@ -56,7 +56,7 @@ export default function NetSuitePage() {
 
       <FAQSection subtitle="NetSuite FAQs" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/netsuite" title="Talk to Us About Your NetSuite Close" lead="A free consultation, and a call that costs nothing. Tell us how many entities consolidate, and which part of the close keeps slipping." compact />
+      <InquirySection source="/technology/netsuite" title="Talk to Us About Your NetSuite Close" lead="Tell us how many entities consolidate, and which part of the close keeps slipping." compact />
 
       <CTABanner
         title="Where Is Your Multi-Entity Close Getting Stuck?"
