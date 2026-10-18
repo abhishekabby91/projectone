@@ -32,6 +32,11 @@ One primary search intent → one primary URL. Check this file before creating a
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
 | CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
+| California CPA firm accounting outsourcing | `/industries/cpa-firms/california` | Commercial / state-qualified CPA-firm intent; state-specific portfolio examples and workflow scoping, not a generic business accounting page |
+| Texas CPA firm accounting outsourcing | `/industries/cpa-firms/texas` | Commercial / state-qualified CPA-firm intent; recurring preparation support and firm review handoff |
+| Florida CPA firm accounting outsourcing | `/industries/cpa-firms/florida` | Commercial / state-qualified CPA-firm intent; recurring client work and seasonal/portfolio scoping |
+| New York CPA firm accounting outsourcing | `/industries/cpa-firms/new-york` | Commercial / state-qualified CPA-firm intent; defined preparation support and multi-entity workflow scoping |
+| Illinois CPA firm accounting outsourcing | `/industries/cpa-firms/illinois` | Commercial / state-qualified CPA-firm intent; preparation workflow examples for varied commercial portfolios |
 | Real estate accounting / bookkeeping (owners, investors, developers) | `/industries/real-estate` | Commercial — the reader OWNS the property; reader of the output is a lender, partner or their CPA |
 | Property management accounting / bookkeeping outsourcing | `/industries/property-management` | Commercial — the reader MANAGES property for owners; deliverable is the owner statement; receivable is tenant rent |
 | Property management accounting cleanup / catch-up bookkeeping | `/industries/property-management/accounting-cleanup` | Commercial service intent — backlog assessment, reconciliations, property/tenant ledger differences, owner-statement tie-outs and transition to recurring close; distinct from the informational complete guide |
