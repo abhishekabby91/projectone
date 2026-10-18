@@ -109,7 +109,8 @@ export default function CASGuide() {
       <h2>White-Label Production Support for a CAS Practice</h2>
       <p>
         When a firm wants to keep its client relationship and engagement model while delegating defined preparation work, review the
-        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting support page for CPA firms</Link>.
+        <Link href="/industries/cpa-firms/cas-production-support" className="text-primary font-medium hover:underline"> CAS production support page for CPA firms</Link> and the
+        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting support page</Link>.
         It covers how to agree branding, client-contact boundaries, systems access and reviewer-ready outputs without confusing preparation work with client advisory responsibilities.
       </p>
     </ArticleLayout>
