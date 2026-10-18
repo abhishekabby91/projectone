@@ -336,6 +336,8 @@ export default function CPAFirmsPage() {
               { name: 'Tax preparation', href: '/services/tax-preparation/united-states' },
               { name: 'Form 1040 preparation', href: '/services/tax-preparation/united-states/1040-individual' },
               { name: 'Form 1065 and K-1s', href: '/services/tax-preparation/united-states/1065-partnership' },
+              { name: 'Form 1120 corporate returns', href: '/services/tax-preparation/united-states/1120-corporation' },
+              { name: 'Form 1120-S returns', href: '/services/tax-preparation/united-states/1120-s-corporation' },
               { name: 'Audit support', href: '/services/audit-support/united-states' },
               { name: 'Accounting & close', href: '/services/accounting/united-states' },
               { name: 'Staff augmentation', href: '/solutions/staff-augmentation' },
