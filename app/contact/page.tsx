@@ -116,7 +116,7 @@ export default function ContactPage() {
   return (
     <main>
       <PremiumHero
-        subtitle="Free consultation"
+        subtitle="Discuss your accounting needs"
         title="Start With a Conversation, Not a Contract"
         description="Half an hour, no cost, no obligation. Tell us what is falling behind — the volume, the systems, the deadlines — and we will tell you plainly whether it is work we do."
         background="primary-gradient"
@@ -132,7 +132,7 @@ export default function ContactPage() {
             {[
               {
                 icon: Clock,
-                h: 'Thirty minutes, and it is free',
+                h: 'A focused conversation about your workflow',
                 p: 'No deck, no discovery fee, no commitment at the end of it. If the answer is that we are not the right fit, that is a useful half hour too.',
               },
               {
@@ -278,7 +278,7 @@ export default function ContactPage() {
                   aria-busy={status === 'submitting'}
                   className="w-full px-6 py-4 rounded-lg bg-primary hover:bg-primary-light text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:bg-primary disabled:hover:shadow-md"
                 >
-                  {status === 'submitting' ? 'Sending…' : 'Book Your Free Consultation'}
+                  {status === 'submitting' ? 'Sending…' : 'Discuss Your Accounting Needs'}
                 </button>
 
                 <p className="text-xs text-muted text-center">
@@ -331,7 +331,7 @@ export default function ContactPage() {
                   What to expect
                 </p>
                 {[
-                  'A free consultation and call, with no commitment',
+                  'A discussion about your workflow, scope and next steps',
                   'A written proposal built around your actual workflow',
                   'No long-term contracts required',
                   'A reply from the person who would scope the work',
