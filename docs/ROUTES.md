@@ -84,6 +84,11 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
 | `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
+| `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
+| `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
+| `/industries/cpa-firms/new-york` | B | CPA Firms / New York | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
+| `/industries/cpa-firms/illinois` | B | CPA Firms / Illinois | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |
