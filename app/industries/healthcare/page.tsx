@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Is patient billing data handled securely?',
     answer:
-      'Bookkeeping and reporting can use the financial and billing summary data required, under NDA-backed engagements with secure data handling practices. We recommend confirming your specific compliance requirements (such as HIPAA) with your practice\'s compliance officer to ensure our workflow fits your obligations.',
+      'Bookkeeping and reporting should use only the financial or billing-summary information required for the agreed workflow. Confirm HIPAA and any other regulated-data requirements with your practice\'s compliance officer before access is granted; we do not claim HIPAA certification.',
   },
 ];
 
