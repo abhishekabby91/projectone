@@ -28,6 +28,10 @@ These are commercial service pages, recorded here because the site page contract
 | Accounting Outsourcing for New York CPA Firms | `/industries/cpa-firms/new-york` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined preparation and multi-entity workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
 | Accounting Outsourcing for Illinois CPA Firms | `/industries/cpa-firms/illinois` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; recurring preparation workflows across varied portfolios | Draft page added; search volume not verified | 2026-10-18 |
 
+## 2026-10-18 — CPA-firm white-label service page
+
+Added `/industries/cpa-firms/white-label-accounting` as a commercial service spoke beneath the CPA-firm hub. Competitor research shows providers separately position white-label accounting/bookkeeping for CPA firms, with emphasis on work prepared within the firm's branding and workflow. The page focuses on the operating model: branding, client-contact boundaries, system permissions, workpaper formats, review and responsibility boundaries. It does not promise client concealment, unrestricted data access, certifications, specific turnaround times or pricing. It links to the existing bookkeeping and tax-preparation service pages, CAS guide, outsourcing partner evaluation guide and CPA-firm readiness checklist; those existing pages retain their own service and informational intents.
+
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
 
 | Title | URL | Cluster | Primary intent | Status | Last updated |
