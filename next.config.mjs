@@ -20,6 +20,13 @@ const nextConfig = {
         destination: "/technology",
         permanent: true,
       },
+      // Consolidate the overlapping HOA service route into the established industry hub.
+      // The hub owns HOA-specific accounting intent; generic service workflows remain under /services.
+      {
+        source: "/services/hoa-accounting",
+        destination: "/industries/hoa-accounting",
+        permanent: true,
+      },
       // HOA guides consolidated in October 2026 after reviewing topic overlap.
       {
         source: "/blog/hoa-monthly-close-process",

@@ -145,3 +145,16 @@ wrong in both.
 | HOA and condo association chart of accounts setup | `/blog/hoa-chart-of-accounts` | Informational — sample account groups and setup considerations; distinct from the commercial HOA accounting hub |
 | Property management chart of accounts example | `/blog/property-management-chart-of-accounts` | Informational — property/entity, tenant, deposit and owner reporting structure; distinct from the commercial property-management accounting page |
 | Ecommerce accounting services for online retailers | `/industries/ecommerce` | Commercial — broad multi-channel ecommerce accounting; Amazon seller and Shopify accounting pages remain platform-specific spokes |
+
+
+## Indexing cluster refinement — 2026-10-18
+
+| Search intent | Canonical route | Cluster rule |
+|---|---|---|
+| HOA accounting outsourcing and service scope | `/industries/hoa-accounting` | Single HOA-specific commercial hub; the overlapping `/services/hoa-accounting` route permanently redirects here. Generic service pages remain responsible for cross-industry accounting and bookkeeping intent. |
+| HOA chart of accounts example | `/blog/hoa-chart-of-accounts` | Informational spoke linked from the HOA hub; not a second commercial HOA service page. |
+| Yardi accounting workflows for HOAs | `/industries/hoa-accounting/yardi-accounting-support` | HOA-specific Yardi workflows; linked from the HOA hub and technology hub. |
+| Yardi accounting workflows for property managers | `/industries/property-management/yardi-accounting-support` | Rental/property-management Yardi workflows; linked from the property-management hub and technology hub. Do not merge with the HOA-specific Yardi page. |
+| Form 1065 and Schedule K-1 preparation support | `/services/tax-preparation/united-states/1065-partnership` | Commercial tax-preparation spoke linked from the US tax preparation service hub and the tax-preparation outsourcing guide. |
+
+Indexing interpretation: “Discovered — currently not indexed” with no crawl is not evidence of a rendering failure by itself. Maintain sitemap inclusion and contextual internal links, then recheck after Google crawls. Redirected legacy URLs and canonical duplicates are not expected to be indexed as separate pages.

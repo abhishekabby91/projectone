@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { Check } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import SectionGrid from '@/components/section-grid';
@@ -91,6 +92,23 @@ export default function TechnologyPage() {
         columns={3}
         variant="default"
       />
+
+      <section className="w-full bg-input px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="font-serif text-xl font-bold text-primary md:text-2xl">Yardi accounting workflows by property type</h2>
+          <p className="mt-3 max-w-3xl leading-relaxed text-muted">Yardi accounting tasks differ between community associations and rental-property portfolios. Choose the workflow that matches the records and reporting you maintain.</p>
+          <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
+            <Link href="/industries/hoa-accounting/yardi-accounting-support" className="rounded-xl border border-border bg-white p-5 font-semibold text-primary transition-colors hover:border-primary/50">
+              Yardi accounting support for HOAs <span aria-hidden="true">→</span>
+              <p className="mt-2 text-sm font-normal leading-relaxed text-muted">Assessment ledgers, operating and reserve reconciliations, payable tracking and board-reporting handoffs.</p>
+            </Link>
+            <Link href="/industries/property-management/yardi-accounting-support" className="rounded-xl border border-border bg-white p-5 font-semibold text-primary transition-colors hover:border-primary/50">
+              Yardi accounting support for property managers <span aria-hidden="true">→</span>
+              <p className="mt-2 text-sm font-normal leading-relaxed text-muted">Property-level reconciliations, tenant and owner ledger checks, payable and receivable schedules and month-end reporting.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">

@@ -78,6 +78,9 @@ export default function TaxPrepOutsourcingBlog() {
       <p>
         <strong>Not included:</strong> Tax planning, tax strategy, advisory services, IRS representation, or signing and filing returns. Every return goes through licensed review before it leaves the firm. The preparation team handles data; the licensed professional handles judgment.
       </p>
+      <p>
+        For partnership returns specifically, see our <Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium hover:underline">Form 1065 and Schedule K-1 preparation support</Link> page for the trial-balance, capital-account and reviewer handoff workflow.
+      </p>
 
       <h2>The IRS Representation Line</h2>
       <p>
