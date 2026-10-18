@@ -25,8 +25,8 @@ const faqs = [
     answer: 'Offshore accounting support involves delegating accounting tasks to qualified professionals in other countries. We handle bookkeeping, accounting, payroll, AP/AR, and other financial operations while maintaining strict data security and quality standards.',
   },
   {
-    question: 'How is data security maintained with offshore teams?',
-    answer: 'Every engagement is NDA-backed, with system access limited to the team members actually working on your account. We are actively working toward formal certification (SOC 2) and will share our exact current status if you ask.',
+    question: 'How are access and responsibilities agreed for offshore work?',
+    answer: 'System access, permitted users and handling requirements should be agreed during onboarding. Confirm any contractual or regulatory requirements before work begins.',
   },
   {
     question: 'How are communication and response expectations set?',
