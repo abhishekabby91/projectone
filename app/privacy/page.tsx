@@ -66,7 +66,7 @@ export default function PrivacyPage() {
         <div className="bg-input p-6 rounded-lg border border-border">
           <h2 className="text-2xl font-bold text-primary mb-4">5. Data Security</h2>
           <p className="text-muted">
-            We handle client data under NDA-backed engagements with security-conscious practices. We are actively working toward formal certifications such as SOC 2, and we will clearly communicate our current certification status to any client who asks rather than overstating it.
+            Client data handling, system access and any retention or transfer arrangements should be confirmed against the agreed engagement scope and applicable contractual requirements. Accounstone does not currently hold SOC 2 certification; confirm any specific documentation requirements before an evaluation proceeds.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
           and the full band would be a large share of their text, which is how
           near-duplicate scores climb. Each one passes its own title and lead
           for the same reason. */}
-      <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="The consultation and the call are always free. If something about how we would handle your data or your clients’ data is not covered above, ask and we will answer it plainly." compact />
+      <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="If something about how client data is handled is not covered above, ask us to clarify the relevant workflow, access and retention arrangements." compact />
 
       {/* Closes on the same sequence as the rest of the site: the enquiry
           band, then the CTA banner. 87 of 95 pages already ended this way;
