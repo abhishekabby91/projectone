@@ -23,6 +23,8 @@ with its own regional children for the same commercial intent.
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
 | `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
 | `/services/tax-preparation/united-states/1065-partnership` | B | Form 1065 / K-1 | Published 2026-09-16 |
+| `/services/tax-preparation/united-states/1120-corporation` | B | Form 1120 / C corporation | Added 2026-10-18 — corporate return preparation and book-to-tax workpaper intent |
+| `/services/tax-preparation/united-states/1120-s-corporation` | B | Form 1120-S / S corporation | Added 2026-10-18 — S corporation return and shareholder schedule workflow intent |
 
 21 commercial pages = 7 services x 3 regions. The matrix lives in `lib/data.ts`
 (`regions`, `serviceRegions`, `serviceRegionPaths`) and drives the navbar, the footer,
