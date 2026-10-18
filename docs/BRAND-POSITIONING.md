@@ -6,13 +6,11 @@ Last reviewed: 2026-10-18
 
 **Accounstone is an accounting outsourcing partner.** Outsourcing is the primary service model and the consistent commercial positioning across the website. Remote delivery is a way the work is performed, not the main product being sold.
 
-## Priority B2B audiences
+## B2B audiences
 
-1. **Property management companies and HOA/community association management firms** — recurring property-level accounting, bookkeeping, reconciliations, AP/AR, owner/association ledgers and monthly financial reporting.
-2. **CPA and accounting firms** — recurring bookkeeping, accounting workflows, agreed tax-preparation workpapers and other defined preparation tasks.
-3. **Other businesses with recurring accounting needs** — relevant core accounting and tax services, supported by the existing service and industry structure.
+Accounstone serves businesses and professional firms through one consistent accounting-outsourcing model. This includes CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses with recurring accounting needs. These audiences are all important; the homepage must not rank one industry above another or imply that the company is pivoting away from an existing customer segment.
 
-The website should make the first two audiences easy to identify without implying that Accounstone serves only one industry.
+Use industry-specific pages to explain each audience's workflows and service requirements. Keep the homepage and company-wide descriptions neutral and broad.
 
 ## Message hierarchy
 
@@ -30,7 +28,7 @@ The website should make the first two audiences easy to identify without implyin
 - Prefer clear CTAs such as “Discuss Your Accounting Needs” and audience-specific variants.
 - Do not lead with discounts, guaranteed savings, “free” offers, vague advisory claims or generic marketing language.
 - Do not imply Accounstone replaces a property manager, takes over an HOA board's decisions, approves client payments, provides software-vendor services, or assumes tax/legal duties outside the agreed scope.
-- Keep CPA firms and other business audiences visible; do not pivot the whole brand to HOA alone.
+- Keep all B2B customer segments represented fairly. Do not make any one industry the default or top-priority audience in company-wide messaging.
 
 ## Website change control
 
