@@ -1,4 +1,4 @@
-# Accounstone SEO Agent Report — 2026-10-17
+# Accounstone SEO Agent Report — 2026-10-18
 
 ## Summary
 
@@ -80,7 +80,7 @@
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 999 | 1 | 8 | 0 | 0 |
 | app/blog/page.tsx | 90/100 | 2415 | 1 | 68 | 0 | 0 |
 | app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
-| app/blog/property-management-accounting/page.tsx | 90/100 | 4284 | 1 | 33 | 0 | 0 |
+| app/blog/property-management-accounting/page.tsx | 90/100 | 4497 | 1 | 33 | 0 | 0 |
 | app/blog/property-management-accounting-for-small-companies/page.tsx | 90/100 | 956 | 1 | 3 | 0 | 0 |
 | app/blog/property-management-accounts-payable/page.tsx | 90/100 | 1458 | 1 | 9 | 0 | 0 |
 | app/blog/property-management-accrued-expenses/page.tsx | 90/100 | 1444 | 1 | 3 | 0 | 0 |
