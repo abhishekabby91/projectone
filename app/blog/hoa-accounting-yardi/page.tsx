@@ -62,7 +62,7 @@ export default function HoaAccountingYardi() {
       <h2>Confirm What the Configuration Actually Produces</h2>
       <p>Reports of the same name can carry different content depending on which product, modules and fields an association or its managing agent has in use. Before a report becomes a monthly control, confirm what it includes, which period it covers and whether it reflects the association alone or a wider portfolio. Note that reviewing an existing configuration is not the same as building one: platform setup and configuration are the association&apos;s or its agent&apos;s, and the work here starts from whatever is already in place.</p>
       <h2>Related HOA Accounting Resources</h2>
-      <p>Continue with <a href="/blog/hoa-accounting-appfolio">HOA accounting with AppFolio</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a> and <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a>.</p>
+      <p>For recurring accounting preparation inside an existing Yardi environment, see <a href="/industries/hoa-accounting/yardi-accounting-support">Yardi accounting support for HOAs and community associations</a>. Continue with <a href="/blog/hoa-accounting-appfolio">HOA accounting with AppFolio</a>, <a href="/blog/hoa-reserve-accounting">HOA reserve accounting</a> and the <a href="/industries/hoa-accounting">HOA accounting and bookkeeping</a> service hub.</p>
     </ArticleLayout>
   );
 }
