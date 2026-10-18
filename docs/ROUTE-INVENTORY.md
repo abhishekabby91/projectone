@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-212 indexable routes. Excludes the 4 permanent
+214 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -212,6 +212,8 @@ candidate for overlap.
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
 | `/services/tax-preparation/united-states/1040-individual` | Form 1040 Tax Preparation Outsourcing |
 | `/services/tax-preparation/united-states/1065-partnership` | Form 1065 and K-1 Preparation Outsourcing |
+| `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
+| `/services/tax-preparation/united-states/1120s-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
