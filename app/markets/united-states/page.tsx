@@ -388,6 +388,24 @@ export default function USMarketPage() {
         </div>
       </section>
 
+      <section className="w-full bg-input px-6 py-10 md:px-8 md:py-12">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-3 font-serif text-2xl font-bold text-primary md:text-3xl">Accounting outsourcing for CPA firms</h2>
+          <p className="mb-5 max-w-4xl leading-relaxed text-muted">CPA and accounting practices looking for an outsourcing partner have a different workflow from businesses seeking direct accounting support. Explore the state-qualified CPA-firm pages for examples of preparation scope, workpaper handoff and review responsibilities.</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              ['California CPA firms', '/industries/cpa-firms/california'],
+              ['Texas CPA firms', '/industries/cpa-firms/texas'],
+              ['Florida CPA firms', '/industries/cpa-firms/florida'],
+              ['New York CPA firms', '/industries/cpa-firms/new-york'],
+              ['Illinois CPA firms', '/industries/cpa-firms/illinois'],
+            ].map(([label, href]) => (
+              <Link key={href} href={href} className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">{label}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="United States" items={faqs} columns={2} />
 
       <InquirySection region="united-states" source="/markets/united-states" />
