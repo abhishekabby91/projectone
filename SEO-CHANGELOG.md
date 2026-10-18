@@ -5007,3 +5007,12 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 **Purpose:** Test a more query-aligned snippet for an existing page that already appears near the top for relevant terms. This is a CTR hypothesis, not a guarantee.
 
 **Guardrails:** No URLs changed and no new public pages were created. Query counts are modest, average position varies by query/device/location, and success must be measured against post-change GSC data rather than inferred from these edits.
+
+
+## 2026-10-18 — GSC indexing cluster refinement
+
+Search Console URL inspection was run against sitemap and related cluster URLs. The sitemap is processed with 205 URLs and no reported sitemap errors, while per-URL inspections showed most checked HOA and property-management spokes as indexed. Exceptions included two Yardi workflow pages and the Form 1065 spoke in “Discovered — currently not indexed” with no crawl, plus `/services/hoa-accounting` as “Crawled — currently not indexed.” The old `/technology/yardi` URL is a redirect, and `/blog/hoa-vendor-invoice-processing` is a legacy duplicate/redirect case; neither should be indexed independently.
+
+**Changes:** Consolidated the overlapping HOA service URL into `/industries/hoa-accounting`; replaced the internal link to the retired service URL with the existing HOA chart-of-accounts guide; added links from the technology hub to the two distinct Yardi workflow pages; and added a contextual Form 1065 link from the tax-preparation outsourcing guide. No new public URLs were created.
+
+**Measurement note:** “Discovered — currently not indexed” means Google had not crawled the URL at inspection time, so this does not prove a content or rendering failure. After deployment, validate redirects and internal links, then recheck URL inspection after recrawl. No indexing or ranking outcome is guaranteed.
