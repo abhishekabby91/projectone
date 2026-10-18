@@ -57,7 +57,7 @@ export default function CpaFirmStatePage({ state }: { state: CpaFirmStateKey }) 
             <p className="text-base leading-relaxed text-muted md:text-lg">{data.opening}</p>
           </div>
           <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
-            <ServiceIllustration service="accounting" className="mx-auto w-full max-w-[260px]" />
+            <ServiceIllustration service={data.illustrationService} className="mx-auto w-full max-w-[260px]" />
             <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">Preparation → review</p>
             <p className="mt-2 text-base font-semibold text-primary">Keep the work traceable</p>
             <p className="mt-2 text-sm leading-relaxed text-muted">The handoff should show what reconciles, what evidence supports it and which decisions still need the firm’s reviewer.</p>
