@@ -10,7 +10,7 @@ import { solutions } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting Outsourcing Models',
   description:
-    'Compare accounting outsourcing models, from defined back-office workflows to staff augmentation and dedicated teams, and choose a structure that fits your workload.',
+    'Compare accounting outsourcing models, from defined back-office workflows to staff augmentation and dedicated teams, based on your workload.',
   path: '/solutions',
 });
 
