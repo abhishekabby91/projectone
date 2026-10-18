@@ -248,7 +248,7 @@ export default function DedicatedTeamsPage() {
 
       />
 
-      <InquirySection source="/solutions/dedicated-accounting-teams" title="Talk to Us About a Team of Your Own" lead="Tell us about the work you need support with. Tell us what your portfolio looks like and we will scope a named team around it." />
+      <InquirySection source="/solutions/dedicated-accounting-teams" title="Talk to Us About a Team of Your Own" lead="Tell us what your portfolio looks like and we can discuss the staffing model, responsibilities and review process." />
 
       <CTABanner
         title="Start With One Block of Work"
