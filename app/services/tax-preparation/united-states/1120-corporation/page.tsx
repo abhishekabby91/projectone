@@ -101,7 +101,7 @@ export default function Form1120Page() {
                 For a different business-return workflow, compare{' '}
                 <Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1065 and partnership K-1 preparation</Link>
                 {' '}and{' '}
-                <Link href="/services/tax-preparation/united-states/1120s-s-corporation" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1120-S preparation</Link>.
+                <Link href="/services/tax-preparation/united-states/1120-s-corporation" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1120-S preparation</Link>.
               </p>
             </>
           </Reveal>
