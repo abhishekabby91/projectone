@@ -72,8 +72,8 @@ export default function PropertyManagementPage() {
       <PremiumHero
         subtitle="Property management companies"
         title="Property Management Accounting & Bookkeeping Outsourcing"
-        description="Accounting support for property managers: property-level books, tenant and deposit ledgers, owner statements, accounts payable and receivable, CAM recovery schedules, reconciliations and month-end reporting."
-        cta={{ text: 'Discuss Property Management Accounting', href: '/contact' }}
+        description="An accounting outsourcing partner for property management companies. We handle agreed property-level bookkeeping, tenant and deposit ledgers, owner statements, AP/AR, CAM schedules, reconciliations and month-end reporting within your existing systems and review process."
+        cta={{ text: 'Discuss Property Management Outsourcing', href: '/contact' }}
         ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
       />
@@ -91,7 +91,7 @@ export default function PropertyManagementPage() {
       <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-5xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Property management accounting, explained</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Accounting Work Can a Property Manager Outsource?</h2>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Can a Property Management Company Outsource?</h2>
           <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Property management accounting outsourcing covers recurring bookkeeping and reporting across rental properties, tenant accounts and owner records. It can include transaction coding, property-level bank and balance-sheet reconciliations, rent-roll and tenant-ledger updates, accounts payable and receivable support, security-deposit liability tracking, common-area maintenance (CAM) or recoverable-expense schedules, and owner-statement preparation. Work follows the portfolio’s existing accounting policies, software and reporting requirements, with unresolved items documented for review. The property manager or authorized owner retains payment, transfer and final reporting approval under agreed approval controls.</p>
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Property-level books</h3><p className="mt-2 text-sm leading-relaxed text-muted">Keep income and expenses organized by property and entity using the agreed chart of accounts.</p></div>
