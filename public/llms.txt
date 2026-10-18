@@ -46,6 +46,8 @@ https://www.accounstone.com/services/tax-preparation/united-kingdom
 https://www.accounstone.com/services/tax-preparation/australia
 https://www.accounstone.com/services/tax-preparation/united-states/1040-individual
 https://www.accounstone.com/services/tax-preparation/united-states/1065-partnership
+https://www.accounstone.com/services/tax-preparation/united-states/1120-corporation
+https://www.accounstone.com/services/tax-preparation/united-states/1120-s-corporation
 
 ### Other accounting operations
 https://www.accounstone.com/services/payroll/united-states
