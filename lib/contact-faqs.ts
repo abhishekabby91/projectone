@@ -40,7 +40,7 @@ export const CONTACT_FAQS = [
   {
     question: 'How is our client data handled?',
     answer:
-      'Engagements are NDA-backed, and system access is limited to the people working on the relevant account, through the access your firm grants rather than credentials of our own. On certification: we are working toward SOC 2 and do not hold it yet. Anyone telling you otherwise about their own status is worth verifying directly rather than taking on trust.',
+      'Before work starts, agree confidentiality terms, the people and systems that may be accessed, and how permissions will be reviewed or removed. Accounstone does not currently hold SOC 2 certification; if your procurement process requires it, confirm this before evaluation.',
   },
   {
     question: 'Can you work inside the systems we already use?',
