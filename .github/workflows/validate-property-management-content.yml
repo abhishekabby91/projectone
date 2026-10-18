@@ -8,6 +8,7 @@ on:
       - 'app/page.tsx'
       - 'app/industries/property-management/page.tsx'
       - 'app/industries/cpa-firms/**'
+      - 'app/markets/**'
       - 'components/cpa-firm-state-page.tsx'
       - 'lib/cpa-firm-state-content.ts'
       - 'app/industries/hoa-accounting/**'
