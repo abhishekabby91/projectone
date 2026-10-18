@@ -210,7 +210,7 @@ export const routeLastModified: Record<string, string> = {
   '/services/tax-preparation/united-states/1040-individual': '2026-10-18',
   '/services/tax-preparation/united-states/1065-partnership': '2026-10-18',
   '/services/tax-preparation/united-states/1120-corporation': '2026-10-18',
-  '/services/tax-preparation/united-states/1120s-s-corporation': '2026-10-18',
+  '/services/tax-preparation/united-states/1120-s-corporation': '2026-10-18',
   '/solutions': '2026-10-18',
   '/solutions/back-office-support': '2026-10-18',
   '/solutions/dedicated-accounting-teams': '2026-10-18',
