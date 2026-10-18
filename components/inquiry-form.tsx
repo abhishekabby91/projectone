@@ -359,8 +359,8 @@ export default function InquiryForm({
 
         <p className={`${sz.note} text-muted text-center`}>
           {size === 'compact'
-            ? 'Free consultation. No obligation.'
-            : <>The consultation and the call are always free. {r?.note ?? 'We will agree the workflow, handoffs and deadlines during onboarding.'}</>}
+            ? 'Discuss your workflow.'
+            : <>Tell us about your workflow. {r?.note ?? 'We will agree the workflow, handoffs and deadlines during onboarding.'}</>}
         </p>
       </form>
     </div>
