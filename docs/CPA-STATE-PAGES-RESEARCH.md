@@ -1,4 +1,4 @@
-# CPA-firm state-page research — 2026-10-18
+# CPA-firm SEO cluster and state-page research — 2026-10-18
 
 ## Decision and scope
 
@@ -11,6 +11,55 @@ Create five separate, indexable state-qualified commercial pages for US CPA and 
 - `/industries/cpa-firms/illinois`
 
 These are **market-test pages, not a claim that these are the five highest-search-intent states**. No comparable state-level Google Keyword Planner export was available during this pass. The state selection is based on a combination of broad prospect-pool rationale, public competitor precedent and a manageable initial cohort.
+
+## The cluster is not just state-name variants
+
+The state pages are only the location layer. The CPA-firm cluster needs to cover several distinct buyer questions and link them into one navigable hierarchy.
+
+### Primary commercial cluster
+
+| URL | Intent / job to be done | Relationship |
+|---|---|---|
+| `/industries/cpa-firms` | Broad CPA-firm outsourcing and capacity support | Main pillar; links to the state pages, delivery models, services and guides |
+| `/industries/cpa-firms/white-label-accounting` | White-label delivery: brand use, client-contact boundaries, system access and workpaper handoff | Commercial delivery-model spoke; distinct from broad provider selection and the bookkeeping service detail |
+| `/industries/cpa-firms/cas-production-support` | Recurring CAS production: reconciliations, month-end schedules and reporting-package preparation | Commercial workflow spoke; distinct from the informational CAS guide |
+| `/industries/cpa-firms/{california,texas,florida,new-york,illinois}` | State-qualified CPA-firm outsourcing | Location layer; must link to relevant workflows and not merely replace the state name |
+| `/services/bookkeeping/united-states` | Core client-bookkeeping production | Existing service owner |
+| `/services/accounting/united-states` | Broader accounting and month-end support | Existing service owner |
+| `/services/tax-preparation/united-states` | Tax return and workpaper preparation support | Existing service owner; includes form-specific spokes for 1040 and 1065 |
+| `/services/payroll/united-states` | Payroll processing support for CPA firms | Existing service owner |
+| `/services/audit-support/united-states` | Defined audit-support tasks | Existing service owner; avoid claiming audit opinions or independent audit judgment |
+
+### Supporting educational and evaluation cluster (existing URLs)
+
+- `/resources/guides/client-accounting-services-cas-guide` — explains the CAS service-line model; links to the commercial CAS production page.
+- `/resources/guides/how-to-choose-accounting-outsourcing-partner` — supplier evaluation and decision criteria; links to white-label and CAS production pages.
+- `/blog/us-cpa-firm-outsourcing-readiness-checklist` — scope, access, taxpayer-data safeguards and pilot checks; links to the relevant commercial pages.
+- `/resources/guides/staff-augmentation-tax-season-guide` — seasonal capacity intent; keep it informational, linking to the national tax-preparation service page.
+- `/resources/guides/choosing-an-engagement-model` — comparison of engagement structures; should route visitors to the relevant commercial model, not create another generic outsourcing page.
+- `/resources/guides/how-to-outsource-accounting` — general outsourcing process; links to CPA-specific pages when the reader is a firm.
+- `/technology/quickbooks`, `/technology/cch`, `/technology/drake-tax`, `/technology/xero` — existing software pages. Do not create near-identical software variants unless evidence demonstrates a distinct CPA-firm workflow and unique SERP intent.
+
+### Competitor research that supports these intent groups
+
+The following public pages explicitly target white-label delivery or CAS production for CPA/accounting firms. They establish that competitors distinguish these service models and workflow audiences; they do **not** prove monthly search volume, ranking potential or that Accounstone should copy competitors' claims.
+
+- Athix Global — accounting and bookkeeping for US CPA firms under the firm's brand: https://athixglobal.com/accounting/
+- Finsmart — white-label accounting services for CPA firms: https://finsmartaccounting.com/services/white-label-accounting-services
+- Accountrise — CPA outsourcing and white-label bookkeeping: https://www.accountrise.com/services/cpa-outsourcing/
+- Offshore Accounting — offshore CAS delivery for CPA firms: https://offshoreaccounting.com/services/offshore-cas/
+- Advisory Monks — white-label CAS production for US CPA firms: https://www.advisorymonks.io/
+- TCB Accounting — CAS support for CPA firms: https://www.tcbacs.com/accounting/
+- Google Search Central — doorway abuse guidance warns against substantially similar pages made for similar queries or regional variants that funnel users to one destination: https://developers.google.com/search/docs/essentials/spam-policies
+
+### Cluster linking rules
+
+1. The CPA-firm pillar links to both commercial spokes (white-label and CAS production), the five state pages, and the existing core service pages.
+2. Each state page links back to the pillar, both commercial spokes, and the core service pages only where relevant to that page's examples.
+3. The CAS guide, provider-selection guide and readiness checklist link to the commercial page that answers the next buyer question.
+4. Bookkeeping, accounting and tax-preparation service pages link back to the CPA-firm pillar and to the CAS/white-label model only where those models help explain the workflow.
+5. Software pages are support pages, not a reason to create a new URL for every software + state combination.
+6. Each page keeps one primary intent. Use supporting pages for related questions, not duplicate pages targeting the same query in slightly different wording.
 
 ## Closest existing routes and cannibalisation check
 
