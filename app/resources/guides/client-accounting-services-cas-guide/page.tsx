@@ -106,6 +106,12 @@ export default function CASGuide() {
         </Link>{' '}
         page cover how the handoff and review process works in practice.
       </p>
+      <h2>White-Label Production Support for a CAS Practice</h2>
+      <p>
+        When a firm wants to keep its client relationship and engagement model while delegating defined preparation work, review the
+        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting support page for CPA firms</Link>.
+        It covers how to agree branding, client-contact boundaries, systems access and reviewer-ready outputs without confusing preparation work with client advisory responsibilities.
+      </p>
     </ArticleLayout>
   );
 }
