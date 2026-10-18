@@ -27,6 +27,8 @@ These are commercial service pages, recorded here because the site page contract
 | Accounting Outsourcing for Florida CPA Firms | `/industries/cpa-firms/florida` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; client-portfolio and seasonal workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
 | Accounting Outsourcing for New York CPA Firms | `/industries/cpa-firms/new-york` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined preparation and multi-entity workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
 | Accounting Outsourcing for Illinois CPA Firms | `/industries/cpa-firms/illinois` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; recurring preparation workflows across varied portfolios | Draft page added; search volume not verified | 2026-10-18 |
+| White-Label Accounting Support for CPA Firms | `/industries/cpa-firms/white-label-accounting` | CPA Firms / Delivery Model | Commercial white-label workflow intent: brand use, client-contact boundaries, software access and reviewer handoff | Draft page added; competitor precedent reviewed; demand volume not verified | 2026-10-18 |
+| CAS Production Support for CPA Firms | `/industries/cpa-firms/cas-production-support` | CPA Firms / CAS Production | Commercial CAS production intent: monthly bookkeeping, reconciliations, close schedules and reporting-package preparation | Draft page added; competitor precedent reviewed; demand volume not verified | 2026-10-18 |
 
 ## 2026-10-18 — CPA-firm white-label service page
 
