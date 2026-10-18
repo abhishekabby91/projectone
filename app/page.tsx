@@ -16,12 +16,12 @@ import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials, markets } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting, Bookkeeping & Tax | Accounstone',
+  title: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   description:
-    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered within existing workflows.',
+    'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
   path: '/',
   absoluteTitle: true,
-  ogTitle: 'Accounting, Bookkeeping & Tax Outsourcing | Accounstone',
+  ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   ogDescription:
     'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
@@ -36,7 +36,7 @@ const homePageFAQs = [
   {
     question: 'Who does Accounstone work with?',
     answer:
-      'Recurring accounting, bookkeeping and tax support can be structured for accounting firms, CPA firms, professional practices and businesses around a specific function, workload or ongoing process.',
+      'Accounstone primarily supports property management companies, HOA and community association management firms, CPA firms and accounting practices. Businesses with recurring accounting work can also outsource defined processes around their existing software, reporting requirements and review workflow.',
   },
   {
     question: 'Can you work with our existing software?',
@@ -75,9 +75,9 @@ export default function HomePage() {
           image="/hero-accounting-support.jpg"
           alt="Accounting reports, charts and calculator on a desk"
           pageHeading="Accounting, Bookkeeping & Tax Outsourcing"
-          title="Accounting Support That Fits Your Workflow"
-          subtitle="Experienced professionals working within your existing processes and systems"
-          cta={{ text: 'Get a Free Consultation', href: '/contact' }}
+          title="Your Accounting Outsourcing Partner"
+          subtitle="For property management companies, HOA managers, CPA firms and businesses"
+          cta={{ text: 'Discuss Your Accounting Needs', href: '/contact' }}
           ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         />
       </section>
@@ -94,7 +94,7 @@ export default function HomePage() {
                 What Accounting Support Can You Outsource?
               </h2>
               <p className="text-muted leading-relaxed">
-                Accounstone provides outsourced accounting, bookkeeping and tax-preparation support for accounting firms, CPA practices and businesses that need help with recurring accounting work. Services can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close support, payroll processing and preparation of tax workpapers. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
+                Accounstone is an accounting outsourcing partner for property management companies, HOA and community association management firms, CPA firms and other businesses with recurring accounting work. Support can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close, payroll processing and tax workpapers. Work fits the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
               </p>
             </>
           </Reveal>
@@ -106,14 +106,14 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-3 sm:gap-5">
           {[
             {
-              title: 'For Accounting Firms',
-              body: 'Extend your team with preparation and recurring accounting support while keeping client relationships, decisions and final review in-house.',
-              href: '/solutions',
+              title: 'For CPA & Accounting Firms',
+              body: 'Outsource recurring bookkeeping, accounting and agreed tax-preparation work while keeping client relationships, decisions and final review in-house.',
+              href: '/industries/cpa-firms',
             },
             {
-              title: 'For Businesses',
-              body: 'Move recurring accounting work to a structured delivery team while keeping visibility, approvals and control within your organization.',
-              href: '/solutions',
+              title: 'For Property Management & HOA Companies',
+              body: 'Outsource reconciliations, AP/AR and recurring financial reporting while keeping portfolio oversight, client relationships and approvals in-house.',
+              href: '/industries/property-management',
             },
           ].map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
