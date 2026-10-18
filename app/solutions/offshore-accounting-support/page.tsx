@@ -22,7 +22,7 @@ export const metadata: Metadata = generateMetadata({
 const faqs = [
   {
     question: 'What is offshore accounting support?',
-    answer: 'Offshore accounting support involves delegating accounting tasks to qualified professionals in other countries. We handle bookkeeping, accounting, payroll, AP/AR, and other financial operations while maintaining strict data security and quality standards.',
+    answer: 'Offshore accounting support involves delegating accounting tasks to qualified professionals in other countries. We handle bookkeeping, accounting, payroll, AP/AR, and other financial operations with agreed preparation steps, access arrangements and review points.',
   },
   {
     question: 'How are access and responsibilities agreed for offshore work?',
@@ -59,9 +59,9 @@ export default function OffshoreSolutionPage() {
       <PremiumHero
         subtitle="Offshore Accounting"
         title="Offshore Accounting Services, Inside Your Existing Systems"
-        description="Experienced accounting professionals handling the recurring preparation work, under access you grant and can revoke. NDA-backed engagements, and honest communication about our security certification timeline."
+        description="Accounting professionals handling agreed preparation work within the scope, systems and review process established with your firm."
         cta={{
-          text: 'Schedule Consultation',
+          text: 'Discuss Your Accounting Needs',
           href: '/contact',
         }}
         ctaSecondary={{
@@ -98,7 +98,7 @@ export default function OffshoreSolutionPage() {
               <div className="space-y-4 pt-4">
                 {[
                   'Experienced accounting professionals',
-                  'NDA-backed engagements on every project',
+                  'Agreed scope and access responsibilities',
                   'Response and escalation expectations agreed in writing at onboarding',
                   'Works inside your existing accounting system and chart of accounts',
                   'A named point of contact who knows the engagement',
@@ -121,7 +121,7 @@ export default function OffshoreSolutionPage() {
                 </div>
                 <div>
                   <div className="text-4xl font-bold mb-2">100%</div>
-                  <p className="text-white/80">NDA-Backed Engagements</p>
+                  <p className="text-white/80">Agreed Work Scope</p>
                 </div>
                 <div>
                   <div className="text-4xl font-bold mb-2">Flexible</div>
@@ -139,7 +139,7 @@ export default function OffshoreSolutionPage() {
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
             {[
               { step: '1', title: 'Consultation', desc: 'Understand your needs and requirements' },
-              { step: '2', title: 'Team Assembly', desc: 'Build a dedicated offshore team for you' },
+              { step: '2', title: 'Team Assembly', desc: 'Agree the people and responsibilities for the scoped work' },
               { step: '3', title: 'Onboarding', desc: 'Complete training and integration setup' },
               { step: '4', title: 'Operations', desc: 'Begin daily accounting operations' },
             ].map((item, i) => (
@@ -170,7 +170,7 @@ export default function OffshoreSolutionPage() {
           <Reveal className="space-y-4"><>
             <h3 className="font-bold text-primary text-lg">1. Where does the data actually go, and who can see it?</h3>
             <p className="text-base md:text-lg text-muted leading-relaxed">Ask any offshore provider for four specifics rather than a security page. Which named individuals hold access, and how you revoke it on a day&rsquo;s notice. Whether client data is worked on inside your systems or copied into theirs. What the sub-processor list looks like &mdash; who else touches it. And what happens to files when the engagement ends.</p>
-            <p className="text-base md:text-lg text-muted leading-relaxed">Our answers: access is per-person and granted inside your platforms, so you can see and remove it yourself; engagements are NDA-backed; and the work is handled by Accounstone staff using documented access controls rather than passed through a chain of subcontractors. On certification, the honest position is that we are <strong>working toward SOC 2 and do not yet hold it</strong>. If a provider tells you they are certified, ask for the report and the scope &mdash; a Type I on a narrow scope is not what most firms assume they are being told.</p>
+            <p className="text-base md:text-lg text-muted leading-relaxed">For any provider, clarify which people will access your systems, how permissions are granted and revoked, whether work stays within your platforms, and how files are handled when an engagement ends. Agree these details before sharing access or starting recurring work.</p>
             <p className="text-base md:text-lg text-muted leading-relaxed">For UK practices specifically: sending client personal data outside the UK is a transfer under UK GDPR, and it is your practice that remains the controller. Your data-processing agreement should name the transfer mechanism. That is a real question to put to us in writing, not a formality.</p>
 
             <h3 className="font-bold text-primary text-lg pt-4">2. What holds the quality up when nobody is in the room?</h3>
@@ -242,7 +242,7 @@ export default function OffshoreSolutionPage() {
 
       />
 
-      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="A free consultation, and a call that costs nothing. Tell us what the recurring work looks like and which systems it lives in." />
+      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="Tell us what the recurring work looks like and which systems it lives in. We can discuss the scope, handoffs and review responsibilities before agreeing next steps." />
 
       <CTABanner
         title="Ready to Scale Your Accounting Operations?"
