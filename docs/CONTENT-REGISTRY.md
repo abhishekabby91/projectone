@@ -133,3 +133,10 @@ Refined `/industries/hoa-accounting/los-angeles-county` to remove low-value gene
 - Added a two-way discovery path from the technology hub to the existing HOA-specific and property-management-specific Yardi accounting support pages. Their workflow scopes remain distinct; no new URLs were created.
 - Added a contextual link from the tax-preparation outsourcing guide to the existing Form 1065 and Schedule K-1 preparation page. The US tax preparation hub already links to that page.
 - GSC inspection on 2026-10-18 showed the two Yardi support pages and Form 1065 page as “Discovered — currently not indexed” with no recorded crawl. These are crawl/discovery states, not confirmed rendering errors; recheck after recrawl. The legacy `/technology/yardi` redirect and HOA vendor-invoice canonical/redirect case should not be counted as independent indexable pages.
+
+
+## 2026-10-18 — Upwork job-brief pathways and index-cluster links
+
+Refined the existing /blog/upwork-vs-accounstone comparison page with a practical section that helps buyers translate a freelancer/job brief into a defined accounting scope. It routes readers to existing property-management cleanup, platform-to-ledger reconciliation, owner statement, lender reporting, HOA accounts payable and Form 1065 preparation pages. No new URL was created; GSC had no query rows containing “upwork” in the checked period, so public job posts are being used as qualitative task research rather than assumed keyword-volume evidence.
+
+Added contextual links from the indexed /blog/yardi-accounting-workflow and /blog/hoa-accounting-yardi articles to their respective commercial Yardi support pages. Added related-workflow links on the Form 1065 page to the tax preparation guide, U.S. tax hub and CPA-firm hub. URL Inspection still reports the two Yardi support pages and Form 1065 page as not yet crawled; monitor after recrawl rather than claiming they are indexed.

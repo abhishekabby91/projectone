@@ -134,6 +134,13 @@ export default function Form1065Page() {
         </div>
       </section>
 
+      <section className="w-full px-6 py-8 md:px-8 md:py-12 bg-white">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="font-serif text-xl md:text-2xl font-bold text-primary mb-3">Related tax preparation workflows</h2>
+          <p className="text-muted leading-7">Form 1065 preparation depends on a stable trial balance, supporting schedules and clear reviewer handoffs. For the wider scope and boundaries of outsourced return preparation, read the <Link href="/blog/tax-preparation-outsourcing" className="font-medium text-primary underline underline-offset-4 hover:text-accent">tax preparation outsourcing guide</Link>. For the broader service, see <Link href="/services/tax-preparation/united-states" className="font-medium text-primary underline underline-offset-4 hover:text-accent">U.S. tax preparation support</Link> and <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent">accounting support for CPA firms</Link>.</p>
+        </div>
+      </section>
+
       <FAQSection subtitle="1065 Questions" items={faqs} columns={2} />
 
       <InquirySection region="united-states" source={PATH} title="Start With One Partnership" lead="A free consultation, and a call that costs nothing. Ideally the one that ran late or reconstructed badly last year — that is where the difference shows." />
