@@ -112,6 +112,8 @@ this specific work for me there". Measured overlap between the two is 0.0%.
 | BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
 | Outsourcing Form 1040 / individual return preparation | `/services/tax-preparation/united-states/1040-individual` | Commercial — return-type detail |
 | Outsourcing Form 1065 / partnership and K-1 preparation | `/services/tax-preparation/united-states/1065-partnership` | Commercial — return-type detail |
+| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail; corporate book-to-tax schedules and fixed-asset workpapers, not general tax outsourcing overview |
+| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail; shareholder schedules and corporate-book support, distinct from Form 1120 C corporation return |
 | All services, choose by region | `/services` | Commercial — navigational |
 
 **Do not** write service scope onto a Market page, and do not write country-environment
@@ -163,6 +165,8 @@ wrong in both.
 | Yardi accounting workflows for HOAs | `/industries/hoa-accounting/yardi-accounting-support` | HOA-specific Yardi workflows; linked from the HOA hub and technology hub. |
 | Yardi accounting workflows for property managers | `/industries/property-management/yardi-accounting-support` | Rental/property-management Yardi workflows; linked from the property-management hub and technology hub. Do not merge with the HOA-specific Yardi page. |
 | Form 1065 and Schedule K-1 preparation support | `/services/tax-preparation/united-states/1065-partnership` | Commercial tax-preparation spoke linked from the US tax preparation service hub and the tax-preparation outsourcing guide. |
+| Form 1120 corporate return preparation support | `/services/tax-preparation/united-states/1120-corporation` | Commercial tax-preparation spoke for C corporation workpapers; linked from the U.S. tax hub, CPA-firm hub and related return-type pages. |
+| Form 1120-S and shareholder schedule preparation support | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial tax-preparation spoke for S corporation workpapers and shareholder schedules; professional decisions stay with the CPA/tax reviewer. |
 
 Indexing interpretation: “Discovered — currently not indexed” with no crawl is not evidence of a rendering failure by itself. Maintain sitemap inclusion and contextual internal links, then recheck after Google crawls. Redirected legacy URLs and canonical duplicates are not expected to be indexed as separate pages.
 
@@ -178,7 +182,7 @@ Use public freelance job briefs as **qualitative evidence of buyer tasks**, not 
 | Owner statements, portfolio financials and lender-ready schedules | /blog/property-management-owner-statements; /industries/property-management/lender-reporting-noi-support | Keep owner statements informational and lender reporting support commercial; don't collapse them into the general property-management hub. |
 | HOA invoice coding, duplicate checks, approval evidence and payment reconciliation | /blog/hoa-accounts-payable; /industries/hoa-accounting | The vendor-invoice URL redirects to the indexed AP guide by design; do not try to re-index the retired URL. |
 | CPA firm bookkeeping capacity and clean books before tax prep | /industries/cpa-firms; /services/bookkeeping/united-states; /blog/tax-preparation-outsourcing | Define what records must be ready before tax prep; don't promise a credential or professional sign-off not held by the provider. |
-| Form 1040/1065/1120-S preparation, workpapers, reviewer notes and tax-season capacity | /services/tax-preparation/united-states; /services/tax-preparation/united-states/1040-individual; /services/tax-preparation/united-states/1065-partnership; /blog/tax-preparation-outsourcing | Keep return-type pages linked from the tax hub and guide. Client's licensed professional retains applicable review, signing and filing responsibilities. |
+| Form 1040/1065/1120/1120-S preparation, workpapers, reviewer notes and tax-season capacity | /services/tax-preparation/united-states; /services/tax-preparation/united-states/1040-individual; /services/tax-preparation/united-states/1065-partnership; /services/tax-preparation/united-states/1120-corporation; /services/tax-preparation/united-states/1120-s-corporation; /blog/tax-preparation-outsourcing | Keep return-type pages linked from the tax hub and guide. Client's licensed professional retains applicable review, signing and filing responsibilities. |
 | Trust/escrow balances and three-way reconciliations | /industries/property-management/trust-account-reconciliation; /blog/property-management-trust-accounting-reconciliation | Keep commercial reconciliation support separate from the informational workflow guide; jurisdiction-specific legal interpretation remains outside scope. |
 
 **Indexing triage from Google Search Console URL Inspection (checked 2026-10-18):**
