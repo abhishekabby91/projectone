@@ -158,3 +158,29 @@ wrong in both.
 | Form 1065 and Schedule K-1 preparation support | `/services/tax-preparation/united-states/1065-partnership` | Commercial tax-preparation spoke linked from the US tax preparation service hub and the tax-preparation outsourcing guide. |
 
 Indexing interpretation: “Discovered — currently not indexed” with no crawl is not evidence of a rendering failure by itself. Maintain sitemap inclusion and contextual internal links, then recheck after Google crawls. Redirected legacy URLs and canonical duplicates are not expected to be indexed as separate pages.
+
+
+## Upwork job-posting research and intent mapping — 2026-10-18
+
+Use public freelance job briefs as **qualitative evidence of buyer tasks**, not as search-volume data or permission to create a URL for every listing. The current GSC window (2026-07-20 through 2026-10-15) returned no Search Console rows for queries containing “upwork”; therefore /blog/upwork-vs-accounstone owns the marketplace-versus-provider comparison intent, while job-posting patterns should be mapped to the existing need-specific URLs below.
+
+| Repeated job-brief need | Existing intent owner | Cluster action |
+|---|---|---|
+| Property management bookkeeping using AppFolio/QBO or another PMS; bank feeds, reconciliations and recurring close | /industries/property-management; /industries/property-management/general-ledger-reconciliation | Link the general workflow and system-to-GL support from the property-management hub and Yardi workflow guide. Do not create a new page for every software pairing. |
+| Historical cleanup, unreconciled accounts, uncategorized transactions and catch-up work | /industries/property-management/accounting-cleanup; /blog/property-management-bookkeeping-cleanup | Keep catch-up scope distinct from recurring monthly bookkeeping; link both directions where useful. |
+| Owner statements, portfolio financials and lender-ready schedules | /blog/property-management-owner-statements; /industries/property-management/lender-reporting-noi-support | Keep owner statements informational and lender reporting support commercial; don't collapse them into the general property-management hub. |
+| HOA invoice coding, duplicate checks, approval evidence and payment reconciliation | /blog/hoa-accounts-payable; /industries/hoa-accounting | The vendor-invoice URL redirects to the indexed AP guide by design; do not try to re-index the retired URL. |
+| CPA firm bookkeeping capacity and clean books before tax prep | /industries/cpa-firms; /services/bookkeeping/united-states; /blog/tax-preparation-outsourcing | Define what records must be ready before tax prep; don't promise a credential or professional sign-off not held by the provider. |
+| Form 1040/1065/1120-S preparation, workpapers, reviewer notes and tax-season capacity | /services/tax-preparation/united-states; /services/tax-preparation/united-states/1040-individual; /services/tax-preparation/united-states/1065-partnership; /blog/tax-preparation-outsourcing | Keep return-type pages linked from the tax hub and guide. Client's licensed professional retains applicable review, signing and filing responsibilities. |
+| Trust/escrow balances and three-way reconciliations | /industries/property-management/trust-account-reconciliation; /blog/property-management-trust-accounting-reconciliation | Keep commercial reconciliation support separate from the informational workflow guide; jurisdiction-specific legal interpretation remains outside scope. |
+
+**Indexing triage from Google Search Console URL Inspection (checked 2026-10-18):**
+
+- /industries/property-management/yardi-accounting-support: “URL is unknown to Google”, never crawled. Sitemap and parent-hub link exist; added a contextual link from the indexed Yardi workflow article.
+- /industries/hoa-accounting/yardi-accounting-support: “Discovered — currently not indexed”, never crawled. Parent-hub link exists; added a contextual link from the indexed HOA Yardi workflow article.
+- /services/tax-preparation/united-states/1065-partnership: “Discovered — currently not indexed”, never crawled. The URL is in the sitemap and linked from the tax guide and service hub; added a related-workflow link block back to the guide and CPA-firm hub.
+- /blog/hoa-vendor-invoice-processing: Google-selected canonical is /blog/hoa-accounts-payable; this is expected because the source route is a permanent redirect and is excluded from the sitemap.
+- /technology/yardi: permanent redirect to /technology; the redirect source is not expected to be indexed. The intended current commercial routes are the two separate Yardi support pages above.
+- The GSC sitemap report shows 205 submitted URLs and zero sitemap errors/warnings. Its sitemap-details response reports zero indexed within that endpoint even while URL Inspection returns indexed pages, so do not treat that one field as the site's overall index count.
+
+Recheck the three crawl-pending canonical URLs after Google revisits them. A “discovered” state alone does not prove a technical failure. Do not create duplicate URLs, alter canonical tags, or repeatedly resubmit the same sitemap without new evidence.
