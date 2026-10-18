@@ -112,7 +112,7 @@
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 726 | 1 | 6 | 0 | 0 |
-| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 2239 | 1 | 9 | 0 | 0 |
+| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 2262 | 1 | 10 | 0 | 0 |
 | app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
 | app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1878 | 1 | 7 | 0 | 0 |
 | app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 963 | 1 | 3 | 0 | 0 |
@@ -134,7 +134,7 @@
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 850 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2880 | 1 | 75 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2883 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1116 | 1 | 11 | 0 | 0 |
@@ -216,7 +216,7 @@
 | app/technology/drake-tax/page.tsx | 90/100 | 367 | 1 | 7 | 0 | 0 |
 | app/technology/myob/page.tsx | 90/100 | 908 | 1 | 7 | 0 | 0 |
 | app/technology/netsuite/page.tsx | 90/100 | 431 | 1 | 7 | 0 | 0 |
-| app/technology/page.tsx | 90/100 | 720 | 1 | 3 | 0 | 0 |
+| app/technology/page.tsx | 90/100 | 794 | 1 | 5 | 0 | 0 |
 | app/technology/quickbooks/page.tsx | 90/100 | 540 | 1 | 10 | 0 | 0 |
 | app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
