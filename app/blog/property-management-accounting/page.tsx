@@ -50,7 +50,7 @@ export default function Page() {
       category="Property Management"
       description="A working guide to keeping property, tenant, owner and management-company records connected—from transaction coding through reconciliations and owner reporting."
       publishedDate="2026-10-08"
-      updatedDate="2026-10-15"
+      updatedDate="2026-10-18"
       section="blog"
       slug="property-management-accounting"
       inquiryTitle="Tell Us About Your Property Accounting Workflow"
