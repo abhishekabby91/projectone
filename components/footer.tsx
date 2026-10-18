@@ -209,7 +209,7 @@ export default function Footer() {
               <li><CookieSettingsButton /></li>
             </ul>
           </div>
-          <p className="text-white/40 text-xs mt-3 max-w-3xl leading-5">Security-focused with NDA-backed engagements. Actively pursuing SOC 2 certification.</p>
+          <p className="text-white/40 text-xs mt-3 max-w-3xl leading-5">Work is scoped around agreed responsibilities, client systems and review processes.</p>
         </div>
       </div>
     </footer>
