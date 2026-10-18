@@ -138,6 +138,7 @@ export default function BookkeepingUSPage() {
             <Link href="/industries/property-management" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Property Management Accounting</Link>
             <Link href="/industries/hoa-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">HOA Bookkeeping</Link>
             <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Support</Link>
+            <Link href="/industries/cpa-firms/white-label-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">White-Label Accounting for CPA Firms</Link>
           </div>
         </div>
       </section>
