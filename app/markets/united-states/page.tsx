@@ -174,7 +174,7 @@ const trust = [
   },
   {
     h: 'Data security and confidentiality',
-    p: 'NDA-backed engagements can restrict access to the people assigned to the work and use credentials controlled by the client or firm. Banking control and e-file credentials remain governed by the engagement. SOC 2 is not currently held and is not represented as a certification.',
+    p: 'Access permissions, permitted users, banking authority and e-file responsibilities should be agreed before work begins. Accounstone does not currently hold SOC 2 certification; confirm any certification requirement during procurement.',
   },
   {
     h: 'Turnaround',
