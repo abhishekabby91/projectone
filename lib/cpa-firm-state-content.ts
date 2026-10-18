@@ -3,6 +3,7 @@ export type CpaFirmStateKey = 'california' | 'texas' | 'florida' | 'new-york' | 
 export interface CpaFirmStateContent {
   name: string;
   slug: string;
+  illustrationService: 'accounting' | 'bookkeeping' | 'tax-preparation';
   heroDescription: string;
   opening: string;
   sections: { heading: string; paragraphs: string[]; examples: { title: string; description: string }[] }[];
@@ -16,6 +17,7 @@ export const cpaFirmStateContent: Record<CpaFirmStateKey, CpaFirmStateContent> =
   california: {
     name: 'California',
     slug: 'california',
+    illustrationService: 'accounting',
     heroDescription: 'Preparation support for California CPA practices whose client files span recurring bookkeeping, reconciliations, month-end reporting and agreed tax workpapers. Scope the workflow to your systems and review standards.',
     opening: 'For a California CPA firm, the useful question is not whether to outsource every engagement. It is which repeatable preparation tasks can be separated from the judgment and client advice your licensed professionals must retain. A portfolio may contain software businesses, consultants, property entities, retailers or other clients; each has its own source records and accounting rhythm. Accounstone’s role is to prepare a defined portion of that work inside the process your firm already uses, with the evidence and open questions your reviewer needs to see.',
     sections: [
@@ -77,6 +79,7 @@ export const cpaFirmStateContent: Record<CpaFirmStateKey, CpaFirmStateContent> =
   texas: {
     name: 'Texas',
     slug: 'texas',
+    illustrationService: 'bookkeeping',
     heroDescription: 'Defined accounting production support for Texas CPA practices, from recurring client books to multi-location schedules and agreed tax workpapers, with review and decisions kept with your firm.',
     opening: 'A Texas CPA practice may serve owner-managed businesses, contractors, distributors, service companies or clients operating across several locations. Those client types are not interchangeable, so an outsourcing engagement should begin with the exact records and decisions involved rather than a generic promise to handle everything. Accounstone can prepare agreed recurring work and supporting schedules; your firm defines the accounting method, reviews exceptions and retains client advice and professional sign-off.',
     sections: [
@@ -138,6 +141,7 @@ export const cpaFirmStateContent: Record<CpaFirmStateKey, CpaFirmStateContent> =
   florida: {
     name: 'Florida',
     slug: 'florida',
+    illustrationService: 'accounting',
     heroDescription: 'Accounting outsourcing support for Florida CPA practices with recurring client books, property-related entities, seasonal businesses or other portfolios that need a defined preparation and review handoff.',
     opening: 'For a Florida accounting practice, the best starting point may be a recurring monthly workflow rather than a broad transfer of client accounting. A property entity, a seasonal operator and a professional-services company can all need reliable books, but their transaction cycles and supporting reports differ. Accounstone’s work should be scoped to the records your firm receives, the tasks it wants prepared and the evidence required before the file returns to the reviewer.',
     sections: [
@@ -199,6 +203,7 @@ export const cpaFirmStateContent: Record<CpaFirmStateKey, CpaFirmStateContent> =
   'new-york': {
     name: 'New York',
     slug: 'new-york',
+    illustrationService: 'tax-preparation',
     heroDescription: 'Defined accounting preparation for New York CPA firms managing professional-services, property, closely held or multi-entity client work, with clear schedules and reviewer-owned decisions.',
     opening: 'New York CPA firms vary widely in size and client focus, so the outsourcing question should be answered at the workflow level. If a reviewer spends hours tracing balances across several entities, finding support for unusual transactions or rebuilding schedules from source exports, that process may be a better first candidate than a whole engagement. Accounstone can prepare agreed workpapers and accounting records; the firm continues to direct the work and make the decisions that require professional judgment.',
     sections: [
@@ -260,6 +265,7 @@ export const cpaFirmStateContent: Record<CpaFirmStateKey, CpaFirmStateContent> =
   illinois: {
     name: 'Illinois',
     slug: 'illinois',
+    illustrationService: 'bookkeeping',
     heroDescription: 'Accounting production support for Illinois CPA firms whose client work may include distribution, manufacturing, retail or service businesses, scoped to the firm’s records and review checklist.',
     opening: 'For an Illinois CPA firm, the right outsourcing scope depends on the type of work waiting in the review queue. A distributor’s close may depend on sales and purchase records; a manufacturer may have inventory and cost schedules; a professional-services client may have payroll, contractor costs and multiple operating accounts. Accounstone can prepare defined bookkeeping and supporting schedules where the source data and process are agreed. The firm retains the decisions that require professional judgment.',
     sections: [
