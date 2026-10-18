@@ -61,7 +61,7 @@ export default function OffshoreSolutionPage() {
         title="Offshore Accounting Services, Inside Your Existing Systems"
         description="Accounting professionals handling agreed preparation work within the scope, systems and review process established with your firm."
         cta={{
-          text: 'Discuss Your Accounting Needs',
+          text: 'Schedule Consultation',
           href: '/contact',
         }}
         ctaSecondary={{
@@ -242,7 +242,7 @@ export default function OffshoreSolutionPage() {
 
       />
 
-      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="Tell us what the recurring work looks like and which systems it lives in. We can discuss the scope, handoffs and review responsibilities before agreeing next steps." />
+      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="A free consultation, and a call that costs nothing. Tell us what the recurring work looks like and which systems it lives in." />
 
       <CTABanner
         title="Ready to Scale Your Accounting Operations?"
