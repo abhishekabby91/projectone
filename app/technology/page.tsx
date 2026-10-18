@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { Check } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import SectionGrid from '@/components/section-grid';
