@@ -42,13 +42,13 @@ The competitor pages reviewed sell similar broad service categories: accounting/
 
 ## Page intent and differentiation
 
-| State | Primary intent | Page-specific workflow angle (examples only, not assumed for every firm) | Word-count floor |
+| State | Primary intent | Page-specific workflow angle (examples only, not assumed for every firm) | Estimated rendered body words | Word-count floor |
 |---|---|---|---:|
-| California | Accounting outsourcing for California CPA firms | Varied client portfolios, technology/professional services/property/e-commerce examples, multi-state records kept reviewable | 650 words (industry sub-page floor) |
-| Texas | Accounting outsourcing for Texas CPA firms | Contractor, multi-location, distribution and professional-service examples; schedules prepared for CPA review | 650 words |
-| Florida | Accounting outsourcing for Florida CPA firms | Recurring and seasonal workflows; property, hospitality, professional services and owner-managed business examples | 650 words |
-| New York | Accounting outsourcing for New York CPA firms | Defined preparation, multi-entity records, supporting schedules and review handoff | 650 words |
-| Illinois | Accounting outsourcing for Illinois CPA firms | Commercial portfolio examples including manufacturing/distribution; clear boundary around specialized inventory judgments | 650 words |
+| California | Accounting outsourcing for California CPA firms | Varied client portfolios, technology/professional services/property/e-commerce examples, multi-state records kept reviewable | ~900–1,000 | 650 words (industry sub-page floor) |
+| Texas | Accounting outsourcing for Texas CPA firms | Contractor, multi-location, distribution and professional-service examples; schedules prepared for CPA review | ~900–1,000 | 650 words |
+| Florida | Accounting outsourcing for Florida CPA firms | Recurring and seasonal workflows; property, hospitality, professional services and owner-managed business examples | ~900–1,000 | 650 words |
+| New York | Accounting outsourcing for New York CPA firms | Defined preparation, multi-entity records, supporting schedules and review handoff | ~900–1,000 | 650 words |
+| Illinois | Accounting outsourcing for Illinois CPA firms | Commercial portfolio examples including manufacturing/distribution; clear boundary around specialized inventory judgments | ~900–1,000 | 650 words |
 
 The rendered pages use a shared structure but distinct state-specific copy. Approximate body length is **850–1,000 words per page including visible FAQs and workflow cards**; this is an estimate, not a measured verifier result. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding.
 
