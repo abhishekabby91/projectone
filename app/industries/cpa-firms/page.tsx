@@ -292,6 +292,26 @@ export default function CPAFirmsPage() {
         <Link href="/services/accounts-payable/united-states" className="font-medium text-primary underline underline-offset-4">Accounts Payable</Link>
       </div>
 
+      <section className="w-full bg-input px-6 py-10 md:px-8 md:py-12">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-3 font-serif text-2xl font-bold text-primary md:text-3xl">CPA firm outsourcing by state</h2>
+          <p className="mb-6 max-w-4xl leading-relaxed text-muted">The core support model is consistent, but firms can use these state pages to explore portfolio-specific examples and the questions to consider when scoping accounting outsourcing. These pages are market tests, not claims that search demand has been ranked by state.</p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ['California', '/industries/cpa-firms/california'],
+              ['Texas', '/industries/cpa-firms/texas'],
+              ['Florida', '/industries/cpa-firms/florida'],
+              ['New York', '/industries/cpa-firms/new-york'],
+              ['Illinois', '/industries/cpa-firms/illinois'],
+            ].map(([name, href]) => (
+              <Link key={href} href={href} className="rounded-xl border border-border bg-white p-4 font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-background">
+                Accounting outsourcing for {name} CPA firms <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Questions partners ask" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
