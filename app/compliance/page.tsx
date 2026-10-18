@@ -70,7 +70,7 @@ export default function CompliancePage() {
             <ul className="space-y-2">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5" aria-hidden="true" />
-                <span>NDA-backed engagements for every client relationship</span>
+                <span>Confidentiality terms and access responsibilities agreed for each engagement</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5" aria-hidden="true" />
@@ -82,7 +82,7 @@ export default function CompliancePage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5" aria-hidden="true" />
-                <span>Actively working toward formal certifications such as SOC 2 — ask us for our current status</span>
+                <span>SOC 2 and ISO 27001 certifications are not currently held; confirm any certification requirements before evaluation.</span>
               </li>
             </ul>
           </div>
