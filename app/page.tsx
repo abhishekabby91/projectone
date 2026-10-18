@@ -23,7 +23,7 @@ export const metadata: Metadata = generateMetadata({
   absoluteTitle: true,
   ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   ogDescription:
-    'Outsourced accounting, bookkeeping and tax preparation for CPA firms and businesses, delivered within existing workflows.',
+    'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
 });
 
