@@ -83,7 +83,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
 | `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
 | `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
