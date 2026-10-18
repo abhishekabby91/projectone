@@ -224,7 +224,7 @@ export default function CompanyRegistrationPage() {
         region="united-states"
         source={PATH}
         title="Tell Us Where You Are in the Process"
-        lead="Tell us about the work you need support with. Whether the entity exists yet or not, tell us the state, the owners and what the business will do, and we will scope what the first year of accounting actually needs."
+        lead="A free consultation, and a call that costs nothing. Whether the entity exists yet or not, tell us the state, the owners and what the business will do, and we will scope what the first year of accounting actually needs."
       />
 
       <CTABanner
