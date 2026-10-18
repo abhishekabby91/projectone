@@ -152,7 +152,7 @@ export default function HoaAccountingPage() {
           </></Reveal>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { name: 'HOA Accounting Services', href: '/services/hoa-accounting', body: 'Full recurring accounting support from assessments and reconciliations to monthly board reporting.' },
+              { name: 'HOA chart of accounts', href: '/blog/hoa-chart-of-accounts', body: 'An illustrative account structure for assessment income, operating costs, reserves, receivables and board reporting.' },
               { name: 'HOA Bookkeeping', href: '/services/hoa-bookkeeping', body: 'Day-to-day posting, reconciliations, payables and supporting schedules for the monthly close.' },
               { name: 'HOA Financial Reporting', href: '/services/hoa-financial-reporting', body: 'Board-ready statements, fund reporting, budget-to-actual results and receivable schedules.' },
             ].map((item) => (
