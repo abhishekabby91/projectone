@@ -100,7 +100,8 @@ export default function Form1040Page() {
                 The engagement terms, IRC §7216 consent requirements and relevant Circular 230 considerations are set out on{' '}
                 <Link href="/services/tax-preparation/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">the US tax preparation page</Link>.
                 Where a return depends on a partnership, the preparation of that return is covered under{' '}
-                <Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1065 and its K-1s</Link>.
+                <Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1065 and its K-1s</Link>. For S corporation return support, see{' '}
+                <Link href="/services/tax-preparation/united-states/1120-s-corporation" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Form 1120-S preparation</Link>.
               </p>
             </>
           </Reveal>
