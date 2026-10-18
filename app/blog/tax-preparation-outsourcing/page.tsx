@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourcing Tax Return Preparation',
-  description: 'What an offshore team can prepare and what needs a licensed CPA or EA, how Drake Tax and CCH Axcess workflows run, and how to plan season capacity.',
+  title: 'Tax Preparation Outsourcing for CPA Firms',
+  description: 'Outsourced tax preparation support for CPA firms using Drake Tax and CCH Axcess, with organized workpapers, return preparation workflows and licensed review before filing.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
