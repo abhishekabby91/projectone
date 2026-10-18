@@ -288,6 +288,6 @@ export const faqs = [
   {
     question: 'How does the outsourcing engagement actually start?',
     answer:
-      'We can discuss a narrow first slice — one building, one association or one owner’s portfolio — alongside the current workflow. Both sides can review output before expanding the scope, and established processes are easier to scale than ones being fixed mid-year.',
+      'With a free consultation, then a narrow first slice — one building, one association or one owner’s portfolio — running alongside what you do today. Both sides see real output on real properties before the volume moves, and a workflow that already works is a much smaller problem to scale than one being fixed mid-year.',
   },
 ];
