@@ -170,7 +170,8 @@ export default function USCPAFirmOutsourcingReadinessChecklist() {
       </p>
       <p>
         If your firm expects the provider to work behind your existing client-facing process, see the
-        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting page for CPA firms</Link>.
+        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting page for CPA firms</Link> and the
+        <Link href="/industries/cpa-firms/cas-production-support" className="text-primary font-medium hover:underline"> CAS production support overview</Link>.
         It explains which branding, communications, access permissions and reviewer handoff rules to define before a pilot begins.
       </p>
     </ArticleLayout>
