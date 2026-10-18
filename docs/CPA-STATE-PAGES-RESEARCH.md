@@ -111,6 +111,37 @@ The competitor pages reviewed sell similar broad service categories: accounting/
 
 The rendered pages use a shared layout but substantially different state-specific workflow content. Approximate body length is **1,100–1,300 words per page including visible FAQs and workflow examples**; this is an estimate, not a measured verifier result. Shared prose was deliberately reduced to lower overlap risk, but the six-gram similarity check remains outstanding. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding. Before merge, run `node scripts/verify-pages.mjs` against a production build and replace estimates with exact rendered word counts. If a page fails the floor, add a substantive answer or consolidate rather than padding.
 
+## Additional return-type cluster — 2026-10-18
+
+Two more commercial URLs have been added to the CPA-firm acquisition cluster after comparing the existing route inventory with public competitor coverage:
+
+| URL | Specific intent | Why it is separate |
+|---|---|---|
+| `/services/tax-preparation/united-states/1120-corporation` | Form 1120 C corporation return preparation support | Corporate financial statements, book-to-tax schedules and fixed-asset support form a different preparation workflow from an individual return, a partnership return or an S corporation return. |
+| `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S S corporation return preparation support | Corporate books and shareholder schedules create a distinct workflow; basis, compensation and other professional tax decisions remain with the responsible CPA or tax professional. |
+
+### Evidence
+
+- The IRS identifies Form 1120 as the U.S. Corporation Income Tax Return used by domestic corporations to report income, gains, losses, deductions and credits: https://www.irs.gov/forms-pubs/about-form-1120
+- The IRS identifies Form 1120-S as the return used to report income and related items for a corporation or other entity for a tax year covered by an effective S corporation election: https://www.irs.gov/forms-pubs/about-form-1120-s
+- Public providers targeting CPA firms commonly list Forms 1120 and 1120-S among their business-return preparation offerings; examples include [Accesspro Consulting](https://accessproconsulting.com/usa), [EXP Consulting](https://expconsulting.in/) and [Aimfox](https://aimfoxllp.com/services/tax-return-preparation/). This shows that the forms are material to the category; it is not proof of exact-match search volume or ranking likelihood.
+
+### Proposed keyword themes to validate
+
+- Form 1120 outsourcing for CPA firms; outsourced Form 1120 preparation; corporate tax return preparation outsourcing.
+- Form 1120-S outsourcing for CPA firms; outsourced S corporation return preparation; Form 1120-S workpaper support.
+
+These are keyword themes, not verified-volume claims. The page pair was added because the existing site already had dedicated Form 1040 and 1065 children and the Form 1120/1120-S workflows are substantively distinct. Do not add pages for individual schedules or software variations unless state/keyword research or Search Console data later supports a separate intent.
+
+### Internal links for the return-type cluster
+
+- The US tax-preparation hub links to 1040, 1065, 1120 and 1120-S, while remaining the broad owner for U.S. tax preparation outsourcing.
+- The CPA-firm hub links to the return-type pages in its supporting service navigation.
+- Form 1120 links back to the U.S. tax-preparation hub, CPA-firm hub, Form 1065 and Form 1120-S.
+- Form 1120-S links back to the U.S. tax-preparation hub, CPA-firm hub, Form 1065 and Form 1120.
+- Form 1040 and 1065 pages link into the new corporate-return workflows where relevant.
+- Each form-specific page links to official IRS form/instructions pages. It does not give tax advice or suggest that Accounstone independently determines tax positions, elections, shareholder basis or compensation treatment.
+
 ## Keyword clusters to validate in Google Keyword Planner
 
 Run the same keyword set with location set to each state, English language and Google Search network. Export the same historical period for every state.
