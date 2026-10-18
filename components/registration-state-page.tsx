@@ -155,7 +155,7 @@ export default function RegistrationStatePage({ state }: { state: RegistrationSt
         region="united-states"
         source={path}
         title={`Registering in ${state.name}?`}
-        lead={`Tell us about the work you need support with. Tell us who owns the business, where it will actually operate and what it will do, and we will scope what the first year of ${state.name} accounting needs.`}
+        lead={`Tell us who owns the business, where it will operate and what it will do. We can discuss the accounting requirements for the first year in ${state.name}.`}
       />
 
       <CTABanner
