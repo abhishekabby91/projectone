@@ -95,7 +95,7 @@ export default function PrivacyPage() {
           and the full band would be a large share of their text, which is how
           near-duplicate scores climb. Each one passes its own title and lead
           for the same reason. */}
-      <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="If something about how client data is handled is not covered above, ask us to clarify the relevant workflow, access and retention arrangements." compact />
+      <InquirySection source="/privacy" title="A Question We Have Not Answered Here?" lead="The consultation and the call are always free. If something about how we would handle your data or your clients’ data is not covered above, ask and we will answer it plainly." compact />
 
       {/* Closes on the same sequence as the rest of the site: the enquiry
           band, then the CTA banner. 87 of 95 pages already ended this way;
