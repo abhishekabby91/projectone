@@ -1,3 +1,29 @@
+## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
+
+### app/industries/hoa-accounting/los-angeles-county/page.tsx
+
+**Changed:** Replaced generic housing-statistics and chapter-membership framing with practical context about association-specific records and repeatable close steps across multi-association portfolios. Added a need-led section covering monthly close, catch-up cleanup, assessment receivables and existing HOA software, with contextual links to current guides and software pages.
+
+**Why:** The page needed clearer commercial differentiation based on the workflows a buyer may be trying to resolve, not a loosely related local statistic. The new section also helps route location, software and problem-specific search intent to the right existing URL.
+
+**SEO purpose:** Improve intent matching and internal-link discovery without creating thin county/software combination pages or padding word count. Query demand still needs Search Console/keyword validation.
+
+**URL changed:** No.  
+**Metadata changed:** No.  
+**Content changed:** Yes.
+
+### docs/HOA-QUERY-TARGETING-STRATEGY.md (new)
+
+**Changed:** Documented an HOA query framework spanning location, software and accounting need; assigned query families to existing URLs; set rules to prevent cannibalization; and specified Search Console, competitor and post-release validation steps.
+
+**Why:** New content decisions need a repeatable research process so geographic pages, software pages and informational guides support one another instead of competing for the same intent.
+
+**SEO purpose:** Prioritize evidence-led updates, strengthen contextual internal links and prevent page proliferation based only on keyword permutations.
+
+**URL changed:** No.  
+**Metadata changed:** No.  
+**Content changed:** Documentation only.
+
 <!--
 Newest entry first. PREPEND new entries at the top of this file; do not append
 at the bottom.
