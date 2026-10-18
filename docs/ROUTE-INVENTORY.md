@@ -42,7 +42,7 @@ candidate for overlap.
 | `/blog/hoa-bookkeeping-vs-accounting` | HOA Bookkeeping vs. HOA Accounting |
 | `/blog/hoa-budget-to-actual-reports` | HOA Budget-to-Actual Reports |
 | `/blog/hoa-cash-vs-accrual-accounting` | HOA Cash vs. Accrual Accounting |
-| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts |
+| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts: Example & Setup Guide |
 | `/blog/hoa-financial-statements-board-review` | HOA Financial Statements for Boards |
 | `/blog/hoa-homeowner-ledgers` | HOA Homeowner Ledgers: Keep Balances Accurate |
 | `/blog/hoa-income-statement-explained` | HOA Income Statement Explained |
@@ -73,7 +73,7 @@ candidate for overlap.
 | `/blog/property-management-cam-reconciliation` | CAM Reconciliation Guide |
 | `/blog/property-management-capital-expenditure-accounting` | Property Management Capital Expenditures |
 | `/blog/property-management-cash-flow-forecasting` | Property Management Cash Flow Forecasting |
-| `/blog/property-management-chart-of-accounts` | Property Management Chart of Accounts |
+| `/blog/property-management-chart-of-accounts` | Property Management Chart of Accounts: Example |
 | `/blog/property-management-credit-card-reconciliation` | Property Management Credit Card Reconciliation |
 | `/blog/property-management-financial-statements` | Property Management Financial Statements Guide |
 | `/blog/property-management-in-house-vs-outsourced` | In-House vs. Outsourced Property Management |
@@ -113,7 +113,7 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
-| `/industries/ecommerce` | Accounting for E-Commerce Businesses |
+| `/industries/ecommerce` | Ecommerce Accounting Services for Online Retailers |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Accounting for Medical Practices |
