@@ -106,14 +106,14 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-3 sm:gap-5">
           {[
             {
+              title: 'For Property Management & HOA Firms',
+              body: 'Outsource reconciliations, AP/AR and recurring financial reporting while keeping portfolio oversight, client relationships and approvals in-house.',
+              href: '/industries/property-management',
+            },
+            {
               title: 'For CPA & Accounting Firms',
               body: 'Outsource recurring bookkeeping, accounting and agreed tax-preparation work while keeping client relationships, decisions and final review in-house.',
               href: '/industries/cpa-firms',
-            },
-            {
-              title: 'For Property Management & HOA Companies',
-              body: 'Outsource reconciliations, AP/AR and recurring financial reporting while keeping portfolio oversight, client relationships and approvals in-house.',
-              href: '/industries/property-management',
             },
           ].map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
