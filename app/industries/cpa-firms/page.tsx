@@ -277,6 +277,10 @@ export default function CPAFirmsPage() {
               <h3 className="font-semibold text-primary">White-Label Accounting</h3>
               <p className="mt-2 text-sm text-muted">Define branding, client-contact boundaries and reviewer handoff for externally prepared work.</p>
             </Link>
+            <Link href="/industries/cpa-firms/cas-production-support" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">CAS Production Support</h3>
+              <p className="mt-2 text-sm text-muted">Recurring bookkeeping, reconciliations, month-end schedules and reporting-package preparation for CAS practices.</p>
+            </Link>
             <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">U.S. Market</h3>
               <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>
