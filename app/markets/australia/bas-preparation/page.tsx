@@ -134,7 +134,7 @@ export default function AustraliaBasPreparationPage() {
 
       <FAQSection subtitle="BAS Questions" items={faqs} columns={2} />
 
-      <InquirySection region="australia" source={PATH} title="Talk to Us About One BAS Quarter" lead="A free consultation, and a call that costs nothing. Start with one client and one quarter — that is what you spend if the output is not what you wanted." />
+      <InquirySection region="australia" source={PATH} title="Talk to Us About One BAS Quarter" lead="Tell us about the work you need support with. Start with one client and one quarter — that is what you spend if the output is not what you wanted." />
 
       <CTABanner
         title="Does the Lodgment Program Set the Pace of Your Year?"
