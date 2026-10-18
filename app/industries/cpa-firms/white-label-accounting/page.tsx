@@ -4,6 +4,7 @@ import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import InquirySection from '@/components/inquiry-section';
 import CTABanner from '@/components/cta-banner';
+import ServiceIllustration from '@/components/service-illustration';
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
@@ -90,15 +91,23 @@ export default function WhiteLabelAccountingForCpaFirmsPage() {
       </nav>
 
       <section className="w-full bg-white px-6 py-10 md:px-8 md:py-14">
-        <div className="mx-auto max-w-5xl space-y-5">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">A delivery model, not a change in ownership</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Your firm keeps the client relationship; the scope defines what gets prepared</h2>
-          <p className="text-base leading-relaxed text-muted md:text-lg">
-            White-label accounting is a delivery arrangement in which an external provider prepares agreed work within the CPA firm’s systems, templates and client-facing process. It is different from referring a client to a separate accounting business: the engagement is designed around the firm’s own workflow, while responsibilities and communications are defined before work starts. The label itself does not transfer professional responsibility, authorize unrestricted data access or make an external provider a party to the firm’s client engagement.
-          </p>
-          <p className="text-base leading-relaxed text-muted md:text-lg">
-            Accounstone can discuss white-label delivery for defined bookkeeping, accounting and tax-preparation support where the requested work matches available capability. The firm determines which clients and tasks are in scope, what evidence is required, which questions must be escalated and what the reviewer should receive. Final professional judgment, advice, review, client approvals and filing or signing responsibilities stay with the parties assigned those duties.
-          </p>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+          <div className="space-y-5">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent">A delivery model, not a change in ownership</p>
+            <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Your firm keeps the client relationship; the scope defines what gets prepared</h2>
+            <p className="text-base leading-relaxed text-muted md:text-lg">
+              White-label accounting is a delivery arrangement in which an external provider prepares agreed work within the CPA firm’s systems, templates and client-facing process. It is different from referring a client to a separate accounting business: the engagement is designed around the firm’s own workflow, while responsibilities and communications are defined before work starts. The label itself does not transfer professional responsibility, authorize unrestricted data access or make an external provider a party to the firm’s client engagement.
+            </p>
+            <p className="text-base leading-relaxed text-muted md:text-lg">
+              Accounstone can discuss white-label delivery for defined bookkeeping, accounting and tax-preparation support where the requested work matches available capability. The firm determines which clients and tasks are in scope, what evidence is required, which questions must be escalated and what the reviewer should receive. Final professional judgment, advice, review, client approvals and filing or signing responsibilities stay with the parties assigned those duties.
+            </p>
+          </div>
+          <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
+            <ServiceIllustration service="accounting" className="mx-auto w-full max-w-[260px]" />
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">White-label workflow</p>
+            <p className="mt-2 text-base font-semibold text-primary">Your templates. Your reviewer.</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">The agreed process defines branding, permitted contact, file access, exceptions and who approves the final deliverable.</p>
+          </aside>
         </div>
       </section>
 
