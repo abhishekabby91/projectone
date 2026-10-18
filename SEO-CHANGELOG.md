@@ -5016,3 +5016,13 @@ Search Console URL inspection was run against sitemap and related cluster URLs. 
 **Changes:** Consolidated the overlapping HOA service URL into `/industries/hoa-accounting`; replaced the internal link to the retired service URL with the existing HOA chart-of-accounts guide; added links from the technology hub to the two distinct Yardi workflow pages; and added a contextual Form 1065 link from the tax-preparation outsourcing guide. No new public URLs were created.
 
 **Measurement note:** “Discovered — currently not indexed” means Google had not crawled the URL at inspection time, so this does not prove a content or rendering failure. After deployment, validate redirects and internal links, then recheck URL inspection after recrawl. No indexing or ranking outcome is guaranteed.
+
+
+## 2026-10-18 — Indexing-cluster reinforcement and Upwork job-brief research
+
+- Checked Search Console URL Inspection for a representative group of 20 canonical routes and reviewed the submitted sitemap. The sitemap contains 205 URLs with zero errors/warnings; URL Inspection still identifies individual crawl-pending pages, so the sitemap's separate “indexed 0” response field is not a reliable site-wide index count.
+- Expected non-indexed legacy URLs were separated from real crawl-pending pages: /technology/yardi redirects to /technology, and /blog/hoa-vendor-invoice-processing redirects to /blog/hoa-accounts-payable. The latter is an intentional duplicate-intent consolidation, not a broken index target.
+- Strengthened contextual links from the indexed Yardi workflow articles to the two separate commercial Yardi support pages, and from the Form 1065 page to the tax-preparation guide, U.S. tax hub and CPA-firm hub.
+- Expanded the existing Upwork comparison article with a practical “job brief to accounting scope” section linking to existing cleanup, property-management reconciliation, owner-statement/lender-reporting, HOA AP and Form 1065 workflows. No new public URL was created.
+- Qualitative scan of current Upwork job briefs shows repeated needs around AppFolio/QBO and property-system reconciliations, catch-up cleanup, owner statements, multi-entity records, CPA-firm bookkeeping and tax preparation. GSC returned no query rows containing “upwork” for 2026-07-20–2026-10-15; use postings as buyer-needs research, not proof of search demand for “Upwork” keywords.
+- Recheck the two Yardi support pages and Form 1065 page after Google recrawls them. Do not claim indexing success until URL Inspection confirms it.
