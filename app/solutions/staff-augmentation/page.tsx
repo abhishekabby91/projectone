@@ -202,7 +202,7 @@ export default function StaffAugmentationPage() {
 
       />
 
-      <InquirySection source="/solutions/staff-augmentation" title="Talk to Us About the Capacity You Are Missing" lead="Tell us about the work you need support with. Tell us how many hands you are short and for how long, and we will scope around your review structure." />
+      <InquirySection source="/solutions/staff-augmentation" title="Talk to Us About the Capacity You Are Missing" lead="A free consultation, and a call that costs nothing. Tell us how many hands you are short and for how long, and we will scope around your review structure." />
 
       <CTABanner title="Where Do You Need More Accounting Capacity?" description="Tell us the work that is falling behind, the deadline you are working toward, and the systems involved. We can scope a practical staffing model around it." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
