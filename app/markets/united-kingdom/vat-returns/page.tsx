@@ -135,7 +135,7 @@ export default function UkVatReturnsPage() {
 
       <FAQSection subtitle="VAT Questions" items={faqs} columns={2} />
 
-      <InquirySection region="united-kingdom" source={PATH} title="Talk to Us About One VAT Quarter" lead="Start with one client and one VAT quarter so both sides can review the output before expanding the scope." />
+      <InquirySection region="united-kingdom" source={PATH} title="Talk to Us About One VAT Quarter" lead="Tell us about the work you need support with. Start with one client and one quarter — if the output was not what you wanted, that is what you have spent finding out." />
 
       <CTABanner
         title="Is the VAT Quarter Setting the Pace of Your Year?"
