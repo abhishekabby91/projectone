@@ -172,7 +172,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
     ],
     boundary:
       'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Review, filing and authorization requirements for the return and K-1s. Any position on a book-to-tax difference that requires professional judgement rather than mechanical preparation. Whether a payment is a guaranteed payment or a distribution where the agreement is not explicit. We prepare and show the working so the applicable review and approval process is clear.',
- 
+  },
   '1120': {
     slug: '1120',
     name: 'The 1120 Corporate Return',
