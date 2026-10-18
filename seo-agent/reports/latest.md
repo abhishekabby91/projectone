@@ -132,7 +132,7 @@
 | app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1119 | 1 | 15 | 0 | 0 |
 | app/industries/hoa-accounting/california/page.tsx | 90/100 | 1149 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 850 | 1 | 9 | 0 | 0 |
-| app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 820 | 1 | 3 | 0 | 0 |
+| app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2880 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
