@@ -19,7 +19,7 @@ type RegionSlug = (typeof regions)[number]['slug'];
 const REGION_COPY: Record<RegionSlug, { title: string; lead: string; points: string[] }> = {
   'united-states': {
     title: 'Talk to Us About Your Firm’s Busy Season',
-    lead: 'A free consultation, and a call that costs you nothing but the half hour. Tell us where the preparation is backing up and we will scope a pilot around it.',
+    lead: 'Tell us where preparation work is backing up. We can review the workflow and discuss a scoped pilot, with review and approval responsibilities agreed in advance.',
     points: [
       'Start with one client or one month of close work',
       'We prepare; your firm reviews, signs and e-files',
@@ -28,7 +28,7 @@ const REGION_COPY: Record<RegionSlug, { title: string; lead: string; points: str
   },
   'united-kingdom': {
     title: 'Talk to Us About Your Practice’s Workload',
-    lead: 'A free consultation, and a call that costs you nothing but the half hour. Tell us which part of the portfolio is eating review time and we will scope a pilot around it.',
+    lead: 'Tell us which part of the portfolio is consuming review time. We can review the workflow and discuss a scoped pilot, with responsibilities agreed in advance.',
     points: [
       'Start with one client or one VAT quarter',
       'We prepare; your practice reviews, advises and files',
@@ -37,7 +37,7 @@ const REGION_COPY: Record<RegionSlug, { title: string; lead: string; points: str
   },
   australia: {
     title: 'Talk to Us About Your Firm’s Lodgment Program',
-    lead: 'A free consultation, and a call that costs you nothing but the half hour. Tell us where the program is backing up and we will scope a pilot around it.',
+    lead: 'Tell us where the program is backing up. We can review the workflow and discuss a scoped pilot, with responsibilities agreed in advance.',
     points: [
       'Start with one client or one BAS quarter',
       'We prepare; your registered agent reviews and lodges',
@@ -99,7 +99,7 @@ export default function InquirySection({
           <div className="flex items-center gap-3">
             <span aria-hidden="true" className="h-px w-8 bg-secondary" />
             <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">
-              Free consultation
+              Discuss your workflow
             </span>
           </div>
 
