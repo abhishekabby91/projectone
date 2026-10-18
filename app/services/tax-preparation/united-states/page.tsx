@@ -228,6 +228,7 @@ export default function TaxPrepUSPage() {
           <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Related industry scope</h2>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
             <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Support</Link>
+            <Link href="/industries/cpa-firms/white-label-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">White-Label Accounting for CPA Firms</Link>
             <Link href="/industries/real-estate" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Real Estate Accounting</Link>
             <Link href="/industries/property-management" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Property Management Accounting</Link>
             <Link href="/industries/hoa-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">HOA Accounting</Link>
