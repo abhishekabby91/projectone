@@ -158,3 +158,33 @@ wrong in both.
 | Form 1065 and Schedule K-1 preparation support | `/services/tax-preparation/united-states/1065-partnership` | Commercial tax-preparation spoke linked from the US tax preparation service hub and the tax-preparation outsourcing guide. |
 
 Indexing interpretation: “Discovered — currently not indexed” with no crawl is not evidence of a rendering failure by itself. Maintain sitemap inclusion and contextual internal links, then recheck after Google crawls. Redirected legacy URLs and canonical duplicates are not expected to be indexed as separate pages.
+
+
+## Upwork job-posting demand research and cluster routing — 2026-10-18
+
+Upwork postings are a **qualitative demand source**, not proof of Google search volume. Use them to identify repeated accounting jobs buyers need done, then validate each candidate against Search Console, keyword research, competitor results and the existing intent owner before creating a URL. Do not build thin pages around individual job titles or copy job-posting text.
+
+| Repeated need observed in job postings | Existing primary route(s) | Page decision |
+|---|---|---|
+| Upwork vs direct accounting outsourcing; freelancer vs provider | `/blog/upwork-vs-accounstone` | Existing comparison page owns this comparison intent. Improve it with real buyer decision criteria; do not create a second Upwork comparison URL. |
+| QuickBooks Online cleanup, catch-up, bank/credit-card reconciliation and month-end close | `/services/bookkeeping/united-states`, `/blog/quickbooks-month-end-close-checklist`, `/blog/outsourced-bookkeeping-guide` | Route general needs to existing bookkeeping/close content. Create a specialist page only if GSC/keyword/SERP evidence shows a distinct commercial intent not met by these URLs. |
+| Property-management books across QBO and AppFolio; bank feeds, tenant ledgers, deposits, owner statements and close | `/industries/property-management`, `/industries/property-management/accounting-cleanup`, `/industries/property-management/tenant-accounting-operations`, `/industries/property-management/general-ledger-reconciliation`, `/blog/property-management-owner-statements` | Use the existing property-management cluster. A new page must own a distinct workflow, not a software/keyword permutation of the same job. |
+| AppFolio migrations, chart-of-accounts mapping, opening balances and post-migration reconciliation | `/industries/property-management/accounting-cleanup`, `/industries/property-management/general-ledger-reconciliation`, `/industries/property-management/appfolio-accounting-california` | First strengthen the relevant existing page(s). Consider a migration-specific page only after repeated independent demand and a SERP review confirm a separate intent. |
+| Yardi Voyager accounting, AP, reconciliations and recurring property close | `/industries/property-management/yardi-accounting-support`, `/blog/yardi-accounting-workflow` | Existing software-specific commercial page and informational guide own these intents. The retired `/technology/yardi` URL must not be listed in the sitemap. |
+| HOA invoice coding, approvals, vendor bills and payables reconciliation | `/blog/hoa-accounts-payable`, `/industries/hoa-accounting` | The AP article owns the informational workflow. `/blog/hoa-vendor-invoice-processing` redirects to it and should not be indexed separately. |
+| Drake Tax / CCH Axcess tax preparation and return preparation capacity | `/services/tax-preparation/united-states`, `/services/tax-preparation/united-states/1040-individual`, `/services/tax-preparation/united-states/1065-partnership`, `/blog/tax-preparation-outsourcing` | Keep the hub, return-type spokes and informational guide distinct. Add another return-type page only when research proves unserved demand and the workflow can be materially differentiated. |
+
+### Research protocol
+
+1. Review recent, independent job postings by workflow and software; record the date, client type, recurring vs one-off scope, deliverables, software, blockers and reporting output. Do not treat a posting's pay range as Accounstone pricing evidence.
+2. Group similar posts into one workflow cluster (for example, cleanup + reconciliation + close) rather than treating every phrase as a separate page opportunity.
+3. Check GSC query/page data and keyword/SERP evidence for each cluster. If an existing URL owns the intent, improve its content and internal links first.
+4. Only propose a new public URL when the need repeats across independent postings, has validated search demand, has a distinct search intent, and cannot be served well by an existing page. Record the intent owner in this file before drafting.
+5. Turn job language into durable buyer-focused accounting workflows. Do not reproduce whole job descriptions, claim an Upwork affiliation, or target job seekers when the intended audience is a business needing accounting support.
+
+Initial public examples reviewed on 2026-10-18:
+- [QuickBooks Online cleanup, reconciliation and month-end closing](https://www.upwork.com/freelance-jobs/apply/QuickBooks-Online-Bookkeeper-Cleanup-Reconciliation-Month-End-Closing_~022107924757495574041/)
+- [QBO + AppFolio bank feeds and property-management month-end close](https://www.upwork.com/freelance-jobs/apply/Remote-Bookkeeper-QuickBooks-Online-AppFolio-Bank-Feeds-Month-End-Close-Property-Management_~022096380195744016059/)
+- [AppFolio monthly accounting and migrations](https://www.upwork.com/freelance-jobs/apply/Appfolio-Expert-Monthly-Accounting-and-Migrations_~022103134105314742943/)
+- [Virtual property-management accounting and tenant-ledger support](https://www.upwork.com/freelance-jobs/apply/Virtual-Property-Management-Accounting-Assistant_~022098155249475560593/)
+- [CCH Axcess job listings](https://www.upwork.com/freelance-jobs/cch-axcess/)
