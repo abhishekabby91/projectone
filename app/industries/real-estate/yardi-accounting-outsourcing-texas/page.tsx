@@ -253,7 +253,7 @@ export default function YardiTexasPage() {
       </section>
 
 
-      <InquirySection source="/industries/real-estate/yardi-accounting-outsourcing-texas" title="Talk to Us About Your Yardi Portfolio" lead="Tell us about the work you need support with. Tell us the property count and how Yardi is configured, and we will scope the recurring work around it." compact />
+      <InquirySection source="/industries/real-estate/yardi-accounting-outsourcing-texas" title="Talk to Us About Your Yardi Portfolio" lead="Tell us the property count and how Yardi is configured, and we can discuss the recurring accounting work that fits the agreed scope." compact />
 
       <CTABanner
         title="Ready to Streamline Your Property Management Accounting?"
