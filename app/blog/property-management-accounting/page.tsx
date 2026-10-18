@@ -50,7 +50,7 @@ export default function Page() {
       category="Property Management"
       description="A working guide to keeping property, tenant, owner and management-company records connected—from transaction coding through reconciliations and owner reporting."
       publishedDate="2026-10-08"
-      updatedDate="2026-10-15"
+      updatedDate="2026-10-18"
       section="blog"
       slug="property-management-accounting"
       inquiryTitle="Tell Us About Your Property Accounting Workflow"
@@ -102,6 +102,22 @@ export default function Page() {
       <h2>7. Prepare owner statements from reconciled records</h2>
       <p>An owner statement should follow the agreed reporting format and explain the activity relevant to that owner. Depending on the management agreement and reporting design, it may show collected income, expenses, management fees, reserve movements, owner contributions, distributions and an ending balance. The statement should be supported by ledger detail rather than assembled independently from spreadsheets or unreviewed transaction lists.</p>
       <p>Before statements are issued, confirm that the reporting period is complete, material reconciliations have been reviewed, unresolved items are documented and any required client approvals have occurred. If an adjustment is made after a statement has been issued, follow the documented correction process so the original and revised records remain explainable.</p>
+
+      <h3>A practical pre-issue review</h3>
+      <p>Use a short review matrix to connect each report to the underlying record and make exceptions visible before an owner receives the package.</p>
+      <div className="my-6 overflow-x-auto rounded-xl border border-border">
+        <table className="w-full border-collapse text-sm">
+          <thead><tr className="bg-input text-left"><th className="p-3">Record or report</th><th className="p-3">What to compare</th><th className="p-3">What to retain for review</th></tr></thead>
+          <tbody>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Bank and cash</td><td className="p-3">Statement ending balance against the book balance; investigate outstanding and unmatched items.</td><td className="p-3">Reconciliation, supporting detail, preparer and reviewer status.</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Tenant and receivables</td><td className="p-3">Tenant-ledger totals against the control account; identify unapplied receipts, credits and aged balances.</td><td className="p-3">Aging report, exception list and the source for material adjustments.</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Owner balance and activity</td><td className="p-3">Income, expenses, fees, reserve movements and proposed distributions against the owner ledger and agreement.</td><td className="p-3">Statement detail, fee calculation support and approval status for any distribution.</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Vendor payables</td><td className="p-3">Open invoices, credits, payment status and property/entity coding against source documents.</td><td className="p-3">Invoice support, coding exceptions and approval trail.</td></tr>
+            <tr className="border-t border-border"><td className="p-3 font-semibold">Property financials</td><td className="p-3">Current-period income and expenses against budget, prior period or another agreed benchmark.</td><td className="p-3">Variance explanations, open questions and report parameters or cutoff.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A report does not become review-ready simply because the totals balance. The handoff should identify unresolved items, who owns each next step and whether the item affects the report being issued. If a material difference remains open, follow the client's escalation and approval process rather than hiding it in a general adjustment.</p>
 
       <p>For workflows in platforms such as Buildium, document how management fees, owner balances and distributions are calculated and approved under the management agreement. Reconcile the underlying property activity first, distinguish the management company's earned fee from funds held or payable for an owner, and retain the transaction trail behind the statement and any distribution. The exact account mapping and entry depend on the entity structure, platform configuration and client policy; do not apply a generic journal entry without checking those details.</p>
 

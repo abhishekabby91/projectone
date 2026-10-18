@@ -10,6 +10,16 @@ ORDER of whole dated entries changed; no entry's text was edited, and a
 dateless "## " sub-heading stays with the dated entry it belongs to.
 -->
 
+## 2026-10-18 — Property management accounting guide: pre-issue owner-report review matrix
+
+- **Page:** `app/blog/property-management-accounting/page.tsx` (`/blog/property-management-accounting`).
+- **Change:** Added a concise pre-issue review matrix connecting bank/cash, tenant receivables, owner activity, vendor payables and property financials to their comparison checks and reviewer evidence. Added a short exception-handling note.
+- **Why:** Competitor and platform research consistently highlights reconciled source records, owner-report packages and exception review as practical parts of property-management accounting. The existing guide already covered these topics, so this improves its usability rather than creating a duplicate URL or expanding the topic cluster unnecessarily.
+- **Buyer concern addressed:** Can a property manager explain each owner-report number from the underlying ledger and show what is still unresolved before statements are issued?
+- **SEO purpose:** Improve task-level usefulness and scannability for the existing property-management accounting intent; no ranking or traffic outcome is assumed.
+- **URL changed:** No. **Metadata changed:** No. **Content changed:** Yes.
+- **Research checked:** Buildium’s financial-statement workflow and AppFolio’s accounting/reporting feature overview were used as topic-gap references, not copied; accounting and legal boundaries remain unchanged.
+
 ## 2026-10-17 — Hero CTAs, and the Yardi branch merged with two corrections
 
 - **The homepage hero now carries the same CTA pair every other hero does**, at the owner's request: **Get a Free Consultation** to `/contact` (white fill) and **Book a 30-Minute Call** to `https://cal.com/abby-xne7d4/30min` (outlined), styled to match `PremiumHero` so the site does not read as two designs. The cal.com link gets `target="_blank" rel="noopener noreferrer"` from the same absolute-href test used on the industry pages.
