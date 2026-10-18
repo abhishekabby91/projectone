@@ -62,7 +62,7 @@ export default function DrakeTaxPage() {
 
       <FAQSection subtitle="Drake Tax Questions" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/drake-tax" title="Talk to Us About Your Drake Tax Season" lead="A free consultation, and a call that costs nothing. Tell us the return mix and the volume, and we will scope the preparation around your review." compact />
+      <InquirySection source="/technology/drake-tax" title="Talk to Us About Your Drake Tax Season" lead="Tell us the return mix and the volume, and we will scope the preparation around your review." compact />
 
       <CTABanner title="Ready for the Next Tax Season Volume Spike?" description="Tell us whether the pressure is data entry, multi-state returns or simply peak-season capacity." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
