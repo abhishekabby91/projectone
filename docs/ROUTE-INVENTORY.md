@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Outsourcing Tax Return Preparation |
+| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing for CPA Firms |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -213,7 +213,7 @@ candidate for overlap.
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
-| `/technology/netsuite` | NetSuite Accounting Support |
+| `/technology/netsuite` | NetSuite Accounting Support for Month-End Close |
 | `/technology/quickbooks` | QuickBooks Online Accounting Support |
 | `/technology/sage` | Sage Accounting Support |
 | `/technology/xero` | Xero Accounting Support for Growing Businesses |
