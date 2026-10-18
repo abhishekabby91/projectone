@@ -4,6 +4,7 @@ import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import InquirySection from '@/components/inquiry-section';
 import CTABanner from '@/components/cta-banner';
+import ServiceIllustration from '@/components/service-illustration';
 import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema, generateMetadata, baseUrl } from '@/lib/seo';
 
 const PATH = '/industries/cpa-firms/cas-production-support';
@@ -84,15 +85,23 @@ export default function CasProductionSupportForCpaFirmsPage() {
       </nav>
 
       <section className="w-full bg-white px-6 py-10 md:px-8 md:py-14">
-        <div className="mx-auto max-w-5xl space-y-5">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">A delivery layer for your CAS practice</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Separate recurring production from the professional work your firm owns</h2>
-          <p className="text-base leading-relaxed text-muted md:text-lg">
-            A CPA firm’s client accounting services (CAS) offering can involve recurring bookkeeping, month-end close, accounts payable and receivable records, account schedules and financial reporting preparation. The production work has to be consistent enough to repeat across clients, while the firm retains the context, review and professional decisions that shape what it tells each client. CAS production support is the defined preparation layer behind that service—not a transfer of the client relationship or an offer of advisory services from the outside provider.
-          </p>
-          <p className="text-base leading-relaxed text-muted md:text-lg">
-            Accounstone can discuss scoped preparation work for firms that already deliver CAS or are evaluating how to support a recurring accounting portfolio. Start by identifying the files, systems, checklist, reporting package and review expectations. Confirm what Accounstone can deliver for that workflow before work is assigned; do not assume every task, platform or client type is automatically included.
-          </p>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+          <div className="space-y-5">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent">A delivery layer for your CAS practice</p>
+            <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Separate recurring production from the professional work your firm owns</h2>
+            <p className="text-base leading-relaxed text-muted md:text-lg">
+              A CPA firm’s client accounting services (CAS) offering can involve recurring bookkeeping, month-end close, accounts payable and receivable records, account schedules and financial reporting preparation. The production work has to be consistent enough to repeat across clients, while the firm retains the context, review and professional decisions that shape what it tells each client. CAS production support is the defined preparation layer behind that service—not a transfer of the client relationship or an offer of advisory services from the outside provider.
+            </p>
+            <p className="text-base leading-relaxed text-muted md:text-lg">
+              Accounstone can discuss scoped preparation work for firms that already deliver CAS or are evaluating how to support a recurring accounting portfolio. Start by identifying the files, systems, checklist, reporting package and review expectations. Confirm what Accounstone can deliver for that workflow before work is assigned; do not assume every task, platform or client type is automatically included.
+            </p>
+          </div>
+          <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
+            <ServiceIllustration service="bookkeeping" className="mx-auto w-full max-w-[260px]" />
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">Recurring CAS work</p>
+            <p className="mt-2 text-base font-semibold text-primary">Tie the records to the close</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">Transaction records, reconciliations and supporting schedules should make open items visible before reporting moves to review.</p>
+          </aside>
         </div>
       </section>
 
