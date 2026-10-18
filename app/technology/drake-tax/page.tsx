@@ -10,6 +10,7 @@ import Reveal from '@/components/reveal';
 import PlatformDepthSection from '@/components/platform-depth';
 import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
+import ServiceIllustration from '@/components/service-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Drake Tax Accounting Support',
@@ -51,11 +52,27 @@ export default function DrakeTaxPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Drake Tax is the system. Someone still has to get every return prep-ready by April.</h2><p className="text-lg text-muted leading-8">Tax season volume doesn't scale evenly — the same firm handling steady work in November needs meaningfully more preparation capacity in March. We work inside your firm's existing Drake Tax setup on data entry, workpapers and preparation, so your CPA or Enrolled Agent can focus review time on judgment calls instead of data entry.</p></></Reveal></div></section>
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+          <Reveal className="space-y-6">
+            <>
+              <span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Drake Tax is the system. Someone still has to get every return prep-ready by April.</h2>
+              <p className="text-lg text-muted leading-8">Tax season volume doesn't scale evenly — the same firm handling steady work in November needs meaningfully more preparation capacity in March. We work inside your firm's existing Drake Tax setup on data entry, workpapers and preparation, so your CPA or Enrolled Agent can focus review time on judgment calls instead of data entry.</p>
+            </>
+          </Reveal>
+          <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
+            <ServiceIllustration service="tax-preparation" className="mx-auto w-full max-w-[250px]" />
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">Drake Tax workflow</p>
+            <p className="mt-2 text-base font-semibold text-primary">Preparation → review → filing</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">Source documents and workpapers are prepared to the firm's checklist; the CPA or EA keeps final review and filing control.</p>
+          </aside>
+        </div>
+      </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Workflows</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Work Around Drake Tax</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{workflows.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/technology/drake-tax"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect Drake Tax to the practice work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/tax-preparation/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">U.S. Tax Preparation</Link><Link href="/solutions/staff-augmentation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Staff Augmentation</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect Drake Tax to the practice work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/tax-preparation/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">U.S. Tax Preparation</Link><Link href="/services/tax-preparation/united-states/1040-individual" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1040</Link><Link href="/services/tax-preparation/united-states/1065-partnership" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1065</Link><Link href="/services/tax-preparation/united-states/1120-corporation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1120</Link><Link href="/services/tax-preparation/united-states/1120-s-corporation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1120-S</Link><Link href="/solutions/staff-augmentation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Staff Augmentation</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
 
 
       <PlatformDepthSection platform={platformDepth['drake-tax']} />
