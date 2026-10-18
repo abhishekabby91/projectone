@@ -1,3 +1,14 @@
+## 2026-10-18 — U.S. CPA-firm tax return-type cluster
+
+Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.
+
+| Title | URL | Cluster | Primary intent | Status | Last updated |
+|---|---|---|---|---|---|
+| Form 1120 Corporate Tax Outsourcing | `/services/tax-preparation/united-states/1120-corporation` | U.S. Tax Preparation / Return Type | C corporation return-preparation workpapers, book-to-tax schedules and fixed-asset support for CPA review | Draft page added; official IRS source linked; exact search volume not verified | 2026-10-18 |
+| Form 1120-S Tax Preparation Outsourcing | `/services/tax-preparation/united-states/1120-s-corporation` | U.S. Tax Preparation / Return Type | S corporation return and shareholder schedule preparation; basis and compensation decisions remain with the responsible professional | Draft page added; official IRS source linked; exact search volume not verified | 2026-10-18 |
+
+The existing `/services/tax-preparation/united-states` page remains the broad commercial owner. Form 1040 and 1065 pages retain their own distinct return workflows; the new pages link laterally to those pages and back to the tax hub. Do not create separate pages for every schedule, tax term or software unless search evidence proves a distinct intent.
+
 ## 2026-10-14 — Texas HOA accounting page
 
 Added `/industries/hoa-accounting/texas` as a state-specific commercial page under the HOA industry. Competitor research and official Texas Property Code references informed a distinct focus on property owners’ associations and condominium communities, organized financial records, assessment ledgers, reconciliations and board reporting. Statutory links are general references only; the page does not offer legal interpretation, compliance guarantees or on-site community management. The HOA hub links to the page, and the route is included in sitemap/search-intent records and AI-readable indexes.
