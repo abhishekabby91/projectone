@@ -182,6 +182,7 @@ export default function WhiteLabelAccountingForCpaFirmsPage() {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
               ['/industries/cpa-firms', 'CPA firm outsourcing overview', 'Overall preparation capacity, workflow boundaries and review model.'],
+              ['/industries/cpa-firms/cas-production-support', 'CAS production support', 'Recurring client accounting production and reporting-package workflow.'],
               ['/services/bookkeeping/united-states', 'Bookkeeping for CPA firms', 'Recurring client books, reconciliations and close preparation.'],
               ['/services/tax-preparation/united-states', 'Tax preparation support', 'Return-preparation workpapers and reviewer handoff.'],
               ['/resources/guides/client-accounting-services-cas-guide', 'Client Accounting Services guide', 'How production support fits into a CPA firm’s CAS practice.'],
