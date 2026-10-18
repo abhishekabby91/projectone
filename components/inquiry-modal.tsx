@@ -47,7 +47,7 @@ export function openInquiry(request: InquiryRequest = {}) {
 
 const DEFAULT_TITLE = 'Talk to Us About This Work';
 const DEFAULT_LEAD =
-  'Tell us what is falling behind and how the work is handled today. We can discuss the scope, review points and what support may fit.';
+  'The consultation and the call are free. Tell us what is falling behind and we will scope what support would actually change.';
 
 export default function InquiryModal() {
   const [request, setRequest] = useState<InquiryRequest | null>(null);
@@ -141,7 +141,7 @@ export default function InquiryModal() {
         </button>
 
         <div className="space-y-2 pr-10">
-          <span className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Discuss your workflow</span>
+          <span className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Free consultation</span>
           <h2
             id="inquiry-modal-heading"
             className="font-serif text-xl font-bold leading-tight text-primary text-balance sm:text-2xl"
