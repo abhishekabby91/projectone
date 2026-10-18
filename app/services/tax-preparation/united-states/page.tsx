@@ -102,6 +102,18 @@ export default function TaxPrepUSPage() {
                 <p className="text-muted leading-7">Partnership returns from an agreed trial balance, tax basis capital maintained rather than reconstructed, and K-1s reviewed before a partner sees one.</p>
               </Link>
             </Reveal>
+            <Reveal delay={0.2}>
+              <Link href="/services/tax-preparation/united-states/1120-corporation" className="block h-full rounded-2xl bg-input border border-border/70 p-6 md:p-8 transition-colors hover:border-primary/40">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-3">Form 1120 corporate return</h3>
+                <p className="text-muted leading-7">Corporate return workpapers, book-to-tax schedules and fixed-asset support, prepared for the firm’s review.</p>
+              </Link>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <Link href="/services/tax-preparation/united-states/1120-s-corporation" className="block h-full rounded-2xl bg-input border border-border/70 p-6 md:p-8 transition-colors hover:border-primary/40">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-3">Form 1120-S S corporation return</h3>
+                <p className="text-muted leading-7">Corporate books and shareholder schedule workpapers with basis, loan and compensation questions routed to your reviewer.</p>
+              </Link>
+            </Reveal>
           </div>
         </div>
       </section>
