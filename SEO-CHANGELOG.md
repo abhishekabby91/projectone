@@ -5007,3 +5007,20 @@ This pass followed up on the "Next planned changes" items from the audit above: 
 **Purpose:** Test a more query-aligned snippet for an existing page that already appears near the top for relevant terms. This is a CTR hypothesis, not a guarantee.
 
 **Guardrails:** No URLs changed and no new public pages were created. Query counts are modest, average position varies by query/device/location, and success must be measured against post-change GSC data rather than inferred from these edits.
+
+
+## 2026-10-18 — GSC-led commercial page refinement
+
+### `/technology/netsuite`
+
+**GSC evidence (2026-07-20 to 2026-10-15, final data):** “netsuite accounting support” recorded 36 impressions at an average position of 15.3, with no clicks in this query-page sample. Other NetSuite service queries had very low impression counts.
+
+**Changed:** Tightened the title around NetSuite accounting support and month-end close, and clarified the description around reconciliations, intercompany balances/eliminations, currency revaluation, consolidation and reporting. Replaced the “Dedicated Accounting Teams” related link with a Tax Preparation link to avoid that positioning language and improve service navigation.
+
+### `/blog/tax-preparation-outsourcing`
+
+**GSC evidence (2026-07-20 to 2026-10-15, final data):** Relevant terms included “cch axcess outsource” (7 impressions, average position 10), “cch outsource” (3 impressions, position 8), “outsourced tax preparation for cpa firms” (43 impressions, position 20.6), “outsource tax preparation” (47 impressions, position 24.7), and “outsourced tax preparation services” (42 impressions, position 25.7). These are modest query samples; positions are averages, not fixed rankings.
+
+**Changed:** Updated the title to match the CPA-firm tax preparation outsourcing intent and rewrote the description to reflect the existing Drake Tax/CCH Axcess workflow content and licensed review boundary. No URL changes and no new pages.
+
+**Measurement note:** These edits improve relevance and search-result messaging; they do not guarantee ranking or clicks. Recheck GSC after recrawling, ideally over a comparable 28-day window, and compare clicks, impressions, CTR and average position.
