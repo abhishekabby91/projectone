@@ -72,8 +72,8 @@ export default function HoaAccountingPage() {
       <PremiumHero
         subtitle="HOAs, condos and community management companies"
         title="HOA & Community Association Accounting Outsourcing"
-        description="Assessment and homeowner ledgers, operating and reserve funds kept apart, delinquency schedules a board can act on, and a board pack that looks the same every month. Every decision stays with the board."
-        cta={{ text: 'Discuss HOA Accounting', href: '/contact' }}
+        description="Accounting outsourcing support for HOA and community association management companies: assessment and homeowner ledgers, operating and reserve fund records, reconciliations, delinquency schedules and monthly board reporting. Your managers and boards retain decisions and payment authority."
+        cta={{ text: 'Discuss HOA Accounting Outsourcing', href: '/contact' }}
         ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
       />
@@ -91,7 +91,7 @@ export default function HoaAccountingPage() {
       <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-5xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">HOA accounting, explained</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced HOA Accounting Include?</h2>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Can an HOA Management Company Outsource?</h2>
           <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">HOA accounting outsourcing covers recurring financial recordkeeping and reporting for homeowners associations, condominium associations and community management companies. It can include assessment billing and homeowner ledgers, bank and balance-sheet reconciliations, accounts payable processing, operating and reserve fund records, delinquency schedules, budget-versus-actual reporting and monthly board packages. Work is prepared from the association’s source records and established accounting policies, with exceptions documented for review. The board or its authorized manager retains decisions about budgets, collections, reserve funding, invoice approvals and payments.</p>
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-xl border border-border bg-white p-5"><h3 className="font-bold text-primary">Monthly records</h3><p className="mt-2 text-sm leading-relaxed text-muted">Keep transactions, bank activity and homeowner balances organized for review.</p></div>
