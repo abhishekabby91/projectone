@@ -30,7 +30,7 @@ export default function Hero() {
               href="/contact"
               className="bg-orange-500 hover:bg-orange-600 px-6 py-4 rounded-xl"
             >
-              Discuss Your Needs
+              Schedule Consultation
             </Link>
 
             <Link
