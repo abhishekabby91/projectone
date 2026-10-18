@@ -134,7 +134,7 @@ export default function UkYearEndAccountsPage() {
 
       <FAQSection subtitle="Year-End Questions" items={faqs} columns={2} />
 
-      <InquirySection region="united-kingdom" source={PATH} title="Talk to Us Before the Next Year-End Cycle" lead="The useful time to review a year-end file is before the year ends. Tell us which clients or parts of the process need the most support." />
+      <InquirySection region="united-kingdom" source={PATH} title="Talk to Us Before the Next Year-End Cycle" lead="Tell us about the work you need support with. The useful time to look at a year-end file is before the year ends — tell us which clients are the difficult ones." />
 
       <CTABanner
         title="Is Year-End the Constraint on Your Practice?"
