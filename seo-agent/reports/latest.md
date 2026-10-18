@@ -23,7 +23,7 @@
 | app/blog/hoa-year-end-checklist/page.tsx | 80/100 | 278 | 1 | 3 | 0 | 0 |
 | app/delivery-framework/communication/page.tsx | 80/100 | 258 | 1 | 5 | 0 | 0 |
 | app/markets/page.tsx | 80/100 | 265 | 1 | 3 | 0 | 0 |
-| app/solutions/page.tsx | 80/100 | 224 | 1 | 4 | 0 | 0 |
+| app/solutions/page.tsx | 80/100 | 233 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounts-receivable-aging/page.tsx | 85/100 | 595 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-income-statement-explained/page.tsx | 85/100 | 472 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-maintenance-expense-accounting/page.tsx | 85/100 | 697 | 1 | 3 | 0 | 0 |
@@ -134,7 +134,7 @@
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 850 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2883 | 1 | 75 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2887 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1116 | 1 | 11 | 0 | 0 |
@@ -150,7 +150,7 @@
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2446 | 1 | 80 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2454 | 1 | 80 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 827 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
@@ -222,7 +222,7 @@
 | app/technology/xero/page.tsx | 90/100 | 443 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1500 | 1 | 10 | 0 | 0 |
+| app/page.tsx | 100/100 | 1518 | 1 | 10 | 0 | 0 |
 
 ## Priority queue
 
