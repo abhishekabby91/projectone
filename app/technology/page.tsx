@@ -40,7 +40,7 @@ const techFAQs = [
   {
     question: 'How do you handle data security?',
     answer:
-      'Every engagement is NDA-backed with access limited to the team members working on your account. We are actively working toward formal certification (SOC 2) and will share our current status directly if you ask.',
+      'Agree permitted users, system access and handling requirements during onboarding. Confirm any contractual or regulatory requirements before work begins.',
   },
   {
     question: 'Do you provide financial forecasting or business intelligence dashboards?',
@@ -60,7 +60,7 @@ const workflowPoints = [
   'Recurring reconciliations and account maintenance on your close schedule',
   'Reporting built from your platform\'s standard reports and exports',
   'Documented handoffs so your reviewer can see what changed and why',
-  'NDA-backed access limited to the team working on your account',
+  'Agreed access and workflow responsibilities',
   'No proprietary platform — your data and history stay in your own software',
 ];
 
@@ -173,7 +173,7 @@ export default function TechnologyPage() {
 
       <FAQSection subtitle="Technology" items={techFAQs} columns={2} />
 
-      <InquirySection source="/technology" title="Talk to Us About the Platform You Work In" lead="A free consultation, and a call that costs nothing. Name the platform and the work, and we will tell you plainly whether we are a fit for it." compact />
+      <InquirySection source="/technology" title="Talk to Us About the Platform You Work In" lead="Name the platform and the accounting work you need covered. We can clarify which tasks fit our scope and which remain with your software vendor or implementation partner." compact />
 
       <CTABanner
         title="Which System Are You Working In?"
