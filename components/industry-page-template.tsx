@@ -232,7 +232,7 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
       <InquirySection
         source={`/industries/${slug}`}
         title={`Talk to Us About ${industry.name} Accounting`}
-        lead={`A free consultation, and a call that costs nothing. Tell us how ${industry.name.toLowerCase()} work is handled today and where the recurring load is landing on the wrong people.`}
+        lead={`Tell us how ${industry.name.toLowerCase()} work is handled today and where recurring tasks are creating a capacity gap. We can discuss a practical scope and the review points your team retains.`}
         compact
       />
 
