@@ -14,6 +14,18 @@ Added `/industries/healthcare/dental-practice-accounting` as a dental-specific c
 
 Every new or refreshed industry URL must have a distinct client/buyer, a researched query/workflow intent, a page-specific value statement, and a documented contextual link path from its relevant industry hub. Supporting pages must link back to the hub and to relevant sibling services/resources when useful. Keep HOA associations, third-party property managers, real-estate owners/investors, e-commerce sellers, CPA firms, healthcare practices, technology/SaaS companies and contractors distinct when their workflows and search intent differ. Do not create a page for every keyword variant; record overlap decisions in `docs/SEARCH-INTENTS.md`. Refer to `AI-WEBSITE-GUIDE.md` for the required industry-to-client/query/link contract and pre-release checklist.
 
+## 2026-10-18 — CPA-firm state landing-page cluster
+
+These are commercial service pages, recorded here because the site page contract requires a content-registry entry as well as a route and search-intent record. The cluster is a test of state-qualified CPA-firm intent, not a claim that state-level search volumes have been verified. Census establishment scale is only market context; competitor state pages demonstrate SERP precedent, not demand.
+
+| Title | URL | Cluster | Primary intent | Status | Last updated |
+|---|---|---|---|---|---|
+| Accounting Outsourcing for California CPA Firms | `/industries/cpa-firms/california` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; California portfolio examples and preparation/review workflow | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Texas CPA Firms | `/industries/cpa-firms/texas` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined recurring preparation and reviewer handoff | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Florida CPA Firms | `/industries/cpa-firms/florida` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; client-portfolio and seasonal workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for New York CPA Firms | `/industries/cpa-firms/new-york` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined preparation and multi-entity workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Illinois CPA Firms | `/industries/cpa-firms/illinois` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; recurring preparation workflows across varied portfolios | Draft page added; search volume not verified | 2026-10-18 |
+
 # Content Registry
 
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
