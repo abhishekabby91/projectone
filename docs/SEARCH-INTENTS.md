@@ -142,3 +142,6 @@ wrong in both.
 | Search intent | Canonical route | Intent boundary |
 |---|---|---|
 | Self-managed HOA accounting support | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial accounting support for associations without a management company; not community management or legal advice |
+| HOA and condo association chart of accounts setup | `/blog/hoa-chart-of-accounts` | Informational — sample account groups and setup considerations; distinct from the commercial HOA accounting hub |
+| Property management chart of accounts example | `/blog/property-management-chart-of-accounts` | Informational — property/entity, tenant, deposit and owner reporting structure; distinct from the commercial property-management accounting page |
+| Ecommerce accounting services for online retailers | `/industries/ecommerce` | Commercial — broad multi-channel ecommerce accounting; Amazon seller and Shopify accounting pages remain platform-specific spokes |

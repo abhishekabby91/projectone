@@ -3,8 +3,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Chart of Accounts',
-  description: 'A practical property management chart of accounts guide covering property income, expenses, owner activity, tenant balances, deposits and management fees.',
+  title: 'Property Management Chart of Accounts: Example',
+  description: 'See a property management chart of accounts example for rental income, property expenses, tenant deposits, receivables, owner activity and separate entities.',
   path: '/blog/property-management-chart-of-accounts',
 });
 
@@ -61,6 +61,18 @@ export default function Page() {
         <tr><td>Cash</td><td>Operating, property, trust or other accounts used in the workflow</td></tr>
         <tr><td>Owner activity</td><td>Owner contributions, distributions and reserve-related balances where applicable</td></tr>
       </tbody></table>
+
+      <h2>Property Management Chart of Accounts Example</h2>
+      <p>These sample ranges show a possible structure, not a universal template. Keep the chart aligned with the reporting required for each property-owning entity and the management company; account numbering and presentation should match the client's accounting policy and software.</p>
+      <table><thead><tr><th>Illustrative range</th><th>Account group</th><th>Possible accounts</th><th>What to check</th></tr></thead><tbody>
+        <tr><td>1000–1999</td><td>Assets</td><td>Operating cash, property cash where applicable, tenant/owner receivables, prepaid expenses</td><td>Bank and subsidiary ledgers reconcile by entity</td></tr>
+        <tr><td>2000–2999</td><td>Liabilities</td><td>Vendor payables, accrued expenses, security deposits payable, prepaid rent where applicable</td><td>Tenant funds and unpaid obligations remain correctly classified</td></tr>
+        <tr><td>3000–3999</td><td>Equity / owner balances</td><td>Capital contributions, distributions and retained balances as appropriate to the entity</td><td>Owner activity is traceable and not treated as an operating expense by default</td></tr>
+        <tr><td>4000–4999</td><td>Property income</td><td>Rent, late fees, recoveries and other property-level income</td><td>Income ties to rent rolls and collection records</td></tr>
+        <tr><td>5000–5999</td><td>Property expenses</td><td>Repairs, maintenance, insurance, taxes, utilities and management fees</td><td>Costs are categorized consistently for owner statements and budget review</td></tr>
+        <tr><td>Separate management-company ledger</td><td>Management company activity</td><td>Management fee revenue, payroll and corporate operating costs</td><td>Do not mix the management company's books with property-owner entity books</td></tr>
+      </tbody></table>
+      <p>For a multi-entity portfolio, use the system's entity, property, class or dimension features where they fit the reporting need. Due-to/due-from balances and shared-cost allocations should be supported and reviewed rather than netted across entities to simplify a report.</p>
 
       <h2>Do not create an account for every property automatically</h2>
       <p>Many systems can track a property through classes, locations, dimensions or property records. Creating separate general-ledger accounts for every property can make the chart difficult to maintain. The better structure depends on the platform and the reports the business needs.</p>

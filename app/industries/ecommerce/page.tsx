@@ -6,9 +6,9 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/ecommerce';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting for E-Commerce Businesses',
+  title: 'Ecommerce Accounting Services for Online Retailers',
   description:
-    'Outsourced bookkeeping for online retail — multi-channel sales reconciliation across Shopify and Amazon, inventory and COGS, and nexus tracking.',
+    'Ecommerce accounting for Shopify, Amazon and multi-channel sellers: reconcile payouts, marketplace fees, refunds, inventory and COGS in QuickBooks or Xero.',
   path: PATH,
 });
 

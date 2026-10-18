@@ -3,8 +3,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'HOA Chart of Accounts',
-  description: 'A practical guide to building an HOA chart of accounts for assessments, operating expenses, reserves, receivables, payables and board reporting.',
+  title: 'HOA Chart of Accounts: Example & Setup Guide',
+  description: 'See an illustrative HOA and condo association chart of accounts, with sample account groups for assessments, operating expenses, reserves, receivables and board reporting.',
   path: '/blog/hoa-chart-of-accounts',
 });
 
@@ -67,6 +67,21 @@ export default function HoaChartOfAccounts() {
           <tr><td>Reserve activity</td><td>Reserve contributions, reserve-funded projects</td><td>Keeps long-term activity visible</td></tr>
         </tbody>
       </table>
+
+      <h2>An Illustrative HOA Chart of Accounts Example</h2>
+      <p>The table below shows one way to group accounts. The number ranges are examples only, not a required industry standard; adapt them to the association's accounting basis, reporting needs and software.</p>
+      <table>
+        <thead><tr><th>Illustrative range</th><th>Account group</th><th>Possible accounts</th><th>Review purpose</th></tr></thead>
+        <tbody>
+          <tr><td>1000–1999</td><td>Assets</td><td>Operating cash, reserve cash, assessment receivables, prepaid expenses</td><td>Reconcile bank accounts and subsidiary balances</td></tr>
+          <tr><td>2000–2999</td><td>Liabilities</td><td>Vendor payables, accrued expenses, prepaid assessments or owner credits</td><td>Identify unpaid obligations and amounts held for future periods</td></tr>
+          <tr><td>3000–3999</td><td>Fund balances / equity</td><td>Opening balances and accumulated balances, as appropriate to the association's accounting basis</td><td>Keep the balance-sheet presentation consistent</td></tr>
+          <tr><td>4000–4999</td><td>Income</td><td>Regular assessments, special assessments, interest and other association income</td><td>Separate recurring assessments from other receipts</td></tr>
+          <tr><td>5000–5999</td><td>Operating expenses</td><td>Insurance, utilities, landscaping, repairs and management fees</td><td>Make budget-to-actual review easier</td></tr>
+          <tr><td>6000–6999</td><td>Reserve-funded project expenses</td><td>Major repairs or projects tracked by work type, where separate grouping is useful</td><td>Make project spending visible without confusing it with a cash transfer</td></tr>
+        </tbody>
+      </table>
+      <p>Keep reserve bank accounts in the asset section. Moving money between operating and reserve bank accounts is a transfer, not an expense by itself. Record the related project cost according to the association's accounting policy, and use project or fund dimensions where the software supports them.</p>
 
       <h2>Keep Operating and Reserve Activity Understandable</h2>
       <p>One common problem is a chart that technically records everything but makes it difficult for a board member to understand what happened. Operating expenses and reserve-funded work should be identifiable without forcing the board to reconstruct the transactions from bank statements.</p>
