@@ -29,7 +29,7 @@ export default function MarketsPage() {
         title="Markets We Serve"
         description="Accounting support built around the specific tax and compliance realities of the United States, United Kingdom, and Australia."
         cta={{
-          text: 'Schedule Consultation',
+          text: 'Discuss Your Accounting Needs',
           href: '/contact',
         }}
         ctaSecondary={{
@@ -79,7 +79,7 @@ export default function MarketsPage() {
         </div>
       </section>
 
-      <InquirySection source="/markets" title="Talk to Us About Your Market" lead="A free consultation, and a call that costs nothing. Tell us which market your clients file in and we will scope around that compliance year." />
+      <InquirySection source="/markets" title="Talk to Us About Your Market" lead="Tell us which market your clients file in and which accounting workflows need support. We can discuss the relevant reporting cycle, scope and handoffs." />
 
       <CTABanner
         title="Let's Talk About Your Market"
