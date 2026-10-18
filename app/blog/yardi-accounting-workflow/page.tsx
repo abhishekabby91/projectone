@@ -112,7 +112,7 @@ export default function YardiAccountingWorkflowBlog() {
         A useful accounting support team does not replace the property manager's decisions. It takes repeatable accounting work off the operating team's queue while keeping review, approval and portfolio-level decisions with the people responsible for them.
       </p>
       <p>
-        If you are comparing workflows, see our <Link href="/industries/property-management" className="text-primary font-medium hover:underline">property management accounting</Link> page and our <Link href="/industries/real-estate" className="text-primary font-medium hover:underline">real estate accounting</Link> coverage for the broader property-accounting process.
+        If you need recurring accounting preparation inside an existing Yardi setup, see our <Link href="/industries/property-management/yardi-accounting-support" className="text-primary font-medium hover:underline">Yardi accounting support for property managers</Link>. For the broader workflow, see <Link href="/industries/property-management" className="text-primary font-medium hover:underline">property management accounting</Link> and <Link href="/industries/real-estate" className="text-primary font-medium hover:underline">real estate accounting</Link>.
       </p>
     </ArticleLayout>
   );
