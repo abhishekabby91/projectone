@@ -8,6 +8,7 @@ on:
       - 'app/page.tsx'
       - 'app/industries/property-management/page.tsx'
       - 'app/industries/cpa-firms/**'
+      - 'app/services/tax-preparation/**'
       - 'app/markets/**'
       - 'components/cpa-firm-state-page.tsx'
       - 'lib/cpa-firm-state-content.ts'
@@ -120,3 +121,5 @@ jobs:
           node scripts/verify-pages.mjs /industries/cpa-firms/illinois
           node scripts/verify-pages.mjs /industries/cpa-firms/white-label-accounting
           node scripts/verify-pages.mjs /industries/cpa-firms/cas-production-support
+          node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-corporation
+          node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-s-corporation
