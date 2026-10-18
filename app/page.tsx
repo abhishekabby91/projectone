@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { WHATSAPP_HREF } from '@/lib/contact-links';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import HeroBanner from '@/components/hero-banner';
@@ -79,7 +78,7 @@ export default function HomePage() {
           title="Your Accounting Outsourcing Partner"
           subtitle="Accounting support for businesses and professional firms"
           cta={{ text: 'Discuss Your Accounting Needs', href: '/contact' }}
-          ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
+          ctaSecondary={{ text: 'Send an Inquiry', href: '#inquiry' }}
         />
       </section>
 
