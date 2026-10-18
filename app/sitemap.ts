@@ -131,6 +131,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // concentrate the US tax signal instead of competing with it.
     { path: '/services/tax-preparation/united-states/1040-individual', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/services/tax-preparation/united-states/1065-partnership', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/services/tax-preparation/united-states/1120-corporation', priority: 0.65, changeFrequency: 'monthly' },
+    { path: '/services/tax-preparation/united-states/1120-s-corporation', priority: 0.65, changeFrequency: 'monthly' },
     // Standalone HOA service pages are not part of the regional service matrix.
     // Keep them explicitly discoverable because they are canonical, indexable
     // commercial pages and are linked from the HOA industry cluster.
