@@ -59,7 +59,7 @@
 | app/blog/hoa-bookkeeping-vs-accounting/page.tsx | 90/100 | 699 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-budget-to-actual-reports/page.tsx | 90/100 | 776 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-cash-vs-accrual-accounting/page.tsx | 90/100 | 755 | 1 | 3 | 0 | 0 |
-| app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 964 | 1 | 4 | 0 | 0 |
+| app/blog/hoa-chart-of-accounts/page.tsx | 90/100 | 1182 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-delinquency-accounting/page.tsx | 90/100 | 487 | 1 | 7 | 0 | 0 |
 | app/blog/hoa-financial-statements-board-review/page.tsx | 90/100 | 958 | 1 | 2 | 0 | 0 |
 | app/blog/hoa-homeowner-ledgers/page.tsx | 90/100 | 1071 | 1 | 3 | 0 | 0 |
@@ -90,7 +90,7 @@
 | app/blog/property-management-cam-reconciliation/page.tsx | 90/100 | 1349 | 1 | 6 | 0 | 0 |
 | app/blog/property-management-capital-expenditure-accounting/page.tsx | 90/100 | 1340 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-cash-flow-forecasting/page.tsx | 90/100 | 1538 | 1 | 10 | 0 | 0 |
-| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 958 | 1 | 4 | 0 | 0 |
+| app/blog/property-management-chart-of-accounts/page.tsx | 90/100 | 1187 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-credit-card-reconciliation/page.tsx | 90/100 | 1308 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-financial-statements/page.tsx | 90/100 | 1522 | 1 | 7 | 0 | 0 |
 | app/blog/property-management-in-house-vs-outsourced/page.tsx | 90/100 | 1342 | 1 | 4 | 0 | 0 |
@@ -124,7 +124,7 @@
 | app/industries/construction/page.tsx | 90/100 | 685 | 1 | 5 | 0 | 0 |
 | app/industries/cpa-firms/page.tsx | 90/100 | 1422 | 1 | 31 | 0 | 0 |
 | app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
-| app/industries/ecommerce/page.tsx | 90/100 | 456 | 1 | 5 | 0 | 0 |
+| app/industries/ecommerce/page.tsx | 90/100 | 459 | 1 | 5 | 0 | 0 |
 | app/industries/ecommerce/shopify-accounting/page.tsx | 90/100 | 1229 | 1 | 10 | 0 | 0 |
 | app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 446 | 1 | 4 | 0 | 0 |
