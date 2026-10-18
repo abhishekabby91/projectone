@@ -58,7 +58,7 @@ export default function BackOfficeSupportPage() {
         title="Back-Office Support for the Work That Repeats Every Month"
         description="Take recurring accounting administration off your team's plate: bookkeeping, payroll processing, payables, and receivables."
         cta={{
-          text: 'Schedule Consultation',
+          text: 'Discuss Your Accounting Needs',
           href: '/contact',
         }}
         ctaSecondary={{
@@ -222,7 +222,7 @@ export default function BackOfficeSupportPage() {
 
       />
 
-      <InquirySection source="/solutions/back-office-support" title="Talk to Us About Handing Over a Whole Function" lead="A free consultation, and a call that costs nothing. Tell us which recurring function you want to stop running in-house and we will scope the handover." />
+      <InquirySection source="/solutions/back-office-support" title="Talk to Us About Handing Over a Whole Function" lead="Tell us which recurring function you want to outsource. We can discuss the handover, systems, review points and responsibilities that stay with your firm." />
 
       <CTABanner
         title="Ready to Outsource Your Back Office?"
