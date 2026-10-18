@@ -108,3 +108,4 @@ jobs:
           node scripts/verify-pages.mjs /blog/hoa-accounts-payable
           node scripts/verify-pages.mjs /blog/hoa-vendor-invoice-processing
           node scripts/verify-pages.mjs /industries/hoa-accounting/self-managed-hoa-accounting
+          node scripts/verify-pages.mjs /industries/hoa-accounting/los-angeles-county

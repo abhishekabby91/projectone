@@ -120,7 +120,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/buildium-accounting-support': '2026-10-15',
   '/industries/hoa-accounting/california': '2026-10-17',
   '/industries/hoa-accounting/eunify-accounting-support': '2026-10-17',
-  '/industries/hoa-accounting/los-angeles-county': '2026-10-17',
+  '/industries/hoa-accounting/los-angeles-county': '2026-10-18',
   '/industries/hoa-accounting/orange-county': '2026-10-17',
   '/industries/hoa-accounting/san-diego-county': '2026-10-17',
   '/industries/hoa-accounting/self-managed-hoa-accounting': '2026-10-16',

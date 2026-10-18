@@ -119,3 +119,7 @@ The four property-management pages are linked from the property-management hub; 
 | Page | Canonical route | Intent | Scope |
 |---|---|---|---|
 | Accounting Support for Self-Managed HOAs | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial service | Accounting-only support for self-managed associations; board retains vendor selection, approvals, banking control and legal decisions |
+
+## 2026-10-18 — Los Angeles County HOA page intent refinement and query strategy
+
+Refined `/industries/hoa-accounting/los-angeles-county` to remove low-value generic housing-statistics framing and an unneeded chapter membership statistic, then added a need-led section routing readers by recurring monthly close, catch-up/cleanup, assessment receivables and existing software. Added contextual links to existing HOA guides and AppFolio, Buildium, Yardi and eUnify service pages. No new public URL was created. The companion `docs/HOA-QUERY-TARGETING-STRATEGY.md` maps location × software × need queries, page ownership, internal-link rules and Search Console validation steps. Query examples are hypotheses, not claims of measured search volume.
