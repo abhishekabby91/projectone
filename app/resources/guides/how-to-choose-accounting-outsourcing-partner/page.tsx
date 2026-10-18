@@ -194,6 +194,11 @@ export default function HowToChoosePartnerGuide() {
         alongside the same checklist for every option.
       </p>
 
+      <p>
+        CPA firms considering a white-label arrangement should also review our
+        <Link href="/industries/cpa-firms/white-label-accounting" className="text-primary font-medium hover:underline"> white-label accounting support overview</Link>
+        for the practical boundaries around branding, client communication, reviewer responsibilities and the first defined workstream.
+      </p>
     </ArticleLayout>
   );
 }
