@@ -99,6 +99,7 @@ export default function CpaFirmStatePage({ state }: { state: CpaFirmStateKey }) 
           <p className="mb-5 leading-relaxed text-muted">Use the national overview for the overall delivery model and the service pages for the scope of a specific workflow.</p>
           <div className="flex flex-wrap gap-3">
             <Link href="/industries/cpa-firms" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">CPA firm outsourcing overview</Link>
+            <Link href="/industries/cpa-firms/white-label-accounting" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">White-label accounting model</Link>
             <Link href="/services/bookkeeping/united-states" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">Bookkeeping support</Link>
             <Link href="/services/accounting/united-states" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">Accounting support</Link>
             <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">Tax preparation support</Link>
