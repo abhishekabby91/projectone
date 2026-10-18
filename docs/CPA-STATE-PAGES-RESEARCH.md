@@ -83,6 +83,7 @@ Do not treat the list as proof that each term has measurable volume. Capture ave
 ## Internal linking plan
 
 - Main hub `/industries/cpa-firms` links to all five state pages.
+- The US market page `/markets/united-states` also links to all five as a clearly separated path for CPA firms; it distinguishes CPA-firm buyers from direct businesses seeking accounting support.
 - Each state page links back to `/industries/cpa-firms`.
 - Each state page links contextually to US bookkeeping, accounting and tax-preparation support pages.
 - Each state page links to the Client Accounting Services guide and the How to Outsource Accounting guide where useful.
