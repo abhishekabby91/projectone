@@ -113,10 +113,10 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
-| `/industries/ecommerce` | Ecommerce Accounting Services for Online Retailers |
+| `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
-| `/industries/healthcare` | Accounting for Medical Practices |
+| `/industries/healthcare` | Healthcare Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
 | `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
