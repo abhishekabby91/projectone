@@ -48,7 +48,7 @@
 | app/blog/hoa-accounting-quickbooks/page.tsx | 90/100 | 609 | 1 | 3 | 0 | 0 |
 | app/blog/hoa-accounting-transition-checklist/page.tsx | 90/100 | 1522 | 1 | 7 | 0 | 0 |
 | app/blog/hoa-accounting-workflow/page.tsx | 90/100 | 679 | 1 | 4 | 0 | 0 |
-| app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 714 | 1 | 3 | 0 | 0 |
+| app/blog/hoa-accounting-yardi/page.tsx | 90/100 | 735 | 1 | 4 | 0 | 0 |
 | app/blog/hoa-accounts-payable/page.tsx | 90/100 | 1226 | 1 | 8 | 0 | 0 |
 | app/blog/hoa-annual-budget-preparation/page.tsx | 90/100 | 1485 | 1 | 8 | 0 | 0 |
 | app/blog/hoa-assessment-accounting/page.tsx | 90/100 | 991 | 1 | 2 | 0 | 0 |
@@ -113,9 +113,9 @@
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 726 | 1 | 6 | 0 | 0 |
 | app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 2262 | 1 | 10 | 0 | 0 |
-| app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
+| app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 1705 | 1 | 13 | 0 | 0 |
 | app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1878 | 1 | 7 | 0 | 0 |
-| app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 963 | 1 | 3 | 0 | 0 |
+| app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 972 | 1 | 4 | 0 | 0 |
 | app/company-registration/page.tsx | 90/100 | 1125 | 1 | 8 | 0 | 0 |
 | app/contact/page.tsx | 90/100 | 1635 | 1 | 8 | 0 | 0 |
 | app/cookie-policy/page.tsx | 90/100 | 1015 | 1 | 5 | 0 | 0 |
@@ -206,7 +206,7 @@
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 735 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 633 | 1 | 8 | 0 | 0 |
-| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 663 | 1 | 9 | 0 | 0 |
+| app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 715 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 1870 | 1 | 20 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1009 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1311 | 1 | 8 | 0 | 0 |
