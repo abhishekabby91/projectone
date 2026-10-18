@@ -3,6 +3,7 @@ import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import InquirySection from '@/components/inquiry-section';
 import CTABanner from '@/components/cta-banner';
+import ServiceIllustration from '@/components/service-illustration';
 import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema, baseUrl } from '@/lib/seo';
 import { cpaFirmStateContent, type CpaFirmStateKey } from '@/lib/cpa-firm-state-content';
 
@@ -49,10 +50,18 @@ export default function CpaFirmStatePage({ state }: { state: CpaFirmStateKey }) 
       </nav>
 
       <section className="w-full bg-white px-6 py-10 md:px-8 md:py-14">
-        <div className="mx-auto max-w-5xl space-y-5">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">{data.name} practice workflows</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Where a defined preparation handoff can help</h2>
-          <p className="text-base leading-relaxed text-muted md:text-lg">{data.opening}</p>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+          <div className="space-y-5">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent">{data.name} practice workflows</p>
+            <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Where a defined preparation handoff can help</h2>
+            <p className="text-base leading-relaxed text-muted md:text-lg">{data.opening}</p>
+          </div>
+          <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
+            <ServiceIllustration service="accounting" className="mx-auto w-full max-w-[260px]" />
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">Preparation → review</p>
+            <p className="mt-2 text-base font-semibold text-primary">Keep the work traceable</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">The handoff should show what reconciles, what evidence supports it and which decisions still need the firm’s reviewer.</p>
+          </aside>
         </div>
       </section>
 
