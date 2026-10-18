@@ -62,7 +62,7 @@ export default function CCHPage() {
 
       <FAQSection subtitle="CCH Axcess Questions" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/cch" title="Talk to Us About Your CCH Axcess Workflow" lead="A free consultation, and a call that costs nothing. Tell us how returns move through CCH in your firm and where the queue forms." compact />
+      <InquirySection source="/technology/cch" title="Talk to Us About Your CCH Axcess Workflow" lead="Tell us how returns move through CCH in your firm and where the queue forms." compact />
 
       <CTABanner title="Where Is Your CCH Axcess Review Queue Getting Stuck?" description="Tell us whether the pressure is preparation capacity, document organization or tax-season volume." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
