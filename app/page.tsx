@@ -18,7 +18,7 @@ import { services, solutions, testimonials, markets } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   description:
-    'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
+    'Accounting, bookkeeping and tax outsourcing for businesses and professional firms, delivered within existing workflows.',
   path: '/',
   absoluteTitle: true,
   ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
@@ -36,7 +36,7 @@ const homePageFAQs = [
   {
     question: 'Who does Accounstone work with?',
     answer:
-      'Accounstone primarily supports property management companies, HOA and community association management firms, CPA firms and accounting practices. Businesses with recurring accounting work can also outsource defined processes around their existing software, reporting requirements and review workflow.',
+      'Accounstone supports businesses and professional firms with recurring accounting, bookkeeping and tax-preparation work. This includes CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses. Work is structured around existing software, reporting requirements and review workflows.',
   },
   {
     question: 'Can you work with our existing software?',
@@ -76,7 +76,7 @@ export default function HomePage() {
           alt="Accounting reports, charts and calculator on a desk"
           pageHeading="Accounting, Bookkeeping & Tax Outsourcing"
           title="Your Accounting Outsourcing Partner"
-          subtitle="For property management companies, HOA managers, CPA firms and businesses"
+          subtitle="Accounting support for businesses and professional firms"
           cta={{ text: 'Discuss Your Accounting Needs', href: '/contact' }}
           ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         />
@@ -94,7 +94,7 @@ export default function HomePage() {
                 What Accounting Support Can You Outsource?
               </h2>
               <p className="text-muted leading-relaxed">
-                Accounstone is an accounting outsourcing partner for property management companies, HOA and community association management firms, CPA firms and other businesses with recurring accounting work. Support can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close, payroll processing and tax workpapers. Work fits the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
+                Accounstone is an accounting outsourcing partner for businesses and professional firms. Services can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close, payroll processing and tax workpapers. Clients include CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
               </p>
             </>
           </Reveal>
@@ -106,13 +106,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-3 sm:gap-5">
           {[
             {
-              title: 'For Property Management & HOA Firms',
-              body: 'Outsource reconciliations, AP/AR and recurring financial reporting while keeping portfolio oversight, client relationships and approvals in-house.',
-              href: '/industries/property-management',
+              title: 'For Businesses & Management Companies',
+              body: 'Outsource recurring accounting, reconciliations, AP/AR and financial reporting within your existing systems and approval processes.',
+              href: '/solutions',
             },
             {
               title: 'For CPA & Accounting Firms',
-              body: 'Outsource recurring bookkeeping, accounting and agreed tax-preparation work while keeping client relationships, decisions and final review in-house.',
+              body: 'Outsource bookkeeping, accounting and agreed tax-preparation work while keeping client relationships, decisions and final review in-house.',
               href: '/industries/cpa-firms',
             },
           ].map((item, i) => (
