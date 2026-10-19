@@ -1,3 +1,54 @@
+## 2026-10-19c — The lastmod generator, the bot that reverted it, and two docs reconciled
+
+**The hand-fix recorded in 2026-10-19b was incomplete, and CI reverted it
+anyway.** Both facts are the entry.
+
+`refresh-sitemap-dates.yml` runs on every push and commits
+`generate-sitemap-dates.mjs` output. It ran on `main` and pushed straight to
+it — 55 unreviewed commits to production over the project's life — and it
+re-fabricated the corrected dates within seconds of the merge. A hand
+correction to a generated file cannot survive its generator, so the generator
+was the thing to fix.
+
+**Root cause: a `BODY_MODULES` change is assumed to affect every route that
+imports the module.** `getRelatedLinks` in `components/article-layout.tsx`
+branches on the slug, so `705ff4c` (added a Yardi branch) and `20e8fa4`
+(rewrote the `hoa-` branch) changed two articles and the HOA set respectively,
+and nothing else — yet dated **120 routes** to 2026-10-19.
+
+`NON_RENDERING_COMMITS` could not express this: it is all-or-nothing, and
+listing those SHAs would have un-dated the HOA and Yardi articles that really
+did change. Added **`PARTIAL_RENDERING_COMMITS`**, mapping a SHA to a regex of
+the routes it does affect; a route that does not match skips the commit and
+falls back to the last one that changed something. A predicate rather than a
+frozen route list, so it stays correct as articles are added.
+
+**49 routes moved back to their true dates** (43 to 2026-10-17, 6 to
+2026-10-18) — more than the 20 corrected by hand, because the hand pass missed
+the entire property-management article set. Reasoning about which pages a diff
+reaches is exactly what people get wrong; the generator does not. Routes that
+genuinely changed kept 2026-10-19, verified by spot check on both sides.
+Confirmed idempotent: two consecutive runs produce no diff.
+
+**`refresh-sitemap-dates.yml` now carries `branches-ignore: [main]`.** Dates
+are generated and reviewed on a branch and the merge carries them, which is
+what its own comment said the job was for. It also removes a bot's write
+access to a published SEO signal and to the production deploy trigger.
+
+**`CLAUDE.md` reconciled.** Three counts were measured when the site had 95
+routes and are now wrong: 156 page files → **218**, 150 sitemap URLs → **212**,
+204 inventory routes → **212**, "eight redirects" → **18** (all swept and
+confirmed single-hop). The Current-state heading now says outright that its
+counts go stale faster than anything else in the file and should be
+re-measured, not quoted. Two sections added: the shared-module `lastmod`
+problem above, and the Cloudflare AI-bot block — which cost several sessions
+spent on `app/robots.ts`, a file that was correct throughout.
+
+**New URLs:** none. **Redirects:** unchanged. **Content:** unchanged — this
+pass touches one script, one workflow and two documentation files.
+
+---
+
 ## 2026-10-19b — Pre-deploy review of the GSC cluster audit: metadata budget, redirect links, lastmod
 
 Review of the 2026-10-19 cluster-audit branch before release. The redirect

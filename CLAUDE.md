@@ -15,7 +15,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | File | What it governs |
 |---|---|
 | `AI-WEBSITE-GUIDE.md` | Tone, content rules, architecture, banned phrases, **"Known build gotchas"**. The single most important file. |
-| `docs/ROUTE-INVENTORY.md` | **Generated list of all 204 indexable routes and titles. Paste it alongside the brief below** — without it an external AI cannot judge overlap or "improve the existing page instead". Regenerate with `node scripts/route-inventory.mjs`. |
+| `docs/ROUTE-INVENTORY.md` | **Generated list of all 212 indexable routes and titles. Paste it alongside the brief below** — without it an external AI cannot judge overlap or "improve the existing page instead". Regenerate with `node scripts/route-inventory.mjs`. |
 | `docs/NEW-PAGE-BRIEF.md` | **Self-contained brief to paste into ChatGPT or any AI working outside this repo.** Same contract as `PAGE-FORMAT.md`, restated for someone who cannot read our files or run the checker: the page template, the six things to hand back, and the claim rules inlined. |
 | `docs/PAGE-FORMAT.md` | **The shape contract for every new page** — word floors by page type, metadata budgets, band order, FAQ rules, and the finish checklist. Enforced by `node scripts/verify-pages.mjs`. Read before writing a page; run the checker before merging. |
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
@@ -46,22 +46,35 @@ background, superseded on specifics by the files above.
 
 ---
 
-## Current state (verified 2026-09-09)
+## Current state (counts re-verified 2026-10-19; the rest 2026-09-09)
 
-- The sitemap drift check is documented below. The current tree has 156
-  `app/**/page.tsx` routes; 150 canonical indexable routes belong in the sitemap.
-  Four legacy source routes redirect permanently and two live routes are `noindex`,
-  so those six page files are deliberately absent. Re-run the drift check after
-  any route or redirect change.
+**The counts in this section go stale faster than anything else in this file.
+Re-measure before quoting one.** Every figure below carrying a 2026-09-09 date
+was written when the site had 95 routes; it now has 218. Treat an undated count
+here as a claim to check, not a fact.
+
+- The sitemap drift check is documented below. The current tree has **218**
+  `app/**/page.tsx` routes; **212** canonical indexable routes belong in the
+  sitemap. Four legacy blog routes redirect permanently and two live routes are
+  `noindex`, so those six page files are deliberately absent. Re-run the drift
+  check after any route or redirect change.
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
   `/services/{service}/{region}`. The matrix lives in `lib/data.ts` (`regions`,
   `serviceRegions`, `serviceRegionPaths`) and drives the navbar, footer, `/services`
   hub and `app/sitemap.ts` from one place. **Do not recreate a generic
   `/services/{slug}` page** — those 7 URLs are 301s and a generic page competes with
   its own regional children.
-- Eight redirects, all single-hop: the 7 retired generic service URLs → a
-  regional page, plus `/blog/outsourced-accounting-services` →
-  `/resources/guides/outsourced-accounting-services-guide`. Six target United
+- **18 redirects (2026-10-19), all single-hop and verified as such** — no
+  destination is itself a source. The original eight were the 7 retired generic
+  service URLs → a regional page, plus `/blog/outsourced-accounting-services` →
+  `/resources/guides/outsourced-accounting-services-guide`; ten more have been
+  added since for retired HOA blog URLs, `/technology/yardi`, and the two
+  service pages consolidated into their industry hubs on 2026-10-19
+  (`/services/hoa-accounting` → `/industries/hoa-accounting`,
+  `/services/property-management-accounting` →
+  `/industries/property-management`). **Sweep every source for inbound links
+  after adding one** — nine links were still pointing at a redirect source when
+  that pass was reviewed. Of the original eight, six target United
   States; **`/services/audit-support` targets United Kingdom** (2026-09-03),
   because 40 of its 46 country-resolved impressions are British. The evidence
   for each of the seven is in the comment above the redirects in
@@ -113,9 +126,11 @@ background, superseded on specifics by the files above.
 - No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
 - **Six routes have one or fewer contextual inbound links, and all six are
   correct** — see "Internal links are measured, not assumed" below.
-- All 91 sitemap URLs carry a `lastmod`, and every one is the real date of the
-  last change to that page — generated, not written. `public/llms.txt` lists the
-  same 91 and excludes the same two `noindex` routes.
+- All 212 sitemap URLs carry a `lastmod`, generated rather than written.
+  `public/llms.txt` lists the same 212 and excludes the same two `noindex`
+  routes. **Whether every date is true depends on the generator being right
+  about shared modules — see "A shared module changes some routes, not all"
+  below.**
 
 ### The navbar is not a crawl path
 
@@ -573,6 +588,54 @@ already in that position on 2026-10-15.
 time by hand, after the `serviceRegionPaths.map()` loop had already generated
 them. The dedupe swallowed them silently, so 21 lines were dead and anyone
 editing them saw no effect. They are gone; the loop is the only source.
+
+### A shared module changes some routes, not all
+
+**`refresh-sitemap-dates.yml` runs `generate-sitemap-dates.mjs` on every push
+and commits the result. Until 2026-10-19 it also ran on `main` and pushed
+straight to it — 55 unreviewed commits to production, each one triggering a
+deploy. It now has `branches-ignore: [main]`**, so dates are generated and
+reviewed on a branch and the merge carries them. That is all "validated before
+merge" ever needed, and it removes a bot's write access to a published SEO
+signal.
+
+That guardrail exists because of what the generator got wrong underneath it.
+A route is dated from the last commit touching its own `page.tsx` **or a
+`BODY_MODULES` entry**, and that second half assumes a shared module change
+affects every route that imports it. `getRelatedLinks` in
+`components/article-layout.tsx` breaks the assumption outright: it branches on
+the slug, so editing one branch moves the HTML of the routes matching it and
+leaves every other article byte-identical. Two such commits on 2026-10-19
+(`705ff4c`, `20e8fa4`) dated **120 routes** to that day when only about 70 had
+changed — 7 blog posts, 11 guides, 2 insights and the whole
+property-management article set were published to Google as "changed today"
+with identical bytes.
+
+**`NON_RENDERING_COMMITS` is the wrong tool for this and reaching for it makes
+things worse.** It is all-or-nothing: listing those SHAs would have un-dated
+the HOA and Yardi articles that genuinely did change. Neither including nor
+excluding the commit is true, which is the tell that the mechanism does not fit.
+
+**`PARTIAL_RENDERING_COMMITS` is the one to use.** It maps a SHA to a regex of
+the routes that commit *does* affect; a route that does not match skips the
+commit and falls back to the previous one that changed something. Same evidence
+bar as `NON_RENDERING_COMMITS`: read the diff and confirm the predicate
+restates the condition in the source. **Prefer a predicate over a frozen list
+of today's routes**, so it stays correct as articles are added — a list would
+silently mis-date the next HOA article someone writes.
+
+Two things to do after touching a body module, and the first one is the one
+that was skipped:
+
+- **Ask which routes the change actually reaches**, not which import the
+  module. If the answer is "some", it needs an entry here.
+- **Re-run the generator twice and diff.** It is idempotent by design; a second
+  run that moves a date means an entry is wrong.
+
+The hand-fix that found this was itself incomplete, which is worth recording:
+reverting the 20 obviously-unaffected routes by hand missed the entire
+property-management set, because reasoning about which pages a diff touches is
+exactly the thing people get wrong. Fixing the generator caught all 49.
 
 ### `public/llms.txt` is a publishing surface, not a scratch file
 
@@ -2238,6 +2301,63 @@ typed and chooses.
 `api.web3forms.com`, so intercept it. `page.route('https://api.web3forms.com/submit', ...)`
 in Playwright exercises the real submit path against a stubbed response and
 proves both the success and failure states without a live send.
+
+## Cloudflare blocked Googlebot for a month, and robots.txt was never the problem
+
+Resolved 2026-10-19. The symptom was that external AI assistants reported
+`robots.txt` and `sitemap.xml` as unretrievable, and Security Events showed
+403s on the site.
+
+**`app/robots.ts` was correct the whole time and needed nothing.** It names
+twenty crawlers in their own allow groups — a named user-agent group does not
+inherit the wildcard's rules, which is why they are spelled out. Several
+sessions' worth of effort went into the wrong file. A plain fetch of
+`/robots.txt` and `/sitemap.xml` returned 200 throughout; the assistants that
+could not read them were being 403'd as bots, which is a different fault with
+the same appearance.
+
+**The cause was Cloudflare's "Block AI bots on ad pages" managed rule**, which
+became the default for the zone on 15 Sep 2026: Training and Agent blocked on
+pages Cloudflare's own heuristic classifies as showing ads, Search allowed.
+Two consequences, the second serious:
+
+- Agent-class bots (ChatGPT-User and the like) were blocked outright — the
+  original symptom.
+- **Googlebot is classified mixed-use**, and Cloudflare's documentation is
+  explicit that "mixed-purpose crawlers that combine Search and Training will
+  also be blocked by all configurations to block AI training". So the rule was
+  blocking Google.
+
+**This site serves no ads.** A full repo sweep found no `ads.txt`, no AdSense,
+doubleclick, googlesyndication, adsbygoogle or pagead reference anywhere. The
+classification is Cloudflare's heuristic firing on a false positive, so
+**there is nothing in this repository that can fix it** — do not go looking for
+something to remove. The fix is Security → Settings → filter Bot traffic →
+Configure AI bot policies → Search, Agent and Training all to *Allow (do not
+block)*, and it is the owner's: no Cloudflare credential exists in a session,
+and the connected Cloudflare connector is the deprecated Workers Bindings
+server (D1/KV/R2/Workers only), which has no zone, WAF, bot or ruleset tools.
+The full API server is `mcp.cloudflare.com/mcp`, and it must be connected as
+`partner@accounstone.com` — the Cloudflare account holder for the domain.
+
+**Leave Bot Preference Sync off.** It only ever *adds* `Disallow` directives,
+generated from the Search/Agent/Training settings, so with all three on Allow
+it has nothing useful to write. What it can do is prepend a Cloudflare-managed
+block to `robots.txt` at the edge, which puts a second author on a file this
+repo generates deliberately — invisible to any diff, to `verify-pages.mjs` and
+to anyone reading the source. Same blind spot as the CFO claim that lived on
+inside `og-image.png` for weeks. Verified off on 2026-10-19 with a cache-miss
+fetch (`cf-cache-status: MISS`, `age: 0`): no managed block, all twenty groups
+intact.
+
+**Vercel's WAF is not a second blocker** — `GET /v1/security/firewall/config`
+returns 404 *not found*, i.e. no configuration at all. Checked so nobody has to
+check again.
+
+**The diagnostic lesson, which generalises:** a bot block and a broken file
+look identical from outside. Before editing anything, fetch the URL plainly and
+look at the status. A 200 means the file is fine and the fault is in who is
+asking.
 
 ## Environment constraints
 

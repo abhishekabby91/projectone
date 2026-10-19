@@ -108,6 +108,43 @@ const BODY_MODULES = [
 const NON_RENDERING_COMMITS = new Set(['9bcb2c5', 'a2dfd16']);
 
 /**
+ * Commits that changed a body module for SOME of its routes but not others.
+ *
+ * `NON_RENDERING_COMMITS` is all-or-nothing: a SHA listed there is skipped for
+ * every route. That is the wrong tool for the common case, which is a shared
+ * module whose change is conditional on the page — `getRelatedLinks` in
+ * `article-layout.tsx` branches on the slug, so editing one branch moves the
+ * HTML of the routes that match it and leaves every other route byte-identical.
+ * Listing such a commit as non-rendering would under-date the pages that really
+ * did change; leaving it out over-dates the ~60 that did not. Neither is true.
+ *
+ * So each entry names the routes the commit DOES affect. A route that does not
+ * match skips the commit and falls back to the previous one that changed
+ * something; a route that matches is dated from it as normal.
+ *
+ * The same evidence bar as `NON_RENDERING_COMMITS` applies: read the diff and
+ * confirm the predicate matches the condition in the code, and when in doubt
+ * leave the commit out so the date moves. Prefer a predicate that restates the
+ * condition from the source over a frozen list of today's routes, so it stays
+ * correct as articles are added.
+ *
+ *   705ff4c — added a `hoa-accounting-yardi || yardi-accounting-workflow`
+ *     branch at the TOP of getRelatedLinks. Only those two slugs change: one
+ *     previously fell through to the `hoa-` branch, the other to the default.
+ *     Every other article evaluates exactly as before.
+ *   20e8fa4 — rewrote the body of the `hoa-` branch, dropping the link to
+ *     `/services/hoa-accounting` (a 301 source). Affects `hoa-` slugs only.
+ *
+ * Found 2026-10-19: these two commits moved 120 routes to that day's date,
+ * when the great majority — 7 blog posts, 11 guides, 2 insights and the whole
+ * property-management article set — render identically either way.
+ */
+const PARTIAL_RENDERING_COMMITS = new Map([
+  ['705ff4c', /hoa-accounting-yardi|yardi-accounting-workflow/],
+  ['20e8fa4', /hoa-/],
+]);
+
+/**
  * Commits that put a file here without changing it — the 2026-10-10 history
  * re-import. `dc823de` is this repository's ROOT commit and added 353 files
  * with zero deletions, so for any page not edited since, it is the newest (and
@@ -139,7 +176,7 @@ function previousDates() {
   return prev;
 }
 
-function lastCommitDate(relPath) {
+function lastCommitDate(relPath, route) {
   const log = execFileSync(
     'git',
     ['log', '-20', '--format=%h %ad', '--date=short', '--', relPath],
@@ -149,6 +186,8 @@ function lastCommitDate(relPath) {
     const [sha, date] = line.split(' ');
     if (!sha) continue;
     if (NON_RENDERING_COMMITS.has(sha)) continue;
+    const affects = PARTIAL_RENDERING_COMMITS.get(sha);
+    if (affects && !affects.test(route)) continue;
     return { sha, date };
   }
   return null;
@@ -170,7 +209,7 @@ for (const file of walk(path.join(ROOT, 'app')).sort()) {
   const route = '/' + path.dirname(path.relative(path.join(ROOT, 'app'), file)).replace(/^\.$/, '');
   const source = fs.readFileSync(file, 'utf8');
   const deps = [rel, ...BODY_MODULES.filter((m) => source.includes(m)).map((m) => resolveModule(m))];
-  const found = deps.map(lastCommitDate).filter(Boolean);
+  const found = deps.map((dep) => lastCommitDate(dep, route)).filter(Boolean);
   if (!found.length) continue;
   const key = route.replace(/\/$/, '') || '/';
   const newest = found.sort((a, b) => (a.date < b.date ? -1 : 1)).pop();

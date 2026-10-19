@@ -3,7 +3,16 @@ name: Refresh sitemap last-modified dates
 on:
   workflow_dispatch:
   push:
-    # Refresh route dates on feature branches as well as main, so a batch can be validated before merge.
+    # Feature branches only. Dates are refreshed and reviewed on the branch, so
+    # the merge carries them — which is what "validated before merge" needs.
+    #
+    # This job used to run on main too, and pushed straight to it: 55 unreviewed
+    # commits to production. On 2026-10-19 it reverted a hand-audited lastmod
+    # correction on 49 routes within seconds of the merge, and each push also
+    # triggers a production deploy. A generated file that is wrong is cheap to
+    # fix on a branch and expensive to fix once Google has read it.
+    branches-ignore:
+      - main
     paths:
       - 'app/**/page.tsx'
       - 'app/sitemap.ts'
