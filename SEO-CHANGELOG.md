@@ -1,3 +1,17 @@
+## 2026-10-19 — Add CPA-firm overflow work support query page
+
+### Added
+- `/industries/cpa-firms/overflow-work-support` — commercial intent for CPA firms with a defined accounting backlog, file batch or temporary preparation queue.
+- Added contextual links from the CPA-firm hub and shared state-page layout.
+- Registered the route in the sitemap, sitemap dates, AI-readable indexes, route inventory, content registry and search-intent registry.
+- Added a targeted page-verifier command to the content validation workflow.
+
+### Evidence and boundaries
+Google Search Console (2026-07-20 to 2026-10-18) showed only one impression for “cpa firm overflow work outsourcing” on the CPA-firm hub, plus small related backlog-query samples on the broad back-office page. This supports testing the wording, not claiming meaningful search volume. The page is distinct from recurring CAS production and staff augmentation. No state-level volume, guaranteed turnaround, savings, local-office or certification claims are made.
+
+### Release status
+Kept on `accounstone-cpa-state-query-cluster-hoa-ux-oct19`. Production build, page verifier, similarity checks and mobile preview still need confirmation; do not merge or deploy until the Vercel limit resets and the combined batch is reviewed.
+
 ## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
 
 ### app/industries/hoa-accounting/los-angeles-county/page.tsx
