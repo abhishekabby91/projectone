@@ -220,7 +220,7 @@ export const routeLastModified: Record<string, string> = {
   '/technology/cch': '2026-10-19',
   '/technology/drake-tax': '2026-10-19',
   '/technology/myob': '2026-10-18',
-  '/technology/netsuite': '2026-10-18',
+  '/technology/netsuite': '2026-10-19',
   '/technology/quickbooks': '2026-10-04',
   '/technology/sage': '2026-10-18',
   '/technology/xero': '2026-10-18',
