@@ -133,6 +133,12 @@ export default function CpaStateSupportPage({ page }: { page: CpaStateSupportKey
             <p className="mt-3 text-sm leading-relaxed text-muted">Before taxpayer information is shared, the firm should confirm applicable federal requirements, client permissions and engagement terms with qualified advisers.</p>
             <a href={data.reference.url} target="_blank" rel="noreferrer" className="mt-4 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">{data.reference.title} ↗</a>
             <p className="mt-2 text-xs leading-relaxed text-muted">{data.reference.note}</p>
+            {data.relatedReference ? (
+              <div className="mt-3 border-t border-border pt-3">
+                <a href={data.relatedReference.url} target="_blank" rel="noreferrer" className="inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent">{data.relatedReference.title} ↗</a>
+                <p className="mt-1 text-xs leading-relaxed text-muted">{data.relatedReference.note}</p>
+              </div>
+            ) : null}
           </aside>
         </div>
       </section>
