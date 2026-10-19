@@ -73,13 +73,16 @@ Visible query/page rows from the 90-day report:
 - public/llms.txt and public/llms-full.txt: canonical HOA and property-management destinations only.
 - components/article-layout.tsx: dynamic HOA-related article links now lead directly to the canonical hub.
 
-### Last completed GSC indexing snapshot (before the latest branch changes)
-A previous sitemap resubmission reported **Valid**, 214 indexed URLs, 0 errors and 0 warnings; it showed a last download on 2026-10-19. This site-level count does not mean every URL is indexed.
-A separate URL-inspection sample showed:
-- HOA Yardi accounting support and Form 1120: “URL unknown to Google.”
-- CPA-firm California, Texas and Florida pages plus Form 1120-S: “Discovered — currently not indexed.”
-- These sample URLs had not been crawled at that snapshot.
-The latest attempt to refresh URL Inspection through GenieSeo failed with a connection error. Re-inspect after deployment rather than claiming a fresh indexing status.
+### Latest GSC URL Inspection snapshot before the branch is deployed
+A previous sitemap resubmission reported **Valid**, 214 indexed URLs, 0 errors and 0 warnings; the sitemap was last downloaded on 2026-10-19. This site-level count does not mean every URL is indexed.
+
+Two further batched URL Inspection requests completed on 2026-10-19:
+- Core pages **submitted and indexed**: U.S. tax service (last crawled Oct 14), tax guide (Oct 10), staff augmentation (Oct 12), property-management hub (Oct 7), HOA hub (Oct 15), Xero (Oct 10), AP Australia (Oct 15), AP U.S. (Oct 14), AR Australia (Oct 9), AR UK (Oct 17), AR U.S. (Oct 15), audit-support U.S. (Oct 15), audit-support UK (Oct 8), Australian bookkeeping (Oct 9), back-office support (Oct 14), dedicated teams (Oct 18), healthcare hub (Oct 6), and the Form 1040, 1120 and 1120-S tax pages (Form 1120 / 1120-S last crawled Oct 19).
+- Newly checked **discovery gaps**: HOA Yardi support = “URL unknown to Google” / never crawled; CPA firms Florida = “URL unknown to Google” / never crawled; Form 1065 partnership = “Discovered — currently not indexed” / never crawled. The CPA California and Texas pages were indexed and crawled Oct 19; HOA California and Texas pages were also indexed.
+- `/technology/myob` is **Excluded by ‘noindex’ tag**, last crawled Oct 15. This is intentional per the existing owner-approved decision recorded in the source: much of its traffic was product-implementation research unrelated to Accounstone's service scope. Its 90-day page impressions must not be treated as an indexable ranking opportunity, and its noindex should not be removed to chase impressions.
+- The live production URLs for the legacy HOA/property-accounting services were still reported as “Submitted and indexed” in this snapshot. The new redirect/source-removal changes are on this branch and have **not** been deployed; do not claim their production redirect status has changed until the current branch is built and released.
+
+**Actions for indexing gaps:** Yardi HOA is already listed in the sitemap and linked from the HOA hub; a targeted contextual link was added from the Yardi-specific informational articles. Florida CPA is already listed in the sitemap and linked from the CPA-firm hub, so verify its live response and canonical after deployment before changing content. Form 1065 is linked from the U.S. tax service hub and in the sitemap. After this branch is deployed, re-submit the updated sitemap, run URL Inspection again for these three URLs, and inspect the rendered content/canonical. The prior attempt to refresh GenieSeo did not complete, but this subsequent batched URL Inspection did complete, so the statuses above are the latest available snapshot.
 
 ### Validation limitation
 The Vercel check on previous staged SEO work reported an account build-rate-limit failure. The present audit branch has not been confirmed built or deployed. Re-run the project verification and inspect production URLs after the build limit clears. Measure the next 28-day GSC period against the prior 28 days; do not attribute changes to these edits until that comparison exists.
@@ -87,6 +90,6 @@ The Vercel check on previous staged SEO work reported an account build-rate-limi
 ## D. Implementation summary
 
 - **Legacy duplicate URLs:** 2 permanent redirects; no new URL was created.
-- **Metadata/content updates:** U.S. tax hub and guide, staff augmentation service and guide links, offshore support solution, U.S. and Australia market pages, HOA hub, AP/AR service pages and AP/AR guides.
+- **Metadata/content updates:** U.S. tax hub and informational guide; staff augmentation service and seasonal guide links; offshore support and dedicated-team/back-office solutions; U.S. and Australia market pages; HOA and property-management hubs; AP/AR U.S. and Australia services plus AR UK service; Australian bookkeeping; U.S./UK audit support; Xero platform support; healthcare accounting. MYOB stays deliberately noindex.
 - **Canonical/internal-link updates:** sitemap, llms.txt, llms-full.txt, HOA service cross-links and dynamic article related links.
 - **Outstanding:** fresh build verification, production HTTP/canonical checks and new GSC URL inspections after deployment.
