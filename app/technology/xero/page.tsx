@@ -12,8 +12,8 @@ import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Xero Accounting Support for Growing Businesses',
-  description: 'Xero support for cleanup, bookkeeping, reconciliations, AP/AR and recurring reporting inside the Xero file your client already runs.',
+  title: 'Xero Accounting Services & Support',
+  description: 'Xero accounting support for cleanup, bookkeeping, bank reconciliations, AP/AR and recurring reporting inside the Xero organization your business or accounting firm already uses.',
   path: '/technology/xero',
 });
 
@@ -40,7 +40,7 @@ export default function XeroPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <PremiumHero subtitle="Platform Workflow Support" title="Xero Accounting Support" description="Help with the accounting work around Xero — from setup and cleanup to reconciliations, recurring bookkeeping and month-end." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
+      <PremiumHero subtitle="Xero Accounting Services & Workflow Support" title="Xero Accounting Support for Recurring Work" description="Accounting support around Xero, from cleanup and reconciliations to recurring bookkeeping, AP/AR and month-end reporting in your existing organization." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Xero makes the books accessible. It does not make the process automatic.</h2><p className="text-lg text-muted leading-8">Cloud accounting removes a lot of friction around access, but the underlying work is still there: reconciliations, exception handling, consistent coding, supporting records and a close process someone owns. Good Xero support is less about adding another tool and more about keeping the accounting routine dependable.</p></></Reveal></div></section>
 
