@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing for CPA Firms |
+| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing: Workflow, Software & Controls |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -156,7 +156,7 @@ candidate for overlap.
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | Yardi Accounting Outsourcing in Texas |
 | `/industries/technology` | SaaS & Technology Accounting Outsourcing |
 | `/markets` | Markets We Serve |
-| `/markets/australia` | Offshore Accounting for Australian Firms |
+| `/markets/australia` | Accounting Outsourcing for Australian Firms |
 | `/markets/australia/bas-preparation` | BAS Preparation for Australian Firms |
 | `/markets/united-kingdom` | Outsourced Accounting for UK Practices |
 | `/markets/united-kingdom/vat-returns` | VAT Return Preparation for UK Practices |
@@ -218,7 +218,7 @@ candidate for overlap.
 | `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Services for Firms |
-| `/solutions/staff-augmentation` | Accounting Staff Augmentation |
+| `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
