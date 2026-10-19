@@ -5092,3 +5092,15 @@ Search Console URL inspection was run against sitemap and related cluster URLs. 
 **Changed:** Updated the title to “NetSuite Accounting Support for Month-End Close” and refined the description around multi-entity reconciliations, intercompany balances/eliminations, currency revaluation, consolidation and reporting. Replaced the “Dedicated Accounting Teams” related link with the existing U.S. tax preparation service link, keeping the page's focus on NetSuite workflows rather than team-model terminology.
 
 **Guardrails:** Existing URL retained; no new page created. Query volume is modest and average position is not a fixed rank. Recheck the same query/page pair after recrawl and compare clicks, impressions, CTR and position over a comparable window.
+
+## 2026-10-19 — Connect tax-outsourcing guide to CPA overflow support
+
+**Evidence:** Search Console data for 2026-07-20 through 2026-10-18 showed the existing `/blog/tax-preparation-outsourcing` guide receiving impressions for CPA-firm tax outsourcing queries. The guide remains informational, while `/services/tax-preparation/united-states` owns commercial tax-preparation intent. The CPA-firm overflow page now covers mixed backlogs and bounded preparation queues.
+
+**Changed:** Added one contextual link from the tax-outsourcing guide to `/industries/cpa-firms/overflow-work-support` for readers whose immediate need is a mixed queue of bookkeeping, reconciliations, cleanup and tax workpapers rather than tax preparation alone.
+
+**Why:** Help readers move to the correct commercial workflow without creating another near-duplicate tax-preparation page or weakening the existing intent map.
+
+**URL changed:** No. **Metadata changed:** No. **Content changed:** Yes, contextual internal link only.
+
+**Guardrails:** This link change is not evidence of ranking improvement. Recheck the affected pages after deployment and recrawl; do not add further tax pages unless a distinct query intent is demonstrated.
