@@ -1,3 +1,10 @@
+## 2026-10-19 — GSC-led duplicate and intent-cluster cleanup
+
+- Retired the duplicate property-accounting service page source `/services/property-management-accounting`; its existing permanent redirect points to `/industries/property-management`, the single commercial owner. The industry hub's link now points to the specific accounting-cleanup page instead of the duplicate.
+- Retired the obsolete HOA accounting service page source `/services/hoa-accounting`; the existing permanent redirect points to `/industries/hoa-accounting`. Removed it from the sitemap and updated internal and AI reference links to the canonical hub.
+- Repositioned `/blog/tax-preparation-outsourcing` as an informational workflow/software/reviewer-controls guide and retained `/services/tax-preparation/united-states` as the commercial service page.
+- Aligned staff augmentation, offshore accounting support, AP/AR article metadata and country-market positioning against observed GSC query/page overlaps. No new URLs were created. See `SEO-CHANGELOG.md` and `docs/GSC-QUERY-OPPORTUNITIES-2026-10-19.md` for evidence and limits.
+
 ## 2026-10-18 — U.S. CPA-firm tax return-type cluster
 
 Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.

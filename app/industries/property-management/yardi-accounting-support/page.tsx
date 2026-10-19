@@ -193,7 +193,7 @@ export default function YardiPropertyManagementAccountingSupportPage() {
             <Link href="/industries/property-management/buildium-accounting-support" className="inline-block rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Buildium accounting support</Link>
             <Link href="/industries/real-estate/yardi-accounting-outsourcing-texas" className="inline-block rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Yardi accounting in Texas</Link>
             <Link href="/blog/yardi-accounting-workflow" className="inline-block rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Yardi accounting workflow guide</Link>
-            <Link href="/services/property-management-accounting" className="inline-block rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting services</Link>
+            <Link href="/industries/property-management" className="inline-block rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting</Link>
           </div>
         </div>
       </section>

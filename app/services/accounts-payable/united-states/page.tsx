@@ -16,8 +16,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-payable/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'U.S. Accounts Payable Outsourcing',
-  description: 'U.S. AP support — invoice entry, PO matching, ACH and check payment run preparation, 1099-NEC vendor tracking and statement reconciliation.',
+  title: 'U.S. Accounts Payable Outsourcing Services',
+  description: 'U.S. accounts payable outsourcing for invoice entry, PO matching, ACH/check payment-run preparation, 1099-NEC tracking and vendor reconciliation.',
   path: PATH,
 });
 
@@ -142,6 +142,7 @@ export default function AccountsPayableUSPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Related industry scope</h2>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Accounting Support</Link>
             <Link href="/industries/real-estate" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Real Estate AP</Link>
             <Link href="/industries/property-management" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Property Management Accounting</Link>
             <Link href="/industries/hoa-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">HOA Accounting</Link>

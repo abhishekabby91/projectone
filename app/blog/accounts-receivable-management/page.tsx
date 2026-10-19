@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourcing Accounts Receivable: A Guide',
-  description: 'How AR outsourcing affects DSO, how follow-up works in QuickBooks and Xero, and the questions owners and CPA firms ask before delegating it.',
+  title: 'Accounts Receivable Management: DSO & Aging',
+  description: 'A practical guide to receivables management, days sales outstanding, cash application, aging, follow-up workflows and QuickBooks or Xero.',
   path: '/blog/accounts-receivable-management',
 });
 
@@ -41,7 +41,7 @@ export default function ARManagementBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="Outsourcing Accounts Receivable: A Practical Guide for Business Owners"
+      title="Receivables Management: DSO, Cash Application and Follow-Up"
       category="Accounts Receivable"
       description="DSO, follow-up schedules, software workflows, and the judgment calls that always stay with you."
       publishedDate="2026-08-14"
@@ -89,7 +89,7 @@ export default function ARManagementBlog() {
       <div className="mt-8 p-6 bg-input rounded-xl border border-border/70">
         <p className="font-semibold text-primary mb-3">Relevant services</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/services/accounts-receivable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Accounts Receivable</Link>
+          <Link href="/services/accounts-receivable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">U.S. accounts receivable outsourcing service</Link>
           <Link href="/technology/quickbooks" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">QuickBooks</Link>
           <Link href="/technology/xero" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Xero</Link>
           <Link href="/resources/guides/outsourced-accounts-receivable-guide" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Full AR Guide</Link>

@@ -16,9 +16,9 @@ import { serviceRegions } from '@/lib/data';
 const PATH = '/markets/united-states';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Outsourcing Services for U.S. Firms',
+  title: 'U.S. Accounting Outsourcing for Firms',
   description:
-    'Accounting outsourcing for U.S. firms, including recurring bookkeeping, month-end close, reconciliations and tax-preparation support within your existing systems and review workflow.',
+    'Accounting outsourcing for U.S. firms: recurring bookkeeping, month-end close, reconciliations and tax-preparation support in your existing systems.',
   path: PATH,
 });
 
@@ -67,7 +67,7 @@ const pageSchema = {
   '@type': 'WebPage',
   '@id': `${baseUrl}${PATH}#webpage`,
   name: 'U.S. Accounting, Bookkeeping & Tax Outsourcing',
-  description: 'Accounting, bookkeeping and tax outsourcing support for U.S. accounting firms and businesses.',
+  description: 'Accounting, bookkeeping and tax-preparation support for U.S. operations, with outsourcing for accounting firms and remote accounting support for direct businesses.',
   url: `${baseUrl}${PATH}`,
   isPartOf: { '@id': `${baseUrl}/#website` },
   about: { '@id': `${baseUrl}/#organization` },
@@ -195,9 +195,9 @@ export default function USMarketPage() {
 
       <PremiumHero
         region="united-states"
-        subtitle="For U.S. CPA firms"
-        title="Accounting Outsourcing Support for U.S. Firms"
-        description="Recurring bookkeeping, month-end close and tax-preparation support built around your systems and workpaper templates. Your firm retains review, professional judgment and client relationships."
+        subtitle="For accounting firms and businesses"
+        title="Accounting, Bookkeeping & Tax Support for U.S. Operations"
+        description="For accounting firms, we provide outsourcing support within your workflows. For direct businesses, we provide remote accounting support for agreed recurring work. Scope, systems and review responsibilities are defined before work begins."
         cta={{ text: 'Start With One Client', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/services#united-states' }}
         background="primary-gradient"

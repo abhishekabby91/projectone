@@ -12,8 +12,8 @@ import FurtherReading from '@/components/further-reading';
 import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Dedicated Offshore Accounting Team',
-  description: 'A named offshore team working only your portfolio — your templates, your close calendar, your review points, and one point of contact.',
+  title: 'Dedicated Accounting Team for Firms',
+  description: 'A dedicated accounting team with named people assigned to your portfolio, learning your templates and close calendar, not a rotating pool.',
   path: '/solutions/dedicated-accounting-teams',
 });
 
@@ -60,7 +60,7 @@ export default function DedicatedTeamsPage() {
 
       <PremiumHero
         subtitle="Dedicated Teams"
-        title="A Dedicated Team, Not a Ticket Queue"
+        title="A Dedicated Accounting Team That Knows Your Workflow"
         description="A named team working only your portfolio — to your templates, your close calendar and your review points, with one point of contact who knows your work."
         cta={{
           text: 'Build Your Team',

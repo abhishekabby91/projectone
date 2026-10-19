@@ -1,3 +1,84 @@
+## 2026-10-19b — Pre-deploy review of the GSC cluster audit: metadata budget, redirect links, lastmod
+
+Review of the 2026-10-19 cluster-audit branch before release. The redirect
+consolidation, sitemap reconciliation and `llms.txt` updates in that pass were
+correct and are unchanged here. Three defects were found and fixed; none of the
+branch's editorial decisions were reversed.
+
+**1. Metadata budget was blown on 20 commercial pages.** `node scripts/verify-pages.mjs`
+reported 23 descriptions outside 110-160 and 3 titles over the 46-character
+page-side budget, against 8 failures on `main` — so the pass introduced 18.
+Worst was `/services/audit-support/united-states` at **218 characters**, 58 over,
+on a commercial page. All 23 descriptions and 3 titles are now inside budget and
+the checker reports **PASS across 212 routes** for the first time since the
+October audit. The rewritten intent and keyword targeting were kept; only length
+was cut. Two UK/AU pages also moved from "organized" to "organised" while being
+trimmed, which the market-voice rule wanted anyway.
+
+**2. Nine internal links still pointed at redirect sources.** The sitewide
+invariant is zero. Two pointed at `/services/hoa-accounting` (already a 301 on
+`main`, so these were live defects) and seven at
+`/services/property-management-accounting`, which this pass retires. All nine now
+point at the canonical hub. One of them —
+`/blog/property-management-cam-reconciliation` — linked the hub *and* the
+redirect source in the same sentence, so the duplicate was dropped rather than
+repointed. Full sweep of all 18 redirect sources now returns zero inbound links.
+
+**3. Twenty routes carried a fabricated `lastmod`.** Editing `getRelatedLinks` in
+`components/article-layout.tsx` re-dated 120 routes to 2026-10-19, but that
+function only changed its `hoa-` branch and gained a Yardi branch. For 7 blog
+posts, 11 guides and 2 insights whose slugs match neither, the rendered HTML is
+unchanged, so the date was a "this page changed" signal that was not true. Their
+true dates are restored. This is the same failure `NON_RENDERING_COMMITS` was
+added for on 2026-09-17, at almost the same scale (19 pages then, 20 now) and in
+the same file — `NON_RENDERING_COMMITS` is **not** the fix here, because the
+commit genuinely does change the HOA and Yardi articles. Five pages whose links
+this review repointed were bumped to 2026-10-19, because those really did change.
+
+**Verified before release:** `pnpm eslint .` silent; `pnpm next build` clean;
+`verify-pages.mjs` PASS on 212 routes; sitemap drift check clean in both
+directions (218 page files, 212 sitemap URLs, the 6 intentional exclusions and
+nothing else); `llms.txt` carries no dead link and omits only those 6; both
+retired URLs resolve single-hop to a 200 destination.
+
+**Not verified, and not claimed:** the Search Console figures quoted in the entry
+below could not be re-checked from this session — the GSC connector reports
+`sc-domain:accounstone.com` is not activated on the current plan (1 of 1
+properties in use). The prioritisation they support is plausible and internally
+consistent, but it is one agent's reading, unaudited.
+
+---
+
+## 2026-10-19 — GSC-led duplicate, intent-cluster and page-position audit
+
+**Evidence:** Connected Search Console page/query report for 2026-07-21 through 2026-10-19 (WEB), plus batched URL Inspection snapshots completed on 2026-10-19. Query-level results are not exhaustive because anonymized queries can be omitted. All ranking values below are pre-change baselines; no post-change ranking lift has been measured.
+
+### Duplicate and cluster fixes
+- Added permanent redirect `/services/property-management-accounting` → `/industries/property-management`. The service page duplicated the hub's core property-level accounting, tenant/owner ledgers, AP/AR, reconciliations and month-end intent. Removed its route source and sitemap entry; replaced the hub's related-service link with the more specific property-management accounting-cleanup page.
+- Kept the already-established permanent redirect `/services/hoa-accounting` → `/industries/hoa-accounting`; removed the obsolete page source and sitemap entry, changed links from HOA bookkeeping/reporting pages to the canonical industry hub, and fixed `llms.txt` / `llms-full.txt` references.
+- Tax: kept `/services/tax-preparation/united-states` as commercial service intent and reframed `/blog/tax-preparation-outsourcing` as a tax-season workflow, software, permissions and reviewer-controls guide while preserving the core tax-preparation outsourcing phrase in its title and H1. Added/retained clear contextual links to the commercial service page. GSC previously showed the exact query “tax preparation outsourcing” split between U.S. service page (141 impressions; avg position 69.8) and guide (131; position 33.5), while “U.S. tax preparation outsourcing” split 80/71 impressions with the guide ranking at 19.9 and service page at 61.0.
+- Staff augmentation: aligned commercial metadata with “accounting staff augmentation services” and linked the informational tax-season capacity guide in both directions. GSC showed “accounting staff augmentation” on the commercial page (182 impressions; position 40.1) and guide (33; position 19.6), so the page roles are now more explicit without merging distinct intents.
+- AP/AR services and guides: clarified AP/AR guide metadata and descriptive links to commercial U.S. service routes. Tightened metadata on AP U.S./Australia and AR U.S./Australia/UK service pages while preserving their jurisdiction-specific workflows. The AP guide stays focused on controls, fraud prevention, software and cost factors; the AR guide on DSO, cash application, aging and follow-up.
+- Additional page-position work: updated Australian tax-preparation, bookkeeping and audit-preparation metadata; U.S./UK audit-support metadata; the Xero platform page; the healthcare/medical-practice page; back-office support and dedicated-accounting-team positioning; Australian AP/AR titles; and the HOA chart-of-accounts and property-management bank-reconciliation article titles. MYOB remains deliberately noindex as previously directed; historical impressions are not a reason to reverse that choice.
+- Region/support cluster: updated the Australian market page to focus on accounting outsourcing for Australian practices (rather than the generic “offshore accounting” title), broadened the U.S. market hero to address accounting firms and direct businesses, and made the offshore-accounting solution page's support intent explicit. Removed unrelated UK/Australia cross-market links from the U.S. tax service's main related section.
+
+### Search Console evidence that guided priorities
+- `tax preparation outsourcing`: 301 query/page impressions distributed across five URLs, with the blog guide ranking above the U.S. commercial page.
+- `accounting staff augmentation`: 215 impressions split between commercial solution and tax-season guide.
+- `hoa accounting services`: 42 impressions across the HOA hub (15), legacy HOA service URL (14), California (5), San Diego County (4), Texas (4). The legacy route already redirected; some GSC impressions pre-date the redirect. Do not infer that the redirect is currently failing from the 90-day report.
+- For the query `property management accounting services`, the legacy service URL had 30 visible query impressions (average position 69.6) and `/industries/real-estate` had 1. For the distinct query `outsourced property management accounting`, `/industries/property-management` had 19 impressions (position 63.2) and the informational comparison article had 2 (position 22). These query-level rows support one broad commercial owner plus a distinct informational guide; do not treat their impressions as whole-page totals.
+- AP and AR queries are split by region and informational intent. Regional services remain separate because they cover country-specific workflows; the general articles stay informational.
+
+### Indexing and validation
+- `app/sitemap.ts` no longer lists either legacy redirected route. `lib/sitemap-dates.ts`, the route inventory and AI reference files have been reconciled with the redirects.
+- A previous sitemap resubmission in GSC was processed as Valid with 214 indexed URLs, zero errors and zero warnings. This is a site-level sitemap result, not proof each newly created URL is indexed.
+- Latest batched URL Inspection snapshot completed on 2026-10-19: HOA Yardi accounting support and CPA Florida remain “URL unknown to Google” (never crawled); Form 1065 is “Discovered — currently not indexed” (never crawled). CPA California/Texas, HOA California/Texas, Forms 1040/1120/1120-S, and the sampled priority service/solution pages were submitted and indexed. MYOB is excluded by its intentional noindex. The legacy property-accounting URL was still reported indexed in production during this snapshot, because the current audit branch has not been deployed; re-inspect redirects after release.
+- Vercel currently reports a build-rate-limit failure for the latest audit-branch commit. A prior READY preview corresponds to an earlier branch SHA, not the latest edits. The latest changes are not confirmed built or deployed; no position improvement is claimed until a subsequent GSC comparison.
+
+**New URLs:** none. **Redirects:** two legacy routes to their canonical hubs. **Indexing success:** not yet verified for the new branch.
+ 
+---
+
 ## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
 
 ### app/industries/hoa-accounting/los-angeles-county/page.tsx

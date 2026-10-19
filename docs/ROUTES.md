@@ -46,6 +46,8 @@ future; at that point the change is an entry in `serviceRegions` plus the matchi
 | `/services/accounts-payable` | 301 | `/services/accounts-payable/united-states` |
 | `/services/accounts-receivable` | 301 | `/services/accounts-receivable/united-states` |
 | `/services/audit-support` | 301 | `/services/audit-support/united-states` |
+| `/services/hoa-accounting` | 301 | `/industries/hoa-accounting` |
+| `/services/property-management-accounting` | 301 | `/industries/property-management` |
 
 ## Solutions (engagement models)
 

@@ -40,7 +40,7 @@ export default function HoaAccountingYardi() {
       inquiryTitle="Need Help Reviewing HOA Accounting in Yardi?"
       inquiryLead="Tell us which Yardi workflows your team uses and where the monthly close gets difficult. We can review the accounting handoffs and reporting process."
     >
-      <p>Yardi is often part of a broader property-management technology stack. When an HOA uses Yardi, accounting review should focus on whether the detailed activity, general ledger, bank accounts and board reports remain consistent.</p>
+      <p>Yardi is often part of a broader property-management technology stack. When an HOA uses Yardi, accounting review should focus on whether the detailed activity, general ledger, bank accounts and board reports remain consistent. For recurring preparation work inside an existing Yardi environment, see <a href="/industries/hoa-accounting/yardi-accounting-support">Yardi HOA accounting and bookkeeping support</a>; this guide remains focused on the review workflow rather than the service scope.</p>
 
       <h2>Review Assessment and Homeowner Activity</h2>
       <p>Start with recurring assessments, payment applications, credits, adjustments and outstanding balances. The detailed ledger should support the receivables balance reported in the general ledger.</p>

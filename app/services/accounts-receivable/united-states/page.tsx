@@ -16,8 +16,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'U.S. Accounts Receivable Outsourcing',
-  description: 'U.S. accounts receivable support — USD invoicing, ACH/check payment application, aging monitoring, and follow-up sequences inside QuickBooks Online or Xero.',
+  title: 'U.S. Accounts Receivable Outsourcing Services',
+  description: 'U.S. accounts receivable outsourcing for USD invoicing, ACH/check payment application, aging review and follow-up in QuickBooks Online or Xero.',
   path: PATH,
 });
 
@@ -113,6 +113,7 @@ export default function AccountsReceivableUSPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Related industry scope</h2>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <Link href="/industries/cpa-firms" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">CPA Firm Accounting Support</Link>
             <Link href="/industries/real-estate" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Real Estate Accounting</Link>
             <Link href="/industries/property-management" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">Property Management Accounting</Link>
             <Link href="/industries/hoa-accounting" className="font-medium text-primary underline underline-offset-4 hover:text-accent transition-colors">HOA Accounting</Link>

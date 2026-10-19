@@ -27,6 +27,13 @@ const nextConfig = {
         destination: "/industries/hoa-accounting",
         permanent: true,
       },
+      // Consolidate the legacy property-management service page into the commercial industry hub.
+      // The Search Intent Registry assigns broad property-management accounting intent there.
+      {
+        source: "/services/property-management-accounting",
+        destination: "/industries/property-management",
+        permanent: true,
+      },
       // HOA guides consolidated in October 2026 after reviewing topic overlap.
       {
         source: "/blog/hoa-monthly-close-process",

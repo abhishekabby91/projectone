@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-214 indexable routes. Excludes the 4 permanent
+212 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -16,8 +16,8 @@ candidate for overlap.
 | `/` | Accounting, Tax & Bookkeeping Outsourcing \| Accounstone |
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
-| `/blog/accounts-payable-outsourcing` | AP Outsourcing: Controls, Software, Cost |
-| `/blog/accounts-receivable-management` | Outsourcing Accounts Receivable: A Guide |
+| `/blog/accounts-payable-outsourcing` | AP Process Controls & Fraud Prevention Guide |
+| `/blog/accounts-receivable-management` | Receivables Management Guide: DSO, Cash Application & Follow-Up |
 | `/blog/audit-support-services` | Audit Support: What Can Be Delegated |
 | `/blog/eunify-quickbooks-hoa-accounting` | eUnify + QuickBooks for HOA Accounting |
 | `/blog/hoa-accounting-appfolio` | HOA Accounting with AppFolio |
@@ -42,7 +42,7 @@ candidate for overlap.
 | `/blog/hoa-bookkeeping-vs-accounting` | HOA Bookkeeping vs. HOA Accounting |
 | `/blog/hoa-budget-to-actual-reports` | HOA Budget-to-Actual Reports |
 | `/blog/hoa-cash-vs-accrual-accounting` | HOA Cash vs. Accrual Accounting |
-| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts: Example & Setup Guide |
+| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts: Setup Steps & Example |
 | `/blog/hoa-financial-statements-board-review` | HOA Financial Statements for Boards |
 | `/blog/hoa-homeowner-ledgers` | HOA Homeowner Ledgers: Keep Balances Accurate |
 | `/blog/hoa-income-statement-explained` | HOA Income Statement Explained |
@@ -66,7 +66,7 @@ candidate for overlap.
 | `/blog/property-management-accounting-for-small-companies` | Accounting for Small Property Managers |
 | `/blog/property-management-accounts-payable` | Property Management Accounts Payable Workflow |
 | `/blog/property-management-accrued-expenses` | Property Management Accruals & Prepaids |
-| `/blog/property-management-bank-reconciliation` | Property Bank Reconciliation Guide |
+| `/blog/property-management-bank-reconciliation` | Property Management Bank Reconciliation Guide |
 | `/blog/property-management-bookkeeping-cleanup` | Property Management Bookkeeping Cleanup |
 | `/blog/property-management-bookkeeping-vs-accounting` | Property Management Bookkeeping vs. Accounting |
 | `/blog/property-management-budget-vs-actual` | Property Budget vs. Actual Reporting |
@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing for CPA Firms |
+| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing Workflow Guide |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -123,9 +123,9 @@ candidate for overlap.
 | `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
-| `/industries/healthcare` | Healthcare Accounting Outsourcing |
+| `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
-| `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
+| `/industries/hoa-accounting` | HOA Accounting Services & Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
 | `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting & Bookkeeping Support |
 | `/industries/hoa-accounting/california` | California HOA Accounting & Bookkeeping |
@@ -156,12 +156,12 @@ candidate for overlap.
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | Yardi Accounting Outsourcing in Texas |
 | `/industries/technology` | SaaS & Technology Accounting Outsourcing |
 | `/markets` | Markets We Serve |
-| `/markets/australia` | Offshore Accounting for Australian Firms |
+| `/markets/australia` | Accounting Outsourcing for Australian Firms |
 | `/markets/australia/bas-preparation` | BAS Preparation for Australian Firms |
 | `/markets/united-kingdom` | Outsourced Accounting for UK Practices |
 | `/markets/united-kingdom/vat-returns` | VAT Return Preparation for UK Practices |
 | `/markets/united-kingdom/year-end-accounts` | UK Year-End Accounts Preparation |
-| `/markets/united-states` | Accounting Outsourcing Services for U.S. Firms |
+| `/markets/united-states` | U.S. Accounting Outsourcing for Firms & Businesses |
 | `/markets/united-states/california` | Accounting Services in California |
 | `/markets/united-states/florida` | Accounting & Bookkeeping Services in Florida |
 | `/markets/united-states/texas` | Accounting & Bookkeeping Services in Texas |
@@ -188,26 +188,24 @@ candidate for overlap.
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
-| `/services/accounts-payable/australia` | Accounts Payable Outsourcing, Australia |
+| `/services/accounts-payable/australia` | Australian Accounts Payable Outsourcing |
 | `/services/accounts-payable/united-kingdom` | Outsourced Accounts Payable for UK Businesses |
-| `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing |
-| `/services/accounts-receivable/australia` | Accounts Receivable Outsourcing, Australia |
-| `/services/accounts-receivable/united-kingdom` | Accounts Receivable Outsourcing, UK |
-| `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing |
-| `/services/audit-support/australia` | Audit Support Services in Australia |
-| `/services/audit-support/united-kingdom` | UK Audit Support Services for Accounting Teams |
-| `/services/audit-support/united-states` | U.S. Audit Support Services for CPA Firms |
-| `/services/bookkeeping/australia` | Outsourced Bookkeeping, Australian Firms |
+| `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing Services |
+| `/services/accounts-receivable/australia` | Australian Accounts Receivable Outsourcing |
+| `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
+| `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
+| `/services/audit-support/australia` | Australian Audit Preparation Support |
+| `/services/audit-support/united-kingdom` | UK Audit Preparation Support Services |
+| `/services/audit-support/united-states` | U.S. Audit Support Outsourcing for CPA Firms |
+| `/services/bookkeeping/australia` | Outsourced Bookkeeping Services Australia |
 | `/services/bookkeeping/united-kingdom` | Outsourced Bookkeeping for UK Practices |
 | `/services/bookkeeping/united-states` | Outsourced Bookkeeping for U.S. CPA Firms |
-| `/services/hoa-accounting` | HOA Accounting Services |
 | `/services/hoa-bookkeeping` | HOA Bookkeeping Services |
 | `/services/hoa-financial-reporting` | HOA Financial Reporting Services |
 | `/services/payroll/australia` | Payroll Support for Australian Firms |
 | `/services/payroll/united-kingdom` | Payroll Support for UK Practices |
 | `/services/payroll/united-states` | Outsourced Payroll Support for U.S. CPA Firms |
-| `/services/property-management-accounting` | Property Management Accounting Services |
-| `/services/tax-preparation/australia` | Tax Return Preparation, Australia |
+| `/services/tax-preparation/australia` | Australian Tax Preparation Support for Firms |
 | `/services/tax-preparation/united-kingdom` | Corporation Tax & Self Assessment, UK |
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
 | `/services/tax-preparation/united-states/1040-individual` | Form 1040 Tax Preparation Outsourcing |
@@ -215,15 +213,15 @@ candidate for overlap.
 | `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
 | `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
-| `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
-| `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
-| `/solutions/offshore-accounting-support` | Offshore Accounting Services for Firms |
-| `/solutions/staff-augmentation` | Accounting Staff Augmentation |
+| `/solutions/back-office-support` | Back-Office Accounting Support for Firms |
+| `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
+| `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
+| `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
 | `/technology/netsuite` | NetSuite Accounting Support for Month-End Close |
 | `/technology/quickbooks` | QuickBooks Online Accounting Support |
 | `/technology/sage` | Sage Accounting Support |
-| `/technology/xero` | Xero Accounting Support for Growing Businesses |
+| `/technology/xero` | Xero Accounting Services & Support |
 | `/terms` | Terms & Conditions |

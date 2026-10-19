@@ -35,7 +35,7 @@ const PATH = '/industries/property-management';
 export const metadata: Metadata = genMeta({
   title: 'Property Management Accounting Outsourcing',
   description:
-    'Outsourced property management accounting for residential and commercial portfolios: property-level books, tenant and owner ledgers, AP/AR, CAM schedules, reconciliations and month-end reporting.',
+    'Outsourced property management accounting: property-level books, tenant and owner ledgers, AP/AR, CAM schedules, reconciliations and month-end reporting.',
   path: PATH,
 });
 
@@ -506,7 +506,7 @@ export default function PropertyManagementPage() {
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related Accounting Services</h2>
           <p className="mt-3 max-w-3xl text-muted leading-relaxed">For recurring property accounting, the industry scope connects with the underlying accounting and bookkeeping workflows.</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/services/property-management-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Property Management Accounting</Link>
+            <Link href="/industries/property-management/accounting-cleanup" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Property Management Accounting Cleanup</Link>
             <Link href="/services/accounting/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">U.S. Accounting Services</Link>
             <Link href="/services/bookkeeping/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">U.S. Bookkeeping Services</Link>
             <Link href="/services/accounts-payable/united-states" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Accounts Payable</Link>

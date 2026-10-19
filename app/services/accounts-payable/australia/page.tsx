@@ -17,8 +17,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-payable/australia';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Payable Outsourcing, Australia',
-  description: 'Australian AP support — invoice entry, GST input tax credit coding, payment run preparation and vendor statement reconciliation in Xero or MYOB.',
+  title: 'Australian Accounts Payable Outsourcing',
+  description: 'Accounts payable outsourcing for Australian businesses: invoice entry, GST credit coding, EFT/BPAY payment-run preparation and vendor reconciliation.',
   path: PATH,
 });
 
@@ -74,7 +74,7 @@ export default function AccountsPayableAUPage() {
 
 
       <PremiumHero
-        region="australia" subtitle="Accounts Payable for Australian Businesses" title="Outsourced Accounts Payable for Australian Businesses" description="Invoice processing, GST input tax credit coding, and payment run preparation inside your existing system." cta={{ text: 'Talk Through Your AP Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="australia" subtitle="Accounts Payable Outsourcing Services in Australia" title="Accounts Payable Outsourcing for Australian Businesses" description="Invoice processing, GST input tax credit coding, EFT/BPAY payment-run preparation and vendor reconciliation in your existing system." cta={{ text: 'Talk Through Your AP Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">

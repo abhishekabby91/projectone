@@ -11,8 +11,8 @@ import FurtherReading from '@/components/further-reading';
 import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Back-Office Support for Accountants and Firms',
-  description: 'Hand over the recurring back-office layer — bookkeeping, payables, receivables and payroll preparation — while review and sign-off stay with your firm.',
+  title: 'Back-Office Accounting Support for Firms',
+  description: 'Back-office accounting support for firms: recurring bookkeeping, AP/AR, payroll preparation and month-end tasks inside your existing workflows.',
   path: '/solutions/back-office-support',
 });
 
@@ -89,8 +89,8 @@ export default function BackOfficeSupportPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <Reveal><h2 className="text-4xl font-bold text-primary">Recurring Accounting Administration Outsourced</h2></Reveal>
-              <p className="text-lg text-muted leading-relaxed">Back-office support takes recurring accounting administration off your team's plate so they can focus on review, clients, and growth instead of data entry.</p>
+              <Reveal><h2 className="text-4xl font-bold text-primary">Back-Office Accounting Support for Accounting Firms</h2></Reveal>
+              <p className="text-lg text-muted leading-relaxed">Back-office support for accounting firms covers recurring accounting administration that follows a documented process: transaction coding, reconciliations, payables and receivables processing, payroll preparation and month-end tasks. Your reviewers keep professional judgment, client advice, approval and sign-off.</p>
               
               <div className="space-y-4 pt-4">
                 {[

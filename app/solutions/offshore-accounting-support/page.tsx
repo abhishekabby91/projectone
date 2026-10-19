@@ -14,8 +14,8 @@ import SolutionIllustration from '@/components/solution-illustration';
 export const metadata: Metadata = generateMetadata({
   // "offshore accounting services" and "offshore accounting" are the head terms
   // this cluster actually uses (GSC 2026-09-04); the old title carried neither.
-  title: 'Offshore Accounting Services for Firms',
-  description: 'Offshore accounting services for CPA firms and businesses: recurring bookkeeping, reconciliations, month-end close, AP/AR and agreed tax-preparation workflows inside your existing systems.',
+  title: 'Offshore Accounting Support Services for Firms',
+  description: 'Offshore accounting support for CPA firms and businesses: recurring bookkeeping, reconciliations, month-end close and AP/AR in your existing systems.',
   path: '/solutions/offshore-accounting-support',
 });
 
@@ -57,9 +57,9 @@ export default function OffshoreSolutionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="Offshore Accounting"
-        title="Offshore Accounting Services, Inside Your Existing Systems"
-        description="Accounting professionals handling agreed preparation work within the scope, systems and review process established with your firm."
+        subtitle="Offshore Accounting Support"
+        title="Offshore Accounting Support, Inside Your Existing Systems"
+        description="Offshore accounting support for agreed recurring workflows in your existing systems, with scope, access and review responsibilities established before work begins."
         cta={{
           text: 'Schedule Consultation',
           href: '/contact',

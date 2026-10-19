@@ -16,9 +16,9 @@ import { serviceRegions } from '@/lib/data';
 const PATH = '/markets/australia';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Offshore Accounting for Australian Firms',
+  title: 'Accounting Outsourcing for Australian Firms',
   description:
-    'Your firm’s offshore accounting team — bookkeeping, BAS-ready records, year-end workpapers and return preparation, ready for your agent’s lodgment.',
+    'Accounting outsourcing for Australian firms: bookkeeping, BAS-ready records and year-end workpapers prepared for review and lodgment by your agent.',
   path: PATH,
 });
 
@@ -182,8 +182,8 @@ export default function AustraliaMarketPage() {
       <PremiumHero
         region="australia"
         subtitle="For Australian accounting firms"
-        title="Your Firm’s Offshore Accounting Team"
-        description="Bookkeeping, BAS-ready records and year-end preparation, built to your templates. You review, you advise, your agent lodges — and you keep the client."
+        title="Accounting Outsourcing Support for Australian Firms"
+        description="Bookkeeping, BAS-ready records and year-end preparation built to your templates. Your firm reviews and advises; the registered professional retains lodgment responsibility and client ownership."
         cta={{ text: 'Start With One Client', href: '/contact' }}
         ctaSecondary={{ text: 'View Australian Services', href: '/services#australia' }}
         background="primary-gradient"

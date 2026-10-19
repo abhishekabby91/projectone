@@ -125,7 +125,7 @@ export default function AppFolioAccountingCaliforniaPage() {
             <Link href="/industries/real-estate/yardi-accounting-outsourcing-texas" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Yardi accounting in Texas</Link>
             <Link href="/blog/property-management-bank-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Bank reconciliation guide</Link>
             <Link href="/blog/property-management-month-end-close-checklist" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Month-end close checklist</Link>
-            <Link href="/services/property-management-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting services</Link>
+            <Link href="/industries/property-management" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting</Link>
           </div>
         </div>
       </section>

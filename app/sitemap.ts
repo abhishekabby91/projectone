@@ -133,13 +133,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/services/tax-preparation/united-states/1065-partnership', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/services/tax-preparation/united-states/1120-corporation', priority: 0.65, changeFrequency: 'monthly' },
     { path: '/services/tax-preparation/united-states/1120-s-corporation', priority: 0.65, changeFrequency: 'monthly' },
-    // Standalone HOA service pages are not part of the regional service matrix.
-    // Keep them explicitly discoverable because they are canonical, indexable
-    // commercial pages and are linked from the HOA industry cluster.
-    { path: '/services/hoa-accounting', priority: 0.8, changeFrequency: 'monthly' },
+    // The broad HOA-accounting and property-management-accounting service URLs
+    // permanently redirect to their industry hubs and must not be indexed from
+    // the sitemap. The two focused HOA service pages remain canonical.
     { path: '/services/hoa-bookkeeping', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/services/hoa-financial-reporting', priority: 0.75, changeFrequency: 'monthly' },
-    { path: '/services/property-management-accounting', priority: 0.8, changeFrequency: 'monthly' },
     // Guides. Four of these shipped 2026-08-14 but were unlisted for a week —
     // internally linked yet never declared for crawling. The accounting-services
     // guide matters most: it is the 301 target for the retired

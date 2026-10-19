@@ -12,8 +12,8 @@ import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'NetSuite Accounting Support for Month-End Close',
-  description: 'NetSuite accounting support for recurring close work: multi-entity reconciliations, intercompany balances and eliminations, currency revaluation, consolidation and reporting.',
+  title: 'NetSuite Month-End Close Accounting Support',
+  description: 'NetSuite accounting support for recurring close work: multi-entity reconciliations, intercompany eliminations, currency revaluation and consolidation.',
   path: '/technology/netsuite',
 });
 
