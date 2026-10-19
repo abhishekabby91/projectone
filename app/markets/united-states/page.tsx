@@ -16,9 +16,9 @@ import { serviceRegions } from '@/lib/data';
 const PATH = '/markets/united-states';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'U.S. Accounting, Bookkeeping & Tax Outsourcing',
+  title: 'Accounting Outsourcing Services for U.S. Firms',
   description:
-    'Accounting, bookkeeping and tax outsourcing for U.S. firms and businesses, including reconciliations, month-end close, AP, AR, payroll and tax preparation.',
+    'Accounting outsourcing for U.S. firms, including recurring bookkeeping, month-end close, reconciliations and tax-preparation support within your existing systems and review workflow.',
   path: PATH,
 });
 
@@ -196,8 +196,8 @@ export default function USMarketPage() {
       <PremiumHero
         region="united-states"
         subtitle="For U.S. CPA firms"
-        title="Your Firm’s Offshore Preparation Team"
-        description="Bookkeeping, close work and return preparation, built to your workpaper templates. You review, you advise, you sign — and you keep the client."
+        title="Accounting Outsourcing Support for U.S. Firms"
+        description="Recurring bookkeeping, month-end close and tax-preparation support built around your systems and workpaper templates. Your firm retains review, professional judgment and client relationships."
         cta={{ text: 'Start With One Client', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/services#united-states' }}
         background="primary-gradient"
