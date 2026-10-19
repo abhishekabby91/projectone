@@ -16,6 +16,30 @@
 | /solutions/staff-augmentation | 2 | 423 | 48.5 | Align commercial metadata to accounting staff augmentation services and link the informational seasonal guide. |
 | /solutions/offshore-accounting-support | 3 | 409 | 68.9 | Keep as the engagement/delivery-model page; clarify support scope and review handoffs. |
 
+### Next-wave pages to improve after this batch
+
+| Page | Impressions | Avg. position | Action on this branch |
+|---|---:|---:|---|
+| /services/accounts-payable/australia | 541 | 76.3 | Localized metadata around Australian accounts payable outsourcing, GST coding and existing accounting systems. |
+| /solutions/back-office-support | 441 | 50.0 | Clarified accounting-firm back-office scope and preserved reviewer/client responsibilities. |
+| /services/accounts-payable/united-states | 411 | 75.7 | Explicit service metadata for U.S. accounts payable outsourcing. |
+| /markets/australia | 372 | 70.9 | Shifted the page focus to Australian-practice accounting outsourcing, not generic offshore terms alone. |
+| /markets/united-kingdom | 379 | 64.1 | Existing UK-practice framing already distinguishes its market role; do not rewrite solely for generic offshore-accounting terms. |
+| /solutions/dedicated-accounting-teams | 263 | 55.5 | Clarified the named-team/continuity model versus general offshore capacity. |
+| /services/audit-support/united-states | 258 | 66.1 | Clarified audit-support outsourcing for CPA firms and the limits around auditor judgment. |
+| /services/accounts-receivable/united-states | 243 | 68.3 | Updated service metadata around U.S. AR outsourcing, aging and follow-up workflows. |
+| /services/bookkeeping/australia | 238 | 79.9 | Aligned metadata with outsourced bookkeeping services for Australian accounting firms. |
+| /services/accounts-receivable/australia | 222 | 62.5 | Localized metadata around Australian AR outsourcing, GST, Xero and MYOB. |
+| /services/audit-support/united-kingdom | 188 | 79.5 | Tightened title/description to UK audit preparation support, not a claim to perform the statutory audit. |
+| /technology/xero | 83 page-level impressions in the wider page report | 51.0 | Metadata/hero now state Xero accounting support for recurring work. |
+| /industries/healthcare | 143 | 47.2 | Changed metadata toward medical-practice accounting while retaining reimbursement and payer-mix relevance. |
+| /services/tax-preparation/australia | 137 | 56.3 | Aligned metadata with tax-preparation support for Australian accounting firms and registered-agent review. |
+| /services/audit-support/australia | 111 | 72.5 | Reframed the title/hero toward audit preparation support so it does not imply Accounstone performs the statutory audit. |
+| /blog/hoa-chart-of-accounts | 51 | 17.1 | Refined title for HOA chart setup steps and examples; the page already targets a clear informational intent. |
+| /blog/property-management-bank-reconciliation | 44 | 19.4 | Made the title explicitly include “property management bank reconciliation,” matching the strongest query. |
+
+**Intentional exclusion:** /technology/myob had 1,364 page impressions at average position 48.8 in the 90-day page report, but GSC inspection shows it is excluded by the owner-approved noindex. The old impressions are not a reason to reverse that decision: most demand was for MYOB implementation or product research, which Accounstone does not claim to provide.
+
 ## B. Confirmed query/page overlap and actions
 
 ### Tax-preparation cluster — highest priority
@@ -80,7 +104,7 @@ Two further batched URL Inspection requests completed on 2026-10-19:
 - Core pages **submitted and indexed**: U.S. tax service (last crawled Oct 14), tax guide (Oct 10), staff augmentation (Oct 12), property-management hub (Oct 7), HOA hub (Oct 15), Xero (Oct 10), AP Australia (Oct 15), AP U.S. (Oct 14), AR Australia (Oct 9), AR UK (Oct 17), AR U.S. (Oct 15), audit-support U.S. (Oct 15), audit-support UK (Oct 8), Australian bookkeeping (Oct 9), back-office support (Oct 14), dedicated teams (Oct 18), healthcare hub (Oct 6), and the Form 1040, 1120 and 1120-S tax pages (Form 1120 / 1120-S last crawled Oct 19).
 - Newly checked **discovery gaps**: HOA Yardi support = “URL unknown to Google” / never crawled; CPA firms Florida = “URL unknown to Google” / never crawled; Form 1065 partnership = “Discovered — currently not indexed” / never crawled. The CPA California and Texas pages were indexed and crawled Oct 19; HOA California and Texas pages were also indexed.
 - `/technology/myob` is **Excluded by ‘noindex’ tag**, last crawled Oct 15. This is intentional per the existing owner-approved decision recorded in the source: much of its traffic was product-implementation research unrelated to Accounstone's service scope. Its 90-day page impressions must not be treated as an indexable ranking opportunity, and its noindex should not be removed to chase impressions.
-- The live production URLs for the legacy HOA/property-accounting services were still reported as “Submitted and indexed” in this snapshot. The new redirect/source-removal changes are on this branch and have **not** been deployed; do not claim their production redirect status has changed until the current branch is built and released.
+- The live production URLs for the legacy HOA/property-accounting services were still reported as “Submitted and indexed” in this snapshot. The property-management redirect and source/sitemap cleanup, plus the HOA source/sitemap/internal-link cleanup, are staged on this branch and have **not** been deployed. The HOA redirect itself existed before this branch; do not assume the new source cleanup is live until this branch is built and released.
 
 **Actions for indexing gaps:** Yardi HOA is already listed in the sitemap and linked from the HOA hub; a targeted contextual link was added from the Yardi-specific informational articles. Florida CPA is already listed in the sitemap and linked from the CPA-firm hub, so verify its live response and canonical after deployment before changing content. Form 1065 is linked from the U.S. tax service hub and in the sitemap. After this branch is deployed, re-submit the updated sitemap, run URL Inspection again for these three URLs, and inspect the rendered content/canonical. The prior attempt to refresh GenieSeo did not complete, but this subsequent batched URL Inspection did complete, so the statuses above are the latest available snapshot.
 
@@ -90,6 +114,6 @@ The Vercel check on previous staged SEO work reported an account build-rate-limi
 ## D. Implementation summary
 
 - **Legacy duplicate URLs:** 2 permanent redirects; no new URL was created.
-- **Metadata/content updates:** U.S. tax hub and informational guide; staff augmentation service and seasonal guide links; offshore support and dedicated-team/back-office solutions; U.S. and Australia market pages; HOA and property-management hubs; AP/AR U.S. and Australia services plus AR UK service; Australian bookkeeping; U.S./UK audit support; Xero platform support; healthcare accounting. MYOB stays deliberately noindex.
+- **Metadata/content updates:** U.S. tax hub and informational guide; Australian tax support; staff augmentation service and seasonal guide links; offshore support and dedicated-team/back-office solutions; U.S., UK and Australia market positioning; HOA and property-management hubs; AP/AR regional services and operational guides; Australian bookkeeping; U.S./UK/Australia audit support; Xero platform support; healthcare accounting; HOA chart-of-accounts and property-management bank-reconciliation guide titles. MYOB stays deliberately noindex.
 - **Canonical/internal-link updates:** sitemap, llms.txt, llms-full.txt, HOA service cross-links and dynamic article related links.
 - **Outstanding:** fresh build verification, production HTTP/canonical checks and new GSC URL inspections after deployment.
