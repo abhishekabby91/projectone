@@ -78,7 +78,7 @@ export default function HomePage() {
           title="Your Accounting Outsourcing Partner"
           subtitle="Accounting support for businesses and professional firms"
           cta={{ text: 'Discuss Your Accounting Needs', href: '/contact' }}
-          ctaSecondary={{ text: 'Send an Inquiry', href: '#inquiry' }}
+          ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
         />
       </section>
 
