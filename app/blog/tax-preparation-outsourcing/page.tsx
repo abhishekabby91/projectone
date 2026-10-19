@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Tax Preparation Outsourcing for CPA Firms',
-  description: 'Tax preparation outsourcing for CPA firms: return preparation, workpapers, Drake Tax and CCH Axcess workflows, with review and filing retained by licensed professionals.',
+  title: 'Tax Outsourcing for CPA Firms: Workflow Guide',
+  description: 'A practical guide to CPA-firm tax outsourcing, including workpapers, Drake Tax and CCH Axcess workflows, review boundaries and tax-season planning.',
   path: '/blog/tax-preparation-outsourcing',
 });
 

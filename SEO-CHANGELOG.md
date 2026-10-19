@@ -1,3 +1,16 @@
+## 2026-10-19 — Clarify informational intent for the tax-outsourcing guide
+
+### Updated
+- Kept `/blog/tax-preparation-outsourcing` as the informational guide, but changed its metadata title and description so it does not present itself as a second commercial landing page alongside `/services/tax-preparation/united-states`.
+- The visible guide still covers workpaper preparation, software workflows, professional-review boundaries and season planning, with a clear path to the commercial service page.
+
+### Evidence
+- GSC (2026-07-20 to 2026-10-18) shows the guide receiving impressions for “tax outsourcing for cpa firms” (39 impressions, average position 18.1), “outsourced tax preparation for cpa firms” (43 impressions, average position 20.6), and “tax preparation outsourcing for cpa firms” (28 impressions, average position 18.0).
+- The U.S. tax-preparation service page also appears for these commercial phrases, but at lower average positions in this sample. This is a query-intent alignment test, not proof that metadata changes will improve rankings.
+
+### Decision
+- Do not create a duplicate tax-outsourcing URL. Keep the service page as the commercial destination and the guide as the informational resource, then monitor query/page distribution in Search Console.
+
 ## 2026-10-19 — Add CPA-firm accounts payable outsourcing page
 
 ### Added
