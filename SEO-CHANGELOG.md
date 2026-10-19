@@ -8,7 +8,9 @@
 - **`app/solutions/staff-augmentation/page.tsx`** — aligned metadata with the query family “accounting staff augmentation services,” which had 25 impressions at average position 25.8; the broader “accounting staff augmentation” query had 182 impressions at position 40.1.
 - **`app/markets/united-states/page.tsx`** — made the hero serve U.S. firms and businesses and clarified its geographic-hub role. Query reporting was dominated by broad offshore-accounting variants, which belong on the dedicated offshore accounting solution page instead.
 
-**Indexing observation:** GSC reported the sitemap as valid with 205 indexed URLs and no errors/warnings, but last downloaded it on 2026-10-16. Several routes in the live source/sitemap are still reported as “URL unknown to Google” or “Discovered — currently not indexed.” This may reflect recent publication/discovery lag; verify live responses, submit the sitemap again, and strengthen contextual links before treating it as a content-quality issue.
+**Indexing observation and action:** Before resubmission, GSC reported the valid sitemap's last download as 2026-10-16 with 205 indexed URLs and no errors/warnings. The sitemap was resubmitted through GenieSeo on 2026-10-19. The latest result reports Valid, last downloaded 2026-10-19 08:36, 214 indexed URLs, 0 errors and 0 warnings. Six newer routes remain uncrawled; latest URL Inspection reports two as “URL unknown to Google” and four as “Discovered — currently not indexed.” These states shifted between consecutive checks, so verify live HTTP responses and re-check URL Inspection after processing instead of assuming a content-quality issue. Sitemap submission does not guarantee indexing.
+
+**Validation constraint:** The Vercel status check for the current branch reports a build-rate-limit failure. These source edits remain staged and are not claimed as built or deployed.
 
 **URLs changed:** No.  
 **Metadata changed:** Yes — tax preparation guide and staff augmentation.  
