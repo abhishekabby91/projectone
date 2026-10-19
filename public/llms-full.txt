@@ -24,6 +24,20 @@ Support can include recurring bookkeeping, accounting production, reconciliation
 
 The accounting firm retains the client relationship and its own review and approval processes.
 
+CPA-firm state and workflow pages:
+- California CPA firm overview: https://www.accounstone.com/industries/cpa-firms/california
+- California tax workpaper support: https://www.accounstone.com/industries/cpa-firms/california-tax-workpaper-support
+- Texas CPA firm overview: https://www.accounstone.com/industries/cpa-firms/texas
+- Texas bookkeeping cleanup support: https://www.accounstone.com/industries/cpa-firms/texas-bookkeeping-cleanup-support
+- Florida CPA firm overview: https://www.accounstone.com/industries/cpa-firms/florida
+- Florida property-entity accounting support: https://www.accounstone.com/industries/cpa-firms/florida-property-entity-accounting-support
+- New York CPA firm overview: https://www.accounstone.com/industries/cpa-firms/new-york
+- New York multi-entity accounting support: https://www.accounstone.com/industries/cpa-firms/new-york-multi-entity-accounting-support
+- Illinois CPA firm overview: https://www.accounstone.com/industries/cpa-firms/illinois
+- Illinois inventory accounting support: https://www.accounstone.com/industries/cpa-firms/illinois-inventory-accounting-support
+
+These state-specific workflow pages describe preparation and recordkeeping support, not tax advice, election decisions, accounting policy, valuation or filing responsibility.
+
 ### Businesses
 
 Support can include recurring bookkeeping, accounting operations, reconciliations, month-end close, AP, AR, payroll processing, reporting preparation and defined tax-preparation support.
