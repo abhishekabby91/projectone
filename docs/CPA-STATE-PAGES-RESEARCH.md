@@ -1,5 +1,11 @@
 # CPA-firm SEO cluster and state-page research — 2026-10-18
 
+## Additional CPA-firm service workflow — accounts payable
+
+GSC data for 2026-07-20 through 2026-10-18 showed a small query signal for “accounts payable outsourcing for cpa firms” (10 impressions on the broad U.S. AP service page at an average position of 63.5, with only a few impressions across related URLs). This is an early first-party visibility signal, not an estimate of market-wide search volume. Competitor research also found a dedicated AP outsourcing page for CPA firms at Accountably: https://accountably.com/services/accounting/accounts-payable/. The competitor page establishes that this buyer/workflow combination is used in the market; it does not establish query volume or expected ranking.
+
+Added `/industries/cpa-firms/accounts-payable-outsourcing` as a test page for CPA firms arranging invoice entry, coding, supported PO matching, vendor statement reconciliation, AP aging and payment-batch preparation for client engagements. It is distinct from `/services/accounts-payable/united-states`, which is the broader commercial owner for direct business buyers, and from the informational AP guides. The page keeps invoice approvals, vendor decisions, bank access and payment release with the authorized client. Evaluate its performance before expanding into additional CPA-firm × service combinations.
+
 ## Decision and scope
 
 Create five separate, indexable state-qualified commercial pages for US CPA and accounting firms:
@@ -199,6 +205,32 @@ Do not treat the list as proof that each term has measurable volume. Capture ave
 - Each state page links to the Client Accounting Services guide and the How to Outsource Accounting guide where useful.
 - State pages do not claim to be local offices and do not imply local staff.
 - Existing `/markets/united-states/{california,texas,florida}` pages remain the primary destinations for direct-business state accounting intent; CPA-firm state pages own CPA-outsourcing intent.
+
+## Additional CPA-firm query page — overflow work support (2026-10-19)
+
+### Why this page was added
+The state pages cover state-qualified CPA-firm outsourcing and workflow needs. A separate national workflow page covers firms with a defined backlog, batch of files or temporary preparation queue. It is designed to support all five state pages without creating near-identical state × service variants.
+
+### First-party Search Console signal
+Property: `sc-domain:accounstone.com`; Web search; 2026-07-20 through 2026-10-18.
+- “cpa firm overflow work outsourcing”: 1 impression, 0 clicks, average position 11 on `/industries/cpa-firms`.
+- “accounting backlog support”: 4 impressions, 0 clicks, average position 94.2 on `/solutions/back-office-support`.
+- “backlog accounting solutions”: 2 impressions, 0 clicks, average position 89.5.
+These are tiny samples of impressions on Accounstone's own site, not total Google search volume or proof of market demand. The page is a measured test hypothesis, not a demand forecast.
+
+### Intent boundaries
+- `/industries/cpa-firms` remains the broad outsourcing and capacity hub.
+- `/industries/cpa-firms/overflow-work-support` owns defined overflow queues and temporary preparation assignments.
+- `/industries/cpa-firms/cas-production-support` owns recurring CAS production and reporting handoffs.
+- `/industries/cpa-firms/white-label-accounting` owns branding and client-contact boundaries.
+- Existing national bookkeeping, accounting and tax-preparation service pages retain their service-specific intent.
+- Do not create state × overflow variants unless future evidence demonstrates distinct state-qualified buyer intent and page-specific value.
+
+### Page contract
+- Primary keyword themes: CPA firm overflow work outsourcing; overflow accounting support for CPA firms; accounting backlog support for accounting practices. These are keyword themes, not verified-volume claims.
+- The page uses existing service illustrations, FAQ, breadcrumb and service schema. Its rendered word count must be checked with the production page verifier; do not pad content just to meet a floor.
+- Unsourced claims to avoid: guaranteed turnaround, guaranteed availability, savings, client counts, certifications, local offices/staff and state-level search-volume claims.
+- Release gate: production build, `node scripts/verify-pages.mjs`, route/sitemap/AI-index parity, page-similarity review and mobile preview check. Keep this branch unmerged until Vercel preview/build is available and reviewed.
 
 ## Unsourced-claims checklist
 

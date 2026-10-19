@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-214 indexable routes. Excludes the 4 permanent
+221 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing for CPA Firms |
+| `/blog/tax-preparation-outsourcing` | Tax Outsourcing for CPA Firms: Workflow Guide |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -113,12 +113,19 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
+| `/industries/cpa-firms/accounts-payable-outsourcing` | Accounts Payable Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
+| `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
+| `/industries/cpa-firms/illinois-inventory-accounting-support` | Illinois Inventory Accounting Support |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Work Outsourcing Support |
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
+| `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
 | `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |

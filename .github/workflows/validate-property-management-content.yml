@@ -119,7 +119,14 @@ jobs:
           node scripts/verify-pages.mjs /industries/cpa-firms/florida
           node scripts/verify-pages.mjs /industries/cpa-firms/new-york
           node scripts/verify-pages.mjs /industries/cpa-firms/illinois
+          node scripts/verify-pages.mjs /industries/cpa-firms/california-tax-workpaper-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/texas-bookkeeping-cleanup-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/florida-property-entity-accounting-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/new-york-multi-entity-accounting-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/illinois-inventory-accounting-support
           node scripts/verify-pages.mjs /industries/cpa-firms/white-label-accounting
           node scripts/verify-pages.mjs /industries/cpa-firms/cas-production-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/overflow-work-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/accounts-payable-outsourcing
           node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-corporation
           node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-s-corporation

@@ -86,13 +86,20 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
 | `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms/accounts-payable-outsourcing` | B | CPA Firms / Accounts Payable | Added 2026-10-19 — AP preparation workflow for CPA-firm client-service engagements; approval and payment release remain with the client |
 | `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
 | `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
 | `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
 | `/industries/cpa-firms/new-york` | B | CPA Firms / New York | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
 | `/industries/cpa-firms/illinois` | B | CPA Firms / Illinois | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
+| `/industries/cpa-firms/california-tax-workpaper-support` | B | CPA Firms / California / Tax workpapers | Added 2026-10-19 — source-record organization and reviewer-ready tax workpapers; state tax decisions remain with the firm |
+| `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | B | CPA Firms / Texas / Cleanup | Added 2026-10-19 — pre-tax cleanup, reconciliations and open-item register; no tax determination or unapproved adjustments |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | B | CPA Firms / Florida / Property entities | Added 2026-10-19 — entity-level books, intercompany schedules and year-end handoff; tax treatment remains with the CPA |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | B | CPA Firms / New York / Multi-entity | Added 2026-10-19 — intercompany reconciliation and entity-level close; no state or city tax elections |
+| `/industries/cpa-firms/illinois-inventory-accounting-support` | B | CPA Firms / Illinois / Inventory | Added 2026-10-19 — inventory-to-ledger support and close schedules; valuation and tax decisions remain with the firm |
 | `/industries/cpa-firms/white-label-accounting` | B | CPA Firms / White-label delivery | Added 2026-10-18 — brand, communication and reviewer-handoff intent distinct from general outsourcing, bookkeeping service scope and evaluation guides |
 | `/industries/cpa-firms/cas-production-support` | B | CPA Firms / CAS production | Added 2026-10-18 — recurring production and reporting handoff for firms delivering client accounting services; distinct from CAS educational guide |
+| `/industries/cpa-firms/overflow-work-support` | B | CPA Firms / Overflow capacity | Added 2026-10-19 — defined accounting backlog, batch and temporary overflow queue with scoped deliverables; distinct from recurring CAS and staff augmentation |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |

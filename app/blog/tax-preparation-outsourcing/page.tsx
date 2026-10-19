@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Tax Preparation Outsourcing for CPA Firms',
-  description: 'Tax preparation outsourcing for CPA firms: return preparation, workpapers, Drake Tax and CCH Axcess workflows, with review and filing retained by licensed professionals.',
+  title: 'Tax Outsourcing for CPA Firms: Workflow Guide',
+  description: 'A practical guide to CPA-firm tax outsourcing, including workpapers, Drake Tax and CCH Axcess workflows, review boundaries and tax-season planning.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -61,6 +61,12 @@ export default function TaxPrepOutsourcingBlog() {
       </p>
       <p>
         The practical use case for CPA firms is clear: the January-to-April volume spike doesn&rsquo;t justify hiring full-time staff who will be idle the other eight months. Offshore preparation support absorbs the surge while the licensed team focuses on review, client communication, and judgment-level decisions.
+      </p>
+
+      <p>
+        If the pressure is a mixed queue of bookkeeping, reconciliations, cleanup and tax workpapers rather than tax preparation alone, see our{' '}
+        <Link href="/industries/cpa-firms/overflow-work-support" className="text-primary font-medium hover:underline">CPA firm overflow work support</Link>{' '}
+        page for a way to scope a bounded batch or backlog without creating a second tax-preparation landing page.
       </p>
 
       <p>

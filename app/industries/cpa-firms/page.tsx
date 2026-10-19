@@ -281,6 +281,14 @@ export default function CPAFirmsPage() {
               <h3 className="font-semibold text-primary">CAS Production Support</h3>
               <p className="mt-2 text-sm text-muted">Recurring bookkeeping, reconciliations, month-end schedules and reporting-package preparation for CAS practices.</p>
             </Link>
+            <Link href="/industries/cpa-firms/overflow-work-support" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">CPA Firm Overflow Work Support</h3>
+              <p className="mt-2 text-sm text-muted">Define a backlog, batch of files or temporary preparation queue with agreed inputs, outputs and review points.</p>
+            </Link>
+            <Link href="/industries/cpa-firms/accounts-payable-outsourcing" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Accounts Payable Outsourcing</h3>
+              <p className="mt-2 text-sm text-muted">Invoice preparation, coding, vendor statement tie-outs and payment-batch preparation with approval boundaries retained.</p>
+            </Link>
             <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">U.S. Market</h3>
               <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>

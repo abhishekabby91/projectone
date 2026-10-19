@@ -490,11 +490,11 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  → would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted → never crawled
 ```
 
-The first command must print nothing. The second should print the four
+The first command must print nothing. The second should print the five
 legacy page files that are permanent redirect sources plus the two live
 `noindex` routes: `/blog/hoa-delinquency-accounting`,
 `/blog/hoa-monthly-close-process`, `/blog/hoa-vendor-invoice-processing`,
-`/blog/hoa-year-end-checklist`, `/technology/myob` and `/thank-you`.
+`/blog/hoa-year-end-checklist`, `/technology/yardi`, `/technology/myob` and `/thank-you`.
 Redirect sources should be excluded because their destinations, not the old
 URLs, belong in the sitemap. The two noindex URLs should also be excluded.
 Anything else in either direction is drift.

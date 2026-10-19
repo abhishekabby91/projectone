@@ -1,3 +1,64 @@
+## 2026-10-19 — Exclude redirected Yardi URL and record indexing diagnosis
+
+### Updated
+- Excluded `/technology/yardi` from generated sitemap output because it permanently redirects to `/technology`. The redirect itself remains intact.
+- Retained the existing exclusion for `/technology/myob`, which is noindex.
+- Added `docs/INDEXING-DIAGNOSIS-2026-10-19.md` to distinguish current production Search Console states from draft routes not yet deployed.
+
+### Verified Search Console state
+- Sitemap `https://www.accounstone.com/sitemap.xml`: valid; 205 indexed URLs; 0 errors and 0 warnings; last downloaded 2026-10-16.
+- Form 1065: “Discovered — currently not indexed”, last crawl never. It already appears in the sitemap and is linked from the tax hub, tax-outsourcing guide and CPA-firm hub. No rendering failure can be concluded without a crawl.
+- Form 1120 and 1120-S: “URL is unknown to Google” at the time of inspection. These pages are still on the draft branch and are not production indexing defects.
+- `/technology/yardi`: “Page with redirect”, which is expected; only the canonical destination should be submitted in the sitemap.
+
+### Next steps
+- After the planned production release, verify the live sitemap, resubmit it in Search Console, and inspect newly published URLs.
+- If Form 1065 remains un-crawled, review rendered HTML, canonical, robots, response status and internal-link prominence before rewriting content.
+- These changes do not guarantee indexing; Google controls crawl and index selection.
+
+## 2026-10-19 — Clarify informational intent for the tax-outsourcing guide
+
+### Updated
+- Kept `/blog/tax-preparation-outsourcing` as the informational guide, but changed its metadata title and description so it does not present itself as a second commercial landing page alongside `/services/tax-preparation/united-states`.
+- The visible guide still covers workpaper preparation, software workflows, professional-review boundaries and season planning, with a clear path to the commercial service page.
+
+### Evidence
+- GSC (2026-07-20 to 2026-10-18) shows the guide receiving impressions for “tax outsourcing for cpa firms” (39 impressions, average position 18.1), “outsourced tax preparation for cpa firms” (43 impressions, average position 20.6), and “tax preparation outsourcing for cpa firms” (28 impressions, average position 18.0).
+- The U.S. tax-preparation service page also appears for these commercial phrases, but at lower average positions in this sample. This is a query-intent alignment test, not proof that metadata changes will improve rankings.
+
+### Decision
+- Do not create a duplicate tax-outsourcing URL. Keep the service page as the commercial destination and the guide as the informational resource, then monitor query/page distribution in Search Console.
+
+## 2026-10-19 — Add CPA-firm accounts payable outsourcing page
+
+### Added
+- `/industries/cpa-firms/accounts-payable-outsourcing` — commercial workflow page for CPA firms that arrange invoice preparation, coding, supported matching, vendor statement reconciliation, AP aging and payment-batch preparation for client engagements.
+- Added contextual link from the CPA-firm hub, sitemap and sitemap-date entry, route/content/search-intent registry entries, AI-readable index entries, and a targeted page-verifier command.
+- Reused the existing accounts-payable vector illustration and consultation/inquiry components.
+
+### Evidence and boundaries
+- GSC (2026-07-20 to 2026-10-18) shows a small signal for “accounts payable outsourcing for cpa firms”: 10 impressions on the U.S. AP service page at average position 63.5, with additional sparse impressions on other URLs. This is not market search volume.
+- Competitor research found a dedicated AP outsourcing page for CPA firms at Accountably, which confirms the content pattern exists but does not prove search volume or likely rankings.
+- The page distinguishes CPA-firm client-service workflows from the general U.S. AP service page. Invoice approval, vendor decisions, bank access and payment release remain with authorized client personnel. No turnaround, savings, certification or local-office claims are made.
+
+### Release status
+- Kept on `accounstone-cpa-state-query-cluster-hoa-ux-oct19`; no production merge or deployment.
+- Production build, page verifier, route/sitemap parity, similarity checks and mobile visual review remain required before merge. Vercel deployment remains blocked by the current build-rate limit.
+
+## 2026-10-19 — Add CPA-firm overflow work support query page
+
+### Added
+- `/industries/cpa-firms/overflow-work-support` — commercial intent for CPA firms with a defined accounting backlog, file batch or temporary preparation queue.
+- Added contextual links from the CPA-firm hub and shared state-page layout.
+- Registered the route in the sitemap, sitemap dates, AI-readable indexes, route inventory, content registry and search-intent registry.
+- Added a targeted page-verifier command to the content validation workflow.
+
+### Evidence and boundaries
+Google Search Console (2026-07-20 to 2026-10-18) showed only one impression for “cpa firm overflow work outsourcing” on the CPA-firm hub, plus small related backlog-query samples on the broad back-office page. This supports testing the wording, not claiming meaningful search volume. The page is distinct from recurring CAS production and staff augmentation. No state-level volume, guaranteed turnaround, savings, local-office or certification claims are made.
+
+### Release status
+Kept on `accounstone-cpa-state-query-cluster-hoa-ux-oct19`. Production build, page verifier, similarity checks and mobile preview still need confirmation; do not merge or deploy until the Vercel limit resets and the combined batch is reviewed.
+
 ## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
 
 ### app/industries/hoa-accounting/los-angeles-county/page.tsx
@@ -5049,3 +5110,15 @@ Search Console URL inspection was run against sitemap and related cluster URLs. 
 **Changed:** Updated the title to “NetSuite Accounting Support for Month-End Close” and refined the description around multi-entity reconciliations, intercompany balances/eliminations, currency revaluation, consolidation and reporting. Replaced the “Dedicated Accounting Teams” related link with the existing U.S. tax preparation service link, keeping the page's focus on NetSuite workflows rather than team-model terminology.
 
 **Guardrails:** Existing URL retained; no new page created. Query volume is modest and average position is not a fixed rank. Recheck the same query/page pair after recrawl and compare clicks, impressions, CTR and position over a comparable window.
+
+## 2026-10-19 — Connect tax-outsourcing guide to CPA overflow support
+
+**Evidence:** Search Console data for 2026-07-20 through 2026-10-18 showed the existing `/blog/tax-preparation-outsourcing` guide receiving impressions for CPA-firm tax outsourcing queries. The guide remains informational, while `/services/tax-preparation/united-states` owns commercial tax-preparation intent. The CPA-firm overflow page now covers mixed backlogs and bounded preparation queues.
+
+**Changed:** Added one contextual link from the tax-outsourcing guide to `/industries/cpa-firms/overflow-work-support` for readers whose immediate need is a mixed queue of bookkeeping, reconciliations, cleanup and tax workpapers rather than tax preparation alone.
+
+**Why:** Help readers move to the correct commercial workflow without creating another near-duplicate tax-preparation page or weakening the existing intent map.
+
+**URL changed:** No. **Metadata changed:** No. **Content changed:** Yes, contextual internal link only.
+
+**Guardrails:** This link change is not evidence of ranking improvement. Recheck the affected pages after deployment and recrawl; do not add further tax pages unless a distinct query intent is demonstrated.

@@ -88,6 +88,27 @@ export default function HoaAccountingPage() {
         </ol>
       </nav>
 
+      <nav aria-label="Jump to HOA accounting topics" className="w-full border-y border-border bg-white px-6 py-4 md:px-8">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.14em] text-accent">Explore this page</p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: '#hoa-coverage', label: 'Services covered' },
+              { href: '#hoa-problems', label: 'Common problems' },
+              { href: '#hoa-workflow', label: 'Monthly workflow' },
+              { href: '#hoa-services', label: 'Service scope' },
+              { href: '#hoa-resources', label: 'Guides and checklists' },
+              { href: '#hoa-locality', label: 'State and local context' },
+              { href: '#hoa-boundaries', label: 'Responsibilities' },
+            ].map((item) => (
+              <a key={item.href} href={item.href} className="rounded-full border border-border px-3 py-2 text-sm font-medium text-primary transition-colors hover:border-secondary hover:bg-input">
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
       <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-5xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">HOA accounting, explained</p>
@@ -146,7 +167,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-4"><>
             <Eyebrow>Understanding HOA accounting</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">What HOA Accounting Covers</h2>
+            <h2 id="hoa-coverage" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">What HOA Accounting Covers</h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">HOA accounting is the financial recordkeeping and reporting used by a homeowners association, condominium association, or similar community association. It connects homeowner assessments, vendor bills, bank activity, operating expenses, reserve activity, budgets and year-end records into a set of books the board can review each month.</p>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-4xl">It is more than recording transactions. A useful HOA accounting process keeps owner balances current, reconciles every bank account, separates operating and reserve activity in the records, tracks budget performance and gives the board enough detail to understand what changed during the month.</p>
           </></Reveal>
@@ -196,7 +217,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-8"><>
             <Eyebrow>Start where it hurts</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+            <h2 id="hoa-problems" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               Common HOA Accounting Problems Boards Need to Resolve
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
@@ -206,24 +227,31 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:gap-5">
             {triggers.map((t, i) => (
               <Reveal key={t.symptom} delay={Math.min(i * 0.05, 0.25)}>
                 <li className="h-full">
-                  <InquiryTrigger
-                    className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
-                    source={PATH}
-                    title="HOA & Community Association Accounting"
-                    lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
-                    label={`Talk to us about: ${t.symptom}`}
-                  >
-                    <h3 className="font-serif text-lg font-bold text-primary leading-snug">{t.symptom}</h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{t.reading}</p>
-                    <span className="mt-4 text-sm font-semibold text-accent">
-                      {t.ask}{' '}
-                      <span aria-hidden="true">&rarr;</span>
-                    </span>
-                  </InquiryTrigger>
+                  <article className="flex h-full flex-col rounded-xl border border-border bg-white p-5 transition-colors duration-200 hover:border-primary/40 sm:p-6">
+                    <h3 className="font-serif text-lg font-bold leading-snug text-primary">{t.symptom}</h3>
+                    <details className="group mt-3">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 text-sm font-semibold text-primary">
+                        <span>Why this often happens</span>
+                        <span aria-hidden="true" className="rounded-full border border-border px-2 py-0.5 text-xs group-open:rotate-45">+</span>
+                      </summary>
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{t.reading}</p>
+                    </details>
+                    <div className="mt-auto pt-4">
+                      <InquiryTrigger
+                        className="inline-flex items-center gap-2 text-left text-sm font-semibold text-accent hover:text-primary"
+                        source={PATH}
+                        title="HOA & Community Association Accounting"
+                        lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
+                        label={`Talk to us about: ${t.symptom}`}
+                      >
+                        {t.ask} <span aria-hidden="true">&rarr;</span>
+                      </InquiryTrigger>
+                    </div>
+                  </article>
                 </li>
               </Reveal>
             ))}
@@ -274,7 +302,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-4xl mx-auto">
           <Reveal className="space-y-4"><>
             <Eyebrow>The work itself</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+            <h2 id="hoa-workflow" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               HOA Accounting Workflow and Monthly Reporting
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
@@ -317,7 +345,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-6xl mx-auto">
           <Reveal className="mb-10 max-w-3xl mx-auto text-center space-y-3"><>
             <span className="inline-flex items-center justify-center text-xs md:text-sm font-bold tracking-[0.16em] uppercase text-accent">Accounting scope</span>
-            <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
+            <h2 id="hoa-services" className="text-xl md:text-2xl font-bold tracking-tight text-primary text-balance">
               HOA Accounting Scope Built Around Board Meetings
             </h2>
             <p className="text-base md:text-lg text-muted leading-7 md:leading-8">
@@ -367,7 +395,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-6"><>
             <Eyebrow>Practical HOA resources</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+            <h2 id="hoa-resources" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               HOA Accounting Guides for Boards and Community Managers
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
@@ -403,7 +431,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-4 mb-8"><>
             <Eyebrow>Where you operate</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+            <h2 id="hoa-locality" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               Governed Locally, Accounted for the Same Way
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">{locality.lead}</p>
@@ -474,7 +502,7 @@ export default function HoaAccountingPage() {
         <div className="max-w-4xl mx-auto">
           <Reveal className="space-y-4"><>
             <Eyebrow>What we will not do</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+            <h2 id="hoa-boundaries" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
               Every Decision Stays With the Board
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed">
@@ -509,49 +537,58 @@ export default function HoaAccountingPage() {
               These guides answer specific questions that come up during HOA bookkeeping, monthly close and board reporting.
             </p>
           </></Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {[
-              { name: 'Accounting transition checklist', href: '/blog/hoa-accounting-transition-checklist' },
-              { name: 'Month-end checklist', href: '/blog/hoa-accounting-month-end-checklist' },
-              { name: 'Assessment accounting', href: '/blog/hoa-assessment-accounting' },
-              { name: 'Homeowner ledgers', href: '/blog/hoa-homeowner-ledgers' },
-              { name: 'Assessment receivables reconciliation', href: '/blog/hoa-assessment-receivables-reconciliation' },
-              { name: 'Bank reconciliation', href: '/blog/hoa-bank-reconciliation' },
-              { name: 'Accounts receivable aging', href: '/blog/hoa-accounts-receivable-aging' },
-              { name: 'Budget-to-actual reports', href: '/blog/hoa-budget-to-actual-reports' },
-              { name: 'Annual budget preparation', href: '/blog/hoa-annual-budget-preparation' },
-              { name: 'Special assessment accounting', href: '/blog/hoa-special-assessment-accounting' },
-              { name: 'Board financial package', href: '/blog/hoa-board-financial-package' },
-              { name: 'Balance sheet explained', href: '/blog/hoa-balance-sheet-explained' },
-              { name: 'Income statement explained', href: '/blog/hoa-income-statement-explained' },
-              { name: 'Accounting controls', href: '/blog/hoa-accounting-controls' },
-              { name: 'Accounting workflow', href: '/blog/hoa-accounting-workflow' },
-              { name: 'Cash vs. accrual accounting', href: '/blog/hoa-cash-vs-accrual-accounting' },
-              { name: 'Reserve accounting', href: '/blog/hoa-reserve-accounting' },
-              { name: 'Operating vs. reserve funds', href: '/blog/hoa-operating-vs-reserve-funds' },
-              { name: 'Reserve reconciliation', href: '/blog/hoa-reserve-reconciliation' },
-              { name: 'Reserve expenses', href: '/blog/hoa-reserve-expenses' },
-              { name: 'Accounts payable', href: '/blog/hoa-accounts-payable' },
-              { name: 'Vendor expense tracking', href: '/blog/hoa-vendor-expense-tracking' },
-              { name: 'Maintenance expense accounting', href: '/blog/hoa-maintenance-expense-accounting' },
-              { name: 'Vendor 1099 tracking', href: '/blog/hoa-vendor-1099-tracking' },
-              { name: 'Unapplied HOA payments', href: '/blog/hoa-unapplied-payments' },
-              { name: 'Year-end accounting', href: '/blog/hoa-year-end-accounting' },
-              { name: 'Accounting cleanup', href: '/blog/hoa-accounting-cleanup' },
-              { name: 'QuickBooks', href: '/blog/hoa-accounting-quickbooks' },
-              { name: 'QuickBooks Online', href: '/blog/hoa-quickbooks-online' },
-              { name: 'AppFolio', href: '/blog/hoa-accounting-appfolio' },
-              { name: 'Yardi', href: '/blog/hoa-accounting-yardi' },
-              { name: 'eUnify', href: '/blog/hoa-accounting-eunify' },
-              { name: 'eUnify + QuickBooks', href: '/blog/eunify-quickbooks-hoa-accounting' },
-              { name: 'How to outsource HOA accounting', href: '/blog/how-to-outsource-hoa-accounting' },
-              { name: 'Outsourcing vs. in-house', href: '/blog/hoa-accounting-outsourcing-vs-in-house' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="rounded-lg border border-border bg-input px-4 py-3 text-sm font-medium text-primary hover:border-primary/50 transition-colors">
-                {l.name}
-              </Link>
-            ))}
-          </div>
+          <details className="group rounded-2xl border border-border bg-white p-4 sm:p-5">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-primary">
+              <span>Browse the full HOA accounting guide library</span>
+              <span aria-hidden="true" className="rounded-full border border-border px-3 py-1 text-sm group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">Open the directory when you need a specific checklist or accounting topic. The links remain grouped in one place so the main page stays easier to scan.</p>
+            <div className="mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                { name: 'Accounting transition checklist', href: '/blog/hoa-accounting-transition-checklist' },
+                { name: 'Month-end checklist', href: '/blog/hoa-accounting-month-end-checklist' },
+                { name: 'Assessment accounting', href: '/blog/hoa-assessment-accounting' },
+                { name: 'Homeowner ledgers', href: '/blog/hoa-homeowner-ledgers' },
+                { name: 'Assessment receivables reconciliation', href: '/blog/hoa-assessment-receivables-reconciliation' },
+                { name: 'Bank reconciliation', href: '/blog/hoa-bank-reconciliation' },
+                { name: 'Accounts receivable aging', href: '/blog/hoa-accounts-receivable-aging' },
+                { name: 'Budget-to-actual reports', href: '/blog/hoa-budget-to-actual-reports' },
+                { name: 'Annual budget preparation', href: '/blog/hoa-annual-budget-preparation' },
+                { name: 'Special assessment accounting', href: '/blog/hoa-special-assessment-accounting' },
+                { name: 'Board financial package', href: '/blog/hoa-board-financial-package' },
+                { name: 'Balance sheet explained', href: '/blog/hoa-balance-sheet-explained' },
+                { name: 'Income statement explained', href: '/blog/hoa-income-statement-explained' },
+                { name: 'Accounting controls', href: '/blog/hoa-accounting-controls' },
+                { name: 'Accounting workflow', href: '/blog/hoa-accounting-workflow' },
+                { name: 'Cash vs. accrual accounting', href: '/blog/hoa-cash-vs-accrual-accounting' },
+                { name: 'Reserve accounting', href: '/blog/hoa-reserve-accounting' },
+                { name: 'Operating vs. reserve funds', href: '/blog/hoa-operating-vs-reserve-funds' },
+                { name: 'Reserve reconciliation', href: '/blog/hoa-reserve-reconciliation' },
+                { name: 'Reserve expenses', href: '/blog/hoa-reserve-expenses' },
+                { name: 'Accounts payable', href: '/blog/hoa-accounts-payable' },
+                { name: 'Vendor expense tracking', href: '/blog/hoa-vendor-expense-tracking' },
+                { name: 'Maintenance expense accounting', href: '/blog/hoa-maintenance-expense-accounting' },
+                { name: 'Vendor 1099 tracking', href: '/blog/hoa-vendor-1099-tracking' },
+                { name: 'Unapplied HOA payments', href: '/blog/hoa-unapplied-payments' },
+                { name: 'Year-end accounting', href: '/blog/hoa-year-end-accounting' },
+                { name: 'Accounting cleanup', href: '/blog/hoa-accounting-cleanup' },
+                { name: 'QuickBooks', href: '/blog/hoa-accounting-quickbooks' },
+                { name: 'QuickBooks Online', href: '/blog/hoa-quickbooks-online' },
+                { name: 'AppFolio', href: '/blog/hoa-accounting-appfolio' },
+                { name: 'Yardi', href: '/blog/hoa-accounting-yardi' },
+                { name: 'eUnify', href: '/blog/hoa-accounting-eunify' },
+                { name: 'eUnify + QuickBooks', href: '/blog/eunify-quickbooks-hoa-accounting' },
+                { name: 'How to outsource HOA accounting', href: '/blog/how-to-outsource-hoa-accounting' },
+                { name: 'Outsourcing vs. in-house', href: '/blog/hoa-accounting-outsourcing-vs-in-house' },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} className="rounded-lg border border-border bg-input px-4 py-3 text-sm font-medium text-primary hover:border-primary/50 transition-colors">
+                  {l.name}
+                </Link>
+              ))}
+            </div>
+            </div>
+          </details>
         </div>
       </section>
 

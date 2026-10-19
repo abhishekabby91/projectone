@@ -143,13 +143,11 @@ export default function HomePage() {
           description="Practical support across bookkeeping, accounting operations, tax preparation, payroll, payables, receivables and financial reporting."
           items={services.map((s) => ({
             ...s,
-            // Point each card at the regional page the retired generic URL
-            // redirects to, so the site's highest-authority page never links
-            // through a 308. audit-support resolves to United Kingdom -- the
-            // per-URL evidence is in the comment above the redirects in
-            // next.config.mjs. See CLAUDE.md, "zero internal links pointing at
-            // a redirect".
-            slug: `${s.slug}/${s.slug === 'audit-support' ? 'united-kingdom' : 'united-states'}`,
+            // The homepage is the broad entry point for Accounstone's primary
+            // US market. Keep each service card aligned with the US regional
+            // service destination; the UK audit-support page remains available
+            // from the UK market/service cluster and stays independently indexable.
+            slug: `${s.slug}/united-states`,
           }))}
           baseUrl="/services"
           columns={4}

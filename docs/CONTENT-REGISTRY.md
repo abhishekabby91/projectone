@@ -1,3 +1,13 @@
+## 2026-10-19 — Accounts payable outsourcing for CPA firms
+
+Added a CPA-firm-specific AP workflow page for firms arranging invoice preparation and related AP tasks within client-service engagements. It is distinct from the general U.S. AP service page, which addresses direct business buyers, and the informational AP guides, which explain scope and controls. Google Search Console data for 2026-07-20 to 2026-10-18 showed a small early signal for “accounts payable outsourcing for cpa firms” (10 impressions on the U.S. AP service page at an average position of 63.5, with a few impressions on other URLs). This is first-party visibility evidence, not market search volume. A competitor also has a dedicated AP outsourcing page for CPA firms, establishing a relevant competitor content pattern, not proof of demand.
+
+| Title | URL | Cluster | Primary intent | Body copy / floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| Accounts Payable Outsourcing for CPA Firms | `/industries/cpa-firms/accounts-payable-outsourcing` | CPA Firms / Accounts Payable | Defined invoice entry, coding, supported matching, vendor statement reconciliation, AP aging and payment-batch preparation in a CPA-firm client workflow | Target floor 650 words; verify rendered count with page verifier | Exact search volume not verified; no turnaround, savings, client-count, certification or local-office claims. Client retains invoice approval and payment release. |
+
+The page uses the existing accounts-payable vector illustration, FAQ schema, contextual links, and existing inquiry/consultation components. Run the production build, page verifier, route/sitemap parity, similarity and mobile review before merge.
+
 ## 2026-10-18 — U.S. CPA-firm tax return-type cluster
 
 Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.
@@ -26,6 +36,30 @@ Added `/industries/healthcare/dental-practice-accounting` as a dental-specific c
 Every new or refreshed industry URL must have a distinct client/buyer, a researched query/workflow intent, a page-specific value statement, and a documented contextual link path from its relevant industry hub. Supporting pages must link back to the hub and to relevant sibling services/resources when useful. Keep HOA associations, third-party property managers, real-estate owners/investors, e-commerce sellers, CPA firms, healthcare practices, technology/SaaS companies and contractors distinct when their workflows and search intent differ. Do not create a page for every keyword variant; record overlap decisions in `docs/SEARCH-INTENTS.md`. Refer to `AI-WEBSITE-GUIDE.md` for the required industry-to-client/query/link contract and pre-release checklist.
 
 # Content Registry
+
+## 2026-10-19 — CPA-firm overflow work support
+
+Added one commercial workflow page for firms that need a defined backlog, batch of files or temporary preparation queue handled under an agreed scope. It complements the five state overview pages and five state-specific workflow pages without creating five repetitive state × service pages.
+
+| Title | URL | Cluster | Primary intent | Body copy / floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| CPA Firm Overflow Accounting Support | `/industries/cpa-firms/overflow-work-support` | CPA Firms / Overflow Capacity | Scoped backlog, file batch or temporary accounting preparation queue with defined inputs, deliverables and review points | Target floor 650 words; verify rendered count with page verifier | Exact search volume not verified; GSC sample is very small; no turnaround, savings, client-count, certification or local-office claims |
+
+The page links to the CPA-firm hub, all five state pages, CAS production, white-label delivery and relevant national service pages. The CPA firm retains client relationships, professional judgment, review, signing and filing responsibilities. Run the production build, page verifier, route/sitemap parity, similarity and mobile review before merge.
+
+## 2026-10-19 — CPA-firm state-specific workflow pages
+
+Added five commercial workflow pages beneath the CPA-firm acquisition cluster. The pages target different workflow intents rather than duplicating the five state overview pages. State-specific context is limited to sourced official guidance; Accounstone is described as preparing records and schedules, not deciding tax treatment, elections, valuation or filing obligations. The exact state-level search volumes have not been verified.
+
+| Title | URL | Cluster | Primary intent | Body copy / floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| Tax Workpaper Support for California CPA Firms | `/industries/cpa-firms/california-tax-workpaper-support` | CPA Firms / California / Tax workpapers | Organize source records, reconciliations and reviewer handoff; California PTE reference linked to FTB | Approx. 879 words / 650 floor | No volume claim; no tax-election or eligibility advice; verify rendered word count and metadata with `verify-pages.mjs` |
+| Bookkeeping Cleanup Support for Texas CPA Firms | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | CPA Firms / Texas / Cleanup | Reconciliations and open-item schedules before tax preparation; Texas Comptroller reference linked | Approx. 817 words / 650 floor | No volume claim; no taxability or filing promise; verify rendered word count and metadata with `verify-pages.mjs` |
+| Property-Entity Accounting Support for Florida CPA Firms | `/industries/cpa-firms/florida-property-entity-accounting-support` | CPA Firms / Florida / Property entities | Entity-level close, intercompany schedules and source-record handoff; Florida DOR reference linked | Approx. 813 words / 650 floor | No volume claim; no apportionment or filing promise; verify rendered word count and metadata with `verify-pages.mjs` |
+| Multi-Entity Accounting Support for New York CPA Firms | `/industries/cpa-firms/new-york-multi-entity-accounting-support` | CPA Firms / New York / Multi-entity | Intercompany reconciliation and entity-level reporting; NYS PTET reference linked | Approx. 867 words / 650 floor | No volume claim; no NYS/NYC election or eligibility advice; verify rendered word count and metadata with `verify-pages.mjs` |
+| Inventory Accounting Support for Illinois CPA Firms | `/industries/cpa-firms/illinois-inventory-accounting-support` | CPA Firms / Illinois / Inventory | Inventory-to-ledger support and documented exceptions; Illinois DOR business forms reference linked | Approx. 822 words / 650 floor | No volume claim; no valuation, replacement-tax or filing determination; verify rendered word count and metadata with `verify-pages.mjs` |
+
+All five pages use the shared CPA state workflow layout, vector service illustrations, a visible on-page navigation row, FAQ schema tied to visible FAQs, and contextual links back to the state overview, CPA-firm hub and core services. Keyword themes are research hypotheses, not verified state-level search-volume findings.
 
 ## 2026-10-18 — CPA-firm state landing-page cluster
 
