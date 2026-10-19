@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourcing Tax Return Preparation',
-  description: 'What an offshore team can prepare and what needs a licensed CPA or EA, how Drake Tax and CCH Axcess workflows run, and how to plan season capacity.',
+  title: 'Tax Preparation Outsourcing Guide: Workflow & Controls',
+  description: 'A practical guide to delegated tax-preparation work, CPA review and filing controls, Drake Tax and CCH Axcess workflows, and busy-season capacity.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -73,7 +73,7 @@ export default function TaxPrepOutsourcingBlog() {
           <p className="mt-2 text-lg font-semibold text-primary">Preparation is one stage in the firm’s workflow</p>
           <p className="mt-2 text-sm leading-relaxed text-muted">Organize the records, prepare the agreed workpapers, list open questions, then return the file for professional review and approval. The responsible CPA, EA or attorney retains the duties assigned to them.</p>
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">U.S. tax support</Link>
+            <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">U.S. tax preparation outsourcing for CPA firms</Link>
             <Link href="/industries/cpa-firms" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">CPA firm services</Link>
           </div>
         </div>
