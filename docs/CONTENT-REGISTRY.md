@@ -1,3 +1,14 @@
+## 2026-10-18 — U.S. CPA-firm tax return-type cluster
+
+Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.
+
+| Title | URL | Cluster | Primary intent | Status | Last updated |
+|---|---|---|---|---|---|
+| Form 1120 Corporate Tax Outsourcing | `/services/tax-preparation/united-states/1120-corporation` | U.S. Tax Preparation / Return Type | C corporation return-preparation workpapers, book-to-tax schedules and fixed-asset support for CPA review | Draft page added; official IRS source linked; exact search volume not verified | 2026-10-18 |
+| Form 1120-S Tax Preparation Outsourcing | `/services/tax-preparation/united-states/1120-s-corporation` | U.S. Tax Preparation / Return Type | S corporation return and shareholder schedule preparation; basis and compensation decisions remain with the responsible professional | Draft page added; official IRS source linked; exact search volume not verified | 2026-10-18 |
+
+The existing `/services/tax-preparation/united-states` page remains the broad commercial owner. Form 1040 and 1065 pages retain their own distinct return workflows; the new pages link laterally to those pages and back to the tax hub. Do not create separate pages for every schedule, tax term or software unless search evidence proves a distinct intent.
+
 ## 2026-10-14 — Texas HOA accounting page
 
 Added `/industries/hoa-accounting/texas` as a state-specific commercial page under the HOA industry. Competitor research and official Texas Property Code references informed a distinct focus on property owners’ associations and condominium communities, organized financial records, assessment ledgers, reconciliations and board reporting. Statutory links are general references only; the page does not offer legal interpretation, compliance guarantees or on-site community management. The HOA hub links to the page, and the route is included in sitemap/search-intent records and AI-readable indexes.
@@ -15,6 +26,28 @@ Added `/industries/healthcare/dental-practice-accounting` as a dental-specific c
 Every new or refreshed industry URL must have a distinct client/buyer, a researched query/workflow intent, a page-specific value statement, and a documented contextual link path from its relevant industry hub. Supporting pages must link back to the hub and to relevant sibling services/resources when useful. Keep HOA associations, third-party property managers, real-estate owners/investors, e-commerce sellers, CPA firms, healthcare practices, technology/SaaS companies and contractors distinct when their workflows and search intent differ. Do not create a page for every keyword variant; record overlap decisions in `docs/SEARCH-INTENTS.md`. Refer to `AI-WEBSITE-GUIDE.md` for the required industry-to-client/query/link contract and pre-release checklist.
 
 # Content Registry
+
+## 2026-10-18 — CPA-firm state landing-page cluster
+
+These are commercial service pages, recorded here because the site page contract requires a content-registry entry as well as a route and search-intent record. The cluster is a test of state-qualified CPA-firm intent, not a claim that state-level search volumes have been verified. Census establishment scale is only market context; competitor state pages demonstrate SERP precedent, not demand.
+
+| Title | URL | Cluster | Primary intent | Status | Last updated |
+|---|---|---|---|---|---|
+| Accounting Outsourcing for California CPA Firms | `/industries/cpa-firms/california` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; California portfolio examples and preparation/review workflow | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Texas CPA Firms | `/industries/cpa-firms/texas` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined recurring preparation and reviewer handoff | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Florida CPA Firms | `/industries/cpa-firms/florida` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; client-portfolio and seasonal workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for New York CPA Firms | `/industries/cpa-firms/new-york` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; defined preparation and multi-entity workflow scoping | Draft page added; search volume not verified | 2026-10-18 |
+| Accounting Outsourcing for Illinois CPA Firms | `/industries/cpa-firms/illinois` | CPA Firms / State | State-qualified commercial CPA-firm outsourcing; recurring preparation workflows across varied portfolios | Draft page added; search volume not verified | 2026-10-18 |
+| White-Label Accounting Support for CPA Firms | `/industries/cpa-firms/white-label-accounting` | CPA Firms / Delivery Model | Commercial white-label workflow intent: brand use, client-contact boundaries, software access and reviewer handoff | Draft page added; competitor precedent reviewed; demand volume not verified | 2026-10-18 |
+| CAS Production Support for CPA Firms | `/industries/cpa-firms/cas-production-support` | CPA Firms / CAS Production | Commercial CAS production intent: monthly bookkeeping, reconciliations, close schedules and reporting-package preparation | Draft page added; competitor precedent reviewed; demand volume not verified | 2026-10-18 |
+
+## 2026-10-18 — CPA-firm white-label service page
+
+Added `/industries/cpa-firms/white-label-accounting` as a commercial service spoke beneath the CPA-firm hub. Competitor research shows providers separately position white-label accounting/bookkeeping for CPA firms, with emphasis on work prepared within the firm's branding and workflow. The page focuses on the operating model: branding, client-contact boundaries, system permissions, workpaper formats, review and responsibility boundaries. It does not promise client concealment, unrestricted data access, certifications, specific turnaround times or pricing. It links to the existing bookkeeping and tax-preparation service pages, CAS guide, outsourcing partner evaluation guide and CPA-firm readiness checklist; those existing pages retain their own service and informational intents.
+
+## 2026-10-18 — CPA-firm CAS production service page
+
+Added `/industries/cpa-firms/cas-production-support` as a commercial spoke under the CPA-firm hub. Competitor research found explicit CAS production offers for CPA practices, typically describing recurring bookkeeping, AP/AR records, month-end close and reporting preparation. This Accounstone page focuses on the preparation layer and reviewer handoff; it does not claim to provide client advisory, CFO services, tax planning, accounting-policy decisions or final approval. The existing `/resources/guides/client-accounting-services-cas-guide` remains the informational guide about the CAS practice model.
 
 Tracks blog/guide/insight content specifically (not every route — see `ROUTES.md` for the full site). Check here before writing new informational content on a topic that might already be covered.
 

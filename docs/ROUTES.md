@@ -23,6 +23,8 @@ with its own regional children for the same commercial intent.
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
 | `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
 | `/services/tax-preparation/united-states/1065-partnership` | B | Form 1065 / K-1 | Published 2026-09-16 |
+| `/services/tax-preparation/united-states/1120-corporation` | B | Form 1120 / C corporation | Added 2026-10-18 — corporate return preparation and book-to-tax workpaper intent |
+| `/services/tax-preparation/united-states/1120-s-corporation` | B | Form 1120-S / S corporation | Added 2026-10-18 — S corporation return and shareholder schedule workflow intent |
 
 21 commercial pages = 7 services x 3 regions. The matrix lives in `lib/data.ts`
 (`regions`, `serviceRegions`, `serviceRegionPaths`) and drives the navbar, the footer,
@@ -83,7 +85,14 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
+| `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
+| `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
+| `/industries/cpa-firms/new-york` | B | CPA Firms / New York | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
+| `/industries/cpa-firms/illinois` | B | CPA Firms / Illinois | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
+| `/industries/cpa-firms/white-label-accounting` | B | CPA Firms / White-label delivery | Added 2026-10-18 — brand, communication and reviewer-handoff intent distinct from general outsourcing, bookkeeping service scope and evaluation guides |
+| `/industries/cpa-firms/cas-production-support` | B | CPA Firms / CAS production | Added 2026-10-18 — recurring production and reporting handoff for firms delivering client accounting services; distinct from CAS educational guide |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |

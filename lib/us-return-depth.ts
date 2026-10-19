@@ -173,4 +173,112 @@ export const returnDepth: Record<string, ReturnDepth> = {
     boundary:
       'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Review, filing and authorization requirements for the return and K-1s. Any position on a book-to-tax difference that requires professional judgement rather than mechanical preparation. Whether a payment is a guaranteed payment or a distribution where the agreement is not explicit. We prepare and show the working so the applicable review and approval process is clear.',
   },
+  '1120': {
+    slug: '1120',
+    name: 'The 1120 Corporate Return',
+    boundaryHeading: 'What stays with your CPA or tax reviewer',
+    misconception: {
+      claim: '"A corporation return is just the financial statements moved into tax software."',
+      reality: 'The financial statements are a starting point, not the return itself. The book result may need to be reconciled to tax reporting, supported by fixed-asset detail, prior-year carryforward schedules and explanations for items that receive different treatment. Preparation is much more reviewable when each book-to-tax adjustment connects to a source schedule and the position behind it is supplied by the responsible professional.',
+    },
+    ledger: [
+      {
+        h: 'Start from a settled trial balance and statements',
+        p: 'A corporate return prepared against a moving ledger creates duplicated work and obscures which figures are final. The handoff should identify the accounting period, approved trial balance, financial statements and reconciliations that support the numbers. If a balance is unresolved, list the difference and owner rather than quietly replacing it with an assumed figure.',
+      },
+      {
+        h: 'Make book-to-tax differences traceable',
+        p: 'The bridge between book income and taxable income needs supporting detail that a reviewer can follow. The preparation package can organize the supplied schedules and prior-year workpapers, map each proposed adjustment to its source and flag missing facts. The preparer should not decide whether a transaction is deductible, whether a reserve is supportable or which tax treatment applies when that determination requires professional judgment.',
+      },
+      {
+        h: 'Fixed assets need a consistent rollforward',
+        p: 'The return preparation file should connect the client’s fixed-asset records to the book depreciation schedule and the tax depreciation information supplied or approved by the firm. Additions, disposals, placed-in-service information and prior-year balances should remain traceable. Where a record is missing or an asset’s treatment is unclear, the question should return to the firm rather than becoming an unsupported assumption in the schedule.',
+      },
+      {
+        h: 'Preserve the support behind shareholder and related-party items',
+        p: 'Corporate books can include officer compensation, loans, distributions, dividends, related-party balances and payments that need careful classification. The preparation workflow can reconcile the ledger to the supporting records and identify items requiring direction. Decisions about compensation treatment, related-party tax consequences and other legal or tax positions remain with the corporation and its qualified advisers.',
+      },
+      {
+        h: 'Do not let the return hide a bookkeeping backlog',
+        p: 'If the trial balance is not reconciled or key accounts are missing support, establish whether cleanup is a separate engagement before the return-preparation clock starts. A return workpaper should distinguish a complete source schedule from a placeholder, identify what remains open and show which questions prevent review from proceeding.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can Accounstone prepare Form 1120 workpapers from our existing trial balance?',
+        answer: 'The scope can include agreed Form 1120 preparation tasks and supporting schedules when the trial balance, source records, software and review checklist are confirmed. The firm supplies or approves tax positions and retains the professional review and filing responsibilities assigned to it.',
+      },
+      {
+        question: 'Who determines the corporate tax treatment of an expense or transaction?',
+        answer: 'The responsible CPA or tax professional determines tax treatment and any position that requires professional judgment. Accounstone can organize the records, prepare agreed supporting schedules and return unresolved questions with their source documentation.',
+      },
+      {
+        question: 'Can you prepare book-to-tax and depreciation schedules?',
+        answer: 'Accounstone can prepare agreed supporting schedules from client records and the firm’s approved treatment. Missing asset details, unclear transactions and proposed adjustments are surfaced for review; the page does not promise independent tax elections or accounting-policy decisions.',
+      },
+      {
+        question: 'What should we provide before a Form 1120 pilot?',
+        answer: 'Provide the approved trial balance, financial statements, prior-year return and workpapers, fixed-asset information, the firm’s checklist and the supported software workflow. Agree who handles missing records, proposed adjustments and final review before work begins.',
+      },
+      {
+        question: 'How is Form 1120 different from Form 1120-S preparation?',
+        answer: 'Form 1120 is used for a domestic corporation’s income tax return, while Form 1120-S reports income and other items for a corporation with an effective S corporation election. The supporting schedules, shareholder outputs and review questions differ, so the work should be scoped to the form and entity facts.',
+      },
+    ],
+    boundary: 'The firm or qualified tax professional determines tax treatment, elections, deductibility, compensation positions and other issues that require professional judgment. Accounstone prepares agreed records and schedules from the source information and treatment supplied, flags unresolved questions, and returns the work for review. Signing, filing and client advice remain with the responsible professionals.',
+  },
+  '1120S': {
+    slug: '1120s',
+    name: 'The 1120-S and Its Shareholder Schedules',
+    boundaryHeading: 'What stays with your CPA or tax reviewer',
+    misconception: {
+      claim: '"Once the S corporation books are closed, the K-1s are just a printout."',
+      reality: 'The shareholder schedules are tied to the facts and approved tax treatment for each owner. The return preparation package needs a reconciled trial balance, traceable book-to-tax adjustments, relevant shareholder and loan records, prior-year schedules and a clear list of missing inputs. A preparer can organize and prepare the agreed schedules, but must not guess at basis, compensation treatment or other positions that belong with the responsible professional.',
+    },
+    ledger: [
+      {
+        h: 'Keep the corporation-level close stable before preparation',
+        p: 'An S corporation return should start from an agreed trial balance and supporting financial records. Bank, credit-card, payroll, loan and balance-sheet accounts should be reconciled or explicitly listed as open items. Preparing the return while the books continue to change leads to rework and makes it harder for a reviewer to tell whether the shareholder schedules reflect the final ledger.',
+      },
+      {
+        h: 'Treat each shareholder schedule as a supported output',
+        p: 'The shareholder information and allocation details reported from the return need to tie back to the corporation’s records and the tax treatment the firm has determined. The preparation package should show how the source amounts were mapped, preserve the supporting schedules and identify missing shareholder or transaction information before a reviewer has to chase it.',
+      },
+      {
+        h: 'Separate loan records from equity and distributions',
+        p: 'Shareholder loans, contributions, distributions and other balance-sheet activity may look similar in a ledger but do not necessarily have the same tax consequences. The preparer can reconcile the records, organize loan activity and list transactions that need clarification. The firm determines the treatment and any basis conclusions after assessing the relevant records and applicable rules.',
+      },
+      {
+        h: 'Do not make the compensation determination inside the workpaper',
+        p: 'Officer or shareholder-employee compensation can affect both the return and the records supporting payroll and distributions. Preparation support should reconcile the payroll information and document the recorded transactions, while leaving the appropriate compensation analysis and tax position with the CPA or qualified adviser. A coding choice is not a substitute for that decision.',
+      },
+      {
+        h: 'Keep book-to-tax items attached to their source',
+        p: 'Depreciation, nondeductible expenses, credits, shareholder-related items and other differences need schedules that reconcile to the return. When supporting records are missing, the package should identify the problem and who needs to resolve it. The goal is a reviewable file, not a complete-looking return built around guesses.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can Accounstone prepare Form 1120-S and shareholder K-1 workpapers?',
+        answer: 'The engagement can include agreed Form 1120-S preparation tasks and supporting shareholder schedules where the software, source records and review workflow are confirmed. The CPA or responsible tax professional retains decisions on tax treatment and shareholder-specific issues, along with final review and filing responsibilities.',
+      },
+      {
+        question: 'Will you determine shareholder stock basis or debt basis?',
+        answer: 'Accounstone can organize the records and prepare agreed supporting schedules using the facts and treatment supplied or approved by the responsible professional. Basis determinations and positions requiring professional judgment remain with the CPA or qualified tax adviser.',
+      },
+      {
+        question: 'Can you decide reasonable compensation for a shareholder-employee?',
+        answer: 'No. The responsible professional and corporation must resolve the compensation treatment based on the facts. Preparation support can reconcile payroll records, organize supporting information and flag discrepancies for review without independently selecting a tax position.',
+      },
+      {
+        question: 'What records help a Form 1120-S preparation workflow?',
+        answer: 'The initial file should include the agreed trial balance, financial statements, prior-year return and workpapers, shareholder and loan information, payroll records, fixed-asset schedules and the firm’s checklist. The exact file list depends on the entity and scope.',
+      },
+      {
+        question: 'When should Form 1120-S work be separated from bookkeeping cleanup?',
+        answer: 'If the books contain unreconciled periods, unexplained shareholder transactions or missing source records, scope that cleanup and the outstanding decisions before treating the return as ready for routine preparation. The firm should approve the baseline and decide how exceptions are resolved.',
+      },
+    ],
+    boundary: 'The CPA or qualified tax professional determines shareholder basis, compensation treatment, tax elections and other issues requiring professional judgment. Accounstone can reconcile records and prepare agreed workpapers using supplied or approved treatment, while flagging incomplete facts and unresolved items. Client advice, final review, signing and filing stay with the responsible professionals.',
+  },
 };

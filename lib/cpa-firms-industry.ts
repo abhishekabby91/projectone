@@ -245,7 +245,7 @@ export const faqs = [
   {
     question: 'Who controls the systems and the workpapers?',
     answer:
-      'Your firm and your client do. The delivery team works within the access your firm authorises and nothing else, engagements are NDA-backed, and access is limited to the people actually working on the account.',
+      'Your firm and your client do. The delivery team works within the access your firm authorises and nothing else, confidentiality terms are agreed for the engagement, and access is limited to the people working on the account.',
   },
   {
     question: 'What happens when the first files need more review than expected?',

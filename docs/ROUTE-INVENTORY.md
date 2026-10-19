@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-205 indexable routes. Excludes the 4 permanent
+214 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -113,10 +113,17 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
-| `/industries/ecommerce` | Ecommerce Accounting Services for Online Retailers |
+| `/industries/cpa-firms/california` | California CPA Firm Outsourcing |
+| `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
+| `/industries/cpa-firms/florida` | Florida CPA Firm Outsourcing |
+| `/industries/cpa-firms/illinois` | Illinois CPA Firm Outsourcing |
+| `/industries/cpa-firms/new-york` | New York CPA Firm Outsourcing |
+| `/industries/cpa-firms/texas` | Texas CPA Firm Outsourcing |
+| `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
+| `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
-| `/industries/healthcare` | Accounting for Medical Practices |
+| `/industries/healthcare` | Healthcare Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
 | `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
@@ -205,6 +212,8 @@ candidate for overlap.
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
 | `/services/tax-preparation/united-states/1040-individual` | Form 1040 Tax Preparation Outsourcing |
 | `/services/tax-preparation/united-states/1065-partnership` | Form 1065 and K-1 Preparation Outsourcing |
+| `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
+| `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |

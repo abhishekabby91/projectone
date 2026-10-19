@@ -174,7 +174,7 @@ const trust = [
   },
   {
     h: 'Data security and confidentiality',
-    p: 'NDA-backed engagements can restrict access to the people assigned to the work and use credentials controlled by the client or firm. Banking control and e-file credentials remain governed by the engagement. SOC 2 is not currently held and is not represented as a certification.',
+    p: 'Access permissions, permitted users, banking authority and e-file responsibilities should be agreed before work begins. Accounstone does not currently hold SOC 2 certification; confirm any certification requirement during procurement.',
   },
   {
     h: 'Turnaround',
@@ -385,6 +385,24 @@ export default function USMarketPage() {
               <Link href="/resources/guides/staff-augmentation-tax-season-guide" className="px-4 py-2 rounded-lg bg-white text-primary text-sm font-medium hover:bg-border transition-colors">Tax-season capacity guide</Link>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-input px-6 py-10 md:px-8 md:py-12">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-3 font-serif text-2xl font-bold text-primary md:text-3xl">Accounting outsourcing for CPA firms</h2>
+          <p className="mb-5 max-w-4xl leading-relaxed text-muted">CPA and accounting practices looking for an outsourcing partner have a different workflow from businesses seeking direct accounting support. Explore the state-qualified CPA-firm pages for examples of preparation scope, workpaper handoff and review responsibilities.</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              ['California CPA firms', '/industries/cpa-firms/california'],
+              ['Texas CPA firms', '/industries/cpa-firms/texas'],
+              ['Florida CPA firms', '/industries/cpa-firms/florida'],
+              ['New York CPA firms', '/industries/cpa-firms/new-york'],
+              ['Illinois CPA firms', '/industries/cpa-firms/illinois'],
+            ].map(([label, href]) => (
+              <Link key={href} href={href} className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">{label}</Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -115,7 +115,7 @@ export default function MYOBPage() {
 
       <FAQSection subtitle="MYOB Questions" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/myob" title="Talk to Us About Your MYOB Workload" lead="A free consultation, and a call that costs nothing. Tell us which MYOB edition the client runs and where the GST coding stops holding up." compact />
+      <InquirySection source="/technology/myob" title="Talk to Us About Your MYOB Workload" lead="Tell us which MYOB edition the client runs and where the GST coding stops holding up." compact />
 
       <CTABanner title="Where Is Your MYOB Bookkeeping Getting Stuck?" description="Tell us whether the pressure is reconciliations, GST/BAS prep, payroll or simply keeping current." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>

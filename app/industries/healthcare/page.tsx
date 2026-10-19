@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/healthcare';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting for Medical Practices',
+  title: 'Healthcare Accounting Outsourcing',
   description:
     'Outsourced bookkeeping for medical practices and healthcare providers — reimbursement reconciliation, payer mix reporting and a practice chart of accounts.',
   path: PATH,
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: 'Do you use a chart of accounts specific to medical practices?',
     answer:
-      'The chart of accounts can be structured structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
+      'The chart of accounts can be structured around how medical practices actually operate — separating clinical revenue, ancillary services, and practice overhead clearly.',
   },
   {
     question: 'Do you handle multi-provider or multi-location practices?',
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Is patient billing data handled securely?',
     answer:
-      'Bookkeeping and reporting can use the financial and billing summary data required, under NDA-backed engagements with secure data handling practices. We recommend confirming your specific compliance requirements (such as HIPAA) with your practice\'s compliance officer to ensure our workflow fits your obligations.',
+      'Bookkeeping and reporting should use only the financial or billing-summary information required for the agreed workflow. Confirm HIPAA and any other regulated-data requirements with your practice\'s compliance officer before access is granted; we do not claim HIPAA certification.',
   },
 ];
 
@@ -56,7 +56,7 @@ export default function HealthcareIndustryPage() {
         'Chart of accounts structured for clinical revenue, ancillary services, and overhead',
         'Consolidated reporting across multiple providers or locations',
         'Support for practice management and profitability analysis',
-        'NDA-backed engagements with secure financial data handling',
+        'Agreed data scope and access responsibilities',
       ]}
       relatedLinks={[
         { name: 'Dental practice accounting and bookkeeping', href: '/industries/healthcare/dental-practice-accounting' },

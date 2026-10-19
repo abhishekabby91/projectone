@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ArticleLayout from '@/components/article-layout';
+import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
@@ -65,6 +66,19 @@ export default function TaxPrepOutsourcingBlog() {
       <p>
         Before sending client files to an external preparer, use our <Link href="/blog/us-cpa-firm-outsourcing-readiness-checklist" className="text-primary font-medium hover:underline">U.S. CPA firm outsourcing readiness checklist</Link> to review scope, taxpayer-data handling, access permissions, workpaper standards and pilot controls.
       </p>
+
+      <div className="not-prose my-8 grid grid-cols-1 items-center gap-5 rounded-2xl border border-border bg-input p-5 sm:grid-cols-[1fr_190px] sm:p-6">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">At a glance</p>
+          <p className="mt-2 text-lg font-semibold text-primary">Preparation is one stage in the firm’s workflow</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted">Organize the records, prepare the agreed workpapers, list open questions, then return the file for professional review and approval. The responsible CPA, EA or attorney retains the duties assigned to them.</p>
+          <div className="mt-4 flex flex-wrap gap-2 text-sm">
+            <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">U.S. tax support</Link>
+            <Link href="/industries/cpa-firms" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">CPA firm services</Link>
+          </div>
+        </div>
+        <ServiceIllustration service="tax-preparation" className="mx-auto w-full max-w-[190px]" />
+      </div>
 
       <h2>What Tax Preparation Outsourcing Includes</h2>
       <ul>
@@ -171,11 +185,14 @@ export default function TaxPrepOutsourcingBlog() {
 
       <h2>Entity Returns, Not Just 1040s</h2>
       <p>
-        Most searches for outsourced tax preparation picture individual returns, but the entity work is
-        usually where the hours are. Partnership returns on Form 1065 carry the K-1 detail behind them;
-        1120 and 1120-S bring the book-to-tax reconciliation with them; and multi-state preparation is
-        practical wherever the apportionment data already exists in the books.
+        Most searches for outsourced tax preparation picture individual returns, but entity work involves different preparation records. Partnership returns on Form 1065 carry the K-1 detail behind them; Form 1120 work includes corporate book-to-tax schedules; Form 1120-S includes shareholder schedule work and records that need the firm’s approved treatment. Multi-state preparation depends on the apportionment data available in the books.
       </p>
+      <ul>
+        <li><Link href="/services/tax-preparation/united-states/1040-individual" className="text-primary font-medium hover:underline">Form 1040 individual return preparation</Link> — source documents, prior-year carryforwards and open items.</li>
+        <li><Link href="/services/tax-preparation/united-states/1065-partnership" className="text-primary font-medium hover:underline">Form 1065 partnership and K-1 preparation</Link> — stable trial balance, capital accounts and agreed allocation treatment.</li>
+        <li><Link href="/services/tax-preparation/united-states/1120-corporation" className="text-primary font-medium hover:underline">Form 1120 corporate return preparation</Link> — book-to-tax support, fixed-asset records and reviewer handoff.</li>
+        <li><Link href="/services/tax-preparation/united-states/1120-s-corporation" className="text-primary font-medium hover:underline">Form 1120-S S corporation return preparation</Link> — shareholder schedules, company records and open questions routed for review.</li>
+      </ul>
       <p>
         Where it exists is the operative phrase. An entity return is harder to delegate than a 1040 not
         because the form is harder, but because it depends on the quality of the underlying bookkeeping. If

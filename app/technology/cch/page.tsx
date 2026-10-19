@@ -10,6 +10,7 @@ import Reveal from '@/components/reveal';
 import PlatformDepthSection from '@/components/platform-depth';
 import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
+import ServiceIllustration from '@/components/service-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'CCH Axcess Accounting Support',
@@ -51,18 +52,34 @@ export default function CCHPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">CCH Axcess is the system. Someone still has to keep the review queue moving.</h2><p className="text-lg text-muted leading-8">A firm running CCH Axcess across a large book of clients still needs preparation, documentation and review-queue work handled consistently, especially during tax season. We work inside your firm's existing CCH Axcess access and security setup on that recurring preparation work, while system administration and licensing stay with your firm.</p></></Reveal></div></section>
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+          <Reveal className="space-y-6">
+            <>
+              <span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">CCH Axcess is the system. Someone still has to keep the review queue moving.</h2>
+              <p className="text-lg text-muted leading-8">A firm running CCH Axcess across a large book of clients still needs preparation, documentation and review-queue work handled consistently, especially during tax season. We work inside your firm's existing CCH Axcess access and security setup on that recurring preparation work, while system administration and licensing stay with your firm.</p>
+            </>
+          </Reveal>
+          <aside className="rounded-2xl border border-border bg-input p-5 sm:p-6">
+            <ServiceIllustration service="tax-preparation" className="mx-auto w-full max-w-[250px]" />
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent">CCH workflow</p>
+            <p className="mt-2 text-base font-semibold text-primary">Prepare inside the firm's process</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">Preparation and document organization can move through the review queue; licensing, permissions and final approval stay with your firm.</p>
+          </aside>
+        </div>
+      </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Workflows</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Work Around CCH Axcess</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{workflows.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/technology/cch"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect CCH Axcess to the practice work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/tax-preparation/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Tax Preparation</Link><Link href="/services/audit-support/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Audit Support</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto text-center"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary mt-3 mb-8">Connect CCH Axcess to the practice work</h2><div className="flex flex-wrap justify-center gap-3"><Link href="/services/tax-preparation/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Tax Preparation</Link><Link href="/services/tax-preparation/united-states/1040-individual" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1040</Link><Link href="/services/tax-preparation/united-states/1065-partnership" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1065</Link><Link href="/services/tax-preparation/united-states/1120-corporation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1120</Link><Link href="/services/tax-preparation/united-states/1120-s-corporation" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Form 1120-S</Link><Link href="/services/audit-support/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Audit Support</Link><Link href="/industries/cpa-firms" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">CPA Firms</Link><Link href="/technology" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">All Platforms</Link></div></div></section>
 
 
       <PlatformDepthSection platform={platformDepth.cch} />
 
       <FAQSection subtitle="CCH Axcess Questions" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/cch" title="Talk to Us About Your CCH Axcess Workflow" lead="A free consultation, and a call that costs nothing. Tell us how returns move through CCH in your firm and where the queue forms." compact />
+      <InquirySection source="/technology/cch" title="Talk to Us About Your CCH Axcess Workflow" lead="Tell us how returns move through CCH in your firm and where the queue forms." compact />
 
       <CTABanner title="Where Is Your CCH Axcess Review Queue Getting Stuck?" description="Tell us whether the pressure is preparation capacity, document organization or tax-season volume." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>

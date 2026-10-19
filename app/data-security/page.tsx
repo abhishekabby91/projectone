@@ -8,7 +8,7 @@ import { generateMetadata, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
 export const metadata: Metadata = generateMetadata({
   title: 'Data Security & Protection',
   description:
-    'How Accounstone handles client financial data — NDA-backed engagements, access controls, and an honest account of our certification status.',
+    'How Accounstone approaches client-system access, data handling, responsibilities and the limits of its current security certifications.',
   path: '/data-security',
 });
 
@@ -25,7 +25,7 @@ export default function DataSecurityPage() {
       <PremiumHero
         subtitle="Trust & Compliance"
         title="How We Handle Your Data"
-        description="An honest account of our current security practices — not a list of certifications we don't yet hold."
+        description="An overview of access and data-handling practices to discuss before work begins, including certifications Accounstone does and does not hold."
         background="primary-gradient"
       />
 
@@ -41,7 +41,7 @@ export default function DataSecurityPage() {
             <ul className="space-y-3 text-muted">
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
-                <span>Every client engagement is NDA-backed before any data is shared</span>
+                <span>Confidentiality terms and data-handling responsibilities are agreed as part of each engagement</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
@@ -49,7 +49,7 @@ export default function DataSecurityPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
-                <span>We are actively working toward formal certification (SOC 2) — we'll tell you exactly where we are in that process if you ask, rather than claiming it's already complete</span>
+                <span>Accounstone does not currently hold SOC 2 or ISO 27001 certification. Confirm any required certifications before beginning procurement</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
@@ -93,7 +93,7 @@ export default function DataSecurityPage() {
             {[
               {
                 h: '1. What certifications do you hold?',
-                p: 'None yet, and we will not imply otherwise. SOC 2 is in progress and we will tell you where in the process we are if you ask. ISO 27001 is not held. Any page you read on this site that suggests either is complete is wrong and we would want to know about it. If your procurement process requires a current SOC 2 report as a gate, we will not pass that gate today — better you learn that from this page than three weeks into an evaluation.',
+                p: 'Accounstone does not currently hold SOC 2 or ISO 27001 certification. If your procurement process requires a current SOC 2 report, confirm this before an evaluation proceeds.',
               },
               {
                 h: '2. How is access controlled?',
@@ -131,9 +131,7 @@ export default function DataSecurityPage() {
               ))}
             </ul>
             <p className="mt-4 text-muted leading-relaxed">
-              None of that is a substitute for a certification, and we are not offering it as one. It is the reason the
-              blast radius of a problem at our end is smaller than it would be with a provider who takes custody of
-              your data and your credentials.
+              These boundaries do not replace an independent security assessment or certification. They describe access and responsibility limits that should be confirmed for the specific engagement.
             </p>
           </div>
         </div>
@@ -143,7 +141,7 @@ export default function DataSecurityPage() {
         compact
         source="/data-security"
         title="Ask Us the Hard Security Questions"
-        lead="Access, NDAs, device controls, who can see what. Put the specifics to us and we will answer them as they actually stand rather than as a certification list."
+        lead="Ask about access, device controls, data handling and any requirements your procurement process needs to verify. We will clarify what we can confirm and where additional documentation may be needed."
       />
 
       <CTABanner

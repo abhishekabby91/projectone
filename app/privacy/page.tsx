@@ -66,7 +66,7 @@ export default function PrivacyPage() {
         <div className="bg-input p-6 rounded-lg border border-border">
           <h2 className="text-2xl font-bold text-primary mb-4">5. Data Security</h2>
           <p className="text-muted">
-            We handle client data under NDA-backed engagements with security-conscious practices. We are actively working toward formal certifications such as SOC 2, and we will clearly communicate our current certification status to any client who asks rather than overstating it.
+            Client data handling, system access and any retention or transfer arrangements should be confirmed against the agreed engagement scope and applicable contractual requirements. Accounstone does not currently hold SOC 2 certification; confirm any specific documentation requirements before an evaluation proceeds.
           </p>
         </div>
 

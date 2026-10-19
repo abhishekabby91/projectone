@@ -44,6 +44,12 @@ Accounting operations, journal entries, reconciliations, month-end close and pre
 
 Preparation support and workpapers for tax returns, based on information and instructions supplied through the client's process. Accounstone's tax work should be described according to the specific service and jurisdiction covered by the relevant canonical page.
 
+U.S. CPA-firm return-type pages:
+- Form 1040 individual return preparation: https://www.accounstone.com/services/tax-preparation/united-states/1040-individual
+- Form 1065 partnership and K-1 preparation: https://www.accounstone.com/services/tax-preparation/united-states/1065-partnership
+- Form 1120 corporate return preparation: https://www.accounstone.com/services/tax-preparation/united-states/1120-corporation
+- Form 1120-S S corporation return preparation: https://www.accounstone.com/services/tax-preparation/united-states/1120-s-corporation
+
 ### Accounts payable
 
 Vendor invoice processing, coding, supporting documentation, payment preparation and AP reconciliations. Payment authority remains with the client.
@@ -231,6 +237,18 @@ https://www.accounstone.com/compliance
 
 Accounting and CPA firms:
 https://www.accounstone.com/industries/cpa-firms
+White-label accounting support for CPA firms:
+https://www.accounstone.com/industries/cpa-firms/white-label-accounting
+
+CAS production support for CPA firms:
+https://www.accounstone.com/industries/cpa-firms/cas-production-support
+
+State-qualified CPA firm outsourcing pages (market test; state-level search-volume ranking not verified):
+- California: https://www.accounstone.com/industries/cpa-firms/california
+- Texas: https://www.accounstone.com/industries/cpa-firms/texas
+- Florida: https://www.accounstone.com/industries/cpa-firms/florida
+- New York: https://www.accounstone.com/industries/cpa-firms/new-york
+- Illinois: https://www.accounstone.com/industries/cpa-firms/illinois
 
 Real estate:
 https://www.accounstone.com/industries/real-estate

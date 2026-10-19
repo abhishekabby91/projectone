@@ -32,6 +32,13 @@ One primary search intent → one primary URL. Check this file before creating a
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
 | CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
+| California CPA firm accounting outsourcing | `/industries/cpa-firms/california` | Commercial / state-qualified CPA-firm intent; state-specific portfolio examples and workflow scoping, not a generic business accounting page |
+| Texas CPA firm accounting outsourcing | `/industries/cpa-firms/texas` | Commercial / state-qualified CPA-firm intent; recurring preparation support and firm review handoff |
+| Florida CPA firm accounting outsourcing | `/industries/cpa-firms/florida` | Commercial / state-qualified CPA-firm intent; recurring client work and seasonal/portfolio scoping |
+| New York CPA firm accounting outsourcing | `/industries/cpa-firms/new-york` | Commercial / state-qualified CPA-firm intent; defined preparation support and multi-entity workflow scoping |
+| Illinois CPA firm accounting outsourcing | `/industries/cpa-firms/illinois` | Commercial / state-qualified CPA-firm intent; preparation workflow examples for varied commercial portfolios |
+| White-label accounting support for CPA firms | `/industries/cpa-firms/white-label-accounting` | Commercial / delivery-model intent — branding, client-communication boundaries, template use and reviewer handoff; distinct from the national CPA-firm outsourcing pillar and the general U.S. bookkeeping service page |
+| CAS production support for CPA firms | `/industries/cpa-firms/cas-production-support` | Commercial / workflow intent — recurring bookkeeping, reconciliations, close schedules and reporting-package preparation behind a CPA firm's CAS offering; distinct from the informational CAS guide |
 | Real estate accounting / bookkeeping (owners, investors, developers) | `/industries/real-estate` | Commercial — the reader OWNS the property; reader of the output is a lender, partner or their CPA |
 | Property management accounting / bookkeeping outsourcing | `/industries/property-management` | Commercial — the reader MANAGES property for owners; deliverable is the owner statement; receivable is tenant rent |
 | Property management accounting cleanup / catch-up bookkeeping | `/industries/property-management/accounting-cleanup` | Commercial service intent — backlog assessment, reconciliations, property/tenant ledger differences, owner-statement tie-outs and transition to recurring close; distinct from the informational complete guide |
@@ -105,6 +112,8 @@ this specific work for me there". Measured overlap between the two is 0.0%.
 | BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
 | Outsourcing Form 1040 / individual return preparation | `/services/tax-preparation/united-states/1040-individual` | Commercial — return-type detail |
 | Outsourcing Form 1065 / partnership and K-1 preparation | `/services/tax-preparation/united-states/1065-partnership` | Commercial — return-type detail |
+| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail; corporate book-to-tax schedules and fixed-asset workpapers, not general tax outsourcing overview |
+| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail; shareholder schedules and corporate-book support, distinct from Form 1120 C corporation return |
 | All services, choose by region | `/services` | Commercial — navigational |
 
 **Do not** write service scope onto a Market page, and do not write country-environment
@@ -156,6 +165,8 @@ wrong in both.
 | Yardi accounting workflows for HOAs | `/industries/hoa-accounting/yardi-accounting-support` | HOA-specific Yardi workflows; linked from the HOA hub and technology hub. |
 | Yardi accounting workflows for property managers | `/industries/property-management/yardi-accounting-support` | Rental/property-management Yardi workflows; linked from the property-management hub and technology hub. Do not merge with the HOA-specific Yardi page. |
 | Form 1065 and Schedule K-1 preparation support | `/services/tax-preparation/united-states/1065-partnership` | Commercial tax-preparation spoke linked from the US tax preparation service hub and the tax-preparation outsourcing guide. |
+| Form 1120 corporate return preparation support | `/services/tax-preparation/united-states/1120-corporation` | Commercial tax-preparation spoke for C corporation workpapers; linked from the U.S. tax hub, CPA-firm hub and related return-type pages. |
+| Form 1120-S and shareholder schedule preparation support | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial tax-preparation spoke for S corporation workpapers and shareholder schedules; professional decisions stay with the CPA/tax reviewer. |
 
 Indexing interpretation: “Discovered — currently not indexed” with no crawl is not evidence of a rendering failure by itself. Maintain sitemap inclusion and contextual internal links, then recheck after Google crawls. Redirected legacy URLs and canonical duplicates are not expected to be indexed as separate pages.
 
@@ -171,7 +182,7 @@ Use public freelance job briefs as **qualitative evidence of buyer tasks**, not 
 | Owner statements, portfolio financials and lender-ready schedules | /blog/property-management-owner-statements; /industries/property-management/lender-reporting-noi-support | Keep owner statements informational and lender reporting support commercial; don't collapse them into the general property-management hub. |
 | HOA invoice coding, duplicate checks, approval evidence and payment reconciliation | /blog/hoa-accounts-payable; /industries/hoa-accounting | The vendor-invoice URL redirects to the indexed AP guide by design; do not try to re-index the retired URL. |
 | CPA firm bookkeeping capacity and clean books before tax prep | /industries/cpa-firms; /services/bookkeeping/united-states; /blog/tax-preparation-outsourcing | Define what records must be ready before tax prep; don't promise a credential or professional sign-off not held by the provider. |
-| Form 1040/1065/1120-S preparation, workpapers, reviewer notes and tax-season capacity | /services/tax-preparation/united-states; /services/tax-preparation/united-states/1040-individual; /services/tax-preparation/united-states/1065-partnership; /blog/tax-preparation-outsourcing | Keep return-type pages linked from the tax hub and guide. Client's licensed professional retains applicable review, signing and filing responsibilities. |
+| Form 1040/1065/1120/1120-S preparation, workpapers, reviewer notes and tax-season capacity | /services/tax-preparation/united-states; /services/tax-preparation/united-states/1040-individual; /services/tax-preparation/united-states/1065-partnership; /services/tax-preparation/united-states/1120-corporation; /services/tax-preparation/united-states/1120-s-corporation; /blog/tax-preparation-outsourcing | Keep return-type pages linked from the tax hub and guide. Client's licensed professional retains applicable review, signing and filing responsibilities. |
 | Trust/escrow balances and three-way reconciliations | /industries/property-management/trust-account-reconciliation; /blog/property-management-trust-accounting-reconciliation | Keep commercial reconciliation support separate from the informational workflow guide; jurisdiction-specific legal interpretation remains outside scope. |
 
 **Indexing triage from Google Search Console URL Inspection (checked 2026-10-18):**

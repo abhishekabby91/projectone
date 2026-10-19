@@ -56,7 +56,7 @@ export default function SagePage() {
 
       <FAQSection subtitle="Sage FAQs" items={faqs} columns={2} />
 
-      <InquirySection source="/technology/sage" title="Talk to Us About Your Sage Workload" lead="A free consultation, and a call that costs nothing. Tell us how Sage is set up across your entities and where the intercompany work is getting stuck." compact />
+      <InquirySection source="/technology/sage" title="Talk to Us About Your Sage Workload" lead="Tell us how Sage is set up across your entities and where the intercompany work is getting stuck." compact />
 
       <CTABanner
         title="What Is Actually Going Wrong in Your Sage Workflow?"

@@ -209,7 +209,7 @@ export const processPhases = [
   {
     n: '01',
     title: 'Share the portfolio',
-    body: 'A free call. How many properties or associations, which system they live in, who signs off, and what the owner or board currently receives.',
+    body: 'Tell us how many properties or associations are involved, which system they use, who signs off, and what the owner or board currently receives.',
   },
   {
     n: '02',

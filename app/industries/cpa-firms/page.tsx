@@ -7,10 +7,8 @@ import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import ProcessFlow from '@/components/process-flow';
-import TrustIcon from '@/components/trust-icon';
 import Reveal from '@/components/reveal';
 import IndustryIllustration from '@/components/industry-illustration';
-import { trustBadges } from '@/lib/data';
 import {
   segments,
   reviewBurden,
@@ -75,16 +73,6 @@ export default function CPAFirmsPage() {
         background="primary-gradient"
       />
 
-      <section className="w-full py-7 md:py-8 px-6 md:px-8 bg-white border-b border-border ledger-lines">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 md:gap-4">
-          {trustBadges.map((badge) => (
-            <div key={badge.name} className="flex items-center gap-2.5 px-4 md:px-5 py-2.5 bg-input rounded-full border border-border">
-              <TrustIcon name={badge.icon} />
-              <span className="font-medium text-sm text-foreground">{badge.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
@@ -285,6 +273,14 @@ export default function CPAFirmsPage() {
               <h3 className="font-semibold text-primary">U.S. Tax Preparation Support</h3>
               <p className="mt-2 text-sm text-muted">Preparation support across individual and business return workflows.</p>
             </Link>
+            <Link href="/industries/cpa-firms/white-label-accounting" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">White-Label Accounting</h3>
+              <p className="mt-2 text-sm text-muted">Define branding, client-contact boundaries and reviewer handoff for externally prepared work.</p>
+            </Link>
+            <Link href="/industries/cpa-firms/cas-production-support" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">CAS Production Support</h3>
+              <p className="mt-2 text-sm text-muted">Recurring bookkeeping, reconciliations, month-end schedules and reporting-package preparation for CAS practices.</p>
+            </Link>
             <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">U.S. Market</h3>
               <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>
@@ -304,6 +300,26 @@ export default function CPAFirmsPage() {
         <Link href="/services/accounts-payable/united-states" className="font-medium text-primary underline underline-offset-4">Accounts Payable</Link>
       </div>
 
+      <section className="w-full bg-input px-6 py-10 md:px-8 md:py-12">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-3 font-serif text-2xl font-bold text-primary md:text-3xl">CPA firm outsourcing by state</h2>
+          <p className="mb-6 max-w-4xl leading-relaxed text-muted">The core support model is consistent, but firms can use these state pages to explore portfolio-specific examples and the questions to consider when scoping accounting outsourcing. These pages are market tests, not claims that search demand has been ranked by state.</p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ['California', '/industries/cpa-firms/california'],
+              ['Texas', '/industries/cpa-firms/texas'],
+              ['Florida', '/industries/cpa-firms/florida'],
+              ['New York', '/industries/cpa-firms/new-york'],
+              ['Illinois', '/industries/cpa-firms/illinois'],
+            ].map(([name, href]) => (
+              <Link key={href} href={href} className="rounded-xl border border-border bg-white p-4 font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-background">
+                Accounting outsourcing for {name} CPA firms <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FAQSection subtitle="Questions partners ask" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input">
@@ -320,6 +336,8 @@ export default function CPAFirmsPage() {
               { name: 'Tax preparation', href: '/services/tax-preparation/united-states' },
               { name: 'Form 1040 preparation', href: '/services/tax-preparation/united-states/1040-individual' },
               { name: 'Form 1065 and K-1s', href: '/services/tax-preparation/united-states/1065-partnership' },
+              { name: 'Form 1120 corporate returns', href: '/services/tax-preparation/united-states/1120-corporation' },
+              { name: 'Form 1120-S returns', href: '/services/tax-preparation/united-states/1120-s-corporation' },
               { name: 'Audit support', href: '/services/audit-support/united-states' },
               { name: 'Accounting & close', href: '/services/accounting/united-states' },
               { name: 'Staff augmentation', href: '/solutions/staff-augmentation' },

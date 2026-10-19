@@ -54,7 +54,7 @@ export default function XeroPage() {
       <PlatformDepthSection platform={platformDepth.xero} />
 
       <FAQSection subtitle="Xero FAQs" items={faqs} columns={2} />
-      <InquirySection source="/technology/xero" title="Talk to Us About Your Xero Workload" lead="A free consultation, and a call that costs nothing. Tell us how the Xero ledgers are kept today and where the bank feed stops being enough." compact />
+      <InquirySection source="/technology/xero" title="Talk to Us About Your Xero Workload" lead="Tell us how the Xero ledgers are kept today and where the bank feed stops being enough." compact />
 
       <CTABanner title="Where Is Your Xero Workflow Getting Stuck?" description="Tell us whether the issue is cleanup, reconciliation, recurring bookkeeping, month-end or simply a lack of capacity." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
