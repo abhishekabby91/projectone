@@ -19,6 +19,7 @@ export interface CpaStateSupportContent {
   pilotChecklist: string[];
   responsibility: string;
   reference: { title: string; url: string; note: string };
+  relatedReference?: { title: string; url: string; note: string };
   faqs: { question: string; answer: string }[];
 }
 
