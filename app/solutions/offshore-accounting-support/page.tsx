@@ -15,7 +15,7 @@ export const metadata: Metadata = generateMetadata({
   // "offshore accounting services" and "offshore accounting" are the head terms
   // this cluster actually uses (GSC 2026-09-04); the old title carried neither.
   title: 'Offshore Accounting Services for Firms',
-  description: 'An offshore accounting team for recurring bookkeeping, audit preparation, payroll and back-office work — working inside your existing systems.',
+  description: 'Offshore accounting services for CPA firms and businesses: recurring bookkeeping, reconciliations, month-end close, AP/AR and agreed tax-preparation workflows inside your existing systems.',
   path: '/solutions/offshore-accounting-support',
 });
 

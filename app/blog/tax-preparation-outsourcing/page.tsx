@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourcing Tax Return Preparation',
-  description: 'What an offshore team can prepare and what needs a licensed CPA or EA, how Drake Tax and CCH Axcess workflows run, and how to plan season capacity.',
+  title: 'Tax Preparation Outsourcing for CPA Firms',
+  description: 'Tax preparation outsourcing for CPA firms: return preparation, workpapers, Drake Tax and CCH Axcess workflows, with review and filing retained by licensed professionals.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -47,7 +47,7 @@ export default function TaxPrepOutsourcingBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="Outsourcing Tax Return Preparation: What CPA Firms and Businesses Need to Know"
+      title="Tax Preparation Outsourcing for CPA Firms: Workflow, Software and Review Boundaries"
       category="Tax Preparation"
       description="Preparation vs. review, software workflows in Drake Tax and CCH Axcess, IRS representation boundaries, and tax-season capacity planning for CPA firms."
       publishedDate="2026-08-14"
