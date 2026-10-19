@@ -113,6 +113,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/cpa-firms/california': '2026-10-19',
   '/industries/cpa-firms/california-tax-workpaper-support': '2026-10-19',
   '/industries/cpa-firms/cas-production-support': '2026-10-19',
+  '/industries/cpa-firms/overflow-work-support': '2026-10-19',
   '/industries/cpa-firms/florida': '2026-10-19',
   '/industries/cpa-firms/florida-property-entity-accounting-support': '2026-10-19',
   '/industries/cpa-firms/illinois': '2026-10-19',
