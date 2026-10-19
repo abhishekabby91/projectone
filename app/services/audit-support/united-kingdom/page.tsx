@@ -14,8 +14,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 
 const PATH = '/services/audit-support/united-kingdom';
 export const metadata: Metadata = genMeta({
-  title: 'UK Audit Support Services for Accounting Teams',
-  description: 'Audit preparation support for UK companies — FRS 102 schedules, year-end reconciliations, and evidence organised around your statutory auditor’s request list.',
+  title: 'UK Audit Preparation Support Services',
+  description: 'UK audit preparation support for accounting teams: FRS 102 schedules, year-end reconciliations and indexed evidence organized around the statutory auditor’s request list.',
   path: PATH,
 });
 
