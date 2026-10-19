@@ -126,5 +126,6 @@ jobs:
           node scripts/verify-pages.mjs /industries/cpa-firms/illinois-inventory-accounting-support
           node scripts/verify-pages.mjs /industries/cpa-firms/white-label-accounting
           node scripts/verify-pages.mjs /industries/cpa-firms/cas-production-support
+          node scripts/verify-pages.mjs /industries/cpa-firms/overflow-work-support
           node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-corporation
           node scripts/verify-pages.mjs /services/tax-preparation/united-states/1120-s-corporation
