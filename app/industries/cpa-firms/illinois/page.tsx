@@ -5,8 +5,8 @@ import { generateMetadata } from '@/lib/seo';
 const PATH = '/industries/cpa-firms/illinois';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Illinois CPA Firm Outsourcing',
-  description: 'Accounting, bookkeeping and tax-preparation support for Illinois CPA firms, scoped to your client files, software and review process.',
+  title: 'Accounting Outsourcing for Illinois CPA Firms',
+  description: 'Accounting outsourcing for Illinois CPA firms covering distribution, manufacturing and service-business books, reconciliations and agreed support schedules.',
   path: PATH,
 });
 

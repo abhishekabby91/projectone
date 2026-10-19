@@ -113,12 +113,12 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
-| `/industries/cpa-firms/california` | California CPA Firm Outsourcing |
+| `/industries/cpa-firms/california` | Accounting Outsourcing for California CPA Firms |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
-| `/industries/cpa-firms/florida` | Florida CPA Firm Outsourcing |
-| `/industries/cpa-firms/illinois` | Illinois CPA Firm Outsourcing |
-| `/industries/cpa-firms/new-york` | New York CPA Firm Outsourcing |
-| `/industries/cpa-firms/texas` | Texas CPA Firm Outsourcing |
+| `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
+| `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
+| `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
+| `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
 | `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
