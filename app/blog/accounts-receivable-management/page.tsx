@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Outsourcing Accounts Receivable: A Guide',
-  description: 'How AR outsourcing affects DSO, how follow-up works in QuickBooks and Xero, and the questions owners and CPA firms ask before delegating it.',
+  title: 'Accounts Receivable Outsourcing Guide: DSO & Workflow',
+  description: 'A practical accounts receivable guide to DSO, cash application, aging, follow-up workflows and QuickBooks or Xero before service scope is agreed.',
   path: '/blog/accounts-receivable-management',
 });
 
@@ -89,7 +89,7 @@ export default function ARManagementBlog() {
       <div className="mt-8 p-6 bg-input rounded-xl border border-border/70">
         <p className="font-semibold text-primary mb-3">Relevant services</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/services/accounts-receivable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Accounts Receivable</Link>
+          <Link href="/services/accounts-receivable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">U.S. accounts receivable outsourcing service</Link>
           <Link href="/technology/quickbooks" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">QuickBooks</Link>
           <Link href="/technology/xero" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Xero</Link>
           <Link href="/resources/guides/outsourced-accounts-receivable-guide" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Full AR Guide</Link>
