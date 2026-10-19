@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-214 indexable routes. Excludes the 4 permanent
+212 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -200,13 +200,11 @@ candidate for overlap.
 | `/services/bookkeeping/australia` | Outsourced Bookkeeping, Australian Firms |
 | `/services/bookkeeping/united-kingdom` | Outsourced Bookkeeping for UK Practices |
 | `/services/bookkeeping/united-states` | Outsourced Bookkeeping for U.S. CPA Firms |
-| `/services/hoa-accounting` | HOA Accounting Services |
 | `/services/hoa-bookkeeping` | HOA Bookkeeping Services |
 | `/services/hoa-financial-reporting` | HOA Financial Reporting Services |
 | `/services/payroll/australia` | Payroll Support for Australian Firms |
 | `/services/payroll/united-kingdom` | Payroll Support for UK Practices |
 | `/services/payroll/united-states` | Outsourced Payroll Support for U.S. CPA Firms |
-| `/services/property-management-accounting` | Property Management Accounting Services |
 | `/services/tax-preparation/australia` | Tax Return Preparation, Australia |
 | `/services/tax-preparation/united-kingdom` | Corporation Tax & Self Assessment, UK |
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
