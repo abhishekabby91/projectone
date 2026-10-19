@@ -91,6 +91,11 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
 | `/industries/cpa-firms/new-york` | B | CPA Firms / New York | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
 | `/industries/cpa-firms/illinois` | B | CPA Firms / Illinois | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent |
+| `/industries/cpa-firms/california-tax-workpaper-support` | B | CPA Firms / California / Tax workpapers | Added 2026-10-19 — source-record organization and reviewer-ready tax workpapers; state tax decisions remain with the firm |
+| `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | B | CPA Firms / Texas / Cleanup | Added 2026-10-19 — pre-tax cleanup, reconciliations and open-item register; no tax determination or unapproved adjustments |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | B | CPA Firms / Florida / Property entities | Added 2026-10-19 — entity-level books, intercompany schedules and year-end handoff; tax treatment remains with the CPA |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | B | CPA Firms / New York / Multi-entity | Added 2026-10-19 — intercompany reconciliation and entity-level close; no state or city tax elections |
+| `/industries/cpa-firms/illinois-inventory-accounting-support` | B | CPA Firms / Illinois / Inventory | Added 2026-10-19 — inventory-to-ledger support and close schedules; valuation and tax decisions remain with the firm |
 | `/industries/cpa-firms/white-label-accounting` | B | CPA Firms / White-label delivery | Added 2026-10-18 — brand, communication and reviewer-handoff intent distinct from general outsourcing, bookkeeping service scope and evaluation guides |
 | `/industries/cpa-firms/cas-production-support` | B | CPA Firms / CAS production | Added 2026-10-18 — recurring production and reporting handoff for firms delivering client accounting services; distinct from CAS educational guide |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
