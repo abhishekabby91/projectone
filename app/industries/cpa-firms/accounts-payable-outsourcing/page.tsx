@@ -11,7 +11,7 @@ const PATH = '/industries/cpa-firms/accounts-payable-outsourcing';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Accounts Payable Outsourcing for CPA Firms',
-  description: 'Accounts payable preparation support for CPA firms: invoice entry, coding, vendor statement reconciliation and payment-batch preparation with client approvals retained.',
+  description: 'AP support for CPA firms: invoice entry, coding, vendor reconciliation and payment-batch preparation, with client approval retained.',
   path: PATH,
 });
 
