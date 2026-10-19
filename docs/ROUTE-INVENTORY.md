@@ -213,7 +213,7 @@ candidate for overlap.
 | `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
 | `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
-| `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
+| `/solutions/back-office-support` | Back-Office Accounting Support for Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
