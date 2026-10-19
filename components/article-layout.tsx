@@ -277,6 +277,11 @@ type RelatedLink = { label: string; href: string };
 
 function getRelatedLinks(slug: string): RelatedLink[] {
   const value = slug.toLowerCase();
+  if (value.includes('hoa-accounting-yardi') || value.includes('yardi-accounting-workflow')) return [
+    { label: 'Yardi HOA accounting support', href: '/industries/hoa-accounting/yardi-accounting-support' },
+    { label: 'HOA accounting and bookkeeping outsourcing', href: '/industries/hoa-accounting' },
+    { label: 'Yardi accounting workflow', href: '/blog/yardi-accounting-workflow' },
+  ];
   if (value.includes('hoa-')) return [
     { label: 'HOA accounting and bookkeeping outsourcing', href: '/industries/hoa-accounting' },
     { label: 'HOA bookkeeping services', href: '/services/hoa-bookkeeping' },
