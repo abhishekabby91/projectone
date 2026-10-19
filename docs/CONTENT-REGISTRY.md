@@ -27,6 +27,20 @@ Every new or refreshed industry URL must have a distinct client/buyer, a researc
 
 # Content Registry
 
+## 2026-10-19 — CPA-firm state-specific workflow pages
+
+Added five commercial workflow pages beneath the CPA-firm acquisition cluster. The pages target different workflow intents rather than duplicating the five state overview pages. State-specific context is limited to sourced official guidance; Accounstone is described as preparing records and schedules, not deciding tax treatment, elections, valuation or filing obligations. The exact state-level search volumes have not been verified.
+
+| Title | URL | Cluster | Primary intent | Content floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| Tax Workpaper Support for California CPA Firms | `/industries/cpa-firms/california-tax-workpaper-support` | CPA Firms / California / Tax workpapers | Organize source records, reconciliations and reviewer handoff; California PTE reference linked to FTB | 650 words | No volume claim; no tax-election or eligibility advice; verify rendered word count and metadata with `verify-pages.mjs` |
+| Bookkeeping Cleanup Support for Texas CPA Firms | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | CPA Firms / Texas / Cleanup | Reconciliations and open-item schedules before tax preparation; Texas Comptroller reference linked | 650 words | No volume claim; no taxability or filing promise; verify rendered word count and metadata with `verify-pages.mjs` |
+| Property-Entity Accounting Support for Florida CPA Firms | `/industries/cpa-firms/florida-property-entity-accounting-support` | CPA Firms / Florida / Property entities | Entity-level close, intercompany schedules and source-record handoff; Florida DOR reference linked | 650 words | No volume claim; no apportionment or filing promise; verify rendered word count and metadata with `verify-pages.mjs` |
+| Multi-Entity Accounting Support for New York CPA Firms | `/industries/cpa-firms/new-york-multi-entity-accounting-support` | CPA Firms / New York / Multi-entity | Intercompany reconciliation and entity-level reporting; NYS PTET reference linked | 650 words | No volume claim; no NYS/NYC election or eligibility advice; verify rendered word count and metadata with `verify-pages.mjs` |
+| Inventory Accounting Support for Illinois CPA Firms | `/industries/cpa-firms/illinois-inventory-accounting-support` | CPA Firms / Illinois / Inventory | Inventory-to-ledger support and documented exceptions; Illinois DOR business forms reference linked | 650 words | No volume claim; no valuation, replacement-tax or filing determination; verify rendered word count and metadata with `verify-pages.mjs` |
+
+All five pages use the shared CPA state workflow layout, vector service illustrations, a visible on-page navigation row, FAQ schema tied to visible FAQs, and contextual links back to the state overview, CPA-firm hub and core services. Keyword themes are research hypotheses, not verified state-level search-volume findings.
+
 ## 2026-10-18 — CPA-firm state landing-page cluster
 
 These are commercial service pages, recorded here because the site page contract requires a content-registry entry as well as a route and search-intent record. The cluster is a test of state-qualified CPA-firm intent, not a claim that state-level search volumes have been verified. Census establishment scale is only market context; competitor state pages demonstrate SERP precedent, not demand.
