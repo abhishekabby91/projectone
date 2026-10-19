@@ -14,7 +14,7 @@
 - `tax preparation outsourcing`: 301 query/page impressions distributed across five URLs, with the blog guide ranking above the U.S. commercial page.
 - `accounting staff augmentation`: 215 impressions split between commercial solution and tax-season guide.
 - `hoa accounting services`: 42 impressions across the HOA hub (15), legacy HOA service URL (14), California (5), San Diego County (4), Texas (4). The legacy route already redirected; some GSC impressions pre-date the redirect. Do not infer that the redirect is currently failing from the 90-day report.
-- `property management accounting services`: 30 impressions on the legacy service page and 1 on the real-estate industry page; the broad hub remains the single commercial owner.
+- For the query `property management accounting services`, the legacy service URL had 30 visible query impressions (average position 69.6) and `/industries/real-estate` had 1. For the distinct query `outsourced property management accounting`, `/industries/property-management` had 19 impressions (position 63.2) and the informational comparison article had 2 (position 22). These query-level rows support one broad commercial owner plus a distinct informational guide; do not treat their impressions as whole-page totals.
 - AP and AR queries are split by region and informational intent. Regional services remain separate because they cover country-specific workflows; the general articles stay informational.
 
 ### Indexing and validation
