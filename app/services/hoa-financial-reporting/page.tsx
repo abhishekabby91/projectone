@@ -60,7 +60,7 @@ export default function HoaFinancialReportingPage() {
         title="HOA Financial Reporting Services"
         description="Board-ready financial statements that connect the monthly close to the approved budget, homeowner receivables and operating and reserve activity."
         cta={{ text: 'Discuss the Reporting Scope', href: '/contact' }}
-        ctaSecondary={{ text: 'HOA Accounting Services', href: '/services/hoa-accounting' }}
+        ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }}
         background="primary-gradient"
       />
 
@@ -105,7 +105,7 @@ export default function HoaFinancialReportingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-7"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related HOA work</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Build the Reporting on Clean Books</h2></Reveal>
           <div className="flex flex-wrap gap-3">
-            <Link href="/services/hoa-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Accounting</Link>
+            <Link href="/industries/hoa-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Accounting Overview</Link>
             <Link href="/services/hoa-bookkeeping" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Bookkeeping</Link>
             <Link href="/blog/hoa-board-financial-package" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Board Financial Package Guide</Link>
             <Link href="/blog/hoa-budget-to-actual-reports" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">Budget-to-Actual Guide</Link>
@@ -115,7 +115,7 @@ export default function HoaFinancialReportingPage() {
 
       <FAQSection subtitle="HOA reporting questions" items={faqs} columns={2} />
       <InquirySection source={PATH} title="Review the Current Board Package" lead="Tell us what the board receives today and which part of the monthly report is hardest to explain." />
-      <CTABanner title="A Clearer Monthly Board Package" description="The reporting structure can follow the existing budget, accounting system and board meeting calendar." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
+      <CTABanner title="A Clearer Monthly Board Package" description="The reporting structure can follow the existing budget, accounting system and board meeting calendar." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/industries/hoa-accounting' }} background="primary" />
     </main>
   );
 }
