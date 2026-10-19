@@ -27,6 +27,16 @@ Every new or refreshed industry URL must have a distinct client/buyer, a researc
 
 # Content Registry
 
+## 2026-10-19 — CPA-firm overflow work support
+
+Added one commercial workflow page for firms that need a defined backlog, batch of files or temporary preparation queue handled under an agreed scope. It complements the five state overview pages and five state-specific workflow pages without creating five repetitive state × service pages.
+
+| Title | URL | Cluster | Primary intent | Body copy / floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| CPA Firm Overflow Accounting Support | `/industries/cpa-firms/overflow-work-support` | CPA Firms / Overflow Capacity | Scoped backlog, file batch or temporary accounting preparation queue with defined inputs, deliverables and review points | Target floor 650 words; verify rendered count with page verifier | Exact search volume not verified; GSC sample is very small; no turnaround, savings, client-count, certification or local-office claims |
+
+The page links to the CPA-firm hub, all five state pages, CAS production, white-label delivery and relevant national service pages. The CPA firm retains client relationships, professional judgment, review, signing and filing responsibilities. Run the production build, page verifier, route/sitemap parity, similarity and mobile review before merge.
+
 ## 2026-10-19 — CPA-firm state-specific workflow pages
 
 Added five commercial workflow pages beneath the CPA-firm acquisition cluster. The pages target different workflow intents rather than duplicating the five state overview pages. State-specific context is limited to sourced official guidance; Accounstone is described as preparing records and schedules, not deciding tax treatment, elections, valuation or filing obligations. The exact state-level search volumes have not been verified.
