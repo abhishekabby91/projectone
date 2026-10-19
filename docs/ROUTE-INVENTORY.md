@@ -17,7 +17,7 @@ candidate for overlap.
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
 | `/blog/accounts-payable-outsourcing` | AP Process Controls & Fraud Prevention Guide |
-| `/blog/accounts-receivable-management` | Receivables Management Guide: DSO, Cash Application & Follow-Up |
+| `/blog/accounts-receivable-management` | Accounts Receivable Management: DSO & Aging |
 | `/blog/audit-support-services` | Audit Support: What Can Be Delegated |
 | `/blog/eunify-quickbooks-hoa-accounting` | eUnify + QuickBooks for HOA Accounting |
 | `/blog/hoa-accounting-appfolio` | HOA Accounting with AppFolio |
@@ -161,7 +161,7 @@ candidate for overlap.
 | `/markets/united-kingdom` | Outsourced Accounting for UK Practices |
 | `/markets/united-kingdom/vat-returns` | VAT Return Preparation for UK Practices |
 | `/markets/united-kingdom/year-end-accounts` | UK Year-End Accounts Preparation |
-| `/markets/united-states` | U.S. Accounting Outsourcing for Firms & Businesses |
+| `/markets/united-states` | U.S. Accounting Outsourcing for Firms |
 | `/markets/united-states/california` | Accounting Services in California |
 | `/markets/united-states/florida` | Accounting & Bookkeeping Services in Florida |
 | `/markets/united-states/texas` | Accounting & Bookkeeping Services in Texas |
@@ -220,7 +220,7 @@ candidate for overlap.
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
-| `/technology/netsuite` | NetSuite Accounting Support for Month-End Close |
+| `/technology/netsuite` | NetSuite Month-End Close Accounting Support |
 | `/technology/quickbooks` | QuickBooks Online Accounting Support |
 | `/technology/sage` | Sage Accounting Support |
 | `/technology/xero` | Xero Accounting Services & Support |
