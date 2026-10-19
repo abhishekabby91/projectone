@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-214 indexable routes. Excludes the 4 permanent
+215 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -118,6 +118,7 @@ candidate for overlap.
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Accounting Support |
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
 | `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
