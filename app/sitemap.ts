@@ -63,9 +63,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...serviceRegionPaths.map((path) => ({ path, priority: 0.9, changeFrequency: 'monthly' as const })),
     ...solutions.map((s) => ({ path: `/solutions/${s.slug}`, priority: 0.85, changeFrequency: 'monthly' as const })),
     ...markets.map((m) => ({ path: `/markets/${m.slug}`, priority: 0.8, changeFrequency: 'monthly' as const })),
-    // MYOB is noindex as of 2026-09-04 (see app/technology/myob/page.tsx).
+    // MYOB is noindex and Yardi is a permanent redirect; neither belongs in the sitemap.
+    // See app/technology/myob/page.tsx and the /technology/yardi redirect in next.config.mjs.
     ...technologies
-      .filter((t) => t.slug !== 'myob')
+      .filter((t) => t.slug !== 'myob' && t.slug !== 'yardi')
       .map((t) => ({ path: `/technology/${t.slug}`, priority: 0.75, changeFrequency: 'monthly' as const })),
     ...industries.map((i) => ({ path: `/industries/${i.slug}`, priority: 0.75, changeFrequency: 'monthly' as const })),
     { path: '/company-registration', priority: 0.7, changeFrequency: 'monthly' },
