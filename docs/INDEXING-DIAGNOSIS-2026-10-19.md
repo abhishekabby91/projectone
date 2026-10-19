@@ -49,3 +49,15 @@ These are first-party visibility measurements, not market-wide search volumes. S
 ## Important distinction
 
 A valid sitemap confirms that Google can process the sitemap; it does **not** guarantee that each URL will be crawled or indexed. A URL can be discovered through a sitemap and still wait for crawling. Indexing is ultimately Google's decision and should be monitored URL by URL.
+
+
+## Review of the external crawl audit — 2026-10-19
+
+- **robots.txt:** the application-level policy allows public crawling and disallows only protected paths. Do not block a noindex URL as a substitute for a noindex directive; crawlers must be able to fetch the page to see that directive.
+- **MYOB:** `/technology/myob` is intentionally marked `noindex` and remains available for users arriving from the technology hub. It is correctly excluded from the sitemap. Adding it to the sitemap would contradict its index directive; remove or repoint unnecessary internal links only if the owner later decides to retire the page.
+- **Yardi:** the retired `/technology/yardi` route redirects and is correctly excluded from the sitemap. The canonical destination, not the redirect source, belongs in the sitemap.
+- **Homepage audit-support card:** the card previously pointed to the UK audit-support route while the other homepage service cards pointed to US regional pages. This has been aligned to `/services/audit-support/united-states`, consistent with the homepage's primary US-market entry point. The UK audit-support page remains available from the UK market/service cluster.
+- **`lastmod` dates:** do not replace them with the current date across all URLs. `app/sitemap.ts` reads the per-route map in `lib/sitemap-dates.ts`; the generator derives dates from route/body-module history and contains safeguards for the repository history re-import. Dates clustered around a recent date can be legitimate after a broad content pass, but each date should be checked against the affected route rather than bulk-reset.
+- **Live verification limitation:** the external audit reports that robots.txt and sitemap.xml loaded successfully, but an independent fetch during this pass did not return a fresh response from the public host. Treat the audit's live status-code findings as reported observations until rechecked after the next deployment.
+
+These checks do not guarantee indexing. After deployment, confirm the rendered sitemap, canonical URL, robots meta, response status and internal links for each important new route; then monitor Google Search Console URL Inspection and coverage states.
