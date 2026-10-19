@@ -17,7 +17,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/australia';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Receivable Outsourcing Services AU',
+  title: 'Australian Accounts Receivable Outsourcing',
   description: 'Accounts receivable outsourcing services for Australian businesses: AUD invoicing with GST, payment application, aging review and follow-up workflows inside Xero or MYOB.',
   path: PATH,
 });
