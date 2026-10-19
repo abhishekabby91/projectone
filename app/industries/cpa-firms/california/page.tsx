@@ -5,7 +5,7 @@ import { generateMetadata } from '@/lib/seo';
 const PATH = '/industries/cpa-firms/california';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Outsourcing for California CPA Firms',
+  title: 'California CPA Firm Accounting Outsourcing',
   description: 'Accounting outsourcing for California CPA firms: bookkeeping, reconciliations, month-end schedules and tax workpapers prepared for your review process.',
   path: PATH,
 });
