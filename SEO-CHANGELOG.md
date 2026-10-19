@@ -1,3 +1,21 @@
+## 2026-10-19 — Exclude redirected Yardi URL and record indexing diagnosis
+
+### Updated
+- Excluded `/technology/yardi` from generated sitemap output because it permanently redirects to `/technology`. The redirect itself remains intact.
+- Retained the existing exclusion for `/technology/myob`, which is noindex.
+- Added `docs/INDEXING-DIAGNOSIS-2026-10-19.md` to distinguish current production Search Console states from draft routes not yet deployed.
+
+### Verified Search Console state
+- Sitemap `https://www.accounstone.com/sitemap.xml`: valid; 205 indexed URLs; 0 errors and 0 warnings; last downloaded 2026-10-16.
+- Form 1065: “Discovered — currently not indexed”, last crawl never. It already appears in the sitemap and is linked from the tax hub, tax-outsourcing guide and CPA-firm hub. No rendering failure can be concluded without a crawl.
+- Form 1120 and 1120-S: “URL is unknown to Google” at the time of inspection. These pages are still on the draft branch and are not production indexing defects.
+- `/technology/yardi`: “Page with redirect”, which is expected; only the canonical destination should be submitted in the sitemap.
+
+### Next steps
+- After the planned production release, verify the live sitemap, resubmit it in Search Console, and inspect newly published URLs.
+- If Form 1065 remains un-crawled, review rendered HTML, canonical, robots, response status and internal-link prominence before rewriting content.
+- These changes do not guarantee indexing; Google controls crawl and index selection.
+
 ## 2026-10-19 — Clarify informational intent for the tax-outsourcing guide
 
 ### Updated
