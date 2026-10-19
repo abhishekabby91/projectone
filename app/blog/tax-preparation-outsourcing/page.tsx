@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Tax Preparation Outsourcing: Workflow, Software & Controls',
-  description: 'A practical guide to tax-preparation workflows, Drake Tax and CCH Axcess, CPA review handoffs, taxpayer-data permissions and busy-season planning.',
+  title: 'Tax-Season Workflow Guide: Software, Reviews & Controls',
+  description: 'A practical tax-season workflow guide covering Drake Tax and CCH Axcess, review handoffs, taxpayer-data permissions and capacity planning for accounting firms.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -47,7 +47,7 @@ export default function TaxPrepOutsourcingBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="How Tax Preparation Outsourcing Works: Workflow, Software and Review Controls"
+      title="How Tax-Season Preparation Works: Software, Reviews and Controls"
       category="Tax Preparation"
       description="A guide to delegated preparation steps, software access, reviewer handoffs, taxpayer-data permissions and busy-season planning."
       publishedDate="2026-08-14"
