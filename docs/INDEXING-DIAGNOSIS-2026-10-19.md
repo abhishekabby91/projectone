@@ -14,7 +14,7 @@ This note records the current Google Search Console URL Inspection and sitemap r
 | `/technology/yardi` | Page with redirect | 2026-10-12 | Expected for a retired URL with a permanent redirect. Google should consolidate signals to the destination; the redirect source must not appear as a sitemap URL. |
 | `/industries/cpa-firms` | Submitted and indexed | 2026-10-15 | The existing CPA-firm hub is indexed. |
 
-The sitemap response on 2026-10-19 reported `https://www.accounstone.com/sitemap.xml` as **Valid**, with **205 indexed URLs**, **0 errors**, and **0 warnings**; Google last downloaded it on 2026-10-16.
+The sitemap response on 2026-10-19 reported `https://www.accounstone.com/sitemap.xml` as **Valid**, with **205 URLs reported**, **0 errors**, and **0 warnings**; Google last downloaded it on 2026-10-16.
 
 ## Changes made in this branch
 
@@ -61,3 +61,47 @@ A valid sitemap confirms that Google can process the sitemap; it does **not** gu
 - **Live verification limitation:** the external audit reports that robots.txt and sitemap.xml loaded successfully, but an independent fetch during this pass did not return a fresh response from the public host. Treat the audit's live status-code findings as reported observations until rechecked after the next deployment.
 
 These checks do not guarantee indexing. After deployment, confirm the rendered sitemap, canonical URL, robots meta, response status and internal links for each important new route; then monitor Google Search Console URL Inspection and coverage states.
+
+
+## Live GSC recheck — 2026-10-19 afternoon
+
+A fresh connected Search Console inspection was run for the domain property `sc-domain:accounstone.com`. These are current observations, separate from the unpublished branch:
+
+| URL | Current coverage state | Last crawl | Current interpretation |
+|---|---|---|---|
+| `/industries/hoa-accounting` | Submitted and indexed | 2026-10-15 | Indexed; no indexing blocker reported by URL Inspection. |
+| `/industries/cpa-firms` | Submitted and indexed | 2026-10-15 | Indexed; keep this as the broad CPA-firm commercial hub. |
+| `/services/tax-preparation/united-states` | Submitted and indexed | 2026-10-14 | Indexed; opportunity is ranking improvement, not discovery. |
+| `/blog/tax-preparation-outsourcing` | Submitted and indexed | 2026-10-10 | Indexed; keep its informational-guide intent distinct from the tax service page. |
+| `/services/tax-preparation/united-states/1065-partnership` | Discovered — currently not indexed | Never | Google knows the URL but has not crawled it. Current inspection lists the sitemap and U.S. tax hub as referring URLs. Avoid interpreting this as a render failure without a crawl. |
+| `/industries/hoa-accounting/yardi-accounting-support` | Discovered — currently not indexed | Never | Current inspection lists only the sitemap as a referring URL. The draft branch adds a contextual link from the HOA hub and the indexed HOA Yardi guide; verify those links on production after deployment. |
+| `/industries/cpa-firms/california` | URL is unknown to Google | Never | This route exists on the unpublished state-page branch. Its current GSC status is expected until the route is deployed and discovered. |
+| `/industries/property-management/yardi-accounting-support` | URL is unknown to Google | Never | This is a different route from the HOA Yardi page. Do not confuse the two URL families or report the property-management route as an existing live page without verifying its production route. |
+| `/industries/hoa-accounting/california` | Submitted and indexed | 2026-10-15 | Indexed; confirms Google can crawl and index at least one existing HOA state page. |
+
+The sitemap list still reports `https://www.accounstone.com/sitemap.xml` as processed, with 205 URLs reported and zero errors or warnings. This confirms sitemap processing, not that every URL is indexed.
+
+### 90-day Search Console performance snapshot
+
+For 2026-07-21 through 2026-10-19, the highest-impression pages in the sampled report included:
+
+| Page | Impressions | Clicks | Average position |
+|---|---:|---:|---:|
+| `/services/tax-preparation/united-states` | 1,724 | 1 | 66.0 |
+| `/markets/united-states` | 450 | 1 | 79.3 |
+| `/solutions/staff-augmentation` | 423 | 2 | 48.5 |
+| `/solutions/offshore-accounting-support` | 409 | 3 | 68.9 |
+| `/markets/united-kingdom` | 379 | 1 | 64.1 |
+| `/industries/hoa-accounting/california` | 44 | 1 | 75.4 |
+
+These are Search Console visibility observations, not search-volume estimates or guarantees of demand. They suggest prioritizing improvements to existing national tax-preparation and U.S. market pages alongside the new CPA-firm cluster, rather than creating another broad page that competes for the same intent.
+
+### Post-deployment action order
+
+1. Confirm the deployed sitemap contains only live, canonical, indexable URLs and the redirected `/technology/yardi` source is excluded.
+2. Confirm the published HOA Yardi and Form 1065 pages have visible, crawlable internal links from their intended parent pages.
+3. Re-inspect the two discovered-but-not-indexed URLs after Google has had time to recrawl; use the live URL test if a technical problem is suspected.
+4. Inspect the new CPA-firm state pages after deployment; they are not production-indexing failures while still unpublished.
+5. Prioritize content and internal-link improvements to the existing U.S. tax-preparation page, which already receives impressions but has a weak average position. Do not create a second generic tax outsourcing landing page.
+
+Google's Page Indexing report distinguishes "Discovered — currently not indexed" from "Crawled — currently not indexed": the former means a crawl has not yet been recorded, while the latter calls for a closer content/canonical assessment. Neither status alone proves a code defect. See [Google Search Console Page indexing report](https://support.google.com/webmasters/answer/7440203?hl=en-GW).
