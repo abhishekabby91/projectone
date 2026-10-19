@@ -31,11 +31,12 @@ import {
 
 const PATH = '/industries/hoa-accounting';
 
-// 44 characters, inside the 46 the "%s | Accounstone" template allows.
+// Keep the title within the shared title template budget while reflecting the
+// commercial service query family found in Search Console.
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting & Bookkeeping Outsourcing',
+  title: 'HOA Accounting Services & Outsourcing',
   description:
-    'Outsourced HOA and community association accounting: assessment ledgers, operating and reserve funds, delinquency schedules and monthly board packs.',
+    'HOA accounting services and bookkeeping outsourcing for community associations: assessment ledgers, operating and reserve funds, reconciliations, delinquency schedules and monthly board reporting.',
   path: PATH,
 });
 
