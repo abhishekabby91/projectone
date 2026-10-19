@@ -30,6 +30,9 @@ export default function StaffAugTaxSeasonGuide() {
       <p>
         That does not automatically mean a firm should hire seasonal employees or outsource everything. A better starting point is to identify which parts of the workflow are consuming professional staff time and which parts can be prepared by additional support under the firm's review process.
       </p>
+      <p>
+        For the broader commercial engagement model, see our <Link href="/solutions/staff-augmentation" className="font-medium text-primary underline underline-offset-4 hover:text-accent">accounting staff augmentation services</Link> page. This guide stays focused on tax-season capacity planning, delegation and review boundaries.
+      </p>
 
       <h2>Start With the Bottleneck, Not the Headcount</h2>
       <p>
