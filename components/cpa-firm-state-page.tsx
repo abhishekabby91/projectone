@@ -10,6 +10,14 @@ import { cpaFirmStateContent, type CpaFirmStateKey } from '@/lib/cpa-firm-state-
 export default function CpaFirmStatePage({ state }: { state: CpaFirmStateKey }) {
   const data = cpaFirmStateContent[state];
   const path = `/industries/cpa-firms/${data.slug}`;
+  const stateSupportLinks: Record<string, { href: string; label: string }> = {
+    california: { href: '/industries/cpa-firms/california-tax-workpaper-support', label: 'California tax workpaper support' },
+    texas: { href: '/industries/cpa-firms/texas-bookkeeping-cleanup-support', label: 'Texas bookkeeping cleanup support' },
+    florida: { href: '/industries/cpa-firms/florida-property-entity-accounting-support', label: 'Florida property-entity accounting support' },
+    'new-york': { href: '/industries/cpa-firms/new-york-multi-entity-accounting-support', label: 'New York multi-entity accounting support' },
+    illinois: { href: '/industries/cpa-firms/illinois-inventory-accounting-support', label: 'Illinois inventory accounting support' },
+  };
+  const stateSupportLink = stateSupportLinks[data.slug];
   const breadcrumbs = generateBreadcrumbSchema([
     { name: 'Home', url: baseUrl },
     { name: 'Industries', url: `${baseUrl}/industries` },
@@ -115,6 +123,9 @@ export default function CpaFirmStatePage({ state }: { state: CpaFirmStateKey }) 
             <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">Tax preparation support</Link>
             <Link href="/resources/guides/client-accounting-services-cas-guide" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">Client accounting services guide</Link>
             <Link href="/resources/guides/how-to-outsource-accounting" className="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium text-primary hover:bg-background">How to outsource accounting</Link>
+            {stateSupportLink ? (
+              <Link href={stateSupportLink.href} className="rounded-lg border border-secondary/50 bg-input px-4 py-2 text-sm font-semibold text-primary hover:bg-background">{stateSupportLink.label}</Link>
+            ) : null}
           </div>
         </div>
       </section>
