@@ -191,7 +191,7 @@ export const routeLastModified: Record<string, string> = {
   '/services/accounts-receivable/australia': '2026-10-19',
   '/services/accounts-receivable/united-kingdom': '2026-10-19',
   '/services/accounts-receivable/united-states': '2026-10-19',
-  '/services/audit-support/australia': '2026-10-09',
+  '/services/audit-support/australia': '2026-10-19',
   '/services/audit-support/united-kingdom': '2026-10-19',
   '/services/audit-support/united-states': '2026-10-19',
   '/services/bookkeeping/australia': '2026-10-19',

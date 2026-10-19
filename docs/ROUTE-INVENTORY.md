@@ -42,7 +42,7 @@ candidate for overlap.
 | `/blog/hoa-bookkeeping-vs-accounting` | HOA Bookkeeping vs. HOA Accounting |
 | `/blog/hoa-budget-to-actual-reports` | HOA Budget-to-Actual Reports |
 | `/blog/hoa-cash-vs-accrual-accounting` | HOA Cash vs. Accrual Accounting |
-| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts: Example & Setup Guide |
+| `/blog/hoa-chart-of-accounts` | HOA Chart of Accounts: Setup Steps & Example |
 | `/blog/hoa-financial-statements-board-review` | HOA Financial Statements for Boards |
 | `/blog/hoa-homeowner-ledgers` | HOA Homeowner Ledgers: Keep Balances Accurate |
 | `/blog/hoa-income-statement-explained` | HOA Income Statement Explained |
@@ -66,7 +66,7 @@ candidate for overlap.
 | `/blog/property-management-accounting-for-small-companies` | Accounting for Small Property Managers |
 | `/blog/property-management-accounts-payable` | Property Management Accounts Payable Workflow |
 | `/blog/property-management-accrued-expenses` | Property Management Accruals & Prepaids |
-| `/blog/property-management-bank-reconciliation` | Property Bank Reconciliation Guide |
+| `/blog/property-management-bank-reconciliation` | Property Management Bank Reconciliation Guide |
 | `/blog/property-management-bookkeeping-cleanup` | Property Management Bookkeeping Cleanup |
 | `/blog/property-management-bookkeeping-vs-accounting` | Property Management Bookkeeping vs. Accounting |
 | `/blog/property-management-budget-vs-actual` | Property Budget vs. Actual Reporting |
@@ -194,7 +194,7 @@ candidate for overlap.
 | `/services/accounts-receivable/australia` | Australian Accounts Receivable Outsourcing |
 | `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
 | `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
-| `/services/audit-support/australia` | Audit Support Services in Australia |
+| `/services/audit-support/australia` | Australian Audit Preparation Support |
 | `/services/audit-support/united-kingdom` | UK Audit Preparation Support Services |
 | `/services/audit-support/united-states` | U.S. Audit Support Outsourcing for CPA Firms |
 | `/services/bookkeeping/australia` | Outsourced Bookkeeping Services Australia |
