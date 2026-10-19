@@ -27,7 +27,10 @@ One primary search intent → one primary URL. Check this file before creating a
 | Accounts receivable outsourcing — practical guide | `/blog/accounts-receivable-management` | Informational |
 | Accounts receivable — DSO, collections, software workflows | `/resources/guides/outsourced-accounts-receivable-guide` | Informational (operational, differentiated — no conflict) |
 | Tax preparation outsourcing | `/services/tax-preparation/{region}` | Commercial |
-| Outsourcing tax return preparation — what to know | `/blog/tax-preparation-outsourcing` | Informational |
+| U.S. accounting, bookkeeping and tax outsourcing overview | `/markets/united-states` | Geographic hub — directs U.S. firms and businesses to service-specific pages; not the primary owner for broad offshore-accounting or tax-preparation service intent |
+| Accounting staff augmentation services | `/solutions/staff-augmentation` | Commercial / capacity model — defined accounting work for tax season, month-end close, cleanup, AP/AR and projects; review and approvals remain with the client/firms |
+| Offshore accounting services and recurring support | `/solutions/offshore-accounting-support` | Commercial / delivery-model intent — recurring accounting workflows in existing systems with agreed scope and review handoff |
+| Tax preparation outsourcing workflow, controls and software guide | `/blog/tax-preparation-outsourcing` | Informational — delegated work, CPA review/e-filing boundaries, tax software workflows and capacity planning; link to the commercial U.S. service page |
 | U.S. CPA firm outsourcing readiness checklist — taxpayer-data safeguards, access, review workflow and pilot | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | Informational / operational checklist — distinct from general tax outsourcing overview and vendor-selection guide |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
