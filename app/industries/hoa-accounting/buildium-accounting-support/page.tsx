@@ -127,7 +127,7 @@ export default function BuildiumAccountingSupportPage() {
             <Link href="/blog/hoa-bank-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA bank reconciliation</Link>
             <Link href="/blog/hoa-financial-statements-board-review" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA financial statements</Link>
             <Link href="/blog/hoa-accounts-payable" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounts payable</Link>
-            <Link href="/services/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounting services</Link>
+            <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">HOA accounting outsourcing</Link>
           </div>
         </div>
       </section>

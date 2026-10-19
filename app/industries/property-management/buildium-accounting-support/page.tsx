@@ -124,7 +124,7 @@ export default function BuildiumAccountingSupportPage() {
             <Link href="/blog/property-management-trust-accounting-reconciliation" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Trust-account reconciliation guide</Link>
             <Link href="/blog/property-management-owner-statements" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Owner statement workflow</Link>
             <Link href="/blog/property-management-accounts-payable" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Accounts payable workflow</Link>
-            <Link href="/services/property-management-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting services</Link>
+            <Link href="/industries/property-management" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:border-primary">Property management accounting</Link>
           </div>
         </div>
       </section>

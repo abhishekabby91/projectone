@@ -18,7 +18,7 @@ const PATH = '/services/accounts-receivable/australia';
 
 export const metadata: Metadata = genMeta({
   title: 'Australian Accounts Receivable Outsourcing',
-  description: 'Accounts receivable outsourcing services for Australian businesses: AUD invoicing with GST, payment application, aging review and follow-up workflows inside Xero or MYOB.',
+  description: 'Accounts receivable outsourcing for Australian businesses: AUD invoicing with GST, payment application, aging review and follow-up in Xero or MYOB.',
   path: PATH,
 });
 

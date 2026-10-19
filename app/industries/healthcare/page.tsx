@@ -8,7 +8,7 @@ const PATH = '/industries/healthcare';
 export const metadata: Metadata = genMeta({
   title: 'Medical Practice Accounting Outsourcing',
   description:
-    'Accounting and bookkeeping support for medical practices and healthcare providers, including reimbursement reconciliation, payer-mix reporting and practice-specific account structures.',
+    'Accounting and bookkeeping support for medical practices: reimbursement reconciliation, payer-mix reporting and practice-specific account structures.',
   path: PATH,
 });
 

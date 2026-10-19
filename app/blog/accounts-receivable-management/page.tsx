@@ -4,7 +4,7 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Receivables Management Guide: DSO, Cash Application & Follow-Up',
+  title: 'Accounts Receivable Management: DSO & Aging',
   description: 'A practical guide to receivables management, days sales outstanding, cash application, aging, follow-up workflows and QuickBooks or Xero.',
   path: '/blog/accounts-receivable-management',
 });

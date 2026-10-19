@@ -18,7 +18,7 @@ const PATH = '/markets/australia';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting Outsourcing for Australian Firms',
   description:
-    'Accounting outsourcing support for Australian firms, including bookkeeping, BAS-ready records and year-end workpapers prepared for review and lodgment by the registered professional.',
+    'Accounting outsourcing for Australian firms: bookkeeping, BAS-ready records and year-end workpapers prepared for review and lodgment by your agent.',
   path: PATH,
 });
 

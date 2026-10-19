@@ -13,7 +13,7 @@ import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting Staff Augmentation Services',
-  description: 'Accounting staff augmentation services for firms and businesses that need capacity for tax season, month-end close, cleanup, AP/AR or defined projects within existing systems and review workflows.',
+  description: 'Accounting staff augmentation services for firms needing capacity for tax season, month-end close, cleanup, AP/AR or defined projects in your systems.',
   path: '/solutions/staff-augmentation',
 });
 

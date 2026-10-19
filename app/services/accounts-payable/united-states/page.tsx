@@ -17,7 +17,7 @@ const PATH = '/services/accounts-payable/united-states';
 
 export const metadata: Metadata = genMeta({
   title: 'U.S. Accounts Payable Outsourcing Services',
-  description: 'U.S. accounts payable outsourcing services for invoice entry, PO matching, ACH/check payment-run preparation, 1099-NEC vendor tracking and vendor-statement reconciliation.',
+  description: 'U.S. accounts payable outsourcing for invoice entry, PO matching, ACH/check payment-run preparation, 1099-NEC tracking and vendor reconciliation.',
   path: PATH,
 });
 

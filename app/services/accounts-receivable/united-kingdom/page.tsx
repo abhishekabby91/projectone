@@ -18,7 +18,7 @@ const PATH = '/services/accounts-receivable/united-kingdom';
 
 export const metadata: Metadata = genMeta({
   title: 'UK Accounts Receivable Outsourcing Services',
-  description: 'UK accounts receivable outsourcing services for GBP invoicing, output VAT records, payment application, aged-debtor review and agreed follow-up workflows in Xero or Sage.',
+  description: 'UK accounts receivable outsourcing for GBP invoicing, output VAT records, payment application, aged-debtor review and follow-up in Xero or Sage.',
   path: PATH,
 });
 

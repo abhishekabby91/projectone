@@ -13,7 +13,7 @@ import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Dedicated Accounting Team for Firms',
-  description: 'A dedicated accounting team with named professionals assigned to your portfolio, learning your templates and close calendar, with documented handovers and review points rather than a rotating pool.',
+  description: 'A dedicated accounting team with named people assigned to your portfolio, learning your templates and close calendar, not a rotating pool.',
   path: '/solutions/dedicated-accounting-teams',
 });
 

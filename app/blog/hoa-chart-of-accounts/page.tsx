@@ -4,7 +4,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'HOA Chart of Accounts: Setup Steps & Example',
-  description: 'See an illustrative HOA and condo association chart of accounts, with sample account groups for assessments, operating expenses, reserves, receivables and board reporting.',
+  description: 'An illustrative HOA and condo association chart of accounts, with sample groups for assessments, operating expenses, reserves and receivables.',
   path: '/blog/hoa-chart-of-accounts',
 });
 

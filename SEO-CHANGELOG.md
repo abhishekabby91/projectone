@@ -1,3 +1,54 @@
+## 2026-10-19b — Pre-deploy review of the GSC cluster audit: metadata budget, redirect links, lastmod
+
+Review of the 2026-10-19 cluster-audit branch before release. The redirect
+consolidation, sitemap reconciliation and `llms.txt` updates in that pass were
+correct and are unchanged here. Three defects were found and fixed; none of the
+branch's editorial decisions were reversed.
+
+**1. Metadata budget was blown on 20 commercial pages.** `node scripts/verify-pages.mjs`
+reported 23 descriptions outside 110-160 and 3 titles over the 46-character
+page-side budget, against 8 failures on `main` — so the pass introduced 18.
+Worst was `/services/audit-support/united-states` at **218 characters**, 58 over,
+on a commercial page. All 23 descriptions and 3 titles are now inside budget and
+the checker reports **PASS across 212 routes** for the first time since the
+October audit. The rewritten intent and keyword targeting were kept; only length
+was cut. Two UK/AU pages also moved from "organized" to "organised" while being
+trimmed, which the market-voice rule wanted anyway.
+
+**2. Nine internal links still pointed at redirect sources.** The sitewide
+invariant is zero. Two pointed at `/services/hoa-accounting` (already a 301 on
+`main`, so these were live defects) and seven at
+`/services/property-management-accounting`, which this pass retires. All nine now
+point at the canonical hub. One of them —
+`/blog/property-management-cam-reconciliation` — linked the hub *and* the
+redirect source in the same sentence, so the duplicate was dropped rather than
+repointed. Full sweep of all 18 redirect sources now returns zero inbound links.
+
+**3. Twenty routes carried a fabricated `lastmod`.** Editing `getRelatedLinks` in
+`components/article-layout.tsx` re-dated 120 routes to 2026-10-19, but that
+function only changed its `hoa-` branch and gained a Yardi branch. For 7 blog
+posts, 11 guides and 2 insights whose slugs match neither, the rendered HTML is
+unchanged, so the date was a "this page changed" signal that was not true. Their
+true dates are restored. This is the same failure `NON_RENDERING_COMMITS` was
+added for on 2026-09-17, at almost the same scale (19 pages then, 20 now) and in
+the same file — `NON_RENDERING_COMMITS` is **not** the fix here, because the
+commit genuinely does change the HOA and Yardi articles. Five pages whose links
+this review repointed were bumped to 2026-10-19, because those really did change.
+
+**Verified before release:** `pnpm eslint .` silent; `pnpm next build` clean;
+`verify-pages.mjs` PASS on 212 routes; sitemap drift check clean in both
+directions (218 page files, 212 sitemap URLs, the 6 intentional exclusions and
+nothing else); `llms.txt` carries no dead link and omits only those 6; both
+retired URLs resolve single-hop to a 200 destination.
+
+**Not verified, and not claimed:** the Search Console figures quoted in the entry
+below could not be re-checked from this session — the GSC connector reports
+`sc-domain:accounstone.com` is not activated on the current plan (1 of 1
+properties in use). The prioritisation they support is plausible and internally
+consistent, but it is one agent's reading, unaudited.
+
+---
+
 ## 2026-10-19 — GSC-led duplicate, intent-cluster and page-position audit
 
 **Evidence:** Connected Search Console page/query report for 2026-07-21 through 2026-10-19 (WEB), plus batched URL Inspection snapshots completed on 2026-10-19. Query-level results are not exhaustive because anonymized queries can be omitted. All ranking values below are pre-change baselines; no post-change ranking lift has been measured.

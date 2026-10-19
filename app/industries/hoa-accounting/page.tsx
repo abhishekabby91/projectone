@@ -36,7 +36,7 @@ const PATH = '/industries/hoa-accounting';
 export const metadata: Metadata = genMeta({
   title: 'HOA Accounting Services & Outsourcing',
   description:
-    'HOA accounting services and bookkeeping outsourcing for community associations: assessment ledgers, operating and reserve funds, reconciliations, delinquency schedules and monthly board reporting.',
+    'HOA accounting and bookkeeping outsourcing: assessment ledgers, operating and reserve funds, reconciliations, delinquency schedules and board reporting.',
   path: PATH,
 });
 

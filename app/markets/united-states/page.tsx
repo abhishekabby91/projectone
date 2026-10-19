@@ -16,9 +16,9 @@ import { serviceRegions } from '@/lib/data';
 const PATH = '/markets/united-states';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'U.S. Accounting Outsourcing for Firms & Businesses',
+  title: 'U.S. Accounting Outsourcing for Firms',
   description:
-    'Accounting outsourcing for U.S. firms, including recurring bookkeeping, month-end close, reconciliations and tax-preparation support within your existing systems and review workflow.',
+    'Accounting outsourcing for U.S. firms: recurring bookkeeping, month-end close, reconciliations and tax-preparation support in your existing systems.',
   path: PATH,
 });
 

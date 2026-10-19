@@ -18,7 +18,7 @@ const PATH = '/services/bookkeeping/australia';
 
 export const metadata: Metadata = genMeta({
   title: 'Outsourced Bookkeeping Services Australia',
-  description: 'Outsourced bookkeeping services for Australian accounting firms: GST coding, bank and control-account reconciliations, BAS-ready records and quarter-end schedules prepared to your templates for review.',
+  description: 'Outsourced bookkeeping for Australian accounting firms: GST coding, bank and control-account reconciliations, BAS-ready records and quarter-end schedules.',
   path: PATH,
 });
 

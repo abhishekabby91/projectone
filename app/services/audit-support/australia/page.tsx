@@ -15,7 +15,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/audit-support/australia';
 export const metadata: Metadata = genMeta({
   title: 'Australian Audit Preparation Support',
-  description: 'Australian audit preparation support for accounting firms and entities: AASB schedules, 30 June reconciliations, GST and superannuation workpapers organized for the engaged auditor.',
+  description: 'Australian audit preparation support: AASB schedules, 30 June reconciliations, GST and superannuation workpapers organised for the engaged auditor.',
   path: PATH,
 });
 

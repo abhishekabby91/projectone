@@ -12,7 +12,7 @@ import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Back-Office Accounting Support for Firms',
-  description: 'Back-office accounting support for accounting firms: recurring bookkeeping, AP/AR, payroll preparation and month-end tasks inside existing workflows, with review and sign-off retained by your firm.',
+  description: 'Back-office accounting support for firms: recurring bookkeeping, AP/AR, payroll preparation and month-end tasks inside your existing workflows.',
   path: '/solutions/back-office-support',
 });
 

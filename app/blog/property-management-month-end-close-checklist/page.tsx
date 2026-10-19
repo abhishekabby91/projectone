@@ -132,7 +132,7 @@ export default function PropertyManagementMonthEndCloseChecklist() {
         <li><Link href="/blog/property-management-chart-of-accounts" className="text-primary underline underline-offset-4">Property management chart of accounts</Link></li>
         <li><Link href="/blog/property-management-bank-reconciliation" className="text-primary underline underline-offset-4">Property management bank reconciliation</Link></li>
         <li><Link href="/blog/property-management-capital-expenditure-accounting" className="text-primary underline underline-offset-4">Capital expenditure and fixed-asset schedule workflow</Link></li>
-        <li><Link href="/services/property-management-accounting" className="text-primary underline underline-offset-4">Property management accounting services</Link></li>
+        <li><Link href="/industries/property-management" className="text-primary underline underline-offset-4">Property management accounting</Link></li>
         <li><Link href="/industries/property-management/general-ledger-reconciliation" className="text-primary underline underline-offset-4">Platform-to-general-ledger reconciliation support</Link></li>
       </ul>
     </ArticleLayout>

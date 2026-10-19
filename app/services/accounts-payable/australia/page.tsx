@@ -18,7 +18,7 @@ const PATH = '/services/accounts-payable/australia';
 
 export const metadata: Metadata = genMeta({
   title: 'Australian Accounts Payable Outsourcing',
-  description: 'Accounts payable outsourcing services for Australian businesses: invoice entry, GST input tax credit coding, EFT/BPAY payment-run preparation and vendor-statement reconciliation in Xero or MYOB.',
+  description: 'Accounts payable outsourcing for Australian businesses: invoice entry, GST credit coding, EFT/BPAY payment-run preparation and vendor reconciliation.',
   path: PATH,
 });
 
