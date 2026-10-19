@@ -222,7 +222,7 @@ candidate for overlap.
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
-| `/technology/netsuite` | NetSuite Accounting Support |
+| `/technology/netsuite` | NetSuite Accounting Support for Month-End Close |
 | `/technology/quickbooks` | QuickBooks Online Accounting Support |
 | `/technology/sage` | Sage Accounting Support |
 | `/technology/xero` | Xero Accounting Support for Growing Businesses |
