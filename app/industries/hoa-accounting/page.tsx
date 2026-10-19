@@ -298,7 +298,7 @@ export default function HoaAccountingPage() {
 
           <Reveal delay={0.2}>
             <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
-              HOA accounting is organized around the association: homeowner assessments, delinquency tracking, operating and reserve funds, board-approved budgets and board financial packages. If you also manage rental property for individual owners, the tenant-ledger, rent collection and owner-statement workflow belongs on the{' '}
+              HOA accounting is organized around the association: homeowner assessments, delinquency tracking, operating and reserve funds, board-approved budgets and board financial packages. For associations already using Yardi Voyager or Breeze, our <Link href="/industries/hoa-accounting/yardi-accounting-support" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">Yardi HOA accounting support page</Link> describes the recurring ledger, reconciliation and board-reporting work that can be prepared around the existing setup. If you also manage rental property for individual owners, the tenant-ledger, rent collection and owner-statement workflow belongs on the{' '}
               <Link href="/industries/property-management" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
                 property management accounting page
               </Link>. Some bookkeeping controls overlap, but the reporting audience and underlying records are different. The annual audit file is{' '}
