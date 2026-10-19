@@ -57,7 +57,11 @@ Additional sample:
 - HOA Yardi accounting support: discovered, currently not indexed; never crawled.
 - CPA-firm California, Texas and Florida URLs, plus the Form 1120 and 1120-S pages: URL unknown to Google; never crawled according to URL Inspection.
 
-The sitemap endpoint reported **Valid**, 205 indexed URLs, 0 errors and 0 warnings, but its last download was **2026-10-16**. The six URLs above that were unknown/discovered without indexing appear in the repository's main branch and are listed in `app/sitemap.ts`. A stale sitemap fetch is a plausible discovery delay after recent route updates, not a proven cause. The next steps are to resubmit the sitemap, verify each URL returns the intended live page, and ensure meaningful contextual links from relevant parent/service pages. Sitemap submission does not guarantee indexing.
+Before the sitemap action, GSC reported **Valid**, 205 indexed URLs, 0 errors and 0 warnings, last downloaded **2026-10-16**. I resubmitted `https://www.accounstone.com/sitemap.xml` through GenieSeo on **2026-10-19**. The latest sitemap result now reports **Valid**, **214 indexed URLs**, 0 errors, 0 warnings, last downloaded **2026-10-19 08:36**.
+
+The six non-indexed URLs exist in the repository's main branch and are listed in `app/sitemap.ts`. Their status shifted between the pre- and post-resubmission URL Inspection checks; on the latest check, the HOA Yardi page and Form 1120 page were still `URL is unknown to Google`, while the three CPA-firm state pages and Form 1120-S were `Discovered — currently not indexed`. All six had never been crawled. Treat those states as a current snapshot, not proof of a content-quality issue or of successful indexing. Sitemap resubmission does not guarantee a crawl or indexing.
+
+Next steps: confirm live HTTP responses for those URLs, retain meaningful contextual links from the relevant hub/guide pages, and re-check URL Inspection after Google processes the newly fetched sitemap. The current GitHub branch's Vercel check reports a build-rate-limit failure, so these branch edits are staged but not confirmed built or deployed.
 
 ## Changes staged from this review
 
