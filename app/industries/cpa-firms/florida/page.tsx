@@ -5,8 +5,8 @@ import { generateMetadata } from '@/lib/seo';
 const PATH = '/industries/cpa-firms/florida';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Florida CPA Firm Outsourcing',
-  description: 'Accounting, bookkeeping and tax-preparation support for Florida CPA firms, scoped to your client files, software and review process.',
+  title: 'Accounting Outsourcing for Florida CPA Firms',
+  description: 'Accounting outsourcing for Florida CPA firms handling property-related books, seasonal business records, reconciliations and reviewer-ready schedules.',
   path: PATH,
 });
 
