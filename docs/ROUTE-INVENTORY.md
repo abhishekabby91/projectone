@@ -16,8 +16,8 @@ candidate for overlap.
 | `/` | Accounting, Tax & Bookkeeping Outsourcing \| Accounstone |
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
-| `/blog/accounts-payable-outsourcing` | Accounts Payable Outsourcing Guide: Controls & Software |
-| `/blog/accounts-receivable-management` | Accounts Receivable Outsourcing Guide: DSO & Workflow |
+| `/blog/accounts-payable-outsourcing` | AP Process Controls & Fraud Prevention Guide |
+| `/blog/accounts-receivable-management` | Receivables Management Guide: DSO, Cash Application & Follow-Up |
 | `/blog/audit-support-services` | Audit Support: What Can Be Delegated |
 | `/blog/eunify-quickbooks-hoa-accounting` | eUnify + QuickBooks for HOA Accounting |
 | `/blog/hoa-accounting-appfolio` | HOA Accounting with AppFolio |
@@ -161,7 +161,7 @@ candidate for overlap.
 | `/markets/united-kingdom` | Outsourced Accounting for UK Practices |
 | `/markets/united-kingdom/vat-returns` | VAT Return Preparation for UK Practices |
 | `/markets/united-kingdom/year-end-accounts` | UK Year-End Accounts Preparation |
-| `/markets/united-states` | Accounting Outsourcing Services for U.S. Firms |
+| `/markets/united-states` | U.S. Accounting Outsourcing for Firms & Businesses |
 | `/markets/united-states/california` | Accounting Services in California |
 | `/markets/united-states/florida` | Accounting & Bookkeeping Services in Florida |
 | `/markets/united-states/texas` | Accounting & Bookkeeping Services in Texas |
