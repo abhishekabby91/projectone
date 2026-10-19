@@ -7,7 +7,7 @@ is unexecutable: an assistant cannot tell whether a proposed page duplicates an
 existing intent, and "prefer improving an existing page" becomes a rule it can
 agree with and never apply.
 
-219 indexable routes. Excludes the 4 permanent
+220 indexable routes. Excludes the 4 permanent
 redirect sources and the 2 noindex routes, since neither is a
 candidate for overlap.
 
@@ -116,13 +116,13 @@ candidate for overlap.
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
-| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Work Outsourcing Support |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
 | `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
 | `/industries/cpa-firms/illinois-inventory-accounting-support` | Illinois Inventory Accounting Support |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
 | `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Work Outsourcing Support |
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
