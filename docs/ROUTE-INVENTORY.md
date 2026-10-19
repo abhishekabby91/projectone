@@ -123,7 +123,7 @@ candidate for overlap.
 | `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
-| `/industries/healthcare` | Healthcare Accounting Outsourcing |
+| `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
 | `/industries/hoa-accounting` | HOA Accounting Services & Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
@@ -195,8 +195,8 @@ candidate for overlap.
 | `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
 | `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
 | `/services/audit-support/australia` | Audit Support Services in Australia |
-| `/services/audit-support/united-kingdom` | UK Audit Support Services for Accounting Teams |
-| `/services/audit-support/united-states` | U.S. Audit Support Services for CPA Firms |
+| `/services/audit-support/united-kingdom` | UK Audit Preparation Support Services |
+| `/services/audit-support/united-states` | U.S. Audit Support Outsourcing for CPA Firms |
 | `/services/bookkeeping/australia` | Outsourced Bookkeeping Services Australia |
 | `/services/bookkeeping/united-kingdom` | Outsourced Bookkeeping for UK Practices |
 | `/services/bookkeeping/united-states` | Outsourced Bookkeeping for U.S. CPA Firms |
@@ -214,7 +214,7 @@ candidate for overlap.
 | `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Accounting Support for Firms |
-| `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
+| `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
 | `/technology` | Technology & Systems |
@@ -223,5 +223,5 @@ candidate for overlap.
 | `/technology/netsuite` | NetSuite Accounting Support for Month-End Close |
 | `/technology/quickbooks` | QuickBooks Online Accounting Support |
 | `/technology/sage` | Sage Accounting Support |
-| `/technology/xero` | Xero Accounting Support for Growing Businesses |
+| `/technology/xero` | Xero Accounting Services & Support |
 | `/terms` | Terms & Conditions |
