@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'AP Outsourcing: Controls, Software, Cost',
-  description: 'The fraud controls an outsourced AP setup needs, how the workflow runs in QuickBooks, Xero and NetSuite, and real per-invoice cost ranges.',
+  title: 'Accounts Payable Outsourcing Guide: Controls & Software',
+  description: 'An operational guide to accounts payable outsourcing: invoice workflows, fraud controls, QuickBooks, Xero, NetSuite and cost factors.',
   path: '/blog/accounts-payable-outsourcing',
 });
 
@@ -124,7 +124,7 @@ export default function APOutsourcingBlog() {
       <div className="mt-8 p-6 bg-input rounded-xl border border-border/70">
         <p className="font-semibold text-primary mb-3">Relevant services</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/services/accounts-payable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Accounts Payable</Link>
+          <Link href="/services/accounts-payable/united-states" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">U.S. accounts payable outsourcing service</Link>
           <Link href="/technology/quickbooks" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">QuickBooks</Link>
           <Link href="/technology/xero" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">Xero</Link>
           <Link href="/technology/netsuite" className="px-4 py-2 rounded-lg bg-white border border-border text-primary text-sm font-medium hover:bg-border transition-colors">NetSuite</Link>
