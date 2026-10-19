@@ -28,7 +28,7 @@ export default function CpaStateSupportPage({ page }: { page: CpaStateSupportKey
   const serviceSchema = generateServiceSchema({
     name: data.title,
     description: data.heroDescription,
-    slug: data.slug,
+    slug: `cpa-firms/${data.slug}`,
     basePath: '/industries/',
     areaServed: [data.state, 'United States'],
   });
