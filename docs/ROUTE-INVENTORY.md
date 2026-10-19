@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Tax-Season Workflow Guide: Software, Reviews & Controls |
+| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing Workflow Guide |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -188,10 +188,10 @@ candidate for overlap.
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
-| `/services/accounts-payable/australia` | Accounts Payable Outsourcing Services AU |
+| `/services/accounts-payable/australia` | Australian Accounts Payable Outsourcing |
 | `/services/accounts-payable/united-kingdom` | Outsourced Accounts Payable for UK Businesses |
 | `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing Services |
-| `/services/accounts-receivable/australia` | Accounts Receivable Outsourcing Services AU |
+| `/services/accounts-receivable/australia` | Australian Accounts Receivable Outsourcing |
 | `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
 | `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
 | `/services/audit-support/australia` | Audit Support Services in Australia |
