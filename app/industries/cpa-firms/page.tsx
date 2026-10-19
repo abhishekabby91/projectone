@@ -29,14 +29,14 @@ const PATH = '/industries/cpa-firms';
 export const metadata: Metadata = genMeta({
   title: 'Accounting & Tax Outsourcing for CPA Firms',
   description:
-    'Outsourced accounting and tax preparation support for U.S. CPA firms, including busy-season capacity, bookkeeping cleanup, CAS production and workpapers.',
+    'Accounting and tax outsourcing for U.S. CPA firms: busy-season overflow work, bookkeeping cleanup, recurring CAS production and tax-return preparation, with review retained by your firm.',
   path: PATH,
 });
 
 const serviceSchema = generateServiceSchema({
   name: 'Outsourced Preparation Capacity for CPA Firms',
   description:
-    'Busy-season overflow, client bookkeeping cleanup, CAS production, audit and PBC support, and staff augmentation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgment retained by the firm.',
+    'Busy-season overflow work, client bookkeeping cleanup, recurring CAS production, tax preparation and workpaper preparation for CPA firms — prepared to the firm’s own checklists, with review, signature and professional judgment retained by the firm.',
   slug: 'cpa-firms',
   basePath: '/industries/',
   areaServed: ['United States'],
