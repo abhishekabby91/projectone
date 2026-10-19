@@ -224,7 +224,7 @@
 | app/technology/cch/page.tsx | 90/100 | 408 | 1 | 11 | 0 | 0 |
 | app/technology/drake-tax/page.tsx | 90/100 | 412 | 1 | 11 | 0 | 0 |
 | app/technology/myob/page.tsx | 90/100 | 908 | 1 | 7 | 0 | 0 |
-| app/technology/netsuite/page.tsx | 90/100 | 431 | 1 | 7 | 0 | 0 |
+| app/technology/netsuite/page.tsx | 90/100 | 438 | 1 | 7 | 0 | 0 |
 | app/technology/page.tsx | 90/100 | 774 | 1 | 5 | 0 | 0 |
 | app/technology/quickbooks/page.tsx | 90/100 | 540 | 1 | 10 | 0 | 0 |
 | app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
