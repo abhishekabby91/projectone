@@ -17,8 +17,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/united-kingdom';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Receivable Outsourcing, UK',
-  description: 'UK accounts receivable support — GBP invoicing with output VAT, payment application, aging review, and follow-up sequences inside Xero or Sage.',
+  title: 'UK Accounts Receivable Outsourcing Services',
+  description: 'UK accounts receivable outsourcing services for GBP invoicing, output VAT records, payment application, aged-debtor review and agreed follow-up workflows in Xero or Sage.',
   path: PATH,
 });
 
@@ -72,7 +72,7 @@ export default function AccountsReceivableUKPage() {
 
 
       <PremiumHero
-        region="united-kingdom" subtitle="Accounts Receivable for UK Businesses" title="Outsourced Accounts Receivable for UK Businesses" description="Invoicing with correct VAT, payment application, aging review, and follow-up inside Xero or Sage." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="united-kingdom" subtitle="Accounts Receivable Outsourcing Services in the UK" title="UK Accounts Receivable Outsourcing" description="GBP invoicing, output VAT records, payment application, aged-debtor review and follow-up workflows inside your existing Xero or Sage process." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
