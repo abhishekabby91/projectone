@@ -1,3 +1,32 @@
+## 2026-10-19 — GSC-led duplicate, intent-cluster and page-position audit
+
+**Evidence:** Connected Search Console page/query report for 2026-07-21 through 2026-10-19 (WEB). Query-level results are not exhaustive because anonymized queries can be omitted. The latest attempt to refresh GenieSeo data during this audit returned a connection error; do not treat any new ranking or indexing result as observed after these changes.
+
+### Duplicate and cluster fixes
+- Added permanent redirect `/services/property-management-accounting` → `/industries/property-management`. The service page duplicated the hub's core property-level accounting, tenant/owner ledgers, AP/AR, reconciliations and month-end intent. Removed its route source and sitemap entry; replaced the hub's related-service link with the more specific property-management accounting-cleanup page.
+- Kept the already-established permanent redirect `/services/hoa-accounting` → `/industries/hoa-accounting`; removed the obsolete page source and sitemap entry, changed links from HOA bookkeeping/reporting pages to the canonical industry hub, and fixed `llms.txt` / `llms-full.txt` references.
+- Tax: kept `/services/tax-preparation/united-states` as commercial service intent and reframed `/blog/tax-preparation-outsourcing` as a tax-season workflow, software, permissions and reviewer-controls guide. Added/retained clear contextual links to the commercial service page. GSC previously showed the exact query “tax preparation outsourcing” split between U.S. service page (141 impressions; avg position 69.8) and guide (131; position 33.5), while “U.S. tax preparation outsourcing” split 80/71 impressions with the guide ranking at 19.9 and service page at 61.0.
+- Staff augmentation: aligned commercial metadata with “accounting staff augmentation services” and linked the informational tax-season capacity guide in both directions. GSC showed “accounting staff augmentation” on the commercial page (182 impressions; position 40.1) and guide (33; position 19.6), so the page roles are now more explicit without merging distinct intents.
+- AP/AR articles: clarified guide metadata and descriptive links to the U.S. service routes; kept the operational guide (controls, software, DSO/follow-up) distinct from commercial service intent.
+- Region/support cluster: updated the Australian market page to focus on accounting outsourcing for Australian practices (rather than the generic “offshore accounting” title), broadened the U.S. market hero to address accounting firms and direct businesses, and made the offshore-accounting solution page's support intent explicit. Removed unrelated UK/Australia cross-market links from the U.S. tax service's main related section.
+
+### Search Console evidence that guided priorities
+- `tax preparation outsourcing`: 301 query/page impressions distributed across five URLs, with the blog guide ranking above the U.S. commercial page.
+- `accounting staff augmentation`: 215 impressions split between commercial solution and tax-season guide.
+- `hoa accounting services`: 42 impressions across the HOA hub (15), legacy HOA service URL (14), California (5), San Diego County (4), Texas (4). The legacy route already redirected; some GSC impressions pre-date the redirect. Do not infer that the redirect is currently failing from the 90-day report.
+- `property management accounting services`: 30 impressions on the legacy service page and 1 on the real-estate industry page; the broad hub remains the single commercial owner.
+- AP and AR queries are split by region and informational intent. Regional services remain separate because they cover country-specific workflows; the general articles stay informational.
+
+### Indexing and validation
+- `app/sitemap.ts` no longer lists either legacy redirected route. `lib/sitemap-dates.ts`, the route inventory and AI reference files have been reconciled with the redirects.
+- A previous sitemap resubmission in GSC was processed as Valid with 214 indexed URLs, zero errors and zero warnings. This is a site-level sitemap result, not proof each newly created URL is indexed.
+- Last direct URL Inspection sample had several fresh Yardi / CPA-state / tax return-type URLs shown as “URL unknown to Google” or “Discovered — currently not indexed,” never crawled. The current GenieSeo connection failed, so re-inspection after deployment remains outstanding.
+- The Vercel check reported a build-rate-limit failure on prior staged work. These changes are not claimed as built or deployed, and no position improvement is claimed until a subsequent GSC comparison.
+
+**New URLs:** none. **Redirects:** two legacy routes to their canonical hubs. **Indexing success:** not yet verified for the new branch.
+ 
+---
+
 ## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
 
 ### app/industries/hoa-accounting/los-angeles-county/page.tsx
