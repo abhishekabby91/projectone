@@ -200,6 +200,32 @@ Do not treat the list as proof that each term has measurable volume. Capture ave
 - State pages do not claim to be local offices and do not imply local staff.
 - Existing `/markets/united-states/{california,texas,florida}` pages remain the primary destinations for direct-business state accounting intent; CPA-firm state pages own CPA-outsourcing intent.
 
+## Additional CPA-firm query page — overflow work support (2026-10-19)
+
+### Why this page was added
+The state pages cover state-qualified CPA-firm outsourcing and workflow needs. A separate national workflow page covers firms with a defined backlog, batch of files or temporary preparation queue. It is designed to support all five state pages without creating near-identical state × service variants.
+
+### First-party Search Console signal
+Property: `sc-domain:accounstone.com`; Web search; 2026-07-20 through 2026-10-18.
+- “cpa firm overflow work outsourcing”: 1 impression, 0 clicks, average position 11 on `/industries/cpa-firms`.
+- “accounting backlog support”: 4 impressions, 0 clicks, average position 94.2 on `/solutions/back-office-support`.
+- “backlog accounting solutions”: 2 impressions, 0 clicks, average position 89.5.
+These are tiny samples of impressions on Accounstone's own site, not total Google search volume or proof of market demand. The page is a measured test hypothesis, not a demand forecast.
+
+### Intent boundaries
+- `/industries/cpa-firms` remains the broad outsourcing and capacity hub.
+- `/industries/cpa-firms/overflow-work-support` owns defined overflow queues and temporary preparation assignments.
+- `/industries/cpa-firms/cas-production-support` owns recurring CAS production and reporting handoffs.
+- `/industries/cpa-firms/white-label-accounting` owns branding and client-contact boundaries.
+- Existing national bookkeeping, accounting and tax-preparation service pages retain their service-specific intent.
+- Do not create state × overflow variants unless future evidence demonstrates distinct state-qualified buyer intent and page-specific value.
+
+### Page contract
+- Primary keyword themes: CPA firm overflow work outsourcing; overflow accounting support for CPA firms; accounting backlog support for accounting practices. These are keyword themes, not verified-volume claims.
+- The page uses existing service illustrations, FAQ, breadcrumb and service schema. Its rendered word count must be checked with the production page verifier; do not pad content just to meet a floor.
+- Unsourced claims to avoid: guaranteed turnaround, guaranteed availability, savings, client counts, certifications, local offices/staff and state-level search-volume claims.
+- Release gate: production build, `node scripts/verify-pages.mjs`, route/sitemap/AI-index parity, page-similarity review and mobile preview check. Keep this branch unmerged until Vercel preview/build is available and reviewed.
+
 ## Unsourced-claims checklist
 
 No state-level search-volume claims are made on the pages. Before publication, verify or remove any future additions claiming:
