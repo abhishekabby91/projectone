@@ -227,24 +227,31 @@ export default function HoaAccountingPage() {
             </p>
           </></Reveal>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:gap-5">
             {triggers.map((t, i) => (
               <Reveal key={t.symptom} delay={Math.min(i * 0.05, 0.25)}>
                 <li className="h-full">
-                  <InquiryTrigger
-                    className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
-                    source={PATH}
-                    title="HOA & Community Association Accounting"
-                    lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
-                    label={`Talk to us about: ${t.symptom}`}
-                  >
-                    <h3 className="font-serif text-lg font-bold text-primary leading-snug">{t.symptom}</h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{t.reading}</p>
-                    <span className="mt-4 text-sm font-semibold text-accent">
-                      {t.ask}{' '}
-                      <span aria-hidden="true">&rarr;</span>
-                    </span>
-                  </InquiryTrigger>
+                  <article className="flex h-full flex-col rounded-xl border border-border bg-white p-5 transition-colors duration-200 hover:border-primary/40 sm:p-6">
+                    <h3 className="font-serif text-lg font-bold leading-snug text-primary">{t.symptom}</h3>
+                    <details className="group mt-3">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 text-sm font-semibold text-primary">
+                        <span>Why this often happens</span>
+                        <span aria-hidden="true" className="rounded-full border border-border px-2 py-0.5 text-xs group-open:rotate-45">+</span>
+                      </summary>
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{t.reading}</p>
+                    </details>
+                    <div className="mt-auto pt-4">
+                      <InquiryTrigger
+                        className="inline-flex items-center gap-2 text-left text-sm font-semibold text-accent hover:text-primary"
+                        source={PATH}
+                        title="HOA & Community Association Accounting"
+                        lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
+                        label={`Talk to us about: ${t.symptom}`}
+                      >
+                        {t.ask} <span aria-hidden="true">&rarr;</span>
+                      </InquiryTrigger>
+                    </div>
+                  </article>
                 </li>
               </Reveal>
             ))}
