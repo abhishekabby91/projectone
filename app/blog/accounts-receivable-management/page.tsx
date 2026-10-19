@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Receivable Outsourcing Guide: DSO & Workflow',
-  description: 'A practical accounts receivable guide to DSO, cash application, aging, follow-up workflows and QuickBooks or Xero before service scope is agreed.',
+  title: 'Receivables Management Guide: DSO, Cash Application & Follow-Up',
+  description: 'A practical guide to receivables management, days sales outstanding, cash application, aging, follow-up workflows and QuickBooks or Xero.',
   path: '/blog/accounts-receivable-management',
 });
 
@@ -41,7 +41,7 @@ export default function ARManagementBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="Outsourcing Accounts Receivable: A Practical Guide for Business Owners"
+      title="Receivables Management: DSO, Cash Application and Follow-Up"
       category="Accounts Receivable"
       description="DSO, follow-up schedules, software workflows, and the judgment calls that always stay with you."
       publishedDate="2026-08-14"
