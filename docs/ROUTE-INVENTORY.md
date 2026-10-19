@@ -188,16 +188,16 @@ candidate for overlap.
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
-| `/services/accounts-payable/australia` | Accounts Payable Outsourcing, Australia |
+| `/services/accounts-payable/australia` | Accounts Payable Outsourcing Services AU |
 | `/services/accounts-payable/united-kingdom` | Outsourced Accounts Payable for UK Businesses |
 | `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing Services |
-| `/services/accounts-receivable/australia` | Accounts Receivable Outsourcing, Australia |
-| `/services/accounts-receivable/united-kingdom` | Accounts Receivable Outsourcing, UK |
+| `/services/accounts-receivable/australia` | Accounts Receivable Outsourcing Services AU |
+| `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
 | `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
 | `/services/audit-support/australia` | Audit Support Services in Australia |
 | `/services/audit-support/united-kingdom` | UK Audit Support Services for Accounting Teams |
 | `/services/audit-support/united-states` | U.S. Audit Support Services for CPA Firms |
-| `/services/bookkeeping/australia` | Outsourced Bookkeeping, Australian Firms |
+| `/services/bookkeeping/australia` | Outsourced Bookkeeping Services Australia |
 | `/services/bookkeeping/united-kingdom` | Outsourced Bookkeeping for UK Practices |
 | `/services/bookkeeping/united-states` | Outsourced Bookkeeping for U.S. CPA Firms |
 | `/services/hoa-bookkeeping` | HOA Bookkeeping Services |
