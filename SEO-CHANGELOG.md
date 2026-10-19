@@ -5040,3 +5040,12 @@ Search Console URL inspection was run against sitemap and related cluster URLs. 
 - **/industries/ecommerce** was not changed in this pass: the preceding GSC sample showed “ecommerce accounting” and “accounting for ecommerce” averaging around position 5.5, and its metadata had already been refined recently. Wait for a post-change window before testing another snippet change.
 
 **Guardrails:** No public URL or route changed; no new page was created. These are relevance and snippet tests, not a ranking guarantee. After deployment and recrawl, compare the same page/query pairs over a comparable window, watching impressions, clicks, CTR and average position before deciding on further edits.
+
+
+## 2026-10-19 — NetSuite support snippet refinement from GSC
+
+**Data source and window:** Google Search Console Web search, confirmed/final data for 2026-09-18 through 2026-10-15. The existing `/technology/netsuite` page received 30 impressions for “netsuite accounting support” at average position 13.4, with no clicks in that query-page sample. Related terms included “netsuite accounting services” (2 impressions, position 54) and “netsuite accountants services” (1, position 57).
+
+**Changed:** Updated the title to “NetSuite Accounting Support for Month-End Close” and refined the description around multi-entity reconciliations, intercompany balances/eliminations, currency revaluation, consolidation and reporting. Replaced the “Dedicated Accounting Teams” related link with the existing U.S. tax preparation service link, keeping the page's focus on NetSuite workflows rather than team-model terminology.
+
+**Guardrails:** Existing URL retained; no new page created. Query volume is modest and average position is not a fixed rank. Recheck the same query/page pair after recrawl and compare clicks, impressions, CTR and position over a comparable window.
