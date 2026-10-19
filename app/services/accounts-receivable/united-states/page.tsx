@@ -16,8 +16,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'U.S. Accounts Receivable Outsourcing',
-  description: 'U.S. accounts receivable support — USD invoicing, ACH/check payment application, aging monitoring, and follow-up sequences inside QuickBooks Online or Xero.',
+  title: 'U.S. Accounts Receivable Outsourcing Services',
+  description: 'U.S. accounts receivable outsourcing services for USD invoicing, ACH/check payment application, aging review and follow-up workflows inside QuickBooks Online or Xero.',
   path: PATH,
 });
 
