@@ -40,6 +40,8 @@
 
 **Intentional exclusion:** /technology/myob had 1,364 page impressions at average position 48.8 in the 90-day page report, but GSC inspection shows it is excluded by the owner-approved noindex. The old impressions are not a reason to reverse that decision: most demand was for MYOB implementation or product research, which Accounstone does not claim to provide.
 
+**Why MYOB and Yardi differ:** MYOB is deliberately noindexed in source and omitted from the sitemap. HOA Yardi support is not noindexed; it is eligible for indexing but Google has not crawled it yet.
+
 ## B. Confirmed query/page overlap and actions
 
 ### Tax-preparation cluster — highest priority
@@ -102,7 +104,7 @@ A previous sitemap resubmission reported **Valid**, 214 indexed URLs, 0 errors a
 
 Two further batched URL Inspection requests completed on 2026-10-19:
 - Core pages **submitted and indexed**: U.S. tax service (last crawled Oct 14), tax guide (Oct 10), staff augmentation (Oct 12), property-management hub (Oct 7), HOA hub (Oct 15), Xero (Oct 10), AP Australia (Oct 15), AP U.S. (Oct 14), AR Australia (Oct 9), AR UK (Oct 17), AR U.S. (Oct 15), audit-support U.S. (Oct 15), audit-support UK (Oct 8), Australian bookkeeping (Oct 9), back-office support (Oct 14), dedicated teams (Oct 18), healthcare hub (Oct 6), and the Form 1040, 1120 and 1120-S tax pages (Form 1120 / 1120-S last crawled Oct 19).
-- Newly checked **discovery gaps**: HOA Yardi support = “URL unknown to Google” / never crawled; CPA firms Florida = “URL unknown to Google” / never crawled; Form 1065 partnership = “Discovered — currently not indexed” / never crawled. The CPA California and Texas pages were indexed and crawled Oct 19; HOA California and Texas pages were also indexed.
+- Newly checked **discovery gaps**: HOA Yardi support was first “URL unknown to Google” and subsequently “Discovered — currently not indexed,” still never crawled; the latest URL Inspection listed only the sitemap as a referring URL. Its source does **not** set `noindex`, it is listed in the sitemap, and the HOA hub already linked it near the related-software section. I added a more prominent contextual link from the hub's main workflow paragraph and an early link from the Yardi HOA workflow guide. After deployment, re-inspect the live page, confirm it returns a crawlable 200 response and self-canonical, then request indexing. CPA firms Florida = “URL unknown to Google” / never crawled; Form 1065 partnership = “Discovered — currently not indexed” / never crawled. The CPA California and Texas pages were indexed and crawled Oct 19; HOA California and Texas pages were also indexed.
 - `/technology/myob` is **Excluded by ‘noindex’ tag**, last crawled Oct 15. This is intentional per the existing owner-approved decision recorded in the source: much of its traffic was product-implementation research unrelated to Accounstone's service scope. Its 90-day page impressions must not be treated as an indexable ranking opportunity, and its noindex should not be removed to chase impressions.
 - The live production URLs for the legacy HOA/property-accounting services were still reported as “Submitted and indexed” in this snapshot. The property-management redirect and source/sitemap cleanup, plus the HOA source/sitemap/internal-link cleanup, are staged on this branch and have **not** been deployed. The HOA redirect itself existed before this branch; do not assume the new source cleanup is live until this branch is built and released.
 
