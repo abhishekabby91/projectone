@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Tax Preparation Outsourcing for CPA Firms',
-  description: 'Tax preparation outsourcing for CPA firms: return preparation, workpapers, Drake Tax and CCH Axcess workflows, with review and filing retained by licensed professionals.',
+  title: 'Tax Preparation Outsourcing: Workflow, Software & Controls',
+  description: 'A practical guide to tax-preparation workflows, Drake Tax and CCH Axcess, CPA review handoffs, taxpayer-data permissions and busy-season planning.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -47,9 +47,9 @@ export default function TaxPrepOutsourcingBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="Tax Preparation Outsourcing for CPA Firms: Workflow, Software and Review Boundaries"
+      title="How Tax Preparation Outsourcing Works: Workflow, Software and Review Controls"
       category="Tax Preparation"
-      description="Preparation vs. review, software workflows in Drake Tax and CCH Axcess, IRS representation boundaries, and tax-season capacity planning for CPA firms."
+      description="A guide to delegated preparation steps, software access, reviewer handoffs, taxpayer-data permissions and busy-season planning."
       publishedDate="2026-08-14"
       section="blog"
       slug="tax-preparation-outsourcing"
@@ -57,10 +57,10 @@ export default function TaxPrepOutsourcingBlog() {
       inquiryLead="Tell us your return mix, your software and how many returns stack up before review, and we will scope a preparation pilot that your firm still reviews, signs and files."
     >
       <p>
-        Tax return preparation outsourcing sits at a specific boundary: an offshore team can prepare returns, organize workpapers, and get everything e-filing ready — but the review, signing, and submission must be done by a licensed CPA, Enrolled Agent, or attorney. That boundary is not a technicality; it&rsquo;s regulatory under Circular 230 for US practitioners.
+        Tax preparation outsourcing is a workflow decision: a firm assigns documented preparation steps to an external accounting partner, then reviews and approves completed work under its own professional process. The exact tasks, system access, taxpayer permissions and filing responsibilities should be defined before client data moves.
       </p>
       <p>
-        The practical use case for CPA firms is clear: the January-to-April volume spike doesn&rsquo;t justify hiring full-time staff who will be idle the other eight months. Offshore preparation support absorbs the surge while the licensed team focuses on review, client communication, and judgment-level decisions.
+        This guide focuses on operating detail: how source documents move into workpapers, how Drake Tax and CCH Axcess fit within a firm’s existing controls, and how to identify where added preparation capacity helps without moving professional judgment or final review away from the responsible practitioner.
       </p>
 
       <p>
@@ -73,7 +73,7 @@ export default function TaxPrepOutsourcingBlog() {
           <p className="mt-2 text-lg font-semibold text-primary">Preparation is one stage in the firm’s workflow</p>
           <p className="mt-2 text-sm leading-relaxed text-muted">Organize the records, prepare the agreed workpapers, list open questions, then return the file for professional review and approval. The responsible CPA, EA or attorney retains the duties assigned to them.</p>
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">U.S. tax support</Link>
+            <Link href="/services/tax-preparation/united-states" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">U.S. tax preparation outsourcing service</Link>
             <Link href="/industries/cpa-firms" className="rounded-lg border border-border bg-white px-3 py-2 font-medium text-primary hover:border-primary/40">CPA firm services</Link>
           </div>
         </div>
