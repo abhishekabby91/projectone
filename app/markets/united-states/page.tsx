@@ -195,9 +195,9 @@ export default function USMarketPage() {
 
       <PremiumHero
         region="united-states"
-        subtitle="For U.S. CPA firms"
-        title="Your Firm’s Offshore Preparation Team"
-        description="Bookkeeping, close work and return preparation, built to your workpaper templates. You review, you advise, you sign — and you keep the client."
+        subtitle="For U.S. firms and businesses"
+        title="Accounting, Bookkeeping & Tax Support for U.S. Operations"
+        description="Accounting, bookkeeping and tax-preparation outsourcing support for firms and businesses, with defined work in existing systems and clear review responsibilities."
         cta={{ text: 'Start With One Client', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/services#united-states' }}
         background="primary-gradient"
