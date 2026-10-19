@@ -195,9 +195,9 @@ export default function USMarketPage() {
 
       <PremiumHero
         region="united-states"
-        subtitle="For U.S. CPA firms"
-        title="Accounting Outsourcing Support for U.S. Firms"
-        description="Recurring bookkeeping, month-end close and tax-preparation support built around your systems and workpaper templates. Your firm retains review, professional judgment and client relationships."
+        subtitle="For accounting firms and businesses"
+        title="Accounting, Bookkeeping & Tax Support for U.S. Operations"
+        description="For accounting firms, we provide outsourcing support within your workflows. For direct businesses, we provide remote accounting support for agreed recurring work. Scope, systems and review responsibilities are defined before work begins."
         cta={{ text: 'Start With One Client', href: '/contact' }}
         ctaSecondary={{ text: 'View U.S. Services', href: '/services#united-states' }}
         background="primary-gradient"
