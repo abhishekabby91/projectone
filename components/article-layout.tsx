@@ -278,8 +278,7 @@ type RelatedLink = { label: string; href: string };
 function getRelatedLinks(slug: string): RelatedLink[] {
   const value = slug.toLowerCase();
   if (value.includes('hoa-')) return [
-    { label: 'HOA accounting services', href: '/services/hoa-accounting' },
-    { label: 'HOA accounting industry scope', href: '/industries/hoa-accounting' },
+    { label: 'HOA accounting and bookkeeping outsourcing', href: '/industries/hoa-accounting' },
     { label: 'HOA bookkeeping services', href: '/services/hoa-bookkeeping' },
   ];
   if (value.includes('property-management') || value.includes('rent-roll')) return [
