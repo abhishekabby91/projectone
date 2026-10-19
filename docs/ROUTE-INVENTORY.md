@@ -205,7 +205,7 @@ candidate for overlap.
 | `/services/payroll/australia` | Payroll Support for Australian Firms |
 | `/services/payroll/united-kingdom` | Payroll Support for UK Practices |
 | `/services/payroll/united-states` | Outsourced Payroll Support for U.S. CPA Firms |
-| `/services/tax-preparation/australia` | Tax Return Preparation, Australia |
+| `/services/tax-preparation/australia` | Australian Tax Preparation Support for Firms |
 | `/services/tax-preparation/united-kingdom` | Corporation Tax & Self Assessment, UK |
 | `/services/tax-preparation/united-states` | US Tax Preparation Outsourcing for CPA Firms |
 | `/services/tax-preparation/united-states/1040-individual` | Form 1040 Tax Preparation Outsourcing |
