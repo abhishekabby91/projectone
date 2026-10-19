@@ -125,7 +125,7 @@ candidate for overlap.
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Healthcare Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
-| `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
+| `/industries/hoa-accounting` | HOA Accounting Services & Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
 | `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting & Bookkeeping Support |
 | `/industries/hoa-accounting/california` | California HOA Accounting & Bookkeeping |
@@ -190,10 +190,10 @@ candidate for overlap.
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
 | `/services/accounts-payable/australia` | Accounts Payable Outsourcing, Australia |
 | `/services/accounts-payable/united-kingdom` | Outsourced Accounts Payable for UK Businesses |
-| `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing |
+| `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing Services |
 | `/services/accounts-receivable/australia` | Accounts Receivable Outsourcing, Australia |
 | `/services/accounts-receivable/united-kingdom` | Accounts Receivable Outsourcing, UK |
-| `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing |
+| `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
 | `/services/audit-support/australia` | Audit Support Services in Australia |
 | `/services/audit-support/united-kingdom` | UK Audit Support Services for Accounting Teams |
 | `/services/audit-support/united-states` | U.S. Audit Support Services for CPA Firms |
