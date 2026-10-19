@@ -17,8 +17,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/australia';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Receivable Outsourcing, Australia',
-  description: 'Australian accounts receivable support — AUD invoicing with GST, payment application, aging review, and follow-up sequences inside Xero or MYOB.',
+  title: 'Accounts Receivable Outsourcing Services AU',
+  description: 'Accounts receivable outsourcing services for Australian businesses: AUD invoicing with GST, payment application, aging review and follow-up workflows inside Xero or MYOB.',
   path: PATH,
 });
 
@@ -72,7 +72,7 @@ export default function AccountsReceivableAUPage() {
 
 
       <PremiumHero
-        region="australia" subtitle="Accounts Receivable for Australian Businesses" title="Outsourced Accounts Receivable for Australian Businesses" description="Invoicing with correct GST, payment application, aging review, and follow-up inside Xero or MYOB." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="australia" subtitle="Accounts Receivable Outsourcing Services in Australia" title="Accounts Receivable Outsourcing for Australian Businesses" description="Invoicing with GST, payment application, aging review and follow-up workflows inside your existing Xero or MYOB process." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
