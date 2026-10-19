@@ -1,3 +1,19 @@
+## 2026-10-19 — Add CPA-firm accounts payable outsourcing page
+
+### Added
+- `/industries/cpa-firms/accounts-payable-outsourcing` — commercial workflow page for CPA firms that arrange invoice preparation, coding, supported matching, vendor statement reconciliation, AP aging and payment-batch preparation for client engagements.
+- Added contextual link from the CPA-firm hub, sitemap and sitemap-date entry, route/content/search-intent registry entries, AI-readable index entries, and a targeted page-verifier command.
+- Reused the existing accounts-payable vector illustration and consultation/inquiry components.
+
+### Evidence and boundaries
+- GSC (2026-07-20 to 2026-10-18) shows a small signal for “accounts payable outsourcing for cpa firms”: 10 impressions on the U.S. AP service page at average position 63.5, with additional sparse impressions on other URLs. This is not market search volume.
+- Competitor research found a dedicated AP outsourcing page for CPA firms at Accountably, which confirms the content pattern exists but does not prove search volume or likely rankings.
+- The page distinguishes CPA-firm client-service workflows from the general U.S. AP service page. Invoice approval, vendor decisions, bank access and payment release remain with authorized client personnel. No turnaround, savings, certification or local-office claims are made.
+
+### Release status
+- Kept on `accounstone-cpa-state-query-cluster-hoa-ux-oct19`; no production merge or deployment.
+- Production build, page verifier, route/sitemap parity, similarity checks and mobile visual review remain required before merge. Vercel deployment remains blocked by the current build-rate limit.
+
 ## 2026-10-19 — Add CPA-firm overflow work support query page
 
 ### Added

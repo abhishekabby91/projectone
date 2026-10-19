@@ -1,3 +1,13 @@
+## 2026-10-19 — Accounts payable outsourcing for CPA firms
+
+Added a CPA-firm-specific AP workflow page for firms arranging invoice preparation and related AP tasks within client-service engagements. It is distinct from the general U.S. AP service page, which addresses direct business buyers, and the informational AP guides, which explain scope and controls. Google Search Console data for 2026-07-20 to 2026-10-18 showed a small early signal for “accounts payable outsourcing for cpa firms” (10 impressions on the U.S. AP service page at an average position of 63.5, with a few impressions on other URLs). This is first-party visibility evidence, not market search volume. A competitor also has a dedicated AP outsourcing page for CPA firms, establishing a relevant competitor content pattern, not proof of demand.
+
+| Title | URL | Cluster | Primary intent | Body copy / floor | Unsourced-claims / validation note |
+|---|---|---|---|---|---|
+| Accounts Payable Outsourcing for CPA Firms | `/industries/cpa-firms/accounts-payable-outsourcing` | CPA Firms / Accounts Payable | Defined invoice entry, coding, supported matching, vendor statement reconciliation, AP aging and payment-batch preparation in a CPA-firm client workflow | Target floor 650 words; verify rendered count with page verifier | Exact search volume not verified; no turnaround, savings, client-count, certification or local-office claims. Client retains invoice approval and payment release. |
+
+The page uses the existing accounts-payable vector illustration, FAQ schema, contextual links, and existing inquiry/consultation components. Run the production build, page verifier, route/sitemap parity, similarity and mobile review before merge.
+
 ## 2026-10-18 — U.S. CPA-firm tax return-type cluster
 
 Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.

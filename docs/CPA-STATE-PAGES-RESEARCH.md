@@ -1,5 +1,11 @@
 # CPA-firm SEO cluster and state-page research — 2026-10-18
 
+## Additional CPA-firm service workflow — accounts payable
+
+GSC data for 2026-07-20 through 2026-10-18 showed a small query signal for “accounts payable outsourcing for cpa firms” (10 impressions on the broad U.S. AP service page at an average position of 63.5, with only a few impressions across related URLs). This is an early first-party visibility signal, not an estimate of market-wide search volume. Competitor research also found a dedicated AP outsourcing page for CPA firms at Accountably: https://accountably.com/services/accounting/accounts-payable/. The competitor page establishes that this buyer/workflow combination is used in the market; it does not establish query volume or expected ranking.
+
+Added `/industries/cpa-firms/accounts-payable-outsourcing` as a test page for CPA firms arranging invoice entry, coding, supported PO matching, vendor statement reconciliation, AP aging and payment-batch preparation for client engagements. It is distinct from `/services/accounts-payable/united-states`, which is the broader commercial owner for direct business buyers, and from the informational AP guides. The page keeps invoice approvals, vendor decisions, bank access and payment release with the authorized client. Evaluate its performance before expanding into additional CPA-firm × service combinations.
+
 ## Decision and scope
 
 Create five separate, indexable state-qualified commercial pages for US CPA and accounting firms:

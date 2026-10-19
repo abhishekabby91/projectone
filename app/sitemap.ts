@@ -90,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/cpa-firms/white-label-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/cpa-firms/cas-production-support', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/cpa-firms/overflow-work-support', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/industries/cpa-firms/accounts-payable-outsourcing', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/real-estate/yardi-accounting-outsourcing-texas', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/amazon-seller-accounting', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries/ecommerce/shopify-accounting', priority: 0.8, changeFrequency: 'monthly' },
