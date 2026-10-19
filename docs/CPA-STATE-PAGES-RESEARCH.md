@@ -218,3 +218,39 @@ No state-level search-volume claims are made on the pages. Before publication, v
 4. Verify sitemap, `llms.txt`, ROUTES, CONTENT-REGISTRY and SEARCH-INTENTS entries.
 5. Review canonical URLs, title/description budgets, visible FAQ/schema alignment and noindex/redirect conflicts.
 6. Keep the pages on the review branch; do not merge or deploy until the owner authorizes it and the Vercel build limit permits preview validation.
+
+
+## Additional CPA-firm query cluster — overflow work support (2026-10-19)
+
+### Why this page was added
+The five state pages remain the state-qualified layer; do not create five near-identical state × service variants without separate demand and user value. A separate national workflow page was added for CPA firms that need help with a defined backlog, batch of files or temporary preparation queue. This supports the five-state cluster through contextual links without implying a state-level search-volume ranking.
+
+### First-party query signal
+Connected Search Console property: `sc-domain:accounstone.com`; Web search; 2026-07-20 through 2026-10-18.
+
+| Query | Current page | Impressions | Clicks | Average position | Interpretation |
+|---|---|---:|---:|---:|---|
+| “cpa firm overflow work outsourcing” | `/industries/cpa-firms` | 1 | 0 | 11 | Very small signal; enough to test wording, not enough to forecast demand |
+| “accounting backlog support” | `/solutions/back-office-support` | 4 | 0 | 94.2 | A related backlog theme appears, but the current page is broad and weakly positioned |
+| “backlog accounting solutions” | `/solutions/back-office-support` | 2 | 0 | 89.5 | Related wording; low-volume first-party sample |
+
+These are impressions from Accounstone's own property, not total market keyword volumes. The page is a measured test hypothesis, not proof that this is a high-volume query.
+
+### Competitor precedent
+Public competitor pages explicitly position overflow capacity for CPA firms, including [CPA Overflow](https://www.cpaoverflow.com/), [NEXACC](https://www.nexacc.com/partners) and [Syntra Orbit](https://syntraorbit.com/cpa-firms). This verifies that overflow capacity is a distinct commercial offer in the category; it does not establish keyword volume, rank likelihood or validate competitors' pricing, performance, security or client claims.
+
+### Intent boundaries and internal links
+- `/industries/cpa-firms` remains the broad CPA-firm outsourcing and capacity hub.
+- `/industries/cpa-firms/overflow-work-support` owns defined overflow queues, accounting backlog assignments and temporary capacity increases.
+- `/industries/cpa-firms/cas-production-support` owns recurring CAS production, monthly bookkeeping, reconciliations, close schedules and reporting-package preparation.
+- `/industries/cpa-firms/white-label-accounting` owns branding and client-contact boundaries for behind-the-scenes delivery.
+- `/solutions/staff-augmentation` and `/resources/guides/staff-augmentation-tax-season-guide` retain staff-augmentation and informational seasonal-capacity intents.
+- The five state pages link to overflow support, CAS production and white-label delivery; the overflow page links back to all five state pages and to relevant existing national service pages.
+
+### Page contract and release gate
+- URL: `/industries/cpa-firms/overflow-work-support`
+- Proposed keyword themes: CPA firm overflow work outsourcing; overflow accounting support for CPA firms; accounting backlog support for accounting practices; seasonal accounting preparation capacity. These are themes, not verified-volume claims.
+- Rendered prose floor: 650 words. Record the exact rendered word count from the production verifier before merge; do not pad to meet a word count.
+- Unsourced claims to avoid: guaranteed turnaround, guaranteed availability, client-count or performance statistics, pricing/savings claims, local office/staff claims, certifications, and state-specific search-volume claims.
+- Technical requirements: sitemap entry; `public/llms.txt`, `llms-small.txt`, and `llms-full.txt`; `docs/ROUTES.md`; `docs/ROUTE-INVENTORY.md`; `docs/CONTENT-REGISTRY.md`; `docs/SEARCH-INTENTS.md`; contextual links from the hub and all five state pages.
+- Release checks: run `node scripts/verify-pages.mjs`, production build, route/sitemap drift checks, mobile preview review, and a route-similarity check before merge. The Vercel preview and visual check have not yet been confirmed.
