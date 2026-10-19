@@ -165,6 +165,32 @@ const PARTIAL_RENDERING_COMMITS = new Map([
  */
 const IMPORT_COMMITS = new Set(['dc823de']);
 
+/**
+ * The three sets above are keyed by readable 7-character SHAs, but git's
+ * abbreviation length is adaptive — it grows with the repository's object
+ * count. A shallow working clone prints 7 characters; a CI checkout using
+ * `fetch-depth: 0` prints more. So `%h` is NOT a stable key, and a `Set.has`
+ * against it silently misses in exactly one environment: the workflow.
+ *
+ * That is not hypothetical. It is why `refresh-sitemap-dates.yml` kept
+ * reverting dates a local run had just produced correctly, and it means
+ * `IMPORT_COMMITS` — added 2026-10-16 after a scheduled run regressed 57
+ * routes to the history-re-import date — had never once taken effect in the
+ * workflow it was written to defend against.
+ *
+ * So `lastCommitDate` asks git for `%H` and these match by prefix: the keys
+ * stay short and readable, and a full SHA from any clone still resolves.
+ */
+function listed(set, sha) {
+  for (const key of set) if (sha.startsWith(key)) return true;
+  return false;
+}
+
+function lookup(map, sha) {
+  for (const [key, value] of map) if (sha.startsWith(key)) return value;
+  return undefined;
+}
+
 /** Dates already committed in this file, so a regeneration cannot regress one. */
 function previousDates() {
   const file = path.join(ROOT, 'lib/sitemap-dates.ts');
@@ -179,14 +205,14 @@ function previousDates() {
 function lastCommitDate(relPath, route) {
   const log = execFileSync(
     'git',
-    ['log', '-20', '--format=%h %ad', '--date=short', '--', relPath],
+    ['log', '-20', '--format=%H %ad', '--date=short', '--', relPath],
     { cwd: ROOT, encoding: 'utf8' },
   ).trim();
   for (const line of log.split('\n')) {
     const [sha, date] = line.split(' ');
     if (!sha) continue;
-    if (NON_RENDERING_COMMITS.has(sha)) continue;
-    const affects = PARTIAL_RENDERING_COMMITS.get(sha);
+    if (listed(NON_RENDERING_COMMITS, sha)) continue;
+    const affects = lookup(PARTIAL_RENDERING_COMMITS, sha);
     if (affects && !affects.test(route)) continue;
     return { sha, date };
   }
@@ -217,7 +243,7 @@ for (const file of walk(path.join(ROOT, 'app')).sort()) {
   // says for the route, which a human curated; only use the import date when
   // there is nothing to fall back to.
   dates[key] =
-    IMPORT_COMMITS.has(newest.sha) && prev[key] ? prev[key] : newest.date;
+    listed(IMPORT_COMMITS, newest.sha) && prev[key] ? prev[key] : newest.date;
 }
 
 function resolveModule(token) {

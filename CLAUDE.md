@@ -624,6 +624,19 @@ restates the condition in the source. **Prefer a predicate over a frozen list
 of today's routes**, so it stays correct as articles are added — a list would
 silently mis-date the next HOA article someone writes.
 
+**And the reason none of this worked in CI, which is the part worth carrying
+forward: `%h` is not a stable key.** Git's abbreviation length is adaptive — it
+grows with the repository's object count — so a shallow working clone prints 7
+characters and the workflow's `fetch-depth: 0` checkout prints more. Every
+`Set.has(sha)` guard in the generator was therefore a no-op *in the workflow
+only*, which is why a local run produced correct dates and the bot reverted
+them minutes later. It also means **`IMPORT_COMMITS` had never once fired in
+CI** — the guard added on 2026-10-16 specifically because a scheduled run
+regressed 57 routes to the re-import date was, in that scheduled run, dead
+code. The script now asks git for `%H` and matches the short keys by prefix,
+verified identical under `core.abbrev` 7 and 14. **If you add any other
+commit-SHA guard anywhere in this repo, key it off the full hash.**
+
 Two things to do after touching a body module, and the first one is the one
 that was skipped:
 

@@ -30,6 +30,18 @@ reaches is exactly what people get wrong; the generator does not. Routes that
 genuinely changed kept 2026-10-19, verified by spot check on both sides.
 Confirmed idempotent: two consecutive runs produce no diff.
 
+**The first attempt at this fix did not hold, and the reason is the real
+finding.** CI reverted the corrected dates again, running the very same patched
+script. Cause: `git log --format=%h` abbreviates adaptively by object count, so
+a shallow working clone emits 7 characters and the workflow's `fetch-depth: 0`
+checkout emits more. Every SHA guard in the generator — `NON_RENDERING_COMMITS`
+and `IMPORT_COMMITS` included — was a silent no-op **in CI only**, which is why
+a local run was always right and the bot was always wrong. `IMPORT_COMMITS`,
+added 2026-10-16 after a scheduled run regressed 57 routes, had never actually
+run in the scheduled job it was written for. The script now reads `%H` and
+matches the readable short keys by prefix; proved identical output under
+`core.abbrev` 7 and 14.
+
 **`refresh-sitemap-dates.yml` now carries `branches-ignore: [main]`.** Dates
 are generated and reviewed on a branch and the merge carries them, which is
 what its own comment said the job was for. It also removes a bot's write
