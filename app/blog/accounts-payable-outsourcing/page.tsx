@@ -4,8 +4,8 @@ import ArticleLayout from '@/components/article-layout';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounts Payable Outsourcing Guide: Controls & Software',
-  description: 'An operational guide to accounts payable outsourcing: invoice workflows, fraud controls, QuickBooks, Xero, NetSuite and cost factors.',
+  title: 'AP Process Controls & Fraud Prevention Guide',
+  description: 'An operational guide to payables processes, invoice approval controls, fraud prevention, QuickBooks, Xero, NetSuite and cost factors.',
   path: '/blog/accounts-payable-outsourcing',
 });
 
@@ -46,7 +46,7 @@ export default function APOutsourcingBlog() {
   return (
     <ArticleLayout
       faqs={faqs}
-      title="Accounts Payable Outsourcing: Fraud Controls, Software Workflows, and Real Costs"
+      title="AP Process Controls: Fraud Prevention, Software Workflows and Cost Factors"
       category="Accounts Payable"
       description="Fraud controls, software workflows, and real per-invoice cost ranges for the US, UK, and Australia — the operational detail behind an outsourced AP setup."
       publishedDate="2026-08-14"
