@@ -1,3 +1,15 @@
+## 2026-10-19 — CPA-firm overflow work support
+
+Added `/industries/cpa-firms/overflow-work-support` as a commercial spoke under the CPA-firm hub. The page focuses on a distinct buyer problem: a defined backlog, batch of files or temporary workload queue that needs additional preparation capacity. It separates bounded overflow work from recurring CAS production and staff augmentation.
+
+**Evidence and limits:** Accounstone's connected Search Console property showed the query “cpa firm overflow work outsourcing” with 1 impression, 0 clicks and average position 11 during 2026-07-20 to 2026-10-18. “Accounting backlog support” showed 4 impressions, 0 clicks and average position 94.2 on the existing back-office support page. These are first-party impressions from a small sample, not market search volumes. Public competitors such as CPA Overflow and NEXACC explicitly describe overflow capacity for CPA firms, showing category precedent but not demand or ranking guarantees.
+
+| Title | URL | Cluster | Primary intent | Status | Last updated |
+|---|---|---|---|---|---|
+| CPA Firm Overflow Accounting Support | `/industries/cpa-firms/overflow-work-support` | CPA Firms / Overflow Capacity | Scoped backlog, batch or temporary accounting preparation queue with defined inputs, deliverables and review points | Added on review branch; exact search volume not verified; body floor 650 words | 2026-10-19 |
+
+**Unsourced-claims boundary:** The page makes no promise about speed, guaranteed capacity, savings, local offices or staff, certifications, client counts, or state-level search demand. It does not transfer the CPA firm's client relationship, tax/accounting judgments, review, signature or filing responsibility. It links to the CPA-firm hub, five state pages, CAS production, white-label delivery and existing national service pages. The rendered word count and production verifier still need to be confirmed before merge.
+
 ## 2026-10-18 — U.S. CPA-firm tax return-type cluster
 
 Added two return-specific commercial pages under the existing U.S. tax preparation service rather than creating a parallel tax-outsourcing hierarchy. The official IRS pages identify Form 1120 as the U.S. Corporation Income Tax Return and Form 1120-S as the return for an entity whose S corporation election is effective. Public CPA-outsourcing competitors consistently list both forms among the business returns they support; that demonstrates market relevance, but not monthly search volume for the exact phrases.
