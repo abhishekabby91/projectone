@@ -8,7 +8,7 @@ This note records the current Google Search Console URL Inspection and sitemap r
 
 | URL | GSC coverage state | Last crawl | Interpretation |
 |---|---|---|---|
-| `/services/tax-preparation/united-states/1065-partnership` | Discovered — currently not indexed | Never | Google knows the URL but has not crawled it yet. This is not evidence of a rendering failure because no crawl is recorded. The route is already in the sitemap and is linked from the U.S. tax-preparation hub, tax-outsourcing guide, and CPA-firm hub. |
+| `/services/tax-preparation/united-states/1065-partnership` | Discovered — currently not indexed | Never | Google knows the URL but has not crawled it yet. This is not evidence of a rendering failure because no crawl is recorded. It is in the sitemap; the draft branch strengthens contextual links from the U.S. tax hub, tax-outsourcing guide, and CPA-firm hub. The latest live inspection listed the sitemap and U.S. tax hub as referring URLs. |
 | `/services/tax-preparation/united-states/1120-corporation` | URL is unknown to Google | Never | This route is part of the unpublished working branch. Do not diagnose it as a production indexing failure before the branch is deployed. |
 | `/services/tax-preparation/united-states/1120-s-corporation` | URL is unknown to Google | Never | This route is part of the unpublished working branch. Do not diagnose it as a production indexing failure before the branch is deployed. |
 | `/technology/yardi` | Page with redirect | 2026-10-12 | Expected for a retired URL with a permanent redirect. Google should consolidate signals to the destination; the redirect source must not appear as a sitemap URL. |
@@ -105,3 +105,18 @@ These are Search Console visibility observations, not search-volume estimates or
 5. Prioritize content and internal-link improvements to the existing U.S. tax-preparation page, which already receives impressions but has a weak average position. Do not create a second generic tax outsourcing landing page.
 
 Google's Page Indexing report distinguishes "Discovered — currently not indexed" from "Crawled — currently not indexed": the former means a crawl has not yet been recorded, while the latter calls for a closer content/canonical assessment. Neither status alone proves a code defect. See [Google Search Console Page indexing report](https://support.google.com/webmasters/answer/7440203?hl=en-GW).
+
+
+### CPA-firm hub query sample — 2026-07-21 to 2026-10-19
+
+The 90-day Search Console page/query report for `/industries/cpa-firms` returned 31 total impressions and no clicks across the sampled rows. Relevant examples:
+
+| Query | Impressions | Average position | Interpretation |
+|---|---:|---:|---|
+| `cas outsourcing for cpa firms` | 4 | 54.8 | Early signal for a distinct CAS-production page; not enough volume to estimate demand. |
+| `bookkeeping for cpa firms` | 3 | 80.7 | Supports clearer internal links to the existing U.S. bookkeeping service page. |
+| `accounts payable outsourcing for cpa firms` | 2 | 84 | Supports testing the dedicated CPA-firm AP workflow page already drafted. |
+| `accounting outsourcing for cpa firms` | 2 | 57 | Keep the CPA-firm hub as the primary broad commercial owner. |
+| `cpa firm overflow work outsourcing` | 1 | 11 | Very small sample; useful as a query-to-page relevance clue, not proof of sustained ranking. |
+
+No Search Console query data was returned for the draft branch's `white-label-accounting`, `cas-production-support`, `overflow-work-support`, or CPA-firm AP URLs in the last 90 days. Those pages must be treated as unpublished/new tests, not existing ranking assets. After publication, measure their impressions and queries before deciding whether to expand the cluster.
