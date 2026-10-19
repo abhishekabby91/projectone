@@ -10,7 +10,7 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema, gen
 const PATH = '/industries/cpa-firms/overflow-work-support';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'CPA Firm Overflow Accounting Support',
+  title: 'CPA Firm Overflow Work Outsourcing Support',
   description: 'Overflow accounting support for CPA firms: defined bookkeeping, reconciliation, cleanup and tax-workpaper queues prepared to your scope and review process.',
   path: PATH,
 });
@@ -86,7 +86,7 @@ export default function CpaFirmOverflowWorkSupportPage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-accent">A defined queue, not a generic promise</p>
             <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Move a specific piece of work without changing the whole practice</h2>
             <p className="text-base leading-relaxed text-muted md:text-lg">
-              Overflow can appear in different places: reconciliations waiting for source records, client books that need catch-up work, month-end schedules that have slipped, or a batch of tax workpapers that needs preparation before a firm’s own review. These are related capacity problems, but they do not all need the same engagement model. The first step is to define the queue and the output the firm needs back.
+              Overflow can appear in different places: reconciliations waiting for source records, client books that need catch-up work, month-end schedules that have slipped, or a batch of tax workpapers that needs preparation before a firm’s own review. These are related capacity problems, but they do not all need the same engagement model. Accounting outsourcing for overflow work is most useful when the queue, inputs and expected output are defined before assignment.
             </p>
             <p className="text-base leading-relaxed text-muted md:text-lg">
               Accounstone can discuss a scoped assignment around the systems, file structure and checklists the firm already uses. The scope should identify which tasks are included, what source records are available, how questions are escalated and who reviews the completed work. This keeps the engagement focused on deliverables rather than assuming that every client, software workflow or accounting task is automatically in scope.
