@@ -115,6 +115,7 @@ candidate for overlap.
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Accounting Support |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
