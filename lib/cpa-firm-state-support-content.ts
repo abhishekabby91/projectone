@@ -244,7 +244,8 @@ export const cpaStateSupportContent: Record<CpaStateSupportKey, CpaStateSupportC
     ],
     pilotChecklist: ['List the entities, systems, periods and intercompany accounts in scope.', 'Provide the approved mapping, close checklist and accepted sample schedule.', 'Agree how mismatches, proposed entries and missing reports are escalated.', 'Review traceability and rework before adding more entities or consolidation tasks.'],
     responsibility: 'Accounstone does not make New York State or New York City tax elections, determine tax eligibility, or provide legal or tax advice. The responsible firm and authorized client personnel retain those decisions and filing responsibilities.',
-    reference: { title: 'New York State Department of Taxation and Finance: PTET', url: 'https://www.tax.ny.gov/bus/ptet/', note: 'Official overview of the state election process; see the separate NYC PTET guidance where relevant.' },
+    reference: { title: 'New York State Department of Taxation and Finance: PTET', url: 'https://www.tax.ny.gov/bus/ptet/', note: 'Official overview of the state election process.' },
+    relatedReference: { title: 'New York City PTET guidance', url: 'https://www.tax.ny.gov/bus/ptet/city.htm', note: 'Separate official guidance for eligible city entities.' },
     faqs: [
       { question: 'Can Accounstone prepare intercompany schedules?', answer: 'Yes, when the entities, systems, account mapping and expected schedule are defined. Differences should be documented and returned for review rather than balanced through unsupported entries.' },
       { question: 'Will Accounstone make a New York PTET election?', answer: 'No. The service can organize records and payment evidence requested by the firm. Election eligibility and authorization remain with the responsible professional and authorized client personnel.' },
