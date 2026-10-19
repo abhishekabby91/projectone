@@ -113,7 +113,7 @@ candidate for overlap.
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
 | `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
-| `/industries/cpa-firms/california` | Accounting Outsourcing for California CPA Firms |
+| `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
