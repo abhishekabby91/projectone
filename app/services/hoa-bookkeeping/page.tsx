@@ -61,7 +61,7 @@ export default function HoaBookkeepingPage() {
         title="HOA Bookkeeping Services"
         description="Keep the books current between board meetings with assessment records, reconciliations, payables, fund activity and supporting schedules handled on a repeatable monthly cycle."
         cta={{ text: 'Discuss the Bookkeeping Scope', href: '/contact' }}
-        ctaSecondary={{ text: 'HOA Accounting Services', href: '/services/hoa-accounting' }}
+        ctaSecondary={{ text: 'HOA Accounting Overview', href: '/industries/hoa-accounting' }}
         background="primary-gradient"
       />
 
@@ -107,7 +107,7 @@ export default function HoaBookkeepingPage() {
         <div className="max-w-5xl mx-auto">
           <Reveal className="space-y-3 mb-7"><span className="text-sm font-semibold uppercase tracking-wide text-accent">Related HOA services</span><h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Connect the Books to the Reporting</h2></Reveal>
           <div className="flex flex-wrap gap-3">
-            <Link href="/services/hoa-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Accounting</Link>
+            <Link href="/industries/hoa-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Accounting Overview</Link>
             <Link href="/services/hoa-financial-reporting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Financial Reporting</Link>
             <Link href="/industries/hoa-accounting" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Accounting Overview</Link>
             <Link href="/blog/hoa-accounting-month-end-checklist" className="rounded-lg border border-border bg-white px-4 py-2 font-medium text-primary">HOA Month-End Checklist</Link>
@@ -117,7 +117,7 @@ export default function HoaBookkeepingPage() {
 
       <FAQSection subtitle="HOA bookkeeping questions" items={faqs} columns={2} />
       <InquirySection source={PATH} title="Review the HOA Bookkeeping Cycle" lead="Tell us what is current, what is behind and what the board needs to see each month." />
-      <CTABanner title="Books Ready Before the Board Meeting" description="A repeatable bookkeeping cycle can be structured around existing assessment records, bank accounts and HOA systems." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/services/hoa-accounting' }} background="primary" />
+      <CTABanner title="Books Ready Before the Board Meeting" description="A repeatable bookkeeping cycle can be structured around existing assessment records, bank accounts and HOA systems." cta={{ text: 'Start a Conversation', href: '/contact' }} ctaSecondary={{ text: 'HOA Accounting', href: '/industries/hoa-accounting' }} background="primary" />
     </main>
   );
 }
