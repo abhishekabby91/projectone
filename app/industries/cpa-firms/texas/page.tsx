@@ -5,8 +5,8 @@ import { generateMetadata } from '@/lib/seo';
 const PATH = '/industries/cpa-firms/texas';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Texas CPA Firm Outsourcing',
-  description: 'Accounting, bookkeeping and tax-preparation support for Texas CPA firms, scoped to your client files, software and review process.',
+  title: 'Accounting Outsourcing for Texas CPA Firms',
+  description: 'Outsourcing support for Texas CPA firms covering bookkeeping, contractor and multi-location records, reconciliations and agreed tax workpapers.',
   path: PATH,
 });
 
