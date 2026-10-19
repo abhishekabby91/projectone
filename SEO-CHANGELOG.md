@@ -1,3 +1,22 @@
+## 2026-10-19 — GSC-led ranking and indexing review
+
+**Data source:** Connected Search Console domain property `sc-domain:accounstone.com`, trailing 90-day page and query reports for 2026-07-21 through 2026-10-19, plus URL Inspection and sitemap status. See `docs/GSC-QUERY-OPPORTUNITIES-2026-10-19.md` for page totals, query examples, indexing samples, caveats and next checks.
+
+### Existing page refinements
+
+- **`app/blog/tax-preparation-outsourcing/page.tsx`** — changed the metadata title/description to make its informational guide role explicit and improved the early contextual link to the U.S. commercial tax-preparation page. The service page remains the commercial owner; no duplicate page was added.
+- **`app/solutions/staff-augmentation/page.tsx`** — aligned metadata with the query family “accounting staff augmentation services,” which had 25 impressions at average position 25.8; the broader “accounting staff augmentation” query had 182 impressions at position 40.1.
+- **`app/markets/united-states/page.tsx`** — made the hero serve U.S. firms and businesses and clarified its geographic-hub role. Query reporting was dominated by broad offshore-accounting variants, which belong on the dedicated offshore accounting solution page instead.
+
+**Indexing observation:** GSC reported the sitemap as valid with 205 indexed URLs and no errors/warnings, but last downloaded it on 2026-10-16. Several routes in the live source/sitemap are still reported as “URL unknown to Google” or “Discovered — currently not indexed.” This may reflect recent publication/discovery lag; verify live responses, submit the sitemap again, and strengthen contextual links before treating it as a content-quality issue.
+
+**URLs changed:** No.  
+**Metadata changed:** Yes — tax preparation guide and staff augmentation.  
+**Visible content changed:** Yes — U.S. market hero wording.  
+**Routes added/removed:** No.
+ 
+---
+
 ## 2026-10-18 — HOA query strategy and Los Angeles County page refinement
 
 ### app/industries/hoa-accounting/los-angeles-county/page.tsx
