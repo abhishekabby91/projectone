@@ -16,8 +16,8 @@ candidate for overlap.
 | `/` | Accounting, Tax & Bookkeeping Outsourcing \| Accounstone |
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
-| `/blog/accounts-payable-outsourcing` | AP Outsourcing: Controls, Software, Cost |
-| `/blog/accounts-receivable-management` | Outsourcing Accounts Receivable: A Guide |
+| `/blog/accounts-payable-outsourcing` | Accounts Payable Outsourcing Guide: Controls & Software |
+| `/blog/accounts-receivable-management` | Accounts Receivable Outsourcing Guide: DSO & Workflow |
 | `/blog/audit-support-services` | Audit Support: What Can Be Delegated |
 | `/blog/eunify-quickbooks-hoa-accounting` | eUnify + QuickBooks for HOA Accounting |
 | `/blog/hoa-accounting-appfolio` | HOA Accounting with AppFolio |
@@ -95,7 +95,7 @@ candidate for overlap.
 | `/blog/quickbooks-month-end-close-checklist` | QuickBooks Month-End Close Checklist |
 | `/blog/real-estate-accounting-month-end-close` | Real Estate Accounting Month-End Close |
 | `/blog/rent-roll-accounting` | Rent Roll Accounting Explained |
-| `/blog/tax-preparation-outsourcing` | Tax Preparation Outsourcing: Workflow, Software & Controls |
+| `/blog/tax-preparation-outsourcing` | Tax-Season Workflow Guide: Software, Reviews & Controls |
 | `/blog/upwork-vs-accounstone` | Upwork vs Accounstone for Accounting Support |
 | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | U.S. CPA Firm Outsourcing Readiness Checklist |
 | `/blog/yardi-accounting-workflow` | Yardi Accounting Workflow |
@@ -215,7 +215,7 @@ candidate for overlap.
 | `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Support for Accountants and Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Offshore Accounting Team |
-| `/solutions/offshore-accounting-support` | Offshore Accounting Services for Firms |
+| `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
