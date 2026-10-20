@@ -77,7 +77,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - Property management accounting support for Buildium: https://www.accounstone.com/industries/property-management/buildium-accounting-support
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
 - Technology and SaaS: https://www.accounstone.com/industries/technology
-- E-commerce: https://www.accounstone.com/industries/ecommerce
+- E-commerce accounting services: settlement reconciliation, marketplace fees, refunds, inventory/COGS records and channel reporting: https://www.accounstone.com/industries/ecommerce
 - Healthcare: https://www.accounstone.com/industries/healthcare
 - Construction and contractors: https://www.accounstone.com/industries/construction
 - Professional services: https://www.accounstone.com/industries/professional-services
@@ -87,7 +87,7 @@ https://www.accounstone.com/services/audit-support/united-states
 Accounstone works within clients' existing software and workflows. Current platform experience includes:
 
 - QuickBooks Online
-- Xero
+- Xero accounting services and bookkeeping support inside existing Xero organisations: https://www.accounstone.com/technology/xero
 - Sage
 - NetSuite
 - Drake Tax
