@@ -20,9 +20,7 @@ The company's role is to perform defined accounting preparation and processing w
 
 ### Accounting firms and CPA firms
 
-Support can include recurring bookkeeping, accounting production, reconciliations, month-end close, tax preparation work, workpaper preparation, accounts payable/receivable and defined audit-support schedules.
-
-The accounting firm retains the client relationship and its own review and approval processes.
+Support can include recurring bookkeeping, accounting production, reconciliations, month-end close, scoped tax-preparation workpapers and accounts payable/receivable. The accounting firm retains the client relationship, professional judgement, review, approval and sign-off.
 
 ### Businesses
 
@@ -109,7 +107,9 @@ Accounting support involving subscription-related transactions, reconciliations,
 
 ### E-commerce
 
-Accounting support involving multi-channel reconciliation, payables, receivables and sales-tax data preparation.
+E-commerce accounting services for online retailers and marketplace sellers: reconcile gross sales, fees, refunds, reserves and net payouts; maintain inventory/COGS records from approved source data; and prepare channel-level reporting. Tax registration decisions and filings remain with the client or its tax professional.
+
+https://www.accounstone.com/industries/ecommerce
 
 ### Healthcare
 
@@ -124,6 +124,8 @@ Accounting support for professional practices, including recurring bookkeeping, 
 Accounstone works inside clients' existing systems. It does not claim software vendor partnership, reseller status, certification or implementation services unless a page specifically states otherwise.
 
 Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB, Yardi, AppFolio and eUnify workflows where applicable.
+
+Xero accounting services inside existing Xero organisations: https://www.accounstone.com/technology/xero
 
 ## Markets
 
