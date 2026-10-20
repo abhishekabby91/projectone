@@ -519,14 +519,26 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  → would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted → never crawled
 ```
 
-The first command must print nothing. The second should print the four
-legacy page files that are permanent redirect sources plus the two live
-`noindex` routes: `/blog/hoa-delinquency-accounting`,
-`/blog/hoa-monthly-close-process`, `/blog/hoa-vendor-invoice-processing`,
-`/blog/hoa-year-end-checklist`, `/technology/myob` and `/thank-you`.
-Redirect sources should be excluded because their destinations, not the old
-URLs, belong in the sitemap. The two noindex URLs should also be excluded.
-Anything else in either direction is drift.
+The first command must print nothing. **The second should now print exactly
+two routes: `/technology/myob` and `/thank-you`**, the two live `noindex`
+pages. Anything else in either direction is drift.
+
+**It used to print six (2026-10-20).** The other four were
+`/blog/hoa-delinquency-accounting`, `/blog/hoa-monthly-close-process`,
+`/blog/hoa-vendor-invoice-processing` and `/blog/hoa-year-end-checklist` —
+page files left on disk after those URLs became permanent redirects. The
+redirect fires first, so none of them had been reachable for weeks: dead code
+carried as four standing exceptions to this check, which is how a real drift
+would have hidden in the noise. The files are deleted; the redirects stay, and
+all four were re-verified as 308s to their destinations afterwards.
+
+**Deleting a retired page file is only half the job.** Three of those four
+were still listed on `/blog`, so the hub linked a redirect source *and* its
+destination as two separate articles. The sitewide "zero internal links
+pointing at a redirect" sweep had been missing them because it matched only the
+JSX `href="…"` form — the blog index declares links as `href: '…'` inside an
+object array, which that pattern never sees. **Sweep both forms**, or the check
+silently passes on a page whose links live in data rather than markup.
 
 The October 12, 2026 audit found three additional canonical, indexable guides
 that existed on disk but were missing from the sitemap: the QuickBooks month-end

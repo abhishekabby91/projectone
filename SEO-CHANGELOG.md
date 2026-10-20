@@ -1,3 +1,40 @@
+## 2026-10-20b — Four dead page files deleted, and the link sweep that was missing them
+
+`/blog/hoa-delinquency-accounting`, `/blog/hoa-monthly-close-process`,
+`/blog/hoa-vendor-invoice-processing` and `/blog/hoa-year-end-checklist` kept a
+`page.tsx` on disk after becoming permanent redirects. The redirect fires
+first, so none had been reachable for weeks. They were carried as four
+standing exceptions to the sitemap drift check, which is exactly where a real
+drift would hide. Deleted; the drift check's expected output drops from six
+routes to two, and both are the genuine `noindex` pages.
+
+**Deleting them surfaced a live defect the sweep had never caught.** Three of
+the four were still listed on `/blog`, so the hub advertised a redirect source
+*and* its destination as two separate articles — duplicates, not links needing
+repointing, since all three destinations were already in the list. The
+"zero internal links pointing at a redirect" sweep had been matching only the
+JSX `href="…"` attribute form; the blog index declares its links as
+`href: '…'` inside an object array and was invisible to it. Re-run across both
+forms, all 18 redirect sources now return zero inbound links.
+
+**The redirects themselves were kept deliberately.** Removing them would 404
+roughly 330 impressions still arriving on retired URLs in the last 90 days —
+`/services/tax-preparation` 100, `/services/accounts-receivable` 54,
+`/services/hoa-accounting` 53, `/services/audit-support` 52,
+`/services/property-management-accounting` 45, `/services/accounts-payable` 17,
+`/services/payroll` 11 — plus whatever link equity they carry. A redirect is
+one line of config with no page and no content behind it; the clutter was the
+dead files, not the rules.
+
+**Verified:** eslint silent, build clean, `verify-pages.mjs` PASS on 219
+routes, drift clean both directions (221 page files, 219 URLs, only the two
+`noindex` exclusions), and all four retired URLs re-confirmed as 308s to their
+destinations.
+
+**New URLs:** none. **Redirects:** unchanged, all 18 retained.
+
+---
+
 ## 2026-10-20 — Correcting the Googlebot claim, and restoring the hero booking CTA
 
 **The "Cloudflare blocked Googlebot" finding recorded yesterday was wrong, and
