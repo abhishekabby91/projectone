@@ -12,8 +12,8 @@ import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Xero Accounting Support for Growing Businesses',
-  description: 'Xero support for cleanup, bookkeeping, reconciliations, AP/AR and recurring reporting inside the Xero file your client already runs.',
+  title: 'Xero Accounting Services & Support',
+  description: 'Xero accounting services for bookkeeping, reconciliations, cleanup, payables, receivables and month-end reporting inside your existing Xero file.',
   path: '/technology/xero',
 });
 
@@ -28,21 +28,45 @@ export default function XeroPage() {
   ]);
 
   const workflows = [
-    'Xero organization and chart-of-accounts setup',
-    'Transaction processing and bank-feed review',
-    'Bank and credit-card reconciliation',
-    'Accounts payable and receivable workflows',
-    'Cleanup and historical corrections',
-    'Month-end close and reporting preparation',
+    'Transaction coding and bank-feed review inside your existing Xero organisation',
+    'Bank and credit-card reconciliations, including statement-balance checks',
+    'Accounts payable and receivable processing, with exceptions flagged for review',
+    'Historical cleanup and reconciliation of opening balances',
+    'Month-end schedules and reporting preparation',
+    'Tracking-category and foreign-currency review where already in use',
   ];
 
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <PremiumHero subtitle="Platform Workflow Support" title="Xero Accounting Support" description="Help with the accounting work around Xero — from setup and cleanup to reconciliations, recurring bookkeeping and month-end." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
+      <PremiumHero subtitle="Xero Accounting Workflow Support" title="Xero Accounting Services & Support" description="Accounting support inside your existing Xero organisation: bookkeeping, bank reconciliations, payables and receivables, cleanup, and month-end reporting." cta={{ text: 'Talk Through Your Workflow', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Xero makes the books accessible. It does not make the process automatic.</h2><p className="text-lg text-muted leading-8">Cloud accounting removes a lot of friction around access, but the underlying work is still there: reconciliations, exception handling, consistent coding, supporting records and a close process someone owns. Good Xero support is less about adding another tool and more about keeping the accounting routine dependable.</p></></Reveal></div></section>
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Xero accounting services start with the records behind the bank feed.</h2><p className="text-lg text-muted leading-8">Xero accounting services are most useful when the organisation is already in place but the recurring work needs consistent attention: transaction coding, statement-level reconciliation, accounts payable and receivable, exception tracking and month-end schedules. A feed marked as reconciled is not, by itself, proof that the account agrees to the statement. The accounting routine still needs review, supporting records and a clear owner for decisions.</p></></Reveal></div></section>
+
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal className="space-y-3 mb-8">
+            <>
+              <span className="text-sm font-semibold tracking-wide uppercase text-accent">Who this supports</span>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Xero support for accounting firms and businesses</h2>
+              <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">The work takes place inside the Xero organisation already in use. The scope depends on who owns the client relationship and who reviews the accounting output.</p>
+            </>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="rounded-2xl border border-border bg-input p-6 sm:p-7">
+              <h3 className="text-xl font-bold text-primary">For CPA and accounting firms</h3>
+              <p className="mt-3 text-muted leading-7">Use an outsourcing partner for recurring Xero bookkeeping, reconciliations and supporting schedules when internal capacity is tight. Your firm retains the client relationship, review and sign-off; unresolved items are returned for a decision rather than silently assumed.</p>
+              <Link href="/industries/cpa-firms" className="mt-4 inline-flex font-semibold text-primary underline underline-offset-4">Accounting outsourcing for CPA firms</Link>
+            </div>
+            <div className="rounded-2xl border border-border bg-input p-6 sm:p-7">
+              <h3 className="text-xl font-bold text-primary">For businesses using Xero</h3>
+              <p className="mt-3 text-muted leading-7">Support can cover transaction coding, bank and card reconciliations, AP/AR processing, month-end schedules and reporting preparation. Access, approvals and the items that need management input are agreed before work begins.</p>
+              <Link href="/services/accounting/united-states" className="mt-4 inline-flex font-semibold text-primary underline underline-offset-4">Accounting support services</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Workflows</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Accounting Work Around Xero</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{workflows.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/technology/xero"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
 
