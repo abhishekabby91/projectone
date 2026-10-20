@@ -26,9 +26,9 @@ import {
 const PATH = '/industries/cpa-firms';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting & Tax Outsourcing for CPA Firms',
+  title: 'Outsourced Accounting for CPA Firms',
   description:
-    'Outsourced accounting and tax preparation support for U.S. CPA firms, including busy-season capacity, bookkeeping cleanup, CAS production and workpapers.',
+    'Outsourced accounting for CPA firms: bookkeeping cleanup, CAS production, tax-preparation support and workpapers, with review and sign-off retained by your firm.',
   path: PATH,
 });
 
@@ -64,8 +64,8 @@ export default function CPAFirmsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="For US CPA firms"
-        title="Preparation Capacity for CPA Firms, Without Giving Up Review"
+        subtitle="For CPA and accounting firms"
+        title="Outsourced Accounting for CPA Firms, With Review Retained"
         description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'Book a Consultation', href: '#inquiry' }}
