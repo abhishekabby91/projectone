@@ -24,7 +24,7 @@ const faqs = [
       'Inventory and COGS records can be maintained using the method and source information approved for the engagement. Margin reporting depends on current inventory records, purchase costs, returns and the agreed costing method.',
   },
   {
-    question: 'Can you help with multi-state sales tax nexus tracking?',
+    question: 'Can you organise sales data for a tax adviser to review?',
     answer:
       'Sales data can be organized by destination state for review by the client’s tax adviser. Tax registration decisions, tax advice and filings remain with the client or its appointed tax professional.',
   },
@@ -53,7 +53,7 @@ export default function EcommerceIndustryPage() {
       benefits={[
         'Multi-channel reconciliation across Shopify, Amazon, and other marketplaces',
         'Inventory and cost of goods sold (COGS) tracking for accurate margins',
-        'Multi-state sales tax nexus tracking',
+        'Sales data organised by destination state for tax-adviser review',
         'Marketplace fees, refunds, and chargebacks broken out as separate line items',
         'True net revenue reporting per sales channel',
         'QuickBooks and Xero integration with common e-commerce platforms',
