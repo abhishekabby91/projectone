@@ -164,7 +164,7 @@ The four property-management pages are linked from the property-management hub; 
 
 Refined `/industries/hoa-accounting/los-angeles-county` to remove low-value generic housing-statistics framing and an unneeded chapter membership statistic, then added a need-led section routing readers by recurring monthly close, catch-up/cleanup, assessment receivables and existing software. Added contextual links to existing HOA guides and AppFolio, Buildium, Yardi and eUnify service pages. No new public URL was created. The companion `docs/HOA-QUERY-TARGETING-STRATEGY.md` maps location × software × need queries, page ownership, internal-link rules and Search Console validation steps. Query examples are hypotheses, not claims of measured search volume.
 | HOA Chart of Accounts: Example and Setup Guide | `/blog/hoa-chart-of-accounts` | HOA Accounting | Example account groups for operating/reserve cash, assessments, liabilities, income and expenses; setup guidance for condo associations | GSC-led example table and metadata refresh | 2026-10-18 |
-| Ecommerce Accounting Services for Online Retailers | `/industries/ecommerce` | E-Commerce | Multi-channel payout reconciliation, marketplace fees/refunds, inventory/COGS and QuickBooks/Xero workflow | GSC-led title and description refinement | 2026-10-18 |
+| E-commerce Accounting Services for Online Retailers | `/industries/ecommerce` | E-Commerce | Multi-channel settlement reconciliation, fees/refunds/reserves, inventory/COGS records and channel reporting; tax decisions and filings remain with client's tax professional | Existing URL refined to match commercial search intent and clarify scope | 2026-10-20 |
 
 
 ## 2026-10-18 — Indexing cluster refinement
