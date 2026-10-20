@@ -197,3 +197,15 @@ Use public freelance job briefs as **qualitative evidence of buyer tasks**, not 
 - The GSC sitemap report shows 205 submitted URLs and zero sitemap errors/warnings. Its sitemap-details response reports zero indexed within that endpoint even while URL Inspection returns indexed pages, so do not treat that one field as the site's overall index count.
 
 Recheck the three crawl-pending canonical URLs after Google revisits them. A “discovered” state alone does not prove a technical failure. Do not create duplicate URLs, alter canonical tags, or repeatedly resubmit the same sitemap without new evidence.
+
+## CPA workflow additions — release staging 2026-10-20
+
+| Search intent | Canonical route | Cluster rule |
+|---|---|---|
+| CPA firm overflow accounting work support | `/industries/cpa-firms/overflow-work-support` | Commercial workflow intent behind the CPA firm's existing client relationship |
+| Accounts payable outsourcing support for CPA firms | `/industries/cpa-firms/accounts-payable-outsourcing` | Preparation/reconciliation only; client retains payment authorization |
+| California tax workpaper support for CPA firms | `/industries/cpa-firms/california-tax-workpaper-support` | CPA firm retains professional review and conclusions |
+| Texas bookkeeping cleanup support for CPA firms | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Historical cleanup distinct from recurring monthly production |
+| Florida property/entity accounting support for CPA firms | `/industries/cpa-firms/florida-property-entity-accounting-support` | Distinct property/entity-ledger workflow |
+| New York multi-entity accounting support for CPA firms | `/industries/cpa-firms/new-york-multi-entity-accounting-support` | Multi-entity reconciliation and close support |
+| Illinois inventory accounting support for CPA firms | `/industries/cpa-firms/illinois-inventory-accounting-support` | Inventory accounting workpapers, not inventory valuation opinions |
