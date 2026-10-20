@@ -28,7 +28,7 @@ const PATH = '/industries/cpa-firms';
 export const metadata: Metadata = genMeta({
   title: 'Outsourced Accounting for CPA Firms',
   description:
-    'Outsourced accounting for CPA firms: bookkeeping cleanup, CAS production, tax-preparation support and workpapers, with review and sign-off retained by your firm.',
+    'Outsourced accounting for CPA firms: bookkeeping cleanup, CAS production, tax-prep support and workpapers, with review and sign-off retained by your firm.',
   path: PATH,
 });
 
