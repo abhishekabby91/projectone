@@ -44,6 +44,31 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: protectedPaths,
       })),
+      // The two major search crawlers, named explicitly (2026-10-20).
+      //
+      // Both already matched the `*` group above, so this changes nothing a
+      // crawler is permitted to do — it is housekeeping, not a fix. It exists
+      // because every other crawler this site cares about has its own group,
+      // and Bing was the conspicuous omission while Bing Webmaster Tools was
+      // reporting URLs as "Blocked". Being named removes robots.txt from the
+      // list of things anyone has to rule out. Note that a named group does
+      // NOT inherit the wildcard's rules, which is why the protected paths are
+      // repeated here as they are everywhere else in this file.
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        disallow: protectedPaths,
+      },
+      {
+        userAgent: 'bingbot',
+        allow: '/',
+        disallow: protectedPaths,
+      },
+      {
+        userAgent: 'msnbot',
+        allow: '/',
+        disallow: protectedPaths,
+      },
       // Keep the major SEO crawlers available so backlink and technical
       // monitoring tools can audit the public site. This does not improve
       // Google rankings directly; it keeps third-party diagnostics current.
