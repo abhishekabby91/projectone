@@ -63,8 +63,10 @@ One primary search intent → one primary URL. Check this file before creating a
 | Client Accounting Services (CAS) for CPA firms | `/resources/guides/client-accounting-services-cas-guide` | Informational |
 | How to choose an accounting outsourcing partner | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | Evaluation |
 | Staff augmentation vs. dedicated team vs. offshore vs. back-office | `/resources/guides/choosing-an-engagement-model` | Comparison |
-| QuickBooks vs. Xero | `/resources/guides/quickbooks-vs-xero-comparison` | Comparison |
+| QuickBooks vs. Xero | `/resources/guides/quickbooks-vs-xero-comparison` | Comparison — informational comparison only; commercial Xero support belongs to `/technology/xero` |
 | ASC 606 revenue recognition for SaaS | `/resources/insights/asc-606-revenue-recognition-saas` | Informational (specialist) |
+| E-commerce accounting services for Shopify and marketplace sellers | `/industries/ecommerce` | Commercial / industry-specific — settlement reconciliation, marketplace fees, refunds, reserves, inventory/COGS records and channel reporting; tax registration decisions and filings remain with the client or its tax professional |
+| Xero accounting services and bookkeeping support | `/technology/xero` | Commercial / platform-specific — accounting workflows inside an existing Xero organisation, including statement-level reconciliations, transaction coding, AP/AR and month-end schedules; no implementation, migration or vendor certification |
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
 
 ## Rule for adding a row
