@@ -1,6 +1,13 @@
 name: Notify IndexNow
 
 on:
+  # Manual full-site submission. The push trigger below only submits URLs a
+  # commit changed, so pages that have not been edited since this workflow was
+  # added were never announced to Bing at all. On 2026-10-20 Bing Site Explorer
+  # knew 116 URLs against 219 published — roughly half the site. Run this
+  # workflow by hand to submit every URL in the current production sitemap.
+  workflow_dispatch:
+
   push:
     branches:
       - main
@@ -25,6 +32,7 @@ jobs:
         env:
           BEFORE_SHA: ${{ github.event.before }}
           AFTER_SHA: ${{ github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -40,6 +48,13 @@ jobs:
               with open(output_path, "a") as stream:
                   for name, value in values.items():
                       print(f"{name}={value}", file=stream)
+
+          # A hand-run of this workflow means "announce everything", so there is
+          # no diff to consult and no preceding commit to compare against.
+          if os.environ.get("EVENT_NAME") == "workflow_dispatch":
+              output(skip="false", mode="all", urls="[]")
+              print("Manual run; will submit every URL in the production sitemap.")
+              raise SystemExit(0)
 
           # A root/branch-creation push has no reliable preceding commit.
           if not before or set(before) == {"0"}:
