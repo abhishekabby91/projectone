@@ -64,8 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...solutions.map((s) => ({ path: `/solutions/${s.slug}`, priority: 0.85, changeFrequency: 'monthly' as const })),
     ...markets.map((m) => ({ path: `/markets/${m.slug}`, priority: 0.8, changeFrequency: 'monthly' as const })),
     // MYOB is noindex as of 2026-09-04 (see app/technology/myob/page.tsx).
+    // Yardi's former /technology/yardi URL permanently redirects to /technology.
+    // Keep the redirect source out of the sitemap; current Yardi accounting intents
+    // are served by the HOA and property-management workflow pages.
     ...technologies
-      .filter((t) => t.slug !== 'myob')
+      .filter((t) => !['myob', 'yardi'].includes(t.slug))
       .map((t) => ({ path: `/technology/${t.slug}`, priority: 0.75, changeFrequency: 'monthly' as const })),
     ...industries.map((i) => ({ path: `/industries/${i.slug}`, priority: 0.75, changeFrequency: 'monthly' as const })),
     { path: '/company-registration', priority: 0.7, changeFrequency: 'monthly' },
