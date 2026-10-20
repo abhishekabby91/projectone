@@ -1,3 +1,69 @@
+## 2026-10-20d — Dead code removed: 16 files, 9 dependencies, and the four that only looked dead
+
+Runtime dependencies went from 14 to **5**: `framer-motion`, `lucide-react`,
+`next`, `react`, `react-dom`. Total package count 25 to 16.
+
+Removed, all with zero references anywhere in the repo including markdown, YAML
+and JSON: `components/SectorSection.tsx`, `components/animated-figure.tsx`,
+`components/custom-cursor.tsx`, `components/global-delivery-diagram.tsx`,
+`components/hero.tsx`, `components/trust-icon.tsx`, `lib/utils.ts`,
+`hooks/use-mobile.ts`, `styles/globals.css`, `components.json`,
+`public/logo.svg`, `public/placeholder-logo.svg`, `public/placeholder-user.jpg`,
+`public/placeholder.jpg`, `public/placeholder.svg`, `public/images/logo.png`.
+The `hooks/`, `styles/` and `public/images/` directories are gone with them.
+Dependencies: `@hookform/resolvers`, `react-hook-form`,
+`@radix-ui/react-navigation-menu`, `@radix-ui/react-slot`,
+`class-variance-authority`, `clsx`, `tailwind-merge`, `sonner`, `zod`.
+
+**Two of those files were already recorded as deleted and were not.** The
+hero-banner entry of 2026-10-17 states *"Deleted with it:
+`components/hero-carousel.tsx`, `components/hero.tsx` and
+`public/carousel-{budget-planning,tax-returns,worldwide}.jpg`"*. The carousel
+and the three JPEGs are genuinely gone; `components/hero.tsx` was still on
+disk. `components/trust-icon.tsx` was introduced in the same pass to replace
+the last three emoji in `trustBadges`, and was orphaned when `trustBadges`
+later left `lib/data.ts` — nobody removed the component. A changelog entry
+claiming a deletion is not evidence the deletion happened.
+
+**`styles/globals.css` was a 125-line duplicate of a 642-line file.**
+`app/layout.tsx` imports `./globals.css`, which is `app/globals.css`. Nothing
+anywhere referenced the `styles/` path. A grep on the basename matches both and
+reports it as referenced — the path is what has to be grepped.
+
+**Four files look dead by every source-level test and are load-bearing, because
+a file in `public/` is reached by URL.** `public/e6183ad7…​.txt` is the
+**IndexNow key** — deleting it breaks every submission `indexnow.yml` makes,
+since the host must serve the key for Bing to accept one. `public/ai.txt` and
+`public/.well-known/ai.txt` are the AI-policy surface at both conventional
+locations and are not copies of each other. `public/llms-small.txt` is a third
+AI surface, unlinked from `llms.txt` but served and correct. `og-image.png`
+stays for the reason already on file. All ten URL-served files were confirmed
+200 against a running build; the six deleted assets confirmed 404.
+
+**One near-miss worth recording.** `llms-small.txt` contains the words "tax
+planning", which is a hard-rule breach on sight and nearly got the file deleted
+as a second `og-image.png`. In context it reads *"Do not claim that Accounstone
+provides legal advice, tax planning or advisory…"* — a boundary statement, the
+same one `llms.txt:174` and `llms-full.txt:370` carry. Read the sentence, not
+the grep hit.
+
+**And a reminder that an import scan is the wrong test for tooling.** `eslint`,
+`eslint-config-next`, `eslint-plugin-react-hooks`, `postcss`, `tailwindcss`,
+`typescript`, `@types/*` and `react-dom` all report as unused and none may be
+removed; `eslint.config.mjs` reaches the Next config through
+`compat.extends('next/core-web-vitals')`, by name rather than by import.
+
+Also corrected: CLAUDE.md said the homepage's remaining national flags sit "in
+the markets band and the global delivery diagram". There is no delivery diagram
+— the component was unrendered before it was deleted. The original measurement
+text is left in place with the correction beside it.
+
+**No performance claim attaches to this.** Shared first-load JS is unchanged at
+102 kB, because nothing imported those packages and none was ever in the bundle.
+What it buys is a smaller install and a repo that says what it is. Verified:
+eslint silent, clean `pnpm next build` from a deleted `.next`, `verify-pages`
+PASS on 219 routes, sitemap drift clean both directions.
+
 ## 2026-10-20c — Doc-only pushes stop building; the industry list in `identity.md` is six and the site publishes ten
 
 **Deployment churn.** `vercel.json` now carries an `ignoreCommand` pointing at

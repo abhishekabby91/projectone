@@ -525,6 +525,61 @@ changed a page gets no fresh preview. That is previews only — `main` is exempt
 — and the next push carrying a rendered change rebuilds it. If a preview ever
 looks stale, check the branch's tip commit before concluding the page is wrong.
 
+### The dead-code sweep, and what must survive one (2026-10-20)
+
+Removed: 16 files and 9 dependencies, all with zero references anywhere in the
+repo including markdown, YAML and JSON. Runtime dependencies went from 14 to
+**5** (`framer-motion`, `lucide-react`, `next`, `react`, `react-dom`).
+
+| Removed | Why it was dead |
+|---|---|
+| `components/{SectorSection,animated-figure,custom-cursor,global-delivery-diagram,hero,trust-icon}.tsx` | nothing imported them; `hero.tsx` was *recorded as deleted* in `SEO-CHANGELOG.md` on the hero-banner pass and was still on disk, and `trust-icon.tsx` was orphaned when `trustBadges` left `lib/data.ts` |
+| `lib/utils.ts`, `hooks/use-mobile.ts`, `components.json` | shadcn scaffolding; there is no `components/ui` directory and never was |
+| `styles/globals.css` | a 125-line duplicate. `app/layout.tsx` imports `./globals.css`, i.e. `app/globals.css` (642 lines). Nothing referenced the `styles/` path |
+| `public/{logo.svg,placeholder*.{svg,jpg},images/logo.png}` | v0 template leftovers; `logo.svg` was 0 bytes |
+| `@hookform/resolvers`, `react-hook-form`, `@radix-ui/react-{navigation-menu,slot}`, `class-variance-authority`, `clsx`, `tailwind-merge`, `sonner`, `zod` | zero imports; the enquiry form is hand-rolled, not react-hook-form |
+
+**The method matters more than the list, because two whole classes of file look
+dead and are not.**
+
+**1. A file in `public/` is reached by URL, so "unreferenced in source" says
+nothing about it.** Four were nearly deleted on that reasoning and all four are
+load-bearing:
+
+- **`public/e6183ad7c7794fe1a98a2b89634c01c9.txt` is the IndexNow key.**
+  Deleting it breaks every Bing submission `indexnow.yml` makes — the host has
+  to serve the key for a submission to be accepted. It has no reference
+  anywhere by design.
+- **`public/ai.txt` and `public/.well-known/ai.txt`** are the AI-policy
+  surface at both conventional locations, and they are **not** copies of each
+  other.
+- **`public/llms-small.txt`** is a third AI surface, unlinked from `llms.txt`
+  but served and correct.
+- `public/og-image.png` stays for the reason already recorded above: it is
+  overwritten rather than deleted so an old share URL cannot serve the CFO card.
+
+So the check is `curl` against a running build, not grep. Every one of those
+returns 200; the six deleted assets return 404.
+
+**2. A near-miss worth repeating: `llms-small.txt` contains the words "tax
+planning", which is a hard-rule breach on sight.** In context it reads *"Do not
+claim that Accounstone provides legal advice, tax planning or advisory…"* — a
+boundary statement, the same one `llms.txt:174` and `llms-full.txt:370` carry.
+**Read the sentence, not the grep hit.**
+
+**3. A dependency can be required without ever being imported.** `eslint`,
+`eslint-config-next`, `eslint-plugin-react-hooks`, `postcss`, `tailwindcss`,
+`typescript`, `@types/*` and `react-dom` all show as unused to an import scan
+and none may be removed — `eslint.config.mjs` reaches the Next config through
+`compat.extends('next/core-web-vitals')`, by name rather than by import.
+
+Verified after: `pnpm eslint .` silent, a clean `pnpm next build` from a deleted
+`.next`, `verify-pages.mjs` PASS on 219 routes, sitemap drift clean both
+directions. **Shared first-load JS did not move (102 kB)** — nothing imported
+those packages, so none of them was ever in the bundle. This sweep buys a
+smaller install and a repo that says what it is; it does not make the site
+faster, and claiming otherwise would be inventing a result.
+
 ### Check duplication within a page, not just across pages
 
 The restructure measured cross-page similarity throughout and kept it low. What
@@ -1335,6 +1390,12 @@ delivery diagram. A flag's colours are not a palette choice, and
 `components/region-flag.tsx` exists precisely so a market is identified without
 one. A full computed-style sweep of `main`, `header` and `footer` at 1440px
 found nothing else outside the brand tokens.
+
+**One detail in the paragraph above is stale (2026-10-20): there is no global
+delivery diagram any more.** `components/global-delivery-diagram.tsx` was still
+on disk but nothing imported it, and it was deleted in the dead-code sweep. The
+flags that remain are the ones in the markets band. The original text is left as
+written because the measurement it records was true when it was taken.
 
 **Run that sweep against a dev server whose stylesheet actually loads.** The
 first run of it reported twelve non-brand colours including UA link blue,
