@@ -86,7 +86,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
-| `/industries/ecommerce` | B | — | Published |
+| `/industries/ecommerce` | B | — | Refreshed 2026-10-20 — target e-commerce accounting services; clarified settlement reconciliation, inventory/COGS scope and tax-adviser boundaries |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
 | `/blog/property-management-lender-reporting` | C | Property Management | Added 2026-10-15 — lender-specific reporting package checklist, reconciliation and review controls |
 | `/blog/property-management-replacement-reserve-accounting` | C | Property Management | Added 2026-10-15 — replacement reserve funding, project draw evidence, ledger reconciliation and reporting controls |
@@ -110,7 +110,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|
 | `/technology` | Hub | Published |
 | `/technology/quickbooks` | B | Published |
-| `/technology/xero` | B | Published |
+| `/technology/xero` | B | Refreshed 2026-10-20 — target Xero accounting services; removed setup implication and clarified existing-organisation workflow support |
 | `/technology/sage` | B | Published |
 | `/technology/netsuite` | B | Published |
 | `/technology/drake-tax` | B | Published |
