@@ -6,22 +6,22 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/ecommerce';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting for E-Commerce Businesses',
+  title: 'E-Commerce Accounting Services',
   description:
-    'Outsourced bookkeeping for online retail — multi-channel sales reconciliation across Shopify and Amazon, inventory and COGS, and nexus tracking.',
+    'E-commerce accounting support for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records, and channel reporting.',
   path: PATH,
 });
 
 const faqs = [
   {
-    question: 'Can you reconcile sales across multiple channels?',
+    question: 'What do e-commerce accounting services include?',
     answer:
-      'Sales, fees and payouts can be reconciled across channels like Shopify, Amazon, and other marketplaces, matching what actually lands in your bank account against what each platform reports.',
+      'The scope can include reconciling gross sales, marketplace fees, refunds, chargebacks, reserves and net payouts to available platform and payment-processor reports, then tying settlements to the bank and existing accounting records.',
   },
   {
-    question: 'Do you handle inventory and cost of goods sold (COGS) accounting?',
+    question: 'Can you support inventory and cost of goods sold (COGS) records?',
     answer:
-      'Inventory costs and COGS can be tracked so your margins reflect actual product cost, not just revenue minus operating expenses.',
+      'We can maintain inventory and COGS records using the method and source information approved for the engagement. The reliability of margin reporting depends on current inventory records, purchase costs, returns and the agreed costing method.',
   },
   {
     question: 'Can you help with multi-state sales tax nexus tracking?',
@@ -34,9 +34,9 @@ const faqs = [
       'Marketplace fees, refunds and chargebacks can be separated as their own line items so you can see true net revenue per channel, not a blended number that hides where margin is being lost.',
   },
   {
-    question: 'What platforms do you support?',
+    question: 'Which storefronts and accounting platforms can be included?',
     answer:
-      'QuickBooks or Xero can serve as the existing accounting record. Sales, fees, refunds and payouts are reconciled from available storefront and payment-processor reports; platform configuration or integration is not part of the service.',
+      'Shopify, Amazon and other marketplace or payment-processor reports can be used where access and source records are available. QuickBooks or Xero can remain the accounting record; platform configuration, connector implementation and software migration are not part of the service.',
   },
 ];
 
@@ -47,15 +47,15 @@ export default function EcommerceIndustryPage() {
       industry={{
         name: 'E-Commerce',
         description:
-          'Multi-channel sales reconciliation, inventory and COGS accounting, and sales tax nexus tracking for online retailers selling across marketplaces and their own storefront.',
+          'E-commerce accounting services for online retailers selling across marketplaces and their own storefront, including settlement reconciliation, fees, refunds, inventory and COGS records, and channel reporting.',
       }}
-      overview="E-commerce accounting becomes difficult when a business sells across multiple channels — each platform reports revenue, fees, and payouts differently, and none of it automatically matches what lands in your bank account. Add multi-state sales tax nexus rules and inventory-based cost of goods sold, and generic bookkeeping quickly falls behind. We reconcile available channel reports against the accounting records, separate fees and returns, and maintain inventory and cost-of-goods-sold records using the client’s approved method. Sales can also be organized by destination state for review by the client’s tax adviser."
+      overview="E-commerce accounting services need to connect the gross sales reported by each storefront or marketplace to the net settlement that reaches the bank. Platform fees, refunds, chargebacks, reserves, payment-processor charges and timing differences can make a payout look like revenue when it is only the net cash received. We reconcile available channel and processor reports to the existing accounting records, keep fees and returns visible, and maintain inventory and cost-of-goods-sold records using the client’s approved method. Sales can also be organized by destination state for review by the client’s tax adviser; tax registration decisions and filings remain with the client or its appointed tax professional."
       benefits={[
-        'Multi-channel reconciliation across Shopify, Amazon, and other marketplaces',
-        'Inventory and cost of goods sold (COGS) tracking for accurate margins',
-        'Sales organized by destination state to support review with the client’s tax adviser',
+        'Reconciliation of gross sales, fees, refunds, reserves and net payouts across Shopify, Amazon and other marketplaces',
+        'Inventory and cost-of-goods-sold records maintained using the client-approved method and available source data',
+        'Sales data organized by destination state to support review by the client’s tax adviser',
         'Marketplace fees, refunds, and chargebacks broken out as separate line items',
-        'True net revenue reporting per sales channel',
+        'Channel-level revenue and fee reporting that separates gross sales from net settlement amounts',
         'Reconciliation of storefront and payment-processor reports to existing QuickBooks or Xero records',
       ]}
       relatedLinks={[
