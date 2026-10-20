@@ -6,7 +6,7 @@
  * body. See the script's header for why this is derived rather than written.
  */
 export const routeLastModified: Record<string, string> = {
-  '': '2026-10-19',
+  '': '2026-10-20',
   '/about': '2026-09-03',
   '/blog': '2026-10-17',
   '/blog/accounts-payable-outsourcing': '2026-10-19',
@@ -92,7 +92,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/quickbooks-month-end-close-checklist': '2026-10-17',
   '/blog/real-estate-accounting-month-end-close': '2026-10-17',
   '/blog/rent-roll-accounting': '2026-10-17',
-  '/blog/tax-preparation-outsourcing': '2026-10-19',
+  '/blog/tax-preparation-outsourcing': '2026-10-20',
   '/blog/upwork-vs-accounstone': '2026-10-18',
   '/blog/us-cpa-firm-outsourcing-readiness-checklist': '2026-10-18',
   '/blog/yardi-accounting-workflow': '2026-10-19',
