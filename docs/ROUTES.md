@@ -83,7 +83,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | — | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms` | B | — | Refreshed 2026-10-20 — targets outsourced accounting for CPA firms; foregrounds review-ready preparation and retained firm ownership/sign-off |
 | `/industries/technology` | B | — | Deepened 2026-09-16 — absorbs the SaaS intent; no `/saas-technology` URL |
 | `/industries/healthcare` | B | — | Published |
 | `/industries/ecommerce` | B | — | Refreshed 2026-10-20 — target e-commerce accounting services; clarified settlement reconciliation, inventory/COGS scope and tax-adviser boundaries |
