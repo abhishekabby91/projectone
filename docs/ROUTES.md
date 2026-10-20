@@ -269,4 +269,14 @@ node scripts/generate-sitemap-dates.mjs
 
 | Route | Type | Topic | Notes |
 |---|---|---|---|
-| `/industries/hoa-accounting/self-managed-hoa-accounting` | B | Self-managed HOA accounting | Commercial accounting-only support page; board retains approvals and control |
+| `/industries/hoa-accounting/self-managed-hoa-accounting` | B | Self-managed HOA accounting | Commercial accounting-only support page; board retains approvals and control |## CPA workflow additions — release staging 2026-10-20
+
+| Route | Type | Topic | Notes |
+|---|---|---|---|
+| `/industries/cpa-firms/overflow-work-support` | B | CPA firm overflow work support | Commercial workflow page for defined accounting capacity and reviewer handoff |
+| `/industries/cpa-firms/accounts-payable-outsourcing` | B | Accounts payable outsourcing for CPA firms | Preparation and reconciliation support; client retains payment approval |
+| `/industries/cpa-firms/california-tax-workpaper-support` | B | California tax workpaper support | State-qualified workflow support; CPA retains professional conclusions |
+| `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | B | Texas bookkeeping cleanup support | Historical cleanup and reconciliation support |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | B | Florida property/entity accounting support | Entity-level accounting workflow support |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | B | New York multi-entity accounting support | Multi-entity ledger and reconciliation workflow support |
+| `/industries/cpa-firms/illinois-inventory-accounting-support` | B | Illinois inventory accounting support | Inventory-related accounting workflow support |

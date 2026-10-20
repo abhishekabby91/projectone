@@ -347,4 +347,12 @@ https://www.accounstone.com/sitemap.xml
 
 These pages describe defined accounting production and bookkeeping support. Engagement scope, review responsibilities and payment authority remain with the client or its appointed accounting firm.
 
+## CPA firm workflow support — staged pages
 
+- CPA firm overflow work support: https://www.accounstone.com/industries/cpa-firms/overflow-work-support
+- Accounts payable outsourcing support for CPA firms: https://www.accounstone.com/industries/cpa-firms/accounts-payable-outsourcing
+- California tax workpaper support for CPA firms: https://www.accounstone.com/industries/cpa-firms/california-tax-workpaper-support
+- Texas bookkeeping cleanup support for CPA firms: https://www.accounstone.com/industries/cpa-firms/texas-bookkeeping-cleanup-support
+- Florida property/entity accounting support for CPA firms: https://www.accounstone.com/industries/cpa-firms/florida-property-entity-accounting-support
+- New York multi-entity accounting support for CPA firms: https://www.accounstone.com/industries/cpa-firms/new-york-multi-entity-accounting-support
+- Illinois inventory accounting support for CPA firms: https://www.accounstone.com/industries/cpa-firms/illinois-inventory-accounting-support

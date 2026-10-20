@@ -64,6 +64,12 @@ export default function TaxPrepOutsourcingBlog() {
       </p>
 
       <p>
+        If the pressure is a mixed queue of bookkeeping, reconciliations, cleanup and tax workpapers rather than tax preparation alone, see our{' '}
+        <Link href="/industries/cpa-firms/overflow-work-support" className="text-primary font-medium hover:underline">CPA firm overflow work support</Link>{' '}
+        page for a way to scope a bounded batch or backlog without creating a second tax-preparation landing page.
+      </p>
+
+      <p>
         Before sending client files to an external preparer, use our <Link href="/blog/us-cpa-firm-outsourcing-readiness-checklist" className="text-primary font-medium hover:underline">U.S. CPA firm outsourcing readiness checklist</Link> to review scope, taxpayer-data handling, access permissions, workpaper standards and pilot controls.
       </p>
 
