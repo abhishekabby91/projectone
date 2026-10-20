@@ -1,3 +1,49 @@
+## 2026-10-20 — Correcting the Googlebot claim, and restoring the hero booking CTA
+
+**The "Cloudflare blocked Googlebot" finding recorded yesterday was wrong, and
+this entry retracts it.** With the GSC property activated on the connector's
+plan, the claim was checkable for the first time, and it does not survive:
+
+| Check | Result |
+|---|---|
+| `/` URL inspection | `page_fetch_state: SUCCESSFUL`, `robots_txt_state: ALLOWED`, crawled 2026-10-19 06:51 |
+| `/industries/property-management` | `SUCCESSFUL`, crawled 2026-10-07 — inside the alleged block window |
+| Daily impressions 20 Sep → 19 Oct | ~80/day rising to 400–570/day, a 5–6x increase |
+
+A blocked Googlebot does not crawl successfully twice inside the window and
+does not produce five times the impressions across it. The claim came from
+reading a Cloudflare doc sentence about mixed-purpose crawlers and reasoning to
+an outage instead of measuring one.
+
+**What stands:** the Agent-class block was real — external AI assistants could
+not fetch `robots.txt` or `sitemap.xml`, and Security Events showed the 403s.
+Setting Search, Agent and Training to *Allow* was the right call for
+AI-assistant visibility. **What does not stand:** that it was an emergency,
+that Google crawling was impaired, or that any ranking movement should be
+attributed to it. `CLAUDE.md` now carries the correction under the section's
+own heading so a future session cannot read the old claim without the
+retraction.
+
+**Separately, the homepage hero's booking CTA was restored.** The owner asked
+on 2026-10-19 to replace WhatsApp in the hero with a call-booking link, and
+that shipped. `c50e39e0` put WhatsApp back the next morning inside a release
+whose message lists it as a feature rather than a revert. The cal.com link is
+back; WhatsApp is untouched in the header, which is the only `wa.me` reference
+on the homepage.
+
+**Verified on the overnight release before touching anything:** eslint silent,
+build clean, `verify-pages.mjs` PASS on 219 routes, sitemap drift clean both
+directions (225 page files, 219 URLs, only the 6 intentional exclusions),
+`llms.txt` sound, zero inbound links to any of the 18 redirect sources, and the
+date generator idempotent against the committed file. The five new CPA state
+pages measure a worst pair of **11.8%**, and `texas-bookkeeping-cleanup-support`
+against the existing `/texas` is **5.5%** — the templated-state-page failure
+mode did not recur.
+
+**New URLs:** none. **Redirects:** unchanged. **Content:** one hero link.
+
+---
+
 ## 2026-10-19c — The lastmod generator, the bot that reverted it, and two docs reconciled
 
 **The hand-fix recorded in 2026-10-19b was incomplete, and CI reverted it

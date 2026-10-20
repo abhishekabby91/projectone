@@ -347,13 +347,27 @@ Do **not** resolve these unilaterally. Each needs the owner.
    `get_advanced_search_analytics` before drawing query-level conclusions — an
    alphabetical first page of 20 looks like a top-20 list and is not.
 
-   **Do not check it from a session any more.** The owner's 2026-09-10
-   instruction bars every AU Corporate connector from this project, and both
-   GSC connectors are on that account — so the `get_site_details` probe this
-   section used to recommend is itself off-limits. See "Do not use any AU
-   Corporate connector on this project" under Environment constraints. Work on
-   what is measurable from inside the repo, and take the owner's word for when
-   access is restored.
+   **SUPERSEDED 2026-10-20 — GSC is usable from a session again, and the
+   paragraph this replaces was stale twice over.** It said "do not check it
+   from a session any more" on the grounds that both connectors were AU
+   Corporate. `GenieSEO` was reconnected by the owner on 2026-10-17 and
+   `get_site_details` returns `permission_level: "siteOwner"`.
+
+   There was a second gate nobody had named: the connector's own plan caps how
+   many Search Console properties are activated, and `sc-domain:accounstone.com`
+   was not one of them — every call returned "isn't activated on your plan yet
+   (1 of 1 activated)", which reads like a permission problem and is not one.
+   The owner activated it on 2026-10-20 at
+   https://seo.geniedial.in/properties.
+
+   **So there are three distinct failure modes that all look alike, and the
+   error text tells them apart:** a 404 "not a verified Search Console site in
+   this account" is the wrong Google account; "isn't activated on your plan" is
+   the connector's own quota and needs no Google change at all; a 403 from an
+   analytics call is ambiguous and should never be the probe. Lead with
+   `get_site_details`.
+
+   `Geneio-projectone` has still not been re-verified and stays banned.
 3. **Redirect targets are settled. The generic-tier question is not
    (2026-09-03).** The owner authorised deciding the retired-URL targets, and
    country-segmented GSC decided them: six of the seven stay on United States,
@@ -2315,7 +2329,7 @@ typed and chooses.
 in Playwright exercises the real submit path against a stubbed response and
 proves both the success and failure states without a live send.
 
-## Cloudflare blocked Googlebot for a month, and robots.txt was never the problem
+## Cloudflare blocked AI assistants, not Googlebot — and robots.txt was never the problem
 
 Resolved 2026-10-19. The symptom was that external AI assistants reported
 `robots.txt` and `sitemap.xml` as unretrievable, and Security Events showed
@@ -2334,12 +2348,50 @@ became the default for the zone on 15 Sep 2026: Training and Agent blocked on
 pages Cloudflare's own heuristic classifies as showing ads, Search allowed.
 Two consequences, the second serious:
 
-- Agent-class bots (ChatGPT-User and the like) were blocked outright — the
-  original symptom.
-- **Googlebot is classified mixed-use**, and Cloudflare's documentation is
-  explicit that "mixed-purpose crawlers that combine Search and Training will
-  also be blocked by all configurations to block AI training". So the rule was
-  blocking Google.
+- Agent-class bots (ChatGPT-User and the like) were blocked outright. **This
+  part is real** and is the whole of the observed symptom.
+- Googlebot was **not** blocked. See the correction below.
+
+### CORRECTION, 2026-10-20: the Googlebot alarm was wrong
+
+**An earlier version of this section said the rule "was blocking Google" and
+titled itself "Cloudflare blocked Googlebot for a month". That was a Claude
+session's inference, not an observation, and Search Console disproves it.**
+
+The reasoning was: Cloudflare's docs say "mixed-purpose crawlers that combine
+Search and Training will also be blocked by all configurations to block AI
+training", Googlebot is mixed-use, therefore Googlebot was blocked. The
+sentence is real; the conclusion did not follow, and nobody checked it against
+the one source that could settle it.
+
+Measured on 2026-10-20 with the GSC connector, against the window the claim
+covered:
+
+| Check | Result |
+|---|---|
+| `/` URL inspection | `page_fetch_state: SUCCESSFUL`, `robots_txt_state: ALLOWED`, crawled 2026-10-19 06:51 |
+| `/industries/property-management` | `SUCCESSFUL`, crawled 2026-10-07 — mid-window |
+| Daily impressions, 20 Sep → 19 Oct | **~80/day rising to 400–570/day**, a 5–6x increase |
+
+A blocked Googlebot does not crawl successfully twice inside the window, and
+it does not produce five times the impressions across it. Nothing anywhere in
+Search Console showed a fetch failure. Whatever the ad-page classifier was
+catching, verified Googlebot was not it.
+
+**What this changes, and what it does not.** Setting Search, Agent and Training
+all to *Allow* was still the right call — Agent-class bots genuinely were being
+403'd, and AI-assistant visibility was the original complaint. But it was not
+an emergency, it did not rescue Google crawling, and no ranking or indexing
+recovery should be attributed to it. **If a future session sees impressions
+move after a Cloudflare change, that is not evidence this rule was costing
+Google traffic.**
+
+**The lesson is the one this file already repeats and a session still missed:
+run the measurement, do not reason to it.** A vendor doc sentence plus a
+plausible chain is not an observation. The check that settles "is Googlebot
+blocked" is one URL inspection, and it was available the whole time — it only
+needed the GSC property activated on the connector's plan, which is a question
+somebody could have been asked on day one.
 
 **This site serves no ads.** A full repo sweep found no `ads.txt`, no AdSense,
 doubleclick, googlesyndication, adsbygoogle or pagead reference anywhere. The
