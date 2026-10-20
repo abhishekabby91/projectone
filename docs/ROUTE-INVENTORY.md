@@ -112,7 +112,7 @@ candidate for overlap.
 | `/delivery-framework/quality-assurance` | Quality Assurance & Controls |
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
-| `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
+| `/industries/cpa-firms` | Outsourced Accounting for CPA Firms |
 | `/industries/cpa-firms/accounts-payable-outsourcing` | Accounts Payable Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
@@ -127,7 +127,7 @@ candidate for overlap.
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
-| `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
+| `/industries/ecommerce` | E-Commerce Accounting Services |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
