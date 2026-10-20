@@ -27,7 +27,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | U.S. CPA firm outsourcing readiness checklist — taxpayer-data safeguards, access, review workflow and pilot | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | Informational / operational checklist — distinct from general tax outsourcing overview and vendor-selection guide |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
-| CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
+| Outsourced accounting for CPA firms / preparation capacity | `/industries/cpa-firms` | Commercial (Tier-1 audience) — recurring bookkeeping, cleanup, CAS production and scoped tax-preparation workpapers; CPA firm retains client relationship, professional judgement, review and sign-off |
 | Real estate accounting / bookkeeping (owners, investors, developers) | `/industries/real-estate` | Commercial — the reader OWNS the property; reader of the output is a lender, partner or their CPA |
 | Property management accounting / bookkeeping outsourcing | `/industries/property-management` | Commercial — the reader MANAGES property for owners; deliverable is the owner statement; receivable is tenant rent |
 | Property management lender reporting package checklist | `/blog/property-management-lender-reporting` | Informational / operational — lender-requested schedules, source-ledger tie-outs, evidence and review; distinct from general financial statements and portfolio KPI reporting, and not loan-covenant advice |
