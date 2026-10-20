@@ -1,11 +1,11 @@
-# Accounstone SEO Agent Report — 2026-10-19
+# Accounstone SEO Agent Report — 2026-10-20
 
 ## Summary
 
-- Files/pages scanned: **218**
-- High-priority findings: **12**
-- Medium-priority findings: **14**
-- Low-priority findings: **13**
+- Files/pages scanned: **225**
+- High-priority findings: **17**
+- Medium-priority findings: **19**
+- Low-priority findings: **18**
 - Duplicate title groups: **0**
 
 ## Page quality scores
@@ -15,11 +15,16 @@
 | app/company-registration/delaware/page.tsx | 10/100 | 84 | 0 | 0 | 0 | 0 |
 | app/company-registration/nevada/page.tsx | 10/100 | 84 | 0 | 0 | 0 | 0 |
 | app/company-registration/wyoming/page.tsx | 10/100 | 84 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/california-tax-workpaper-support/page.tsx | 45/100 | 56 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/california/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/florida/page.tsx | 50/100 | 56 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx | 50/100 | 54 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/illinois/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx | 50/100 | 56 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/new-york/page.tsx | 50/100 | 60 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/texas/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/texas-bookkeeping-cleanup-support/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/resources/insights/page.tsx | 55/100 | 265 | 0 | 6 | 0 | 0 |
 | app/resources/case-studies/page.tsx | 65/100 | 670 | 0 | 6 | 0 | 0 |
 | app/resources/guides/page.tsx | 65/100 | 408 | 0 | 7 | 0 | 0 |
@@ -117,7 +122,7 @@
 | app/blog/quickbooks-month-end-close-checklist/page.tsx | 90/100 | 784 | 1 | 3 | 0 | 0 |
 | app/blog/real-estate-accounting-month-end-close/page.tsx | 90/100 | 813 | 1 | 2 | 0 | 0 |
 | app/blog/rent-roll-accounting/page.tsx | 90/100 | 726 | 1 | 6 | 0 | 0 |
-| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 2362 | 1 | 16 | 0 | 0 |
+| app/blog/tax-preparation-outsourcing/page.tsx | 90/100 | 2411 | 1 | 17 | 0 | 0 |
 | app/blog/upwork-vs-accounstone/page.tsx | 90/100 | 1705 | 1 | 13 | 0 | 0 |
 | app/blog/us-cpa-firm-outsourcing-readiness-checklist/page.tsx | 90/100 | 1923 | 1 | 9 | 0 | 0 |
 | app/blog/yardi-accounting-workflow/page.tsx | 90/100 | 972 | 1 | 4 | 0 | 0 |
@@ -127,8 +132,10 @@
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
 | app/industries/construction/page.tsx | 90/100 | 685 | 1 | 5 | 0 | 0 |
+| app/industries/cpa-firms/accounts-payable-outsourcing/page.tsx | 90/100 | 1252 | 1 | 10 | 0 | 0 |
 | app/industries/cpa-firms/cas-production-support/page.tsx | 90/100 | 1487 | 1 | 6 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1522 | 1 | 35 | 0 | 0 |
+| app/industries/cpa-firms/overflow-work-support/page.tsx | 90/100 | 1458 | 1 | 12 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1562 | 1 | 37 | 0 | 0 |
 | app/industries/cpa-firms/white-label-accounting/page.tsx | 90/100 | 1573 | 1 | 6 | 0 | 0 |
 | app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 456 | 1 | 5 | 0 | 0 |
@@ -141,7 +148,7 @@
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 850 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2926 | 1 | 76 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 2999 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1116 | 1 | 11 | 0 | 0 |
@@ -229,7 +236,7 @@
 | app/technology/xero/page.tsx | 90/100 | 450 | 1 | 7 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1531 | 1 | 10 | 0 | 0 |
+| app/page.tsx | 100/100 | 1535 | 1 | 10 | 0 | 0 |
 
 ## Priority queue
 
@@ -265,51 +272,81 @@
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 16. **LOW — internal-linking** — app/industries/cpa-firms/california/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-17. **HIGH — metadata** — app/industries/cpa-firms/florida/page.tsx
+17. **HIGH — metadata** — app/industries/cpa-firms/california-tax-workpaper-support/page.tsx
    - Add missing title, meta description or H1.
-18. **MEDIUM — content-depth** — app/industries/cpa-firms/florida/page.tsx
+18. **MEDIUM — content-depth** — app/industries/cpa-firms/california-tax-workpaper-support/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-19. **LOW — internal-linking** — app/industries/cpa-firms/florida/page.tsx
+19. **LOW — internal-linking** — app/industries/cpa-firms/california-tax-workpaper-support/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-20. **HIGH — metadata** — app/industries/cpa-firms/illinois/page.tsx
+20. **HIGH — metadata** — app/industries/cpa-firms/florida/page.tsx
    - Add missing title, meta description or H1.
-21. **MEDIUM — content-depth** — app/industries/cpa-firms/illinois/page.tsx
+21. **MEDIUM — content-depth** — app/industries/cpa-firms/florida/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-22. **LOW — internal-linking** — app/industries/cpa-firms/illinois/page.tsx
+22. **LOW — internal-linking** — app/industries/cpa-firms/florida/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-23. **HIGH — metadata** — app/industries/cpa-firms/new-york/page.tsx
+23. **HIGH — metadata** — app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx
    - Add missing title, meta description or H1.
-24. **MEDIUM — content-depth** — app/industries/cpa-firms/new-york/page.tsx
+24. **MEDIUM — content-depth** — app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-25. **LOW — internal-linking** — app/industries/cpa-firms/new-york/page.tsx
+25. **LOW — internal-linking** — app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-26. **HIGH — metadata** — app/industries/cpa-firms/texas/page.tsx
+26. **HIGH — metadata** — app/industries/cpa-firms/illinois/page.tsx
    - Add missing title, meta description or H1.
-27. **MEDIUM — content-depth** — app/industries/cpa-firms/texas/page.tsx
+27. **MEDIUM — content-depth** — app/industries/cpa-firms/illinois/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-28. **LOW — internal-linking** — app/industries/cpa-firms/texas/page.tsx
+28. **LOW — internal-linking** — app/industries/cpa-firms/illinois/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-29. **MEDIUM — content-depth** — app/industries/page.tsx
+29. **HIGH — metadata** — app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx
+   - Add missing title, meta description or H1.
+30. **MEDIUM — content-depth** — app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-30. **LOW — internal-linking** — app/industries/page.tsx
+31. **LOW — internal-linking** — app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-31. **MEDIUM — content-depth** — app/markets/page.tsx
+32. **HIGH — metadata** — app/industries/cpa-firms/new-york/page.tsx
+   - Add missing title, meta description or H1.
+33. **MEDIUM — content-depth** — app/industries/cpa-firms/new-york/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-32. **HIGH — metadata** — app/resources/case-studies/page.tsx
-   - Add missing title, meta description or H1.
-33. **HIGH — metadata** — app/resources/guides/page.tsx
-   - Add missing title, meta description or H1.
-34. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+34. **LOW — internal-linking** — app/industries/cpa-firms/new-york/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-35. **HIGH — metadata** — app/resources/insights/page.tsx
+35. **HIGH — metadata** — app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx
    - Add missing title, meta description or H1.
-36. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+36. **MEDIUM — content-depth** — app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
-37. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+37. **LOW — internal-linking** — app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx
    - Add contextual links to closely related Accounstone pages where useful.
-38. **HIGH — metadata** — app/resources/page.tsx
+38. **HIGH — metadata** — app/industries/cpa-firms/texas/page.tsx
    - Add missing title, meta description or H1.
-39. **MEDIUM — content-depth** — app/solutions/page.tsx
+39. **MEDIUM — content-depth** — app/industries/cpa-firms/texas/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+40. **LOW — internal-linking** — app/industries/cpa-firms/texas/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+41. **HIGH — metadata** — app/industries/cpa-firms/texas-bookkeeping-cleanup-support/page.tsx
+   - Add missing title, meta description or H1.
+42. **MEDIUM — content-depth** — app/industries/cpa-firms/texas-bookkeeping-cleanup-support/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+43. **LOW — internal-linking** — app/industries/cpa-firms/texas-bookkeeping-cleanup-support/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+44. **MEDIUM — content-depth** — app/industries/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+45. **LOW — internal-linking** — app/industries/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+46. **MEDIUM — content-depth** — app/markets/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+47. **HIGH — metadata** — app/resources/case-studies/page.tsx
+   - Add missing title, meta description or H1.
+48. **HIGH — metadata** — app/resources/guides/page.tsx
+   - Add missing title, meta description or H1.
+49. **LOW — internal-linking** — app/resources/insights/asc-606-revenue-recognition-saas/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+50. **HIGH — metadata** — app/resources/insights/page.tsx
+   - Add missing title, meta description or H1.
+51. **MEDIUM — content-depth** — app/resources/insights/page.tsx
+   - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
+52. **LOW — internal-linking** — app/resources/insights/sales-tax-nexus-ecommerce-guide/page.tsx
+   - Add contextual links to closely related Accounstone pages where useful.
+53. **HIGH — metadata** — app/resources/page.tsx
+   - Add missing title, meta description or H1.
+54. **MEDIUM — content-depth** — app/solutions/page.tsx
    - Review whether the page answers its search intent sufficiently; add useful workflow detail rather than filler.
 
 ## Human-content rules
