@@ -132,7 +132,7 @@ candidate for overlap.
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
-| `/industries/hoa-accounting` | HOA Accounting Services & Outsourcing |
+| `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
 | `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting & Bookkeeping Support |
 | `/industries/hoa-accounting/california` | California HOA Accounting & Bookkeeping |
