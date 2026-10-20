@@ -406,3 +406,12 @@ The existence of this file does not guarantee inclusion, ranking, citation or re
 
 For current page content, the canonical HTML pages and sitemap remain authoritative.
 
+## CPA firm workflow support
+
+- Overflow work support for CPA firms: https://www.accounstone.com/industries/cpa-firms/overflow-work-support
+- Accounts payable workflow support for CPA firms: https://www.accounstone.com/industries/cpa-firms/accounts-payable-outsourcing
+- California tax workpaper support: https://www.accounstone.com/industries/cpa-firms/california-tax-workpaper-support
+- Texas bookkeeping cleanup support: https://www.accounstone.com/industries/cpa-firms/texas-bookkeeping-cleanup-support
+- Florida property/entity accounting support: https://www.accounstone.com/industries/cpa-firms/florida-property-entity-accounting-support
+- New York multi-entity accounting support: https://www.accounstone.com/industries/cpa-firms/new-york-multi-entity-accounting-support
+- Illinois inventory accounting support: https://www.accounstone.com/industries/cpa-firms/illinois-inventory-accounting-support
