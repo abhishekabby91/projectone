@@ -87,7 +87,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Refreshed 2026-10-20 — targets outsourced accounting for CPA firms; emphasizes preparation capacity with client relationship, professional judgement, review and sign-off retained by the firm |
 | `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
 | `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
 | `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
@@ -99,7 +99,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/healthcare` | B | — | Published |
 | `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |
 | `/industries/healthcare/dental-practice-accounting` | B | Healthcare / Dental practice accounting | Added 2026-10-14 — distinct dental-office and dental-group bookkeeping workflow for production/collection reports, deposit tie-outs, lab/supply expense coding and provider/location reporting; excludes billing/claims management and unsupported HIPAA claims |
-| `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Published |
+| `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Refreshed 2026-10-20 — targets e-commerce accounting services; clarified settlement reconciliation, fees/refunds, inventory/COGS source-data boundaries and tax-adviser responsibilities |
 | `/industries/ecommerce/amazon-seller-accounting` | B | E-Commerce / Amazon seller accounting | Added 2026-10-14 — settlement-to-bank reconciliation, fees/refunds, inventory/COGS and close handoff; distinct from the broader multi-channel e-commerce pillar |
 | `/industries/ecommerce/shopify-accounting` | B | E-Commerce / Shopify accounting | Added 2026-10-14 — Shopify Payments payout-to-bank reconciliation, gateway differences, refunds, gift-card records and close handoff; distinct from Amazon settlement workflows and broad multi-channel coverage |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
@@ -132,7 +132,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|
 | `/technology` | Hub | Published |
 | `/technology/quickbooks` | B | Published |
-| `/technology/xero` | B | Published |
+| `/technology/xero` | B | Refreshed 2026-10-20 — targets Xero accounting services; clarifies existing-organisation workflows, statement-level reconciliation and CPA-firm vs direct-business scope |
 | `/technology/sage` | B | Published |
 | `/technology/netsuite` | B | Published |
 | `/technology/drake-tax` | B | Published |

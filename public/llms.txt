@@ -65,7 +65,7 @@ https://www.accounstone.com/services/audit-support/united-states
 
 ## Industries
 
-- Accounting and CPA firms: https://www.accounstone.com/industries/cpa-firms
+- Outsourced accounting for CPA and accounting firms — bookkeeping cleanup, CAS production and preparation workpapers, with the firm retaining client relationships, professional judgement, review and sign-off: https://www.accounstone.com/industries/cpa-firms
 - California CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/california
 - Texas CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/texas
 - Florida CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/florida
@@ -115,7 +115,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
 - Yardi accounting support for property managers: https://www.accounstone.com/industries/property-management/yardi-accounting-support
 - Technology and SaaS: https://www.accounstone.com/industries/technology
-- E-commerce: https://www.accounstone.com/industries/ecommerce
+- E-commerce accounting services for online retailers: settlement reconciliation, marketplace fees, refunds, reserves, inventory/COGS records and channel reporting: https://www.accounstone.com/industries/ecommerce
 - Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
 - Shopify accounting and payout reconciliation: https://www.accounstone.com/industries/ecommerce/shopify-accounting
 - Healthcare: https://www.accounstone.com/industries/healthcare
@@ -311,7 +311,7 @@ Accounstone works inside a system the client already runs. These pages carry no 
 - [NetSuite Accounting Support](https://www.accounstone.com/technology/netsuite) — NetSuite support for multi-entity reconciliations, intercompany eliminations, multi-currency consolidation and recurring close activities
 - [QuickBooks Online Accounting Support](https://www.accounstone.com/technology/quickbooks) — QuickBooks Online support for cleanup, bookkeeping, reconciliations, reporting and recurring accounting workflows inside your existing file
 - [Sage Accounting Support](https://www.accounstone.com/technology/sage) — Sage accounting support for recurring bookkeeping, reconciliations, account maintenance, reporting and month-end close
-- [Xero Accounting Support for Growing Businesses](https://www.accounstone.com/technology/xero) — Xero support for cleanup, bookkeeping, reconciliations, AP/AR and recurring reporting inside the Xero file your client already runs
+- Xero accounting services and bookkeeping support inside existing Xero organisations: transaction coding, statement-level reconciliations, AP/AR and month-end schedules: https://www.accounstone.com/technology/xero
 
 ## US company registration
 

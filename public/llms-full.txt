@@ -152,7 +152,9 @@ Accounting support involving subscription-related transactions, reconciliations,
 
 ### E-commerce
 
-Accounting support involving multi-channel reconciliation, payables, receivables and sales-tax data preparation.
+E-commerce accounting services for online retailers and marketplace sellers: reconcile gross sales, fees, refunds, chargebacks, reserves and net payouts to available storefront and payment-processor reports; maintain inventory/COGS records using the client's approved method and source data; and prepare channel-level reporting. Tax advice, registration decisions and filings remain with the client or its tax professional.
+
+https://www.accounstone.com/industries/ecommerce
 
 Amazon seller accounting support can include settlement-to-bank reconciliation, separate classification of supported fees/refunds/adjustments, agreed inventory and COGS schedules, exception documentation and month-end close handoff. The client retains accounting-policy decisions and banking control; tax advice, nexus determinations and tax filing remain with the client's qualified tax adviser or service provider.
 
@@ -187,6 +189,8 @@ Accounting support for professional practices, including recurring bookkeeping, 
 Accounstone works inside clients' existing systems. It does not claim software vendor partnership, reseller status, certification or implementation services unless a page specifically states otherwise.
 
 Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB, Yardi, AppFolio and eUnify workflows where applicable.
+
+Xero accounting services inside existing Xero organisations: https://www.accounstone.com/technology/xero
 
 ## Markets
 
@@ -237,6 +241,8 @@ https://www.accounstone.com/compliance
 
 Accounting and CPA firms:
 https://www.accounstone.com/industries/cpa-firms
+
+Outsourced accounting for CPA firms covers scoped bookkeeping cleanup, recurring CAS production and preparation workpapers. The CPA firm retains its client relationship, professional judgement, review, approval and sign-off.
 White-label accounting support for CPA firms:
 https://www.accounstone.com/industries/cpa-firms/white-label-accounting
 

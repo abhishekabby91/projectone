@@ -120,7 +120,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/cpa-firms/texas': '2026-10-19',
   '/industries/cpa-firms/texas-bookkeeping-cleanup-support': '2026-10-20',
   '/industries/cpa-firms/white-label-accounting': '2026-10-19',
-  '/industries/ecommerce': '2026-10-18',
+  '/industries/ecommerce': '2026-10-20',
   '/industries/ecommerce/amazon-seller-accounting': '2026-10-15',
   '/industries/ecommerce/shopify-accounting': '2026-10-15',
   '/industries/healthcare': '2026-10-19',
@@ -224,7 +224,7 @@ export const routeLastModified: Record<string, string> = {
   '/technology/netsuite': '2026-10-19',
   '/technology/quickbooks': '2026-10-04',
   '/technology/sage': '2026-10-18',
-  '/technology/xero': '2026-10-19',
+  '/technology/xero': '2026-10-20',
   '/terms': '2026-09-16',
   '/thank-you': '2026-09-09',
 };

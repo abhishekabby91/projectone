@@ -32,7 +32,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | U.S. CPA firm outsourcing readiness checklist — taxpayer-data safeguards, access, review workflow and pilot | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | Informational / operational checklist — distinct from general tax outsourcing overview and vendor-selection guide |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
-| CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
+| Outsourced accounting for CPA firms / preparation capacity | `/industries/cpa-firms` | Commercial (Tier-1 audience) — recurring bookkeeping, cleanup, CAS production and scoped tax-preparation workpapers; CPA firm retains client relationship, professional judgement, review and sign-off |
 | California CPA firm accounting outsourcing | `/industries/cpa-firms/california` | Commercial / state-qualified CPA-firm intent; state-specific portfolio examples and workflow scoping, not a generic business accounting page |
 | Texas CPA firm accounting outsourcing | `/industries/cpa-firms/texas` | Commercial / state-qualified CPA-firm intent; recurring preparation support and firm review handoff |
 | Florida CPA firm accounting outsourcing | `/industries/cpa-firms/florida` | Commercial / state-qualified CPA-firm intent; recurring client work and seasonal/portfolio scoping |
@@ -79,6 +79,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | How to choose an accounting outsourcing partner | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | Evaluation |
 | Staff augmentation vs. dedicated team vs. offshore vs. back-office | `/resources/guides/choosing-an-engagement-model` | Comparison |
 | QuickBooks vs. Xero | `/resources/guides/quickbooks-vs-xero-comparison` | Comparison |
+| Xero accounting services and bookkeeping support | `/technology/xero` | Commercial / platform-specific — transaction coding, statement-level reconciliations, AP/AR, tracking-category review and month-end schedules inside an existing Xero organisation; no implementation, migration or vendor certification. CPA-firm client relationships and review/sign-off remain with the firm. |
 | ASC 606 revenue recognition for SaaS | `/resources/insights/asc-606-revenue-recognition-saas` | Informational (specialist) |
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
 | Dental practice accounting and bookkeeping — production/collection reports, adjustments, processor/bank deposits, lab/supply costs and provider/location records | `/industries/healthcare/dental-practice-accounting` | Commercial — dental-specific accounting workflow distinct from the broader medical-practice page; excludes claims submission, clinical coding and patient collections |
@@ -155,7 +156,7 @@ wrong in both.
 | Self-managed HOA accounting support | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial accounting support for associations without a management company; not community management or legal advice |
 | HOA and condo association chart of accounts setup | `/blog/hoa-chart-of-accounts` | Informational — sample account groups and setup considerations; distinct from the commercial HOA accounting hub |
 | Property management chart of accounts example | `/blog/property-management-chart-of-accounts` | Informational — property/entity, tenant, deposit and owner reporting structure; distinct from the commercial property-management accounting page |
-| Ecommerce accounting services for online retailers | `/industries/ecommerce` | Commercial — broad multi-channel ecommerce accounting; Amazon seller and Shopify accounting pages remain platform-specific spokes |
+| E-commerce accounting services for online retailers and marketplace sellers | `/industries/ecommerce` | Commercial — gross-to-net settlement reconciliation, marketplace fees/refunds/reserves, inventory/COGS records and channel reporting; Amazon and Shopify remain platform-specific spokes. Tax advice, registration decisions and filings remain with the client's tax professional. |
 
 
 ## Indexing cluster refinement — 2026-10-18
