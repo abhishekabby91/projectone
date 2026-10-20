@@ -1,3 +1,80 @@
+## 2026-10-20c — Doc-only pushes stop building; the industry list in `identity.md` is six and the site publishes ten
+
+**Deployment churn.** `vercel.json` now carries an `ignoreCommand` pointing at
+`scripts/vercel-ignore-build.sh`. Measured first: **351 of the 1,380 commits
+between 2026-10-10 and 2026-10-20 — 25% — touched only `docs/`, `knowledge/`,
+`seo-agent/`, `.claude/` or a root-level `*.md`.** No file under `app/`, `lib/`
+or `components/` imports any of those directories and none is read from disk
+during the build, so each of those 351 builds produced a byte-identical site.
+Two live examples: preview `dpl_EjYjn3q1xrfhktFrSrgJtPF3tYFU` was built from a
+commit whose whole diff was `docs/ROUTES.md`, and production
+`dpl_9KghXgmrx4v5ENaLUfVcbTSDVaPy` from "chore: update SEO agent report".
+
+The gate is biased to build: exit 0 skips, exit 1 runs, and every unclassifiable
+path exits 1 — unknown branch, missing parent commit, failed diff. **`main`
+always builds**, because a skipped production build withholds a real content
+change with nothing to show it happened. Tested against six real commits before
+shipping: `main` builds, an empty ref builds, a `docs/ROUTES.md`-only tip skips,
+a `CLAUDE.md` + `SEO-CHANGELOG.md` tip skips, an `app/robots.ts` tip builds, and
+a 19-path mixed tip builds. The known cost is recorded in CLAUDE.md: Vercel
+builds a push's tip only, so a push ending on a doc commit gets no fresh
+preview until the next rendered change.
+
+**The industry count is wrong, and it is the more consequential finding.**
+`knowledge/company/identity.md` says *"Industries (six — each has a dedicated
+page)"*. Ten industry pages are live: the six plus `construction`,
+`hoa-accounting`, `nonprofit-accounting` and `property-management`. Property
+management and HOA were the owner's instruction on 2026-09-17 and are
+documented. **`construction` and `nonprofit-accounting` have no recorded owner
+authority anywhere in this repo**, and `knowledge/` holds no source for either
+— zero hits across all 14 files for job cost, WIP, retention, percentage of
+completion, nonprofit, fund accounting or restricted funds. CLAUDE.md open item
+7 still listed both as "still to build"; corrected.
+
+Both pages were read before this was called an overclaim, and it is not one.
+Every capability on them is conditioned on client-approved structure — cost
+codes the client approves, WIP only where the client supplies the budgets,
+costs, billings and calculation method, grant tagging only against supplied
+terms and coding rules — and both carry boundaries blocks refusing legal
+opinions on contracts and lien rights, certification for lenders, audit
+opinions, grant-compliance determinations and interpretation of grant
+agreements. The defect is traceability: two live industry pages have no entry in
+the file that exists to check claims against. `knowledge/README.md` makes it
+read-only to agents, so **this is the owner's single line of confirmation**, and
+neither page may be deepened until it exists.
+
+**Three unmerged branches are working the same files.** Found while scoping the
+ten-item SEO portfolio: `seo-content-refresh-2026-10-20` (12 commits) already
+holds portfolio items 1, 2 and 4 — `app/technology/xero/page.tsx`,
+`app/industries/ecommerce/page.tsx`, `app/industries/cpa-firms/page.tsx` — and
+`accounstone-cpa-state-query-cluster-hoa-ux-oct19` (58) and
+`accounstone-release-consolidation-oct20` (29) both rewrite the CPA cluster,
+overlapping each other. Writing those improvements on a fourth branch would
+have produced direct conflicts in three files, so nothing was written. The
+portfolio's top items are already drafted; what is missing is a merge, not more
+content.
+
+**`/industries/cpa-firms/illinois`: no action, and the reason is the date.** It
+was created 2026-10-19. "Crawled - currently not indexed" one day after
+publication is normal, not a defect, and the CPA state cluster it belongs to is
+being rewritten on two of the branches above — editing it here would conflict.
+It keeps real per-state content (~62 lines in `lib/cpa-firm-state-content.ts`),
+so there is nothing thin to fix.
+
+**Hero CTA confirmed.** `app/page.tsx:81` carries
+`ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}`.
+The WhatsApp revert in `c50e39e0` had already been superseded; no change needed.
+
+**Vercel deployment storage: closed, nothing to delete.** The 9.89 GB meter is
+lagging, not live. `projectone` holds 8 deployments, none older than two days,
+while 17 of the 20 most recent preview aliases point at deployments that no
+longer exist — confirmed by a 404 from `GET /v13/deployments` on
+`dpl_8kGG5bGb2QhERXc9KqwYoUFFqhHP`. Previews are already being expired about as
+fast as they are created. The connector exposes no delete-deployment tool
+(`cancel_deployment` only, for in-progress builds) and no retention field on
+`get_project`, so both remaining levers are the owner's: read the meter at Team
+→ Settings → Usage, and set Deployment Retention per project.
+
 ## 2026-10-20b — Four dead page files deleted, and the link sweep that was missing them
 
 `/blog/hoa-delinquency-accounting`, `/blog/hoa-monthly-close-process`,

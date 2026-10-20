@@ -15,7 +15,7 @@ In this order. They are the authoritative sources; this file is only the index.
 | File | What it governs |
 |---|---|
 | `AI-WEBSITE-GUIDE.md` | Tone, content rules, architecture, banned phrases, **"Known build gotchas"**. The single most important file. |
-| `docs/ROUTE-INVENTORY.md` | **Generated list of all 212 indexable routes and titles. Paste it alongside the brief below** — without it an external AI cannot judge overlap or "improve the existing page instead". Regenerate with `node scripts/route-inventory.mjs`. |
+| `docs/ROUTE-INVENTORY.md` | **Generated list of all 219 indexable routes and titles. Paste it alongside the brief below** — without it an external AI cannot judge overlap or "improve the existing page instead". Regenerate with `node scripts/route-inventory.mjs`. |
 | `docs/NEW-PAGE-BRIEF.md` | **Self-contained brief to paste into ChatGPT or any AI working outside this repo.** Same contract as `PAGE-FORMAT.md`, restated for someone who cannot read our files or run the checker: the page template, the six things to hand back, and the claim rules inlined. |
 | `docs/PAGE-FORMAT.md` | **The shape contract for every new page** — word floors by page type, metadata budgets, band order, FAQ rules, and the finish checklist. Enforced by `node scripts/verify-pages.mjs`. Read before writing a page; run the checker before merging. |
 | `knowledge/company/scope-boundaries.md` | **What Accounstone does NOT do.** Every section exists because a real overclaim shipped to production. Check before writing any capability claim. |
@@ -50,11 +50,11 @@ background, superseded on specifics by the files above.
 
 **The counts in this section go stale faster than anything else in this file.
 Re-measure before quoting one.** Every figure below carrying a 2026-09-09 date
-was written when the site had 95 routes; it now has 218. Treat an undated count
+was written when the site had 95 routes; it now has 221. Treat an undated count
 here as a claim to check, not a fact.
 
-- The sitemap drift check is documented below. The current tree has **218**
-  `app/**/page.tsx` routes; **212** canonical indexable routes belong in the
+- The sitemap drift check is documented below. The current tree has **221**
+  `app/**/page.tsx` routes; **219** canonical indexable routes belong in the
   sitemap. Four legacy blog routes redirect permanently and two live routes are
   `noindex`, so those six page files are deliberately absent. Re-run the drift
   check after any route or redirect change.
@@ -126,8 +126,8 @@ here as a claim to check, not a fact.
 - No horizontal overflow, and no sub-24px tap target, at 320 / 768 / 1280 / 1440px.
 - **Six routes have one or fewer contextual inbound links, and all six are
   correct** — see "Internal links are measured, not assumed" below.
-- All 212 sitemap URLs carry a `lastmod`, generated rather than written.
-  `public/llms.txt` lists the same 212 and excludes the same two `noindex`
+- All 219 sitemap URLs carry a `lastmod`, generated rather than written.
+  `public/llms.txt` lists the same 219 and excludes the same two `noindex`
   routes. **Whether every date is true depends on the generator being right
   about shared modules — see "A shared module changes some routes, not all"
   below.**
@@ -439,11 +439,20 @@ Do **not** resolve these unilaterally. Each needs the owner.
    **This does not reopen SaaS or law firms** — those were absorbed because the
    host page already ranked for the term, which was never true here.
 
-   **Still to build, and none of them collides with anything:** construction,
-   manufacturing, nonprofits. Each needs its own `lib/` content module written
-   from the mechanics — WIP and retention, standard cost and variance,
-   restricted funds — not the Real Estate file with the nouns swapped. That is
-   exactly how the registration trio first measured 53% against itself.
+   **Two of those three were built and this line was never updated
+   (found 2026-10-20).** `/industries/construction` and
+   `/industries/nonprofit-accounting` are live and indexable, and have been
+   long enough to accumulate Search Console impressions — 5 at position 71.6
+   and 1 at position 87 respectively. Neither has a `lib/` content module (the
+   copy sits in its `page.tsx`), and neither appears in
+   `knowledge/company/identity.md`, which still says **"Industries (six — each
+   has a dedicated page)"** while ten industry pages exist. See "The industry
+   count in `identity.md` is wrong" below before touching either page.
+
+   **Still to build: manufacturing.** It needs its own `lib/` content module
+   written from the mechanics — standard cost and variance — not the Real
+   Estate file with the nouns swapped. That is exactly how the registration
+   trio first measured 53% against itself.
 
    **Absorbing the two segments caught three live overclaims, which is worth
    knowing because a page nobody is editing is a page nobody is checking.**
@@ -485,6 +494,36 @@ pnpm next build     # must complete; a single bad prop breaks the whole type che
 ```
 
 `pnpm`, never `npm` — `pnpm install --frozen-lockfile` mirrors Vercel's build step.
+
+### Doc-only pushes no longer build (2026-10-20)
+
+`vercel.json` carries an `ignoreCommand` pointing at
+`scripts/vercel-ignore-build.sh`. Exit 0 skips the build, exit 1 runs it, and
+**every uncertain path exits 1** — unknown branch, missing parent commit,
+failed diff, anything it cannot classify.
+
+It skips only when the tip commit touches nothing that renders: `docs/`,
+`knowledge/`, `seo-agent/`, `.claude/` and root-level `*.md`. Verified
+2026-10-20 — no file under `app/`, `lib/` or `components/` imports any of those
+directories, and none of them is read from disk during the build.
+**Re-verify that before adding an entry to the list.**
+
+**`main` always builds**, whatever it touched. A skipped production build
+withholds a real content change with nothing to show that it happened, which is
+the same class of silent failure as a stale `lastmod`.
+
+Why it exists: 351 of the 1,380 commits between 2026-10-10 and 2026-10-20 — a
+quarter of them — touched documentation only, and each still produced a full
+build of a 212-page site. Two live examples from the day it was written:
+preview `dpl_EjYjn3q1xrfhktFrSrgJtPF3tYFU` was built from a commit whose entire
+diff was `docs/ROUTES.md`, and production `dpl_9KghXgmrx4v5ENaLUfVcbTSDVaPy`
+from "chore: update SEO agent report".
+
+**The one real cost.** Vercel builds a push's tip commit, and this classifies
+that tip alone. A push whose last commit is doc-only but whose earlier commits
+changed a page gets no fresh preview. That is previews only — `main` is exempt
+— and the next push carrying a rendered change rebuilds it. If a preview ever
+looks stale, check the branch's tip commit before concluding the page is wrong.
 
 ### Check duplication within a page, not just across pages
 
@@ -1886,6 +1925,47 @@ advice** (a reserve specialist and the board); no collections, lien or
 foreclosure step; no interpretation of governing documents; **no audit or review
 opinion** — that is an independent CPA and it has to be independent to be worth
 anything.
+
+## The industry count in `identity.md` is wrong, and that is the live gap
+
+`knowledge/company/identity.md` says **"Industries (six — each has a dedicated
+page)"** and lists CPA Firms, Technology, Healthcare, E-Commerce, Real Estate
+and Professional Services. **Ten industry pages are live** (counted
+2026-10-20): those six plus `construction`, `hoa-accounting`,
+`nonprofit-accounting` and `property-management`.
+
+Two of the four extras have recorded owner authority — the property management
+and HOA split was the owner's instruction on 2026-09-17 and is documented
+above. **`construction` and `nonprofit-accounting` have none anywhere in this
+repo**, and `knowledge/` holds no source for either: a grep across all 14
+knowledge files returns zero hits for job cost, WIP, retention, percentage of
+completion, nonprofit, fund accounting or restricted funds.
+
+**Read the two pages before calling this an overclaim, because it is not the
+usual shape of one.** Both are written in the conditional form this site uses
+for work done inside someone else's structure: coding to "client-approved job
+or cost codes"; WIP schedules only "where the client supplies project budgets,
+costs incurred, billing records and an approved calculation method"; grant
+tagging "where the client supplies grant terms, budgets, periods and approved
+coding rules". Both carry an explicit boundaries block — no legal opinion on
+contracts, lien rights or retainage enforceability, no certification for
+lenders or bonding agents; no audit opinion, no grant-compliance
+determination, no interpretation of grant agreements. Neither claims a
+specialism. They claim bookkeeping mechanics inside a structure the client
+owns, which is what `knowledge/services/bookkeeping.md` already covers.
+
+So the defect is traceability, not truth: **two live industry pages have no
+entry in the one file that exists to be what claims are checked against.**
+
+**The fix is the owner's, and it is a line of confirmation rather than a
+rewrite.** `knowledge/README.md` is explicit — "Read-only. Agents may cite
+these files. Only a human may edit them" — and `identity.md` repeats it, so no
+session can close this. What is needed is confirmation that construction
+businesses and nonprofit organisations are served on the terms those two pages
+already state, after which the industry list in `identity.md` goes from six to
+ten. **Until then, do not deepen either page.** Every paragraph on them today
+traces to the bookkeeping and accounting service files; a new one would be the
+first with nothing behind it.
 
 ## The CPA firms page, and the boundary that lets it exist
 
