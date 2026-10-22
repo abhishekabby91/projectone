@@ -12,9 +12,9 @@ import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl 
 import { regions, serviceRegions, industries, technologies } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Services: US, UK & Australia',
+  title: 'Accounting, Bookkeeping & Tax Services',
   description:
-    'Outsourced bookkeeping, accounting, tax preparation, payroll, AP, AR and audit support, delivered to each region’s rules and reporting cycle.',
+    'Outsourced bookkeeping, accounting, tax preparation, payroll, AP, AR and audit support for accounting firms and businesses.',
   path: '/services',
 });
 
@@ -73,7 +73,7 @@ export default function ServicesPage() {
       <PremiumHero
         subtitle="Accounting and Bookkeeping Services"
         title="Accounting, Bookkeeping & Tax Services"
-        description="Seven service lines, delivered to the reporting rules and compliance cycles of the United States, the United Kingdom and Australia."
+        description="Bookkeeping, accounting, tax preparation and recurring accounting workflows, scoped around your systems, reporting needs and review process."
         cta={{ text: 'Discuss Your Requirements', href: '/contact' }}
         ctaSecondary={{ text: 'View Solutions', href: '/solutions' }}
         background="primary-gradient"
@@ -91,18 +91,18 @@ export default function ServicesPage() {
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <Reveal className="max-w-4xl mx-auto space-y-5"><>
           <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Same Discipline, Applied to Three Different Rulebooks</h2>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Accounting Work That Fits Your Existing Workflow</h2>
           <p className="text-lg text-muted leading-relaxed">
-            Accounstone provides outsourced accounting, bookkeeping, tax preparation, payroll, accounts payable, accounts receivable and audit support to accounting firms and practices in the United States, the United Kingdom and Australia.
+            Accounstone provides accounting, bookkeeping, tax-preparation support, payroll, accounts payable, accounts receivable and audit support to accounting firms and businesses.
           </p>
           <p className="text-lg text-muted leading-relaxed">
-            What stays constant is the method: documented workflows, a named preparer and reviewer, evidence retained for every step, and a clear handoff back to whoever holds review and approval. What changes by region is almost everything else — the reporting framework, the compliance calendar, the payroll obligations and the point at which a licensed professional has to take over. That is why the service pages below are region-specific rather than generic.
+            The work is organized around documented workflows, clear preparer and reviewer responsibilities, retained support, and a handoff to the person responsible for review and approval. Scope follows the engagement, software, reporting needs and professional responsibilities involved.
           </p>
         </></Reveal>
       </section>
 
       {/* Region blocks */}
-      {regions.map((region, ri) => (
+      {regions.filter((region) => region.slug === 'united-states').map((region, ri) => (
         <section key={region.slug} id={region.slug} className={`w-full py-10 md:py-14 px-6 md:px-8 ${ri % 2 === 0 ? 'bg-input' : 'bg-white'}`}>
           <div className="max-w-6xl mx-auto">
             <Reveal className="max-w-3xl space-y-4 mb-8"><>
@@ -136,14 +136,6 @@ export default function ServicesPage() {
               ))}
             </ul>
 
-            <Reveal delay={0.1}>
-              <p className="mt-6 text-sm text-muted">
-                For the wider {region.adjective} accounting and compliance environment — tax authorities, reporting standards and payroll obligations — see the{' '}
-                <Link href={`/markets/${region.slug}`} className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
-                  {region.name} market overview
-                </Link>.
-              </p>
-            </Reveal>
           </div>
         </section>
       ))}
