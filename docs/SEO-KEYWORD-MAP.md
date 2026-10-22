@@ -6,7 +6,7 @@ Status: working editorial map, created 2026-10-09. This is a qualitative intent 
 
 Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BENCHMARK.md`](./COMPETITOR-SEO-BENCHMARK.md). That file is a qualitative review of public pages surfaced in searches, not a verified ranking report or a source for unsubstantiated claims.
 
-- Main commercial market: United States. Keep relevant UK and Australian service/market pages; do not force US language onto them.
+- Active commercial focus: US accounting firms and businesses. The Markets cluster is retired from active navigation and internal architecture. Do not create `/us/` URL prefixes; retain clean existing service and industry URL patterns.
 - Delivery location: New Delhi, India. Describe this accurately as the delivery base, not as the target market for US services.
 - Give each indexable URL one primary search intent and a small set of close supporting terms. A page can rank for related variants; do not create a page for every wording variation.
 - Do not make location pages that only swap a city/state name. A location page needs real local context, relevant services, and a reason to exist.
@@ -30,7 +30,7 @@ Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BEN
 1. State the direct answer early when a page is answering a question.
 2. Use specific, descriptive headings and define technical terms in plain language.
 3. Add FAQs only when they answer genuine questions not already fully answered; keep visible FAQ text aligned with any FAQ structured data.
-4. Make business identity, services, markets, software and engagement boundaries consistent across pages.
+4. Make business identity, services, software and engagement boundaries consistent across pages.
 5. Validate structured data against visible page content; use relevant schema only, not schema as a ranking trick.
 6. Keep important information in crawlable page text; do not rely only on images or interactive controls.
 7. Maintain `llms.txt` and `llms-full.txt` as optional reference files for systems that use them, not as a Google ranking requirement.
@@ -40,7 +40,7 @@ Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BEN
 | URL / page | Primary intent / keyword family | Supporting terms and page distinction |
 |---|---|---|
 | `/` | accounting, bookkeeping and tax outsourcing | outsourcing for CPA/accounting firms and businesses; India-based delivery. Broad company page, not a deep page for one industry or state. |
-| `/services` | outsourced accounting services | service overview and links to individual service/market pages. |
+| `/services` | outsourced accounting services | service overview and links to US service pages, relevant industries and software workflows. |
 | `/solutions/offshore-accounting-support` | offshore accounting support | offshore bookkeeping, accounting support team; explain delivery model rather than compete with every service page. |
 | `/solutions/staff-augmentation` | accounting staff augmentation | accounting staffing support, temporary accounting capacity; distinct from a managed recurring workflow. |
 | `/solutions/dedicated-accounting-teams` | dedicated accounting team outsourcing | dedicated offshore accounting team; only target this phrase if the offer and page accurately describe the model. |
@@ -63,9 +63,7 @@ Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BEN
 | `/industries/healthcare` | healthcare bookkeeping/accounting support | keep claims aligned with the actual page and the client types served. |
 | `/industries/professional-services` | professional services bookkeeping/accounting | recurring books, client-related ledgers, WIP and reporting preparation. |
 | `/technology/quickbooks-online` and other software pages | accounting support in named software | Target the platform + accounting workflow only where content demonstrates actual experience; do not claim reseller/certification status. |
-| `/markets/united-states` | accounting outsourcing for US businesses and CPA firms | national-market overview; link to US services, relevant industries and real state pages. |
-| `/markets/united-kingdom` | accounting outsourcing for UK accountancy practices | UK terminology and service scope; do not reuse US tax language. |
-| `/markets/australia` | accounting outsourcing for Australian businesses/accounting firms | Australian terminology and local tax/BAS pages; do not reuse US/UK language. |
+
 
 ## Location targeting rules
 
@@ -126,9 +124,9 @@ These articles should attract informational searches and feed relevant readers t
 
 ## Internal linking rules
 
-- Homepage -> service, solution, market and key industry hubs using descriptive natural anchor text.
+- Homepage -> core service, solution, software and key industry hubs using descriptive natural anchor text.
 - Industry landing page -> its related service/software guides and a relevant contact path.
-- US market page -> US service pages and truly relevant state/industry pages.
+- US service pages -> relevant industry pages, tax-type pages and workflow guides.
 - State page -> national US page, relevant service page and local-context page(s); avoid a list of every URL.
 - HOA articles -> HOA service landing page when contextually appropriate, plus 1–3 closely related articles. Do not force the commercial CTA into every paragraph.
 - Use final canonical URLs, not redirect source URLs.
