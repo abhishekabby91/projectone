@@ -1,3 +1,13 @@
+
+## 2026-10-22 — US-focused architecture / Markets cluster retirement staging
+
+- Removed the homepage Markets section and the Markets navigation/footer block.
+- The Services hub now surfaces US service pages only and no longer links to market overview pages.
+- The sitemap now lists US-qualified service routes and excludes `/markets/*` plus UK/Australia service routes. `llms.txt` and `llms-full.txt` no longer present the Markets cluster as active discovery architecture.
+- Existing market and UK/Australia service page source files are intentionally retained on this branch pending URL-specific query and backlink review. Do not delete or redirect them en masse. Choose a 301 only for a genuinely equivalent destination; otherwise assess 404/410 after evidence review.
+- No `/us/` prefix is being introduced. US tax-type, industry, software and resource clusters remain in their existing URL structure.
+- GSC baseline checked 2026-10-22: last 28 days 45 clicks, 7,791 impressions, 0.58% CTR, average position 55.6. July 24–October 22 Markets pages: 1,363 impressions and 2 clicks combined. Individual query and backlink checks remain outstanding because the connected GSC tool reached its monthly allowance.
+
 ## 2026-10-19 — GSC-led duplicate and intent-cluster cleanup
 
 - Retired the duplicate property-accounting service page source `/services/property-management-accounting`; its existing permanent redirect points to `/industries/property-management`, the single commercial owner. The industry hub's link now points to the specific accounting-cleanup page instead of the duplicate.
