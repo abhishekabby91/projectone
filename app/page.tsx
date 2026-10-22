@@ -16,12 +16,12 @@ import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
+  title: 'Accounting & Tax Outsourcing | Accounstone',
   description:
     'Accounting, bookkeeping and tax outsourcing for businesses and professional firms, delivered within existing workflows.',
   path: '/',
   absoluteTitle: true,
-  ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
+  ogTitle: 'Accounting & Tax Outsourcing | Accounstone',
   ogDescription:
     'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
@@ -143,13 +143,9 @@ export default function HomePage() {
           description="Practical support across bookkeeping, accounting operations, tax preparation, payroll, payables, receivables and financial reporting."
           items={services.map((s) => ({
             ...s,
-            // Point each card at the regional page the retired generic URL
-            // redirects to, so the site's highest-authority page never links
-            // through a 308. audit-support resolves to United Kingdom -- the
-            // per-URL evidence is in the comment above the redirects in
-            // next.config.mjs. See CLAUDE.md, "zero internal links pointing at
-            // a redirect".
-            slug: `${s.slug}/${s.slug === 'audit-support' ? 'united-kingdom' : 'united-states'}`,
+            // Link service cards directly to the active U.S. service pages.
+            // This keeps homepage navigation aligned with the current service architecture.
+            slug: `${s.slug}/united-states`,
           }))}
           baseUrl="/services"
           columns={4}
