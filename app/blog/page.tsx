@@ -8,7 +8,7 @@ import InquirySection from '@/components/inquiry-section';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting & Bookkeeping Knowledge Base',
   description:
-    'Practical articles on bookkeeping, tax, HOA and property management accounting, QuickBooks and Yardi workflows for firms in the US, UK and Australia.',
+    'Practical articles on bookkeeping, tax, HOA and property management accounting, QuickBooks and Yardi workflows for U.S. firms and businesses.',
   path: '/blog',
 });
 
@@ -126,7 +126,7 @@ export default function BlogPage() {
         </div>
       </section>
       <InquirySection compact source="/blog" title="Reading Up Before You Decide?" lead="If one of these pieces describes your situation, skip ahead and put it to us directly. The consultation and the call are free." />
-      <CTABanner title="Looking for Region-Specific Services?" description="Browse our US, UK, and Australia service pages for country-specific bookkeeping, tax preparation, and audit support." cta={{ text: 'View Services', href: '/services' }} ctaSecondary={{ text: 'Contact Us', href: '/contact' }} background="primary" />
+      <CTABanner title="Looking for Accounting Support?" description="Explore bookkeeping, accounting, tax preparation, payroll, accounts payable, accounts receivable and audit support services." cta={{ text: 'View Services', href: '/services' }} ctaSecondary={{ text: 'Contact Us', href: '/contact' }} background="primary" />
     </main>
   );
 }
