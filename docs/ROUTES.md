@@ -16,12 +16,18 @@ with its own regional children for the same commercial intent.
 | URL | Type | Cluster | Status |
 |---|---|---|---|
 | `/services` | Hub | Core — region-first | Published |
-| `/services/bookkeeping/{united-states,united-kingdom,australia}` | B | Bookkeeping | Published |
-| `/services/accounting/{united-states,united-kingdom,australia}` | B | Accounting Services | Published (UK + AU added 2026-08-27) |
-| `/services/tax-preparation/{united-states,united-kingdom,australia}` | B | Tax Preparation | Published |
-| `/services/payroll/{united-states,united-kingdom,australia}` | B | Payroll | Published |
-| `/services/accounts-payable/{united-states,united-kingdom,australia}` | B | Accounts Payable | Published |
-| `/services/accounts-receivable/{united-states,united-kingdom,australia}` | B | Accounts Receivable | Published |
+| `/services/bookkeeping/united-states` | B | Bookkeeping | Active — US focus |
+| `/services/bookkeeping/{united-kingdom,australia}` | B | Bookkeeping | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounting/united-states` | B | Accounting Services | Active — US focus |
+| `/services/accounting/{united-kingdom,australia}` | B | Accounting Services | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/tax-preparation/united-states` | B | Tax Preparation | Active — US focus |
+| `/services/tax-preparation/{united-kingdom,australia}` | B | Tax Preparation | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/payroll/united-states` | B | Payroll | Active — US focus |
+| `/services/payroll/{united-kingdom,australia}` | B | Payroll | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounts-payable/united-states` | B | Accounts Payable | Active — US focus |
+| `/services/accounts-payable/{united-kingdom,australia}` | B | Accounts Payable | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounts-receivable/united-states` | B | Accounts Receivable | Active — US focus |
+| `/services/accounts-receivable/{united-kingdom,australia}` | B | Accounts Receivable | Legacy source retained; excluded from sitemap pending URL retirement review |
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
 | `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
 | `/services/tax-preparation/united-states/1065-partnership` | B | Form 1065 / K-1 | Published 2026-09-16 |
@@ -65,16 +71,16 @@ future; at that point the change is an entry in `serviceRegions` plus the matchi
 
 | URL | Type | Spokes | Status |
 |---|---|---|---|
-| `/markets` | Hub | — | Published |
-| `/markets/united-states` | B | `/texas`, `/california`, `/florida` | Published |
-| `/markets/united-states/texas` | B | — | Published |
-| `/markets/united-states/california` | B | — | Published |
-| `/markets/united-states/florida` | B | — | Published |
-| `/markets/united-kingdom` | B | `/vat-returns`, `/year-end-accounts` | Published |
-| `/markets/united-kingdom/vat-returns` | B | — | Published 2026-09-09 |
-| `/markets/united-kingdom/year-end-accounts` | B | — | Published 2026-09-09 |
-| `/markets/australia` | B | `/bas-preparation` | Published |
-| `/markets/australia/bas-preparation` | B | — | Published 2026-09-09 |
+| `/markets` | Hub | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states` | B | `/texas`, `/california`, `/florida` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/texas` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/california` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/florida` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom` | B | `/vat-returns`, `/year-end-accounts` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom/vat-returns` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom/year-end-accounts` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/australia` | B | `/bas-preparation` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/australia/bas-preparation` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
 
 **"Offshore" belongs to `/solutions/offshore-accounting-support`, not to a market
 page.** The UK page was titled "Offshore Accounting for UK Practices" until
