@@ -8,7 +8,7 @@
 export const routeLastModified: Record<string, string> = {
   '': '2026-10-22',
   '/about': '2026-09-03',
-  '/blog': '2026-10-20',
+  '/blog': '2026-10-23',
   '/blog/accounts-payable-outsourcing': '2026-10-19',
   '/blog/accounts-receivable-management': '2026-10-19',
   '/blog/audit-support-services': '2026-10-17',
@@ -105,7 +105,7 @@ export const routeLastModified: Record<string, string> = {
   '/delivery-framework/quality-assurance': '2026-09-08',
   '/industries': '2026-10-09',
   '/industries/construction': '2026-10-15',
-  '/industries/cpa-firms': '2026-10-20',
+  '/industries/cpa-firms': '2026-10-22',
   '/industries/cpa-firms/accounts-payable-outsourcing': '2026-10-20',
   '/industries/cpa-firms/california': '2026-10-19',
   '/industries/cpa-firms/california-tax-workpaper-support': '2026-10-20',
@@ -224,7 +224,7 @@ export const routeLastModified: Record<string, string> = {
   '/technology/netsuite': '2026-10-19',
   '/technology/quickbooks': '2026-10-04',
   '/technology/sage': '2026-10-18',
-  '/technology/xero': '2026-10-20',
+  '/technology/xero': '2026-10-22',
   '/terms': '2026-09-16',
   '/thank-you': '2026-09-09',
 };
