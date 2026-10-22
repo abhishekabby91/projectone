@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail } from 'lucide-react';
-import { companyInfo, regions, serviceRegions, technologies, industries, markets } from '@/lib/data';
+import { companyInfo, regions, serviceRegions, technologies, industries } from '@/lib/data';
 import SocialIcon from '@/components/social-icon';
 import CookieSettingsButton from '@/components/cookie-settings-button';
 import { registrationStates } from '@/lib/company-registration';
@@ -15,15 +15,11 @@ export default function Footer() {
   //   1. The 21 Service x Region pages are listed directly. They are the
   //      primary commercial pages and were previously reachable only through
   //      in-content links.
-  //   2. Section hubs (/services, /markets, /technology, /resources, /blog)
-  //      are listed explicitly. /technology and /blog had zero inbound links
-  //      in rendered HTML before this and were effectively orphaned.
-  //   3. The 21 links are laid out as one service per row with three region
-  //      links on it, rather than three columns of seven. Same 21 hrefs in the
-  //      server HTML - none may be dropped - in a third of the vertical space.
-  //      Do NOT "shorten" this block by removing regions: that orphans the
-  //      primary commercial pages, which is the exact failure fixed on
-  //      2026-08-27. Shorten the presentation, never the link set.
+  //   2. Section hubs (/services, /technology, /resources, /blog) are linked
+  //      explicitly. The Markets cluster has been removed from active navigation.
+  //   3. Only the US service URLs are linked here. UK/Australia routes are
+  //      intentionally excluded from the active architecture pending a separate
+  //      GSC/backlink-based retirement decision.
   //
   // Four columns, two blocks each. The even shape is deliberate: an earlier
   // version had one column carrying three blocks and another carrying one,
@@ -38,10 +34,6 @@ export default function Footer() {
           { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
           { name: 'Back Office Support', href: '/solutions/back-office-support' },
           { name: 'All Solutions', href: '/solutions' },
-        ]},
-        { title: 'Markets', links: [
-          ...markets.map((market) => ({ name: market.name, href: `/markets/${market.slug}` })),
-          { name: 'All Markets', href: '/markets' },
         ]},
       ],
     },
@@ -138,13 +130,9 @@ export default function Footer() {
         {/* Single column below 375px: the 2-column grid needs ~155px per
             column to fit "TECHNOLOGY", which only holds from 375px up.
             Measured, not guessed — 360px clipped it, 375px does not. */}
-        {/* Services: one row per service, three region links on it. This is
-            the whole 7 x 3 matrix - 21 crawlable hrefs - in seven lines
-            instead of three seven-item columns. The service name is plain
-            text, not a link: the generic /services/{slug} URLs are 301s and
-            must never be linked from anywhere. Each region link carries an
-            aria-label with the full name, because "US" alone is not an
-            accessible name. */}
+        {/* Services: one US link per service. Generic /services/{slug} URLs
+            are redirects and must never be linked. UK/Australia routes are
+            excluded from active navigation while their retirement is reviewed. */}
         <div className="mb-9">
           <h3 className="mb-3 text-[11px] lg:text-xs font-bold uppercase tracking-normal lg:tracking-[0.14em] text-white">Services</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-1">
@@ -152,7 +140,7 @@ export default function Footer() {
               <li key={service.slug} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-white/10 py-1">
                 <span className="text-sm leading-5 text-white/80">{service.navLabel}</span>
                 <span className="flex items-center gap-x-2 shrink-0">
-                  {regions.map((region) => (
+                  {regions.filter((region) => region.slug === 'united-states').map((region) => (
                     <Link
                       key={region.slug}
                       href={`/services/${service.slug}/${region.slug}`}
