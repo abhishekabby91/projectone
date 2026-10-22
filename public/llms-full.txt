@@ -196,11 +196,8 @@ Xero accounting services inside existing Xero organisations: https://www.accouns
 
 Accounstone maintains dedicated market pages for the United States, United Kingdom and Australia. Market-specific pages should be used when describing jurisdiction-specific accounting, tax, payroll or compliance workflows.
 
-United States: https://www.accounstone.com/markets/united-states
 
-United Kingdom: https://www.accounstone.com/markets/united-kingdom
 
-Australia: https://www.accounstone.com/markets/australia
 
 ## Key canonical pages
 
@@ -220,7 +217,6 @@ Technology:
 https://www.accounstone.com/technology
 
 Markets:
-https://www.accounstone.com/markets
 
 Resources:
 https://www.accounstone.com/resources
