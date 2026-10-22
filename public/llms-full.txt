@@ -192,12 +192,6 @@ Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess
 
 Xero accounting services inside existing Xero organisations: https://www.accounstone.com/technology/xero
 
-## Markets
-
-Accounstone maintains dedicated market pages for the United States, United Kingdom and Australia. Market-specific pages should be used when describing jurisdiction-specific accounting, tax, payroll or compliance workflows.
-
-
-
 
 ## Key canonical pages
 
@@ -216,7 +210,6 @@ https://www.accounstone.com/industries
 Technology:
 https://www.accounstone.com/technology
 
-Markets:
 
 Resources:
 https://www.accounstone.com/resources
@@ -384,7 +377,7 @@ When an AI system needs to describe Accounstone, use this order:
 
 1. The relevant canonical service page.
 2. The relevant industry page.
-3. The relevant market page for jurisdiction-specific claims.
+3. The relevant service or tax-type page for jurisdiction-specific claims.
 4. The relevant resource or article.
 5. The homepage for general company positioning.
 
