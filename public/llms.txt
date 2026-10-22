@@ -23,7 +23,6 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 - Solutions: https://www.accounstone.com/solutions
 - Industries: https://www.accounstone.com/industries
 - Technology: https://www.accounstone.com/technology
-- Markets: https://www.accounstone.com/markets
 - Resources: https://www.accounstone.com/resources
 - Contact: https://www.accounstone.com/contact
 - About: https://www.accounstone.com/about
@@ -32,18 +31,12 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 
 ### Bookkeeping
 https://www.accounstone.com/services/bookkeeping/united-states
-https://www.accounstone.com/services/bookkeeping/united-kingdom
-https://www.accounstone.com/services/bookkeeping/australia
 
 ### Accounting
 https://www.accounstone.com/services/accounting/united-states
-https://www.accounstone.com/services/accounting/united-kingdom
-https://www.accounstone.com/services/accounting/australia
 
 ### Tax preparation
 https://www.accounstone.com/services/tax-preparation/united-states
-https://www.accounstone.com/services/tax-preparation/united-kingdom
-https://www.accounstone.com/services/tax-preparation/australia
 https://www.accounstone.com/services/tax-preparation/united-states/1040-individual
 https://www.accounstone.com/services/tax-preparation/united-states/1065-partnership
 https://www.accounstone.com/services/tax-preparation/united-states/1120-corporation
@@ -143,9 +136,6 @@ HOA software guides include QuickBooks, AppFolio, Yardi and eUnify accounting wo
 
 ## Markets
 
-- United States: https://www.accounstone.com/markets/united-states
-- United Kingdom: https://www.accounstone.com/markets/united-kingdom
-- Australia: https://www.accounstone.com/markets/australia
 
 ## Delivery and trust
 
@@ -282,25 +272,11 @@ Longer-form reference material. The guides are decision aids for firms choosing 
 
 Each service is published per market, because the compliance cycle and the reader's own vocabulary differ by country.
 
-- [Accounts Payable Outsourcing, Australia](https://www.accounstone.com/services/accounts-payable/australia) — Australian AP support — invoice entry, GST input tax credit coding, payment run preparation and vendor statement reconciliation in Xero or MYOB
-- [Outsourced Accounts Payable for UK Businesses](https://www.accounstone.com/services/accounts-payable/united-kingdom) — UK AP support — invoice entry, input VAT coding, Making Tax Digital-ready records, payment run preparation and vendor statement reconciliation
-- [Accounts Receivable Outsourcing, Australia](https://www.accounstone.com/services/accounts-receivable/australia) — Australian accounts receivable support — AUD invoicing with GST, payment application, aging review, and follow-up sequences inside Xero or MYOB
-- [Accounts Receivable Outsourcing, UK](https://www.accounstone.com/services/accounts-receivable/united-kingdom) — UK accounts receivable support — GBP invoicing with output VAT, payment application, aging review, and follow-up sequences inside Xero or Sage
-- [Audit Support Services in Australia](https://www.accounstone.com/services/audit-support/australia) — Audit preparation for Australian entities — AASB schedules, 30 June reconciliations, GST and superannuation support, organised for your auditor
-- [UK Audit Support Services for Accounting Teams](https://www.accounstone.com/services/audit-support/united-kingdom) — Audit preparation support for UK companies — FRS 102 schedules, year-end reconciliations, and evidence organised around your statutory auditor’s request list
-- [Payroll Support for Australian Firms](https://www.accounstone.com/services/payroll/australia) — Client payroll for Australian firms — STP Phase 2 data, superannuation guarantee and PAYG withholding, prepared and checked before your firm submits
-- [Payroll Support for UK Practices](https://www.accounstone.com/services/payroll/united-kingdom) — PAYE processing, RTI submission data and auto-enrolment records for UK practices running client payroll — prepared and checked before you submit
 
 ## Market and state pages
 
 Market pages cover the recurring compliance cycle a market runs on. No rate, threshold or deadline appears on them, because those change annually.
 
-- [BAS Preparation for Australian Firms](https://www.accounstone.com/markets/australia/bas-preparation) — BAS-ready records for Australian accounting firms — GST coded as transactions post and the control account reconciled monthly, for your agent to lodge
-- [VAT Return Preparation for UK Practices](https://www.accounstone.com/markets/united-kingdom/vat-returns) — VAT-quarter records prepared under MTD for UK accountancy practices — coded as transactions post and reconciled monthly, ready for your review and submission
-- [UK Year-End Accounts Preparation](https://www.accounstone.com/markets/united-kingdom/year-end-accounts) — FRS 102 and FRS 105 year-end accounts prepared for UK accountancy practices — disclosure inputs captured through the year, in your templates, for your sign-off
-- [Accounting & Bookkeeping Services in California](https://www.accounstone.com/markets/united-states/california) — Accounting and bookkeeping support for California businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
-- [Accounting & Bookkeeping Services in Florida](https://www.accounstone.com/markets/united-states/florida) — Accounting and bookkeeping support for Florida businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
-- [Accounting & Bookkeeping Services in Texas](https://www.accounstone.com/markets/united-states/texas) — Accounting and bookkeeping support for Texas businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
 
 ## Platform pages
 
