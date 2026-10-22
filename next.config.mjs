@@ -151,7 +151,7 @@ const nextConfig = {
       },
       {
         source: "/services/audit-support",
-        destination: "/services/audit-support/united-kingdom",
+        destination: "/services/audit-support/united-states",
         permanent: true,
       },
     ];
