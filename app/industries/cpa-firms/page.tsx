@@ -27,9 +27,9 @@ import {
 const PATH = '/industries/cpa-firms';
 
 export const metadata: Metadata = genMeta({
-  title: 'Accounting & Tax Outsourcing for CPA Firms',
+  title: 'Outsourced Accounting for CPA Firms',
   description:
-    'Accounting and tax outsourcing for U.S. CPA firms: busy-season overflow, bookkeeping cleanup, CAS production and return preparation. Review stays yours.',
+    'Outsourced accounting for CPA firms: bookkeeping cleanup, CAS production, tax prep and workpapers, with review and sign-off retained by your firm.',
   path: PATH,
 });
 

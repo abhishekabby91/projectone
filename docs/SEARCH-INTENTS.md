@@ -32,7 +32,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | U.S. CPA firm outsourcing readiness checklist — taxpayer-data safeguards, access, review workflow and pilot | `/blog/us-cpa-firm-outsourcing-readiness-checklist` | Informational / operational checklist — distinct from general tax outsourcing overview and vendor-selection guide |
 | Audit support outsourcing | `/services/audit-support/{region}` | Commercial |
 | What audit prep work can be delegated | `/blog/audit-support-services` | Informational |
-| CPA firm outsourcing / capacity support | `/industries/cpa-firms` | Commercial (Tier-1 audience) — the firm as a business, not the work |
+| Outsourced accounting for CPA firms / preparation capacity | `/industries/cpa-firms` | Commercial (Tier-1 audience) — recurring bookkeeping, cleanup, CAS production and scoped tax-preparation workpapers; CPA firm retains client relationship, professional judgement, review and sign-off |
 | California CPA firm accounting outsourcing | `/industries/cpa-firms/california` | Commercial / state-qualified CPA-firm intent; state-specific portfolio examples and workflow scoping, not a generic business accounting page |
 | Texas CPA firm accounting outsourcing | `/industries/cpa-firms/texas` | Commercial / state-qualified CPA-firm intent; recurring preparation support and firm review handoff |
 | Florida CPA firm accounting outsourcing | `/industries/cpa-firms/florida` | Commercial / state-qualified CPA-firm intent; recurring client work and seasonal/portfolio scoping |
@@ -79,6 +79,7 @@ One primary search intent → one primary URL. Check this file before creating a
 | How to choose an accounting outsourcing partner | `/resources/guides/how-to-choose-accounting-outsourcing-partner` | Evaluation |
 | Staff augmentation vs. dedicated team vs. offshore vs. back-office | `/resources/guides/choosing-an-engagement-model` | Comparison |
 | QuickBooks vs. Xero | `/resources/guides/quickbooks-vs-xero-comparison` | Comparison |
+| Xero accounting services and bookkeeping support | `/technology/xero` | Commercial / platform-specific — transaction coding, statement-level reconciliations, AP/AR, tracking-category review and month-end schedules inside an existing Xero organisation; no implementation, migration or vendor certification. CPA-firm client relationships and review/sign-off remain with the firm. |
 | ASC 606 revenue recognition for SaaS | `/resources/insights/asc-606-revenue-recognition-saas` | Informational (specialist) |
 | Sales tax nexus for e-commerce | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Informational (specialist) |
 | Dental practice accounting and bookkeeping — production/collection reports, adjustments, processor/bank deposits, lab/supply costs and provider/location records | `/industries/healthcare/dental-practice-accounting` | Commercial — dental-specific accounting workflow distinct from the broader medical-practice page; excludes claims submission, clinical coding and patient collections |
@@ -95,58 +96,26 @@ One primary search intent → one primary URL. Check this file before creating a
 3. Only add a new row (and page) when the intent is genuinely unserved.
 4. Two rows should never target the same primary intent without an explicit differentiation note (see the Payroll and AP rows above for the pattern).
 
-## Regional authority vs. commercial intent (added 2026-08-27)
+## US-focused service architecture (updated 2026-10-22)
 
-The distinction below is the one the restructure exists to protect. A Market page answers
-"how does accounting work in this country"; a Service x Region page answers "who can do
-this specific work for me there". Measured overlap between the two is 0.0%.
+The separate Markets cluster is no longer part of the active navigation, sitemap, or internal-link plan. Do not create a `/us/` prefix. Keep the established clean URLs and assign US-specific commercial intents to service, tax-type, and industry pages.
 
 | Search intent | Primary URL | Intent class |
 |---|---|---|
-| Registering / forming a company in the US, and what follows it | `/company-registration` | Commercial — cluster hub |
-| Registering in a specific state (Delaware, Wyoming, Nevada) | `/company-registration/{state}` | Commercial — state detail |
-| How accounting/tax/payroll works in the US (IRS, GAAP, state, nexus) | `/markets/united-states` | Informational — regional authority |
-| How accounting/tax/payroll works in the UK (HMRC, VAT, MTD, PAYE, Companies House) | `/markets/united-kingdom` | Informational — regional authority |
-| How accounting/tax/payroll works in Australia (ATO, GST, BAS, PAYG, STP, super) | `/markets/australia` | Informational — regional authority |
-| Outsourced {service} in {region} | `/services/{service}/{region}` | Commercial |
-| VAT return preparation under MTD, for UK practices | `/markets/united-kingdom/vat-returns` | Commercial — cycle detail |
-| Year-end accounts preparation (FRS 102/105, Companies House) | `/markets/united-kingdom/year-end-accounts` | Commercial — cycle detail |
-| BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
+| All accounting and bookkeeping services | `/services` | Commercial — service hub |
+| US bookkeeping outsourcing | `/services/bookkeeping/united-states` | Commercial |
+| US accounting outsourcing | `/services/accounting/united-states` | Commercial |
+| US tax preparation support | `/services/tax-preparation/united-states` | Commercial |
 | Outsourcing Form 1040 / individual return preparation | `/services/tax-preparation/united-states/1040-individual` | Commercial — return-type detail |
 | Outsourcing Form 1065 / partnership and K-1 preparation | `/services/tax-preparation/united-states/1065-partnership` | Commercial — return-type detail |
-| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail; corporate book-to-tax schedules and fixed-asset workpapers, not general tax outsourcing overview |
-| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail; shareholder schedules and corporate-book support, distinct from Form 1120 C corporation return |
-| All services, choose by region | `/services` | Commercial — navigational |
+| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail |
+| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail |
+| Accounting outsourcing for CPA firms | `/industries/cpa-firms` | Commercial — buyer/industry |
+| HOA accounting and bookkeeping outsourcing | `/industries/hoa-accounting` | Commercial — industry |
+| Property management accounting outsourcing | `/industries/property-management` | Commercial — industry |
+| Real estate accounting outsourcing | `/industries/real-estate` | Commercial — industry |
 
-**Do not** write service scope onto a Market page, and do not write country-environment
-explainers onto a Service x Region page. That collapse is what produces doorway pages.
-
-## Cycle-detail pages under a market (added 2026-09-09)
-
-The US had three sub-market pages and the UK and Australia had none, so the two
-markets the site sells into hardest carried less surface area than the domestic
-one. The three rows above close that, and they are scoped by a rule that keeps
-them off the market page's intent:
-
-**A market page covers the whole year across every cycle at one level of detail.
-A cycle page covers ONE cycle at the level of the ledger** — what is decided at
-the point of posting, and what it costs when it is decided at the deadline
-instead. If a second cycle starts appearing on a cycle page, it belongs on the
-market page.
-
-The cycle each market runs on is not a choice; both knowledge files name it.
-`knowledge/markets/uk.md`: "VAT registration and reporting is the primary
-recurring compliance cycle for most SME clients." `knowledge/markets/au.md`:
-"GST and BAS (Business Activity Statement) reporting is the primary recurring
-compliance cycle." Do not add a cycle page for something neither file calls a
-recurring cycle.
-
-**Every one of these pages routes submission to the licensed party, and that
-party differs by market** — the registered practitioner in the UK, the
-registered BAS or tax agent in Australia. `components/depth-block.tsx` takes
-`boundaryHeading` for exactly this reason; "your CPA" is US phrasing and is
-wrong in both.
-
+The legacy `/markets/*` and UK/Australia service routes require a separate URL-retirement pass. Do not add them back to active navigation, the sitemap, or AI-readable discovery files. Before returning 301/404/410 responses, review URL-specific query data and backlinks; do not redirect jurisdiction-specific UK/Australia content to an unrelated US page.
 
 ## Reconciled additions — 2026-10-16
 
@@ -155,7 +124,7 @@ wrong in both.
 | Self-managed HOA accounting support | `/industries/hoa-accounting/self-managed-hoa-accounting` | Commercial accounting support for associations without a management company; not community management or legal advice |
 | HOA and condo association chart of accounts setup | `/blog/hoa-chart-of-accounts` | Informational — sample account groups and setup considerations; distinct from the commercial HOA accounting hub |
 | Property management chart of accounts example | `/blog/property-management-chart-of-accounts` | Informational — property/entity, tenant, deposit and owner reporting structure; distinct from the commercial property-management accounting page |
-| Ecommerce accounting services for online retailers | `/industries/ecommerce` | Commercial — broad multi-channel ecommerce accounting; Amazon seller and Shopify accounting pages remain platform-specific spokes |
+| E-commerce accounting services for online retailers and marketplace sellers | `/industries/ecommerce` | Commercial — gross-to-net settlement reconciliation, marketplace fees/refunds/reserves, inventory/COGS records and channel reporting; Amazon and Shopify remain platform-specific spokes. Tax advice, registration decisions and filings remain with the client's tax professional. |
 
 
 ## Indexing cluster refinement — 2026-10-18

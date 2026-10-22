@@ -112,7 +112,7 @@ candidate for overlap.
 | `/delivery-framework/quality-assurance` | Quality Assurance & Controls |
 | `/industries` | Industry Accounting & Bookkeeping Support |
 | `/industries/construction` | Construction Accounting & Bookkeeping Support |
-| `/industries/cpa-firms` | Accounting & Tax Outsourcing for CPA Firms |
+| `/industries/cpa-firms` | Outsourced Accounting for CPA Firms |
 | `/industries/cpa-firms/accounts-payable-outsourcing` | Accounts Payable Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
@@ -127,7 +127,7 @@ candidate for overlap.
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
-| `/industries/ecommerce` | Ecommerce Accounting Outsourcing |
+| `/industries/ecommerce` | E-Commerce Accounting Services |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
@@ -191,7 +191,7 @@ candidate for overlap.
 | `/resources/insights` | Accounting & Tax Explainers |
 | `/resources/insights/asc-606-revenue-recognition-saas` | ASC 606 Revenue Recognition for SaaS |
 | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Sales Tax Nexus for E-Commerce Sellers |
-| `/services` | Accounting Services: US, UK & Australia |
+| `/services` | Accounting, Bookkeeping & Tax Services |
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |

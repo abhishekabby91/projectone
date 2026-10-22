@@ -1,3 +1,13 @@
+
+## 2026-10-22 — US-focused architecture / Markets cluster retirement staging
+
+- Removed the homepage Markets section and the Markets navigation/footer block.
+- The Services hub now surfaces US service pages only and no longer links to market overview pages.
+- The sitemap now lists US-qualified service routes and excludes `/markets/*` plus UK/Australia service routes. `llms.txt` and `llms-full.txt` no longer present the Markets cluster as active discovery architecture.
+- Existing market and UK/Australia service page source files are intentionally retained on this branch pending URL-specific query and backlink review. Do not delete or redirect them en masse. Choose a 301 only for a genuinely equivalent destination; otherwise assess 404/410 after evidence review.
+- No `/us/` prefix is being introduced. US tax-type, industry, software and resource clusters remain in their existing URL structure.
+- GSC baseline checked 2026-10-22: last 28 days 45 clicks, 7,791 impressions, 0.58% CTR, average position 55.6. July 24–October 22 Markets pages: 1,363 impressions and 2 clicks combined. Individual query and backlink checks remain outstanding because the connected GSC tool reached its monthly allowance.
+
 ## 2026-10-19 — GSC-led duplicate and intent-cluster cleanup
 
 - Retired the duplicate property-accounting service page source `/services/property-management-accounting`; its existing permanent redirect points to `/industries/property-management`, the single commercial owner. The industry hub's link now points to the specific accounting-cleanup page instead of the duplicate.
@@ -164,7 +174,7 @@ The four property-management pages are linked from the property-management hub; 
 
 Refined `/industries/hoa-accounting/los-angeles-county` to remove low-value generic housing-statistics framing and an unneeded chapter membership statistic, then added a need-led section routing readers by recurring monthly close, catch-up/cleanup, assessment receivables and existing software. Added contextual links to existing HOA guides and AppFolio, Buildium, Yardi and eUnify service pages. No new public URL was created. The companion `docs/HOA-QUERY-TARGETING-STRATEGY.md` maps location × software × need queries, page ownership, internal-link rules and Search Console validation steps. Query examples are hypotheses, not claims of measured search volume.
 | HOA Chart of Accounts: Example and Setup Guide | `/blog/hoa-chart-of-accounts` | HOA Accounting | Example account groups for operating/reserve cash, assessments, liabilities, income and expenses; setup guidance for condo associations | GSC-led example table and metadata refresh | 2026-10-18 |
-| Ecommerce Accounting Services for Online Retailers | `/industries/ecommerce` | E-Commerce | Multi-channel payout reconciliation, marketplace fees/refunds, inventory/COGS and QuickBooks/Xero workflow | GSC-led title and description refinement | 2026-10-18 |
+| E-commerce Accounting Services for Online Retailers | `/industries/ecommerce` | E-Commerce | Multi-channel settlement reconciliation, fees/refunds/reserves, inventory/COGS records and channel reporting; tax decisions and filings remain with client's tax professional | Existing URL refined to match commercial search intent and clarify scope | 2026-10-20 |
 
 
 ## 2026-10-18 — Indexing cluster refinement

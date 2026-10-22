@@ -13,7 +13,7 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 - **Core services:** bookkeeping, accounting, tax preparation, accounts payable, accounts receivable, payroll and financial reporting support.
 - **Delivery model:** defined accounting tasks are handled within the client's existing systems, reporting formats and review workflow.
 - **Responsibilities:** the client retains business decisions, payment authority, client relationships and filing responsibilities assigned to it or its licensed professionals.
-- **Geography:** dedicated market pages explain relevant market-specific services and workflows.
+- **Geography:** current service and industry pages describe the work and client workflows; the separate Markets cluster is not part of the active architecture.
 - **Engagement scope:** responsibilities, review points, access and approval steps are agreed before recurring work begins.
 
 ## Main pages
@@ -23,7 +23,6 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 - Solutions: https://www.accounstone.com/solutions
 - Industries: https://www.accounstone.com/industries
 - Technology: https://www.accounstone.com/technology
-- Markets: https://www.accounstone.com/markets
 - Resources: https://www.accounstone.com/resources
 - Contact: https://www.accounstone.com/contact
 - About: https://www.accounstone.com/about
@@ -32,18 +31,12 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 
 ### Bookkeeping
 https://www.accounstone.com/services/bookkeeping/united-states
-https://www.accounstone.com/services/bookkeeping/united-kingdom
-https://www.accounstone.com/services/bookkeeping/australia
 
 ### Accounting
 https://www.accounstone.com/services/accounting/united-states
-https://www.accounstone.com/services/accounting/united-kingdom
-https://www.accounstone.com/services/accounting/australia
 
 ### Tax preparation
 https://www.accounstone.com/services/tax-preparation/united-states
-https://www.accounstone.com/services/tax-preparation/united-kingdom
-https://www.accounstone.com/services/tax-preparation/australia
 https://www.accounstone.com/services/tax-preparation/united-states/1040-individual
 https://www.accounstone.com/services/tax-preparation/united-states/1065-partnership
 https://www.accounstone.com/services/tax-preparation/united-states/1120-corporation
@@ -65,7 +58,7 @@ https://www.accounstone.com/services/audit-support/united-states
 
 ## Industries
 
-- Accounting and CPA firms: https://www.accounstone.com/industries/cpa-firms
+- Outsourced accounting for CPA and accounting firms — bookkeeping cleanup, CAS production and preparation workpapers, with the firm retaining client relationships, professional judgement, review and sign-off: https://www.accounstone.com/industries/cpa-firms
 - California CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/california
 - Texas CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/texas
 - Florida CPA firm accounting outsourcing: https://www.accounstone.com/industries/cpa-firms/florida
@@ -115,7 +108,7 @@ https://www.accounstone.com/services/audit-support/united-states
 - Property management accounting support for DoorLoop: https://www.accounstone.com/industries/property-management/doorloop-accounting-support
 - Yardi accounting support for property managers: https://www.accounstone.com/industries/property-management/yardi-accounting-support
 - Technology and SaaS: https://www.accounstone.com/industries/technology
-- E-commerce: https://www.accounstone.com/industries/ecommerce
+- E-commerce accounting services for online retailers: settlement reconciliation, marketplace fees, refunds, reserves, inventory/COGS records and channel reporting: https://www.accounstone.com/industries/ecommerce
 - Amazon seller accounting and settlement reconciliation: https://www.accounstone.com/industries/ecommerce/amazon-seller-accounting
 - Shopify accounting and payout reconciliation: https://www.accounstone.com/industries/ecommerce/shopify-accounting
 - Healthcare: https://www.accounstone.com/industries/healthcare
@@ -141,11 +134,6 @@ Platform overview: https://www.accounstone.com/technology
 
 HOA software guides include QuickBooks, AppFolio, Yardi and eUnify accounting workflows where applicable.
 
-## Markets
-
-- United States: https://www.accounstone.com/markets/united-states
-- United Kingdom: https://www.accounstone.com/markets/united-kingdom
-- Australia: https://www.accounstone.com/markets/australia
 
 ## Delivery and trust
 
@@ -234,7 +222,7 @@ Practical accounting articles. Each one answers a single operational question at
 - [HOA Year-End Accounting: Preparing Books for the CPA](https://www.accounstone.com/blog/hoa-year-end-accounting) — Prepare HOA books for year-end with a checklist for bank reconciliations, homeowner balances, payables, reserves, statements and CPA schedules
 - [How to Outsource HOA Bookkeeping and Accounting](https://www.accounstone.com/blog/how-to-outsource-hoa-accounting) — A practical guide to outsourcing HOA bookkeeping and accounting, including scope, software access, reconciliations, board reporting and review controls
 - [Outsourced Bookkeeping: What to Expect](https://www.accounstone.com/blog/outsourced-bookkeeping-guide) — What outsourced bookkeeping looks like day to day in QuickBooks and Xero, the questions owners ask before starting, and the signs it is not working
-- [Outsourced Payroll: Costs and Red Flags](https://www.accounstone.com/blog/outsourced-payroll-services) — What outsourced payroll costs by headcount in the US, UK and Australia, and the bank-access line that should never move, whoever runs the payroll
+- [Outsourced Payroll: Costs and Red Flags](https://www.accounstone.com/blog/outsourced-payroll-services) — What outsourced payroll costs by headcount and the bank-access line, and the bank-access line that should never move, whoever runs the payroll
 - [Property Management 1099 Preparation Checklist](https://www.accounstone.com/blog/property-management-1099-preparation) — Organize vendor records for property management year-end reporting with payment reviews, W-9 tracking, reconciliation steps and exception lists
 - [Property Management Accounting: Complete Guide](https://www.accounstone.com/blog/property-management-accounting) — Property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software and month-end close
 - [Property Management Accounts Payable Workflow](https://www.accounstone.com/blog/property-management-accounts-payable) — Property management AP workflow for invoice coding, property allocation, approvals, duplicate checks and month-end controls
@@ -271,36 +259,13 @@ Longer-form reference material. The guides are decision aids for firms choosing 
 - [What Outsourced Accounts Payable Includes](https://www.accounstone.com/resources/guides/outsourced-accounts-payable-guide) — Invoice processing, approvals, payment controls, reconciliations and software workflows — plus what should stay in-house, and why
 - [Outsourced Accounts Receivable and DSO](https://www.accounstone.com/resources/guides/outsourced-accounts-receivable-guide) — What outsourced AR covers, how it affects DSO, how collections follow-up runs in QuickBooks and Xero, and what to ask before delegating receivables
 - [How Much Does Outsourced Bookkeeping Cost?](https://www.accounstone.com/resources/guides/outsourced-bookkeeping-cost-guide) — Pricing models, the workload factors that move the number, and the questions to ask so you are comparing the same scope between providers
-- [What Outsourced Payroll Processing Covers](https://www.accounstone.com/resources/guides/outsourced-payroll-processing-guide) — How outsourced payroll runs in QuickBooks, Xero, Gusto and ADP, what it costs in the US, UK and Australia, and what employers ask before handing it over
+- [What Outsourced Payroll Processing Covers](https://www.accounstone.com/resources/guides/outsourced-payroll-processing-guide) — How outsourced payroll runs in QuickBooks, Xero, Gusto and ADP, what affects scope and what employers ask before handing it over, and what employers ask before handing it over
 - [9 Questions Before Outsourcing Bookkeeping](https://www.accounstone.com/resources/guides/questions-to-ask-before-outsourcing-bookkeeping) — Considering outsourced bookkeeping? These practical questions cover scope, software access, review, security, pricing, handoff and day-to-day communication
 - [QuickBooks Online vs Xero: Which Fits?](https://www.accounstone.com/resources/guides/quickbooks-vs-xero-comparison) — A practical QuickBooks Online vs. Xero comparison built around real bookkeeping workflows, reconciliations, reporting, integrations and switching decisions
-- [Tax-Season Capacity Without Overhiring](https://www.accounstone.com/resources/guides/staff-augmentation-tax-season-guide) — What tax-season work can be delegated, what stays with the CPA, and how the US, UK and Australian busy-season workflows differ
+- [Tax-Season Capacity Without Overhiring](https://www.accounstone.com/resources/guides/staff-augmentation-tax-season-guide) — What tax-season work can be delegated, what stays with the CPA, and how tax-season work can be scoped and reviewed
 - [ASC 606 Revenue Recognition for SaaS](https://www.accounstone.com/resources/insights/asc-606-revenue-recognition-saas) — Why subscription businesses cannot just book cash received as revenue, and what ASC 606 and deferred revenue actually mean for your financials
 - [Sales Tax Nexus for E-Commerce Sellers](https://www.accounstone.com/resources/insights/sales-tax-nexus-ecommerce-guide) — A quick explainer on economic nexus for e-commerce sellers — why growing into new states can quietly create new sales tax obligations
 
-## Service pages by market
-
-Each service is published per market, because the compliance cycle and the reader's own vocabulary differ by country.
-
-- [Accounts Payable Outsourcing, Australia](https://www.accounstone.com/services/accounts-payable/australia) — Australian AP support — invoice entry, GST input tax credit coding, payment run preparation and vendor statement reconciliation in Xero or MYOB
-- [Outsourced Accounts Payable for UK Businesses](https://www.accounstone.com/services/accounts-payable/united-kingdom) — UK AP support — invoice entry, input VAT coding, Making Tax Digital-ready records, payment run preparation and vendor statement reconciliation
-- [Accounts Receivable Outsourcing, Australia](https://www.accounstone.com/services/accounts-receivable/australia) — Australian accounts receivable support — AUD invoicing with GST, payment application, aging review, and follow-up sequences inside Xero or MYOB
-- [Accounts Receivable Outsourcing, UK](https://www.accounstone.com/services/accounts-receivable/united-kingdom) — UK accounts receivable support — GBP invoicing with output VAT, payment application, aging review, and follow-up sequences inside Xero or Sage
-- [Audit Support Services in Australia](https://www.accounstone.com/services/audit-support/australia) — Audit preparation for Australian entities — AASB schedules, 30 June reconciliations, GST and superannuation support, organised for your auditor
-- [UK Audit Support Services for Accounting Teams](https://www.accounstone.com/services/audit-support/united-kingdom) — Audit preparation support for UK companies — FRS 102 schedules, year-end reconciliations, and evidence organised around your statutory auditor’s request list
-- [Payroll Support for Australian Firms](https://www.accounstone.com/services/payroll/australia) — Client payroll for Australian firms — STP Phase 2 data, superannuation guarantee and PAYG withholding, prepared and checked before your firm submits
-- [Payroll Support for UK Practices](https://www.accounstone.com/services/payroll/united-kingdom) — PAYE processing, RTI submission data and auto-enrolment records for UK practices running client payroll — prepared and checked before you submit
-
-## Market and state pages
-
-Market pages cover the recurring compliance cycle a market runs on. No rate, threshold or deadline appears on them, because those change annually.
-
-- [BAS Preparation for Australian Firms](https://www.accounstone.com/markets/australia/bas-preparation) — BAS-ready records for Australian accounting firms — GST coded as transactions post and the control account reconciled monthly, for your agent to lodge
-- [VAT Return Preparation for UK Practices](https://www.accounstone.com/markets/united-kingdom/vat-returns) — VAT-quarter records prepared under MTD for UK accountancy practices — coded as transactions post and reconciled monthly, ready for your review and submission
-- [UK Year-End Accounts Preparation](https://www.accounstone.com/markets/united-kingdom/year-end-accounts) — FRS 102 and FRS 105 year-end accounts prepared for UK accountancy practices — disclosure inputs captured through the year, in your templates, for your sign-off
-- [Accounting & Bookkeeping Services in California](https://www.accounstone.com/markets/united-states/california) — Accounting and bookkeeping support for California businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
-- [Accounting & Bookkeeping Services in Florida](https://www.accounstone.com/markets/united-states/florida) — Accounting and bookkeeping support for Florida businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
-- [Accounting & Bookkeeping Services in Texas](https://www.accounstone.com/markets/united-states/texas) — Accounting and bookkeeping support for Texas businesses, including reconciliations, month-end close, AP, AR and reporting within your existing workflow
 
 ## Platform pages
 
@@ -311,7 +276,7 @@ Accounstone works inside a system the client already runs. These pages carry no 
 - [NetSuite Accounting Support](https://www.accounstone.com/technology/netsuite) — NetSuite support for multi-entity reconciliations, intercompany eliminations, multi-currency consolidation and recurring close activities
 - [QuickBooks Online Accounting Support](https://www.accounstone.com/technology/quickbooks) — QuickBooks Online support for cleanup, bookkeeping, reconciliations, reporting and recurring accounting workflows inside your existing file
 - [Sage Accounting Support](https://www.accounstone.com/technology/sage) — Sage accounting support for recurring bookkeeping, reconciliations, account maintenance, reporting and month-end close
-- [Xero Accounting Support for Growing Businesses](https://www.accounstone.com/technology/xero) — Xero support for cleanup, bookkeeping, reconciliations, AP/AR and recurring reporting inside the Xero file your client already runs
+- Xero accounting services and bookkeeping support inside existing Xero organisations: transaction coding, statement-level reconciliations, AP/AR and month-end schedules: https://www.accounstone.com/technology/xero
 
 ## US company registration
 

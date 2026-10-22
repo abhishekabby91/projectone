@@ -109,16 +109,13 @@ const nextConfig = {
       //   /services/bookkeeping          (none)                 -> no signal
       //   /services/accounting           (none)                 -> no signal
       //
-      // Only audit-support was pointed at the wrong market, and it was pointed
-      // there hard: 40 of its 46 country-resolved impressions are British, and
-      // the US page they landed on frames the work around US GAAS/PCAOB and
-      // calls the reader a CPA firm — the exact vocabulary leak CLAUDE.md says
-      // must never reach a UK reader. `/services/audit-support/united-kingdom`
-      // independently draws gbr 53, so the demand and the page agree.
-      //
-      // India is the delivery centre, not a market, so `ind` impressions are
-      // not a signal for any of these. The four URLs with no market signal stay
-      // on the United States page; there is nothing yet to justify moving them.
+      // Historical GSC showed stronger UK than US demand for the retired generic
+      // audit-support URL. On 2026-10-22, the site owner chose a US-focused active
+      // architecture. The generic URL now points to the US audit-support page;
+      // this is a deliberate, reversible tradeoff and should be monitored in GSC.
+      // The UK/Australia regional source pages remain in the repository for now,
+      // but are excluded from active navigation, sitemap and AI discovery while
+      // URL-specific query and backlink checks are pending.
       {
         source: "/services/bookkeeping",
         destination: "/services/bookkeeping/united-states",
@@ -151,7 +148,7 @@ const nextConfig = {
       },
       {
         source: "/services/audit-support",
-        destination: "/services/audit-support/united-kingdom",
+        destination: "/services/audit-support/united-states",
         permanent: true,
       },
     ];

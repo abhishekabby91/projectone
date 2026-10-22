@@ -12,32 +12,27 @@ import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl 
 import { regions, serviceRegions, industries, technologies } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Services: US, UK & Australia',
+  title: 'Accounting, Bookkeeping & Tax Services',
   description:
-    'Outsourced bookkeeping, accounting, tax preparation, payroll, AP, AR and audit support, delivered to each region’s rules and reporting cycle.',
+    'Outsourced bookkeeping, accounting, tax preparation, payroll, AP, AR and audit support for accounting firms and businesses.',
   path: '/services',
 });
 
 const serviceFAQs = [
   {
-    question: 'Why are your service pages split by country?',
+    question: 'How are service workflows organized?',
     answer:
-      'Because the work genuinely differs. A UK bookkeeping engagement is organised around the VAT quarter and Making Tax Digital; the Australian equivalent is organised around the BAS cycle and GST coding; the U.S. equivalent around the month-end close and multi-state activity. Writing one page for all three would describe none of them accurately.',
+      'Each service page explains the recurring work, the information needed, the review boundary and how the workflow fits into an existing accounting operation.',
   },
   {
     question: 'Can I combine multiple services?',
     answer:
-      'Yes, and most engagements do. Bookkeeping, payables, receivables, payroll and close work are usually taken on together within a single region, because they share the same ledger and the same review points.',
+      'Yes, and most engagements do. Bookkeeping, payables, receivables, payroll and close work are often taken on together because they share the same ledger and review points.',
   },
   {
     question: 'Can you support tax filing and submission workflows?',
     answer:
-      'Yes. Tax preparation and filing support can be structured around the applicable jurisdiction, the engagement scope and the established client workflow.',
-  },
-  {
-    question: 'Do you work in more than one region for the same group?',
-    answer:
-      'Yes. Where a group has entities in more than one of these markets, the work can be run to each entity’s own reporting requirements while keeping one point of contact and a consistent review process.',
+      'Yes. Tax preparation support can be structured around the agreed scope, review workflow and responsibilities of the tax professional.',
   },
   {
     question: 'How is an engagement scoped?',
@@ -47,7 +42,7 @@ const serviceFAQs = [
   {
     question: 'What accounting software do you support?',
     answer:
-      'QuickBooks Online, Xero, Sage, NetSuite, MYOB, Drake Tax and CCH Axcess are supported, along with client-specific systems where access and documentation are available. The work runs inside the existing setup rather than requiring implementation or configuration.',
+      'QuickBooks Online, Xero, Sage, NetSuite, Drake Tax and CCH Axcess are among the systems used for accounting and tax-preparation workflows, subject to the agreed scope and access. The work runs inside the existing setup rather than requiring implementation or configuration.',
   },
 ];
 
@@ -73,7 +68,7 @@ export default function ServicesPage() {
       <PremiumHero
         subtitle="Accounting and Bookkeeping Services"
         title="Accounting, Bookkeeping & Tax Services"
-        description="Seven service lines, delivered to the reporting rules and compliance cycles of the United States, the United Kingdom and Australia."
+        description="Bookkeeping, accounting, tax preparation and recurring accounting workflows, scoped around your systems, reporting needs and review process."
         cta={{ text: 'Discuss Your Requirements', href: '/contact' }}
         ctaSecondary={{ text: 'View Solutions', href: '/solutions' }}
         background="primary-gradient"
@@ -91,18 +86,18 @@ export default function ServicesPage() {
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <Reveal className="max-w-4xl mx-auto space-y-5"><>
           <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">The Same Discipline, Applied to Three Different Rulebooks</h2>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Accounting Work That Fits Your Existing Workflow</h2>
           <p className="text-lg text-muted leading-relaxed">
-            Accounstone provides outsourced accounting, bookkeeping, tax preparation, payroll, accounts payable, accounts receivable and audit support to accounting firms and practices in the United States, the United Kingdom and Australia.
+            Accounstone provides accounting, bookkeeping, tax-preparation support, payroll, accounts payable, accounts receivable and audit support to accounting firms and businesses.
           </p>
           <p className="text-lg text-muted leading-relaxed">
-            What stays constant is the method: documented workflows, a named preparer and reviewer, evidence retained for every step, and a clear handoff back to whoever holds review and approval. What changes by region is almost everything else — the reporting framework, the compliance calendar, the payroll obligations and the point at which a licensed professional has to take over. That is why the service pages below are region-specific rather than generic.
+            The work is organized around documented workflows, clear preparer and reviewer responsibilities, retained support, and a handoff to the person responsible for review and approval. Scope follows the engagement, software, reporting needs and professional responsibilities involved.
           </p>
         </></Reveal>
       </section>
 
       {/* Region blocks */}
-      {regions.map((region, ri) => (
+      {regions.filter((region) => region.slug === 'united-states').map((region, ri) => (
         <section key={region.slug} id={region.slug} className={`w-full py-10 md:py-14 px-6 md:px-8 ${ri % 2 === 0 ? 'bg-input' : 'bg-white'}`}>
           <div className="max-w-6xl mx-auto">
             <Reveal className="max-w-3xl space-y-4 mb-8"><>
@@ -136,14 +131,6 @@ export default function ServicesPage() {
               ))}
             </ul>
 
-            <Reveal delay={0.1}>
-              <p className="mt-6 text-sm text-muted">
-                For the wider {region.adjective} accounting and compliance environment — tax authorities, reporting standards and payroll obligations — see the{' '}
-                <Link href={`/markets/${region.slug}`} className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">
-                  {region.name} market overview
-                </Link>.
-              </p>
-            </Reveal>
           </div>
         </section>
       ))}

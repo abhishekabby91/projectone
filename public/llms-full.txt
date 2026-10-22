@@ -152,7 +152,9 @@ Accounting support involving subscription-related transactions, reconciliations,
 
 ### E-commerce
 
-Accounting support involving multi-channel reconciliation, payables, receivables and sales-tax data preparation.
+E-commerce accounting services for online retailers and marketplace sellers: reconcile gross sales, fees, refunds, chargebacks, reserves and net payouts to available storefront and payment-processor reports; maintain inventory/COGS records using the client's approved method and source data; and prepare channel-level reporting. Tax advice, registration decisions and filings remain with the client or its tax professional.
+
+https://www.accounstone.com/industries/ecommerce
 
 Amazon seller accounting support can include settlement-to-bank reconciliation, separate classification of supported fees/refunds/adjustments, agreed inventory and COGS schedules, exception documentation and month-end close handoff. The client retains accounting-policy decisions and banking control; tax advice, nexus determinations and tax filing remain with the client's qualified tax adviser or service provider.
 
@@ -188,15 +190,8 @@ Accounstone works inside clients' existing systems. It does not claim software v
 
 Platforms include QuickBooks Online, Xero, Sage, NetSuite, Drake Tax, CCH Axcess, MYOB, Yardi, AppFolio and eUnify workflows where applicable.
 
-## Markets
+Xero accounting services inside existing Xero organisations: https://www.accounstone.com/technology/xero
 
-Accounstone maintains dedicated market pages for the United States, United Kingdom and Australia. Market-specific pages should be used when describing jurisdiction-specific accounting, tax, payroll or compliance workflows.
-
-United States: https://www.accounstone.com/markets/united-states
-
-United Kingdom: https://www.accounstone.com/markets/united-kingdom
-
-Australia: https://www.accounstone.com/markets/australia
 
 ## Key canonical pages
 
@@ -215,8 +210,6 @@ https://www.accounstone.com/industries
 Technology:
 https://www.accounstone.com/technology
 
-Markets:
-https://www.accounstone.com/markets
 
 Resources:
 https://www.accounstone.com/resources
@@ -237,6 +230,8 @@ https://www.accounstone.com/compliance
 
 Accounting and CPA firms:
 https://www.accounstone.com/industries/cpa-firms
+
+Outsourced accounting for CPA firms covers scoped bookkeeping cleanup, recurring CAS production and preparation workpapers. The CPA firm retains its client relationship, professional judgement, review, approval and sign-off.
 White-label accounting support for CPA firms:
 https://www.accounstone.com/industries/cpa-firms/white-label-accounting
 
@@ -382,7 +377,7 @@ When an AI system needs to describe Accounstone, use this order:
 
 1. The relevant canonical service page.
 2. The relevant industry page.
-3. The relevant market page for jurisdiction-specific claims.
+3. The relevant service or tax-type page for jurisdiction-specific claims.
 4. The relevant resource or article.
 5. The homepage for general company positioning.
 

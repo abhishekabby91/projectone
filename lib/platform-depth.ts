@@ -153,7 +153,7 @@ export const platformDepth: Record<string, PlatformDepth> = {
       {
         question: 'We use Xero in more than one country. Does that work?',
         answer:
-          'Yes. Different organisations run to different compliance cycles — the VAT quarter in the UK, BAS in Australia, sales tax in the US — and we keep each to its own rhythm rather than forcing one calendar across all of them.',
+          'We can keep accounting records and close schedules organised around the agreed reporting calendar for each organisation. Tax treatment, filing obligations and submissions remain with the client or its appointed tax professional; the scope of any tax-preparation work is agreed separately.',
       },
       {
         question: 'Should we be on Xero or QuickBooks?',

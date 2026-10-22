@@ -4,6 +4,8 @@ Source of truth for every indexable route on accounstone.com. Generated from a f
 
 Type key: **B** commercial SEO page · **C** blog/guide/informational · **E** proof · **Hub** index/directory page · **Corp** non-cluster company page (intentionally outside the SEO cluster architecture).
 
+> **Architecture update — 2026-10-22:** The Markets cluster and UK/Australia regional service routes have been removed from active navigation, sitemap discovery, and AI-readable discovery files on branch `us-focus-remove-markets-2026-10-22`. Their page source files remain temporarily available while URL-specific GSC queries and backlink checks are completed; they must not be treated as active target URLs. Final 301 vs 404/410 treatment remains pending evidence review. The US service pages and US tax-type pages remain active. No `/us/` prefix is being introduced.
+
 ## Services
 
 Region-first as of 2026-08-27. The generic `/services/{slug}` layer was retired: its
@@ -14,12 +16,18 @@ with its own regional children for the same commercial intent.
 | URL | Type | Cluster | Status |
 |---|---|---|---|
 | `/services` | Hub | Core — region-first | Published |
-| `/services/bookkeeping/{united-states,united-kingdom,australia}` | B | Bookkeeping | Published |
-| `/services/accounting/{united-states,united-kingdom,australia}` | B | Accounting Services | Published (UK + AU added 2026-08-27) |
-| `/services/tax-preparation/{united-states,united-kingdom,australia}` | B | Tax Preparation | Published |
-| `/services/payroll/{united-states,united-kingdom,australia}` | B | Payroll | Published |
-| `/services/accounts-payable/{united-states,united-kingdom,australia}` | B | Accounts Payable | Published |
-| `/services/accounts-receivable/{united-states,united-kingdom,australia}` | B | Accounts Receivable | Published |
+| `/services/bookkeeping/united-states` | B | Bookkeeping | Active — US focus |
+| `/services/bookkeeping/{united-kingdom,australia}` | B | Bookkeeping | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounting/united-states` | B | Accounting Services | Active — US focus |
+| `/services/accounting/{united-kingdom,australia}` | B | Accounting Services | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/tax-preparation/united-states` | B | Tax Preparation | Active — US focus |
+| `/services/tax-preparation/{united-kingdom,australia}` | B | Tax Preparation | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/payroll/united-states` | B | Payroll | Active — US focus |
+| `/services/payroll/{united-kingdom,australia}` | B | Payroll | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounts-payable/united-states` | B | Accounts Payable | Active — US focus |
+| `/services/accounts-payable/{united-kingdom,australia}` | B | Accounts Payable | Legacy source retained; excluded from sitemap pending URL retirement review |
+| `/services/accounts-receivable/united-states` | B | Accounts Receivable | Active — US focus |
+| `/services/accounts-receivable/{united-kingdom,australia}` | B | Accounts Receivable | Legacy source retained; excluded from sitemap pending URL retirement review |
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
 | `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
 | `/services/tax-preparation/united-states/1065-partnership` | B | Form 1065 / K-1 | Published 2026-09-16 |
@@ -63,16 +71,16 @@ future; at that point the change is an entry in `serviceRegions` plus the matchi
 
 | URL | Type | Spokes | Status |
 |---|---|---|---|
-| `/markets` | Hub | — | Published |
-| `/markets/united-states` | B | `/texas`, `/california`, `/florida` | Published |
-| `/markets/united-states/texas` | B | — | Published |
-| `/markets/united-states/california` | B | — | Published |
-| `/markets/united-states/florida` | B | — | Published |
-| `/markets/united-kingdom` | B | `/vat-returns`, `/year-end-accounts` | Published |
-| `/markets/united-kingdom/vat-returns` | B | — | Published 2026-09-09 |
-| `/markets/united-kingdom/year-end-accounts` | B | — | Published 2026-09-09 |
-| `/markets/australia` | B | `/bas-preparation` | Published |
-| `/markets/australia/bas-preparation` | B | — | Published 2026-09-09 |
+| `/markets` | Hub | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states` | B | `/texas`, `/california`, `/florida` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/texas` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/california` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-states/florida` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom` | B | `/vat-returns`, `/year-end-accounts` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom/vat-returns` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/united-kingdom/year-end-accounts` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/australia` | B | `/bas-preparation` | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
+| `/markets/australia/bas-preparation` | B | — | Legacy source retained; excluded from sitemap; retirement pending URL-specific evidence |
 
 **"Offshore" belongs to `/solutions/offshore-accounting-support`, not to a market
 page.** The UK page was titled "Offshore Accounting for UK Practices" until
@@ -87,7 +95,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | URL | Type | Spokes | Status |
 |---|---|---|---|
 | `/industries` | Hub | — | Published |
-| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Rebuilt 2026-09-16 — Tier-1 audience, 1,009 → 2,474 words |
+| `/industries/cpa-firms` | B | California, Texas, Florida, New York, Illinois | Refreshed 2026-10-20 — targets outsourced accounting for CPA firms; emphasizes preparation capacity with client relationship, professional judgement, review and sign-off retained by the firm |
 | `/industries/cpa-firms/california` | B | CPA Firms / California | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general California business accounting page |
 | `/industries/cpa-firms/texas` | B | CPA Firms / Texas | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Texas business accounting page |
 | `/industries/cpa-firms/florida` | B | CPA Firms / Florida | Added 2026-10-18 — state-qualified CPA-firm outsourcing intent; distinct from general Florida business accounting page |
@@ -99,7 +107,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 | `/industries/healthcare` | B | — | Published |
 | `/industries/nonprofit-accounting` | B | Nonprofit organizations | Added 2026-10-14 — distinct nonprofit bookkeeping workflow for fund/grant coding, approved functional expense allocations, reconciliations and board-report preparation; grant compliance and interpretation remain with the organization and its advisers |
 | `/industries/healthcare/dental-practice-accounting` | B | Healthcare / Dental practice accounting | Added 2026-10-14 — distinct dental-office and dental-group bookkeeping workflow for production/collection reports, deposit tie-outs, lab/supply expense coding and provider/location reporting; excludes billing/claims management and unsupported HIPAA claims |
-| `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Published |
+| `/industries/ecommerce` | B | `/amazon-seller-accounting`, `/shopify-accounting` | Refreshed 2026-10-20 — targets e-commerce accounting services; clarified settlement reconciliation, fees/refunds, inventory/COGS source-data boundaries and tax-adviser responsibilities |
 | `/industries/ecommerce/amazon-seller-accounting` | B | E-Commerce / Amazon seller accounting | Added 2026-10-14 — settlement-to-bank reconciliation, fees/refunds, inventory/COGS and close handoff; distinct from the broader multi-channel e-commerce pillar |
 | `/industries/ecommerce/shopify-accounting` | B | E-Commerce / Shopify accounting | Added 2026-10-14 — Shopify Payments payout-to-bank reconciliation, gateway differences, refunds, gift-card records and close handoff; distinct from Amazon settlement workflows and broad multi-channel coverage |
 | `/industries/real-estate` | B | `/yardi-accounting-outsourcing-texas` | Retargeted 2026-09-17 — owners, investors and developers only; PM and HOA split out |
@@ -132,7 +140,7 @@ Canada is not a route. See `knowledge/company/identity.md` — open business dec
 |---|---|---|
 | `/technology` | Hub | Published |
 | `/technology/quickbooks` | B | Published |
-| `/technology/xero` | B | Published |
+| `/technology/xero` | B | Refreshed 2026-10-20 — targets Xero accounting services; clarifies existing-organisation workflows, statement-level reconciliation and CPA-firm vs direct-business scope |
 | `/technology/sage` | B | Published |
 | `/technology/netsuite` | B | Published |
 | `/technology/drake-tax` | B | Published |

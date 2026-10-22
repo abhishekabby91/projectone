@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { baseUrl } from '@/lib/seo';
-import { solutions, markets, technologies, industries, serviceRegionPaths } from '@/lib/data';
+import { solutions, technologies, industries, serviceRegionPaths } from '@/lib/data';
 import { registrationStates } from '@/lib/company-registration';
 import { routeLastModified } from '@/lib/sitemap-dates';
 
@@ -35,7 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/services', priority: 0.9, changeFrequency: 'weekly' },
     { path: '/solutions', priority: 0.9, changeFrequency: 'weekly' },
     { path: '/technology', priority: 0.8, changeFrequency: 'monthly' },
-    { path: '/markets', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/industries', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/resources', priority: 0.7, changeFrequency: 'weekly' },
     { path: '/resources/case-studies', priority: 0.6, changeFrequency: 'monthly' },
@@ -56,13 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // They are 301s as of 2026-08-27 (see next.config.mjs) and a redirected URL
     // must not be declared in the sitemap. This is the drift trap CLAUDE.md
     // documents: these URLs came from a services.map() loop, so removing them
-    // required changing the loop, not deleting lines. The 21 regional children
+    // required changing the loop, not deleting lines. The US service children
     // come from serviceRegionPaths and are the only /services/* URLs listed —
-    // an earlier version also spelled all 21 out a second time by hand, which
-    // was dead weight the dedupe silently swallowed.
-    ...serviceRegionPaths.map((path) => ({ path, priority: 0.9, changeFrequency: 'monthly' as const })),
+    // UK/Australia service routes are excluded from the active sitemap during
+    // the staged regional retirement review.
+    ...serviceRegionPaths.filter((path) => path.endsWith('/united-states')).map((path) => ({ path, priority: 0.9, changeFrequency: 'monthly' as const })),
     ...solutions.map((s) => ({ path: `/solutions/${s.slug}`, priority: 0.85, changeFrequency: 'monthly' as const })),
-    ...markets.map((m) => ({ path: `/markets/${m.slug}`, priority: 0.8, changeFrequency: 'monthly' as const })),
     // MYOB is noindex as of 2026-09-04 (see app/technology/myob/page.tsx).
     // Yardi's former /technology/yardi URL permanently redirects to /technology.
     // Keep the redirect source out of the sitemap; current Yardi accounting intents
@@ -130,12 +128,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/industries/hoa-accounting/buildium-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/appfolio-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/industries/hoa-accounting/eunify-accounting-support', priority: 0.7, changeFrequency: 'monthly' },
-    { path: '/markets/united-states/texas', priority: 0.65, changeFrequency: 'monthly' },
-    { path: '/markets/united-states/california', priority: 0.65, changeFrequency: 'monthly' },
-    { path: '/markets/united-states/florida', priority: 0.65, changeFrequency: 'monthly' },
-    { path: '/markets/united-kingdom/vat-returns', priority: 0.65, changeFrequency: 'monthly' },
-    { path: '/markets/united-kingdom/year-end-accounts', priority: 0.65, changeFrequency: 'monthly' },
-    { path: '/markets/australia/bas-preparation', priority: 0.65, changeFrequency: 'monthly' },
     // Return-type children of /services/tax-preparation/united-states. Nested
     // under the parent rather than given their own tree, so the two pages
     // concentrate the US tax signal instead of competing with it.

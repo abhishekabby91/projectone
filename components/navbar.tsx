@@ -11,10 +11,9 @@ interface NavChild { label: string; href: string; }
 interface NavGroup { label: string; region?: string; items: NavChild[]; }
 interface NavItem { label: string; href: string; children?: NavChild[]; groups?: NavGroup[]; }
 
-// Services are region-first: each column is a market, each row a service.
-// Every entry resolves to a real /services/{service}/{region} page - the
-// matrix lives in lib/data.ts so the navbar, footer, /services hub and
-// sitemap cannot drift apart.
+// Active service navigation is US-focused. UK/Australia URLs remain out of
+// the navigation while their retirement is reviewed against GSC/backlinks.
+// Keep the full region data available for legacy route compatibility.
 //
 // CFO Support and HR are deliberately absent. See
 // knowledge/company/scope-boundaries.md - not offered today.
@@ -28,7 +27,7 @@ interface NavItem { label: string; href: string; children?: NavChild[]; groups?:
 // set to put the rows back.
 const NAV_HIDDEN_SERVICES = new Set(['audit-support']);
 
-const regionServiceGroups: NavGroup[] = regions.map((region) => ({
+const regionServiceGroups: NavGroup[] = regions.filter((region) => region.slug === 'united-states').map((region) => ({
   label: region.name,
   region: region.slug,
   items: serviceRegions
@@ -48,8 +47,9 @@ export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
 
   // Keep the primary navigation focused on the main visitor journeys.
-  // Compliance is restored as a top-level item; Technology, Markets and
-  // Solutions remain accessible through the footer, homepage and contextual links.
+  // Compliance is a top-level item. Markets has been removed from the active
+  // site architecture; solutions and technology remain available via footer
+  // and contextual links.
   const menuItems: NavItem[] = [
     { label: 'Services', href: '/services', groups: regionServiceGroups },
     { label: 'Industries', href: '/industries', children: industries.map((i) => ({ label: i.name, href: `/industries/${i.slug}` })) },
