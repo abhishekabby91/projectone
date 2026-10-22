@@ -96,58 +96,26 @@ One primary search intent → one primary URL. Check this file before creating a
 3. Only add a new row (and page) when the intent is genuinely unserved.
 4. Two rows should never target the same primary intent without an explicit differentiation note (see the Payroll and AP rows above for the pattern).
 
-## Regional authority vs. commercial intent (added 2026-08-27)
+## US-focused service architecture (updated 2026-10-22)
 
-The distinction below is the one the restructure exists to protect. A Market page answers
-"how does accounting work in this country"; a Service x Region page answers "who can do
-this specific work for me there". Measured overlap between the two is 0.0%.
+The separate Markets cluster is no longer part of the active navigation, sitemap, or internal-link plan. Do not create a `/us/` prefix. Keep the established clean URLs and assign US-specific commercial intents to service, tax-type, and industry pages.
 
 | Search intent | Primary URL | Intent class |
 |---|---|---|
-| Registering / forming a company in the US, and what follows it | `/company-registration` | Commercial — cluster hub |
-| Registering in a specific state (Delaware, Wyoming, Nevada) | `/company-registration/{state}` | Commercial — state detail |
-| How accounting/tax/payroll works in the US (IRS, GAAP, state, nexus) | `/markets/united-states` | Informational — regional authority |
-| How accounting/tax/payroll works in the UK (HMRC, VAT, MTD, PAYE, Companies House) | `/markets/united-kingdom` | Informational — regional authority |
-| How accounting/tax/payroll works in Australia (ATO, GST, BAS, PAYG, STP, super) | `/markets/australia` | Informational — regional authority |
-| Outsourced {service} in {region} | `/services/{service}/{region}` | Commercial |
-| VAT return preparation under MTD, for UK practices | `/markets/united-kingdom/vat-returns` | Commercial — cycle detail |
-| Year-end accounts preparation (FRS 102/105, Companies House) | `/markets/united-kingdom/year-end-accounts` | Commercial — cycle detail |
-| BAS preparation and GST-coded records, for Australian firms | `/markets/australia/bas-preparation` | Commercial — cycle detail |
+| All accounting and bookkeeping services | `/services` | Commercial — service hub |
+| US bookkeeping outsourcing | `/services/bookkeeping/united-states` | Commercial |
+| US accounting outsourcing | `/services/accounting/united-states` | Commercial |
+| US tax preparation support | `/services/tax-preparation/united-states` | Commercial |
 | Outsourcing Form 1040 / individual return preparation | `/services/tax-preparation/united-states/1040-individual` | Commercial — return-type detail |
 | Outsourcing Form 1065 / partnership and K-1 preparation | `/services/tax-preparation/united-states/1065-partnership` | Commercial — return-type detail |
-| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail; corporate book-to-tax schedules and fixed-asset workpapers, not general tax outsourcing overview |
-| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail; shareholder schedules and corporate-book support, distinct from Form 1120 C corporation return |
-| All services, choose by region | `/services` | Commercial — navigational |
+| Outsourcing Form 1120 / C corporation return preparation | `/services/tax-preparation/united-states/1120-corporation` | Commercial — return-type detail |
+| Outsourcing Form 1120-S / S corporation return preparation | `/services/tax-preparation/united-states/1120-s-corporation` | Commercial — return-type detail |
+| Accounting outsourcing for CPA firms | `/industries/cpa-firms` | Commercial — buyer/industry |
+| HOA accounting and bookkeeping outsourcing | `/industries/hoa-accounting` | Commercial — industry |
+| Property management accounting outsourcing | `/industries/property-management` | Commercial — industry |
+| Real estate accounting outsourcing | `/industries/real-estate` | Commercial — industry |
 
-**Do not** write service scope onto a Market page, and do not write country-environment
-explainers onto a Service x Region page. That collapse is what produces doorway pages.
-
-## Cycle-detail pages under a market (added 2026-09-09)
-
-The US had three sub-market pages and the UK and Australia had none, so the two
-markets the site sells into hardest carried less surface area than the domestic
-one. The three rows above close that, and they are scoped by a rule that keeps
-them off the market page's intent:
-
-**A market page covers the whole year across every cycle at one level of detail.
-A cycle page covers ONE cycle at the level of the ledger** — what is decided at
-the point of posting, and what it costs when it is decided at the deadline
-instead. If a second cycle starts appearing on a cycle page, it belongs on the
-market page.
-
-The cycle each market runs on is not a choice; both knowledge files name it.
-`knowledge/markets/uk.md`: "VAT registration and reporting is the primary
-recurring compliance cycle for most SME clients." `knowledge/markets/au.md`:
-"GST and BAS (Business Activity Statement) reporting is the primary recurring
-compliance cycle." Do not add a cycle page for something neither file calls a
-recurring cycle.
-
-**Every one of these pages routes submission to the licensed party, and that
-party differs by market** — the registered practitioner in the UK, the
-registered BAS or tax agent in Australia. `components/depth-block.tsx` takes
-`boundaryHeading` for exactly this reason; "your CPA" is US phrasing and is
-wrong in both.
-
+The legacy `/markets/*` and UK/Australia service routes require a separate URL-retirement pass. Do not add them back to active navigation, the sitemap, or AI-readable discovery files. Before returning 301/404/410 responses, review URL-specific query data and backlinks; do not redirect jurisdiction-specific UK/Australia content to an unrelated US page.
 
 ## Reconciled additions — 2026-10-16
 
