@@ -8,7 +8,7 @@ import InquirySection from '@/components/inquiry-section';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting & Bookkeeping Knowledge Base',
   description:
-    'Practical articles on bookkeeping, tax, HOA and property management accounting, QuickBooks and Yardi workflows for firms in the US, UK and Australia.',
+    'Practical articles on bookkeeping, tax, HOA and property management accounting, QuickBooks and Yardi workflows for U.S. firms and businesses.',
   path: '/blog',
 });
 
