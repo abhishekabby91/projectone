@@ -7,7 +7,7 @@
 
 ## Executive summary
 
-- Found **220 static App Router page files** in the current Git tree; dynamic route files are excluded from this static inventory.
+- Found **221 static App Router page files** in the current Git tree; dynamic route files are excluded from this static inventory.
 - Current sitemap source contains **173 explicit literal paths** plus data-driven route generation. Sitemap membership and page-file presence are separate checks; a page omitted from the sitemap may be intentional (legacy/noindex) or may need investigation.
 - The current source has a documented US-first active-discovery policy. Keep useful industry, software and informational clusters, while directing the main commercial hierarchy through service pages.
 - **Known issue:** the blog hub description still says it covers firms in the US, UK and Australia, and its CTA advertises region-specific service pages for all three regions. Confirmed in current source.
@@ -48,6 +48,12 @@
 ## Route inventory — page by page
 
 Each intent below is **inferred from the route slug and its parent cluster**, not asserted as verified keyword demand. Proposed internal links are structural recommendations. Evidence column lists the checks still required for a confident final decision.
+
+### Homepage
+
+| URL | Inferred primary intent / role | Proposed action and internal-link direction | Evidence still needed |
+|---|---|---|---|
+| `/` | Accounstone accounting, bookkeeping and tax outsourcing — primary brand/commercial landing page | **PRIORITY 1 — IMPROVE.** Link prominently to Services, key service pages, technology, CPA firms and strongest industry pages. | Review live search queries, conversion paths, competing landing pages, server HTML and internal links. |
 
 ### About
 
