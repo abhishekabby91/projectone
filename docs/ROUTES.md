@@ -4,6 +4,8 @@ Source of truth for every indexable route on accounstone.com. Generated from a f
 
 Type key: **B** commercial SEO page · **C** blog/guide/informational · **E** proof · **Hub** index/directory page · **Corp** non-cluster company page (intentionally outside the SEO cluster architecture).
 
+> **Architecture update — 2026-10-22:** The Markets cluster and UK/Australia regional service routes have been removed from active navigation, sitemap discovery, and AI-readable discovery files on branch `us-focus-remove-markets-2026-10-22`. Their page source files remain temporarily available while URL-specific GSC queries and backlink checks are completed; they must not be treated as active target URLs. Final 301 vs 404/410 treatment remains pending evidence review. The US service pages and US tax-type pages remain active. No `/us/` prefix is being introduced.
+
 ## Services
 
 Region-first as of 2026-08-27. The generic `/services/{slug}` layer was retired: its
