@@ -27,14 +27,13 @@ const serviceFAQs = [
   {
     question: 'Can I combine multiple services?',
     answer:
-      'Yes, and most engagements do. Bookkeeping, payables, receivables, payroll and close work are usually taken on together within a single region, because they share the same ledger and the same review points.',
+      'Yes, and most engagements do. Bookkeeping, payables, receivables, payroll and close work are often taken on together because they share the same ledger and review points.',
   },
   {
     question: 'Can you support tax filing and submission workflows?',
     answer:
-      'Yes. Tax preparation and filing support can be structured around the applicable jurisdiction, the engagement scope and the established client workflow.',
+      'Yes. Tax preparation support can be structured around the agreed scope, review workflow and responsibilities of the tax professional.',
   },
-  {
   {
     question: 'How is an engagement scoped?',
     answer:
@@ -43,7 +42,7 @@ const serviceFAQs = [
   {
     question: 'What accounting software do you support?',
     answer:
-      'QuickBooks Online, Xero, Sage, NetSuite, MYOB, Drake Tax and CCH Axcess are supported, along with client-specific systems where access and documentation are available. The work runs inside the existing setup rather than requiring implementation or configuration.',
+      'QuickBooks Online, Xero, Sage, NetSuite, Drake Tax and CCH Axcess are among the systems used for accounting and tax-preparation workflows, subject to the agreed scope and access. The work runs inside the existing setup rather than requiring implementation or configuration.',
   },
 ];
 
