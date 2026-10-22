@@ -13,7 +13,7 @@ Accounstone is an accounting outsourcing company based in New Delhi, India. It s
 - **Core services:** bookkeeping, accounting, tax preparation, accounts payable, accounts receivable, payroll and financial reporting support.
 - **Delivery model:** defined accounting tasks are handled within the client's existing systems, reporting formats and review workflow.
 - **Responsibilities:** the client retains business decisions, payment authority, client relationships and filing responsibilities assigned to it or its licensed professionals.
-- **Geography:** dedicated market pages explain relevant market-specific services and workflows.
+- **Geography:** current service and industry pages describe the work and client workflows; the separate Markets cluster is not part of the active architecture.
 - **Engagement scope:** responsibilities, review points, access and approval steps are agreed before recurring work begins.
 
 ## Main pages
@@ -134,8 +134,6 @@ Platform overview: https://www.accounstone.com/technology
 
 HOA software guides include QuickBooks, AppFolio, Yardi and eUnify accounting workflows where applicable.
 
-## Markets
-
 
 ## Delivery and trust
 
@@ -224,7 +222,7 @@ Practical accounting articles. Each one answers a single operational question at
 - [HOA Year-End Accounting: Preparing Books for the CPA](https://www.accounstone.com/blog/hoa-year-end-accounting) — Prepare HOA books for year-end with a checklist for bank reconciliations, homeowner balances, payables, reserves, statements and CPA schedules
 - [How to Outsource HOA Bookkeeping and Accounting](https://www.accounstone.com/blog/how-to-outsource-hoa-accounting) — A practical guide to outsourcing HOA bookkeeping and accounting, including scope, software access, reconciliations, board reporting and review controls
 - [Outsourced Bookkeeping: What to Expect](https://www.accounstone.com/blog/outsourced-bookkeeping-guide) — What outsourced bookkeeping looks like day to day in QuickBooks and Xero, the questions owners ask before starting, and the signs it is not working
-- [Outsourced Payroll: Costs and Red Flags](https://www.accounstone.com/blog/outsourced-payroll-services) — What outsourced payroll costs by headcount in the US, UK and Australia, and the bank-access line that should never move, whoever runs the payroll
+- [Outsourced Payroll: Costs and Red Flags](https://www.accounstone.com/blog/outsourced-payroll-services) — What outsourced payroll costs by headcount and the bank-access line, and the bank-access line that should never move, whoever runs the payroll
 - [Property Management 1099 Preparation Checklist](https://www.accounstone.com/blog/property-management-1099-preparation) — Organize vendor records for property management year-end reporting with payment reviews, W-9 tracking, reconciliation steps and exception lists
 - [Property Management Accounting: Complete Guide](https://www.accounstone.com/blog/property-management-accounting) — Property management accounting guide to property-level books, tenant ledgers, owner statements, deposits, reconciliations, software and month-end close
 - [Property Management Accounts Payable Workflow](https://www.accounstone.com/blog/property-management-accounts-payable) — Property management AP workflow for invoice coding, property allocation, approvals, duplicate checks and month-end controls
@@ -261,21 +259,12 @@ Longer-form reference material. The guides are decision aids for firms choosing 
 - [What Outsourced Accounts Payable Includes](https://www.accounstone.com/resources/guides/outsourced-accounts-payable-guide) — Invoice processing, approvals, payment controls, reconciliations and software workflows — plus what should stay in-house, and why
 - [Outsourced Accounts Receivable and DSO](https://www.accounstone.com/resources/guides/outsourced-accounts-receivable-guide) — What outsourced AR covers, how it affects DSO, how collections follow-up runs in QuickBooks and Xero, and what to ask before delegating receivables
 - [How Much Does Outsourced Bookkeeping Cost?](https://www.accounstone.com/resources/guides/outsourced-bookkeeping-cost-guide) — Pricing models, the workload factors that move the number, and the questions to ask so you are comparing the same scope between providers
-- [What Outsourced Payroll Processing Covers](https://www.accounstone.com/resources/guides/outsourced-payroll-processing-guide) — How outsourced payroll runs in QuickBooks, Xero, Gusto and ADP, what it costs in the US, UK and Australia, and what employers ask before handing it over
+- [What Outsourced Payroll Processing Covers](https://www.accounstone.com/resources/guides/outsourced-payroll-processing-guide) — How outsourced payroll runs in QuickBooks, Xero, Gusto and ADP, what affects scope and what employers ask before handing it over, and what employers ask before handing it over
 - [9 Questions Before Outsourcing Bookkeeping](https://www.accounstone.com/resources/guides/questions-to-ask-before-outsourcing-bookkeeping) — Considering outsourced bookkeeping? These practical questions cover scope, software access, review, security, pricing, handoff and day-to-day communication
 - [QuickBooks Online vs Xero: Which Fits?](https://www.accounstone.com/resources/guides/quickbooks-vs-xero-comparison) — A practical QuickBooks Online vs. Xero comparison built around real bookkeeping workflows, reconciliations, reporting, integrations and switching decisions
-- [Tax-Season Capacity Without Overhiring](https://www.accounstone.com/resources/guides/staff-augmentation-tax-season-guide) — What tax-season work can be delegated, what stays with the CPA, and how the US, UK and Australian busy-season workflows differ
+- [Tax-Season Capacity Without Overhiring](https://www.accounstone.com/resources/guides/staff-augmentation-tax-season-guide) — What tax-season work can be delegated, what stays with the CPA, and how tax-season work can be scoped and reviewed
 - [ASC 606 Revenue Recognition for SaaS](https://www.accounstone.com/resources/insights/asc-606-revenue-recognition-saas) — Why subscription businesses cannot just book cash received as revenue, and what ASC 606 and deferred revenue actually mean for your financials
 - [Sales Tax Nexus for E-Commerce Sellers](https://www.accounstone.com/resources/insights/sales-tax-nexus-ecommerce-guide) — A quick explainer on economic nexus for e-commerce sellers — why growing into new states can quietly create new sales tax obligations
-
-## Service pages by market
-
-Each service is published per market, because the compliance cycle and the reader's own vocabulary differ by country.
-
-
-## Market and state pages
-
-Market pages cover the recurring compliance cycle a market runs on. No rate, threshold or deadline appears on them, because those change annually.
 
 
 ## Platform pages
