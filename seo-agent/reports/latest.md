@@ -1,4 +1,4 @@
-# Accounstone SEO Agent Report — 2026-10-20
+# Accounstone SEO Agent Report — 2026-10-22
 
 ## Summary
 
@@ -131,10 +131,10 @@
 | app/industries/cpa-firms/accounts-payable-outsourcing/page.tsx | 90/100 | 1252 | 1 | 10 | 0 | 0 |
 | app/industries/cpa-firms/cas-production-support/page.tsx | 90/100 | 1487 | 1 | 6 | 0 | 0 |
 | app/industries/cpa-firms/overflow-work-support/page.tsx | 90/100 | 1458 | 1 | 12 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1562 | 1 | 37 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1561 | 1 | 37 | 0 | 0 |
 | app/industries/cpa-firms/white-label-accounting/page.tsx | 90/100 | 1573 | 1 | 6 | 0 | 0 |
 | app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
-| app/industries/ecommerce/page.tsx | 90/100 | 456 | 1 | 5 | 0 | 0 |
+| app/industries/ecommerce/page.tsx | 90/100 | 503 | 1 | 5 | 0 | 0 |
 | app/industries/ecommerce/shopify-accounting/page.tsx | 90/100 | 1229 | 1 | 10 | 0 | 0 |
 | app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
 | app/industries/healthcare/page.tsx | 90/100 | 435 | 1 | 4 | 0 | 0 |
@@ -192,32 +192,32 @@
 | app/resources/guides/staff-augmentation-tax-season-guide/page.tsx | 90/100 | 864 | 1 | 4 | 0 | 0 |
 | app/services/accounting/australia/page.tsx | 90/100 | 849 | 1 | 12 | 0 | 0 |
 | app/services/accounting/united-kingdom/page.tsx | 90/100 | 796 | 1 | 12 | 0 | 0 |
-| app/services/accounting/united-states/page.tsx | 90/100 | 807 | 1 | 15 | 0 | 0 |
+| app/services/accounting/united-states/page.tsx | 90/100 | 796 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/australia/page.tsx | 90/100 | 731 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/united-kingdom/page.tsx | 90/100 | 743 | 1 | 12 | 0 | 0 |
-| app/services/accounts-payable/united-states/page.tsx | 90/100 | 984 | 1 | 16 | 0 | 0 |
+| app/services/accounts-payable/united-states/page.tsx | 90/100 | 973 | 1 | 13 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 791 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 815 | 1 | 12 | 0 | 0 |
-| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 756 | 1 | 16 | 0 | 0 |
+| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 745 | 1 | 13 | 0 | 0 |
 | app/services/audit-support/australia/page.tsx | 90/100 | 939 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-kingdom/page.tsx | 90/100 | 940 | 1 | 11 | 0 | 0 |
-| app/services/audit-support/united-states/page.tsx | 90/100 | 1047 | 1 | 15 | 0 | 0 |
+| app/services/audit-support/united-states/page.tsx | 90/100 | 1025 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 908 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 912 | 1 | 12 | 0 | 0 |
-| app/services/bookkeeping/united-states/page.tsx | 90/100 | 1081 | 1 | 18 | 0 | 0 |
+| app/services/bookkeeping/united-states/page.tsx | 90/100 | 1066 | 1 | 15 | 0 | 0 |
 | app/services/hoa-bookkeeping/page.tsx | 90/100 | 665 | 1 | 10 | 0 | 0 |
 | app/services/hoa-financial-reporting/page.tsx | 90/100 | 820 | 1 | 10 | 0 | 0 |
-| app/services/page.tsx | 90/100 | 1041 | 1 | 10 | 0 | 0 |
+| app/services/page.tsx | 90/100 | 864 | 1 | 10 | 0 | 0 |
 | app/services/payroll/australia/page.tsx | 90/100 | 802 | 1 | 12 | 0 | 0 |
 | app/services/payroll/united-kingdom/page.tsx | 90/100 | 785 | 1 | 12 | 0 | 0 |
-| app/services/payroll/united-states/page.tsx | 90/100 | 742 | 1 | 15 | 0 | 0 |
+| app/services/payroll/united-states/page.tsx | 90/100 | 731 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/australia/page.tsx | 90/100 | 737 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-kingdom/page.tsx | 90/100 | 735 | 1 | 11 | 0 | 0 |
 | app/services/tax-preparation/united-states/1040-individual/page.tsx | 90/100 | 644 | 1 | 9 | 0 | 0 |
 | app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 723 | 1 | 14 | 0 | 0 |
 | app/services/tax-preparation/united-states/1120-corporation/page.tsx | 90/100 | 749 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-states/1120-s-corporation/page.tsx | 90/100 | 741 | 1 | 12 | 0 | 0 |
-| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1938 | 1 | 23 | 0 | 0 |
+| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1935 | 1 | 22 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1018 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1312 | 1 | 8 | 0 | 0 |
 | app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1753 | 1 | 10 | 0 | 0 |
@@ -229,10 +229,10 @@
 | app/technology/page.tsx | 90/100 | 774 | 1 | 5 | 0 | 0 |
 | app/technology/quickbooks/page.tsx | 90/100 | 540 | 1 | 10 | 0 | 0 |
 | app/technology/sage/page.tsx | 90/100 | 412 | 1 | 7 | 0 | 0 |
-| app/technology/xero/page.tsx | 90/100 | 450 | 1 | 7 | 0 | 0 |
+| app/technology/xero/page.tsx | 90/100 | 603 | 1 | 9 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1531 | 1 | 10 | 0 | 0 |
+| app/page.tsx | 100/100 | 1418 | 1 | 9 | 0 | 0 |
 
 ## Priority queue
 
