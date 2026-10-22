@@ -55,10 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // They are 301s as of 2026-08-27 (see next.config.mjs) and a redirected URL
     // must not be declared in the sitemap. This is the drift trap CLAUDE.md
     // documents: these URLs came from a services.map() loop, so removing them
-    // required changing the loop, not deleting lines. The 21 regional children
+    // required changing the loop, not deleting lines. The US service children
     // come from serviceRegionPaths and are the only /services/* URLs listed —
-    // an earlier version also spelled all 21 out a second time by hand, which
-    // was dead weight the dedupe silently swallowed.
+    // UK/Australia service routes are excluded from the active sitemap during
+    // the staged regional retirement review.
     ...serviceRegionPaths.filter((path) => path.endsWith('/united-states')).map((path) => ({ path, priority: 0.9, changeFrequency: 'monthly' as const })),
     ...solutions.map((s) => ({ path: `/solutions/${s.slug}`, priority: 0.85, changeFrequency: 'monthly' as const })),
     // MYOB is noindex as of 2026-09-04 (see app/technology/myob/page.tsx).
