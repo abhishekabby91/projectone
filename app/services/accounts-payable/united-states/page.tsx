@@ -154,10 +154,6 @@ export default function AccountsPayableUSPage() {
       <FAQSection subtitle="Questions" items={faqs} columns={2} />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto">
-        <div className="mb-6 p-4 bg-white rounded-xl border border-border/70 flex flex-wrap items-center gap-3">
-          <span className="text-xs font-bold uppercase tracking-wide text-muted">Same service, other regions:</span>
-          <Link href="/services/accounts-payable/united-kingdom" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-input border border-border text-sm text-primary font-medium hover:bg-border transition-colors">United Kingdom</Link><Link href="/services/accounts-payable/australia" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-input border border-border text-sm text-primary font-medium hover:bg-border transition-colors">Australia</Link>
-        </div>
         <div className="flex flex-wrap justify-center gap-3"><Link href="/services/accounts-receivable/united-states" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">Accounts Receivable</Link><Link href="/resources/guides/outsourced-accounts-payable-guide" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">AP Guide</Link><Link href="/technology/quickbooks" className="px-4 py-2 rounded-lg bg-input text-primary font-medium hover:bg-border transition-colors">QuickBooks</Link></div>
       </div></section>
 
