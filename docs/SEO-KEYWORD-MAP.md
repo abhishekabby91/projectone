@@ -67,13 +67,13 @@ Competitor service-page patterns are recorded separately in [`COMPETITOR-SEO-BEN
 
 ## Location targeting rules
 
-Existing state pages should have distinct purposes and locally relevant information:
+Existing industry/state pages should have distinct purposes and locally relevant information. Do not use the retired Markets state URLs as active targets:
 
 | URL | Recommended keyword family | Required content standard |
 |---|---|---|
-| `/markets/united-states/texas` | accounting and bookkeeping services for Texas businesses | Useful Texas-specific context, accurate state requirements, named metro references only where serviceable and meaningful. Do not imply a Texas office. |
-| `/markets/united-states/california` | accounting/bookkeeping support for California businesses | California-specific content that is accurate and not a copy of Texas. |
-| `/markets/united-states/florida` | accounting/bookkeeping support for Florida businesses | Florida-specific content that is accurate and not a copy of Texas or California. |
+| `/industries/cpa-firms/texas` | accounting outsourcing for Texas CPA firms | State-specific workflow support for CPA firms; do not imply a Texas office. |
+| `/industries/cpa-firms/california` | accounting outsourcing for California CPA firms | Distinct CPA-firm workflow intent; keep state context accurate. |
+| `/industries/cpa-firms/florida` | accounting outsourcing for Florida CPA firms | Distinct CPA-firm workflow intent; keep state context accurate. |
 | `/industries/real-estate/yardi-accounting-outsourcing-texas` | Yardi accounting outsourcing in Texas | A focused software + industry + location page. Avoid copying the general real-estate page. |
 
 The location page is about supporting clients in that market, not claiming a local office. If the page cannot provide useful, verified local context, keep the broader national page instead of publishing thin location pages. Add further state/city pages only after validating demand and writing genuinely distinct content.
