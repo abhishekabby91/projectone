@@ -20,9 +20,9 @@ export const metadata: Metadata = generateMetadata({
 
 const serviceFAQs = [
   {
-    question: 'Why are your service pages split by country?',
+    question: 'How are service workflows organized?',
     answer:
-      'Because the work genuinely differs. A UK bookkeeping engagement is organised around the VAT quarter and Making Tax Digital; the Australian equivalent is organised around the BAS cycle and GST coding; the U.S. equivalent around the month-end close and multi-state activity. Writing one page for all three would describe none of them accurately.',
+      'Each service page explains the recurring work, the information needed, the review boundary and how the workflow fits into an existing accounting operation.',
   },
   {
     question: 'Can I combine multiple services?',
@@ -35,10 +35,6 @@ const serviceFAQs = [
       'Yes. Tax preparation and filing support can be structured around the applicable jurisdiction, the engagement scope and the established client workflow.',
   },
   {
-    question: 'Do you work in more than one region for the same group?',
-    answer:
-      'Yes. Where a group has entities in more than one of these markets, the work can be run to each entity’s own reporting requirements while keeping one point of contact and a consistent review process.',
-  },
   {
     question: 'How is an engagement scoped?',
     answer:
