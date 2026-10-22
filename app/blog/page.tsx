@@ -126,7 +126,7 @@ export default function BlogPage() {
         </div>
       </section>
       <InquirySection compact source="/blog" title="Reading Up Before You Decide?" lead="If one of these pieces describes your situation, skip ahead and put it to us directly. The consultation and the call are free." />
-      <CTABanner title="Looking for Region-Specific Services?" description="Browse our US, UK, and Australia service pages for country-specific bookkeeping, tax preparation, and audit support." cta={{ text: 'View Services', href: '/services' }} ctaSecondary={{ text: 'Contact Us', href: '/contact' }} background="primary" />
+      <CTABanner title="Looking for Accounting Support?" description="Explore our bookkeeping, accounting, tax preparation, payroll, payables, receivables and audit support services." cta={{ text: 'View Services', href: '/services' }} ctaSecondary={{ text: 'Contact Us', href: '/contact' }} background="primary" />
     </main>
   );
 }
