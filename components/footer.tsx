@@ -12,9 +12,8 @@ export default function Footer() {
   // dropdown links only when open, so they never appear in server HTML - every
   // crawlable internal link below the hero comes from here. Three consequences
   // are deliberate:
-  //   1. The 21 Service x Region pages are listed directly. They are the
-  //      primary commercial pages and were previously reachable only through
-  //      in-content links.
+  //   1. The seven US Service x Region pages are listed directly. They are
+  //      the active primary commercial service pages.
   //   2. Section hubs (/services, /technology, /resources, /blog) are linked
   //      explicitly. The Markets cluster has been removed from active navigation.
   //   3. Only the US service URLs are linked here. UK/Australia routes are
