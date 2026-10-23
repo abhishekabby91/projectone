@@ -339,43 +339,53 @@ export const services: PMServiceCard[] = [
 
 export const faqs = [
   {
-    question: 'What property management accounting work can be supported?',
+    question: 'What property management accounting work can be outsourced?',
     answer:
       'Depending on the agreed scope, work may include property-level bookkeeping, tenant and owner ledgers, accounts payable and receivable, bank and account reconciliations, month-end close, owner statements and CAM or other recoverable-cost schedules.',
   },
   {
-    question: 'Can you work with our property management software?',
+    question: 'What software can a property management accounting team work with?',
     answer:
-      'Systems may include Yardi, QuickBooks, Xero, Sage and NetSuite. The exact product, access requirements and workflow should be confirmed during scoping before work is agreed.',
+      'The workflow may involve platforms such as Yardi, Buildium, AppFolio, DoorLoop, QuickBooks or Xero. Confirm the exact product, account setup, access permissions, exports and reporting process before agreeing the scope.',
   },
   {
-    question: 'How are security deposit records handled?',
+    question: 'How do you keep accounting records separate for multiple properties and owners?',
     answer:
-      'The accounting scope can include maintaining tenant-level deposit balances and reconciling them to the relevant account records. Requirements for holding, interest or returning deposits vary, so those responsibilities need to be confirmed for the relevant jurisdiction and engagement.',
+      'The agreed structure can track transactions by property and legal entity, then use those records to prepare owner statements and portfolio summaries. The chart of accounts, property structure and reporting requirements should be reviewed first.',
   },
   {
-    question: 'Can you keep multiple owners and properties separate?',
+    question: 'Can property management bookkeeping include bank reconciliations?',
     answer:
-      'Yes, the agreed accounting structure can track activity by property and entity, with owner statements and portfolio summaries prepared from those records. The setup depends on the client’s existing systems, chart of accounts and reporting requirements.',
+      'Yes. A defined workflow can include matching bank activity to recorded transactions, documenting unreconciled items and escalating differences for review. The responsible client contact retains review and approval responsibilities agreed for the engagement.',
   },
   {
-    question: 'Can you help if the books are behind?',
+    question: 'Can you help prepare owner statements?',
     answer:
-      'Catch-up work can be considered as a separately scoped project. The initial review should establish the period involved, condition of the records, outstanding reconciliations and the output needed before ongoing monthly work is agreed.',
+      'Owner statement support can include checking property-level income and expenses, reconciling relevant balances and assembling agreed reports. The client should define the reporting format, review process and who approves distributions or final statements.',
   },
   {
-    question: 'How does this work alongside an in-house team?',
+    question: 'How should security deposit accounting records be handled?',
     answer:
-      'The scope can be divided between recurring processing and reporting tasks and the internal team’s review, client communication and approvals. The division of responsibilities is agreed before work begins.',
+      'Accounting support can include maintaining tenant-level deposit balances and reconciling them to the relevant liability and account records. Rules for holding, interest or returning deposits vary, so legal and operational responsibilities must be confirmed locally.',
   },
   {
-    question: 'Can you support tax preparation?',
+    question: 'Can you help if property management books are behind?',
     answer:
-      'Accounting records and supporting schedules can be organised for the tax engagement. The applicable filing, review and sign-off responsibilities should be confirmed based on the jurisdiction, engagement and professionals involved.',
+      'Catch-up work can be scoped as a separate project after reviewing the period involved, source records, unreconciled accounts, tenant and owner balances, liabilities and required outputs. Ongoing monthly work can then be planned around the corrected starting point.',
   },
   {
-    question: 'What happens before ongoing work begins?',
+    question: 'Can you support CAM reconciliation for commercial properties?',
     answer:
-      'The initial review covers the properties involved, current records, systems, reporting format, access and monthly tasks. The parties then agree the scope, responsibilities and review process before recurring work starts.',
+      'Support may include organizing expense pools, tying source expenses to property records, preparing lease-based allocation schedules and comparing billed amounts with actual costs. Lease interpretation, eligibility decisions and final approvals remain with the responsible client and advisers.',
+  },
+  {
+    question: 'How does outsourced accounting work with an in-house property management team?',
+    answer:
+      'Tasks can be divided between recurring transaction processing, reconciliations and report preparation on one side, and internal review, tenant or owner communication and approvals on the other. Handoffs, deadlines and escalation rules should be agreed in advance.',
+  },
+  {
+    question: 'What do you need before monthly property accounting support begins?',
+    answer:
+      'The initial review should cover property and entity lists, current software, chart of accounts, bank and ledger records, reporting formats, access permissions, close deadlines and approval responsibilities. The engagement should start only after the scope and review process are clear.',
   },
 ];
