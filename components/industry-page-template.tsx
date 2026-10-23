@@ -190,7 +190,6 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
 
       {relatedLinks.length > 0 && <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-4 mb-8"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Related work</span><h2 className="font-serif text-3xl font-bold text-primary">Explore the workflows that connect to this one</h2></></Reveal><div className="flex flex-wrap gap-3">{relatedLinks.map((link) => <Link key={link.href} href={link.href} className="px-4 py-2 rounded-lg bg-input text-primary hover:bg-border font-medium transition-colors">{link.name}</Link>)}</div></div></section>}
 
-      }
 
       <FAQSection subtitle="Questions we hear" items={faqs} columns={2} />
       <InquirySection
