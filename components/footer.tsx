@@ -21,6 +21,7 @@ export default function Footer() {
           href: `/services/${service.slug}/united-states`,
         })),
         { name: 'All Services', href: '/services' },
+        { name: 'Solutions', href: '/solutions' },
       ],
     },
     {
