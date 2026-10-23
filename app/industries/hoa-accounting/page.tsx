@@ -72,7 +72,7 @@ export default function HoaAccountingPage() {
       <PremiumHero
         subtitle="HOAs, condos and community management companies"
         title="HOA & Community Association Accounting Outsourcing"
-        description="Accounting outsourcing support for HOA and community association management companies: assessment and homeowner ledgers, operating and reserve fund records, reconciliations, delinquency schedules and monthly board reporting. Your managers and boards retain decisions and payment authority."
+        description="An accounting outsourcing partner for homeowners associations, condominium associations and community association management companies. We support assessment and homeowner ledgers, operating and reserve fund records, reconciliations, delinquency schedules and monthly board reporting, while authorized boards and managers retain decisions and payment authority."
         cta={{ text: 'Discuss HOA Accounting Outsourcing', href: '/contact' }}
         ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
