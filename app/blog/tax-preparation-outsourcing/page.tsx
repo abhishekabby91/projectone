@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
   title: 'Tax Preparation Outsourcing: CPA Workflow',
-  description: 'Learn how CPA firms scope outsourced tax preparation, manage tax software access, prepare review-ready workpapers and plan busy-season capacity.'
+  description: 'Learn how CPA firms scope outsourced tax preparation, manage tax software access, prepare review-ready workpapers and plan busy-season capacity.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
