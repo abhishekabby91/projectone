@@ -66,8 +66,8 @@ export default function CPAFirmsPage() {
 
       <PremiumHero
         subtitle="For US CPA firms"
-        title="Preparation Capacity for CPA Firms, Without Giving Up Review"
-        description="Busy-season overflow, client cleanup, CAS production, workpapers and PBC — prepared to your checklists, inside your systems. Every signature and every judgment stays with your firm."
+        title="Accounting Outsourcing Partner for CPA Firms"
+        description="An accounting outsourcing partner for CPA firms, supporting busy-season overflow, client cleanup, CAS production and workpapers within your checklists and systems. Your firm retains client relationships, review, professional judgment and sign-off."
         cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
         ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
