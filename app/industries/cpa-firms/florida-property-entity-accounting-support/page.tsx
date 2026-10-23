@@ -6,7 +6,7 @@ const PATH = '/industries/cpa-firms/florida-property-entity-accounting-support';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Florida Property-Entity Accounting Outsourcing',
-  description: 'Property-entity accounting outsourcing for Florida CPA firms, including reconciliations, entity-level schedules and organized year-end workpapers for CPA review.',
+  description: 'Property-entity accounting outsourcing for Florida CPA firms, with reconciliations, entity schedules and year-end workpapers prepared for CPA review.',
   path: PATH,
 });
 
