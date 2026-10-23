@@ -1,21 +1,21 @@
-# Internal Case Study Draft — Florida CPA Firm: Tax-Season Support
+# Internal Case Study Draft — CPA Firm Tax-Season Support
 
 **Status:** Internal working draft only. Not approved for public publication.  
-**Evidence currently available:** Accounstone has identified a Florida CPA firm engagement involving tax support during tax season. The return types, exact preparation tasks, software, tax year, engagement period and outcomes have not yet been confirmed in the material available for this draft.  
+**Evidence currently available:** Accounstone has identified a CPA firm engagement involving tax support during tax season. The return types, exact preparation tasks, software, tax year, engagement period and outcomes have not yet been confirmed in the material available for this draft.  
 **Publication rule:** Do not present this as a completed, verified client case study until the engagement owner confirms the facts and the client authorizes public use. Anonymization alone does not replace permission.
 
 ## Working title
 
-**Seasonal Tax-Preparation Support for a Florida CPA Firm**
+**Seasonal Tax-Preparation Support for a CPA Firm**
 
 ## Draft summary — requires factual confirmation
 
-Accounstone has been identified as providing tax-season support to a Florida CPA firm. The intended story is how defined preparation support fits within the CPA firm's existing workflow during a busy filing period. Before publication, confirm the exact tasks performed, the tax software used, the return types involved, the relevant tax year and the CPA firm's review process. Do not imply that Accounstone independently provided tax advice, approved tax positions, signed returns or filed returns unless each claim is accurate, permitted and supported.
+Accounstone has been identified as providing tax-season support to a CPA firm. The intended story is how defined preparation support fits within the CPA firm's existing workflow during a busy filing period. Before publication, confirm the exact tasks performed, the tax software used, the return types involved, the relevant tax year and the CPA firm's review process. Do not imply that Accounstone independently provided tax advice, approved tax positions, signed returns or filed returns unless each claim is accurate, permitted and supported.
 
 ## Client context
 
 - **Client type:** CPA firm.
-- **Location:** Florida, United States (confirm that this location may be disclosed publicly).
+- **Location:** Not disclosed in this draft.
 - **Engagement type:** Tax-season support.
 - **Tax year / season:** Not yet confirmed.
 - **Return types supported:** Not yet confirmed.
@@ -70,7 +70,7 @@ If verified measures become available, record:
 
 ## Required fact-check before public use
 
-- [ ] Confirm the firm's permitted anonymized description and Florida location.
+- [ ] Confirm the firm's permitted anonymized description.
 - [ ] Confirm tax year, dates and the actual reason support was needed.
 - [ ] Confirm return types and precise tasks completed.
 - [ ] Confirm tax software and any workflow platform actually used.
