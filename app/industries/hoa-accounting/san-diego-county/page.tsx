@@ -162,10 +162,8 @@ export default function SanDiegoCountyHoaAccountingPage() {
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Remote accounting support with clear responsibility boundaries</h2>
-          <p className="mt-4 text-base md:text-lg leading-relaxed text-muted">
-            Accounstone can support recurring bookkeeping, reconciliation and reporting tasks within an agreed workflow. Board approvals, bank authority, assessment or collection decisions, reserve planning, legal interpretation and CPA sign-off remain with the people authorized for those responsibilities. The association’s California counsel and CPA should confirm any legal, tax or statutory questions.
-          </p>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Explore HOA Accounting Resources</h2>
+          
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/industries/hoa-accounting" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">HOA accounting overview</Link>
             <Link href="/industries/hoa-accounting/california" className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-primary hover:bg-input">California HOA accounting</Link>
