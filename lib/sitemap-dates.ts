@@ -168,7 +168,7 @@ export const routeLastModified: Record<string, string> = {
   '/privacy': '2026-10-18',
   '/resources': '2026-10-09',
   '/resources/case-studies': '2026-09-03',
-  '/resources/guides': '2026-09-16',
+  '/resources/guides': '2026-10-23',
   '/resources/guides/choosing-an-engagement-model': '2026-10-17',
   '/resources/guides/client-accounting-services-cas-guide': '2026-10-18',
   '/resources/guides/how-to-choose-accounting-outsourcing-partner': '2026-10-18',
