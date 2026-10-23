@@ -145,7 +145,7 @@ candidate for overlap.
 | `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Outsourcing |
 | `/industries/nonprofit-accounting` | Nonprofit Accounting Outsourcing |
 | `/industries/professional-services` | Professional Services Accounting Outsourcing |
-| `/industries/property-management` | Property Management Accounting Outsourcing |
+| `/industries/property-management` | Property Management Bookkeeping Outsourcing |
 | `/industries/property-management/accounting-cleanup` | Property Management Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
 | `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
