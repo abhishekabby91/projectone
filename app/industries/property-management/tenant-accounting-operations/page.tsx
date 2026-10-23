@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/tenant-accounting-operations';
 
 export const metadata: Metadata = genMeta({
   title: 'Tenant Accounting Operations Support',
-  description: 'Support rent batch posting, payment application, tenant ledgers, lease changes, late-fee records, NSF reversals and property-level reconciliations.',
+  description: 'Outsourced tenant accounting operations for rent-batch posting, payment application, tenant ledgers, lease changes, late-fee records, NSF reversals and property-level reconciliations.',
   path: PATH,
 });
 

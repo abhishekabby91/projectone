@@ -16,9 +16,9 @@ import {
 const PATH = '/industries/hoa-accounting/yardi-accounting-support';
 
 export const metadata: Metadata = genMeta({
-  title: 'Yardi HOA Accounting Support',
+  title: 'Yardi HOA Accounting Outsourcing',
   description:
-    'Remote accounting support for HOAs using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, reserve schedules and board reporting.',
+    'HOA accounting outsourcing for teams using Yardi Voyager or Breeze: assessment ledgers, reconciliation workpapers, reserve schedules and board reporting.',
   path: PATH,
 });
 
@@ -51,9 +51,9 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'Yardi HOA Accounting and Bookkeeping Support',
+  name: 'Yardi HOA Accounting Outsourcing',
   description:
-    'Remote accounting workflow support for homeowners associations and community management companies using Yardi Voyager or Breeze, including assessment records, reconciliation preparation, payable tracking, reserve schedules and board reporting.',
+    'Accounting outsourcing for homeowners associations and community management companies using Yardi Voyager or Breeze, including assessment records, reconciliation preparation, payable tracking, reserve schedules and board reporting.',
   slug: 'hoa-accounting/yardi-accounting-support',
   basePath: '/industries/',
 });
@@ -102,8 +102,8 @@ export default function YardiHoaAccountingSupportPage() {
 
       <PremiumHero
         subtitle="HOA accounting · Yardi workflows"
-        title="Yardi HOA Accounting Support"
-        description="Remote accounting support for HOA and community management teams using Yardi—covering reconciliation preparation, assessment records, payable tracking, reserve schedules and a clearer monthly board-reporting handoff."
+        title="Yardi HOA Accounting Outsourcing"
+        description="Accounting outsourcing for HOA and community management teams using Yardi, covering reconciliation preparation, assessment records, payable tracking, reserve schedules and monthly board-reporting handoffs."
         cta={{ text: 'Discuss your accounting workflow', href: '/contact' }}
         ctaSecondary={{ text: 'Explore HOA accounting support', href: '/industries/hoa-accounting' }}
       />

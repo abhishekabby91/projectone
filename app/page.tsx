@@ -11,7 +11,6 @@ import Reveal from '@/components/reveal';
 import ProcessFlow from '@/components/process-flow';
 import AccountingWorkflowIllustration from '@/components/accounting-workflow-illustration';
 import IndustryIllustration from '@/components/industry-illustration';
-import BusinessIndustryChooser from '@/components/business-industry-chooser';
 import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials } from '@/lib/data';
 
@@ -103,37 +102,6 @@ export default function HomePage() {
           </Reveal>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-3 sm:gap-5">
-          {[
-            {
-              title: 'For Businesses & Management Companies',
-              body: 'Outsource recurring accounting, reconciliations, AP/AR and financial reporting within your existing systems and approval processes.',
-              href: '/solutions',
-            },
-            {
-              title: 'For CPA & Accounting Firms',
-              body: 'Outsource bookkeeping, accounting and agreed tax-preparation work while keeping client relationships, decisions and final review in-house.',
-              href: '/industries/cpa-firms',
-            },
-          ].map((item, i) => (
-            <Reveal key={item.title} delay={i * 0.08}>
-{item.title === 'For Businesses & Management Companies' ? (
-                <BusinessIndustryChooser />
-              ) : (
-                <Link
-                  href={item.href}
-                  className="group block h-full rounded-xl border border-border bg-input p-3.5 sm:p-6 md:p-8 transition-all duration-200 hover:border-primary/40 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.14)]"
-                >
-                  <h3 className="font-serif text-base sm:text-xl md:text-2xl font-bold leading-tight text-primary">{item.title}</h3>
-                  <p className="mt-2 sm:mt-3 text-sm md:text-base text-muted leading-5 sm:leading-relaxed line-clamp-4 sm:line-clamp-none">{item.body}</p>
-                  <span className="mt-3 sm:mt-5 inline-block text-xs sm:text-sm font-semibold text-accent">
-                    See how the support model works <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
-                  </span>
-                </Link>
-              )}
-            </Reveal>
-          ))}
-        </div>
       </section>
 
       <section data-section="services">
@@ -143,13 +111,9 @@ export default function HomePage() {
           description="Practical support across bookkeeping, accounting operations, tax preparation, payroll, payables, receivables and financial reporting."
           items={services.map((s) => ({
             ...s,
-            // Point each card at the regional page the retired generic URL
-            // redirects to, so the site's highest-authority page never links
-            // through a 308. audit-support resolves to United Kingdom -- the
-            // per-URL evidence is in the comment above the redirects in
-            // next.config.mjs. See CLAUDE.md, "zero internal links pointing at
-            // a redirect".
-            slug: `${s.slug}/${s.slug === 'audit-support' ? 'united-kingdom' : 'united-states'}`,
+            // Link service cards directly to the active U.S. service pages.
+            // This keeps homepage navigation aligned with the current service architecture.
+            slug: `${s.slug}/united-states`,
           }))}
           baseUrl="/services"
           columns={4}

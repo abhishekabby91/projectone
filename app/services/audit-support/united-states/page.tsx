@@ -27,7 +27,7 @@ const support = [
   'Working-paper and supporting-schedule preparation',
   'Reconciliation and documentation of account balances',
   'Organization of evidence and client-provided documentation',
-  'Testing support based on the audit team’s procedures',
+  'Preparation of schedules and organization of evidence requested by the engagement team',
   'Open-item tracking and follow-up documentation',
   'Capacity support before and during audit fieldwork',
 ];
@@ -40,7 +40,7 @@ const retained = [
 ];
 
 const faqs = [
-  { question: 'Do you issue the audit opinion?', answer: 'No. The audit opinion is issued by the engaged CPA firm or auditor. We support preparation, documentation and defined testing work.' },
+  { question: 'Do you issue the audit opinion?', answer: 'No. The audit opinion is issued by the engaged CPA firm or auditor. Support is limited to agreed preparation, documentation and evidence-organization tasks; the engagement team retains responsibility for audit procedures, professional judgment and conclusions.' },
   { question: 'What if the audit team is spending too much time chasing support?', answer: 'That is exactly the type of preparation work that can be separated from the professional review itself. Schedules, reconciliations, evidence and open-item tracking can be organized so the reviewer can see what is complete and what still needs attention.' },
   { question: 'Can you organize working papers before fieldwork?', answer: 'Yes. Getting schedules, reconciliations and supporting evidence into a consistent structure before fieldwork can reduce the amount of basic follow-up that competes with the actual audit work.' },
   { question: 'Can you work from the auditor’s PBC list?', answer: 'Yes. Requested documentation can be organized, supporting schedules reconciled and outstanding items tracked according to the engagement workflow.' },
@@ -96,9 +96,9 @@ export default function AuditSupportUSPage() {
             <>
               <p className="text-base md:text-lg text-muted leading-relaxed">Two different people search this phrase and mean opposite things by it, which is why most pages answering it are vague. Worth separating them.</p>
               <h3 className="font-bold text-primary text-lg pt-2">If you are the company being audited</h3>
-              <p className="text-base md:text-lg text-muted leading-relaxed">Audit support is the work of getting your own file ready before the auditor opens it: a trial balance that ties, supporting schedules that agree to it, reconciliations that explain the differences, rollforwards for the balances that move, and the underlying documents filed where they can be found. Most of the time lost in an audit is not lost to testing. It is lost to a request list that keeps coming back because the first answer did not reconcile.</p>
+              <p className="text-base md:text-lg text-muted leading-relaxed">Audit support is the work of getting your own file ready before the auditor opens it: a trial balance that ties, supporting schedules that agree to it, reconciliations that explain the differences, rollforwards for the balances that move, and the underlying documents filed where they can be found. When a response does not reconcile to the underlying records, the engagement team may need to request clarification or additional support before it can complete its review.</p>
               <h3 className="font-bold text-primary text-lg pt-2">If you are the audit firm</h3>
-              <p className="text-base md:text-lg text-muted leading-relaxed">The same work, but the distinction matters more. This is preparation performed for the entity being audited, not audit work performed for you. Independence rules exist precisely so that the people preparing a file are not the people concluding on it, and independence requirements preserve a clear separation between preparation support and auditor judgment.</p>
+              <p className="text-base md:text-lg text-muted leading-relaxed">For CPA firms, the scope must be assessed against applicable independence requirements, professional standards and the firm’s own policies. The engagement team remains responsible for deciding which activities may be delegated, supervising the work and reaching all audit conclusions. Preparation support should not be presented as independent audit judgment or as a substitute for the auditor’s responsibilities.</p>
               <div className="overflow-hidden rounded-xl border border-border bg-input">
                 <div className="border-l-4 border-accent p-5 sm:p-6 space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-accent">The line that does not move</p>
@@ -106,7 +106,7 @@ export default function AuditSupportUSPage() {
                   <p className="text-sm sm:text-base leading-relaxed text-foreground">What can move is everything in front of that: schedules, tie-outs, reconciliations, evidence gathering, PBC list maintenance and formatting the file so the review is about the numbers rather than about finding them.</p>
                 </div>
               </div>
-              <p className="text-base md:text-lg text-muted leading-relaxed">&ldquo;Offshore audit support&rdquo; is the same scope with the delivery team in another time zone, which mostly changes the rhythm rather than the work: requests raised at the end of your day are usually answered by the start of the next one, and the tradeoff is that ambiguous requests cost a full cycle instead of a conversation across a desk.</p>
+              <p className="text-base md:text-lg text-muted leading-relaxed">Remote delivery changes how communication is coordinated, not the responsibility boundary. Clear requests, named owners, response expectations and escalation rules help manage ambiguity; response timing depends on the agreed workflow and each party’s availability.</p>
             </>
           </Reveal>
         </div>

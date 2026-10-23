@@ -10,13 +10,13 @@ const PATH = '/industries/property-management/yardi-accounting-support';
 
 export const metadata: Metadata = genMeta({
   title: 'Yardi Accounting Support for Property Managers',
-  description: 'Accounting support for property managers using Yardi Voyager or Breeze: reconciliations, AP/AR review, ledger checks and month-end reporting.',
+  description: 'Accounting outsourcing for property managers using Yardi Voyager or Breeze: reconciliations, AP/AR review, ledger checks and month-end reporting.',
   path: PATH,
 });
 
 const serviceSchema = generateServiceSchema({
   name: 'Yardi Accounting Support for Property Managers',
-  description: 'Defined accounting workflow support for property-management companies using Yardi, including transaction review, reconciliations, payable and receivable schedules, ledger checks and month-end reporting preparation.',
+  description: 'Defined outsourced accounting workflows for property-management companies using Yardi, including transaction review, reconciliations, payable and receivable schedules, ledger checks and month-end reporting preparation.',
   slug: 'property-management/yardi-accounting-support',
   basePath: '/industries/',
 });

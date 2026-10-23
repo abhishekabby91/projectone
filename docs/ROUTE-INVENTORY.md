@@ -111,52 +111,52 @@ candidate for overlap.
 | `/delivery-framework/onboarding` | Client Onboarding Process |
 | `/delivery-framework/quality-assurance` | Quality Assurance & Controls |
 | `/industries` | Industry Accounting & Bookkeeping Support |
-| `/industries/construction` | Construction Accounting & Bookkeeping Support |
+| `/industries/construction` | Construction Accounting Outsourcing |
 | `/industries/cpa-firms` | Outsourced Accounting for CPA Firms |
 | `/industries/cpa-firms/accounts-payable-outsourcing` | Accounts Payable Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
 | `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
-| `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting Outsourcing |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
 | `/industries/cpa-firms/illinois-inventory-accounting-support` | Illinois Inventory Accounting Support |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
-| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting |
-| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Work Outsourcing Support |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting Outsourcing |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Accounting Outsourcing for Overflow Work |
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
-| `/industries/ecommerce` | E-Commerce Accounting Services |
+| `/industries/ecommerce` | E-Commerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
 | `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
-| `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
-| `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting & Bookkeeping Support |
-| `/industries/hoa-accounting/california` | California HOA Accounting & Bookkeeping |
-| `/industries/hoa-accounting/eunify-accounting-support` | eUnify HOA Accounting Support |
+| `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/california` | California HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/eunify-accounting-support` | eUnify HOA Accounting Outsourcing |
 | `/industries/hoa-accounting/los-angeles-county` | Los Angeles County HOA Accounting Support |
 | `/industries/hoa-accounting/orange-county` | Orange County HOA Accounting Support |
 | `/industries/hoa-accounting/san-diego-county` | San Diego County HOA Accounting Support |
 | `/industries/hoa-accounting/self-managed-hoa-accounting` | Accounting Support for Self-Managed HOAs |
-| `/industries/hoa-accounting/texas` | Texas HOA Accounting & Bookkeeping Support |
-| `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Support |
-| `/industries/nonprofit-accounting` | Nonprofit Accounting & Bookkeeping Support |
-| `/industries/professional-services` | Law Firm & Professional Services Accounting |
+| `/industries/hoa-accounting/texas` | Texas HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Outsourcing |
+| `/industries/nonprofit-accounting` | Nonprofit Accounting Outsourcing |
+| `/industries/professional-services` | Professional Services Accounting Outsourcing |
 | `/industries/property-management` | Property Management Accounting Outsourcing |
-| `/industries/property-management/accounting-cleanup` | Property Management Accounting Cleanup |
+| `/industries/property-management/accounting-cleanup` | Property Management Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
 | `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
 | `/industries/property-management/california` | California Property Management Accounting |
 | `/industries/property-management/doorloop-accounting-support` | DoorLoop Accounting Support |
-| `/industries/property-management/general-ledger-reconciliation` | Property GL Reconciliation Support |
+| `/industries/property-management/general-ledger-reconciliation` | Property Management GL Reconciliation Outsourcing |
 | `/industries/property-management/lender-reporting-noi-support` | Property Management Lender Reporting Support |
 | `/industries/property-management/management-company-accounting` | Property Management Company Accounting Support |
 | `/industries/property-management/month-end-close-support` | Property Management Month-End Close Support |
 | `/industries/property-management/tenant-accounting-operations` | Tenant Accounting Operations Support |
-| `/industries/property-management/texas` | Texas Property Management Accounting Support |
+| `/industries/property-management/texas` | Texas Property Management Accounting Outsourcing |
 | `/industries/property-management/trust-account-reconciliation` | Trust Account Reconciliation Support |
 | `/industries/property-management/yardi-accounting-support` | Yardi Accounting Support for Property Managers |
 | `/industries/real-estate` | Real Estate Accounting Outsourcing |
@@ -220,7 +220,7 @@ candidate for overlap.
 | `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
 | `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
-| `/solutions/back-office-support` | Back-Office Accounting Support for Firms |
+| `/solutions/back-office-support` | Back-Office Accounting Outsourcing for Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |

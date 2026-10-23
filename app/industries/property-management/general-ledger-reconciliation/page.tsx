@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/general-ledger-reconciliation';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property GL Reconciliation Support',
+  title: 'Property Management GL Reconciliation Outsourcing',
   description: 'Reconcile property-management platform reports to the general ledger, investigate posting differences and prepare a repeatable monthly review.',
   path: PATH,
 });
@@ -23,8 +23,8 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'Property Management Platform-to-General-Ledger Reconciliation Support',
-  description: 'Remote accounting support to compare property-management system reports with general-ledger records, investigate posting differences, document exceptions and support a repeatable monthly reconciliation process.',
+  name: 'Property Management Platform-to-General-Ledger Reconciliation Outsourcing',
+  description: 'Outsourced accounting work to compare property-management system reports with general-ledger records, investigate posting differences, document exceptions and support a repeatable monthly reconciliation process.',
   slug: 'property-management/general-ledger-reconciliation',
   basePath: '/industries/',
   areaServed: ['United States'],
@@ -127,7 +127,7 @@ export default function PropertyManagementGeneralLedgerReconciliationPage() {
       <section className="px-6 md:px-8 py-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-xl md:text-2xl font-bold text-primary">Clear responsibilities and review controls</h2>
-          <p className="mt-3 max-w-4xl text-sm md:text-base leading-relaxed text-muted">Accounstone provides remote accounting preparation and reconciliation support within an agreed scope. Your business retains banking control, payment release, owner-distribution approval and decisions about accounting treatment. This work does not replace legal advice, a CPA’s tax or assurance work, software-vendor support or the responsible property manager’s compliance review.</p>
+          <p className="mt-3 max-w-4xl text-sm md:text-base leading-relaxed text-muted">Accounstone provides outsourced accounting preparation and reconciliation within an agreed scope. Your business retains banking control, payment release, owner-distribution approval and decisions about accounting treatment. This work does not replace legal advice, a CPA’s tax or assurance work, software-vendor support or the responsible property manager’s compliance review.</p>
         </div>
       </section>
       <FAQSection subtitle="General ledger reconciliation questions" items={faqs} columns={2} />

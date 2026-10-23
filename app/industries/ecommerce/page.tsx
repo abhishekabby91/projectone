@@ -6,9 +6,9 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/ecommerce';
 
 export const metadata: Metadata = genMeta({
-  title: 'E-Commerce Accounting Services',
+  title: 'E-Commerce Accounting Outsourcing',
   description:
-    'E-commerce accounting services for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records, and channel reporting.',
+    'E-commerce accounting outsourcing for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records, and channel reporting.',
   path: PATH,
 });
 
@@ -47,7 +47,7 @@ export default function EcommerceIndustryPage() {
       industry={{
         name: 'E-Commerce',
         description:
-          'E-commerce accounting services for online retailers selling across marketplaces and their own storefront, including settlement reconciliation, fees, refunds, inventory/COGS records and channel reporting.',
+          'Accounting outsourcing for online retailers selling across marketplaces and their own storefront, including settlement reconciliation, fees, refunds, inventory/COGS records and channel reporting.',
       }}
       overview="E-commerce accounting services need to connect the gross sales reported by each storefront or marketplace to the net settlement that reaches the bank. Platform fees, refunds, chargebacks, reserves, payment-processor charges and timing differences can make a payout look like revenue when it is only the net cash received. We reconcile available channel and processor reports to the existing accounting records, keep fees and returns visible, and maintain inventory and cost-of-goods-sold records using the client’s approved method. Sales can be organised by destination state for review by the client’s tax adviser; tax registration decisions and filings remain with the client or its appointed tax professional."
       benefits={[

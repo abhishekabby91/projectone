@@ -16,9 +16,9 @@ import {
 const PATH = '/industries/hoa-accounting/eunify-accounting-support';
 
 export const metadata: Metadata = genMeta({
-  title: 'eUnify HOA Accounting Support',
+  title: 'eUnify HOA Accounting Outsourcing',
   description:
-    'Remote accounting workflow support for HOAs using eUnify: assessment records, reconciliations, payables, month-end review and board reporting.',
+    'HOA accounting outsourcing for teams using eUnify: assessment records, reconciliations, payables, month-end review and board reporting.',
   path: PATH,
 });
 
@@ -51,9 +51,9 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'eUnify HOA Accounting and Bookkeeping Support',
+  name: 'eUnify HOA Accounting Outsourcing',
   description:
-    'Remote accounting workflow support for homeowners associations and community managers using eUnify, including assessment-ledger review, reconciliation preparation, payable tracking, month-end checks and board-reporting handoffs.',
+    'Accounting outsourcing for homeowners associations and community managers using eUnify, including assessment-ledger review, reconciliation preparation, payable tracking, month-end checks and board-reporting handoffs.',
   slug: 'hoa-accounting/eunify-accounting-support',
   basePath: '/industries/',
 });
@@ -93,8 +93,8 @@ export default function EUnifyHoaAccountingSupportPage() {
 
       <PremiumHero
         subtitle="HOA accounting · eUnify workflows"
-        title="eUnify HOA Accounting Support"
-        description="Remote accounting support for HOA and community management teams using eUnify—covering assessment records, reconciliation preparation, payable tracking, month-end checks and clear reporting handoffs."
+        title="eUnify HOA Accounting Outsourcing"
+        description="Accounting outsourcing for HOA and community management teams using eUnify, covering assessment records, reconciliation preparation, payable tracking, month-end checks and reporting handoffs."
         cta={{ text: 'Discuss your accounting workflow', href: '/contact' }}
         ctaSecondary={{ text: 'Explore HOA accounting support', href: '/industries/hoa-accounting' }}
       />

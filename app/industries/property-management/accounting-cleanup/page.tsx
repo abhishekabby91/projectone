@@ -9,8 +9,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/accounting-cleanup';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Accounting Cleanup',
-  description: 'Catch up overdue property management books, reconcile property and tenant ledgers, and establish a repeatable monthly close you can rely on.',
+  title: 'Property Management Cleanup Outsourcing',
+  description: 'Outsourced accounting cleanup for property managers: catch up overdue books, reconcile property and tenant ledgers, and establish a repeatable monthly close.',
   path: PATH,
 });
 
@@ -22,8 +22,8 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'Property Management Accounting Cleanup and Catch-Up Support',
-  description: 'Remote cleanup and catch-up accounting support for property management businesses, including backlog assessment, property and tenant ledger reconciliation, owner statement tie-outs, deposit record review and monthly close preparation.',
+  name: 'Property Management Accounting Cleanup and Catch-Up Outsourcing',
+  description: 'Outsourced cleanup and catch-up accounting for property management businesses, including backlog assessment, property and tenant ledger reconciliation, owner statement tie-outs, deposit record review and monthly close preparation.',
   slug: 'property-management/accounting-cleanup',
   basePath: '/industries/',
   areaServed: ['United States'],

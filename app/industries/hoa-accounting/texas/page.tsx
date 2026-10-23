@@ -9,8 +9,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 
 const PATH = '/industries/hoa-accounting/texas';
 export const metadata: Metadata = genMeta({
-  title: 'Texas HOA Accounting & Bookkeeping Support',
-  description: 'Remote Texas HOA accounting support for assessment ledgers, financial-record organization, reserve reconciliations, board reporting and CPA handover.',
+  title: 'Texas HOA Accounting Outsourcing',
+  description: 'Accounting outsourcing for Texas HOAs, covering assessment ledgers, financial-record organization, reserve reconciliations, board reporting and CPA handover.',
   path: PATH,
 });
 
@@ -23,8 +23,8 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'Texas HOA Accounting and Bookkeeping Outsourcing',
-  description: 'Remote accounting support for Texas homeowners associations, property owners’ associations and condominium communities, including assessment ledgers, reconciliations, board reporting and organized year-end records.',
+  name: 'Texas HOA Accounting Outsourcing',
+  description: 'Accounting outsourcing for Texas homeowners associations, property owners’ associations and condominium communities, including assessment ledgers, reconciliations, board reporting and organized year-end records.',
   slug: 'hoa-accounting/texas', basePath: '/industries/', areaServed: ['Texas'],
 });
 const faqSchema = generateFAQSchema(faqs);

@@ -16,9 +16,9 @@ import {
 const PATH = '/industries/hoa-accounting/california';
 
 export const metadata: Metadata = genMeta({
-  title: 'California HOA Accounting & Bookkeeping',
+  title: 'California HOA Accounting Outsourcing',
   description:
-    'Remote California HOA accounting support for assessment ledgers, reserve reconciliations, board reports and year-end schedules.',
+    'Accounting outsourcing for California HOAs, covering assessment ledgers, reserve reconciliations, board reports and year-end schedules.',
   path: PATH,
 });
 
@@ -51,9 +51,9 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'California HOA Accounting and Bookkeeping Outsourcing',
+  name: 'California HOA Accounting Outsourcing',
   description:
-    'Remote accounting support for California homeowners associations and community association managers, including assessment ledgers, operating and reserve reconciliations, monthly board reporting and year-end schedules.',
+    'Accounting outsourcing for California homeowners associations and community association managers, including assessment ledgers, operating and reserve reconciliations, monthly board reporting and year-end schedules.',
   slug: 'hoa-accounting/california',
   basePath: '/industries/',
   areaServed: ['California'],
