@@ -16,14 +16,17 @@ export default function FAQSection({
   items,
   columns = 1,
 }: FAQSectionProps) {
-  const colsClass = columns === 2 ? 'md:grid-cols-2' : '';
+  const midpoint = Math.ceil(items.length / 2);
+  const itemColumns = columns === 2
+    ? [items.slice(0, midpoint), items.slice(midpoint)]
+    : [items];
 
   return (
-    <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-      <div className="max-w-5xl mx-auto">
-        <div className="mb-10 md:mb-12 text-center space-y-3 md:space-y-4">
+    <section className="w-full py-8 md:py-10 px-4 sm:px-6 md:px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-6 md:mb-8 text-center space-y-2">
           {subtitle && (
-            <span className="text-sm md:text-base font-semibold tracking-wide uppercase text-accent">
+            <span className="text-xs sm:text-sm font-semibold tracking-wide uppercase text-accent">
               {subtitle}
             </span>
           )}
@@ -32,26 +35,33 @@ export default function FAQSection({
           </h2>
         </div>
 
-        <div className={`grid grid-cols-1 gap-3 sm:gap-4 ${colsClass}`}>
-          {items.map((item, index) => (
-            <details
-              key={item.question}
-              open={index === 0}
-              className="group rounded-xl border-2 border-border overflow-hidden bg-white"
-            >
-              <summary className="cursor-pointer list-none px-4 py-4 sm:px-6 sm:py-5 text-left font-semibold text-base sm:text-lg text-primary hover:bg-input transition-colors flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-                <span>{item.question}</span>
-                <span
-                  className="text-2xl leading-none text-accent shrink-0 transition-transform duration-200 group-open:rotate-180"
-                  aria-hidden="true"
-                >
-                  ↓
-                </span>
-              </summary>
-              <div className="px-4 py-4 sm:px-6 sm:py-5 bg-input border-t-2 border-border">
-                <p className="text-foreground leading-relaxed">{item.answer}</p>
-              </div>
-            </details>
+        <div className={columns === 2 ? 'grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 items-start' : 'grid grid-cols-1 gap-3'}>
+          {itemColumns.map((columnItems, columnIndex) => (
+            <div key={columnIndex} className="flex flex-col gap-2.5">
+              {columnItems.map((item, itemIndex) => {
+                const itemIndexInList = columnIndex === 0 ? itemIndex : midpoint + itemIndex;
+                return (
+                  <details
+                    key={item.question}
+                    open={itemIndexInList === 0}
+                    className="group rounded-lg border border-border overflow-hidden bg-white"
+                  >
+                    <summary className="cursor-pointer list-none px-3 py-3 sm:px-4 sm:py-3 text-left text-sm sm:text-base font-semibold leading-snug text-primary hover:bg-input transition-colors flex items-center justify-between gap-3 [&::-webkit-details-marker]:hidden">
+                      <span>{item.question}</span>
+                      <span
+                        className="text-lg leading-none text-accent shrink-0 transition-transform duration-200 group-open:rotate-180"
+                        aria-hidden="true"
+                      >
+                        ↓
+                      </span>
+                    </summary>
+                    <div className="px-3 py-3 sm:px-4 bg-input border-t border-border">
+                      <p className="text-sm leading-relaxed text-foreground">{item.answer}</p>
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
           ))}
         </div>
       </div>
