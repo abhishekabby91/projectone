@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/accounting-cleanup';
 
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Accounting Cleanup Outsourcing',
+  title: 'Property Management Cleanup Outsourcing',
   description: 'Outsourced accounting cleanup for property managers: catch up overdue books, reconcile property and tenant ledgers, and establish a repeatable monthly close.',
   path: PATH,
 });
