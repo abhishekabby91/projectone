@@ -213,3 +213,7 @@ Added contextual links from the indexed /blog/yardi-accounting-workflow and /blo
 ## CPA workflow additions — release staging 2026-10-20
 
 Staged six CPA-firm workflow pages: overflow work support, accounts payable outsourcing, California tax workpaper support, Texas bookkeeping cleanup, Florida property/entity accounting support, New York multi-entity accounting support, and Illinois inventory accounting support. The pages target distinct recurring workflow needs and preserve the CPA firm's client relationship and review responsibility. Sitemap inclusion is staged; full route/content validation and similarity review are still required before production release.
+
+## 2026-10-24 — CPA-firm industry pathways
+
+Updated `/industries/cpa-firms` with a section linking to six existing industry pages: construction, healthcare, e-commerce, technology/SaaS, professional services and nonprofits. The copy explains how industry workflow coverage can support CPA firms' client portfolios while the CPA firm retains client relationships, professional judgment, review and sign-off. HOA and property management remain separate direct-buyer clusters and are not the primary examples in this section. No new public URLs were created. Changes are staged on `accounstone-property-faqs-2026-10-23`; build/link validation and deployment remain pending.
