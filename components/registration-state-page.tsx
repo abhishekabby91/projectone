@@ -18,9 +18,6 @@ import { type RegistrationState, registrationStates } from '@/lib/company-regist
  * every run forever. Explicit files keep that check honest; this component keeps
  * them from duplicating each other.
  *
- * Every page in this cluster carries the boundaries block. That is not padding —
- * entity selection advice is forbidden by `scope-boundaries.md` §2 and this is
- * the cluster where a reader is most likely to ask for it.
  */
 export default function RegistrationStatePage({ state }: { state: RegistrationState }) {
   const path = `/company-registration/${state.slug}`;
