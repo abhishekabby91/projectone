@@ -1,4 +1,4 @@
-# Accounstone SEO Agent Report — 2026-10-22
+# Accounstone SEO Agent Report — 2026-10-23
 
 ## Summary
 
@@ -18,11 +18,11 @@
 | app/industries/cpa-firms/california-tax-workpaper-support/page.tsx | 45/100 | 56 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/california/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/florida/page.tsx | 50/100 | 56 | 0 | 0 | 0 | 0 |
-| app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx | 50/100 | 54 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/florida-property-entity-accounting-support/page.tsx | 50/100 | 56 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/illinois/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
-| app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx | 50/100 | 56 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/illinois-inventory-accounting-support/page.tsx | 50/100 | 55 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/new-york/page.tsx | 50/100 | 60 | 0 | 0 | 0 | 0 |
-| app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
+| app/industries/cpa-firms/new-york-multi-entity-accounting-support/page.tsx | 50/100 | 58 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/texas/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/industries/cpa-firms/texas-bookkeeping-cleanup-support/page.tsx | 50/100 | 57 | 0 | 0 | 0 | 0 |
 | app/resources/insights/page.tsx | 55/100 | 265 | 0 | 6 | 0 | 0 |
@@ -84,7 +84,7 @@
 | app/blog/how-to-outsource-hoa-accounting/page.tsx | 90/100 | 575 | 1 | 3 | 0 | 0 |
 | app/blog/outsourced-bookkeeping-guide/page.tsx | 90/100 | 1327 | 1 | 9 | 0 | 0 |
 | app/blog/outsourced-payroll-services/page.tsx | 90/100 | 999 | 1 | 8 | 0 | 0 |
-| app/blog/page.tsx | 90/100 | 2313 | 1 | 65 | 0 | 0 |
+| app/blog/page.tsx | 90/100 | 2308 | 1 | 65 | 0 | 0 |
 | app/blog/property-management-1099-preparation/page.tsx | 90/100 | 1454 | 1 | 4 | 0 | 0 |
 | app/blog/property-management-accounting/page.tsx | 90/100 | 4497 | 1 | 33 | 0 | 0 |
 | app/blog/property-management-accounting-for-small-companies/page.tsx | 90/100 | 956 | 1 | 3 | 0 | 0 |
@@ -127,42 +127,42 @@
 | app/cookie-policy/page.tsx | 90/100 | 1015 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/onboarding/page.tsx | 90/100 | 977 | 1 | 5 | 0 | 0 |
 | app/delivery-framework/quality-assurance/page.tsx | 90/100 | 772 | 1 | 5 | 0 | 0 |
-| app/industries/construction/page.tsx | 90/100 | 685 | 1 | 5 | 0 | 0 |
+| app/industries/construction/page.tsx | 90/100 | 682 | 1 | 5 | 0 | 0 |
 | app/industries/cpa-firms/accounts-payable-outsourcing/page.tsx | 90/100 | 1252 | 1 | 10 | 0 | 0 |
 | app/industries/cpa-firms/cas-production-support/page.tsx | 90/100 | 1487 | 1 | 6 | 0 | 0 |
-| app/industries/cpa-firms/overflow-work-support/page.tsx | 90/100 | 1458 | 1 | 12 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1561 | 1 | 37 | 0 | 0 |
+| app/industries/cpa-firms/overflow-work-support/page.tsx | 90/100 | 1461 | 1 | 12 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1563 | 1 | 37 | 0 | 0 |
 | app/industries/cpa-firms/white-label-accounting/page.tsx | 90/100 | 1573 | 1 | 6 | 0 | 0 |
 | app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
-| app/industries/ecommerce/page.tsx | 90/100 | 503 | 1 | 5 | 0 | 0 |
+| app/industries/ecommerce/page.tsx | 90/100 | 502 | 1 | 5 | 0 | 0 |
 | app/industries/ecommerce/shopify-accounting/page.tsx | 90/100 | 1229 | 1 | 10 | 0 | 0 |
-| app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 577 | 1 | 3 | 0 | 0 |
-| app/industries/healthcare/page.tsx | 90/100 | 435 | 1 | 4 | 0 | 0 |
-| app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 827 | 1 | 9 | 0 | 0 |
-| app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1119 | 1 | 15 | 0 | 0 |
-| app/industries/hoa-accounting/california/page.tsx | 90/100 | 1149 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 850 | 1 | 9 | 0 | 0 |
+| app/industries/healthcare/dental-practice-accounting/page.tsx | 90/100 | 581 | 1 | 3 | 0 | 0 |
+| app/industries/healthcare/page.tsx | 90/100 | 434 | 1 | 4 | 0 | 0 |
+| app/industries/hoa-accounting/appfolio-accounting-support/page.tsx | 90/100 | 821 | 1 | 9 | 0 | 0 |
+| app/industries/hoa-accounting/buildium-accounting-support/page.tsx | 90/100 | 1113 | 1 | 15 | 0 | 0 |
+| app/industries/hoa-accounting/california/page.tsx | 90/100 | 1145 | 1 | 12 | 0 | 0 |
+| app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 844 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
 | app/industries/hoa-accounting/page.tsx | 90/100 | 2999 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
-| app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1116 | 1 | 11 | 0 | 0 |
-| app/industries/hoa-accounting/yardi-accounting-support/page.tsx | 90/100 | 870 | 1 | 9 | 0 | 0 |
-| app/industries/nonprofit-accounting/page.tsx | 90/100 | 581 | 1 | 4 | 0 | 0 |
-| app/industries/professional-services/page.tsx | 90/100 | 1051 | 1 | 6 | 0 | 0 |
-| app/industries/property-management/accounting-cleanup/page.tsx | 90/100 | 1134 | 1 | 11 | 0 | 0 |
+| app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1111 | 1 | 11 | 0 | 0 |
+| app/industries/hoa-accounting/yardi-accounting-support/page.tsx | 90/100 | 864 | 1 | 9 | 0 | 0 |
+| app/industries/nonprofit-accounting/page.tsx | 90/100 | 580 | 1 | 4 | 0 | 0 |
+| app/industries/professional-services/page.tsx | 90/100 | 1049 | 1 | 6 | 0 | 0 |
+| app/industries/property-management/accounting-cleanup/page.tsx | 90/100 | 1133 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/appfolio-accounting-california/page.tsx | 90/100 | 1115 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/buildium-accounting-support/page.tsx | 90/100 | 1055 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/california/page.tsx | 90/100 | 814 | 1 | 10 | 0 | 0 |
-| app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1040 | 1 | 13 | 0 | 0 |
+| app/industries/property-management/doorloop-accounting-support/page.tsx | 90/100 | 1037 | 1 | 13 | 0 | 0 |
 | app/industries/property-management/general-ledger-reconciliation/page.tsx | 90/100 | 1134 | 1 | 12 | 0 | 0 |
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/page.tsx | 90/100 | 2455 | 1 | 80 | 0 | 0 |
-| app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1439 | 1 | 16 | 0 | 0 |
-| app/industries/property-management/texas/page.tsx | 90/100 | 827 | 1 | 11 | 0 | 0 |
+| app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1442 | 1 | 16 | 0 | 0 |
+| app/industries/property-management/texas/page.tsx | 90/100 | 824 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
 | app/industries/property-management/yardi-accounting-support/page.tsx | 90/100 | 1537 | 1 | 14 | 0 | 0 |
 | app/industries/real-estate/page.tsx | 90/100 | 2307 | 1 | 29 | 0 | 0 |
@@ -198,10 +198,10 @@
 | app/services/accounts-payable/united-states/page.tsx | 90/100 | 973 | 1 | 13 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 791 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 815 | 1 | 12 | 0 | 0 |
-| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 745 | 1 | 13 | 0 | 0 |
+| app/services/accounts-receivable/united-states/page.tsx | 90/100 | 750 | 1 | 13 | 0 | 0 |
 | app/services/audit-support/australia/page.tsx | 90/100 | 939 | 1 | 11 | 0 | 0 |
 | app/services/audit-support/united-kingdom/page.tsx | 90/100 | 940 | 1 | 11 | 0 | 0 |
-| app/services/audit-support/united-states/page.tsx | 90/100 | 1025 | 1 | 12 | 0 | 0 |
+| app/services/audit-support/united-states/page.tsx | 90/100 | 1016 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/australia/page.tsx | 90/100 | 908 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-kingdom/page.tsx | 90/100 | 912 | 1 | 12 | 0 | 0 |
 | app/services/bookkeeping/united-states/page.tsx | 90/100 | 1066 | 1 | 15 | 0 | 0 |
@@ -218,7 +218,7 @@
 | app/services/tax-preparation/united-states/1120-corporation/page.tsx | 90/100 | 749 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-states/1120-s-corporation/page.tsx | 90/100 | 741 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 1935 | 1 | 22 | 0 | 0 |
-| app/solutions/back-office-support/page.tsx | 90/100 | 1018 | 1 | 6 | 0 | 0 |
+| app/solutions/back-office-support/page.tsx | 90/100 | 1016 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1312 | 1 | 8 | 0 | 0 |
 | app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1753 | 1 | 10 | 0 | 0 |
 | app/solutions/staff-augmentation/page.tsx | 90/100 | 1756 | 1 | 9 | 0 | 0 |
@@ -232,7 +232,7 @@
 | app/technology/xero/page.tsx | 90/100 | 603 | 1 | 9 | 0 | 0 |
 | app/terms/page.tsx | 90/100 | 424 | 1 | 2 | 0 | 0 |
 | app/thank-you/page.tsx | 90/100 | 598 | 1 | 6 | 0 | 0 |
-| app/page.tsx | 100/100 | 1418 | 1 | 9 | 0 | 0 |
+| app/page.tsx | 100/100 | 1262 | 1 | 7 | 0 | 0 |
 
 ## Priority queue
 
