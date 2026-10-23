@@ -342,12 +342,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Principle 3, respect the buyer's control, made concrete. Naming what we
-          will not touch is the fastest way to answer the question a firm is
-          actually asking on this page: what am I handing over? Every line here
-          traces to knowledge/company/scope-boundaries.md. */}
-      
-
       {/* Principle 10: a visitor should learn something useful even if they
           never send the form. This also gives /contact real internal links -
           it had almost none. */}
