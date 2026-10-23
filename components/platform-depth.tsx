@@ -77,12 +77,7 @@ export default function PlatformDepthSection({ platform }: { platform: PlatformD
             ))}
           </ul>
 
-          <Reveal delay={0.12}>
-            <div className="mt-8 rounded-2xl border-l-4 border-accent bg-white p-5 sm:p-7">
-              <h3 className="text-lg font-bold text-primary">What we do not do in {platform.name}</h3>
-              <p className="mt-3 text-base leading-relaxed text-foreground">{platform.notOurs}</p>
-            </div>
-          </Reveal>
+          
         </div>
       </section>
     </>
