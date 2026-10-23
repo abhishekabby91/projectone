@@ -321,9 +321,6 @@ export default function PropertyManagementPage() {
                   <h3 className="font-serif text-lg font-bold text-primary">{m.region}</h3>
                   <span className="mt-1 text-xs font-bold uppercase tracking-wider text-accent">{m.calls}</span>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{m.body}</p>
-                  <Link href={m.href} className="mt-4 inline-block py-1 text-sm font-semibold text-primary underline underline-offset-4 hover:text-accent transition-colors">
-                    {m.region} market brief
-                  </Link>
                 </div>
               </Reveal>
             ))}
