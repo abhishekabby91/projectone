@@ -1,109 +1,100 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail } from 'lucide-react';
-import { companyInfo, regions, serviceRegions, technologies, industries } from '@/lib/data';
+import { companyInfo, serviceRegions, industries } from '@/lib/data';
 import SocialIcon from '@/components/social-icon';
 import CookieSettingsButton from '@/components/cookie-settings-button';
-import { registrationStates } from '@/lib/company-registration';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  // The footer is the site's real crawl skeleton. The navbar renders its
-  // dropdown links only when open, so they never appear in server HTML - every
-  // crawlable internal link below the hero comes from here. Three consequences
-  // are deliberate:
-  //   1. The seven US Service x Region pages are listed directly. They are
-  //      the active primary commercial service pages.
-  //   2. Section hubs (/services, /technology, /resources, /blog) are linked
-  //      explicitly. The Markets cluster has been removed from active navigation.
-  //   3. Only the US service URLs are linked here. UK/Australia routes are
-  //      intentionally excluded from the active architecture pending a separate
-  //      GSC/backlink-based retirement decision.
-  //
-  // Four columns, two blocks each. The even shape is deliberate: an earlier
-  // version had one column carrying three blocks and another carrying one,
-  // which left a ragged 250px gap at the bottom of the grid and read as
-  // unfinished rather than dense.
-  const footerColumns: Array<{ blocks: Array<{ title: string; links: Array<{ name: string; href: string }> }> }> = [
+
+  // Keep the footer intentionally selective: core service routes, priority
+  // industries, established platforms, and the main resource/company pages.
+  // Detailed software and location pages should be discovered contextually
+  // from their relevant industry hubs rather than through an oversized footer.
+  const footerColumns: Array<{ title: string; links: Array<{ name: string; href: string }> }> = [
     {
-      blocks: [
-        { title: 'Solutions', links: [
-          { name: 'Offshore Accounting Support', href: '/solutions/offshore-accounting-support' },
-          { name: 'Staff Augmentation', href: '/solutions/staff-augmentation' },
-          { name: 'Dedicated Accounting Teams', href: '/solutions/dedicated-accounting-teams' },
-          { name: 'Back Office Support', href: '/solutions/back-office-support' },
-          { name: 'All Solutions', href: '/solutions' },
-        ]},
+      title: 'Services',
+      links: [
+        ...serviceRegions.map((service) => ({
+          name: service.navLabel,
+          href: `/services/${service.slug}/united-states`,
+        })),
+        { name: 'All Services', href: '/services' },
+        { name: 'Solutions', href: '/solutions' },
       ],
     },
     {
-      blocks: [
-        { title: 'Technology', links: [
-          ...technologies.map((t) => ({ name: t.name, href: `/technology/${t.slug}` })),
-          { name: 'All Platforms', href: '/technology' },
-        ]},
-        // Delivery-framework pages are how an engagement runs, not company
-        // pages. They sat under "Company" and read as filler there.
-        { title: 'How We Work', links: [
-          { name: 'Onboarding', href: '/delivery-framework/onboarding' },
-          { name: 'Communication', href: '/delivery-framework/communication' },
-          { name: 'Quality Assurance', href: '/delivery-framework/quality-assurance' },
-        ]},
+      title: 'Industries',
+      links: [
+        ...industries
+          .filter((industry) => ['real-estate', 'property-management', 'hoa-accounting', 'cpa-firms'].includes(industry.slug))
+          .map((industry) => ({ name: industry.name, href: `/industries/${industry.slug}` })),
+        { name: 'All Industries', href: '/industries' },
       ],
     },
     {
-      blocks: [
-        { title: 'Industries', links: [
-          ...industries.map((i) => ({ name: i.name, href: `/industries/${i.slug}` })),
-          { name: 'All Industries', href: '/industries' },
-        ]},
-        // The navbar emits no links into server HTML, so a cluster that is not
-        // in the footer is not discoverable by link. See CLAUDE.md.
-        { title: 'Registration', links: [
-          { name: 'Register a US company', href: '/company-registration' },
-          ...registrationStates.map((st) => ({ name: st.name, href: `/company-registration/${st.slug}` })),
-        ]},
+      title: 'Technology',
+      links: [
+        { name: 'QuickBooks', href: '/technology/quickbooks' },
+        { name: 'Xero', href: '/technology/xero' },
+        { name: 'Sage', href: '/technology/sage' },
+        { name: 'NetSuite', href: '/technology/netsuite' },
+        { name: 'Drake Tax', href: '/technology/drake-tax' },
+        { name: 'CCH Axcess', href: '/technology/cch' },
+        { name: 'All Platforms', href: '/technology' },
       ],
     },
     {
-      blocks: [
-        { title: 'Resources', links: [
-          { name: 'Guides', href: '/resources/guides' },
-          { name: 'Insights', href: '/resources/insights' },
-          { name: 'Case Studies', href: '/resources/case-studies' },
-          { name: 'Blog', href: '/blog' },
-        ]},
-        { title: 'Company', links: [
-          { name: 'About', href: '/about' },
-          { name: 'Contact', href: '/contact' },
-          { name: 'Compliance', href: '/compliance' },
-          { name: 'Data Security', href: '/data-security' },
-        ]},
+      title: 'Resources',
+      links: [
+        { name: 'Guides', href: '/resources/guides' },
+        { name: 'Insights', href: '/resources/insights' },
+        { name: 'Case Studies', href: '/resources/case-studies' },
+        { name: 'Blog', href: '/blog' },
+      ],
+    },
+    {
+      title: 'Company',
+      links: [
+        { name: 'About', href: '/about' },
+        { name: 'Contact', href: '/contact' },
+        { name: 'Compliance', href: '/compliance' },
+        { name: 'Data Security', href: '/data-security' },
+        { name: 'US Company Registration', href: '/company-registration' },
       ],
     },
   ];
-  // Policies only. Compliance and Data Security are trust pages, not policies,
-  // and they are in the Company block above — they used to appear in both.
+
   const legalLinks = [
     { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Cookie Policy', href: '/cookie-policy' },
     { name: 'Terms & Conditions', href: '/terms' },
   ];
+
   const socials = [
     { href: 'https://www.linkedin.com/company/accounstone/', label: 'LinkedIn' },
     { href: 'https://www.facebook.com/profile.php?id=61591501869187', label: 'Facebook' },
     { href: 'https://www.instagram.com/accounstone', label: 'Instagram' },
     { href: 'https://www.youtube.com/@accounstone', label: 'YouTube' },
   ];
+
   return (
     <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 pt-10 md:pt-12 pb-8 md:pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-start">
-          <div className="space-y-5 max-w-sm">
-            <Link href="/" className="inline-flex items-center hover:opacity-90 transition-opacity">
-              <Image src="/accounstone-logo-horizontal.png" alt="Accounstone" width={240} height={56} className="w-auto" style={{ height: '40px' }} />
+      <div className="max-w-7xl mx-auto px-6 md:px-8 pt-10 md:pt-12 pb-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end md:gap-12">
+          <div className="max-w-md space-y-4">
+            <Link href="/" className="inline-flex items-center transition-opacity hover:opacity-90">
+              <Image
+                src="/accounstone-logo-horizontal.png"
+                alt="Accounstone"
+                width={240}
+                height={56}
+                className="w-auto"
+                style={{ height: '40px' }}
+              />
             </Link>
-            <p className="text-white/70 text-sm leading-7">{companyInfo.tagline}</p>
+            <p className="text-sm leading-6 text-white/70">{companyInfo.tagline}</p>
             <div className="flex items-center gap-2.5">
               {socials.map((social) => (
                 <SocialIcon
@@ -116,87 +107,69 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <ul className="space-y-3 text-sm text-white/70 md:text-right">
-            <li className="flex items-center gap-3 md:flex-row-reverse">
-              <Mail size={16} className="shrink-0 text-white/45" aria-hidden="true" />
-              <a href={`mailto:${companyInfo.contact.email}`} className="inline-block py-1 leading-6 hover:text-white transition-colors" rel="nofollow">{companyInfo.contact.email}</a>
-            </li>
-          </ul>
+          <a
+            href={`mailto:${companyInfo.contact.email}`}
+            className="inline-flex w-fit items-center gap-2 py-1 text-sm text-white/70 transition-colors hover:text-white md:justify-self-end"
+            rel="nofollow"
+          >
+            <Mail size={16} className="shrink-0 text-white/45" aria-hidden="true" />
+            <span>{companyInfo.contact.email}</span>
+          </a>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 md:px-8"><div className="border-t border-white/10" /></div>
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-8 md:py-10">
-        {/* Single column below 375px: the 2-column grid needs ~155px per
-            column to fit "TECHNOLOGY", which only holds from 375px up.
-            Measured, not guessed — 360px clipped it, 375px does not. */}
-        {/* Services: one US link per service. Generic /services/{slug} URLs
-            are redirects and must never be linked. UK/Australia routes are
-            excluded from active navigation while their retirement is reviewed. */}
-        <div className="mb-9">
-          <h3 className="mb-3 text-[11px] lg:text-xs font-bold uppercase tracking-normal lg:tracking-[0.14em] text-white">Services</h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-1">
-            {serviceRegions.map((service) => (
-              <li key={service.slug} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-white/10 py-1">
-                <span className="text-sm leading-5 text-white/80">{service.navLabel}</span>
-                <span className="flex items-center gap-x-2 shrink-0">
-                  {regions.filter((region) => region.slug === 'united-states').map((region) => (
-                    <Link
-                      key={region.slug}
-                      href={`/services/${service.slug}/${region.slug}`}
-                      // `adjective` and not `in the ${region.name}`: that produced
-                      // "Bookkeeping in the Australia". This matches how the rest of
-                      // the site already labels these — "U.S. Bookkeeping",
-                      // "Australian Bookkeeping".
-                      aria-label={`${region.adjective} ${service.navLabel}`}
-                      className="inline-block py-1 text-xs font-semibold tracking-wide text-white/55 hover:text-white transition-colors"
-                    >
-                      {region.short}
-                    </Link>
-                  ))}
-                </span>
-              </li>
-            ))}
-            <li className="flex items-baseline py-1 border-b border-transparent">
-              <Link href="/services" className="inline-block py-1 text-sm leading-5 text-white/65 hover:text-white transition-colors">All Services</Link>
-            </li>
-          </ul>
-        </div>
 
-        <nav aria-label="Footer" className="grid grid-cols-1 min-[375px]:grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8">
-          {footerColumns.map((column, ci) => (
-            <div key={ci} className="min-w-0 space-y-7">
-              {column.blocks.map((section) => (
-                <div key={section.title} className="min-w-0">
-                  {/* The wide uppercase tracking overflowed a 2-column mobile grid
-                      ("TECHNOLOGY" needed 180px in a 152px column and was clipped
-                      at the viewport edge). Tracking and size are tightened on
-                      mobile only, leaving real margin rather than a 1px squeak;
-                      the original treatment returns from sm: up. */}
-                  <h3 className="mb-3 text-[11px] lg:text-xs font-bold uppercase tracking-normal lg:tracking-[0.14em] text-white">{section.title}</h3>
-                  {/* py-1 lifts each link's hit area from 20px to 28px, above the
-                      24px WCAG 2.5.8 minimum. The row gap is reduced to match so
-                      the footer's overall height barely changes. */}
-                  <ul className="space-y-0.5">
-                    {section.links.map((link) => (
-                      <li key={link.href}><Link href={link.href} className="inline-block py-1 text-sm leading-5 text-white/65 hover:text-white transition-colors">{link.name}</Link></li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          ))}
-        </nav>
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <div className="border-t border-white/10" />
       </div>
+
+      <nav
+        aria-label="Footer"
+        className="mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-8 px-6 py-8 sm:grid-cols-3 sm:gap-x-6 md:px-8 md:py-10 xl:grid-cols-5"
+      >
+        {footerColumns.map((column) => (
+          <div key={column.title} className="min-w-0">
+            <h3 className="mb-3 text-xs font-bold uppercase tracking-[0.08em] text-white">
+              {column.title}
+            </h3>
+            <ul className="space-y-0.5">
+              {column.links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="inline-block max-w-full py-1 text-sm leading-5 text-white/65 transition-colors hover:text-white"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </nav>
+
       <div className="bg-primary-dark/50">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 py-5 md:py-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <p className="text-white/50 text-xs md:text-sm">© {currentYear} Accounstone. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto px-6 py-5 md:px-8 md:py-6">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <p className="text-xs text-white/50 md:text-sm">
+              © {currentYear} Accounstone. All rights reserved.
+            </p>
             <ul className="flex flex-wrap items-center gap-x-5">
-              {legalLinks.map((link) => (<li key={link.name}><Link href={link.href} className="inline-block py-1.5 text-white/50 hover:text-white transition-colors text-xs md:text-sm leading-5">{link.name}</Link></li>))}
+              {legalLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="inline-block py-1.5 text-xs leading-5 text-white/50 transition-colors hover:text-white md:text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
               <li><CookieSettingsButton /></li>
             </ul>
           </div>
-          <p className="text-white/40 text-xs mt-3 max-w-3xl leading-5">Work is scoped around agreed responsibilities, client systems and review processes.</p>
+          <p className="mt-3 max-w-3xl text-xs leading-5 text-white/40">
+            Work is scoped around agreed responsibilities, client systems and review processes.
+          </p>
         </div>
       </div>
     </footer>
