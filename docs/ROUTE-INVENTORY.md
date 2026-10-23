@@ -200,7 +200,7 @@ candidate for overlap.
 | `/services/accounts-payable/united-states` | Accounts Payable Outsourcing for Businesses |
 | `/services/accounts-receivable/australia` | Australian Accounts Receivable Outsourcing |
 | `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
-| `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
+| `/services/accounts-receivable/united-states` | Accounts Receivable Outsourcing for U.S. Businesses |
 | `/services/audit-support/australia` | Australian Audit Preparation Support |
 | `/services/audit-support/united-kingdom` | UK Audit Preparation Support Services |
 | `/services/audit-support/united-states` | U.S. Audit Support Outsourcing for CPA Firms |

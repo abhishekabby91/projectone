@@ -16,8 +16,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-receivable/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'U.S. Accounts Receivable Outsourcing Services',
-  description: 'U.S. accounts receivable outsourcing for USD invoicing, ACH/check payment application, aging review and follow-up in QuickBooks Online or Xero.',
+  title: 'Accounts Receivable Outsourcing for U.S. Businesses',
+  description: 'Accounts receivable outsourcing for U.S. businesses: invoicing, cash application, customer reconciliations, aging review and agreed follow-up in QuickBooks Online or Xero.',
   path: PATH,
 });
 
@@ -32,26 +32,19 @@ const uSElements = [
   'Month-end AR reconciliation to the general ledger',
 ];
 
-const delegated = [
-  'Invoice preparation and issue on your billing schedule',
-  'Receipt matching against open invoices, including partial payments',
-  'Aging review and preparation of the escalation list',
-  'Reminder sequences sent in your company name',
-  'Customer account reconciliation against remittances',
-];
-
-const retained = [
-  'Credit limits, credit holds and terms decisions',
-  'Approval to write off a balance',
-  'Whether to refer an account to collections or counsel',
-  'Resolution of disputed balances with the customer',
+const workflowSteps = [
+  { title: 'Prepare and issue invoices', description: 'Use approved customer, contract, order or time records and the agreed billing calendar.' },
+  { title: 'Apply incoming payments', description: 'Match ACH, checks and processor receipts to open invoices, including partial payments and short pays.' },
+  { title: 'Review receivables aging', description: 'Group overdue balances by age and identify missing remittances, disputes or recurring delays.' },
+  { title: 'Send agreed reminders', description: 'Run scheduled invoice reminders in the company name using the agreed message and escalation cadence.' },
+  { title: 'Reconcile customer balances', description: 'Compare customer ledgers with statements and reconcile the AR subledger to the general ledger at month-end.' },
 ];
 
 const faqs = [
   { question: 'Will your team contact our customers directly?', answer: 'For overdue-invoice follow-up, reminder emails can be sent in the company name from a shared or delegated inbox on a defined schedule. Phone collection calls typically remain with the internal team unless specifically agreed.' },
   { question: 'How does this work with U.S. payment methods?', answer: 'Payments arriving via ACH, check, or card processor sync are matched against open invoices in QuickBooks Online or Xero. Discrepancies are flagged for your review rather than applied automatically when something does not match cleanly.' },
   { question: 'What is DSO and does this actually reduce it?', answer: 'Days Sales Outstanding measures the average time it takes to collect after invoicing. Consistent aging reviews, timely invoicing, accurate payment application and agreed follow-up can help identify collection delays, but the effect on DSO depends on the business, customer terms and underlying causes of late payment.' },
-  { question: 'What stays with our team?', answer: 'Credit decisions, write-off authority and customer-relationship judgment remain with the client. The recurring process covers invoicing, application, follow-up and reconciliation, with exceptions flagged for review.' },
+  { question: 'How are receivables exceptions handled?', answer: 'Unmatched receipts, short payments, disputed invoices and proposed write-offs are listed with supporting detail so the appropriate person can review them before the account is changed or escalated.' },
 ];
 
 const faqSchema = generateFAQSchema(faqs);
@@ -71,7 +64,7 @@ export default function AccountsReceivableUSPage() {
 
 
       <PremiumHero
-        region="united-states" subtitle="Accounts Receivable for U.S. Businesses" title="Outsourced Accounts Receivable for U.S. Businesses" description="Invoicing, payment application, aging review, and follow-up inside QuickBooks Online or Xero." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="united-states" subtitle="Accounts Receivable for U.S. Businesses" title="Accounts Receivable Outsourcing for U.S. Businesses" description="Invoicing, payment application, aging review, and follow-up inside QuickBooks Online or Xero." cta={{ text: 'Talk Through Your AR Workflow', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white">
         <ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted">
@@ -100,10 +93,21 @@ export default function AccountsReceivableUSPage() {
         </div>
       </section>
 
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Reveal className="rounded-2xl bg-input border border-border/70 p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-accent">Can be delegated</span><h2 className="font-serif text-3xl font-bold text-primary mt-3 mb-6">Recurring processing work</h2><ul className="space-y-4">{delegated.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-accent shrink-0 mt-0.5" aria-hidden="true" /><span className="text-foreground leading-6">{item}</span></li>)}</ul></></Reveal>
-        <Reveal delay={0.1} className="rounded-2xl bg-primary text-white p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-white/70">Usually retained</span><h2 className="font-serif text-3xl font-bold mt-3 mb-6">Credit and collections judgment</h2><ul className="space-y-4">{retained.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-white shrink-0 mt-0.5" aria-hidden="true" /><span className="text-white/85 leading-6">{item}</span></li>)}</ul></></Reveal>
-      </div></section>
+      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <Reveal className="max-w-3xl mx-auto text-center space-y-3 mb-8">
+            <span className="text-sm font-semibold tracking-wide uppercase text-accent">The recurring cycle</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">How Accounts Receivable Support Works</h2>
+            <p className="text-muted leading-relaxed">A repeatable process connects billing, incoming cash, overdue balances and month-end reconciliation, with exceptions documented for review.</p>
+          </Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {workflowSteps.map((step, i) => <Reveal key={step.title} delay={Math.min(i * 0.04, 0.16)}><article className="h-full rounded-xl border border-border/70 bg-input p-5">
+              <div className="flex items-center gap-3 mb-3"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white text-sm font-semibold">{i + 1}</span><h3 className="font-semibold text-primary leading-snug">{step.title}</h3></div>
+              <p className="text-sm text-muted leading-6">{step.description}</p>
+            </article></Reveal>)}
+          </div>
+        </div>
+      </section>
 
       <RegionalContext serviceSlug="accounts-receivable" regionSlug="united-states" />
 
