@@ -151,7 +151,7 @@ export default function PropertyManagementPage() {
                     className="flex h-full flex-col rounded-xl border border-border bg-white p-5 sm:p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_2px_16px_-4px_rgba(30,58,95,0.18)]"
                     source={PATH}
                     title="Property Management Accounting"
-                    lead={`You picked: “${t.symptom}.” Tell us what you manage, what your owners currently receive, and where the month actually goes — the consultation and the call are free.`}
+                    lead={`You picked: “${t.symptom}.” Tell us what you manage, what your owners currently receive, and where the month actually goes.`}
                     label={`Talk to us about: ${t.symptom}`}
                   >
                     <h3 className="font-serif text-lg font-bold text-primary leading-snug">{t.symptom}</h3>
@@ -560,7 +560,7 @@ export default function PropertyManagementPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
-        lead="The consultation and the call are always free. Tell us how many doors you manage, what your owners currently receive, and which part of the month you would take back first."
+        lead="Tell us how many doors you manage, what your owners currently receive, and which part of the month needs the most attention. We will discuss the accounting support that may fit."
       />
 
       <CTABanner
