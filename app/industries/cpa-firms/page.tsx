@@ -226,72 +226,7 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white" aria-labelledby="client-industries-heading">
-        <div className="max-w-5xl mx-auto">
-          <Reveal className="space-y-3">
-            <>
-              <Eyebrow>Support across your client industries</Eyebrow>
-              <h2 id="client-industries-heading" className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-                Accounting Workflows for the Industries Your Firm Serves
-              </h2>
-              <p className="max-w-4xl text-base md:text-lg text-muted leading-relaxed">
-                CPA firms often support clients with very different books, systems and reporting cycles. Accounstone can prepare agreed bookkeeping, reconciliation, cleanup and supporting schedules within your firm's instructions and review process. These industry pages explain the underlying workflows; your firm remains the client-facing adviser and retains professional judgment and sign-off.
-              </p>
-            </>
-          </Reveal>
-          <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                name: 'Construction & Contractors',
-                href: '/industries/construction',
-                body: 'Job-cost coding, subcontractor and vendor records, retainage schedules and project-level reporting support.'
-              },
-              {
-                name: 'Healthcare & Dental Practices',
-                href: '/industries/healthcare',
-                body: 'Practice bookkeeping, bank and merchant reconciliations, expense records and month-end schedules.'
-              },
-              {
-                name: 'E-commerce & Online Retail',
-                href: '/industries/ecommerce',
-                body: 'Marketplace settlement tie-outs, refunds, payment fees, inventory records and channel reporting.'
-              },
-              {
-                name: 'Technology & SaaS',
-                href: '/industries/technology',
-                body: 'Recurring-revenue records, vendor costs, reconciliations and close schedules from approved client inputs.'
-              },
-              {
-                name: 'Professional Services',
-                href: '/industries/professional-services',
-                body: 'Client and project expenses, receivables, contractor costs and recurring reporting workflows.'
-              },
-              {
-                name: 'Nonprofit Organizations',
-                href: '/industries/nonprofit-accounting',
-                body: 'Fund and grant records, approved expense coding, reconciliations and reporting-package preparation.'
-              },
-            ].map((industry) => (
-              <Link
-                key={industry.href}
-                href={industry.href}
-                className="group rounded-xl border border-border bg-input p-5 transition-colors hover:border-primary/40 hover:bg-white"
-              >
-                <h3 className="font-serif text-lg font-bold text-primary group-hover:underline underline-offset-4">
-                  {industry.name}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{industry.body}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-primary">
-                  View industry workflows <span aria-hidden="true">→</span>
-                </span>
-              </Link>
-            ))}
-          </div>
-          <p className="mt-5 max-w-4xl text-sm leading-relaxed text-muted">
-            The exact tasks depend on the engagement, client records and systems available. Accounstone prepares agreed work for your review; accounting-policy decisions, tax advice, client-facing professional advice and final sign-off remain with your firm and the responsible professionals.
-          </p>
-        </div>
-      </section>
+
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
