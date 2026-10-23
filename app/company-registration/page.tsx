@@ -15,7 +15,8 @@ import {
 } from '@/lib/seo';
 import {
   registrationStates,
-  registrationSteps} from '@/lib/company-registration';
+  registrationSteps,
+} from '@/lib/company-registration';
 
 /**
  * US company registration hub.
