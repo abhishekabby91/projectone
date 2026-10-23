@@ -15,9 +15,7 @@ import {
 } from '@/lib/seo';
 import {
   registrationStates,
-  registrationSteps,
-  registrationBoundaries,
-} from '@/lib/company-registration';
+  registrationSteps} from '@/lib/company-registration';
 
 /**
  * US company registration hub.
@@ -177,34 +175,7 @@ export default function CompanyRegistrationPage() {
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
-        <div className="max-w-3xl mx-auto space-y-5">
-          <Reveal className="space-y-4"><>
-            <div className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-px w-8 bg-secondary" />
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-accent">The limits</span>
-            </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              What We Will Not Do, Whatever You Are Paying Us
-            </h2>
-          </></Reveal>
-          <Reveal>
-            <div className="overflow-hidden rounded-xl border border-border bg-white">
-              <div className="border-l-4 border-accent p-5 sm:p-6 space-y-3">
-                {registrationBoundaries.map((b) => (
-                  <p key={b} className="flex items-start gap-3 text-sm sm:text-base leading-relaxed text-foreground">
-                    <Check className="mt-1 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
-                    <span>{b}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-          <Reveal>
-            <p className="text-base md:text-lg text-muted leading-relaxed">Naming those limits up front is deliberate. A registration arrangement that quietly absorbs entity selection or a signature is not saving you anything — it is moving liability somewhere you cannot see it.</p>
-          </Reveal>
-        </div>
-      </section>
+      
 
       <FAQSection subtitle="Registration Questions" items={faqs} columns={2} />
 
