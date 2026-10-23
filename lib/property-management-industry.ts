@@ -264,21 +264,18 @@ export const locality = {
   markets: [
     {
       region: 'United States',
-      href: '/markets/united-states',
       calls: 'Property management companies and brokerages',
       body:
         'Support can include property-level books, tenant and deposit ledgers, reconciliations and owner reporting. State-specific requirements for trust accounts and security deposits should be confirmed with the client’s broker or qualified adviser.',
     },
     {
       region: 'United Kingdom',
-      href: '/markets/united-kingdom',
       calls: 'Letting agents, block managers and managing agents',
       body:
         'Accounting records can track landlord, tenant and property activity separately and support regular reporting. Client-money and other jurisdiction-specific obligations should be confirmed with the relevant qualified adviser.',
     },
     {
       region: 'Australia',
-      href: '/markets/australia',
       calls: 'Real estate agencies and property management departments',
       body:
         'Support can include rent and landlord ledgers, reconciliations and property-level reporting. Requirements that apply to the agency, trust accounts or licensing should be confirmed with the relevant local professional.',
