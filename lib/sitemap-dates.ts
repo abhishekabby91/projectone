@@ -138,7 +138,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/hoa-accounting/yardi-accounting-support': '2026-10-23',
   '/industries/nonprofit-accounting': '2026-10-23',
   '/industries/professional-services': '2026-10-23',
-  '/industries/property-management': '2026-10-19',
+  '/industries/property-management': '2026-10-23',
   '/industries/property-management/accounting-cleanup': '2026-10-23',
   '/industries/property-management/appfolio-accounting-california': '2026-10-23',
   '/industries/property-management/buildium-accounting-support': '2026-10-23',
