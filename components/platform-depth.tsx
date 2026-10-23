@@ -77,7 +77,6 @@ export default function PlatformDepthSection({ platform }: { platform: PlatformD
             ))}
           </ul>
 
-          
         </div>
       </section>
     </>
