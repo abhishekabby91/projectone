@@ -12,8 +12,8 @@ import FurtherReading from '@/components/further-reading';
 import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Staff Augmentation Services',
-  description: 'Accounting staff augmentation services for firms needing capacity for tax season, month-end close, cleanup, AP/AR or defined projects in your systems.',
+  title: 'Accounting Staff Augmentation for CPA Firms & Businesses',
+  description: 'Accounting staff augmentation for CPA firms and businesses needing added capacity for tax preparation, reconciliations, month-end close, AP/AR and defined projects.',
   path: '/solutions/staff-augmentation',
 });
 
@@ -42,8 +42,8 @@ export default function StaffAugmentationPage() {
 
       <PremiumHero
         subtitle="Accounting Staff Augmentation"
-        title="Accounting Staff Augmentation, Without Rebuilding Your Team"
-        description="Bring defined accounting work into an extended team model for tax season, month-end close, cleanup, AP/AR, audit support, or projects—while your team keeps the review and approval responsibilities that matter."
+        title="Accounting Staff Augmentation for CPA Firms and Businesses"
+        description="Add accounting capacity for tax preparation, reconciliations, month-end close, cleanup and AP/AR. Work follows your existing systems and procedures, with review, approvals and client relationships remaining with your firm or business."
         cta={{ text: 'Talk Through Your Staffing Need', href: '/contact' }}
         ctaSecondary={{ text: 'View Accounting Services', href: '/services' }}
         background="primary-gradient"
@@ -202,7 +202,7 @@ export default function StaffAugmentationPage() {
 
       />
 
-      <InquirySection source="/solutions/staff-augmentation" title="Talk to Us About the Capacity You Are Missing" lead="A free consultation, and a call that costs nothing. Tell us how many hands you are short and for how long, and we will scope around your review structure." />
+      <InquirySection source="/solutions/staff-augmentation" title="Talk to Us About the Capacity You Are Missing" lead="Tell us which accounting workflows need additional capacity, the systems involved and the review structure already in place. We can discuss a scope that fits the work." />
 
       <CTABanner title="Where Do You Need More Accounting Capacity?" description="Tell us the work that is falling behind, the deadline you are working toward, and the systems involved. We can scope a practical staffing model around it." cta={{ text: 'Start a Conversation', href: '/contact' }} background="primary" />
     </main>
