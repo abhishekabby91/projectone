@@ -11,8 +11,8 @@ import FurtherReading from '@/components/further-reading';
 import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Back-Office Accounting Support for Firms',
-  description: 'Back-office accounting support for firms: recurring bookkeeping, AP/AR, payroll preparation and month-end tasks inside your existing workflows.',
+  title: 'Back-Office Accounting Outsourcing for Firms',
+  description: 'Back-office accounting outsourcing for firms: recurring bookkeeping, AP/AR, payroll preparation and month-end tasks inside your existing workflows.',
   path: '/solutions/back-office-support',
 });
 
@@ -54,8 +54,8 @@ export default function BackOfficeSupportPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="Back Office Support"
-        title="Back-Office Support for the Work That Repeats Every Month"
+        subtitle="Accounting Outsourcing"
+        title="Outsource the Accounting Work That Repeats Every Month"
         description="Take recurring accounting administration off your team's plate: bookkeeping, payroll processing, payables, and receivables."
         cta={{
           text: 'Schedule Consultation',
