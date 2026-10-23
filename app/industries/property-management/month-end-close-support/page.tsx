@@ -38,14 +38,39 @@ const faqs = [
       'Within the agreed scope, we can prepare owner-reporting schedules from reconciled property records and client-approved rules, and flag unresolved balances before the package is reviewed. The client retains approval of statements, owner payments and transfers.',
   },
   {
+    question: 'What is a property management month-end close checklist?',
+    answer:
+      'It is a repeatable list of period-end tasks, such as confirming cutoff, reconciling bank and balance-sheet accounts, reviewing tenant and owner ledgers, checking payables and deposits, resolving or logging exceptions, and completing review before reports are issued.',
+  },
+  {
+    question: 'When should property management reconciliations be completed?',
+    answer:
+      'Set deadlines so bank, ledger and supporting-schedule reconciliations are reviewed before owner statements or financial reports are finalized. The calendar should allow time to resolve material exceptions and identify items that need client decisions.',
+  },
+  {
     question: 'Do you close or lock the accounting period?',
     answer:
       'We can prepare the close checklist, supporting reconciliations and open-item summary. Period locking, late-entry decisions and final sign-off follow the client’s accounting policy and remain under authorized client control.',
   },
   {
+    question: 'Can month-end close support include accruals and prepayments?',
+    answer:
+      'The scope may include organizing source support, maintaining agreed schedules and preparing proposed period-end entries for review. Recognition decisions and approval follow the client’s accounting policies and authorized review process.',
+  },
+  {
     question: 'Can this include CAM recoveries?',
     answer:
       'Where source records and lease-approved calculations are provided, the close workflow can include CAM and recoverable-expense schedules, accrual support and documented exceptions. Lease interpretation and final approval of charges remain with the client and its advisers.',
+  },
+  {
+    question: 'What happens to unresolved items at close?',
+    answer:
+      'Record the amount, account or property, reporting period, available evidence, likely cause if known, owner and next action. Material items should be escalated under the client’s process rather than cleared through unsupported adjustments.',
+  },
+  {
+    question: 'What information is needed to start month-end close support?',
+    answer:
+      'Confirm the property and entity list, accounting systems, close calendar, reporting package, prior reconciliations, open-item logs, access permissions and the people responsible for review and approval. Scope historical cleanup separately from recurring close work.',
   },
 ];
 
