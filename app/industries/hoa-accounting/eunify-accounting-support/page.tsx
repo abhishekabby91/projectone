@@ -124,7 +124,7 @@ export default function EUnifyHoaAccountingSupportPage() {
       </section>
 
       <section className="bg-input/40 py-14 sm:py-18">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           
           <Reveal>
             <div className="rounded-xl border border-border bg-background p-6">
