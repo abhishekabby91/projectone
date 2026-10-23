@@ -215,7 +215,7 @@ export const routeLastModified: Record<string, string> = {
   '/solutions': '2026-10-18',
   '/solutions/back-office-support': '2026-10-23',
   '/solutions/dedicated-accounting-teams': '2026-10-19',
-  '/solutions/offshore-accounting-support': '2026-10-19',
+  '/solutions/offshore-accounting-support': '2026-10-23',
   '/solutions/staff-augmentation': '2026-10-19',
   '/technology': '2026-10-18',
   '/technology/cch': '2026-10-19',

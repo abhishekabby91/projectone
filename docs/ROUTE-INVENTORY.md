@@ -222,7 +222,7 @@ candidate for overlap.
 | `/solutions` | Accounting Outsourcing Models |
 | `/solutions/back-office-support` | Back-Office Accounting Outsourcing for Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
-| `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
+| `/solutions/offshore-accounting-support` | Offshore Accounting Services for CPA Firms & Businesses |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
