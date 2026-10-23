@@ -78,6 +78,32 @@ export default function TaxPrepUSPage() {
         </div>
       </section>
 
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">For CPA firms</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced U.S. Tax Preparation Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced U.S. tax preparation for CPA firms can cover individual and business returns, including Forms 1040, 1065, 1120 and 1120-S, along with source-document organization, supporting schedules and workpapers prepared for the firm’s review. Work can be organized around the firm’s existing process and supported software, including Drake Tax and CCH Axcess where applicable. The CPA firm retains professional judgment, review, client advice and final approval; the engagement should define responsibilities and address required taxpayer consents before return information is disclosed.</p>
+        </div>
+      </section>
+
+      <section data-section="getting-started" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto grid max-w-5xl gap-6 rounded-2xl border border-border/70 bg-white p-6 md:grid-cols-[1.2fr_1fr] md:items-center md:p-8">
+          <div className="space-y-3">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">A practical first step</p>
+            <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Start With a Defined Set of Returns</h2>
+            <p className="leading-7 text-muted">A useful first discussion is specific: which return types need preparation support, which software and workpaper templates your firm uses, and what your reviewers expect to receive. Agree the scope, handoff, escalation points and required taxpayer consents before client information is shared.</p>
+          </div>
+          <div className="space-y-3">
+            <ol className="space-y-3 text-sm leading-6 text-muted">
+              <li className="flex gap-3"><span className="font-semibold text-primary">01</span><span>Identify the return types and preparation tasks to delegate.</span></li>
+              <li className="flex gap-3"><span className="font-semibold text-primary">02</span><span>Confirm software access, workpaper standards and review notes.</span></li>
+              <li className="flex gap-3"><span className="font-semibold text-primary">03</span><span>Define turnaround expectations, escalation rules and responsibilities.</span></li>
+            </ol>
+            <InquiryTrigger className="inline-flex min-h-11 items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/90" source="/services/tax-preparation/united-states" service="Tax Preparation" region="united-states">Discuss Your Tax Preparation Workflow</InquiryTrigger>
+          </div>
+        </div>
+      </section>
+
       {/* The two return-type children. Contextual links in `main`, not just the
           related row, because a new page arriving with one inbound link is the
           failure the internal-link crawl exists to catch. */}
@@ -249,14 +275,6 @@ export default function TaxPrepUSPage() {
         exclude="/services/tax-preparation/united-states"
         background="input"
       />
-      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
-        <div className="mx-auto max-w-5xl space-y-4">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">U.S. tax preparation, explained</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced U.S. Tax Preparation Support Include?</h2>
-          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced U.S. tax preparation support can include organizing client-provided tax documents, preparing return data, completing defined return-preparation steps and assembling supporting workpapers for review. The forms covered, software used, review responsibilities and filing workflow should be agreed for each engagement and handled in line with applicable requirements.</p>
-        </div>
-      </section>
-
       <section data-section="authoritative-references" aria-labelledby="reference-heading" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
         <div className="mx-auto max-w-5xl space-y-3">
           <h2 id="reference-heading" className="font-serif text-xl font-bold text-primary md:text-2xl">Official U.S. tax preparation references</h2>
