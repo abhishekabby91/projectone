@@ -6,7 +6,7 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import { generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
-import { type RegistrationState, registrationBoundaries, registrationStates } from '@/lib/company-registration';
+import { type RegistrationState, registrationStates } from '@/lib/company-registration';
 
 /**
  * One rendering for every state in the registration cluster.
@@ -115,16 +115,7 @@ export default function RegistrationStatePage({ state }: { state: RegistrationSt
           <Reveal><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Where the Decision Stops Being Ours</h2></Reveal>
           <Reveal>
             <div className="overflow-hidden rounded-xl border border-border bg-white">
-              <div className="border-l-4 border-accent p-5 sm:p-6 space-y-2">
-                <p className="text-xs font-bold uppercase tracking-wider text-accent">The line we do not cross</p>
-                <p className="text-sm sm:text-base leading-relaxed text-foreground">
-                  {registrationBoundaries[0]}{' '}
-                  <Link href="/company-registration" className="text-primary font-medium underline underline-offset-2 hover:text-accent">
-                    The full list of what we will not do
-                  </Link>{' '}
-                  is on the main registration page, along with how the setup runs step by step.
-                </p>
-              </div>
+              
             </div>
           </Reveal>
         </div>
