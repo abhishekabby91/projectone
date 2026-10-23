@@ -127,7 +127,7 @@ candidate for overlap.
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
-| `/industries/ecommerce` | E-Commerce Accounting Services |
+| `/industries/ecommerce` | E-Commerce Accounting Outsourcing |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
@@ -143,8 +143,8 @@ candidate for overlap.
 | `/industries/hoa-accounting/self-managed-hoa-accounting` | Accounting Support for Self-Managed HOAs |
 | `/industries/hoa-accounting/texas` | Texas HOA Accounting Outsourcing |
 | `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Outsourcing |
-| `/industries/nonprofit-accounting` | Nonprofit Accounting & Bookkeeping Support |
-| `/industries/professional-services` | Law Firm & Professional Services Accounting |
+| `/industries/nonprofit-accounting` | Nonprofit Accounting Outsourcing |
+| `/industries/professional-services` | Professional Services Accounting Outsourcing |
 | `/industries/property-management` | Property Management Accounting Outsourcing |
 | `/industries/property-management/accounting-cleanup` | Property Management Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
