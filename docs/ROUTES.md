@@ -26,7 +26,7 @@ with its own regional children for the same commercial intent.
 | `/services/payroll/{united-kingdom,australia}` | B | Payroll | Legacy source retained; excluded from sitemap pending URL retirement review |
 | `/services/accounts-payable/united-states` | B | Accounts Payable | Active — US focus |
 | `/services/accounts-payable/{united-kingdom,australia}` | B | Accounts Payable | Legacy source retained; excluded from sitemap pending URL retirement review |
-| `/services/accounts-receivable/united-states` | B | Accounts Receivable | Active — US focus |
+| `/services/accounts-receivable/united-states` | B | Accounts Receivable | Refreshed 2026-10-23 — metadata and workflow clarity |
 | `/services/accounts-receivable/{united-kingdom,australia}` | B | Accounts Receivable | Legacy source retained; excluded from sitemap pending URL retirement review |
 | `/services/audit-support/{united-states,united-kingdom,australia}` | B | Audit Support | Published |
 | `/services/tax-preparation/united-states/1040-individual` | B | Form 1040 | Published 2026-09-16 |
