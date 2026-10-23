@@ -86,6 +86,24 @@ export default function TaxPrepUSPage() {
         </div>
       </section>
 
+      <section data-section="getting-started" className="w-full bg-white px-6 py-8 md:px-8 md:py-10">
+        <div className="mx-auto grid max-w-5xl gap-6 rounded-2xl border border-border/70 bg-white p-6 md:grid-cols-[1.2fr_1fr] md:items-center md:p-8">
+          <div className="space-y-3">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">A practical first step</p>
+            <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">Start With a Defined Set of Returns</h2>
+            <p className="leading-7 text-muted">A useful first discussion is specific: which return types need preparation support, which software and workpaper templates your firm uses, and what your reviewers expect to receive. Agree the scope, handoff, escalation points and required taxpayer consents before client information is shared.</p>
+          </div>
+          <div className="space-y-3">
+            <ol className="space-y-3 text-sm leading-6 text-muted">
+              <li className="flex gap-3"><span className="font-semibold text-primary">01</span><span>Identify the return types and preparation tasks to delegate.</span></li>
+              <li className="flex gap-3"><span className="font-semibold text-primary">02</span><span>Confirm software access, workpaper standards and review notes.</span></li>
+              <li className="flex gap-3"><span className="font-semibold text-primary">03</span><span>Define turnaround expectations, escalation rules and responsibilities.</span></li>
+            </ol>
+            <InquiryTrigger className="inline-flex min-h-11 items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/90" source="/services/tax-preparation/united-states" service="Tax Preparation" region="united-states">Discuss Your Tax Preparation Workflow</InquiryTrigger>
+          </div>
+        </div>
+      </section>
+
       {/* The two return-type children. Contextual links in `main`, not just the
           related row, because a new page arriving with one inbound link is the
           failure the internal-link crawl exists to catch. */}
