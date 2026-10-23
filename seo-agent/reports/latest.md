@@ -220,7 +220,7 @@
 | app/services/tax-preparation/united-states/page.tsx | 90/100 | 2253 | 1 | 22 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1016 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1312 | 1 | 8 | 0 | 0 |
-| app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1753 | 1 | 10 | 0 | 0 |
+| app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1763 | 1 | 10 | 0 | 0 |
 | app/solutions/staff-augmentation/page.tsx | 90/100 | 1762 | 1 | 9 | 0 | 0 |
 | app/technology/cch/page.tsx | 90/100 | 408 | 1 | 11 | 0 | 0 |
 | app/technology/drake-tax/page.tsx | 90/100 | 412 | 1 | 11 | 0 | 0 |
