@@ -9,14 +9,14 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/hoa-accounting/buildium-accounting-support';
 
 export const metadata: Metadata = genMeta({
-  title: 'Buildium HOA Accounting & Bookkeeping Support',
-  description: 'Accounting support for HOAs using Buildium: transaction coding, reconciliations, homeowner assessment ledgers, payables and month-end reporting.',
+  title: 'Buildium HOA Accounting Outsourcing',
+  description: 'Accounting outsourcing for HOAs using Buildium: transaction coding, reconciliations, homeowner assessment ledgers, payables and month-end reporting.',
   path: PATH,
 });
 
 const serviceSchema = generateServiceSchema({
-  name: 'Buildium HOA Accounting and Bookkeeping Support',
-  description: 'Defined accounting workflow support for HOA and community association managers using Buildium, including assessment ledger review, operating and reserve fund reconciliations, accounts payable preparation, board reporting and month-end close.',
+  name: 'Buildium HOA Accounting Outsourcing',
+  description: 'Accounting outsourcing for HOA and community association managers using Buildium, including assessment ledger review, operating and reserve fund reconciliations, accounts payable preparation, board reporting and month-end close.',
   slug: 'buildium-accounting-support',
   basePath: '/industries/hoa-accounting/',
 });
