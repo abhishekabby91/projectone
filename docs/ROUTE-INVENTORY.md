@@ -146,7 +146,7 @@ candidate for overlap.
 | `/industries/nonprofit-accounting` | Nonprofit Accounting & Bookkeeping Support |
 | `/industries/professional-services` | Law Firm & Professional Services Accounting |
 | `/industries/property-management` | Property Management Accounting Outsourcing |
-| `/industries/property-management/accounting-cleanup` | Property Management Accounting Cleanup Outsourcing |
+| `/industries/property-management/accounting-cleanup` | Property Management Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
 | `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
 | `/industries/property-management/california` | California Property Management Accounting |
