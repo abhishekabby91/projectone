@@ -521,7 +521,7 @@ export default function RealEstateIndustryPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Property and One Month"
-        lead="Tell us what you own, how the entities are structured, and what your lender, partners or CPA need that is difficult to produce today. We will discuss the accounting support that may fit."
+        lead="The consultation and the call are always free. Tell us what you own, how the entities are structured, and what your lender, your partners or your CPA ask for that is hard to produce today."
       />
 
       <CTABanner
