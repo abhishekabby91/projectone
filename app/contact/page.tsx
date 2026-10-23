@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowRight, Check, Clock, Mail, MapPin, ShieldCheck, UserCheck, X } from 'lucide-react';
+import { ArrowRight, Check, Clock, Mail, MapPin, UserCheck, X } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import { companyInfo, services } from '@/lib/data';
@@ -139,11 +139,6 @@ export default function ContactPage() {
                 icon: UserCheck,
                 h: 'You speak to whoever would scope it',
                 p: 'Enquiries are not routed into a sales queue. The person who replies is the person who would work out what the engagement looks like.',
-              },
-              {
-                icon: ShieldCheck,
-                h: 'We will tell you if it is not ours',
-                p: 'There is work we do not do — tax advice, audit opinions, software implementation. We would rather say so on the first call than three weeks in.',
               },
             ].map((item) => (
               <div
@@ -344,49 +339,6 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Principle 3, respect the buyer's control, made concrete. Naming what we
-          will not touch is the fastest way to answer the question a firm is
-          actually asking on this page: what am I handing over? Every line here
-          traces to knowledge/company/scope-boundaries.md. */}
-      <section className="w-full bg-primary px-6 md:px-8 py-10 md:py-14 text-white">
-        <div className="mx-auto max-w-4xl space-y-6">
-          <div className="space-y-3">
-            <div className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-px w-8 bg-white/40" />
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-white/70">
-                Before you ask
-              </span>
-            </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-balance leading-tight">
-              What We Will Not Do, Whatever You Are Paying Us
-            </h2>
-            <p className="text-white/85 leading-relaxed">
-              Most providers describe what they take on. The more useful list on a first call is the
-              other one, because it is what decides whether your firm stays in control.
-            </p>
-          </div>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {[
-              'Hold your filing credentials. No IRS e-services, no HMRC gateway, no ATO portal.',
-              'Touch your bank. We prepare a payment run; releasing it stays inside your own controls.',
-              'Represent you to a tax authority. That needs a licensed CPA, EA or attorney.',
-              'Give tax advice or take a position. We prepare returns; your CPA or agent decides.',
-              'Sign an audit opinion, plan an audit or choose samples. Preparation moves; judgment does not.',
-              'Implement or configure your software. We work inside the setup you already run.',
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3 rounded-xl bg-white/10 p-4">
-                <X className="mt-0.5 h-5 w-5 shrink-0 text-white/70" aria-hidden="true" />
-                <span className="text-sm leading-relaxed text-white/90">{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-white/70 leading-relaxed">
-            If a provider offers you any of the above, it is worth asking which licence they are
-            holding it under.
-          </p>
         </div>
       </section>
 

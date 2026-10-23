@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
 import { industryDepth } from '@/lib/industry-depth';
-import { professionalServicesSegments, professionalServicesBoundaries } from '@/lib/industry-segments';
+import { professionalServicesSegments } from '@/lib/industry-segments';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/professional-services';
@@ -88,7 +88,6 @@ export default function ProfessionalServicesIndustryPage() {
         'Disbursements and recoverable client costs tracked apart from firm expense',
       ]}
       segments={professionalServicesSegments}
-      boundaries={professionalServicesBoundaries}
       relatedLinks={[
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
         { name: 'Accounting & month-end close', href: '/services/accounting/united-states' },

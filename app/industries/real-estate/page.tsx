@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { WHATSAPP_HREF } from '@/lib/contact-links';
 import Link from 'next/link';
-import { Check, ShieldOff } from 'lucide-react';
+import { Check } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
@@ -15,7 +15,6 @@ import {
   segments,
   services,
   processPhases,
-  boundaries,
   faqs,
 } from '@/lib/real-estate-industry';
 import {
@@ -409,31 +408,7 @@ export default function RealEstateIndustryPage() {
 
       {/* The trust anchor. No invented proof — the differentiator is naming the
           limits, which is what answers "what am I handing over?". */}
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <Reveal className="space-y-4"><>
-            <Eyebrow>Scope Boundaries</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              The Limits, Named Before You Ask
-            </h2>
-            <p className="text-base md:text-lg text-muted leading-relaxed">
-              You are considering handing over the books for property that belongs to somebody else. These are the
-              things we will not do at any volume or price, and they are the same on day one as they are in
-              year three.
-            </p>
-          </></Reveal>
-          <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {boundaries.map((b, i) => (
-              <Reveal key={b} delay={Math.min(i * 0.04, 0.2)}>
-                <li className="flex h-full items-start gap-3 rounded-xl border border-border bg-input p-4 sm:p-5">
-                  <ShieldOff className="mt-0.5 h-4 w-4 shrink-0 text-accent sm:h-5 sm:w-5" aria-hidden="true" />
-                  <span className="text-sm leading-6 text-foreground sm:text-base">{b}</span>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
-        </div>
-      </section>
+      
 
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">

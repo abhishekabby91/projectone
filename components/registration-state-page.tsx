@@ -6,7 +6,7 @@ import InquirySection from '@/components/inquiry-section';
 import FAQSection from '@/components/faq-section';
 import Reveal from '@/components/reveal';
 import { generateFAQSchema, generateBreadcrumbSchema, baseUrl } from '@/lib/seo';
-import { type RegistrationState, registrationBoundaries, registrationStates } from '@/lib/company-registration';
+import { type RegistrationState, registrationStates } from '@/lib/company-registration';
 
 /**
  * One rendering for every state in the registration cluster.
@@ -18,9 +18,6 @@ import { type RegistrationState, registrationBoundaries, registrationStates } fr
  * every run forever. Explicit files keep that check honest; this component keeps
  * them from duplicating each other.
  *
- * Every page in this cluster carries the boundaries block. That is not padding —
- * entity selection advice is forbidden by `scope-boundaries.md` §2 and this is
- * the cluster where a reader is most likely to ask for it.
  */
 export default function RegistrationStatePage({ state }: { state: RegistrationState }) {
   const path = `/company-registration/${state.slug}`;
@@ -110,25 +107,7 @@ export default function RegistrationStatePage({ state }: { state: RegistrationSt
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <Reveal><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Where the Decision Stops Being Ours</h2></Reveal>
-          <Reveal>
-            <div className="overflow-hidden rounded-xl border border-border bg-white">
-              <div className="border-l-4 border-accent p-5 sm:p-6 space-y-2">
-                <p className="text-xs font-bold uppercase tracking-wider text-accent">The line we do not cross</p>
-                <p className="text-sm sm:text-base leading-relaxed text-foreground">
-                  {registrationBoundaries[0]}{' '}
-                  <Link href="/company-registration" className="text-primary font-medium underline underline-offset-2 hover:text-accent">
-                    The full list of what we will not do
-                  </Link>{' '}
-                  is on the main registration page, along with how the setup runs step by step.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      
 
       <FAQSection subtitle={`${state.name} Questions`} items={faqs} columns={2} />
 

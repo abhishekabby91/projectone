@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { WHATSAPP_HREF } from '@/lib/contact-links';
 import Link from 'next/link';
-import { Check, ShieldOff } from 'lucide-react';
+import { Check } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import CTABanner from '@/components/cta-banner';
 import InquirySection from '@/components/inquiry-section';
@@ -13,7 +13,6 @@ import {
   segments,
   reviewBurden,
   handoff,
-  boundaries,
   faqs,
 } from '@/lib/cpa-firms-industry';
 import {
@@ -223,39 +222,6 @@ export default function CPAFirmsPage() {
                 </Link>
               ))}
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* The trust anchor, written from this ICP's own boundary list. */}
-      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <Reveal className="space-y-4"><>
-            <Eyebrow>Scope Boundaries</Eyebrow>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-              The Lines a Licensed Firm Cannot Delegate
-            </h2>
-            <p className="text-base md:text-lg text-muted leading-relaxed">
-              You carry the licence and the professional liability, so the limits matter more here than
-              anywhere else on this site. These are fixed at any volume and any price.
-            </p>
-          </></Reveal>
-          <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {boundaries.map((b, i) => (
-              <Reveal key={b} delay={Math.min(i * 0.04, 0.2)}>
-                <li className="flex h-full items-start gap-3 rounded-xl border border-border bg-input p-4 sm:p-5">
-                  <ShieldOff className="mt-0.5 h-4 w-4 shrink-0 text-accent sm:h-5 sm:w-5" aria-hidden="true" />
-                  <span className="text-sm leading-6 text-foreground sm:text-base">{b}</span>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
-          <Reveal delay={0.2}>
-            <p className="mt-8 text-base md:text-lg text-muted leading-relaxed">
-              The IRC §7216 consent requirement, and the full Circular 230 split between what moves and
-              what cannot, are set out on{' '}
-              <Link href="/services/tax-preparation/united-states" className="text-primary font-medium underline underline-offset-4 hover:text-accent transition-colors">the US tax preparation page</Link>.
-            </p>
           </Reveal>
         </div>
       </section>
