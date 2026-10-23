@@ -1,14 +1,14 @@
-# Case Study Draft — California Real Estate Investment Company with an In-House Property Management Company
+# Internal Case Study Draft — Real Estate Investment Company with an In-House Property Management Company
 **Status:** Draft for client approval; not approved for public publication.  
-**Client context:** A California real estate investment company operating through its own property management company, with residential and commercial property activity.  
+**Client context:** A real estate investment company operating through its own property management company, with residential and commercial property activity.  
 **Source:** Workflow details supplied by Accounstone about an existing U.S. client engagement.  
 **Public use:** Confirm client permission before publishing, even in anonymized form. Do not add client identity, geography beyond what is approved, property count, financial figures, staff names, bank names, GL codes, transfer thresholds, or outcome metrics without explicit approval.
 
 ## Suggested title
-**Supporting Property Accounting for a California Real Estate Investment Company and Its In-House Management Company**
+**Supporting Property Accounting for a Real Estate Investment Company and Its In-House Management Company**
 
 ## Short summary
-Accounstone supports recurring accounting operations for a California real estate investment company that has its own property management company and manages residential and commercial property activity. The documented workflow includes transaction review and posting in Yardi, daily bank reconciliations, tenant-ledger updates, payroll journal-entry preparation from ADP exports, month-end close, owner financial reporting, lender-support schedules and year-end coordination with the client's external CPA.
+Accounstone supports recurring accounting operations for a real estate investment company that has its own property management company and manages residential and commercial property activity. The documented workflow includes transaction review and posting in Yardi, daily bank reconciliations, tenant-ledger updates, payroll journal-entry preparation from ADP exports, month-end close, owner financial reporting, lender-support schedules and year-end coordination with the client's external CPA.
 
 This case study describes the work performed and the controls around it. It does not claim a measured financial or operational outcome.
 
@@ -70,7 +70,7 @@ Accounstone can discuss your current property-management system, transaction sou
 ## Publication checklist
 - [ ] Client authorizes publication of an anonymized description.
 - [ ] Client confirms that the workflow description is accurate and non-identifying.
-- [ ] Confirm exact permitted description of the client type and property mix.
+- [ ] Confirm the permitted anonymized description of the client type and property mix.
 - [ ] Verify which additional platforms Accounstone can currently support before listing them as available services.
 - [ ] Remove any internal contact names, bank names, GL codes, exact transfer thresholds, payment details and other identifiers.
 - [ ] Do not publish results or metrics without evidence and permission.
