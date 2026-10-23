@@ -125,20 +125,7 @@ export default function EUnifyHoaAccountingSupportPage() {
 
       <section className="bg-input/40 py-14 sm:py-18">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <Reveal>
-            <div>
-              <h2 className="font-serif text-2xl font-bold text-primary sm:text-3xl">Clear preparation, review and approval boundaries</h2>
-              <p className="mt-4 leading-relaxed text-muted">
-                Before work starts, the scope should identify the source of truth for homeowner balances, bank activity, payables and general-ledger reporting. The association or authorized manager retains payment approvals and governance decisions; the CPA or other qualified adviser retains tax, legal and assurance responsibilities.
-              </p>
-              <ul className="mt-5 space-y-3 text-muted">
-                <li>• Reconciliation workpapers tied to source statements and records</li>
-                <li>• Documented exceptions instead of unexplained balancing entries</li>
-                <li>• A defined system-of-record and handoff process</li>
-                <li>• Consistent month-end files for management and CPA review</li>
-              </ul>
-            </div>
-          </Reveal>
+          
           <Reveal>
             <div className="rounded-xl border border-border bg-background p-6">
               <h3 className="font-serif text-xl font-bold text-primary">Related HOA accounting resources</h3>
