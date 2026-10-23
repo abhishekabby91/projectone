@@ -154,7 +154,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/property-management/yardi-accounting-support': '2026-10-23',
   '/industries/real-estate': '2026-10-23',
   '/industries/real-estate/yardi-accounting-outsourcing-texas': '2026-10-09',
-  '/industries/technology': '2026-10-15',
+  '/industries/technology': '2026-10-23',
   '/markets': '2026-09-03',
   '/markets/australia': '2026-10-19',
   '/markets/australia/bas-preparation': '2026-09-09',
