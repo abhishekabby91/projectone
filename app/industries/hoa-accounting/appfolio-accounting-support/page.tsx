@@ -16,9 +16,9 @@ import {
 const PATH = '/industries/hoa-accounting/appfolio-accounting-support';
 
 export const metadata: Metadata = genMeta({
-  title: 'AppFolio HOA Accounting Support',
+  title: 'AppFolio HOA Accounting Outsourcing',
   description:
-    'Remote accounting support for HOAs using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
+    'HOA accounting outsourcing for teams using AppFolio: bank reconciliations, assessment ledgers, payables, reserve schedules and board reporting.',
   path: PATH,
 });
 
@@ -51,9 +51,9 @@ const faqs = [
 ];
 
 const serviceSchema = generateServiceSchema({
-  name: 'AppFolio HOA Accounting and Bookkeeping Support',
+  name: 'AppFolio HOA Accounting Outsourcing',
   description:
-    'Remote accounting workflow support for homeowners associations and community management companies using AppFolio, including assessment records, reconciliation preparation, payable tracking, reserve schedules and board reporting.',
+    'Accounting outsourcing for homeowners associations and community management companies using AppFolio, including assessment records, reconciliation preparation, payable tracking, reserve schedules and board reporting.',
   slug: 'hoa-accounting/appfolio-accounting-support',
   basePath: '/industries/',
 });
@@ -102,8 +102,8 @@ export default function AppFolioHoaAccountingSupportPage() {
 
       <PremiumHero
         subtitle="HOA accounting · AppFolio workflows"
-        title="AppFolio HOA Accounting Support"
-        description="Remote accounting support for HOA and community management teams using AppFolio—covering reconciliation preparation, assessment records, payable tracking, reserve schedules and a clearer monthly board-reporting handoff."
+        title="AppFolio HOA Accounting Outsourcing"
+        description="Accounting outsourcing for HOA and community management teams using AppFolio, covering reconciliation preparation, assessment records, payable tracking, reserve schedules and monthly board-reporting handoffs."
         cta={{ text: 'Discuss your accounting workflow', href: '/contact' }}
         ctaSecondary={{ text: 'Explore HOA accounting support', href: '/industries/hoa-accounting' }}
       />
