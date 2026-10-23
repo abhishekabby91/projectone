@@ -226,9 +226,6 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
-      {/* The trust anchor, written from this ICP's own boundary list. */}
-      
-
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting firm resources</h2>
