@@ -217,7 +217,7 @@
 | app/services/tax-preparation/united-states/1065-partnership/page.tsx | 90/100 | 723 | 1 | 14 | 0 | 0 |
 | app/services/tax-preparation/united-states/1120-corporation/page.tsx | 90/100 | 749 | 1 | 12 | 0 | 0 |
 | app/services/tax-preparation/united-states/1120-s-corporation/page.tsx | 90/100 | 741 | 1 | 12 | 0 | 0 |
-| app/services/tax-preparation/united-states/page.tsx | 90/100 | 1935 | 1 | 22 | 0 | 0 |
+| app/services/tax-preparation/united-states/page.tsx | 90/100 | 2056 | 1 | 22 | 0 | 0 |
 | app/solutions/back-office-support/page.tsx | 90/100 | 1016 | 1 | 6 | 0 | 0 |
 | app/solutions/dedicated-accounting-teams/page.tsx | 90/100 | 1312 | 1 | 8 | 0 | 0 |
 | app/solutions/offshore-accounting-support/page.tsx | 90/100 | 1753 | 1 | 10 | 0 | 0 |
