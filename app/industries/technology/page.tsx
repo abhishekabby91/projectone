@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import IndustryPageTemplate from '@/components/industry-page-template';
 import { industryDepth } from '@/lib/industry-depth';
-import { technologySegments, technologyBoundaries } from '@/lib/industry-segments';
+import { technologySegments } from '@/lib/industry-segments';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 const PATH = '/industries/technology';
@@ -82,7 +82,6 @@ export default function TechnologyIndustryPage() {
         'Month-end close, management reporting and AP/AR inside your existing stack',
       ]}
       segments={technologySegments}
-      boundaries={technologyBoundaries}
       relatedLinks={[
         { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
         { name: 'Accounting & month-end close', href: '/services/accounting/united-states' },
