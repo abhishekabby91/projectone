@@ -245,7 +245,7 @@ export default function HoaAccountingPage() {
                         className="inline-flex items-center gap-2 text-left text-sm font-semibold text-accent hover:text-primary"
                         source={PATH}
                         title="HOA & Community Association Accounting"
-                        lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives — the consultation and the call are free.`}
+                        lead={`You picked: “${t.symptom}.” Tell us how many units or associations are involved and what the board currently receives.`}
                         label={`Talk to us about: ${t.symptom}`}
                       >
                         {t.ask} <span aria-hidden="true">&rarr;</span>
@@ -374,7 +374,7 @@ export default function HoaAccountingPage() {
                       className="flex h-full flex-col rounded-xl border border-border bg-input p-5 sm:p-6 transition-colors hover:border-primary/40"
                       source={PATH}
                       title="HOA & Community Association Accounting"
-                      lead="Tell us how this part of the work is handled today and we will scope what support would change. The consultation and the call are free."
+                      lead="Tell us how this part of the work is handled today and we will scope what support would change. Tell us how this part of the work is handled today and we will discuss the support that may fit."
                       label={`Ask us about ${svc.name.toLowerCase()} for your association`}
                     >
                       <h3 className="font-serif text-lg font-bold text-primary">{svc.name}</h3>
@@ -635,7 +635,7 @@ export default function HoaAccountingPage() {
       <InquirySection
         source={PATH}
         title="Send Us One Association and One Month"
-        lead="The consultation and the call are always free. Tell us how many units or associations are involved, what the board receives today, and what came up at the last meeting."
+        lead="Tell us how many units or associations are involved, what the board receives today, and what came up at the last meeting. We will discuss the accounting support that may fit."
       />
 
       <CTABanner
