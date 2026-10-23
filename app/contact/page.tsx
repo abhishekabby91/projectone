@@ -139,7 +139,8 @@ export default function ContactPage() {
                 icon: UserCheck,
                 h: 'You speak to whoever would scope it',
                 p: 'Enquiries are not routed into a sales queue. The person who replies is the person who would work out what the engagement looks like.',
-              },            ].map((item) => (
+              },
+            ].map((item) => (
               <div
                 key={item.h}
                 className="h-full rounded-xl border border-border bg-input p-5 sm:p-6"
