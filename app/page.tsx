@@ -15,12 +15,12 @@ import { generateMetadata, generateFAQSchema } from '@/lib/seo';
 import { services, solutions, testimonials } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting & Tax Outsourcing | Accounstone',
+  title: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   description:
     'Accounting, bookkeeping and tax outsourcing for businesses and professional firms, delivered within existing workflows.',
   path: '/',
   absoluteTitle: true,
-  ogTitle: 'Accounting & Tax Outsourcing | Accounstone',
+  ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   ogDescription:
     'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
