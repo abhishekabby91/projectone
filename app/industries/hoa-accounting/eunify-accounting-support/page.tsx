@@ -125,7 +125,6 @@ export default function EUnifyHoaAccountingSupportPage() {
 
       <section className="bg-input/40 py-14 sm:py-18">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          
           <Reveal>
             <div className="rounded-xl border border-border bg-background p-6">
               <h3 className="font-serif text-xl font-bold text-primary">Related HOA accounting resources</h3>
