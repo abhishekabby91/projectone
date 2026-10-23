@@ -72,11 +72,6 @@ export default function ConstructionIndustryPage() {
       ]}
       faqs={faqs}
       depth={industryDepth.construction}
-      boundaries={[
-        'Construction contract terms, cost-code policies, WIP calculations and revenue-recognition methods must be supplied or approved by the client and its qualified advisers.',
-        'We do not provide legal opinions on contracts, lien rights or retainage enforceability, and do not certify reports for lenders, bonding agents or sureties.',
-        'Any workflow involving Buildertrend, JobTread or other project software depends on the client’s permissions, exports and agreed scope; a named platform is not a claim of native integration.',
-      ]}
     />
   );
 }
