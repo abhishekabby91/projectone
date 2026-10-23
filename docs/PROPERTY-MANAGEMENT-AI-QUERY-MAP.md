@@ -184,3 +184,15 @@ These findings are competitor coverage signals, not verified search volumes, ran
 - Claims are sourced and reviewed; AI-generated drafts are fact-checked.
 - Internal links, canonical, metadata, sitemap, mobile rendering and build are checked before merge/deployment.
 - AI answer visibility is described as an outcome to measure, never a guaranteed result.
+
+## FAQ expansion evidence log (2026-10-23)
+
+Initial FAQ expansion covers the property-management hub and the existing Buildium, AppFolio-in-California and DoorLoop commercial pages. The questions are buyer-intent prompts, not claimed keyword-volume data.
+
+Observed public search-result coverage used to shape the question set:
+- Pacerline's property-management accounting page surfaces questions around what bookkeeping includes, reasons to outsource, software support, cleanup and core property accounting tasks: https://pacerline.com/property-management
+- APM Help's AppFolio page surfaces workflow questions around cleanup, working inside the existing account and software-specific bookkeeping: https://www.apmhelp.com/property-management-software/appfolio
+- Current Buildium product content describes accounting, banking, payables, receivables, owner reporting and reconciliations as core property-management workflows: https://www.buildium.com/blog/buildium-vs-appfolio/
+- Search-result and competitor pages are evidence of topics being addressed publicly, not proof of query volume or ranking opportunity. Confirm performance against Accounstone's own Search Console data after deployment.
+
+Questions added are mapped to each page's specific commercial intent: Buildium workflow support; AppFolio accounting support in California; DoorLoop workflow support; and the broad property-management accounting hub. The shared FAQ component already renders semantic HTML using `<section>`, `<h2>`, `<details>` and `<summary>`. JSON-LD is generated from the same FAQ arrays rendered on each page, reducing mismatch risk. Keep claims about legal compliance, payment authority, software certification and vendor affiliation explicitly bounded.
