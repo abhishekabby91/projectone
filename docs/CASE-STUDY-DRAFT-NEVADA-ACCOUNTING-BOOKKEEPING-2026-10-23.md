@@ -1,20 +1,20 @@
-# Internal Case Study Draft — Nevada-Based Firm: Accounting and Bookkeeping Support
+# Internal Case Study Draft — Accounting and Bookkeeping Support
 
 **Status:** Internal working draft only. Not approved for public publication.  
-**Evidence currently available:** Accounstone has identified a Nevada-based firm engagement involving accounting and bookkeeping support. The detailed service scope, systems, engagement period and outcomes have not yet been confirmed in the material available for this draft.  
+**Evidence currently available:** Accounstone has identified a business engagement involving accounting and bookkeeping support. The detailed service scope, systems, engagement period and outcomes have not yet been confirmed in the material available for this draft.  
 **Publication rule:** Do not present this as a completed, verified client case study until the engagement owner confirms the facts and the client authorizes public use. Anonymization alone does not replace permission.
 
 ## Working title
 
-**Accounting and Bookkeeping Support for a Nevada-Based Firm**
+**Accounting and Bookkeeping Support for a Business**
 
 ## Draft summary — requires factual confirmation
 
-Accounstone supports a Nevada-based firm with accounting and bookkeeping work. The purpose of this draft is to document the confirmed engagement scope and explain how the work fits into the client's existing accounting process. Specific workflows, software, reporting cadence and results must be added only after they are verified with the engagement owner.
+Accounstone supports a business with accounting and bookkeeping work. The purpose of this draft is to document the confirmed engagement scope and explain how the work fits into the client's existing accounting process. Specific workflows, software, reporting cadence and results must be added only after they are verified with the engagement owner.
 
 ## Client context
 
-- **Location:** Nevada, United States (confirm that this location may be disclosed publicly).
+- **Location:** Not disclosed in this draft.
 - **Client type and industry:** Not yet confirmed for this draft.
 - **Engagement type:** Accounting and bookkeeping support.
 - **Engagement period and ongoing/one-time status:** Not yet confirmed.
@@ -64,7 +64,7 @@ If verified measures become available, record:
 
 ## Required fact-check before public use
 
-- [ ] Confirm client type/industry and permitted location description.
+- [ ] Confirm client type/industry and the permitted anonymized description.
 - [ ] Confirm the business challenge in the client's own terms.
 - [ ] Confirm exact services delivered and whether they are ongoing.
 - [ ] Confirm systems actually used in this engagement.
