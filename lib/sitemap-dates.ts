@@ -88,7 +88,7 @@ export const routeLastModified: Record<string, string> = {
   '/blog/quickbooks-month-end-close-checklist': '2026-10-17',
   '/blog/real-estate-accounting-month-end-close': '2026-10-17',
   '/blog/rent-roll-accounting': '2026-10-17',
-  '/blog/tax-preparation-outsourcing': '2026-10-20',
+  '/blog/tax-preparation-outsourcing': '2026-10-23',
   '/blog/upwork-vs-accounstone': '2026-10-18',
   '/blog/us-cpa-firm-outsourcing-readiness-checklist': '2026-10-18',
   '/blog/yardi-accounting-workflow': '2026-10-19',
