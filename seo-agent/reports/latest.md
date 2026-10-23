@@ -195,7 +195,7 @@
 | app/services/accounting/united-states/page.tsx | 90/100 | 796 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/australia/page.tsx | 90/100 | 731 | 1 | 12 | 0 | 0 |
 | app/services/accounts-payable/united-kingdom/page.tsx | 90/100 | 743 | 1 | 12 | 0 | 0 |
-| app/services/accounts-payable/united-states/page.tsx | 90/100 | 973 | 1 | 13 | 0 | 0 |
+| app/services/accounts-payable/united-states/page.tsx | 90/100 | 1051 | 1 | 13 | 0 | 0 |
 | app/services/accounts-receivable/australia/page.tsx | 90/100 | 791 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-kingdom/page.tsx | 90/100 | 815 | 1 | 12 | 0 | 0 |
 | app/services/accounts-receivable/united-states/page.tsx | 90/100 | 750 | 1 | 13 | 0 | 0 |
