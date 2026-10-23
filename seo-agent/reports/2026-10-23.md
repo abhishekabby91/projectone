@@ -144,7 +144,7 @@
 | app/industries/hoa-accounting/eunify-accounting-support/page.tsx | 90/100 | 844 | 1 | 9 | 0 | 0 |
 | app/industries/hoa-accounting/los-angeles-county/page.tsx | 90/100 | 1009 | 1 | 10 | 0 | 0 |
 | app/industries/hoa-accounting/orange-county/page.tsx | 90/100 | 1056 | 1 | 12 | 0 | 0 |
-| app/industries/hoa-accounting/page.tsx | 90/100 | 2999 | 1 | 75 | 0 | 0 |
+| app/industries/hoa-accounting/page.tsx | 90/100 | 3006 | 1 | 75 | 0 | 0 |
 | app/industries/hoa-accounting/san-diego-county/page.tsx | 90/100 | 1035 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/self-managed-hoa-accounting/page.tsx | 90/100 | 1236 | 1 | 11 | 0 | 0 |
 | app/industries/hoa-accounting/texas/page.tsx | 90/100 | 1111 | 1 | 11 | 0 | 0 |
