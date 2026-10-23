@@ -130,9 +130,7 @@ Trust-account reconciliation support can include bank-to-book matching, comparis
 
 Property management trust-account reconciliation support: https://www.accounstone.com/industries/property-management/trust-account-reconciliation
 
-Trust-account reconciliation support can include bank-to-book matching, comparison of relevant control accounts with tenant or owner ledger detail where applicable, deposit and disbursement schedules, exception aging and review-ready workpapers. The client retains bank access, withdrawal and payment authority; the client and qualified local advisers determine the legal, regulatory and tax requirements that apply.
 
-Property management trust-account reconciliation support: https://www.accounstone.com/industries/property-management/trust-account-reconciliation
 
 ### HOA and community associations
 
