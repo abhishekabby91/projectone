@@ -8,10 +8,7 @@ import CookieSettingsButton from '@/components/cookie-settings-button';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  // Keep the footer intentionally selective: core service routes, priority
-  // industries, established platforms, and the main resource/company pages.
-  // Detailed software and location pages should be discovered contextually
-  // from their relevant industry hubs rather than through an oversized footer.
+  // Keep the footer useful without letting it dominate the page.
   const footerColumns: Array<{ title: string; links: Array<{ name: string; href: string }> }> = [
     {
       title: 'Services',
@@ -81,95 +78,83 @@ export default function Footer() {
 
   return (
     <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 pt-10 md:pt-12 pb-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end md:gap-12">
-          <div className="max-w-md space-y-4">
-            <Link href="/" className="inline-flex items-center transition-opacity hover:opacity-90">
+      <div className="mx-auto max-w-7xl px-5 pt-6 sm:px-6 md:px-8">
+        <div className="flex flex-col gap-4 border-b border-white/10 pb-5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex min-w-0 flex-wrap items-center gap-x-5 gap-y-3">
+            <Link href="/" aria-label="Accounstone home" className="inline-flex shrink-0 items-center transition-opacity hover:opacity-90">
               <Image
                 src="/accounstone-logo-horizontal.png"
                 alt="Accounstone"
-                width={240}
-                height={56}
-                className="w-auto"
-                style={{ height: '40px' }}
+                width={200}
+                height={44}
+                className="h-8 w-auto"
               />
             </Link>
-            <p className="text-sm leading-6 text-white/70">{companyInfo.tagline}</p>
-            <div className="flex items-center gap-2.5">
+            <p className="max-w-md text-xs leading-5 text-white/65 sm:text-sm">{companyInfo.tagline}</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-4 sm:justify-end">
+            <a
+              href={`mailto:${companyInfo.contact.email}`}
+              className="inline-flex items-center gap-2 text-xs text-white/70 transition-colors hover:text-white sm:text-sm"
+              rel="nofollow"
+            >
+              <Mail size={15} className="shrink-0 text-white/45" aria-hidden="true" />
+              <span>{companyInfo.contact.email}</span>
+            </a>
+            <div className="flex items-center gap-2">
               {socials.map((social) => (
                 <SocialIcon
                   key={social.label}
                   href={social.href}
                   label={social.label}
-                  size={17}
+                  size={15}
                   variant="footer"
                 />
               ))}
             </div>
           </div>
-          <a
-            href={`mailto:${companyInfo.contact.email}`}
-            className="inline-flex w-fit items-center gap-2 py-1 text-sm text-white/70 transition-colors hover:text-white md:justify-self-end"
-            rel="nofollow"
-          >
-            <Mail size={16} className="shrink-0 text-white/45" aria-hidden="true" />
-            <span>{companyInfo.contact.email}</span>
-          </a>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="border-t border-white/10" />
-      </div>
+        <nav
+          aria-label="Footer"
+          className="grid grid-cols-2 gap-x-5 gap-y-5 py-5 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5 md:gap-x-8"
+        >
+          {footerColumns.map((column) => (
+            <div key={column.title} className="min-w-0">
+              <h3 className="mb-1.5 text-[11px] font-bold uppercase tracking-[0.08em] text-white/90">
+                {column.title}
+              </h3>
+              <ul className="space-y-0">
+                {column.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="inline-block max-w-full py-0.5 text-xs leading-5 text-white/60 transition-colors hover:text-white sm:text-[13px]"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
 
-      <nav
-        aria-label="Footer"
-        className="mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-8 px-6 py-8 sm:grid-cols-3 sm:gap-x-6 md:px-8 md:py-10 xl:grid-cols-5"
-      >
-        {footerColumns.map((column) => (
-          <div key={column.title} className="min-w-0">
-            <h3 className="mb-3 text-xs font-bold uppercase tracking-[0.08em] text-white">
-              {column.title}
-            </h3>
-            <ul className="space-y-0.5">
-              {column.links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="inline-block max-w-full py-1 text-sm leading-5 text-white/65 transition-colors hover:text-white"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
-
-      <div className="bg-primary-dark/50">
-        <div className="max-w-7xl mx-auto px-6 py-5 md:px-8 md:py-6">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-xs text-white/50 md:text-sm">
-              © {currentYear} Accounstone. All rights reserved.
-            </p>
-            <ul className="flex flex-wrap items-center gap-x-5">
-              {legalLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="inline-block py-1.5 text-xs leading-5 text-white/50 transition-colors hover:text-white md:text-sm"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-              <li><CookieSettingsButton /></li>
-            </ul>
-          </div>
-          <p className="mt-3 max-w-3xl text-xs leading-5 text-white/40">
-            Work is scoped around agreed responsibilities, client systems and review processes.
-          </p>
+        <div className="flex flex-col gap-2 border-t border-white/10 py-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-[11px] text-white/45">© {currentYear} Accounstone. All rights reserved.</p>
+          <ul className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            {legalLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  className="inline-block py-0.5 text-[11px] text-white/45 transition-colors hover:text-white"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+            <li><CookieSettingsButton /></li>
+          </ul>
         </div>
       </div>
     </footer>
