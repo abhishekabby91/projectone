@@ -6,7 +6,7 @@ const PATH = '/industries/cpa-firms/illinois-inventory-accounting-support';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Illinois Inventory Accounting Support',
-  description: 'Inventory and distribution accounting support for Illinois CPA firms, with reconciliations, movement schedules and documented exceptions for review.',
+  description: 'Inventory and distribution accounting outsourcing for Illinois CPA firms, with reconciliations, movement schedules and documented exceptions prepared for CPA review.',
   path: PATH,
 });
 
