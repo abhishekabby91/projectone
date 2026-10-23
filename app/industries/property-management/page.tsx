@@ -72,7 +72,7 @@ export default function PropertyManagementPage() {
       <PremiumHero
         subtitle="Property management companies"
         title="Property Management Accounting & Bookkeeping Outsourcing"
-        description="An accounting outsourcing partner for property management companies. We handle agreed property-level bookkeeping, tenant and deposit ledgers, owner statements, AP/AR, CAM schedules, reconciliations and month-end reporting within your existing systems and review process."
+        description="An accounting outsourcing partner for property management companies that need dependable property-level bookkeeping and reporting. We support tenant and deposit ledgers, owner statements, AP/AR, CAM schedules, reconciliations and month-end work within your existing systems and review process."
         cta={{ text: 'Discuss Property Management Outsourcing', href: '/contact' }}
         ctaSecondary={{ text: 'Chat on WhatsApp', href: WHATSAPP_HREF }}
         background="primary-gradient"
