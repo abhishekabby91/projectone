@@ -1,3 +1,10 @@
+## 2026-10-23 — Property-management workflow evidence and case-study draft
+
+- Captured an anonymized internal workflow reference from the user's description of an existing U.S. property-management engagement. It documents daily Yardi transaction workflows, ADP payroll-export review, bank reconciliations, owner reporting, lender support and year-end CPA coordination.
+- Drafted a case study in `docs/CASE-STUDY-DRAFT-US-PROPERTY-MANAGEMENT-ACCOUNTING-2026-10-23.md`. It is not approved for public use; client permission and anonymization review are required before publication.
+- Clarified the existing property-management hub's software section to mention Yardi, Buildium, AppFolio, DoorLoop, QuickBooks Online, Xero and BILL (formerly Bill.com) as platforms that may be involved in separately scoped workflows. The copy explicitly avoids implying every platform was used in the documented engagement.
+- No new URL was created and no deployment was triggered. The case-study draft does not claim unverified outcomes or metrics.
+
 
 ## 2026-10-23 — Accounts receivable outsourcing page refinement
 
