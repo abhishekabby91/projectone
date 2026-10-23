@@ -42,33 +42,42 @@ Preserve the audience split between real-estate owners, third-party property man
 
 ## Priority roadmap
 
-### Tier 1 — Improve the existing HOA and property-management clusters first
+### Primary objective — support CPA firms across the industries they serve
 
-1. **HOA accounting — /industries/hoa-accounting and its existing support guides.**
-   - Preserve the distinct audience: association boards, treasurers, community managers and accounting teams. The page should own the commercial HOA/community-association accounting intent; supporting articles should answer narrower workflow questions.
-   - Audit the large guide-link section for destination status, duplicate destinations, link labels and priority. Keep the most useful links prominent and make sure every linked route resolves.
-   - Compare the page against HOA-specific competitor content for assessment posting, owner-ledger reconciliation, operating-versus-reserve activity, delinquency aging, AP approvals, board packages, transition handover and year-end CPA handoff.
-   - Review the existing California HOA page before adding any county/city pages. San Diego County remains a research candidate only; do not publish a thin location variant or imply a California office, local staff or on-site service.
-   - Review software-specific HOA pages (including eUnify, AppFolio, Yardi and QuickBooks) for unique operational detail, working links, accurate product wording and overlap. Do not claim a native integration or unverified platform expertise.
+The CPA-firm page remains the commercial parent for the outsourcing-partner relationship. Supporting industry pages should help a CPA firm recognize that Accounstone can prepare recurring accounting work for different types of clients in its portfolio, without positioning Accounstone as competing directly for those end clients.
 
-2. **Property management accounting — /industries/property-management and its existing support guides.**
-   - Preserve the distinction from /industries/real-estate: the buyer manages properties for owners; core outputs include property-level books, tenant/owner ledgers, owner statements and reconciliations.
-   - Compare against REA, Outsourced Bookkeeping and other specialist pages for trust/operating account reconciliation, owner statements/distributions, tenant ledgers, security deposits, CAM, vendor 1099 recordkeeping, month-end close and software-specific workflows.
-   - Validate the existing links to the CAM guide, month-end checklist, owner-statement workflow, security-deposit article and AppFolio California page. Keep the CAM guide distinct from the broader property-management accounting guide.
-   - Review the existing AppFolio California and Texas Yardi pages for unique intent and scope. Preserve the Texas Yardi commercial page unchanged unless a separate, explicit review is requested; do not expand location pages by template alone.
+**Do not use HOA and property-management pages as the default supporting examples for the CPA-firm cluster.** They remain separate direct-buyer pathways for their own audiences. For the CPA-firm support strategy, prioritize broader client-industry workflows that commonly require repeatable bookkeeping, reconciliations, month-end schedules and tax-ready records.
 
-3. **Shared cluster work — before creating more URLs.**
-   - Validate every internal link on the two commercial pages and the most important support articles; record any 404, redirect, duplicate anchor or duplicate destination.
-   - Check that each support article links back to its correct commercial hub and to the most relevant adjacent guide, rather than cross-linking every article to every other article.
-   - Review title, description, canonical, H1, Service/FAQ/Breadcrumb schema and mobile rendering on the commercial pages and any changed routes.
-   - Keep SEO work (intent ownership, metadata, crawlability, internal links, sitemap and cannibalization) separate from AEO work (direct answers, grounded FAQs, scope clarity and structured data).
+1. **Construction and contractors — `/industries/construction`.** First candidate for CPA portfolio support: job/project cost coding, subcontractor and vendor records, retainage, progress-billing records, payroll-cost allocations and project-level reporting. Any WIP schedules should be prepared from client-provided records under an agreed method for the responsible CPA/client review; do not imply independent accounting-policy, tax, bonding or surety advice.
+2. **Healthcare and dental practices — `/industries/healthcare` and existing `/industries/healthcare/dental-practice-accounting`.** Focus on practice bookkeeping, bank/merchant reconciliation, production-versus-collection records where supplied, insurance-adjustment records, lab/supply expenses and location/provider reporting. Do not imply HIPAA certification, PHI handling, claims processing or clinical coding unless the relevant capabilities and controls are verified.
+3. **E-commerce and online retail — `/industries/ecommerce`.** Focus on marketplace/payment settlement reconciliation, refunds and fees, inventory/COGS records, payout timing and channel reporting. Improve the existing page before creating any Amazon, Shopify or Walmart subpages; require distinct commercial intent and original workflow depth.
+4. **Technology and SaaS — `/industries/technology`.** Focus on recurring revenue records, deferred-revenue schedules prepared from client-approved inputs, software/vendor costs, multi-currency transactions where relevant, and close-ready reporting. Do not independently determine revenue-recognition policy or represent the page as technical assurance.
+5. **Professional services — `/industries/professional-services`.** Cover law firms, consultants and agencies where relevant, with client/project expense coding, receivables, trust-related records only within an agreed bookkeeping scope, contractor costs and reporting. Legal trust-account rules and client-fund decisions remain with the responsible professionals.
+6. **Nonprofits — `/industries/nonprofit-accounting`.** Cover fund/grant recordkeeping, approved functional expense coding, restricted-fund schedules from client instructions, reconciliations and board/reporting-package preparation. Do not claim audit, grant-compliance or independent fund-accounting sign-off.
+7. **Manufacturing/distribution, home services and hospitality.** Keep these in a research queue until service fit, accounting mechanics, live search intent and any existing URL overlap have been checked. Do not publish a page solely because the industry is common among CPA clients.
 
-### Tier 2 — Other industry work after the HOA/property-management pass
+### How industry pages support the CPA-firm parent
 
-- **Construction & contractors — /industries/construction (draft already added to this branch).** Keep it in the branch, but treat validation and further expansion as secondary until the HOA/property-management review is complete. Its distinct mechanics are job/project-level cost coding, subcontractor/vendor bills, retainage, progress-billing records, payroll-cost allocation and project-level reporting. WIP schedules remain support prepared from client records under a client-approved method for management/CPA review—not independent accounting-policy, tax, bonding or surety advice.
-- **E-commerce:** improve the existing page before adding subpages. Compare settlement reconciliation, returns/refunds, gateway fees, inventory/COGS and channel reporting. Do not add separate Amazon, Shopify or Walmart service pages until research supports distinct commercial intent and useful original depth.
-- **Healthcare:** improve the existing page with clear scope boundaries. Do not imply HIPAA compliance or PHI handling unless controls and contractual posture are verified.
-- **Home services, nonprofits, manufacturing/distribution, hospitality and senior living:** research service fit and accounting workflows before approving URLs. Competitor pages alone do not establish that Accounstone should launch a page.
+- On `/industries/cpa-firms`, add a clearly labeled **“Support across your client industries”** section that links to the strongest existing industry pages. Explain that these pages demonstrate workflow familiarity and preparation scope for CPA firms' client portfolios; they are not a claim that Accounstone is directly soliciting or replacing the CPA firm's clients.
+- On each selected industry page, add a restrained contextual route back to the CPA-firm outsourcing page for accounting practices that need back-office production capacity. Keep the primary CTA and page intent appropriate to that industry's own direct-business audience.
+- Use CPA-facing wording where relevant: “support for CPA firms serving construction clients,” “practice-accounting workpapers for CPA review,” or “recurring bookkeeping and close schedules for your client portfolio.” Avoid suggesting that Accounstone owns the end-client relationship or provides final CPA review/sign-off.
+- Do not create duplicate CPA-industry pages under a second URL hierarchy unless a specific CPA-facing query has distinct intent and evidence. Prefer contextual links and carefully scoped sections on existing industry pages first.
+- Keep software pages and workflow guides subordinate to the correct industry/service parent. A platform mention is not enough reason to create a new URL.
+
+### Separate direct-buyer clusters — maintain, but do not make them the CPA-support showcase
+
+- **HOA accounting — `/industries/hoa-accounting`.** Retain for association boards, treasurers and community management companies that directly need HOA accounting support. Continue to cover assessment/homeowner ledgers, operating and reserve reconciliations, delinquency schedules, AP controls and board reporting. It is not the default example for the CPA-firm industry portfolio.
+- **Property management — `/industries/property-management`.** Retain for third-party property managers that need property-level books, tenant/owner ledgers, owner statements, reconciliations and monthly close. Keep it distinct from real-estate owners/investors and from the CPA-firm outsourcing relationship.
+- **Real estate — `/industries/real-estate`.** Retain for property owners, investors and entities that own assets. It may also demonstrate portfolio accounting workflows where relevant, but do not make HOA/property-management the main examples in the CPA-firm support section.
+
+### Validation before expanding
+
+1. Check the existing URL and search-intent registries before creating any route.
+2. Review live search results for the actual query and record only what was observed; competitor page existence is not proof of volume or ranking.
+3. Define the industry-specific inputs, accounting schedules, reconciliation points, outputs and client/CPA review boundary.
+4. Link the industry page to the CPA-firm parent only where it genuinely helps the reader; link the CPA-firm parent to selected industry pages as examples of portfolio coverage.
+5. Verify routes, internal links, metadata, canonicals, schema, sitemap and mobile layout before considering a change release-ready.
+6. Use GSC query-to-page evidence when available to prioritize work; do not make up search demand or performance outcomes.
 
 ### Location opportunity research — 2026-10-12
 
