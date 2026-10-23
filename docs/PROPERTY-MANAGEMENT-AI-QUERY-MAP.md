@@ -153,3 +153,22 @@ Official Google Search Central guidance says foundational SEO remains relevant t
 - Claims are sourced and reviewed; AI-generated drafts are fact-checked.
 - Internal links, canonical, metadata, sitemap, mobile rendering and build are checked before merge/deployment.
 - AI answer visibility is described as an outcome to measure, never a guaranteed result.
+
+## Property-management FAQ expansion (2026-10-23)
+
+The FAQ update targets existing commercial pages rather than creating duplicate URLs. Search-intent phrases used to shape the visible questions include:
+- property management accounting services / bookkeeping outsourcing
+- property management bookkeeping cleanup / catch-up bookkeeping
+- property management platform-to-general-ledger reconciliation
+- tenant ledger reconciliation / unapplied tenant payments
+- property management month-end close checklist
+- property management trust-account reconciliation / three-way reconciliation
+- Buildium accounting support / Buildium bank reconciliation
+- AppFolio accounting support / AppFolio owner statements
+- DoorLoop accounting support / DoorLoop and QuickBooks workflow
+
+These are query-intent targets, not claims about monthly search volume. Public competitor and product pages are useful for identifying recurring buyer questions, but they do not prove search volume or ranking opportunity. Accounstone's own Search Console query data should be reviewed after deployment to refine the FAQ wording and prioritization.
+
+The FAQ lists now contain ten questions on the property-management hub and on the existing Buildium, AppFolio-in-California, DoorLoop, accounting-cleanup, platform-to-GL reconciliation, tenant-accounting operations, month-end-close support and trust-account-reconciliation pages. Existing FAQ components use semantic `<section>`, `<h2>`, `<details>` and `<summary>` markup. On pages using `generateFAQSchema(faqs)`, structured data is generated from the same array as the visible FAQ list.
+
+Scope safeguards remain explicit: no promise of guaranteed compliance, legal interpretation, vendor certification, unconfirmed software integration, payment approval or release authority.
