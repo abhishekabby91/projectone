@@ -17,11 +17,11 @@ const PATH = '/services/tax-preparation/united-states';
 
 export const metadata: Metadata = genMeta({
   title: 'US Tax Preparation Outsourcing for CPA Firms',
-  description: 'Outsource return preparation without moving review: 1040, 1065, 1120 and 1120-S in Drake Tax and CCH Axcess. You review, sign and e-file.',
+  description: 'Tax preparation and review support for CPA firms: Forms 1040, 1065, 1120 and 1120-S, with workpapers prepared for your firm’s review.',
   path: PATH,
 });
 
-const overview = 'U.S. tax preparation outsourcing for CPA firms can cover preparation support for Forms 1040, 1065, 1120 and 1120-S, organized workpapers and supporting schedules within the firm’s existing workflow. The firm retains professional review, judgment, signing and e-file authority; the work scope and taxpayer-data permissions should be agreed before client files are shared.';
+const overview = 'U.S. tax preparation and review support for CPA firms can cover Forms 1040, 1065, 1120 and 1120-S, organized workpapers and review of returns prepared by Accounstone or by the firm’s own staff. The review scope, escalation process and taxpayer-data permissions are agreed in advance. The responsible tax professional retains final professional judgment, approval and filing responsibilities as applicable.';
 
 const preparation = [
   'Return preparation assistance and supporting schedules',
@@ -32,6 +32,13 @@ const preparation = [
   'Drake Tax and CCH Axcess workflow support where applicable',
 ];
 
+const reviewSupport = [
+  'Review of returns prepared by Accounstone or the firm’s own staff',
+  'Checks of calculations, supporting schedules and workpaper consistency',
+  'Identification of missing information, inconsistencies and open tax questions',
+  'Review notes and issue lists routed back to the preparer or responsible reviewer',
+];
+
 const retained = [
   'Professional review and sign-off',
   'Tax advice and positions requiring professional judgment',
@@ -40,6 +47,8 @@ const retained = [
 ];
 
 const faqs = [
+  { question: 'Can you review returns prepared by our own staff?', answer: 'Yes. Review support can cover returns prepared by Accounstone or returns prepared by your own staff. The review scope, documentation standards and escalation process are agreed with the firm before work begins.' },
+  { question: 'Does review support replace our responsible tax professional?', answer: 'No. Review support can identify issues and document questions, while the responsible tax professional retains final judgment, approval and filing responsibilities as applicable.' },
   { question: 'Can you support tax filing workflows?', answer: 'Yes. Filing support can be included where it fits the engagement, jurisdiction and established client workflow.' },
   { question: 'What if our review team is the bottleneck?', answer: 'Additional preparation capacity can move organized, complete work into review so the reviewer can focus on tax questions and exceptions rather than basic missing information.' },
   { question: 'Can you help when client documents are incomplete?', answer: 'Received documents can be organized, missing-information lists maintained and files prepared for follow-up. The firm retains decisions about required information and client contact.' },
@@ -65,7 +74,7 @@ export default function TaxPrepUSPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        region="united-states" subtitle="For U.S. CPA firms" title="Tax Preparation Support for CPA Firms" description="Returns and workpapers prepared to your templates and your review notes. You review, you sign, you e-file." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
+        region="united-states" subtitle="For U.S. CPA firms" title="Tax Preparation and Review Support for CPA Firms" description="Preparation and review support for returns and workpapers, whether prepared by Accounstone or your own staff. Your firm retains final approval and filing responsibility." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View All Services', href: '/services' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white"><ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted"><li><Link href="/" className="inline-block py-1.5 hover:text-primary">Home</Link></li><li aria-hidden="true">/</li><li><Link href="/services" className="inline-block py-1.5 hover:text-primary">Services</Link></li><li aria-hidden="true">/</li><li>Tax Preparation</li><li aria-hidden="true">/</li><li aria-current="page" className="text-primary font-medium">United States</li></ol></nav>
 
@@ -81,8 +90,8 @@ export default function TaxPrepUSPage() {
       <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-5xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">For CPA firms</p>
-          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Outsourced U.S. Tax Preparation Include?</h2>
-          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Outsourced U.S. tax preparation for CPA firms can cover individual and business returns, including Forms 1040, 1065, 1120 and 1120-S, along with source-document organization, supporting schedules and workpapers prepared for the firm’s review. Work can be organized around the firm’s existing process and supported software, including Drake Tax and CCH Axcess where applicable. The CPA firm retains professional judgment, review, client advice and final approval; the engagement should define responsibilities and address required taxpayer consents before return information is disclosed.</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does U.S. Tax Preparation and Review Support Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">U.S. tax support for CPA firms can include preparing Forms 1040, 1065, 1120 and 1120-S, organizing source documents and supporting schedules, and reviewing returns and workpapers. Review can cover returns prepared by Accounstone or by the firm’s own staff, with checks for calculations, supporting documentation, inconsistencies and unresolved questions. The engagement defines the review scope and escalation process; the responsible tax professional retains final judgment, approval and filing responsibilities as applicable. Required taxpayer consents must be addressed before return information is disclosed.</p>
         </div>
       </section>
 
@@ -144,6 +153,17 @@ export default function TaxPrepUSPage() {
       </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-input"><div className="max-w-5xl mx-auto"><Reveal className="text-center space-y-4 mb-14"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">Scope</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Preparation Work That Can Move Out of the Reviewer's Queue</h2></></Reveal><ul className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">{preparation.map((item, i) => <Reveal key={i}><li className="h-full"><InquiryTrigger className="flex items-start gap-2 sm:gap-4 p-3.5 sm:p-6 bg-white rounded-2xl border border-border/70 transition-colors hover:border-primary/40 h-full" source="/services/tax-preparation/united-states" service="Tax Preparation" region="united-states"><Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" /><span className="text-sm sm:text-base leading-5 sm:leading-7">{item}</span></InquiryTrigger></li></Reveal>)}</ul></div></section>
+
+      <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-[1fr_1.2fr] md:items-start">
+          <div className="space-y-3">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent">Review support</span>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Review of Accounstone-prepared or in-house returns</h2>
+            <p className="leading-7 text-muted">Review scope is agreed with the firm. Review notes identify issues and questions for resolution; the responsible tax professional retains final approval and filing responsibilities as applicable.</p>
+          </div>
+          <ul className="grid gap-3 sm:grid-cols-2">{reviewSupport.map((item, i) => <li key={i} className="flex items-start gap-3 rounded-xl border border-border/70 bg-input p-4"><Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span className="text-sm leading-6 text-muted">{item}</span></li>)}</ul>
+        </div>
+      </section>
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8"><Reveal className="rounded-2xl bg-input border border-border/70 p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-accent">Your team retains</span><h2 className="font-serif text-3xl font-bold text-primary mt-3 mb-6">Professional judgment and filing control</h2><ul className="space-y-4">{retained.map((item, i) => <li key={i} className="flex items-start gap-3"><Check className="w-5 h-5 text-accent shrink-0" aria-hidden="true" /><span className="leading-6">{item}</span></li>)}</ul></></Reveal><Reveal delay={0.1} className="rounded-2xl bg-primary text-white p-8 md:p-10"><><span className="text-sm font-semibold uppercase tracking-wide text-white/70">Workflow</span><h2 className="font-serif text-3xl font-bold mt-3 mb-6">Build around the way your firm already reviews</h2><p className="text-white/85 leading-7">Start with your checklist, source-document process and review notes. Define what is prepared, what gets escalated and what a reviewer expects to see before a file moves forward. That makes the handoff easier to repeat across the season.</p></></Reveal></div></section>
 
