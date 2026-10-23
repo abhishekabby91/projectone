@@ -10,8 +10,8 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema, gen
 const PATH = '/industries/cpa-firms/overflow-work-support';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'CPA Firm Overflow Work Outsourcing Support',
-  description: 'Overflow accounting support for CPA firms: defined bookkeeping, reconciliation, cleanup and tax-workpaper queues prepared to your scope and review process.',
+  title: 'CPA Firm Accounting Outsourcing for Overflow Work',
+  description: 'Accounting outsourcing for CPA firm overflow work: defined bookkeeping, reconciliation, cleanup and tax-workpaper queues prepared to your scope and review process.',
   path: PATH,
 });
 
@@ -46,7 +46,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 const serviceSchema = generateServiceSchema({
-  name: 'Overflow Accounting Support for CPA Firms',
+  name: 'Overflow Accounting Outsourcing for CPA Firms',
   description: 'Scoped preparation support for accounting queues, backlogs and seasonal workload increases, with review and professional decisions retained by the CPA firm.',
   slug: 'cpa-firms/overflow-work-support',
   basePath: '/industries/',
@@ -64,7 +64,7 @@ export default function CpaFirmOverflowWorkSupportPage() {
 
       <PremiumHero
         subtitle="For US CPA and accounting firms"
-        title="Overflow Accounting Support for CPA Firms"
+        title="Accounting Outsourcing for CPA Firm Overflow Work"
         description="When a queue of bookkeeping, reconciliations, cleanup work or tax-preparation workpapers exceeds current capacity, Accounstone can discuss a defined preparation assignment that fits your systems and review process. Your firm retains the client relationship, professional judgment and approvals."
         cta={{ text: 'Discuss Overflow Work', href: '/contact' }}
         ctaSecondary={{ text: 'View CPA Firm Services', href: '/industries/cpa-firms' }}
