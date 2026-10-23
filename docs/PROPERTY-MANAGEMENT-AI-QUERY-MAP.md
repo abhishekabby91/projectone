@@ -172,3 +172,13 @@ These are query-intent targets, not claims about monthly search volume. Public c
 The FAQ lists now contain ten questions on the property-management hub and on the existing Buildium, AppFolio-in-California, DoorLoop, accounting-cleanup, platform-to-GL reconciliation, tenant-accounting operations, month-end-close support and trust-account-reconciliation pages. Existing FAQ components use semantic `<section>`, `<h2>`, `<details>` and `<summary>` markup. On pages using `generateFAQSchema(faqs)`, structured data is generated from the same array as the visible FAQ list.
 
 Scope safeguards remain explicit: no promise of guaranteed compliance, legal interpretation, vendor certification, unconfirmed software integration, payment approval or release authority.
+
+### Public-source cross-checks for the FAQ questions
+
+Reviewed 2026-10-23:
+- Buildium's accounting product page discusses tenant payments, fees and deposits, accounts payable, bank reconciliation, reporting and trust-account workflows: https://www.buildium.com/features/property-management-accounting/
+- AppFolio-focused bookkeeping providers surface bank reconciliations, payables/receivables, trust accounting, owner statements, cleanup and month-end close as common service questions: https://www.apmhelp.com/property-management-software/appfolio and https://www.appfoliobookkeeping.com/
+- Buildium-focused bookkeeping provider pages emphasize payables, receivables, bank reconciliations, trust accounting and cleanup: https://www.apmhelp.com/property-management-software/buildium
+- Accounstone's currently indexed property-management hub surfaces software scope and money-control boundaries that should remain consistent across supporting pages: https://www.accounstone.com/industries/property-management
+
+These sources support topic selection, not a claim that the questions have a particular search volume. The FAQ language is adapted to Accounstone's own defined scope and should not copy competitors' claims about partnerships, audit outcomes, certifications, pricing or service guarantees.
