@@ -9,8 +9,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/texas';
 
 export const metadata: Metadata = genMeta({
-  title: 'Texas Property Management Accounting Support',
-  description: 'Remote accounting for Texas property managers: property-level books, rent and tenant ledgers, vendor payables, owner statements and monthly close.',
+  title: 'Texas Property Management Accounting Outsourcing',
+  description: 'Accounting outsourcing for Texas property managers: property-level books, rent and tenant ledgers, vendor payables, owner statements and monthly close.',
   path: PATH,
 });
 
@@ -18,11 +18,11 @@ const faqs = [
   { question: 'What property management accounting tasks can you handle in Texas?', answer: 'The agreed scope may include transaction coding, property-level bookkeeping, rent and tenant ledger review, bank reconciliations, vendor payable schedules, receivables review, owner statement preparation and month-end reporting.' },
   { question: 'Can you support a portfolio with multiple properties or entities?', answer: 'Yes, the workflow can be scoped around the property and entity structure already used by your business. We first confirm the chart of accounts, reporting dimensions, source records, reconciliation requirements and review process.' },
   { question: 'Do you work inside our existing software?', answer: 'We begin with your current platform and agreed access. For Yardi-related workflows, see the existing Texas Yardi accounting page; software access and exact tasks are confirmed before work begins.' },
-  { question: 'Does Accounstone manage properties or approve payments?', answer: 'No. Accounstone provides remote accounting preparation and bookkeeping support. Your business retains tenant and vendor decisions, payment authorization, banking control, leasing, maintenance and any local legal or licensing responsibilities.' },
+  { question: 'Does Accounstone manage properties or approve payments?', answer: 'No. Accounstone provides outsourced accounting preparation and bookkeeping. Your business retains tenant and vendor decisions, payment authorization, banking control, leasing, maintenance and any local legal or licensing responsibilities.' },
 ];
 const serviceSchema = generateServiceSchema({
-  name: 'Texas Property Management Accounting Support',
-  description: 'Remote bookkeeping and accounting support for Texas property managers, including property and entity ledgers, reconciliations, payables, receivables, owner statements and monthly close preparation.',
+  name: 'Texas Property Management Accounting Outsourcing',
+  description: 'Outsourced bookkeeping and accounting for Texas property managers, including property and entity ledgers, reconciliations, payables, receivables, owner statements and monthly close preparation.',
   slug: 'property-management/texas',
   basePath: '/industries/',
   areaServed: ['Texas, United States'],
@@ -43,8 +43,8 @@ export default function TexasPropertyManagementAccountingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PremiumHero
         subtitle="Texas property management companies"
-        title="Property Management Accounting Support in Texas"
-        description="Organize property-level records, tenant balances, vendor expenses and owner reporting with remote accounting support built around your current portfolio and review process."
+        title="Property Management Accounting Outsourcing in Texas"
+        description="Organize property-level records, tenant balances, vendor expenses and owner reporting through accounting outsourcing built around your current portfolio and review process."
         cta={{ text: 'Discuss Your Accounting Workflow', href: '#inquiry' }}
         ctaSecondary={{ text: 'Explore Property Management Services', href: '/industries/property-management' }}
         background="primary-gradient"
