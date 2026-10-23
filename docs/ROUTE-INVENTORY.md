@@ -223,7 +223,7 @@ candidate for overlap.
 | `/solutions/back-office-support` | Back-Office Accounting Outsourcing for Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
-| `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
+| `/solutions/staff-augmentation` | Accounting Staff Augmentation for CPA Firms & Businesses |
 | `/technology` | Technology & Systems |
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
