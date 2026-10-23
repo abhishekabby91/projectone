@@ -1,4 +1,8 @@
 
+## 2026-10-23 — Accounts receivable outsourcing page refinement
+
+Refined `/services/accounts-receivable/united-states` to put the core commercial phrase first in the title and clarify the page description around invoicing, cash application, customer reconciliations, aging review and agreed follow-up in QuickBooks Online or Xero. Replaced the paired public “Can be delegated / Usually retained” cards with a five-step recurring receivables workflow. Updated the exception-handling FAQ without changing the URL, inquiry flow, CTAs, or schema intent. This is a relevance and clarity refinement; ranking or CTR gains are not assumed.
+
 ## 2026-10-22 — US-focused architecture / Markets cluster retirement staging
 
 - Removed the homepage Markets section and the Markets navigation/footer block.
