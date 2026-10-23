@@ -197,7 +197,7 @@ candidate for overlap.
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
 | `/services/accounts-payable/australia` | Australian Accounts Payable Outsourcing |
 | `/services/accounts-payable/united-kingdom` | Outsourced Accounts Payable for UK Businesses |
-| `/services/accounts-payable/united-states` | U.S. Accounts Payable Outsourcing Services |
+| `/services/accounts-payable/united-states` | Accounts Payable Outsourcing for Businesses |
 | `/services/accounts-receivable/australia` | Australian Accounts Receivable Outsourcing |
 | `/services/accounts-receivable/united-kingdom` | UK Accounts Receivable Outsourcing Services |
 | `/services/accounts-receivable/united-states` | U.S. Accounts Receivable Outsourcing Services |
