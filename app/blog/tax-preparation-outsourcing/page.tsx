@@ -5,8 +5,8 @@ import ServiceIllustration from '@/components/service-illustration';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
 export const metadata: Metadata = genMeta({
-  title: 'Tax Preparation Outsourcing Workflow Guide',
-  description: 'A practical tax-season workflow guide covering Drake Tax and CCH Axcess, review handoffs, taxpayer-data permissions and capacity planning for accounting firms.',
+  title: 'Tax Preparation Outsourcing: CPA Workflow',
+  description: 'Learn how CPA firms scope outsourced tax preparation, manage tax software access, prepare review-ready workpapers and plan busy-season capacity.',
   path: '/blog/tax-preparation-outsourcing',
 });
 
@@ -29,7 +29,7 @@ const faqs = [
   {
     question: 'Who holds the tax software and e-filing credentials?',
     answer:
-      'Your firm does. In Drake Tax and CCH Axcess alike, an outsourced team works inside your firm\'s existing access and your firm\'s access controls, preparing returns and queueing them for review. Submission authority and e-file credentials stay with the firm. The same applies abroad: offshore teams should not hold HMRC portal credentials in the UK or ATO portal access in Australia, where a registered practitioner or registered tax agent reviews and lodges.',
+      'Your firm does. In Drake Tax and CCH Axcess alike, an outsourced team works inside your firm\'s existing access and your firm\'s access controls, preparing returns and queueing them for review. Submission authority and e-file credentials stay with the firm. Access should follow the firm’s own permissions policy, with filing authority and submission credentials retained by the responsible firm.',
   },
   {
     question: 'Why can a per-return price be misleading?',
@@ -57,7 +57,7 @@ export default function TaxPrepOutsourcingBlog() {
       inquiryLead="Tell us your return mix, your software and how many returns stack up before review, and we will scope a preparation pilot that your firm still reviews, signs and files."
     >
       <p>
-        Tax preparation outsourcing is a workflow decision: a firm assigns documented preparation steps to an external accounting partner, then reviews and approves completed work under its own professional process. The exact tasks, system access, taxpayer permissions and filing responsibilities should be defined before client data moves.
+        Tax preparation outsourcing lets CPA firms delegate defined return-preparation tasks and workpaper assembly to an external accounting partner while keeping the firm’s established review and approval process. Before client information is shared, the firm should define the preparation scope, system access, taxpayer permissions, reviewer handoffs and filing responsibilities.
       </p>
       <p>
         This guide focuses on operating detail: how source documents move into workpapers, how Drake Tax and CCH Axcess fit within a firm’s existing controls, and how to identify where added preparation capacity helps without moving professional judgment or final review away from the responsible practitioner.
@@ -122,10 +122,6 @@ export default function TaxPrepOutsourcingBlog() {
       <p>
         Offshore preparation support can absorb the data-entry and initial-preparation stage of this work, letting licensed staff focus their hours on review — which is where the CPA&rsquo;s judgment and credentials actually matter.
       </p>
-
-      <h2>UK and Australian Tax Preparation</h2>
-      <p><strong>UK:</strong> Corporation Tax returns (CT600), Self-Assessment returns (SA100), VAT returns, and payroll RTI reconciliation are all preparable by offshore teams; the registered practitioner reviews and submits via HMRC online. Outsourced teams should not have HMRC portal credentials.</p>
-      <p><strong>Australia:</strong> Income tax returns preparable by offshore teams working from the client&rsquo;s Xero or MYOB data; a registered tax agent reviews and lodges via the ATO&rsquo;s tax agent portal. BAS preparation likewise sits with the offshore team for preparation, registered BAS agent for lodgment. The offshore team should not have ATO portal access.</p>
 
       <h2>The §7216 Consent Most Firms Discover Late</h2>
       <p>

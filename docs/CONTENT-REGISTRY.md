@@ -1,3 +1,6 @@
+## 2026-10-23 — Tax preparation outsourcing guide refresh
+
+Refined `/blog/tax-preparation-outsourcing` against the Aug 5–Oct 21 Search Console report, which showed 1,347 impressions, zero clicks and average position 27.4. Updated the page title and description to make the CPA workflow intent more explicit, rewrote the opening to answer the outsourcing workflow query directly, and removed the UK/Australia tax section so the guide stays aligned with the U.S. CPA-firm content cluster. Kept the article informational and preserved links to the commercial U.S. tax service page and return-type pages. Search Console report metrics are a baseline, not proof that the changes will improve performance.
 
 ## 2026-10-22 — US-focused architecture / Markets cluster retirement staging
 
