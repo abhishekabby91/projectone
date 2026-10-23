@@ -107,16 +107,7 @@ export default function RegistrationStatePage({ state }: { state: RegistrationSt
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-input">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <Reveal><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Where the Decision Stops Being Ours</h2></Reveal>
-          <Reveal>
-            <div className="overflow-hidden rounded-xl border border-border bg-white">
-              
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      
 
       <FAQSection subtitle={`${state.name} Questions`} items={faqs} columns={2} />
 
