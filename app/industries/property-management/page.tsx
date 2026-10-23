@@ -33,9 +33,9 @@ const PATH = '/industries/property-management';
 // Title budget is 46 characters before the "%s | Accounstone" template takes
 // it to 60. This is 45 and carries both head terms.
 export const metadata: Metadata = genMeta({
-  title: 'Property Management Accounting Outsourcing',
+  title: 'Property Management Bookkeeping Outsourcing',
   description:
-    'Outsourced property management accounting: property-level books, tenant and owner ledgers, AP/AR, CAM schedules, reconciliations and month-end reporting.',
+    'Property management bookkeeping and accounting for rental portfolios: tenant and owner ledgers, AP/AR, CAM schedules, reconciliations and month-end reporting.',
   path: PATH,
 });
 
