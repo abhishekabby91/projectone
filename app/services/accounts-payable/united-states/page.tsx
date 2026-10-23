@@ -16,8 +16,8 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/services/accounts-payable/united-states';
 
 export const metadata: Metadata = genMeta({
-  title: 'U.S. Accounts Payable Outsourcing Services',
-  description: 'U.S. accounts payable outsourcing for invoice entry, PO matching, ACH/check payment-run preparation, 1099-NEC tracking and vendor reconciliation.',
+  title: 'Accounts Payable Outsourcing for Businesses',
+  description: 'Accounts payable outsourcing for invoice processing, purchase-order matching, approval routing, payment-run preparation and vendor reconciliation.',
   path: PATH,
 });
 
@@ -93,6 +93,14 @@ export default function AccountsPayableUSPage() {
           <Reveal delay={0.12}>
             <ServiceIllustration service="accounts-payable" className="mx-auto w-full max-w-[300px] lg:max-w-none" />
           </Reveal>
+        </div>
+      </section>
+
+      <section data-section="direct-answer" className="w-full bg-input px-6 py-10 md:px-8 md:py-12">
+        <div className="mx-auto max-w-5xl space-y-4">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">Accounts payable support</p>
+          <h2 className="font-serif text-2xl font-bold leading-tight text-primary md:text-3xl">What Does Accounts Payable Outsourcing Include?</h2>
+          <p className="max-w-4xl text-base leading-relaxed text-muted md:text-lg">Accounts payable outsourcing can cover invoice receipt and entry, coding, purchase-order and receiving-document matching where applicable, routing invoices for approval, payment-run preparation, vendor statement reconciliation and year-round 1099 vendor record tracking. Work can be handled within your existing accounting system and approval workflow. Your organization keeps control of invoice approvals, banking credentials, payment release and vendor decisions; the engagement defines the tasks, handoffs and exceptions before recurring processing begins.</p>
         </div>
       </section>
 
