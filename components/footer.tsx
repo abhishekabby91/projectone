@@ -117,7 +117,7 @@ export default function Footer() {
 
         <nav
           aria-label="Footer"
-          className="grid grid-cols-2 gap-x-5 gap-y-5 py-5 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5 md:gap-x-8"
+          className="grid grid-cols-2 gap-x-5 gap-y-5 py-5 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 lg:gap-x-8"
         >
           {footerColumns.map((column) => (
             <div key={column.title} className="min-w-0">
