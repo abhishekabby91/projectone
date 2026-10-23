@@ -8,7 +8,7 @@ const PATH = '/industries/healthcare';
 export const metadata: Metadata = genMeta({
   title: 'Medical Practice Accounting Outsourcing',
   description:
-    'Accounting and bookkeeping support for medical practices: reimbursement reconciliation, payer-mix reporting and practice-specific account structures.',
+    'Outsourced accounting and bookkeeping for medical practices: reimbursement reconciliation, payer-mix reporting and practice-specific account structures.',
   path: PATH,
 });
 
@@ -47,7 +47,7 @@ export default function HealthcareIndustryPage() {
       industry={{
         name: 'Healthcare',
         description:
-          'Bookkeeping and accounting for medical practices and healthcare providers, built around insurance reimbursement cycles and payer mix — not generic small business bookkeeping.',
+          'Accounting outsourcing for medical practices and healthcare providers, built around insurance reimbursement cycles and payer mix — not generic small business bookkeeping.',
       }}
       overview="Medical practice accounting has a structural difference from most small businesses: revenue doesn't arrive as a simple invoice-and-payment cycle, it comes through insurance reimbursements that are billed at one amount, adjusted, and paid at another, often weeks or months later. Standard bookkeeping approaches struggle with this. We reconcile reimbursements against billed claims, track payer mix, and structure a chart of accounts that reflects how a practice actually generates revenue."
       benefits={[
