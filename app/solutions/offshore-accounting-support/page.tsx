@@ -14,8 +14,8 @@ import SolutionIllustration from '@/components/solution-illustration';
 export const metadata: Metadata = generateMetadata({
   // "offshore accounting services" and "offshore accounting" are the head terms
   // this cluster actually uses (GSC 2026-09-04); the old title carried neither.
-  title: 'Offshore Accounting Support Services for Firms',
-  description: 'Offshore accounting support for CPA firms and businesses: recurring bookkeeping, reconciliations, month-end close and AP/AR in your existing systems.',
+  title: 'Offshore Accounting Services for CPA Firms & Businesses',
+  description: 'Offshore accounting services for CPA firms and businesses, including bookkeeping, reconciliations, month-end close, AP/AR and tax preparation in existing systems.',
   path: '/solutions/offshore-accounting-support',
 });
 
@@ -58,8 +58,8 @@ export default function OffshoreSolutionPage() {
 
       <PremiumHero
         subtitle="Offshore Accounting Support"
-        title="Offshore Accounting Support, Inside Your Existing Systems"
-        description="Offshore accounting support for agreed recurring workflows in your existing systems, with scope, access and review responsibilities established before work begins."
+        title="Offshore Accounting Services for Your Existing Workflows"
+        description="Add offshore accounting capacity for bookkeeping, reconciliations, month-end close, AP/AR and tax preparation. Work follows your existing systems, with scope, access and review responsibilities agreed before work begins."
         cta={{
           text: 'Schedule Consultation',
           href: '/contact',
@@ -242,7 +242,7 @@ export default function OffshoreSolutionPage() {
 
       />
 
-      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="A free consultation, and a call that costs nothing. Tell us what the recurring work looks like and which systems it lives in." />
+      <InquirySection source="/solutions/offshore-accounting-support" title="Talk to Us About an Offshore Team" lead="Tell us which accounting workflows need support, the systems involved and how review is handled today. We can discuss a scope that fits your existing process." />
 
       <CTABanner
         title="Ready to Scale Your Accounting Operations?"
