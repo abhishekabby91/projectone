@@ -125,7 +125,7 @@ export const routeLastModified: Record<string, string> = {
   '/industries/ecommerce/shopify-accounting': '2026-10-15',
   '/industries/healthcare': '2026-10-23',
   '/industries/healthcare/dental-practice-accounting': '2026-10-23',
-  '/industries/hoa-accounting': '2026-10-20',
+  '/industries/hoa-accounting': '2026-10-23',
   '/industries/hoa-accounting/appfolio-accounting-support': '2026-10-23',
   '/industries/hoa-accounting/buildium-accounting-support': '2026-10-23',
   '/industries/hoa-accounting/california': '2026-10-23',
