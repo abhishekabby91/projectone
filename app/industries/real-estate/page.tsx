@@ -413,19 +413,31 @@ export default function RealEstateIndustryPage() {
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting workflows</h2>
-          <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">The accounting needs of a property owner or real-estate business overlap with property management in places, but the reporting purpose and workflow are different.</p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">Real estate investors may operate through several ownership entities and run their own property management company. In that structure, investment and entity reporting must stay distinct from tenant activity and the management company's own payroll, fees, expenses and intercompany balances.</p>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link href="/industries/property-management" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">Property Management Accounting</h3>
-              <p className="mt-2 text-sm text-muted">Property-level books, owner statements, tenant ledgers and portfolio close.</p>
+              <p className="mt-2 text-sm text-muted">Property-level books, rent and tenant ledgers, owner reporting and recurring close.</p>
             </Link>
-            <Link href="/technology/quickbooks" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
-              <h3 className="font-semibold text-primary">QuickBooks</h3>
-              <p className="mt-2 text-sm text-muted">See the accounting technology context used across relevant workflows.</p>
+            <Link href="/industries/property-management/management-company-accounting" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Management-Company Accounting</h3>
+              <p className="mt-2 text-sm text-muted">Separate books for management fees, payroll-related entries, operating costs and intercompany balances.</p>
             </Link>
-            <Link href="/industries/hoa-accounting" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
-              <h3 className="font-semibold text-primary">HOA Accounting</h3>
-              <p className="mt-2 text-sm text-muted">Separate community-association accounting from owner and investment accounting.</p>
+            <Link href="/industries/property-management/month-end-close-support" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Property Management Month-End Close</h3>
+              <p className="mt-2 text-sm text-muted">Reconciliations, ledger review, close schedules and owner-reporting preparation.</p>
+            </Link>
+            <Link href="/industries/property-management/accounting-cleanup" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Accounting Cleanup and Catch-Up</h3>
+              <p className="mt-2 text-sm text-muted">Review historical records, organize exceptions and prepare supported corrections for review.</p>
+            </Link>
+            <Link href="/blog/property-management-bank-reconciliation" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Bank Reconciliation Guide</h3>
+              <p className="mt-2 text-sm text-muted">A practical workflow for deposits, transfers, cleared items and unexplained differences.</p>
+            </Link>
+            <Link href="/blog/property-management-owner-statements" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Owner Statement Reconciliation</h3>
+              <p className="mt-2 text-sm text-muted">Prepare owner-facing reports from reconciled records and traceable schedules.</p>
             </Link>
           </div>
         </div>
