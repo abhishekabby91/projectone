@@ -1,3 +1,11 @@
+## 2026-10-23 — California real estate investment company workflow and supporting links
+
+- Refined the internal case-study draft to describe the engagement as a California real estate investment company with its own property management company, managing residential and commercial property activity.
+- Updated `/industries/real-estate` to distinguish the investor/ownership-entity accounting layer from the in-house management company's payroll, management fees, operating costs and intercompany balances.
+- Updated `/industries/property-management` related resources to link to existing management-company accounting, month-end close support, bank reconciliation, tenant-ledger reconciliation, owner-statement reconciliation, month-end checklist and accounting-cleanup resources.
+- Existing supporting URLs were reused; no duplicate page routes were created. Buildium, AppFolio, DoorLoop, QuickBooks Online, Xero and BILL are described only as potentially relevant systems for separately scoped workflows, not as tools confirmed in the California engagement.
+- Case study remains an internal draft pending permission for public use. No outcome metrics or client identity are claimed. Changes remain staged in `accounstone-property-faqs-2026-10-23`; no deployment triggered.
+
 ## 2026-10-23 — Property-management workflow evidence and case-study draft
 
 - Captured an anonymized internal workflow reference from the user's description of an existing U.S. property-management engagement. It documents daily Yardi transaction workflows, ADP payroll-export review, bank reconciliations, owner reporting, lender support and year-end CPA coordination.
