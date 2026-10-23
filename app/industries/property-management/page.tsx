@@ -504,8 +504,15 @@ export default function PropertyManagementPage() {
           </></Reveal>
           <div className="flex flex-wrap gap-3">
             {[
+              { name: 'Real estate investors and ownership entities', href: '/industries/real-estate' },
+              { name: 'Management-company accounting', href: '/industries/property-management/management-company-accounting' },
+              { name: 'Month-end close support', href: '/industries/property-management/month-end-close-support' },
+              { name: 'Bank reconciliation guide', href: '/blog/property-management-bank-reconciliation' },
+              { name: 'Tenant ledger reconciliation', href: '/blog/property-management-tenant-ledger-reconciliation' },
+              { name: 'Owner statement reconciliation', href: '/blog/property-management-owner-statements' },
+              { name: 'Month-end close checklist', href: '/blog/property-management-month-end-close-checklist' },
+              { name: 'Accounting cleanup and catch-up', href: '/industries/property-management/accounting-cleanup' },
               { name: 'HOA & community associations', href: '/industries/hoa-accounting' },
-              { name: 'Real estate accounting', href: '/industries/real-estate' },
               { name: 'Bookkeeping', href: '/services/bookkeeping/united-states' },
               { name: 'Accounting & month-end close', href: '/services/accounting/united-states' },
               { name: 'Accounts payable', href: '/services/accounts-payable/united-states' },
