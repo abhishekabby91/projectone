@@ -111,7 +111,7 @@ candidate for overlap.
 | `/delivery-framework/onboarding` | Client Onboarding Process |
 | `/delivery-framework/quality-assurance` | Quality Assurance & Controls |
 | `/industries` | Industry Accounting & Bookkeeping Support |
-| `/industries/construction` | Construction Accounting & Bookkeeping Support |
+| `/industries/construction` | Construction Accounting Outsourcing |
 | `/industries/cpa-firms` | Outsourced Accounting for CPA Firms |
 | `/industries/cpa-firms/accounts-payable-outsourcing` | Accounts Payable Outsourcing for CPA Firms |
 | `/industries/cpa-firms/california` | California CPA Firm Accounting Outsourcing |
@@ -133,20 +133,20 @@ candidate for overlap.
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
 | `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
-| `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Support |
-| `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting & Bookkeeping Support |
-| `/industries/hoa-accounting/california` | California HOA Accounting & Bookkeeping |
-| `/industries/hoa-accounting/eunify-accounting-support` | eUnify HOA Accounting Support |
+| `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/california` | California HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/eunify-accounting-support` | eUnify HOA Accounting Outsourcing |
 | `/industries/hoa-accounting/los-angeles-county` | Los Angeles County HOA Accounting Support |
 | `/industries/hoa-accounting/orange-county` | Orange County HOA Accounting Support |
 | `/industries/hoa-accounting/san-diego-county` | San Diego County HOA Accounting Support |
 | `/industries/hoa-accounting/self-managed-hoa-accounting` | Accounting Support for Self-Managed HOAs |
-| `/industries/hoa-accounting/texas` | Texas HOA Accounting & Bookkeeping Support |
-| `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Support |
+| `/industries/hoa-accounting/texas` | Texas HOA Accounting Outsourcing |
+| `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Outsourcing |
 | `/industries/nonprofit-accounting` | Nonprofit Accounting & Bookkeeping Support |
 | `/industries/professional-services` | Law Firm & Professional Services Accounting |
 | `/industries/property-management` | Property Management Accounting Outsourcing |
-| `/industries/property-management/accounting-cleanup` | Property Management Accounting Cleanup |
+| `/industries/property-management/accounting-cleanup` | Property Management Accounting Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
 | `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
 | `/industries/property-management/california` | California Property Management Accounting |
