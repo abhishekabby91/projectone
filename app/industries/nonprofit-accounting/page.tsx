@@ -6,9 +6,9 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/nonprofit-accounting';
 
 export const metadata: Metadata = genMeta({
-  title: 'Nonprofit Accounting & Bookkeeping Support',
+  title: 'Nonprofit Accounting Outsourcing',
   description:
-    'Nonprofit bookkeeping for restricted and unrestricted funds, grant-level records, functional expense coding, reconciliations and board reporting.',
+    'Nonprofit accounting outsourcing for restricted and unrestricted funds, grant-level records, functional expense coding, reconciliations and board reporting.',
   path: PATH,
 });
 
@@ -47,7 +47,7 @@ export default function NonprofitAccountingPage() {
       industry={{
         name: 'Nonprofit Accounting & Bookkeeping',
         description:
-          'Accounting support for nonprofit organizations that need consistent fund and grant records, reconciliations, functional expense coding based on approved rules, and financial reports prepared for management and board review.',
+          'Accounting outsourcing for nonprofit organizations that need consistent fund and grant records, reconciliations, functional expense coding based on approved rules, and financial reports prepared for management and board review.',
       }}
       overview="Nonprofit accounting needs to preserve the story behind each dollar. A bank deposit alone may not show whether money was unrestricted, designated for a program, or received under a grant with specific reporting terms. If fund and program detail is lost during routine coding, it can be difficult to produce a reliable statement of activities, compare spending with an approved budget, or prepare a clear year-end handoff. Accounstone can maintain records against the organization’s documented fund structure, reconcile accounts, apply client-approved coding rules, and prepare schedules for management, board and tax-preparer review. Decisions about donor restrictions, allowable grant costs, financial-statement policy and compliance remain with the organization and its qualified advisers."
       benefits={[
