@@ -289,10 +289,6 @@ export default function CPAFirmsPage() {
               <h3 className="font-semibold text-primary">Accounts Payable Outsourcing</h3>
               <p className="mt-2 text-sm text-muted">Invoice preparation, coding, vendor statement tie-outs and payment-batch preparation with approval boundaries retained.</p>
             </Link>
-            <Link href="/markets/united-states" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
-              <h3 className="font-semibold text-primary">U.S. Market</h3>
-              <p className="mt-2 text-sm text-muted">See how the broader U.S. outsourcing workflow is structured.</p>
-            </Link>
             <Link href="/blog/us-cpa-firm-outsourcing-readiness-checklist" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
               <h3 className="font-semibold text-primary">Outsourcing Readiness Checklist</h3>
               <p className="mt-2 text-sm text-muted">Review access controls, workpaper handoffs, review ownership and a small pilot before expanding the scope.</p>
@@ -352,7 +348,6 @@ export default function CPAFirmsPage() {
               { name: 'Dedicated teams', href: '/solutions/dedicated-accounting-teams' },
               { name: 'The CAS guide', href: '/resources/guides/client-accounting-services-cas-guide' },
               { name: 'Tax-season augmentation', href: '/resources/guides/staff-augmentation-tax-season-guide' },
-              { name: 'US market brief', href: '/markets/united-states' },
               { name: 'All industries', href: '/industries' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="px-4 py-2 rounded-lg bg-white border border-border text-primary font-medium hover:border-primary/50 transition-colors">
