@@ -131,7 +131,7 @@
 | app/industries/cpa-firms/accounts-payable-outsourcing/page.tsx | 90/100 | 1252 | 1 | 10 | 0 | 0 |
 | app/industries/cpa-firms/cas-production-support/page.tsx | 90/100 | 1487 | 1 | 6 | 0 | 0 |
 | app/industries/cpa-firms/overflow-work-support/page.tsx | 90/100 | 1461 | 1 | 12 | 0 | 0 |
-| app/industries/cpa-firms/page.tsx | 90/100 | 1563 | 1 | 37 | 0 | 0 |
+| app/industries/cpa-firms/page.tsx | 90/100 | 1544 | 1 | 35 | 0 | 0 |
 | app/industries/cpa-firms/white-label-accounting/page.tsx | 90/100 | 1573 | 1 | 6 | 0 | 0 |
 | app/industries/ecommerce/amazon-seller-accounting/page.tsx | 90/100 | 1216 | 1 | 10 | 0 | 0 |
 | app/industries/ecommerce/page.tsx | 90/100 | 502 | 1 | 5 | 0 | 0 |
@@ -160,7 +160,7 @@
 | app/industries/property-management/lender-reporting-noi-support/page.tsx | 90/100 | 1137 | 1 | 8 | 0 | 0 |
 | app/industries/property-management/management-company-accounting/page.tsx | 90/100 | 1130 | 1 | 9 | 0 | 0 |
 | app/industries/property-management/month-end-close-support/page.tsx | 90/100 | 984 | 1 | 9 | 0 | 0 |
-| app/industries/property-management/page.tsx | 90/100 | 2455 | 1 | 80 | 0 | 0 |
+| app/industries/property-management/page.tsx | 90/100 | 2459 | 1 | 80 | 0 | 0 |
 | app/industries/property-management/tenant-accounting-operations/page.tsx | 90/100 | 1442 | 1 | 16 | 0 | 0 |
 | app/industries/property-management/texas/page.tsx | 90/100 | 824 | 1 | 11 | 0 | 0 |
 | app/industries/property-management/trust-account-reconciliation/page.tsx | 90/100 | 1255 | 1 | 10 | 0 | 0 |
