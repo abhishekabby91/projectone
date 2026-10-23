@@ -118,12 +118,12 @@ candidate for overlap.
 | `/industries/cpa-firms/california-tax-workpaper-support` | California Tax Workpaper Support |
 | `/industries/cpa-firms/cas-production-support` | CAS Production Support for CPA Firms |
 | `/industries/cpa-firms/florida` | Accounting Outsourcing for Florida CPA Firms |
-| `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting |
+| `/industries/cpa-firms/florida-property-entity-accounting-support` | Florida Property-Entity Accounting Outsourcing |
 | `/industries/cpa-firms/illinois` | Accounting Outsourcing for Illinois CPA Firms |
 | `/industries/cpa-firms/illinois-inventory-accounting-support` | Illinois Inventory Accounting Support |
 | `/industries/cpa-firms/new-york` | Accounting Outsourcing for New York CPA Firms |
-| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting |
-| `/industries/cpa-firms/overflow-work-support` | CPA Firm Overflow Work Outsourcing Support |
+| `/industries/cpa-firms/new-york-multi-entity-accounting-support` | New York Multi-Entity Accounting Outsourcing |
+| `/industries/cpa-firms/overflow-work-support` | CPA Firm Accounting Outsourcing for Overflow Work |
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
@@ -151,12 +151,12 @@ candidate for overlap.
 | `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
 | `/industries/property-management/california` | California Property Management Accounting |
 | `/industries/property-management/doorloop-accounting-support` | DoorLoop Accounting Support |
-| `/industries/property-management/general-ledger-reconciliation` | Property GL Reconciliation Support |
+| `/industries/property-management/general-ledger-reconciliation` | Property Management GL Reconciliation Outsourcing |
 | `/industries/property-management/lender-reporting-noi-support` | Property Management Lender Reporting Support |
 | `/industries/property-management/management-company-accounting` | Property Management Company Accounting Support |
 | `/industries/property-management/month-end-close-support` | Property Management Month-End Close Support |
 | `/industries/property-management/tenant-accounting-operations` | Tenant Accounting Operations Support |
-| `/industries/property-management/texas` | Texas Property Management Accounting Support |
+| `/industries/property-management/texas` | Texas Property Management Accounting Outsourcing |
 | `/industries/property-management/trust-account-reconciliation` | Trust Account Reconciliation Support |
 | `/industries/property-management/yardi-accounting-support` | Yardi Accounting Support for Property Managers |
 | `/industries/real-estate` | Real Estate Accounting Outsourcing |
@@ -220,7 +220,7 @@ candidate for overlap.
 | `/services/tax-preparation/united-states/1120-corporation` | Form 1120 Corporate Tax Outsourcing |
 | `/services/tax-preparation/united-states/1120-s-corporation` | Form 1120-S Tax Preparation Outsourcing |
 | `/solutions` | Accounting Outsourcing Models |
-| `/solutions/back-office-support` | Back-Office Accounting Support for Firms |
+| `/solutions/back-office-support` | Back-Office Accounting Outsourcing for Firms |
 | `/solutions/dedicated-accounting-teams` | Dedicated Accounting Team for Firms |
 | `/solutions/offshore-accounting-support` | Offshore Accounting Support Services for Firms |
 | `/solutions/staff-augmentation` | Accounting Staff Augmentation Services |
