@@ -347,7 +347,7 @@ export default function PropertyManagementPage() {
               Keep property records connected to the accounting ledger
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed max-w-3xl">
-              Property management platforms and general accounting systems each hold part of the monthly picture. The process needs to connect rent and tenant activity, deposits, vendor expenses, owner reporting and reconciled ledger balances. The exact workflow depends on the systems and access available for the engagement.
+              Property management platforms and general accounting systems each hold part of the monthly picture. The process needs to connect rent and tenant activity, deposits, vendor expenses, owner reporting and reconciled ledger balances. Depending on the engagement, workflows may involve Yardi, Buildium, AppFolio or DoorLoop alongside QuickBooks Online, Xero or BILL (formerly Bill.com) for accounts-payable coordination. The specific systems, access and tasks are confirmed for each engagement; these platforms are not all used in every client workflow.
             </p>
           </></Reveal>
           <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
