@@ -1,5 +1,5 @@
 # Internal Case Study Draft — Real Estate Investment Company with an In-House Property Management Company
-**Status:** Draft for client approval; not approved for public publication.  
+**Status:** Internal working draft only. Not approved for public publication.  
 **Client context:** A real estate investment company operating through its own property management company, with residential and commercial property activity.  
 **Source:** Workflow details supplied by Accounstone about an existing U.S. client engagement.  
 **Public use:** Confirm client permission before publishing, even in anonymized form. Do not add client identity, geography beyond what is approved, property count, financial figures, staff names, bank names, GL codes, transfer thresholds, or outcome metrics without explicit approval.
