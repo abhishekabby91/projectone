@@ -1,3 +1,87 @@
+## 2026-10-24c — Hubs now carry their own head term, and the two real page collisions are gone
+
+Found by searching the built site rather than reading it: 195 indexable pages
+harvested for title, h1, description and body, then 24 buyer intent queries
+matched against them.
+
+**Six industry hubs were publishing an h1 that buried the head term.**
+`components/industry-page-template.tsx` hardcoded
+`Accounting Support for ${industry.name}`, so the hubs rendered "Accounting
+Support for E-Commerce", "Accounting Support for Construction & Contractors"
+and — worst — "Accounting Support for Nonprofit Accounting & Bookkeeping",
+which is redundant on its face. CLAUDE.md already states the rule this broke:
+a page cannot rank for a term its URL, title and h1 do not carry. The template
+now takes an optional `heading`, used for both the hero h1 and the Service
+schema name, and the six template-driven hubs set it. The four bespoke hubs
+(cpa-firms, hoa-accounting, property-management, real-estate) already had
+written h1s and are untouched.
+
+Measured before and after on the same intent queries:
+
+| intent | before | after |
+|---|---|---|
+| hoa accounting services | two blog posts beat the hub (45.9) | **hub wins, 51.0** |
+| property management accounting services | two blog posts tied (58.2 / 58.0) | **hub wins, 63.7** |
+| quickbooks bookkeeping services | no strong match (22.8) | **/technology/quickbooks, 54.9** |
+| construction accounting services | 43.2 | **47.2** |
+| nonprofit bookkeeping services | 25.2 | **29.2** |
+
+Two titles also omitted their own head term and were corrected:
+`/industries/property-management` said "Property Management Bookkeeping
+Outsourcing" with no "accounting" at all while its h1 carried it, and
+`/industries/ecommerce` said "Outsourcing" where its new h1 says "Services".
+`/technology/quickbooks` went from "QuickBooks Online Accounting Support" to
+"QuickBooks Bookkeeping & Accounting Services" (44 chars), which is what took
+it from unranked to first on its own query.
+
+**Two genuine page-on-page collisions, found by scoring every commercial pair
+on shared head terms, and both fixed.** A scan of all 74 commercial pages
+returned 14 pairs above 60% head-term overlap. Twelve were parent/child, geo
+or platform parallels that are meant to look alike. Two were real:
+
+- **The two Buildium pages at 75%.**
+  `/industries/property-management/buildium-accounting-support` was titled and
+  headlined "Buildium Accounting & Bookkeeping Support" with no qualifier at
+  all, competing head-on with
+  `/industries/hoa-accounting/buildium-accounting-support`. Their bodies share
+  22% of 6-grams — under the 25% ceiling but the highest commercial pair on the
+  site. The property-management one is now "Buildium Property Management
+  Accounting" / "Buildium Accounting for Property Management Companies".
+- **`/industries/hoa-accounting` vs `/services/hoa-bookkeeping`.** The hub
+  claimed "HOA Accounting **& Bookkeeping** Outsourcing", taking the dedicated
+  bookkeeping page's term. Their bodies share only **1.4%**, so this was never
+  duplicate content — purely a title claim. The hub is now "HOA Accounting
+  Services" and the service page keeps "HOA Bookkeeping Services". **No
+  redirect needed**, which matches the owner's preference for keeping the URL
+  set clean.
+
+After: **14 colliding pairs down to 7**, and all seven are differentiated by
+audience (`/industries/cpa-firms` vs `/services/accounting/united-states`),
+geography, platform, or parent/child. The closest to watch are the two
+CPA-firms-vs-US-services pairs, which CLAUDE.md documents as an intentional
+audience split.
+
+**What this pass deliberately did not do.** The two big article clusters — 40
+HOA and 29 property-management posts — were checked for duplication and are
+clean: worst pair 9.9% and 7.7%, zero of 1,186 pairs at the ceiling, and
+**100% of them already link to their hub** (40/40 and 29/29). So the articles
+were never the problem and nothing was merged or deleted; the hubs simply were
+not asserting themselves. Also left alone: "ecommerce accounting services"
+still scores oddly because the scorer tokenises "e-commerce" to "commerce" —
+that is a measurement artifact, Google treats the variants as equivalent, and
+padding copy to satisfy it would be inventing a result.
+
+Still open and still decisions rather than edits: "payroll outsourcing
+services" has no page on the whole site (the US payroll page is titled, headed
+and described for CPA firms only, so direct-business payroll intent is
+unserved); "virtual bookkeeping" and "catch-up bookkeeping" have no owner.
+
+Verified: eslint silent, clean `pnpm next build`, `verify-pages.mjs` unchanged
+at 51 failing checks across 3 rules, so no title or description left its
+budget. Measured against a local production build of `main` — the Vercel
+connection still lacks the `abby2` scope, so production remains unreachable
+from this session.
+
 ## 2026-10-24b — Five orphaned pages linked, and the site proved crawlable without JavaScript
 
 **Five indexable, sitemap-listed pages had no inbound link anywhere in the

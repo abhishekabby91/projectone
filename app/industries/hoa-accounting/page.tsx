@@ -32,7 +32,7 @@ const PATH = '/industries/hoa-accounting';
 
 // 44 characters, inside the 46 the "%s | Accounstone" template allows.
 export const metadata: Metadata = genMeta({
-  title: 'HOA Accounting & Bookkeeping Outsourcing',
+  title: 'HOA Accounting Services',
   description:
     'Outsourced HOA and community association accounting: assessment ledgers, operating and reserve funds, delinquency schedules and monthly board packs.',
   path: PATH,

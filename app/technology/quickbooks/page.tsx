@@ -12,7 +12,7 @@ import { platformDepth } from '@/lib/platform-depth';
 import InquiryTrigger from '@/components/inquiry-trigger';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'QuickBooks Online Accounting Support',
+  title: 'QuickBooks Bookkeeping & Accounting Services',
   description: 'QuickBooks Online support for cleanup, bookkeeping, reconciliations, reporting and recurring accounting workflows inside your existing file.',
   path: '/technology/quickbooks',
 });
@@ -41,7 +41,7 @@ export default function QuickBooksPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <PremiumHero subtitle="Platform Workflow Support" title="QuickBooks Online Accounting Support" description="Help with the accounting work around QuickBooks Online — from setup and cleanup to reconciliations, month-end and reporting." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
+      <PremiumHero subtitle="Platform Workflow Support" title="QuickBooks Online Bookkeeping & Accounting Services" description="Help with the accounting work around QuickBooks Online — from setup and cleanup to reconciliations, month-end and reporting." cta={{ text: 'Get Started', href: '/contact' }} ctaSecondary={{ text: 'View Services', href: '/services' }} background="primary-gradient" />
 
       <section className="w-full py-8 md:py-12 px-6 md:px-8 bg-white"><div className="max-w-5xl mx-auto"><Reveal className="space-y-6"><><span className="text-sm font-semibold tracking-wide uppercase text-accent">What buyers usually care about</span><h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">QuickBooks is the system. Someone still has to make the books make sense.</h2><p className="text-lg text-muted leading-8">A QuickBooks file can be accessible to everyone and still be difficult to trust at month-end. Transactions need to be categorized, accounts reconciled, exceptions explained and supporting records kept in a way another person can follow. The real question is not whether QuickBooks can do the job. It is whether the accounting routine around it is being followed consistently.</p></></Reveal></div></section>
 

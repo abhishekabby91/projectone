@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/buildium-accounting-support';
 
 export const metadata: Metadata = genMeta({
-  title: 'Buildium Accounting & Bookkeeping Support',
+  title: 'Buildium Property Management Accounting',
   description: 'Accounting outsourcing for property managers using Buildium: transaction coding, reconciliations, tenant and owner ledgers, payables and month-end reporting.',
   path: PATH,
 });
@@ -44,7 +44,7 @@ export default function BuildiumAccountingSupportPage() {
 
       <PremiumHero
         subtitle="For property management companies using Buildium"
-        title="Buildium Accounting & Bookkeeping Support"
+        title="Buildium Accounting for Property Management Companies"
         description="Keep the accounting work behind your Buildium reports organized: transaction review, reconciliations, payable tracking, tenant and owner ledger checks, and a clearer month-end handoff."
         cta={{ text: 'Discuss Your Buildium Workflow', href: '/contact' }}
         ctaSecondary={{ text: 'Property Management Accounting', href: '/industries/property-management' }}

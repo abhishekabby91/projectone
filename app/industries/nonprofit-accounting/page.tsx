@@ -44,6 +44,7 @@ export default function NonprofitAccountingPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="Nonprofit Bookkeeping & Accounting Services"
       industry={{
         name: 'Nonprofit Accounting & Bookkeeping',
         description:

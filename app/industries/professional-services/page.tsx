@@ -73,6 +73,7 @@ export default function ProfessionalServicesIndustryPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="Professional Services Accounting & Bookkeeping"
       industry={{
         name: 'Professional Services',
         description:

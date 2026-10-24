@@ -49,6 +49,7 @@ export default function ConstructionIndustryPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="Construction Accounting Services for Contractors"
       industry={{
         name: 'Construction & Contractors',
         description:

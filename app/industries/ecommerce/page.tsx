@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const PATH = '/industries/ecommerce';
 
 export const metadata: Metadata = genMeta({
-  title: 'E-Commerce Accounting Outsourcing',
+  title: 'E-Commerce Accounting Services',
   description:
     'E-commerce accounting outsourcing for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records.',
   path: PATH,
@@ -44,6 +44,7 @@ export default function EcommerceIndustryPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="E-Commerce Accounting Services"
       industry={{
         name: 'E-Commerce',
         description:

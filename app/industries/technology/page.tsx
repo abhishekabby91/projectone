@@ -67,6 +67,7 @@ export default function TechnologyIndustryPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="Technology & SaaS Accounting Services"
       industry={{
         name: 'Technology & SaaS',
         description:

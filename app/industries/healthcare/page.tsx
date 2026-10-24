@@ -44,6 +44,7 @@ export default function HealthcareIndustryPage() {
   return (
     <IndustryPageTemplate
       path={PATH}
+      heading="Healthcare Accounting Services"
       industry={{
         name: 'Healthcare',
         description:

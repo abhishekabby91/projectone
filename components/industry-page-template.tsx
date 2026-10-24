@@ -41,11 +41,13 @@ interface IndustryPageProps {
   depth?: IndustryDepth;
   /** Named sub-audiences absorbed into this page rather than given their own URL. */
   segments?: IndustrySegment[];
+  /** Overrides the default "Accounting Support for X" h1, which buries the head term. */
+  heading?: string;
 }
 
-export default function IndustryPageTemplate({ path, industry, overview, benefits, faqs, relatedLinks = [], depth, segments = [] }: IndustryPageProps) {
+export default function IndustryPageTemplate({ path, industry, overview, benefits, faqs, relatedLinks = [], depth, segments = [], heading }: IndustryPageProps) {
   const slug = path.replace(/^\/industries\//, '');
-  const serviceSchema = generateServiceSchema({ name: `Accounting Support for ${industry.name}`, description: industry.description, slug, basePath: '/industries/' });
+  const serviceSchema = generateServiceSchema({ name: heading ?? `Accounting Support for ${industry.name}`, description: industry.description, slug, basePath: '/industries/' });
   const faqSchema = generateFAQSchema(faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: baseUrl },
@@ -59,7 +61,7 @@ export default function IndustryPageTemplate({ path, industry, overview, benefit
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <PremiumHero subtitle="Industry Workflow" title={`Accounting Support for ${industry.name}`} description={industry.description} cta={{ text: 'Talk Through Your Workflow', href: '/contact' }} ctaSecondary={{ text: 'View Industries', href: '/industries' }} background="primary-gradient" />
+      <PremiumHero subtitle="Industry Workflow" title={heading ?? `Accounting Support for ${industry.name}`} description={industry.description} cta={{ text: 'Talk Through Your Workflow', href: '/contact' }} ctaSecondary={{ text: 'View Industries', href: '/industries' }} background="primary-gradient" />
 
       <nav aria-label="Breadcrumb" className="w-full px-6 md:px-8 pt-6 bg-white"><ol className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-muted"><li><Link href="/" className="inline-block py-1.5 hover:text-primary transition-colors">Home</Link></li><li aria-hidden="true">/</li><li><Link href="/industries" className="inline-block py-1.5 hover:text-primary transition-colors">Industries</Link></li><li aria-hidden="true">/</li><li aria-current="page" className="text-primary font-medium">{industry.name}</li></ol></nav>
 
