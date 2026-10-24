@@ -105,7 +105,7 @@ export const routeLastModified: Record<string, string> = {
   '/delivery-framework/quality-assurance': '2026-09-08',
   '/industries': '2026-10-09',
   '/industries/construction': '2026-10-23',
-  '/industries/cpa-firms': '2026-10-23',
+  '/industries/cpa-firms': '2026-10-24',
   '/industries/cpa-firms/accounts-payable-outsourcing': '2026-10-20',
   '/industries/cpa-firms/california': '2026-10-19',
   '/industries/cpa-firms/california-tax-workpaper-support': '2026-10-20',
