@@ -10,7 +10,7 @@ const PATH = '/industries/property-management/buildium-accounting-support';
 
 export const metadata: Metadata = genMeta({
   title: 'Buildium Accounting & Bookkeeping Support',
-  description: 'Accounting outsourcing for property managers using Buildium: transaction coding, reconciliations, tenant and owner ledger checks, payables and month-end reporting.',
+  description: 'Accounting outsourcing for property managers using Buildium: transaction coding, reconciliations, tenant and owner ledgers, payables and month-end reporting.',
   path: PATH,
 });
 

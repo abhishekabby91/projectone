@@ -53,9 +53,10 @@ Re-measure before quoting one.** Every figure below carrying a 2026-09-09 date
 was written when the site had 95 routes; it now has 221. Treat an undated count
 here as a claim to check, not a fact.
 
-- The sitemap drift check is documented below. The current tree has **221**
-  `app/**/page.tsx` routes; **219** canonical indexable routes belong in the
-  sitemap. Four legacy blog routes redirect permanently and two live routes are
+- The sitemap drift check is documented below. Re-measured 2026-10-24: the tree
+  has **221** `app/**/page.tsx` routes and the generated sitemap carries **195**
+  URLs. The 26-route gap is the two `noindex` pages plus the 24 routes retired
+  from active discovery on 2026-10-22 — see the drift-check section. Four legacy blog routes redirect permanently and two live routes are
   `noindex`, so those six page files are deliberately absent. Re-run the drift
   check after any route or redirect change.
 - **Services are region-first.** 21 commercial pages = 7 services × 3 regions, at
@@ -79,7 +80,20 @@ here as a claim to check, not a fact.
   because 40 of its 46 country-resolved impressions are British. The evidence
   for each of the seven is in the comment above the redirects in
   `next.config.mjs` — read it before changing any of them.
-- **Markets are not in the primary navbar** but the pages are live, indexable and
+- **The Markets cluster was retired from active discovery on 2026-10-22
+  (`91ee2160`), and the bullet below is history, not current state.** It is kept
+  because the overlap measurements in it were real when taken. Measured
+  2026-10-24: the `/markets` tree and all 14 UK and Australia Service x Region
+  pages are **no longer linked from the homepage or footer and are absent from
+  the sitemap and `llms.txt`**, but every one still serves
+  `<meta name="robots" content="index, follow">`. So they are unlinked,
+  unlisted, indexable orphans — an interim state the register calls out, with
+  the 301-vs-410 decision per URL still pending. **The cheap reversible step
+  nobody has taken is `noindex`**, which is the pattern `/technology/myob`
+  already uses: it stops them competing with the US pages without needing the
+  final HTTP decision. That is the author's call, not a session's.
+
+- *(history)* **Markets are not in the primary navbar** but the pages are live, indexable and
   linked from the footer and contextually. All three are now firm-facing rather
   than educational: `/markets/{united-states,united-kingdom,australia}` each
   address that market's accounting firms, with packages, the local compliance
@@ -613,9 +627,20 @@ comm -13 /tmp/disk.txt /tmp/sitemap.txt   # in sitemap, no page  → would 404
 comm -23 /tmp/disk.txt /tmp/sitemap.txt   # page exists, unlisted → never crawled
 ```
 
-The first command must print nothing. **The second should now print exactly
-two routes: `/technology/myob` and `/thank-you`**, the two live `noindex`
-pages. Anything else in either direction is drift.
+The first command must print nothing. **The second now prints 26 routes, and
+24 of them are deliberate (2026-10-24).** Two are the live `noindex` pages,
+`/technology/myob` and `/thank-you`. The other 24 are the US-focus retirement
+of 2026-10-22 (`91ee2160`): the whole `/markets` tree and every UK and
+Australia Service x Region page, removed from active discovery but **retained
+on disk pending URL-level review**. The plan, the GSC evidence behind it and
+the pending 301-vs-410 decision per URL are in
+`docs/US-FOCUSED-MARKETS-RETIREMENT-REGISTER-2026-10-22.md`.
+
+**That is 24 standing exceptions to this check, which is exactly the state this
+section warns about** — it is how a real drift hides in the noise, and it is
+why the four dead HOA blog files were deleted. The check is not usable as a
+signal again until the register's final HTTP decisions are taken. Until then,
+diff against the register's list rather than expecting two lines.
 
 **It used to print six (2026-10-20).** The other four were
 `/blog/hoa-delinquency-accounting`, `/blog/hoa-monthly-close-process`,

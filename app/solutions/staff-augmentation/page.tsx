@@ -12,8 +12,8 @@ import FurtherReading from '@/components/further-reading';
 import SolutionIllustration from '@/components/solution-illustration';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting Staff Augmentation for CPA Firms & Businesses',
-  description: 'Accounting staff augmentation for CPA firms and businesses needing added capacity for tax preparation, reconciliations, month-end close, AP/AR and defined projects.',
+  title: 'Accounting Staff Augmentation for CPA Firms',
+  description: 'Accounting staff augmentation for CPA firms and businesses needing added capacity for tax preparation, reconciliations, month-end close and AP/AR.',
   path: '/solutions/staff-augmentation',
 });
 

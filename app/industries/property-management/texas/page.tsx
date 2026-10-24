@@ -9,7 +9,7 @@ import { generateMetadata as genMeta, generateServiceSchema, generateFAQSchema, 
 const PATH = '/industries/property-management/texas';
 
 export const metadata: Metadata = genMeta({
-  title: 'Texas Property Management Accounting Outsourcing',
+  title: 'Texas Property Management Accounting',
   description: 'Accounting outsourcing for Texas property managers: property-level books, rent and tenant ledgers, vendor payables, owner statements and monthly close.',
   path: PATH,
 });

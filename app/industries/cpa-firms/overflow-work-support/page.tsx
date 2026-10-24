@@ -10,8 +10,8 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateServiceSchema, gen
 const PATH = '/industries/cpa-firms/overflow-work-support';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'CPA Firm Accounting Outsourcing for Overflow Work',
-  description: 'Accounting outsourcing for CPA firm overflow work: defined bookkeeping, reconciliation, cleanup and tax-workpaper queues prepared to your scope and review process.',
+  title: 'CPA Firm Overflow Accounting Outsourcing',
+  description: 'Accounting outsourcing for CPA firm overflow work: defined bookkeeping, reconciliation, cleanup and tax-workpaper queues prepared to your scope.',
   path: PATH,
 });
 

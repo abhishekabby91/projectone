@@ -8,7 +8,7 @@ const PATH = '/industries/ecommerce';
 export const metadata: Metadata = genMeta({
   title: 'E-Commerce Accounting Outsourcing',
   description:
-    'E-commerce accounting outsourcing for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records, and channel reporting.',
+    'E-commerce accounting outsourcing for Shopify and marketplace sellers: settlement reconciliation, fees, refunds, inventory and COGS records.',
   path: PATH,
 });
 

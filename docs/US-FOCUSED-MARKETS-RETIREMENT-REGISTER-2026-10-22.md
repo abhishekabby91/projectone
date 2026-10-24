@@ -2,7 +2,11 @@
 
 **Date:** 2026-10-22  
 **Branch:** `us-focus-remove-markets-2026-10-22`  
-**Status:** Staged for review; not merged or deployed.
+**Status:** MERGED AND DEPLOYED. Merged to `main` as `91ee2160` and live in
+production since 2026-10-23 — `main` auto-deploys. This line previously read
+"Staged for review; not merged or deployed", which was true when written and
+was not updated at merge. The final 301-vs-410 decisions below are still
+pending; what shipped is the removal from active discovery.
 
 ## Agreed architecture
 

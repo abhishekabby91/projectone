@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowRight, Check, Clock, Mail, MapPin, UserCheck, X } from 'lucide-react';
+import { ArrowRight, Check, Clock, Mail, MapPin, UserCheck } from 'lucide-react';
 import PremiumHero from '@/components/premium-hero';
 import FAQSection from '@/components/faq-section';
 import { companyInfo, services } from '@/lib/data';

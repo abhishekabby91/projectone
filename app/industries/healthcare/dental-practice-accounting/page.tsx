@@ -8,7 +8,7 @@ const PATH = '/industries/healthcare/dental-practice-accounting';
 export const metadata: Metadata = genMeta({
   title: 'Dental Practice Accounting & Bookkeeping',
   description:
-    'Accounting and bookkeeping outsourcing for dental practices, covering production-to-collection records, insurance adjustments, deposit reconciliation and provider-level reporting.',
+    'Accounting outsourcing for dental practices: production-to-collection records, insurance adjustments, deposit reconciliation and provider reporting.',
   path: PATH,
 });
 

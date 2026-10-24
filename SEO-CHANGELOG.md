@@ -1,3 +1,82 @@
+## 2026-10-24 — Metadata budgets repaired, eslint silent again, and the record caught up with the US-focus retirement
+
+**14 metadata budget breaches, all introduced between 2026-10-20 and
+2026-10-23.** Six titles ran 48-56 characters against the 46-character
+page-side budget and eight descriptions ran 162-183 against the 110-160 band,
+so every one of them was truncating in the SERP. They came from the
+"improve the search snippet" passes (#133-#139) — the snippets written to fix
+truncation were themselves truncating. Fixed with the shortest trim that keeps
+the head term: titles now 36-43, descriptions 140-157, each asserted in range
+before the edit was written rather than counted by eye. `/industries/property-management/texas`
+needed care — the string appears twice and only the `genMeta` title has a
+budget; the schema `name` is untouched.
+
+**`pnpm eslint .` was no longer silent, which is a documented invariant.** Two
+unused `lucide-react` imports — `Check` in `app/company-registration/page.tsx`
+and `X` in `app/contact/page.tsx` — were left behind when the public
+scope-boundary sections were removed in #138. Each symbol appeared exactly once
+in its file, in the import. Removed; eslint is silent again.
+
+**The scope-boundary removal (#138) was checked for claim damage and there is
+none.** 297 lines came out across `/contact`, the registration cluster, six
+industry pages and `components/industry-page-template.tsx`, including
+`/contact`'s "What We Will Not Do, Whatever You Are Paying Us" band. A
+hard-rule sweep of every page for tax planning/advisory, authority
+representation, CFO/HR, implementation language and absolutes returned no
+unqualified claim: the conditioning survives in the FAQ answers and in the
+`retained`/`delegated` list device, which is where `docs/PAGE-FORMAT.md` §4
+wants it anyway — inside the answer, not in a band further down the page. The
+removal was also complete: no page still passes a `boundaries` prop, no
+component declares one, and no orphaned `boundaries` data is left in `lib/`.
+
+**It did have one measurable side effect.** Three pages fell under their word
+floor — `/company-registration/nevada` (861 < 900),
+`/company-registration/wyoming` (856 < 900) and
+`/industries/hoa-accounting/eunify-accounting-support` (626 < 650) — because
+the same commit cut 30 lines from the registration hub, 25 from
+`components/registration-state-page.tsx` (which both state pages render
+through) and 16 from the eunify page. Not padded: the honest options are real
+substance, restoring some of that material in non-boundary form, or an agreed
+exception, and all three are a content decision rather than a session's.
+
+**The record had fallen behind the US-focus retirement and that made the drift
+check useless.** `CLAUDE.md` still said the sitemap drift check "should now
+print exactly two routes"; it prints **26**. Twenty-four are deliberate — the
+`/markets` tree and all 14 UK and Australia Service x Region pages, removed
+from active discovery by `91ee2160` on 2026-10-22 and retained on disk pending
+URL-level review, per
+`docs/US-FOCUSED-MARKETS-RETIREMENT-REGISTER-2026-10-22.md`. That is 24
+standing exceptions to the one check this repo documents as its recurring
+failure mode, which is precisely the state that section warns about. Counts
+refreshed from measurement: 221 page files, **195** sitemap URLs (was 219).
+
+**Measured, and worth a decision: the 24 retired routes are unlinked and
+unlisted but still serve `index, follow`.** No `/markets` or UK/AU service link
+remains in the homepage or footer HTML, and they are gone from the sitemap and
+`llms.txt` — but every one still asks to be indexed. They are therefore
+orphaned, indexable pages that can still compete with the US pages the
+repositioning is meant to focus. `noindex` is the cheap reversible step and is
+the pattern `/technology/myob` already uses; it does not require the pending
+301-vs-410 call. Flagged, not taken — it is outward-facing and belongs to the
+register's release gate.
+
+Also corrected: the register's own status line said "Staged for review; not
+merged or deployed". It was merged as `91ee2160` and has been live since
+2026-10-23.
+
+Verified: eslint silent, clean `pnpm next build` from a deleted `.next`,
+`verify-pages.mjs` from 65 failing checks across 5 rules to 51 across 3 — the
+title, description and llms/sitemap-budget rules now pass and what remains is
+48 deliberate retirement entries plus the 3 word floors above.
+
+**Not verified, and it needs saying: the live site could not be reached from
+this session.** `www.accounstone.com` is blocked by the sandbox egress policy
+and the documented workaround, `web_fetch_vercel_url`, now fails because the
+Vercel connection has lost the `abby2` scope (`403 forbidden` on deployments,
+`404 Team not found` on re-authorization). Everything above is measured against
+a local production build of `main` at `9d0233dd`, which is what `main`
+auto-deploys, not against production itself.
+
 ## 2026-10-20d — Dead code removed: 16 files, 9 dependencies, and the four that only looked dead
 
 Runtime dependencies went from 14 to **5**: `framer-motion`, `lucide-react`,
