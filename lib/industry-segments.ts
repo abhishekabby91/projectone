@@ -81,7 +81,7 @@ export const technologySegments: IndustrySegment[] = [
 
 export const technologyBoundaries = [
   'We give no fundraising, valuation or financial-modelling advice, and we do not build a forecast for you to raise on. We prepare the accounts and the reports; what you present and to whom is yours.',
-  'We do not set your revenue recognition policy. ASC 606 judgements — performance obligations, standalone selling price, contract combination — are your CPA’s or your auditor’s. We apply the policy they set and show the schedule.',
+  'We do not set your revenue recognition policy. ASC 606 judgments — performance obligations, standalone selling price, contract combination — are your CPA’s or your auditor’s. We apply the policy they set and show the schedule.',
   'We give no tax advice. No R&D credit positions, no entity or jurisdiction planning, no nexus registration decisions. Records and schedules are ours; the return and the signature are your CPA’s.',
   'We do not implement, configure or integrate billing systems, subscription platforms or your accounting software. We work inside the stack you already run.',
   'We never hold banking control, and we do not release payments.',
@@ -134,7 +134,7 @@ export const professionalServicesBoundaries = [
   'We do not make your firm compliant with its regulator. Client-money rules are set by a bar association or an equivalent body and differ by jurisdiction. We keep the ledger and run the three-way reconciliation; satisfying the rule is the firm’s own responsibility, and the exceptions we find come to you named.',
   'We never hold banking control, and we never move money between a client account and an operating account. Every transfer is initiated and authorised by your firm.',
   'We give no legal advice of any kind, and no tax advice — no partner tax planning, no entity structuring, no distribution strategy.',
-  'We do not decide what is billable, what gets written off or what a client is charged. Those are the firm’s judgements; we record them and make the realisation visible.',
+  'We do not decide what is billable, what gets written off or what a client is charged. Those are the firm’s judgments; we record them and make the realisation visible.',
   'We do not advise on partner compensation, profit-sharing or capital account arrangements. We maintain the accounts that follow from what the partners agree.',
   'We do not implement, configure or migrate practice management, time and billing or accounting software. We work inside what you already run.',
 ];

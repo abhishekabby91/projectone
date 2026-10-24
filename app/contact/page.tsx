@@ -256,7 +256,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className={LABEL}>What is the work you need covered?</label>
+                  <label htmlFor="message" className={LABEL}>Tell us about the work — volumes, systems and timing</label>
                   <textarea
                     id="message"
                     name="message"

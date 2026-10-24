@@ -152,7 +152,7 @@ const prepared = [
 
 const retained = [
   'The client relationship, and every client-facing conversation',
-  'Review, professional judgement and sign-off',
+  'Review, professional judgment and sign-off',
   'Filing and submission workflows as defined by the engagement',
   'Tax-authority correspondence and representation support where included in scope',
   'Nexus determinations and entity structure decisions',
@@ -166,7 +166,7 @@ const trust = [
   },
   {
     h: 'Reviewed before it reaches your reviewers',
-    p: 'Every file has a named preparer and a named internal reviewer before it leaves us. That review targets exceptions and judgement items rather than re-performing the posting. What lands on your desk is finished work with an explicit list of open questions, not a pile to triage.',
+    p: 'Every file has a named preparer and a named internal reviewer before it leaves us. That review targets exceptions and judgment items rather than re-performing the posting. What lands on your desk is finished work with an explicit list of open questions, not a pile to triage.',
   },
   {
     h: 'When a client’s records are incomplete',
@@ -174,7 +174,7 @@ const trust = [
   },
   {
     h: 'Data security and confidentiality',
-    p: 'Access permissions, permitted users, banking authority and e-file responsibilities should be agreed before work begins. Accounstone does not currently hold SOC 2 certification; confirm any certification requirement during procurement.',
+    p: 'Access permissions, permitted users, banking authority and e-file responsibilities should be agreed before work begins.',
   },
   {
     h: 'Turnaround',
@@ -241,7 +241,7 @@ export default function USMarketPage() {
           <Reveal delay={0.08}>
             <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
               For accounting firms, defined preparation and recurring accounting workflows can be handled while the firm keeps
-              the client relationship, professional judgement, review and filing responsibility. For businesses, the scope can
+              the client relationship, professional judgment, review and filing responsibility. For businesses, the scope can
               support the accounting work directly within the systems and approval structure already in use. The common
               principle is simple: the outsourced team handles the agreed workflow; your team retains the decisions and
               controls that belong with you.

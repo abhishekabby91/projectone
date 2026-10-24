@@ -57,7 +57,7 @@ export default function StaffAugTaxSeasonGuide() {
 
       <h2>What Should Stay With the CPA or Responsible Professional?</h2>
       <p>
-        The firm's professional judgement, final review, client advice and responsibility for the final work product should remain with the appropriately responsible professionals. Support capacity should make that work easier, not blur who is accountable for the engagement.
+        The firm's professional judgment, final review, client advice and responsibility for the final work product should remain with the appropriately responsible professionals. Support capacity should make that work easier, not blur who is accountable for the engagement.
       </p>
 
       <h2>US Firms: January Through Filing Deadlines Is Only Part of the Story</h2>

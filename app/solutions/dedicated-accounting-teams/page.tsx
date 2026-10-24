@@ -138,7 +138,7 @@ export default function DedicatedTeamsPage() {
               { h: 'Named people', p: 'The same people on your work, not a rota. Continuity is most of what makes the arrangement work better in year two than in year one.' },
               { h: 'Your templates, your chart of accounts', p: 'We work to your conventions. A parallel set of workpapers creates reconciliation work rather than removing it.' },
               { h: 'Your close calendar', p: 'Due dates set relative to your deadlines and your clients\u2019 cycles, written down rather than assumed.' },
-              { h: 'Your review points, documented', p: 'Where preparation ends and your judgement begins is agreed at the start, so nobody has to guess mid-period.' },
+              { h: 'Your review points, documented', p: 'Where preparation ends and your judgment begins is agreed at the start, so nobody has to guess mid-period.' },
               { h: 'One point of contact', p: 'A person who knows your work and your templates. Not a ticket queue, and not a different name each month.' },
               { h: 'Capacity that flexes', p: 'Wider for a January peak or a year-end cycle, narrower afterwards, without rebuilding the process each time.' },
             ].map((item, i) => (

@@ -25,7 +25,7 @@ export default function DataSecurityPage() {
       <PremiumHero
         subtitle="Trust & Compliance"
         title="How We Handle Your Data"
-        description="An overview of access and data-handling practices to discuss before work begins, including certifications Accounstone does and does not hold."
+        description="An overview of access and data-handling practices to discuss before work begins, including how access is granted, where the work is performed and what stays under your control."
         background="primary-gradient"
       />
 
@@ -46,10 +46,6 @@ export default function DataSecurityPage() {
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
                 <span>Your financial data stays in your own QuickBooks Online, Xero, or other accounting software — not a separate proprietary system you'd lose access to</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-accent w-5 h-5" aria-hidden="true" />
-                <span>Accounstone does not currently hold SOC 2 or ISO 27001 certification. Confirm any required certifications before beginning procurement</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="text-accent w-5 h-5" aria-hidden="true" />
@@ -92,8 +88,8 @@ export default function DataSecurityPage() {
 
             {[
               {
-                h: '1. What certifications do you hold?',
-                p: 'Accounstone does not currently hold SOC 2 or ISO 27001 certification. If your procurement process requires a current SOC 2 report, confirm this before an evaluation proceeds.',
+                h: '1. Where is the work performed, and in whose systems?',
+                p: 'The work is performed by Accounstone Globus LLP from its delivery centre in New Delhi, India, inside your own accounting software under credentials you grant and can revoke. Your financial data stays in your QuickBooks Online, Xero or other platform rather than being copied into a system of ours, so the record of what was done sits in an audit log you control. Engagements are NDA-backed, and the specific systems, access levels and named people are agreed in writing at onboarding.',
               },
               {
                 h: '2. How is access controlled?',
@@ -101,7 +97,7 @@ export default function DataSecurityPage() {
               },
               {
                 h: '3. What happens if something goes wrong?',
-                p: 'You are told, promptly and by a person, with what we know and what we do not yet know rather than a reassurance. Because the work happens in your systems under your credentials, we can tell you what we did and when; your platform\u2019s own audit log is the authoritative record and it is one you control, not one we could edit. We do not have a certified incident response programme and we are not going to describe one we do not run.',
+                p: 'You are told, promptly and by a person, with what we know and what we do not yet know rather than a reassurance. Because the work happens in your systems under your credentials, we can tell you what we did and when; your platform\u2019s own audit log is the authoritative record and it is one you control, not one we could edit.',
               },
             ].map((item) => (
               <div key={item.h} className="rounded-2xl border border-border bg-input p-6 sm:p-8">

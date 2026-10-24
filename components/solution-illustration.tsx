@@ -15,7 +15,7 @@
  * - augmentation: extra hands joining an existing queue, with the review gate
  *   still owned by the client — so the accent is the gate
  * - offshore: the working-day boundary, with prepared work crossing it into a
- *   reviewer's tray — the accent is the point of arrival, where judgement starts
+ *   reviewer's tray — the accent is the point of arrival, where judgment starts
  * - dedicated: a standing group attached to one portfolio, with a single named
  *   point of contact carrying the accent
  * - back office: many recurring inputs collapsing into one lane, and the
@@ -99,7 +99,7 @@ function Offshore() {
       {[80, 88].map((y) => (
         <line key={y} x1={142} y1={y} x2={172} y2={y} opacity={0.45} />
       ))}
-      {/* where judgement starts */}
+      {/* where judgment starts */}
       <circle cx={157} cy={54} r={5} stroke={ACCENT} />
     </Frame>
   );

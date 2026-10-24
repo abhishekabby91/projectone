@@ -29,7 +29,7 @@ const faqs = [
   {
     question: 'Can you handle deferred revenue for subscription contracts?',
     answer:
-      'Yes — that is the core of the work. An annual contract billed up front is one cash event and twelve months of revenue, so the deferred balance is maintained and released against the contract term rather than recognised on invoice. The recognition policy itself, and the ASC 606 judgements behind it, are set by your CPA or auditor; we apply it and show the schedule.',
+      'Yes — that is the core of the work. An annual contract billed up front is one cash event and twelve months of revenue, so the deferred balance is maintained and released against the contract term rather than recognised on invoice. The recognition policy itself, and the ASC 606 judgments behind it, are set by your CPA or auditor; we apply it and show the schedule.',
   },
   {
     question: 'What happens when customers upgrade or downgrade mid-term?',
@@ -73,7 +73,7 @@ export default function TechnologyIndustryPage() {
         description:
           'Bookkeeping built around how subscription and software businesses actually record revenue — deferred balances that tie to the subscription base, settlements decomposed, and a close that reconciles.',
       }}
-      overview="Subscription and software businesses have accounting requirements that differ from ordinary bookkeeping: the gap between what was billed and what has been earned. An annual contract billed up front is one cash event and twelve months of revenue, and a ledger that recognises it on invoice produces a spike at renewal and a collapse afterwards — neither of which describes the business. Underneath that sit the same problems in different clothes: mid-term plan changes that move the deferred balance, processor settlements that arrive net of fees and refunds, and a cost-of-revenue line that has quietly become a residual category. None of these is difficult once the structure is right, and all of them are expensive to reconstruct a year later. We maintain that structure as transactions post, in the systems you already run, and leave every judgement — the recognition policy, the tax position, what goes in front of a board — with the people whose call it is."
+      overview="Subscription and software businesses have accounting requirements that differ from ordinary bookkeeping: the gap between what was billed and what has been earned. An annual contract billed up front is one cash event and twelve months of revenue, and a ledger that recognises it on invoice produces a spike at renewal and a collapse afterwards — neither of which describes the business. Underneath that sit the same problems in different clothes: mid-term plan changes that move the deferred balance, processor settlements that arrive net of fees and refunds, and a cost-of-revenue line that has quietly become a residual category. None of these is difficult once the structure is right, and all of them are expensive to reconstruct a year later. We maintain that structure as transactions post, in the systems you already run, and leave every judgment — the recognition policy, the tax position, what goes in front of a board — with the people whose call it is."
       benefits={[
         'Deferred revenue maintained and released against the contract term, not on invoice',
         'Deferred balance reconciled to the subscription base, including mid-term changes',

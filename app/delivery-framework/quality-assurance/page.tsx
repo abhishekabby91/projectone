@@ -81,7 +81,7 @@ export default function QAPage() {
           <div className="space-y-6">
             {[
               {
-                h: 'It does not replace professional judgement',
+                h: 'It does not replace professional judgment',
                 p: 'Our check answers "is this prepared correctly and supported?" It cannot answer "is this the right treatment for this business?" — that requires knowing the client, the intent behind a transaction and the position the firm is willing to take. Those sit with your licensed people and cannot be delegated to a preparer, ours or anyone\u2019s.',
               },
               {

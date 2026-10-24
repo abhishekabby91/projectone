@@ -179,7 +179,7 @@ function Technology() {
         <rect key={`r${i}`} x={84 + i * 20} y={109} width={13} height={5} rx={2.5} fill={GOLD} opacity={0.85} />
       ))}
 
-      {/* the recognition policy — the CPA's or auditor's judgement, not ours */}
+      {/* the recognition policy — the CPA's or auditor's judgment, not ours */}
       <circle cx={62} cy={62} r={13} fill={ACCENT} />
       <rect x={60.4} y={55} width={3.2} height={9} rx={1.6} fill="#fff" />
       <circle cx={62} cy={68} r={1.9} fill="#fff" />

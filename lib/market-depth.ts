@@ -141,7 +141,7 @@ export const marketDepth: Record<string, MarketDepth> = {
       },
       {
         h: 'The file that arrives with you should be reviewable, not re-performable',
-        p: 'A year-end pack whose workings are not visible is a pack your reviewer has to redo. Every file has a named preparer and a named internal reviewer before it reaches your practice, and that review looks at exceptions and judgement items rather than re-performing the posting. What is unresolved arrives labelled as unresolved.',
+        p: 'A year-end pack whose workings are not visible is a pack your reviewer has to redo. Every file has a named preparer and a named internal reviewer before it reaches your practice, and that review looks at exceptions and judgment items rather than re-performing the posting. What is unresolved arrives labelled as unresolved.',
       },
     ],
     faqs: [
@@ -156,7 +156,7 @@ export const marketDepth: Record<string, MarketDepth> = {
           'The one your practice has determined for that client — FRS 102 for most entities, FRS 105 for micro-entities, or whatever treatment you have set where a client reports otherwise. We follow the framework decision. We do not make it, and we would not be the right party to.',
       },
       {
-        question: 'Who decides accounting policy and judgement items?',
+        question: 'Who decides accounting policy and judgment items?',
         answer:
           'Your practice, in every case. Estimates, provisions, impairment, revenue recognition on anything genuinely arguable — these come to you with the working and what we could establish, and we apply what you decide. A preparer forming those views independently is precisely what makes an outsourced file untrustworthy.',
       },
@@ -172,7 +172,7 @@ export const marketDepth: Record<string, MarketDepth> = {
       },
     ],
     boundary:
-      'The reporting framework, and the tier a client sits in. Every accounting policy and every judgement item — estimates, provisions, impairment, arguable recognition. The going-concern assessment. Approval, signature and filing at Companies House, and the credentials that permit them. Corporation tax positions of any kind. We prepare the file and show our working; the accounts are your practice’s to review, judge, sign and file.',
+      'The reporting framework, and the tier a client sits in. Every accounting policy and every judgment item — estimates, provisions, impairment, arguable recognition. The going-concern assessment. Approval, signature and filing at Companies House, and the credentials that permit them. Corporation tax positions of any kind. We prepare the file and show our working; the accounts are your practice’s to review, judge, sign and file.',
   },
 
   'au-bas': {
@@ -187,7 +187,7 @@ export const marketDepth: Record<string, MarketDepth> = {
     ledger: [
       {
         h: 'GST-free, input-taxed and taxable are not interchangeable, and the difference is set at entry',
-        p: 'They produce different numbers on the statement and they are decided by what the supply actually was — which is knowable when the document is in front of someone and much less knowable in retrospect from a bank feed. Coded as it lands, the quarter closes on a reconciliation. Coded roughly, someone rebuilds the logic later from narratives, and every ambiguous line becomes a judgement call made by whoever is fastest.',
+        p: 'They produce different numbers on the statement and they are decided by what the supply actually was — which is knowable when the document is in front of someone and much less knowable in retrospect from a bank feed. Coded as it lands, the quarter closes on a reconciliation. Coded roughly, someone rebuilds the logic later from narratives, and every ambiguous line becomes a judgment call made by whoever is fastest.',
       },
       {
         h: 'No valid tax invoice means no supported credit, whatever the entry looks like',

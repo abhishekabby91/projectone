@@ -34,7 +34,7 @@ const scenarios = [
     approach:
       'Staff augmentation support absorbed PBC document organization and data entry work beginning in December, before the volume spike, so the firm\'s licensed staff could take on more client-facing review work during peak season.',
     outcome:
-      'The firm was able to accept new clients for the upcoming season without adding permanent headcount it would have to justify keeping on after April.',
+      'Season capacity can come from a prepared queue rather than permanent headcount, so the firm chooses how much new work to take on. Review and sign-off stay with its licensed staff.',
     link: { href: '/industries/cpa-firms', label: 'CPA Firm Support' },
   },
   {
@@ -42,9 +42,9 @@ const scenarios = [
     situation:
       'A business selling across its own Shopify store and two marketplaces had bookkeeping that only reflected total bank deposits — with no visibility into which channel was actually profitable after fees and returns.',
     approach:
-      'Multi-channel reconciliation broke out revenue, fees, and refunds by channel, and inventory-based COGS tracking was set up to reflect true product margins.',
+      'Multi-channel reconciliation separates revenue, fees and refunds by channel, and inventory and COGS records are maintained using the costing method the client has approved.',
     outcome:
-      'The business owner could finally see which channel was worth investing further marketing spend into, instead of guessing from a blended total.',
+      'Channel-level margin becomes visible instead of a blended deposit total. Which channel deserves more marketing spend, and the costing method behind the margin, stay the owner\'s decisions.',
     link: { href: '/industries/ecommerce', label: 'E-Commerce Accounting' },
   },
   {
@@ -52,9 +52,9 @@ const scenarios = [
     situation:
       'An early-stage SaaS company had been recording annual subscription payments as revenue in the month collected, overstating some months and understating others ahead of a fundraise.',
     approach:
-      'Revenue was restructured under ASC 606 principles with proper deferred revenue tracking, and MRR/ARR reporting was built out for investor updates.',
+      'Deferred revenue is tracked across the contract term and MRR/ARR summaries are prepared from the subscription records. The revenue-recognition policy is set by the company and its CPA or auditor; Accounstone prepares the records to it.',
     outcome:
-      'The founders walked into due diligence with financials that matched how investors actually expect SaaS revenue to be presented.',
+      'Subscription revenue is presented consistently month to month from one documented policy, so figures raised in a diligence process can be traced to the underlying records. Whether a given presentation satisfies an investor remains a judgment for the company and its advisers.',
     link: { href: '/industries/technology', label: 'SaaS & Technology Accounting' },
   },
 ];

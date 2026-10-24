@@ -309,7 +309,7 @@ export const processPhases = [
   {
     n: '04',
     title: 'The board keeps every decision',
-    body: 'Steady state: pack, reconciliations and schedules delivered on the meeting cycle. Approvals, payment release, collections steps and every judgement stay with the board and its manager. That boundary does not move.',
+    body: 'Steady state: pack, reconciliations and schedules delivered on the meeting cycle. Approvals, payment release, collections steps and every judgment stay with the board and its manager. That boundary does not move.',
     // The accent is spent here, on the phase where the boundary sits.
     accent: true,
   },

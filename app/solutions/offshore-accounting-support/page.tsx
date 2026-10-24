@@ -93,7 +93,7 @@ export default function OffshoreSolutionPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <Reveal><h2 className="text-4xl font-bold text-primary">Capacity That Does Not Come With a Hiring Cycle</h2></Reveal>
-              <p className="text-lg text-muted leading-relaxed">An offshore team absorbs the recurring preparation work without a recruitment process, an onboarding ramp or a desk. The work stays in your systems, to your templates, with your people keeping review and every decision that carries judgement.</p>
+              <p className="text-lg text-muted leading-relaxed">An offshore team absorbs the recurring preparation work without a recruitment process, an onboarding ramp or a desk. The work stays in your systems, to your templates, with your people keeping review and every decision that carries judgment.</p>
               
               <div className="space-y-4 pt-4">
                 {[

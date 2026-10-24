@@ -171,7 +171,7 @@ export const articles: ResourceItem[] = [
   {
     title: 'Outsourcing Tax Return Preparation: What CPA Firms and Businesses Need to Know',
     href: '/blog/tax-preparation-outsourcing',
-    description: 'Where preparation ends and licensed judgement begins, and how the handoff should be structured.',
+    description: 'Where preparation ends and licensed judgment begins, and how the handoff should be structured.',
     topics: ['Tax', 'CPA firms'],
   },
   {

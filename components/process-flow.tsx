@@ -62,7 +62,7 @@ const PHASES: ProcessPhase[] = [
   {
     n: '04',
     title: 'Steady state',
-    body: 'Full handover of the agreed scope. Review, judgement and sign-off stay with your team, in every market.',
+    body: 'Full handover of the agreed scope. Review, judgment and sign-off stay with your team, in every market.',
     /** The one accent on this graphic. It marks the boundary, not the finish. */
     accent: true,
   },

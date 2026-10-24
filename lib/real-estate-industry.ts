@@ -199,7 +199,7 @@ export const services: REServiceCard[] = [
   },
   {
     name: 'Audit Support',
-    body: 'Schedules, reconciliations and documentation prepared for an audit or a review. The audit judgement is the auditor’s; the preparation does not have to be.',
+    body: 'Schedules, reconciliations and documentation prepared for an audit or a review. The audit judgment is the auditor’s; the preparation does not have to be.',
     href: '/services/audit-support/united-states',
   },
 ];
@@ -224,7 +224,7 @@ export const processPhases = [
   {
     n: '04',
     title: 'You stay in control',
-    body: 'Approvals, payment release, board and owner relationships, and every decision that needs judgement stay with your team. We keep the books behind them.',
+    body: 'Approvals, payment release, board and owner relationships, and every decision that needs judgment stay with your team. We keep the books behind them.',
     accent: true,
   },
 ];
@@ -243,7 +243,7 @@ export const faqs = [
   {
     question: 'What accounting can a real estate business actually outsource?',
     answer:
-      'The recurring, rule-bound part: transaction processing, bank and deposit reconciliation, vendor invoice coding, receivables and aging, month-end close, and the preparation of owner statements, board packs and management reports. What does not move is approval, payment release, and any judgement that needs your licence or your authority — including the tax return, which stays with your CPA.',
+      'The recurring, rule-bound part: transaction processing, bank and deposit reconciliation, vendor invoice coding, receivables and aging, month-end close, and the preparation of owner statements, board packs and management reports. What does not move is approval, payment release, and any judgment that needs your licence or your authority — including the tax return, which stays with your CPA.',
   },
   {
     question: 'Can you support property management companies?',

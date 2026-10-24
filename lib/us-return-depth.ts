@@ -33,7 +33,7 @@
  * `knowledge/company/scope-boundaries.md` §2 is the highest-risk line on this
  * site. On a 1040 the positions are the taxpayer's facts — filing status,
  * residency, dependency. On a 1065 the allocations are a reading of the
- * partnership agreement, which is a professional judgement about a legal
+ * partnership agreement, which is a professional judgment about a legal
  * document and emphatically not a preparer's to make.
  */
 
@@ -66,7 +66,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       },
       {
         h: 'Brokerage basis is where the quiet reconstruction happens',
-        p: 'Covered securities carry their basis onto the 1099-B. Non-covered ones do not, and neither do many transfers between custodians, inherited positions or shares from an employer plan. Somebody has to reconstruct it from statements, and that is preparation work rather than judgement — provided the reconstruction is shown rather than asserted. Where the record genuinely will not support a figure, that goes to you as an open item, not into the return as an estimate.',
+        p: 'Covered securities carry their basis onto the 1099-B. Non-covered ones do not, and neither do many transfers between custodians, inherited positions or shares from an employer plan. Somebody has to reconstruct it from statements, and that is preparation work rather than judgment — provided the reconstruction is shown rather than asserted. Where the record genuinely will not support a figure, that goes to you as an open item, not into the return as an estimate.',
       },
       {
         h: 'A Schedule C turns a tax return into a bookkeeping job first',
@@ -109,7 +109,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       },
     ],
     boundary:
-      'Review, filing and authorization requirements. Filing status, residency and dependency determinations. Whether a deduction or credit is supportable on the facts. Any position that requires professional judgement rather than mechanical preparation. We prepare the return and show the working so the applicable review and approval process is clear.',
+      'Review, filing and authorization requirements. Filing status, residency and dependency determinations. Whether a deduction or credit is supportable on the facts. Any position that requires professional judgment rather than mechanical preparation. We prepare the return and show the working so the applicable review and approval process is clear.',
   },
 
   '1065': {
@@ -147,7 +147,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       {
         question: 'Do you decide how income is allocated between partners?',
         answer:
-          'No, and this is the clearest boundary on this page. Allocations follow the partnership agreement, and reading that agreement is a professional judgement about a legal document. Your firm determines the allocation, including any special or targeted allocation and the method for a year with partner changes; we prepare to that determination and show the resulting schedules.',
+          'No, and this is the clearest boundary on this page. Allocations follow the partnership agreement, and reading that agreement is a professional judgment about a legal document. Your firm determines the allocation, including any special or targeted allocation and the method for a year with partner changes; we prepare to that determination and show the resulting schedules.',
       },
       {
         question: 'Can you prepare the K-1s as well as the return?',
@@ -171,7 +171,7 @@ export const returnDepth: Record<string, ReturnDepth> = {
       },
     ],
     boundary:
-      'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Review, filing and authorization requirements for the return and K-1s. Any position on a book-to-tax difference that requires professional judgement rather than mechanical preparation. Whether a payment is a guaranteed payment or a distribution where the agreement is not explicit. We prepare and show the working so the applicable review and approval process is clear.',
+      'Reading the partnership agreement and determining the allocations, including special and targeted allocations and the method for a year in which partners changed. Review, filing and authorization requirements for the return and K-1s. Any position on a book-to-tax difference that requires professional judgment rather than mechanical preparation. Whether a payment is a guaranteed payment or a distribution where the agreement is not explicit. We prepare and show the working so the applicable review and approval process is clear.',
   },
   '1120': {
     slug: '1120',

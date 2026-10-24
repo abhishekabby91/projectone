@@ -116,6 +116,9 @@ export const testimonials = [
 
 export const companyInfo = {
   name: 'Accounstone',
+  // Registered entity, confirmed by the owner 2026-10-24. Published in the
+  // Organization schema's legalName and the footer legal line, not in page copy.
+  legalName: 'Accounstone Globus LLP',
   tagline: 'Accounting, Bookkeeping & Tax Outsourcing',
   description: 'Accounstone provides accounting, bookkeeping and tax outsourcing support to accounting firms and businesses. The focus is practical: defined workflows, clear handoffs, documented work, quality review, and communication that keeps the client team informed.',
   website: 'https://www.accounstone.com',

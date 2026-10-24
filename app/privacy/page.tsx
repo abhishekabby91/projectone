@@ -66,7 +66,7 @@ export default function PrivacyPage() {
         <div className="bg-input p-6 rounded-lg border border-border">
           <h2 className="text-2xl font-bold text-primary mb-4">5. Data Security</h2>
           <p className="text-muted">
-            Client data handling, system access and any retention or transfer arrangements should be confirmed against the agreed engagement scope and applicable contractual requirements. Accounstone does not currently hold SOC 2 certification; confirm any specific documentation requirements before an evaluation proceeds.
+            Client data handling, system access and any retention or transfer arrangements should be confirmed against the agreed engagement scope and applicable contractual requirements.
           </p>
         </div>
 

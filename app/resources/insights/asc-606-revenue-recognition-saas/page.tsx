@@ -133,7 +133,7 @@ export default function ASC606Insight() {
         <li>
           <strong>Implementation and setup fees.</strong> Whether these are a distinct
           performance obligation or part of the subscription changes when they are
-          recognised. It is a judgement, it depends on the contract, and it is not
+          recognised. It is a judgment, it depends on the contract, and it is not
           one a bookkeeper should make alone.
         </li>
         <li>

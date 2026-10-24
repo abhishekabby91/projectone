@@ -205,8 +205,8 @@ export default function AboutPage() {
             <div className="mt-5 space-y-4">
               <p className="text-base md:text-lg text-muted leading-relaxed">
                 Technology plays an important role in modern accounting, but people remain at the center of the work.
-                Accounstone is being built around the idea that skilled professionals, documented processes, knowledge
-                sharing and continuous learning can contribute to consistent and thoughtful delivery.
+                Accounstone works on the principle that skilled professionals, documented processes, knowledge
+                sharing and continuous learning produce consistent and thoughtful delivery.
               </p>
               <p className="text-base md:text-lg text-muted leading-relaxed">
                 Our approach is intended to help team members understand not only what needs to be done, but also the
@@ -391,11 +391,6 @@ export default function AboutPage() {
                 others.
               </p>
               <p className="text-base md:text-lg text-muted leading-relaxed">
-                Our founder&rsquo;s own journey was shaped, in part, by the opportunity to continue his education
-                through support received during his school years. That experience created a lasting belief that
-                opportunities received should, wherever possible, lead to opportunities created for others.
-              </p>
-              <p className="text-base md:text-lg text-muted leading-relaxed">
                 This belief continues to influence the direction of Accounstone. Our long-term vision is to create
                 opportunities for accounting professionals to develop their skills, share knowledge, work with
                 international teams and contribute to meaningful work across borders.
@@ -451,7 +446,7 @@ export default function AboutPage() {
                 ))}
               </ol>
               <p className="mt-6 text-base text-muted leading-relaxed">
-                That is the direction Accounstone is being built around.
+                That is the direction Accounstone works toward.
               </p>
             </div>
           </Reveal>

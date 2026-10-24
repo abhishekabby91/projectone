@@ -78,7 +78,7 @@ export const regionalContext: Record<string, ContextEntry> = {
     paragraphs: [
       "There is a version of month-end where the numbers arrive, the controller reviews them, and the close is done. There is a more common version where the numbers arrive, the controller finds that two accounts do not tie, rebuilds the schedules to work out why, and effectively closes the month a second time. The second version is expensive, and it is expensive in senior hours rather than in fees.",
       "What separates them is usually the checklist. Not a checklist as a document that exists, but as the thing the work actually runs on: each recurring task with an owner, a position in the sequence, and a due day relative to period end. Without it, the close is a shared assumption about what someone probably did, and the reviewer has to verify rather than review.",
-      "The judgement stays where it belongs. Reclassifications that turn on intent, accounting policy, anything with a tax consequence, and sign-off on the statements remain with your controller or CPA. What we prepare is the reconciled position those decisions are made from, with the exceptions listed rather than buried.",
+      "The judgment stays where it belongs. Reclassifications that turn on intent, accounting policy, anything with a tax consequence, and sign-off on the statements remain with your controller or CPA. What we prepare is the reconciled position those decisions are made from, with the exceptions listed rather than buried.",
     ],
     aside: {
       label: 'What arrives with your reviewer',
@@ -91,7 +91,7 @@ export const regionalContext: Record<string, ContextEntry> = {
     paragraphs: [
       "A UK close carries two obligations that draw on the same records: the VAT quarter that keeps arriving, and the year-end accounts that arrive once but need everything the quarters were supposed to have kept in order. When the monthly work is treated as VAT preparation alone, the year end begins by establishing what the balances actually are.",
       "That shows up in predictable places. Accruals and prepayments carried forward without being interrogated. Director transactions that need a decision nobody made at the time. Disclosure inputs - related parties, commitments, leases - that were never accumulated during the year and now have to be reconstructed from twelve months of detail under time pressure.",
-      "Running the close so both obligations draw on one finished set of records is mostly a sequencing question rather than a volume one. Your registered practitioner keeps the framework decision, anything that turns on judgement, and the filings to HMRC and Companies House. We keep the underlying position current enough that their review is a review.",
+      "Running the close so both obligations draw on one finished set of records is mostly a sequencing question rather than a volume one. Your registered practitioner keeps the framework decision, anything that turns on judgment, and the filings to HMRC and Companies House. We keep the underlying position current enough that their review is a review.",
     ],
     aside: {
       label: 'On who holds what',
@@ -117,7 +117,7 @@ export const regionalContext: Record<string, ContextEntry> = {
     eyebrow: 'If this sounds familiar',
     title: 'When Tax Season Capacity Is the Constraint, Not Skill',
     paragraphs: [
-      "Most firms that look for tax-season help are not short of expertise. They are short of hours in a ten-week window, and the work that consumes those hours is rarely the judgement. It is the organising: chasing the document that never arrived, building the workpaper, tying the schedule, and then doing it again for the next return.",
+      "Most firms that look for tax-season help are not short of expertise. They are short of hours in a ten-week window, and the work that consumes those hours is rarely the judgment. It is the organising: chasing the document that never arrived, building the workpaper, tying the schedule, and then doing it again for the next return.",
       "The risk in delegating that is well understood, because everyone has seen it go the other way. A return arrives prepared but with the workpapers assembled afterwards to justify what was entered, and the reviewer ends up reconstructing the preparation to trust it. That costs more than doing it in-house. What prevents it is building the workpapers as the work proceeds and stopping at anything that requires a decision rather than deciding it.",
       "The boundary is not negotiable and we would rather be explicit about it. Signing, filing and representing a taxpayer before the IRS require a licence under Circular 230. Those stay inside your firm, with the CPA or enrolled agent who holds it. We prepare; your people decide and sign.",
     ],
@@ -132,7 +132,7 @@ export const regionalContext: Record<string, ContextEntry> = {
     paragraphs: [
       "The Self Assessment deadline concentrates a great deal of work into a few weeks, and Corporation Tax dates scattered across the year make capacity planning harder rather than easier. The pressure is rarely the computation. It is that the records the computation depends on have not been finished, so preparation begins with reconciliation \u2014 usually performed by the person who was supposed to be reviewing.",
       "A CT600 needs a settled set of accounts behind it. If the year end is still moving while the computation is being built, the work gets done twice: once on the draft position and again when the balances are agreed. The same is true of a Self Assessment where income sources have not been confirmed complete before anyone starts.",
-      "Preparation work moves; judgement does not. Whether an expense is genuinely disallowable, how a director transaction should be treated, anything approaching planning or advice, and the submission to HMRC all stay with your practice. We do not hold HMRC portal credentials and we do not offer tax planning in any form.",
+      "Preparation work moves; judgment does not. Whether an expense is genuinely disallowable, how a director transaction should be treated, anything approaching planning or advice, and the submission to HMRC all stay with your practice. We do not hold HMRC portal credentials and we do not offer tax planning in any form.",
     ],
     aside: {
       label: 'Something we would rather say early',
@@ -296,7 +296,7 @@ export const regionalContext: Record<string, ContextEntry> = {
     paragraphs: [
       "For many UK companies the audit is an annual event that arrives against records kept for a different purpose. The ledger has been maintained to serve the VAT quarter, which is a real obligation but a different one, and the lead schedules an auditor expects have to be constructed once fieldwork is already scheduled.",
       "The predictable consequences follow. Movements on balance sheet accounts have to be explained retrospectively rather than as they occurred. Disclosure inputs - related parties, commitments, leases, deferred tax movements - are assembled from twelve months of detail under time pressure. Intercompany balances that were never agreed during the year get agreed now, with the other side also under pressure.",
-      "Preparing that layer during the year rather than in the fortnight before fieldwork does not change the audit. It changes how much of it is spent waiting. The engaged registered auditor keeps every procedure, all professional judgement and the opinion.",
+      "Preparing that layer during the year rather than in the fortnight before fieldwork does not change the audit. It changes how much of it is spent waiting. The engaged registered auditor keeps every procedure, all professional judgment and the opinion.",
     ],
     aside: {
       label: 'A question worth asking early',

@@ -24,7 +24,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
     items: [
       { h: 'Source documents are usually the real bottleneck', p: 'Transactions cannot be coded correctly from a bank feed alone. A card charge shows an amount and a merchant, not what was bought or which entity it belonged to. Where receipts and invoices arrive late or not at all, the ledger fills with plausible guesses that someone has to unpick at year end. Fixing document flow first usually does more for accuracy than any change to the posting process.' },
       { h: 'A chart of accounts compounds its own mistakes', p: 'A chart that grew by accretion — a new account each time something did not fit — produces reports nobody trusts. In the U.S. this bites hardest on multi-state activity: if revenue is not separable by state, the nexus picture cannot be assembled without rebuilding history. Getting the structure right is cheap early and expensive later.' },
-      { h: 'Review is part of the process, not an audit of it', p: 'Every engagement has a named preparer and a named reviewer, with the review point agreed before work starts. The reviewer is looking at exceptions and judgement items, not re-performing the posting. Without that split, either everything gets checked twice or nothing gets checked at all.' },
+      { h: 'Review is part of the process, not an audit of it', p: 'Every engagement has a named preparer and a named reviewer, with the review point agreed before work starts. The reviewer is looking at exceptions and judgment items, not re-performing the posting. Without that split, either everything gets checked twice or nothing gets checked at all.' },
       { h: 'The first month is not the steady state', p: 'Onboarding usually involves cleanup: unreconciled periods, an opening balance that does not agree, historical coding that has to be understood before it can be continued. That work is scoped separately from the recurring engagement, because pricing it as though it were routine misleads everyone.' },
       { h: 'Cost is driven by volume and mess, not by headcount', p: 'What moves the number is transaction volume, the number of accounts and entities, how many bank and card feeds have to reconcile, the state of the opening position, and turnaround expectations. Two businesses with the same revenue can differ several-fold on all of these.' },
     ],
@@ -64,7 +64,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
       { h: '2. Define the close checklist', p: 'Every recurring task is written down with an owner, a sequence position and a due day relative to period end. This is the artefact the engagement runs on — without it, "the close" is a shared assumption rather than a process.' },
       { h: '3. Run the recurring reconciliations and entries', p: 'Bank, card and balance sheet reconciliations, recurring accruals, prepaid amortisation, and standard journals are prepared to the checklist. Exceptions are flagged as they arise rather than collected into a list at the end.' },
       { h: '4. Close and report', p: 'The period is closed and the reporting package assembled — P&L, balance sheet, and the supporting schedules a reviewer or lender will ask for, formatted to U.S. GAAP conventions.' },
-      { h: '5. Review and hand off', p: 'The package goes to your controller or CPA with exceptions and judgement items called out explicitly, so review time is spent on decisions rather than on locating them.' },
+      { h: '5. Review and hand off', p: 'The package goes to your controller or CPA with exceptions and judgment items called out explicitly, so review time is spent on decisions rather than on locating them.' },
     ],
   },
   'accounting/united-kingdom': {
@@ -76,7 +76,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
       { h: '2. Define the close checklist against both cycles', p: 'Tasks are written down with an owner and a due day, positioned so the VAT quarter and the year-end requirements draw on the same finished work rather than triggering two separate efforts.' },
       { h: '3. Run the recurring reconciliations and entries', p: 'Bank, debtor, creditor, accrual and prepayment reconciliations are prepared each period under FRS 102 conventions, with VAT control accounts agreed as part of the routine rather than at the quarter deadline.' },
       { h: '4. Close and report', p: 'The period is closed and management reporting assembled, with the year-end disclosure inputs — related parties, commitments, leases — accumulated during the year instead of reconstructed in the final weeks.' },
-      { h: '5. Review and hand off', p: 'The package goes to your registered practitioner with exceptions and judgement items identified, ready for the decisions and submissions that are theirs to make.' },
+      { h: '5. Review and hand off', p: 'The package goes to your registered practitioner with exceptions and judgment items identified, ready for the decisions and submissions that are theirs to make.' },
     ],
   },
   'accounting/australia': {
@@ -88,7 +88,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
       { h: '2. Define the close checklist against the BAS cycle', p: 'Recurring tasks are written down with an owner and a due day, positioned so each BAS period leaves the ledger in a state the year end can build on directly.' },
       { h: '3. Run the recurring reconciliations and entries', p: 'Bank, debtor, creditor and clearing account reconciliations are completed each period alongside GST control account agreement, with recurring accruals and provisions posted under AASB conventions.' },
       { h: '4. Close and report', p: 'The period is closed and reporting assembled, with BAS-ready records produced as an output of the close rather than as a separate exercise afterwards.' },
-      { h: '5. Review and hand off', p: 'The package goes to your registered agent with exceptions and judgement items flagged, ready for the lodgment decisions that belong to them.' },
+      { h: '5. Review and hand off', p: 'The package goes to your registered agent with exceptions and judgment items flagged, ready for the lodgment decisions that belong to them.' },
     ],
   },
 
@@ -100,8 +100,8 @@ export const serviceDepth: Record<string, DepthEntry> = {
     items: [
       { h: 'Intake', p: 'Source documents are gathered against a checklist built for the entity type, so a partnership return is not started while K-1 inputs are still outstanding. Missing items are identified at the start rather than discovered halfway through.' },
       { h: 'Prepare', p: 'The return is prepared in your software — Drake, CCH Axcess or whatever the practice runs — with workpapers built as the work proceeds rather than reconstructed afterwards for the reviewer.' },
-      { h: 'Flag', p: 'Anything requiring judgement is stopped and flagged rather than decided: a position that could go more than one way, a basis question, an unusual transaction, an item where the documentation does not support the obvious treatment.' },
-      { h: 'Review', p: 'What reaches the reviewer is a prepared return with tied-out workpapers and an explicit list of open questions. The reviewer applies judgement to flagged items instead of hunting for them.' },
+      { h: 'Flag', p: 'Anything requiring judgment is stopped and flagged rather than decided: a position that could go more than one way, a basis question, an unusual transaction, an item where the documentation does not support the obvious treatment.' },
+      { h: 'Review', p: 'What reaches the reviewer is a prepared return with tied-out workpapers and an explicit list of open questions. The reviewer applies judgment to flagged items instead of hunting for them.' },
       { h: 'Signature and filing stay with the licensed professional', p: 'The CPA or enrolled agent signs and files. We do not sign returns, do not file, and do not represent taxpayers before the IRS — that requires a licence under Circular 230.' },
     ],
   },
@@ -112,7 +112,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
     items: [
       { h: 'Intake', p: 'Source documents and the underlying records are gathered against a checklist appropriate to the return — a CT600 needs a finished set of accounts behind it, a Self Assessment needs income sources confirmed and complete.' },
       { h: 'Prepare', p: 'Workpapers and computations are prepared from records that have already been reconciled, so the computation is built on an agreed position rather than a moving one.' },
-      { h: 'Flag', p: 'Judgement items are stopped and raised: a disallowable expense that is arguable, a capital-versus-revenue question, a director transaction that needs a decision rather than a default treatment.' },
+      { h: 'Flag', p: 'Judgment items are stopped and raised: a disallowable expense that is arguable, a capital-versus-revenue question, a director transaction that needs a decision rather than a default treatment.' },
       { h: 'Review', p: 'The practitioner receives a prepared computation with supporting workpapers and a short list of open questions, rather than a folder to work through.' },
       { h: 'Submission stays with your registered practitioner', p: 'Filing to HMRC is theirs. We do not hold HMRC portal credentials, and we do not provide tax planning or advisory work in any form.' },
     ],
@@ -124,8 +124,8 @@ export const serviceDepth: Record<string, DepthEntry> = {
     items: [
       { h: 'Intake', p: 'Records are gathered against a checklist matched to the entity — a company, a trust and a partnership each need different supporting material, and a trust needs its distribution resolutions before anything can be finalised.' },
       { h: 'Prepare', p: 'Workpapers and the return are prepared from a reconciled position, with GST-related differences already resolved during the year rather than surfacing as unexplained variances now.' },
-      { h: 'Flag', p: 'Judgement items are raised rather than decided: deductibility that is arguable, a capital-versus-revenue question, a Division 7A consideration, a trust distribution that needs the agent’s direction.' },
-      { h: 'Review', p: 'Your registered tax agent receives a prepared return with tied-out workpapers and an explicit list of open questions to apply judgement to.' },
+      { h: 'Flag', p: 'Judgment items are raised rather than decided: deductibility that is arguable, a capital-versus-revenue question, a Division 7A consideration, a trust distribution that needs the agent’s direction.' },
+      { h: 'Review', p: 'Your registered tax agent receives a prepared return with tied-out workpapers and an explicit list of open questions to apply judgment to.' },
       { h: 'Lodgment stays with your registered tax agent', p: 'Lodgment is theirs, as is BAS lodgment for a registered BAS agent. We do not hold ATO portal access, and we do not provide tax planning or structuring advice in any form.' },
     ],
   },
@@ -176,7 +176,7 @@ export const serviceDepth: Record<string, DepthEntry> = {
     items: [
       { h: '1. Invoice received', p: 'Invoices arrive through a single defined channel rather than to individual inboxes, and are logged on arrival. An invoice sitting in someone’s email is invisible to the process and to the accrual.' },
       { h: '2. Matched and coded', p: 'The invoice is matched to a purchase order or receipt where one exists, coded to the correct account and entity, and checked against the vendor record — including the W-9 data that year-end 1099 reporting will depend on.' },
-      { h: '3. Routed for approval', p: 'Approval follows your authority matrix, not an ad-hoc judgement about who to ask. Each item has a named approver and a visible status, so "waiting on approval" identifies a person rather than describing a state.' },
+      { h: '3. Routed for approval', p: 'Approval follows your authority matrix, not an ad-hoc judgment about who to ask. Each item has a named approver and a visible status, so "waiting on approval" identifies a person rather than describing a state.' },
       { h: '4. Payment run prepared', p: 'Approved invoices are assembled into a run against the schedule, with duplicates and early-payment discounts checked. We prepare the run; releasing payment stays with your authorised signatory.' },
       { h: '5. Reconciled and closed', p: 'The AP subledger is agreed to the general ledger, the aging is reviewed for items stuck at any step, and unresolved queries are carried forward explicitly rather than silently.' },
     ],

@@ -40,7 +40,7 @@ export const CONTACT_FAQS = [
   {
     question: 'How is our client data handled?',
     answer:
-      'Before work starts, agree confidentiality terms, the people and systems that may be accessed, and how permissions will be reviewed or removed. Accounstone does not currently hold SOC 2 certification; if your procurement process requires it, confirm this before evaluation.',
+      'Before work starts, agree confidentiality terms, the people and systems that may be accessed, and how permissions will be reviewed or removed.',
   },
   {
     question: 'Can you work inside the systems we already use?',

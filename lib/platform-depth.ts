@@ -88,7 +88,7 @@ export const platformDepth: Record<string, PlatformDepth> = {
       {
         question: 'Can you work in QuickBooks Online alongside our in-house bookkeeper?',
         answer:
-          'Yes, and it is a common arrangement. The usual split is that we take the recurring processing and reconciliation volume and your bookkeeper keeps ownership of the relationships, the judgement calls and the review. It works when the boundary is written down at onboarding rather than assumed.',
+          'Yes, and it is a common arrangement. The usual split is that we take the recurring processing and reconciliation volume and your bookkeeper keeps ownership of the relationships, the judgment calls and the review. It works when the boundary is written down at onboarding rather than assumed.',
       },
       {
         question: 'We are moving from QuickBooks Desktop. Can you help?',
@@ -283,7 +283,7 @@ export const platformDepth: Record<string, PlatformDepth> = {
       {
         question: 'Can you take on just part of the NetSuite work?',
         answer:
-          'Yes. A common split is that we take reconciliation and the recurring close preparation while your controller keeps ownership of judgement, review and anything client- or board-facing. The boundary gets written down at onboarding rather than assumed.',
+          'Yes. A common split is that we take reconciliation and the recurring close preparation while your controller keeps ownership of judgment, review and anything client- or board-facing. The boundary gets written down at onboarding rather than assumed.',
       },
       {
         question: 'What about our saved searches and management reports?',
@@ -343,7 +343,7 @@ export const platformDepth: Record<string, PlatformDepth> = {
       {
         question: 'What does this actually free up during season?',
         answer:
-          'The hours your reviewers currently spend on document chasing, data entry and workpaper assembly. Those are the tasks that scale with volume rather than with judgement, and they are what turns review into a second preparation pass by the most expensive person in the firm.',
+          'The hours your reviewers currently spend on document chasing, data entry and workpaper assembly. Those are the tasks that scale with volume rather than with judgment, and they are what turns review into a second preparation pass by the most expensive person in the firm.',
       },
       {
         question: 'How do you handle client documents securely?',
@@ -388,12 +388,12 @@ export const platformDepth: Record<string, PlatformDepth> = {
       'Engagement file left in a state someone outside it can pick up',
     ],
     notOurs:
-      'We do not implement or administer CCH Axcess, sign or file returns, form an audit opinion, or claim Wolters Kluwer certification or partner status. We prepare inside your environment, to your templates and your review points; every judgement, conclusion and signature stays with your firm.',
+      'We do not implement or administer CCH Axcess, sign or file returns, form an audit opinion, or claim Wolters Kluwer certification or partner status. We prepare inside your environment, to your templates and your review points; every judgment, conclusion and signature stays with your firm.',
     faqs: [
       {
         question: 'What can be prepared in CCH Axcess without our reviewers?',
         answer:
-          'Trial balance import and mapping checks, lead schedules, supporting workpapers, book-to-tax difference documentation, and the recurring preparation your reviewers currently absorb. Every conclusion, judgement and signature stays with your firm.',
+          'Trial balance import and mapping checks, lead schedules, supporting workpapers, book-to-tax difference documentation, and the recurring preparation your reviewers currently absorb. Every conclusion, judgment and signature stays with your firm.',
       },
       {
         question: 'Do you form audit conclusions?',

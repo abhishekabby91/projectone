@@ -81,8 +81,30 @@ Support means the recurring accounting work inside an existing setup — never i
 | Serves Canada | Third-party directory | No site content. Needs client confirmation. |
 | "Financial reporting" as a service line | Third-party directory | Conflicts with scope boundary §1. Needs decision. |
 
+## Legal entity (added 2026-10-24, on the owner's instruction)
+
+**Accounstone Globus LLP.**
+
+The owner supplied this in session on 2026-10-24 and asked for it to be added,
+which is why it has moved out of the "not on file" list below.
+
+Where it is published: `companyInfo.legalName` in `lib/data.ts`, which feeds the
+**`legalName` field of the Organization schema** and the **footer copyright
+line**. It is also named once in prose, in the "Where is the work performed"
+item on `/data-security`, because a buyer asking who they are contracting with
+should not have to read structured data to find out.
+
+Two things still open on this, and both need the owner rather than a session:
+
+- **Casing.** The instruction was written "Accounstone Globus Llp"; it is
+  published as "Accounstone Globus LLP", since LLP is an initialism. If the
+  registered form differs, correct it here first — this file is the source the
+  schema reads.
+- **Registered office address** is still not on file, and an entity name
+  without one is the half of the pair that procurement asks for second.
+
 ## Not on file — ask before writing
 
-Founding year · Legal entity name · Team size · Registered office address (distinct from delivery centre) · Named client references · Verifiable case study outcomes
+Founding year · Team size · Registered office address (distinct from delivery centre) · Named client references · Verifiable case study outcomes
 
 If a page needs one of these, ask. Do not estimate.

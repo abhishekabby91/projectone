@@ -182,7 +182,7 @@ export default function StaffAugmentationPage() {
               Staff augmentation works best when responsibilities, expected outputs, reviewers, escalation paths and access permissions are agreed before work starts.
             </p>
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              We separate repeatable preparation tasks from judgement calls, keep client-side approvals and sign-off in place, and record exceptions for review. The arrangement is scoped around workload, software, documentation and the standards your firm already uses.
+              We separate repeatable preparation tasks from judgment calls, keep client-side approvals and sign-off in place, and record exceptions for review. The arrangement is scoped around workload, software, documentation and the standards your firm already uses.
             </p>
           </></Reveal>
         </div>

@@ -337,7 +337,7 @@ export default function InquiryForm({
         </div>
 
         <div>
-          <label htmlFor={`message-${uid}`} className={sz.label}>What is the work you need covered?</label>
+          <label htmlFor={`message-${uid}`} className={sz.label}>Tell us about the work — volumes, systems and timing</label>
           <textarea
             id={`message-${uid}`}
             name="message"

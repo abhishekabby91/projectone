@@ -41,9 +41,9 @@
  * - **White-label language is fine and is what firms ask for** — working inside
  *   the firm's process, formatting and branding. It must never imply
  *   Accounstone becomes a licensed party to the engagement.
- * - **No audit judgement, no tax positions, no advisory.** The CAS note in the
+ * - **No audit judgment, no tax positions, no advisory.** The CAS note in the
  *   knowledge file is explicit: production work can be delegated, advisory,
- *   judgement and sign-off stay with the firm's licensed staff.
+ *   judgment and sign-off stay with the firm's licensed staff.
  * - **No turnaround time, ramp-up duration, headcount, client count, capacity
  *   figure or saving percentage.** The knowledge file says it outright: prefer
  *   a realistic ramp-up plan built from the actual work over an arbitrary
@@ -103,7 +103,7 @@ export const segments: FirmSegment[] = [
     name: 'Audit and assurance support',
     who: 'PBC lists and evidence',
     body:
-      'Fieldwork stalls on documents that have not arrived and schedules that do not tie. That is preparation and chasing, and neither of them needs the licence that the judgement does.',
+      'Fieldwork stalls on documents that have not arrived and schedules that do not tie. That is preparation and chasing, and neither of them needs the licence that the judgment does.',
     points: [
       'PBC request lists maintained and chased to a current status',
       'Client-provided documents organised and indexed to the request',
@@ -185,8 +185,8 @@ export const handoff = [
   },
   {
     n: '04',
-    title: 'Judgement stays yours',
-    body: 'Review, every tax position, audit judgement, sign-off and the client relationship remain the firm’s. Feedback is folded into the workflow.',
+    title: 'Judgment stays yours',
+    body: 'Review, every tax position, audit judgment, sign-off and the client relationship remain the firm’s. Feedback is folded into the workflow.',
     accent: true,
   },
 ];
@@ -195,7 +195,7 @@ export const handoff = [
 export const boundaries = [
   'We never sign, review or take final responsibility for a return or an audit file. Those belong to your licensed staff under Circular 230, and no volume or price changes that.',
   'Authority-facing responsibilities, including any representation or authorization requirements, are confirmed for each engagement and handled in accordance with applicable requirements.',
-  'We take no tax position and make no audit judgement. Where the documents point more than one way, it comes to you with what we established and what we could not.',
+  'We take no tax position and make no audit judgment. Where the documents point more than one way, it comes to you with what we established and what we could not.',
   'White-label means we work inside your process, your formatting and your branding. It does not make us a party to your engagement, and we would never describe it that way to anyone.',
   'We give no advice to your clients and make no client-facing contact unless your firm has specifically asked and defined what that means.',
   'We never hold banking control, filing credentials or an EFIN, in any market.',

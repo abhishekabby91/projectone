@@ -1,3 +1,115 @@
+## 2026-10-24d — External audit worked through: legal entity published, certification admissions removed, two live scope breaches found in the case studies
+
+An external audit of the live site was supplied. Each claim was checked against
+the built site before acting; three did not reproduce and are recorded as such,
+and the audit also led to two breaches it had not spotted.
+
+**Owner instructions acted on (2026-10-24).**
+
+- **Legal entity published: Accounstone Globus LLP.** Recorded in
+  `knowledge/company/identity.md`, which previously listed "Legal entity name"
+  under *Not on file — ask before writing*; it has moved out of that list with
+  the owner's instruction noted as the source. It reaches the site through
+  `companyInfo.legalName` in `lib/data.ts`, which feeds the Organization
+  schema's `legalName` and the footer copyright line, plus one prose mention on
+  `/data-security`. **Casing is flagged in `identity.md`:** the instruction read
+  "Llp" and it is published "LLP"; if the registered form differs, that file is
+  the place to correct it. Registered office address is still not on file.
+- **The founder story is off `/about`**, and the two "Accounstone is being
+  built" phrasings are gone — now "works on the principle that…" and "the
+  direction Accounstone works toward". The surrounding opportunity and vision
+  framing is kept; only the personal account was removed.
+- **The certification admissions are gone, and there were six, not one.** The
+  audit found three on `/data-security`. A grep for the claim pattern — the
+  method CLAUDE.md already prescribes — found four more, on
+  `/markets/united-kingdom`, `/markets/united-states`, `/privacy` and in
+  `lib/contact-faqs.ts`. Also removed: "We do not have a certified incident
+  response programme and we are not going to describe one we do not run."
+  **Nothing was replaced with a certification claim** — silence is not a claim,
+  and that is the whole of what changed. The generic red-flag advice on
+  `/resources/guides/how-to-choose-accounting-outsourcing-partner`, which warns
+  buyers about providers claiming licences they lack, is about providers in
+  general and stays.
+- **The gap that admission used to sit in is now filled with something true.**
+  The `/data-security` item that read "What certifications do you hold?" is now
+  "Where is the work performed, and in whose systems?" — answered from sourced
+  facts: the work is performed by Accounstone Globus LLP from the New Delhi
+  delivery centre, inside the client's own software under credentials they grant
+  and revoke, with the platform's audit log as the authoritative record, and
+  engagements NDA-backed. That answers the audit's "it never says where data is
+  processed" without inventing anything.
+
+**Two live scope breaches the audit did not spot, found while checking its
+case-studies point.** `/resources/case-studies` scenario 3 said *"Revenue was
+restructured under ASC 606 principles"* — the exact claim CLAUDE.md records as
+removed from `/industries/technology` because a technical accounting position
+belongs to the client's CPA or auditor. Scenario 2 said COGS tracking *"was set
+up"* and MRR/ARR reporting *"was built out"*, which is implementation language
+`scope-boundaries.md` §5 forbids. Both rewritten, with the recognition policy
+routed to the company and its CPA.
+
+The audit's own case-studies point was right and is fixed: all three outcomes
+were past tense about specific actors — "The firm **was able to** accept new
+clients", "The founders **walked into** due diligence" — which reads as a
+measured result whatever the page's disclaimer says, and the third repeated the
+"investor-ready financials" promise already deleted from
+`/industries/technology`. All three are now in the structural voice the rest of
+the site uses, with the decision routed back to the client.
+
+**Other audit findings, verified and fixed.**
+
+- **One true duplicate in `public/llms.txt`**, exactly as reported: two
+  byte-identical "Orange County HOA accounting support" lines. Removed. My own
+  first pass claimed four duplicates and that was wrong — the other three are
+  the same URL under different labels in different sections, which is a
+  legitimate cross-reference.
+- **Mixed judgment/judgement spelling**, 113 against 86. Normalised to US
+  "judgment" across the 24 US-facing and global files; the 13 UK and Australia
+  files keep British spelling, which is correct for their reader.
+- **The form really did ask the same thing twice** — "What do you need support
+  with?" (the select) and "What is the work you need covered?" (the message
+  box). The message label is now "Tell us about the work — volumes, systems and
+  timing", which is distinct and doubles as the follow-up for the select's
+  "Other". **No field was added**, because the owner removed a field on purpose
+  to cut friction on the one interaction the page exists for.
+
+**Three audit claims that did not reproduce.**
+
+- *"llms.txt lists the UK and Australia pages but the sitemap doesn't."* They
+  are absent from **both** on `main`. The likely cause is edge caching —
+  `llms.txt` is served with `max-age=14400` — so the audit read a copy from
+  before the 2026-10-22 retirement.
+- *"The site never says where the work is done."* New Delhi appears on the
+  homepage, `/about`, `/data-security` and `/contact`.
+- *"Headings read as run together (BookkeepingBookkeeping support)."* No eyebrow
+  repeats its heading in the HTML on the pages checked. This is the rendering
+  artefact the audit suspected: a text extractor that drops block boundaries
+  concatenates an eyebrow into the heading that follows.
+- *"The case studies page says it is actively pursuing SOC 2."* The phrase
+  appears nowhere in the repository.
+
+Two more where the audit's reading is understandable but the site is already
+correct: **tax scope** is stated — "Forms 1040, 1065, 1120 and 1120-S, with
+workpapers prepared for your firm's review", and returns prepared by Accounstone
+or by the firm are both named — and the **four-phases/seven-steps** difference
+is deliberate and documented: the homepage rail compresses the seven documented
+onboarding steps into four phases and links to the full version.
+
+**Still the owner's, because they are facts a session cannot supply.** Named
+people and credentials, founding year, registered office address, team size,
+testimonials, client logos, insurance, and pricing or a pricing model. On
+security specifically: multi-factor authentication, device controls, whether
+staff sign individual NDAs and how they are vetted, the incident-notification
+deadline and the leaver access-removal deadline. Engagement-level NDAs and the
+processing location were publishable because `identity.md` already carries them;
+none of the rest has a source, and inventing an MFA policy or a notification SLA
+is the kind of claim a client holds you to.
+
+Verified: eslint silent, clean `pnpm next build`, `verify-pages.mjs` unchanged
+at 51 failing checks across 3 rules. Measured against a local production build
+of `main` — Vercel still lacks the `abby2` scope, so production is unreachable
+from this session.
+
 ## 2026-10-24c — Hubs now carry their own head term, and the two real page collisions are gone
 
 Found by searching the built site rather than reading it: 195 indexable pages
