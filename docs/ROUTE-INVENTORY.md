@@ -13,7 +13,7 @@ candidate for overlap.
 
 | Route | Page title |
 |---|---|
-| `/` | Accounting, Tax & Bookkeeping Outsourcing \| Accounstone |
+| `/` | Accounting Outsourcing for CPA & Accounting Firms \| Accounstone |
 | `/about` | About Accounstone: How We Work With Firms |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
 | `/blog/accounts-payable-outsourcing` | AP Process Controls & Fraud Prevention Guide |
