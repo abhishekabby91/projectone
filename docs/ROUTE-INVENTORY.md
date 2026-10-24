@@ -127,12 +127,12 @@ candidate for overlap.
 | `/industries/cpa-firms/texas` | Accounting Outsourcing for Texas CPA Firms |
 | `/industries/cpa-firms/texas-bookkeeping-cleanup-support` | Texas Bookkeeping Cleanup Support |
 | `/industries/cpa-firms/white-label-accounting` | White-Label Accounting for CPA Firms |
-| `/industries/ecommerce` | E-Commerce Accounting Outsourcing |
+| `/industries/ecommerce` | E-Commerce Accounting Services |
 | `/industries/ecommerce/amazon-seller-accounting` | Amazon Seller Accounting Support |
 | `/industries/ecommerce/shopify-accounting` | Shopify Accounting & Payout Reconciliation |
 | `/industries/healthcare` | Medical Practice Accounting Outsourcing |
 | `/industries/healthcare/dental-practice-accounting` | Dental Practice Accounting & Bookkeeping |
-| `/industries/hoa-accounting` | HOA Accounting & Bookkeeping Outsourcing |
+| `/industries/hoa-accounting` | HOA Accounting Services |
 | `/industries/hoa-accounting/appfolio-accounting-support` | AppFolio HOA Accounting Outsourcing |
 | `/industries/hoa-accounting/buildium-accounting-support` | Buildium HOA Accounting Outsourcing |
 | `/industries/hoa-accounting/california` | California HOA Accounting Outsourcing |
@@ -145,10 +145,10 @@ candidate for overlap.
 | `/industries/hoa-accounting/yardi-accounting-support` | Yardi HOA Accounting Outsourcing |
 | `/industries/nonprofit-accounting` | Nonprofit Accounting Outsourcing |
 | `/industries/professional-services` | Professional Services Accounting Outsourcing |
-| `/industries/property-management` | Property Management Bookkeeping Outsourcing |
+| `/industries/property-management` | Property Management Accounting Services |
 | `/industries/property-management/accounting-cleanup` | Property Management Cleanup Outsourcing |
 | `/industries/property-management/appfolio-accounting-california` | AppFolio Accounting Services in California |
-| `/industries/property-management/buildium-accounting-support` | Buildium Accounting & Bookkeeping Support |
+| `/industries/property-management/buildium-accounting-support` | Buildium Property Management Accounting |
 | `/industries/property-management/california` | California Property Management Accounting |
 | `/industries/property-management/doorloop-accounting-support` | DoorLoop Accounting Support |
 | `/industries/property-management/general-ledger-reconciliation` | Property Management GL Reconciliation |
@@ -228,7 +228,7 @@ candidate for overlap.
 | `/technology/cch` | CCH Axcess Accounting Support |
 | `/technology/drake-tax` | Drake Tax Accounting Support |
 | `/technology/netsuite` | NetSuite Month-End Close Accounting Support |
-| `/technology/quickbooks` | QuickBooks Online Accounting Support |
+| `/technology/quickbooks` | QuickBooks Bookkeeping & Accounting Services |
 | `/technology/sage` | Sage Accounting Support |
 | `/technology/xero` | Xero Accounting Services & Support |
 | `/terms` | Terms & Conditions |
