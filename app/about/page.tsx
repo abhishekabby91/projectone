@@ -14,10 +14,10 @@ import { regions } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   // The layout template appends ' | Accounstone'; this title already carries the
   // brand, so opt out rather than ship "About Accounstone | Accounstone".
-  title: 'About Accounstone: How We Work With Firms',
+  title: 'About Accounstone: Accounting Outsourcing for CPA Firms',
   absoluteTitle: true,
   description:
-    'Who Accounstone is, how engagements are structured, and where the line sits between the work we prepare and the review your firm keeps.',
+    'How Accounstone supports CPA and accounting firms with defined bookkeeping, accounting operations and tax-preparation work within existing review processes.',
   path: '/about',
 });
 
@@ -99,8 +99,8 @@ export default function AboutPage() {
 
       <PremiumHero
         subtitle="About Accounstone"
-        title="Accounting Support Built Around People, Knowledge and Progress"
-        description="Every business, firm and professional journey is made up of milestones. Our role is to support the next one."
+        title="An Accounting Outsourcing Partner for CPA and Accounting Firms"
+        description="We support defined bookkeeping, accounting operations and tax-preparation workflows within existing firm systems, with responsibilities and review boundaries agreed in advance."
         cta={{ text: 'Start a Conversation', href: '/contact' }}
         ctaSecondary={{ text: 'View Services', href: '/services' }}
         background="primary-gradient"
