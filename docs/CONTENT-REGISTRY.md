@@ -1,5 +1,9 @@
 ## 2026-10-24 — CPA-first homepage positioning
 
+Updated the homepage title, metadata, hero, primary call to action and opening service explanation to make CPA and accounting firms the primary buyer. Reordered the homepage industry cards so the CPA/accounting-firm page appears first; property management, HOA/community association and real-estate pages remain available as supporting search entry points. The HOA and property-management page files were not changed. Updated the canonical AI-readable summaries to match this audience hierarchy. No client-specific engagement information was added to public-facing content.
+
+## 2026-10-24 — CPA-first homepage positioning
+
 Updated the homepage title, metadata, hero, primary call to action and opening service explanation to make CPA and accounting firms the primary buyer. Reordered the homepage industry cards so the CPA/accounting-firm page appears first; property management, HOA/community association and real-estate pages remain available as supporting search entry points. The HOA and property-management page files were not changed. Updated the canonical AI-readable summaries to match this audience hierarchy. No client-specific case-study details were added or published; confidentiality restrictions remain in force.
 
 ## 2026-10-23 — Accounts receivable outsourcing page refinement
