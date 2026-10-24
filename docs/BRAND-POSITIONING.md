@@ -1,6 +1,6 @@
 # Accounstone brand and website positioning
 
-Last reviewed: 2026-10-18
+Last reviewed: 2026-10-24
 
 ## Positioning decision
 
