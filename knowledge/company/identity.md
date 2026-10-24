@@ -83,7 +83,7 @@ Support means the recurring accounting work inside an existing setup — never i
 
 ## Legal entity (added 2026-10-24, on the owner's instruction)
 
-**Accounstone Globus LLP.**
+**ACCOUNSTONE GLOBUS LLP.**
 
 The owner supplied this in session on 2026-10-24 and asked for it to be added,
 which is why it has moved out of the "not on file" list below.
@@ -96,10 +96,12 @@ should not have to read structured data to find out.
 
 Two things still open on this, and both need the owner rather than a session:
 
-- **Casing.** The instruction was written "Accounstone Globus Llp"; it is
-  published as "Accounstone Globus LLP", since LLP is an initialism. If the
-  registered form differs, correct it here first — this file is the source the
-  schema reads.
+- **Casing is settled.** The owner confirmed the registered form on 2026-10-24:
+  **ACCOUNSTONE GLOBUS LLP**, in capitals, which is how Indian LLP
+  registrations are recorded. It is published that way in the Organization
+  schema's `legalName`, the footer copyright line and the one prose mention on
+  `/data-security`. Keep the capitals — this file is the source the schema
+  reads, so a well-meaning "fix" to title case here would propagate.
 - **Registered office address** is still not on file, and an entity name
   without one is the half of the pair that procurement asks for second.
 

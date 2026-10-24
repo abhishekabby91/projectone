@@ -1,3 +1,26 @@
+## 2026-10-24f — Legal entity set to its registered form, ACCOUNSTONE GLOBUS LLP
+
+The owner confirmed the registered casing on 2026-10-24. The entity is now
+published as **ACCOUNSTONE GLOBUS LLP**, in capitals, which is how Indian LLP
+registrations are recorded — replacing the title-case rendering shipped earlier
+the same day, which this session had flagged as an assumption at the time.
+
+Four places carry it: `companyInfo.legalName` in `lib/data.ts`, which feeds the
+Organization schema's `legalName`; the footer copyright line; the one prose
+mention in the "Where is the work performed" item on `/data-security`; and
+`knowledge/company/identity.md`, which is the source the schema reads.
+
+`identity.md`'s open casing question is closed, and replaced with an
+instruction to keep the capitals — because that file is upstream of the schema,
+a well-meaning correction to title case there would propagate to every page.
+
+The two earlier entries in this file that name the title-case form were left
+untouched. They were accurate when written, and this file's rule is to add an
+entry rather than edit one.
+
+Still not on file: registered office address. An entity name without one is the
+half of the pair procurement asks for second.
+
 ## 2026-10-24e — The six security controls the owner confirmed are now on the page
 
 The owner confirmed in session on 2026-10-24 that Accounstone does operate

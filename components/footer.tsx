@@ -141,7 +141,7 @@ export default function Footer() {
         </nav>
 
         <div className="flex flex-col gap-2 border-t border-white/10 py-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[11px] text-white/45">© {currentYear} Accounstone Globus LLP. All rights reserved.</p>
+          <p className="text-[11px] text-white/45">© {currentYear} ACCOUNSTONE GLOBUS LLP. All rights reserved.</p>
           <ul className="flex flex-wrap items-center gap-x-4 gap-y-1">
             {legalLinks.map((link) => (
               <li key={link.name}>

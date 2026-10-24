@@ -89,7 +89,7 @@ export default function DataSecurityPage() {
             {[
               {
                 h: '1. Where is the work performed, and in whose systems?',
-                p: 'The work is performed by Accounstone Globus LLP from its delivery centre in New Delhi, India, inside your own accounting software under credentials you grant and can revoke. Your financial data stays in your QuickBooks Online, Xero or other platform rather than being copied into a system of ours, so the record of what was done sits in an audit log you control. Engagements are NDA-backed, and the specific systems, access levels and named people are agreed in writing at onboarding.',
+                p: 'The work is performed by ACCOUNSTONE GLOBUS LLP from its delivery centre in New Delhi, India, inside your own accounting software under credentials you grant and can revoke. Your financial data stays in your QuickBooks Online, Xero or other platform rather than being copied into a system of ours, so the record of what was done sits in an audit log you control. Engagements are NDA-backed, and the specific systems, access levels and named people are agreed in writing at onboarding.',
               },
               {
                 h: '2. How is access controlled?',
