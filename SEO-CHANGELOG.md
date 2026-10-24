@@ -1,3 +1,58 @@
+## 2026-10-24b — Five orphaned pages linked, and the site proved crawlable without JavaScript
+
+**Five indexable, sitemap-listed pages had no inbound link anywhere in the
+site's server HTML.** Found by crawling from `/` and following only hrefs
+present in raw HTML (no JavaScript): 215 of 221 page files were reachable. The
+five unreachable ones were the CPA-firm state-support cluster —
+`california-tax-workpaper-support`, `texas-bookkeeping-cleanup-support`,
+`florida-property-entity-accounting-support`,
+`new-york-multi-entity-accounting-support` and
+`illinois-inventory-accounting-support`. Their only references anywhere in the
+repo were `app/sitemap.ts` and the generated `lib/sitemap-dates.ts`; no page,
+component or data file linked them, so they shipped orphaned rather than losing
+a link later (`1db8d833` removed only `/markets/united-states` links from that
+hub). This breaks the "zero orphan pages" invariant in CLAUDE.md, and the
+section on internal links already explains why it matters: a page with no
+contextual inbound link has no mechanical route to climb.
+
+Fixed on their natural parent. The `/industries/cpa-firms` state band already
+mapped five state pages from an array; each row now carries its topical child
+as a second link — Tax workpaper support, Bookkeeping cleanup support,
+Property-entity accounting, Multi-entity accounting, Inventory accounting
+support. The card became a `div` holding two links rather than a nested anchor,
+and the secondary link takes `inline-block py-1.5` because a link list is not
+an inline link and needs the 24px tap target. Re-crawled: **220 of 221
+reachable, zero sitemap routes unreachable.** The one that is not is
+`/thank-you`, which is correct — it is `noindex`, absent from the sitemap and
+deliberately unlinked.
+
+**Everything is in HTML, not JavaScript, and this was measured rather than
+assumed.** All 221 routes probed with `curl`, which does not execute scripts:
+every one returns 200, has a `<main>`, exactly one `h1`, a `<title>`, a
+canonical and JSON-LD, and **no route's server HTML falls under 150 words**
+(min 226 at `/thank-you`, median 1,165, max 5,349). Then ten routes covering
+every template were compared raw-HTML-text against the JavaScript-rendered DOM
+in Chromium. **Every delta is negative** — the raw HTML carries at least as
+much text as the rendered page on all ten — so no route gains content from
+JavaScript. The gaps (largest `/contact`, 954 server words against 570
+visible) are collapsed FAQ accordions and `sr-only` text: confirmed by finding
+a real `lib/contact-faqs.ts` answer string verbatim in `/contact`'s raw HTML.
+Present for crawlers, collapsed for readers, which is the configuration you
+want.
+
+Two smaller things the sweep turned up. A request for a path that does not
+exist returns a **true 404**, not a soft 200. And CLAUDE.md cited
+`/resources/guides/outsourced-bookkeeping-guide` in the FAQ-format section;
+that route does not exist — the guide is at `/blog/outsourced-bookkeeping-guide`
+(1,513 words). Corrected. The other three `/resources/guides/*` paths it names
+all exist.
+
+Verified: eslint silent, clean `pnpm next build`, `verify-pages.mjs` unchanged
+at 51 failing checks across 3 rules — the 48 deliberate retirement entries plus
+the 3 word floors, neither touched here. Still measured against a local
+production build of `main`, not production: the Vercel connection has lost the
+`abby2` scope, so the live site remains unreachable from this session.
+
 ## 2026-10-24 — Metadata budgets repaired, eslint silent again, and the record caught up with the US-focus retirement
 
 **14 metadata budget breaches, all introduced between 2026-10-20 and

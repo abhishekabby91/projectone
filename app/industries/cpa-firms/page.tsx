@@ -276,15 +276,20 @@ export default function CPAFirmsPage() {
           <p className="mb-6 max-w-4xl leading-relaxed text-muted">The core support model is consistent, but firms can use these state pages to explore portfolio-specific examples and the questions to consider when scoping accounting outsourcing. These pages are market tests, not claims that search demand has been ranked by state.</p>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              ['California', '/industries/cpa-firms/california'],
-              ['Texas', '/industries/cpa-firms/texas'],
-              ['Florida', '/industries/cpa-firms/florida'],
-              ['New York', '/industries/cpa-firms/new-york'],
-              ['Illinois', '/industries/cpa-firms/illinois'],
-            ].map(([name, href]) => (
-              <Link key={href} href={href} className="rounded-xl border border-border bg-white p-4 font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-background">
-                Accounting outsourcing for {name} CPA firms <span aria-hidden="true">→</span>
-              </Link>
+              ['California', '/industries/cpa-firms/california', 'Tax workpaper support', '/industries/cpa-firms/california-tax-workpaper-support'],
+              ['Texas', '/industries/cpa-firms/texas', 'Bookkeeping cleanup support', '/industries/cpa-firms/texas-bookkeeping-cleanup-support'],
+              ['Florida', '/industries/cpa-firms/florida', 'Property-entity accounting', '/industries/cpa-firms/florida-property-entity-accounting-support'],
+              ['New York', '/industries/cpa-firms/new-york', 'Multi-entity accounting', '/industries/cpa-firms/new-york-multi-entity-accounting-support'],
+              ['Illinois', '/industries/cpa-firms/illinois', 'Inventory accounting support', '/industries/cpa-firms/illinois-inventory-accounting-support'],
+            ].map(([name, href, topic, topicHref]) => (
+              <div key={href} className="rounded-xl border border-border bg-white p-4 transition-colors hover:border-primary/40">
+                <Link href={href} className="font-semibold text-primary">
+                  Accounting outsourcing for {name} CPA firms <span aria-hidden="true">→</span>
+                </Link>
+                <Link href={topicHref} className="mt-2 inline-block py-1.5 text-sm font-medium text-primary underline underline-offset-4">
+                  {topic}
+                </Link>
+              </div>
             ))}
           </div>
         </div>

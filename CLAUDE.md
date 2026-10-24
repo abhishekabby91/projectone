@@ -2130,7 +2130,7 @@ with no visible block at all. One shape now.
 
 **One typographic character was hiding five good Q&As.** `extractFaqs` tested
 `question.endsWith('?')`, and five headings on
-`/resources/guides/outsourced-bookkeeping-guide` are quoted asks — *"Can an
+`/blog/outsourced-bookkeeping-guide` are quoted asks — *"Can an
 offshore bookkeeper really understand my business?"* — so the string ends in a
 closing curly quote. The test now strips wrapping quotes first, which recovered
 four pages with no content change. **If a page that visibly asks questions has
