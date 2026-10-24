@@ -4,7 +4,7 @@ Concise AI-readable index: https://www.accounstone.com/llms.txt
 
 ## Company summary
 
-Accounstone is an accounting outsourcing company based in New Delhi, India. Its core positioning is **Accounting, Bookkeeping & Tax Outsourcing** for **accounting firms and businesses**.
+Accounstone is an accounting outsourcing company based in New Delhi, India. Its primary audience is **CPA and accounting firms** seeking bookkeeping, accounting production and tax-preparation support within their existing workflows. Industry-specific pages also address distinct accounting needs in property management, HOA/community associations and real estate.
 
 Accounstone provides recurring accounting work through defined processes and client-approved systems. The delivery model is intended to fit into an existing accounting operation rather than require the client to replace its software or redesign its entire workflow.
 
@@ -17,6 +17,10 @@ Accounstone is an **outsourcing provider**, not a software company, accounting-s
 The company's role is to perform defined accounting preparation and processing work through the client's established workflow.
 
 ## Who Accounstone serves
+
+**Primary audience: CPA and accounting firms.** Accounstone supports defined preparation and recurring production work within the firm's existing software, checklists, documentation standards and review process. The firm retains client relationships, professional judgment, review and required sign-off.
+
+Supporting industry pages remain available for visitors searching for specific workflows and direct service needs. They do not change the primary company-wide positioning.
 
 ### Accounting firms and CPA firms
 
