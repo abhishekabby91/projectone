@@ -14,7 +14,7 @@ import { regions } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   // The layout template appends ' | Accounstone'; this title already carries the
   // brand, so opt out rather than ship "About Accounstone | Accounstone".
-  title: 'About Accounstone: Accounting Outsourcing for CPA Firms',
+  title: 'About Accounstone: CPA Firm Outsourcing',
   absoluteTitle: true,
   description:
     'How Accounstone supports CPA and accounting firms with defined bookkeeping, accounting operations and tax-preparation work within existing review processes.',
