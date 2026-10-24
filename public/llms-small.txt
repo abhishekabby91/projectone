@@ -1,6 +1,6 @@
 # Accounstone — Short Reference
 
-Accounstone is an accounting outsourcing provider based in New Delhi, India. It supports accounting firms, CPA firms and businesses with defined bookkeeping, accounting operations, tax-preparation support and related recurring work.
+Accounstone is an accounting outsourcing provider based in New Delhi, India, primarily supporting CPA and accounting firms with defined bookkeeping, accounting operations, tax-preparation support and related recurring work. Industry pages remain available for distinct property management, HOA and real estate accounting workflows.
 
 ## Common service areas
 - Bookkeeping, transaction coding and reconciliations
