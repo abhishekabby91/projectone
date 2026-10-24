@@ -13,8 +13,8 @@ candidate for overlap.
 
 | Route | Page title |
 |---|---|
-| `/` | Accounting Outsourcing for CPA & Accounting Firms \| Accounstone |
-| `/about` | About Accounstone: Accounting Outsourcing for CPA Firms |
+| `/` | Accounting Outsourcing for CPA Firms \| Accounstone |
+| `/about` | About Accounstone: CPA Firm Outsourcing |
 | `/blog` | Accounting & Bookkeeping Knowledge Base |
 | `/blog/accounts-payable-outsourcing` | AP Process Controls & Fraud Prevention Guide |
 | `/blog/accounts-receivable-management` | Accounts Receivable Management: DSO & Aging |
@@ -191,7 +191,7 @@ candidate for overlap.
 | `/resources/insights` | Accounting & Tax Explainers |
 | `/resources/insights/asc-606-revenue-recognition-saas` | ASC 606 Revenue Recognition for SaaS |
 | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Sales Tax Nexus for E-Commerce Sellers |
-| `/services` | Accounting, Bookkeeping & Tax Support for CPA Firms |
+| `/services` | CPA Firm Accounting, Bookkeeping & Tax |
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |
