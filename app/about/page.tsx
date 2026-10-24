@@ -86,7 +86,7 @@ export default function AboutPage() {
     url: `${baseUrl}/about`,
     name: 'About Accounstone',
     description:
-      'Accounstone connects businesses, accounting firms and tax practices with skilled accounting professionals across the US, UK and Australia.',
+      'Accounstone supports CPA and accounting firms with defined bookkeeping, accounting operations and tax-preparation work within their existing systems and review processes.',
     isPartOf: { '@id': `${baseUrl}/#website` },
     about: { '@id': `${baseUrl}/#organization` },
   };
