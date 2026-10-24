@@ -2,14 +2,15 @@
 
 Full reference with expanded company, service, industry and delivery context: https://www.accounstone.com/llms-full.txt
 
-> Accounting, bookkeeping and tax outsourcing for businesses and professional firms.
+> Accounting, bookkeeping and tax outsourcing for CPA and accounting firms.
 
-Accounstone is an accounting outsourcing company based in New Delhi, India. It supports B2B clients with recurring accounting work through agreed workflows, client systems and review processes.
+Accounstone is an accounting outsourcing company based in New Delhi, India. It primarily supports CPA and accounting firms with defined accounting work through agreed workflows, client systems and review processes. Service, industry and software pages provide additional entry points for people searching for specific accounting needs.
 
 ## Core positioning
 
-- **What Accounstone is:** an accounting outsourcing partner. Outsourcing is the service model; remote delivery describes how the work is performed.
-- **Who Accounstone serves:** businesses and professional firms, including CPA and accounting practices, property management companies, HOA and community association management firms, and other businesses with recurring accounting needs.
+- **What Accounstone is:** an accounting outsourcing partner for CPA and accounting firms. Outsourcing is the service model; remote delivery describes how the work is performed.
+- **Primary buyers:** CPA firms and accounting firms that need recurring bookkeeping, accounting operations, tax-preparation and related production support.
+- **Supporting search entry points:** relevant service, industry and software pages, including property management, HOA/community associations and real estate. These pages do not change the primary company-wide positioning.
 - **Core services:** bookkeeping, accounting, tax preparation, accounts payable, accounts receivable, payroll and financial reporting support.
 - **Delivery model:** defined accounting tasks are handled within the client's existing systems, reporting formats and review workflow.
 - **Responsibilities:** the client retains business decisions, payment authority, client relationships and filing responsibilities assigned to it or its licensed professionals.
