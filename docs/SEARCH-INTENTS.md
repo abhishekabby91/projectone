@@ -3,8 +3,8 @@
 One primary search intent → one primary URL. Check this file before creating any new page. If an intent already has an owner below, improve that page instead of creating a competitor — see `AI-WEBSITE-GUIDE.md` → "Content maturity rule" and the Growth System Audit (2026-08-21) §11 (Cannibalization Control).
 
 | Search intent | Primary URL | Intent class |
-| Accounting outsourcing partner for CPA and accounting firms | `/` | Company-wide / primary audience — brand-level overview of the outsourcing model and core service categories; detailed CPA-firm workflow and evaluation intent belongs to `/industries/cpa-firms` |
 |---|---|---|
+| Accounting outsourcing partner for CPA and accounting firms | `/` | Company-wide / primary audience — brand-level overview of the outsourcing model and core service categories; detailed CPA-firm workflow and evaluation intent belongs to `/industries/cpa-firms` |
 | California HOA accounting and bookkeeping outsourcing | `/industries/hoa-accounting/california` | Commercial / state-specific — remote accounting scope for California associations, including assessment ledgers, operating/reserve reconciliations, board reporting and CPA handover; legal interpretation stays with qualified California professionals |
 | San Diego County HOA accounting and bookkeeping support | `/industries/hoa-accounting/san-diego-county` | Commercial / county-specific — remote accounting scope for local associations and management portfolios, focused on assessment ledgers, reconciliations, board packages and year-end handover; not on-site community management |
 | Yardi HOA accounting support — Voyager Condo, Co-op & HOA / Breeze Premier | `/industries/hoa-accounting/yardi-accounting-support` | Commercial / software-specific — assessment and owner ledgers, reconciliations, approved payables, reserve schedules and board-reporting handoff for existing Yardi users; not software implementation or vendor support |
