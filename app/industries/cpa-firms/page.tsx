@@ -226,6 +226,29 @@ export default function CPAFirmsPage() {
         </div>
       </section>
 
+      <section className="w-full py-8 md:py-10 px-6 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Industry Workflows Relevant to Your Client Work</h2>
+          <p className="mt-3 max-w-3xl text-base md:text-lg text-muted leading-relaxed">
+            Your clients work across different sectors, and their accounting workflows differ too. These existing industry pages describe selected property, association and real-estate accounting needs without changing your firm's role as the client-facing professional.
+          </p>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Link href="/industries/property-management" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Property Management</h3>
+              <p className="mt-2 text-sm text-muted">Property-level books, owner statements, tenant and deposit ledgers, and recurring reporting workflows.</p>
+            </Link>
+            <Link href="/industries/hoa-accounting" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">HOA & Community Associations</h3>
+              <p className="mt-2 text-sm text-muted">Assessment records, operating and reserve reconciliations, and board-reporting preparation.</p>
+            </Link>
+            <Link href="/industries/real-estate" className="rounded-xl border border-border bg-input p-5 hover:border-primary/40">
+              <h3 className="font-semibold text-primary">Real Estate</h3>
+              <p className="mt-2 text-sm text-muted">Property and entity-level books, reconciliations, and investor or lender reporting preparation.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full py-10 md:py-14 px-6 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">Related accounting firm resources</h2>
