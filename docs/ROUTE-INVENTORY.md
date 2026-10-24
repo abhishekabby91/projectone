@@ -191,7 +191,7 @@ candidate for overlap.
 | `/resources/insights` | Accounting & Tax Explainers |
 | `/resources/insights/asc-606-revenue-recognition-saas` | ASC 606 Revenue Recognition for SaaS |
 | `/resources/insights/sales-tax-nexus-ecommerce-guide` | Sales Tax Nexus for E-Commerce Sellers |
-| `/services` | Accounting, Bookkeeping & Tax Services |
+| `/services` | Accounting, Bookkeeping & Tax Support for CPA Firms |
 | `/services/accounting/australia` | Accounting Services for Australian Firms |
 | `/services/accounting/united-kingdom` | Accounting Services for UK Practices |
 | `/services/accounting/united-states` | U.S. Outsourced Accounting Services |

@@ -184,7 +184,7 @@ export const routeLastModified: Record<string, string> = {
   '/resources/insights': '2026-09-16',
   '/resources/insights/asc-606-revenue-recognition-saas': '2026-10-24',
   '/resources/insights/sales-tax-nexus-ecommerce-guide': '2026-10-17',
-  '/services': '2026-10-22',
+  '/services': '2026-10-24',
   '/services/accounting/australia': '2026-10-09',
   '/services/accounting/united-kingdom': '2026-10-09',
   '/services/accounting/united-states': '2026-10-22',
