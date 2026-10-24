@@ -119,23 +119,17 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto space-y-5">
           <Reveal>
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              At Accounstone, we believe that every business, firm and professional journey is made up of milestones.
-              A completed project. A growing team. A smoother process. A stronger financial foundation. Each step can
-              contribute to what comes next.
+              Accounstone works primarily with CPA and accounting firms that need support with recurring accounting production, bookkeeping and tax-preparation workflows. The aim is to help firms manage defined work while keeping their own client relationships and review responsibilities.
             </p>
           </Reveal>
           <Reveal delay={0.08}>
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              Accounstone was created with a simple idea: accounting support and knowledge should not be limited by
-              geography. Our aim is to connect businesses, accounting firms and tax practices with skilled accounting
-              professionals who can support their existing operations while encouraging knowledge sharing, practical
-              learning and continuous improvement.
+              Work is organized around the firm's existing software, checklists, documentation standards and handoff process. The scope is agreed before work begins, including which tasks are prepared, what evidence is retained and who reviews or approves the result.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              As Accounstone continues to grow, our focus is on building a flexible accounting support model around
-              different workflows, workloads and business requirements.
+              Industry and service pages explain the particular workflows we can support, including accounting work associated with property management, HOA/community associations and real estate. Those pages address specific needs without changing our primary focus on CPA and accounting firms.
             </p>
           </Reveal>
         </div>
