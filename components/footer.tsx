@@ -25,7 +25,8 @@ export default function Footer() {
       title: 'Industries',
       links: [
         ...industries
-          .filter((industry) => ['real-estate', 'property-management', 'hoa-accounting', 'cpa-firms'].includes(industry.slug))
+          .filter((industry) => ['cpa-firms', 'real-estate', 'property-management', 'hoa-accounting'].includes(industry.slug))
+          .sort((a, b) => ['cpa-firms', 'real-estate', 'property-management', 'hoa-accounting'].indexOf(a.slug) - ['cpa-firms', 'real-estate', 'property-management', 'hoa-accounting'].indexOf(b.slug))
           .map((industry) => ({ name: industry.name, href: `/industries/${industry.slug}` })),
         { name: 'All Industries', href: '/industries' },
       ],
