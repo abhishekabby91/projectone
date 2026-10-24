@@ -184,7 +184,7 @@ export function generateOrganizationSchema() {
 }
 
 export function generateWebsiteSchema() {
-  return { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${baseUrl}/#website`, url: `${baseUrl}/`, name: 'Accounstone', alternateName: ['accounstone.com'], publisher: { '@id': `${baseUrl}/#organization` } };
+  return { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${baseUrl}/#website`, url: `${baseUrl}/`, name: 'Accounstone', publisher: { '@id': `${baseUrl}/#organization` } };
 }
 
 export function generateServiceSchema(service: { name: string; description: string; slug: string; areaServed?: string[]; basePath?: string }) {

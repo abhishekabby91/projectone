@@ -1,3 +1,37 @@
+## 2026-10-24g — Google was showing "accounstone.com" as the site name because the site told it to
+
+The owner reported the homepage SERP result rendering **accounstone.com** above
+the title instead of **Accounstone**. The cause is in our own structured data,
+not in Google's choice.
+
+Google picks the site name shown above a homepage result from a small set of
+signals: the `WebSite` node's `name`, `og:site_name`, the homepage `<title>`,
+and `application-name`. Two of ours already said "Accounstone". The third was
+working against them — the `WebSite` node carried:
+
+```
+"name": "Accounstone", "alternateName": ["accounstone.com"]
+```
+
+`alternateName` is the field for a genuine second name for a site, an acronym
+or a former brand. Listing the bare domain there states that **accounstone.com
+is a sanctioned name for this site**, so Google choosing it was not a
+misreading; it was the site's own declaration. Removed.
+
+After: `og:site_name` = Accounstone, `WebSite.name` = Accounstone, homepage
+title ends "| Accounstone", and no `alternateName` anywhere. A comment above
+`generateWebSiteSchema` in `lib/seo.ts` records why it must not be re-added.
+
+**Two honest limits.** Google is not obliged to use the declared name, and it
+refreshes site names on its own schedule — this removes the signal pointing at
+the domain rather than guaranteeing the result flips. And the effect cannot be
+confirmed from this session: the Vercel connection has lost the `abby2` scope,
+so production is unreachable and this is measured on a local production build
+of `main`.
+
+Verified: eslint silent, clean `pnpm next build`, `verify-pages.mjs` unchanged
+at 51 failing checks across 3 rules.
+
 ## 2026-10-24f — Legal entity set to its registered form, ACCOUNSTONE GLOBUS LLP
 
 The owner confirmed the registered casing on 2026-10-24. The entity is now
