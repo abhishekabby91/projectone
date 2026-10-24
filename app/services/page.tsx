@@ -14,7 +14,7 @@ import { regions, serviceRegions, industries, technologies } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   title: 'CPA Firm Accounting, Bookkeeping & Tax',
   description:
-    'Accounting outsourcing support for CPA and accounting firms, including bookkeeping, tax preparation, reconciliations, payroll and recurring accounting production.',
+    'Accounting outsourcing for CPA and accounting firms: bookkeeping, tax preparation, reconciliations, payroll and recurring accounting production.',
   path: '/services',
 });
 
