@@ -103,6 +103,35 @@ Two things still open on this, and both need the owner rather than a session:
 - **Registered office address** is still not on file, and an entity name
   without one is the half of the pair that procurement asks for second.
 
+## Security controls (confirmed by the owner 2026-10-24)
+
+The owner confirmed in session that all six of these exist. They are therefore
+publishable as practices, and `/data-security` now states them.
+
+| Control | Status |
+|---|---|
+| Multi-factor authentication on accounts used for client work | Confirmed — required |
+| Device controls on machines the work is performed from | Confirmed — exists |
+| Individual staff NDAs, in addition to the engagement NDA | Confirmed — every assigned person |
+| Staff vetting before any client access | Confirmed — exists |
+| Incident-notification deadline | Confirmed to exist — **no figure on file** |
+| Leaver access-removal deadline | Confirmed to exist — **no figure on file** |
+
+**Four specifics are still missing, and the pages are written around that
+rather than guessing.** The two deadlines have no number, and "device controls"
+and "vetting" have no content. So `/data-security` says the deadline and the
+controls are "set in the engagement" — which is true, and is the same device
+this site already uses for response times after an unverified SLA had to be
+removed from eight places (see "Interaction claims are commitments" in
+CLAUDE.md).
+
+**Do not put a number on either deadline, or a list behind either control,
+without the owner supplying it.** An incident-notification SLA and an
+access-removal window are exactly the claims a client holds you to, and
+"24 hours" is the figure a session would reach for by default. When the owner
+gives them, state them once and identically on `/data-security` and in
+`lib/contact-faqs.ts`.
+
 ## Not on file — ask before writing
 
 Founding year · Team size · Registered office address (distinct from delivery centre) · Named client references · Verifiable case study outcomes

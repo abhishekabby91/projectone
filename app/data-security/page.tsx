@@ -93,11 +93,19 @@ export default function DataSecurityPage() {
               },
               {
                 h: '2. How is access controlled?',
-                p: 'Access is to your systems, granted by you, at the level you set — we do not take a copy of your data into a platform of ours. It is limited to the people actually assigned to your engagement rather than to a general team pool, it is agreed in writing at onboarding, and it is removed when a person leaves the engagement or the engagement ends. We ask for the least access that lets the work happen, and we would rather be told no and work around it than hold access nobody reviewed.',
+                p: 'Access is to your systems, granted by you, at the level you set — we do not take a copy of your data into a platform of ours. It is limited to the people actually assigned to your engagement rather than to a general team pool, it is agreed in writing at onboarding, and it is removed when a person leaves the engagement or the engagement ends, and that removal is a defined step with a time limit set in the engagement rather than a best effort. We ask for the least access that lets the work happen, and we would rather be told no and work around it than hold access nobody reviewed.',
               },
               {
-                h: '3. What happens if something goes wrong?',
-                p: 'You are told, promptly and by a person, with what we know and what we do not yet know rather than a reassurance. Because the work happens in your systems under your credentials, we can tell you what we did and when; your platform\u2019s own audit log is the authoritative record and it is one you control, not one we could edit.',
+                h: '3. Who works on your account, and how are they checked?',
+                p: 'Only the people assigned to your engagement. Each signs an individual non-disclosure agreement in addition to the engagement-level NDA, and each is vetted before being granted any client access. The named people, and the process for adding or removing one, are agreed in writing at onboarding, so you are not relying on access held by a general team pool. What the vetting covers, and the evidence of it you can ask to see, is confirmed in the engagement before access is granted.',
+              },
+              {
+                h: '4. What protects the accounts and devices the work is done from?',
+                p: 'Multi-factor authentication is required on the accounts used for client work, and device controls apply to the machines that work is performed from; the specific controls are confirmed in the engagement. Because the work happens inside your own platform under credentials you issue, your session limits, permission levels and audit log stay in force on top of ours — and those remain yours to set, review and revoke.',
+              },
+              {
+                h: '5. What happens if something goes wrong?',
+                p: 'You are told by a person, within the notification deadline set in your engagement, with what we know and what we do not yet know rather than a reassurance. Because the work happens in your systems under your credentials, we can tell you what we did and when; your platform\u2019s own audit log is the authoritative record and it is one you control, not one we could edit.',
               },
             ].map((item) => (
               <div key={item.h} className="rounded-2xl border border-border bg-input p-6 sm:p-8">

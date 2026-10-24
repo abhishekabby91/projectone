@@ -1,3 +1,49 @@
+## 2026-10-24e — The six security controls the owner confirmed are now on the page
+
+The owner confirmed in session on 2026-10-24 that Accounstone does operate
+multi-factor authentication, device controls, individual staff NDAs, staff
+vetting, an incident-notification deadline and a leaver access-removal
+deadline. That confirmation is what made them publishable at all, and
+`/data-security` now states them. Recorded in
+`knowledge/company/identity.md` with the owner's confirmation as the source.
+
+Two items added to the page, and two existing ones strengthened:
+
+- **"3. Who works on your account, and how are they checked?"** — only the
+  people assigned to the engagement; each signs an individual NDA in addition
+  to the engagement-level one; each is vetted before any client access; the
+  named people and the add/remove process are agreed in writing at onboarding.
+- **"4. What protects the accounts and devices the work is done from?"** — MFA
+  required on the accounts used for client work, device controls on the machines
+  the work is performed from, and a reminder that the client's own session
+  limits, permission levels and audit log stay in force on top, because the work
+  happens under credentials they issue.
+- Item 2 now says leaver access removal is **a defined step with a time limit
+  set in the engagement**, rather than the previous unqualified "removed when a
+  person leaves".
+- Item 5 now says notification happens **within the deadline set in the
+  engagement**, rather than only "promptly".
+
+**No figure is stated for either deadline, and that is deliberate.** "Yes we
+do" establishes that the controls exist; it does not supply the number of hours,
+nor what the device controls or the vetting actually cover. Four specifics are
+therefore still missing and `identity.md` records them as missing: the
+incident-notification deadline, the leaver access-removal deadline, the content
+of the device controls and the content of the vetting. The page routes all four
+to "set in the engagement" / "confirmed in the engagement", which is true and is
+the same device this site already uses for response times — adopted after an
+unverified SLA had to be pulled from eight places, five of which a page-by-page
+read had missed.
+
+`identity.md` carries an explicit instruction not to put a number on either
+deadline without the owner supplying it, because **"24 hours" is precisely the
+figure a session would reach for by default**, and an incident-notification SLA
+is the kind of claim a client holds you to. When the owner gives them, they go
+in once and identically on `/data-security` and in `lib/contact-faqs.ts`.
+
+Verified: eslint silent, clean `pnpm next build`, all five items render in the
+right order, `verify-pages.mjs` unchanged at 51 failing checks across 3 rules.
+
 ## 2026-10-24d — External audit worked through: legal entity published, certification admissions removed, two live scope breaches found in the case studies
 
 An external audit of the live site was supplied. Each claim was checked against
