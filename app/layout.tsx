@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     // homepage SEO title duplicated in a second file.
     title: "Accounstone — Accounting Outsourcing for CPA & Accounting Firms",
     description:
-      "Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Accounstone works within existing systems, processes and review structures.",
+      "Accounting outsourcing for CPA and accounting firms, including bookkeeping, accounting operations and tax-preparation support within existing review workflows.",
     images: [
       {
         url: `${baseUrl}/og-image.jpg`,
@@ -100,9 +100,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     // Fallback only, as above.
-    title: "Accounstone — Accounting, Bookkeeping & Tax Outsourcing",
+    title: "Accounstone — Accounting Outsourcing for CPA & Accounting Firms",
     description:
-      "Accounting, bookkeeping and tax outsourcing support for accounting firms and businesses. Accounstone works within existing systems, processes and review structures.",
+      "Accounting outsourcing for CPA and accounting firms, including bookkeeping, accounting operations and tax-preparation support within existing review workflows.",
     images: [`${baseUrl}/og-image.jpg`],
   },
 };
