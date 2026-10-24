@@ -12,9 +12,9 @@ import { generateMetadata, generateFAQSchema, generateBreadcrumbSchema, baseUrl 
 import { regions, serviceRegions, industries, technologies } from '@/lib/data';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Accounting, Bookkeeping & Tax Services',
+  title: 'Accounting, Bookkeeping & Tax Support for CPA Firms',
   description:
-    'Outsourced bookkeeping, accounting, tax preparation, payroll, AP, AR and audit support for accounting firms and businesses.',
+    'Accounting outsourcing support for CPA and accounting firms, including bookkeeping, tax preparation, reconciliations, payroll and recurring accounting production.',
   path: '/services',
 });
 
@@ -66,11 +66,11 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <PremiumHero
-        subtitle="Accounting and Bookkeeping Services"
+        subtitle="Accounting Outsourcing for CPA & Accounting Firms"
         title="Accounting, Bookkeeping & Tax Services"
-        description="Bookkeeping, accounting, tax preparation and recurring accounting workflows, scoped around your systems, reporting needs and review process."
-        cta={{ text: 'Discuss Your Requirements', href: '/contact' }}
-        ctaSecondary={{ text: 'View Solutions', href: '/solutions' }}
+        description="Bookkeeping, accounting operations, tax-preparation support and recurring production work, organized around your existing systems and reviewer workflows."
+        cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
+        ctaSecondary={{ text: 'Explore CPA Firm Support', href: '/industries/cpa-firms' }}
         background="primary-gradient"
       />
 
@@ -88,10 +88,10 @@ export default function ServicesPage() {
           <span className="text-sm font-semibold tracking-wide uppercase text-accent">Overview</span>
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">Accounting Work That Fits Your Existing Workflow</h2>
           <p className="text-lg text-muted leading-relaxed">
-            Accounstone provides accounting, bookkeeping, tax-preparation support, payroll, accounts payable, accounts receivable and audit support to accounting firms and businesses.
+            Accounstone primarily supports CPA and accounting firms with bookkeeping, reconciliations, month-end work, tax-preparation support, payroll, accounts payable and accounts receivable processing.
           </p>
           <p className="text-lg text-muted leading-relaxed">
-            The work is organized around documented workflows, clear preparer and reviewer responsibilities, retained support, and a handoff to the person responsible for review and approval. Scope follows the engagement, software, reporting needs and professional responsibilities involved.
+            Work is organized around the firm's existing software, documentation standards, client requirements and review process. The firm retains its client relationships, professional judgment, final review and required filing or sign-off responsibilities. The service and industry pages describe the specific workflows that can fit within that model.
           </p>
         </></Reveal>
       </section>
