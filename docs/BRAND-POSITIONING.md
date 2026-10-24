@@ -8,9 +8,11 @@ Last reviewed: 2026-10-18
 
 ## B2B audiences
 
-Accounstone serves businesses and professional firms through one consistent accounting-outsourcing model. This includes CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses with recurring accounting needs. These audiences are all important; the homepage must not rank one industry above another or imply that the company is pivoting away from an existing customer segment.
+**Primary buyer: CPA and accounting firms.** Company-wide messaging should make clear that Accounstone is an outsourcing partner that helps these firms handle defined bookkeeping, accounting, tax-preparation and related production work within their existing software, documentation standards and review workflows.
 
-Use industry-specific pages to explain each audience's workflows and service requirements. Keep the homepage and company-wide descriptions neutral and broad.
+**Supporting search entry points: service, industry and software pages.** Retain useful pages for property management, HOA/community associations, real estate and relevant accounting software where they satisfy distinct search intent. These pages may attract visitors searching for specific work; they do not change the primary company-wide positioning. Do not force CPA or outsourcing wording into an industry page when it would make the page less natural or less useful.
+
+CPA firms and accounting firms are related but not identical terms: every CPA firm is an accounting firm, but not every accounting firm is a CPA firm. Use “CPA and accounting firms” when we intend to include both audiences. Do not imply that Accounstone competes with CPA firms for their client relationships.
 
 ## Message hierarchy
 
@@ -28,7 +30,7 @@ Use industry-specific pages to explain each audience's workflows and service req
 - Prefer clear CTAs such as “Discuss Your Accounting Needs” and audience-specific variants.
 - Do not lead with discounts, guaranteed savings, “free” offers, vague advisory claims or generic marketing language.
 - Do not imply Accounstone replaces a property manager, takes over an HOA board's decisions, approves client payments, provides software-vendor services, or assumes tax/legal duties outside the agreed scope.
-- Keep all B2B customer segments represented fairly. Do not make any one industry the default or top-priority audience in company-wide messaging.
+- Make CPA and accounting firms the primary audience in company-wide messaging; keep industry pages as supporting search entry points rather than equal homepage positioning.
 
 ## Website change control
 
