@@ -17,12 +17,12 @@ import { services, solutions, testimonials } from '@/lib/data';
 export const metadata: Metadata = generateMetadata({
   title: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   description:
-    'Accounting, bookkeeping and tax outsourcing for businesses and professional firms, delivered within existing workflows.',
+    'Accounting, bookkeeping and tax outsourcing for CPA and accounting firms, with work prepared within the firm’s existing workflows and review process.',
   path: '/',
   absoluteTitle: true,
   ogTitle: 'Accounting, Tax & Bookkeeping Outsourcing | Accounstone',
   ogDescription:
-    'Accounting outsourcing for property management companies, HOA management firms, CPA practices and businesses, delivered within existing workflows.',
+    'Accounting outsourcing support for CPA and accounting firms, including bookkeeping, tax preparation and recurring client-accounting work within existing workflows.',
   ogImageAlt: 'Accounstone — Accounting, Bookkeeping & Tax Outsourcing',
 });
 
@@ -35,7 +35,7 @@ const homePageFAQs = [
   {
     question: 'Who does Accounstone work with?',
     answer:
-      'Accounstone supports businesses and professional firms with recurring accounting, bookkeeping and tax-preparation work. This includes CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses. Work is structured around existing software, reporting requirements and review workflows.',
+      'Accounstone primarily supports CPA and accounting firms with recurring bookkeeping, accounting operations, tax-preparation and related production work. Work is structured around the firm’s existing software, client requirements, documentation standards and review workflows. Separate industry pages describe accounting workflows relevant to property management, HOA and real estate-related work.',
   },
   {
     question: 'Can you work with our existing software?',
@@ -73,10 +73,10 @@ export default function HomePage() {
         <HeroBanner
           image="/hero-accounting-support.jpg"
           alt="Accounting reports, charts and calculator on a desk"
-          pageHeading="Accounting, Bookkeeping & Tax Outsourcing"
+          pageHeading="Accounting Outsourcing for CPA & Accounting Firms"
           title="Your Accounting Outsourcing Partner"
-          subtitle="Accounting support for businesses and professional firms"
-          cta={{ text: 'Discuss Your Accounting Needs', href: '/contact' }}
+          subtitle="Bookkeeping, tax preparation and recurring accounting support within your firm’s workflows"
+          cta={{ text: 'Discuss CPA Firm Support', href: '/contact' }}
           ctaSecondary={{ text: 'Book a Consultation', href: 'https://cal.com/abby-xne7d4/30min' }}
         />
       </section>
@@ -87,13 +87,13 @@ export default function HomePage() {
             <>
               <span className="inline-flex items-center gap-2 text-sm md:text-base font-semibold tracking-wide uppercase text-accent">
                 <span className="w-4 h-px bg-accent" aria-hidden="true" />
-                Accounting and Bookkeeping Scope
+                Accounting Support for CPA and Accounting Firms
               </span>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance">
-                What Accounting Support Can You Outsource?
+                What Work Can Your Firm Outsource?
               </h2>
               <p className="text-muted leading-relaxed">
-                Accounstone is an accounting outsourcing partner for businesses and professional firms. Services can include transaction coding, bank and balance-sheet reconciliations, accounts payable and receivable processing, month-end close, payroll processing and tax workpapers. Clients include CPA and accounting firms, property management companies, HOA and community association management firms, and other businesses. Work is performed within the client’s existing software and documented workflow, with responsibilities, review points and approvals agreed before recurring tasks begin. The client or its appointed accounting professional retains the decisions, filing responsibilities and payment authority assigned to them. This model can add capacity without requiring a business to replace its accounting system or hand over control of its books.
+                Accounstone supports CPA and accounting firms with defined bookkeeping, reconciliation, month-end close, accounts payable and receivable, tax-preparation workpapers and related accounting production. Work is prepared within the firm’s existing software, documentation standards and review workflow. The firm retains client relationships, professional judgment, final review and filing/sign-off responsibilities as applicable. Our service and industry pages explain specific work types and workflows, so firms can identify the support that fits their practice without changing their core systems.
               </p>
             </>
           </Reveal>
@@ -133,10 +133,10 @@ export default function HomePage() {
                 </span>
               </div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
-                Accounting Support for Different Types of Businesses
+                Accounting Workflows Across Industries
               </h2>
               <p className="max-w-3xl text-muted leading-relaxed">
-                Accounting workflows differ by industry. The industry pages explain how the work can be structured around the systems, transactions and reporting requirements involved.
+                CPA and accounting firms support clients across different industries. These pages describe selected accounting workflows and requirements in real estate, property management and HOA-related work; they remain supporting resources alongside our core accounting-firm outsourcing offer.
               </p>
             </div>
           </Reveal>
@@ -144,28 +144,28 @@ export default function HomePage() {
           <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             {[
               {
-                title: 'Real Estate',
-                href: '/industries/real-estate',
-                industry: 'real-estate',
-                description: 'Transaction records, reconciliations and property-related reporting support.',
+                title: 'Accounting & CPA Firms',
+                href: '/industries/cpa-firms',
+                industry: 'cpa-firms',
+                description: 'Bookkeeping, tax preparation and recurring production work aligned with your firm’s review process.',
               },
               {
                 title: 'Property Management',
                 href: '/industries/property-management',
                 industry: 'property-management',
-                description: 'Property-level books, tenant and owner ledgers, and monthly reporting.',
+                description: 'Property-level books, tenant and owner ledgers, and monthly reporting workflows.',
               },
               {
                 title: 'HOA & Associations',
                 href: '/industries/hoa-accounting',
                 industry: 'hoa-accounting',
-                description: 'Assessment ledgers, operating and reserve records, and board reporting.',
+                description: 'Assessment ledgers, operating and reserve records, and association reporting workflows.',
               },
               {
-                title: 'Accounting & CPA Firms',
-                href: '/industries/cpa-firms',
-                industry: 'cpa-firms',
-                description: 'Recurring preparation work that fits your review and client workflows.',
+                title: 'Real Estate',
+                href: '/industries/real-estate',
+                industry: 'real-estate',
+                description: 'Transaction records, reconciliations and property-related accounting workflows.',
               },
             ].map((item, i) => (
               <Reveal key={item.title} delay={Math.min(i * 0.06, 0.18)}>
